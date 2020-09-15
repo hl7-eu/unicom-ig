@@ -1,5 +1,5 @@
 # Affiliate IG
-An example ImplementationGuide without content, with 
+An ImplementationGuide framework for UNICOM 
 
 * the basic folders for ImplementationGuide content
 * support for FHIR Shorthand / Sushi
