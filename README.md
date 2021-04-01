@@ -1,6 +1,6 @@
-# Affiliate IG
-An ImplementationGuide framework for UNICOM 
+# UNICOM Projet FHIR IG
 
+An ImplementationGuide framework for UNICOM 
 
 Developed by HL7 Europe with the support of the FHIR community.
 

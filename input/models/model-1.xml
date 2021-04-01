@@ -1,0 +1,69 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Address" />
+  <url value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Address" />
+  <name value="Address" />
+  <title value="Address (datatype)" />
+  <status value="draft" />
+  <description value="Address logical datatype" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="Address" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="Address">
+      <path value="Address" />
+      <short value="Address" />
+    </element>
+    <element id="Address.street">
+      <path value="Address.street" />
+      <short value="Street address" />
+      <definition value="The street of the place where the HP prescribing the medicine made the prescription.&#xA;&#xA;Example: Alemania Street." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Address.city">
+      <path value="Address.city" />
+      <short value="City" />
+      <definition value="The postal code of the place where the HP prescribing the medicine made the prescription.&#xA;&#xA;Example: 41018" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Address.postalCode">
+      <path value="Address.postalCode" />
+      <short value="Zip or Postal Code" />
+      <definition value="Zip Code" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Address.stateOrProvince">
+      <path value="Address.stateOrProvince" />
+      <short value="State or Province" />
+      <definition value="The province of the place where the HP prescribing the medicine made the prescription.&#xA;&#xA;Example: Seville" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Address.country">
+      <path value="Address.country" />
+      <short value="Country" />
+      <definition value="The country where the prescription was made.&#xA;&#xA;Example: Spain." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
