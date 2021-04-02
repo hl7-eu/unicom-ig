@@ -24,6 +24,7 @@
       <type>
         <code value="BackboneElement" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Product.code.productCode">
       <path value="Product.code.productCode" />
@@ -94,6 +95,7 @@
       <type>
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Product.name">
       <path value="Product.name" />
@@ -134,6 +136,7 @@
       <type>
         <code value="BackboneElement" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Product.composition.ingredient">
       <path value="Product.composition.ingredient" />
@@ -205,9 +208,9 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Product.classification.ATCcode">
-      <path value="Product.classification.ATCcode" />
-      <short value="ATC code" />
+    <element id="Product.classification.code">
+      <path value="Product.classification.code" />
+      <short value="Classification code" />
       <definition value="A code indicating a classification this product belong to" />
       <min value="0" />
       <max value="*" />
@@ -215,9 +218,9 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.classification.code">
-      <path value="Product.classification.code" />
-      <short value="Classification code" />
+    <element id="Product.classification.ATCcode">
+      <path value="Product.classification.ATCcode" />
+      <short value="ATC code" />
       <definition value="A code indicating a classification this product belong to" />
       <min value="0" />
       <max value="*" />
@@ -253,6 +256,46 @@
       <max value="*" />
       <type>
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="Product.identifier">
+      <path value="Product.identifier" />
+      <short value="Product Identifier" />
+      <definition value="Identifiers typically related to the supply chain management, but often used also for other purposes as the fight against falsified and counterfeit medicines; adverse event reporting, and so on." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Product.identifier.uniqueIdentifier">
+      <path value="Product.identifier.uniqueIdentifier" />
+      <short value="Unique Identifier" />
+      <definition value="Unique identifier as defined by the falsified medicine directive" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
+      </type>
+    </element>
+    <element id="Product.identifier.dataCarrierIdentifier">
+      <path value="Product.identifier.dataCarrierIdentifier" />
+      <short value="Data Carrier Identifier" />
+      <definition value="Identifier of this instance of the package medicinal product. It could be a global (e.g. GTIN) or a national identifier" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
+      </type>
+    </element>
+    <element id="Product.identifier.lotNumber">
+      <path value="Product.identifier.lotNumber" />
+      <short value="Lot number" />
+      <definition value="Lot serial number" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
       </type>
     </element>
     <element id="Product.marketingAuthorization">
@@ -328,9 +371,9 @@
     <element id="Product.package.packageStructure">
       <path value="Product.package.packageStructure" />
       <short value="Package Structure" />
-      <definition value="Packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
+      <definition value="Innermost  package, it might be the immediate, the intermediate or the outer package.&#xA;Immediate Package: packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <type>
         <code value="BackboneElement" />
       </type>
@@ -355,18 +398,18 @@
         <code value="Quantity" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.packageStructure">
-      <path value="Product.package.packageStructure.packageStructure" />
-      <short value="Contained by" />
-      <definition value="Intermediate container between the outer package and the innermost container" />
+    <element id="Product.package.packageStructure.container">
+      <path value="Product.package.packageStructure.container" />
+      <short value="Container (2nd level)" />
+      <definition value="Package containing the innermost package, it can be the intermediate or the outer container.&#xA;The Intermediate container is between the outer package and the immediate container" />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.packageStructure.containerType">
-      <path value="Product.package.packageStructure.packageStructure.containerType" />
+    <element id="Product.package.packageStructure.container.containerType">
+      <path value="Product.package.packageStructure.container.containerType" />
       <short value="Container type (2nd level)" />
       <definition value="Packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
       <min value="0" />
@@ -375,8 +418,8 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.packageStructure.capacityQuantity">
-      <path value="Product.package.packageStructure.packageStructure.capacityQuantity" />
+    <element id="Product.package.packageStructure.container.capacityQuantity">
+      <path value="Product.package.packageStructure.container.capacityQuantity" />
       <short value="Container Capacity (2nd level)" />
       <definition value="Packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
       <min value="0" />
@@ -385,9 +428,9 @@
         <code value="Quantity" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.packageStructure.outerPackage">
-      <path value="Product.package.packageStructure.packageStructure.outerPackage" />
-      <short value="Outer Package" />
+    <element id="Product.package.packageStructure.container.outerPackage">
+      <path value="Product.package.packageStructure.container.outerPackage" />
+      <short value="Container (3nd level)" />
       <definition value="outermost package" />
       <min value="0" />
       <max value="1" />
@@ -395,9 +438,9 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.packageStructure.outerPackage.containerType">
-      <path value="Product.package.packageStructure.packageStructure.outerPackage.containerType" />
-      <short value="Type of Outer Package" />
+    <element id="Product.package.packageStructure.container.outerPackage.containerType">
+      <path value="Product.package.packageStructure.container.outerPackage.containerType" />
+      <short value="Container type (3rd level)" />
       <definition value="Packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
       <min value="0" />
       <max value="*" />
@@ -405,54 +448,14 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.packageStructure.outerPackage.capacityQuantity">
-      <path value="Product.package.packageStructure.packageStructure.outerPackage.capacityQuantity" />
-      <short value="Container Capacity (outer package)" />
+    <element id="Product.package.packageStructure.container.outerPackage.capacityQuantity">
+      <path value="Product.package.packageStructure.container.outerPackage.capacityQuantity" />
+      <short value="Container Capacity (3rd level)" />
       <definition value="Packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="Quantity" />
-      </type>
-    </element>
-    <element id="Product.supplyChain">
-      <path value="Product.supplyChain" />
-      <short value="Supply chain data" />
-      <definition value="Information related to the supply chain management. These data can be used aslo for other purposes as the fight against falsified and counterfeit medicines." />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="BackboneElement" />
-      </type>
-    </element>
-    <element id="Product.supplyChain.uniqueIdentifier">
-      <path value="Product.supplyChain.uniqueIdentifier" />
-      <short value="Package Unique Identifier" />
-      <definition value="Unique identifier as defined by the falsified medicine directive" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
-      </type>
-    </element>
-    <element id="Product.supplyChain.lotNumber">
-      <path value="Product.supplyChain.lotNumber" />
-      <short value="Lot number" />
-      <definition value="Lot serial number" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
-      </type>
-    </element>
-    <element id="Product.supplyChain.instanceIdenfier">
-      <path value="Product.supplyChain.instanceIdenfier" />
-      <short value="Instance identifier" />
-      <definition value="Identifier of this instance of the package medicinal product. It could be a global (e.g. GTIN) or a national identifier" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
       </type>
     </element>
   </differential>
