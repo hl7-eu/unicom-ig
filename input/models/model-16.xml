@@ -1,66 +1,286 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Patient" />
-  <url value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Patient" />
-  <name value="Patient" />
-  <title value="Patient (Logical)" />
+  <id value="SimpleProduct" />
+  <url value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/SimpleProduct" />
+  <name value="SimpleProduct" />
+  <title value="Product [PS] (logical)" />
   <status value="draft" />
-  <description value="Description of the Patient Model" />
+  <description value="Description of a product as used in a Medication Summary" />
   <kind value="logical" />
   <abstract value="false" />
-  <type value="Patient" />
+  <type value="SimpleProduct" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
   <differential>
-    <element id="Patient">
-      <path value="Patient" />
-      <short value="Patient" />
+    <element id="SimpleProduct">
+      <path value="SimpleProduct" />
+      <short value="SimpleProduct" />
     </element>
-    <element id="Patient.identifier">
-      <path value="Patient.identifier" />
-      <short value="Regional/National Health Id" />
-      <definition value="If the patient has a regional or national Health Identification" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
-      </type>
-    </element>
-    <element id="Patient.socialNumber">
-      <path value="Patient.socialNumber" />
-      <short value="Social/Insurance Number" />
-      <definition value="If a patient has both, national/regional ID and Social/Insurance number, only the regional/national Health Id is required by law.&#xA;If the only identification the patient has is the Social/insurance number, then this one is considered as the regional/national Health Id. This field is required by some national laws." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
-      </type>
-    </element>
-    <element id="Patient.name">
-      <path value="Patient.name" />
-      <short value="Patient Name" />
-      <definition value="The surname/s of the patient" />
+    <element id="SimpleProduct.code">
+      <path value="SimpleProduct.code" />
+      <short value="Product code set" />
+      <definition value="Set of codes describing this Product" />
       <min value="1" />
       <max value="*" />
       <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/PersonName" />
+        <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Patient.birthDate">
-      <path value="Patient.birthDate" />
-      <short value="Birth date" />
-      <definition value="Date of birth&#xA;01/01/2009&#xA;This field may contain only the year" />
-      <min value="1" />
-      <max value="1" />
+    <element id="SimpleProduct.code.productCode">
+      <path value="SimpleProduct.code.productCode" />
+      <short value="Product code" />
+      <definition value="Set of codes identifying this Product. (e.g a SNOMED Code)&#xA;" />
+      <min value="0" />
+      <max value="*" />
       <type>
-        <code value="dateTime" />
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Patient.gender">
-      <path value="Patient.gender" />
-      <short value="Gender" />
-      <definition value="The gender of the patient&#xA;This field can be empty&#xA;Example: Male/female/unknown" />
+    <element id="SimpleProduct.code.packagedProductCode">
+      <path value="SimpleProduct.code.packagedProductCode" />
+      <short value="Packaged Medicinal Product code" />
+      <definition value="Set of codes identifying an Abstract or an Authorized Packaged Medicinal Product." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="SimpleProduct.code.medicinalProductCode">
+      <path value="SimpleProduct.code.medicinalProductCode" />
+      <short value="Medicinal Product code" />
+      <definition value="Set of codes identifying the Abstract or Authorized Medicinal Product" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="SimpleProduct.code.pharmaceuticalProductCode">
+      <path value="SimpleProduct.code.pharmaceuticalProductCode" />
+      <short value="Pharmaceutical Product code" />
+      <definition value="Set of codes identifying the Pharmaceutical Product" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="SimpleProduct.code.PCID">
+      <path value="SimpleProduct.code.PCID" />
+      <short value="IDMP PCID" />
+      <definition value="Code identifying the IDMP Packaged Medicinal Product&#xA;" />
       <min value="0" />
       <max value="1" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="SimpleProduct.code.MPID">
+      <path value="SimpleProduct.code.MPID" />
+      <short value="IDMP MPID" />
+      <definition value="Code identifying the IDMP MP " />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="SimpleProduct.code.PhPID">
+      <path value="SimpleProduct.code.PhPID" />
+      <short value="IDMP PhPID" />
+      <definition value="Set of codes identifying the IDMP PhP &#xA;&#xA;Note: exclude specified substances ?" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="SimpleProduct.name">
+      <path value="SimpleProduct.name" />
+      <short value="Product name" />
+      <definition value="Product name" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="SimpleProduct.name.packagedProductName">
+      <path value="SimpleProduct.name.packagedProductName" />
+      <short value="Packaged Product name" />
+      <definition value="Authorized Name for this Packaged Medicinal Product." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="SimpleProduct.name.medicinalProductName">
+      <path value="SimpleProduct.name.medicinalProductName" />
+      <short value="Medicinal Product name" />
+      <definition value="Authorized Name for this Medicinal Product." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="SimpleProduct.name.pharmaceuticalProductName">
+      <path value="SimpleProduct.name.pharmaceuticalProductName" />
+      <short value="Pharmaceutical Product name" />
+      <definition value="Name of this Pharmaceutical Product." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="SimpleProduct.name.otherName">
+      <path value="SimpleProduct.name.otherName" />
+      <short value="Other names" />
+      <definition value="Other Names for this Product." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="SimpleProduct.composition">
+      <path value="SimpleProduct.composition" />
+      <short value="Composition" />
+      <definition value="Composition of this product " />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="SimpleProduct.composition.ingredient">
+      <path value="SimpleProduct.composition.ingredient" />
+      <short value="Ingredient" />
+      <definition value="Composition of this product " />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="SimpleProduct.composition.ingredient.substanceName">
+      <path value="SimpleProduct.composition.ingredient.substanceName" />
+      <short value="Substance name" />
+      <definition value="Name of the substance / specified substance" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="SimpleProduct.composition.ingredient.substanceCode">
+      <path value="SimpleProduct.composition.ingredient.substanceCode" />
+      <short value="Substance code" />
+      <definition value="Code identifying this substance / specified substance" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="SimpleProduct.composition.ingredient.ingredientRole">
+      <path value="SimpleProduct.composition.ingredient.ingredientRole" />
+      <short value="Ingredient role" />
+      <definition value="Role of this ingredient" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="SimpleProduct.composition.ingredient.substanceQuantity">
+      <path value="SimpleProduct.composition.ingredient.substanceQuantity" />
+      <short value="Substance quantity" />
+      <definition value="Quantity of this substance / specified substance. &#xA;It can be per unit of presentation or per concentration." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="SimpleProduct.composition.description">
+      <path value="SimpleProduct.composition.description" />
+      <short value="Textual Composition" />
+      <definition value="Textual description of the composition of this product" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="SimpleProduct.classification">
+      <path value="SimpleProduct.classification" />
+      <short value="Classification" />
+      <definition value="A code indicating a classification this product belong to" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="SimpleProduct.classification.ATCcode">
+      <path value="SimpleProduct.classification.ATCcode" />
+      <short value="ATC code" />
+      <definition value="A code indicating a classification this product belong to" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="SimpleProduct.classification.code">
+      <path value="SimpleProduct.classification.code" />
+      <short value="Classification code" />
+      <definition value="A code indicating a classification this product belong to" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="SimpleProduct.doseForm">
+      <path value="SimpleProduct.doseForm" />
+      <short value="Dose form" />
+      <definition value="Physical manifestation of a Medicinal Product (3.1.19) that contains the active ingredient(s) and/or&#xA;inactive ingredient(s) that are intended to be delivered to the patient&#xA;Note 1 to entry: Dose form, dosage form and pharmaceutical dose form are synonymous.&#xA;Note 2 to entry: â€œPharmaceutical dose formâ€ can refer to the administrable dose form (3.1.2) or the manufactured&#xA;dose form (3.1.16). The terms pharmaceutical dose and dosage form are synonymous.&#xA;&#xA;[Source ISO 11616]" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="SimpleProduct.doseForm.administrableDoseForm">
+      <path value="SimpleProduct.doseForm.administrableDoseForm" />
+      <short value="Administrable dose form" />
+      <definition value="Pharmaceutical dose form (3.1.7) for administration to the patient, after any necessary transformation of the manufactured items (3.1.17) and their corresponding manufactured dose forms (3.1.16) has been carried out&#xA;Note 1 to entry: The administrable dose form is identical to the manufactured dose form in cases where&#xA;no transformation of the manufactured item is necessary [i.e. where the manufactured item is equal to the pharmaceutical product (3.1.24)].&#xA;Note 2 to entry: Administered dose form and pharmaceutical administrable dose form are synonyms of administrable dose form&#xA;&#xA;[Source ISO 11616]" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="SimpleProduct.doseForm.manufacturedDoseForm">
+      <path value="SimpleProduct.doseForm.manufacturedDoseForm" />
+      <short value="Manufactured dose form" />
+      <definition value="Pharmaceutical dose form (3.1.7) of a manufactured item (3.1.17) as manufactured and, where applicable,&#xA;before transformation into the pharmaceutical product (3.1.24)&#xA;Note 1 to entry: The manufactured dose form is identical to the administrable dose form (3.1.2) in cases where no transformation of the manufactured item is necessary (i.e. where the manufactured item is equal to the pharmaceutical product).&#xA;&#xA;[Source ISO 11616]&#xA;" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="SimpleProduct.doseForm.combinedDoseForm">
+      <path value="SimpleProduct.doseForm.combinedDoseForm" />
+      <short value="Combined dose form" />
+      <definition value="The combined pharmaceutical dose form is a single term to describe two or more manufactured items that are intended to be combined in a specific way to produce a single pharmaceutical product. It includes information on the manufactured dose form of each manufactured item and the administrable dose form of the pharmaceutical product. &#xA;&#xA;[ISO 11615]" />
+      <min value="0" />
+      <max value="*" />
       <type>
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
