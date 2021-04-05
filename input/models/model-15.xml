@@ -14,6 +14,12 @@
     <element id="Product">
       <path value="Product" />
       <short value="Product" />
+      <constraint>
+        <key value="Prod-1" />
+        <severity value="error" />
+        <human value="Either a Product code or a name (or both) shall be provided " />
+        <expression value="code.exists() or name.exists()" />
+      </constraint>
     </element>
     <element id="Product.code">
       <path value="Product.code" />
@@ -136,17 +142,29 @@
       <type>
         <code value="BackboneElement" />
       </type>
+      <constraint>
+        <key value="Prod-12" />
+        <severity value="error" />
+        <human value="Either the structured information or the textual description (or both) shall be provided&#xA;" />
+        <expression value="ingredient.exists() or description.exists()" />
+      </constraint>
       <mustSupport value="true" />
     </element>
     <element id="Product.composition.ingredient">
       <path value="Product.composition.ingredient" />
       <short value="Ingredient" />
-      <definition value="Composition of this product " />
+      <definition value="Ingredient this product is composed of" />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="BackboneElement" />
       </type>
+      <constraint>
+        <key value="Prod-13" />
+        <severity value="error" />
+        <human value="Either a substance code or a name (or both) shall be provided " />
+        <expression value="substanceCode.exists() or substanceName.exists()" />
+      </constraint>
     </element>
     <element id="Product.composition.ingredient.substanceName">
       <path value="Product.composition.ingredient.substanceName" />
@@ -167,6 +185,10 @@
       <type>
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://hl7.eu/fhir/ig/unicom/ValueSet/SubstanceCode" />
+      </binding>
     </element>
     <element id="Product.composition.ingredient.ingredientRole">
       <path value="Product.composition.ingredient.ingredientRole" />
@@ -325,7 +347,7 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="SimpleOrganization" />
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/SimpleOrganization" />
       </type>
     </element>
     <element id="Product.marketingAuthorization.marketingAuthorizationHolder">
@@ -335,7 +357,7 @@
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="SimpleOrganization" />
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/SimpleOrganization" />
       </type>
     </element>
     <element id="Product.manufacturer">
@@ -345,7 +367,7 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="SimpleOrganization" />
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/SimpleOrganization" />
       </type>
     </element>
     <element id="Product.package">

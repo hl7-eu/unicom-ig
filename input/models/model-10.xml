@@ -14,6 +14,12 @@
     <element id="AuthorizedMedicinalProduct">
       <path value="AuthorizedMedicinalProduct" />
       <short value="AuthorizedMedicinalProduct" />
+      <constraint>
+        <key value="Auth-2" />
+        <severity value="error" />
+        <human value="[Pharmaceutical Product ID].exists() OR [IDMP PhPID exists]" />
+        <expression value="Structured or Textual Composition" />
+      </constraint>
     </element>
     <element id="AuthorizedMedicinalProduct.code">
       <path value="AuthorizedMedicinalProduct.code" />
