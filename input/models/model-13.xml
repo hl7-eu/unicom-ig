@@ -1,58 +1,88 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Organization" />
-  <url value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Organization" />
-  <name value="Organization" />
-  <title value="Organization (logical)" />
+  <id value="Medication" />
+  <url value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Medication" />
+  <name value="Medication" />
+  <title value="Medication (logical)" />
   <status value="draft" />
-  <description value="Organization logical model" />
+  <description value="A record of a medication that has been or is being consumed by a patient. " />
   <kind value="logical" />
   <abstract value="false" />
-  <type value="Organization" />
+  <type value="Medication" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
   <differential>
-    <element id="Organization">
-      <path value="Organization" />
-      <short value="Organization" />
+    <element id="Medication">
+      <path value="Medication" />
+      <short value="Medication" />
     </element>
-    <element id="Organization.identifier">
-      <path value="Organization.identifier" />
-      <short value="Organization id" />
-      <definition value="Identifier of the organization" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
-      </type>
-    </element>
-    <element id="Organization.name">
-      <path value="Organization.name" />
-      <short value="Organization name" />
-      <definition value="Name of the organization" />
+    <element id="Medication.overallTreatmentDuration">
+      <path value="Medication.overallTreatmentDuration" />
+      <short value="Overall duration of treatment" />
+      <definition value="The overall period  the patient needs to start taking the prescribed medicine.&#xA;&#xA;It is constituted of 3 optional subfields: start date, end date, length of treatment. End date and length of treatment are mutually exclusive.&#xA;&#xA;" />
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="string" />
+        <code value="Period" />
       </type>
     </element>
-    <element id="Organization.address">
-      <path value="Organization.address" />
-      <short value="Organization address" />
-      <definition value="Organization address" />
-      <min value="0" />
+    <element id="Medication.posology">
+      <path value="Medication.posology" />
+      <short value="Posology" />
+      <definition value="Instruction on number of units per intake, frequency of intakes (per day/month or week) and duration of treatment.&#xA;&#xA;Country of treatment translates the posology from Country of affiliation to Country of treatment units, but it must be the same posology.&#xA;This field can be a single field or a block of different fields: Number of units per intake, frequency of intakes (per day/month/week) and duration of treatment.&#xA;&#xA;Example: 1 unit/intake every 24 hrs for a duration of 30 days in country A can be 1unit/intake, once a day, during 1 month.&#xA;&#xA;When Posology is a single field, information that should be present in the optional fields, is expected to be present in the single field as free text." />
+      <min value="1" />
       <max value="*" />
       <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Address" />
+        <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Organization.telecom">
-      <path value="Organization.telecom" />
-      <short value="Organization telecom" />
-      <definition value="Organization telecom" />
-      <min value="0" />
-      <max value="*" />
+    <element id="Medication.product">
+      <path value="Medication.product" />
+      <short value="Product" />
+      <definition value="Description of a Product as used in a medication summary" />
+      <min value="1" />
+      <max value="1" />
       <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Telecom" />
+        <code value="SimpleProduct" />
+      </type>
+    </element>
+    <element id="Medication.posology.treatmentDuration">
+      <path value="Medication.posology.treatmentDuration" />
+      <short value="Duration of treatment1" />
+      <definition value="The duration for which the patient should take the medicine with that dosage.&#xA;In the majority of the cases it coincides with the overall duration.&#xA;Example: During 14 days.&#xA;This attribute is part of the posology.&#xA;It is constituted of 3 optional subfields: start date, end date, length of treatment. End date and length of treatment are mutually exclusive.&#xA;" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="Medication.posology.unitsPerIntake">
+      <path value="Medication.posology.unitsPerIntake" />
+      <short value="Number of units per intake" />
+      <definition value="The number of units for each intake that the patient is taking.&#xA;&#xA;Example: 1 tablet.&#xA;&#xA;This attribute is part of the posology." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Medication.posology.frequencyOfIntake">
+      <path value="Medication.posology.frequencyOfIntake" />
+      <short value="Frequency of intakes" />
+      <definition value="Frequency of the intakes that the patient should take (per hour/day/month/ week).&#xA;&#xA;Example: Each month.&#xA;This attribute is part of the posology." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Timing" />
+      </type>
+    </element>
+    <element id="Medication.route">
+      <path value="Medication.route" />
+      <short value="Route of Administration" />
+      <definition value="Indicates the part of the body through or into which, or the way in which, the medicinal product is intended to be introduced. In some cases a medicinal product can be intended for more than one route and/or method of administration.&#xA;&#xA;Country of treatment translates the route of administration from Country of affiliation to Country of treatment units, but it is the same route.&#xA;&#xA;Example: In injectable: intramuscular. In tablet: oral.&#xA;&#xA;Note: Although â€˜Route of Administrationâ€™ has been considered a maximum data element as it is normally a free text, ePrescription Guidelines is concerned about the importance of this field and the impact of not having it. In some countries, route of administration is already included within the pharmaceutical dose form but if not, the only measure we can provide at this moment is that the dispenser can check a copy of the original prescription to help him/her with this issue among others." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
   </differential>

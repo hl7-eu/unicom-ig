@@ -1,39 +1,38 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Product" />
-  <url value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Product" />
-  <name value="Product" />
-  <title value="Product (logical)" />
+  <id value="PrescribedProduct" />
+  <url value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/PrescribedProduct" />
+  <name value="PrescribedProduct" />
+  <title value="Prescribed Product (logical)" />
   <status value="draft" />
-  <description value="Product" />
+  <description value="Prescribed product" />
   <kind value="logical" />
   <abstract value="false" />
-  <type value="Product" />
+  <type value="PrescribedProduct" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
   <differential>
-    <element id="Product">
-      <path value="Product" />
-      <short value="Product" />
+    <element id="PrescribedProduct">
+      <path value="PrescribedProduct" />
+      <short value="PrescribedProduct" />
       <constraint>
-        <key value="Prod-1" />
+        <key value="Pres-2" />
         <severity value="error" />
-        <human value="Either a Product code or a name (or both) shall be provided " />
-        <expression value="code.exists() or name.exists()" />
+        <human value="[Pharmaceutical Product ID].exists() OR [IDMP PhPID exists]" />
+        <expression value="Structured or Textual Composition" />
       </constraint>
     </element>
-    <element id="Product.code">
-      <path value="Product.code" />
+    <element id="PrescribedProduct.code">
+      <path value="PrescribedProduct.code" />
       <short value="Product code set" />
       <definition value="Set of codes describing this Product" />
-      <min value="0" />
+      <min value="1" />
       <max value="*" />
       <type>
         <code value="BackboneElement" />
       </type>
-      <mustSupport value="true" />
     </element>
-    <element id="Product.code.productCode">
-      <path value="Product.code.productCode" />
+    <element id="PrescribedProduct.code.productCode">
+      <path value="PrescribedProduct.code.productCode" />
       <short value="Product code" />
       <definition value="Set of codes identifying this Product. (e.g a SNOMED Code)&#xA;" />
       <min value="0" />
@@ -42,8 +41,8 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.code.packagedProductCode">
-      <path value="Product.code.packagedProductCode" />
+    <element id="PrescribedProduct.code.packagedProductCode">
+      <path value="PrescribedProduct.code.packagedProductCode" />
       <short value="Packaged Medicinal Product code" />
       <definition value="Set of codes identifying an Abstract or an Authorized Packaged Medicinal Product." />
       <min value="0" />
@@ -52,8 +51,8 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.code.medicinalProductCode">
-      <path value="Product.code.medicinalProductCode" />
+    <element id="PrescribedProduct.code.medicinalProductCode">
+      <path value="PrescribedProduct.code.medicinalProductCode" />
       <short value="Medicinal Product code" />
       <definition value="Set of codes identifying the Abstract or Authorized Medicinal Product" />
       <min value="0" />
@@ -62,8 +61,8 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.code.pharmaceuticalProductCode">
-      <path value="Product.code.pharmaceuticalProductCode" />
+    <element id="PrescribedProduct.code.pharmaceuticalProductCode">
+      <path value="PrescribedProduct.code.pharmaceuticalProductCode" />
       <short value="Pharmaceutical Product code" />
       <definition value="Set of codes identifying the Pharmaceutical Product" />
       <min value="0" />
@@ -72,8 +71,8 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.code.PCID">
-      <path value="Product.code.PCID" />
+    <element id="PrescribedProduct.code.PCID">
+      <path value="PrescribedProduct.code.PCID" />
       <short value="IDMP PCID" />
       <definition value="Code identifying the IDMP Packaged Medicinal Product&#xA;" />
       <min value="0" />
@@ -82,8 +81,8 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.code.MPID">
-      <path value="Product.code.MPID" />
+    <element id="PrescribedProduct.code.MPID">
+      <path value="PrescribedProduct.code.MPID" />
       <short value="IDMP MPID" />
       <definition value="Code identifying the IDMP MP " />
       <min value="0" />
@@ -92,8 +91,8 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.code.PhPID">
-      <path value="Product.code.PhPID" />
+    <element id="PrescribedProduct.code.PhPID">
+      <path value="PrescribedProduct.code.PhPID" />
       <short value="IDMP PhPID" />
       <definition value="Set of codes identifying the IDMP PhP" />
       <min value="0" />
@@ -101,31 +100,30 @@
       <type>
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
-      <mustSupport value="true" />
     </element>
-    <element id="Product.name">
-      <path value="Product.name" />
-      <short value="Product Name" />
+    <element id="PrescribedProduct.name">
+      <path value="PrescribedProduct.name" />
+      <short value="Product name" />
       <definition value="Product name" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <type>
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Product.name.type">
-      <path value="Product.name.type" />
-      <short value="type" />
+    <element id="PrescribedProduct.name.packagedProductName">
+      <path value="PrescribedProduct.name.packagedProductName" />
+      <short value="Packaged Product name" />
       <definition value="Authorized Name for this Packaged Medicinal Product." />
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+        <code value="string" />
       </type>
     </element>
-    <element id="Product.name.name">
-      <path value="Product.name.name" />
-      <short value="name" />
+    <element id="PrescribedProduct.name.medicinalProductName">
+      <path value="PrescribedProduct.name.medicinalProductName" />
+      <short value="Medicinal Product name" />
       <definition value="Authorized Name for this Medicinal Product." />
       <min value="0" />
       <max value="1" />
@@ -133,8 +131,28 @@
         <code value="string" />
       </type>
     </element>
-    <element id="Product.composition">
-      <path value="Product.composition" />
+    <element id="PrescribedProduct.name.pharmaceuticalProductName">
+      <path value="PrescribedProduct.name.pharmaceuticalProductName" />
+      <short value="Pharmaceutical Product name" />
+      <definition value="Name of this Pharmaceutical Product." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="PrescribedProduct.name.otherName">
+      <path value="PrescribedProduct.name.otherName" />
+      <short value="Other names" />
+      <definition value="Other Names for this Product." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="PrescribedProduct.composition">
+      <path value="PrescribedProduct.composition" />
       <short value="Composition" />
       <definition value="Composition of this product " />
       <min value="0" />
@@ -142,42 +160,29 @@
       <type>
         <code value="BackboneElement" />
       </type>
-      <constraint>
-        <key value="Prod-12" />
-        <severity value="error" />
-        <human value="Either the structured information or the textual description (or both) shall be provided&#xA;" />
-        <expression value="ingredient.exists() or description.exists()" />
-      </constraint>
-      <mustSupport value="true" />
     </element>
-    <element id="Product.composition.ingredient">
-      <path value="Product.composition.ingredient" />
+    <element id="PrescribedProduct.composition.ingredient">
+      <path value="PrescribedProduct.composition.ingredient" />
       <short value="Ingredient" />
-      <definition value="Ingredient this product is composed of" />
+      <definition value="Composition of this product " />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="BackboneElement" />
       </type>
-      <constraint>
-        <key value="Prod-13" />
-        <severity value="error" />
-        <human value="Either a substance code or a name (or both) shall be provided " />
-        <expression value="substanceCode.exists() or substanceName.exists()" />
-      </constraint>
     </element>
-    <element id="Product.composition.ingredient.substanceName">
-      <path value="Product.composition.ingredient.substanceName" />
+    <element id="PrescribedProduct.composition.ingredient.substanceName">
+      <path value="PrescribedProduct.composition.ingredient.substanceName" />
       <short value="Substance name" />
       <definition value="Name of the substance / specified substance" />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Product.composition.ingredient.substanceCode">
-      <path value="Product.composition.ingredient.substanceCode" />
+    <element id="PrescribedProduct.composition.ingredient.substanceCode">
+      <path value="PrescribedProduct.composition.ingredient.substanceCode" />
       <short value="Substance code" />
       <definition value="Code identifying this substance / specified substance" />
       <min value="0" />
@@ -185,13 +190,9 @@
       <type>
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="http://hl7.eu/fhir/ig/unicom/ValueSet/SubstanceCode" />
-      </binding>
     </element>
-    <element id="Product.composition.ingredient.ingredientRole">
-      <path value="Product.composition.ingredient.ingredientRole" />
+    <element id="PrescribedProduct.composition.ingredient.ingredientRole">
+      <path value="PrescribedProduct.composition.ingredient.ingredientRole" />
       <short value="Ingredient role" />
       <definition value="Role of this ingredient" />
       <min value="0" />
@@ -200,28 +201,28 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.composition.ingredient.substanceQuantity">
-      <path value="Product.composition.ingredient.substanceQuantity" />
+    <element id="PrescribedProduct.composition.ingredient.substanceQuantity">
+      <path value="PrescribedProduct.composition.ingredient.substanceQuantity" />
       <short value="Substance quantity" />
       <definition value="Quantity of this substance / specified substance. &#xA;It can be per unit of presentation or per concentration." />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <type>
-        <code value="Ratio" />
+        <code value="Quantity" />
       </type>
     </element>
-    <element id="Product.composition.description">
-      <path value="Product.composition.description" />
+    <element id="PrescribedProduct.composition.description">
+      <path value="PrescribedProduct.composition.description" />
       <short value="Textual Composition" />
-      <definition value="Textual description of the composition of this product" />
+      <definition value="Composition of this product " />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="string" />
       </type>
     </element>
-    <element id="Product.classification">
-      <path value="Product.classification" />
+    <element id="PrescribedProduct.classification">
+      <path value="PrescribedProduct.classification" />
       <short value="Classification" />
       <definition value="A code indicating a classification this product belong to" />
       <min value="0" />
@@ -230,18 +231,8 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Product.classification.code">
-      <path value="Product.classification.code" />
-      <short value="Classification code" />
-      <definition value="A code indicating a classification this product belong to" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
-      </type>
-    </element>
-    <element id="Product.classification.ATCcode">
-      <path value="Product.classification.ATCcode" />
+    <element id="PrescribedProduct.classification.ATCcode">
+      <path value="PrescribedProduct.classification.ATCcode" />
       <short value="ATC code" />
       <definition value="A code indicating a classification this product belong to" />
       <min value="0" />
@@ -250,8 +241,18 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.doseForm">
-      <path value="Product.doseForm" />
+    <element id="PrescribedProduct.classification.code">
+      <path value="PrescribedProduct.classification.code" />
+      <short value="Classification code" />
+      <definition value="A code indicating a classification this product belong to" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
+      </type>
+    </element>
+    <element id="PrescribedProduct.doseForm">
+      <path value="PrescribedProduct.doseForm" />
       <short value="Dose form" />
       <definition value="Physical manifestation of a Medicinal Product (3.1.19) that contains the active ingredient(s) and/or&#xA;inactive ingredient(s) that are intended to be delivered to the patient&#xA;Note 1 to entry: Dose form, dosage form and pharmaceutical dose form are synonymous.&#xA;Note 2 to entry: â€œPharmaceutical dose formâ€ can refer to the administrable dose form (3.1.2) or the manufactured&#xA;dose form (3.1.16). The terms pharmaceutical dose and dosage form are synonymous.&#xA;&#xA;[Source ISO 11616]" />
       <min value="0" />
@@ -260,9 +261,9 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Product.doseForm.type">
-      <path value="Product.doseForm.type" />
-      <short value="Form type" />
+    <element id="PrescribedProduct.doseForm.administrableDoseForm">
+      <path value="PrescribedProduct.doseForm.administrableDoseForm" />
+      <short value="Administrable dose form" />
       <definition value="Pharmaceutical dose form (3.1.7) for administration to the patient, after any necessary transformation of the manufactured items (3.1.17) and their corresponding manufactured dose forms (3.1.16) has been carried out&#xA;Note 1 to entry: The administrable dose form is identical to the manufactured dose form in cases where&#xA;no transformation of the manufactured item is necessary [i.e. where the manufactured item is equal to the pharmaceutical product (3.1.24)].&#xA;Note 2 to entry: Administered dose form and pharmaceutical administrable dose form are synonyms of administrable dose form&#xA;&#xA;[Source ISO 11616]" />
       <min value="0" />
       <max value="1" />
@@ -270,9 +271,9 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.doseForm.formCode">
-      <path value="Product.doseForm.formCode" />
-      <short value="Form code" />
+    <element id="PrescribedProduct.doseForm.manufacturedDoseForm">
+      <path value="PrescribedProduct.doseForm.manufacturedDoseForm" />
+      <short value="Manufactured dose form" />
       <definition value="Pharmaceutical dose form (3.1.7) of a manufactured item (3.1.17) as manufactured and, where applicable,&#xA;before transformation into the pharmaceutical product (3.1.24)&#xA;Note 1 to entry: The manufactured dose form is identical to the administrable dose form (3.1.2) in cases where no transformation of the manufactured item is necessary (i.e. where the manufactured item is equal to the pharmaceutical product).&#xA;&#xA;[Source ISO 11616]&#xA;" />
       <min value="0" />
       <max value="*" />
@@ -280,48 +281,18 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.identifier">
-      <path value="Product.identifier" />
-      <short value="Product Identifier" />
-      <definition value="Identifiers typically related to the supply chain management, but often used also for other purposes as the fight against falsified and counterfeit medicines; adverse event reporting, and so on." />
+    <element id="PrescribedProduct.doseForm.combinedDoseForm">
+      <path value="PrescribedProduct.doseForm.combinedDoseForm" />
+      <short value="Combined dose form" />
+      <definition value="The combined pharmaceutical dose form is a single term to describe two or more manufactured items that are intended to be combined in a specific way to produce a single pharmaceutical product. It includes information on the manufactured dose form of each manufactured item and the administrable dose form of the pharmaceutical product. &#xA;&#xA;[ISO 11615]" />
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="BackboneElement" />
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.identifier.uniqueIdentifier">
-      <path value="Product.identifier.uniqueIdentifier" />
-      <short value="Unique Identifier" />
-      <definition value="Unique identifier as defined by the falsified medicine directive" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
-      </type>
-    </element>
-    <element id="Product.identifier.dataCarrierIdentifier">
-      <path value="Product.identifier.dataCarrierIdentifier" />
-      <short value="Data Carrier Identifier" />
-      <definition value="Identifier of this instance of the package medicinal product. It could be a global (e.g. GTIN) or a national identifier" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
-      </type>
-    </element>
-    <element id="Product.identifier.lotNumber">
-      <path value="Product.identifier.lotNumber" />
-      <short value="Lot number" />
-      <definition value="Lot serial number" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Product.marketingAuthorization">
-      <path value="Product.marketingAuthorization" />
+    <element id="PrescribedProduct.marketingAuthorization">
+      <path value="PrescribedProduct.marketingAuthorization" />
       <short value="Marketing Authorisation" />
       <definition value="Identifier assigned by a Medicines Regulatory Agency to this Medicinal Product." />
       <min value="0" />
@@ -330,8 +301,8 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Product.marketingAuthorization.marketingAuthorizationNumber">
-      <path value="Product.marketingAuthorization.marketingAuthorizationNumber" />
+    <element id="PrescribedProduct.marketingAuthorization.marketingAuthorizationNumber">
+      <path value="PrescribedProduct.marketingAuthorization.marketingAuthorizationNumber" />
       <short value="Marketing Authorisation Number" />
       <definition value="Identifier assigned by a Medicines Regulatory Agency to this Medicinal Product." />
       <min value="0" />
@@ -340,38 +311,38 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
       </type>
     </element>
-    <element id="Product.marketingAuthorization.marketingAuthorizationIssuer">
-      <path value="Product.marketingAuthorization.marketingAuthorizationIssuer" />
+    <element id="PrescribedProduct.marketingAuthorization.marketingAuthorizationIssuer">
+      <path value="PrescribedProduct.marketingAuthorization.marketingAuthorizationIssuer" />
       <short value="Marketing Authorization Issuer" />
       <definition value="Organization (a medicines regulatory agency) issuing the authorisation for marketing this Medicinal Product in a region." />
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/SimpleOrganization" />
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Organization" />
       </type>
     </element>
-    <element id="Product.marketingAuthorization.marketingAuthorizationHolder">
-      <path value="Product.marketingAuthorization.marketingAuthorizationHolder" />
+    <element id="PrescribedProduct.marketingAuthorization.marketingAuthorizationHolder">
+      <path value="PrescribedProduct.marketingAuthorization.marketingAuthorizationHolder" />
       <short value="Marketing Authorization Holder" />
       <definition value="Organization holding the authorisation for marketing this Medicinal Product in a region." />
       <min value="0" />
       <max value="1" />
       <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/SimpleOrganization" />
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Organization" />
       </type>
     </element>
-    <element id="Product.manufacturer">
-      <path value="Product.manufacturer" />
+    <element id="PrescribedProduct.manufacturer">
+      <path value="PrescribedProduct.manufacturer" />
       <short value="Manufacturer" />
       <definition value="Organization that holds the authorisation for the manufacturing process." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/SimpleOrganization" />
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Organization" />
       </type>
     </element>
-    <element id="Product.package">
-      <path value="Product.package" />
+    <element id="PrescribedProduct.package">
+      <path value="PrescribedProduct.package" />
       <short value="Package" />
       <definition value="Packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
       <min value="0" />
@@ -380,8 +351,8 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Product.package.description">
-      <path value="Product.package.description" />
+    <element id="PrescribedProduct.package.description">
+      <path value="PrescribedProduct.package.description" />
       <short value="Package description" />
       <definition value="Authorized Name for this Packaged Medicinal Product." />
       <min value="0" />
@@ -390,29 +361,29 @@
         <code value="string" />
       </type>
     </element>
-    <element id="Product.package.packageStructure">
-      <path value="Product.package.packageStructure" />
-      <short value="Package Structure" />
-      <definition value="Innermost  package, it might be the immediate, the intermediate or the outer package.&#xA;Immediate Package: packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
+    <element id="PrescribedProduct.package.immediatePackage">
+      <path value="PrescribedProduct.package.immediatePackage" />
+      <short value="Immediate Package" />
+      <definition value="Packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.containerType">
-      <path value="Product.package.packageStructure.containerType" />
-      <short value="Container type (1st level)" />
-      <definition value="Type of Container of the most inner package described. (It might be the Immediate, the Intermediate or the Outer package)" />
+    <element id="PrescribedProduct.package.immediatePackage.type">
+      <path value="PrescribedProduct.package.immediatePackage.type" />
+      <short value="Immediate Container type" />
+      <definition value="Packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.capacityQuantity">
-      <path value="Product.package.packageStructure.capacityQuantity" />
-      <short value="Container Capacity (1st level)" />
+    <element id="PrescribedProduct.package.immediatePackage.capacityQuantity">
+      <path value="PrescribedProduct.package.immediatePackage.capacityQuantity" />
+      <short value="Immediate Container Capacity" />
       <definition value="Packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
       <min value="0" />
       <max value="1" />
@@ -420,19 +391,19 @@
         <code value="Quantity" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.container">
-      <path value="Product.package.packageStructure.container" />
-      <short value="Container (2nd level)" />
-      <definition value="Package containing the innermost package, it can be the intermediate or the outer container.&#xA;The Intermediate container is between the outer package and the immediate container" />
+    <element id="PrescribedProduct.package.intermediatePackage">
+      <path value="PrescribedProduct.package.intermediatePackage" />
+      <short value="Intermediate Package" />
+      <definition value="Intermediate container between the outer package and the innermost container" />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.container.containerType">
-      <path value="Product.package.packageStructure.container.containerType" />
-      <short value="Container type (2nd level)" />
+    <element id="PrescribedProduct.package.intermediatePackage.type">
+      <path value="PrescribedProduct.package.intermediatePackage.type" />
+      <short value="Type of Intermediate Package" />
       <definition value="Packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
       <min value="0" />
       <max value="*" />
@@ -440,9 +411,9 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.container.capacityQuantity">
-      <path value="Product.package.packageStructure.container.capacityQuantity" />
-      <short value="Container Capacity (2nd level)" />
+    <element id="PrescribedProduct.package.intermediatePackage.capacityQuantity">
+      <path value="PrescribedProduct.package.intermediatePackage.capacityQuantity" />
+      <short value="Contained Immediate Packages" />
       <definition value="Packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
       <min value="0" />
       <max value="*" />
@@ -450,9 +421,9 @@
         <code value="Quantity" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.container.outerPackage">
-      <path value="Product.package.packageStructure.container.outerPackage" />
-      <short value="Container (3nd level)" />
+    <element id="PrescribedProduct.package.outerPackage">
+      <path value="PrescribedProduct.package.outerPackage" />
+      <short value="Outer Package" />
       <definition value="outermost package" />
       <min value="0" />
       <max value="1" />
@@ -460,9 +431,9 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.container.outerPackage.containerType">
-      <path value="Product.package.packageStructure.container.outerPackage.containerType" />
-      <short value="Container type (3rd level)" />
+    <element id="PrescribedProduct.package.outerPackage.type">
+      <path value="PrescribedProduct.package.outerPackage.type" />
+      <short value="Type of Outer Package" />
       <definition value="Packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
       <min value="0" />
       <max value="*" />
@@ -470,9 +441,9 @@
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
       </type>
     </element>
-    <element id="Product.package.packageStructure.container.outerPackage.capacityQuantity">
-      <path value="Product.package.packageStructure.container.outerPackage.capacityQuantity" />
-      <short value="Container Capacity (3rd level)" />
+    <element id="PrescribedProduct.package.outerPackage.capacityQuantity">
+      <path value="PrescribedProduct.package.outerPackage.capacityQuantity" />
+      <short value="Contained Intermediate Packages" />
       <definition value="Packaging in which a manufactured item or pharmaceutical product is contained and with which it is in direct contact.&#xA;&#xA;SOURCE: ENV 12610" />
       <min value="0" />
       <max value="*" />

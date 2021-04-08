@@ -1,128 +1,68 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Prescriber" />
-  <url value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Prescriber" />
-  <name value="Prescriber" />
-  <title value="Prescriber (Logical)" />
+  <id value="Patient" />
+  <url value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Patient" />
+  <name value="Patient" />
+  <title value="Patient (Logical)" />
   <status value="draft" />
-  <description value="Description of the Prescriber Model&#xA;" />
+  <description value="Description of the Patient Model" />
   <kind value="logical" />
   <abstract value="false" />
-  <type value="Prescriber" />
+  <type value="Patient" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
   <differential>
-    <element id="Prescriber">
-      <path value="Prescriber" />
-      <short value="Prescriber" />
+    <element id="Patient">
+      <path value="Patient" />
+      <short value="Patient" />
     </element>
-    <element id="Prescriber.identifier">
-      <path value="Prescriber.identifier" />
-      <short value="HP Id Number" />
-      <definition value="The identification of  the person as HCP" />
+    <element id="Patient.identifier">
+      <path value="Patient.identifier" />
+      <short value="Regional/National Health Id" />
+      <definition value="If the patient has a regional or national Health Identification" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
       </type>
     </element>
-    <element id="Prescriber.name">
-      <path value="Prescriber.name" />
-      <short value="Prescriber Name" />
-      <definition value="The surname/s of the prescriber" />
+    <element id="Patient.socialNumber">
+      <path value="Patient.socialNumber" />
+      <short value="Social/Insurance Number" />
+      <definition value="If a patient has both, national/regional ID and Social/Insurance number, only the regional/national Health Id is required by law.&#xA;If the only identification the patient has is the Social/insurance number, then this one is considered as the regional/national Health Id. This field is required by some national laws." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
+      </type>
+    </element>
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <short value="Patient Name" />
+      <definition value="The surname/s of the patient" />
       <min value="1" />
       <max value="*" />
       <type>
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/PersonName" />
       </type>
     </element>
-    <element id="Prescriber.profession">
-      <path value="Prescriber.profession" />
-      <short value="Profession" />
-      <definition value="The profession of the HP prescribing the medicine.&#xA;&#xA;Example: Physician." />
+    <element id="Patient.birthDate">
+      <path value="Patient.birthDate" />
+      <short value="Birth date" />
+      <definition value="Date of birth&#xA;01/01/2009&#xA;This field may contain only the year" />
       <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Patient.gender">
+      <path value="Patient.gender" />
+      <short value="Gender" />
+      <definition value="The gender of the patient&#xA;This field can be empty&#xA;Example: Male/female/unknown" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
-      </type>
-    </element>
-    <element id="Prescriber.specialist">
-      <path value="Prescriber.specialist" />
-      <short value="Specialist" />
-      <definition value="Example: Dermatologist" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Codeable" />
-      </type>
-    </element>
-    <element id="Prescriber.facility">
-      <path value="Prescriber.facility" />
-      <short value="Prescriber Facility" />
-      <definition value="The place (complete address) where the prescriber made the prescription&#xA;This is not a field but a block of information made up of the following fields.&#xA;This might not be in the dataset but this information needs to be available for the process traceability (FR20)&#xA;Los Bermejales Health Care Centre. Alemania St. Seville, 41018. Spain" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="BackboneElement" />
-      </type>
-    </element>
-    <element id="Prescriber.facility.name">
-      <path value="Prescriber.facility.name" />
-      <short value="Prescriber Facility Name" />
-      <definition value="The name of the place where the HP prescribing the medicine made the prescription.&#xA;&#xA;For instance, the name of the building. Example: Los  Bermejales Health Care Centre. &#xA;&#xA;Note: This is not a field, but a block of information made up of the following fields. This might not be in the data set, but this information needs to be available for the process traceability.&#xA;&#xA;The Facility Address defines the place (complete address) where the HP prescribing the medicine made the prescription (where the health professional normally works, meets patients and prescribes medication)." />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Prescriber.facility.address">
-      <path value="Prescriber.facility.address" />
-      <short value="Prescriber Facility Address" />
-      <definition value="The place (complete address) where the prescriber made the prescription&#xA;This is not a field but a block of information made up of the following fields.&#xA;This might not be in the dataset but this information needs to be available for the process traceability (FR20)&#xA;Los Bermejales Health Care Centre. Alemania St. Seville, 41018. Spain" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Address" />
-      </type>
-    </element>
-    <element id="Prescriber.facility.telecom">
-      <path value="Prescriber.facility.telecom" />
-      <short value="Prescriber Facility Telecom" />
-      <definition value="The telecom details of the facility where the prescriber made the prescription&#xA;This is not a field but a block of information made up of the following fields." />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Telecom" />
-      </type>
-    </element>
-    <element id="Prescriber.organization">
-      <path value="Prescriber.organization" />
-      <short value="Prescriber Organization" />
-      <definition value="This is not a field but a block of information made up of the following fields.&#xA;This might not be in the dataset but this information needs to be available for the process traceability (FR20)" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="BackboneElement" />
-      </type>
-    </element>
-    <element id="Prescriber.organization.name">
-      <path value="Prescriber.organization.name" />
-      <short value="Prescriber Organization Name" />
-      <definition value="Name of the organization the prescriber belong to." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Prescriber.organization.identifier">
-      <path value="Prescriber.organization.identifier" />
-      <short value="Prescriber Organization Identifier" />
-      <definition value="Identifier of the organization the prescriber belong to." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="http://hl7.eu/fhir/ig/unicom/StructureDefinition/Identifier" />
       </type>
     </element>
   </differential>
