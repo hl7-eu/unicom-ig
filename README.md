@@ -6,7 +6,7 @@ This is the UNICOM IG
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __http://build.fhir.org/ig/hl7-eu/unicom-ig/branches/main/index.html__  
+Continuous Build: __http://build.fhir.org/ig/hl7-eu/unicom-ig/branches/master/index.html__  
 Canonical / permanent URL: 
 <br> </br>
 
