@@ -1,0 +1,43 @@
+Logical: MinimumProductModel
+Title: "Minimum Attribute List for product specification"
+
+* identifier 0..* BackboneElement "The identifier(s) for the medication" "The business identifier(s) for the medication"
+  * pmsidentifier 0..1 string "The identifier(s) for the medication dispense session" "The business identifier(s) for the medication dispense session"
+  * mpidentifier 0..1 string "The identifier(s) for the medicinal product" "The business identifier(s) for the medication dispense session"
+  * packagedProductIdentifier 0..1 string "TO DO" "TO DO"
+  * pharmaceuticalProductIdentifier 0..1 string "TO DO" "TO DO"
+  * otherIdentifier 0..1 string "The identifier(s) for the medicinal product" "The business identifier(s) for the medication dispense session"
+* medicinalProductFullName 0..1 string "TO DO" "TO DO"
+* marketingAuthorisationHolder 0..1 string "TO DO" "TO DO"
+* productClassification 0..1 BackboneElement "TO DO" "TO DO"
+  * atc 0..1 string "TO DO" "TO DO"
+* routeOfAdministration  0..1 string "TO DO" "TO DO"
+* administrableDoseForm 0..1 string "TO DO" "TO DO"
+* unitOfPresentation 0..1 string "TO DO" "TO DO"
+* authorisedPharmaceuticalForm 0..1 string "TO DO" "TO DO"
+
+* packSize 0..1 string "TO CHECK AGAINST PREVIOUS MODEL" "TO DO"
+* container 0..1 BackboneElement "TO CHECK AGAINST PREVIOUS MODEL" "TO DO"
+  * type 0..1 string "TO DO" "TO DO"
+  * quantity 0..1 string "TO DO" "TO DO"
+  * content 0..* BackboneElement "TO DO" "TO DO"
+    * type 0..1 string "TO DO" "TO DO"
+    * quantity 0..1 string "TO DO" "TO DO"
+
+* manufacturedItem 0..1 BackboneElement "TO CHECK AGAINST PREVIOUS MODEL" "TO DO"
+  * UnitOfPresentation 0..1 string "TO DO" "TO DO"
+  * ItemQuantity 0..1 string "TO DO" "TO DO"
+  * DoseForm 0..1 string "TO DO" "TO DO"
+
+* composition 0..1 BackboneElement "TO DO" "TO DO"
+  * ingredient 0..* BackboneElement "TO DO" "TO DO"
+    * ingredientRole 0..1 string "TO DO" "TO DO" 
+    * substance  0..1 string "TO DO" "TO DO"
+    * strength 0..1 BackboneElement "TO DO" "TO DO"
+      * numerator 0..1 string "TO DO" "TO DO"
+      * denominator 0..1 string "TO DO" "TO DO"
+    * referenceStrength 0..1 BackboneElement "TO DO" "TO DO"
+      * numerator 0..1 string "TO DO" "TO DO"
+      * denominator 0..1 string "TO DO" "TO DO"
+
+
