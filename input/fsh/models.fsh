@@ -1,4 +1,5 @@
 Logical: MinimumProductModel
+Id: MinimumProductModel
 Title: "Minimum Attribute List for product specification"
 
 * identifier 0..* BackboneElement "The identifier(s) for the medication" "The business identifier(s) for the medication"
@@ -41,3 +42,9 @@ Title: "Minimum Attribute List for product specification"
       * denominator 0..1 string "TO DO" "TO DO"
 
 
+* package 0..1 BackboneElement "TO DO" "TO DO"
+  * type 0..1 code "TO DO" "TO DO"
+    * ^binding.strength = #required
+  * amount 0..1 Quantity "TO DO" "TO DO"
+  * content 0..1 BackboneElement "TO DO" "TO DO"
+    * ^contentReference = "MinimumProductModel.package"
