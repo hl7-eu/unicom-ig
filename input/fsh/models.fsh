@@ -47,4 +47,4 @@ Title: "Minimum Attribute List for product specification"
     * ^binding.strength = #required
   * amount 0..1 Quantity "TO DO" "TO DO"
   * content 0..1 BackboneElement "TO DO" "TO DO"
-    * ^contentReference = "MinimumProductModel.package"
+    * ^contentReference = "http://hl7.eu/fhir/ig/unicom/StructureDefinition/MinimumProductModel#MinimumProductModel.package"
