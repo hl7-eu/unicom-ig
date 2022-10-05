@@ -1,0 +1,72 @@
+@startuml
+
+hide circle
+hide stereotype
+
+skinparam class<<BA>> {
+ FontStyle bold
+ BorderColor DarkBlue
+ BackgroundColor LightCyan
+ HeaderBackgroundColor Cyan
+}
+
+skinparam class<<GA>> {
+ FontStyle bold
+ BorderColor DarkGreen
+ BackgroundColor PHYSICAL
+ HeaderBackgroundColor LimeGreen
+}
+
+
+class "ClinicalResource" as CD <<BA>>{
+' |_ **ge**
+}
+
+class "MedicationStatement" as MS <<BA>>{
+  --
+|_ extension
+    |_ relatedMedication 0..*
+      |_ relation 1..1
+      |_ definedMedication 1..1    
+|_ ...
+}
+
+
+class "MedicationRequest" as MR <<BA>>{
+  --
+|_ extension
+    |_ relatedMedication 0..*
+      |_ relation 1..1
+      |_ definedMedication 1..1    
+|_ ...
+}
+
+class "MedicationDispense" as MD <<BA>>{
+  --
+|_ extension
+    |_ relatedMedication 0..*
+      |_ relation 1..1
+      |_ definedMedication 1..1    
+|_ ...
+}
+
+class "DefinedMedication" as DM <<BA>>{
+--
+|_ extension
+  |_ drugCharacteristic 0..*
+    |_ extension
+      |_ characteristicType 1..1  
+        |_ characteristicValue 1..1    
+}
+
+
+
+CD <|-- MS
+CD <|-- MR
+CD <|-- MD
+
+MS *-- DM
+MR *-- DM
+MD *-- DM
+
+@enduml
