@@ -45,3 +45,10 @@ Description: "Time stamp"
 * . ^short = " TimeStamp "
 * . ^definition = "Time stamp"
 
+
+Profile: DT
+Parent: Element
+Description: "Date"
+* . ^short = " Date "
+* . ^definition = "Date"
+

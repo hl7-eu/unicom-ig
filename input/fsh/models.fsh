@@ -20,30 +20,111 @@ Logical: FullMedicinalProduct
     * nameUsage 0..1 class "Countries and languages where the name is used"
       * country 1..1 ST "Country - ISO 3166-1-2 or 3166-1-3"
       * language 1..1 ST "Language - IETF BCP 47"
+    * ingredient 1..* class "Ingredient"
+      * role 1..1 CD "Ingredient role"
+      * substance 1..1 II "Substance"
+      * strength 1..* class "Strength"
+        * presentationStrength 0..1 class "Presentation strength"
+          * numerator 1..1 class "Numerator"
+            * comparator 1..1 CD "Comparator"
+            * value 1..1 ST "Value"
+            * unit 1..1 ST "Unit of Measurement"
+          * denominator 1..1 class "Denominator"
+            * value 1..1 ST "Value"
+            * unit 1..1 ST "Unit of Measurement"
+          * unitOfPresentation 0..1 CD "Unit of presentation"
+        * concentrationStrength 0..1 class "Concentration strength"
+          * numerator 1..1 class "Numerator"
+            * comparator 0..1 CD "Comparator"
+            * value 1..1 ST "Value"
+            * unit 1..1 ST "Unit of Measurement"
+          * denominator 1..1 class "Denominator"
+            * value 1..1 ST "Value"
+            * unit 1..1 ST "Unit of Measurement"
+          * unitOfPresentation 0..1 CD "Unit of presentation"
+      * referenceStrength 1..* class "Reference Strength"
+        * presentationStrength 0..1 class "Presentation strength"
+          * numerator 1..1 class "Numerator"
+            * comparator 0..1 CD "Comparator"
+            * value 1..1 ST "Value"
+            * unit 1..1 ST "Unit of Measurement"
+          * denominator 1..1 class "Denominator"
+            * value 1..1 ST "Value"
+            * unit 1..1 ST "Unit of Measurement"
+          * unitOfPresentation 0..1 CD "Unit of presentation"
+        * concentrationStrength 0..1 class "Concentration strength"
+          * numerator 1..1 class "Numerator"
+            * comparator 0..1 CD "Comparator"
+            * value 1..1 ST "Value"
+            * unit 1..1 ST "Unit of Measurement"
+          * denominator 1..1 class "Denominator"
+            * value 1..1 ST "Value"
+            * unit 1..1 ST "Unit of Measurement"
+          * unitOfPresentation 0..1 CD "Unit of presentation"
 
-* marketingAuthorization 1..* class "Marketing Authorization(s) for the product"
+  * marketingAuthorization 1..* class "Marketing Authorization(s) for the product"
+    * MarketingAuthorisationNumber 1..* II "MAN"
+    * type 0..1 CD "Type"
+    * region 0..* CD "Region"
+    * marketingAuthorisationStatus 0..1 CD "MAStatus"
+    * date 0..1 DT "date"
+    * marketingAuthorisationHolder 0..1 II "MAH"
+    * location 1..1 II "Location"
+    * organisation 0..1 II "Organization"
+    * name 1..1 ST "Name"
+
+  * pharmaceuticalProduct 1..* class "Administrable/pharmaceutical product"
+    * identifier 0..* II "Identifier"
+    * phpid 0..* II "Pharmaceutical Product ID (PhPID)"
+    * nationalId 0..* II "National ID"
+    * administrableDoseForm 1..1 CD "Administrable Dose Form"
+    * unitOfPresentation 1..1 CD "Unit of Presentation"
+    * routeOfAdministration 1..1 CD "Route of administration"
+    * manufacturedItem 1..* class "ManufacturedItem"
+      * manufacturedDoseForm 1..1 CD "Manufactured Dose Form"
+      * ingredient 1..* class "Ingredient"
+        * role 1..1 CD "Ingredient role"
+        * substance 1..1 II "Substance"
+        * strength 1..* class "Strength"
+          * presentationStrength 0..1 class "Presentation strength"
+            * numerator 1..1 class "Numerator"
+              * comparator 1..1 CD "Comparator"
+              * value 1..1 ST "Value"
+              * unit 1..1 ST "Unit of Measurement"
+            * denominator 1..1 class "Denominator"
+              * value 1..1 ST "Value"
+              * unit 1..1 ST "Unit of Measurement"
+            * unitOfPresentation 0..1 CD "Unit of presentation"
+          * concentrationStrength 0..1 class "Concentration strength"
+            * numerator 1..1 class "Numerator"
+              * comparator 0..1 CD "Comparator"
+              * value 1..1 ST "Value"
+              * unit 1..1 ST "Unit of Measurement"
+            * denominator 1..1 class "Denominator"
+              * value 1..1 ST "Value"
+              * unit 1..1 ST "Unit of Measurement"
+            * unitOfPresentation 0..1 CD "Unit of presentation"
+        * referenceStrength 1..* class "Reference Strength"
+          * presentationStrength 0..1 class "Presentation strength"
+            * numerator 1..1 class "Numerator"
+              * comparator 0..1 CD "Comparator"
+              * value 1..1 ST "Value"
+              * unit 1..1 ST "Unit of Measurement"
+            * denominator 1..1 class "Denominator"
+              * value 1..1 ST "Value"
+              * unit 1..1 ST "Unit of Measurement"
+            * unitOfPresentation 0..1 CD "Unit of presentation"
+          * concentrationStrength 0..1 class "Concentration strength"
+            * numerator 1..1 class "Numerator"
+              * comparator 0..1 CD "Comparator"
+              * value 1..1 ST "Value"
+              * unit 1..1 ST "Unit of Measurement"
+            * denominator 1..1 class "Denominator"
+              * value 1..1 ST "Value"
+              * unit 1..1 ST "Unit of Measurement"
+            * unitOfPresentation 0..1 CD "Unit of presentation"
 
 
+      
 
 
-
-
-// Package for  0..* (Reference Medicinal Product)
-// Package description 0..1
-//   Description language 0..1
-// Package size 1..*
-//   Value 1..1
-//   Unit 1..1
-// Marketing Status 0..*
-//   Country 1..1
-//   Status 1..1
-// Package 1..1
-//   Package type 0..1
-//   Package quantity 0..1
-//   Package material 0..*
-//   Inner package: Repeat Package 0..*
-//   Contained item 0..* 
-//     Item: Reference Manufactured Item 1..1
-//     Item amount 1..1
-//       Value (number) 1..1
-//       Unit 0..1
