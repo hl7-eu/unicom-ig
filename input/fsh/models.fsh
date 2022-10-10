@@ -112,7 +112,7 @@ Description: "Medicinal Product"
       * organisationId 0..1 II "Organization identifier"
       * mahName 1..1 ST "Marketing authorisation holder's name"
       //Local representative currently not included, but probably needed in several countries
-  * Marketing Status 0..* class "Marketing status"
+  * marketingStatus 0..* class "Marketing status"
     * country 1..1 CD "Country"
     * status 1..1 CD "Status"
   * package 1..1 class "Package"
