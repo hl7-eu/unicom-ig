@@ -2,39 +2,40 @@ Logical: FullMedicinalProduct
 Title: "Medicinal Product"
 Description: "Medicinal Product"
 
-* mpId 1..1 II "Medicinal Product Identifier"
-* pmsId 0..1 II "PMS Identifier"
-* nationalId 0..* II "national/other identifier"
-* domain 1..1 CD "Domain"
+* mpId 1..1 II "Medicinal Product Identifier (MPID)"
+* pmsId 0..1 II "EMA PMS Identifier"
+* nationalId 0..* II "National/other identifier"
+* domain 1..1 CD "Domain (human/veterinary)"
 // we'll handle the codesystem identification next
-* status 0..1 CD "Status" // is this needed?
-* legalStatusOfSupply 0..1 CD "Legal status of Supply"
-* authorisedDoseForm 1..1 CD "Authorised Dose Form"
+* legalStatusOfSupply 1..1 CD "Legal status of supply"
+* authorisedDoseForm 1..1 CD "Authorised dose form"
     // what's with this valueset?
-* classificationATC 0..* CD "ATC Classification"
-* name 1..1 class "Name"
-  * fullName 1..1 ST "Full Name"
-  * nameParts 0..1 class "Name parts"
+* classificationATC 1..1 CD "ATC Classification"
+* name 1..* class "Name"
+  * fullName 1..1 ST "Full name"
+  * nameParts 0..3 class "Name parts"
     * inventedName 1..1 ST "Invented name part"
-    * strength 0..1 ST "Strength dose form part"
-    * doseForm 0..1 ST "Dose form name part"
+    * strength 0..1 ST "Strength part"
+    * doseForm 0..1 ST "Dose form part"
   * nameUsage 0..* class "Countries and languages where the name is used"
-    * jurisdiction 1..1 ST "Country - ISO 3166-1-2 or 3166-1-3"
-    * language 1..1 ST "Language - IETF BCP 47" // this is unclear why this is a repeated flat structure. 
+    * jurisdiction 1..1 ST "Country"
+    //ISO 3166-1-2 or 3166-1-3  or EMA SPOR 
+    * language 1..1 ST "Language" 
+    // IETF BCP 47 this is unclear why this is a repeated flat structure. 
 
 
-* marketingAuthorization 1..* class "Marketing Authorization(s) for the product"
-  * MarketingAuthorisationNumber 1..* II "MAN"
-  * type 0..1 CD "Type"
-  * region 0..* CD "Region"
-  * marketingAuthorisationStatus 0..1 CD "MAStatus"
-  * date 0..1 DT "date"
-  * marketingAuthorisationHolder 0..1 II "MAH"
-  * location 1..1 II "Location"
-  * organisation 0..1 II "Organization"
-  * name 1..1 ST "Name"
+* marketingAuthorization 0..* class "Marketing Authorization(s) for the product"
+  * marketingAuthorisationNumber 1..* II "Marketing authorisation number"
+  * region 1..1 CD "Region"
+  * marketingAuthorisationStatus 1..1 CD "Marketing authorisation status"
+  * date 0..1 DT "Status date"
+  * marketingAuthorisationHolder 1..1 II "MAH"
+  * locationId 1..1 II "Location identifier"
+  * organisationId 0..1 II "Organization identifier"
+  * mahName 1..1 ST "Marketing authorisation holder's name"
+//Local representative currently not included, but probably needed in several countries
 
-* pharmaceuticalProduct 1..* class "Administrable/pharmaceutical product"
+* pharmaceuticalProduct 1..* class "Pharmaceutical/administrable product"
   * identifier 0..* II "Identifier"
   * phpid 0..* II "Pharmaceutical Product ID (PhPID)"
   * nationalId 0..* II "National ID"
@@ -99,7 +100,7 @@ Description: "Medicinal Product"
             * unit 1..1 ST "Unit of Measurement"
           * denominator 1..1 class "Denominator"
             * value 1..1 ST "Value"
-            * unit 1..1 ST "Unit of Measurement" // which is the unit of presentation, IF the type = presentation
+            * unit 1..1 ST "Unit" // which is the unit of presentation, IF the type = presentation
 
 */
 
