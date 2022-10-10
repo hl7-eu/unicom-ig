@@ -27,7 +27,7 @@ Description: "Medicinal Product"
     // IETF BCP 47 this is unclear why this is a repeated flat structure. 
 
 
-* marketingAuthorization 0..* class "Marketing Authorization(s) for the product"
+* marketingAuthorization 0..* class "Marketing Authorization for the product"
   * marketingAuthorisationNumber 1..* II "Marketing authorisation number"
   * region 1..1 CD "Region"
   * marketingAuthorisationStatus 1..1 CD "Marketing authorisation status"
@@ -118,7 +118,17 @@ Description: "Medicinal Product"
   * packageSize 1..* class "Package size"
     * value 1..1 QT "Value"
     * unit 1..1 CD "Unit"
-//  * Marketing Status 0..*
+  * marketingAuthorization 0..* class "Marketing Authorization on package level"
+    * marketingAuthorisationNumber 1..* II "Marketing authorisation number"
+    * region 1..1 CD "Region"
+    * marketingAuthorisationStatus 1..1 CD "Marketing authorisation status"
+    * date 0..1 DT "Status date"
+    * marketingAuthorisationHolder 1..1 class "Marketing authorisation holder"
+      * locationId 1..1 II "Location identifier"
+      * organisationId 0..1 II "Organization identifier"
+      * mahName 1..1 ST "Marketing authorisation holder's name"
+      //Local representative currently not included, but probably needed in several countries
+  //* Marketing Status 0..*
   * country 1..1 CD "Country"
   * package 1..1 class "Package"
     * packageType 0..1 CD "Package type"
