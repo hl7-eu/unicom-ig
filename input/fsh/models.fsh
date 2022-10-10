@@ -126,8 +126,7 @@ Description: "Medicinal Product"
       * amount 1..1 class "Amount of inner packages inside the parent package e.g. number of blisters in the box, if this inner package is a blister"
         * value 1..1 QT "Value"
         * unit 0..1 CD "unit"
-      * innerPackage 0..* class "Inner Package" // this is mutually exclusive to the manufacturedItem
-      * innerPackage ^contentReference = "#FullMedicinalProduct.packageProductDefinition.package.innerPackage"
+      * innerPackage contentReference https://build.fhir.org/ig/hl7-eu/unicom-ig/branches/mpd-r5/FullMedicinalProduct#FullMedicinalProduct.packageProductDefinition.package.innerPackage  "Inner Package" // this is mutually exclusive to the manufacturedItem
 
       * containedItem 0..* class "The content of the inner package"
         * amount 1..1 class "Amount of manufacturedItems inside the parent package e.g. number of blisters in the box, if this inner package is a blister"
