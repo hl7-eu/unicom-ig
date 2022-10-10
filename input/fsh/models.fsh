@@ -127,7 +127,7 @@ Description: "Medicinal Product"
         * value 1..1 QT "Value"
         * unit 0..1 CD "unit"
       * innerPackage 0..* class "Inner Package" // this is mutually exclusive to the manufacturedItem
-//        * ^contentReference = "#innerPackage"
+        * ^contentReference = "#innerPackage"
       * containedItem 0..* class "The content of the inner package"
         * amount 1..1 class "Amount of manufacturedItems inside the parent package e.g. number of blisters in the box, if this inner package is a blister"
           * value 1..1 QT "Value"
