@@ -45,7 +45,8 @@ Description: "Medicinal Product"
   * administrableDoseForm 1..1 CD "Administrable Dose Form"
   * unitOfPresentation 1..1 CD "Unit of presentation"
   * routeOfAdministration 0..* CD "Route of administration"
-
+  * producedFrom 0..* R "Reference to manufactured item which the ph. product consists of"
+  //For Jose to think how to handle
   * ingredient 1..* class "Ingredient"
     * role 1..1 CD "Ingredient role"
     * substance 1..1 II "Substance"
