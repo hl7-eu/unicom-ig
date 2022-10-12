@@ -18,9 +18,9 @@ Title:     "Dose Form Ontology Code System"
     * ^designation[0].language = #en
     * ^designation[=].value = "Capsule"
     * ^designation[+].language = #nl-BE
-    * ^designation[=].value = "X"
+    * ^designation[=].value = "Capsule"
     * ^designation[+].language = #fr-BE
-    * ^designation[=].value = "Y"
+    * ^designation[=].value = "Capsule"
 
   * #10220000
       "Tablet"
@@ -28,18 +28,25 @@ Title:     "Dose Form Ontology Code System"
     * ^designation[0].language = #en
     * ^designation[=].value = "Tablet"
     * ^designation[+].language = #nl-BE
-    * ^designation[=].value = "X"
+    * ^designation[=].value = "Tablet"
     * ^designation[+].language = #fr-BE
-    * ^designation[=].value = "Y"
+    * ^designation[=].value = "Comprimé"
 
     * #10318000
       "Sublingual tablet"
       "Sublingual tablet"
       * ^designation[0].language = #en
       * ^designation[=].value = "Sublingual tablet"
+      * ^designation[0].language = #en
+      * ^designation[=].value = "Sublingual Tablet"
+      * ^designation[+].language = #nl-BE
+      * ^designation[=].value = "Tablet voor sublinguaal gebruik"
+      * ^designation[+].language = #fr-BE
+      * ^designation[=].value = "Comprimé sublingual"
 
 
 ValueSet: DoseFormOntologyCS
-Id: dose-form-ontology-cs
+Id: dose-form-ontology-vs
 Title: "Dose Form ontology Value Set"
 * include codes from system DoseFormOntologyCS
+
