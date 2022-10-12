@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  fhir-server:
+    image: hapiproject/hapi:latest
+    ports:
+      - "8084:8080"
+    environment:
+      - spring.config.location=http://build.fhir.org/ig/hl7-eu/unicom-ig/branches/r4/application.yaml
+  ember:
+    image: jkiddo/ember:latest
+    environment:
+      - location=http://build.fhir.org/ig/hl7-eu/unicom-ig/branches/r4/package.tgz
+      - serverBase=http://fhir-server:8080/fhir
+
+
+
