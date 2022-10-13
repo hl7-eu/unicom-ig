@@ -70,28 +70,6 @@ Description: "Medicinal Product"
             * value 1..1 ST "Value"
             * unit 1..1 ST "Unit" // which is the unit of presentation, IF the type = presentation
 
-/*
-      * strengthType 0..1 class "Presentation strength"
-      * numerator 1..1 class "Numerator"
-        * comparator 1..1 CD "Comparator"
-        * value 1..1 ST "Value"
-        * unit 1..1 ST "Unit of measurement"
-      * denominator 1..1 class "Denominator"
-        * value 1..1 ST "Value"
-        * unit 1..1 ST "Unit" // which is the unit of presentation, IF the type = presentation
-        * referenceStrength 1..* class "Reference Strength"
-          * numerator 1..1 class "Numerator"
-            * comparator 1..1 CD "Comparator"
-            * value 1..1 ST "Value"
-            * unit 1..1 ST "Unit of measurement"
-          * denominator 1..1 class "Denominator"
-            * value 1..1 ST "Value"
-            * unit 1..1 ST "Unit" // which is the unit of presentation, IF the type = presentation
-
-*/
-
-
-
 * packagedProductDefinition 1..* class "Packaged product"
   * identifier 0..* class "Package identifier"
     * pcid 1..1 II "Packaged medicinal product ID (PCID)"
@@ -119,12 +97,12 @@ Description: "Medicinal Product"
     * packageType 1..1 CD "Package type"
     * quantity 1..1 QT "Package quantity" //always 1 for the outer package
     * material 0..* CD "Package material"
-//Inner package: Repeat Package 0..*
     * innerPackage 0..* class "Inner Package"
       * containedItem 0..* class "The content of the inner package"
         * amount 1..1 class "Amount of manufacturedItems (solid) or size of the manufactured item (liquid)"
           * value 1..1 QT "Value"
           * unit 0..1 CD "Unit"
+        * containedPackage 0..* contentReference http://unicom-project.eu/fhir/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.packagedProductDefinition.package "Inner Packages"
         * manufacturedItem 1..* class "Manufactured item" // this can only be there if there are no inner package
           * manufacturedDoseForm 1..1 CD "Manufactured dose form"
           * unitOfPresentation 1..1 CD "Unit of presentation"
