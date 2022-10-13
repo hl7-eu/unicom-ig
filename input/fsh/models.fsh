@@ -1,3 +1,13 @@
+Invariant:   itemcontent-1
+Description: "containedItem.containedPackage or containedItem.manufacturedItem SHALL be present, but not both"
+Expression:  "containedPackage.exists() implies manufacturedItem.exists().not()"
+Severity:    #error
+
+//FullMedicinalProduct.packagedProductDefinition.package.innerPackage.containedItem
+
+
+
+
 Logical: FullMedicinalProduct
 Title: "Medicinal Product"
 Description: "Medicinal Product"
@@ -102,6 +112,8 @@ Description: "Medicinal Product"
         * amount 1..1 class "Amount of manufacturedItems (solid) or size of the manufactured item (liquid)"
           * value 1..1 QT "Value"
           * unit 0..1 CD "Unit"
+        * obeys itemcontent-1
+
         * containedPackage 0..* contentReference http://unicom-project.eu/fhir/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.packagedProductDefinition.package "Inner Packages"
         * manufacturedItem 1..* class "Manufactured item" // this can only be there if there are no inner package
           * manufacturedDoseForm 1..1 CD "Manufactured dose form"
