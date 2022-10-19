@@ -1,0 +1,72 @@
+@startuml
+
+title **Option 1: Attribute-based dispense and substitution (PoC, based on ontologies)**\n
+
+skinparam actorstyle awesome
+
+
+box PT #efe
+participant "Prescription\nSystem" as PP
+end box
+
+box Data repositories #def
+participant "MPD (PT)" as MPD1
+participant "eP" as EP
+participant "MPD(IT)" as MPD2
+end box
+
+
+box IT #fee
+'actor "Prescriber" as DR
+participant "Dispensing\nSystem" as DIS
+
+end box
+
+
+group Ensure there's a eHDSI-equivalent prescription 
+-> EP : **1. Enter prescription compatible with eHDSI and IDMP info**\n[[http://server{}]]
+end
+
+
+...
+group dispense
+DIS -> EP : **2. Get xborder prescription with standard attributes**\n [[http://server{GET /MedicationRequest?patient=x} TRANSACTION 1 ]]
+' - Amlodipine oral 5 mg [21-60]
+group Find exact matching product
+DIS -> DIS: **3. Extract product info**
+DIS -> MPD2: **4. Get exact match**\n[[http://server{GET /MedicationRequest?patient=x} TRANSACTION 2 ]]
+end
+
+...
+group search equivalents (based on ontology)
+alt use dose form equivalents?
+'DIS -> MPD2: **6. Get "equivalent" dose forms**\n[[http://server{} POST ValueSet/$expand ]]
+DIS -> MPD2: **5. Get "equivalent" dose forms**\n[[http://server{GET /MedicationRequest?patient=x} TRANSACTION 3 ]]
+activate DIS
+end
+
+alt Search substance equivalents?
+DIS -> MPD2: **5. Get "equivalent" substances**\n[[http://server{GET /MedicationRequest?patient=x} TRANSACTION 4 ]]
+end
+DIS -> MPD2: **6. Search "equivalent" matches**\n[[http://server{GET /MedicationRequest?patient=x} TRANSACTION 5 ]]
+
+end
+
+DIS -> DIS: Dispense
+
+DIS -> EP: Register dispense\n[[http://server{GET /MedicationRequest?patient=x} TRANSACTION 6 ]]
+deactivate DIS
+end
+
+legend 
+Notes: 
+**1.** The details of the cross-border actors and activities are summarised in this diagram. 
+The exact approach in terms of synchronicity, content details etc. is still to be defined elsewhere.
+**2.** The product attributes, terminologies, clinical repositories will normally be different server instances. 
+This specification aims at demonstrating the complete flow and therefore is agnostic of the target architecture.
+end legend
+
+hide footbox
+
+
+@enduml

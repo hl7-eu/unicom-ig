@@ -15,10 +15,10 @@ Accept: application/json+fhir
 ### 
 
 
-### 2. Get all codes that are under a given dose form
+### TRANSACTION 3. Get all codes that are under a given dose form
 
 @doseform = "10220000" 
-@doseform = "20053000"
+##@doseform = "20053000"
 
 POST {{host}}/ValueSet/$expand HTTP/1.1
 Accept: application/json+fhir
@@ -64,3 +64,7 @@ Content-Type: application/json+fhir
         }
     ]
 }
+
+### TRANSACTION 8
+
+GET {{host}}/MedicationKnowledge?dose-form=10318000,10220000
