@@ -20,6 +20,7 @@ Alias: $100000072052 = https://spor.ema.europa.eu/rmswi/#/lists/100000072052/ter
 Alias: $100000073346 = https://spor.ema.europa.eu/rmswi/#/lists/100000073346/terms // Packaging
 Alias: $200000003199 = https://spor.ema.europa.eu/rmswi/#/lists/200000003199/terms // Material
 Alias: $100000073343 = https://spor.ema.europa.eu/rmswi/#/lists/100000073343/terms // Shelf Life Type
+Alias: $BCP47 = http://hl7.org/fhir/ValueSet/languages // FHIR languages value set //JCT:Done
 
 Alias: $sms = https://spor.ema.europa.eu/v2/SubstanceDefinition // EMA SPOR Substance Management System
 
@@ -84,7 +85,6 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * ^short = "Authorised dose form for the product"
   * ^definition = "Authorised dose form for the whole product. As applicable in one of the SPOR RMS list Combined pharmaceutical dose form, Pharmaceutical dose form, Combined term, Combination Package"
 
-// It complains about classification, I don't understand what its problem is I need to make it 1..*.
 * classification 1..*
 //  * coding.system = $100000093533 // TODO: or $who-atc
   * ^slicing.discriminator.type = #pattern
@@ -97,6 +97,15 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * coding.system = $100000093533
   * ^short = "ATC code for the product. Coded with EMA or WHO code."
 //TO DO: Not sure if I can restrict so that one coding has to be with EMA code and the other one with real ATC code. Plus I need to allow other classifications besides ATC.
+// JCT: You can add slices to classification.coding, like below (also see what I did for country and language). But should be clear which part you are slicing. The classification or the coding of the classification. TBD
+/*
+  * coding 
+    * ^slicing.discriminator.type = #pattern
+    * ^slicing.discriminator.path = "system"
+    * ^slicing.rules = #open
+    * ^short = "ATC or other classification"
+*/
+
 
 * name
   * productName 1..1
@@ -114,9 +123,36 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * part[invented].type = $220000000000#220000000002 "Invented name part"
   * part[strength].type = $220000000000#220000000004 "Strength part"
   * part[doseForm].type = $220000000000#220000000005 "Pharmaceutical dose form part"
-  * usage
+/*  * usage
     * country.coding.system = $100000000002 //TO DO: can I still use different codings here? ISO and EMA? How to do that?
-    * language.coding.system = $100000072057
+*/
+//JCT: Here's how - slicing country  and languate in 2 slices each
+  * usage
+    * country.coding
+      * ^slicing.discriminator.type = #pattern
+      * ^slicing.discriminator.path = "system"
+      * ^slicing.rules = #open
+      * ^short = "EMA or ISO codes for country"
+    * country.coding contains
+        ema 1..1 and
+        iso 1..1
+    * country.coding[ema]
+      * system = $100000000002
+    * country.coding[iso]
+      * system = $100000093533
+
+    * language.coding
+      * ^slicing.discriminator.type = #pattern
+      * ^slicing.discriminator.path = "system"
+      * ^slicing.rules = #open
+      * ^short = "EMA or ISO codes for country"
+    * language.coding contains
+        ema 1..1 and
+        bcp 1..1
+    * language.coding[ema]
+      * system = $100000072057
+    * language.coding[bcp]
+      * system = $BCP47
 
 
 // PROFILE: Regulated Authorisation
@@ -130,6 +166,7 @@ Description: """Regulated Authorization profile defines the Marketing Authorisat
   * ^short = "Marketing authorisation number"
   * system = "http://ema.europa.eu/fhir/marketingAuthorizationNumber" // this is actually wrongish as the MA number may not be unique across EU
 
+* subject only Reference(PPLMedicinalProductDefinition or PPLPackagedProductDefinition) //JCT:Done
 * subject 1..1
   * ^short = "Reference to the medicinal product or a single package, depending on how the MA has been issued"
   // TO DO: Reference to PPLMedicinalProductDefinition or PPLPackagedProductDefinition
@@ -148,8 +185,10 @@ Description: """Regulated Authorization profile defines the Marketing Authorisat
   * ^short = "Issue/changing date of the marketing authorisation"
 
 * holder 1..1
+* holder only Reference(PPLOrganization) //JCT:Done
 //  * identifier.system = $loc-id 
 // I can't do the thing above, right? I will have to create PPLOrganization and reference that?
+//If you use literal references, yes. If all you want to do is an identifier, then you can do this and constrain the identifier reference. TBD.
 
 // PROFILE: Manufactured Item Definition
 Profile: PPLManufacturedItemDefinition
@@ -179,6 +218,8 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 * formOf 1..*
   * ^short = "Reference to the Medicinal Product"
   // TO DO: Add reference to PPLMedicinalProductDefinition
+//* formOf only Reference(PPLManufacturedItemDefinition)  //JCT:Done
+// OOPS
 
 * administrableDoseForm 1..1
   * coding.system = $200000000004
@@ -191,6 +232,7 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 * producedFrom
   * ^short = "References to manufactured items that are used in the preparation of this administrable product"
 // TO DO: add reference to PPLManufacturedItemDefinition
+* producedFrom only Reference(PPLManufacturedItemDefinition)  //JCT:Done
 
 //* routeOfAdministration
 //  * coding.system = $100000073345
@@ -205,10 +247,26 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
 * for 1..*
   * ^short = "Reference to the medicinal product, pharmaceutical product and/or manufactured item where the ingredient is used"
 // TO DO: Reference to those three things
+//* for only Reference(PPLMedicinalProductDefinition, PPLAdministrableProductDefinition, PPLManufacturedItemDefinition)  //JCT:Done
+//OOPS
 
 * role = $100000072050#100000072072 "Active" // I would, just in case, turn this into default rather than fixed
 
 * substance
-//  * code.coding.system = $sms 
+  * code.concept.coding.system = $sms 
 // TO DO: the thing above is codeableReference, not sure how to handle it here
   * ^short = "Substance code from EMA SMS"
+
+//JCT: Dummy profiles
+Profile: PPLPackagedProductDefinition
+Parent: PackagedProductDefinition
+Id: PPLPackagedProductDefinition
+Title: "PPL Packaged Product Definition profile"
+Description: """Packaged Product Definition"""
+
+
+Profile: PPLOrganization
+Parent: Organization
+Id: PPLOrganization
+Title: "PPL Organization"
+Description: """Organization"""
