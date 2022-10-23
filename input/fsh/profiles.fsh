@@ -255,12 +255,103 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
 // TO DO: the thing above is codeableReference, not sure how to handle it here
   * ^short = "Substance code from EMA SMS"
 
-//JCT: Dummy profiles
+  * strength 1..*
+    * presentationRatio
+      * ^short = "Strength per unit of presentation (10mg/vial or 10mg/0.5ml where 0.5ml is the size of the vial)"
+      //* numerator.comparator.coding.system = $100000000008 // TO DO: not easily extendable, what to do with it?
+      * numerator.system 1..1
+      * numerator.system = $100000110633
+      * denominator.system 1..1
+      * denominator.system = $200000000014 // TO DO: or $100000110633
+      
+    * concentrationRatio
+      * ^short = "Strength per unit of measurement (20mg/1ml)"
+      //* numerator.comparator.coding.system = $100000000008 // TO DO: not easily extendable, what to do with it?
+      * numerator.system 1..1
+      * numerator.system = $100000110633
+      * denominator.system 1..1
+      * denominator.system = $100000110633
+
+    * referenceStrength
+      * ^short = "Strenth expressed in terms of a reference substance; concentration and presentation strength or reference strength type not distinguished."
+      * substance 1..1
+      //  * code.coding.system = $sms 
+      // TO DO: the thing above is codeableReference, not sure how to handle it here
+        * ^short = "Substance code from EMA SMS" 
+      * strengthRatio
+        * numerator.system 1..1
+        * numerator.system = $100000110633
+        * denominator.system 1..1
+        * denominator.system = $200000000014 // TO DO: or $100000110633
+
+        
+// PROFILE: Packaged Product
 Profile: PPLPackagedProductDefinition
 Parent: PackagedProductDefinition
 Id: PPLPackagedProductDefinition
-Title: "PPL Packaged Product Definition profile"
-Description: """Packaged Product Definition"""
+Title: "PPL Packaged Product profile"
+Description: """Packaged Product"""
+
+* identifier
+  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.path = "system"
+  * ^slicing.rules = #open
+  * ^short = "Identifier for the packaged product: PCID, national ID, or other"
+  * ^definition = "Identifier for the packaged product: PCID, national code or other."
+* identifier contains
+  pcid 1..1
+//  * otherid 0..*   //TO DO: What to do about other slices?
+* identifier[pcid]
+  * system = "http://ema.europa.eu/example/pcid"
+  * ^short = "PCID for the product. Consists of MPID + unique package code. For the same product PCID is different if the package material is different."
+
+* packageFor only Reference(PPLMedicinalProductDefinition)
+* packageFor 1..*
+
+* containedItemQuantity 1..*
+  * system = $200000000014
+  * ^short = "Pack size. Repeated for combination packages."
+
+* description 1..1
+// TO DO description language as an extension. system = $100000072057
+
+* legalStatusOfSupply 1..1
+  * ^short = "Legal status of supply on the packaged product level."
+  * ^definition = "Legal status of supply on the packaged product level. The same information can be repeated/differentiated on the medicinal product level"
+  * code.coding.system = $100000072051 
+  * jurisdiction.coding.system = $100000000002
+
+* marketingStatus
+  * country 1..1
+    * coding.system = $100000000002
+  * status 1..1
+    * coding.system = $100000072052
+
+* packaging 1..1
+  * type 1..1
+    * ^short = "Container type"
+    * coding.system = $100000073346
+  
+  * quantity 1..1
+  
+  * material
+    * coding.system = $200000003199
+ 
+ /*
+ // TO DO: I don't understand why it doesn't recognise shelfLifeStorage attribute. 
+  * shelfLifeStorage
+    * type 1..1
+    * type.coding.system = $100000073343
+    * period 1..1
+ */
+  
+  * containedItem
+    * ^short = "An item (inner package or manufactured item) within the packaging"
+// TO DO: fix this    * item only CodeableReference(PPLPackagedProductDefinition, PPLManufacturedItemDefinition)
+    * amount
+      * ^short = "Number of the manufactured items (e.g. tablets) in this package layer or the amount of manufactured item (e.g. 20 g) in the unit of presentation defined in manufactured item definition"
+// TO DO: amount.system = $200000000014 or $100000110633
+
 
 
 Profile: PPLOrganization
