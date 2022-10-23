@@ -218,8 +218,7 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 * formOf 1..*
   * ^short = "Reference to the Medicinal Product"
   // TO DO: Add reference to PPLMedicinalProductDefinition
-//* formOf only Reference(PPLManufacturedItemDefinition)  //JCT:Done
-// OOPS
+* formOf only Reference(PPLMedicinalProductDefinition)  //JCT:Done
 
 * administrableDoseForm 1..1
   * coding.system = $200000000004
@@ -247,8 +246,7 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
 * for 1..*
   * ^short = "Reference to the medicinal product, pharmaceutical product and/or manufactured item where the ingredient is used"
 // TO DO: Reference to those three things
-//* for only Reference(PPLMedicinalProductDefinition, PPLAdministrableProductDefinition, PPLManufacturedItemDefinition)  //JCT:Done
-//OOPS
+* for only Reference(PPLMedicinalProductDefinition or PPLAdministrableProductDefinition or PPLManufacturedItemDefinition)  //JCT:Done
 
 * role = $100000072050#100000072072 "Active" // I would, just in case, turn this into default rather than fixed
 
