@@ -1,3 +1,4 @@
+/*
 Instance: exampleMPD
 InstanceOf: PPLMedicinalProductDefinition
 
@@ -7,3 +8,4 @@ InstanceOf: PPLMedicinalProductDefinition
 
 * name.productName = "whatever"
 * name.part[invented].part = "invented name"
+*/
