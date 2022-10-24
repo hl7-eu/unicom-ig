@@ -75,7 +75,7 @@ Content-Type: application/json+fhir
                                     "value": {{doseform}}
                                 }
                             ],
-                            "system": "http://medigree.net/fhir/ee/idmp/CodeSystem/dose-form-ontology-cs"
+                            "system": "http://medigree.net/fhir/idmp/CodeSystem/dose-form-ontology-cs"
                         },
                         {
                             "concept": [
@@ -83,7 +83,7 @@ Content-Type: application/json+fhir
                                     "code": {{doseform}}
                                 }
                             ],
-                            "system": "http://medigree.net/fhir/ee/idmp/CodeSystem/dose-form-ontology-cs"
+                            "system": "http://medigree.net/fhir/idmp/CodeSystem/dose-form-ontology-cs"
                         }
 
                     ]
