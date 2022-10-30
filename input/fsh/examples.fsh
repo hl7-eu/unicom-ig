@@ -9,7 +9,7 @@ Usage: #example
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
 * classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
 * classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
-* name.productName = "Agen, 5 mg tabletid "
+* name.productName = "Agen, 5 mg tabletid"
 * name.part[invented].part = "Agen"
 * name.part[strength].part = "5 mg"
 * name.part[doseForm].part = "tabletid"
@@ -77,11 +77,10 @@ InstanceOf: PPLPackagedProductDefinition
 Usage: #example
 * identifier[pcid].value = "EE-100002580-15547-1109887"
 * packageFor = Reference(Agen-5mg-Tablet-EE-MPD)
-* containedItemQuantity.value = 30 
-* containedItemQuantity.code = $200000000014#200000002152 "tablet"
+* containedItemQuantity = 30 $200000000014#200000002152 "tablet"
 * description = "Tabletid on pakendatud PVC/PVDC/Al blistritesse (valged) või PVC/Al blistritesse (valged)."
-  * extension.url = "http://ema.europa.eu/fhir/extension/language"
-  * extension.valueCoding = $100000072057#100000072172 "Estonian"
+//  * extension.url = "http://ema.europa.eu/fhir/extension/language"
+//  * extension.valueCoding = $100000072057#100000072172 "Estonian"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * packaging.type = $100000073346#100000073498 "Box"
@@ -101,11 +100,10 @@ InstanceOf: PPLPackagedProductDefinition
 Usage: #example
 * identifier[pcid].value = "EE-100002580-15547-1109887"
 * packageFor = Reference(Agen-5mg-Tablet-EE-MPD)
-* containedItemQuantity.value = 30 
-* containedItemQuantity.code = $200000000014#200000002152 "tablet"
+* containedItemQuantity = 30 $200000000014#200000002152 "tablet"
 * description = "Tabletid on pakendatud PVC/PVDC/Al blistritesse (valged) või PVC/Al blistritesse (valged)."
-  * extension.url = "http://ema.europa.eu/fhir/extension/language"
-  * extension.valueCoding = $100000072057#100000072172 "Estonian"
+//  * extension.url = "http://ema.europa.eu/fhir/extension/language"
+//  * extension.valueCoding = $100000072057#100000072172 "Estonian"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * packaging.type = $100000073346#100000073498 "Box"
