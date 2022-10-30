@@ -310,7 +310,7 @@ Description: """Packaged Product"""
 * description 1..1
 // TO DO description language as an extension. system = $100000072057
 
-* legalStatusOfSupply 1..1
+* legalStatusOfSupply 0..1
   * ^short = "Legal status of supply on the packaged product level."
   * ^definition = "Legal status of supply on the packaged product level. The same information can be repeated/differentiated on the medicinal product level"
   * code.coding.system = $100000072051 
