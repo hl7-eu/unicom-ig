@@ -25,8 +25,8 @@ Alias: $iso-country = https://www.hl7.org/fhir/valueset-country.html // FHIR Cou
 
 Alias: $sms = https://spor.ema.europa.eu/v2/SubstanceDefinition // EMA SPOR Substance Management System
 
-//Alias: $loc-id = https://spor.ema.europa.eu/v1/locations // EMA OMS Location Identifier
-//Alias: $org-id = https://spor.ema.europa.eu/v1/organisations // EMA OMS Organisation Identifier
+Alias: $loc-id = https://spor.ema.europa.eu/v1/locations // EMA OMS Location Identifier
+Alias: $org-id = https://spor.ema.europa.eu/v1/organisations // EMA OMS Organisation Identifier
 Alias: $who-atc = http://www.whocc.no/atc // WHO ATC
 
 
@@ -345,9 +345,30 @@ Description: """Packaged Product"""
 // TO DO: amount.system = $200000000014 or $100000110633
 
 
-
+// TO DO: I'm not sure we want to use Organisation as a separate resource, but right now it is. See the comment at RegulatedAuthorization
 Profile: PPLOrganization
 Parent: Organization
 Id: PPLOrganization
 Title: "PPL Organization"
 Description: """Organization"""
+
+* identifier 
+  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.path = "system"
+  * ^slicing.rules = #open
+  * ^short = "Identifier for the marketing authorisation holder"
+
+* identifier contains
+  loc 1..1 and
+  org 0..1
+
+* identifier[loc] 
+  * system = $loc-id
+  * ^short = "Location ID from EMA SPOR OMS"
+
+* identifier[org]
+  * system = $org-id
+  * ^short = "Organisation ID from EMA SPOR OMS"
+
+* name 1..1
+  * ^short = "Marketing authorisation holder's name from OMS"
