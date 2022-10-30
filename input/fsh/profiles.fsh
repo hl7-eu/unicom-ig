@@ -20,15 +20,15 @@ Alias: $100000072052 = https://spor.ema.europa.eu/rmswi/#/lists/100000072052/ter
 Alias: $100000073346 = https://spor.ema.europa.eu/rmswi/#/lists/100000073346/terms // Packaging
 Alias: $200000003199 = https://spor.ema.europa.eu/rmswi/#/lists/200000003199/terms // Material
 Alias: $100000073343 = https://spor.ema.europa.eu/rmswi/#/lists/100000073343/terms // Shelf Life Type
-Alias: $BCP47 = http://hl7.org/fhir/ValueSet/languages // FHIR languages value set //JCT:Done
+Alias: $BCP47 = http://hl7.org/fhir/ValueSet/languages // FHIR languages value set
+Alias: $iso-country = https://www.hl7.org/fhir/valueset-country.html // FHIR Country value set based on ISO 3166-1-2
 
 Alias: $sms = https://spor.ema.europa.eu/v2/SubstanceDefinition // EMA SPOR Substance Management System
 
 //Alias: $loc-id = https://spor.ema.europa.eu/v1/locations // EMA OMS Location Identifier
 //Alias: $org-id = https://spor.ema.europa.eu/v1/organisations // EMA OMS Organisation Identifier
 Alias: $who-atc = http://www.whocc.no/atc // WHO ATC
-//Alias: $iso-country = // ISO 3166-1-2
-//Alias: $ietf-language = // IETF BCP 47
+
 
 // PROFILE: Bundle for one full product
 Profile: MPDBundle
@@ -37,6 +37,9 @@ Id: MPDBundle
 Title: "PPL Medicinal Product Bundle profile"
 Description: """Medicinal product with all its relevant data as one bundle, including packages, MA and pharmaceutical product"""
 
+* entry 1..*
+  * fullUrl 1..1
+  * resource 1..1 //TO DO I don't understand the syntax for adding PPLProfiledResource here.
 
 // PROFILE: Medicinal Product Definition
 
@@ -123,10 +126,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * part[invented].type = $220000000000#220000000002 "Invented name part"
   * part[strength].type = $220000000000#220000000004 "Strength part"
   * part[doseForm].type = $220000000000#220000000005 "Pharmaceutical dose form part"
-/*  * usage
-    * country.coding.system = $100000000002 //TO DO: can I still use different codings here? ISO and EMA? How to do that?
-*/
-//JCT: Here's how - slicing country  and languate in 2 slices each
+
   * usage
     * country.coding
       * ^slicing.discriminator.type = #pattern
@@ -139,7 +139,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * country.coding[ema]
       * system = $100000000002
     * country.coding[iso]
-      * system = $100000093533
+      * system = $iso-country
 
     * language.coding
       * ^slicing.discriminator.type = #pattern
