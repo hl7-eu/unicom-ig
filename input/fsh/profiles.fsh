@@ -89,7 +89,6 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * ^definition = "Authorised dose form for the whole product. As applicable in one of the SPOR RMS list Combined pharmaceutical dose form, Pharmaceutical dose form, Combined term, Combination Package"
 
 * classification 1..*
-//  * coding.system = $100000093533 // TODO: or $who-atc
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "coding.system"
   * ^slicing.rules = #open
@@ -97,18 +96,19 @@ Description: """Medicinal Product as defined in ISO IDMP"""
 * classification contains
   atc 1..1
 * classification[atc]
-  * coding.system = $100000093533
-  * ^short = "ATC code for the product. Coded with EMA or WHO code."
-//TO DO: Not sure if I can restrict so that one coding has to be with EMA code and the other one with real ATC code. Plus I need to allow other classifications besides ATC.
-// JCT: You can add slices to classification.coding, like below (also see what I did for country and language). But should be clear which part you are slicing. The classification or the coding of the classification. TBD
-/*
   * coding 
     * ^slicing.discriminator.type = #pattern
     * ^slicing.discriminator.path = "system"
     * ^slicing.rules = #open
     * ^short = "ATC or other classification"
-*/
 
+  * coding contains
+    ema 1..1 and
+    who 0..1
+  * coding[ema]
+    * system = $100000093533
+  * coding[who]
+    * system = $who-atc
 
 * name
   * productName 1..1
@@ -135,7 +135,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
       * ^short = "EMA or ISO codes for country"
     * country.coding contains
         ema 1..1 and
-        iso 1..1
+        iso 0..1
     * country.coding[ema]
       * system = $100000000002
     * country.coding[iso]
@@ -148,7 +148,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
       * ^short = "EMA or ISO codes for country"
     * language.coding contains
         ema 1..1 and
-        bcp 1..1
+        bcp 0..1
     * language.coding[ema]
       * system = $100000072057
     * language.coding[bcp]
@@ -231,8 +231,8 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
   * ^short = "References to manufactured items that are used in the preparation of this administrable product"
 * producedFrom only Reference(PPLManufacturedItemDefinition)
 
-//* routeOfAdministration
-//  * coding.system = $100000073345
+* routeOfAdministration
+  * code.coding.system = $100000073345
 
 // PROFILE: Ingredient
 Profile: PPLIngredient
@@ -249,7 +249,6 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
 
 * substance
   * code.concept.coding.system = $sms 
-// TO DO: the thing above is codeableReference, not sure how to handle it here
   * ^short = "Substance code from EMA SMS"
 
   * strength 1..*
@@ -272,8 +271,7 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
     * referenceStrength
       * ^short = "Strenth expressed in terms of a reference substance; concentration and presentation strength or reference strength type not distinguished."
       * substance 1..1
-      //  * code.coding.system = $sms 
-      // TO DO: the thing above is codeableReference, not sure how to handle it here
+        * concept.coding.system = $sms 
         * ^short = "Substance code from EMA SMS" 
       * strengthRatio
         * numerator.system 1..1
