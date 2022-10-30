@@ -166,10 +166,9 @@ Description: """Regulated Authorization profile defines the Marketing Authorisat
   * ^short = "Marketing authorisation number"
   * system = "http://ema.europa.eu/fhir/marketingAuthorizationNumber" // this is actually wrongish as the MA number may not be unique across EU
 
-* subject only Reference(PPLMedicinalProductDefinition or PPLPackagedProductDefinition) //JCT:Done
+* subject only Reference(PPLMedicinalProductDefinition or PPLPackagedProductDefinition)
 * subject 1..1
   * ^short = "Reference to the medicinal product or a single package, depending on how the MA has been issued"
-  // TO DO: Reference to PPLMedicinalProductDefinition or PPLPackagedProductDefinition
 
 * type 1..1
 * type = $220000000060#220000000061 "Marketing Authorisation"
@@ -189,6 +188,7 @@ Description: """Regulated Authorization profile defines the Marketing Authorisat
 //  * identifier.system = $loc-id 
 // I can't do the thing above, right? I will have to create PPLOrganization and reference that?
 //If you use literal references, yes. If all you want to do is an identifier, then you can do this and constrain the identifier reference. TBD.
+//TO DO I would prefer identifier only
 
 // PROFILE: Manufactured Item Definition
 Profile: PPLManufacturedItemDefinition
@@ -217,8 +217,7 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 
 * formOf 1..*
   * ^short = "Reference to the Medicinal Product"
-  // TO DO: Add reference to PPLMedicinalProductDefinition
-* formOf only Reference(PPLMedicinalProductDefinition)  //JCT:Done
+* formOf only Reference(PPLMedicinalProductDefinition)
 
 * administrableDoseForm 1..1
   * coding.system = $200000000004
@@ -230,8 +229,7 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 
 * producedFrom
   * ^short = "References to manufactured items that are used in the preparation of this administrable product"
-// TO DO: add reference to PPLManufacturedItemDefinition
-* producedFrom only Reference(PPLManufacturedItemDefinition)  //JCT:Done
+* producedFrom only Reference(PPLManufacturedItemDefinition)
 
 //* routeOfAdministration
 //  * coding.system = $100000073345
@@ -245,10 +243,9 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
 
 * for 1..*
   * ^short = "Reference to the medicinal product, pharmaceutical product and/or manufactured item where the ingredient is used"
-// TO DO: Reference to those three things
-* for only Reference(PPLMedicinalProductDefinition or PPLAdministrableProductDefinition or PPLManufacturedItemDefinition)  //JCT:Done
+* for only Reference(PPLMedicinalProductDefinition or PPLAdministrableProductDefinition or PPLManufacturedItemDefinition)
 
-* role = $100000072050#100000072072 "Active" // I would, just in case, turn this into default rather than fixed
+* role = $100000072050#100000072072 "Active" //TO DO: I would, just in case, turn this into default rather than fixed
 
 * substance
   * code.concept.coding.system = $sms 
@@ -337,13 +334,10 @@ Description: """Packaged Product"""
   * material
     * coding.system = $200000003199
  
- /*
- // TO DO: I don't understand why it doesn't recognise shelfLifeStorage attribute. 
   * shelfLifeStorage
     * type 1..1
     * type.coding.system = $100000073343
-    * period 1..1
- */
+    * period[x] 1..1
   
   * containedItem
     * ^short = "An item (inner package or manufactured item) within the packaging"
