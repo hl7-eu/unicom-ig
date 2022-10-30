@@ -78,7 +78,7 @@ Usage: #example
 * identifier[pcid].value = "EE-100002580-15547-1109887"
 * packageFor = Reference(Agen-5mg-Tablet-EE-MPD)
 * containedItemQuantity = 30 $200000000014#200000002152 "tablet"
-* description = "Tabletid on pakendatud PVC/PVDC/Al blistritesse (valged) või PVC/Al blistritesse (valged)."
+* description = "Tabletid on pakendatud PVC/PVDC/Al blistritesse (valged)."
 //  * extension.url = "http://ema.europa.eu/fhir/extension/language"
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
@@ -101,7 +101,7 @@ Usage: #example
 * identifier[pcid].value = "EE-100002580-15547-1109887"
 * packageFor = Reference(Agen-5mg-Tablet-EE-MPD)
 * containedItemQuantity = 30 $200000000014#200000002152 "tablet"
-* description = "Tabletid on pakendatud PVC/PVDC/Al blistritesse (valged) või PVC/Al blistritesse (valged)."
+* description = "Tabletid on pakendatud PVC/Al blistritesse (valged)."
 //  * extension.url = "http://ema.europa.eu/fhir/extension/language"
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
