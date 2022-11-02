@@ -91,8 +91,8 @@ Usage: #example
 * packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
 * packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
 * packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
-//* packaging.packaging.containedItem.item = Reference(Agen-5mg-Tablet-EE-MID) //TO DO: I don't get this to work. See profile as well.
-//* packaging.packaging.containedItem.amount.value = 30
+* packaging.packaging.containedItem.item = Reference(Agen-5mg-Tablet-EE-MID) //TO DO: I don't get this to work. See profile as well.
+* packaging.packaging.containedItem.amount.value = 30
 
 
 Instance: Agen-5mg-Tablet-EE-PPD-1109887-B
@@ -113,8 +113,8 @@ Usage: #example
 * packaging.packaging.quantity = 1 // TO DO: should not be mandatory maybe
 * packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
 * packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
-//* packaging.packaging.containedItem.item.reference = Reference(Agen-5mg-Tablet-EE-MID) // TO DO: fix
-//* packaging.packaging.containedItem.amount.value = 30
+* packaging.packaging.containedItem.item.reference = Reference(Agen-5mg-Tablet-EE-MID) // TO DO: fix
+* packaging.packaging.containedItem.amount.value = 30
 
 
 Instance: Cefuroxime-MIP-1500mg-EE-MPD
@@ -210,8 +210,8 @@ Usage: #example
 * packaging.packaging.type = $100000073346#200000002158 "vial"
 * packaging.packaging.quantity = 1
 * packaging.packaging.material = $200000003199#200000003204 "Glass type I"
-//* packaging.packaging.containedItem.item.reference = Reference(Cefuroxime-MIP-1500mg-EE-MID)
-//* packaging.packaging.containedItem.amount.value = 1
+* packaging.packaging.containedItem.item.reference = Reference(Cefuroxime-MIP-1500mg-EE-MID)
+* packaging.packaging.containedItem.amount.value = 1
 
 Instance: Cefuroxime-MIP-1500mg-EE-PPD-1529962
 InstanceOf: PPLPackagedProductDefinition
@@ -230,8 +230,8 @@ Usage: #example
 * packaging.packaging.type = $100000073346#200000002158 "vial"
 * packaging.packaging.quantity = 10
 * packaging.packaging.material = $200000003199#200000003204 "Glass type I"
-//* packaging.packaging.containedItem.item.reference = Reference(Cefuroxime-MIP-1500mg-EE-MID)
-//* packaging.packaging.containedItem.amount.value = 1
+* packaging.packaging.containedItem.item.reference = Reference(Cefuroxime-MIP-1500mg-EE-MID)
+* packaging.packaging.containedItem.amount.value = 1
 
 
 Instance: CanifugCremolum-EE-MPD
@@ -352,10 +352,10 @@ Usage: #example
 * packaging.packaging[=].quantity = 1
 * packaging.packaging[=].material[0] = $200000003199#200000003200 "Aluminium"
 * packaging.packaging[=].material[+] = $200000003199#200000003214 "PolyEthylene"
-//* packaging.packaging[=].containedItem.item.reference = Reference(CanifugCremolum-100mg-Pessary-EE-MID)
-//* packaging.packaging[=].containedItem.amount.value = 6
+* packaging.packaging[=].containedItem.item.reference = Reference(CanifugCremolum-100mg-Pessary-EE-MID)
+* packaging.packaging[=].containedItem.amount.value = 6
 * packaging.packaging[+].type = $100000073346#100000073346 "Tube"
 * packaging.packaging[=].quantity = 1
 * packaging.packaging[=].material = $200000003199#200000003200 "Aluminium"
-//* packaging.packaging[=].containedItem.item.reference = Reference(CanifugCremolum-10mg1g-Cream-EE-MID)
-//* packaging.packaging[=].containedItem.amount = 20 $100000110633#100000110654 "gram(s)"
+* packaging.packaging[=].containedItem.item.reference = Reference(CanifugCremolum-10mg1g-Cream-EE-MID)
+* packaging.packaging[=].containedItem.amount = 20 $100000110633#100000110654 "gram(s)"

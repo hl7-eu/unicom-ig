@@ -85,7 +85,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
 
 * combinedPharmaceuticalDoseForm 1..1
   * coding.system = $200000000004 // TO DO: add three more value sets here, it could be one of four: 200000000004 | 200000000006 | 200000000007 | 200000000008 
-  * ^short = "Authorised dose form for the product"
+  * ^short = "Authorised dose form for the product, incl combination package dose forms"
   * ^definition = "Authorised dose form for the whole product. As applicable in one of the SPOR RMS list Combined pharmaceutical dose form, Pharmaceutical dose form, Combined term, Combination Package"
 
 * classification 1..*
@@ -339,7 +339,7 @@ Description: """Packaged Product"""
   
   * containedItem
     * ^short = "An item (inner package or manufactured item) within the packaging"
-// TO DO: fix this    * item only CodeableReference(PPLPackagedProductDefinition, PPLManufacturedItemDefinition)
+    * item only Reference(PPLPackagedProductDefinition or PPLManufacturedItemDefinition)
     * amount
       * ^short = "Number of the manufactured items (e.g. tablets) in this package layer or the amount of manufactured item (e.g. 20 g) in the unit of presentation defined in manufactured item definition"
 // TO DO: amount.system = $200000000014 or $100000110633
