@@ -91,7 +91,7 @@ Usage: #example
 * packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
 * packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
 * packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
-* packaging.packaging.containedItem.item = Reference(Agen-5mg-Tablet-EE-MID) //TO DO: I don't get this to work. See profile as well.
+* packaging.packaging.containedItem.item.reference = Reference(Agen-5mg-Tablet-EE-MID)
 * packaging.packaging.containedItem.amount.value = 30
 
 
@@ -113,7 +113,7 @@ Usage: #example
 * packaging.packaging.quantity = 1 // TO DO: should not be mandatory maybe
 * packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
 * packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
-* packaging.packaging.containedItem.item.reference = Reference(Agen-5mg-Tablet-EE-MID) // TO DO: fix
+* packaging.packaging.containedItem.item.reference = Reference(Agen-5mg-Tablet-EE-MID)
 * packaging.packaging.containedItem.amount.value = 30
 
 
