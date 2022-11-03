@@ -20,7 +20,7 @@ Alias: $100000072052 = https://spor.ema.europa.eu/rmswi/#/lists/100000072052/ter
 Alias: $100000073346 = https://spor.ema.europa.eu/rmswi/#/lists/100000073346/terms // Packaging
 Alias: $200000003199 = https://spor.ema.europa.eu/rmswi/#/lists/200000003199/terms // Material
 Alias: $100000073343 = https://spor.ema.europa.eu/rmswi/#/lists/100000073343/terms // Shelf Life Type
-Alias: $BCP47 = http://hl7.org/fhir/ValueSet/languages // FHIR languages value set
+Alias: $BCP47 = http://hl7.org/fhir/ValueSet/all-languages // FHIR all languages value set
 Alias: $iso-country = https://www.hl7.org/fhir/valueset-country.html // FHIR Country value set based on ISO 3166-1-2
 
 Alias: $sms = https://spor.ema.europa.eu/v2/SubstanceDefinition // EMA SPOR Substance Management System
