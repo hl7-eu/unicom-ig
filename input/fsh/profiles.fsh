@@ -184,7 +184,7 @@ Description: """Regulated Authorization profile defines the Marketing Authorisat
   * ^short = "Issue/changing date of the marketing authorisation"
 
 * holder 1..1
-* holder only Reference(PPLOrganization) //JCT:Done
+* holder only Reference(PPLOrganization)
 //  * identifier.system = $loc-id 
 // I can't do the thing above, right? I will have to create PPLOrganization and reference that?
 //If you use literal references, yes. If all you want to do is an identifier, then you can do this and constrain the identifier reference. TBD.
@@ -223,9 +223,9 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
   * coding.system = $200000000004
   * ^short = "Dose form of the administrable product (after preparing for administration)"
 
-* unitOfPresentation 1..1
+* unitOfPresentation 0..1
   * coding.system = $200000000014
-  * ^short = "Unit of presentation of the administrable product (after preparing for administration)"
+  * ^short = "Unit of presentation of the administrable product (after preparing for administration). Not applicable for certain products/packaging."
 
 * producedFrom
   * ^short = "References to manufactured items that are used in the preparation of this administrable product"
