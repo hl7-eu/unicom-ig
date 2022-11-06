@@ -55,7 +55,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * ^slicing.discriminator.path = "system"
   * ^slicing.rules = #open
   * ^short = "Identifier for the medicinal product: MPID, EMA PMS ID, national ID, or other"
-  * ^definition = "Identifier for the medicinal product: MPID, EMA PMS ID, national ID, or other. Not to be used for package or pharmaceutical product identifiers."
+  * ^definition = "EMA IG 1.2 & 1.3. Identifier for the medicinal product: MPID, EMA PMS ID, national ID, or other. Not to be used for package or pharmaceutical product identifiers."
 * identifier contains
   mpid 1..1 and
   pmsid 0..1
@@ -64,15 +64,16 @@ Description: """Medicinal Product as defined in ISO IDMP"""
 * identifier[mpid] 
   * system = "http://ema.europa.eu/fhir/mpId"
   * ^short = "MPID"
-  * ^definition = "MPID if exists. For UNICOM testing data fake MPIDs are used (Country code + MAH LocID + unique code). "
+  * ^definition = "EMA IG 1.2. MPID if exists. For UNICOM testing data fake MPIDs are used (Country code + MAH LocID + unique code). "
 
 * identifier[pmsid]
   * system = "http://ema.europa.eu/fhir/pmsId"
   * ^short = "PMS ID"
-  * ^definition = "EMA Product Management System identifier if exists. For UNICOM testing data fake PMS IDs can be used"
+  * ^definition = "EMA IG 1.1. EMA Product Management System identifier if exists. For UNICOM testing data fake PMS IDs can be used"
 
 * domain 1..1
 * domain = $100000000004#100000000012 "Human use"
+  * ^definition = "EMA IG 1.3"
 
 * status 0..1
   * coding.system = $200000005003 // TO DO: Default 200000005004 'Current'
@@ -81,18 +82,19 @@ Description: """Medicinal Product as defined in ISO IDMP"""
 * legalStatusOfSupply 1..1
   * coding.system = $100000072051 
   * ^short = "Legal status of supply on the medicinal product level."
-  * ^definition = "Legal status of supply on the medicinal product level. The same information can be repeated/differentiated on the package level"
+  * ^definition = "EMA IG 1.7. Legal status of supply on the medicinal product level. The same information can be repeated/differentiated on the package level"
 
 * combinedPharmaceuticalDoseForm 1..1
   * coding.system = $200000000004 // TO DO: add three more value sets here, it could be one of four: 200000000004 | 200000000006 | 200000000007 | 200000000008 
   * ^short = "Authorised dose form for the product, incl combination package dose forms"
-  * ^definition = "Authorised dose form for the whole product. As applicable in one of the SPOR RMS list Combined pharmaceutical dose form, Pharmaceutical dose form, Combined term, Combination Package"
+  * ^definition = "EMA IG 1.5 & 1.6. Authorised dose form for the whole product. As applicable in one of the SPOR RMS list Combined pharmaceutical dose form, Pharmaceutical dose form, Combined term, Combination Package"
 
 * classification 1..*
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "coding.system"
   * ^slicing.rules = #open
   * ^short = "ATC or other classification"
+  * ^definition = "EMA IG 1.13"
 * classification contains
   atc 1..1
 * classification[atc]
@@ -100,25 +102,30 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * ^slicing.discriminator.type = #pattern
     * ^slicing.discriminator.path = "system"
     * ^slicing.rules = #open
-    * ^short = "ATC or other classification"
+    * ^short = "ATC classification"
+    * ^definition = "EMA IG 1.13.3"
 
   * coding contains
     ema 1..1 and
     who 0..1
   * coding[ema]
     * system = $100000093533
+    * ^short = "ATC classification as EMA SPOR code"
   * coding[who]
     * system = $who-atc
+    * ^short = "ATC classification as WHO ATC code"
 
 * name
+  * ^definition = "EMA IG 1.14"
   * productName 1..1
+    * ^definition = "EMA IG 1.14.1"
   * part 
     * ^slicing.discriminator.type = #pattern
     * ^slicing.discriminator.path = "type.coding.code"
     * ^slicing.rules = #open
     * ^slicing.ordered = true
     * ^short = "Medicinal product name part"
-    * ^definition = "Name part. Product names are usually combined of these three parts. More parts can be defined and strength and dose form parts can be omitted."
+    * ^definition = "EMA IG 1.14.3. Name part. Product names are usually combined of these three parts. More parts can be defined and strength and dose form parts can be omitted."
   * part contains
     invented 1..1 and
     strength 0..1 and
@@ -128,6 +135,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * part[doseForm].type = $220000000000#220000000005 "Pharmaceutical dose form part"
 
   * usage
+    * ^definition = "EMA IG 1.14.2"
     * country.coding
       * ^slicing.discriminator.type = #pattern
       * ^slicing.discriminator.path = "system"
@@ -155,7 +163,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
       * system = $BCP47
 
 
-// PROFILE: Regulated Authorisation
+// PROFILE: Regulated Authorisation 
 Profile: PPLRegulatedAuthorization
 Parent: RegulatedAuthorization
 Id: PPLRegulatedAuthorization
@@ -164,6 +172,7 @@ Description: """Regulated Authorization profile defines the Marketing Authorisat
 
 * identifier 1..*
   * ^short = "Marketing authorisation number"
+  * ^definition = "EMA IG 2.2"
   * system = "http://ema.europa.eu/fhir/marketingAuthorizationNumber" // this is actually wrongish as the MA number may not be unique across EU
 
 * subject only Reference(PPLMedicinalProductDefinition or PPLPackagedProductDefinition)
@@ -175,20 +184,25 @@ Description: """Regulated Authorization profile defines the Marketing Authorisat
 
 * region 1..1
 * region.coding.system = $100000000002
+  * ^definition = "EMA IG 2.3"
 
 * status 1..1
   * coding.system = $100000072049
   * ^short = "Marketing authorisation status"
+  * ^definition = "EMA IG 2.4"
 
 * statusDate
   * ^short = "Issue/changing date of the marketing authorisation"
+  * ^definition = "EMA IG 2.5"
 
 * holder 1..1
 * holder only Reference(PPLOrganization)
+  * ^definition = "EMA IG 2.8"
 //  * identifier.system = $loc-id 
 // I can't do the thing above, right? I will have to create PPLOrganization and reference that?
 //If you use literal references, yes. If all you want to do is an identifier, then you can do this and constrain the identifier reference. TBD.
 //TO DO I would prefer identifier only
+
 
 // PROFILE: Manufactured Item Definition
 Profile: PPLManufacturedItemDefinition
@@ -200,10 +214,12 @@ Description: """Manufactured item is the countable element inside the package"""
 * manufacturedDoseForm 1..1
   * coding.system = $200000000004
   * ^short = "Dose form of the manufactured item (before preparing for administration)"
+  * ^definition = "EMA IG 4.11.3"
 
 * unitOfPresentation 1..1
   * coding.system = $200000000014
   * ^short = "Unit of presentation of the manufactured item (before preparing for administration)"
+  * ^definition = "EMA IG 4.11.1"
 
 // PROFILE: Pharmaceutical/ Administrable Product
 Profile: PPLAdministrableProductDefinition
@@ -222,10 +238,12 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 * administrableDoseForm 1..1
   * coding.system = $200000000004
   * ^short = "Dose form of the administrable product (after preparing for administration)"
+  * ^definition = "EMA IG 6.2"
 
 * unitOfPresentation 0..1
   * coding.system = $200000000014
   * ^short = "Unit of presentation of the administrable product (after preparing for administration). Not applicable for certain products/packaging."
+  * ^definition = "EMA IG 6.3"
 
 * producedFrom
   * ^short = "References to manufactured items that are used in the preparation of this administrable product"
@@ -233,6 +251,7 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 
 * routeOfAdministration
   * code.coding.system = $100000073345
+  * ^definition = "EMA IG 6.6"
 
 // PROFILE: Ingredient
 Profile: PPLIngredient
@@ -246,14 +265,18 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
 * for only Reference(PPLMedicinalProductDefinition or PPLAdministrableProductDefinition or PPLManufacturedItemDefinition)
 
 * role = $100000072050#100000072072 "Active" //TO DO: I would, just in case, turn this into default rather than fixed
+  * ^definition = "EMA IG 5.1"
 
 * substance
   * code.concept.coding.system = $sms 
   * ^short = "Substance code from EMA SMS"
+  * ^definition = "EMA IG 5.5"
 
   * strength 1..*
+    * ^definition = "EMA IG 5.5.2"
     * presentationRatio
       * ^short = "Strength per unit of presentation (10mg/vial or 10mg/0.5ml where 0.5ml is the size of the vial)"
+      * ^definition = "EMA IG 5.5.2"
       //* numerator.comparator.coding.system = $100000000008 // TO DO: not easily extendable, what to do with it?
       * numerator.system 1..1
       * numerator.system = $100000110633
@@ -262,6 +285,7 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
       
     * concentrationRatio
       * ^short = "Strength per unit of measurement (20mg/1ml)"
+      * ^definition = "EMA IG 5.5.2"
       //* numerator.comparator.coding.system = $100000000008 // TO DO: not easily extendable, what to do with it?
       * numerator.system 1..1
       * numerator.system = $100000110633
@@ -269,6 +293,7 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
       * denominator.system = $100000110633
 
     * referenceStrength
+      * ^definition = "EMA IG 5.5.3"
       * ^short = "Strenth expressed in terms of a reference substance; concentration and presentation strength or reference strength type not distinguished."
       * substance 1..1
         * concept.coding.system = $sms 
@@ -299,6 +324,7 @@ Description: """Packaged Product"""
 * identifier[pcid]
   * system = "http://ema.europa.eu/example/pcid"
   * ^short = "PCID for the product. Consists of MPID + unique package code. For the same product PCID is different if the package material is different."
+  * ^definition = "EMA IG 4.1"
 
 * packageFor only Reference(PPLMedicinalProductDefinition)
 * packageFor 1..*
@@ -306,17 +332,20 @@ Description: """Packaged Product"""
 * containedItemQuantity 1..*
   * system = $200000000014
   * ^short = "Pack size. Repeated for combination packages."
+  * ^definition = "EMA IG 4.4"
 
 * description 1..1
+  * ^definition = "EMA IG 4.2"
 // TO DO description language as an extension. system = $100000072057
 
 * legalStatusOfSupply 0..1
   * ^short = "Legal status of supply on the packaged product level."
-  * ^definition = "Legal status of supply on the packaged product level. The same information can be repeated/differentiated on the medicinal product level"
+  * ^definition = "EMA IG 4.5. Legal status of supply on the packaged product level. The same information can be repeated/differentiated on the medicinal product level"
   * code.coding.system = $100000072051 
   * jurisdiction.coding.system = $100000000002
 
 * marketingStatus
+  * ^definition = "EMA IG 4.6"
   * country 1..1
     * coding.system = $100000000002
   * status 1..1
@@ -325,23 +354,29 @@ Description: """Packaged Product"""
 * packaging 1..1
   * type 1..1
     * ^short = "Container type"
+    * ^definition = "EMA IG 4.8.1"
     * coding.system = $100000073346
   
   * quantity 1..1
+    * ^definition = "EMA IG 4.8.5"
   
   * material
     * coding.system = $200000003199
+    * ^definition = "EMA IG 4.8.7"
  
   * shelfLifeStorage
+    * ^definition = "EMA IG 4.12"
     * type 1..1
     * type.coding.system = $100000073343
     * period[x] 1..1
   
   * containedItem
     * ^short = "An item (inner package or manufactured item) within the packaging"
+    * ^definition = "EMA IG 4.9 or 4.8.3"
     * item only Reference(PPLPackagedProductDefinition or PPLManufacturedItemDefinition)
     * amount
       * ^short = "Number of the manufactured items (e.g. tablets) in this package layer or the amount of manufactured item (e.g. 20 g) in the unit of presentation defined in manufactured item definition"
+      * ^definition = "EMA IG 4.11.2"
 // TO DO: amount.system = $200000000014 or $100000110633
 
 
@@ -357,6 +392,7 @@ Description: """Organization"""
   * ^slicing.discriminator.path = "system"
   * ^slicing.rules = #open
   * ^short = "Identifier for the marketing authorisation holder"
+  * ^definition = "EMA IG 2.8"
 
 * identifier contains
   loc 1..1 and
