@@ -1,14 +1,14 @@
 CodeSystem: Container
 Id:         container
-Title:     "Container"
+Title:      "Container"
 * ^hierarchyMeaning = #is-a
 
 
 * #13059000
-    Unit-dose blister
-    13059000
+    "Unit-dose blister"
+    "Container consisting of two layers of which one is shaped to contain the individual unit, usually provided with perforations, the intention being to allow each individual unit to be separated for single unit administration. All the information required for blister packs must appear on each unit dose presentation. Blisters and strips are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Unit-dose blister
+  * ^designation[=].value = "Unit-dose blister"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Блистер с единични дози"
@@ -90,10 +90,10 @@ Title:     "Container"
   
 
 * #13063000
-    Pre-filled injector
-    13063000
+    "Pre-filled injector"
+    "Filled container, usually fitted with an injection needle, which may or may not be fitted with a needle safety device, containing a sterile, single-dose parenteral preparation. This term is only to be used when a more-specific term such as 'Pre-filled syringe' or 'Pre-filled pen' is not appropriate."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pre-filled injector
+  * ^designation[=].value = "Pre-filled injector"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Предварително напълнен инжектор"
@@ -175,10 +175,10 @@ Title:     "Container"
   
 
 * #13073000
-    Pre-filled oral syringe
-    13073000
+    "Pre-filled oral syringe"
+    "Filled container for administering a liquid or semi-solid pharmaceutical form to the oral cavity, containing the final preparation in one compartment, or the components necessary for its preparation in different compartments."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pre-filled oral syringe
+  * ^designation[=].value = "Pre-filled oral syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Предварително напълнена спринцовка за перорални форми"
@@ -260,10 +260,10 @@ Title:     "Container"
   
 
 * #13074000
-    Pre-filled oral applicator
-    13074000
+    "Pre-filled oral applicator"
+    "Filled container for administering a liquid or semi-solid pharmaceutical form to the oral cavity, containing the final preparation in one compartment, or the components necessary for its preparation in different compartments. This term may be used to describe a pre-filled oral syringe in cases where there is a risk of administration error, e.g. where a similar product is often administered by injection, such as with vaccines."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pre-filled oral applicator
+  * ^designation[=].value = "Pre-filled oral applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Предварително напълнен апликатор за перорални форми"
@@ -345,10 +345,10 @@ Title:     "Container"
   
 
 * #13125000
-    Wrapper
-    13125000
+    "Wrapper"
+    "Single-dose or multidose container, usually consisting of a single flexible surface (which may consist of one or more layers and may be coated) intended to be used to enclose one or more units of a solid preparation such as a tablet or lozenge. Multidose wrappers may be used to present the individual units of a medicinal product together in the form of a roll that can be torn or otherwise opened to allow the removal of the required number of units. Blisters, sachets, strips and unit-dose blisters are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Wrapper
+  * ^designation[=].value = "Wrapper"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Обвивка"
@@ -406,20 +406,20 @@ Title:     "Container"
   
 
 * #13131000
-    Capsule for opening
-    13131000
+    "Capsule for opening"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Capsule for opening
+  * ^designation[=].value = "Capsule for opening"
   
   * ^designation[+].language = #ga-EU
   * ^designation[=].value = "Capsúl le hoscailt"
   
 
 * #13142000
-    Pouch
-    13142000
+    "Pouch"
+    "Item of packaging intended for use as an intermediate or outer container, intended to contain one or more medicinal product(s); it is made of a flexible material and may be for single use or be re-usable, and may be fitted with a closure system. Bags and sachets are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pouch
+  * ^designation[=].value = "Pouch"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Торбичка"
@@ -474,10 +474,10 @@ Title:     "Container"
   
 
 * #13151000
-    Tablet tube
-    13151000
+    "Tablet tube"
+    "Rigid, cylindrical container that is closed at one end, usually intended for fragile tablets such as effervescent tablets, and which is designed to allow the tablets to be stacked in a single column, thereby reducing the likelihood of physical damage caused by impacts with each other or the container wall. The open end can be reclosed, and in the case of effervescent tablets, a desiccant is usually integrated into the closure."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet tube
+  * ^designation[=].value = "Tablet tube"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Туба за таблетки"
@@ -535,10 +535,10 @@ Title:     "Container"
   
 
 * #13156000
-    Gas cylinder bundle
-    13156000
+    "Gas cylinder bundle"
+    "Container consisting of an assembly of cylinders suited for compressed, liquefied or dissolved gas, which are fastened together in a frame and interconnected by a manifold, and are transported and used as a single unit. It is fitted with a device to regulate the spontaneous outflow of gas at atmospheric pressure and room temperature."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gas cylinder bundle
+  * ^designation[=].value = "Gas cylinder bundle"
   
   * ^designation[+].language = #cs-CZ
   * ^designation[=].value = "Svazek tlakových lahví"
@@ -575,10 +575,10 @@ Title:     "Container"
   
 
 * #30001000
-    Ampoule
-    30001000
+    "Ampoule"
+    "Container sealed by fusion and to be opened exclusively by breaking. The contents are intended for use on one occasion only."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ampoule
+  * ^designation[=].value = "Ampoule"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ампула"
@@ -684,10 +684,10 @@ Title:     "Container"
   
 
 * #30004000
-    Bag
-    30004000
+    "Bag"
+    "Container consisting of surfaces, whether or not with a flat bottom, made of flexible material, generally closed at the bottom and at the sides by sealing; at the top possibly to be closed by fusion of the material, depending on the intended use. Equipped with special attachments. Contains the final preparation in one compartment or the components necessary for its preparation in different compartments."
   * ^designation[0].language = #en
-  * ^designation[=].value = Bag
+  * ^designation[=].value = "Bag"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сак"
@@ -793,10 +793,10 @@ Title:     "Container"
   
 
 * #30006000
-    Barrel
-    30006000
+    "Barrel"
+    "Container of large size, suited for liquid, solid and semi-solid pharmaceutical forms."
   * ^designation[0].language = #en
-  * ^designation[=].value = Barrel
+  * ^designation[=].value = "Barrel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Бидон"
@@ -902,10 +902,10 @@ Title:     "Container"
   
 
 * #30007000
-    Blister
-    30007000
+    "Blister"
+    "Container (usually multidose) consisting of two layers of which one is shaped to contain the individual doses. Strips and unit-dose blisters are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Blister
+  * ^designation[=].value = "Blister"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Блистер"
@@ -1011,10 +1011,10 @@ Title:     "Container"
   
 
 * #30008000
-    Bottle
-    30008000
+    "Bottle"
+    "Container with a more or less pronounced neck and usually a flat bottom."
   * ^designation[0].language = #en
-  * ^designation[=].value = Bottle
+  * ^designation[=].value = "Bottle"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Бутилка"
@@ -1120,10 +1120,10 @@ Title:     "Container"
   
 
 * #30009000
-    Box
-    30009000
+    "Box"
+    "Primary container consisting of one or more parts made of a light material, can be closed."
   * ^designation[0].language = #en
-  * ^designation[=].value = Box
+  * ^designation[=].value = "Box"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Кутия"
@@ -1229,10 +1229,10 @@ Title:     "Container"
   
 
 * #30011500
-    Calendar package
-    30011500
+    "Calendar package"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Calendar package
+  * ^designation[=].value = "Calendar package"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -1263,10 +1263,10 @@ Title:     "Container"
   
 
 * #30014000
-    Cartridge
-    30014000
+    "Cartridge"
+    "Filled container, usually cylindrical, containing a sterile, single-dose or multidose, parenteral preparation; it contains the final preparation in one compartment, or the components necessary for its preparation in different compartments. It may be supplied as an integral part of a pre-filled pen or be intended for use in a reusable device especially designed for that purpose, such as a pen. Dose-dispenser cartridges are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cartridge
+  * ^designation[=].value = "Cartridge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Патрон"
@@ -1372,10 +1372,10 @@ Title:     "Container"
   
 
 * #30015500
-    Container
-    30015500
+    "Container"
+    "An item of packaging that is used for the storage, identification and/or transport of a medicinal product. Only to be used where more-specific terms do not apply. Specific characteristics of the container are defined in the product information of the medicinal product."
   * ^designation[0].language = #en
-  * ^designation[=].value = Container
+  * ^designation[=].value = "Container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Опаковка"
@@ -1454,10 +1454,10 @@ Title:     "Container"
   
 
 * #30018000
-    Dart
-    30018000
+    "Dart"
+    "A pointed missile which on contact with an animal delivers its medicinal content."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dart
+  * ^designation[=].value = "Dart"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стрела за инжектиране"
@@ -1557,10 +1557,10 @@ Title:     "Container"
   
 
 * #30018300
-    Dose-dispenser cartridge
-    30018300
+    "Dose-dispenser cartridge"
+    "Container intended for use in a dose dispenser, usually pre-filled with a medicinal product. Cartridges, intended for use in pens, are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dose-dispenser cartridge
+  * ^designation[=].value = "Dose-dispenser cartridge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Патрон за дозиращо устройство"
@@ -1645,10 +1645,10 @@ Title:     "Container"
   
 
 * #30020000
-    Dredging container
-    30020000
+    "Dredging container"
+    "Container for a pharmaceutical form to be applied by dredging."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dredging container
+  * ^designation[=].value = "Dredging container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Опаковка за посипване"
@@ -1751,10 +1751,10 @@ Title:     "Container"
   
 
 * #30023000
-    Dropper container
-    30023000
+    "Dropper container"
+    "A container, usually a bottle, fitted with a dropper applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dropper container
+  * ^designation[=].value = "Dropper container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Опаковка с капкомер"
@@ -1857,10 +1857,10 @@ Title:     "Container"
   
 
 * #30023005
-    Fixed cryogenic vessel
-    30023005
+    "Fixed cryogenic vessel"
+    "A static thermally insulated container designed to maintain the contents in the liquid state"
   * ^designation[0].language = #en
-  * ^designation[=].value = Fixed cryogenic vessel
+  * ^designation[=].value = "Fixed cryogenic vessel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Неподвижен криогенен съд"
@@ -1957,10 +1957,10 @@ Title:     "Container"
   
 
 * #30024000
-    Gas cylinder
-    30024000
+    "Gas cylinder"
+    "Container usually cylindrical suited for compressed, liquefied or dissolved gas, fitted with a device to regulate the spontaneous outflow of gas at atmospheric pressure and room temperature."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gas cylinder
+  * ^designation[=].value = "Gas cylinder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Бутилка за газ"
@@ -2063,10 +2063,10 @@ Title:     "Container"
   
 
 * #30032000
-    Jar
-    30032000
+    "Jar"
+    "Container, without a pronounced neck, with a wide opening at the top and a more-or-less flat bottom. It is suited for semi-solid and solid pharmaceutical forms (including those that are stored/supplied in a liquid medium, such as living tissue equivalents). It can be reclosed."
   * ^designation[0].language = #en
-  * ^designation[=].value = Jar
+  * ^designation[=].value = "Jar"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Банка"
@@ -2169,10 +2169,10 @@ Title:     "Container"
   
 
 * #30036005
-    Mobile cryogenic vessel
-    30036005
+    "Mobile cryogenic vessel"
+    "A mobile thermally insulated container designed to maintain the contents in a liquid state."
   * ^designation[0].language = #en
-  * ^designation[=].value = Mobile cryogenic vessel
+  * ^designation[=].value = "Mobile cryogenic vessel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Преносим криогенен съд"
@@ -2269,10 +2269,10 @@ Title:     "Container"
   
 
 * #30038000
-    Multidose container
-    30038000
+    "Multidose container"
+    "A container holding a quantity of the preparation suitable for 2 or more doses."
   * ^designation[0].language = #en
-  * ^designation[=].value = Multidose container
+  * ^designation[=].value = "Multidose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Mнoroдозова опаковка"
@@ -2375,10 +2375,10 @@ Title:     "Container"
   
 
 * #30039000
-    Multidose container with airless pump
-    30039000
+    "Multidose container with airless pump"
+    "Multidose container with an integral pump designed to protect the contents against in use-contamination."
   * ^designation[0].language = #en
-  * ^designation[=].value = Multidose container with airless pump
+  * ^designation[=].value = "Multidose container with airless pump"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Многодозова опаковка с херметически затворена помпа"
@@ -2481,10 +2481,10 @@ Title:     "Container"
   
 
 * #30039400
-    Multidose container with metering pump
-    30039400
+    "Multidose container with metering pump"
+    "Multidose container with integral metering pump."
   * ^designation[0].language = #en
-  * ^designation[=].value = Multidose container with metering pump
+  * ^designation[=].value = "Multidose container with metering pump"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Многодозова опаковка с дозираща помпа"
@@ -2572,10 +2572,10 @@ Title:     "Container"
   
 
 * #30039500
-    Multidose container with pump
-    30039500
+    "Multidose container with pump"
+    "Multidose container with an integral pump. Metering pump, spray pump, and multidose container with airless pump are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Multidose container with pump
+  * ^designation[=].value = "Multidose container with pump"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Многодозова опаковка с помпа"
@@ -2663,10 +2663,10 @@ Title:     "Container"
   
 
 * #30045500
-    Pack
-    30045500
+    "Pack"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Pack
+  * ^designation[=].value = "Pack"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -2694,10 +2694,10 @@ Title:     "Container"
   
 
 * #30048000
-    Pour-on container
-    30048000
+    "Pour-on container"
+    "Container with built-in applicator for pouring-on use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pour-on container
+  * ^designation[=].value = "Pour-on container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Опаковка за поливане"
@@ -2797,10 +2797,10 @@ Title:     "Container"
   
 
 * #30049000
-    Pre-filled gastroenteral tube
-    30049000
+    "Pre-filled gastroenteral tube"
+    "Pre-filled tube for the administration of a medicinal product to the gastroenteral tract."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pre-filled gastroenteral tube
+  * ^designation[=].value = "Pre-filled gastroenteral tube"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Предварително напълнена гастроентерална сонда"
@@ -2900,10 +2900,10 @@ Title:     "Container"
   
 
 * #30050000
-    Pre-filled pen
-    30050000
+    "Pre-filled pen"
+    "Filled container consisting usually of a cartridge, usually fitted with an injection needle, housed in a pen device that may or may not be fitted with a needle safety device. The cartridge contains a sterile, single-dose or multidose, parenteral preparation; it contains the final preparation in one compartment, or the components necessary for its preparation in different compartments. The cartridge is not replaceable and the pre-filled pen is intended to be discarded when empty. The pre-defined dose, which may or may not be adjustable, is administered via an actuation, such as the pressing of a button."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pre-filled pen
+  * ^designation[=].value = "Pre-filled pen"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Предварително напълнена писалка"
@@ -3003,10 +3003,10 @@ Title:     "Container"
   
 
 * #30051000
-    Pre-filled syringe
-    30051000
+    "Pre-filled syringe"
+    "Filled container consisting of an injection syringe, generally supplied with an injection needle, which may or may not be fitted with a needle safety device. It contains a sterile, single-dose or multidose, parenteral preparation; it contains the final preparation in one compartment, or the components necessary for its preparation in different compartments. The pre-filled syringe is intended to be discarded when empty."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pre-filled syringe
+  * ^designation[=].value = "Pre-filled syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Предварително напълнена спринцовка"
@@ -3109,10 +3109,10 @@ Title:     "Container"
   
 
 * #30052000
-    Pressurised container
-    30052000
+    "Pressurised container"
+    "Container suited for compressed, liquefied or dissolved gas fitted with a device to enable, after its actuation, a controlled spontaneous release of the contents at atmospheric pressure and room temperature."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pressurised container
+  * ^designation[=].value = "Pressurised container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Опаковка под налягане"
@@ -3215,10 +3215,10 @@ Title:     "Container"
   
 
 * #30053500
-    Roll-on container
-    30053500
+    "Roll-on container"
+    "A container, usually a bottle, fitted with a roll-on applicator"
   * ^designation[0].language = #en
-  * ^designation[=].value = Roll-on container
+  * ^designation[=].value = "Roll-on container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Рол-он опаковка"
@@ -3306,10 +3306,10 @@ Title:     "Container"
   
 
 * #30054000
-    Sachet
-    30054000
+    "Sachet"
+    "Container consisting of two surfaces made of flexible material to be closed only by sealing or folding over. The contents are intended for single use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sachet
+  * ^designation[=].value = "Sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Саше"
@@ -3409,10 +3409,10 @@ Title:     "Container"
   
 
 * #30057000
-    Single-dose container
-    30057000
+    "Single-dose container"
+    "A container that holds a quantity of the preparation intended for total or partial use on one occasion only."
   * ^designation[0].language = #en
-  * ^designation[=].value = Single-dose container
+  * ^designation[=].value = "Single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Еднодозова опаковка"
@@ -3515,10 +3515,10 @@ Title:     "Container"
   
 
 * #30060000
-    Spray container
-    30060000
+    "Spray container"
+    "Container for a liquid pharmaceutical form to be converted into a spray by mechanical means."
   * ^designation[0].language = #en
-  * ^designation[=].value = Spray container
+  * ^designation[=].value = "Spray container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей опаковка"
@@ -3621,10 +3621,10 @@ Title:     "Container"
   
 
 * #30064500
-    Straw
-    30064500
+    "Straw"
+    "Hollow tube containing a single dose of a medicinal product for oral administration by sucking."
   * ^designation[0].language = #en
-  * ^designation[=].value = Straw
+  * ^designation[=].value = "Straw"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сламка"
@@ -3712,10 +3712,10 @@ Title:     "Container"
   
 
 * #30065000
-    Strip
-    30065000
+    "Strip"
+    "Multidose container consisting of two layers, usually provided with perforations, suited for containing single doses of solid or semi-solid preparations. Blisters are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Strip
+  * ^designation[=].value = "Strip"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лента"
@@ -3818,10 +3818,10 @@ Title:     "Container"
   
 
 * #30066000
-    Tablet container
-    30066000
+    "Tablet container"
+    "Container without a neck and with a flat bottom, suited for tablets, capsules, etc., which can be re-closed well. Tablet tube is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet container
+  * ^designation[=].value = "Tablet container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Опаковка за таблетки"
@@ -3924,10 +3924,10 @@ Title:     "Container"
   
 
 * #30067000
-    Tube
-    30067000
+    "Tube"
+    "Container for semi-solid pharmaceutical forms, usually multidose, consisting of collapsible material intended to release the contents via a nozzle by squeezing the package."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tube
+  * ^designation[=].value = "Tube"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Туба"
@@ -4030,10 +4030,10 @@ Title:     "Container"
   
 
 * #30069000
-    Vial
-    30069000
+    "Vial"
+    "Small container for parenteral medicinal products, with a stopper and overseal; the contents are removed after piercing the stopper. Single-dose and multidose uses are included."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vial
+  * ^designation[=].value = "Vial"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Флакон"

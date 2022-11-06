@@ -1,14 +1,14 @@
 CodeSystem: RouteOfAdministration
 Id:         route-of-administration
-Title:     "Route of administration"
+Title:      "Route of administration"
 * ^hierarchyMeaning = #is-a
 
 
 * #20001000
-    Auricular use
-    20001000
+    "Auricular use"
+    "Administration of a medicinal product to the ear."
   * ^designation[0].language = #en
-  * ^designation[=].value = Auricular use
+  * ^designation[=].value = "Auricular use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане в ушите"
@@ -111,10 +111,10 @@ Title:     "Route of administration"
   
 
 * #20002000
-    Beak dipping
-    20002000
+    "Beak dipping"
+    "Administration of a veterinary medicinal product by dipping the beak of birds into an aqueous solution of the medicinal product."
   * ^designation[0].language = #en
-  * ^designation[=].value = Beak dipping
+  * ^designation[=].value = "Beak dipping"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Потапяне на човка"
@@ -211,10 +211,10 @@ Title:     "Route of administration"
   
 
 * #20002500
-    Buccal use
-    20002500
+    "Buccal use"
+    "Administration of a medicinal product to the buccal cavity (pouch located between the cheek and the gum) to obtain a systemic effect"
   * ^designation[0].language = #en
-  * ^designation[=].value = Buccal use
+  * ^designation[=].value = "Buccal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Букално приложение"
@@ -305,10 +305,10 @@ Title:     "Route of administration"
   
 
 * #20003000
-    Cutaneous use
-    20003000
+    "Cutaneous use"
+    "Administration of a medicinal product to the skin and/or cutaneous wounds and/or nails and/or hair in order to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous use
+  * ^designation[=].value = "Cutaneous use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане върху кожата"
@@ -408,10 +408,10 @@ Title:     "Route of administration"
   
 
 * #20004000
-    Dental use
-    20004000
+    "Dental use"
+    "Administration of a medicinal product to and/or in the teeth or, on and/or around the nerves supplying the teeth."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dental use
+  * ^designation[=].value = "Dental use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дентално приложение"
@@ -511,10 +511,10 @@ Title:     "Route of administration"
   
 
 * #20005000
-    Dipping
-    20005000
+    "Dipping"
+    "Administration of a veterinary medicinal product by immersing the animal into a bath or plunge pool containing the medicinal product."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dipping
+  * ^designation[=].value = "Dipping"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Потапяне"
@@ -611,10 +611,10 @@ Title:     "Route of administration"
   
 
 * #20006000
-    Endocervical use
-    20006000
+    "Endocervical use"
+    "Administration of a medicinal product to the cervix uteri."
   * ^designation[0].language = #en
-  * ^designation[=].value = Endocervical use
+  * ^designation[=].value = "Endocervical use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ендоцервикално приложение"
@@ -714,10 +714,10 @@ Title:     "Route of administration"
   
 
 * #20007000
-    Endosinusial use
-    20007000
+    "Endosinusial use"
+    "Administration of a medicinal product to the sinuses to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Endosinusial use
+  * ^designation[=].value = "Endosinusial use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане в синусите"
@@ -817,10 +817,10 @@ Title:     "Route of administration"
   
 
 * #20008000
-    Endotracheopulmonary use
-    20008000
+    "Endotracheopulmonary use"
+    "Administration of a medicinal product to the trachea and/or bronchi by instillation (preparations for inhalation are excluded; see inhalation use)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Endotracheopulmonary use
+  * ^designation[=].value = "Endotracheopulmonary use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ендотрахеопулмонално приложение"
@@ -920,10 +920,10 @@ Title:     "Route of administration"
   
 
 * #20009000
-    Epidural use
-    20009000
+    "Epidural use"
+    "Injection of a medicinal product into the epidural space."
   * ^designation[0].language = #en
-  * ^designation[=].value = Epidural use
+  * ^designation[=].value = "Epidural use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Епидурално приложение"
@@ -1023,10 +1023,10 @@ Title:     "Route of administration"
   
 
 * #20010000
-    Epilesional use
-    20010000
+    "Epilesional use"
+    "Administration of a medicinal product onto a lesion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Epilesional use
+  * ^designation[=].value = "Epilesional use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане върху лезия"
@@ -1123,10 +1123,10 @@ Title:     "Route of administration"
   
 
 * #20011000
-    Extraamniotic use
-    20011000
+    "Extraamniotic use"
+    "Injection of a medicinal product between chorion and amnion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Extraamniotic use
+  * ^designation[=].value = "Extraamniotic use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Екстраамниално приложение"
@@ -1226,10 +1226,10 @@ Title:     "Route of administration"
   
 
 * #20011500
-    Extracorporeal use
-    20011500
+    "Extracorporeal use"
+    "Use of a medicinal product outside the body"
   * ^designation[0].language = #en
-  * ^designation[=].value = Extracorporeal use
+  * ^designation[=].value = "Extracorporeal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Екстракорпорално приложение"
@@ -1317,10 +1317,10 @@ Title:     "Route of administration"
   
 
 * #20012000
-    Foot-stab use
-    20012000
+    "Foot-stab use"
+    "Administration of a veterinary medicinal product into the foot of birds."
   * ^designation[0].language = #en
-  * ^designation[=].value = Foot-stab use
+  * ^designation[=].value = "Foot-stab use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане чрез набождане на стъпало"
@@ -1417,10 +1417,10 @@ Title:     "Route of administration"
   
 
 * #20013000
-    Gastroenteral use
-    20013000
+    "Gastroenteral use"
+    "Administration of a medicinal product to the gastroenteral tract by means of an appropriate device. For use only when gastric use and intestinal use do not apply."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastroenteral use
+  * ^designation[=].value = "Gastroenteral use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гастроентерално приложение"
@@ -1520,10 +1520,10 @@ Title:     "Route of administration"
   
 
 * #20013500
-    Gastric use
-    20013500
+    "Gastric use"
+    "Administration of a medicinal product to the stomach by means of an appropriate device"
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastric use
+  * ^designation[=].value = "Gastric use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно приложение"
@@ -1620,10 +1620,10 @@ Title:     "Route of administration"
   
 
 * #20014000
-    Gingival use
-    20014000
+    "Gingival use"
+    "Administration of a medicinal product to the gingivae."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gingival use
+  * ^designation[=].value = "Gingival use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гингивално приложение"
@@ -1726,10 +1726,10 @@ Title:     "Route of administration"
   
 
 * #20015000
-    Haemodialysis
-    20015000
+    "Haemodialysis"
+    "Clearance of the blood by means of a semipermeable membrane. [Previous English term 'Hemodialysis' corrected 04/07/11.]"
   * ^designation[0].language = #en
-  * ^designation[=].value = Haemodialysis
+  * ^designation[=].value = "Haemodialysis"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Хемодиализа"
@@ -1829,10 +1829,10 @@ Title:     "Route of administration"
   
 
 * #20015500
-    Implantation
-    20015500
+    "Implantation"
+    "Insertion of an implant or living tissue equivalent into living tissue."
   * ^designation[0].language = #en
-  * ^designation[=].value = Implantation
+  * ^designation[=].value = "Implantation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Имплантиране"
@@ -1920,10 +1920,10 @@ Title:     "Route of administration"
   
 
 * #20015700
-    In drinking water use
-    20015700
+    "In drinking water use"
+    "Administration of a veterinary medicinal product by incorporation into the animal drinking water."
   * ^designation[0].language = #en
-  * ^designation[=].value = In drinking water use
+  * ^designation[=].value = "In drinking water use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане във вода за пиене"
@@ -1999,10 +1999,10 @@ Title:     "Route of administration"
   
 
 * #20016000
-    In drinking water/milk use
-    20016000
+    "In drinking water/milk use"
+    "Administration of a veterinary medicinal product by incorporation into the animal drinking water, milk or milk replacer. [Previous English term 'In drinking water or milk use' corrected 28/03/2011.]"
   * ^designation[0].language = #en
-  * ^designation[=].value = In drinking water/milk use
+  * ^designation[=].value = "In drinking water/milk use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане във вода за пиене/мляко"
@@ -2099,10 +2099,10 @@ Title:     "Route of administration"
   
 
 * #20017000
-    In ovo
-    20017000
+    "In ovo"
+    "Administration of a veterinary medicinal product through the shell into an embryonated egg."
   * ^designation[0].language = #en
-  * ^designation[=].value = In ovo
+  * ^designation[=].value = "In ovo"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "В яйце"
@@ -2199,10 +2199,10 @@ Title:     "Route of administration"
   
 
 * #20018000
-    In-feed use
-    20018000
+    "In-feed use"
+    "Administration of a veterinary medicinal product by incorporation into the animal feed."
   * ^designation[0].language = #en
-  * ^designation[=].value = In-feed use
+  * ^designation[=].value = "In-feed use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане в храна"
@@ -2299,10 +2299,10 @@ Title:     "Route of administration"
   
 
 * #20019000
-    In-hive use
-    20019000
+    "In-hive use"
+    "Administration of a veterinary medicinal product by placing it or sprinkling over a bee hive."
   * ^designation[0].language = #en
-  * ^designation[=].value = In-hive use
+  * ^designation[=].value = "In-hive use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане в кошер"
@@ -2399,10 +2399,10 @@ Title:     "Route of administration"
   
 
 * #20019500
-    Infiltration
-    20019500
+    "Infiltration"
+    "Method of administration, usually by injection, whereby a fluid passes into a target tissue (e.g. anaesthetic infiltration)"
   * ^designation[0].language = #en
-  * ^designation[=].value = Infiltration
+  * ^designation[=].value = "Infiltration"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инфилтриране"
@@ -2490,10 +2490,10 @@ Title:     "Route of administration"
   
 
 * #20020000
-    Inhalation use
-    20020000
+    "Inhalation use"
+    "Administration of a medicinal product to the respiratory system by inhalation to obtain a systemic or a local effect in the lower respiratory tract. Nasal use and endotracheopulmonary use are excluded"
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation use
+  * ^designation[=].value = "Inhalation use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инхалаторно приложение"
@@ -2593,10 +2593,10 @@ Title:     "Route of administration"
   
 
 * #20021000
-    Intestinal use
-    20021000
+    "Intestinal use"
+    "Administration of a medicinal product to the intestine (duodenum, jejunum, ileum and colon) by means of an appropriate device. Gastroenteral use is excluded "
   * ^designation[0].language = #en
-  * ^designation[=].value = Intestinal use
+  * ^designation[=].value = "Intestinal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане в червата"
@@ -2693,10 +2693,10 @@ Title:     "Route of administration"
   
 
 * #20022000
-    Intraamniotic use
-    20022000
+    "Intraamniotic use"
+    "Injection of a medicinal product into the amniotic cavity."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraamniotic use
+  * ^designation[=].value = "Intraamniotic use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интраамниално приложение"
@@ -2796,10 +2796,10 @@ Title:     "Route of administration"
   
 
 * #20023000
-    Intraarterial use
-    20023000
+    "Intraarterial use"
+    "Injection of a medicinal product into an artery."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraarterial use
+  * ^designation[=].value = "Intraarterial use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интраартериално приложение"
@@ -2899,10 +2899,10 @@ Title:     "Route of administration"
   
 
 * #20024000
-    Intraarticular use
-    20024000
+    "Intraarticular use"
+    "Injection of a medicinal product into an articular cavity."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraarticular use
+  * ^designation[=].value = "Intraarticular use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интраартикуларно приложение"
@@ -3002,10 +3002,10 @@ Title:     "Route of administration"
   
 
 * #20025000
-    Intrabursal use
-    20025000
+    "Intrabursal use"
+    "Injection of a medicinal product into bursae and tendons."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrabursal use
+  * ^designation[=].value = "Intrabursal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрабурсално приложение"
@@ -3105,10 +3105,10 @@ Title:     "Route of administration"
   
 
 * #20025500
-    Intracameral use
-    20025500
+    "Intracameral use"
+    "Administration of a medicinal product directly into the anterior chamber of the eye"
   * ^designation[0].language = #en
-  * ^designation[=].value = Intracameral use
+  * ^designation[=].value = "Intracameral use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интракамерно приложение"
@@ -3196,10 +3196,10 @@ Title:     "Route of administration"
   
 
 * #20026000
-    Intracardiac use
-    20026000
+    "Intracardiac use"
+    "Injection of a medicinal product into the cardiac muscle and/or cardiac cavity."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intracardiac use
+  * ^designation[=].value = "Intracardiac use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интракардиално приложение"
@@ -3299,10 +3299,10 @@ Title:     "Route of administration"
   
 
 * #20026500
-    Intracartilaginous use
-    20026500
+    "Intracartilaginous use"
+    "Administration of a medicinal product into the cartilage"
   * ^designation[0].language = #en
-  * ^designation[=].value = Intracartilaginous use
+  * ^designation[=].value = "Intracartilaginous use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интракартилагинозно приложение"
@@ -3390,10 +3390,10 @@ Title:     "Route of administration"
   
 
 * #20027000
-    Intracavernous use
-    20027000
+    "Intracavernous use"
+    "Injection of a medicinal product into the corpus cavernosum."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intracavernous use
+  * ^designation[=].value = "Intracavernous use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интракавернозно приложение"
@@ -3493,10 +3493,10 @@ Title:     "Route of administration"
   
 
 * #20027010
-    Intracerebral use
-    20027010
+    "Intracerebral use"
+    "Administration of a medicinal product directly to the brain tissue. This term is only for use when a more-specific term (e.g. 'Intraputaminal use') is not applicable."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intracerebral use
+  * ^designation[=].value = "Intracerebral use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрацеребрално приложение"
@@ -3593,10 +3593,10 @@ Title:     "Route of administration"
   
 
 * #20028000
-    Intracervical use
-    20028000
+    "Intracervical use"
+    "Injection of a medicinal product into the cervix uteri."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intracervical use
+  * ^designation[=].value = "Intracervical use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрацервикално приложение"
@@ -3696,10 +3696,10 @@ Title:     "Route of administration"
   
 
 * #20028300
-    Intracholangiopancreatic use
-    20028300
+    "Intracholangiopancreatic use"
+    "Injection of a medicinal product into the bile duct and the pancreatic duct, for example via a cannula introduced into the ampulla of Vater (the common opening of the ducts), usually for the administration of a contrast medium for techniques such as endoscopic retrograde cholangiopancreatography (ERCP)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intracholangiopancreatic use
+  * ^designation[=].value = "Intracholangiopancreatic use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрахолангиопанкреатично приложение"
@@ -3781,10 +3781,10 @@ Title:     "Route of administration"
   
 
 * #20028500
-    Intracisternal use
-    20028500
+    "Intracisternal use"
+    "Administration of a medicinal product into the cisterna magna."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intracisternal use
+  * ^designation[=].value = "Intracisternal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрацистернално приложение"
@@ -3872,10 +3872,10 @@ Title:     "Route of administration"
   
 
 * #20029000
-    Intracoronary use
-    20029000
+    "Intracoronary use"
+    "Injection of a medicinal product into the coronary artery."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intracoronary use
+  * ^designation[=].value = "Intracoronary use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интракоронарно приложение"
@@ -3975,10 +3975,10 @@ Title:     "Route of administration"
   
 
 * #20030000
-    Intradermal use
-    20030000
+    "Intradermal use"
+    "Injection of a medicinal product into the dermis."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intradermal use
+  * ^designation[=].value = "Intradermal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрадермално приложение"
@@ -4078,10 +4078,10 @@ Title:     "Route of administration"
   
 
 * #20031000
-    Intradiscal use
-    20031000
+    "Intradiscal use"
+    "Injection of a medicinal product into the nucleus pulposus of an intervertebral disc."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intradiscal use
+  * ^designation[=].value = "Intradiscal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрадискално приложение"
@@ -4181,10 +4181,10 @@ Title:     "Route of administration"
   
 
 * #20031500
-    Intraepidermal use
-    20031500
+    "Intraepidermal use"
+    "Administration of a medicinal product into the epidermis"
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraepidermal use
+  * ^designation[=].value = "Intraepidermal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интраепидермално приложение"
@@ -4275,10 +4275,10 @@ Title:     "Route of administration"
   
 
 * #20031700
-    Intraglandular use
-    20031700
+    "Intraglandular use"
+    "Administration of a medicinal product directly into a gland, usually by injection. Only to be used where more-specific terms such as 'Intraprostatic use' and 'Intramammary use' do not apply."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraglandular use
+  * ^designation[=].value = "Intraglandular use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрагландуларно приложение"
@@ -4360,10 +4360,10 @@ Title:     "Route of administration"
   
 
 * #20032000
-    Intralesional use
-    20032000
+    "Intralesional use"
+    "Administration by injection or any other means of a medicinal product directly to a lesion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intralesional use
+  * ^designation[=].value = "Intralesional use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интралезийно приложение"
@@ -4463,10 +4463,10 @@ Title:     "Route of administration"
   
 
 * #20033000
-    Intralymphatic use
-    20033000
+    "Intralymphatic use"
+    "Injection of a medicinal product into a lymphatic vessel."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intralymphatic use
+  * ^designation[=].value = "Intralymphatic use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интралимфно приложение"
@@ -4566,10 +4566,10 @@ Title:     "Route of administration"
   
 
 * #20034000
-    Intramammary use
-    20034000
+    "Intramammary use"
+    "Administration of a veterinary medicinal product into the intramammary gland via the teat canal."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intramammary use
+  * ^designation[=].value = "Intramammary use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрамамарно приложение"
@@ -4663,10 +4663,10 @@ Title:     "Route of administration"
   
 
 * #20035000
-    Intramuscular use
-    20035000
+    "Intramuscular use"
+    "Injection of a medicinal product into muscular tissue."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intramuscular use
+  * ^designation[=].value = "Intramuscular use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрамускулно приложение"
@@ -4766,10 +4766,10 @@ Title:     "Route of administration"
   
 
 * #20036000
-    Intraocular use
-    20036000
+    "Intraocular use"
+    "Administration of a medicinal product into the eye. The term 'intraocular use' is only for use when a more specific term (e.g. 'intracameral use', 'intravitreal use') does not apply. Ocular use and subconjunctival use are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraocular use
+  * ^designation[=].value = "Intraocular use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вътреочно приложение"
@@ -4869,10 +4869,10 @@ Title:     "Route of administration"
   
 
 * #20036500
-    Intraosseous use
-    20036500
+    "Intraosseous use"
+    "Administration of a medicinal product into the bone marrow. Intrasternal use is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraosseous use
+  * ^designation[=].value = "Intraosseous use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вътрекостно приложение"
@@ -4969,10 +4969,10 @@ Title:     "Route of administration"
   
 
 * #20037000
-    Intrapericardial use
-    20037000
+    "Intrapericardial use"
+    "Injection of a medicinal product to the pericardium."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrapericardial use
+  * ^designation[=].value = "Intrapericardial use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интраперикардиално приложение"
@@ -5072,10 +5072,10 @@ Title:     "Route of administration"
   
 
 * #20038000
-    Intraperitoneal use
-    20038000
+    "Intraperitoneal use"
+    "Injection of a medicinal product into the peritoneal cavity."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraperitoneal use
+  * ^designation[=].value = "Intraperitoneal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интраперитонеално приложение"
@@ -5175,10 +5175,10 @@ Title:     "Route of administration"
   
 
 * #20039000
-    Intrapleural use
-    20039000
+    "Intrapleural use"
+    "Injection of a medicinal product into the pleural cavity."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrapleural use
+  * ^designation[=].value = "Intrapleural use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интраплеврално приложение"
@@ -5278,10 +5278,10 @@ Title:     "Route of administration"
   
 
 * #20039200
-    Intraportal use
-    20039200
+    "Intraportal use"
+    "Injection/infusion of a medicinal product into the hepatic portal vein for local delivery to the liver."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraportal use
+  * ^designation[=].value = "Intraportal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрапортално приложение"
@@ -5363,10 +5363,10 @@ Title:     "Route of administration"
   
 
 * #20039500
-    Intraprostatic use
-    20039500
+    "Intraprostatic use"
+    "Administration of a medicinal product into the prostate"
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraprostatic use
+  * ^designation[=].value = "Intraprostatic use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрапростатно приложение"
@@ -5454,10 +5454,10 @@ Title:     "Route of administration"
   
 
 * #20039800
-    Intrapulmonary use
-    20039800
+    "Intrapulmonary use"
+    "Administration of a medicinal product into the lung, usually by injection. 'Inhalation use' and 'Endotracheopulmonary use' are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrapulmonary use
+  * ^designation[=].value = "Intrapulmonary use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрапулмонално приложение"
@@ -5530,10 +5530,10 @@ Title:     "Route of administration"
   
 
 * #20040000
-    Intraruminal use
-    20040000
+    "Intraruminal use"
+    "Administration of a veterinary medicinal product into the rumen."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraruminal use
+  * ^designation[=].value = "Intraruminal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интраруминално приложение"
@@ -5630,10 +5630,10 @@ Title:     "Route of administration"
   
 
 * #20041000
-    Intrasternal use
-    20041000
+    "Intrasternal use"
+    "Injection of a medicinal product into the bone marrow of the sternum."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrasternal use
+  * ^designation[=].value = "Intrasternal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрастернално приложение"
@@ -5733,10 +5733,10 @@ Title:     "Route of administration"
   
 
 * #20042000
-    Intrathecal use
-    20042000
+    "Intrathecal use"
+    "Injection of a medicinal product through the dura to the subarachnoid cavity."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrathecal use
+  * ^designation[=].value = "Intrathecal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интратекално приложение"
@@ -5836,10 +5836,10 @@ Title:     "Route of administration"
   
 
 * #20043000
-    Intratumoral use
-    20043000
+    "Intratumoral use"
+    "Injection of a medicinal product into a tumor."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intratumoral use
+  * ^designation[=].value = "Intratumoral use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интратуморно приложение"
@@ -5936,10 +5936,10 @@ Title:     "Route of administration"
   
 
 * #20044000
-    Intrauterine use
-    20044000
+    "Intrauterine use"
+    "Administration of a medicinal product to the cavity of the uterus."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrauterine use
+  * ^designation[=].value = "Intrauterine use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вътрематочно приложение"
@@ -6039,10 +6039,10 @@ Title:     "Route of administration"
   
 
 * #20045000
-    Intravenous use
-    20045000
+    "Intravenous use"
+    "Injection of a medicinal product into a vein."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intravenous use
+  * ^designation[=].value = "Intravenous use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интравенозно приложение"
@@ -6142,10 +6142,10 @@ Title:     "Route of administration"
   
 
 * #20046000
-    Intravesical use
-    20046000
+    "Intravesical use"
+    "Administration of a medicinal product to the urinary bladder."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intravesical use
+  * ^designation[=].value = "Intravesical use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интравезикално приложение"
@@ -6245,10 +6245,10 @@ Title:     "Route of administration"
   
 
 * #20047000
-    Intravitreal use
-    20047000
+    "Intravitreal use"
+    "Administration of a medicinal product into the rear chamber of the eye."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intravitreal use
+  * ^designation[=].value = "Intravitreal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интравитреално приложение"
@@ -6348,10 +6348,10 @@ Title:     "Route of administration"
   
 
 * #20047500
-    Iontophoresis
-    20047500
+    "Iontophoresis"
+    "Introduction of (an) ionised active substance(s) through the intact skin by application of a direct electric current"
   * ^designation[0].language = #en
-  * ^designation[=].value = Iontophoresis
+  * ^designation[=].value = "Iontophoresis"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Йонофореза"
@@ -6439,10 +6439,10 @@ Title:     "Route of administration"
   
 
 * #20048000
-    Laryngopharyngeal use
-    20048000
+    "Laryngopharyngeal use"
+    "Administration of a medicinal product to the laryngopharynx for a local effect (anaesthetics)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Laryngopharyngeal use
+  * ^designation[=].value = "Laryngopharyngeal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ларингофарингеално приложение"
@@ -6542,10 +6542,10 @@ Title:     "Route of administration"
   
 
 * #20048500
-    Nail use
-    20048500
+    "Nail use"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Nail use
+  * ^designation[=].value = "Nail use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -6573,10 +6573,10 @@ Title:     "Route of administration"
   
 
 * #20049000
-    Nasal use
-    20049000
+    "Nasal use"
+    "Administration of a medicinal product to the nose to obtain a systemic or local effect. Inhalation therapy intended for the lower respiratory tract is excluded; see inhalation use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal use
+  * ^designation[=].value = "Nasal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Назално приложение"
@@ -6676,10 +6676,10 @@ Title:     "Route of administration"
   
 
 * #20050000
-    Nebulisation use
-    20050000
+    "Nebulisation use"
+    "Administration of a veterinary medicinal product converted into an aerosol for mass medication, for example of birds."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nebulisation use
+  * ^designation[=].value = "Nebulisation use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане чрез небулизиране"
@@ -6776,10 +6776,10 @@ Title:     "Route of administration"
   
 
 * #20051000
-    Ocular use
-    20051000
+    "Ocular use"
+    "Administration of a medicinal product upon the eyeball and/or conjunctiva."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ocular use
+  * ^designation[=].value = "Ocular use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Очно приложение"
@@ -6879,10 +6879,10 @@ Title:     "Route of administration"
   
 
 * #20052000
-    Oculonasal use
-    20052000
+    "Oculonasal use"
+    "Administration of a veterinary medicinal product by instillation (dropping) into the eyes and nares of individual animals (usually birds), or spraying onto the animals to achieve the same effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oculonasal use
+  * ^designation[=].value = "Oculonasal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Очно-назално прилагане"
@@ -6979,10 +6979,10 @@ Title:     "Route of administration"
   
 
 * #20053000
-    Oral use
-    20053000
+    "Oral use"
+    "Taking a medicinal product by means of swallowing."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral use
+  * ^designation[=].value = "Oral use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорално приложение"
@@ -7082,10 +7082,10 @@ Title:     "Route of administration"
   
 
 * #20054000
-    Oromucosal use
-    20054000
+    "Oromucosal use"
+    "Administration of a medicinal product to the oral cavity to obtain either a systemic or a local effect. The term oromucosal is only for use when a more specific term (e.g. buccal, gingival, sublingual...) does not apply. Oral use is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal use
+  * ^designation[=].value = "Oromucosal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Оромукозно приложение"
@@ -7185,10 +7185,10 @@ Title:     "Route of administration"
   
 
 * #20055000
-    Oropharyngeal use
-    20055000
+    "Oropharyngeal use"
+    "Administration of a medicinal product to the oropharynx (throat) to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oropharyngeal use
+  * ^designation[=].value = "Oropharyngeal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Орофарингеално приложение"
@@ -7288,10 +7288,10 @@ Title:     "Route of administration"
   
 
 * #20056000
-    Paravertebral use
-    20056000
+    "Paravertebral use"
+    "Injection of a veterinary medicinal product along the spinal column of animals."
   * ^designation[0].language = #en
-  * ^designation[=].value = Paravertebral use
+  * ^designation[=].value = "Paravertebral use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Паравертебрално приложение"
@@ -7388,10 +7388,10 @@ Title:     "Route of administration"
   
 
 * #20057000
-    Periarticular use
-    20057000
+    "Periarticular use"
+    "Injection of a medicinal product around a joint."
   * ^designation[0].language = #en
-  * ^designation[=].value = Periarticular use
+  * ^designation[=].value = "Periarticular use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Периартикуларно приложение"
@@ -7491,10 +7491,10 @@ Title:     "Route of administration"
   
 
 * #20058000
-    Perineural use
-    20058000
+    "Perineural use"
+    "Injection of a medicinal product into the direct surroundings of one or more nerves."
   * ^designation[0].language = #en
-  * ^designation[=].value = Perineural use
+  * ^designation[=].value = "Perineural use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Периневрално приложение"
@@ -7594,10 +7594,10 @@ Title:     "Route of administration"
   
 
 * #20059000
-    Periodontal use
-    20059000
+    "Periodontal use"
+    "Administration to the pouch between the tooth and the gingiva."
   * ^designation[0].language = #en
-  * ^designation[=].value = Periodontal use
+  * ^designation[=].value = "Periodontal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Периодонтално приложение"
@@ -7697,10 +7697,10 @@ Title:     "Route of administration"
   
 
 * #20059300
-    Periosseous use
-    20059300
+    "Periosseous use"
+    "Administration of a medicinal product on or around the bone"
   * ^designation[0].language = #en
-  * ^designation[=].value = Periosseous use
+  * ^designation[=].value = "Periosseous use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Околокостно приложение"
@@ -7788,10 +7788,10 @@ Title:     "Route of administration"
   
 
 * #20059400
-    Peritumoral use
-    20059400
+    "Peritumoral use"
+    "Administration of a medicinal product directly into the region surrounding a tumour."
   * ^designation[0].language = #en
-  * ^designation[=].value = Peritumoral use
+  * ^designation[=].value = "Peritumoral use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перитуморно приложение"
@@ -7876,10 +7876,10 @@ Title:     "Route of administration"
   
 
 * #20059500
-    Posterior juxtascleral use
-    20059500
+    "Posterior juxtascleral use"
+    "Administration of a medicinal product beneath the sub-tenon membrane of the sclera (i.e. in the episcleral space), adjacent to the macula."
   * ^designation[0].language = #en
-  * ^designation[=].value = Posterior juxtascleral use
+  * ^designation[=].value = "Posterior juxtascleral use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Задно юкстасклерално приложение"
@@ -7973,10 +7973,10 @@ Title:     "Route of administration"
   
 
 * #20060000
-    Pour-on use
-    20060000
+    "Pour-on use"
+    "Administration of a veterinary medicinal product by pouring onto the dorsal midline of the animal or to the top of the head and around the base of the horns."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pour-on use
+  * ^designation[=].value = "Pour-on use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане чрез поливане"
@@ -8073,10 +8073,10 @@ Title:     "Route of administration"
   
 
 * #20061000
-    Rectal use
-    20061000
+    "Rectal use"
+    "Administration of a medicinal product to the rectum in order to obtain a local or systemic effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Rectal use
+  * ^designation[=].value = "Rectal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ректално приложение"
@@ -8176,10 +8176,10 @@ Title:     "Route of administration"
   
 
 * #20061500
-    Retrobulbar use
-    20061500
+    "Retrobulbar use"
+    "Administration of a medicinal product behind the eyeball"
   * ^designation[0].language = #en
-  * ^designation[=].value = Retrobulbar use
+  * ^designation[=].value = "Retrobulbar use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ретробулбарно приложение"
@@ -8267,10 +8267,10 @@ Title:     "Route of administration"
   
 
 * #20062000
-    Route of administration not applicable
-    20062000
+    "Route of administration not applicable"
+    "Applies to medicinal products not directly coming into contact with the body of the patient, or administration to various or non-specified anatomical sites."
   * ^designation[0].language = #en
-  * ^designation[=].value = Route of administration not applicable
+  * ^designation[=].value = "Route of administration not applicable"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пътят на въвеждане не е дефиниран"
@@ -8370,10 +8370,10 @@ Title:     "Route of administration"
   
 
 * #20063000
-    Skin scarification
-    20063000
+    "Skin scarification"
+    "Administration of a medicinal product by scratching the skin."
   * ^designation[0].language = #en
-  * ^designation[=].value = Skin scarification
+  * ^designation[=].value = "Skin scarification"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Скарификация"
@@ -8473,10 +8473,10 @@ Title:     "Route of administration"
   
 
 * #20064000
-    Spot-on use
-    20064000
+    "Spot-on use"
+    "Administration of a veterinary medicinal product to a single site on the back of the animal or the base of the poll of the head."
   * ^designation[0].language = #en
-  * ^designation[=].value = Spot-on use
+  * ^designation[=].value = "Spot-on use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане върху ограничен участък"
@@ -8573,10 +8573,10 @@ Title:     "Route of administration"
   
 
 * #20065000
-    Subconjunctival use
-    20065000
+    "Subconjunctival use"
+    "Injection of a medicinal product underneath the conjunctiva."
   * ^designation[0].language = #en
-  * ^designation[=].value = Subconjunctival use
+  * ^designation[=].value = "Subconjunctival use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Субконюктивално приложение"
@@ -8676,10 +8676,10 @@ Title:     "Route of administration"
   
 
 * #20066000
-    Subcutaneous use
-    20066000
+    "Subcutaneous use"
+    "Injection of a medicinal product directly underneath the skin, i.e. subdermally"
   * ^designation[0].language = #en
-  * ^designation[=].value = Subcutaneous use
+  * ^designation[=].value = "Subcutaneous use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Подкожно приложение"
@@ -8779,10 +8779,10 @@ Title:     "Route of administration"
   
 
 * #20067000
-    Sublingual use
-    20067000
+    "Sublingual use"
+    "Administration of a medicinal product under the tongue to obtain a systemic effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sublingual use
+  * ^designation[=].value = "Sublingual use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сублингвално приложение"
@@ -8882,10 +8882,10 @@ Title:     "Route of administration"
   
 
 * #20067500
-    Submucosal use
-    20067500
+    "Submucosal use"
+    "Injection of a medicinal product directly underneath a mucosa"
   * ^designation[0].language = #en
-  * ^designation[=].value = Submucosal use
+  * ^designation[=].value = "Submucosal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Субмукозно приложение"
@@ -8973,10 +8973,10 @@ Title:     "Route of administration"
   
 
 * #20068000
-    Teat use
-    20068000
+    "Teat use"
+    "Administration of a veterinary medicinal product to the surface of teat(s). Teat dipping is included."
   * ^designation[0].language = #en
-  * ^designation[=].value = Teat use
+  * ^designation[=].value = "Teat use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане върху папила на млечна жлеза"
@@ -9070,10 +9070,10 @@ Title:     "Route of administration"
   
 
 * #20069000
-    Top-dressing use
-    20069000
+    "Top-dressing use"
+    "Administration of a veterinary medicinal product by application onto the surface of the feed immediately prior to feeding."
   * ^designation[0].language = #en
-  * ^designation[=].value = Top-dressing use
+  * ^designation[=].value = "Top-dressing use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане чрез разпръскване върху храна"
@@ -9167,10 +9167,10 @@ Title:     "Route of administration"
   
 
 * #20070000
-    Transdermal use
-    20070000
+    "Transdermal use"
+    "Administration of a medicinal product to the skin in order to obtain a systemic effect after passing through the skin barrier."
   * ^designation[0].language = #en
-  * ^designation[=].value = Transdermal use
+  * ^designation[=].value = "Transdermal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Трансдермално приложение"
@@ -9270,10 +9270,10 @@ Title:     "Route of administration"
   
 
 * #20071000
-    Urethral use
-    20071000
+    "Urethral use"
+    "Administration of a medicinal product to the urethra."
   * ^designation[0].language = #en
-  * ^designation[=].value = Urethral use
+  * ^designation[=].value = "Urethral use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Уретрално приложение"
@@ -9373,10 +9373,10 @@ Title:     "Route of administration"
   
 
 * #20072000
-    Vaginal use
-    20072000
+    "Vaginal use"
+    "Administration of a medicinal product to the vagina."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal use
+  * ^designation[=].value = "Vaginal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинално приложение"
@@ -9476,10 +9476,10 @@ Title:     "Route of administration"
   
 
 * #20073000
-    Water-borne use
-    20073000
+    "Water-borne use"
+    "Administration of a veterinary medicinal product to aquatic (marine or fresh water) species by medication of the water environment."
   * ^designation[0].language = #en
-  * ^designation[=].value = Water-borne use
+  * ^designation[=].value = "Water-borne use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане във водна среда"
@@ -9576,10 +9576,10 @@ Title:     "Route of administration"
   
 
 * #20074000
-    Wing-web-stab use
-    20074000
+    "Wing-web-stab use"
+    "Administration of a veterinary medicinal product into the wing-web of a bird."
   * ^designation[0].language = #en
-  * ^designation[=].value = Wing-web-stab use
+  * ^designation[=].value = "Wing-web-stab use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прилагане чрез набождане на крилната гънка"
@@ -9676,10 +9676,10 @@ Title:     "Route of administration"
   
 
 * #20080000
-    Intracerebroventricular use
-    20080000
+    "Intracerebroventricular use"
+    "Administration of a medicinal product into the cerebral ventricles (cerebral ventricular system) of the brain."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intracerebroventricular use
+  * ^designation[=].value = "Intracerebroventricular use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрацеребровентрикуларно приложение"
@@ -9761,10 +9761,10 @@ Title:     "Route of administration"
   
 
 * #20081000
-    Subretinal use
-    20081000
+    "Subretinal use"
+    "Administration of a medicinal product between the sensory retina (neural retina) and the retinal pigment epithelium of the eye."
   * ^designation[0].language = #en
-  * ^designation[=].value = Subretinal use
+  * ^designation[=].value = "Subretinal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Субретинално приложение"
@@ -9843,10 +9843,10 @@ Title:     "Route of administration"
   
 
 * #20084000
-    Intracorneal use
-    20084000
+    "Intracorneal use"
+    "Administration of a medicinal product into the cornea of the eye."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intracorneal use
+  * ^designation[=].value = "Intracorneal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интракорнеално приложение"
@@ -9910,10 +9910,10 @@ Title:     "Route of administration"
   
 
 * #20086000
-    Intraputaminal use
-    20086000
+    "Intraputaminal use"
+    "Administration of a medicinal product into one or both of the putamen of the brain."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraputaminal use
+  * ^designation[=].value = "Intraputaminal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрапутаминално приложение"
@@ -9977,10 +9977,10 @@ Title:     "Route of administration"
   
 
 * #20087000
-    Extrapleural use
-    20087000
+    "Extrapleural use"
+    "Injection of a medicinal product directly outside the pleural cavity, between the parietal pleura and the endothoracic fascia."
   * ^designation[0].language = #en
-  * ^designation[=].value = Extrapleural use
+  * ^designation[=].value = "Extrapleural use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Екстраплеврално приложение"

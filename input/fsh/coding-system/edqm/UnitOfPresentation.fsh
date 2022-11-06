@@ -1,14 +1,14 @@
 CodeSystem: UnitOfPresentation
 Id:         unit-of-presentation
-Title:     "Unit of presentation"
+Title:      "Unit of presentation"
 * ^hierarchyMeaning = #is-a
 
 
 * #15001000
-    Actuation
-    15001000
+    "Actuation"
+    "A unit of presentation used to represent the quantity of product that is administered following a single operation of a metered-dose pump, valve or other equivalent dosing mechanism."
   * ^designation[0].language = #en
-  * ^designation[=].value = Actuation
+  * ^designation[=].value = "Actuation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Активиране"
@@ -75,10 +75,10 @@ Title:     "Unit of presentation"
   
 
 * #15002000
-    Ampoule
-    15002000
+    "Ampoule"
+    "A unit of presentation used to represent the quantity of product that is found in a single ampoule container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ampoule
+  * ^designation[=].value = "Ampoule"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ампула"
@@ -157,10 +157,10 @@ Title:     "Unit of presentation"
   
 
 * #15004000
-    Applicator
-    15004000
+    "Applicator"
+    "A unit of presentation used to represent the quantity of product that is found in a single applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Applicator
+  * ^designation[=].value = "Applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор"
@@ -239,10 +239,10 @@ Title:     "Unit of presentation"
   
 
 * #15005000
-    Bag
-    15005000
+    "Bag"
+    "A unit of presentation used to represent the quantity of product that is found in a single bag container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Bag
+  * ^designation[=].value = "Bag"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сак"
@@ -321,10 +321,10 @@ Title:     "Unit of presentation"
   
 
 * #15006000
-    Barrel
-    15006000
+    "Barrel"
+    "A unit of presentation used to represent the quantity of product that is found in a single barrel container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Barrel
+  * ^designation[=].value = "Barrel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Бидон"
@@ -400,10 +400,10 @@ Title:     "Unit of presentation"
   
 
 * #15007000
-    Blister
-    15007000
+    "Blister"
+    "A unit of presentation used to represent the quantity of product that is found in a single blister or unit-dose blister container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Blister
+  * ^designation[=].value = "Blister"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Блистер"
@@ -482,10 +482,10 @@ Title:     "Unit of presentation"
   
 
 * #15008000
-    Block
-    15008000
+    "Block"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of block."
   * ^designation[0].language = #en
-  * ^designation[=].value = Block
+  * ^designation[=].value = "Block"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Блокче"
@@ -558,10 +558,10 @@ Title:     "Unit of presentation"
   
 
 * #15009000
-    Bottle
-    15009000
+    "Bottle"
+    "A unit of presentation used to represent the quantity of product that is found in a single bottle container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Bottle
+  * ^designation[=].value = "Bottle"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Бутилка"
@@ -640,10 +640,10 @@ Title:     "Unit of presentation"
   
 
 * #15011000
-    Cachet
-    15011000
+    "Cachet"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of cachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cachet
+  * ^designation[=].value = "Cachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Нишестена капсула"
@@ -722,10 +722,10 @@ Title:     "Unit of presentation"
   
 
 * #15012000
-    Capsule
-    15012000
+    "Capsule"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of capsule."
   * ^designation[0].language = #en
-  * ^designation[=].value = Capsule
+  * ^designation[=].value = "Capsule"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула"
@@ -804,10 +804,10 @@ Title:     "Unit of presentation"
   
 
 * #15013000
-    Cartridge
-    15013000
+    "Cartridge"
+    "A unit of presentation used to represent the quantity of product that is found in a single cartridge container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cartridge
+  * ^designation[=].value = "Cartridge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Патрон"
@@ -886,10 +886,10 @@ Title:     "Unit of presentation"
   
 
 * #15015000
-    Collar
-    15015000
+    "Collar"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of collar."
   * ^designation[0].language = #en
-  * ^designation[=].value = Collar
+  * ^designation[=].value = "Collar"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Каишка"
@@ -962,10 +962,10 @@ Title:     "Unit of presentation"
   
 
 * #15016000
-    Container
-    15016000
+    "Container"
+    "A unit of presentation used to represent the quantity of product that is found in a single container, where a more-specific container term is not applicable."
   * ^designation[0].language = #en
-  * ^designation[=].value = Container
+  * ^designation[=].value = "Container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Опаковка"
@@ -1041,10 +1041,10 @@ Title:     "Unit of presentation"
   
 
 * #15017000
-    Cup
-    15017000
+    "Cup"
+    "A unit of presentation used to represent the quantity of product that is administered by filling a single cup administration device."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cup
+  * ^designation[=].value = "Cup"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Чашка"
@@ -1117,10 +1117,10 @@ Title:     "Unit of presentation"
   
 
 * #15018000
-    Cylinder
-    15018000
+    "Cylinder"
+    "A unit of presentation used to represent the quantity of product that is found in a single cylinder-type container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cylinder
+  * ^designation[=].value = "Cylinder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Цилиндър"
@@ -1193,10 +1193,10 @@ Title:     "Unit of presentation"
   
 
 * #15019000
-    Dart
-    15019000
+    "Dart"
+    "A unit of presentation used to represent the quantity of product that is found in a single dart container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dart
+  * ^designation[=].value = "Dart"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стрела за инжектиране"
@@ -1263,10 +1263,10 @@ Title:     "Unit of presentation"
   
 
 * #15021000
-    Dressing
-    15021000
+    "Dressing"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of dressing."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dressing
+  * ^designation[=].value = "Dressing"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Превръзка"
@@ -1339,10 +1339,10 @@ Title:     "Unit of presentation"
   
 
 * #15022000
-    Drop
-    15022000
+    "Drop"
+    "A unit of presentation used to represent the quantity of product that is administered in a single drop dispensed from a dropper or equivalent administration device."
   * ^designation[0].language = #en
-  * ^designation[=].value = Drop
+  * ^designation[=].value = "Drop"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капка"
@@ -1421,10 +1421,10 @@ Title:     "Unit of presentation"
   
 
 * #15023000
-    Film
-    15023000
+    "Film"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of film."
   * ^designation[0].language = #en
-  * ^designation[=].value = Film
+  * ^designation[=].value = "Film"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Филм"
@@ -1500,10 +1500,10 @@ Title:     "Unit of presentation"
   
 
 * #15024000
-    Chewing gum
-    15024000
+    "Chewing gum"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of medicated chewing gum."
   * ^designation[0].language = #en
-  * ^designation[=].value = Chewing gum
+  * ^designation[=].value = "Chewing gum"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дъвка"
@@ -1582,10 +1582,10 @@ Title:     "Unit of presentation"
   
 
 * #15025000
-    Implant
-    15025000
+    "Implant"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of implant."
   * ^designation[0].language = #en
-  * ^designation[=].value = Implant
+  * ^designation[=].value = "Implant"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Имплантат"
@@ -1664,10 +1664,10 @@ Title:     "Unit of presentation"
   
 
 * #15026000
-    Inhaler
-    15026000
+    "Inhaler"
+    "A unit of presentation used to represent the quantity of product that is found in a single inhaler container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhaler
+  * ^designation[=].value = "Inhaler"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инхалатор"
@@ -1746,10 +1746,10 @@ Title:     "Unit of presentation"
   
 
 * #15027000
-    Insert
-    15027000
+    "Insert"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of insert."
   * ^designation[0].language = #en
-  * ^designation[=].value = Insert
+  * ^designation[=].value = "Insert"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пластинка"
@@ -1825,10 +1825,10 @@ Title:     "Unit of presentation"
   
 
 * #15028000
-    Jar
-    15028000
+    "Jar"
+    "A unit of presentation used to represent the quantity of product that is found in a single jar container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Jar
+  * ^designation[=].value = "Jar"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Банка"
@@ -1901,10 +1901,10 @@ Title:     "Unit of presentation"
   
 
 * #15029000
-    Lozenge
-    15029000
+    "Lozenge"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of lozenge."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lozenge
+  * ^designation[=].value = "Lozenge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка за смучене"
@@ -1983,10 +1983,10 @@ Title:     "Unit of presentation"
   
 
 * #15030000
-    Lyophilisate
-    15030000
+    "Lyophilisate"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of lyophilisate."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate
+  * ^designation[=].value = "Lyophilisate"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат"
@@ -2065,10 +2065,10 @@ Title:     "Unit of presentation"
   
 
 * #15031000
-    Matrix
-    15031000
+    "Matrix"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of matrix."
   * ^designation[0].language = #en
-  * ^designation[=].value = Matrix
+  * ^designation[=].value = "Matrix"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Матрица"
@@ -2147,10 +2147,10 @@ Title:     "Unit of presentation"
   
 
 * #15033000
-    Pad
-    15033000
+    "Pad"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of pad."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pad
+  * ^designation[=].value = "Pad"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Компрес"
@@ -2223,10 +2223,10 @@ Title:     "Unit of presentation"
   
 
 * #15034000
-    Paper
-    15034000
+    "Paper"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of paper."
   * ^designation[0].language = #en
-  * ^designation[=].value = Paper
+  * ^designation[=].value = "Paper"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Хартия"
@@ -2296,10 +2296,10 @@ Title:     "Unit of presentation"
   
 
 * #15035000
-    Pastille
-    15035000
+    "Pastille"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of pastille."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pastille
+  * ^designation[=].value = "Pastille"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пастил"
@@ -2378,10 +2378,10 @@ Title:     "Unit of presentation"
   
 
 * #15036000
-    Patch
-    15036000
+    "Patch"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of patch."
   * ^designation[0].language = #en
-  * ^designation[=].value = Patch
+  * ^designation[=].value = "Patch"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пластир"
@@ -2457,10 +2457,10 @@ Title:     "Unit of presentation"
   
 
 * #15037000
-    Pen
-    15037000
+    "Pen"
+    "A unit of presentation used to represent the quantity of product that is found in a single pen container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pen
+  * ^designation[=].value = "Pen"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Писалка"
@@ -2539,10 +2539,10 @@ Title:     "Unit of presentation"
   
 
 * #15038000
-    Pendant
-    15038000
+    "Pendant"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of pendant."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pendant
+  * ^designation[=].value = "Pendant"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Превръзка"
@@ -2612,10 +2612,10 @@ Title:     "Unit of presentation"
   
 
 * #15039000
-    Pessary
-    15039000
+    "Pessary"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of pessary."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pessary
+  * ^designation[=].value = "Pessary"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Песар"
@@ -2694,10 +2694,10 @@ Title:     "Unit of presentation"
   
 
 * #15040000
-    Pillule
-    15040000
+    "Pillule"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of pillule."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pillule
+  * ^designation[=].value = "Pillule"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пилула"
@@ -2770,10 +2770,10 @@ Title:     "Unit of presentation"
   
 
 * #15041000
-    Pipette
-    15041000
+    "Pipette"
+    "A unit of presentation used to represent the quantity of product that is found in a single pipette administration device."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pipette
+  * ^designation[=].value = "Pipette"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пипета"
@@ -2852,10 +2852,10 @@ Title:     "Unit of presentation"
   
 
 * #15042000
-    Plaster
-    15042000
+    "Plaster"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of plaster."
   * ^designation[0].language = #en
-  * ^designation[=].value = Plaster
+  * ^designation[=].value = "Plaster"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пластир"
@@ -2934,10 +2934,10 @@ Title:     "Unit of presentation"
   
 
 * #15043000
-    Plug
-    15043000
+    "Plug"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of plug."
   * ^designation[0].language = #en
-  * ^designation[=].value = Plug
+  * ^designation[=].value = "Plug"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пълнител"
@@ -3013,10 +3013,10 @@ Title:     "Unit of presentation"
   
 
 * #15044000
-    Pouch
-    15044000
+    "Pouch"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form or container is a type of pouch."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pouch
+  * ^designation[=].value = "Pouch"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Торбичка"
@@ -3095,10 +3095,10 @@ Title:     "Unit of presentation"
   
 
 * #15045000
-    Sachet
-    15045000
+    "Sachet"
+    "A unit of presentation used to represent the quantity of product that is found in a single sachet container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sachet
+  * ^designation[=].value = "Sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Саше"
@@ -3177,10 +3177,10 @@ Title:     "Unit of presentation"
   
 
 * #15046000
-    Sponge
-    15046000
+    "Sponge"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of sponge."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sponge
+  * ^designation[=].value = "Sponge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гъба"
@@ -3256,10 +3256,10 @@ Title:     "Unit of presentation"
   
 
 * #15047000
-    Spoonful
-    15047000
+    "Spoonful"
+    "A unit of presentation used to represent the quantity of product that is administered by filling a single spoon administration device."
   * ^designation[0].language = #en
-  * ^designation[=].value = Spoonful
+  * ^designation[=].value = "Spoonful"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лъжичка"
@@ -3335,10 +3335,10 @@ Title:     "Unit of presentation"
   
 
 * #15048000
-    Stick
-    15048000
+    "Stick"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of stick."
   * ^designation[0].language = #en
-  * ^designation[=].value = Stick
+  * ^designation[=].value = "Stick"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пръчица"
@@ -3417,10 +3417,10 @@ Title:     "Unit of presentation"
   
 
 * #15049000
-    Straw
-    15049000
+    "Straw"
+    "A unit of presentation used to represent the quantity of product that is found in a single straw container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Straw
+  * ^designation[=].value = "Straw"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сламка"
@@ -3499,10 +3499,10 @@ Title:     "Unit of presentation"
   
 
 * #15050000
-    Strip
-    15050000
+    "Strip"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of strip."
   * ^designation[0].language = #en
-  * ^designation[=].value = Strip
+  * ^designation[=].value = "Strip"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лента"
@@ -3581,10 +3581,10 @@ Title:     "Unit of presentation"
   
 
 * #15051000
-    Suppository
-    15051000
+    "Suppository"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of suppository."
   * ^designation[0].language = #en
-  * ^designation[=].value = Suppository
+  * ^designation[=].value = "Suppository"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Супозитория"
@@ -3663,10 +3663,10 @@ Title:     "Unit of presentation"
   
 
 * #15052000
-    Syringe
-    15052000
+    "Syringe"
+    "A unit of presentation used to represent the quantity of product that is found in a single syringe container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Syringe
+  * ^designation[=].value = "Syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спринцовка"
@@ -3745,10 +3745,10 @@ Title:     "Unit of presentation"
   
 
 * #15053000
-    System
-    15053000
+    "System"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of system."
   * ^designation[0].language = #en
-  * ^designation[=].value = System
+  * ^designation[=].value = "System"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Система"
@@ -3827,10 +3827,10 @@ Title:     "Unit of presentation"
   
 
 * #15054000
-    Tablet
-    15054000
+    "Tablet"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of tablet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet
+  * ^designation[=].value = "Tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка"
@@ -3909,10 +3909,10 @@ Title:     "Unit of presentation"
   
 
 * #15055000
-    Tag
-    15055000
+    "Tag"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of tag."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tag
+  * ^designation[=].value = "Tag"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Обица"
@@ -3982,10 +3982,10 @@ Title:     "Unit of presentation"
   
 
 * #15056000
-    Tampon
-    15056000
+    "Tampon"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of tampon."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tampon
+  * ^designation[=].value = "Tampon"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Тампон"
@@ -4064,10 +4064,10 @@ Title:     "Unit of presentation"
   
 
 * #15057000
-    Thread
-    15057000
+    "Thread"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of thread."
   * ^designation[0].language = #en
-  * ^designation[=].value = Thread
+  * ^designation[=].value = "Thread"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Конец"
@@ -4143,10 +4143,10 @@ Title:     "Unit of presentation"
   
 
 * #15058000
-    Tube
-    15058000
+    "Tube"
+    "A unit of presentation used to represent the quantity of product that is found in a single tube container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tube
+  * ^designation[=].value = "Tube"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Туба"
@@ -4225,10 +4225,10 @@ Title:     "Unit of presentation"
   
 
 * #15059000
-    Vessel
-    15059000
+    "Vessel"
+    "A unit of presentation used to represent the quantity of product that is found in a single vessel-type container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vessel
+  * ^designation[=].value = "Vessel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Съд"
@@ -4304,10 +4304,10 @@ Title:     "Unit of presentation"
   
 
 * #15060000
-    Vial
-    15060000
+    "Vial"
+    "A unit of presentation used to represent the quantity of product that is found in a single vial container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vial
+  * ^designation[=].value = "Vial"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Флакон"
@@ -4386,10 +4386,10 @@ Title:     "Unit of presentation"
   
 
 * #15061000
-    Puff
-    15061000
+    "Puff"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Puff
+  * ^designation[=].value = "Puff"
   
   * ^designation[+].language = #fi-FI
   * ^designation[=].value = "-"
@@ -4405,10 +4405,10 @@ Title:     "Unit of presentation"
   
 
 * #15062000
-    Swab
-    15062000
+    "Swab"
+    "A unit of presentation used to represent the quantity of product that is found in a single discrete entity where the pharmaceutical dose form is a type of swab."
   * ^designation[0].language = #en
-  * ^designation[=].value = Swab
+  * ^designation[=].value = "Swab"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Тампон"

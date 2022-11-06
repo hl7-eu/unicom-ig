@@ -1,14 +1,14 @@
 CodeSystem: CombinedPharmaceuticalDoseForm
 Id:         combined-pharmaceutical-dose-form
-Title:     "Combined pharmaceutical dose form"
+Title:      "Combined pharmaceutical dose form"
 * ^hierarchyMeaning = #is-a
 
 
 * #10114000
-    Powder and solvent for oral solution
-    10114000
+    "Powder and solvent for oral solution"
+    "Powder (including freeze-dried powder) and solvent intended for the preparation of an oral solution by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for oral solution
+  * ^designation[=].value = "Powder and solvent for oral solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за перорален разтвор"
@@ -111,10 +111,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #10115000
-    Powder and solvent for oral suspension
-    10115000
+    "Powder and solvent for oral suspension"
+    "Powder (including freeze-dried powder) and solvent intended for the preparation of an oral suspension by dispersing the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for oral suspension
+  * ^designation[=].value = "Powder and solvent for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за перорална суспензия"
@@ -217,10 +217,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #10115500
-    Powder and solvent for syrup
-    10115500
+    "Powder and solvent for syrup"
+    "Powder (including freeze-dried powder) and solvent intended for the preparation of a syrup by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for syrup
+  * ^designation[=].value = "Powder and solvent for syrup"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за сироп"
@@ -299,10 +299,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #10412000
-    Powder and solution for dental cement
-    10412000
+    "Powder and solution for dental cement"
+    "Powder (including freeze-dried powder) and solution, both containing active substance(s), intended for the preparation of a dental cement by mixing the powder and the solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solution for dental cement
+  * ^designation[=].value = "Powder and solution for dental cement"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтвор за дентален цимент"
@@ -387,10 +387,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #10606000
-    Eye drops, powder and solvent for solution
-    10606000
+    "Eye drops, powder and solvent for solution"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of eye drops, solution, by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, powder and solvent for solution
+  * ^designation[=].value = "Eye drops, powder and solvent for solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи, прах и разтворител за разтвор"
@@ -493,10 +493,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #10607000
-    Eye drops, powder and solvent for suspension
-    10607000
+    "Eye drops, powder and solvent for suspension"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of eye drops, suspension, by dispersing the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, powder and solvent for suspension
+  * ^designation[=].value = "Eye drops, powder and solvent for suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи, прах и разтворител за суспензия"
@@ -599,10 +599,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #10707000
-    Ear drops, powder and solvent for suspension
-    10707000
+    "Ear drops, powder and solvent for suspension"
+    "Powder (including freeze-dried powder) and solvent intended for the preparation of ear drops, suspension, by dispersing the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear drops, powder and solvent for suspension
+  * ^designation[=].value = "Ear drops, powder and solvent for suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за уши, прах и разтворител за суспензия"
@@ -699,10 +699,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #10800500
-    Nasal drops, lyophilisate and solvent for suspension
-    10800500
+    "Nasal drops, lyophilisate and solvent for suspension"
+    "Lyophilisate (freeze-dried powder) and solvent intended for the preparation of nasal drops, suspension, for veterinary use, by dispersing the lyophilisate in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal drops, lyophilisate and solvent for suspension
+  * ^designation[=].value = "Nasal drops, lyophilisate and solvent for suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за нос, лиофилизат и разтворител за суспензия"
@@ -778,10 +778,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #11207000
-    Powder and solvent for solution for injection
-    11207000
+    "Powder and solvent for solution for injection"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of a solution for injection by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for solution for injection
+  * ^designation[=].value = "Powder and solvent for solution for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционен разтвор"
@@ -881,10 +881,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #11208000
-    Powder and solvent for suspension for injection
-    11208000
+    "Powder and solvent for suspension for injection"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of a suspension for injection by dispersing the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for suspension for injection
+  * ^designation[=].value = "Powder and solvent for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционна суспензия"
@@ -984,10 +984,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #11214000
-    Powder and solvent for solution for infusion
-    11214000
+    "Powder and solvent for solution for infusion"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of a solution for infusion by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for solution for infusion
+  * ^designation[=].value = "Powder and solvent for solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инфузионен разтвор"
@@ -1087,10 +1087,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #11214500
-    Lyophilisate and solvent for solution for injection
-    11214500
+    "Lyophilisate and solvent for solution for injection"
+    "Sterile lyophilisate (freeze-dried powder) and sterile solvent intended for the preparation of a solution for injection, for veterinary use, by dissolving the lyophilisate in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate and solvent for solution for injection
+  * ^designation[=].value = "Lyophilisate and solvent for solution for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат и разтворител за инжекционен разтвор"
@@ -1163,10 +1163,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #11214700
-    Lyophilisate and suspension for suspension for injection
-    11214700
+    "Lyophilisate and suspension for suspension for injection"
+    "Sterile lyophilisate (freeze-dried powder) and sterile suspension, both of which contain active substance(s), intended for the preparation of a suspension for injection, for veterinary use, by dispersing the lyophilisate in the suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate and suspension for suspension for injection
+  * ^designation[=].value = "Lyophilisate and suspension for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат и суспензия за инжекционна суспензия"
@@ -1239,10 +1239,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #11304000
-    Powder and solvent for implantation paste
-    11304000
+    "Powder and solvent for implantation paste"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of an implantation paste by dispersing the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for implantation paste
+  * ^designation[=].value = "Powder and solvent for implantation paste"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за паста за имплантиране"
@@ -1336,10 +1336,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #11604000
-    Endotracheopulmonary instillation, powder and solvent for solution
-    11604000
+    "Endotracheopulmonary instillation, powder and solvent for solution"
+    "Powder (including freeze-dried powder) and aqueous solvent intended for the preparation of an endotracheopulmonary instillation solution by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Endotracheopulmonary instillation, powder and solvent for solution
+  * ^designation[=].value = "Endotracheopulmonary instillation, powder and solvent for solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за разтвор за ендотрахеопулмонално инстилиране"
@@ -1439,10 +1439,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #11605000
-    Endotracheopulmonary instillation, powder and solvent for suspension
-    11605000
+    "Endotracheopulmonary instillation, powder and solvent for suspension"
+    "Powder (including freeze-dried powder) and aqueous solvent intended for the preparation of an endotracheopulmonary instillation suspension by dispersing the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Endotracheopulmonary instillation, powder and solvent for suspension
+  * ^designation[=].value = "Endotracheopulmonary instillation, powder and solvent for suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за суспензия за ендотрахеопулмонално инстилиране"
@@ -1524,10 +1524,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #11702000
-    Powder and solvent for endocervical gel
-    11702000
+    "Powder and solvent for endocervical gel"
+    "Powder (including freeze-dried powder) and solvent intended for the preparation of an endocervical gel by mixing the powder and the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for endocervical gel
+  * ^designation[=].value = "Powder and solvent for endocervical gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за ендоцервикален гел"
@@ -1627,10 +1627,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #12109500
-    Fibrin sealant-powder and solvent for fibrin sealant
-    12109500
+    "Fibrin sealant-powder and solvent for fibrin sealant"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Fibrin sealant-powder and solvent for fibrin sealant
+  * ^designation[=].value = "Fibrin sealant-powder and solvent for fibrin sealant"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -1658,10 +1658,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #12116000
-    Powder and solvent for sealant
-    12116000
+    "Powder and solvent for sealant"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of a sealant by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for sealant
+  * ^designation[=].value = "Powder and solvent for sealant"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за тъканно лепило"
@@ -1764,10 +1764,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13062000
-    Powder for concentrate and solution for solution for infusion
-    13062000
+    "Powder for concentrate and solution for solution for infusion"
+    "Medicinal product consisting of a powder for concentrate for solution for infusion and a solution for solution for infusion, intended for the preparation of a solution for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for concentrate and solution for solution for infusion
+  * ^designation[=].value = "Powder for concentrate and solution for solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за концентрат и разтвор за инфузионен разтвор"
@@ -1846,10 +1846,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13081000
-    Powder and solution for bee-hive solution
-    13081000
+    "Powder and solution for bee-hive solution"
+    "Powder and solution intended for the preparation of a bee-hive solution by dissolving the powder in the solution. The powder and the solution both contain active substance(s), or in some cases only the solution contains active substance(s)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solution for bee-hive solution
+  * ^designation[=].value = "Powder and solution for bee-hive solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтвор за разтвор за пчелен кошер"
@@ -1916,10 +1916,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13086000
-    Concentrate and solvent for concentrate for oral spray, suspension
-    13086000
+    "Concentrate and solvent for concentrate for oral spray, suspension"
+    "Preparation for veterinary use consisting of a concentrate and a solvent intended for the preparation of a concentrate for oral spray, suspension by diluting the concentrate with the solvent; the resulting concentrate for oral spray, suspension must subsequently be diluted again before administration as an oral spray, suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and solvent for concentrate for oral spray, suspension
+  * ^designation[=].value = "Concentrate and solvent for concentrate for oral spray, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат и разтворител за концентрат за перорален спрей, суспензия"
@@ -1986,10 +1986,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13088000
-    Lyophilisate and solvent for oculonasal suspension
-    13088000
+    "Lyophilisate and solvent for oculonasal suspension"
+    "Lyophilisate (freeze-dried powder) and solvent intended for the preparation of an oculonasal suspension, for veterinary use, by dispersing the lyophilisate in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate and solvent for oculonasal suspension
+  * ^designation[=].value = "Lyophilisate and solvent for oculonasal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат и разтворител за очно-назална суспензия"
@@ -2062,10 +2062,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13092000
-    Emulsion and lyophilisate for suspension for injection
-    13092000
+    "Emulsion and lyophilisate for suspension for injection"
+    "Sterile emulsion and sterile lyophilisate (freeze-dried powder), both of which contain active substance(s), intended for the preparation of a suspension for injection, for veterinary use, by dispersing the lyophilisate in the emulsion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Emulsion and lyophilisate for suspension for injection
+  * ^designation[=].value = "Emulsion and lyophilisate for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Емулсия и лиофилизат за инжекционна суспензия"
@@ -2135,10 +2135,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13093000
-    Lyophilisate and solvent for oral suspension
-    13093000
+    "Lyophilisate and solvent for oral suspension"
+    "Lyophilisate (freeze-dried powder) and solvent intended for the preparation of an oral suspension, for veterinary use, by dispersing the lyophilisate in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate and solvent for oral suspension
+  * ^designation[=].value = "Lyophilisate and solvent for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат и разтворител за перорална суспензия"
@@ -2205,10 +2205,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13097000
-    Nasal spray, lyophilisate and solvent for suspension
-    13097000
+    "Nasal spray, lyophilisate and solvent for suspension"
+    "Lyophilisate (freeze-dried powder) and solvent intended for the preparation of a nasal spray, suspension, for veterinary use, by dispersing the lyophilisate in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal spray, lyophilisate and solvent for suspension
+  * ^designation[=].value = "Nasal spray, lyophilisate and solvent for suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за нос, лиофилизат и разтворител за суспензия"
@@ -2269,10 +2269,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13101000
-    Powder and solution for bee-hive dispersion
-    13101000
+    "Powder and solution for bee-hive dispersion"
+    "Powder and solution intended for the preparation of a bee-hive dispersion by mixing the powder with the solution. The powder and the solution both contain active substance(s), or in some cases only the solution contains active substance(s)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solution for bee-hive dispersion
+  * ^designation[=].value = "Powder and solution for bee-hive dispersion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтвор за дисперсия за пчелен кошер"
@@ -2339,10 +2339,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13117000
-    Lyophilisate and solvent for emulsion for injection
-    13117000
+    "Lyophilisate and solvent for emulsion for injection"
+    "Sterile lyophilisate (freeze-dried powder) and sterile solvent intended for the preparation of an emulsion for injection, for veterinary use, by mixing the powder and the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate and solvent for emulsion for injection
+  * ^designation[=].value = "Lyophilisate and solvent for emulsion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат и разтворител за инжекционна емулсия"
@@ -2409,10 +2409,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13119000
-    Effervescent powder and powder for oral suspension
-    13119000
+    "Effervescent powder and powder for oral suspension"
+    "Effervescent powder and powder intended for the preparation of an oral suspension by dispersing the effervescent powder and the powder in the specified liquid."
   * ^designation[0].language = #en
-  * ^designation[=].value = Effervescent powder and powder for oral suspension
+  * ^designation[=].value = "Effervescent powder and powder for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ефервесцентен прах и прах за перорална суспензия"
@@ -2482,10 +2482,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13121000
-    Powder and solution for suspension for injection
-    13121000
+    "Powder and solution for suspension for injection"
+    "Sterile powder (including freeze-dried powder) and sterile solution, both of which contain active substance(s), intended for the preparation of a suspension for injection by dispersing the powder in the solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solution for suspension for injection
+  * ^designation[=].value = "Powder and solution for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтвор за инжекционна суспензия"
@@ -2549,10 +2549,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13138000
-    Gastro-resistant powder and solvent for oral suspension
-    13138000
+    "Gastro-resistant powder and solvent for oral suspension"
+    "Gastro-resistant powder and solvent intended for the preparation of a gastro-resistant oral suspension by dispersing the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastro-resistant powder and solvent for oral suspension
+  * ^designation[=].value = "Gastro-resistant powder and solvent for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-устойчив прах  и разтворител за перорална суспензия"
@@ -2616,10 +2616,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13143000
-    Concentrate and solvent for dispersion for injection
-    13143000
+    "Concentrate and solvent for dispersion for injection"
+    "Sterile concentrate and sterile solvent intended for the preparation of a dispersion for injection by diluting the concentrate with the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and solvent for dispersion for injection
+  * ^designation[=].value = "Concentrate and solvent for dispersion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат и разтворител за инжекционна дисперсия"
@@ -2683,10 +2683,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13144000
-    Concentrate and solvent for intravesical solution
-    13144000
+    "Concentrate and solvent for intravesical solution"
+    "Concentrate and solvent intended for the preparation of an intravesical solution by diluting the concentrate with the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and solvent for intravesical solution
+  * ^designation[=].value = "Concentrate and solvent for intravesical solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат и разтворител за интравезикален разтвор"
@@ -2747,10 +2747,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13150000
-    Effervescent powder and suspension for oral suspension
-    13150000
+    "Effervescent powder and suspension for oral suspension"
+    "Effervescent powder and suspension intended for the preparation of an oral suspension by dissolving or dispersing the effervescent powder in the suspension, or by dissolving or dispersing the effervescent powder in the specified liquid and mixing it with the suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Effervescent powder and suspension for oral suspension
+  * ^designation[=].value = "Effervescent powder and suspension for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ефервесцентен прах и суспензия за перорална суспензия"
@@ -2811,10 +2811,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13153000
-    Concentrate and solvent for emulsion for injection
-    13153000
+    "Concentrate and solvent for emulsion for injection"
+    "Sterile concentrate and sterile solvent intended for the preparation of an emulsion for injection by diluting the concentrate with the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and solvent for emulsion for injection
+  * ^designation[=].value = "Concentrate and solvent for emulsion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат и разтворител за инжекционна емулсия"
@@ -2869,10 +2869,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13157000
-    Effervescent granules and suspension for oral suspension
-    13157000
+    "Effervescent granules and suspension for oral suspension"
+    "Effervescent granules and suspension intended for the preparation of an oral suspension by dissolving or dispersing the effervescent granules in the suspension, or by dissolving or dispersing the effervescent granules in the specified liquid and mixing it with the suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Effervescent granules and suspension for oral suspension
+  * ^designation[=].value = "Effervescent granules and suspension for oral suspension"
   
   * ^designation[+].language = #cs-CZ
   * ^designation[=].value = "Šumivé granule a suspenze pro perorální suspenzi"
@@ -2906,10 +2906,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #13160000
-    Concentrate and solvent for oral solution
-    13160000
+    "Concentrate and solvent for oral solution"
+    "Concentrate and solvent intended for the preparation of an oral solution by diluting the concentrate with the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and solvent for oral solution
+  * ^designation[=].value = "Concentrate and solvent for oral solution"
   
   * ^designation[+].language = #cs-CZ
   * ^designation[=].value = "Koncentrát a rozpouštědlo pro perorální roztok"
@@ -2940,10 +2940,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50001500
-    Concentrate and diluent for solution for infusion
-    50001500
+    "Concentrate and diluent for solution for infusion"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and diluent for solution for infusion
+  * ^designation[=].value = "Concentrate and diluent for solution for infusion"
   
   * ^designation[+].language = #bs-BA
   * ^designation[=].value = "Koncentrat i razrjeđivač za rastvor  za infuziju"
@@ -2998,10 +2998,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50002000
-    Concentrate and solvent for concentrate for solution for infusion
-    50002000
+    "Concentrate and solvent for concentrate for solution for infusion"
+    "Sterile concentrate and sterile solvent intended for the preparation of a concentrate for solution for infusion by diluting the concentrate with the solvent; the resulting concentrate for solution for infusion must subsequently be diluted again before administration as a solution for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and solvent for concentrate for solution for infusion
+  * ^designation[=].value = "Concentrate and solvent for concentrate for solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат и разтворител за концентрат за инфузионен разтвор"
@@ -3101,10 +3101,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50003000
-    Concentrate and solvent for cutaneous solution
-    50003000
+    "Concentrate and solvent for cutaneous solution"
+    "Concentrate and solvent intended for the preparation of a cutaneous solution by diluting the concentrate with the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and solvent for cutaneous solution
+  * ^designation[=].value = "Concentrate and solvent for cutaneous solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат и разтворител за разтвор за кожа"
@@ -3204,10 +3204,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50004000
-    Concentrate and solvent for cutaneous use
-    50004000
+    "Concentrate and solvent for cutaneous use"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and solvent for cutaneous use
+  * ^designation[=].value = "Concentrate and solvent for cutaneous use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат и разтворител за дермално приложение"
@@ -3295,10 +3295,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50005000
-    Concentrate and solvent for injection
-    50005000
+    "Concentrate and solvent for injection"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and solvent for injection
+  * ^designation[=].value = "Concentrate and solvent for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат и разтворител за инжекция"
@@ -3380,10 +3380,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50006000
-    Concentrate and solvent for solution for infusion
-    50006000
+    "Concentrate and solvent for solution for infusion"
+    "Sterile concentrate and sterile solvent intended for the preparation of a solution for infusion by diluting the concentrate with the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and solvent for solution for infusion
+  * ^designation[=].value = "Concentrate and solvent for solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат и разтворител за инфузионен разтвор"
@@ -3483,10 +3483,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50007000
-    Concentrate and solvent for solution for injection
-    50007000
+    "Concentrate and solvent for solution for injection"
+    "Sterile concentrate and sterile solvent intended for the preparation of a solution for injection by diluting the concentrate with the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and solvent for solution for injection
+  * ^designation[=].value = "Concentrate and solvent for solution for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат и разтворител за инжекционен разтвор"
@@ -3586,10 +3586,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50007500
-    Concentrate and solvent for solution for injection/infusion
-    50007500
+    "Concentrate and solvent for solution for injection/infusion"
+    "Sterile concentrate and sterile solvent intended for the preparation of a solution for injection/infusion by diluting the concentrate with the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and solvent for solution for injection/infusion
+  * ^designation[=].value = "Concentrate and solvent for solution for injection/infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат и разтворител за инжекционен/инфузионен разтвор"
@@ -3677,10 +3677,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50008000
-    Concentrate and solvent for suspension for injection
-    50008000
+    "Concentrate and solvent for suspension for injection"
+    "Sterile concentrate and sterile solvent intended for the preparation of a suspension for injection by diluting the concentrate with the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate and solvent for suspension for injection
+  * ^designation[=].value = "Concentrate and solvent for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат и разтворител за инжекционна суспензия"
@@ -3777,10 +3777,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50021500
-    Emulsion and suspension for emulsion for injection
-    50021500
+    "Emulsion and suspension for emulsion for injection"
+    "Sterile emulsion and sterile suspension, both of which contain active substance(s), intended for the preparation of an emulsion for injection by mixing the emulsion and the suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Emulsion and suspension for emulsion for injection
+  * ^designation[=].value = "Emulsion and suspension for emulsion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Емулсия и суспензия за инжекционна емулсия"
@@ -3865,10 +3865,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50026500
-    Granules and solvent for oral suspension
-    50026500
+    "Granules and solvent for oral suspension"
+    "Granules and solvent intended for the preparation of an oral suspension by dispersing the granules in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules and solvent for oral suspension
+  * ^designation[=].value = "Granules and solvent for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули и разтворител за перорална суспензия"
@@ -3959,10 +3959,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50027000
-    Granules and solvent for suspension for injection
-    50027000
+    "Granules and solvent for suspension for injection"
+    "Sterile granules and sterile solvent intended for the preparation of a suspension for injection by dispersing the granules in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules and solvent for suspension for injection
+  * ^designation[=].value = "Granules and solvent for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули и разтворител за инжекционна суспензия"
@@ -4059,10 +4059,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50034500
-    Lyophilisate and solvent for suspension for injection
-    50034500
+    "Lyophilisate and solvent for suspension for injection"
+    "Sterile lyophilisate (freeze-dried powder) and sterile solvent intended for the preparation of a suspension for injection, for veterinary use, by dispersing the lyophilisate in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate and solvent for suspension for injection
+  * ^designation[=].value = "Lyophilisate and solvent for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат и разтворител за инжекционна суспензия"
@@ -4138,10 +4138,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50041200
-    Powder and gel for gel
-    50041200
+    "Powder and gel for gel"
+    "Powder and gel intended for the preparation of a gel (for cutaneous use) by mixing the powder in the gel."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and gel for gel
+  * ^designation[=].value = "Powder and gel for gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и гел за гел"
@@ -4229,10 +4229,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50041500
-    Powder and solution for solution for injection
-    50041500
+    "Powder and solution for solution for injection"
+    "Sterile powder (including freeze-dried powder) and sterile solution, both containing active substance(s), intended for the preparation of a solution for injection by dissolving the powder in the solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solution for solution for injection
+  * ^designation[=].value = "Powder and solution for solution for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтвор за инжекционен  разтвор"
@@ -4320,10 +4320,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50042000
-    Powder and solvent for concentrate for solution for infusion
-    50042000
+    "Powder and solvent for concentrate for solution for infusion"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of a concentrate for solution for infusion by dissolving the powder in the solvent; the resulting concentrate for solution for infusion must subsequently be diluted before administration as a solution for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for concentrate for solution for infusion
+  * ^designation[=].value = "Powder and solvent for concentrate for solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за концентрат за инфузионен разтвор"
@@ -4417,10 +4417,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50044000
-    Powder and solvent for cutaneous solution
-    50044000
+    "Powder and solvent for cutaneous solution"
+    "Powder (including freeze-dried powder) and solvent intended for the preparation of a cutaneous solution by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for cutaneous solution
+  * ^designation[=].value = "Powder and solvent for cutaneous solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за разтвор за кожа"
@@ -4514,10 +4514,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50044500
-    Powder and solvent for dispersion for injection
-    50044500
+    "Powder and solvent for dispersion for injection"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of a dispersion for injection by dispersing the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for dispersion for injection
+  * ^designation[=].value = "Powder and solvent for dispersion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционна дисперсия"
@@ -4608,10 +4608,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50044700
-    Powder and solvent for emulsion for injection
-    50044700
+    "Powder and solvent for emulsion for injection"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of an emulsion for injection by mixing the powder and the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for emulsion for injection
+  * ^designation[=].value = "Powder and solvent for emulsion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционна емулсия"
@@ -4699,10 +4699,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50045000
-    Powder and solvent for endosinusial solution
-    50045000
+    "Powder and solvent for endosinusial solution"
+    "Powder (including freeze-dried powder) and solvent intended for the preparation of an endosinusial solution by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for endosinusial solution
+  * ^designation[=].value = "Powder and solvent for endosinusial solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за разтвор за прилагане в синуси"
@@ -4796,10 +4796,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50045500
-    Powder and solvent for epilesional solution
-    50045500
+    "Powder and solvent for epilesional solution"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of an epilesional solution by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for epilesional solution
+  * ^designation[=].value = "Powder and solvent for epilesional solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за епилезиен разтвор"
@@ -4884,10 +4884,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50046000
-    Powder and solvent for gingival gel
-    50046000
+    "Powder and solvent for gingival gel"
+    "Powder (including freeze-dried powder) and solvent intended for the preparation of a gingival gel by mixing the powder and the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for gingival gel
+  * ^designation[=].value = "Powder and solvent for gingival gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за гел за венци"
@@ -4981,10 +4981,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50047000
-    Powder and solvent for intraocular instillation solution
-    50047000
+    "Powder and solvent for intraocular instillation solution"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of an intraocular instillation solution by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for intraocular instillation solution
+  * ^designation[=].value = "Powder and solvent for intraocular instillation solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за разтвор за инстилиране, за вътреочно приложение"
@@ -5078,10 +5078,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50047500
-    Powder and solvent for intravesical solution
-    50047500
+    "Powder and solvent for intravesical solution"
+    "Powder (including freeze-dried powder) and solvent intended for the preparation of an intravesical solution by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for intravesical solution
+  * ^designation[=].value = "Powder and solvent for intravesical solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за интравезикален разтвор"
@@ -5169,10 +5169,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50047600
-    Powder and solvent for intravesical suspension
-    50047600
+    "Powder and solvent for intravesical suspension"
+    "Powder (including freeze-dried powder) and solvent intended for the preparation of an intravesical suspension by dispersing the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for intravesical suspension
+  * ^designation[=].value = "Powder and solvent for intravesical suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за интравезикална суспензия"
@@ -5260,10 +5260,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50047650
-    Nasal drops, powder and solvent for solution
-    50047650
+    "Nasal drops, powder and solvent for solution"
+    "Powder (including freeze-dried powder) and solvent intended for the preparation of nasal drops, solution, by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal drops, powder and solvent for solution
+  * ^designation[=].value = "Nasal drops, powder and solvent for solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за нос, прах и разтворител за разтвор"
@@ -5354,10 +5354,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50047700
-    Powder and solvent for nebuliser solution
-    50047700
+    "Powder and solvent for nebuliser solution"
+    "Powder (including freeze-dried powder) and solvent intended for the preparation of a nebuliser solution by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for nebuliser solution
+  * ^designation[=].value = "Powder and solvent for nebuliser solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за разтвор за небулизатор"
@@ -5445,10 +5445,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50048000
-    Powder and solvent for prolonged-release suspension for injection
-    50048000
+    "Powder and solvent for prolonged-release suspension for injection"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of a prolonged-release suspension for injection by dispersing the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for prolonged-release suspension for injection
+  * ^designation[=].value = "Powder and solvent for prolonged-release suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционна суспензия с удължено освобождаване"
@@ -5545,10 +5545,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50048270
-    Powder and solvent for solution for injection/skin-prick test
-    50048270
+    "Powder and solvent for solution for injection/skin-prick test"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of a solution for injection/skin-prick test by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for solution for injection/skin-prick test
+  * ^designation[=].value = "Powder and solvent for solution for injection/skin-prick test"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционен разтвор/ разтвор за кожно изпитване чрез убождане"
@@ -5639,10 +5639,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50048500
-    Powder and suspension for suspension for injection
-    50048500
+    "Powder and suspension for suspension for injection"
+    "Sterile powder (including freeze-dried powder) and sterile suspension, both of which contain active substance(s), intended for the preparation of a suspension for injection by dispersing the powder in the suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and suspension for suspension for injection
+  * ^designation[=].value = "Powder and suspension for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и суспензия за инжекционна суспензия"
@@ -5733,10 +5733,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50048600
-    Powder, dispersion and solvent for concentrate for dispersion for infusion
-    50048600
+    "Powder, dispersion and solvent for concentrate for dispersion for infusion"
+    "Sterile powder (including freeze-dried powder) and sterile dispersion, both of which contain active substance(s), and sterile solvent intended for the preparation of a concentrate for dispersion for infusion; it is prepared as specified in the packaging information; the resulting concentrate for dispersion for infusion must subsequently be diluted before administration as a dispersion for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder, dispersion and solvent for concentrate for dispersion for infusion
+  * ^designation[=].value = "Powder, dispersion and solvent for concentrate for dispersion for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах, дисперсия и разтворител за концентрат за инфузионна дисперсия"
@@ -5824,10 +5824,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50055350
-    Powder, solvent and matrix for implantation matrix
-    50055350
+    "Powder, solvent and matrix for implantation matrix"
+    "Sterile powder (including freeze-dried powder), sterile solvent and sterile matrix intended for the preparation of an implantation matrix, for example by dissolving the powder in the solvent and using the resulting solution to impregnate the matrix."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder, solvent and matrix for implantation matrix
+  * ^designation[=].value = "Powder, solvent and matrix for implantation matrix"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах, разтворител и матрица за матрица за имплантиране"
@@ -5909,10 +5909,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50062000
-    Suspension and effervescent granules for oral suspension
-    50062000
+    "Suspension and effervescent granules for oral suspension"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension and effervescent granules for oral suspension
+  * ^designation[=].value = "Suspension and effervescent granules for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия и ефервесцентни гранули за перорална суспензия"
@@ -6009,10 +6009,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50062500
-    Suspension and solution for spray
-    50062500
+    "Suspension and solution for spray"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension and solution for spray
+  * ^designation[=].value = "Suspension and solution for spray"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия и разтвор за спрей"
@@ -6103,10 +6103,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50062750
-    Suspension and solvent for suspension for injection
-    50062750
+    "Suspension and solvent for suspension for injection"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension and solvent for suspension for injection
+  * ^designation[=].value = "Suspension and solvent for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия и разтворител за инжекционна суспензия"
@@ -6179,10 +6179,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50064000
-    Tablet and solvent for rectal suspension
-    50064000
+    "Tablet and solvent for rectal suspension"
+    "Tablet and solvent intended for the preparation of a rectal suspension by dispersing the tablet in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet and solvent for rectal suspension
+  * ^designation[=].value = "Tablet and solvent for rectal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка и разтворител за ректална суспензия"
@@ -6279,10 +6279,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50065000
-    Tablet and powder for oral solution
-    50065000
+    "Tablet and powder for oral solution"
+    "Tablet and powder, both containing active substance(s), intended for the preparation of an oral solution by dissolving the tablet and the powder in the specified liquid."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet and powder for oral solution
+  * ^designation[=].value = "Tablet and powder for oral solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка и прах за перорален разтвор"
@@ -6379,10 +6379,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50071000
-    Powder and solvent for dental gel
-    50071000
+    "Powder and solvent for dental gel"
+    "Powder (including freeze-dried powder) and solvent intended for the preparation of a dental gel by mixing the powder and the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for dental gel
+  * ^designation[=].value = "Powder and solvent for dental gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за дентален гел"
@@ -6482,10 +6482,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50078000
-    Gas and solvent for dispersion for injection/infusion
-    50078000
+    "Gas and solvent for dispersion for injection/infusion"
+    "Sterile gas and sterile solvent, either in the same compartment or in different compartments, intended for the preparation of a dispersion for injection/infusion by dispersing the gas in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gas and solvent for dispersion for injection/infusion
+  * ^designation[=].value = "Gas and solvent for dispersion for injection/infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Газ и разтворител за инжекционна/инфузионна дисперсия"
@@ -6579,10 +6579,10 @@ Title:     "Combined pharmaceutical dose form"
   
 
 * #50080000
-    Powder and solvent for solution for injection/infusion
-    50080000
+    "Powder and solvent for solution for injection/infusion"
+    "Sterile powder (including freeze-dried powder) and sterile solvent intended for the preparation of a solution for injection/infusion by dissolving the powder in the solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for solution for injection/infusion
+  * ^designation[=].value = "Powder and solvent for solution for injection/infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционен/инфузионен разтвор"

@@ -1,14 +1,14 @@
 CodeSystem: CombinedTerm
 Id:         combined-term
-Title:     "Combined term"
+Title:      "Combined term"
 * ^hierarchyMeaning = #is-a
 
 
 * #11210500
-    Solution for infusion in administration system
-    11210500
+    "Solution for infusion in administration system"
+    "Medicinal product consisting of a solution for infusion presented in an administration system."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for infusion in administration system
+  * ^designation[=].value = "Solution for infusion in administration system"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инфузионен разтвор в система за прилагане"
@@ -96,10 +96,10 @@ Title:     "Combined term"
   
 
 * #13053000
-    Solution for injection in administration system
-    13053000
+    "Solution for injection in administration system"
+    "Medicinal product consisting of a solution for injection presented in an administration system."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection in administration system
+  * ^designation[=].value = "Solution for injection in administration system"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен разтвор в система за прилагане"
@@ -178,10 +178,10 @@ Title:     "Combined term"
   
 
 * #13057000
-    Powder and solvent for prolonged-release suspension for injection in pre-filled syringe
-    13057000
+    "Powder and solvent for prolonged-release suspension for injection in pre-filled syringe"
+    "Medicinal product consisting of a powder and solvent for prolonged-release suspension for injection presented in a pre-filled syringe. The powder and solvent are contained in different compartments of the pre-filled syringe, which contains all of the components necessary to prepare the prolonged-release suspension for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for prolonged-release suspension for injection in pre-filled syringe
+  * ^designation[=].value = "Powder and solvent for prolonged-release suspension for injection in pre-filled syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционна суспензия с удължено освобождаване в предварително напълнена спринцовка"
@@ -257,10 +257,10 @@ Title:     "Combined term"
   
 
 * #13060000
-    Powder for oral/rectal suspension in sachet
-    13060000
+    "Powder for oral/rectal suspension in sachet"
+    "Medicinal product consisting of a powder for oral/rectal suspension presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for oral/rectal suspension in sachet
+  * ^designation[=].value = "Powder for oral/rectal suspension in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за перорална/ректална суспензия в саше"
@@ -339,10 +339,10 @@ Title:     "Combined term"
   
 
 * #13064000
-    Suspension for injection in pre-filled injector
-    13064000
+    "Suspension for injection in pre-filled injector"
+    "Medicinal product consisting of a suspension for injection presented in a pre-filled injector."
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension for injection in pre-filled injector
+  * ^designation[=].value = "Suspension for injection in pre-filled injector"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна суспензия в предварително напълнен инжектор"
@@ -421,10 +421,10 @@ Title:     "Combined term"
   
 
 * #13068000
-    Solution for injection in pre-filled injector
-    13068000
+    "Solution for injection in pre-filled injector"
+    "Medicinal product consisting of a solution for injection presented in a pre-filled injector."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection in pre-filled injector
+  * ^designation[=].value = "Solution for injection in pre-filled injector"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен разтвор в предварително напълнен инжектор"
@@ -503,10 +503,10 @@ Title:     "Combined term"
   
 
 * #13069000
-    Gel in sachet
-    13069000
+    "Gel in sachet"
+    "Medicinal product consisting of a gel presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gel in sachet
+  * ^designation[=].value = "Gel in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гел в саше"
@@ -585,10 +585,10 @@ Title:     "Combined term"
   
 
 * #13071000
-    Solution for injection in dose-dispenser cartridge
-    13071000
+    "Solution for injection in dose-dispenser cartridge"
+    "Medicinal product consisting of a solution for injection presented in a dose-dispenser cartridge."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection in dose-dispenser cartridge
+  * ^designation[=].value = "Solution for injection in dose-dispenser cartridge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен разтвор в патрон за дозиращо устройство"
@@ -673,10 +673,10 @@ Title:     "Combined term"
   
 
 * #13075000
-    Oral suspension in pre-filled oral applicator
-    13075000
+    "Oral suspension in pre-filled oral applicator"
+    "Medicinal product consisting of an oral suspension presented in a pre-filled oral applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral suspension in pre-filled oral applicator
+  * ^designation[=].value = "Oral suspension in pre-filled oral applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорална суспензия в предварително напълнен апликатор за перорални форми"
@@ -752,10 +752,10 @@ Title:     "Combined term"
   
 
 * #13083000
-    Bee-hive dispersion in sachet
-    13083000
+    "Bee-hive dispersion in sachet"
+    "Medicinal product consisting of a bee-hive dispersion presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Bee-hive dispersion in sachet
+  * ^designation[=].value = "Bee-hive dispersion in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дисперсия за пчелен кошер в саше"
@@ -825,10 +825,10 @@ Title:     "Combined term"
   
 
 * #13090000
-    Granules in single-dose container
-    13090000
+    "Granules in single-dose container"
+    "Medicinal product consisting of granules presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules in single-dose container
+  * ^designation[=].value = "Granules in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули в еднодозова опаковка"
@@ -907,10 +907,10 @@ Title:     "Combined term"
   
 
 * #13094000
-    Syrup in sachet
-    13094000
+    "Syrup in sachet"
+    "Medicinal product consisting of a syrup in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Syrup in sachet
+  * ^designation[=].value = "Syrup in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сироп в саше"
@@ -989,10 +989,10 @@ Title:     "Combined term"
   
 
 * #13095000
-    Emulsion for infusion in administration system
-    13095000
+    "Emulsion for infusion in administration system"
+    "Medicinal product consisting of an emulsion for infusion presented in an administration system."
   * ^designation[0].language = #en
-  * ^designation[=].value = Emulsion for infusion in administration system
+  * ^designation[=].value = "Emulsion for infusion in administration system"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инфузионна емулсия в система за прилагане"
@@ -1071,10 +1071,10 @@ Title:     "Combined term"
   
 
 * #13103000
-    Cutaneous solution in single-dose container
-    13103000
+    "Cutaneous solution in single-dose container"
+    "Medicinal product consisting of a cutaneous solution presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous solution in single-dose container
+  * ^designation[=].value = "Cutaneous solution in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за кожа в еднодозова опаковка"
@@ -1153,10 +1153,10 @@ Title:     "Combined term"
   
 
 * #13104000
-    Eye drops, emulsion in single-dose container
-    13104000
+    "Eye drops, emulsion in single-dose container"
+    "Medicinal product consisting of an eye drops emulsion presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, emulsion in single-dose container
+  * ^designation[=].value = "Eye drops, emulsion in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи, емулсия в еднодозова опаковка"
@@ -1235,10 +1235,10 @@ Title:     "Combined term"
   
 
 * #13108000
-    Powder and solvent for suspension for injection in multidose container
-    13108000
+    "Powder and solvent for suspension for injection in multidose container"
+    "Medicinal product consisting of a powder and solvent for suspension for injection presented in a multidose container; usually the powder is presented in the multidose container while the solvent is presented in a separate container, and is added to the powder in order to prepare the suspension for injection in the multidose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for suspension for injection in multidose container
+  * ^designation[=].value = "Powder and solvent for suspension for injection in multidose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционна суспензия в многодозова опаковка"
@@ -1314,10 +1314,10 @@ Title:     "Combined term"
   
 
 * #13109000
-    Solution for injection in multidose container
-    13109000
+    "Solution for injection in multidose container"
+    "Medicinal product consisting of a solution for injection presented in a multidose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection in multidose container
+  * ^designation[=].value = "Solution for injection in multidose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен разтвор в многодозова опаковка"
@@ -1393,10 +1393,10 @@ Title:     "Combined term"
   
 
 * #13110000
-    Suspension for injection in multidose container
-    13110000
+    "Suspension for injection in multidose container"
+    "Medicinal product consisting of a suspension for injection presented in a multidose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension for injection in multidose container
+  * ^designation[=].value = "Suspension for injection in multidose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна суспензия в многодозова опаковка"
@@ -1472,10 +1472,10 @@ Title:     "Combined term"
   
 
 * #13112000
-    Prolonged-release suspension for injection in pre-filled pen
-    13112000
+    "Prolonged-release suspension for injection in pre-filled pen"
+    "Medicinal product consisting of a prolonged-release suspension for injection presented in a pre-filled pen."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release suspension for injection in pre-filled pen
+  * ^designation[=].value = "Prolonged-release suspension for injection in pre-filled pen"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна суспензия с удължено освобождаване в предварително напълнена писалка"
@@ -1551,10 +1551,10 @@ Title:     "Combined term"
   
 
 * #13120000
-    Nasal powder in single-dose container
-    13120000
+    "Nasal powder in single-dose container"
+    "Medicinal product consisting of a nasal powder presented in a single-dose container, usually with an integral device to facilitate nasal administration."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal powder in single-dose container
+  * ^designation[=].value = "Nasal powder in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за нос в еднодозова опаковка"
@@ -1621,10 +1621,10 @@ Title:     "Combined term"
   
 
 * #13122000
-    Solution for infusion in cartridge
-    13122000
+    "Solution for infusion in cartridge"
+    "Medicinal product consisting of a solution for infusion presented in a cartridge, intended to be used in a specially designed device such as an infusion pump."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for infusion in cartridge
+  * ^designation[=].value = "Solution for infusion in cartridge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инфузионен разтвор в патрон"
@@ -1694,10 +1694,10 @@ Title:     "Combined term"
   
 
 * #13130000
-    Oral powder in single-dose container
-    13130000
+    "Oral powder in single-dose container"
+    "Medicinal product consisting of an oral powder presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral powder in single-dose container
+  * ^designation[=].value = "Oral powder in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорален прах в еднодозова опаковка"
@@ -1761,10 +1761,10 @@ Title:     "Combined term"
   
 
 * #13137000
-    Transdermal gel in sachet
-    13137000
+    "Transdermal gel in sachet"
+    "Medicinal product consisting of a transdermal gel presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Transdermal gel in sachet
+  * ^designation[=].value = "Transdermal gel in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Трансдермален гел в саше"
@@ -1828,10 +1828,10 @@ Title:     "Combined term"
   
 
 * #13146000
-    Oral solution in multidose container with metering pump
-    13146000
+    "Oral solution in multidose container with metering pump"
+    "Medicinal product consisting of an oral solution presented in a multidose container with metering pump."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral solution in multidose container with metering pump
+  * ^designation[=].value = "Oral solution in multidose container with metering pump"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорален разтвор в многодозова опаковка с дозираща помпа"
@@ -1895,10 +1895,10 @@ Title:     "Combined term"
   
 
 * #13147000
-    Powder for oral suspension in sachet
-    13147000
+    "Powder for oral suspension in sachet"
+    "Medicinal product consisting of a powder for oral suspension presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for oral suspension in sachet
+  * ^designation[=].value = "Powder for oral suspension in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за перорална суспензия в саше"
@@ -1956,10 +1956,10 @@ Title:     "Combined term"
   
 
 * #13155000
-    Film-coated granules in single-dose container
-    13155000
+    "Film-coated granules in single-dose container"
+    "Medicinal product consisting of film-coated granules presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Film-coated granules in single-dose container
+  * ^designation[=].value = "Film-coated granules in single-dose container"
   
   * ^designation[+].language = #cs-CZ
   * ^designation[=].value = "Potahované granule v jednodávkovém obalu"
@@ -1999,10 +1999,10 @@ Title:     "Combined term"
   
 
 * #13161000
-    Dispersion for injection in pre-filled syringe
-    13161000
+    "Dispersion for injection in pre-filled syringe"
+    "Medicinal product consisting of a dispersion for injection presented in a pre-filled syringe."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dispersion for injection in pre-filled syringe
+  * ^designation[=].value = "Dispersion for injection in pre-filled syringe"
   
   * ^designation[+].language = #cs-CZ
   * ^designation[=].value = "Injekční disperze v předplněné injekční stříkačce"
@@ -2036,10 +2036,10 @@ Title:     "Combined term"
   
 
 * #50001250
-    Coated granules in sachet
-    50001250
+    "Coated granules in sachet"
+    "Medicinal product consisting of coated granules presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Coated granules in sachet
+  * ^designation[=].value = "Coated granules in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Обвити гранули в саше"
@@ -2130,10 +2130,10 @@ Title:     "Combined term"
   
 
 * #50017200
-    Ear drops, solution in single-dose container
-    50017200
+    "Ear drops, solution in single-dose container"
+    "Medicinal product consisting of an ear drops solution presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear drops, solution in single-dose container
+  * ^designation[=].value = "Ear drops, solution in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за уши, разтвор в еднодозова опаковка"
@@ -2218,10 +2218,10 @@ Title:     "Combined term"
   
 
 * #50017550
-    Ear drops, suspension in single-dose container
-    50017550
+    "Ear drops, suspension in single-dose container"
+    "Medicinal product consisting of an ear drops suspension presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear drops, suspension in single-dose container
+  * ^designation[=].value = "Ear drops, suspension in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за уши, суспензия в еднодозова опаковка"
@@ -2309,10 +2309,10 @@ Title:     "Combined term"
   
 
 * #50021250
-    Emulsion for injection/infusion in pre-filled syringe
-    50021250
+    "Emulsion for injection/infusion in pre-filled syringe"
+    "Medicinal product consisting of an emulsion for injection/infusion presented in a pre-filled syringe."
   * ^designation[0].language = #en
-  * ^designation[=].value = Emulsion for injection/infusion in pre-filled syringe
+  * ^designation[=].value = "Emulsion for injection/infusion in pre-filled syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна/инфузионна емулсия в предварително напълнена спринцовка"
@@ -2400,10 +2400,10 @@ Title:     "Combined term"
   
 
 * #50022500
-    Eye drops, prolonged-release solution in single-dose container
-    50022500
+    "Eye drops, prolonged-release solution in single-dose container"
+    "Medicinal product consisting of a prolonged-release eye drops solution presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, prolonged-release solution in single-dose container
+  * ^designation[=].value = "Eye drops, prolonged-release solution in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи, разтвор с удължено освобождаване в еднодозова опаковка"
@@ -2491,10 +2491,10 @@ Title:     "Combined term"
   
 
 * #50023000
-    Eye drops, solution in single-dose container
-    50023000
+    "Eye drops, solution in single-dose container"
+    "Medicinal product consisting of an eye drops solution presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, solution in single-dose container
+  * ^designation[=].value = "Eye drops, solution in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи, разтвор в еднодозова опаковка"
@@ -2585,10 +2585,10 @@ Title:     "Combined term"
   
 
 * #50023100
-    Eye drops, suspension in single-dose container
-    50023100
+    "Eye drops, suspension in single-dose container"
+    "Medicinal product consisting of an eye drops suspension presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, suspension in single-dose container
+  * ^designation[=].value = "Eye drops, suspension in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи, суспензия в еднодозова опаковка"
@@ -2676,10 +2676,10 @@ Title:     "Combined term"
   
 
 * #50023300
-    Eye gel in single-dose container
-    50023300
+    "Eye gel in single-dose container"
+    "Medicinal product consisting of an eye gel presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye gel in single-dose container
+  * ^designation[=].value = "Eye gel in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гел за очи в еднодозова опаковка"
@@ -2767,10 +2767,10 @@ Title:     "Combined term"
   
 
 * #50023400
-    Eye ointment in single-dose container
-    50023400
+    "Eye ointment in single-dose container"
+    "Medicinal product consisting of an eye ointment presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye ointment in single-dose container
+  * ^designation[=].value = "Eye ointment in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Маз за очи в еднодозова опаковка"
@@ -2858,10 +2858,10 @@ Title:     "Combined term"
   
 
 * #50023700
-    Film-coated tablet and gastro-resistant granules in sachet
-    50023700
+    "Film-coated tablet and gastro-resistant granules in sachet"
+    "Medicinal product consisting of a film-coated tablet and gastro-resistant granules presented together in a sachet and intended to be swallowed together as a single dose. If two or more tablets are present to make up the dose, the term ‘Film-coated tablets and gastro-resistant granules in sachet’ is used."
   * ^designation[0].language = #en
-  * ^designation[=].value = Film-coated tablet and gastro-resistant granules in sachet
+  * ^designation[=].value = "Film-coated tablet and gastro-resistant granules in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Филмирана таблетка и стомашно-устойчиви гранули в саше"
@@ -2946,10 +2946,10 @@ Title:     "Combined term"
   
 
 * #50026150
-    Gastro-resistant granules for oral suspension in sachet
-    50026150
+    "Gastro-resistant granules for oral suspension in sachet"
+    "Medicinal product consisting of gastro-resistant granules for oral suspension presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastro-resistant granules for oral suspension in sachet
+  * ^designation[=].value = "Gastro-resistant granules for oral suspension in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-устойчиви гранули за перорална суспензия в саше"
@@ -3037,10 +3037,10 @@ Title:     "Combined term"
   
 
 * #50026400
-    Gel in pressurised container
-    50026400
+    "Gel in pressurised container"
+    "Medicinal product consisting of a gel presented in a pressurised container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gel in pressurised container
+  * ^designation[=].value = "Gel in pressurised container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гел в опаковка под налягане"
@@ -3128,10 +3128,10 @@ Title:     "Combined term"
   
 
 * #50029170
-    Granules for oral solution in sachet
-    50029170
+    "Granules for oral solution in sachet"
+    "Medicinal product consisting of granules for oral solution presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules for oral solution in sachet
+  * ^designation[=].value = "Granules for oral solution in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули за перорален разтвор в саше"
@@ -3219,10 +3219,10 @@ Title:     "Combined term"
   
 
 * #50029200
-    Granules for oral suspension in sachet
-    50029200
+    "Granules for oral suspension in sachet"
+    "Medicinal product consisting of granules for oral suspension presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules for oral suspension in sachet
+  * ^designation[=].value = "Granules for oral suspension in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули за перорална суспензия в саше"
@@ -3310,10 +3310,10 @@ Title:     "Combined term"
   
 
 * #50029550
-    Granules in sachet
-    50029550
+    "Granules in sachet"
+    "Medicinal product consisting of granules presented in a sachet, the entire contents of which are intended for oral administration as a single dose. For reasons of patient safety and to ensure the correct administration of the medicinal product, this term may also be used where the contents are in fact very small tablets rather than granules, and where the entire contents of the sachet are intended for oral administration as a single dose, rather than the tablets being individually counted out at the time of administration."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules in sachet
+  * ^designation[=].value = "Granules in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули в саше"
@@ -3401,10 +3401,10 @@ Title:     "Combined term"
   
 
 * #50029700
-    Herbal tea in bag
-    50029700
+    "Herbal tea in bag"
+    "Medicinal product consisting of a herbal tea enclosed in a porous bag (a tea bag) intended to be placed in water for the preparation of an oral aqueous preparation on one occasion only."
   * ^designation[0].language = #en
-  * ^designation[=].value = Herbal tea in bag
+  * ^designation[=].value = "Herbal tea in bag"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Билков чай в торбичка"
@@ -3498,10 +3498,10 @@ Title:     "Combined term"
   
 
 * #50029750
-    Implant in pre-filled syringe
-    50029750
+    "Implant in pre-filled syringe"
+    "Medicinal product consisting of an implant presented in a pre-filled syringe."
   * ^designation[0].language = #en
-  * ^designation[=].value = Implant in pre-filled syringe
+  * ^designation[=].value = "Implant in pre-filled syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Имплантат в предварително напълнена спринцовка"
@@ -3589,10 +3589,10 @@ Title:     "Combined term"
   
 
 * #50033500
-    Intravitreal implant in applicator
-    50033500
+    "Intravitreal implant in applicator"
+    "Medicinal product consisting of an intravitreal implant presented in an applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intravitreal implant in applicator
+  * ^designation[=].value = "Intravitreal implant in applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интравитреален имплантат в апликатор"
@@ -3683,10 +3683,10 @@ Title:     "Combined term"
   
 
 * #50036200
-    Nasal drops, solution in single-dose container
-    50036200
+    "Nasal drops, solution in single-dose container"
+    "Medicinal product consisting of a nasal drops solution presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal drops, solution in single-dose container
+  * ^designation[=].value = "Nasal drops, solution in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за нос, разтвор в еднодозова опаковка"
@@ -3774,10 +3774,10 @@ Title:     "Combined term"
   
 
 * #50037250
-    Nasal spray, solution in single-dose container
-    50037250
+    "Nasal spray, solution in single-dose container"
+    "Medicinal product consisting of a nasal spray solution presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal spray, solution in single-dose container
+  * ^designation[=].value = "Nasal spray, solution in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за нос, разтвор в еднодозова опаковка"
@@ -3865,10 +3865,10 @@ Title:     "Combined term"
   
 
 * #50037450
-    Nebuliser solution in single-dose container
-    50037450
+    "Nebuliser solution in single-dose container"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Nebuliser solution in single-dose container
+  * ^designation[=].value = "Nebuliser solution in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -3902,10 +3902,10 @@ Title:     "Combined term"
   
 
 * #50037600
-    Oral emulsion in sachet
-    50037600
+    "Oral emulsion in sachet"
+    "Medicinal product consisting of an oral emulsion presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral emulsion in sachet
+  * ^designation[=].value = "Oral emulsion in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорална емулсия в саше"
@@ -3984,10 +3984,10 @@ Title:     "Combined term"
   
 
 * #50037700
-    Oral paste in sachet
-    50037700
+    "Oral paste in sachet"
+    "Medicinal product consisting of an oral paste presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral paste in sachet
+  * ^designation[=].value = "Oral paste in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорална паста в саше"
@@ -4066,10 +4066,10 @@ Title:     "Combined term"
   
 
 * #50037800
-    Oral powder in sachet
-    50037800
+    "Oral powder in sachet"
+    "Medicinal product consisting of an oral powder presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral powder in sachet
+  * ^designation[=].value = "Oral powder in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорален прах в саше"
@@ -4157,10 +4157,10 @@ Title:     "Combined term"
   
 
 * #50038600
-    Oral solution in sachet
-    50038600
+    "Oral solution in sachet"
+    "Medicinal product consisting of an oral solution presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral solution in sachet
+  * ^designation[=].value = "Oral solution in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорален разтвор в саше"
@@ -4248,10 +4248,10 @@ Title:     "Combined term"
   
 
 * #50038650
-    Oral solution in single-dose container
-    50038650
+    "Oral solution in single-dose container"
+    "Medicinal product consisting of an oral solution presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral solution in single-dose container
+  * ^designation[=].value = "Oral solution in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорален разтвор в еднодозова опаковка"
@@ -4339,10 +4339,10 @@ Title:     "Combined term"
   
 
 * #50038700
-    Oral suspension in sachet
-    50038700
+    "Oral suspension in sachet"
+    "Medicinal product consisting of an oral suspension presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral suspension in sachet
+  * ^designation[=].value = "Oral suspension in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорална суспензия в саше"
@@ -4430,10 +4430,10 @@ Title:     "Combined term"
   
 
 * #50039300
-    Oromucosal powder in pouch
-    50039300
+    "Oromucosal powder in pouch"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal powder in pouch
+  * ^designation[=].value = "Oromucosal powder in pouch"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за устна лигавица в торбичка"
@@ -4521,10 +4521,10 @@ Title:     "Combined term"
   
 
 * #50041000
-    Pillules in single-dose container
-    50041000
+    "Pillules in single-dose container"
+    "Medicinal product consisting of pillules presented in a single-dose container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pillules in single-dose container
+  * ^designation[=].value = "Pillules in single-dose container"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пилули в еднодозова опаковка"
@@ -4621,10 +4621,10 @@ Title:     "Combined term"
   
 
 * #50048010
-    Powder and solvent for prolonged-release suspension for injection in pre-filled pen
-    50048010
+    "Powder and solvent for prolonged-release suspension for injection in pre-filled pen"
+    "Medicinal product consisting of a powder and solvent for prolonged-release suspension for injection presented in a pre-filled pen. The powder and solvent are contained in different compartments of the pre-filled pen, which contains all of the components necessary to prepare the prolonged-release suspension for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for prolonged-release suspension for injection in pre-filled pen
+  * ^designation[=].value = "Powder and solvent for prolonged-release suspension for injection in pre-filled pen"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционна суспензия с удължено освобождаване в предварително напълнена писалка"
@@ -4706,10 +4706,10 @@ Title:     "Combined term"
   
 
 * #50048050
-    Powder and solvent for solution for injection in cartridge
-    50048050
+    "Powder and solvent for solution for injection in cartridge"
+    "Medicinal product consisting of a powder and solvent for solution for injection presented in a cartridge. The powder and solvent are contained in different compartments of the cartridge, which contains all of the components necessary to prepare the solution for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for solution for injection in cartridge
+  * ^designation[=].value = "Powder and solvent for solution for injection in cartridge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционен разтвор в патрон"
@@ -4800,10 +4800,10 @@ Title:     "Combined term"
   
 
 * #50048150
-    Powder and solvent for solution for injection in pre-filled pen
-    50048150
+    "Powder and solvent for solution for injection in pre-filled pen"
+    "Medicinal product consisting of a powder and solvent for solution for injection presented in a pre-filled pen. The powder and solvent are contained in different compartments of the pre-filled pen, which contains all of the components necessary to prepare the solution for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for solution for injection in pre-filled pen
+  * ^designation[=].value = "Powder and solvent for solution for injection in pre-filled pen"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционен разтвор в предварително напълнена писалка"
@@ -4891,10 +4891,10 @@ Title:     "Combined term"
   
 
 * #50048250
-    Powder and solvent for solution for injection in pre-filled syringe
-    50048250
+    "Powder and solvent for solution for injection in pre-filled syringe"
+    "Medicinal product consisting of a powder and solvent for solution for injection presented in a pre-filled syringe. The powder and solvent are contained in different compartments of the pre-filled syringe, which contains all of the components necessary to prepare the solution for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for solution for injection in pre-filled syringe
+  * ^designation[=].value = "Powder and solvent for solution for injection in pre-filled syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционен разтвор в предварително напълнена спринцовка"
@@ -4985,10 +4985,10 @@ Title:     "Combined term"
   
 
 * #50048300
-    Powder and solvent for suspension for injection in pre-filled syringe
-    50048300
+    "Powder and solvent for suspension for injection in pre-filled syringe"
+    "Medicinal product consisting of a powder and solvent for suspension for injection presented in a pre-filled syringe. The powder and solvent are contained in different compartments of the pre-filled syringe, which contains all of the components necessary to prepare the suspension for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent for suspension for injection in pre-filled syringe
+  * ^designation[=].value = "Powder and solvent for suspension for injection in pre-filled syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах и разтворител за инжекционна суспензия в предварително напълнена спринцовка"
@@ -5076,10 +5076,10 @@ Title:     "Combined term"
   
 
 * #50048400
-    Powder and solvent in pre-filled syringe for solution for injection
-    50048400
+    "Powder and solvent in pre-filled syringe for solution for injection"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder and solvent in pre-filled syringe for solution for injection
+  * ^designation[=].value = "Powder and solvent in pre-filled syringe for solution for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -5107,10 +5107,10 @@ Title:     "Combined term"
   
 
 * #50052500
-    Powder for oral solution in sachet
-    50052500
+    "Powder for oral solution in sachet"
+    "Medicinal product consisting of a powder for oral solution presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for oral solution in sachet
+  * ^designation[=].value = "Powder for oral solution in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за перорален разтвор в саше"
@@ -5198,10 +5198,10 @@ Title:     "Combined term"
   
 
 * #50056150
-    Prolonged-release granules for oral suspension in sachet
-    50056150
+    "Prolonged-release granules for oral suspension in sachet"
+    "Medicinal product consisting of prolonged-release granules for oral suspension presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release granules for oral suspension in sachet
+  * ^designation[=].value = "Prolonged-release granules for oral suspension in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули с удължено освобождаване за перорална суспензия в саше"
@@ -5289,10 +5289,10 @@ Title:     "Combined term"
   
 
 * #50056200
-    Prolonged-release granules in sachet
-    50056200
+    "Prolonged-release granules in sachet"
+    "Medicinal product consisting of prolonged-release granules presented in a sachet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release granules in sachet
+  * ^designation[=].value = "Prolonged-release granules in sachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули с удължено освобождаване в саше"
@@ -5380,10 +5380,10 @@ Title:     "Combined term"
   
 
 * #50056250
-    Prolonged-release suspension for injection in pre-filled syringe
-    50056250
+    "Prolonged-release suspension for injection in pre-filled syringe"
+    "Medicinal product consisting of a prolonged-release suspension for injection presented in a pre-filled syringe."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release suspension for injection in pre-filled syringe
+  * ^designation[=].value = "Prolonged-release suspension for injection in pre-filled syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна суспензия с удължено освобождаване в предварително напълнена спринцовка"
@@ -5471,10 +5471,10 @@ Title:     "Combined term"
   
 
 * #50056600
-    Solution and suspension for suspension for injection in pre-filled syringe
-    50056600
+    "Solution and suspension for suspension for injection in pre-filled syringe"
+    "Medicinal product consisting of a solution and suspension for suspension for injection presented in a pre-filled syringe. The solution and suspension are contained in different compartments of the pre-filled syringe, which contains all of the components necessary to prepare the suspension for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution and suspension for suspension for injection in pre-filled syringe
+  * ^designation[=].value = "Solution and suspension for suspension for injection in pre-filled syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор и суспензия за инжекционна суспензия в предварително напълнена спринцовка"
@@ -5562,10 +5562,10 @@ Title:     "Combined term"
   
 
 * #50058500
-    Solution for infusion in pre-filled syringe
-    50058500
+    "Solution for infusion in pre-filled syringe"
+    "Medicinal product consisting of a solution for infusion presented in a pre-filled syringe."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for infusion in pre-filled syringe
+  * ^designation[=].value = "Solution for infusion in pre-filled syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инфузионен разтвор в предварително напълнена спринцовка"
@@ -5653,10 +5653,10 @@ Title:     "Combined term"
   
 
 * #50060100
-    Solution for injection in cartridge
-    50060100
+    "Solution for injection in cartridge"
+    "Medicinal product consisting of a solution for injection presented in a cartridge."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection in cartridge
+  * ^designation[=].value = "Solution for injection in cartridge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен разтвор в патрон"
@@ -5750,10 +5750,10 @@ Title:     "Combined term"
   
 
 * #50060150
-    Solution for injection in needle-free injector
-    50060150
+    "Solution for injection in needle-free injector"
+    "Medicinal product consisting of a solution for injection presented in a needle-free injector."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection in needle-free injector
+  * ^designation[=].value = "Solution for injection in needle-free injector"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен разтвор в безиглен инжектор"
@@ -5841,10 +5841,10 @@ Title:     "Combined term"
   
 
 * #50060200
-    Solution for injection in pre-filled pen
-    50060200
+    "Solution for injection in pre-filled pen"
+    "Medicinal product consisting of a solution for injection presented in a pre-filled pen."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection in pre-filled pen
+  * ^designation[=].value = "Solution for injection in pre-filled pen"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен разтвор в предварително напълнена писалка"
@@ -5935,10 +5935,10 @@ Title:     "Combined term"
   
 
 * #50060300
-    Solution for injection in pre-filled syringe
-    50060300
+    "Solution for injection in pre-filled syringe"
+    "Medicinal product consisting of a solution for injection presented in a pre-filled syringe."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection in pre-filled syringe
+  * ^designation[=].value = "Solution for injection in pre-filled syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен разтвор в предварително напълнена спринцовка"
@@ -6035,10 +6035,10 @@ Title:     "Combined term"
   
 
 * #50060400
-    Solution for injection in pre-filled syringe with automatic needle guard
-    50060400
+    "Solution for injection in pre-filled syringe with automatic needle guard"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection in pre-filled syringe with automatic needle guard
+  * ^designation[=].value = "Solution for injection in pre-filled syringe with automatic needle guard"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -6063,10 +6063,10 @@ Title:     "Combined term"
   
 
 * #50060500
-    Solution for injection/infusion in pre-filled syringe
-    50060500
+    "Solution for injection/infusion in pre-filled syringe"
+    "Medicinal product consisting of a solution for injection/infusion presented in a pre-filled syringe."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection/infusion in pre-filled syringe
+  * ^designation[=].value = "Solution for injection/infusion in pre-filled syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен/инфузионен разтвор в предварително напълнена спринцовка"
@@ -6157,10 +6157,10 @@ Title:     "Combined term"
   
 
 * #50063100
-    Suspension for injection in cartridge
-    50063100
+    "Suspension for injection in cartridge"
+    "Medicinal product consisting of a suspension for injection presented in a cartridge."
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension for injection in cartridge
+  * ^designation[=].value = "Suspension for injection in cartridge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна суспензия в патрон"
@@ -6254,10 +6254,10 @@ Title:     "Combined term"
   
 
 * #50063200
-    Suspension for injection in pre-filled pen
-    50063200
+    "Suspension for injection in pre-filled pen"
+    "Medicinal product consisting of a suspension for injection presented in a pre-filled pen."
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension for injection in pre-filled pen
+  * ^designation[=].value = "Suspension for injection in pre-filled pen"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна суспензия в предварително напълнена писалка"
@@ -6348,10 +6348,10 @@ Title:     "Combined term"
   
 
 * #50063300
-    Suspension for injection in pre-filled syringe
-    50063300
+    "Suspension for injection in pre-filled syringe"
+    "Medicinal product consisting of a suspension for injection presented in a pre-filled syringe."
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension for injection in pre-filled syringe
+  * ^designation[=].value = "Suspension for injection in pre-filled syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна суспензия в предварително напълнена спринцовка"

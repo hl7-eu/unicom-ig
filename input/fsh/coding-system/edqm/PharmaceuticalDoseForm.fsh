@@ -1,14 +1,14 @@
 CodeSystem: PharmaceuticalDoseForm
 Id:         pharmaceutical-dose-form
-Title:     "Pharmaceutical dose form"
+Title:      "Pharmaceutical dose form"
 * ^hierarchyMeaning = #is-a
 
 
 * #10100500
-    Concentrate for oral suspension
-    10100500
+    "Concentrate for oral suspension"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain an oral suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for oral suspension
+  * ^designation[=].value = "Concentrate for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за перорална суспензия"
@@ -99,10 +99,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10101000
-    Oral drops, solution
-    10101000
+    "Oral drops, solution"
+    "Liquid, usually multidose preparation consisting of a solution intended for oral use. The preparation is administered in small volumes by means of a suitable measuring device such as a dropper, pipette or oral syringe capable of accurate dosing of the solution. The measured dose may be diluted in water or another suitable liquid before swallowing."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral drops, solution
+  * ^designation[=].value = "Oral drops, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорални капки, разтвор"
@@ -208,10 +208,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10102000
-    Oral drops, suspension
-    10102000
+    "Oral drops, suspension"
+    "Liquid, usually multidose preparation consisting of a suspension intended for oral use. The preparation is administered in small volumes by means of a suitable measuring device such as a dropper, pipette or oral syringe capable of accurate dosing of the suspension. The measured dose may be diluted in water or another suitable liquid before swallowing."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral drops, suspension
+  * ^designation[=].value = "Oral drops, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорални капки, суспензия"
@@ -317,10 +317,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10103000
-    Oral drops, emulsion
-    10103000
+    "Oral drops, emulsion"
+    "Liquid, usually multidose preparation consisting of an emulsion intended for oral use. The preparation is administered in small volumes by means of a suitable measuring device such as a dropper, pipette or oral syringe capable of accurate dosing of the emulsion. The measured dose may be diluted in water or another suitable liquid before swallowing."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral drops, emulsion
+  * ^designation[=].value = "Oral drops, emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорални капки, емулсия"
@@ -426,10 +426,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10104000
-    Oral liquid
-    10104000
+    "Oral liquid"
+    "Liquid single-dose or multidose preparation consisting of a liquid active substance per se, intended for oral use. Each dose from a multidose container is administered by means of a suitable device such as a measuring spoon."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral liquid
+  * ^designation[=].value = "Oral liquid"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорална течност"
@@ -535,10 +535,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10105000
-    Oral solution
-    10105000
+    "Oral solution"
+    "Liquid single-dose or multidose preparation consisting of a solution intended for oral use. Each dose from a multidose container is administered by means of a device suitable for measuring the prescribed volume, generally 5 mL or multiples thereof."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral solution
+  * ^designation[=].value = "Oral solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорален разтвор"
@@ -644,10 +644,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10106000
-    Oral suspension
-    10106000
+    "Oral suspension"
+    "Liquid single-dose or multidose preparation consisting of a suspension intended for oral use. Each dose from a multidose container is administered by means of a device suitable for measuring the prescribed volume, generally 5 mL or multiples thereof."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral suspension
+  * ^designation[=].value = "Oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорална суспензия"
@@ -753,10 +753,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10107000
-    Oral emulsion
-    10107000
+    "Oral emulsion"
+    "Liquid single-dose or multidose preparation consisting of an emulsion intended for oral use. Each dose from a multidose container is administered by means of a device suitable for measuring the prescribed volume, generally 5 mL or multiples thereof."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral emulsion
+  * ^designation[=].value = "Oral emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорална емулсия"
@@ -862,10 +862,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10108000
-    Oral gel
-    10108000
+    "Oral gel"
+    "Semi-solid single-dose or multidose preparation intended for oral use, consisting of a gel, usually hydrophilic, to be swallowed after administration to the oral cavity."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral gel
+  * ^designation[=].value = "Oral gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорален гел"
@@ -971,10 +971,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10109000
-    Oral paste
-    10109000
+    "Oral paste"
+    "Semi-solid single-dose or multidose preparation intended for oral use, consisting of a paste to be swallowed after administration to the oral cavity."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral paste
+  * ^designation[=].value = "Oral paste"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорална паста"
@@ -1080,10 +1080,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10110000
-    Powder for oral solution
-    10110000
+    "Powder for oral solution"
+    "Solid preparation consisting of (a) solid active substance(s) which may also include excipients to facilitate dissolution in the prescribed liquid. Powders for oral solution include freeze-dried powders. The oral solution is usually prepared just before administration to the patient."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for oral solution
+  * ^designation[=].value = "Powder for oral solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за перорален разтвор"
@@ -1189,10 +1189,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10111000
-    Powder for oral suspension
-    10111000
+    "Powder for oral suspension"
+    "Solid preparation consisting of (a) solid active substance(s) which may also include excipients to facilitate dispersion in the prescribed liquid and to prevent sedimentation during storage of the oral suspension. Powders for oral suspension include freeze-dried powders. The oral suspension is usually prepared just before administration to the patient."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for oral suspension
+  * ^designation[=].value = "Powder for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за перорална  суспензия"
@@ -1298,10 +1298,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10112000
-    Granules for oral solution
-    10112000
+    "Granules for oral solution"
+    "Solid preparation consisting of aggregated particles that may include excipients to facilitate wetting and dissolution, intended to be dissolved in the specified liquid to obtain an oral solution, which is usually prepared just before administration to the patient."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules for oral solution
+  * ^designation[=].value = "Granules for oral solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули за перорален разтвор"
@@ -1407,10 +1407,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10113000
-    Granules for oral suspension
-    10113000
+    "Granules for oral suspension"
+    "Solid preparation consisting of aggregated particles that may include excipients to facilitate wetting and dispersion, intended to be dispersed in the specified liquid to obtain an oral suspension, which is usually prepared just before administration to the patient."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules for oral suspension
+  * ^designation[=].value = "Granules for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули за перорална суспензия"
@@ -1516,10 +1516,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10116000
-    Lyophilisate for suspension
-    10116000
+    "Lyophilisate for suspension"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate for suspension
+  * ^designation[=].value = "Lyophilisate for suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат за суспензия"
@@ -1619,10 +1619,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10117000
-    Syrup
-    10117000
+    "Syrup"
+    "Liquid single-dose or multidose aqueous preparation characterised by a sweet taste and a viscous consistency and usually containing aromatic or other flavouring agents, intended for oral use. Each dose from a multidose container is administered by means of a device suitable for measuring the prescribed volume, generally 5 mL or multiples thereof."
   * ^designation[0].language = #en
-  * ^designation[=].value = Syrup
+  * ^designation[=].value = "Syrup"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сироп"
@@ -1728,10 +1728,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10118000
-    Powder for syrup
-    10118000
+    "Powder for syrup"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, that may include excipients to facilitate dissolution in water and to obtain the characteristics of a syrup, intended to be dissolved in water to obtain a syrup."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for syrup
+  * ^designation[=].value = "Powder for syrup"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за сироп"
@@ -1837,10 +1837,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10119000
-    Granules for syrup
-    10119000
+    "Granules for syrup"
+    "Solid preparation consisting of aggregated particles that may include excipients to facilitate wetting and dissolution and to obtain the characteristics of a syrup, intended to be dissolved in water to obtain a syrup."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules for syrup
+  * ^designation[=].value = "Granules for syrup"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули за сироп"
@@ -1946,10 +1946,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10120000
-    Soluble tablet
-    10120000
+    "Soluble tablet"
+    "Solid single-dose preparation consisting of a tablet, usually uncoated, intended to be dissolved in the specified liquid before being swallowed."
   * ^designation[0].language = #en
-  * ^designation[=].value = Soluble tablet
+  * ^designation[=].value = "Soluble tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтворима таблетка"
@@ -2055,10 +2055,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10121000
-    Dispersible tablet
-    10121000
+    "Dispersible tablet"
+    "Solid single-dose preparation consisting of a tablet intended to be dispersed in the specified liquid before being swallowed."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dispersible tablet
+  * ^designation[=].value = "Dispersible tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Диспергираща се таблетка"
@@ -2164,10 +2164,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10121500
-    Dispersible tablets for dose dispenser
-    10121500
+    "Dispersible tablets for dose dispenser"
+    "Solid preparation consisting of small, dispersible tablets that are designed to be used in a dose dispenser, each tablet usually consisting of a small fraction of a dose, with multiple tablets being automatically counted and administered as a single dose."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dispersible tablets for dose dispenser
+  * ^designation[=].value = "Dispersible tablets for dose dispenser"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Диспергиращи се таблетки за дозиращо устройство"
@@ -2252,10 +2252,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10122000
-    Herbal tea
-    10122000
+    "Herbal tea"
+    "Solid preparation consisting exclusively of one or more herbal drugs intended for the preparation of an oral aqueous preparation by means of decoction, infusion or maceration. Herbal teas are usually presented in bulk form or in bags. The tea is prepared immediately before oral intake."
   * ^designation[0].language = #en
-  * ^designation[=].value = Herbal tea
+  * ^designation[=].value = "Herbal tea"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Билков чай"
@@ -2361,10 +2361,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10201000
-    Oral powder
-    10201000
+    "Oral powder"
+    "Single-dose or multidose preparation consisting of one or more particulate solids of varying degrees of fineness. Oral powders are intended for oral administration. They are generally administered in or with water or another suitable liquid, but may also be swallowed directly."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral powder
+  * ^designation[=].value = "Oral powder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорален прах"
@@ -2470,10 +2470,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10202000
-    Instant herbal tea
-    10202000
+    "Instant herbal tea"
+    "Solid preparation consisting of a lyophilised herbal drug extract intended to be dissolved in water before oral use. Instant herbal teas are supplied in bulk form (multidose) or in sachets (single-dose)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Instant herbal tea
+  * ^designation[=].value = "Instant herbal tea"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтворим билков чай"
@@ -2579,10 +2579,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10203000
-    Effervescent powder
-    10203000
+    "Effervescent powder"
+    "Solid single-dose or multidose preparation consisting of one or more powders generally containing acid substances and carbonates or hydrogen carbonates that react rapidly in the presence of water to release carbon dioxide. Effervescent powders are intended to be dissolved or dispersed in water before administration."
   * ^designation[0].language = #en
-  * ^designation[=].value = Effervescent powder
+  * ^designation[=].value = "Effervescent powder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ефервесцентен прах"
@@ -2688,10 +2688,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10204000
-    Granules
-    10204000
+    "Granules"
+    "Solid single-dose or multidose preparation consisting of solid, dry aggregates of powder particles that are sufficiently resistant to withstand handling. Granules are intended for oral use to release active substance(s) in the gastrointestinal fluids by a rate depending essentially on the intrinsic properties of the active substance(s) (conventional release). They may be swallowed as such and/or chewed before swallowing, and some may also be dissolved or dispersed in water or another suitable liquid before oral administration. Granules for oral solution and Granules for oral suspension are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules
+  * ^designation[=].value = "Granules"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули"
@@ -2797,10 +2797,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10205000
-    Effervescent granules
-    10205000
+    "Effervescent granules"
+    "Solid single-dose or multidose preparation consisting of uncoated granules generally containing acidic substances and carbonates or hydrogen carbonates that rapidly react in the presence of water to release carbon dioxide. Effervescent granules are intended to be dissolved or dispersed in water before oral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Effervescent granules
+  * ^designation[=].value = "Effervescent granules"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ефервесцентни гранули"
@@ -2906,10 +2906,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10206000
-    Gastro-resistant granules
-    10206000
+    "Gastro-resistant granules"
+    "Solid preparation consisting of delayed-release granules intended to resist the gastric fluid and release the active substance(s) in the intestinal fluid. This deliberate modification is achieved by coating the granules with a gastro-resistant material or by embedding the solid particles in the gastro-resistant material. Gastro-resistant granules are usually single-dose preparations intended for oral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastro-resistant granules
+  * ^designation[=].value = "Gastro-resistant granules"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-устойчиви гранули"
@@ -3015,10 +3015,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10207000
-    Prolonged-release granules
-    10207000
+    "Prolonged-release granules"
+    "Solid preparation consisting of granules showing a slower release than that of conventional-release granules. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Prolonged-release granules are usually single-dose preparations intended for oral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release granules
+  * ^designation[=].value = "Prolonged-release granules"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули с удължено освобождаване"
@@ -3124,10 +3124,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10208000
-    Modified-release granules
-    10208000
+    "Modified-release granules"
+    "Solid preparation consisting of granules showing a rate and/or place of release different from that of conventional-release granules. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Modified-release granules are usually single-dose preparations intended for oral use, and include prolonged-release, delayed release and pulsatile-release granules. The generic term 'modified-release granules' is used only when the more specific terms 'gastro-resistant granules' or 'prolonged-release granules' do not apply."
   * ^designation[0].language = #en
-  * ^designation[=].value = Modified-release granules
+  * ^designation[=].value = "Modified-release granules"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули с изменено освобождаване"
@@ -3233,10 +3233,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10209000
-    Cachet
-    10209000
+    "Cachet"
+    "Solid discoid preparation consisting of a wafer enclosing a unit dose intended for oral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cachet
+  * ^designation[=].value = "Cachet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Нишестена капсула"
@@ -3342,10 +3342,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10210000
-    Capsule, hard
-    10210000
+    "Capsule, hard"
+    "Solid single-dose preparation contained in a hard shell, the capacity of which can be varied. The shell is made of gelatin or other substances. It consists of two prefabricated cylindrical sections one end of which is rounded and closed, the other being open. The contents of the shell may be a solid or semi-solid preparation, which is filled into one of the sections and closed by slipping the other section over it. Hard capsules are intended for oral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Capsule, hard
+  * ^designation[=].value = "Capsule, hard"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула, твърда"
@@ -3451,10 +3451,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10211000
-    Capsule, soft
-    10211000
+    "Capsule, soft"
+    "Solid single-dose preparation contained in a soft shell, the capacity and shape of which can be varied. The shell is made of gelatin or other substances and may contain (a) solid active substance(s). The shell is thicker than that of hard capsules and consists of one part as soft capsules usually are formed, filled and sealed in one operation. The contents of the shell may be a semi-solid or liquid preparation. Soft capsules are intended for oral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Capsule, soft
+  * ^designation[=].value = "Capsule, soft"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула, мека"
@@ -3560,10 +3560,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10212000
-    Gastro-resistant capsule, hard
-    10212000
+    "Gastro-resistant capsule, hard"
+    "Solid single-dose, delayed-release preparation contained in a hard shell. The preparation is intended to resist the gastric fluid and to release the active substance(s) in the intestinal fluid. Hard gastro-resistant capsules are usually made by filling hard capsules with gastro-resistant granules or solid particles made gastro-resistant by coating or, in certain cases, by providing hard capsules with a gastro-resistant shell. They are intended for oral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastro-resistant capsule, hard
+  * ^designation[=].value = "Gastro-resistant capsule, hard"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-устойчива капсула, твърда"
@@ -3669,10 +3669,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10213000
-    Gastro-resistant capsule, soft
-    10213000
+    "Gastro-resistant capsule, soft"
+    "Solid single-dose, delayed-release preparation contained in a soft shell. The preparation is intended to resist the gastric fluid and to release the active substance(s) in the intestinal fluid. Soft gastro-resistant capsules are usually formed, filled and sealed in one operation. They may contain a liquid or semi-solid preparation in the gastro-resistant shell. Soft gastro-resistant capsules are intended for oral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastro-resistant capsule, soft
+  * ^designation[=].value = "Gastro-resistant capsule, soft"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-устойчива капсула, мека"
@@ -3778,10 +3778,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10214000
-    Chewable capsule, soft
-    10214000
+    "Chewable capsule, soft"
+    "Solid single-dose preparation contained in a soft shell. The soft capsule is intended to be chewed to release its contents into the mouth. The contents of the soft shell may be a semi-solid or liquid preparation intended for local action or systemic delivery after absorption through the oral mucosa or, when swallowed, in the gastrointestinal tract."
   * ^designation[0].language = #en
-  * ^designation[=].value = Chewable capsule, soft
+  * ^designation[=].value = "Chewable capsule, soft"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула за дъвчене, мека"
@@ -3884,10 +3884,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10215000
-    Prolonged-release capsule, hard
-    10215000
+    "Prolonged-release capsule, hard"
+    "Solid single-dose preparation consisting of a hard shell containing a solid or semi-solid formulation, showing a slower release of the active substance(s) than that of a conventional-release capsule. Prolonged release is achieved by a special formulation design and/or manufacturing method. Hard prolonged-release capsules are intended for oral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release capsule, hard
+  * ^designation[=].value = "Prolonged-release capsule, hard"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула с удължено освобождаване, твърда"
@@ -3993,10 +3993,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10216000
-    Prolonged-release capsule, soft
-    10216000
+    "Prolonged-release capsule, soft"
+    "Solid single-dose preparation consisting of a soft shell containing a semi-solid or liquid formulation, showing a slower release of the active substance(s) than that of a conventional-release capsule. Prolonged release is achieved by a special formulation design and/or manufacturing method. Soft prolonged-release capsules are intended for oral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release capsule, soft
+  * ^designation[=].value = "Prolonged-release capsule, soft"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула с удължено освобождаване, мека"
@@ -4102,10 +4102,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10217000
-    Modified-release capsule, hard
-    10217000
+    "Modified-release capsule, hard"
+    "Solid single-dose preparation consisting of a hard shell containing a solid or semi-solid formulation, showing a rate, a place and/or a time of release different from that of a conventional-release capsule. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Hard modified-release capsules are intended for oral use, and include prolonged-release, delayed-release and pulsatile-release preparations. The generic term 'modified-release capsule, hard' is used only when the more specific terms 'gastro-resistant capsule, hard' or 'prolonged-release capsule, hard' do not apply."
   * ^designation[0].language = #en
-  * ^designation[=].value = Modified-release capsule, hard
+  * ^designation[=].value = "Modified-release capsule, hard"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула с изменено освобождаване, твърда"
@@ -4211,10 +4211,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10218000
-    Modified-release capsule, soft
-    10218000
+    "Modified-release capsule, soft"
+    "Solid single-dose preparation consisting of a soft shell containing a semi-solid or liquid formulation, showing a rate, a place and/or a time of release different from that of a conventional-release capsule. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Soft modified-release capsules are intended for oral use, and include prolonged-release, delayed-release and pulsatile-release preparations. The generic term 'modified-release capsule, soft' is used only when the more specific terms 'gastro-resistant capsule, soft' or 'prolonged-release capsule, soft' do not apply."
   * ^designation[0].language = #en
-  * ^designation[=].value = Modified-release capsule, soft
+  * ^designation[=].value = "Modified-release capsule, soft"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула с изменено освобождаване, мека"
@@ -4320,10 +4320,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10219000
-    Tablet
-    10219000
+    "Tablet"
+    "Solid single-dose uncoated preparation obtained by compressing uniform volumes of particulate solids or by other means such as extrusion or moulding. Tablets include single-layer tablets resulting from a single compression of particles and multi-layer tablets consisting of concentric or parallel layers obtained by successive compressions of particles of different composition. Tablets are intended for oral use to release active substance(s) in the gastrointestinal fluids by a rate depending essentially on the intrinsic properties of active substance(s) (conventional release)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet
+  * ^designation[=].value = "Tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка"
@@ -4429,10 +4429,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10220000
-    Coated tablet
-    10220000
+    "Coated tablet"
+    "Solid single-dose preparation consisting of a tablet coated with one or more layers of mixtures of various substances such as sugars and waxes. To the coating colouring matter, flavouring substances and active substance(s) may be added. The thickness of the coating is greater than that of a film-coated tablet. Coated tablets have a smooth surface. They are intended for oral use. When the coating dissolves or disintegrates the active substance(s) is (are) released into the gastrointestinal fluid at a rate depending essentially on its intrinsic properties (conventional release)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Coated tablet
+  * ^designation[=].value = "Coated tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Обвита таблетка"
@@ -4538,10 +4538,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10221000
-    Film-coated tablet
-    10221000
+    "Film-coated tablet"
+    "Solid single-dose preparation consisting of a tablet coated with a thin polymeric film that dissolves within a few minutes in the gastrointestinal fluid. Film-coated tablets are intended for oral use to release active substance(s) at a rate which is not significantly delayed compared to that of the uncoated tablet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Film-coated tablet
+  * ^designation[=].value = "Film-coated tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Филмирана таблетка"
@@ -4647,10 +4647,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10222000
-    Effervescent tablet
-    10222000
+    "Effervescent tablet"
+    "Solid single-dose preparation consisting of an uncoated tablet generally containing acid substances and carbonates or hydrogen carbonates, which react rapidly in the presence of water to release carbon dioxide. Effervescent tablets are intended to be dissolved or dispersed in water before oral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Effervescent tablet
+  * ^designation[=].value = "Effervescent tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ефервесцентна таблетка"
@@ -4756,10 +4756,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10223000
-    Orodispersible tablet
-    10223000
+    "Orodispersible tablet"
+    "Solid single-dose preparation consisting of an uncoated tablet intended to be placed in the mouth where it disperses rapidly in saliva before being swallowed."
   * ^designation[0].language = #en
-  * ^designation[=].value = Orodispersible tablet
+  * ^designation[=].value = "Orodispersible tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка, диспергираща се в устата"
@@ -4865,10 +4865,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10224000
-    Oral lyophilisate
-    10224000
+    "Oral lyophilisate"
+    "Solid single-dose preparation made by freeze-drying of a liquid or semi-solid preparation. This fast-releasing preparation is intended to be placed in the mouth where its contents are released in saliva and swallowed or, alternatively, to be dissolved in water before oral administration."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral lyophilisate
+  * ^designation[=].value = "Oral lyophilisate"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорален лиофилизат"
@@ -4974,10 +4974,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10225000
-    Gastro-resistant tablet
-    10225000
+    "Gastro-resistant tablet"
+    "Solid single-dose, delayed-release tablet intended to resist the gastric fluid and to release the active substance(s) in the intestinal fluid. These properties are achieved by coating the tablet with a gastro-resistant material or by embedding solid particles in the gastro-resistant material before compression. Gastro-resistant tablets are intended for oral administration."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastro-resistant tablet
+  * ^designation[=].value = "Gastro-resistant tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-устойчива таблетка"
@@ -5083,10 +5083,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10226000
-    Prolonged-release tablet
-    10226000
+    "Prolonged-release tablet"
+    "Solid single-dose preparation consisting of a tablet showing a slower release of the active substance(s) than that of a conventional-release tablet. Prolonged release is achieved by a special formulation design and/or manufacturing method. Prolonged-release tablets are intended for oral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release tablet
+  * ^designation[=].value = "Prolonged-release tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка с удължено освобождаване"
@@ -5192,10 +5192,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10227000
-    Modified-release tablet
-    10227000
+    "Modified-release tablet"
+    "Solid single-dose preparation consisting of a tablet showing a rate, a place and/or a time of release different from that of a conventional-release tablet. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Modified-release tablets are intended for oral use, and include prolonged-release, delayed-release and pulsatile-release preparations. The generic term 'modified-release tablet' is used only when the more specific terms 'gastro-resistant tablet' or 'prolonged-release tablet' do not apply."
   * ^designation[0].language = #en
-  * ^designation[=].value = Modified-release tablet
+  * ^designation[=].value = "Modified-release tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка с изменено освобождаване"
@@ -5301,10 +5301,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10228000
-    Chewable tablet
-    10228000
+    "Chewable tablet"
+    "Solid single-dose preparation consisting of an uncoated tablet intended to be chewed before being swallowed. Chewable tablets are intended for oral administration."
   * ^designation[0].language = #en
-  * ^designation[=].value = Chewable tablet
+  * ^designation[=].value = "Chewable tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка за дъвчене"
@@ -5410,10 +5410,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10229000
-    Medicated chewing-gum
-    10229000
+    "Medicated chewing-gum"
+    "Solid single-dose preparation consisting of a basis, mainly composed of gums, intended to be chewed but not swallowed. The active substance(s) is (are) released in saliva by chewing. Medicated chewing gum is intended for local treatment of mouth diseases or systemic delivery after absorption through the oral mucosa or from the gastrointestinal tract."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicated chewing-gum
+  * ^designation[=].value = "Medicated chewing-gum"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лечебна дъвка"
@@ -5519,10 +5519,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10230000
-    Oral gum
-    10230000
+    "Oral gum"
+    "Solid single-dose preparation with a gum-like consistency, intended to be sucked or chewed before being swallowed. Medicated chewing gum is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral gum
+  * ^designation[=].value = "Oral gum"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорална дъвка"
@@ -5628,10 +5628,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10230500
-    Pill
-    10230500
+    "Pill"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Pill
+  * ^designation[=].value = "Pill"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -5659,10 +5659,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10231000
-    Pillules
-    10231000
+    "Pillules"
+    "Solid preparation for homoeopathic use, obtained from sucrose, lactose or other suitable excipients. Pillules may be prepared by impregnation of preformed pillules with a dilution or dilutions of homoeopathic stocks or by progressive addition of these excipients and the addition of a dilution or dilutions of homoeopathic stocks. Pillules are intended for oral or sublingual use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pillules
+  * ^designation[=].value = "Pillules"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пилули"
@@ -5768,10 +5768,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10232000
-    Continuous-release intraruminal device
-    10232000
+    "Continuous-release intraruminal device"
+    "Solid single-dose preparation intended for oral use in ruminant animals. It is designed to be retained in the rumen to deliver the active substance(s) in a continuous manner at a defined rate over a defined period of time. This may be achieved by erosion, corrosion, diffusion, osmotic pressure or any other suitable chemical, physical or physico-chemical means."
   * ^designation[0].language = #en
-  * ^designation[=].value = Continuous-release intraruminal device
+  * ^designation[=].value = "Continuous-release intraruminal device"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интраруминално средство за непрекъснато освобождаване"
@@ -5868,10 +5868,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10233000
-    Pulsatile-release intraruminal device
-    10233000
+    "Pulsatile-release intraruminal device"
+    "Solid single-dose preparation intended for oral use in ruminant animals. It is designed to be retained in the rumen to deliver the active substance(s) in a pulsatile manner by the release of a specific quantity of active substance(s) at one or several defined intermediate intervals. This may be achieved by corrosion by ruminal fluids of the metallic elements of the intraruminal device which leads to sequential release of the constituent units which are usually in the form of tablets."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pulsatile-release intraruminal device
+  * ^designation[=].value = "Pulsatile-release intraruminal device"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интраруминално средство за пулсиращо освобождаване"
@@ -5968,10 +5968,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10234000
-    Lick block
-    10234000
+    "Lick block"
+    "Solid block containing active substance(s) intended for veterinary use. It is formed by pressing. Administration takes place when the animal is licking the block."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lick block
+  * ^designation[=].value = "Lick block"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Блокче за близане"
@@ -6065,10 +6065,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10235000
-    Premix for medicated feeding stuff
-    10235000
+    "Premix for medicated feeding stuff"
+    "Liquid, semi-solid or solid preparation intended to facilitate oral administration of active substances to animals. Premixes for medicated feeding stuff are used exclusively in the preparation of medicated feeding stuffs. Used as powders or granules, they are free-flowing and homogeneous. Used in liquid form, they are homogeneous suspensions or solutions which may be obtained from thixotropic gels or structured liquids. The particle size and other properties are such as to ensure uniform distribution of the active substance(s) in the final feeding stuff."
   * ^designation[0].language = #en
-  * ^designation[=].value = Premix for medicated feeding stuff
+  * ^designation[=].value = "Premix for medicated feeding stuff"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Премикс за медикаментозни фуражи"
@@ -6165,10 +6165,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10236000
-    Medicated pellets
-    10236000
+    "Medicated pellets"
+    "Solid single-dose or multidose preparation intended for veterinary use, consisting of large granules, usually formed by extrusion, intended for oral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicated pellets
+  * ^designation[=].value = "Medicated pellets"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лечебни пелети"
@@ -6265,10 +6265,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10236100
-    Orodispersible film
-    10236100
+    "Orodispersible film"
+    "Solid preparation consisting of a single- or multilayer sheet of suitable material(s) intended to be placed in the mouth where it disperses rapidly before being swallowed."
   * ^designation[0].language = #en
-  * ^designation[=].value = Orodispersible film
+  * ^designation[=].value = "Orodispersible film"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Филм, диспергиращ се в устата"
@@ -6359,10 +6359,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10301000
-    Gargle
-    10301000
+    "Gargle"
+    "Liquid preparation consisting of an aqueous solution intended for gargling to obtain a local effect in the oral cavity and the throat. Gargles are not to be swallowed."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gargle
+  * ^designation[=].value = "Gargle"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гаргара"
@@ -6468,10 +6468,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10302000
-    Concentrate for gargle
-    10302000
+    "Concentrate for gargle"
+    "Liquid preparation consisting of an aqueous solution intended to be diluted in water to obtain a gargle."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for gargle
+  * ^designation[=].value = "Concentrate for gargle"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за гаргара"
@@ -6577,10 +6577,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10303000
-    Gargle, powder for solution
-    10303000
+    "Gargle, powder for solution"
+    "Solid preparation consisting of one or more powders intended to be dissolved in water to obtain a gargle."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gargle, powder for solution
+  * ^designation[=].value = "Gargle, powder for solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гаргара, прах за разтвор"
@@ -6686,10 +6686,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10304000
-    Gargle, tablet for solution
-    10304000
+    "Gargle, tablet for solution"
+    "Solid preparation consisting of a tablet intended to be dissolved in water to obtain a gargle."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gargle, tablet for solution
+  * ^designation[=].value = "Gargle, tablet for solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гаргара, таблетка за разтвор"
@@ -6795,10 +6795,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10305000
-    Oromucosal solution
-    10305000
+    "Oromucosal solution"
+    "Liquid single-dose or multidose preparation consisting of a solution intended for oromucosal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal solution
+  * ^designation[=].value = "Oromucosal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за устна лигавица"
@@ -6904,10 +6904,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10306000
-    Oromucosal suspension
-    10306000
+    "Oromucosal suspension"
+    "Liquid single-dose or multidose preparation consisting of a suspension intended for oromucosal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal suspension
+  * ^designation[=].value = "Oromucosal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия за устна лигавица"
@@ -7013,10 +7013,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10307000
-    Oromucosal drops
-    10307000
+    "Oromucosal drops"
+    "Liquid, usually multidose preparation consisting of a solution, suspension or emulsion intended for oromucosal use. Oromucosal drops are administered by instillation into the oral cavity or onto a specific part of the oral cavity."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal drops
+  * ^designation[=].value = "Oromucosal drops"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за устна лигавица"
@@ -7122,10 +7122,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10308000
-    Oromucosal spray
-    10308000
+    "Oromucosal spray"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal spray
+  * ^designation[=].value = "Oromucosal spray"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за устна лигавица"
@@ -7228,10 +7228,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10308100
-    Oromucosal spray, emulsion
-    10308100
+    "Oromucosal spray, emulsion"
+    "Liquid, usually multidose preparation consisting of an emulsion intended for oromucosal use. It is administered by spraying into the oral cavity or onto a specific part of the oral cavity or the throat. It is presented in a container with a spray pump or in a pressurised container with or without a metering valve. Sublingual sprays are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal spray, emulsion
+  * ^designation[=].value = "Oromucosal spray, emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за устна лигавицa, емулсия"
@@ -7322,10 +7322,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10308200
-    Oromucosal spray, solution
-    10308200
+    "Oromucosal spray, solution"
+    "Liquid, usually multidose preparation consisting of a solution intended for oromucosal use. It is administered by spraying into the oral cavity or onto a specific part of the oral cavity or the throat. It is presented in a container with a spray pump or in a pressurised container with or without a metering valve. Sublingual sprays are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal spray, solution
+  * ^designation[=].value = "Oromucosal spray, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за устна лигавицa, разтвор"
@@ -7416,10 +7416,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10308300
-    Oromucosal spray, suspension
-    10308300
+    "Oromucosal spray, suspension"
+    "Liquid, usually multidose preparation consisting of a suspension intended for oromucosal use. It is administered by spraying into the oral cavity or onto a specific part of the oral cavity or the throat. It is presented in a container with a spray pump or in a pressurised container with or without a metering valve. Sublingual sprays are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal spray, suspension
+  * ^designation[=].value = "Oromucosal spray, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за устна лигавицa, суспензия"
@@ -7510,10 +7510,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10309000
-    Sublingual spray
-    10309000
+    "Sublingual spray"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Sublingual spray
+  * ^designation[=].value = "Sublingual spray"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сублингвален спрей"
@@ -7613,10 +7613,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10309100
-    Sublingual spray, emulsion
-    10309100
+    "Sublingual spray, emulsion"
+    "Liquid, usually multidose preparation consisting of an emulsion intended for sublingual use. Sublingual sprays are usually presented in pressurised containers with a metering valve."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sublingual spray, emulsion
+  * ^designation[=].value = "Sublingual spray, emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сублингвален спрей, емулсия"
@@ -7707,10 +7707,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10309200
-    Sublingual spray, solution
-    10309200
+    "Sublingual spray, solution"
+    "Liquid, usually multidose preparation consisting of a solution intended for sublingual use. Sublingual sprays are usually presented in pressurised containers with a metering valve."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sublingual spray, solution
+  * ^designation[=].value = "Sublingual spray, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сублингвален спрей, разтвор"
@@ -7801,10 +7801,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10309300
-    Sublingual spray, suspension
-    10309300
+    "Sublingual spray, suspension"
+    "Liquid, usually multidose preparation consisting of a suspension intended for sublingual use. Sublingual sprays are usually presented in pressurised containers with a metering valve."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sublingual spray, suspension
+  * ^designation[=].value = "Sublingual spray, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сублингвален спрей, суспензия"
@@ -7895,10 +7895,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10310000
-    Mouthwash
-    10310000
+    "Mouthwash"
+    "Liquid preparation consisting of an aqueous solution intended for use in contact with the oral mucosa. It is not to be swallowed. Mouthwashes may contain excipients to adjust the pH which as far as possible is neutral."
   * ^designation[0].language = #en
-  * ^designation[=].value = Mouthwash
+  * ^designation[=].value = "Mouthwash"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Промивка за уста"
@@ -8004,10 +8004,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10311000
-    Mouthwash, tablet for solution
-    10311000
+    "Mouthwash, tablet for solution"
+    "Solid preparation consisting of an uncoated tablet intended to be dissolved in water to obtain a mouthwash."
   * ^designation[0].language = #en
-  * ^designation[=].value = Mouthwash, tablet for solution
+  * ^designation[=].value = "Mouthwash, tablet for solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Промивка за уста, таблетка за разтвор"
@@ -8113,10 +8113,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10312000
-    Gingival solution
-    10312000
+    "Gingival solution"
+    "Liquid, usually multidose preparation consisting of a solution intended for gingival use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gingival solution
+  * ^designation[=].value = "Gingival solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за венци"
@@ -8222,10 +8222,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10313000
-    Oromucosal gel
-    10313000
+    "Oromucosal gel"
+    "Semi-solid single-dose or multidose preparation consisting of a hydrophilic gel intended for oromucosal use. It is applied to the oral cavity or onto a specific part of the oral cavity, to obtain a local effect. Gingival gel is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal gel
+  * ^designation[=].value = "Oromucosal gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гел за устна лигавица"
@@ -8331,10 +8331,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10314000
-    Oromucosal paste
-    10314000
+    "Oromucosal paste"
+    "Semi-solid single-dose or multidose preparation consisting of a paste of solid particles finely dispersed in a hydrophilic basis intended for oromucosal use. Oromucosal pastes are applied to the oral cavity or onto a specific part of the oral cavity, to obtain a local effect. Gingival paste is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal paste
+  * ^designation[=].value = "Oromucosal paste"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Паста за устна лигавица"
@@ -8440,10 +8440,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10314005
-    Oromucosal ointment
-    10314005
+    "Oromucosal ointment"
+    "Semi-solid multidose preparation consisting of an ointment intended for oromucosal use. It is applied to the oral cavity or onto a specific part of the oral cavity, to obtain a local effect"
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal ointment
+  * ^designation[=].value = "Oromucosal ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Маз за устна лигавица"
@@ -8534,10 +8534,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10314010
-    Oromucosal cream
-    10314010
+    "Oromucosal cream"
+    "Semi-solid, usually multidose preparation consisting of an oil-in-water emulsion intended for oromucosal use. Oromucosal creams are applied to the oral cavity or onto a specific part of the oral cavity, other than the gingivae, to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal cream
+  * ^designation[=].value = "Oromucosal cream"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Крем за устна лигавица"
@@ -8640,10 +8640,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10314011
-    Buccal film
-    10314011
+    "Buccal film"
+    "Solid preparation consisting of a single- or multilayer sheet of suitable material(s) intended to be applied to the buccal cavity (pouch) to obtain a systemic effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Buccal film
+  * ^designation[=].value = "Buccal film"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Букален филм"
@@ -8734,10 +8734,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10315000
-    Gingival gel
-    10315000
+    "Gingival gel"
+    "Semi-solid single-dose or multidose preparation consisting of a gel intended for gingival use to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gingival gel
+  * ^designation[=].value = "Gingival gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гел за венци"
@@ -8843,10 +8843,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10316000
-    Gingival paste
-    10316000
+    "Gingival paste"
+    "Semi-solid single-dose or multidose preparation consisting of a paste of solid particles finely dispersed in a hydrophilic basis intended for gingival use to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gingival paste
+  * ^designation[=].value = "Gingival paste"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Паста за венци"
@@ -8952,10 +8952,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10317000
-    Oromucosal capsule
-    10317000
+    "Oromucosal capsule"
+    "Solid single-dose preparation contained in a soft shell to be chewed or sucked to obtain a local effect in the oral cavity."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal capsule
+  * ^designation[=].value = "Oromucosal capsule"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула за устна лигавица"
@@ -9061,10 +9061,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10317500
-    Sublingual film
-    10317500
+    "Sublingual film"
+    "Solid preparation consisting of a single- or multilayer sheet of suitable material(s) intended for sublingual use to obtain a systemic effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sublingual film
+  * ^designation[=].value = "Sublingual film"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сублингвален филм"
@@ -9155,10 +9155,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10318000
-    Sublingual tablet
-    10318000
+    "Sublingual tablet"
+    "Solid single-dose preparation consisting of an uncoated tablet intended for sublingual use. Sublingual tablets are usually prepared by compression of mixtures of powders or granulations into tablets with a shape suited for the intended use. Other technologies such as moulding may be used."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sublingual tablet
+  * ^designation[=].value = "Sublingual tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сублингвална таблетка"
@@ -9264,10 +9264,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10319000
-    Muco-adhesive buccal tablet
-    10319000
+    "Muco-adhesive buccal tablet"
+    "Solid single-dose preparation to be applied to the buccal mucosa to obtain a systemic delivery over an extended period of time. Mucoadhesive buccal tablets are usually prepared by compression of mixtures of powders or granulations into tablets with a shape suited for the intended use. They usually contain hydrophilic polymers, which on wetting with saliva produce a flexible hydrogel that adheres to the buccal mucosa."
   * ^designation[0].language = #en
-  * ^designation[=].value = Muco-adhesive buccal tablet
+  * ^designation[=].value = "Muco-adhesive buccal tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Мукоадхезивна букална таблетка"
@@ -9373,10 +9373,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10320000
-    Buccal tablet
-    10320000
+    "Buccal tablet"
+    "Solid single-dose preparation to be applied to the buccal cavity (pouch) to obtain systemic delivery. Buccal tablets are prepared by compression of mixtures of powders or granulations into tablets with a shape suited for the intended use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Buccal tablet
+  * ^designation[=].value = "Buccal tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Букална таблетка"
@@ -9482,10 +9482,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10321000
-    Lozenge
-    10321000
+    "Lozenge"
+    "Solid single-dose preparation intended to be sucked to obtain, usually, a local effect in the oral cavity and the throat. Lozenges are hard preparations prepared by moulding. They usually contain flavouring and sweetening agents. Lozenges dissolve or disintegrate slowly when sucked."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lozenge
+  * ^designation[=].value = "Lozenge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка за смучене"
@@ -9588,10 +9588,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10322000
-    Compressed lozenge
-    10322000
+    "Compressed lozenge"
+    "Solid single-dose preparation intended to be sucked to obtain a local or systemic effect. It is prepared by compression and is often rhomboid in shape. Compressed lozenges usually contain flavouring and sweetening agents. They dissolve or disintegrate slowly when sucked."
   * ^designation[0].language = #en
-  * ^designation[=].value = Compressed lozenge
+  * ^designation[=].value = "Compressed lozenge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка за смучене, пресована"
@@ -9694,10 +9694,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10323000
-    Pastille
-    10323000
+    "Pastille"
+    "Solid single-dose preparation intended to be sucked to obtain, usually, a local effect in the oral cavity and the throat. Pastilles are soft, flexible preparations prepared by moulding of mixtures containing natural or synthetic polymers or gums and sweeteners. They dissolve or disintegrate slowly when sucked."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pastille
+  * ^designation[=].value = "Pastille"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пастил"
@@ -9797,10 +9797,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10401000
-    Periodontal powder
-    10401000
+    "Periodontal powder"
+    "Solid preparation consisting of one or more powders intended for administration within the tooth socket/periodontal membrane."
   * ^designation[0].language = #en
-  * ^designation[=].value = Periodontal powder
+  * ^designation[=].value = "Periodontal powder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Периодонтален прах"
@@ -9903,10 +9903,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10401500
-    Dental cement
-    10401500
+    "Dental cement"
+    "Semi-solid preparation intended for application in or on teeth, which subsequently hardens to form a seal or bond."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dental cement
+  * ^designation[=].value = "Dental cement"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дентален цимент"
@@ -9994,10 +9994,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10402000
-    Dental gel
-    10402000
+    "Dental gel"
+    "Semi-solid, usually multidose preparation consisting of a hydrophilic gel intended for administration on teeth and gums by rubbing."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dental gel
+  * ^designation[=].value = "Dental gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дентален гел"
@@ -10103,10 +10103,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10403000
-    Dental stick
-    10403000
+    "Dental stick"
+    "Solid single-dose preparation, rod-shaped and usually prepared by compression or moulding, intended for dental use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dental stick
+  * ^designation[=].value = "Dental stick"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дентална пръчица"
@@ -10212,10 +10212,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10404000
-    Dental insert
-    10404000
+    "Dental insert"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Dental insert
+  * ^designation[=].value = "Dental insert"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дентална вложка"
@@ -10315,10 +10315,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10405000
-    Dental powder
-    10405000
+    "Dental powder"
+    "Solid preparation consisting of one or more powders intended for administration on teeth and gums."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dental powder
+  * ^designation[=].value = "Dental powder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дентален прах"
@@ -10424,10 +10424,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10406000
-    Dental solution
-    10406000
+    "Dental solution"
+    "Liquid, usually multidose preparation consisting of a solution intended for administration on teeth and gums."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dental solution
+  * ^designation[=].value = "Dental solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дентален разтвор"
@@ -10533,10 +10533,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10407000
-    Dental suspension
-    10407000
+    "Dental suspension"
+    "Liquid, usually multidose preparation consisting of a suspension intended for administration on teeth and gums."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dental suspension
+  * ^designation[=].value = "Dental suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дентална суспензия"
@@ -10642,10 +10642,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10408000
-    Dental emulsion
-    10408000
+    "Dental emulsion"
+    "Liquid, usually multidose preparation consisting of an emulsion intended for administration on to the teeth and the gums."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dental emulsion
+  * ^designation[=].value = "Dental emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дентална емулсия"
@@ -10751,10 +10751,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10409000
-    Toothpaste
-    10409000
+    "Toothpaste"
+    "Semi-solid, usually multidose preparation consisting of a hydrophilic paste intended to be rubbed onto the teeth."
   * ^designation[0].language = #en
-  * ^designation[=].value = Toothpaste
+  * ^designation[=].value = "Toothpaste"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Паста за зъби"
@@ -10857,10 +10857,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10410000
-    Periodontal gel
-    10410000
+    "Periodontal gel"
+    "Semi-solid preparation consisting of a gel intended to be placed in the pouch between the tooth and the gingiva."
   * ^designation[0].language = #en
-  * ^designation[=].value = Periodontal gel
+  * ^designation[=].value = "Periodontal gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Периодонтален гел"
@@ -10963,10 +10963,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10411000
-    Periodontal insert
-    10411000
+    "Periodontal insert"
+    "Solid single-dose preparation consisting of a medicated insert to be placed within the tooth socket/periodontal membrane. The biodegradable insert is a sheet which slowly releases active substance(s)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Periodontal insert
+  * ^designation[=].value = "Periodontal insert"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Периодонтална вложка"
@@ -11069,10 +11069,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10413000
-    Powder for dental cement
-    10413000
+    "Powder for dental cement"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended for use in the preparation of a dental cement."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for dental cement
+  * ^designation[=].value = "Powder for dental cement"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за дентален цимент"
@@ -11160,10 +11160,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10414000
-    Solution for dental cement
-    10414000
+    "Solution for dental cement"
+    "Liquid preparation consisting of a solution intended for use in the preparation of a dental cement."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for dental cement
+  * ^designation[=].value = "Solution for dental cement"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за дентален цимент"
@@ -11251,10 +11251,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10501000
-    Bath additive
-    10501000
+    "Bath additive"
+    "Solid, semi-solid or liquid preparation to be added to the bath water."
   * ^designation[0].language = #en
-  * ^designation[=].value = Bath additive
+  * ^designation[=].value = "Bath additive"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Добавка за баня"
@@ -11360,10 +11360,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10502000
-    Cream
-    10502000
+    "Cream"
+    "Semi-solid single-dose or multidose preparation of homogeneous appearance consisting of a lipophilic phase and an aqueous phase, one of which is finely dispersed in the other. Active substance(s) are dissolved or dispersed in the basis, which may be hydrophilic or hydrophobic. Creams are intended for cutaneous use. In certain cases, transdermal delivery may be obtained."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cream
+  * ^designation[=].value = "Cream"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Крем"
@@ -11469,10 +11469,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10503000
-    Gel
-    10503000
+    "Gel"
+    "Semi-solid single-dose or multidose preparation consisting of a single-phase basis of liquids gelled by a suitable gelling agent, intended for cutaneous use. Active substance(s) are dissolved or dispersed in the basis, which may be hydrophilic or hydrophobic."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gel
+  * ^designation[=].value = "Gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гел"
@@ -11578,10 +11578,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10504000
-    Ointment
-    10504000
+    "Ointment"
+    "Semi-solid single-dose or multidose preparation consisting of a single-phase basis in which solids or liquids may be dispersed. Active substance(s) are dissolved or dispersed in the basis, which may be hydrophilic, hydrophobic or water-emulsifying. Ointments are intended for cutaneous use. In certain cases, transdermal delivery may be obtained."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ointment
+  * ^designation[=].value = "Ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Маз"
@@ -11687,10 +11687,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10505000
-    Cutaneous paste
-    10505000
+    "Cutaneous paste"
+    "Semi-solid single-dose or multidose preparation containing a large proportion of finely divided solids dispersed in the basis, intended for cutaneous use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous paste
+  * ^designation[=].value = "Cutaneous paste"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Паста за кожа"
@@ -11796,10 +11796,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10506000
-    Medicated plaster
-    10506000
+    "Medicated plaster"
+    "Flexible single-dose preparation intended to be applied to the skin to obtain, usually, a local effect. Medicated plasters consist of an adhesive basis containing the active substance and spread as a uniform layer on an appropriate support made of natural or synthetic material. The adhesive layer is covered by a suitable protective liner, which is removed before applying the plaster to the skin. Medicated plasters are presented in a range of sizes or as larger sheets to be cut before use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicated plaster
+  * ^designation[=].value = "Medicated plaster"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лечебен пластир"
@@ -11902,10 +11902,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10507000
-    Cutaneous foam
-    10507000
+    "Cutaneous foam"
+    "Liquid, usually multidose preparation, usually presented in a pressurised container equipped with an applicator suitable for delivery of a foam consisting of large volumes of gas dispersed in a liquid containing active substance(s). Cutaneous foams are intended for cutaneous use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous foam
+  * ^designation[=].value = "Cutaneous foam"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пяна за кожа"
@@ -12011,10 +12011,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10508000
-    Shampoo
-    10508000
+    "Shampoo"
+    "Liquid or, occasionally, semi-solid, usually multidose preparation intended for application to the scalp by rubbing and subsequent washing away with water. Upon rubbing with water, shampoos usually form foam. Shampoos are solutions, suspensions or emulsions containing surface-active agents."
   * ^designation[0].language = #en
-  * ^designation[=].value = Shampoo
+  * ^designation[=].value = "Shampoo"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лечебен шампоан"
@@ -12120,10 +12120,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10509000
-    Cutaneous spray, solution
-    10509000
+    "Cutaneous spray, solution"
+    "Liquid preparation, usually multidose, consisting of a solution in a pressurised container with a spray valve or in a container equipped with a spray pump, intended for cutaneous use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous spray, solution
+  * ^designation[=].value = "Cutaneous spray, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за кожа, разтвор"
@@ -12229,10 +12229,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10510000
-    Cutaneous spray, suspension
-    10510000
+    "Cutaneous spray, suspension"
+    "Liquid, usually multidose preparation consisting of a suspension in a pressurised container with a spray valve or in a container equipped with a spray pump, intended for cutaneous use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous spray, suspension
+  * ^designation[=].value = "Cutaneous spray, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за кожа, суспензия"
@@ -12338,10 +12338,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10511000
-    Cutaneous spray, powder
-    10511000
+    "Cutaneous spray, powder"
+    "Solid, usually multidose preparation presented in a pressurised container with a spray valve or in a container equipped with a spray pump. The spray is intended for cutaneous use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous spray, powder
+  * ^designation[=].value = "Cutaneous spray, powder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за кожа, прах"
@@ -12447,10 +12447,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10512000
-    Cutaneous liquid
-    10512000
+    "Cutaneous liquid"
+    "Liquid, usually multidose preparation consisting of a liquid active substance per se, intended for cutaneous use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous liquid
+  * ^designation[=].value = "Cutaneous liquid"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Течност за кожа"
@@ -12556,10 +12556,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10513000
-    Cutaneous solution
-    10513000
+    "Cutaneous solution"
+    "Liquid, usually multidose preparation consisting of a solution of the active substance in a suitable vehicle intended for cutaneous use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous solution
+  * ^designation[=].value = "Cutaneous solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за кожа"
@@ -12665,10 +12665,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10514000
-    Concentrate for cutaneous solution
-    10514000
+    "Concentrate for cutaneous solution"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain a cutaneous solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for cutaneous solution
+  * ^designation[=].value = "Concentrate for cutaneous solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за разтвор за кожа"
@@ -12774,10 +12774,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10514500
-    Powder for cutaneous solution
-    10514500
+    "Powder for cutaneous solution"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a cutaneous solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for cutaneous solution
+  * ^designation[=].value = "Powder for cutaneous solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за разтвор за кожа"
@@ -12868,10 +12868,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10515000
-    Cutaneous suspension
-    10515000
+    "Cutaneous suspension"
+    "Liquid, usually multidose preparation consisting of a suspension of fine particles in a suitable vehicle intended for cutaneous use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous suspension
+  * ^designation[=].value = "Cutaneous suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия за кожа"
@@ -12977,10 +12977,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10516000
-    Cutaneous emulsion
-    10516000
+    "Cutaneous emulsion"
+    "Liquid, usually multidose preparation consisting of an emulsion intended for cutaneous use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous emulsion
+  * ^designation[=].value = "Cutaneous emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Емулсия за кожа"
@@ -13086,10 +13086,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10517000
-    Cutaneous powder
-    10517000
+    "Cutaneous powder"
+    "Solid, usually multidose preparation consisting of a powder intended for cutaneous use. Cutaneous spray, powder is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous powder
+  * ^designation[=].value = "Cutaneous powder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за кожа"
@@ -13195,10 +13195,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10517500
-    Cutaneous patch
-    10517500
+    "Cutaneous patch"
+    "Flexible single-dose preparation intended to be applied to the unbroken skin to obtain a local effect by penetration of the active substance(s) into the skin."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous patch
+  * ^designation[=].value = "Cutaneous patch"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пластир за кожа"
@@ -13292,10 +13292,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10518000
-    Solution for iontophoresis
-    10518000
+    "Solution for iontophoresis"
+    "Liquid preparation consisting of an aqueous solution intended for transdermal delivery by means of iontophoresis."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for iontophoresis
+  * ^designation[=].value = "Solution for iontophoresis"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за йонофореза"
@@ -13401,10 +13401,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10518500
-    Powder for solution for iontophoresis
-    10518500
+    "Powder for solution for iontophoresis"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a solution for iontophoresis."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for solution for iontophoresis
+  * ^designation[=].value = "Powder for solution for iontophoresis"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за разтвор за йонофореза"
@@ -13495,10 +13495,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10519000
-    Transdermal patch
-    10519000
+    "Transdermal patch"
+    "Flexible single-dose preparation intended to be applied to the unbroken skin to obtain a systemic delivery over an extended period of time. Transdermal patches consist of a backing sheet supporting a reservoir or a matrix containing the active substance(s) and on the top a pressure-sensitive adhesive, which assures the adhesion of the preparation to the skin. The backing sheet is impermeable to the active substance(s) and normally impermeable to water. In reservoir systems the active substance may be dissolved or dispersed in a semi-solid basis or in a solid polymer matrix, which is separated from the skin by a rate-controlling membrane. The pressure-sensitive adhesive may, in this case, be applied to some or all parts of the membrane, or only around the border of the membrane and the backing sheet. Matrix systems contain the active substance in a solid or semi-solid matrix, the properties of which control the diffusion pattern to the skin. The matrix system may also be a solution or dispersion of the active substance in the pressure-sensitive adhesive. The releasing surface of the patch is covered by a protective liner to be removed before applying the patch to the skin."
   * ^designation[0].language = #en
-  * ^designation[=].value = Transdermal patch
+  * ^designation[=].value = "Transdermal patch"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Трансдермален пластир"
@@ -13601,10 +13601,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10520000
-    Collodion
-    10520000
+    "Collodion"
+    "Liquid preparation usually containing pyroxylin in a mixture of ether and ethanol. When applied to the skin, the preparation forms a flexible film on the site of application."
   * ^designation[0].language = #en
-  * ^designation[=].value = Collodion
+  * ^designation[=].value = "Collodion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Колодий"
@@ -13710,10 +13710,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10521000
-    Medicated nail lacquer
-    10521000
+    "Medicated nail lacquer"
+    "Liquid preparation to be applied to the nails to form a lacquer by evaporation of the volatile solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicated nail lacquer
+  * ^designation[=].value = "Medicated nail lacquer"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лечебен лак за нокти"
@@ -13819,10 +13819,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10521500
-    Nail solution
-    10521500
+    "Nail solution"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Nail solution
+  * ^designation[=].value = "Nail solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -13853,10 +13853,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10522000
-    Poultice
-    10522000
+    "Poultice"
+    "Semi-solid preparation consisting of a hydrophilic heat-retentive basis in which solid or liquid active substance(s) are dispersed, usually intended to be spread thickly on a suitable dressing and heated before application to the skin."
   * ^designation[0].language = #en
-  * ^designation[=].value = Poultice
+  * ^designation[=].value = "Poultice"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лапа"
@@ -13962,10 +13962,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10523000
-    Cutaneous stick
-    10523000
+    "Cutaneous stick"
+    "Solid preparation, usually rod-shaped or conical, intended for application to the skin to obtain a local effect. Cutaneous sticks may consist of the active substance(s) alone or dissolved or dispersed in a suitable basis."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous stick
+  * ^designation[=].value = "Cutaneous stick"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пръчица за кожа"
@@ -14068,10 +14068,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10524000
-    Cutaneous sponge
-    10524000
+    "Cutaneous sponge"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous sponge
+  * ^designation[=].value = "Cutaneous sponge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дермална гъба"
@@ -14171,10 +14171,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10525000
-    Impregnated dressing
-    10525000
+    "Impregnated dressing"
+    "Solid preparation consisting of a piece or strip of gauze or other suitable fabric impregnated with a liquid or semi-solid preparation intended for cutaneous use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Impregnated dressing
+  * ^designation[=].value = "Impregnated dressing"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Импрегнирана превръзка"
@@ -14280,10 +14280,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10526000
-    Collar
-    10526000
+    "Collar"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Collar
+  * ^designation[=].value = "Collar"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Нашийник"
@@ -14377,10 +14377,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10526500
-    Medicated collar
-    10526500
+    "Medicated collar"
+    "Solid preparation for veterinary use consisting of a matrix impregnated with active substance(s), which is worn around the animal's neck. The active substance(s) are released by diffusion, by mechanical means or by vaporisation over a period of time."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicated collar
+  * ^designation[=].value = "Medicated collar"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лечебен нашийник"
@@ -14459,10 +14459,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10527000
-    Medicated pendant
-    10527000
+    "Medicated pendant"
+    "Solid preparation for veterinary use consisting of a matrix impregnated with active substance(s), which is fixed to a device to be worn around the animal's neck. The active substance(s) are released by diffusion, by mechanical means or by vaporisation over a period of time."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicated pendant
+  * ^designation[=].value = "Medicated pendant"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лечебна  превръзка"
@@ -14559,10 +14559,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10528000
-    Ear tag
-    10528000
+    "Ear tag"
+    "Solid preparation consisting of a matrix impregnated with active substance(s), which is fixed to a device to be tagged on the animal's ear. The active substance(s) are released by diffusion, by mechanical means or by vaporisation over a period of time."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear tag
+  * ^designation[=].value = "Ear tag"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Обици"
@@ -14659,10 +14659,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10529000
-    Dip solution
-    10529000
+    "Dip solution"
+    "Liquid preparation consisting of a solution intended for veterinary use by dipping."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dip solution
+  * ^designation[=].value = "Dip solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за къпане чрез потапяне"
@@ -14759,10 +14759,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10530000
-    Dip suspension
-    10530000
+    "Dip suspension"
+    "Liquid preparation consisting of a suspension intended for veterinary use by dipping."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dip suspension
+  * ^designation[=].value = "Dip suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия  за къпане чрез потапяне"
@@ -14859,10 +14859,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10531000
-    Dip emulsion
-    10531000
+    "Dip emulsion"
+    "Liquid preparation consisting of an emulsion intended for veterinary use by dipping."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dip emulsion
+  * ^designation[=].value = "Dip emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Емулсия за къпане чрез потапяне"
@@ -14959,10 +14959,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10532000
-    Concentrate for dip solution
-    10532000
+    "Concentrate for dip solution"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain a dip solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for dip solution
+  * ^designation[=].value = "Concentrate for dip solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за разтвор за къпане чрез потапяне"
@@ -15056,10 +15056,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10533000
-    Concentrate for dip suspension
-    10533000
+    "Concentrate for dip suspension"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain a dip suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for dip suspension
+  * ^designation[=].value = "Concentrate for dip suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за суспензия за къпане чрез потапяне"
@@ -15153,10 +15153,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10534000
-    Concentrate for dip emulsion
-    10534000
+    "Concentrate for dip emulsion"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain a dip emulsion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for dip emulsion
+  * ^designation[=].value = "Concentrate for dip emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за емулсия за къпане чрез потапяне"
@@ -15250,10 +15250,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10534500
-    Powder for dip solution
-    10534500
+    "Powder for dip solution"
+    "Solid preparation for veterinary use consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a dip solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for dip solution
+  * ^designation[=].value = "Powder for dip solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за разтвор за къпане чрез потапяне"
@@ -15347,10 +15347,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10535000
-    Concentrate for solution for fish treatment
-    10535000
+    "Concentrate for solution for fish treatment"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain a solution for fish treatment by immersion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for solution for fish treatment
+  * ^designation[=].value = "Concentrate for solution for fish treatment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за разтвор за третиране на риби"
@@ -15444,10 +15444,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10536000
-    Powder for suspension for fish treatment
-    10536000
+    "Powder for suspension for fish treatment"
+    "Solid preparation for veterinary use consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain a suspension for fish treatment by immersion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for suspension for fish treatment
+  * ^designation[=].value = "Powder for suspension for fish treatment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за суспензия за третиране на риби"
@@ -15541,10 +15541,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10537000
-    Pour-on solution
-    10537000
+    "Pour-on solution"
+    "Liquid preparation consisting of a solution intended for pour-on use for the prevention and treatment of ectoparasitic and/or endoparasitic infestations of animals. Pour-on solutions are applied in volumes that are usually greater than 5 mL."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pour-on solution
+  * ^designation[=].value = "Pour-on solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за поливане"
@@ -15641,10 +15641,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10538000
-    Pour-on suspension
-    10538000
+    "Pour-on suspension"
+    "Liquid preparation consisting of a suspension intended for pour-on use for the prevention and treatment of ectoparasitic and/or endoparasitic infestations of animals. Pour-on suspensions are applied in volumes that are usually greater than 5 mL."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pour-on suspension
+  * ^designation[=].value = "Pour-on suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия за поливане"
@@ -15741,10 +15741,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10539000
-    Pour-on emulsion
-    10539000
+    "Pour-on emulsion"
+    "Liquid preparation consisting of an emulsion intended for pour-on use for the prevention and treatment of ectoparasitic and/or endoparasitic infestations of animals. Pour-on emulsions are applied in volumes that are usually greater than 5 mL."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pour-on emulsion
+  * ^designation[=].value = "Pour-on emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Емулсия за поливане"
@@ -15841,10 +15841,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10539250
-    Scalp solution
-    10539250
+    "Scalp solution"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Scalp solution
+  * ^designation[=].value = "Scalp solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -15872,10 +15872,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10539500
-    Scrub
-    10539500
+    "Scrub"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Scrub
+  * ^designation[=].value = "Scrub"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -15900,10 +15900,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10540000
-    Spot-on solution
-    10540000
+    "Spot-on solution"
+    "Liquid preparation consisting of a solution intended for spot-on use for the prevention and treatment of ectoparasitic and/or endoparasitic infestations of animals. Spot-on-solutions are applied in volumes that are usually less than 10 mL."
   * ^designation[0].language = #en
-  * ^designation[=].value = Spot-on solution
+  * ^designation[=].value = "Spot-on solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за прилагане върху ограничен участък"
@@ -16000,10 +16000,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10541000
-    Spot-on suspension
-    10541000
+    "Spot-on suspension"
+    "Liquid preparation consisting of a suspension intended for spot-on use for the prevention and treatment of ectoparasitic and/or endoparasitic infestations of animals. Spot-on-suspensions are applied in volumes that are usually less than 10 mL."
   * ^designation[0].language = #en
-  * ^designation[=].value = Spot-on suspension
+  * ^designation[=].value = "Spot-on suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия за прилагане върху ограничен участък"
@@ -16100,10 +16100,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10542000
-    Spot-on emulsion
-    10542000
+    "Spot-on emulsion"
+    "Liquid preparation consisting of an emulsion intended for spot-on use for the prevention and treatment of ectoparasitic and/or endoparasitic infestations of animals. Spot-on-emulsions are applied in volumes that are usually less than 10 mL."
   * ^designation[0].language = #en
-  * ^designation[=].value = Spot-on emulsion
+  * ^designation[=].value = "Spot-on emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Емулсия за прилагане върху ограничен участък"
@@ -16200,10 +16200,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10543000
-    Teat dip solution
-    10543000
+    "Teat dip solution"
+    "Liquid preparation consisting of a solution intended for teat use. The teats of an animal are dipped pre- and, where necessary, post-milking to reduce the population of pathogenic micro-organisms on the surfaces."
   * ^designation[0].language = #en
-  * ^designation[=].value = Teat dip solution
+  * ^designation[=].value = "Teat dip solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за потапяне на папила на млечна жлеза"
@@ -16300,10 +16300,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10544000
-    Teat dip suspension
-    10544000
+    "Teat dip suspension"
+    "Liquid preparation consisting of a suspension intended for teat use. The teats of an animal are dipped pre- and, where necessary, post-milking to reduce the population of pathogenic micro-organisms on the surfaces."
   * ^designation[0].language = #en
-  * ^designation[=].value = Teat dip suspension
+  * ^designation[=].value = "Teat dip suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия за потапяне на папила на млечна жлеза"
@@ -16400,10 +16400,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10545000
-    Teat dip emulsion
-    10545000
+    "Teat dip emulsion"
+    "Liquid preparation consisting of an emulsion intended for teat use. The teats of an animal are dipped pre- and, where necessary, post-milking to reduce the population of pathogenic micro-organisms on the surfaces."
   * ^designation[0].language = #en
-  * ^designation[=].value = Teat dip emulsion
+  * ^designation[=].value = "Teat dip emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Емулсия за потапяне на папила на млечна жлеза"
@@ -16500,10 +16500,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10546000
-    Teat spray solution
-    10546000
+    "Teat spray solution"
+    "Liquid preparation consisting of a solution intended to be sprayed onto the teats of an animal pre-, and where necessary, post-milking to reduce the population of pathogenic micro-organisms on the surfaces."
   * ^designation[0].language = #en
-  * ^designation[=].value = Teat spray solution
+  * ^designation[=].value = "Teat spray solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за папила на млечна жлеза, разтвор"
@@ -16600,10 +16600,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10546250
-    Transdermal gel
-    10546250
+    "Transdermal gel"
+    "Semi-solid single-dose or multidose preparation consisting of a single-phase basis of liquids gelled by a suitable gelling agent. Active substance(s) is (are) dissolved or dispersed in the basis, which may be hydrophilic or hydrophobic. Transdermal gels are intended for transdermal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Transdermal gel
+  * ^designation[=].value = "Transdermal gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Трансдермален гел"
@@ -16691,10 +16691,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10546400
-    Transdermal solution
-    10546400
+    "Transdermal solution"
+    "Liquid single-dose or multidose preparation consisting of a solution intended for transdermal use. The term 'Transdermal solution' is used only when more-specific terms such as 'Pour-on solution', 'Solution for iontophoresis', 'Spot-on solution' and 'Transdermal spray, solution' do not apply."
   * ^designation[0].language = #en
-  * ^designation[=].value = Transdermal solution
+  * ^designation[=].value = "Transdermal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Трансдермален разтвор"
@@ -16782,10 +16782,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10546500
-    Transdermal spray, solution
-    10546500
+    "Transdermal spray, solution"
+    "Liquid, usually multidose preparation consisting of a solution in a pressurised container with a spray valve or a container equipped with a spray pump, intended for transdermal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Transdermal spray, solution
+  * ^designation[=].value = "Transdermal spray, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Трансдермален спрей, разтвор"
@@ -16873,10 +16873,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10547000
-    Transdermal system
-    10547000
+    "Transdermal system"
+    "Assembly of components intended for transdermal delivery driven by external forces (e.g. electric current, chemical reaction,...). Transdermal patch is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Transdermal system
+  * ^designation[=].value = "Transdermal system"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Трансдермална система"
@@ -16976,10 +16976,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10548000
-    Solution for skin-prick test
-    10548000
+    "Solution for skin-prick test"
+    "Liquid sterile preparation consisting of a solution containing an allergen product intended for diagnostic use in a skin-prick test."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for skin-prick test
+  * ^designation[=].value = "Solution for skin-prick test"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за кожно изпитване чрез убождане"
@@ -17082,10 +17082,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10549000
-    Solution for skin-scratch test
-    10549000
+    "Solution for skin-scratch test"
+    "Liquid sterile preparation consisting of a solution containing an allergen product intended for diagnostic use in a skin-scratch test."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for skin-scratch test
+  * ^designation[=].value = "Solution for skin-scratch test"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за  изпитване чрез скарификация"
@@ -17188,10 +17188,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10550000
-    Plaster for provocation test
-    10550000
+    "Plaster for provocation test"
+    "Solid flexible preparation containing an allergen product intended for provocation testing by application to the skin."
   * ^designation[0].language = #en
-  * ^designation[=].value = Plaster for provocation test
+  * ^designation[=].value = "Plaster for provocation test"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пластир за провокационно изпитване"
@@ -17294,10 +17294,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10600500
-    Concentrate for solution for intraocular irrigation
-    10600500
+    "Concentrate for solution for intraocular irrigation"
+    "Liquid sterile preparation intended to be diluted in the specified liquid to obtain a solution for intraocular irrigation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for solution for intraocular irrigation
+  * ^designation[=].value = "Concentrate for solution for intraocular irrigation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за разтвор за вътреочна промивка"
@@ -17382,10 +17382,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10601000
-    Eye cream
-    10601000
+    "Eye cream"
+    "Semi-solid sterile single-dose or multidose preparation consisting of a cream intended for ocular use. Eye creams may be presented in collapsible tubes fitted with a cannula and having a content of not more than 5 g of the preparation. Eye creams may also be presented in suitably designed single-dose containers. The containers or nozzles of tubes are of a shape that facilitates administration without contamination."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye cream
+  * ^designation[=].value = "Eye cream"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Крем за очи"
@@ -17491,10 +17491,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10602000
-    Eye gel
-    10602000
+    "Eye gel"
+    "Semi-solid sterile single-dose or multidose preparation consisting of a gel intended for ocular use. Eye gels may be presented in collapsible tubes fitted with a cannula and having a content of not more than 5 g of the preparation. Eye gels may also be presented in suitably designed single-dose containers. The containers or nozzles of tubes are of a shape that facilitates administration without contamination."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye gel
+  * ^designation[=].value = "Eye gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гел за очи"
@@ -17600,10 +17600,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10603000
-    Eye ointment
-    10603000
+    "Eye ointment"
+    "Semi-solid sterile single-dose or multidose preparation consisting of an ointment intended for ocular use. Eye ointments may be presented in collapsible tubes fitted with a cannula and having a content of not more than 5 g of the preparation. Eye ointments may also be presented in suitably designed single-dose containers. The containers or nozzles of tubes are of a shape that facilitates administration without contamination."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye ointment
+  * ^designation[=].value = "Eye ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Маз за очи"
@@ -17709,10 +17709,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10604000
-    Eye drops, solution
-    10604000
+    "Eye drops, solution"
+    "Liquid sterile single-dose or multidose preparation consisting of an aqueous or oily solution intended for ocular use. Multidose preparations are presented in containers that allow successive drops to be administered. The containers contain usually at most 10 mL of the preparation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, solution
+  * ^designation[=].value = "Eye drops, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи, разтвор"
@@ -17818,10 +17818,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10604500
-    Eye drops, emulsion
-    10604500
+    "Eye drops, emulsion"
+    "Liquid sterile single-dose or multidose preparation consisting of an emulsion intended for ocular use. Multidose preparations are presented in containers that allow successive drops to be administered. The containers contain usually at most 10 mL of the preparation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, emulsion
+  * ^designation[=].value = "Eye drops, emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи, емулсия"
@@ -17921,10 +17921,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10605000
-    Eye drops, suspension
-    10605000
+    "Eye drops, suspension"
+    "Liquid sterile single-dose or multidose preparation consisting of an aqueous or oily suspension intended for ocular use. Multidose preparations are presented in containers that allow successive drops to be administered. The containers contain usually at most 10 mL of the preparation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, suspension
+  * ^designation[=].value = "Eye drops, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи, суспензия"
@@ -18030,10 +18030,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10608000
-    Eye drops, solvent for reconstitution
-    10608000
+    "Eye drops, solvent for reconstitution"
+    "Liquid preparation consisting of a sterile solvent containing no active substances, intended for reconstitution of a usually freeze-dried powder for eye drops."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, solvent for reconstitution
+  * ^designation[=].value = "Eye drops, solvent for reconstitution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи, разтворител за приготвяне"
@@ -18139,10 +18139,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10609000
-    Eye drops, prolonged-release
-    10609000
+    "Eye drops, prolonged-release"
+    "Liquid sterile single-dose or multidose preparation intended for ocular use. The active substance is released over an extended period of time."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, prolonged-release
+  * ^designation[=].value = "Eye drops, prolonged-release"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи с удължено освобождаване"
@@ -18248,10 +18248,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10610000
-    Eye lotion
-    10610000
+    "Eye lotion"
+    "Liquid sterile single-dose or multidose preparation consisting of an aqueous solution intended for washing or bathing the eye."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye lotion
+  * ^designation[=].value = "Eye lotion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лосион за очи"
@@ -18357,10 +18357,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10611000
-    Eye lotion, solvent for reconstitution
-    10611000
+    "Eye lotion, solvent for reconstitution"
+    "Liquid preparation consisting of a sterile solvent containing no active substances, intended for reconstitution of a usually freeze-dried powder for eye lotion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye lotion, solvent for reconstitution
+  * ^designation[=].value = "Eye lotion, solvent for reconstitution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лосион за очи, разтворител за приготвяне"
@@ -18466,10 +18466,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10612000
-    Ophthalmic insert
-    10612000
+    "Ophthalmic insert"
+    "Solid sterile preparation of suitable size and shape, designed to be inserted in the conjunctival sac to produce a local or ocular effect by the release of active substance(s) over a determined period of time. Ophthalmic inserts generally consist of a reservoir of active substance(s) embedded in a matrix or bounded by a rate-controlling membrane. They are presented individually in sterile containers."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ophthalmic insert
+  * ^designation[=].value = "Ophthalmic insert"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Очна пластинка"
@@ -18575,10 +18575,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10613000
-    Ophthalmic strip
-    10613000
+    "Ophthalmic strip"
+    "Solid sterile single-dose preparation consisting of a strip made of a suitable material usually impregnated with active substance(s) intended for use on the eyeball."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ophthalmic strip
+  * ^designation[=].value = "Ophthalmic strip"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Очна лента"
@@ -18672,10 +18672,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10701000
-    Ear cream
-    10701000
+    "Ear cream"
+    "Semi-solid single-dose or multidose preparation consisting of a cream intended for application to the external auditory meatus, if necessary by means of a tampon impregnated with the preparation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear cream
+  * ^designation[=].value = "Ear cream"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Крем за уши"
@@ -18781,10 +18781,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10702000
-    Ear gel
-    10702000
+    "Ear gel"
+    "Semi-solid single-dose or multidose preparation consisting of a gel intended for application to the external auditory meatus, if necessary by means of a tampon impregnated with the preparation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear gel
+  * ^designation[=].value = "Ear gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гел за уши"
@@ -18890,10 +18890,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10703000
-    Ear ointment
-    10703000
+    "Ear ointment"
+    "Semi-solid single-dose or multidose preparation consisting of an ointment intended for application to the external auditory meatus, if necessary by means of a tampon impregnated with the preparation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear ointment
+  * ^designation[=].value = "Ear ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Маз за уши"
@@ -18999,10 +18999,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10704000
-    Ear drops, solution
-    10704000
+    "Ear drops, solution"
+    "Liquid single-dose or multidose preparation consisting of an aqueous or oily solution intended for application to the external auditory meatus. Multidose containers may be dropper containers or containers provided with a dropper applicator, or the dropper may be supplied separately. Drops are not necessarily administered dropwise, but may also be administered as a small volume."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear drops, solution
+  * ^designation[=].value = "Ear drops, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за уши, разтвор"
@@ -19108,10 +19108,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10705000
-    Ear drops, suspension
-    10705000
+    "Ear drops, suspension"
+    "Liquid single-dose or multidose preparation consisting of an aqueous or oily suspension intended for application to the external auditory meatus. Multidose containers may be dropper containers or containers provided with a dropper applicator, or the dropper may be supplied separately. Drops are not necessarily administered dropwise, but may also be administered as a small volume."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear drops, suspension
+  * ^designation[=].value = "Ear drops, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за уши, суспензия"
@@ -19217,10 +19217,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10706000
-    Ear drops, emulsion
-    10706000
+    "Ear drops, emulsion"
+    "Liquid single-dose or multidose preparation consisting of an emulsion intended for application to the external auditory meatus. Multidose containers may be dropper containers or containers provided with a dropper applicator, or the dropper may be supplied separately. Drops are not necessarily administered dropwise, but may also be administered as a small volume."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear drops, emulsion
+  * ^designation[=].value = "Ear drops, emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за уши, емулсия"
@@ -19326,10 +19326,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10708000
-    Ear powder
-    10708000
+    "Ear powder"
+    "Solid, usually multidose preparation consisting of one or more powders consisting of (a) solid active substance(s) intended for application to the external auditory meatus. Ear powders are presented in containers fitted with a suitable applicator or device for insufflation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear powder
+  * ^designation[=].value = "Ear powder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за уши"
@@ -19435,10 +19435,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10709000
-    Ear spray, solution
-    10709000
+    "Ear spray, solution"
+    "Liquid, usually multidose preparation consisting of a solution intended for application to the external auditory meatus by spraying to obtain a local effect. Ear sprays are presented in containers with a spray pump or in pressurised containers fitted with a spray valve."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear spray, solution
+  * ^designation[=].value = "Ear spray, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за уши, разтвор"
@@ -19544,10 +19544,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10710000
-    Ear spray, suspension
-    10710000
+    "Ear spray, suspension"
+    "Liquid, usually multidose preparation consisting of a suspension intended for application to the external auditory meatus by spraying to obtain a local effect. Ear sprays are presented in containers with a spray pump or in pressurised containers fitted with a spray valve."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear spray, suspension
+  * ^designation[=].value = "Ear spray, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за уши, суспензия"
@@ -19653,10 +19653,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10711000
-    Ear spray, emulsion
-    10711000
+    "Ear spray, emulsion"
+    "Liquid, usually multidose preparation consisting of an emulsion intended for application to the external auditory meatus by spraying to obtain local effect. Ear sprays are presented in containers with a spray pump or in pressurised containers fitted with a spray valve."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear spray, emulsion
+  * ^designation[=].value = "Ear spray, emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за уши, емулсия"
@@ -19762,10 +19762,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10712000
-    Ear wash, solution
-    10712000
+    "Ear wash, solution"
+    "Liquid single-dose or multidose preparation consisting usually of an aqueous solution with a pH within physiological limits. Ear washes are intended to clean the external auditory meatus."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear wash, solution
+  * ^designation[=].value = "Ear wash, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Промивка за уши, разтвор"
@@ -19871,10 +19871,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10713000
-    Ear wash, emulsion
-    10713000
+    "Ear wash, emulsion"
+    "Liquid single-dose or multidose preparation consisting usually of an oil-in-water emulsion with a pH within physiological limits. Ear washes are intended to clean the external auditory meatus."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear wash, emulsion
+  * ^designation[=].value = "Ear wash, emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Промивка за уши, емулсия"
@@ -19980,10 +19980,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10714000
-    Ear tampon
-    10714000
+    "Ear tampon"
+    "Solid single-dose preparation intended to be inserted into the external auditory meatus for a limited period of time, consisting of a suitable material impregnated with active substance(s)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear tampon
+  * ^designation[=].value = "Ear tampon"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Тампон за уши"
@@ -20089,10 +20089,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10715000
-    Ear stick
-    10715000
+    "Ear stick"
+    "Solid single-dose preparation of usually conical shape intended to be inserted in the external auditory meatus where it melts or dissolves."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear stick
+  * ^designation[=].value = "Ear stick"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пръчица за уши"
@@ -20198,10 +20198,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10801000
-    Nasal cream
-    10801000
+    "Nasal cream"
+    "Semi-solid single-dose or multidose preparation consisting of a cream, usually of oil-in-water type, intended for nasal use, usually to obtain a local effect. Nasal creams are usually presented in tubes fitted with a nasal applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal cream
+  * ^designation[=].value = "Nasal cream"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Крем за нос"
@@ -20307,10 +20307,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10802000
-    Nasal gel
-    10802000
+    "Nasal gel"
+    "Semi-solid single-dose or multidose preparation consisting of usually a hydrophilic gel, intended for nasal use, usually to obtain a local effect. Nasal gels are usually presented in tubes fitted with a nasal applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal gel
+  * ^designation[=].value = "Nasal gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гел за нос"
@@ -20413,10 +20413,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10803000
-    Nasal ointment
-    10803000
+    "Nasal ointment"
+    "Semi-solid single-dose or multidose preparation consisting of an ointment, intended for nasal use, usually to obtain a local effect. Nasal ointments are usually presented in tubes fitted with a nasal applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal ointment
+  * ^designation[=].value = "Nasal ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Маз за нос"
@@ -20519,10 +20519,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10804000
-    Nasal drops, solution
-    10804000
+    "Nasal drops, solution"
+    "Liquid single-dose or multidose preparation consisting of a solution intended for nasal use by means of a suitable applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal drops, solution
+  * ^designation[=].value = "Nasal drops, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за нос, разтвор"
@@ -20625,10 +20625,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10805000
-    Nasal drops, suspension
-    10805000
+    "Nasal drops, suspension"
+    "Liquid single-dose or multidose preparation consisting of a suspension intended for nasal use by means of a suitable applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal drops, suspension
+  * ^designation[=].value = "Nasal drops, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за нос, суспензия"
@@ -20731,10 +20731,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10806000
-    Nasal drops, emulsion
-    10806000
+    "Nasal drops, emulsion"
+    "Liquid single-dose or multidose preparation consisting of an emulsion intended for nasal use by means of a suitable applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal drops, emulsion
+  * ^designation[=].value = "Nasal drops, emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за нос, емулсия"
@@ -20837,10 +20837,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10807000
-    Nasal powder
-    10807000
+    "Nasal powder"
+    "Solid, usually multidose preparation consisting of one or more powders of solid active substance(s) intended for nasal use by insufflation into the nasal cavity."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal powder
+  * ^designation[=].value = "Nasal powder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за нос"
@@ -20943,10 +20943,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10808000
-    Nasal spray, solution
-    10808000
+    "Nasal spray, solution"
+    "Liquid single-dose or multidose preparation consisting of a solution in a container with or without a metering dose valve or in a container with a spray pump or equivalent device to create a spray, intended for nasal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal spray, solution
+  * ^designation[=].value = "Nasal spray, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за нос, разтвор"
@@ -21049,10 +21049,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10809000
-    Nasal spray, suspension
-    10809000
+    "Nasal spray, suspension"
+    "Liquid single-dose or multidose preparation consisting of a suspension in a container with or without a metering dose valve or in a container with a spray pump or equivalent device to create a spray, intended for nasal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal spray, suspension
+  * ^designation[=].value = "Nasal spray, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за нос, суспензия"
@@ -21155,10 +21155,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10810000
-    Nasal spray, emulsion
-    10810000
+    "Nasal spray, emulsion"
+    "Liquid single-dose or multidose preparation consisting of an emulsion in a container with or without a metering dose valve or in a container with a spray pump or equivalent device to create a spray, intended for nasal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal spray, emulsion
+  * ^designation[=].value = "Nasal spray, emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за нос, емулсия"
@@ -21261,10 +21261,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10811000
-    Nasal wash
-    10811000
+    "Nasal wash"
+    "Liquid single-dose or multidose preparation consisting of usually an aqueous isotonic solution intended for cleansing the nasal cavities."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal wash
+  * ^designation[=].value = "Nasal wash"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Промивка за нос"
@@ -21367,10 +21367,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10812000
-    Nasal stick
-    10812000
+    "Nasal stick"
+    "Solid single-dose preparation, usually rod-shaped or conical, intended for nasal use, usually to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal stick
+  * ^designation[=].value = "Nasal stick"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пръчица за нос"
@@ -21473,10 +21473,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10900500
-    Intravaginal ring
-    10900500
+    "Intravaginal ring"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Intravaginal ring
+  * ^designation[=].value = "Intravaginal ring"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -21501,10 +21501,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10901000
-    Vaginal cream
-    10901000
+    "Vaginal cream"
+    "Semi-solid preparation consisting of a cream usually presented in a single-dose container provided with a suitable applicator, intended for vaginal use to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal cream
+  * ^designation[=].value = "Vaginal cream"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинален крем"
@@ -21607,10 +21607,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10902000
-    Vaginal gel
-    10902000
+    "Vaginal gel"
+    "Semi-solid preparation consisting of a gel usually presented in a single-dose container provided with a suitable applicator, intended for vaginal use to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal gel
+  * ^designation[=].value = "Vaginal gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинален гел"
@@ -21713,10 +21713,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10903000
-    Vaginal ointment
-    10903000
+    "Vaginal ointment"
+    "Semi-solid preparation consisting of an ointment usually presented in a single-dose container provided with a suitable applicator, intended for vaginal use to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal ointment
+  * ^designation[=].value = "Vaginal ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинална маз"
@@ -21819,10 +21819,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10904000
-    Vaginal foam
-    10904000
+    "Vaginal foam"
+    "Liquid preparation, usually presented in a pressurised container provided with an applicator suitable for delivery to the vagina of foam containing large volumes of gas dispersed in a liquid containing active substance(s). Vaginal foams are intended for vaginal use, for example for contraception."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal foam
+  * ^designation[=].value = "Vaginal foam"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинална пяна"
@@ -21925,10 +21925,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10905000
-    Vaginal solution
-    10905000
+    "Vaginal solution"
+    "Liquid preparation consisting of a solution intended for vaginal use by means of a suitable applicator in order to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal solution
+  * ^designation[=].value = "Vaginal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинален разтвор"
@@ -22031,10 +22031,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10906000
-    Vaginal suspension
-    10906000
+    "Vaginal suspension"
+    "Liquid preparation consisting of a suspension intended for vaginal use by means of a suitable applicator in order to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal suspension
+  * ^designation[=].value = "Vaginal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинална суспензия"
@@ -22137,10 +22137,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10907000
-    Vaginal emulsion
-    10907000
+    "Vaginal emulsion"
+    "Liquid preparation consisting of an emulsion intended for vaginal use by means of a suitable applicator in order to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal emulsion
+  * ^designation[=].value = "Vaginal emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинална емулсия"
@@ -22243,10 +22243,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10908000
-    Tablet for vaginal solution
-    10908000
+    "Tablet for vaginal solution"
+    "Solid, usually single-dose preparation consisting of a tablet, usually uncoated, intended to be dissolved in the specified liquid to obtain a vaginal solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet for vaginal solution
+  * ^designation[=].value = "Tablet for vaginal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка за вагинален разтвор"
@@ -22346,10 +22346,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10909000
-    Pessary
-    10909000
+    "Pessary"
+    "Solid, single-dose preparation usually prepared by moulding, of various shapes, usually ovoid, with a volume and consistency suitable for insertion into the vagina to obtain a local effect. It contains one or more active substances dispersed or dissolved in a suitable basis that may be soluble or dispersible in water or may melt at body temperature."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pessary
+  * ^designation[=].value = "Pessary"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Песар"
@@ -22452,10 +22452,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10910000
-    Vaginal capsule, hard
-    10910000
+    "Vaginal capsule, hard"
+    "Solid single-dose preparation consisting of a hard capsule of a size and shape suited for vaginal use, containing a liquid or semi-solid formulation, intended for a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal capsule, hard
+  * ^designation[=].value = "Vaginal capsule, hard"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинална капсула, твърда"
@@ -22555,10 +22555,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10911000
-    Vaginal capsule, soft
-    10911000
+    "Vaginal capsule, soft"
+    "Solid single-dose preparation consisting of a soft capsule of a size and shape suited for vaginal use, containing a liquid or semi-solid formulation, intended for a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal capsule, soft
+  * ^designation[=].value = "Vaginal capsule, soft"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинална капсула, мека"
@@ -22658,10 +22658,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10912000
-    Vaginal tablet
-    10912000
+    "Vaginal tablet"
+    "Solid single-dose preparation consisting of a tablet, usually uncoated or film-coated, intended for administration to the vagina to obtain a local effect. Vaginal tablets are usually of larger size and a different shape from tablets intended for oral administration."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal tablet
+  * ^designation[=].value = "Vaginal tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинална таблетка"
@@ -22764,10 +22764,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10913000
-    Effervescent vaginal tablet
-    10913000
+    "Effervescent vaginal tablet"
+    "Solid single-dose preparation consisting of a vaginal tablet usually containing acid substances and carbonates or hydrogen carbonates that react rapidly in the presence of aqueous liquid to release carbon dioxide."
   * ^designation[0].language = #en
-  * ^designation[=].value = Effervescent vaginal tablet
+  * ^designation[=].value = "Effervescent vaginal tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ефервесцентна вагинална таблетка"
@@ -22870,10 +22870,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10914000
-    Medicated vaginal tampon
-    10914000
+    "Medicated vaginal tampon"
+    "Solid single-dose preparation consisting of a suitable material impregnated with active substance(s) intended to be inserted in the vagina for a limited period of time."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicated vaginal tampon
+  * ^designation[=].value = "Medicated vaginal tampon"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лечебен вагинален тампон"
@@ -22979,10 +22979,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10915000
-    Vaginal delivery system
-    10915000
+    "Vaginal delivery system"
+    "Drug delivery system intended to be inserted in the vagina where it releases its contents over an extended period of time. Medicated sponge and medicated vaginal tampon are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal delivery system
+  * ^designation[=].value = "Vaginal delivery system"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинална лекарстводоставяща система"
@@ -23085,10 +23085,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #10916000
-    Vaginal sponge
-    10916000
+    "Vaginal sponge"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal sponge
+  * ^designation[=].value = "Vaginal sponge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинална гъба"
@@ -23185,10 +23185,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11001000
-    Rectal cream
-    11001000
+    "Rectal cream"
+    "Semi-solid preparation consisting of a cream usually presented in a single-dose container provided with a suitable applicator, intended for rectal use to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Rectal cream
+  * ^designation[=].value = "Rectal cream"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ректален крем"
@@ -23291,10 +23291,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11002000
-    Rectal gel
-    11002000
+    "Rectal gel"
+    "Semi-solid preparation consisting of a gel usually presented in a single-dose container provided with a suitable applicator, intended for rectal use to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Rectal gel
+  * ^designation[=].value = "Rectal gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ректален гел"
@@ -23397,10 +23397,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11003000
-    Rectal ointment
-    11003000
+    "Rectal ointment"
+    "Semi-solid preparation consisting of an ointment usually presented in a single-dose container provided with a suitable applicator, intended for rectal use to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Rectal ointment
+  * ^designation[=].value = "Rectal ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ректална маз"
@@ -23503,10 +23503,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11004000
-    Rectal foam
-    11004000
+    "Rectal foam"
+    "Liquid preparation, usually presented in a pressurised container provided with an applicator suitable for delivery to the rectum of foam containing large volumes of gas dispersed in a liquid containing the active substance. Rectal foams are intended for a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Rectal foam
+  * ^designation[=].value = "Rectal foam"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ректална пяна"
@@ -23609,10 +23609,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11005000
-    Rectal solution
-    11005000
+    "Rectal solution"
+    "Liquid preparation consisting of a solution intended for rectal use or for diagnostic purposes. Rectal solutions are usually presented in containers with a volume in the range of 2.5 mL to 2000 mL. The container is fitted with an applicator or an applicator is provided separately."
   * ^designation[0].language = #en
-  * ^designation[=].value = Rectal solution
+  * ^designation[=].value = "Rectal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ректален разтвор"
@@ -23715,10 +23715,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11006000
-    Rectal suspension
-    11006000
+    "Rectal suspension"
+    "Liquid preparation consisting of a suspension intended for rectal use or for diagnostic purposes. Rectal suspension are usually presented in containers with a volume in the range of 2.5 mL to 2000 mL. The container is fitted with an applicator or an applicator is provided separately."
   * ^designation[0].language = #en
-  * ^designation[=].value = Rectal suspension
+  * ^designation[=].value = "Rectal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ректална суспензия"
@@ -23821,10 +23821,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11007000
-    Rectal emulsion
-    11007000
+    "Rectal emulsion"
+    "Liquid preparation consisting of an emulsion intended for rectal use or for diagnostic purposes. Rectal emulsions are usually presented in containers with a volume in the range of 2.5 mL to 2000 mL. The container is fitted with an applicator or an applicator is provided separately."
   * ^designation[0].language = #en
-  * ^designation[=].value = Rectal emulsion
+  * ^designation[=].value = "Rectal emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ректална емулсия"
@@ -23927,10 +23927,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11008000
-    Concentrate for rectal solution
-    11008000
+    "Concentrate for rectal solution"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain a rectal solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for rectal solution
+  * ^designation[=].value = "Concentrate for rectal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за ректален разтвор"
@@ -24033,10 +24033,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11009000
-    Powder for rectal solution
-    11009000
+    "Powder for rectal solution"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a rectal solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for rectal solution
+  * ^designation[=].value = "Powder for rectal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за ректален разтвор"
@@ -24139,10 +24139,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11010000
-    Powder for rectal suspension
-    11010000
+    "Powder for rectal suspension"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain a rectal suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for rectal suspension
+  * ^designation[=].value = "Powder for rectal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за ректална суспензия"
@@ -24245,10 +24245,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11011000
-    Tablet for rectal solution
-    11011000
+    "Tablet for rectal solution"
+    "Solid, usually single-dose preparation consisting of a tablet, usually uncoated, intended to be dissolved in the specified liquid to obtain a rectal solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet for rectal solution
+  * ^designation[=].value = "Tablet for rectal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка за ректален разтвор"
@@ -24348,10 +24348,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11012000
-    Tablet for rectal suspension
-    11012000
+    "Tablet for rectal suspension"
+    "Solid, usually single-dose preparation consisting of a tablet, usually uncoated, intended to be dispersed in the specified liquid to obtain a rectal suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet for rectal suspension
+  * ^designation[=].value = "Tablet for rectal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка за ректална суспензия"
@@ -24451,10 +24451,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11013000
-    Suppository
-    11013000
+    "Suppository"
+    "Solid single-dose preparation of a shape, size and consistency suitable for rectal use, containing active substance(s) dispersed or dissolved in a suitable basis that may be soluble or dispersible in water or may melt at body temperature."
   * ^designation[0].language = #en
-  * ^designation[=].value = Suppository
+  * ^designation[=].value = "Suppository"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Супозитория"
@@ -24557,10 +24557,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11014000
-    Rectal capsule
-    11014000
+    "Rectal capsule"
+    "Solid single-dose preparation consisting of a soft capsule of elongated shape suitable for rectal use, containing a liquid or semi-solid formulation, and which may have a lubricating coating."
   * ^designation[0].language = #en
-  * ^designation[=].value = Rectal capsule
+  * ^designation[=].value = "Rectal capsule"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ректална капсула"
@@ -24663,10 +24663,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11015000
-    Rectal tampon
-    11015000
+    "Rectal tampon"
+    "Solid single-dose preparation consisting of a suitable material impregnated with active substance(s) intended to be inserted in the rectum for a limited period of time usually for a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Rectal tampon
+  * ^designation[=].value = "Rectal tampon"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ректален тампон"
@@ -24769,10 +24769,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11100500
-    Aerosol
-    11100500
+    "Aerosol"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Aerosol
+  * ^designation[=].value = "Aerosol"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Аерозол"
@@ -24803,10 +24803,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11101000
-    Nebuliser solution
-    11101000
+    "Nebuliser solution"
+    "Liquid preparation consisting of a solution intended for inhalation use. The solution is converted into an aerosol by a continuously operating nebuliser or a metered-dose nebuliser."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nebuliser solution
+  * ^designation[=].value = "Nebuliser solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за небулизатор"
@@ -24909,10 +24909,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11102000
-    Nebuliser suspension
-    11102000
+    "Nebuliser suspension"
+    "Liquid preparation consisting of a suspension intended for inhalation use. The suspension is converted into an aerosol by a continuously operating nebuliser or a metered-dose nebuliser."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nebuliser suspension
+  * ^designation[=].value = "Nebuliser suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия за небулизатор"
@@ -25015,10 +25015,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11103000
-    Powder for nebuliser suspension
-    11103000
+    "Powder for nebuliser suspension"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain a nebuliser suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for nebuliser suspension
+  * ^designation[=].value = "Powder for nebuliser suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за суспензия за небулизатор"
@@ -25121,10 +25121,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11104000
-    Powder for nebuliser solution
-    11104000
+    "Powder for nebuliser solution"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a nebuliser solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for nebuliser solution
+  * ^designation[=].value = "Powder for nebuliser solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за разтвор за небулизатор"
@@ -25227,10 +25227,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11105000
-    Nebuliser emulsion
-    11105000
+    "Nebuliser emulsion"
+    "Liquid preparation consisting of an emulsion intended for inhalation to obtain local effect or systemic delivery. The emulsion is converted into an aerosol by a continuously operating nebuliser or a metered-dose nebuliser."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nebuliser emulsion
+  * ^designation[=].value = "Nebuliser emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Емулсия за небулизатор"
@@ -25333,10 +25333,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11106000
-    Pressurised inhalation, solution
-    11106000
+    "Pressurised inhalation, solution"
+    "Liquid, usually multidose preparation consisting of a solution intended for inhalation use. The preparation is presented in a pressurised container usually fitted with a metering dose valve."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pressurised inhalation, solution
+  * ^designation[=].value = "Pressurised inhalation, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор под налягане за инхалация"
@@ -25439,10 +25439,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11107000
-    Pressurised inhalation, suspension
-    11107000
+    "Pressurised inhalation, suspension"
+    "Liquid, usually multidose preparation consisting of a suspension intended for inhalation use. The preparation is presented in a pressurised container fitted with a metering dose valve."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pressurised inhalation, suspension
+  * ^designation[=].value = "Pressurised inhalation, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия под налягане за инхалация"
@@ -25545,10 +25545,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11108000
-    Pressurised inhalation, emulsion
-    11108000
+    "Pressurised inhalation, emulsion"
+    "Liquid, usually multidose preparation consisting of an emulsion intended for inhalation use. The preparation is presented in a pressurised container fitted with a metering dose valve."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pressurised inhalation, emulsion
+  * ^designation[=].value = "Pressurised inhalation, emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Емулсия под налягане за инхалация"
@@ -25651,10 +25651,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11109000
-    Inhalation powder
-    11109000
+    "Inhalation powder"
+    "Solid, usually multidose preparation intended for inhalation use, consisting of one or more powders of solid active substance(s) to be administered by a dry-powder inhaler containing a metering dose mechanism within the inhaler. 'Inhalation powder, hard capsule' and 'Inhalation powder, pre-dispensed' are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation powder
+  * ^designation[=].value = "Inhalation powder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инхалация"
@@ -25757,10 +25757,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11110000
-    Inhalation powder, hard capsule
-    11110000
+    "Inhalation powder, hard capsule"
+    "Solid single-dose preparation intended for inhalation use, consisting of one or more powders of solid active substance(s) enclosed in a hard capsule. The capsule is loaded into a dry-powder inhaler to generate an aerosol."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation powder, hard capsule
+  * ^designation[=].value = "Inhalation powder, hard capsule"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инхалация, твърда капсула"
@@ -25863,10 +25863,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11111000
-    Inhalation powder, pre-dispensed
-    11111000
+    "Inhalation powder, pre-dispensed"
+    "Solid preparation intended for inhalation use, consisting of one or more powders of solid active substance(s) presented in a suitable pharmaceutical form other than a hard capsule, either in the form of a single dose or divided into multiple single doses. The preparation is loaded into a dry-powder inhaler to generate an aerosol."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation powder, pre-dispensed
+  * ^designation[=].value = "Inhalation powder, pre-dispensed"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инхалация, предварително дозиран"
@@ -25969,10 +25969,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11112000
-    Inhalation vapour, powder
-    11112000
+    "Inhalation vapour, powder"
+    "Solid preparation consisting of one or more powders of solid active substance(s) intended for generation of vapour to be inhaled to obtain a local effect. The vapour is usually generated by adding the powder to hot water."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation vapour, powder
+  * ^designation[=].value = "Inhalation vapour, powder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инхалация с пара"
@@ -26075,10 +26075,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11113000
-    Inhalation vapour, capsule
-    11113000
+    "Inhalation vapour, capsule"
+    "Solid preparation consisting of a capsule formulation intended for generation of vapour to be inhaled to obtain a local effect. The vapour is usually generated by adding the whole capsule or the capsule contents to hot water."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation vapour, capsule
+  * ^designation[=].value = "Inhalation vapour, capsule"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула за инхалация с пара"
@@ -26181,10 +26181,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11114000
-    Inhalation vapour, solution
-    11114000
+    "Inhalation vapour, solution"
+    "Liquid preparation consisting of a solution intended for generation of vapour to be inhaled to obtain a local effect. The vapour is usually generated by adding the solution to hot water."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation vapour, solution
+  * ^designation[=].value = "Inhalation vapour, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за инхалация с пара"
@@ -26287,10 +26287,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11115000
-    Inhalation vapour, tablet
-    11115000
+    "Inhalation vapour, tablet"
+    "Solid preparation consisting of a tablet intended for generation of vapour to be inhaled to obtain a local effect. The vapour is usually generated by adding the tablet to hot water."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation vapour, tablet
+  * ^designation[=].value = "Inhalation vapour, tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка за инхалация с пара"
@@ -26393,10 +26393,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11116000
-    Inhalation vapour, ointment
-    11116000
+    "Inhalation vapour, ointment"
+    "Semi-solid preparation consisting of an ointment intended for generation of vapour to be inhaled to obtain a local effect. The vapour may be generated by adding the ointment to hot water."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation vapour, ointment
+  * ^designation[=].value = "Inhalation vapour, ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Маз за инхалация с пара"
@@ -26499,10 +26499,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11117000
-    Inhalation vapour, liquid
-    11117000
+    "Inhalation vapour, liquid"
+    "Liquid preparation consisting of a liquid active substance per se, such as an essential oil or a volatile anaesthetic, intended for generation of vapour to be inhaled. The vapour may be generated by adding the liquid to hot water or by the use of a vaporising device."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation vapour, liquid
+  * ^designation[=].value = "Inhalation vapour, liquid"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Течност за инхалация с пара"
@@ -26605,10 +26605,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11118000
-    Inhalation gas
-    11118000
+    "Inhalation gas"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation gas
+  * ^designation[=].value = "Inhalation gas"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Газ за инхалация"
@@ -26708,10 +26708,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11201000
-    Solution for injection
-    11201000
+    "Solution for injection"
+    "Liquid sterile single-dose or multidose preparation consisting of a solution intended for administration by injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection
+  * ^designation[=].value = "Solution for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен разтвор"
@@ -26814,10 +26814,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11202000
-    Suspension for injection
-    11202000
+    "Suspension for injection"
+    "Liquid sterile single-dose or multidose preparation consisting of a suspension intended for administration by injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension for injection
+  * ^designation[=].value = "Suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна суспензия"
@@ -26920,10 +26920,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11203000
-    Emulsion for injection
-    11203000
+    "Emulsion for injection"
+    "Liquid sterile single-dose or multidose preparation consisting of an emulsion intended for administration by injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Emulsion for injection
+  * ^designation[=].value = "Emulsion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна емулсия"
@@ -27026,10 +27026,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11204000
-    Gel for injection
-    11204000
+    "Gel for injection"
+    "Sterile single-dose preparation consisting of a hydrophilic gel intended for injection into a specific tissue or organ."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gel for injection
+  * ^designation[=].value = "Gel for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен гел"
@@ -27129,10 +27129,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11205000
-    Powder for solution for injection
-    11205000
+    "Powder for solution for injection"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a solution for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for solution for injection
+  * ^designation[=].value = "Powder for solution for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инжекционен разтвор"
@@ -27235,10 +27235,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11206000
-    Powder for suspension for injection
-    11206000
+    "Powder for suspension for injection"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain a suspension for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for suspension for injection
+  * ^designation[=].value = "Powder for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инжекционна суспензия"
@@ -27341,10 +27341,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11208400
-    Powder for prolonged-release suspension for injection
-    11208400
+    "Powder for prolonged-release suspension for injection"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain a prolonged-release suspension for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for prolonged-release suspension for injection
+  * ^designation[=].value = "Powder for prolonged-release suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инжекционна суспензия с удължено освобождаване"
@@ -27429,10 +27429,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11208500
-    Prolonged-release suspension for injection
-    11208500
+    "Prolonged-release suspension for injection"
+    "Liquid sterile preparation consisting of a suspension intended for administration by injection; the active substance(s) are released over an extended period of time."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release suspension for injection
+  * ^designation[=].value = "Prolonged-release suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна суспензия с удължено освобождаване"
@@ -27520,10 +27520,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11209000
-    Concentrate for solution for injection
-    11209000
+    "Concentrate for solution for injection"
+    "Liquid sterile preparation intended to be diluted in the specified liquid to obtain a solution for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for solution for injection
+  * ^designation[=].value = "Concentrate for solution for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за инжекционен разтвор"
@@ -27626,10 +27626,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11209500
-    Solution for cardioplegia
-    11209500
+    "Solution for cardioplegia"
+    "Liquid sterile preparation consisting of an aqueous solution intended for use in inducing cardiac arrest during heart surgery. Some preparations may require mixing with other preparations prior to administration, for example to adjust the pH."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for cardioplegia
+  * ^designation[=].value = "Solution for cardioplegia"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за кардиоплегия"
@@ -27717,10 +27717,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11210000
-    Solution for infusion
-    11210000
+    "Solution for infusion"
+    "Liquid sterile preparation consisting of an aqueous solution intended to be introduced, usually in large volumes, usually into the circulating blood stream."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for infusion
+  * ^designation[=].value = "Solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инфузионен разтвор"
@@ -27823,10 +27823,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11211000
-    Emulsion for infusion
-    11211000
+    "Emulsion for infusion"
+    "Liquid sterile preparation consisting of an oil-in-water emulsion intended to be introduced, usually in large volumes, usually into the circulating blood stream."
   * ^designation[0].language = #en
-  * ^designation[=].value = Emulsion for infusion
+  * ^designation[=].value = "Emulsion for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инфузионна емулсия"
@@ -27929,10 +27929,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11211500
-    Powder for dispersion for infusion
-    11211500
+    "Powder for dispersion for infusion"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain a dispersion for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for dispersion for infusion
+  * ^designation[=].value = "Powder for dispersion for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инфузионна дисперсия"
@@ -28020,10 +28020,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11212000
-    Powder for solution for infusion
-    11212000
+    "Powder for solution for infusion"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified aqueous liquid to obtain a solution for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for solution for infusion
+  * ^designation[=].value = "Powder for solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инфузионен разтвор"
@@ -28126,10 +28126,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11213000
-    Concentrate for solution for infusion
-    11213000
+    "Concentrate for solution for infusion"
+    "Liquid sterile preparation consisting of an aqueous solution intended to be diluted in the specified aqueous liquid to obtain a solution for infusion. It may be added to a solution for infusion during the administration."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for solution for infusion
+  * ^designation[=].value = "Concentrate for solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за инфузионен разтвор"
@@ -28232,10 +28232,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11215000
-    Lyophilisate for solution for infusion
-    11215000
+    "Lyophilisate for solution for infusion"
+    "Solid sterile preparation for veterinary use consisting of a freeze-dried powder intended to be dissolved in the specified liquid to obtain a solution for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate for solution for infusion
+  * ^designation[=].value = "Lyophilisate for solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат за инфузионен разтвор"
@@ -28332,10 +28332,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11216000
-    Solvent for parenteral use
-    11216000
+    "Solvent for parenteral use"
+    "Liquid sterile preparation consisting of a solvent containing no active substances, intended for use in the preparation of a product for parenteral use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solvent for parenteral use
+  * ^designation[=].value = "Solvent for parenteral use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтворител за парентерално приложение"
@@ -28438,10 +28438,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11217000
-    Lyophilisate for solution for injection
-    11217000
+    "Lyophilisate for solution for injection"
+    "Solid sterile preparation for veterinary use consisting of a freeze-dried powder intended to be dissolved in the specified liquid to obtain a solution for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate for solution for injection
+  * ^designation[=].value = "Lyophilisate for solution for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат за инжекционен разтвор"
@@ -28538,10 +28538,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11218000
-    Lyophilisate for suspension for injection
-    11218000
+    "Lyophilisate for suspension for injection"
+    "Solid sterile preparation for veterinary use consisting of a freeze-dried powder intended to be dispersed in the specified liquid to obtain a suspension for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate for suspension for injection
+  * ^designation[=].value = "Lyophilisate for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат за инжекционна суспензия"
@@ -28638,10 +28638,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11301000
-    Implant
-    11301000
+    "Implant"
+    "Solid sterile preparation of a size and shape suitable for implantation. It may be prepared by moulding or other means other than compression. Each implant is presented in a sterile container that may be provided with an administration device. Implants are intended for release over an extended period of time in order to obtain local or systemic effect. 'Implantation tablet', 'Implantation chain' and 'Implantation matrix' are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Implant
+  * ^designation[=].value = "Implant"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Имплантат"
@@ -28744,10 +28744,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11302000
-    Implantation tablet
-    11302000
+    "Implantation tablet"
+    "Solid sterile preparation prepared by compression of a solid active substance as such or of a formulation thereof into an implant of a size and shape suitable for implantation, usually subcutaneously. Each implantation tablet is presented in a sterile container. Implantation tablets are intended for release over an extended period of time in order to obtain local or systemic effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Implantation tablet
+  * ^designation[=].value = "Implantation tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка за имплантиране"
@@ -28850,10 +28850,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11303000
-    Implantation chain
-    11303000
+    "Implantation chain"
+    "Solid sterile preparation consisting of small spheres mounted on a non-degradable thread to form a chain that allows withdrawal of the remainder of the chain after a certain period of action. Each implantation chain is presented in a sterile container. The implantation chain is intended for release over an extended period of time in order to obtain local or systemic effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Implantation chain
+  * ^designation[=].value = "Implantation chain"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Верига за имплантиране"
@@ -28956,10 +28956,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11303300
-    Implantation matrix
-    11303300
+    "Implantation matrix"
+    "Solid sterile preparation consisting of a usually pliable, absorbent piece of material (e.g. collagen), usually impregnated with a liquid preparation, intended for implantation in the body. The material may be cut into smaller pieces before implantation, and may be shaped around a tissue (e.g. a bone) or inserted into a medical device that is then implanted. Implantation matrices are intended for release over an extended period of time, usually in order to obtain a local effect. Usually the matrix disappears with time. When the product is packaged as a separate matrix, powder and solvent (or matrix and solution), which are used to prepare the implantation matrix immediately before use, the appropriate combined term should be used; see for example ‘Powder, solvent and matrix for implantation matrix’."
   * ^designation[0].language = #en
-  * ^designation[=].value = Implantation matrix
+  * ^designation[=].value = "Implantation matrix"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Матрица за имплантиране"
@@ -29047,10 +29047,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11303500
-    Implantation suspension
-    11303500
+    "Implantation suspension"
+    "Liquid sterile preparation consisting of a suspension intended for implantation in the body; the active substance(s) are released over an extended period of time to obtain a local or systemic effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Implantation suspension
+  * ^designation[=].value = "Implantation suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия за имплантиране"
@@ -29141,10 +29141,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11303750
-    Kit for implant
-    11303750
+    "Kit for implant"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Kit for implant
+  * ^designation[=].value = "Kit for implant"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -29169,10 +29169,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11401000
-    Solution for peritoneal dialysis
-    11401000
+    "Solution for peritoneal dialysis"
+    "Liquid sterile preparation consisting of an aqueous solution containing electrolytes with a concentration close to the electrolytic composition of plasma and glucose in varying concentrations or other suitable osmotic agents, intended for intraperitoneal use as a dialysis solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for peritoneal dialysis
+  * ^designation[=].value = "Solution for peritoneal dialysis"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за перитонеална диализа"
@@ -29275,10 +29275,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11402000
-    Solution for haemofiltration
-    11402000
+    "Solution for haemofiltration"
+    "Liquid sterile preparation consisting of an aqueous solution containing electrolytes with a concentration close to the electrolytic composition of plasma, intended for parenteral use in haemofiltration. Glucose may be included."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for haemofiltration
+  * ^designation[=].value = "Solution for haemofiltration"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за хемофилтрация"
@@ -29378,10 +29378,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11403000
-    Solution for haemodiafiltration
-    11403000
+    "Solution for haemodiafiltration"
+    "Liquid sterile preparation consisting of an aqueous solution containing electrolytes with a concentration close to the electrolytic composition of plasma, intended for parenteral use in haemodiafiltration. Glucose may be included."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for haemodiafiltration
+  * ^designation[=].value = "Solution for haemodiafiltration"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за хемодиафилтрация"
@@ -29481,10 +29481,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11404000
-    Solution for haemodialysis
-    11404000
+    "Solution for haemodialysis"
+    "Liquid preparation consisting of an aqueous solution containing electrolytes with a concentration close to the electrolytic composition of plasma, intended for use in haemodialysis. Glucose may be included."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for haemodialysis
+  * ^designation[=].value = "Solution for haemodialysis"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за хемодиализа"
@@ -29587,10 +29587,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11405000
-    Concentrate for solution for haemodialysis
-    11405000
+    "Concentrate for solution for haemodialysis"
+    "Liquid preparation consisting of an aqueous solution of electrolytes intended to be diluted with water of a suitable quality to obtain a solution for haemodialysis. Glucose may be included."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for solution for haemodialysis
+  * ^designation[=].value = "Concentrate for solution for haemodialysis"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за разтвор за хемодиализа"
@@ -29693,10 +29693,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11501000
-    Solution for intravesical use
-    11501000
+    "Solution for intravesical use"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for intravesical use
+  * ^designation[=].value = "Solution for intravesical use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за интравезикално приложение"
@@ -29793,10 +29793,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11502000
-    Bladder irrigation
-    11502000
+    "Bladder irrigation"
+    "Sterile liquid preparation consisting of sterilised water or an aqueous solution intended for irrigation of the urinary bladder."
   * ^designation[0].language = #en
-  * ^designation[=].value = Bladder irrigation
+  * ^designation[=].value = "Bladder irrigation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Промивка за пикочен мехур"
@@ -29899,10 +29899,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11502500
-    Intravesical solution
-    11502500
+    "Intravesical solution"
+    "Liquid preparation consisting of an aqueous solution intended for intravesical use by means of a suitable applicator. 'Bladder irrigation' is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intravesical solution
+  * ^designation[=].value = "Intravesical solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интравезикален разтвор"
@@ -29990,10 +29990,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11503000
-    Powder for bladder irrigation
-    11503000
+    "Powder for bladder irrigation"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in sterile water to obtain a bladder irrigation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for bladder irrigation
+  * ^designation[=].value = "Powder for bladder irrigation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за промивка за пикочен мехур"
@@ -30096,10 +30096,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11504000
-    Urethral gel
-    11504000
+    "Urethral gel"
+    "Semi-solid preparation consisting of a gel intended for urethral use by means of a suitable applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Urethral gel
+  * ^designation[=].value = "Urethral gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Уретрален гел"
@@ -30199,10 +30199,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11505000
-    Urethral stick
-    11505000
+    "Urethral stick"
+    "Solid sterile single-dose preparation, usually rod-shaped and of a size adapted to the dimensions of the urethra, intended for insertion into the urethra. They may be prepared by compression or moulding."
   * ^designation[0].language = #en
-  * ^designation[=].value = Urethral stick
+  * ^designation[=].value = "Urethral stick"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Уретрална пръчица"
@@ -30302,10 +30302,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11601000
-    Endotracheopulmonary instillation, solution
-    11601000
+    "Endotracheopulmonary instillation, solution"
+    "Liquid preparation consisting of an aqueous solution intended for instillation to the trachea and/or bronchi. Preparations for inhalation use are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Endotracheopulmonary instillation, solution
+  * ^designation[=].value = "Endotracheopulmonary instillation, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за ендотрахеопулмонално инстилиране"
@@ -30408,10 +30408,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11602000
-    Endotracheopulmonary instillation, powder for solution
-    11602000
+    "Endotracheopulmonary instillation, powder for solution"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain an endotracheopulmonary instillation solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Endotracheopulmonary instillation, powder for solution
+  * ^designation[=].value = "Endotracheopulmonary instillation, powder for solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за разтвор за ендотрахеопулмонално инстилиране"
@@ -30514,10 +30514,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11603000
-    Endotracheopulmonary instillation, suspension
-    11603000
+    "Endotracheopulmonary instillation, suspension"
+    "Liquid preparation consisting of an aqueous suspension intended for instillation to the trachea and/or bronchi. Preparations for inhalation use are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Endotracheopulmonary instillation, suspension
+  * ^designation[=].value = "Endotracheopulmonary instillation, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия за ендотрахеопулмонално инстилиране"
@@ -30620,10 +30620,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11701000
-    Endocervical gel
-    11701000
+    "Endocervical gel"
+    "Semi-solid preparation consisting of a gel intended for endocervical use by means of a suitable applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Endocervical gel
+  * ^designation[=].value = "Endocervical gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ендоцервикален гел"
@@ -30726,10 +30726,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11801000
-    Intramammary solution
-    11801000
+    "Intramammary solution"
+    "Liquid sterile preparation for veterinary use consisting of a solution intended for intramammary use. Intramammary solutions are presented in intramammary syringes for use on one occasion only to introduce the solution into a single teat canal."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intramammary solution
+  * ^designation[=].value = "Intramammary solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрамамарен разтвор"
@@ -30826,10 +30826,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11802000
-    Intramammary suspension
-    11802000
+    "Intramammary suspension"
+    "Liquid sterile preparation for veterinary use consisting of a suspension intended for intramammary use. Intramammary suspensions are presented in intramammary syringes for use on one occasion only to introduce the suspension into a single teat canal."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intramammary suspension
+  * ^designation[=].value = "Intramammary suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрамамарна суспензия"
@@ -30926,10 +30926,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11803000
-    Intramammary emulsion
-    11803000
+    "Intramammary emulsion"
+    "Liquid sterile preparation for veterinary use consisting of an emulsion intended for intramammary use. Intramammary emulsions are presented in intramammary syringes for use on one occasion only to introduce the emulsion into a single teat canal."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intramammary emulsion
+  * ^designation[=].value = "Intramammary emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрамамарна емулсия"
@@ -31026,10 +31026,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11804000
-    Intramammary ointment
-    11804000
+    "Intramammary ointment"
+    "Semi-solid sterile preparation for veterinary use consisting of an ointment containing dissolved or dispersed active substance(s) intended for intramammary use. Intramammary ointments are presented in intramammary syringes for use on one occasion only to introduce the ointment into a single teat canal."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intramammary ointment
+  * ^designation[=].value = "Intramammary ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрамамарна маз"
@@ -31126,10 +31126,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11805000
-    Teat stick
-    11805000
+    "Teat stick"
+    "Solid single-dose preparation for veterinary use, usually rod shaped, intended to be inserted into the teat canal of an animal where it melts or dissolves."
   * ^designation[0].language = #en
-  * ^designation[=].value = Teat stick
+  * ^designation[=].value = "Teat stick"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пръчица за папила на млечна жлеза"
@@ -31223,10 +31223,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11901000
-    Intrauterine delivery system
-    11901000
+    "Intrauterine delivery system"
+    "Solid single-dose delivery system intended for intrauterine use that releases its contents of active substance(s) over an extended period of time."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrauterine delivery system
+  * ^designation[=].value = "Intrauterine delivery system"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вътрематочна лекарстводоставяща система"
@@ -31332,10 +31332,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11902000
-    Intrauterine solution
-    11902000
+    "Intrauterine solution"
+    "Liquid preparation for veterinary use consisting of a solution intended for intrauterine use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrauterine solution
+  * ^designation[=].value = "Intrauterine solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вътрематочен разтвор"
@@ -31435,10 +31435,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11903000
-    Intrauterine suspension
-    11903000
+    "Intrauterine suspension"
+    "Liquid preparation for veterinary use consisting of a suspension intended for intrauterine use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrauterine suspension
+  * ^designation[=].value = "Intrauterine suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вътрематочна суспензия"
@@ -31538,10 +31538,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11904000
-    Intrauterine emulsion
-    11904000
+    "Intrauterine emulsion"
+    "Liquid preparation for veterinary use consisting of an emulsion intended for intrauterine use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrauterine emulsion
+  * ^designation[=].value = "Intrauterine emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вътрематочна емулсия"
@@ -31641,10 +31641,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11905000
-    Intrauterine tablet
-    11905000
+    "Intrauterine tablet"
+    "Solid single-dose preparation for veterinary use prepared by compression or moulding into tablets of a size and shape suited for administration to the uterus, including preparations releasing their contents over an extended period of time."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrauterine tablet
+  * ^designation[=].value = "Intrauterine tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вътрематочна таблетка"
@@ -31747,10 +31747,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #11906000
-    Intrauterine capsule
-    11906000
+    "Intrauterine capsule"
+    "Solid single-dose preparation for veterinary use consisting of a soft capsule containing a liquid or semi-solid preparation intended for intrauterine use, including preparations releasing their contents over an extended period of time."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrauterine capsule
+  * ^designation[=].value = "Intrauterine capsule"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вътрематочна капсула"
@@ -31847,10 +31847,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12001000
-    Bee-hive strip
-    12001000
+    "Bee-hive strip"
+    "Solid preparation for veterinary use consisting of a matrix impregnated with active substance(s) that are released by vaporisation or physical contact over an extended period of time. Any specific requirements for the placing of the bee-hive strip are described in the product information."
   * ^designation[0].language = #en
-  * ^designation[=].value = Bee-hive strip
+  * ^designation[=].value = "Bee-hive strip"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лента за пчелен кошер"
@@ -31944,10 +31944,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12001500
-    Bee-hive gel
-    12001500
+    "Bee-hive gel"
+    "Semi-solid multidose preparation intended for veterinary use, consisting of a gel from which the active substance(s) are released by vaporisation or physical contact over an extended period of time."
   * ^designation[0].language = #en
-  * ^designation[=].value = Bee-hive gel
+  * ^designation[=].value = "Bee-hive gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гел за пчелен кошер"
@@ -32026,10 +32026,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12002000
-    Bee smoke paper
-    12002000
+    "Bee smoke paper"
+    "Solid preparation for veterinary use consisting of an impregnated paper that, when lit, delivers smoke containing active substance(s)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Bee smoke paper
+  * ^designation[=].value = "Bee smoke paper"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Димна хартия за пчели"
@@ -32126,10 +32126,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12003000
-    Bee smoke stick
-    12003000
+    "Bee smoke stick"
+    "Solid preparation for veterinary use consisting of an impregnated stick that, when lit, delivers smoke containing active substance(s)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Bee smoke stick
+  * ^designation[=].value = "Bee smoke stick"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Димна пръчица за пчели"
@@ -32226,10 +32226,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12004000
-    Nebulisation solution
-    12004000
+    "Nebulisation solution"
+    "Liquid preparation for veterinary use consisting of a solution intended for conversion by nebulisers into an aerosol for mass medication. Products intended for the treatment of individual animals are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nebulisation solution
+  * ^designation[=].value = "Nebulisation solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за небулизиране"
@@ -32326,10 +32326,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12100500
-    Absorbable coated sponge
-    12100500
+    "Absorbable coated sponge"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Absorbable coated sponge
+  * ^designation[=].value = "Absorbable coated sponge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -32360,10 +32360,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12101000
-    Denture lacquer
-    12101000
+    "Denture lacquer"
+    "Liquid preparation to be applied to dentures to form a lacquer by evaporation of the volatile solvent."
   * ^designation[0].language = #en
-  * ^designation[=].value = Denture lacquer
+  * ^designation[=].value = "Denture lacquer"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лак за зъбна протеза"
@@ -32469,10 +32469,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12102000
-    Anticoagulant and preservative solution for blood
-    12102000
+    "Anticoagulant and preservative solution for blood"
+    "Liquid sterile preparation consisting of an aqueous solution to be mixed with extracorporeal blood."
   * ^designation[0].language = #en
-  * ^designation[=].value = Anticoagulant and preservative solution for blood
+  * ^designation[=].value = "Anticoagulant and preservative solution for blood"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Антикоагулант и консервиращ разтвор за кръв"
@@ -32578,10 +32578,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12103000
-    Solution for blood fraction modification
-    12103000
+    "Solution for blood fraction modification"
+    "Liquid sterile preparation consisting of a solution intended for use in extracorporeal modification of a blood fraction that is returned to the patient following modification."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for blood fraction modification
+  * ^designation[=].value = "Solution for blood fraction modification"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за модифициране на кръвна фракция"
@@ -32684,10 +32684,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12104000
-    Wound stick
-    12104000
+    "Wound stick"
+    "Solid sterile single-dose preparation, usually rod-shaped or conical, consisting of active substance(s) dissolved or dispersed in a suitable basis that may dissolve or melt at body temperature, intended to be inserted into wounds."
   * ^designation[0].language = #en
-  * ^designation[=].value = Wound stick
+  * ^designation[=].value = "Wound stick"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пръчица за рани"
@@ -32790,10 +32790,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12105000
-    Radiopharmaceutical precursor
-    12105000
+    "Radiopharmaceutical precursor"
+    "A radionuclide produced for the radio-labelling of another substance prior to administration."
   * ^designation[0].language = #en
-  * ^designation[=].value = Radiopharmaceutical precursor
+  * ^designation[=].value = "Radiopharmaceutical precursor"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Радиофармацевтичен прекурсор"
@@ -32899,10 +32899,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12106000
-    Radionuclide generator
-    12106000
+    "Radionuclide generator"
+    "A system incorporating a fixed parent radionuclide from which is produced a daughter radionuclide which is to be removed by elution or by any other method and used in a radiopharmaceutical."
   * ^designation[0].language = #en
-  * ^designation[=].value = Radionuclide generator
+  * ^designation[=].value = "Radionuclide generator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Радионуклиден генератор"
@@ -33008,10 +33008,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12107000
-    Kit for radiopharmaceutical preparation
-    12107000
+    "Kit for radiopharmaceutical preparation"
+    "A preparation to be reconstituted or combined with radionuclides in the final radiopharmaceutical, usually prior to its administration. The word radiopharmaceutical may be omitted if there is no ambiguity on the radiopharmaceutical nature of the product. Combinations with other standard terms are not recommended."
   * ^designation[0].language = #en
-  * ^designation[=].value = Kit for radiopharmaceutical preparation
+  * ^designation[=].value = "Kit for radiopharmaceutical preparation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Кит за радиофармацевтичен препарат"
@@ -33117,10 +33117,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12108000
-    Gastroenteral solution
-    12108000
+    "Gastroenteral solution"
+    "Liquid preparation consisting of a solution intended for administration to the stomach or duodenum by means of a suitable applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastroenteral solution
+  * ^designation[=].value = "Gastroenteral solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-чревен разтвор"
@@ -33226,10 +33226,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12109000
-    Dispersion
-    12109000
+    "Dispersion"
+    "A system consisting of 2 or more phases. To be used only when suspension or emulsion is not appropriate."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dispersion
+  * ^designation[=].value = "Dispersion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дисперсия"
@@ -33332,10 +33332,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12109900
-    Frozen solution for sealant
-    12109900
+    "Frozen solution for sealant"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Frozen solution for sealant
+  * ^designation[=].value = "Frozen solution for sealant"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -33363,10 +33363,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12110000
-    Gastroenteral suspension
-    12110000
+    "Gastroenteral suspension"
+    "Liquid preparation consisting of a suspension intended for administration to the stomach or duodenum by means of a suitable applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastroenteral suspension
+  * ^designation[=].value = "Gastroenteral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-чревна суспензия"
@@ -33472,10 +33472,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12111000
-    Gastroenteral emulsion
-    12111000
+    "Gastroenteral emulsion"
+    "Liquid preparation consisting of an emulsion intended for administration to the stomach or duodenum by means of a suitable applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastroenteral emulsion
+  * ^designation[=].value = "Gastroenteral emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-чревна емулсия"
@@ -33581,10 +33581,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12111500
-    Intraperitoneal solution
-    12111500
+    "Intraperitoneal solution"
+    "Liquid sterile preparation consisting of a solution intended for intraperitoneal use. 'Solution for peritoneal dialysis' is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraperitoneal solution
+  * ^designation[=].value = "Intraperitoneal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интраперитонеален разтвор"
@@ -33675,10 +33675,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12112000
-    Solution for organ preservation
-    12112000
+    "Solution for organ preservation"
+    "Liquid sterile preparation consisting of an aqueous solution of electrolytes typically at a concentration close to the intracellular electrolyte composition, intended for storage, protection and/or perfusion of mammalian body organs that are in particular destined for transplantation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for organ preservation
+  * ^designation[=].value = "Solution for organ preservation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за съхраняване на орган"
@@ -33784,10 +33784,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12113000
-    Irrigation solution
-    12113000
+    "Irrigation solution"
+    "Liquid sterile preparation consisting of a large-volume aqueous solution intended for irrigation of body cavities, wounds and surfaces, for example during surgical procedures. Irrigation solutions are either solutions of active substance(s), electrolytes or osmotically active substances in water for injections, or they consist of water for injections as such."
   * ^designation[0].language = #en
-  * ^designation[=].value = Irrigation solution
+  * ^designation[=].value = "Irrigation solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за промивка"
@@ -33893,10 +33893,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12114000
-    Stomach irrigation
-    12114000
+    "Stomach irrigation"
+    "Liquid sterile preparation consisting of an aqueous solution intended for irrigation of the stomach."
   * ^designation[0].language = #en
-  * ^designation[=].value = Stomach irrigation
+  * ^designation[=].value = "Stomach irrigation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашна промивка"
@@ -34002,10 +34002,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12115000
-    Sealant
-    12115000
+    "Sealant"
+    "Liquid, more or less viscous, sterile preparation intended for use as tissue glue."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sealant
+  * ^designation[=].value = "Sealant"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Тъканно лепило"
@@ -34111,10 +34111,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12115100
-    Sealant matrix
-    12115100
+    "Sealant matrix"
+    "Solid sterile preparation consisting of a pliable piece of material impregnated or coated with a sealant or with a powder that forms a sealant after contact with an appropriate fluid (e.g. blood). It may act as a haemostatic agent and/or tissue glue. The matrix may itself form part of the seal, and is usually absorbed by the body over time."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sealant matrix
+  * ^designation[=].value = "Sealant matrix"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Матрица с тъканно лепило"
@@ -34199,10 +34199,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12115200
-    Sealant powder
-    12115200
+    "Sealant powder"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be applied directly onto the intended site (e.g. a lesion) to form a haemostatic agent and/or tissue glue after contact with an appropriate fluid (e.g. blood)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sealant powder
+  * ^designation[=].value = "Sealant powder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прахообразно тъканно лепило"
@@ -34284,10 +34284,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12115500
-    Solution for perfusion of organs
-    12115500
+    "Solution for perfusion of organs"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for perfusion of organs
+  * ^designation[=].value = "Solution for perfusion of organs"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -34312,10 +34312,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12117000
-    Impregnated pad
-    12117000
+    "Impregnated pad"
+    "Solid preparation consisting of a piece of absorbent material impregnated with a liquid preparation. Impregnated cutaneous swab is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Impregnated pad
+  * ^designation[=].value = "Impregnated pad"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Импрегниран компрес"
@@ -34421,10 +34421,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12117500
-    Impregnated plug
-    12117500
+    "Impregnated plug"
+    "Solid preparation consisting of a piece of material (e.g. polyethylene), usually porous, in which a liquid, semi-solid or solid preparation is impregnated. Implants, pads, sponges and tampons are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Impregnated plug
+  * ^designation[=].value = "Impregnated plug"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Импрегниран пълнител"
@@ -34512,10 +34512,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12118000
-    Living tissue equivalent
-    12118000
+    "Living tissue equivalent"
+    "Cultured, living tissue used for the reconstruction of parts of the body. The tissue may consist of ex vivo expanded cells with an extracellular matrix. Where appropriate, the tissue of origin, such as epidermis, dermis, cartilage or muscle, will need to be stated elsewhere in the product information."
   * ^designation[0].language = #en
-  * ^designation[=].value = Living tissue equivalent
+  * ^designation[=].value = "Living tissue equivalent"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Еквивалент на жива тъкан"
@@ -34618,10 +34618,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12118500
-    Lyophilisate for oculonasal suspension
-    12118500
+    "Lyophilisate for oculonasal suspension"
+    "Solid preparation for veterinary use consisting of a freeze-dried powder intended to be dispersed in the specified liquid to create a suspension for oculonasal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate for oculonasal suspension
+  * ^designation[=].value = "Lyophilisate for oculonasal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат за очно-назална суспензия"
@@ -34703,10 +34703,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12119000
-    Medicated sponge
-    12119000
+    "Medicated sponge"
+    "Solid preparation consisting of a sponge impregnated with active substance(s); different routes of administration are possible."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicated sponge
+  * ^designation[=].value = "Medicated sponge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лечебна гъба"
@@ -34806,10 +34806,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12120000
-    Intestinal gel
-    12120000
+    "Intestinal gel"
+    "Semi-solid preparation consisting of a gel intended for intestinal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intestinal gel
+  * ^designation[=].value = "Intestinal gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гел за прилагане в червата"
@@ -34909,10 +34909,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12130000
-    Medicated thread
-    12130000
+    "Medicated thread"
+    "Solid preparation consisting of a biodegradable or non-degradable thread impregnated with active substance(s)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicated thread
+  * ^designation[=].value = "Medicated thread"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лечебен конец"
@@ -35009,10 +35009,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12131000
-    Solution for provocation test
-    12131000
+    "Solution for provocation test"
+    "Liquid preparation consisting of a solution containing an allergen intended for provocation testing by the nasal, ocular or bronchial routes."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for provocation test
+  * ^designation[=].value = "Solution for provocation test"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за провокационно изпитване"
@@ -35112,10 +35112,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12301000
-    Medicinal gas, compressed
-    12301000
+    "Medicinal gas, compressed"
+    "A gas packaged under pressure which is entirely gaseous at - 50 °C."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicinal gas, compressed
+  * ^designation[=].value = "Medicinal gas, compressed"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Медицински газ, сгъстен"
@@ -35215,10 +35215,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12302000
-    Medicinal gas, cryogenic
-    12302000
+    "Medicinal gas, cryogenic"
+    "A gas which liquifies at 1.013 bar at a temperature below -150 °C."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicinal gas, cryogenic
+  * ^designation[=].value = "Medicinal gas, cryogenic"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Медицински газ, криогенен"
@@ -35318,10 +35318,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #12303000
-    Medicinal gas, liquefied
-    12303000
+    "Medicinal gas, liquefied"
+    "A gas packaged under pressure, which is partially liquid (gas over liquid) at -50 °C."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicinal gas, liquefied
+  * ^designation[=].value = "Medicinal gas, liquefied"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Медицински газ, втечнен"
@@ -35421,10 +35421,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13001000
-    Concentrate for concentrate for solution for infusion
-    13001000
+    "Concentrate for concentrate for solution for infusion"
+    "Liquid sterile preparation intended to be diluted in the specified liquid to obtain a concentrate for solution for infusion, which in turn is intended to be diluted in the specified liquid to obtain a solution for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for concentrate for solution for infusion
+  * ^designation[=].value = "Concentrate for concentrate for solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за концентрат за инфузионен разтвор"
@@ -35503,10 +35503,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13002000
-    Concentrate for nebuliser solution
-    13002000
+    "Concentrate for nebuliser solution"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain a nebuliser solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for nebuliser solution
+  * ^designation[=].value = "Concentrate for nebuliser solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за разтвор за небулизатор"
@@ -35588,10 +35588,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13003000
-    Concentrate for oromucosal solution
-    13003000
+    "Concentrate for oromucosal solution"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain an oromucosal solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for oromucosal solution
+  * ^designation[=].value = "Concentrate for oromucosal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за разтвор за устна лигавицa"
@@ -35673,10 +35673,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13004000
-    Concentrate for suspension for injection
-    13004000
+    "Concentrate for suspension for injection"
+    "Liquid sterile preparation intended to be diluted in the specified liquid to obtain a suspension for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for suspension for injection
+  * ^designation[=].value = "Concentrate for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за инжекционна суспензия"
@@ -35761,10 +35761,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13005000
-    Dispersion for concentrate for dispersion for infusion
-    13005000
+    "Dispersion for concentrate for dispersion for infusion"
+    "Liquid sterile preparation consisting of a dispersion intended for use in the preparation of a concentrate for dispersion for infusion, which in turn is intended to be diluted in the specified liquid to obtain a dispersion for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dispersion for concentrate for dispersion for infusion
+  * ^designation[=].value = "Dispersion for concentrate for dispersion for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дисперсия за концентрат за инфузионна дисперсия"
@@ -35846,10 +35846,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13006000
-    Ear drops, powder for suspension
-    13006000
+    "Ear drops, powder for suspension"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain an ear drops suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear drops, powder for suspension
+  * ^designation[=].value = "Ear drops, powder for suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за уши, прах за суспензия"
@@ -35931,10 +35931,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13007000
-    Effervescent granules for oral suspension
-    13007000
+    "Effervescent granules for oral suspension"
+    "Solid preparation consisting of effervescent granules intended to be dispersed or dissolved in the specified liquid, which is supplied in the same packaging, to obtain an oral suspension. Where the granules are intended to be dispersed in water, the term 'Effervescent granules' is used instead."
   * ^designation[0].language = #en
-  * ^designation[=].value = Effervescent granules for oral suspension
+  * ^designation[=].value = "Effervescent granules for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ефервесцентни гранули за перорална суспензия"
@@ -36019,10 +36019,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13008000
-    Emulsion for emulsion for injection
-    13008000
+    "Emulsion for emulsion for injection"
+    "Liquid sterile preparation consisting of an emulsion intended for use in the preparation of an emulsion for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Emulsion for emulsion for injection
+  * ^designation[=].value = "Emulsion for emulsion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Емулсия за инжекционна емулсия"
@@ -36104,10 +36104,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13009000
-    Endotracheopulmonary instillation, powder for suspension
-    13009000
+    "Endotracheopulmonary instillation, powder for suspension"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain an endotracheopulmonary instillation suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Endotracheopulmonary instillation, powder for suspension
+  * ^designation[=].value = "Endotracheopulmonary instillation, powder for suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за суспензия за ендотрахеопулмонално инстилиране"
@@ -36189,10 +36189,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13010000
-    Eye drops, powder for solution
-    13010000
+    "Eye drops, powder for solution"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain an eye drops solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, powder for solution
+  * ^designation[=].value = "Eye drops, powder for solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи, прах за разтвор"
@@ -36274,10 +36274,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13011000
-    Eye drops, powder for suspension
-    13011000
+    "Eye drops, powder for suspension"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain an eye drops suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, powder for suspension
+  * ^designation[=].value = "Eye drops, powder for suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи, прах за суспензия"
@@ -36359,10 +36359,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13012000
-    Gas for dispersion for infusion
-    13012000
+    "Gas for dispersion for infusion"
+    "Sterile preparation consisting of a gas that is intended to be mixed with the specified liquid to obtain a dispersion of the gas in the liquid, which is intended for administration by infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gas for dispersion for infusion
+  * ^designation[=].value = "Gas for dispersion for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Газ за инфузионна дисперсия"
@@ -36444,10 +36444,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13013000
-    Gas for dispersion for injection
-    13013000
+    "Gas for dispersion for injection"
+    "Sterile preparation consisting of a gas that is intended to be mixed with the specified liquid to obtain a dispersion of the gas in the liquid, which is intended for administration by injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gas for dispersion for injection
+  * ^designation[=].value = "Gas for dispersion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Газ за инжекционна дисперсия"
@@ -36529,10 +36529,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13014000
-    Gel for gel
-    13014000
+    "Gel for gel"
+    "Semi-solid preparation consisting of a gel intended for use in the preparation of a gel for cutaneous use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gel for gel
+  * ^designation[=].value = "Gel for gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гел за гел"
@@ -36611,10 +36611,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13015000
-    Granules for rectal suspension
-    13015000
+    "Granules for rectal suspension"
+    "Solid preparation consisting of aggregated particles that may include excipients to facilitate wetting and dispersion, intended to be dispersed in the specified liquid to obtain a rectal suspension, which is usually prepared just before administration to the patient."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules for rectal suspension
+  * ^designation[=].value = "Granules for rectal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули за ректална суспензия"
@@ -36696,10 +36696,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13016000
-    Laryngopharyngeal solution
-    13016000
+    "Laryngopharyngeal solution"
+    "Liquid preparation consisting of a solution intended for administration to the laryngopharynx for a local effect, other than by spraying."
   * ^designation[0].language = #en
-  * ^designation[=].value = Laryngopharyngeal solution
+  * ^designation[=].value = "Laryngopharyngeal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за ларинкс-фаринкс"
@@ -36781,10 +36781,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13017000
-    Laryngopharyngeal spray, solution
-    13017000
+    "Laryngopharyngeal spray, solution"
+    "Liquid preparation consisting of a solution intended for spraying onto the laryngopharynx for a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Laryngopharyngeal spray, solution
+  * ^designation[=].value = "Laryngopharyngeal spray, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за ларинкс-фаринкс, разтвор"
@@ -36869,10 +36869,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13018000
-    Matrix for implantation matrix
-    13018000
+    "Matrix for implantation matrix"
+    "Solid sterile preparation consisting of a usually pliable, absorbent piece of material (e.g. collagen) intended to be used in the preparation of an implantation matrix."
   * ^designation[0].language = #en
-  * ^designation[=].value = Matrix for implantation matrix
+  * ^designation[=].value = "Matrix for implantation matrix"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Матрица за матрица за имплантиране"
@@ -36954,10 +36954,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13019000
-    Nasal drops, lyophilisate for suspension
-    13019000
+    "Nasal drops, lyophilisate for suspension"
+    "Solid preparation for veterinary use consisting of a freeze-dried powder intended to be dispersed in the specified liquid to obtain a suspension for use as nasal drops."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal drops, lyophilisate for suspension
+  * ^designation[=].value = "Nasal drops, lyophilisate for suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за нос, лиофилизат за суспензия"
@@ -37030,10 +37030,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13020000
-    Nasal drops, powder for solution
-    13020000
+    "Nasal drops, powder for solution"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a nasal drops solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal drops, powder for solution
+  * ^designation[=].value = "Nasal drops, powder for solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за нос, прах за разтвор"
@@ -37115,10 +37115,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13021000
-    Powder for gel
-    13021000
+    "Powder for gel"
+    "Solid preparation consisting of one or more powders intended to be mixed with the specified liquid or gel to obtain a gel (for cutaneous use)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for gel
+  * ^designation[=].value = "Powder for gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за гел"
@@ -37197,10 +37197,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13022000
-    Powder for dental gel
-    13022000
+    "Powder for dental gel"
+    "Solid preparation consisting of one or more powders intended to be mixed with the specified liquid or gel to obtain a dental gel."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for dental gel
+  * ^designation[=].value = "Powder for dental gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за дентален гел"
@@ -37279,10 +37279,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13023000
-    Powder for dispersion for injection
-    13023000
+    "Powder for dispersion for injection"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain a dispersion for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for dispersion for injection
+  * ^designation[=].value = "Powder for dispersion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инжекционна дисперсия"
@@ -37364,10 +37364,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13024000
-    Powder for endocervical gel
-    13024000
+    "Powder for endocervical gel"
+    "Solid preparation consisting of one or more powders intended to be mixed with the specified liquid or gel to obtain an endocervical gel."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for endocervical gel
+  * ^designation[=].value = "Powder for endocervical gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за ендоцервикален гел"
@@ -37446,10 +37446,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13025000
-    Powder for endosinusial solution
-    13025000
+    "Powder for endosinusial solution"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain an endosinusial solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for endosinusial solution
+  * ^designation[=].value = "Powder for endosinusial solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за разтвор за прилагане в синуси"
@@ -37528,10 +37528,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13026000
-    Powder for gingival gel
-    13026000
+    "Powder for gingival gel"
+    "Solid preparation consisting of one or more powders intended to be mixed with the specified liquid or gel to obtain a gingival gel."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for gingival gel
+  * ^designation[=].value = "Powder for gingival gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за гел за венци"
@@ -37613,10 +37613,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13027000
-    Powder for implantation matrix
-    13027000
+    "Powder for implantation matrix"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be used in the preparation of an implantation matrix, e.g. by dissolving in the specified liquid to prepare the solution used to impregnate the matrix."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for implantation matrix
+  * ^designation[=].value = "Powder for implantation matrix"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за матрица за имплантиране"
@@ -37698,10 +37698,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13028000
-    Powder for implantation paste
-    13028000
+    "Powder for implantation paste"
+    "Solid sterile preparation consisting of one or more powders intended to be mixed with the specified liquid or paste to obtain an implantation paste."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for implantation paste
+  * ^designation[=].value = "Powder for implantation paste"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за паста за имплантиране"
@@ -37783,10 +37783,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13029000
-    Powder for intraocular instillation solution
-    13029000
+    "Powder for intraocular instillation solution"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain an intraocular instillation solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for intraocular instillation solution
+  * ^designation[=].value = "Powder for intraocular instillation solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за разтвор за вътреочно инстилиране"
@@ -37868,10 +37868,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13031000
-    Powder for sealant
-    13031000
+    "Powder for sealant"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a sealant."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for sealant
+  * ^designation[=].value = "Powder for sealant"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за тъканно лепило"
@@ -37950,10 +37950,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13032000
-    Powder for solution for skin-prick test
-    13032000
+    "Powder for solution for skin-prick test"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a solution for skin-prick test."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for solution for skin-prick test
+  * ^designation[=].value = "Powder for solution for skin-prick test"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за разтвор за кожно изпитване чрез убождане"
@@ -38035,10 +38035,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13033000
-    Solution for solution for injection
-    13033000
+    "Solution for solution for injection"
+    "Liquid sterile preparation consisting of a solution intended for use in the preparation of a solution for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for solution for injection
+  * ^designation[=].value = "Solution for solution for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за инжекционен разтвор"
@@ -38120,10 +38120,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13034000
-    Solution for spray
-    13034000
+    "Solution for spray"
+    "Liquid preparation consisting of a solution intended for use in the preparation of a spray."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for spray
+  * ^designation[=].value = "Solution for spray"
   
   * ^designation[+].language = #es-ES
   * ^designation[=].value = "Solución para pulverización"
@@ -38145,10 +38145,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13035000
-    Solvent for...
-    13035000
+    "Solvent for..."
+    "Liquid preparation consisting of an excipient that contains no active substances itself but is intended to be used in the preparation of a pharmaceutical product, e.g. for diluting/dissolving/dispersing the item(s) containing the active substance(s). The term is intended to cover all such excipients, with the particular specifications (e.g. sterility requirements) depending on the final product and its intended use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solvent for...
+  * ^designation[=].value = "Solvent for..."
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтворител за…"
@@ -38227,10 +38227,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13036000
-    Suspension for emulsion for injection
-    13036000
+    "Suspension for emulsion for injection"
+    "Liquid sterile preparation consisting of a suspension intended for use in the preparation of an emulsion for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension for emulsion for injection
+  * ^designation[=].value = "Suspension for emulsion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия за инжекционна емулсия"
@@ -38312,10 +38312,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13037000
-    Suspension for oral suspension
-    13037000
+    "Suspension for oral suspension"
+    "Liquid preparation consisting of a suspension intended for use in the preparation of an oral suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension for oral suspension
+  * ^designation[=].value = "Suspension for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия за перорална суспензия"
@@ -38397,10 +38397,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13038000
-    Suspension for spray
-    13038000
+    "Suspension for spray"
+    "Liquid preparation consisting of a suspension intended for use in the preparation of a spray."
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension for spray
+  * ^designation[=].value = "Suspension for spray"
   
   * ^designation[+].language = #es-ES
   * ^designation[=].value = "Suspensión para pulverización"
@@ -38422,10 +38422,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13039000
-    Suspension for suspension for injection
-    13039000
+    "Suspension for suspension for injection"
+    "Liquid sterile preparation consisting of a suspension intended for use in the preparation of a suspension for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension for suspension for injection
+  * ^designation[=].value = "Suspension for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия за инжекционна суспензия"
@@ -38510,10 +38510,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13040000
-    Powder for emulsion for injection
-    13040000
+    "Powder for emulsion for injection"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be mixed with the specified liquid to obtain an emulsion for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for emulsion for injection
+  * ^designation[=].value = "Powder for emulsion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инжекционна емулсия"
@@ -38595,10 +38595,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13041000
-    Endosinusial solution
-    13041000
+    "Endosinusial solution"
+    "Liquid preparation consisting of a solution intended to be administered to the sinuses to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Endosinusial solution
+  * ^designation[=].value = "Endosinusial solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за прилагане в синуси"
@@ -38677,10 +38677,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13042000
-    Epilesional solution
-    13042000
+    "Epilesional solution"
+    "Liquid sterile preparation consisting of a solution intended to be administered onto a lesion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Epilesional solution
+  * ^designation[=].value = "Epilesional solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Епилезиен разтвор"
@@ -38759,10 +38759,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13043000
-    Implantation paste
-    13043000
+    "Implantation paste"
+    "Semi-solid sterile preparation containing large proportions of solids finely dispersed in the basis, intended to be implanted in the body for release of the active substance(s) over an extended period of time, usually to obtain a systemic effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Implantation paste
+  * ^designation[=].value = "Implantation paste"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Паста за имплантиране"
@@ -38847,10 +38847,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13044000
-    Intraocular instillation solution
-    13044000
+    "Intraocular instillation solution"
+    "Liquid sterile preparation consisting of a solution intended to be instilled as drops into an internal part of the eye."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraocular instillation solution
+  * ^designation[=].value = "Intraocular instillation solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за вътреочно инстилиране"
@@ -38932,10 +38932,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13045000
-    Intravesical suspension
-    13045000
+    "Intravesical suspension"
+    "Liquid preparation consisting of a small-volume suspension intended for intravesical use by means of a suitable applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intravesical suspension
+  * ^designation[=].value = "Intravesical suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интравезикална суспензия"
@@ -39017,10 +39017,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13046000
-    Coated granules
-    13046000
+    "Coated granules"
+    "Solid preparation intended for oral use, consisting of granules coated with one or more layers of mixtures of various substances that are usually applied as a solution or suspension in conditions in which evaporation of the vehicle occurs. The thickness of the coating is greater than that of film-coated granules. When the coating dissolves or disintegrates any active substance is released into the gastrointestinal fluid at a rate depending essentially on its intrinsic properties (conventional release)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Coated granules
+  * ^designation[=].value = "Coated granules"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Обвити гранули"
@@ -39105,10 +39105,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13047000
-    Solution for suspension for injection
-    13047000
+    "Solution for suspension for injection"
+    "Liquid sterile preparation consisting of a solution intended for use in the preparation of a suspension for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for suspension for injection
+  * ^designation[=].value = "Solution for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за инжекционна суспензия"
@@ -39190,10 +39190,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13048000
-    Granules for suspension for injection
-    13048000
+    "Granules for suspension for injection"
+    "Solid sterile preparation consisting of granules intended to be dispersed in the specified liquid to obtain a suspension for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules for suspension for injection
+  * ^designation[=].value = "Granules for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули за инжекционна суспензия"
@@ -39275,10 +39275,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13049000
-    Dispersion for injection/infusion
-    13049000
+    "Dispersion for injection/infusion"
+    "Sterile liquid preparation consisting of two or more phases of which at least one is dispersed in the liquid phase, intended for administration by injection or infusion. To be used only when emulsion for injection/infusion is not appropriate. Solid suspension preparations are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dispersion for injection/infusion
+  * ^designation[=].value = "Dispersion for injection/infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна/инфузионна дисперсия"
@@ -39360,10 +39360,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13050000
-    Gas for dispersion for injection/infusion
-    13050000
+    "Gas for dispersion for injection/infusion"
+    "Sterile preparation consisting of a gas that is intended to be mixed with the specified liquid to obtain a dispersion of the gas in the liquid, which is intended for administration by injection or infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gas for dispersion for injection/infusion
+  * ^designation[=].value = "Gas for dispersion for injection/infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Газ за инжекционна/инфузионна дисперсия"
@@ -39445,10 +39445,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13051000
-    Solution for injection/skin-prick test
-    13051000
+    "Solution for injection/skin-prick test"
+    "Liquid sterile preparation consisting of a solution containing an allergen product intended for diagnostic use in a skin-prick test or as an injection (usually intraepidermal); it may also be licensed for immunotherapy treatment by injection (usually subcutaneous)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection/skin-prick test
+  * ^designation[=].value = "Solution for injection/skin-prick test"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен разтвор/ разтвор за кожно изпитване чрез убождане"
@@ -39533,10 +39533,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13052000
-    Powder for solution for injection/skin-prick test
-    13052000
+    "Powder for solution for injection/skin-prick test"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a solution for injection/skin-prick test."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for solution for injection/skin-prick test
+  * ^designation[=].value = "Powder for solution for injection/skin-prick test"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инжекционен разтвор/разтвор за кожно изпитване чрез убождане"
@@ -39624,10 +39624,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13054000
-    Solution for bee-hive strip
-    13054000
+    "Solution for bee-hive strip"
+    "Liquid preparation consisting of a solution intended for use in the preparation of a bee-hive strip by application to an absorbent matrix; the bee-hive strip is usually used immediately after preparation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for bee-hive strip
+  * ^designation[=].value = "Solution for bee-hive strip"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за лента за пчелен кошер"
@@ -39700,10 +39700,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13055000
-    Solution for use in drinking water/milk
-    13055000
+    "Solution for use in drinking water/milk"
+    "Solution for veterinary use, intended for administration by incorporation into the animal drinking water, milk or milk replacer. If direct oral administration to individual animals is also authorised, the method of administration, including any necessary dilution, is clearly described in the product information."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for use in drinking water/milk
+  * ^designation[=].value = "Solution for use in drinking water/milk"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за прилагане във вода за пиене/мляко"
@@ -39776,10 +39776,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13056000
-    Powder for solution for fish treatment
-    13056000
+    "Powder for solution for fish treatment"
+    "Powder to be used to produce a solution intended for the treatment of fish by immersion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for solution for fish treatment
+  * ^designation[=].value = "Powder for solution for fish treatment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за разтвор за третиране на риби"
@@ -39852,10 +39852,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13058000
-    Caplet
-    13058000
+    "Caplet"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Caplet
+  * ^designation[=].value = "Caplet"
   
   * ^designation[+].language = #da-DK
   * ^designation[=].value = "-"
@@ -39871,10 +39871,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13061000
-    Solution for solution for infusion
-    13061000
+    "Solution for solution for infusion"
+    "Liquid sterile preparation consisting of a solution intended for use in the preparation of a solution for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for solution for infusion
+  * ^designation[=].value = "Solution for solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за инфузионен разтвор"
@@ -39956,10 +39956,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13065000
-    Intramammary gel
-    13065000
+    "Intramammary gel"
+    "Semi-solid preparation for veterinary use consisting of a gel containing dissolved or dispersed active substance(s) intended for intramammary use. Intramammary gels are presented in intramammary syringes for use on one occasion only to introduce the gel into a single teat canal."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intramammary gel
+  * ^designation[=].value = "Intramammary gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрамамарен гел"
@@ -40035,10 +40035,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13066000
-    Tablet for cutaneous solution
-    13066000
+    "Tablet for cutaneous solution"
+    "Solid, usually single-dose preparation consisting of a tablet, usually uncoated, intended to be dissolved in the specified liquid to obtain a cutaneous solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet for cutaneous solution
+  * ^designation[=].value = "Tablet for cutaneous solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка за разтвор за кожа"
@@ -40117,10 +40117,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13067000
-    Lyophilisate for oral suspension
-    13067000
+    "Lyophilisate for oral suspension"
+    "Solid preparation for veterinary use consisting of a freeze-dried powder intended to be dispersed in the specified liquid to create an oral suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate for oral suspension
+  * ^designation[=].value = "Lyophilisate for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат за перорална суспензия"
@@ -40193,10 +40193,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13076000
-    Prolonged-release solution for injection
-    13076000
+    "Prolonged-release solution for injection"
+    "Liquid sterile preparation consisting of a solution intended for administration by injection; the active substance(s) are released over an extended period of time."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release solution for injection
+  * ^designation[=].value = "Prolonged-release solution for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен разтвор с удължено освобождаване"
@@ -40275,10 +40275,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13077000
-    Urethral emulsion
-    13077000
+    "Urethral emulsion"
+    "Liquid preparation consisting of an emulsion intended for urethral use by means of a suitable applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Urethral emulsion
+  * ^designation[=].value = "Urethral emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Уретрална емулсия"
@@ -40357,10 +40357,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13078000
-    Bee-hive solution
-    13078000
+    "Bee-hive solution"
+    "Liquid preparation intended for in-hive use, consisting of a solution from which the active substance(s) are released by vaporisation or physical contact usually over an extended period of time. The precise method of administration of the solution is described in the product information."
   * ^designation[0].language = #en
-  * ^designation[=].value = Bee-hive solution
+  * ^designation[=].value = "Bee-hive solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за пчелен кошер"
@@ -40430,10 +40430,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13079000
-    Powder for bee-hive solution
-    13079000
+    "Powder for bee-hive solution"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a bee-hive solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for bee-hive solution
+  * ^designation[=].value = "Powder for bee-hive solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за разтвор за пчелен кошер"
@@ -40503,10 +40503,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13080000
-    Solution for bee-hive solution
-    13080000
+    "Solution for bee-hive solution"
+    "Liquid preparation consisting of a solution intended for use in the preparation of a bee-hive solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for bee-hive solution
+  * ^designation[=].value = "Solution for bee-hive solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за разтвор за пчелен кошер"
@@ -40576,10 +40576,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13082000
-    Bee-hive dispersion
-    13082000
+    "Bee-hive dispersion"
+    "Liquid preparation intended for in-hive use, consisting of two or more phases, at least one of which is dispersed in the liquid phase, from which the active substance(s) are released by vaporisation or physical contact usually over an extended period of time. The precise method of administration of the dispersion is described in the product information."
   * ^designation[0].language = #en
-  * ^designation[=].value = Bee-hive dispersion
+  * ^designation[=].value = "Bee-hive dispersion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дисперсия за пчелен кошер"
@@ -40649,10 +40649,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13084000
-    Oral spray, suspension
-    13084000
+    "Oral spray, suspension"
+    "Liquid, usually multidose preparation for veterinary use consisting of a suspension intended for oral use. It is administered by spraying, including by spraying as coarse droplets over the animal(s), which then consume the product, for example during preening."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral spray, suspension
+  * ^designation[=].value = "Oral spray, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорален спрей, суспензия"
@@ -40725,10 +40725,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13085000
-    Concentrate for concentrate for oral spray, suspension
-    13085000
+    "Concentrate for concentrate for oral spray, suspension"
+    "Liquid preparation for veterinary use intended to be diluted in the specified liquid to obtain a concentrate for oral spray, suspension, which in turn is intended to be diluted in the specified liquid to obtain an oral spray, suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for concentrate for oral spray, suspension
+  * ^designation[=].value = "Concentrate for concentrate for oral spray, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за концентрат за перорален спрей, суспензия"
@@ -40795,10 +40795,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13087000
-    Oculonasal suspension
-    13087000
+    "Oculonasal suspension"
+    "Liquid, usually multidose preparation for veterinary use consisting of a suspension intended for oculonasal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oculonasal suspension
+  * ^designation[=].value = "Oculonasal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Очно-назална суспензия"
@@ -40871,10 +40871,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13089000
-    Lyophilisate for oral spray, suspension
-    13089000
+    "Lyophilisate for oral spray, suspension"
+    "Solid preparation for veterinary use consisting of a freeze-dried powder intended to be dispersed in the specified liquid to obtain an oral spray, suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate for oral spray, suspension
+  * ^designation[=].value = "Lyophilisate for oral spray, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат за перорален спрей, суспензия"
@@ -40947,10 +40947,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13091000
-    Emulsion for suspension for injection
-    13091000
+    "Emulsion for suspension for injection"
+    "Liquid sterile preparation consisting of an emulsion intended for use in the preparation of a suspension for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Emulsion for suspension for injection
+  * ^designation[=].value = "Emulsion for suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Емулсия за инжекционна суспензия"
@@ -41032,10 +41032,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13096000
-    Nasal spray, lyophilisate for suspension
-    13096000
+    "Nasal spray, lyophilisate for suspension"
+    "Solid preparation for veterinary use consisting of a freeze-dried powder intended to be dispersed in the specified liquid to obtain a nasal spray, suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal spray, lyophilisate for suspension
+  * ^designation[=].value = "Nasal spray, lyophilisate for suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за нос, лиофилизат за суспензия"
@@ -41102,10 +41102,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13098000
-    Lyophilisate for oculonasal suspension/use in drinking water
-    13098000
+    "Lyophilisate for oculonasal suspension/use in drinking water"
+    "Solid preparation for veterinary use consisting of a freeze-dried powder intended to be dispersed in the specified liquid to create a suspension for oculonasal use, or to be dispersed in the animal drinking water."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate for oculonasal suspension/use in drinking water
+  * ^designation[=].value = "Lyophilisate for oculonasal suspension/use in drinking water"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат за очно-назална суспензия/за прилагане във вода за пиене"
@@ -41172,10 +41172,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13099000
-    Powder for bee-hive dispersion
-    13099000
+    "Powder for bee-hive dispersion"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be mixed with the specified liquid to obtain a bee-hive dispersion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for bee-hive dispersion
+  * ^designation[=].value = "Powder for bee-hive dispersion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за дисперсия за пчелен кошер"
@@ -41242,10 +41242,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13100000
-    Solution for bee-hive dispersion
-    13100000
+    "Solution for bee-hive dispersion"
+    "Liquid preparation consisting of a solution intended for use in the preparation of a bee-hive dispersion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for bee-hive dispersion
+  * ^designation[=].value = "Solution for bee-hive dispersion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за дисперсия за пчелен кошер"
@@ -41312,10 +41312,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13102000
-    Transdermal ointment
-    13102000
+    "Transdermal ointment"
+    "Semi-solid single-dose or multidose preparation consisting of a single-phase basis in which solids or liquids may be dispersed. Active substance(s) are dissolved or dispersed in the basis, which may be hydrophilic, hydrophobic or water-emulsifying. Transdermal ointments are intended for transdermal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Transdermal ointment
+  * ^designation[=].value = "Transdermal ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Трансдермална маз"
@@ -41397,10 +41397,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13105000
-    Sublingual powder
-    13105000
+    "Sublingual powder"
+    "Solid preparation consisting of a powder intended for sublingual use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sublingual powder
+  * ^designation[=].value = "Sublingual powder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сублингвален прах"
@@ -41482,10 +41482,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13106000
-    Oral herbal material
-    13106000
+    "Oral herbal material"
+    "Solid preparation consisting of whole, broken or fragmented plants or parts of plants in an unprocessed state (herbal drug), intended for oral use without requiring transformation (e.g. dissolution or dispersion in water); the material may be dried or fresh, and may be chewed before being swallowed. The word ‘plant’ is used in the broader sense to include also algae, fungi and lichens. Certain exudates that have not been subjected to a specific treatment may be included. Herbal teas and instant herbal teas are excluded, as are preparations that are processed or formulated into capsules, granules, powders, etc."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral herbal material
+  * ^designation[=].value = "Oral herbal material"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорален растителен материал"
@@ -41561,10 +41561,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13107000
-    Solution for cardioplegia/organ preservation
-    13107000
+    "Solution for cardioplegia/organ preservation"
+    "Liquid sterile preparation consisting of an aqueous solution of electrolytes typically at a concentration close to the intracellular electrolyte composition, intended for inducing cardiac arrest during heart surgery, and for storage, protection and/or perfusion of mammalian body organs that are in particular destined for transplantation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for cardioplegia/organ preservation
+  * ^designation[=].value = "Solution for cardioplegia/organ preservation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за кардиоплегия/съхраняване на орган"
@@ -41640,10 +41640,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13111000
-    Powder for vaginal solution
-    13111000
+    "Powder for vaginal solution"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a vaginal solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for vaginal solution
+  * ^designation[=].value = "Powder for vaginal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за вагинален разтвор"
@@ -41722,10 +41722,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13113000
-    Intrauterine gel
-    13113000
+    "Intrauterine gel"
+    "Semi-solid preparation consisting of a gel intended for intrauterine use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrauterine gel
+  * ^designation[=].value = "Intrauterine gel"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вътрематочен гел"
@@ -41804,10 +41804,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13115000
-    Medicinal leech
-    13115000
+    "Medicinal leech"
+    "Whole, live, medicinal leech, usually of the Hirudo genus (e.g. Hirudo medicinalis, Hirudo verbana), usually intended to be applied to the skin in order to restore or improve local blood flow or to provide other local effects. After attaching itself to the host, the leech creates an incision in the skin and secretes saliva containing a variety of active substances (e.g. anaesthetics, anticoagulants, anti-inflammatories, vasodilators) that allow it to feed on the blood of the host."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicinal leech
+  * ^designation[=].value = "Medicinal leech"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Медицинска пиявица"
@@ -41880,10 +41880,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13116000
-    Lyophilisate for emulsion for injection
-    13116000
+    "Lyophilisate for emulsion for injection"
+    "Solid sterile preparation for veterinary use consisting of a freeze-dried powder intended to be mixed with the specified liquid to obtain an emulsion for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate for emulsion for injection
+  * ^designation[=].value = "Lyophilisate for emulsion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат за инжекционна емулсия"
@@ -41950,10 +41950,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13118000
-    Tablet with sensor
-    13118000
+    "Tablet with sensor"
+    "Solid single-dose preparation consisting of a tablet intended for oral use, in which one or more ingestible sensors are embedded. The sensor is usually not digested, and is usually intended for use with external diagnostic equipment to which it can transmit data such as physiological and behavioural measurements."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet with sensor
+  * ^designation[=].value = "Tablet with sensor"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка със сензор"
@@ -42029,10 +42029,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13123000
-    Urethral ointment
-    13123000
+    "Urethral ointment"
+    "Semi-solid preparation consisting of an ointment intended for urethral use by means of a suitable applicator."
   * ^designation[0].language = #en
-  * ^designation[=].value = Urethral ointment
+  * ^designation[=].value = "Urethral ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Уретрална маз"
@@ -42099,10 +42099,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13124000
-    Medicinal larvae
-    13124000
+    "Medicinal larvae"
+    "Whole, live, medicinal larvae, usually of a species of fly such as Lucilla sericata (common greenbottle fly), provided in an appropriate container such as a mesh bag, intended to be applied to a wound and covered with an appropriate dressing in order to allow debridement of necrotic tissue over a specified period of time (usually a few days). The larvae secrete enzymes into the wound, liquefying the necrotic tissue, and ingest the resulting material."
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicinal larvae
+  * ^designation[=].value = "Medicinal larvae"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Медицинска ларва"
@@ -42169,10 +42169,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13126000
-    Prolonged-release dispersion for injection
-    13126000
+    "Prolonged-release dispersion for injection"
+    "Liquid sterile preparation consisting of two or more phases of which at least one is dispersed in the liquid phase, intended for administration by injection; the active substance(s) are released over an extended period of time. To be used only when 'Prolonged-release emulsion for injection' is not appropriate. Solid suspension preparations are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release dispersion for injection
+  * ^designation[=].value = "Prolonged-release dispersion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна дисперсия с удължено освобождаване"
@@ -42242,10 +42242,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13127000
-    Sublingual lyophilisate
-    13127000
+    "Sublingual lyophilisate"
+    "Solid single-dose preparation made by freeze-drying of a liquid or semi-solid preparation, intended for sublingual use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Sublingual lyophilisate
+  * ^designation[=].value = "Sublingual lyophilisate"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сублингвален лиофилизат"
@@ -42321,10 +42321,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13128000
-    Prolonged-release wound solution
-    13128000
+    "Prolonged-release wound solution"
+    "Liquid sterile preparation consisting of a solution intended to be administered onto a wound, including surgical wounds; the active substance(s) are released over an extended period of time."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release wound solution
+  * ^designation[=].value = "Prolonged-release wound solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за рани с удължено освобождаване"
@@ -42391,10 +42391,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13129000
-    Nebuliser dispersion
-    13129000
+    "Nebuliser dispersion"
+    "Liquid preparation consisting of a dispersion intended for inhalation use. The dispersion is converted into an aerosol by a continuously operating nebuliser or a metered-dose nebuliser."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nebuliser dispersion
+  * ^designation[=].value = "Nebuliser dispersion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дисперсия за небулизатор"
@@ -42464,10 +42464,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13133000
-    Gastro-resistant oral suspension
-    13133000
+    "Gastro-resistant oral suspension"
+    "Liquid single-dose or multidose, delayed-release preparation consisting of a suspension intended for oral use. The preparation is intended to resist the gastric fluid and release the active substance(s) in the intestinal fluid. Each dose from a multidose container is administered by means of a device suitable for measuring the prescribed volume, generally 5 mL or multiples thereof."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastro-resistant oral suspension
+  * ^designation[=].value = "Gastro-resistant oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-устойчива перорална суспензия"
@@ -42531,10 +42531,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13134000
-    Prolonged-release oral suspension
-    13134000
+    "Prolonged-release oral suspension"
+    "Liquid single-dose or multidose preparation consisting of a suspension intended for oral use, showing a slower release of the active substance(s) than that of a conventional-release oral suspension. This deliberate modification is achieved by a special formulation design and/or manufacturing method. Each dose from a multidose container is administered by means of a device suitable for measuring the prescribed volume, generally 5 mL or multiples thereof."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release oral suspension
+  * ^designation[=].value = "Prolonged-release oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорална суспензия с удължено освобождаване"
@@ -42598,10 +42598,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13135000
-    Modified-release oral suspension
-    13135000
+    "Modified-release oral suspension"
+    "Liquid single-dose or multidose preparation consisting of a suspension intended for oral use, showing a rate, a place and/or a time of release of the active substance(s) that is different from that of a conventional-release oral suspension. This deliberate modification is achieved by a special formulation design and/or manufacturing method. The generic term 'Modified-release oral suspension' is used only when the more-specific terms 'Gastro-resistant oral suspension' or 'Prolonged-release oral suspension' do not apply. Each dose from a multidose container is administered by means of a device suitable for measuring the prescribed volume, generally 5 mL or multiples thereof."
   * ^designation[0].language = #en
-  * ^designation[=].value = Modified-release oral suspension
+  * ^designation[=].value = "Modified-release oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорална суспензия с изменено освобождаване"
@@ -42665,10 +42665,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13136000
-    Gastro-resistant powder for oral suspension
-    13136000
+    "Gastro-resistant powder for oral suspension"
+    "Solid preparation consisting of a gastro-resistant powder intended to be dispersed in the specified liquid to obtain a gastro-resistant oral suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastro-resistant powder for oral suspension
+  * ^designation[=].value = "Gastro-resistant powder for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-устойчив прах за перорална суспензия"
@@ -42732,10 +42732,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13139000
-    Concentrate for dispersion for injection
-    13139000
+    "Concentrate for dispersion for injection"
+    "Liquid sterile preparation intended to be diluted in the specified liquid to obtain a dispersion for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for dispersion for injection
+  * ^designation[=].value = "Concentrate for dispersion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за инжекционна дисперсия"
@@ -42799,10 +42799,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13140000
-    Cutaneous/oromucosal solution
-    13140000
+    "Cutaneous/oromucosal solution"
+    "Non-sterile, liquid preparation consisting of a solution intended for cutaneous or oromucosal use; it is not intended for use on injured skin."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous/oromucosal solution
+  * ^designation[=].value = "Cutaneous/oromucosal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за кожа/устна лигавица"
@@ -42869,10 +42869,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13141000
-    Oromucosal pouch
-    13141000
+    "Oromucosal pouch"
+    "Solid single-dose preparation consisting of a small bag made of a suitable material containing a preparation such as a powder; it is intended to be placed in the oral cavity to obtain either a systemic or a local effect by delivering the active substance(s) over a certain period of time, after which it is then removed."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal pouch
+  * ^designation[=].value = "Oromucosal pouch"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Торбичка за устна лигавица"
@@ -42930,10 +42930,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13145000
-    Impregnated cutaneous swab
-    13145000
+    "Impregnated cutaneous swab"
+    "Solid preparation consisting of a piece of absorbent material impregnated usually with a liquid preparation, intended to be applied to the skin for a limited period of time with one or more wiping motions, and which may be attached to an application device such as a stick. Impregnated pad is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Impregnated cutaneous swab
+  * ^designation[=].value = "Impregnated cutaneous swab"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Импрегниран тампон за кожа"
@@ -42988,10 +42988,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13148000
-    Prolonged-release pessary
-    13148000
+    "Prolonged-release pessary"
+    "Solid, single-dose preparation usually prepared by moulding, of various shapes, usually ovoid, with a volume and consistency suitable for insertion into the vagina to obtain a local effect. It contains one or more active substances dispersed or dissolved in a suitable basis that may be soluble or dispersible in water or may melt at body temperature. It shows a slower release of the active substance(s) than that of a conventional-release pessary. Prolonged release is achieved by a special formulation design and/or manufacturing method."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release pessary
+  * ^designation[=].value = "Prolonged-release pessary"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Песар с удължено освобождаване"
@@ -43052,10 +43052,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13149000
-    Oromucosal film
-    13149000
+    "Oromucosal film"
+    "Solid preparation consisting of a single- or multilayer sheet of suitable material(s) intended for oromucosal use. It is applied to the oral cavity or onto specific parts of the oral cavity, usually to obtain a systemic effect. Where a preparation is intended for use only at a single specific part of the oral cavity, the appropriate specific term (e.g. Buccal film, Sublingual film) is used instead."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal film
+  * ^designation[=].value = "Oromucosal film"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Филм за устна лигавица"
@@ -43122,10 +43122,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13152000
-    Concentrate for emulsion for injection
-    13152000
+    "Concentrate for emulsion for injection"
+    "Liquid sterile preparation intended to be diluted in the specified liquid in order to obtain an emulsion for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for emulsion for injection
+  * ^designation[=].value = "Concentrate for emulsion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за инжекционна емулсия"
@@ -43177,10 +43177,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13154000
-    Film-coated granules
-    13154000
+    "Film-coated granules"
+    "Solid preparation intended for oral use, consisting of granules coated with a thin polymeric film that dissolves within a few minutes in the gastrointestinal fluid. Film-coated granules are intended for oral use to release active substance(s) at a rate that is not significantly delayed compared to that of the uncoated granules."
   * ^designation[0].language = #en
-  * ^designation[=].value = Film-coated granules
+  * ^designation[=].value = "Film-coated granules"
   
   * ^designation[+].language = #cs-CZ
   * ^designation[=].value = "Potahované granule"
@@ -43223,10 +43223,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13158000
-    Effervescent tablet for oculonasal suspension
-    13158000
+    "Effervescent tablet for oculonasal suspension"
+    "Solid preparation for veterinary use consisting of an effervescent tablet intended to be dispersed in the specified liquid to create an oculonasal suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Effervescent tablet for oculonasal suspension
+  * ^designation[=].value = "Effervescent tablet for oculonasal suspension"
   
   * ^designation[+].language = #cs-CZ
   * ^designation[=].value = "Šumivá tableta pro okulonazální suspenzi"
@@ -43254,10 +43254,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13159000
-    Eye drops, prolonged-release solution
-    13159000
+    "Eye drops, prolonged-release solution"
+    "Liquid sterile single-dose or multidose preparation consisting of an aqueous or oily solution intended for ocular use; the active substance(s) are released over an extended period of time. Multidose preparations are presented in containers that allow successive drops to be administered. The containers contain usually at most 10 mL of the preparation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, prolonged-release solution
+  * ^designation[=].value = "Eye drops, prolonged-release solution"
   
   * ^designation[+].language = #cs-CZ
   * ^designation[=].value = "Oční kapky, roztok s prodlouženým uvolňováním"
@@ -43288,10 +43288,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13162000
-    Concentrate for cutaneous emulsion
-    13162000
+    "Concentrate for cutaneous emulsion"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain a cutaneous emulsion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for cutaneous emulsion
+  * ^designation[=].value = "Concentrate for cutaneous emulsion"
   
   * ^designation[+].language = #et-EE
   * ^designation[=].value = "Nahaemulsiooni kontsentraat"
@@ -43316,10 +43316,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #13163000
-    Granules for use in drinking water/milk
-    13163000
+    "Granules for use in drinking water/milk"
+    "Solid preparation for veterinary use consisting of granules intended to be dissolved in the animal drinking water, milk or milk replacer. If alternative methods of administration to individual animals are also authorised, the method of administration is clearly described in the product information."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules for use in drinking water/milk
+  * ^designation[=].value = "Granules for use in drinking water/milk"
   
   * ^designation[+].language = #et-EE
   * ^designation[=].value = "Graanulid joogivees/piimas manustamiseks"
@@ -43329,10 +43329,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #30047500
-    Pouch
-    30047500
+    "Pouch"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Pouch
+  * ^designation[=].value = "Pouch"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Торбичка"
@@ -43423,10 +43423,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50001000
-    Chewable/dispersible tablet
-    50001000
+    "Chewable/dispersible tablet"
+    "Solid single-dose preparation consisting of an uncoated tablet intended either to be chewed before being swallowed, or to be dispersed in the specified liquid before being swallowed."
   * ^designation[0].language = #en
-  * ^designation[=].value = Chewable/dispersible tablet
+  * ^designation[=].value = "Chewable/dispersible tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка за дъвчене/диспергираща се таблетка"
@@ -43529,10 +43529,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50009000
-    Concentrate for cutaneous spray, emulsion
-    50009000
+    "Concentrate for cutaneous spray, emulsion"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain a cutaneous spray emulsion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for cutaneous spray, emulsion
+  * ^designation[=].value = "Concentrate for cutaneous spray, emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за спрей за кожа, емулсия"
@@ -43632,10 +43632,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50009300
-    Concentrate for dispersion for infusion
-    50009300
+    "Concentrate for dispersion for infusion"
+    "Liquid sterile preparation intended to be diluted in the specified liquid to obtain a dispersion for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for dispersion for infusion
+  * ^designation[=].value = "Concentrate for dispersion for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за инфузионна дисперсия"
@@ -43729,10 +43729,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50009500
-    Concentrate for emulsion for infusion
-    50009500
+    "Concentrate for emulsion for infusion"
+    "Liquid sterile preparation intended to be diluted in the specified liquid to obtain an emulsion for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for emulsion for infusion
+  * ^designation[=].value = "Concentrate for emulsion for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за инфузионна емулсия"
@@ -43826,10 +43826,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50009750
-    Concentrate for intravesical solution
-    50009750
+    "Concentrate for intravesical solution"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain an intravesical solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for intravesical solution
+  * ^designation[=].value = "Concentrate for intravesical solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за интравезикален разтвор"
@@ -43920,10 +43920,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50010000
-    Concentrate for oral solution
-    50010000
+    "Concentrate for oral solution"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain an oral solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for oral solution
+  * ^designation[=].value = "Concentrate for oral solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за перорален разтвор"
@@ -44023,10 +44023,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50011000
-    Concentrate for oral/rectal solution
-    50011000
+    "Concentrate for oral/rectal solution"
+    "Liquid preparation intended to be diluted in the specified liquid to obtain an oral/rectal solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for oral/rectal solution
+  * ^designation[=].value = "Concentrate for oral/rectal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за перорален/ректален разтвор"
@@ -44126,10 +44126,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50012000
-    Concentrate for peritoneal dialysis solution
-    50012000
+    "Concentrate for peritoneal dialysis solution"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for peritoneal dialysis solution
+  * ^designation[=].value = "Concentrate for peritoneal dialysis solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за разтвор за перитонеална диализа"
@@ -44214,10 +44214,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50013000
-    Concentrate for solution for intravesical use
-    50013000
+    "Concentrate for solution for intravesical use"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for solution for intravesical use
+  * ^designation[=].value = "Concentrate for solution for intravesical use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за разтвор за интравезикално приложение"
@@ -44302,10 +44302,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50013250
-    Concentrate for solution for peritoneal dialysis
-    50013250
+    "Concentrate for solution for peritoneal dialysis"
+    "Liquid sterile preparation intended to be diluted in the specified liquid to obtain a solution for peritoneal dialysis."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for solution for peritoneal dialysis
+  * ^designation[=].value = "Concentrate for solution for peritoneal dialysis"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за разтвор за перитонеална диализа"
@@ -44396,10 +44396,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50013500
-    Concentrate for spray emulsion
-    50013500
+    "Concentrate for spray emulsion"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for spray emulsion
+  * ^designation[=].value = "Concentrate for spray emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за спрей, емулсия"
@@ -44484,10 +44484,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50014000
-    Concentrate for suspension for infusion
-    50014000
+    "Concentrate for suspension for infusion"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for suspension for infusion
+  * ^designation[=].value = "Concentrate for suspension for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за инфузионна суспензия"
@@ -44572,10 +44572,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50015000
-    Cutaneous and nasal ointment
-    50015000
+    "Cutaneous and nasal ointment"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous and nasal ointment
+  * ^designation[=].value = "Cutaneous and nasal ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Маз за прилагане върху кожата и в носа"
@@ -44660,10 +44660,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50015100
-    Cutaneous/ear drops suspension
-    50015100
+    "Cutaneous/ear drops suspension"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous/ear drops suspension
+  * ^designation[=].value = "Cutaneous/ear drops suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -44697,10 +44697,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50015200
-    Cutaneous/nasal ointment
-    50015200
+    "Cutaneous/nasal ointment"
+    "Semi-solid preparation consisting of an ointment intended for cutaneous or nasal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous/nasal ointment
+  * ^designation[=].value = "Cutaneous/nasal ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Маз за кожа/нос"
@@ -44788,10 +44788,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50015300
-    Cutaneous/oromucosal/oral solution
-    50015300
+    "Cutaneous/oromucosal/oral solution"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous/oromucosal/oral solution
+  * ^designation[=].value = "Cutaneous/oromucosal/oral solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -44831,10 +44831,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50015400
-    Cutaneous/oromucosal spray
-    50015400
+    "Cutaneous/oromucosal spray"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous/oromucosal spray
+  * ^designation[=].value = "Cutaneous/oromucosal spray"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -44874,10 +44874,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50015450
-    Cutaneous solution/concentrate for oromucosal solution
-    50015450
+    "Cutaneous solution/concentrate for oromucosal solution"
+    "Liquid preparation consisting of a solution intended for cutaneous use or intended to be diluted in the specified liquid to obtain an oromucosal solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous solution/concentrate for oromucosal solution
+  * ^designation[=].value = "Cutaneous solution/concentrate for oromucosal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за кожа/концентрат за разтвор за устна лигавицa"
@@ -44965,10 +44965,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50015500
-    Cutaneous spray, emulsion
-    50015500
+    "Cutaneous spray, emulsion"
+    "Liquid preparation, usually multidose, consisting of an emulsion in a pressurised container with a spray valve or in a container equipped with a spray pump, intended for cutaneous use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous spray, emulsion
+  * ^designation[=].value = "Cutaneous spray, emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за кожа, емулсия"
@@ -45062,10 +45062,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50016000
-    Cutaneous spray, ointment
-    50016000
+    "Cutaneous spray, ointment"
+    "Ointment formed at the time of administration from a liquid preparation in a pressurised container with a spray valve or in a container equipped with a spray pump."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous spray, ointment
+  * ^designation[=].value = "Cutaneous spray, ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за кожа, маз"
@@ -45165,10 +45165,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50017000
-    Dental paste
-    50017000
+    "Dental paste"
+    "Semi-solid single-dose or multidose preparation consisting of solid particles finely dispersed in a suitable basis, intended for administration on or inside the tooth or on and/or around the nerves supplying the teeth. Toothpaste is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dental paste
+  * ^designation[=].value = "Dental paste"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дентална паста"
@@ -45268,10 +45268,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50017500
-    Dispersion for infusion
-    50017500
+    "Dispersion for infusion"
+    "Liquid sterile preparation consisting of two or more phases of which at least one is dispersed in the liquid phase, intended to be introduced, usually in large volumes, usually into the circulating blood stream. To be used only when emulsion for infusion is not appropriate. Solid suspension preparations are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dispersion for infusion
+  * ^designation[=].value = "Dispersion for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инфузионна дисперсия"
@@ -45362,10 +45362,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50018000
-    Ear/eye drops, solution
-    50018000
+    "Ear/eye drops, solution"
+    "Liquid sterile preparation consisting of a solution intended for use as ear drops or eye drops."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear/eye drops, solution
+  * ^designation[=].value = "Ear/eye drops, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за уши/очи, разтвор"
@@ -45468,10 +45468,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50018500
-    Ear/eye drops, suspension
-    50018500
+    "Ear/eye drops, suspension"
+    "Liquid sterile preparation consisting of a suspension intended for use as ear drops or eye drops."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear/eye drops, suspension
+  * ^designation[=].value = "Ear/eye drops, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за уши/очи, суспензия"
@@ -45562,10 +45562,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50019000
-    Ear/eye ointment
-    50019000
+    "Ear/eye ointment"
+    "Semi-solid preparation consisting of an ointment intended for auricular or ocular use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear/eye ointment
+  * ^designation[=].value = "Ear/eye ointment"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Маз за уши/очи"
@@ -45668,10 +45668,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50019500
-    Ear/eye/nasal drops, solution
-    50019500
+    "Ear/eye/nasal drops, solution"
+    "Liquid sterile preparation consisting of a solution intended for use as ear drops, eye drops or nasal drops."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear/eye/nasal drops, solution
+  * ^designation[=].value = "Ear/eye/nasal drops, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за уши/очи/нос, разтвор"
@@ -45762,10 +45762,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50020000
-    Ear/eye/nose drops, solution
-    50020000
+    "Ear/eye/nose drops, solution"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear/eye/nose drops, solution
+  * ^designation[=].value = "Ear/eye/nose drops, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за уши/очи/нос, разтвор"
@@ -45853,10 +45853,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50020200
-    Ear/nasal drops, suspension
-    50020200
+    "Ear/nasal drops, suspension"
+    "Liquid preparation consisting of a suspension intended for use as ear drops or nasal drops."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear/nasal drops, suspension
+  * ^designation[=].value = "Ear/nasal drops, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за уши/нос, суспензия"
@@ -45944,10 +45944,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50020500
-    Effervescent buccal tablet
-    50020500
+    "Effervescent buccal tablet"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Effervescent buccal tablet
+  * ^designation[=].value = "Effervescent buccal tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -45987,10 +45987,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50021000
-    Emulsion for injection/infusion
-    50021000
+    "Emulsion for injection/infusion"
+    "Liquid sterile single-dose or multidose preparation consisting of an emulsion intended for administration by injection or infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Emulsion for injection/infusion
+  * ^designation[=].value = "Emulsion for injection/infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна/инфузионна емулсия"
@@ -46093,10 +46093,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50022000
-    Endosinusial wash, suspension
-    50022000
+    "Endosinusial wash, suspension"
+    "Liquid preparation consisting of a suspension intended for cleaning the sinuses."
   * ^designation[0].language = #en
-  * ^designation[=].value = Endosinusial wash, suspension
+  * ^designation[=].value = "Endosinusial wash, suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия за промивка на синуси"
@@ -46196,10 +46196,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50023500
-    Film coated gastro-resistant tablet
-    50023500
+    "Film coated gastro-resistant tablet"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Film coated gastro-resistant tablet
+  * ^designation[=].value = "Film coated gastro-resistant tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -46236,10 +46236,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50024000
-    Gargle/mouthwash
-    50024000
+    "Gargle/mouthwash"
+    "Liquid preparation consisting of a solution intended for use as a gargle or a mouthwash."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gargle/mouthwash
+  * ^designation[=].value = "Gargle/mouthwash"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гаргара/Промивка за уста"
@@ -46342,10 +46342,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50024500
-    Gargle/nasal wash
-    50024500
+    "Gargle/nasal wash"
+    "Liquid preparation consisting of a solution intended for use as a gargle or a nasal wash."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gargle/nasal wash
+  * ^designation[=].value = "Gargle/nasal wash"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гаргара/промивка за нос"
@@ -46436,10 +46436,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50025000
-    Gastro-resistant coated tablet
-    50025000
+    "Gastro-resistant coated tablet"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastro-resistant coated tablet
+  * ^designation[=].value = "Gastro-resistant coated tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-устойчива обвита таблетка"
@@ -46527,10 +46527,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50026000
-    Gastro-resistant granules for oral suspension
-    50026000
+    "Gastro-resistant granules for oral suspension"
+    "Solid preparation consisting of gastro-resistant granules intended to be dispersed in the specified liquid to obtain a gastro-resistant oral suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastro-resistant granules for oral suspension
+  * ^designation[=].value = "Gastro-resistant granules for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-устойчиви гранули за перорална суспензия"
@@ -46633,10 +46633,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50026250
-    Gastro-resistant prolonged-release tablet
-    50026250
+    "Gastro-resistant prolonged-release tablet"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastro-resistant prolonged-release tablet
+  * ^designation[=].value = "Gastro-resistant prolonged-release tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -46691,10 +46691,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50028000
-    Granules for oral and rectal suspension
-    50028000
+    "Granules for oral and rectal suspension"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules for oral and rectal suspension
+  * ^designation[=].value = "Granules for oral and rectal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули за перорална и ректална суспензия"
@@ -46779,10 +46779,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50029000
-    Granules for oral drops, solution
-    50029000
+    "Granules for oral drops, solution"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules for oral drops, solution
+  * ^designation[=].value = "Granules for oral drops, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за гранули за перорални капки"
@@ -46870,10 +46870,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50029150
-    Granules for oral/rectal suspension
-    50029150
+    "Granules for oral/rectal suspension"
+    "Solid preparation consisting of granules intended to be dispersed in the specified liquid to obtain an oral/rectal suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules for oral/rectal suspension
+  * ^designation[=].value = "Granules for oral/rectal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули за перорална/ректална суспензия"
@@ -46964,10 +46964,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50029250
-    Granules for use in drinking water
-    50029250
+    "Granules for use in drinking water"
+    "Solid preparation for veterinary use consisting of granules intended to be dissolved in the animal drinking water. If alternative methods of administration to individual animals are also authorised, the method of administration is clearly described in the product information."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules for use in drinking water
+  * ^designation[=].value = "Granules for use in drinking water"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули за прилагане във вода за пиене"
@@ -47055,10 +47055,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50029500
-    Granules for vaginal solution
-    50029500
+    "Granules for vaginal solution"
+    "Solid preparation consisting of aggregated particles that may include excipients to facilitate wetting and dissolution, intended to be dissolved in the specified liquid to obtain a vaginal solution, which is usually prepared just before administration to the patient."
   * ^designation[0].language = #en
-  * ^designation[=].value = Granules for vaginal solution
+  * ^designation[=].value = "Granules for vaginal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули за вагинален разтвор"
@@ -47149,10 +47149,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50029600
-    Hard capsule with gastro-resistant pellets
-    50029600
+    "Hard capsule with gastro-resistant pellets"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Hard capsule with gastro-resistant pellets
+  * ^designation[=].value = "Hard capsule with gastro-resistant pellets"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -47189,10 +47189,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50029800
-    Inhalation impregnated pad
-    50029800
+    "Inhalation impregnated pad"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation impregnated pad
+  * ^designation[=].value = "Inhalation impregnated pad"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Импрегниран тампон за инхалация"
@@ -47232,10 +47232,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50030000
-    Inhalation powder, tablet
-    50030000
+    "Inhalation powder, tablet"
+    "Solid multidose preparation intended for inhalation use. The dose of inhalation powder is generated from the tablet by a metering mechanism within the inhaler, for example by scraping off a small amount of powder from the tablet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation powder, tablet
+  * ^designation[=].value = "Inhalation powder, tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инхалация, таблетка"
@@ -47335,10 +47335,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50031000
-    Inhalation vapour, effervescent tablet
-    50031000
+    "Inhalation vapour, effervescent tablet"
+    "Solid preparation consisting of a tablet usually containing acid substances and carbonates or hydrogen carbonates that react rapidly in the presence of aqueous liquid to release carbon dioxide, intended for generation of vapour to be inhaled to obtain a local effect. The vapour may be generated by adding the tablet to hot water."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation vapour, effervescent tablet
+  * ^designation[=].value = "Inhalation vapour, effervescent tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ефервесцентна таблетка за инхалация с пара"
@@ -47438,10 +47438,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50032000
-    Inhalation vapour, emulsion
-    50032000
+    "Inhalation vapour, emulsion"
+    "Liquid preparation consisting of an emulsion intended for generation of vapour to be inhaled to obtain a local effect. The vapour may be generated by adding the emulsion to hot water."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation vapour, emulsion
+  * ^designation[=].value = "Inhalation vapour, emulsion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Емулсия за инхалация с пара"
@@ -47541,10 +47541,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50033000
-    Inhalation vapour, impregnated pad
-    50033000
+    "Inhalation vapour, impregnated pad"
+    "Solid preparation consisting of a piece of absorbent material impregnated usually with a liquid or semi-solid preparation, intended for generation of vapour to be inhaled to obtain a local effect."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation vapour, impregnated pad
+  * ^designation[=].value = "Inhalation vapour, impregnated pad"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Импрегниран компрес за инхалация с пара"
@@ -47641,10 +47641,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50033100
-    Inhalation vapour, impregnated plug
-    50033100
+    "Inhalation vapour, impregnated plug"
+    "Solid preparation consisting of an impregnated plug that generates a vapour to be inhaled, for example by the patient inhaling through a device containing the plug, thereby drawing air through or over it and vaporising the active ingredient(s) impregnated therein."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation vapour, impregnated plug
+  * ^designation[=].value = "Inhalation vapour, impregnated plug"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Импрегниран пълнител за инхалация с пара"
@@ -47729,10 +47729,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50033300
-    Intrauterine foam
-    50033300
+    "Intrauterine foam"
+    "Liquid preparation for veterinary use, usually presented in a pressurised container provided with an applicator suitable for delivery to the uterus of foam containing large volumes of gas dispersed in a liquid containing the active substance(s)."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrauterine foam
+  * ^designation[=].value = "Intrauterine foam"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вътрематочна пяна"
@@ -47820,10 +47820,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50033400
-    Intravesical solution/solution for injection
-    50033400
+    "Intravesical solution/solution for injection"
+    "Liquid sterile preparation consisting of a solution intended for intravesical use or for administration by injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intravesical solution/solution for injection
+  * ^designation[=].value = "Intravesical solution/solution for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интравезикален/инжекционен разтвор"
@@ -47911,10 +47911,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50034000
-    Liquefied gas for dental use
-    50034000
+    "Liquefied gas for dental use"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Liquefied gas for dental use
+  * ^designation[=].value = "Liquefied gas for dental use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Втечнен газ за дентално приложение"
@@ -48005,10 +48005,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50034700
-    Lyophilisate for use in drinking water
-    50034700
+    "Lyophilisate for use in drinking water"
+    "Solid preparation for veterinary use consisting of a freeze-dried powder intended to be dissolved in the animal drinking water. If alternative methods of administration to individual animals are also authorised, the method of administration is clearly described in the product information."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lyophilisate for use in drinking water
+  * ^designation[=].value = "Lyophilisate for use in drinking water"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Лиофилизат за прилагане във вода за пиене"
@@ -48090,10 +48090,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50035000
-    Modified-release film-coated tablet
-    50035000
+    "Modified-release film-coated tablet"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Modified-release film-coated tablet
+  * ^designation[=].value = "Modified-release film-coated tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Филмирани таблетки с изменено освобождаване"
@@ -48181,10 +48181,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50036000
-    Modified-release granules for oral suspension
-    50036000
+    "Modified-release granules for oral suspension"
+    "Solid preparation consisting of modified-release granules intended to be dispersed in the specified liquid to obtain a modified-release oral suspension. The generic term 'Modified-release granules for oral suspension' is used only when the more-specific terms 'Gastro-resistant granules for oral suspension' or 'Prolonged-release granules for oral suspension' do not apply."
   * ^designation[0].language = #en
-  * ^designation[=].value = Modified-release granules for oral suspension
+  * ^designation[=].value = "Modified-release granules for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули за перорална суспензия с изменено освобождаване"
@@ -48284,10 +48284,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50036050
-    Mouthwash, powder for solution
-    50036050
+    "Mouthwash, powder for solution"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a mouthwash."
   * ^designation[0].language = #en
-  * ^designation[=].value = Mouthwash, powder for solution
+  * ^designation[=].value = "Mouthwash, powder for solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Промивка за уста, прах за разтвор"
@@ -48375,10 +48375,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50036100
-    Muco-adhesive buccal prolonged-release tablet
-    50036100
+    "Muco-adhesive buccal prolonged-release tablet"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Muco-adhesive buccal prolonged-release tablet
+  * ^designation[=].value = "Muco-adhesive buccal prolonged-release tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -48412,10 +48412,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50036500
-    Nasal/oromucosal solution
-    50036500
+    "Nasal/oromucosal solution"
+    "Liquid preparation consisting of a solution intended for nasal or oromucosal application. 'Nasal/oromucosal spray, solution' and 'Nasal spray, solution/oromucosal solution' are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal/oromucosal solution
+  * ^designation[=].value = "Nasal/oromucosal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за нос/устна лигавица"
@@ -48503,10 +48503,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50036700
-    Nasal/oromucosal spray, solution
-    50036700
+    "Nasal/oromucosal spray, solution"
+    "Liquid preparation consisting of a solution in a container with or without a metering dose valve or in a container with a spray pump, intended for nasal or oromucosal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal/oromucosal spray, solution
+  * ^designation[=].value = "Nasal/oromucosal spray, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей, разтвор за нос/устна лигавица"
@@ -48597,10 +48597,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50037000
-    Nasal spray and oromucosal solution
-    50037000
+    "Nasal spray and oromucosal solution"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal spray and oromucosal solution
+  * ^designation[=].value = "Nasal spray and oromucosal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за нос и разтвор за устна лигавица"
@@ -48691,10 +48691,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50037100
-    Nasal spray, powder for solution
-    50037100
+    "Nasal spray, powder for solution"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a nasal spray solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal spray, powder for solution
+  * ^designation[=].value = "Nasal spray, powder for solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за нос, прах за разтвор"
@@ -48785,10 +48785,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50037400
-    Nasal spray, solution/oromucosal solution
-    50037400
+    "Nasal spray, solution/oromucosal solution"
+    "Liquid preparation consisting of a solution intended for use as a nasal spray or an oromucosal solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal spray, solution/oromucosal solution
+  * ^designation[=].value = "Nasal spray, solution/oromucosal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за нос, разтвор/ разтвор за устна лигавица"
@@ -48879,10 +48879,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50037500
-    Oral drops, granules for solution
-    50037500
+    "Oral drops, granules for solution"
+    "Solid preparation consisting of granules intended to be dissolved in the specified liquid to obtain an oral drops solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral drops, granules for solution
+  * ^designation[=].value = "Oral drops, granules for solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорални капки, гранули за разтвор"
@@ -48973,10 +48973,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50037750
-    Oral drops, liquid
-    50037750
+    "Oral drops, liquid"
+    "Liquid, usually multidose preparation consisting of a liquid active substance per se, intended for oral use. The preparation is administered in small volumes by means of a suitable measuring device such as a dropper, pipette or oral syringe capable of accurate dosing of the liquid. The measured dose may be diluted in water or another suitable liquid before swallowing."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral drops, liquid
+  * ^designation[=].value = "Oral drops, liquid"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорални капки, течност"
@@ -49067,10 +49067,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50037900
-    Oral/rectal solution
-    50037900
+    "Oral/rectal solution"
+    "Liquid preparation consisting of a solution intended for oral or rectal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral/rectal solution
+  * ^designation[=].value = "Oral/rectal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорален/ректален разтвор"
@@ -49161,10 +49161,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50038000
-    Oral/rectal suspension
-    50038000
+    "Oral/rectal suspension"
+    "Liquid preparation consisting of a suspension intended for oral or rectal use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral/rectal suspension
+  * ^designation[=].value = "Oral/rectal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорална/ректална суспензия"
@@ -49267,10 +49267,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50038500
-    Oral solution/concentrate for nebuliser solution
-    50038500
+    "Oral solution/concentrate for nebuliser solution"
+    "Liquid preparation consisting of a solution intended for oral use or intended to be diluted in the specified liquid to obtain a nebuliser solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral solution/concentrate for nebuliser solution
+  * ^designation[=].value = "Oral solution/concentrate for nebuliser solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорален разтвор/концентрат за разтвор за небулизатор"
@@ -49361,10 +49361,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50039000
-    Oromucosal patch
-    50039000
+    "Oromucosal patch"
+    "Flexible single-dose preparation intended to be applied to the oral cavity to obtain either a systemic or a local effect by delivering the active substance(s) over a certain period of time, after which it is then removed."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal patch
+  * ^designation[=].value = "Oromucosal patch"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пластир за устна лигавица"
@@ -49467,10 +49467,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50039500
-    Oromucosal/laryngopharyngeal solution
-    50039500
+    "Oromucosal/laryngopharyngeal solution"
+    "Liquid preparation consisting of a solution intended for oromucosal or laryngopharyngeal use. 'Oromucosal/laryngopharyngeal solution/spray, solution' is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal/laryngopharyngeal solution
+  * ^designation[=].value = "Oromucosal/laryngopharyngeal solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за устна лигавица/ларинкс-фаринкс"
@@ -49561,10 +49561,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50040000
-    Oromucosal/laryngopharyngeal solution/spray
-    50040000
+    "Oromucosal/laryngopharyngeal solution/spray"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal/laryngopharyngeal solution/spray
+  * ^designation[=].value = "Oromucosal/laryngopharyngeal solution/spray"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор/спрей за устна лигавица/ларинкс-фаринкс"
@@ -49652,10 +49652,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50040500
-    Oromucosal/laryngopharyngeal solution/spray, solution
-    50040500
+    "Oromucosal/laryngopharyngeal solution/spray, solution"
+    "Liquid preparation consisting of a solution intended for oromucosal or laryngopharyngeal use, presented in a container with an optional spray device to allow administration as a spray."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal/laryngopharyngeal solution/spray, solution
+  * ^designation[=].value = "Oromucosal/laryngopharyngeal solution/spray, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор/спрей, разтвор за устна лигавица/ларинкс-фаринкс"
@@ -49743,10 +49743,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50043000
-    Powder for concentrate for solution for infusion
-    50043000
+    "Powder for concentrate for solution for infusion"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a concentrate for solution for infusion, which must subsequently be diluted before administration as a solution for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for concentrate for solution for infusion
+  * ^designation[=].value = "Powder for concentrate for solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за концентрат за инфузионен разтвор"
@@ -49846,10 +49846,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50048750
-    Powder for concentrate for dispersion for infusion
-    50048750
+    "Powder for concentrate for dispersion for infusion"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain a concentrate for dispersion for infusion, which must subsequently be diluted before administration as a dispersion for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for concentrate for dispersion for infusion
+  * ^designation[=].value = "Powder for concentrate for dispersion for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за концентрат за инфузионна дисперсия"
@@ -49940,10 +49940,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50049000
-    Powder for concentrate for haemodialysis solution
-    50049000
+    "Powder for concentrate for haemodialysis solution"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for concentrate for haemodialysis solution
+  * ^designation[=].value = "Powder for concentrate for haemodialysis solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за концентрат за разтвор за хемодиализа"
@@ -50034,10 +50034,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50049100
-    Powder for concentrate for intravesical suspension
-    50049100
+    "Powder for concentrate for intravesical suspension"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain a concentrate for intravesical suspension, which must subsequently be diluted before administration as an intravesical suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for concentrate for intravesical suspension
+  * ^designation[=].value = "Powder for concentrate for intravesical suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за концентрат за интравезикална суспензия"
@@ -50125,10 +50125,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50049200
-    Powder for concentrate for solution for haemodialysis
-    50049200
+    "Powder for concentrate for solution for haemodialysis"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a concentrate for solution for haemodialysis, which must subsequently be diluted before use as a solution for haemodialysis."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for concentrate for solution for haemodialysis
+  * ^designation[=].value = "Powder for concentrate for solution for haemodialysis"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за концентрат за разтвор за хемодиализа"
@@ -50219,10 +50219,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50049250
-    Powder for concentrate for solution for injection/infusion
-    50049250
+    "Powder for concentrate for solution for injection/infusion"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a concentrate for solution for injection/infusion, which must subsequently be diluted before administration as a solution for injection/infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for concentrate for solution for injection/infusion
+  * ^designation[=].value = "Powder for concentrate for solution for injection/infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за концентрат за инжекционен/инфузионен разтвор"
@@ -50313,10 +50313,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50049270
-    Powder for dental solution
-    50049270
+    "Powder for dental solution"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a dental solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for dental solution
+  * ^designation[=].value = "Powder for dental solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за дентален разтвор"
@@ -50407,10 +50407,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50049300
-    Powder for epilesional solution
-    50049300
+    "Powder for epilesional solution"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain an epilesional solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for epilesional solution
+  * ^designation[=].value = "Powder for epilesional solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за епилезиен разтвор"
@@ -50498,10 +50498,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50049500
-    Powder for implantation suspension
-    50049500
+    "Powder for implantation suspension"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain an implantation suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for implantation suspension
+  * ^designation[=].value = "Powder for implantation suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за суспензия за имплантиране"
@@ -50595,10 +50595,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50050000
-    Powder for intravesical solution
-    50050000
+    "Powder for intravesical solution"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain an intravesical solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for intravesical solution
+  * ^designation[=].value = "Powder for intravesical solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за интравезикален разтвор"
@@ -50698,10 +50698,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50050500
-    Powder for intravesical solution/solution for injection
-    50050500
+    "Powder for intravesical solution/solution for injection"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain an intravesical solution/solution for injection."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for intravesical solution/solution for injection
+  * ^designation[=].value = "Powder for intravesical solution/solution for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за интравезикален/инжекционен разтвор"
@@ -50789,10 +50789,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50051000
-    Powder for intravesical suspension
-    50051000
+    "Powder for intravesical suspension"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain an intravesical suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for intravesical suspension
+  * ^designation[=].value = "Powder for intravesical suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за интравезикална суспензия"
@@ -50892,10 +50892,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50051100
-    Powder for mouth wash
-    50051100
+    "Powder for mouth wash"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for mouth wash
+  * ^designation[=].value = "Powder for mouth wash"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за промивка за уста"
@@ -50980,10 +50980,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50051500
-    Powder for nebuliser solution/solution for injection/infusion
-    50051500
+    "Powder for nebuliser solution/solution for injection/infusion"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for nebuliser solution/solution for injection/infusion
+  * ^designation[=].value = "Powder for nebuliser solution/solution for injection/infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -51017,10 +51017,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50052000
-    Powder for oral/rectal suspension
-    50052000
+    "Powder for oral/rectal suspension"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain an oral/rectal suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for oral/rectal suspension
+  * ^designation[=].value = "Powder for oral/rectal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за перорална/ректална суспензия"
@@ -51120,10 +51120,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50053000
-    Powder for solution for injection or infusion
-    50053000
+    "Powder for solution for injection or infusion"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for solution for injection or infusion
+  * ^designation[=].value = "Powder for solution for injection or infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инжекционен или инфузионен разтвор"
@@ -51211,10 +51211,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50053500
-    Powder for solution for injection/infusion
-    50053500
+    "Powder for solution for injection/infusion"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a solution for injection/infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for solution for injection/infusion
+  * ^designation[=].value = "Powder for solution for injection/infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инжекционен/инфузионен разтвор"
@@ -51305,10 +51305,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50054000
-    Powder for solution for intravesical use
-    50054000
+    "Powder for solution for intravesical use"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for solution for intravesical use
+  * ^designation[=].value = "Powder for solution for intravesical use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за разтвор за интравезикално приложение"
@@ -51393,10 +51393,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50055000
-    Powder for solution for nasal spray
-    50055000
+    "Powder for solution for nasal spray"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for solution for nasal spray
+  * ^designation[=].value = "Powder for solution for nasal spray"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за разтвор за спрей за нос"
@@ -51481,10 +51481,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50055150
-    Powder for solution/suspension for injection
-    50055150
+    "Powder for solution/suspension for injection"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for solution/suspension for injection
+  * ^designation[=].value = "Powder for solution/suspension for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -51527,10 +51527,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50055250
-    Powder for use in drinking water/milk
-    50055250
+    "Powder for use in drinking water/milk"
+    "Solid preparation for veterinary use consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the animal drinking water, milk or milk replacer. If alternative methods of administration to individual animals are also authorised, the method of administration is clearly described in the product information."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for use in drinking water/milk
+  * ^designation[=].value = "Powder for use in drinking water/milk"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за прилагане във вода за пиене/мляко"
@@ -51609,10 +51609,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50055500
-    Prolonged-release film-coated tablet
-    50055500
+    "Prolonged-release film-coated tablet"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release film-coated tablet
+  * ^designation[=].value = "Prolonged-release film-coated tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -51643,10 +51643,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50056000
-    Prolonged-release granules for oral suspension
-    50056000
+    "Prolonged-release granules for oral suspension"
+    "Solid preparation consisting of prolonged-release granules intended to be dispersed in the specified liquid to obtain a prolonged-release oral suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release granules for oral suspension
+  * ^designation[=].value = "Prolonged-release granules for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Гранули за перорална суспензия с удължено освобождаване"
@@ -51746,10 +51746,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50056500
-    Radiopharmaceutical precursor, solution
-    50056500
+    "Radiopharmaceutical precursor, solution"
+    "Liquid preparation consisting of a solution containing a radionuclide produced for the radio-labelling of another substance prior to administration."
   * ^designation[0].language = #en
-  * ^designation[=].value = Radiopharmaceutical precursor, solution
+  * ^designation[=].value = "Radiopharmaceutical precursor, solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Радиофармацевтичен прекурсор, разтвор"
@@ -51843,10 +51843,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50057000
-    Solution for haemodialysis/haemofiltration
-    50057000
+    "Solution for haemodialysis/haemofiltration"
+    "Liquid sterile preparation consisting of a solution intended for use as a solution for haemodialysis or a solution for haemofiltration."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for haemodialysis/haemofiltration
+  * ^designation[=].value = "Solution for haemodialysis/haemofiltration"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за хемодиализа/хемофилтрация"
@@ -51946,10 +51946,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50058000
-    Solution for infusion and oral solution
-    50058000
+    "Solution for infusion and oral solution"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for infusion and oral solution
+  * ^designation[=].value = "Solution for infusion and oral solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инфузионен и перорален разтвор"
@@ -52034,10 +52034,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50059000
-    Solution for injection/concentrate for solution for infusion
-    50059000
+    "Solution for injection/concentrate for solution for infusion"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection/concentrate for solution for infusion
+  * ^designation[=].value = "Solution for injection/concentrate for solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -52074,10 +52074,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50059500
-    Solution for injection for euthanasia
-    50059500
+    "Solution for injection for euthanasia"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection for euthanasia
+  * ^designation[=].value = "Solution for injection for euthanasia"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -52114,10 +52114,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50060000
-    Solution for injection/infusion
-    50060000
+    "Solution for injection/infusion"
+    "Liquid sterile single-dose or multidose preparation consisting of a solution intended for administration by injection or infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection/infusion
+  * ^designation[=].value = "Solution for injection/infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционен/инфузионен разтвор"
@@ -52217,10 +52217,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50060700
-    Solution for injection/infusion/rectal use
-    50060700
+    "Solution for injection/infusion/rectal use"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for injection/infusion/rectal use
+  * ^designation[=].value = "Solution for injection/infusion/rectal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -52248,10 +52248,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50061000
-    Solution for intraperitoneal use
-    50061000
+    "Solution for intraperitoneal use"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for intraperitoneal use
+  * ^designation[=].value = "Solution for intraperitoneal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за интраперитонеално приложение"
@@ -52333,10 +52333,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50061300
-    Solution for use in drinking water
-    50061300
+    "Solution for use in drinking water"
+    "Liquid preparation for veterinary use consisting of a solution intended for administration by incorporation into the animal drinking water. If direct oral administration to individual animals is also authorised, the method of administration, including any necessary dilution, is clearly described in the product information."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for use in drinking water
+  * ^designation[=].value = "Solution for use in drinking water"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за прилагане във вода за пиене"
@@ -52418,10 +52418,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50061500
-    Solution for sealant
-    50061500
+    "Solution for sealant"
+    "Liquid sterile preparation consisting of a solution intended for the preparation of a sealant."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for sealant
+  * ^designation[=].value = "Solution for sealant"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за тъканно лепило"
@@ -52515,10 +52515,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50061600
-    Solvent for nasal use
-    50061600
+    "Solvent for nasal use"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Solvent for nasal use
+  * ^designation[=].value = "Solvent for nasal use"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "-"
@@ -52552,10 +52552,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50063000
-    Suspension for infusion
-    50063000
+    "Suspension for infusion"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension for infusion
+  * ^designation[=].value = "Suspension for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инфузионна суспензия"
@@ -52640,10 +52640,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50063500
-    Suspension for use in drinking water
-    50063500
+    "Suspension for use in drinking water"
+    "Liquid preparation for veterinary use consisting of a suspension intended for administration by incorporation into the animal drinking water. If direct oral administration to individual animals is also authorised, the method of administration, including any necessary dilution, is clearly described in the product information."
   * ^designation[0].language = #en
-  * ^designation[=].value = Suspension for use in drinking water
+  * ^designation[=].value = "Suspension for use in drinking water"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Суспензия за прилагане във вода за пиене"
@@ -52725,10 +52725,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50066000
-    Tablet for oral suspension
-    50066000
+    "Tablet for oral suspension"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet for oral suspension
+  * ^designation[=].value = "Tablet for oral suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка за перорална суспензия"
@@ -52810,10 +52810,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50068000
-    Teat dip/spray solution
-    50068000
+    "Teat dip/spray solution"
+    "Liquid preparation intended for use as a teat dip solution or as a teat spray solution."
   * ^designation[0].language = #en
-  * ^designation[=].value = Teat dip/spray solution
+  * ^designation[=].value = "Teat dip/spray solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за потапяне/напръскване на папила на млечна жлеза"
@@ -52892,10 +52892,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50070000
-    Oral suspension for use in drinking water
-    50070000
+    "Oral suspension for use in drinking water"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral suspension for use in drinking water
+  * ^designation[=].value = "Oral suspension for use in drinking water"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорална суспензия за прилагане във вода за пиене"
@@ -52974,10 +52974,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50072000
-    Powder for use in drinking water
-    50072000
+    "Powder for use in drinking water"
+    "Solid preparation for veterinary use consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the animal drinking water. If alternative methods of administration to individual animals are also authorised, the method of administration is clearly described in the product information."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for use in drinking water
+  * ^designation[=].value = "Powder for use in drinking water"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за прилагане във вода за пиене"
@@ -53074,10 +53074,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50073000
-    Powder for solution for intraocular irrigation
-    50073000
+    "Powder for solution for intraocular irrigation"
+    "Solid sterile preparation consisting of one or more powders, including freeze-dried powders, intended to be dissolved in the specified liquid to obtain a solution for intraocular irrigation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for solution for intraocular irrigation
+  * ^designation[=].value = "Powder for solution for intraocular irrigation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за разтвор за вътреочна промивка"
@@ -53180,10 +53180,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50073500
-    Solution for intraocular irrigation
-    50073500
+    "Solution for intraocular irrigation"
+    "Liquid sterile preparation consisting of a solution intended for irrigation of one or more internal structures of the eye, for example during surgical procedures."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solution for intraocular irrigation
+  * ^designation[=].value = "Solution for intraocular irrigation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за вътреочна промивка"
@@ -53268,10 +53268,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50074000
-    Solvent for solution for intraocular irrigation
-    50074000
+    "Solvent for solution for intraocular irrigation"
+    "Liquid sterile preparation consisting of a solvent containing no active substances, intended for use in the preparation of a solution for intraocular irrigation."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solvent for solution for intraocular irrigation
+  * ^designation[=].value = "Solvent for solution for intraocular irrigation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтворител за разтвор за вътреочна промивка"
@@ -53368,10 +53368,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50076000
-    Solvent for solution for infusion
-    50076000
+    "Solvent for solution for infusion"
+    "Liquid sterile preparation consisting of a solvent containing no active substances, intended for use in the preparation of a solution for infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Solvent for solution for infusion
+  * ^designation[=].value = "Solvent for solution for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтворител за инфузионен разтвор"
@@ -53474,10 +53474,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50077000
-    Dispersion for injection
-    50077000
+    "Dispersion for injection"
+    "Liquid sterile preparation consisting of two or more phases of which at least one is dispersed in the liquid phase, intended for administration by injection. To be used only when emulsion for injection is not appropriate. Solid suspension preparations are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dispersion for injection
+  * ^designation[=].value = "Dispersion for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна дисперсия"
@@ -53580,10 +53580,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50079000
-    Concentrate for solution for injection/infusion
-    50079000
+    "Concentrate for solution for injection/infusion"
+    "Liquid sterile preparation intended to be diluted in the specified liquid to obtain a solution for injection/infusion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Concentrate for solution for injection/infusion
+  * ^designation[=].value = "Concentrate for solution for injection/infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за инжекционен/инфузионен разтвор"
@@ -53683,10 +53683,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50081000
-    Inhalation solution
-    50081000
+    "Inhalation solution"
+    "Liquid, usually multidose preparation consisting of a solution intended for inhalation use. The preparation is presented in a non-pressurised container fitted with a metering dose mechanism. 'Nebuliser solution' and 'Pressurised inhalation, solution' are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation solution
+  * ^designation[=].value = "Inhalation solution"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за инхалация"
@@ -53786,10 +53786,10 @@ Title:     "Pharmaceutical dose form"
   
 
 * #50082000
-    Oral drops, powder for suspension
-    50082000
+    "Oral drops, powder for suspension"
+    "Solid preparation consisting of one or more powders, including freeze-dried powders, intended to be dispersed in the specified liquid to obtain an oral drops suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral drops, powder for suspension
+  * ^designation[=].value = "Oral drops, powder for suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорални капки, прах за суспензия"

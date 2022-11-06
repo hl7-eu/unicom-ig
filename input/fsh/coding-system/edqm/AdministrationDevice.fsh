@@ -1,14 +1,14 @@
 CodeSystem: AdministrationDevice
 Id:         administration-device
-Title:     "Administration device"
+Title:      "Administration device"
 * ^hierarchyMeaning = #is-a
 
 
 * #13072000
-    Oral applicator
-    13072000
+    "Oral applicator"
+    "Administration device for administering a liquid or semi-solid pharmaceutical form to the oral cavity. This term may be used to describe an oral syringe in cases where there is a risk of administration error, e.g. where a similar product is often administered by injection, such as with vaccines. It may contain one or more components necessary for the preparation of the final product (e.g. the solvent), but it does not contain the final preparation or all of its components; in such cases, use 'Pre-filled oral applicator' instead."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral applicator
+  * ^designation[=].value = "Oral applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор за перорални форми"
@@ -90,10 +90,10 @@ Title:     "Administration device"
   
 
 * #13114000
-    Pen
-    13114000
+    "Pen"
+    "Administration device intended to house a cartridge that contains a sterile, single-dose or multidose, parenteral preparation. It is usually supplied without a fixed needle, and may or may not be fitted with a needle safety device. The cartridge is usually replaceable when it is empty. The pre-defined dose, which may or may not be adjustable, is administered via an actuation, such as the pressing of a button. Dose dispenser is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pen
+  * ^designation[=].value = "Pen"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Писалка"
@@ -166,10 +166,10 @@ Title:     "Administration device"
   
 
 * #30000500
-    Administration system
-    30000500
+    "Administration system"
+    "System including syringes, cartridges, etc. that requires manipulation prior to administration of the medicinal product."
   * ^designation[0].language = #en
-  * ^designation[=].value = Administration system
+  * ^designation[=].value = "Administration system"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Система за прилагане"
@@ -263,10 +263,10 @@ Title:     "Administration device"
   
 
 * #30002000
-    Applicator
-    30002000
+    "Applicator"
+    "Administration device used to apply a drug to or into a certain site of the body."
   * ^designation[0].language = #en
-  * ^designation[=].value = Applicator
+  * ^designation[=].value = "Applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор"
@@ -372,10 +372,10 @@ Title:     "Administration device"
   
 
 * #30003000
-    Automatic injection device
-    30003000
+    "Automatic injection device"
+    "Device for the delivery of a preset dose of the product by injection to a number of animals in turn."
   * ^designation[0].language = #en
-  * ^designation[=].value = Automatic injection device
+  * ^designation[=].value = "Automatic injection device"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Средство за автоматично инжектиране"
@@ -475,10 +475,10 @@ Title:     "Administration device"
   
 
 * #30005000
-    Balling gun
-    30005000
+    "Balling gun"
+    "Device for delivery of a solid dose into the throat of the animal."
   * ^designation[0].language = #en
-  * ^designation[=].value = Balling gun
+  * ^designation[=].value = "Balling gun"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пистолет за твърди лекарствени форми"
@@ -578,10 +578,10 @@ Title:     "Administration device"
   
 
 * #30010000
-    Brush
-    30010000
+    "Brush"
+    "Administration device fitted with a fine brush used for the application of liquid pharmaceutical forms."
   * ^designation[0].language = #en
-  * ^designation[=].value = Brush
+  * ^designation[=].value = "Brush"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Четка"
@@ -687,10 +687,10 @@ Title:     "Administration device"
   
 
 * #30012000
-    Cannula
-    30012000
+    "Cannula"
+    "Administration device, tubular with a conical tip used for the application of liquid or semi-solid pharmaceutical forms."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cannula
+  * ^designation[=].value = "Cannula"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Канюла"
@@ -796,10 +796,10 @@ Title:     "Administration device"
   
 
 * #30016000
-    Cup
-    30016000
+    "Cup"
+    "Administration device used for the administration of a quantity, whether or not accurately measured, of a liquid or multidose solid pharmaceutical form."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cup
+  * ^designation[=].value = "Cup"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Чашка"
@@ -902,10 +902,10 @@ Title:     "Administration device"
   
 
 * #30017000
-    Dabbing applicator
-    30017000
+    "Dabbing applicator"
+    "Closure with dabbing device."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dabbing applicator
+  * ^designation[=].value = "Dabbing applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор-тампон"
@@ -1005,10 +1005,10 @@ Title:     "Administration device"
   
 
 * #30018200
-    Dose dispenser
-    30018200
+    "Dose dispenser"
+    "Device for the dispensing of a specified quantity of a medicinal product, for example an automatic electronic counter. Pre-filled pens, pre-filled syringes, inhalers, metering pumps, etc. are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dose dispenser
+  * ^designation[=].value = "Dose dispenser"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дозиращо устройство"
@@ -1087,10 +1087,10 @@ Title:     "Administration device"
   
 
 * #30019000
-    Dredging applicator
-    30019000
+    "Dredging applicator"
+    "Closure with dredging device."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dredging applicator
+  * ^designation[=].value = "Dredging applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор за посипване"
@@ -1193,10 +1193,10 @@ Title:     "Administration device"
   
 
 * #30021000
-    Drench gun
-    30021000
+    "Drench gun"
+    "Device for administering an oral liquid to an animal."
   * ^designation[0].language = #en
-  * ^designation[=].value = Drench gun
+  * ^designation[=].value = "Drench gun"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пистолет за перорални течности"
@@ -1290,10 +1290,10 @@ Title:     "Administration device"
   
 
 * #30022000
-    Dropper applicator
-    30022000
+    "Dropper applicator"
+    "Screw cap with dropper."
   * ^designation[0].language = #en
-  * ^designation[=].value = Dropper applicator
+  * ^designation[=].value = "Dropper applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор капкомер"
@@ -1396,10 +1396,10 @@ Title:     "Administration device"
   
 
 * #30025000
-    High pressure transdermal delivery device
-    30025000
+    "High pressure transdermal delivery device"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = High pressure transdermal delivery device
+  * ^designation[=].value = "High pressure transdermal delivery device"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Трансдермално устройство под високо налягане"
@@ -1496,10 +1496,10 @@ Title:     "Administration device"
   
 
 * #30026000
-    Implanter
-    30026000
+    "Implanter"
+    "Device for administering implants."
   * ^designation[0].language = #en
-  * ^designation[=].value = Implanter
+  * ^designation[=].value = "Implanter"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Имплантатор"
@@ -1599,10 +1599,10 @@ Title:     "Administration device"
   
 
 * #30026500
-    Inhaler
-    30026500
+    "Inhaler"
+    "Device for administration of a medicinal product for inhalation. Nebuliser is excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhaler
+  * ^designation[=].value = "Inhaler"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инхалатор"
@@ -1693,10 +1693,10 @@ Title:     "Administration device"
   
 
 * #30027000
-    In-ovo injection device
-    30027000
+    "In-ovo injection device"
+    "Device for automatic injection into embryonated eggs."
   * ^designation[0].language = #en
-  * ^designation[=].value = In-ovo injection device
+  * ^designation[=].value = "In-ovo injection device"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Средство за инжектиране в яйце"
@@ -1796,10 +1796,10 @@ Title:     "Administration device"
   
 
 * #30028000
-    Injection needle
-    30028000
+    "Injection needle"
+    "Hollow needle with a locking device intended for the administration of liquid pharmaceutical forms."
   * ^designation[0].language = #en
-  * ^designation[=].value = Injection needle
+  * ^designation[=].value = "Injection needle"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекционна игла"
@@ -1902,10 +1902,10 @@ Title:     "Administration device"
   
 
 * #30029000
-    Injection syringe
-    30029000
+    "Injection syringe"
+    "Administration device, cylindrical, with a cannula-like nozzle, with or without a fixed needle (which may or may not be fitted with a needle safety device), and a movable piston with piston rod used for the administration, usually parenteral, of an accurately measured quantity of a liquid pharmaceutical form."
   * ^designation[0].language = #en
-  * ^designation[=].value = Injection syringe
+  * ^designation[=].value = "Injection syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спринцовка"
@@ -2008,10 +2008,10 @@ Title:     "Administration device"
   
 
 * #30030000
-    Internal graduated calibration chamber
-    30030000
+    "Internal graduated calibration chamber"
+    "Graduated device for connection to a container for administering a cutaneous liquid to an animal."
   * ^designation[0].language = #en
-  * ^designation[=].value = Internal graduated calibration chamber
+  * ^designation[=].value = "Internal graduated calibration chamber"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вътрешно градуирана дозираща камера"
@@ -2099,10 +2099,10 @@ Title:     "Administration device"
   
 
 * #30031000
-    Intramammary syringe
-    30031000
+    "Intramammary syringe"
+    "Device for introducing a pharmaceutical form through the teat canal."
   * ^designation[0].language = #en
-  * ^designation[=].value = Intramammary syringe
+  * ^designation[=].value = "Intramammary syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интрамамарна спринцовка"
@@ -2202,10 +2202,10 @@ Title:     "Administration device"
   
 
 * #30033000
-    Measuring device
-    30033000
+    "Measuring device"
+    "Device for the administration of a measured quantity of a product. Only to be used when other terms are not applicable."
   * ^designation[0].language = #en
-  * ^designation[=].value = Measuring device
+  * ^designation[=].value = "Measuring device"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Мерително устройство"
@@ -2308,10 +2308,10 @@ Title:     "Administration device"
   
 
 * #30034000
-    Measuring spoon
-    30034000
+    "Measuring spoon"
+    "Spoon for the administration of liquid and multidose solid pharmaceutical forms."
   * ^designation[0].language = #en
-  * ^designation[=].value = Measuring spoon
+  * ^designation[=].value = "Measuring spoon"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Мерителна лъжичка"
@@ -2414,10 +2414,10 @@ Title:     "Administration device"
   
 
 * #30037000
-    Mouthpiece
-    30037000
+    "Mouthpiece"
+    "Aid used for the administration or inhalation of a medicinal product by mouth."
   * ^designation[0].language = #en
-  * ^designation[=].value = Mouthpiece
+  * ^designation[=].value = "Mouthpiece"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Мундщук"
@@ -2520,10 +2520,10 @@ Title:     "Administration device"
   
 
 * #30040000
-    Multipuncturer
-    30040000
+    "Multipuncturer"
+    "Device for puncturing the skin, normally used for immunological products, especially diagnostics."
   * ^designation[0].language = #en
-  * ^designation[=].value = Multipuncturer
+  * ^designation[=].value = "Multipuncturer"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор за мултикожен тест"
@@ -2623,10 +2623,10 @@ Title:     "Administration device"
   
 
 * #30041000
-    Nasal applicator
-    30041000
+    "Nasal applicator"
+    "Aid used for the administration of a drug by nose."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal applicator
+  * ^designation[=].value = "Nasal applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор за нос"
@@ -2729,10 +2729,10 @@ Title:     "Administration device"
   
 
 * #30042000
-    Nebuliser
-    30042000
+    "Nebuliser"
+    "Device for converting liquids into aerosols. Pressurised containers are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nebuliser
+  * ^designation[=].value = "Nebuliser"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Небулизатор"
@@ -2835,10 +2835,10 @@ Title:     "Administration device"
   
 
 * #30043500
-    Needle-free injector
-    30043500
+    "Needle-free injector"
+    "Device for injecting a medicinal product, usually a liquid, by means of high pressure without a needle, through the skin barrier. This term replaces 'High-pressure transdermal delivery device'."
   * ^designation[0].language = #en
-  * ^designation[=].value = Needle-free injector
+  * ^designation[=].value = "Needle-free injector"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Безиглен инжектор"
@@ -2926,10 +2926,10 @@ Title:     "Administration device"
   
 
 * #30044000
-    Nozzle
-    30044000
+    "Nozzle"
+    "Aid for the directed/targeted administration of a liquid or a semi-solid preparation to a specific site."
   * ^designation[0].language = #en
-  * ^designation[=].value = Nozzle
+  * ^designation[=].value = "Nozzle"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Накрайник"
@@ -3032,10 +3032,10 @@ Title:     "Administration device"
   
 
 * #30045000
-    Oral syringe
-    30045000
+    "Oral syringe"
+    "Administration device for administering a liquid or semi-solid pharmaceutical form to the oral cavity. It may contain one or more components necessary for the preparation of the final product (e.g. the solvent), but it does not contain the final preparation itself or all of its components; in such cases, use 'Pre-filled oral syringe' instead."
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral syringe
+  * ^designation[=].value = "Oral syringe"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спринцовка за перорални форми"
@@ -3138,10 +3138,10 @@ Title:     "Administration device"
   
 
 * #30046000
-    Pipette
-    30046000
+    "Pipette"
+    "Administration device, tubular, used for the administration in drops or in accurately measured quantity of liquid pharmaceutical forms."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pipette
+  * ^designation[=].value = "Pipette"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пипета"
@@ -3244,10 +3244,10 @@ Title:     "Administration device"
   
 
 * #30053000
-    Prick test applicator
-    30053000
+    "Prick test applicator"
+    "Device for prick testing of allergen products."
   * ^designation[0].language = #en
-  * ^designation[=].value = Prick test applicator
+  * ^designation[=].value = "Prick test applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор за изпитване чрез убождане"
@@ -3350,10 +3350,10 @@ Title:     "Administration device"
   
 
 * #30055000
-    Scarifier
-    30055000
+    "Scarifier"
+    "Device for scratching the skin."
   * ^designation[0].language = #en
-  * ^designation[=].value = Scarifier
+  * ^designation[=].value = "Scarifier"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Скарификатор"
@@ -3453,10 +3453,10 @@ Title:     "Administration device"
   
 
 * #30058000
-    Spatula
-    30058000
+    "Spatula"
+    "Administration device with a flattened side used for the application of semi-solid pharmaceutical forms."
   * ^designation[0].language = #en
-  * ^designation[=].value = Spatula
+  * ^designation[=].value = "Spatula"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Шпатула"
@@ -3559,10 +3559,10 @@ Title:     "Administration device"
   
 
 * #30059000
-    Spot-on applicator
-    30059000
+    "Spot-on applicator"
+    "Device for administration by spot-on use."
   * ^designation[0].language = #en
-  * ^designation[=].value = Spot-on applicator
+  * ^designation[=].value = "Spot-on applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор за прилагане върху ограничен участък"
@@ -3662,10 +3662,10 @@ Title:     "Administration device"
   
 
 * #30063000
-    Stab vaccinator
-    30063000
+    "Stab vaccinator"
+    "Device for administering a product by stabbing the bird."
   * ^designation[0].language = #en
-  * ^designation[=].value = Stab vaccinator
+  * ^designation[=].value = "Stab vaccinator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ваксинатор чрез набождане"
@@ -3762,10 +3762,10 @@ Title:     "Administration device"
   
 
 * #30068000
-    Vaginal sponge applicator
-    30068000
+    "Vaginal sponge applicator"
+    "Device for introducing a sponge into the vagina of an animal."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal sponge applicator
+  * ^designation[=].value = "Vaginal sponge applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор за вагинална гъба"

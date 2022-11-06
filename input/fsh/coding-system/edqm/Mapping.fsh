@@ -1,5 +1,5 @@
 CodeSystem: Mapping
 Id:         mapping
-Title:     "Mapping"
+Title:      "Mapping"
 * ^hierarchyMeaning = #is-a
 

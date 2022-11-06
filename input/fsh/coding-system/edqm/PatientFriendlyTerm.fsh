@@ -1,14 +1,14 @@
 CodeSystem: PatientFriendlyTerm
 Id:         patient-friendly-term
-Title:     "Patient-friendly term"
+Title:      "Patient-friendly term"
 * ^hierarchyMeaning = #is-a
 
 
 * #11010
-    Oral drops
-    11010
+    "Oral drops"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral drops
+  * ^designation[=].value = "Oral drops"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Перорални капки"
@@ -111,10 +111,10 @@ Title:     "Patient-friendly term"
   
 
 * #11050
-    Oral liquid
-    11050
+    "Oral liquid"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Oral liquid
+  * ^designation[=].value = "Oral liquid"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "–"
@@ -217,10 +217,10 @@ Title:     "Patient-friendly term"
   
 
 * #12100
-    Capsule
-    12100
+    "Capsule"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Capsule
+  * ^designation[=].value = "Capsule"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула"
@@ -326,10 +326,10 @@ Title:     "Patient-friendly term"
   
 
 * #12120
-    Gastro-resistant capsule
-    12120
+    "Gastro-resistant capsule"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastro-resistant capsule
+  * ^designation[=].value = "Gastro-resistant capsule"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-устойчива капсула"
@@ -429,10 +429,10 @@ Title:     "Patient-friendly term"
   
 
 * #12150
-    Prolonged-release capsule
-    12150
+    "Prolonged-release capsule"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Prolonged-release capsule
+  * ^designation[=].value = "Prolonged-release capsule"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула с удължено освобождаване"
@@ -532,10 +532,10 @@ Title:     "Patient-friendly term"
   
 
 * #12200
-    Tablet
-    12200
+    "Tablet"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet
+  * ^designation[=].value = "Tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка"
@@ -635,10 +635,10 @@ Title:     "Patient-friendly term"
   
 
 * #12320
-    Intraruminal device
-    12320
+    "Intraruminal device"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Intraruminal device
+  * ^designation[=].value = "Intraruminal device"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Интраруминално средство"
@@ -735,10 +735,10 @@ Title:     "Patient-friendly term"
   
 
 * #12350
-    Medicated premix
-    12350
+    "Medicated premix"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Medicated premix
+  * ^designation[=].value = "Medicated premix"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Медикаментозен премикс"
@@ -832,10 +832,10 @@ Title:     "Patient-friendly term"
   
 
 * #13050
-    Oromucosal liquid
-    13050
+    "Oromucosal liquid"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal liquid
+  * ^designation[=].value = "Oromucosal liquid"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Течност за устна лигавица"
@@ -935,10 +935,10 @@ Title:     "Patient-friendly term"
   
 
 * #13100
-    Oromucosal spray
-    13100
+    "Oromucosal spray"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Oromucosal spray
+  * ^designation[=].value = "Oromucosal spray"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за устна лигавицa"
@@ -1026,10 +1026,10 @@ Title:     "Patient-friendly term"
   
 
 * #13150
-    Sublingual spray
-    13150
+    "Sublingual spray"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Sublingual spray
+  * ^designation[=].value = "Sublingual spray"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Сублингвален спрей"
@@ -1132,10 +1132,10 @@ Title:     "Patient-friendly term"
   
 
 * #13220
-    Lozenge
-    13220
+    "Lozenge"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Lozenge
+  * ^designation[=].value = "Lozenge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка за смучене"
@@ -1229,10 +1229,10 @@ Title:     "Patient-friendly term"
   
 
 * #14050
-    Dental liquid
-    14050
+    "Dental liquid"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Dental liquid
+  * ^designation[=].value = "Dental liquid"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "–"
@@ -1332,10 +1332,10 @@ Title:     "Patient-friendly term"
   
 
 * #15090
-    Cutaneous spray
-    15090
+    "Cutaneous spray"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous spray
+  * ^designation[=].value = "Cutaneous spray"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за кожа"
@@ -1435,10 +1435,10 @@ Title:     "Patient-friendly term"
   
 
 * #15130
-    Cutaneous liquid
-    15130
+    "Cutaneous liquid"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous liquid
+  * ^designation[=].value = "Cutaneous liquid"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "–"
@@ -1538,10 +1538,10 @@ Title:     "Patient-friendly term"
   
 
 * #15290
-    Dip
-    15290
+    "Dip"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Dip
+  * ^designation[=].value = "Dip"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "–"
@@ -1638,10 +1638,10 @@ Title:     "Patient-friendly term"
   
 
 * #15320
-    Dip concentrate
-    15320
+    "Dip concentrate"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Dip concentrate
+  * ^designation[=].value = "Dip concentrate"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Концентрат за къпане чрез потапяне"
@@ -1735,10 +1735,10 @@ Title:     "Patient-friendly term"
   
 
 * #15370
-    Pour-on
-    15370
+    "Pour-on"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Pour-on
+  * ^designation[=].value = "Pour-on"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Течност за поливане"
@@ -1832,10 +1832,10 @@ Title:     "Patient-friendly term"
   
 
 * #15400
-    Spot-on
-    15400
+    "Spot-on"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Spot-on
+  * ^designation[=].value = "Spot-on"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Течност за прилагане върху ограничен участък"
@@ -1929,10 +1929,10 @@ Title:     "Patient-friendly term"
   
 
 * #15430
-    Teat dip
-    15430
+    "Teat dip"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Teat dip
+  * ^designation[=].value = "Teat dip"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "–"
@@ -2029,10 +2029,10 @@ Title:     "Patient-friendly term"
   
 
 * #15460
-    Teat spray
-    15460
+    "Teat spray"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Teat spray
+  * ^designation[=].value = "Teat spray"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за папила на млечна жлеза"
@@ -2129,10 +2129,10 @@ Title:     "Patient-friendly term"
   
 
 * #16040
-    Eye drops
-    16040
+    "Eye drops"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops
+  * ^designation[=].value = "Eye drops"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за очи"
@@ -2232,10 +2232,10 @@ Title:     "Patient-friendly term"
   
 
 * #17040
-    Ear drops
-    17040
+    "Ear drops"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear drops
+  * ^designation[=].value = "Ear drops"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за уши"
@@ -2335,10 +2335,10 @@ Title:     "Patient-friendly term"
   
 
 * #17090
-    Ear spray
-    17090
+    "Ear spray"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear spray
+  * ^designation[=].value = "Ear spray"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за уши"
@@ -2438,10 +2438,10 @@ Title:     "Patient-friendly term"
   
 
 * #17120
-    Ear wash
-    17120
+    "Ear wash"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Ear wash
+  * ^designation[=].value = "Ear wash"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Промивка за уши"
@@ -2541,10 +2541,10 @@ Title:     "Patient-friendly term"
   
 
 * #18040
-    Nasal drops
-    18040
+    "Nasal drops"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal drops
+  * ^designation[=].value = "Nasal drops"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капки за нос"
@@ -2644,10 +2644,10 @@ Title:     "Patient-friendly term"
   
 
 * #18080
-    Nasal spray
-    18080
+    "Nasal spray"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Nasal spray
+  * ^designation[=].value = "Nasal spray"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей за нос"
@@ -2747,10 +2747,10 @@ Title:     "Patient-friendly term"
   
 
 * #19050
-    Vaginal liquid
-    19050
+    "Vaginal liquid"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal liquid
+  * ^designation[=].value = "Vaginal liquid"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "–"
@@ -2850,10 +2850,10 @@ Title:     "Patient-friendly term"
   
 
 * #19100
-    Vaginal capsule
-    19100
+    "Vaginal capsule"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal capsule
+  * ^designation[=].value = "Vaginal capsule"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинална капсула"
@@ -2953,10 +2953,10 @@ Title:     "Patient-friendly term"
   
 
 * #20050
-    Enema
-    20050
+    "Enema"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Enema
+  * ^designation[=].value = "Enema"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Клизма"
@@ -3056,10 +3056,10 @@ Title:     "Patient-friendly term"
   
 
 * #21010
-    Nebuliser liquid
-    21010
+    "Nebuliser liquid"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Nebuliser liquid
+  * ^designation[=].value = "Nebuliser liquid"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Течност за небулизатор"
@@ -3159,10 +3159,10 @@ Title:     "Patient-friendly term"
   
 
 * #21060
-    Pressurised inhalation
-    21060
+    "Pressurised inhalation"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Pressurised inhalation
+  * ^designation[=].value = "Pressurised inhalation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "–"
@@ -3259,10 +3259,10 @@ Title:     "Patient-friendly term"
   
 
 * #21100
-    Inhalation powder
-    21100
+    "Inhalation powder"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation powder
+  * ^designation[=].value = "Inhalation powder"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инхалация"
@@ -3362,10 +3362,10 @@ Title:     "Patient-friendly term"
   
 
 * #21140
-    Inhalation vapour
-    21140
+    "Inhalation vapour"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Inhalation vapour
+  * ^designation[=].value = "Inhalation vapour"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Пара за инхалация"
@@ -3465,10 +3465,10 @@ Title:     "Patient-friendly term"
   
 
 * #22010
-    Injection
-    22010
+    "Injection"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Injection
+  * ^designation[=].value = "Injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекция"
@@ -3568,10 +3568,10 @@ Title:     "Patient-friendly term"
   
 
 * #22030
-    Powder for concentrate
-    22030
+    "Powder for concentrate"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for concentrate
+  * ^designation[=].value = "Powder for concentrate"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за концентрат"
@@ -3656,10 +3656,10 @@ Title:     "Patient-friendly term"
   
 
 * #22050
-    Powder for injection
-    22050
+    "Powder for injection"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for injection
+  * ^designation[=].value = "Powder for injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инжекция"
@@ -3759,10 +3759,10 @@ Title:     "Patient-friendly term"
   
 
 * #22060
-    Powder for prolonged-release injection
-    22060
+    "Powder for prolonged-release injection"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for prolonged-release injection
+  * ^designation[=].value = "Powder for prolonged-release injection"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инжекция с удължено освобождаване"
@@ -3841,10 +3841,10 @@ Title:     "Patient-friendly term"
   
 
 * #22090
-    Sterile concentrate
-    22090
+    "Sterile concentrate"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Sterile concentrate
+  * ^designation[=].value = "Sterile concentrate"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стерилен концентрат"
@@ -3944,10 +3944,10 @@ Title:     "Patient-friendly term"
   
 
 * #22100
-    Infusion
-    22100
+    "Infusion"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Infusion
+  * ^designation[=].value = "Infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инфузия"
@@ -4047,10 +4047,10 @@ Title:     "Patient-friendly term"
   
 
 * #22120
-    Powder for infusion
-    22120
+    "Powder for infusion"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Powder for infusion
+  * ^designation[=].value = "Powder for infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Прах за инфузия"
@@ -4150,10 +4150,10 @@ Title:     "Patient-friendly term"
   
 
 * #26010
-    Endotracheopulmonary instillation
-    26010
+    "Endotracheopulmonary instillation"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Endotracheopulmonary instillation
+  * ^designation[=].value = "Endotracheopulmonary instillation"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Течност за ендотрахеопулмонално инстилиране"
@@ -4253,10 +4253,10 @@ Title:     "Patient-friendly term"
   
 
 * #29020
-    Intrauterine liquid
-    29020
+    "Intrauterine liquid"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Intrauterine liquid
+  * ^designation[=].value = "Intrauterine liquid"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "–"
@@ -4353,10 +4353,10 @@ Title:     "Patient-friendly term"
   
 
 * #31030
-    Blood fraction modifier
-    31030
+    "Blood fraction modifier"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Blood fraction modifier
+  * ^designation[=].value = "Blood fraction modifier"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Модификатор на кръвна фракция"
@@ -4453,10 +4453,10 @@ Title:     "Patient-friendly term"
   
 
 * #31080
-    Gastroenteral liquid
-    31080
+    "Gastroenteral liquid"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastroenteral liquid
+  * ^designation[=].value = "Gastroenteral liquid"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "–"
@@ -4556,10 +4556,10 @@ Title:     "Patient-friendly term"
   
 
 * #31090
-    Chewing gum
-    31090
+    "Chewing gum"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Chewing gum
+  * ^designation[=].value = "Chewing gum"
   
   * ^designation[+].language = #ga-EU
   * ^designation[=].value = "Guma coganta"
@@ -4569,10 +4569,10 @@ Title:     "Patient-friendly term"
   
 
 * #31100
-    Injection/infusion
-    31100
+    "Injection/infusion"
+    ""
   * ^designation[0].language = #en
-  * ^designation[=].value = Injection/infusion
+  * ^designation[=].value = "Injection/infusion"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Инжекция/инфузия"

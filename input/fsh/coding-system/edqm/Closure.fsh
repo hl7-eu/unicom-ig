@@ -1,14 +1,14 @@
 CodeSystem: Closure
 Id:         closure
-Title:     "Closure"
+Title:      "Closure"
 * ^hierarchyMeaning = #is-a
 
 
 * #13070000
-    Valve
-    13070000
+    "Valve"
+    "Closure that regulates the release of the contents from a container (e.g. a gas cylinder) by adjusting the opening of the exit duct, usually allowing a continuous flow of the contents out of the container; a device that controls the movement of the valve may be incorporated. 'Metering valve' and 'Spray valve' are excluded."
   * ^designation[0].language = #en
-  * ^designation[=].value = Valve
+  * ^designation[=].value = "Valve"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вентил"
@@ -90,10 +90,10 @@ Title:     "Closure"
   
 
 * #13132000
-    Lid
-    13132000
+    "Lid"
+    "Fitted closure, generally one that snaps shut onto a container to maintain a seal."
   * ^designation[0].language = #en
-  * ^designation[=].value = Lid
+  * ^designation[=].value = "Lid"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капак"
@@ -148,10 +148,10 @@ Title:     "Closure"
   
 
 * #30011000
-    Brush applicator
-    30011000
+    "Brush applicator"
+    "Closure with brush device."
   * ^designation[0].language = #en
-  * ^designation[=].value = Brush applicator
+  * ^designation[=].value = "Brush applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор-четка"
@@ -257,10 +257,10 @@ Title:     "Closure"
   
 
 * #30013000
-    Cap
-    30013000
+    "Cap"
+    "Hollow object without screw thread, mostly cylindrical, meant to close a container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cap
+  * ^designation[=].value = "Cap"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капачка"
@@ -366,10 +366,10 @@ Title:     "Closure"
   
 
 * #30015000
-    Child-resistant closure
-    30015000
+    "Child-resistant closure"
+    "A closure which is difficult for young children to open but which is not difficult for adults to open properly."
   * ^designation[0].language = #en
-  * ^designation[=].value = Child-resistant closure
+  * ^designation[=].value = "Child-resistant closure"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Защитена от деца запушалка"
@@ -475,10 +475,10 @@ Title:     "Closure"
   
 
 * #30035000
-    Metering pump
-    30035000
+    "Metering pump"
+    "Closure whereby a measured quantity of the contents is released by mechanical actuation of the pump."
   * ^designation[0].language = #en
-  * ^designation[=].value = Metering pump
+  * ^designation[=].value = "Metering pump"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дозираща помпа"
@@ -581,10 +581,10 @@ Title:     "Closure"
   
 
 * #30036000
-    Metering valve
-    30036000
+    "Metering valve"
+    "Closure whereby a measured quantity of the contents is released by actuation of the valve."
   * ^designation[0].language = #en
-  * ^designation[=].value = Metering valve
+  * ^designation[=].value = "Metering valve"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Дозиращ вентил"
@@ -687,10 +687,10 @@ Title:     "Closure"
   
 
 * #30043000
-    Needle applicator
-    30043000
+    "Needle applicator"
+    "Closure with a needle."
   * ^designation[0].language = #en
-  * ^designation[=].value = Needle applicator
+  * ^designation[=].value = "Needle applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор-игла"
@@ -793,10 +793,10 @@ Title:     "Closure"
   
 
 * #30047000
-    Pipette applicator
-    30047000
+    "Pipette applicator"
+    "Closure with pipette."
   * ^designation[0].language = #en
-  * ^designation[=].value = Pipette applicator
+  * ^designation[=].value = "Pipette applicator"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Апликатор-пипета"
@@ -899,10 +899,10 @@ Title:     "Closure"
   
 
 * #30056000
-    Screw cap
-    30056000
+    "Screw cap"
+    "Hollow cylindrical object with screw thread, meant to close a container."
   * ^designation[0].language = #en
-  * ^designation[=].value = Screw cap
+  * ^designation[=].value = "Screw cap"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капачка на винт"
@@ -1005,10 +1005,10 @@ Title:     "Closure"
   
 
 * #30061000
-    Spray pump
-    30061000
+    "Spray pump"
+    "Closure whereby the contents are released as a spray by mechanical actuation of the pump."
   * ^designation[0].language = #en
-  * ^designation[=].value = Spray pump
+  * ^designation[=].value = "Spray pump"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей помпа"
@@ -1111,10 +1111,10 @@ Title:     "Closure"
   
 
 * #30062000
-    Spray valve
-    30062000
+    "Spray valve"
+    "Closure whereby the contents are released as a spray by mechanical actuation of the valve."
   * ^designation[0].language = #en
-  * ^designation[=].value = Spray valve
+  * ^designation[=].value = "Spray valve"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Спрей вентил"
@@ -1217,10 +1217,10 @@ Title:     "Closure"
   
 
 * #30064000
-    Stopper
-    30064000
+    "Stopper"
+    "More or less solid cylindrical or conical object meant to close a container by insertion."
   * ^designation[0].language = #en
-  * ^designation[=].value = Stopper
+  * ^designation[=].value = "Stopper"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Запушалка"

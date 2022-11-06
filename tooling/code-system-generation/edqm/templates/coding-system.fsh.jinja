@@ -1,14 +1,14 @@
 CodeSystem: {{ code_system }}
 Id:         {{ id }}
-Title:     "{{ title }}"
+Title:      "{{ title }}"
 * ^hierarchyMeaning = #is-a
 
 {% for code_des in codes %}
 * #{{ code_des.code }}
-    {{ code_des.english }}
-    {{ code_des.code }}
+    "{{ code_des.english }}"
+    "{{ code_des.definition }}"
   * ^designation[0].language = #en
-  * ^designation[=].value = {{ code_des.english }}
+  * ^designation[=].value = "{{ code_des.english }}"
   {% for translation in code_des.translations %}
   * ^designation[+].language = #{{ translation.language|lower }}-{{ translation.region|upper }}
   * ^designation[=].value = "{{ translation.term }}"

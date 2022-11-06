@@ -1,14 +1,14 @@
 CodeSystem: CombinationPack
 Id:         combination-pack
-Title:     "Combination pack"
+Title:      "Combination pack"
 * ^hierarchyMeaning = #is-a
 
 
 * #14001000
-    Cream + pessary
-    14001000
+    "Cream + pessary"
+    "Combination package consisting of a cream and a pessary."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cream + pessary
+  * ^designation[=].value = "Cream + pessary"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Крем + песар"
@@ -87,10 +87,10 @@ Title:     "Combination pack"
   
 
 * #14002000
-    Cutaneous solution + medicated sponge
-    14002000
+    "Cutaneous solution + medicated sponge"
+    "Combination package consisting of a cutaneous solution and a medicated sponge."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cutaneous solution + medicated sponge
+  * ^designation[=].value = "Cutaneous solution + medicated sponge"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Разтвор за кожа + лечебна гъба"
@@ -166,10 +166,10 @@ Title:     "Combination pack"
   
 
 * #14003000
-    Gastro-resistant tablet + rectal suspension
-    14003000
+    "Gastro-resistant tablet + rectal suspension"
+    "Combination package consisting of a gastro-resistant tablet and a rectal suspension."
   * ^designation[0].language = #en
-  * ^designation[=].value = Gastro-resistant tablet + rectal suspension
+  * ^designation[=].value = "Gastro-resistant tablet + rectal suspension"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Стомашно-устойчива таблетка + ректална суспензия"
@@ -248,10 +248,10 @@ Title:     "Combination pack"
   
 
 * #14004000
-    Vaginal capsule, soft + vaginal cream
-    14004000
+    "Vaginal capsule, soft + vaginal cream"
+    "Combination package consisting of a vaginal capsule, soft, and a vaginal cream."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal capsule, soft + vaginal cream
+  * ^designation[=].value = "Vaginal capsule, soft + vaginal cream"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинална капсула, мека + вагинален крем"
@@ -330,10 +330,10 @@ Title:     "Combination pack"
   
 
 * #14005000
-    Vaginal cream + vaginal tablet
-    14005000
+    "Vaginal cream + vaginal tablet"
+    "Combination package consisting of a vaginal cream and a vaginal tablet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Vaginal cream + vaginal tablet
+  * ^designation[=].value = "Vaginal cream + vaginal tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Вагинален крем + вагинална таблетка"
@@ -412,10 +412,10 @@ Title:     "Combination pack"
   
 
 * #14006000
-    Effervescent granules + film-coated tablet
-    14006000
+    "Effervescent granules + film-coated tablet"
+    "Combination package consisting of effervescent granules and a film-coated tablet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Effervescent granules + film-coated tablet
+  * ^designation[=].value = "Effervescent granules + film-coated tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ефервесцентни гранули + филмирана таблетка"
@@ -494,10 +494,10 @@ Title:     "Combination pack"
   
 
 * #14007000
-    Effervescent tablet + film-coated tablet
-    14007000
+    "Effervescent tablet + film-coated tablet"
+    "Combination package consisting of an effervescent tablet and a film-coated tablet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Effervescent tablet + film-coated tablet
+  * ^designation[=].value = "Effervescent tablet + film-coated tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ефервесцентна таблетка + филмирана таблетка"
@@ -576,10 +576,10 @@ Title:     "Combination pack"
   
 
 * #14008000
-    Tablet + vaginal tablet
-    14008000
+    "Tablet + vaginal tablet"
+    "Combination package consisting of a tablet and a vaginal tablet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Tablet + vaginal tablet
+  * ^designation[=].value = "Tablet + vaginal tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Таблетка + вагинална таблетка"
@@ -661,10 +661,10 @@ Title:     "Combination pack"
   
 
 * #14009000
-    Cream + vaginal capsule, soft
-    14009000
+    "Cream + vaginal capsule, soft"
+    "Combination package consisting of a cream and a vaginal capsule, soft."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cream + vaginal capsule, soft
+  * ^designation[=].value = "Cream + vaginal capsule, soft"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Крем + вагинална капсула, мека"
@@ -746,10 +746,10 @@ Title:     "Combination pack"
   
 
 * #14010000
-    Cream + vaginal tablet
-    14010000
+    "Cream + vaginal tablet"
+    "Combination package consisting of a cream and a vaginal tablet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Cream + vaginal tablet
+  * ^designation[=].value = "Cream + vaginal tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Крем + вагинална таблетка"
@@ -831,10 +831,10 @@ Title:     "Combination pack"
   
 
 * #14011000
-    Film-coated tablet + pessary
-    14011000
+    "Film-coated tablet + pessary"
+    "Combination package consisting of a film-coated tablet and a pessary."
   * ^designation[0].language = #en
-  * ^designation[=].value = Film-coated tablet + pessary
+  * ^designation[=].value = "Film-coated tablet + pessary"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Филмирана таблетка + песар"
@@ -910,10 +910,10 @@ Title:     "Combination pack"
   
 
 * #14012000
-    Capsule, soft + tablet
-    14012000
+    "Capsule, soft + tablet"
+    "Combination package consisting of a soft capsule and a tablet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Capsule, soft + tablet
+  * ^designation[=].value = "Capsule, soft + tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула, мека + таблетка"
@@ -989,10 +989,10 @@ Title:     "Combination pack"
   
 
 * #14013000
-    Capsule, hard + tablet
-    14013000
+    "Capsule, hard + tablet"
+    "Combination package consisting of a hard capsule and a tablet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Capsule, hard + tablet
+  * ^designation[=].value = "Capsule, hard + tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Капсула, твърда + таблетка"
@@ -1068,10 +1068,10 @@ Title:     "Combination pack"
   
 
 * #14014000
-    Film-coated tablet + tablet
-    14014000
+    "Film-coated tablet + tablet"
+    "Combination package consisting of a film-coated tablet and a tablet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Film-coated tablet + tablet
+  * ^designation[=].value = "Film-coated tablet + tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Филмирана таблетка + таблетка"
@@ -1147,10 +1147,10 @@ Title:     "Combination pack"
   
 
 * #14015000
-    Ointment + vaginal tablet
-    14015000
+    "Ointment + vaginal tablet"
+    "Combination package consisting of an ointment and a vaginal tablet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Ointment + vaginal tablet
+  * ^designation[=].value = "Ointment + vaginal tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Маз + вагинална таблетка"
@@ -1205,10 +1205,10 @@ Title:     "Combination pack"
   
 
 * #14016000
-    Effervescent granules + gastro-resistant tablet
-    14016000
+    "Effervescent granules + gastro-resistant tablet"
+    "Combination package consisting of effervescent granules and a gastro-resistant tablet."
   * ^designation[0].language = #en
-  * ^designation[=].value = Effervescent granules + gastro-resistant tablet
+  * ^designation[=].value = "Effervescent granules + gastro-resistant tablet"
   
   * ^designation[+].language = #bg-BG
   * ^designation[=].value = "Ефервесцентни гранули + стомашно-устойчива таблетка"
@@ -1266,10 +1266,10 @@ Title:     "Combination pack"
   
 
 * #14017000
-    Eye drops, solution + eye ointment
-    14017000
+    "Eye drops, solution + eye ointment"
+    "Combination package consisting of an eye drops solution and an eye ointment."
   * ^designation[0].language = #en
-  * ^designation[=].value = Eye drops, solution + eye ointment
+  * ^designation[=].value = "Eye drops, solution + eye ointment"
   
   * ^designation[+].language = #et-EE
   * ^designation[=].value = "Silmatilgad, lahus + silmasalv"
