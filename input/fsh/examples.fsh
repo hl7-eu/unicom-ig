@@ -70,14 +70,14 @@ Usage: #example
 //* substance.strength.referenceStrength.strengthRatio.numerator.comparator.extension.url = "http://ema.europa.eu/fhir/extension/comparator"
 //* substance.strength.referenceStrength.strengthRatio.numerator.comparator.extension.valueCoding = $100000000008#100000000049 "equal to"
 * substance.strength.referenceStrength.strengthRatio.numerator = 5 $100000110633#100000110655 "milligram(s)"
-* substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "tablet"
+* substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "Tablet"
 
 Instance: Agen-5mg-Tablet-EE-PPD-1109887-A
 InstanceOf: PPLPackagedProductDefinition
 Usage: #example
 * identifier[pcid].value = "EE-100002580-15547-1109887"
 * packageFor = Reference(Agen-5mg-Tablet-EE-MPD)
-* containedItemQuantity = 30 $200000000014#200000002152 "tablet"
+* containedItemQuantity = 30 $200000000014#200000002152 "Tablet"
 * description = "Tabletid on pakendatud PVC/PVDC/Al blistritesse (valged)."
 //  * extension.url = "http://ema.europa.eu/fhir/extension/language"
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
@@ -100,7 +100,7 @@ InstanceOf: PPLPackagedProductDefinition
 Usage: #example
 * identifier[pcid].value = "EE-100002580-15547-1109887"
 * packageFor = Reference(Agen-5mg-Tablet-EE-MPD)
-* containedItemQuantity = 30 $200000000014#200000002152 "tablet"
+* containedItemQuantity = 30 $200000000014#200000002152 "Tablet"
 * description = "Tabletid on pakendatud PVC/Al blistritesse (valged)."
 //  * extension.url = "http://ema.europa.eu/fhir/extension/language"
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
@@ -185,12 +185,12 @@ Usage: #example
 //* substance.strength.presentationRatio.numerator.comparator.extension.url = "http://ema.europa.eu/fhir/extension/comparator"
 //* substance.strength.presentationRatio.numerator.comparator.extension.valueCoding = $100000000008#100000000049 "equal to"
 * substance.strength.presentationRatio.numerator = 1578 $100000110633#100000110655 "milligram(s)"
-* substance.strength.presentationRatio.denominator = 1 $200000000014#200000002158 "vial"
+* substance.strength.presentationRatio.denominator = 1 $200000000014#200000002158 "Vial"
 * substance.strength.referenceStrength.substance.concept = $sms#100000092667 "CEFUROXIME"
 //* substance.strength.referenceStrength.strengthRatio.numerator.comparator.extension.url = "http://ema.europa.eu/fhir/extension/comparator"
 //* substance.strength.referenceStrength.strengthRatio.numerator.comparator.extension.valueCoding = $100000000008#100000000049 "equal to"
 * substance.strength.referenceStrength.strengthRatio.numerator = 1500 $100000110633#100000110655 "milligram(s)"
-* substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002158 "vial"
+* substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002158 "Vial"
 
 Instance: Cefuroxime-MIP-1500mg-EE-PPD-1529940
 InstanceOf: PPLPackagedProductDefinition
@@ -218,7 +218,7 @@ InstanceOf: PPLPackagedProductDefinition
 Usage: #example
 
 * packageFor = Reference(Cefuroxime-MIP-1500mg-EE-MPD)
-* containedItemQuantity = 10 $200000000014#200000002158 "vial"
+* containedItemQuantity = 10 $200000000014#200000002158 "Vial"
 * description = "I tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 10 viaali"
 //  * extension.url = "http://ema.europa.eu/fhir/extension/language"
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
