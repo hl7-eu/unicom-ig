@@ -243,7 +243,7 @@ Usage: #example
 * domain = $100000000004#100000000012 "Human use"
 * status.coding[0] = $200000005003#200000005004 "Current"
 //* status.coding[+] = $publication-status#active "Active"
-* combinedPharmaceuticalDoseForm = $200000000004#100000173972 "Cream + pessary" //TO DO: Should be $200000000008 for combined dose forms!
+* combinedPharmaceuticalDoseForm = $200000000008#100000173972 "Cream + pessary"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal Product subject to medical prescription"
 * classification[atc].coding[ema] = $100000093533#100000095693 "clotrimazole"
 * classification[atc].coding[who] = $who-atc#G01AF02 "clotrimazole"

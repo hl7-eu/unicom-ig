@@ -1,35 +1,3 @@
-Alias: $100000000004 = https://spor.ema.europa.eu/rmswi/#/lists/100000000004/terms // Domain
-Alias: $200000005003 = https://spor.ema.europa.eu/rmswi/#/lists/200000005003/terms // Record Status
-Alias: $220000000000 = https://spor.ema.europa.eu/rmswi/#/lists/220000000000/terms // Medicinal Product Name Part type
-Alias: $100000072051 = https://spor.ema.europa.eu/rmswi/#/lists/100000072051/terms // Legal Status for the Supply
-Alias: $200000000004 = https://spor.ema.europa.eu/rmswi/#/lists/200000000004/terms // Pharmaceutical Dose Form
-Alias: $200000000006 = https://spor.ema.europa.eu/rmswi/#/lists/200000000006/terms // Combined Pharmaceutical Dose Form
-Alias: $200000000007 = https://spor.ema.europa.eu/rmswi/#/lists/200000000007/terms // Combined Term
-Alias: $200000000008 = https://spor.ema.europa.eu/rmswi/#/lists/200000000008/terms // Combination Package
-Alias: $100000093533 = https://spor.ema.europa.eu/rmswi/#/lists/100000093533/terms // Anatomical Therapeutic Chemical classification system - Human
-Alias: $100000000002 = https://spor.ema.europa.eu/rmswi/#/lists/100000000002/terms // Country
-Alias: $100000072057 = https://spor.ema.europa.eu/rmswi/#/lists/100000072057/terms // Language
-Alias: $220000000060 = https://spor.ema.europa.eu/rmswi/#/lists/220000000060/terms // Regulatory Entitlement Type
-Alias: $100000072049 = https://spor.ema.europa.eu/rmswi/#/lists/100000072049/terms // Regulatory Entitlement Status
-Alias: $200000000014 = https://spor.ema.europa.eu/rmswi/#/lists/200000000014/terms // Unit of Presentation
-Alias: $100000110633 = https://spor.ema.europa.eu/rmswi/#/lists/100000110633/terms // Units of Measurement
-Alias: $100000073345 = https://spor.ema.europa.eu/rmswi/#/lists/100000073345/terms // Routes and Methods of Administration
-Alias: $100000072050 = https://spor.ema.europa.eu/rmswi/#/lists/100000072050/terms // Ingredient Role
-Alias: $100000000008 = https://spor.ema.europa.eu/rmswi/#/lists/100000000008/terms // Quantity Operator
-Alias: $100000072052 = https://spor.ema.europa.eu/rmswi/#/lists/100000072052/terms // Marketing Status
-Alias: $100000073346 = https://spor.ema.europa.eu/rmswi/#/lists/100000073346/terms // Packaging
-Alias: $200000003199 = https://spor.ema.europa.eu/rmswi/#/lists/200000003199/terms // Material
-Alias: $100000073343 = https://spor.ema.europa.eu/rmswi/#/lists/100000073343/terms // Shelf Life Type
-Alias: $BCP47 = http://hl7.org/fhir/ValueSet/all-languages // FHIR all languages value set
-Alias: $iso-country = https://www.hl7.org/fhir/valueset-country.html // FHIR Country value set based on ISO 3166-1-2
-
-Alias: $sms = https://spor.ema.europa.eu/v2/SubstanceDefinition // EMA SPOR Substance Management System
-
-Alias: $loc-id = https://spor.ema.europa.eu/v1/locations // EMA OMS Location Identifier
-Alias: $org-id = https://spor.ema.europa.eu/v1/organisations // EMA OMS Organisation Identifier
-Alias: $who-atc = http://www.whocc.no/atc // WHO ATC
-
-
 // PROFILE: Bundle for one full product
 Profile: MPDBundle
 Parent: Bundle
@@ -85,7 +53,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * ^definition = "EMA IG 1.7. Legal status of supply on the medicinal product level. The same information can be repeated/differentiated on the package level"
 
 * combinedPharmaceuticalDoseForm 1..1
-  * coding.system = $200000000004 // TO DO: add three more value sets here, it could be one of four: 200000000004 | 200000000006 | 200000000007 | 200000000008 
+  //* coding.system = $200000000004  TO DO: add three more value sets here, it could be one of four: 200000000004 | 200000000006 | 200000000007 | 200000000008 
   * ^short = "Authorised dose form for the product, incl combination package dose forms"
   * ^definition = "EMA IG 1.5 & 1.6. Authorised dose form for the whole product. As applicable in one of the SPOR RMS list Combined pharmaceutical dose form, Pharmaceutical dose form, Combined term, Combination Package"
 
