@@ -3,10 +3,11 @@ Id: unit-of-measurement-ema-cs
 Title: "Unit of Measurement EMA"
 Description: "Unit of Measurement. Based on UCUM. Re-coded with RMS codes."
 * ^url = $100000110633
-//* ^status = #draft
-//* ^compositional = false
-//* ^content = #complete
-//* ^count = 458
+* ^caseSensitive = false
+* ^status = #draft
+* ^compositional = false
+* ^content = #complete
+// * ^count = 458
 * #100000155670 "millilitre(s)/gram"
 * #100000155671 "millilitre(s)/kilogram"
 * #100000158395 "Relative Percentage Survival"

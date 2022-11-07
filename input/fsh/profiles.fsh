@@ -250,7 +250,7 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
       * numerator.system = $100000110633
       * denominator.system 1..1
         * ^short = "Unit of measurement or unit of presentation"
-      * denominator.system from all-units-vs
+      * denominator.unit from all-units-vs
       
     * concentrationRatio
       * ^short = "Strength per unit of measurement (20mg/1ml)"
@@ -272,7 +272,7 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
         * numerator.system = $100000110633
         * denominator.system 1..1
           * ^short = "Unit of measurement or unit of presentation"
-        * denominator.system from all-units-vs
+        * denominator.unit from all-units-vs
 
         
 // PROFILE: Packaged Product

@@ -3,10 +3,10 @@ Id: unit-of-presentation-ema-cs
 Title: "Unit of Presentation EMA"
 Description: "Unit of presentation list from EMA SPOR. List id 200000000014. Content based on EDQM, re-coded with RMS codes."
 * ^url = $200000000014
-// * ^status = #draft
-// * ^compositional = false
-// * ^content = #complete
-// * ^caseSensitive = false
+* ^status = #draft
+* ^compositional = false
+* ^content = #complete
+* ^caseSensitive = false
 // * ^count = 53
 * #200000022814 "Other"
 * #200000022839 "Test"
