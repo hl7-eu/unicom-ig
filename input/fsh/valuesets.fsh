@@ -10,7 +10,7 @@ Description: "Value set for authorised dose form. Combines 4 SPOR/EDQM lists: Ph
 
 ValueSet: AllUnits
 Id: all-units-vs
-Title: "All units combined"
+Title: "All Units Combined"
 Description: "Value set for presentation strength denominator unit, combines units of measurement and units of presentation."
 * include codes from system $100000110633 // Unit of Measurement
 * include codes from system $200000000014 // Unit of Presentation
