@@ -1,15 +1,13 @@
-/*
-//  TODO Check the CS and check the examples. Mismatch somewhere.
-CodeSystem: UnitOfPresentation-EMA-CS
+CodeSystem: UnitOfPresentation_EMA_CS
 Id: unit-of-presentation-ema-cs
 Title: "Unit of Presentation EMA"
 Description: "Unit of presentation list from EMA SPOR. List id 200000000014. Content based on EDQM, re-coded with RMS codes."
 * ^url = $200000000014
-//* ^status = #draft
-//* ^compositional = false
-//* ^content = #complete
-//* ^caseSensitive = false
-//* ^count = 53
+// * ^status = #draft
+// * ^compositional = false
+// * ^content = #complete
+// * ^caseSensitive = false
+// * ^count = 53
 * #200000022814 "Other"
 * #200000022839 "Test"
 * #200000002108 "Barrel"
@@ -63,4 +61,3 @@ Description: "Unit of presentation list from EMA SPOR. List id 200000000014. Con
 * #200000002165 "Applicator"
 * #200000002166 "Bag"
 * #200000016445 "Swab"
-*/

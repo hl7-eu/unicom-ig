@@ -72,6 +72,7 @@ Usage: #example
 * substance.strength.referenceStrength.strengthRatio.numerator = 5 $100000110633#100000110655 "milligram(s)"
 * substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "Tablet"
 
+
 Instance: Agen-5mg-Tablet-EE-PPD-1109887-A
 InstanceOf: PPLPackagedProductDefinition
 Usage: #example
