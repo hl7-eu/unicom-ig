@@ -1,4 +1,4 @@
-// PROFILE: Bundle for one full product
+/* PROFILE: Bundle for one full product
 Profile: MPDBundle
 Parent: Bundle
 Id: MPDBundle
@@ -8,6 +8,7 @@ Description: """Medicinal product with all its relevant data as one bundle, incl
 * entry 1..*
   * fullUrl 1..1
   * resource 1..1 //TO DO I don't understand the syntax for adding PPLProfiledResource here.
+*/
 
 // PROFILE: Medicinal Product Definition
 
