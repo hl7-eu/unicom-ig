@@ -367,5 +367,5 @@ InstanceOf: Bundle
 * timestamp = "2022-11-11T00:01:00+02:00"
 * entry[+]
   * resource = Agen-5mg-Tablet-EE-MPD
-* entry[+].resource = Agen-5mg-Tablet-EE-APD
-* entry[+].resource = Agen-5mg-Tablet-EE-MID
+//* entry[+].resource = Agen-5mg-Tablet-EE-APD
+//* entry[+].resource = Agen-5mg-Tablet-EE-MID
