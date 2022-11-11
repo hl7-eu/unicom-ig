@@ -88,22 +88,22 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * ^definition = "EMA IG 1.14"
   * productName 1..1
     * ^definition = "EMA IG 1.14.1"
-  * part 
+  * namePart
     * ^slicing.discriminator.type = #pattern
-    * ^slicing.discriminator.path = "type.coding.code"
+    * ^slicing.discriminator.path = "part.type.coding.code"
     * ^slicing.rules = #open
     * ^slicing.ordered = true
     * ^short = "Medicinal product name part"
     * ^definition = "EMA IG 1.14.3. Name part. Product names are usually combined of these three parts. More parts can be defined and strength and dose form parts can be omitted."
-  * part contains
+  * namePart contains
     invented 1..1 and
     strength 0..1 and
     doseForm 0..1 
-  * part[invented].type = $220000000000#220000000002 "Invented name part"
-  * part[strength].type = $220000000000#220000000004 "Strength part"
-  * part[doseForm].type = $220000000000#220000000005 "Pharmaceutical dose form part"
+  * namePart[invented].type = $220000000000#220000000002 "Invented name part"
+  * namePart[strength].type = $220000000000#220000000004 "Strength part"
+  * namePart[doseForm].type = $220000000000#220000000005 "Pharmaceutical dose form part"
 
-  * usage
+  * countryLanguage
     * ^definition = "EMA IG 1.14.2"
     * country.coding
       * ^slicing.discriminator.type = #pattern
@@ -322,7 +322,7 @@ Description: """Packaged Product"""
   * status 1..1
     * coding.system = $100000072052
 
-* packaging 1..1
+* package 1..1
   * type 1..1
     * ^short = "Container type"
     * ^definition = "EMA IG 4.8.1"
