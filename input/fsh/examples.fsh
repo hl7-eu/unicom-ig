@@ -360,3 +360,12 @@ Usage: #example
 * packaging.packaging[=].material = $200000003199#200000003200 "Aluminium"
 * packaging.packaging[=].containedItem.item.reference = Reference(CanifugCremolum-10mg1g-Cream-EE-MID)
 * packaging.packaging[=].containedItem.amount = 20 $100000110633#100000110654 "gram(s)"
+
+Instance: Agen-5mg-Tablet-EE-B
+InstanceOf: Bundle
+* type = #collection
+* timestamp = "2022-11-11T00:01:00+02:00"
+* entry[+]
+  * resource = Agen-5mg-Tablet-EE-MPD
+* entry[+].resource = Agen-5mg-Tablet-EE-APD
+* entry[+].resource = Agen-5mg-Tablet-EE-MID
