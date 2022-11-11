@@ -109,7 +109,7 @@ Description: "Medicinal Product"
         * manufacturedItem 1..* class "Manufactured item" // this can only be there if there are no inner package
           * manufacturedDoseForm 1..1 CD "Manufactured dose form"
           * unitOfPresentation 1..1 CD "Unit of presentation"
-          * ingredient 1..* contentReference contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.pharmaceuticalProduct.ingredient "Ingredient"
+          * ingredient 1..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.pharmaceuticalProduct.ingredient "Ingredient"
 
 
       
