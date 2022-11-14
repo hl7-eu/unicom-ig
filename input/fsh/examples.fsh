@@ -1,6 +1,7 @@
 Instance: Agen-5mg-Tablet-EE-MPD
 InstanceOf: PPLMedicinalProductDefinition
 Usage: #example
+Description: "Medicinal Product Definition: simple tablets"
 
 * identifier[mpid].value = "EE-100002580-15547"
 * domain = $100000000004#100000000012 "Human use"
@@ -20,6 +21,8 @@ Usage: #example
 Instance: Agen-5mg-Tablet-EE-RA
 InstanceOf: PPLRegulatedAuthorization
 Usage: #example
+Description: "Marketing Authorisation"
+
 * identifier.value = "418303"
 * subject = Reference(Agen-5mg-Tablet-EE-MPD)
 * type = $220000000060#220000000061 "Marketing Authorisation"
@@ -32,6 +35,7 @@ Usage: #example
 Instance: LOC-100002580-Zentiva
 InstanceOf: PPLOrganization
 Usage: #example
+Description: "Marketing Authorisation Holder / Organisation"
 
 * identifier[loc].value = "LOC-100002580"
 * name = "Zentiva k.s."
@@ -39,6 +43,7 @@ Usage: #example
 Instance: Agen-5mg-Tablet-EE-APD
 InstanceOf: PPLAdministrableProductDefinition
 Usage: #example
+Description: "Administrable/Pharmaceutical Product Definition: simple tablets"
 * status = #active
 * formOf = Reference(Agen-5mg-Tablet-EE-MPD)
 * administrableDoseForm = $200000000004#100000073664 "Tablet"
@@ -46,9 +51,11 @@ Usage: #example
 * producedFrom = Reference(Agen-5mg-Tablet-EE-MID)
 * routeOfAdministration.code = $100000073345#100000073619 "Oral use"
 
+
 Instance: Agen-5mg-Tablet-EE-MID
 InstanceOf: PPLManufacturedItemDefinition
 Usage: #example
+Description: "Manufactured Item: simple tablet"
 * status = #active
 * manufacturedDoseForm = $200000000004#100000073664 "Tablet"
 * unitOfPresentation = $200000000014#200000002152 "Tablet"
@@ -56,6 +63,8 @@ Usage: #example
 Instance: Agen-5mg-Tablet-EE-I
 InstanceOf: PPLIngredient
 Usage: #example
+Description: "Ingredient: amlodipine besilate, presentation strength; amlodipine, reference strength"
+
 * status = #active
 * for[0] = Reference(Agen-5mg-Tablet-EE-MPD)
 * for[+] = Reference(Agen-5mg-Tablet-EE-MID)
@@ -76,6 +85,8 @@ Usage: #example
 Instance: Agen-5mg-Tablet-EE-PPD-1109887-A
 InstanceOf: PPLPackagedProductDefinition
 Usage: #example
+Description: "Packaged Product Definition: simple tablets"
+
 * identifier[pcid].value = "EE-100002580-15547-1109887"
 * packageFor = Reference(Agen-5mg-Tablet-EE-MPD)
 * containedItemQuantity = 30 $200000000014#200000002152 "Tablet"
@@ -99,6 +110,7 @@ Usage: #example
 Instance: Agen-5mg-Tablet-EE-PPD-1109887-B
 InstanceOf: PPLPackagedProductDefinition
 Usage: #example
+Description: "Packaged Product Definition: simple tablets"
 * identifier[pcid].value = "EE-100002580-15547-1109887"
 * packageFor = Reference(Agen-5mg-Tablet-EE-MPD)
 * containedItemQuantity = 30 $200000000014#200000002152 "Tablet"
@@ -121,6 +133,7 @@ Usage: #example
 Instance: Cefuroxime-MIP-1500mg-EE-MPD
 InstanceOf: PPLMedicinalProductDefinition
 Usage: #example
+Description: "Medicinal Product Definition: powder for solution"
 
 * identifier[pmsid].value = "EE0000002"
 * identifier[mpid].value = "EE-100009199-27834"
@@ -141,6 +154,8 @@ Usage: #example
 Instance: Cefuroxime-MIP-1500mg-EE-RA
 InstanceOf: PPLRegulatedAuthorization
 Usage: #example
+Description: "Marketing Authorisation"
+
 * identifier.value = "805813"
 * subject = Reference(Cefuroxime-MIP-1500mg-EE-MPD)
 * type = $220000000060#220000000061 "Marketing Authorisation"
@@ -152,6 +167,7 @@ Usage: #example
 Instance: LOC-100009199-Mip
 InstanceOf: PPLOrganization
 Usage: #example
+Description: "Marketing Authorisation Holder / Organisation"
 
 * identifier[loc].value = "LOC-100009199"
 * name = "Mip Pharma GmbH"
@@ -159,6 +175,7 @@ Usage: #example
 Instance: Cefuroxime-MIP-1500mg-EE-APD
 InstanceOf: PPLAdministrableProductDefinition
 Usage: #example
+Description: "Administrable/Pharmaceutical Product Definition: transformed"
 * status = #active
 * formOf = Reference(Cefuroxime-MIP-1500mg-EE-MPD)
 * administrableDoseForm = $200000000004#100000074038 "Solution for injection/infusion"
@@ -170,6 +187,7 @@ Usage: #example
 Instance: Cefuroxime-MIP-1500mg-EE-MID
 InstanceOf: PPLManufacturedItemDefinition
 Usage: #example
+Description: "Manufactured Item: solution in vial"
 * status = #active
 * manufacturedDoseForm = $200000000004#100000074038 "Solution for injection/infusion"
 * unitOfPresentation = $200000000014#200000002158 "Vial"
@@ -177,6 +195,7 @@ Usage: #example
 Instance: Cefuroxime-MIP-1500mg-EE-I
 InstanceOf: Ingredient
 Usage: #example
+Description: "Ingredient: cefuroxime sodium, presentation strength; cefuroxime sodium, reference strength"
 * status = #active
 * for[0] = Reference(Cefuroxime-MIP-1500mg-EE-MPD)
 * for[+] = Reference(Cefuroxime-MIP-1500mg-EE-MID)
@@ -196,6 +215,7 @@ Usage: #example
 Instance: Cefuroxime-MIP-1500mg-EE-PPD-1529940
 InstanceOf: PPLPackagedProductDefinition
 Usage: #example
+Description: "Packaged Product Definition: powder for solution in 1 vial"
 
 * identifier[pcid].value = "EE-100009199-27834-1529940"
 * packageFor = Reference(Cefuroxime-MIP-1500mg-EE-MPD)
@@ -217,6 +237,7 @@ Usage: #example
 Instance: Cefuroxime-MIP-1500mg-EE-PPD-1529962
 InstanceOf: PPLPackagedProductDefinition
 Usage: #example
+Description: "Packaged Product Definition: powder for solution in 10 vials"
 
 * packageFor = Reference(Cefuroxime-MIP-1500mg-EE-MPD)
 * containedItemQuantity = 10 $200000000014#200000002158 "Vial"
@@ -238,6 +259,7 @@ Usage: #example
 Instance: CanifugCremolum-EE-MPD
 InstanceOf: PPLMedicinalProductDefinition
 Usage: #example
+Description: "Medicinal Product Definition: combination product of creme and pessaries"
 
 * identifier[pmsid].value = "EE00000003"
 * identifier[mpid].value = "EE-100004795-10280"
@@ -256,6 +278,7 @@ Usage: #example
 Instance: CanifugCremolum-EE-RA
 InstanceOf: PPLRegulatedAuthorization
 Usage: #example
+Description: "Marketing Authorisation"
 * identifier.value = "366201"
 * subject = Reference(CanifugCremolum-EE-MPD)
 * type = $220000000060#220000000061 "Marketing Authorisation"
@@ -268,6 +291,7 @@ Usage: #example
 Instance: LOC-100004795-Wolff-Arzneimittel
 InstanceOf: PPLOrganization
 Usage: #example
+Description: "Marketing Authorisation Holder / Organisation"
 
 * identifier[loc].value = "LOC-100004795"
 * name = "Dr. August Wolff GmbH & Co. KG Arzneimittel"
@@ -276,6 +300,7 @@ Usage: #example
 Instance: CanifugCremolum-10mg1g-Cream-EE-APD
 InstanceOf: PPLAdministrableProductDefinition
 Usage: #example
+Description: "Administrable/Pharmaceutical Product Definition: creme"
 * status = #active
 * formOf = Reference(CanifugCremolum-EE-MPD)
 * administrableDoseForm = $200000000004#100000073712 "Cream"
@@ -286,6 +311,7 @@ Usage: #example
 Instance: CanifugCremolum-100mg-Pessary-EE-APD
 InstanceOf: PPLAdministrableProductDefinition
 Usage: #example
+Description: "Administrable/Pharmaceutical Product Definition: pessaries"
 * status = #active
 * formOf = Reference(CanifugCremolum-EE-MPD)
 * administrableDoseForm = $200000000004#100000073815 "Pessary"
@@ -296,6 +322,7 @@ Usage: #example
 Instance: CanifugCremolum-10mg1g-Cream-EE-MID
 InstanceOf: PPLManufacturedItemDefinition
 Usage: #example
+Description: "Manufactured Item: cream in tube"
 * status = #active
 * manufacturedDoseForm = $200000000004#100000073712 "Cream"
 * unitOfPresentation = $200000000014#200000002156 "Tube"
@@ -303,6 +330,7 @@ Usage: #example
 Instance: CanifugCremolum-100mg-Pessary-EE-MID
 InstanceOf: PPLManufacturedItemDefinition
 Usage: #example
+Description: "Manufactured Item: pessary"
 * status = #active
 * manufacturedDoseForm = $200000000004#100000073815 "Pessary"
 * unitOfPresentation = $200000000014#200000002137 "Pessary"
@@ -310,6 +338,7 @@ Usage: #example
 Instance: CanifugCremolum-10mg1g-Cream-EE-I
 InstanceOf: PPLIngredient
 Usage: #example
+Description: "Ingredient: clotrimazole, concentration strength"
 * status = #active
 * for[0] = Reference(CanifugCremolum-EE-MPD)
 * for[+] = Reference(CanifugCremolum-10mg1g-Cream-EE-MID)
@@ -324,6 +353,7 @@ Usage: #example
 Instance: CanifugCremolum-100mg-Pessary-EE-I
 InstanceOf: PPLIngredient
 Usage: #example
+Description: "Ingredient: clotrimazole, presentation strength"
 * status = #active
 * for[0] = Reference(CanifugCremolum-EE-MPD)
 * for[+] = Reference(CanifugCremolum-100mg-Pessary-EE-MID)
@@ -336,6 +366,7 @@ Usage: #example
 Instance: CanifugCremolum-EE-PPD-1033692
 InstanceOf: PPLPackagedProductDefinition
 Usage: #example
+Description: "Packaged Product Definition: combination package of creme and pessaries"
 
 * identifier[pcid].value = "EE-100004795-10280-1033692"
 * packageFor = Reference(CanifugCremolum-EE-MPD)
@@ -360,12 +391,15 @@ Usage: #example
 * packaging.packaging[=].material = $200000003199#200000003200 "Aluminium"
 * packaging.packaging[=].containedItem.item.reference = Reference(CanifugCremolum-10mg1g-Cream-EE-MID)
 * packaging.packaging[=].containedItem.amount = 20 $100000110633#100000110654 "gram(s)"
-
+/*
 Instance: Agen-5mg-Tablet-EE-B
 InstanceOf: Bundle
+Usage: #example
 * type = #collection
 * timestamp = "2022-11-11T00:01:00+02:00"
 * entry[+]
   * resource = Agen-5mg-Tablet-EE-MPD
-//* entry[+].resource = Agen-5mg-Tablet-EE-APD
-//* entry[+].resource = Agen-5mg-Tablet-EE-MID
+* entry[+].resource = Agen-5mg-Tablet-EE-APD
+* entry[+].resource = Agen-5mg-Tablet-EE-MID
+
+*/
