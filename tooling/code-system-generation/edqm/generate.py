@@ -83,7 +83,7 @@ if __name__ == '__main__':
     environment = jinja2.Environment()
     template = environment.from_string(fsh_template_text)
 
-    print(f'Generateting code system for {len(classes)} classes in {args.output}...')
+    print(f'Generating code system for {len(classes)} classes in {args.output}...')
     for class_obj in classes:
         generate_coding_system(args.output, class_obj, args.email, args.password, template)
 
