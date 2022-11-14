@@ -1,0 +1,11 @@
+CodeSystem: {{ code_system }}
+Id:         {{ id }}
+Title:      "{{ title }}"
+* ^hierarchyMeaning = #is-a
+
+{% for code_des in codes %}
+* #{{ code_des.code }}
+    "{{ code_des.displayName }}"
+  * ^designation[0].language = #en
+  * ^designation[=].value = "{{ code_des.displayName }}"
+{% endfor %}
