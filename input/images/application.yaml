@@ -1,15 +1,21 @@
-
-
+#Adds the option to go to eg. http://localhost:8080/actuator/health for seeing the running configuration
+#see https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,prometheus"
 spring:
   main:
     allow-circular-references: true
-    allow-bean-definition-overriding: true
+    #allow-bean-definition-overriding: true
   flyway:
     enabled: false
     check-location: false
     baselineOnMigrate: true
   datasource:
     url: 'jdbc:h2:file:./target/database/h2'
+    #url: jdbc:h2:mem:test_mem
     username: sa
     password: null
     driverClassName: org.h2.Driver
@@ -33,38 +39,22 @@ spring:
   #      hibernate.cache.use_second_level_cache: false
   #      hibernate.cache.use_structured_entries: false
   #      hibernate.cache.use_minimal_puts: false
-  ###    These settings will enable fulltext search with lucene
+  ###    These settings will enable fulltext search with lucene or elastic
       hibernate.search.enabled: true
-      hibernate.search.backend.type: lucene
-      hibernate.search.backend.analysis.configurer: ca.uhn.fhir.jpa.search.HapiHSearchAnalysisConfigurers$HapiLuceneAnalysisConfigurer
-      hibernate.search.backend.directory.type: local-filesystem
-      hibernate.search.backend.directory.root: target/lucenefiles
-      hibernate.search.backend.lucene_version: lucene_current
-  batch:
-    job:
-      enabled: false
-
-
-server:
-  servlet:
-    context-path: /
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      probes:
-        enabled: true
-
-
+  ### lucene parameters
+#      hibernate.search.backend.type: lucene
+#      hibernate.search.backend.analysis.configurer: ca.uhn.fhir.jpa.search.HapiHSearchAnalysisConfigurers$HapiLuceneAnalysisConfigurer
+#      hibernate.search.backend.directory.type: local-filesystem
+#      hibernate.search.backend.directory.root: target/lucenefiles
+#      hibernate.search.backend.lucene_version: lucene_current
+  ### elastic parameters ===> see also elasticsearch section below <===
+#      hibernate.search.backend.type: elasticsearch
+#      hibernate.search.backend.analysis.configurer: ca.uhn.fhir.jpa.search.HapiHSearchAnalysisConfigurers$HapiElasticAnalysisConfigurer
 hapi:
   fhir:
+    staticLocation: file:/apps/
     ### This enables the swagger-ui at /fhir/swagger-ui/index.html as well as the /fhir/api-docs (see https://hapifhir.io/hapi-fhir/docs/server_plain/openapi.html)
     openapi_enabled: true
-    staticLocation: file:/apps/
     ### This is the FHIR version. Choose between, DSTU2, DSTU3, R4 or R5
     fhir_version: R4B
     ### enable to use the ApacheProxyAddressStrategy which uses X-Forwarded-* headers
@@ -76,14 +66,8 @@ hapi:
     ### enable to set the Server URL
     #    server_address: http://hapi.fhir.org/baseR4
     #    defer_indexing_for_codesystems_of_size: 101
-
-
-    install_transitive_ig_dependencies: false
-    implementationguides:
-      r5demo:
-        url: https://hl7-eu.github.io/unicom-ig/branches/r5-r4b/package.tgz
-        name: hl7.eu.fhir.unicom
-        version: 0.1.0
+    #    install_transitive_ig_dependencies: true
+    #    implementationguides:
     ###    example from registry (packages.fhir.org)
     #      swiss:
     #        name: swiss.mednet.fhir
@@ -103,10 +87,10 @@ hapi:
     #    allow_cascading_deletes: true
     #    allow_contains_searches: true
     #    allow_external_references: true
-    allow_multiple_delete: true
+    #    allow_multiple_delete: true
     #    allow_override_default_search_params: true
     #    auto_create_placeholder_reference_targets: false
-    cql_enabled: true
+    #    cql_enabled: true
     #    default_encoding: JSON
     #    default_pretty_print: true
     #    default_page_size: 20
@@ -159,7 +143,7 @@ hapi:
     #        Path[${servletPath}] Source[${requestHeader.x-forwarded-for}]
     #        Operation[${operationType} ${operationName} ${idOrResourceName}]
     #        UA[${requestHeader.user-agent}] Params[${requestParameters}]
-        #        ResponseEncoding[${responseEncodingNoDefault}]
+    #        ResponseEncoding[${responseEncodingNoDefault}]
     #      log_exceptions: true
     #      name: fhirtest.access
     #    max_binary_size: 104857600
