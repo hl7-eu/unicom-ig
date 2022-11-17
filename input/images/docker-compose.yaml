@@ -14,7 +14,7 @@ services:
       - hapi.fhir.implementationguide.${ig_code}.name=${ig_package_name}
       - hapi.fhir.implementationguide.${ig_code}.ig_version=${ig_version}
     volumes:
-      - ./apps:/apps
+      - /mnt/c/work/ProdViewer/serverhome:/apps
 
   ember:
     image: jkiddo/ember:latest
