@@ -30,7 +30,7 @@ Description: "Marketing Authorisation"
 * status = $100000072049#200000017708 "Valid - Renewed/Varied"
 * statusDate = "2013-06-07"
 * holder = Reference(LOC-100002580-Zentiva)
-* contained[0] = LOC-100002580-Zentiva //TO DO: once the bundle examples appear, this might get confusing
+
 
 Instance: LOC-100002580-Zentiva
 InstanceOf: PPLOrganization
@@ -187,9 +187,9 @@ Description: "Administrable/Pharmaceutical Product Definition: transformed"
 Instance: Cefuroxime-MIP-1500mg-EE-MID
 InstanceOf: PPLManufacturedItemDefinition
 Usage: #example
-Description: "Manufactured Item: solution in vial"
+Description: "Manufactured Item: powder in vial"
 * status = #active
-* manufacturedDoseForm = $200000000004#100000074038 "Solution for injection/infusion"
+* manufacturedDoseForm = $200000000004#100000116186 "Powder for solution for injection/infusion"
 * unitOfPresentation = $200000000014#200000002158 "Vial"
 
 Instance: Cefuroxime-MIP-1500mg-EE-I
@@ -391,15 +391,5 @@ Description: "Packaged Product Definition: combination package of creme and pess
 * packaging.packaging[=].material = $200000003199#200000003200 "Aluminium"
 * packaging.packaging[=].containedItem.item.reference = Reference(CanifugCremolum-10mg1g-Cream-EE-MID)
 * packaging.packaging[=].containedItem.amount = 20 $100000110633#100000110654 "gram(s)"
-/*
-Instance: Agen-5mg-Tablet-EE-B
-InstanceOf: Bundle
-Usage: #example
-* type = #collection
-* timestamp = "2022-11-11T00:01:00+02:00"
-* entry[+]
-  * resource = Agen-5mg-Tablet-EE-MPD
-* entry[+].resource = Agen-5mg-Tablet-EE-APD
-* entry[+].resource = Agen-5mg-Tablet-EE-MID
 
-*/
+
