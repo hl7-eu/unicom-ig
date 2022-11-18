@@ -177,7 +177,7 @@ InstanceOf: PPLAdministrableProductDefinition
 Usage: #example
 * status = #active
 * formOf = Reference(Cefuroxime-MIP-1500mg-EE-MPD)
-* administrableDoseForm = $200000000004#100000074038 "Solution for injection/infusion"
+* administrableDoseForm = $200000000004#100000116186 "Solution for injection/infusion"
 * unitOfPresentation = $200000000014#200000002158 "Vial"
 * producedFrom = Reference(Cefuroxime-MIP-1500mg-EE-MID)
 * routeOfAdministration[0].code = $100000073345#100000073600 "Intramuscular use"
