@@ -4,9 +4,9 @@ Title: "Pharmaceutical Dose Form EMA"
 Description: "Pharmaceutical dose form. Based on EDQM, re-coded with RMS codes."
 * ^url = $200000000004
 * ^caseSensitive = false
-//* ^status = #draft
-//* ^compositional = false
-//* ^content = #complete
+* ^status = #draft
+* ^compositional = false
+* ^content = #complete
 //* ^count = 464
 * #100000073362 "Oral suspension"
 * #100000073363 "Oral gel"
