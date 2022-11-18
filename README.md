@@ -6,7 +6,7 @@ UNICOM IG - R5 MPD branch
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __http://build.fhir.org/ig/hl7-eu/unicom-ig/branches/mpd-r5/index.html__  
+Continuous Build: __http://build.fhir.org/ig/hl7-eu/unicom-ig/branches/mpd-r4b/index.html__  
 Canonical / permanent URL: 
 <br> </br>
 
