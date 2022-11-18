@@ -31,6 +31,7 @@ Description: "Marketing Authorisation"
 * statusDate = "2013-06-07"
 * holder = Reference(LOC-100002580-Zentiva)
 
+
 Instance: LOC-100002580-Zentiva
 InstanceOf: PPLOrganization
 Usage: #example
@@ -175,9 +176,10 @@ Description: "Marketing Authorisation Holder / Organisation"
 Instance: Cefuroxime-MIP-1500mg-EE-APD
 InstanceOf: PPLAdministrableProductDefinition
 Usage: #example
+Description: "Administrable/Pharmaceutical Product Definition: transformed"
 * status = #active
 * formOf = Reference(Cefuroxime-MIP-1500mg-EE-MPD)
-* administrableDoseForm = $200000000004#100000116186 "Solution for injection/infusion"
+* administrableDoseForm = $200000000004#100000074038 "Solution for injection/infusion"
 * unitOfPresentation = $200000000014#200000002158 "Vial"
 * producedFrom = Reference(Cefuroxime-MIP-1500mg-EE-MID)
 * routeOfAdministration[0].code = $100000073345#100000073600 "Intramuscular use"
@@ -188,7 +190,7 @@ InstanceOf: PPLManufacturedItemDefinition
 Usage: #example
 Description: "Manufactured Item: powder in vial"
 * status = #active
-* manufacturedDoseForm = $200000000004#100000074038 "Powder for solution for injection/infusion"
+* manufacturedDoseForm = $200000000004#100000116186 "Powder for solution for injection/infusion"
 * unitOfPresentation = $200000000014#200000002158 "Vial"
 
 Instance: Cefuroxime-MIP-1500mg-EE-I
