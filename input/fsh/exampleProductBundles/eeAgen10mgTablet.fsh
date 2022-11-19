@@ -37,7 +37,7 @@ Usage: #inline
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
 * classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
 * classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
-* name.productName = "AGEN 10 mg tabletid "
+* name.productName = "AGEN 10 mg tabletid"
 * name.namePart[invented].part = "AGEN"
 * name.namePart[strength].part = "10 mg"
 * name.namePart[doseForm].part = "tabletid"
@@ -85,12 +85,12 @@ Usage: #inline
 //* substance.strength.presentationRatio.numerator.comparator.extension.url = "http://ema.europa.eu/fhir/extension/comparator"
 //* substance.strength.presentationRatio.numerator.comparator.extension.valueCoding = $100000000008#100000000049 "equal to"
 * substance.strength.presentationRatio.numerator = 13.87 $100000110633#100000110655 "milligram(s)"
-* substance.strength.presentationRatio.denominator = 1 $200000000014#200000002152 "Tablet"
+* substance.strength.presentationRatio.denominator = 1 $200000000014#200000002152 //"Tablet"
 * substance.strength.referenceStrength.substance.concept = $sms#100000085259 "Amlodipine"
 //* substance.strength.referenceStrength.strengthRatio.numerator.comparator.extension.url = "http://ema.europa.eu/fhir/extension/comparator"
 //* substance.strength.referenceStrength.strengthRatio.numerator.comparator.extension.valueCoding = $100000000008#100000000049 "equal to"
 * substance.strength.referenceStrength.strengthRatio.numerator = 10 $100000110633#100000110655 "milligram(s)"
-* substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "Tablet"
+* substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 //"Tablet"
 
 Instance: Agen-10mg-Tablet-EE-PPD-1109900-A
 InstanceOf: PPLPackagedProductDefinition
