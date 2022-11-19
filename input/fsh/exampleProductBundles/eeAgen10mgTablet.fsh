@@ -6,24 +6,31 @@ Description: "Agen 10mg Tablet. Estonia. Simple example of one full product as a
 * entry[0].resource = Agen-10mg-Tablet-EE-MPD
 * entry[=].request.method = #PUT
 * entry[=].request.url = "MedicinalProductDefinition/Agen-10mg-Tablet-EE-MPD"
+* entry[=].fullUrl = "http://medigree.net/fhir/idmp/ee/MedicinalProductDefinition/Agen-10mg-Tablet-EE-MPD"
 * entry[+].resource = Agen-10mg-Tablet-EE-RA
 * entry[=].request.method = #PUT
 * entry[=].request.url = "RegulatedAuthorization/Agen-10mg-Tablet-EE-RA"
+* entry[=].fullUrl = "http://medigree.net/fhir/idmp/ee/RegulatedAuthorization/Agen-10mg-Tablet-EE-RA"
 * entry[+].resource = Agen-10mg-Tablet-EE-APD
 * entry[=].request.method = #PUT
 * entry[=].request.url = "AdministrableProductDefinition/Agen-10mg-Tablet-EE-APD"
+* entry[=].fullUrl = "http://medigree.net/fhir/idmp/ee/AdministrableProductDefinition/Agen-10mg-Tablet-EE-APD"
 * entry[+].resource = Agen-10mg-Tablet-EE-MID
 * entry[=].request.method = #PUT
 * entry[=].request.url = "ManufacturedItemDefinition/Agen-10mg-Tablet-EE-MID"
+* entry[=].fullUrl = "http://medigree.net/fhir/idmp/ee/ManufacturedItemDefinition/Agen-10mg-Tablet-EE-MID"
 * entry[+].resource = Agen-10mg-Tablet-EE-I
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Ingredient/Agen-10mg-Tablet-EE-I"
+* entry[=].fullUrl = "http://medigree.net/fhir/idmp/ee/Ingredient/Agen-10mg-Tablet-EE-I"
 * entry[+].resource = Agen-10mg-Tablet-EE-PPD-1109900-A
 * entry[=].request.method = #PUT
 * entry[=].request.url = "PackagedProductDefinition/Agen-10mg-Tablet-EE-PPD-1109900-A"
+* entry[=].fullUrl = "http://medigree.net/fhir/idmp/ee/PackagedProductDefinition/Agen-10mg-Tablet-EE-PPD-1109900-A"
 * entry[+].resource = Agen-10mg-Tablet-EE-PPD-1109900-B
 * entry[=].request.method = #PUT
 * entry[=].request.url = "PackagedProductDefinition/Agen-10mg-Tablet-EE-PPD-1109900-B"
+* entry[=].fullUrl = "http://medigree.net/fhir/idmp/ee/PackagedProductDefinition/Agen-10mg-Tablet-EE-PPD-1109900-B"
 
 
 Instance: Agen-10mg-Tablet-EE-MPD

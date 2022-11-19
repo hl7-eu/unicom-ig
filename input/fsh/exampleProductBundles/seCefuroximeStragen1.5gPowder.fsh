@@ -6,21 +6,27 @@ Description: "Cefuroxim Stragen 1.5g Powder for solution for injection/infusion.
 * entry[0].resource = CefuroximStragen-1.5g-Powder-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #POST
 * entry[=].request.url = "MedicinalProductDefinition/CefuroximStragen-1.5g-Powder-SE-IS-MedicinalProductDefinition"
+* entry[=].fullUrl = "http://medigree.github.io/se-idmp/MedicinalProductDefinition/CefuroximStragen-1.5g-Powder-SE-IS-MedicinalProductDefinition"
 * entry[+].resource = CefuroximStragen-1.5g-Powder-SE-IS-RegulatedAuthorization
 * entry[=].request.method = #POST
 * entry[=].request.url = "RegulatedAuthorization/CefuroximStragen-1.5g-Powder-SE-IS-RegulatedAuthorization"
+* entry[=].fullUrl = "http://medigree.github.io/se-idmp/RegulatedAuthorization/CefuroximStragen-1.5g-Powder-SE-IS-RegulatedAuthorization"
 * entry[+].resource = CefuroximStragen-1.5g-Powder-SE-IS-AdminProdDef
 * entry[=].request.method = #POST
 * entry[=].request.url = "AdministrableProductDefinition/CefuroximStragen-1.5g-Powder-SE-IS-AdminProdDef"
+* entry[=].fullUrl = "http://medigree.github.io/se-idmp/AdministrableProductDefinition/CefuroximStragen-1.5g-Powder-SE-IS-AdminProdDef"
 * entry[+].resource = CefuroximStragen-1.5g-Powder-SE-IS-PackagedProductDefinition
 * entry[=].request.method = #POST
 * entry[=].request.url = "PackagedProductDefinition/CefuroximStragen-1.5g-Powder-SE-IS-PackagedProductDefinition"
+* entry[=].fullUrl = "http://medigree.github.io/se-idmp/PackagedProductDefinition/CefuroximStragen-1.5g-Powder-SE-IS-PackagedProductDefinition"
 * entry[+].resource = CefuroximStragen-1.5g-Powder-SE-IS-ManufacturedItemDefinition
 * entry[=].request.method = #POST
 * entry[=].request.url = "ManufacturedItemDefinition/CefuroximStragen-1.5g-Powder-SE-IS-ManufacturedItemDefinition"
+* entry[=].fullUrl = "http://medigree.github.io/se-idmp/ManufacturedItemDefinition/CefuroximStragen-1.5g-Powder-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = CefuroximStragen-1.5g-Powder-SE-IS-Ingredient
 * entry[=].request.method = #POST
 * entry[=].request.url = "Ingredient/CefuroximStragen-1.5g-Powder-SE-IS-Ingredient"
+* entry[=].fullUrl = "http://medigree.github.io/se-idmp/Ingredient/CefuroximStragen-1.5g-Powder-SE-IS-Ingredient"
 
 
 Instance: CefuroximStragen-1.5g-Powder-SE-IS-MedicinalProductDefinition
