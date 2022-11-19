@@ -49,7 +49,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * ^short = "Status of the product's data. Default 200000005004 'Current'"
 
 * legalStatusOfSupply 1..1
-  * coding.system = $100000072051 
+  * coding.code from legal-status-for-the-supply-vs
   * ^short = "Legal status of supply on the medicinal product level."
   * ^definition = "EMA IG 1.7. Legal status of supply on the medicinal product level. The same information can be repeated/differentiated on the package level"
 
@@ -182,12 +182,12 @@ Title: "PPL Manufactured Item profile"
 Description: """Manufactured item is the countable element inside the package"""
 
 * manufacturedDoseForm 1..1
-  * coding.system = $200000000004
+  * coding.code from pharmaceutical-doseform-vs
   * ^short = "Dose form of the manufactured item (before preparing for administration)"
   * ^definition = "EMA IG 4.11.3"
 
 * unitOfPresentation 1..1
-  * coding.system = $200000000014
+  * coding.code from unit-of-presentation-vs
   * ^short = "Unit of presentation of the manufactured item (before preparing for administration)"
   * ^definition = "EMA IG 4.11.1"
 
@@ -207,11 +207,13 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 
 * administrableDoseForm 1..1
   * coding.system = $200000000004
+  * coding.code from pharmaceutical-doseform-vs
   * ^short = "Dose form of the administrable product (after preparing for administration)"
   * ^definition = "EMA IG 6.2"
 
 * unitOfPresentation 0..1
   * coding.system = $200000000014
+  * coding.code from unit-of-presentation-vs
   * ^short = "Unit of presentation of the administrable product (after preparing for administration). Not applicable for certain products/packaging."
   * ^definition = "EMA IG 6.3"
 
@@ -221,6 +223,7 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 
 * routeOfAdministration
   * code.coding.system = $100000073345
+  * code.coding.code from routes-and-methods-of-administration-vs
   * ^definition = "EMA IG 6.6"
 
 // PROFILE: Ingredient
@@ -250,6 +253,7 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
       //* numerator.comparator.coding.system = $100000000008 // TO DO: not easily extendable, what to do with it?
       * numerator.system 1..1
       * numerator.system = $100000110633
+      * numerator.unit from unit-of-measurement-vs
       * denominator.system 1..1
         * ^short = "Unit of measurement or unit of presentation"
       * denominator.unit from all-units-vs
@@ -260,8 +264,10 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
       //* numerator.comparator.coding.system = $100000000008 // TO DO: not easily extendable, what to do with it?
       * numerator.system 1..1
       * numerator.system = $100000110633
+      * numerator.unit from unit-of-measurement-vs
       * denominator.system 1..1
       * denominator.system = $100000110633
+      * denominator.unit from unit-of-measurement-vs
 
     * referenceStrength
       * ^definition = "EMA IG 5.5.3"
@@ -272,6 +278,7 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
       * strengthRatio
         * numerator.system 1..1
         * numerator.system = $100000110633
+        * numerator.unit from unit-of-measurement-vs
         * denominator.system 1..1
           * ^short = "Unit of measurement or unit of presentation"
         * denominator.unit from all-units-vs
@@ -303,6 +310,7 @@ Description: """Packaged Product"""
 
 * containedItemQuantity 1..*
   * system = $200000000014
+  * unit from unit-of-presentation-vs
   * ^short = "Pack size. Repeated for combination packages."
   * ^definition = "EMA IG 4.4"
 
@@ -313,7 +321,7 @@ Description: """Packaged Product"""
 * legalStatusOfSupply 0..1
   * ^short = "Legal status of supply on the packaged product level."
   * ^definition = "EMA IG 4.5. Legal status of supply on the packaged product level. The same information can be repeated/differentiated on the medicinal product level"
-  * code.coding.system = $100000072051 
+  * code.coding.code from legal-status-for-the-supply-vs
   * jurisdiction.coding.system = $100000000002
 
 * marketingStatus
@@ -333,7 +341,7 @@ Description: """Packaged Product"""
     * ^definition = "EMA IG 4.8.5"
   
   * material
-    * coding.system = $200000003199
+    * coding.code from material-vs
     * ^definition = "EMA IG 4.8.7"
  
   * shelfLifeStorage
@@ -349,7 +357,7 @@ Description: """Packaged Product"""
     * amount
       * ^short = "Number of the manufactured items (e.g. tablets) in this package layer or the amount of manufactured item (e.g. 20 g) in the unit of presentation defined in manufactured item definition"
       * ^definition = "EMA IG 4.11.2"
-// TO DO: amount.system = $200000000014 or $100000110633
+      * code from all-units-vs
 
 
 // TO DO: I'm not sure we want to use Organisation as a separate resource, but right now it is. See the comment at RegulatedAuthorization
