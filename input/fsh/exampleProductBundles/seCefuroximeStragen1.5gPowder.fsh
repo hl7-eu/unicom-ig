@@ -11,6 +11,10 @@ Description: "Cefuroxim Stragen 1.5g Powder for solution for injection/infusion.
 * entry[=].request.method = #POST
 * entry[=].request.url = "RegulatedAuthorization/CefuroximStragen-1.5g-Powder-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "http://medigree.github.io/se-idmp/RegulatedAuthorization/CefuroximStragen-1.5g-Powder-SE-IS-RegulatedAuthorization"
+* entry[+].resource = LOC-100001098-StragenNordic
+* entry[=].request.method = #POST
+* entry[=].request.url = "Organization/LOC-100001098-StragenNordic"
+* entry[=].fullUrl = "http://medigree.github.io/se-idmp/Organization/LOC-100001098-StragenNordic"
 * entry[+].resource = CefuroximStragen-1.5g-Powder-SE-IS-AdminProdDef
 * entry[=].request.method = #POST
 * entry[=].request.url = "AdministrableProductDefinition/CefuroximStragen-1.5g-Powder-SE-IS-AdminProdDef"
@@ -73,7 +77,7 @@ Description: "Marketing Authorisation Holder / Organisation"
 * name = "Stragen Nordic A/S"
 
 Instance: CefuroximStragen-1.5g-Powder-SE-IS-AdminProdDef
-InstanceOf: AdministrableProductDefinition
+InstanceOf: PPLAdministrableProductDefinition
 Usage: #inline
 * status = #active
 * formOf = Reference(CefuroximStragen-1.5g-Powder-SE-IS-MedicinalProductDefinition)
@@ -83,7 +87,7 @@ Usage: #inline
 * routeOfAdministration.code.coding[+] = $100000073345#100000073611 "Intravenous use"
 
 Instance: CefuroximStragen-1.5g-Powder-SE-IS-PackagedProductDefinition
-InstanceOf: PackagedProductDefinition
+InstanceOf: PPLPackagedProductDefinition
 Usage: #inline
 * packageFor = Reference(CefuroximStragen-1.5g-Powder-SE-IS-MedicinalProductDefinition)
 * containedItemQuantity = 10 $200000000014#200000002158 "Vial"
@@ -99,17 +103,17 @@ Usage: #inline
 * package.package.quantity = 10
 * package.package.material = $200000003199#200000003203 "Glass"
 * package.package.containedItem.item.reference = Reference(CefuroximStragen-1.5g-Powder-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 1 200000000014#200000002158 "Vial"
+* package.package.containedItem.amount = 1 $200000000014#200000002158 "Vial"
 
 Instance: CefuroximStragen-1.5g-Powder-SE-IS-ManufacturedItemDefinition
-InstanceOf: ManufacturedItemDefinition
+InstanceOf: PPLManufacturedItemDefinition
 Usage: #inline
 * status = #active
 * manufacturedDoseForm = $200000000004#100000116186 "Powder for solution for injection/infusion"
 * unitOfPresentation = $200000000014#200000002158 "Vial"
 
 Instance: CefuroximStragen-1.5g-Powder-SE-IS-Ingredient
-InstanceOf: Ingredient
+InstanceOf: PPLIngredient
 Usage: #inline
 * status = #active
 * for[0] = Reference(CefuroximStragen-1.5g-Powder-SE-IS-MedicinalProductDefinition)
@@ -120,11 +124,11 @@ Usage: #inline
 // * substance.strength.referenceStrength.strengthRatio.numerator.comparator = #=
 // * substance.strength.concentrationRatio.numerator.comparator.extension.url = "http://ema.europa.eu/fhir/extension/comparator"
 // * substance.strength.concentrationRatio.numerator.comparator.extension.valueCoding = $100000000008#100000000049 "equal to"
-* substance.strength.presentationRatio.numerator = 1.578 100000110633#100000110654 "gram(s)"
-* substance.strength.presentationRatio.denominator = 1 100000110633#200000027120 "countable unit(s)" //TODO should be vial maybe
+* substance.strength.presentationRatio.numerator = 1.578 $100000110633#100000110654 "gram(s)"
+* substance.strength.presentationRatio.denominator = 1 $100000110633#200000027120 "countable unit(s)" //TODO should be vial maybe
 * substance.strength.referenceStrength.substance.concept = $sms#100000092667 "cefuroxime"
 // * substance.strength.referenceStrength.strengthRatio.numerator.comparator = #=
 // * substance.strength.referenceStrength.strengthRatio.numerator.comparator.extension.url = "http://ema.europa.eu/fhir/extension/comparator"
 // * substance.strength.referenceStrength.strengthRatio.numerator.comparator.extension.valueCoding = $100000000008#100000000049 "equal to"
-* substance.strength.referenceStrength.strengthRatio.numerator = 1.5 100000110633#100000110654 "gram(s)"
-* substance.strength.referenceStrength.strengthRatio.denominator = 1 100000110633#200000027120 "countable unit(s)"
+* substance.strength.referenceStrength.strengthRatio.numerator = 1.5 $100000110633#100000110654 "gram(s)"
+* substance.strength.referenceStrength.strengthRatio.denominator = 1 $100000110633#200000027120 "countable unit(s)"

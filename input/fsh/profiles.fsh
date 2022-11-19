@@ -253,10 +253,10 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
       //* numerator.comparator.coding.system = $100000000008 // TO DO: not easily extendable, what to do with it?
       * numerator.system 1..1
       * numerator.system = $100000110633
-      * numerator.unit from unit-of-measurement-vs
+      * numerator.code from unit-of-measurement-vs
       * denominator.system 1..1
         * ^short = "Unit of measurement or unit of presentation"
-      * denominator.unit from all-units-vs
+      * denominator.code from all-units-vs
       
     * concentrationRatio
       * ^short = "Strength per unit of measurement (20mg/1ml)"
@@ -264,10 +264,10 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
       //* numerator.comparator.coding.system = $100000000008 // TO DO: not easily extendable, what to do with it?
       * numerator.system 1..1
       * numerator.system = $100000110633
-      * numerator.unit from unit-of-measurement-vs
+      * numerator.code from unit-of-measurement-vs
       * denominator.system 1..1
       * denominator.system = $100000110633
-      * denominator.unit from unit-of-measurement-vs
+      * denominator.code from unit-of-measurement-vs
 
     * referenceStrength
       * ^definition = "EMA IG 5.5.3"
@@ -278,10 +278,10 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
       * strengthRatio
         * numerator.system 1..1
         * numerator.system = $100000110633
-        * numerator.unit from unit-of-measurement-vs
+        * numerator.code from unit-of-measurement-vs
         * denominator.system 1..1
           * ^short = "Unit of measurement or unit of presentation"
-        * denominator.unit from all-units-vs
+        * denominator.code from all-units-vs
 
         
 // PROFILE: Packaged Product
@@ -310,7 +310,7 @@ Description: """Packaged Product"""
 
 * containedItemQuantity 1..*
   * system = $200000000014
-  * unit from unit-of-presentation-vs
+  * code from unit-of-presentation-vs
   * ^short = "Pack size. Repeated for combination packages."
   * ^definition = "EMA IG 4.4"
 
@@ -340,8 +340,8 @@ Description: """Packaged Product"""
   * quantity 1..1
     * ^definition = "EMA IG 4.8.5"
   
-  * material
-    * coding.code from material-vs
+  * material from material-vs
+    //* coding.code from material-vs
     * ^definition = "EMA IG 4.8.7"
  
   * shelfLifeStorage
