@@ -90,9 +90,10 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * ^definition = "EMA IG 1.14.1"
   * namePart
     * ^slicing.discriminator.type = #pattern
-    * ^slicing.discriminator.path = "part.type.coding.code"
+    * ^slicing.discriminator.path = "type"
     * ^slicing.rules = #open
     * ^slicing.ordered = true
+    * ^slicing.description = "Slicing on the name part"
     * ^short = "Medicinal product name part"
     * ^definition = "EMA IG 1.14.3. Name part. Product names are usually combined of these three parts. More parts can be defined and strength and dose form parts can be omitted."
   * namePart contains
