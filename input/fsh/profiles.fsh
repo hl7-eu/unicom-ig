@@ -40,8 +40,9 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * ^short = "PMS ID"
   * ^definition = "EMA IG 1.1. EMA Product Management System identifier if exists. For UNICOM testing data fake PMS IDs can be used"
 
-* domain 1..1
-* domain = $100000000004#100000000012 "Human use"
+* domain 1..1 
+* domain from domain-vs
+//* domain = $100000000004#100000000012 "Human use"
   * ^definition = "EMA IG 1.3"
 
 * status 0..1
