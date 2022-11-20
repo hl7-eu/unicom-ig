@@ -1,5 +1,5 @@
-CodeSystem: LanguageEMA
-Id: LanguageEMA
+CodeSystem: Language_EMA_CS
+Id: language-ema-cs
 Title: "Language EMA"
 * ^url = $100000072057
 * ^status = #draft

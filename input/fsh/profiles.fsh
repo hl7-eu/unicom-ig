@@ -115,9 +115,12 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * country.coding contains
         ema 1..1 and
         iso 0..1
-    * country.coding[ema] from country-ema-vs
-    * country.coding[iso] from country-iso-vs
-      //* system = $iso-country
+    * country.coding[ema]
+      * system = $100000000002
+      * code from country-ema-vs
+    * country.coding[iso]
+      * system = $iso-country
+      * code from country-iso-vs
 
     * language.coding
       * ^slicing.discriminator.type = #pattern
@@ -127,8 +130,12 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * language.coding contains
         ema 1..1 and
         bcp 0..1
-    * language.coding[ema] from language-ema-vs
-    * language.coding[bcp] from language-bcp-vs
+    * language.coding[ema]
+      * system = $100000072057
+      * code from language-ema-vs
+    * language.coding[bcp]
+      * system = $BCP47
+      * code from language-bcp-vs
 
 
 // PROFILE: Regulated Authorisation 
