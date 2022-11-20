@@ -1,25 +1,35 @@
 Instance: Agen-5mg-Tablet-EE-MPD
-InstanceOf: PPLMedicinalProductDefinition
+InstanceOf: MedicinalProductDefinition
 Usage: #example
 Description: "Medicinal Product Definition: simple tablets"
 
-* identifier[mpid].value = "EE-100002580-15547"
+* identifier[+] 
+  * value = "EE-100002580-15547"
+  * system = "http://ema.europa.eu/fhir/mpId"
 * domain = $100000000004#100000000012 "Human use"
 * status = $200000005003#200000005004 "Current"
 * combinedPharmaceuticalDoseForm = $200000000004#100000073664 "Tablet"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[+].coding[+] = $100000093533#100000095065 "amlodipine"
+* classification[=].coding[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "AGEN 5 mg tabletid"
-* name.namePart[invented].part = "AGEN"
-* name.namePart[strength].part = "5 mg"
-* name.namePart[doseForm].part = "tabletid"
+
+* name.namePart[+].part = "AGEN"
+* name.namePart[=].type = $220000000000#220000000002 "Invented name part"
+
+* name.namePart[+].part = "5 mg"
+* name.namePart[=].type = $220000000000#220000000004 "Strength part"
+
+* name.namePart[+].part = "tabletid"
+* name.namePart[=].type = $220000000000#220000000005 "Pharmaceutical dose form part"
+
+
 * name.countryLanguage.country = $100000000002#100000000388 "Republic of Estonia"
 * name.countryLanguage.language = $100000072057#100000072172 "Estonian"
 
 
 Instance: Agen-5mg-Tablet-EE-RA
-InstanceOf: PPLRegulatedAuthorization
+InstanceOf: RegulatedAuthorization
 Usage: #example
 Description: "Marketing Authorisation"
 
@@ -33,15 +43,16 @@ Description: "Marketing Authorisation"
 
 
 Instance: LOC-100002580-Zentiva
-InstanceOf: PPLOrganization
+InstanceOf: Organization
 Usage: #example
 Description: "Marketing Authorisation Holder / Organisation"
 
-* identifier[loc].value = "LOC-100002580"
+* identifier[+].value = "LOC-100002580"
+* identifier[=].system = $loc-id
 * name = "Zentiva k.s."
 
 Instance: Agen-5mg-Tablet-EE-APD
-InstanceOf: PPLAdministrableProductDefinition
+InstanceOf: AdministrableProductDefinition
 Usage: #example
 Description: "Administrable/Pharmaceutical Product Definition: simple tablets"
 * status = #active
@@ -53,7 +64,7 @@ Description: "Administrable/Pharmaceutical Product Definition: simple tablets"
 
 
 Instance: Agen-5mg-Tablet-EE-MID
-InstanceOf: PPLManufacturedItemDefinition
+InstanceOf: ManufacturedItemDefinition
 Usage: #example
 Description: "Manufactured Item: simple tablet"
 * status = #active
@@ -61,7 +72,7 @@ Description: "Manufactured Item: simple tablet"
 * unitOfPresentation = $200000000014#200000002152 "Tablet"
 
 Instance: Agen-5mg-Tablet-EE-I
-InstanceOf: PPLIngredient
+InstanceOf: Ingredient
 Usage: #example
 Description: "Ingredient: amlodipine besilate, presentation strength; amlodipine, reference strength"
 
@@ -83,11 +94,15 @@ Description: "Ingredient: amlodipine besilate, presentation strength; amlodipine
 
 
 Instance: Agen-5mg-Tablet-EE-PPD-1109887-A
-InstanceOf: PPLPackagedProductDefinition
+InstanceOf: PackagedProductDefinition
 Usage: #example
 Description: "Packaged Product Definition: simple tablets"
 
-* identifier[pcid].value = "EE-100002580-15547-1109887"
+* identifier[+]
+  * value = "EE-100002580-15547-1109887"
+  * system = "http://ema.europa.eu/example/pcid"
+
+
 * packageFor = Reference(Agen-5mg-Tablet-EE-MPD)
 * containedItemQuantity = 30 $200000000014#200000002152 "Tablet"
 * description = "Tabletid on pakendatud PVC/PVDC/Al blistritesse (valged)."
@@ -108,10 +123,13 @@ Description: "Packaged Product Definition: simple tablets"
 
 
 Instance: Agen-5mg-Tablet-EE-PPD-1109887-B
-InstanceOf: PPLPackagedProductDefinition
+InstanceOf: PackagedProductDefinition
 Usage: #example
 Description: "Packaged Product Definition: simple tablets"
-* identifier[pcid].value = "EE-100002580-15547-1109887"
+* identifier[+]
+  * value = "EE-100002580-15547-1109887"
+  * system = "http://ema.europa.eu/example/pcid"
+
 * packageFor = Reference(Agen-5mg-Tablet-EE-MPD)
 * containedItemQuantity = 30 $200000000014#200000002152 "Tablet"
 * description = "Tabletid on pakendatud PVC/Al blistritesse (valged)."
@@ -131,28 +149,45 @@ Description: "Packaged Product Definition: simple tablets"
 
 
 Instance: Cefuroxime-MIP-1500mg-EE-MPD
-InstanceOf: PPLMedicinalProductDefinition
+InstanceOf: MedicinalProductDefinition
 Usage: #example
 Description: "Medicinal Product Definition: powder for solution"
 
-* identifier[pmsid].value = "EE0000002"
-* identifier[mpid].value = "EE-100009199-27834"
+* identifier[+]
+  * value = "EE0000002"
+  * system = "http://ema.europa.eu/fhir/pmsId"
+
+* identifier[+]
+  * value = "EE-100009199-27834"
+
+
 * domain = $100000000004#100000000012 "Human use"
 * status.coding[0] = $200000005003#200000005004 "Current"
 //* status.coding[+] = $publication-status#active "Active"
 * combinedPharmaceuticalDoseForm = $200000000004#100000116186 "Powder for solution for injection/infusion"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal Product subject to medical prescription"
 //* additionalMonitoringIndicator = $additionalMonitoringIndicator#False "False"
-* classification[atc].coding[ema] = $100000093533#100000096183 "Cefuroxime"
-* classification[atc].coding[who] = $who-atc#J01DC02 "cefuroxime"
+* classification[+].coding[+] = $100000093533#100000096183 "Cefuroxime"
+* classification[=].coding[+] = $who-atc#J01DC02 "cefuroxime"
+
+
 * name.productName = "Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber"
-* name.namePart[invented].part = "Cefuroxime MIP"
-* name.namePart[strength].part = "1500 MG"
+* name.namePart[+].part = "Cefuroxime MIP"
+* name.namePart[=].type = $220000000000#220000000002 "Invented name part"
+
+
+* name.namePart[+].part = "1500 MG"
+* name.namePart[=].type = $220000000000#220000000004 "Strength part"
+
+* name.namePart[+].part = "tabletid"
+* name.namePart[=].type = $220000000000#220000000005 "Pharmaceutical dose form part"
+
+
 * name.countryLanguage.country = $100000000002#100000000388 "Republic of Estonia"
 * name.countryLanguage.language = $100000072057#100000072172 "Estonian"
 
 Instance: Cefuroxime-MIP-1500mg-EE-RA
-InstanceOf: PPLRegulatedAuthorization
+InstanceOf: RegulatedAuthorization
 Usage: #example
 Description: "Marketing Authorisation"
 
@@ -165,16 +200,19 @@ Description: "Marketing Authorisation"
 * holder = Reference(LOC-100009199-Mip)
 
 Instance: LOC-100009199-Mip
-InstanceOf: PPLOrganization
+InstanceOf: Organization
 Usage: #example
 Description: "Marketing Authorisation Holder / Organisation"
 
-* identifier[loc].value = "LOC-100009199"
+* identifier[+]
+  * value = "LOC-100009199"
+  * system = $loc-id
+
 * name = "Mip Pharma GmbH"
 
 
 Instance: Cefuroxime-MIP-1500mg-EE-APD
-InstanceOf: PPLAdministrableProductDefinition
+InstanceOf: AdministrableProductDefinition
 Usage: #example
 Description: "Administrable/Pharmaceutical Product Definition: transformed"
 * status = #active
@@ -186,7 +224,7 @@ Description: "Administrable/Pharmaceutical Product Definition: transformed"
 //* routeOfAdministration[+].code = $100000073345#100000073611 "Intravenous use"
 
 Instance: Cefuroxime-MIP-1500mg-EE-MID
-InstanceOf: PPLManufacturedItemDefinition
+InstanceOf: ManufacturedItemDefinition
 Usage: #example
 Description: "Manufactured Item: powder in vial"
 * status = #active
@@ -214,11 +252,14 @@ Description: "Ingredient: cefuroxime sodium, presentation strength; cefuroxime s
 * substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002158 "Vial"
 
 Instance: Cefuroxime-MIP-1500mg-EE-PPD-1529940
-InstanceOf: PPLPackagedProductDefinition
+InstanceOf: PackagedProductDefinition
 Usage: #example
 Description: "Packaged Product Definition: powder for solution in 1 vial"
 
-* identifier[pcid].value = "EE-100009199-27834-1529940"
+* identifier[+]
+  * value = "EE-100009199-27834-1529940"
+  * system = "http://ema.europa.eu/example/pcid"
+
 * packageFor = Reference(Cefuroxime-MIP-1500mg-EE-MPD)
 * containedItemQuantity = 1 $200000000014#200000002158 "vial"
 * description = "I tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 1 viaal"
@@ -236,7 +277,7 @@ Description: "Packaged Product Definition: powder for solution in 1 vial"
 * package.package.containedItem.amount.value = 1
 
 Instance: Cefuroxime-MIP-1500mg-EE-PPD-1529962
-InstanceOf: PPLPackagedProductDefinition
+InstanceOf: PackagedProductDefinition
 Usage: #example
 Description: "Packaged Product Definition: powder for solution in 10 vials"
 
@@ -258,26 +299,35 @@ Description: "Packaged Product Definition: powder for solution in 10 vials"
 
 
 Instance: CanifugCremolum-EE-MPD
-InstanceOf: PPLMedicinalProductDefinition
+InstanceOf: MedicinalProductDefinition
 Usage: #example
 Description: "Medicinal Product Definition: combination product of creme and pessaries"
 
-* identifier[pmsid].value = "EE00000003"
-* identifier[mpid].value = "EE-100004795-10280"
+* identifier[+]
+  * value = "EE00000003"
+  * system = "http://ema.europa.eu/example/pmsId"
+
+* identifier[+]
+  * value = "EE-100004795-10280"
+  * system = "http://ema.europa.eu/example/mpId"
+
 * domain = $100000000004#100000000012 "Human use"
 * status.coding[0] = $200000005003#200000005004 "Current"
 //* status.coding[+] = $publication-status#active "Active"
 * combinedPharmaceuticalDoseForm = $200000000008#100000173972 "Cream + pessary"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal Product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095693 "clotrimazole"
-* classification[atc].coding[who] = $who-atc#G01AF02 "clotrimazole"
+* classification[+].coding[+] = $100000093533#100000095693 "clotrimazole"
+* classification[=].coding[=] = $who-atc#G01AF02 "clotrimazole"
 * name.productName = "Canifug Cremolum"
-* name.namePart[invented].part = "Canifug Cremolum"
+* name.namePart[+]
+  * part = "Canifug Cremolum"
+  * type = $220000000000#220000000002
+
 * name.countryLanguage.country = $100000000002#100000000388 "Republic of Estonia"
 * name.countryLanguage.language = $100000072057#100000072172 "Estonian"
 
 Instance: CanifugCremolum-EE-RA
-InstanceOf: PPLRegulatedAuthorization
+InstanceOf: RegulatedAuthorization
 Usage: #example
 Description: "Marketing Authorisation"
 * identifier.value = "366201"
@@ -290,16 +340,19 @@ Description: "Marketing Authorisation"
 
 
 Instance: LOC-100004795-Wolff-Arzneimittel
-InstanceOf: PPLOrganization
+InstanceOf: Organization
 Usage: #example
 Description: "Marketing Authorisation Holder / Organisation"
 
-* identifier[loc].value = "LOC-100004795"
+* identifier[+]
+  * value = "LOC-100004795"
+  * system = $loc-id
+
 * name = "Dr. August Wolff GmbH & Co. KG Arzneimittel"
 
 
 Instance: CanifugCremolum-10mg1g-Cream-EE-APD
-InstanceOf: PPLAdministrableProductDefinition
+InstanceOf: AdministrableProductDefinition
 Usage: #example
 Description: "Administrable/Pharmaceutical Product Definition: creme"
 * status = #active
@@ -310,7 +363,7 @@ Description: "Administrable/Pharmaceutical Product Definition: creme"
 * routeOfAdministration.code = $100000073345#100000073566 "Cutaneous use"
 
 Instance: CanifugCremolum-100mg-Pessary-EE-APD
-InstanceOf: PPLAdministrableProductDefinition
+InstanceOf: AdministrableProductDefinition
 Usage: #example
 Description: "Administrable/Pharmaceutical Product Definition: pessaries"
 * status = #active
@@ -321,7 +374,7 @@ Description: "Administrable/Pharmaceutical Product Definition: pessaries"
 * routeOfAdministration.code = $100000073345#100000073639 "Vaginal use"
 
 Instance: CanifugCremolum-10mg1g-Cream-EE-MID
-InstanceOf: PPLManufacturedItemDefinition
+InstanceOf: ManufacturedItemDefinition
 Usage: #example
 Description: "Manufactured Item: cream in tube"
 * status = #active
@@ -329,7 +382,7 @@ Description: "Manufactured Item: cream in tube"
 * unitOfPresentation = $200000000014#200000002156 "Tube"
 
 Instance: CanifugCremolum-100mg-Pessary-EE-MID
-InstanceOf: PPLManufacturedItemDefinition
+InstanceOf: ManufacturedItemDefinition
 Usage: #example
 Description: "Manufactured Item: pessary"
 * status = #active
@@ -337,7 +390,7 @@ Description: "Manufactured Item: pessary"
 * unitOfPresentation = $200000000014#200000002137 "Pessary"
 
 Instance: CanifugCremolum-10mg1g-Cream-EE-I
-InstanceOf: PPLIngredient
+InstanceOf: Ingredient
 Usage: #example
 Description: "Ingredient: clotrimazole, concentration strength"
 * status = #active
@@ -352,7 +405,7 @@ Description: "Ingredient: clotrimazole, concentration strength"
 * substance.strength.concentrationRatio.denominator = 1 $100000110633#100000110654 "gram(s)"
 
 Instance: CanifugCremolum-100mg-Pessary-EE-I
-InstanceOf: PPLIngredient
+InstanceOf: Ingredient
 Usage: #example
 Description: "Ingredient: clotrimazole, presentation strength"
 * status = #active
@@ -365,11 +418,13 @@ Description: "Ingredient: clotrimazole, presentation strength"
 * substance.strength.presentationRatio.denominator = 1 $200000000014#200000002137 "Pessary"
 
 Instance: CanifugCremolum-EE-PPD-1033692
-InstanceOf: PPLPackagedProductDefinition
+InstanceOf: PackagedProductDefinition
 Usage: #example
 Description: "Packaged Product Definition: combination package of creme and pessaries"
 
-* identifier[pcid].value = "EE-100004795-10280-1033692"
+* identifier[+] 
+  * system = "http://ema.europa.eu/example/pcid"
+  * value = "EE-100004795-10280-1033692"
 * packageFor = Reference(CanifugCremolum-EE-MPD)
 * containedItemQuantity[0] = 6 $200000000014#200000002137 "Pessary"
 * containedItemQuantity[+] = 1 $200000000014#200000002156 "Tube"
