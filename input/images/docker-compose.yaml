@@ -9,12 +9,13 @@ services:
       - ${server_port:-8080}:8080
     environment:
       - spring.config.location=${ig_url}/application.yaml
-      - hapi.fhir.fhir_version=${FHIRversion}
-      - hapi.fhir.implementationguide.${ig_code}.url=${ig_url}/package.tgz
-      - hapi.fhir.implementationguide.${ig_code}.name=${ig_package_name}
-      - hapi.fhir.implementationguide.${ig_code}.ig_version=${ig_version}
+      - hapi.fhir.fhir_version=${fhir_version}
+      - hapi.fhir.staticContentBase=apps
+      - hapi.fhir.implementationguides.${ig_name:-ig}.url=${ig_url}/package.tgz
+      - hapi.fhir.implementationguides.${ig_name:-ig}.name=${ig_package_name}
+      - hapi.fhir.implementationguides.${ig_name:-ig}.version=${ig_version}
     volumes:
-      - /mnt/c/work/ProdViewer/serverhome:/apps
+      - ./apps:/apps
 
   ember:
     image: jkiddo/ember:latest
