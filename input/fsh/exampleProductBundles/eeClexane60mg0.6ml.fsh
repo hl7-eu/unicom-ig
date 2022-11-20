@@ -16,8 +16,8 @@ Description: "Clexane, enoxaparine sodium 60mg/0.6ml, 2 pre-filled syringes. Pre
 
 * entry[+].resource = LOC-100001368-Sanofi-Aventis
 * entry[=].request.method = #PUT
-* entry[=].request.url = "Organisation/LOC-100001368-Sanofi-Aventis"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organisation/LOC-100001368-Sanofi-Aventis"
+* entry[=].request.url = "Organization/LOC-100001368-Sanofi-Aventis"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001368-Sanofi-Aventis"
 
 * entry[+].resource = Clexane-60mg-0.6ml-solinj-EE-APD
 * entry[=].request.method = #PUT
@@ -105,7 +105,7 @@ Usage: #inline
 * substance.code.concept = $sms#100000090152 "Enoxaparin sodium"
 //* substance.strength.concentrationRatio.numerator.comparator.extension.url = "http://ema.europa.eu/fhir/extension/comparator"
 //* substance.strength.concentrationRatio.numerator.comparator.extension.valueCoding = $100000000008#100000000049 "equal to"
-* substance.strength.concentrationRatio.numerator = 60 $100000110633#100000110655 " milligram(s)"
+* substance.strength.concentrationRatio.numerator = 60 $100000110633#100000110655 "milligram(s)"
 * substance.strength.concentrationRatio.denominator = 0.6 $100000110633#100000110662 "millilitre(s)"
 
 Instance: Clexane-60mg-0.6ml-solinj-EE-PPD-1065552

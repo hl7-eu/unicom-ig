@@ -16,8 +16,8 @@ Description: "Paracetamol Kabi 10mg/ml solution for infusion. One pharmaceutical
 
 * entry[+].resource = LOC-100008123-FreseniusKabiPolska
 * entry[=].request.method = #PUT
-* entry[=].request.url = "Organisation/LOC-100008123-FreseniusKabiPolska"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organisation/LOC-100008123-FreseniusKabiPolska"
+* entry[=].request.url = "Organization/LOC-100008123-FreseniusKabiPolska"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100008123-FreseniusKabiPolska"
 
 * entry[+].resource = Paracetamol-Kabi-10mg-1ml-solinj-EE-APD
 * entry[=].request.method = #PUT
@@ -104,7 +104,7 @@ InstanceOf: PPLAdministrableProductDefinition
 Usage: #inline
 * status = #active
 * formOf = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD)
-* administrableDoseForm = $200000000004#100000174051 "Solution for solution for infusion "
+* administrableDoseForm = $200000000004#100000174051 "Solution for solution for infusion"
 * unitOfPresentation = $200000000014#200000002158 "Vial"
 * producedFrom = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034)
 * routeOfAdministration.code = $100000073345#100000073611 "Intravenous use"

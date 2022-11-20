@@ -9,8 +9,8 @@ Description: "YAZ ethinylestradiol 0.02mg, drosperinone 3mg, includes placebo ta
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition"
 * entry[+].resource = LOC-100016468-BayerAB
 * entry[=].request.method = #POST
-* entry[=].request.url = "Organisation/LOC-100016468-BayerAB"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organisation/LOC-100016468-BayerAB"
+* entry[=].request.url = "Organization/LOC-100016468-BayerAB"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100016468-BayerAB"
 * entry[+].resource = Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization
 * entry[=].request.method = #POST
 * entry[=].request.url = "RegulatedAuthorization/Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization"
