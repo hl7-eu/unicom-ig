@@ -1,7 +1,7 @@
 Instance: 006-Yaz-0023mg-tablet-SE-FullProduct
 InstanceOf: Bundle
 Usage: #example
-Description: "YAZ ethinylestradiol 0.02mg, drosperinone 3mg, includes placebo tablets. Sweden. Different manufactured items in one container."
+Description: "YAZ ethinylestradiol 0.02mg, drosperinone 3mg, includes placebo tablets. Kingdom of Sweden. Different manufactured items in one container."
 * type = #batch
 * entry[0].resource = Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition
 * entry[=].request.method = #POST
@@ -66,7 +66,7 @@ Usage: #inline
 * name.namePart[invented].part = "Yaz"
 * name.namePart[strength].part = "0,02 mg/3 mg"
 * name.namePart[doseForm].part = "Filmdragerad tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization
@@ -75,7 +75,7 @@ Usage: #inline
 * identifier.value = "26267"
 * subject = Reference(Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2008-07-03"
 * holder = Reference(LOC-100016468-BayerAB)
@@ -115,9 +115,9 @@ Usage: #inline
 * packageFor = Reference(Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition)
 * containedItemQuantity = 84 $200000000014#200000002152 "tablet"
 * description = "Blister, 3 x 28 tabletter"
-  * extension.url = "http://ema.europa.eu/fhir/extension/language"
-  * extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+//  * extension.url = "http://ema.europa.eu/fhir/extension/language"
+//  * extension.valueCoding = $100000072057#100000072288 "Swedish"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1

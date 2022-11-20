@@ -1,7 +1,7 @@
 CodeSystem: CountryEma
-Id: CountryEma
-Title: "CountryEma"
-Description: "country"
+Id: CountryEMA
+Title: "Country EMA"
+Description: "Country codes by EMA. Based on ISO 3166-1-2, recoded with RMS codes."
 * ^url = $100000000002
 * ^caseSensitive = true
 * ^status = #draft

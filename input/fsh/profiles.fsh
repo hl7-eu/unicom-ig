@@ -115,10 +115,9 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * country.coding contains
         ema 1..1 and
         iso 0..1
-    * country.coding[ema]
-      * system = $100000000002
-    * country.coding[iso]
-      * system = $iso-country
+    * country.coding[ema] from country-ema-vs
+    * country.coding[iso] from country-iso-vs
+      //* system = $iso-country
 
     * language.coding
       * ^slicing.discriminator.type = #pattern
@@ -128,10 +127,8 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * language.coding contains
         ema 1..1 and
         bcp 0..1
-    * language.coding[ema]
-      * system = $100000072057
-    * language.coding[bcp]
-      * system = $BCP47
+    * language.coding[ema] from language-ema-vs
+    * language.coding[bcp] from language-bcp-vs
 
 
 // PROFILE: Regulated Authorisation 
@@ -154,7 +151,7 @@ Description: """Regulated Authorization profile defines the Marketing Authorisat
 * type = $220000000060#220000000061 "Marketing Authorisation"
 
 * region 1..1
-* region.coding.system = $100000000002
+* region.coding from country-ema-vs
   * ^definition = "EMA IG 2.3"
 
 * status 1..1
@@ -323,12 +320,12 @@ Description: """Packaged Product"""
   * ^short = "Legal status of supply on the packaged product level."
   * ^definition = "EMA IG 4.5. Legal status of supply on the packaged product level. The same information can be repeated/differentiated on the medicinal product level"
   * code.coding.code from legal-status-for-the-supply-vs
-  * jurisdiction.coding.system = $100000000002
+  * jurisdiction.coding from country-ema-vs
 
 * marketingStatus
   * ^definition = "EMA IG 4.6"
   * country 1..1
-    * coding.system = $100000000002
+    * coding from country-ema-vs
   * status 1..1
     * coding.system = $100000072052
 

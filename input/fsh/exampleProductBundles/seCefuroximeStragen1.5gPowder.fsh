@@ -1,7 +1,7 @@
 Instance: 003-CefuroximStragen-1.5g-Powder-SE-FullProduct
 InstanceOf: Bundle
 Usage: #example
-Description: "Cefuroxim Stragen 1.5g Powder for solution for injection/infusion. Sweden. Strength in grams; man. item quantity unknown; transformation before administration."
+Description: "Cefuroxim Stragen 1.5g Powder for solution for injection/infusion. Kingdom of Sweden. Strength in grams; man. item quantity unknown; transformation before administration."
 * type = #transaction
 * entry[0].resource = CefuroximStragen-1.5g-Powder-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #POST
@@ -51,7 +51,7 @@ Usage: #inline
 * name.namePart[invented].part = "Cefuroxim Stragen"
 * name.namePart[strength].part = "1,5 g"
 * name.namePart[doseForm].part = "Pulver till injektions-/infusionsvätska, lösning"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: CefuroximStragen-1.5g-Powder-SE-IS-RegulatedAuthorization
@@ -61,7 +61,7 @@ Usage: #inline
 * identifier.value = "50006"
 * subject = Reference(CefuroximStragen-1.5g-Powder-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2014-06-11"
 * holder = Reference(LOC-100001098-StragenNordic)
@@ -94,7 +94,7 @@ Usage: #inline
 * description = "Injektionsflaska, 10 st (10 x 1,5 g)"
 //  * extension.url = "http://ema.europa.eu/fhir/extension/language"
 //  * extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1

@@ -65,8 +65,21 @@ Title: "Country (EMA SPOR RMS)"
 Description: "Countries. EMA SPOR RMS list."
 * include codes from system $100000000002 // Country
 
+ValueSet: CountryISO
+Id: country-iso-vs
+Title: "Country (ISO 3166-1-2)"
+Description: "Countries"
+* include codes from system $iso-country  // FHIR Country value set based on ISO 3166-1-2
+
 ValueSet: LanguageEMA
 Id: language-ema-vs
 Title: "Language (EMA SPOR RMS)"
 Description: "Languages. EMA SPOR RMS list."
 * include codes from system $100000072057 // Language
+
+ValueSet: LanguageBCP
+Id: language-bcp-vs
+Title: "Language (FHIR)"
+Description: "All languages"
+* include codes from system $BCP47 // FHIR all languages value set
+
