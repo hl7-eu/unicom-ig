@@ -1,4 +1,4 @@
-Instance: 007-Paracetamol-Kabi10mg-1ml-EE-FullProduct
+Instance: 009-Paracetamol-Kabi10mg-1ml-EE-FullProduct
 InstanceOf: Bundle
 Usage: #example
 Description: "Paracetamol Kabi 10mg/ml solution for infusion. One pharmaceutical product for three different manufactured items."

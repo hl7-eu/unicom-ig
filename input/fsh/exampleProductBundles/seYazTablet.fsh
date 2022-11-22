@@ -1,4 +1,4 @@
-Instance: 006-Yaz-0023mg-tablet-SE-FullProduct
+Instance: 006-Yaz-0.02mg3mg-tablet-SE-FullProduct
 InstanceOf: Bundle
 Usage: #example
 Description: "YAZ ethinylestradiol 0.02mg, drosperinone 3mg, includes placebo tablets. Kingdom of Sweden. Different manufactured items in one container."
@@ -109,7 +109,7 @@ Usage: #inline
 * routeOfAdministration.code = $100000073345#100000073619 "Oral use"
 
 Instance: Yaz-0023mg-tablet-SE-AJ-PackagedProductDefinition
-InstanceOf: PackagedProductDefinition
+InstanceOf: PPLPackagedProductDefinition
 Usage: #inline
 
 * packageFor = Reference(Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition)
@@ -137,21 +137,21 @@ Usage: #inline
 * package.package.package.containedItem[=].amount = 4 $200000000014#200000002152 "tablet"
 
 Instance: Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01
-InstanceOf: ManufacturedItemDefinition
+InstanceOf: PPLManufacturedItemDefinition
 Usage: #inline
 * status = #active
 * manufacturedDoseForm = $200000000004#100000073665 "Film-coated tablet"
 * unitOfPresentation = $200000000014#200000002152 "tablet"
 
 Instance: Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02
-InstanceOf: ManufacturedItemDefinition
+InstanceOf: PPLManufacturedItemDefinition
 Usage: #inline
 * status = #active
 * manufacturedDoseForm = $200000000004#100000073665 "Film-coated tablet"
 * unitOfPresentation = $200000000014#200000002152 "tablet"
 
 Instance: Yaz-0023mg-tablet-SE-AJ-Ingredient01
-InstanceOf: Ingredient
+InstanceOf: PPLIngredient
 Usage: #inline
 * status = #active
 * for[0] = Reference(Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition)
@@ -166,7 +166,7 @@ Usage: #inline
 * substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "tablet"
 
 Instance: Yaz-0023mg-tablet-SE-AJ-Ingredient02
-InstanceOf: Ingredient
+InstanceOf: PPLIngredient
 Usage: #inline
 * status = #active
 * for[0] = Reference(Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition)
@@ -181,7 +181,7 @@ Usage: #inline
 * substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "tablet"
 
 Instance: Yaz-0023mg-tablet-SE-AJ-Ingredient03
-InstanceOf: Ingredient
+InstanceOf: PPLIngredient
 Usage: #inline
 * status = #active
 * for[0] = Reference(Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition)

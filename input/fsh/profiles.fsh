@@ -242,8 +242,10 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
   * ^short = "Reference to the medicinal product, pharmaceutical product and/or manufactured item where the ingredient is used"
 * for only Reference(PPLMedicinalProductDefinition or PPLAdministrableProductDefinition or PPLManufacturedItemDefinition)
 
-* role = $100000072050#100000072072 "Active" //TO DO: I would, just in case, turn this into default rather than fixed
+* role // Default 100000072072 "Active"
+  * ^short = "Role of the ingredient. Default is 100000072072|Active as PPL data normally only includes active ingredients."
   * ^definition = "EMA IG 5.1"
+  * coding.system = $100000072050
 
 * substance
   * code.concept.coding.system = $sms 

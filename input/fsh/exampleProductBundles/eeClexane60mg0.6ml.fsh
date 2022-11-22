@@ -1,4 +1,4 @@
-Instance: 008-Clexane-60mg-0.6ml-EE-FullProduct
+Instance: 010-Clexane-60mg-0.6ml-EE-FullProduct
 InstanceOf: Bundle
 Usage: #example
 Description: "Clexane, enoxaparine sodium 60mg/0.6ml, 2 pre-filled syringes. Presentation strength per quantity."
