@@ -1,0 +1,395 @@
+{% assign mpdr = entry | where: "resource.resourceType","MedicinalProductDefinition" | first%}
+{% assign mpd = mpdr.resource %}
+
+<div class="container m-1 p-1 mpd">
+  <h4>
+    {{ mpd.name[0].productName }}
+  </h4>
+  {% for namepart in mpd.name[0].namePart %}
+    <p>
+      {{ namepart.type.coding[0].display }}:
+      <b>
+        {{ namepart.part }}
+      </b>
+    </p>
+  {% endfor %}
+  {% for pid in mpd.identifier %}
+    {{ pid.system | split: '/' | last | upcase }}:
+    <b>
+      {{ pid.value }}
+    </b>
+  {% endfor %}
+
+  {% if mpd.name[0].countryLanguage %}
+    <div>
+      {% for lang in mpd.name[0].countryLanguage %}
+        <p>
+          Country:
+          <b>
+            {{ lang.country.coding[0].display }}
+          </b>
+        </p>
+        <p>
+          Language:
+          <b>
+            {{ lang.language.coding[0].display }}
+          </b>
+        </p>
+
+      {% endfor %}
+    </div>
+  {% endif %}
+  <div>
+    <p>
+      status: {{mpd.status.coding[0].display}}
+    </p>
+  </div>
+  <div>
+    <p>
+      Domain: {{mpd.domain.coding[0].display}}
+    </p>
+  </div>
+  <div>
+    <p>
+      Combined pharmaceutical dose form: {{mpd.combinedPharmaceuticalDoseForm.coding[0].display}}
+    </p>
+  </div>
+  <div>
+    <p>
+      Legal Status of Supply: {{mpd.legalStatusOfSupply.coding[0].display}}
+    </p>
+  </div>
+
+  <div>
+    Classification:
+    <ul>
+      {% for class in mpd.classification[0].coding %}
+        <li>
+          {{class.display}} ({{class.code}})
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% assign ras = entry | where: "resource.resourceType","RegulatedAuthorization"%}
+
+
+  {% for rar in ras %}
+    {% assign ra = rar.resource %}
+
+    {% if ra.subject[0].reference == mpd.id | prepend: 'MedicinalProductDefinition/' %}
+      <div class="container m-1 p-1 rcorners ra">
+        Auth id:
+        <b>
+          {% for raid in ra.identifier %}
+            {{ raid.value | join: ", "}}
+          {% endfor %}
+        </b>
+
+        <p>
+          Region:
+          <b>
+            {% for rareg in ra.region %}
+              {{ rareg.coding[0].display}}
+            {% endfor %}
+          </b>
+        </p>
+        <p>
+          Type:
+          <b>
+            {{ ra.type.coding[0].display}}
+          </b>
+        </p>
+        <p>
+          Holder:
+          <b>
+            {{ ra.holder.reference | split: '/' | last }}
+          </b>
+        </p>
+        <p>
+          Status:
+          <b>
+            {{ ra.status.coding[0].display}} ({{ ra.statusDate }})
+          </b>
+        </p>
+
+      </div>
+
+    {% endif %}
+  {% endfor %}
+
+  {% comment %}
+    THIS IS HOW TO ITERATE A LINKED STRUCTURE
+    {% assign ras = entry | where: "resource.resourceType","RegulatedAuthorization"%}
+    {% assign rasf = ras | where: "subject[0].reference", mpd.id | prepend: 'MedicinalProductDefinition/' %}
+    {% for rar in rasf %}
+    {% assign ra = rar.resource %}
+
+    {% endfor %}
+  {% endcomment %}
+
+
+  {% assign ppds = entry | where: "resource.resourceType","PackagedProductDefinition"%}
+
+  {% for ppdr in ppds %}
+    {% assign ppd = ppdr.resource %}
+
+    Package {{forloop.index}} of {{ ppds | size }}
+    {% if ppd.packageFor[0].reference == mpd.id | prepend: 'MedicinalProductDefinition/' %}
+      <div class="container m-1 p-1 rcorners ppd">
+
+        {% for ppid in ppd.identifier %}
+          {{ ppid.system | split: '/' | last | upcase }}:
+          <b>
+            {{ ppid.value }}
+          </b>
+        {% endfor %}
+        <p>
+          Description:
+          <b>
+            {{ppd.description}}
+          </b>
+        </p>
+        Marketing Status:
+        <ul>
+          {% for mkts in ppd.marketingStatus %}
+            <li>
+              {{mkts.country.coding[0].display }}:
+              <b>
+                {{mkts.status.coding[0].display }}
+              </b>
+            </li>
+          {% endfor %}
+        </ul>
+        <p>
+          Content:
+          {% for quant in ppd.containedItemQuantity %}
+            {{quant.value }} {{quant.unit | pluralize: quant.unit }}
+          {% endfor %}
+        </p>
+
+
+      </div>
+    {% endif %}
+  {% endfor %}
+
+
+  {% comment %}
+    {% assign ppds = entry | where: "resource.resourceType","PackagedProductDefinition"%}
+
+    {% for ppdr in ppds %}
+    {% assign ppd = ppdr.resource %}
+
+    Package {{forloop.index}} of {{ ppds | size }}
+    {% if ppd.packageFor[0].reference == mpd.id | prepend: 'MedicinalProductDefinition/' %}
+    <div
+    class="container m-1 p-1 rcorners ppd">
+    </div>
+    {% endif %}
+    {% endfor %}
+  {% endcomment %}
+
+  {% assign apds = entry | where: "resource.resourceType","AdministrableProductDefinition"%}
+
+  {% for apdr in apds %}
+    {% assign apd = apdr.resource %}
+
+    Administrable Product ({{forloop.index}} of {{ apds | size }})
+    {% if apd.formOf[0].reference == mpd.id | prepend: 'MedicinalProductDefinition/' %}
+      <div class="container m-1 p-1 rcorners apd">
+
+        <p>
+          Dose form:
+          <b>
+            {{ apd.administrableDoseForm.coding[0].display}}
+          </b>
+        </p>
+
+        <p>
+          Presentation unit:
+          <b>
+            {{ apd.unitOfPresentation.coding[0].display}}
+          </b>
+        </p>
+
+
+        Contents (Manuf. Items):
+        <ul>
+          {% assign mids = entry | where: "resource.resourceType","ManufacturedItemDefinition"%}
+
+          {% for midr in mids %}
+            {% assign mid = midr.resource %}
+
+            {% if apd.producedFrom[0].reference == mid.id | prepend: 'AdministrableProductDefinition/' %}
+              <div class="container m-1 p-1 rcorners mid">
+                <b>
+                  {{ mid.id}}</b>
+                <p>
+                  Dose form:
+                  <b>
+                    {{ mid.manufacturedDoseForm.coding[0].display}}
+                  </b>
+                </p>
+
+                <p>
+                  Presentation unit:
+                  <b>
+                    {{ mid.unitOfPresentation.coding[0].display}}
+                  </b>
+                </p>
+
+
+
+                Ingredients:
+                <ul>
+                  {% assign midings = entry | where: "resource.resourceType","Ingredient"%}
+                  {% for midingr in midings %}
+                    {% assign miding = midingr.resource %}
+
+                    {% if mid.for[1].reference == miding.id | prepend: 'ManufacturedItemDefinition/' %}
+                      <div class="container m-1 p-1 rcorners miding">
+                        <b>
+                          {{ miding.id}}</b>
+                        <p>
+                          Status:
+                          <b>
+                            {{ miding.status | capitalize}}
+                          </b>
+                        </p>
+
+                        <p>
+                          Role:
+                          <b>
+                            {{ miding.role.coding[0].display}}
+                          </b>
+                        </p>
+
+                        <p>
+                          Substance:
+                          <b>
+                            {{ miding.substance.code.concept.coding[0].display}}
+                          </b>
+                        </p>
+
+                        {% for strn in miding.substance.strength %}
+                          {% if strn.concentrationRatio %}
+                            <p>
+                              Concentration strength:
+                              <b>
+                                {{ strn.concentrationRatio.numerator.value}}{{ strn.concentrationRatio.numerator.unit}} /
+                                {{ strn.concentrationRatio.denominator.value}}{{ strn.concentrationRatio.denominator.unit}}
+                              </b>
+                            </p>
+                          {% endif %}
+                        {% endfor %}
+
+                        {% for strn in miding.substance.strength %}
+                          {% if strn.presentationRatio %}
+                            <p>
+                              Presentation strength:
+                              <b>
+                                {{ strn.presentationRatio.numerator.value}} {{ strn.presentationRatio.numerator.unit}} /
+
+                                {{ strn.presentationRatio.denominator.value}} {{ strn.presentationRatio.denominator.unit}}
+                              </b>
+                            </p>
+                          {% endif %}
+                        {% endfor %}
+
+
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+
+
+
+              </div>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+
+
+        Ingredients:
+        <ul>
+          {% assign apdings = entry | where: "resource.resourceType","Ingredient"%}
+          {% for apdingr in apdings %}
+            {% assign apding = apdingr.resource %}
+
+            {% if apd.for[2].reference == apding.id | prepend: 'AdministrableProductDefinition/' %}
+              <div class="container m-1 p-1 rcorners apding">
+                <b>
+                  {{ apding.id}}</b>
+                <p>
+                  Status:
+                  <b>
+                    {{ apding.status | capitalize}}
+                  </b>
+                </p>
+
+                <p>
+                  Role:
+                  <b>
+                    {{ apding.role.coding[0].display}}
+                  </b>
+                </p>
+
+                <p>
+                  Substance:
+                  <b>
+                    {{ apding.substance.code.concept.coding[0].display}}
+                  </b>
+                </p>
+
+                {% for strn in apding.substance.strength %}
+                  {% if strn.concentrationRatio %}
+                    <p>
+                      Concentration strength:
+                      <b>
+                        {{ strn.concentrationRatio.numerator.value}}{{ strn.concentrationRatio.numerator.unit}} /
+                        {{ strn.concentrationRatio.denominator.value}}{{ strn.concentrationRatio.denominator.unit}}
+                      </b>
+                    </p>
+                  {% endif %}
+                {% endfor %}
+
+                {% for strn in apding.substance.strength %}
+                  {% if strn.presentationRatio %}
+                    <p>
+                      Presentation strength:
+                      <b>
+                        {{ strn.presentationRatio.numerator.value}} {{ strn.presentationRatio.numerator.unit}} /
+
+                        {{ strn.presentationRatio.denominator.value}} {{ strn.presentationRatio.denominator.unit}}
+                      </b>
+                    </p>
+                  {% endif %}
+                {% endfor %}
+
+
+              </div>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+
+
+        Route of administration:
+        <ul>
+          {% for roas in apd.routeOfAdministration %}
+            <li>
+              <b>
+                {{roas.code.coding[0].display }}
+              </b>
+            </li>
+          {% endfor %}
+        </ul>
+
+      </div>
+    {% endif %}
+  {% endfor %}
+
+
+
+</div>
