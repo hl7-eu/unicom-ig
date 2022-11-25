@@ -1,6 +1,6 @@
 UNICOM IG
 ---
-<br/> 
+   
 ### Publication
 This ImplementationGuide is published in the following locations:   
 Continuous Build: __http://build.fhir.org/ig/hl7-eu/unicom-ig/branches/main/index.html__  
