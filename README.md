@@ -1,6 +1,5 @@
-Empty IG
----
 UNICOM IG
+---
 <br> </br>
 ### Publication
 This ImplementationGuide is published in the following locations:   
