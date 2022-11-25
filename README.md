@@ -23,3 +23,4 @@ This IG contains the following branches:
 * [D5.7](https://github.com/hl7-eu/unicom-ig/tree/D5.7) - contains artifacts that were delivered as of D5.7 and should be retained for keeping the documentation of the project
 * [previous-main](https://github.com/hl7-eu/unicom-ig/tree/previous-main) - contains previously proposed content not yet integrated into the main branch
 * [gh-pages](https://github.com/hl7-eu/unicom-ig/tree/gh-pages) - *this is a technical branch, not relevant for authors*
+
