@@ -1,0 +1,705 @@
+{
+  "id": "Diclofenac-Mylan-180mg-Medicated-plaster-EE-MPD-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "Diclofenac-Mylan-180mg-Medicated-plaster-EE-MPD",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T21:07:05.686+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073714",
+              "display": "Medicated plaster"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/pmsId",
+            "value": "00000000000012"
+          },
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "EE-100022866-36016"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000005003",
+              "code": "200000005004",
+              "display": "Current"
+            },
+            {
+              "system": "http://hl7.org/fhir/publication-status",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072076",
+              "display": "Medicinal product not subject to medical prescription"
+            }
+          ]
+        },
+        "additionalMonitoringIndicator": {
+          "coding": [
+            {
+              "system": "http://ema.europa.eu/fhir/additionalMonitoringIndicator",
+              "code": "False",
+              "display": "False"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "100000097012",
+                "display": "diclofenac"
+              },
+              {
+                "system": "http://www.whocc.no/atc",
+                "code": "M02AA15",
+                "display": "diclofenac"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Diclofenac Mylan, 180 mg ravimplaaster",
+            "namePart": [
+              {
+                "part": "Diclofenac Mylan",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000002",
+                      "display": "Invented name part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "180 mg",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "ravimplaaster",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000388",
+                      "display": "Republic of Estonia"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072172",
+                      "display": "Estonian"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-MPD"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-MPD"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "Diclofenac-Mylan-180mg-Medicated-plaster-EE-RA",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T21:07:05.707+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+            "value": "1008820"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-MPD"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000388",
+                "display": "Republic of Estonia"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "100000072099",
+              "display": "Valid"
+            }
+          ]
+        },
+        "statusDate": "2020-09-01",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100022866"
+          },
+          "display": "Mylan Ireland Limited"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/Diclofenac-Mylan-180mg-Medicated-plaster-EE-RA"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Diclofenac-Mylan-180mg-Medicated-plaster-EE-RA"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Diclofenac-Mylan-180mg-Medicated-plaster-EE-PPD-1788419",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T21:07:05.752+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 5,
+              "unit": "Plaster",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002140"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/example/pcid",
+            "value": "EE-100022866-36016-1788419"
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-MPD"
+          }
+        ],
+        "description": "Suletava \u00fcmbrise materjal on paber/PE/alumiinium/et\u00fcleen ja met\u00fc\u00fclakr\u00fc\u00fclhappe kopol\u00fcmeer. \u00dcmbrises on 5 ravimplaastrit. Pakendi suurus: 5 v\u00f5i 10 ravimplaastrit karbis.",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072172",
+                "display": "Estonian"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000388",
+                  "display": "Republic of Estonia"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073540",
+                    "display": "Pouch"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003207",
+                      "display": "Paper"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003214",
+                      "display": "PolyEthylene"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000012521",
+                      "display": "Ethylene meta-acrylic acid"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-MID"
+                    }
+                  },
+                  "amount": {
+                    "value": 5,
+                    "unit": "Plaster",
+                    "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                    "code": "200000002140"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-PPD-1788419"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-PPD-1788419"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Diclofenac-Mylan-180mg-Medicated-plaster-EE-PPD-1788420",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T21:07:05.763+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 10,
+              "unit": "Plaster",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002140"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/example/pcid",
+            "value": "EE-100022866-36016-1788420"
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-MPD"
+          }
+        ],
+        "description": "Suletava \u00fcmbrise materjal on paber/PE/alumiinium/et\u00fcleen ja met\u00fc\u00fclakr\u00fc\u00fclhappe kopol\u00fcmeer. \u00dcmbrises on 5 ravimplaastrit. Pakendi suurus: 5 v\u00f5i 10 ravimplaastrit karbis.",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072172",
+                "display": "Estonian"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000388",
+                  "display": "Republic of Estonia"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073540",
+                    "display": "Pouch"
+                  }
+                ]
+              },
+              "quantity": 2,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003207",
+                      "display": "Paper"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003214",
+                      "display": "PolyEthylene"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000012521",
+                      "display": "Ethylene meta-acrylic acid"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-MID"
+                    }
+                  },
+                  "amount": {
+                    "value": 10,
+                    "unit": "Plaster",
+                    "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                    "code": "200000002140"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-PPD-1788420"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-PPD-1788420"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "Diclofenac-Mylan-180mg-Medicated-plaster-EE-MID",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T21:07:05.73+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073714",
+              "display": "Medicated plaster"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002140",
+              "display": "Plaster"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-MID"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-MID"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Diclofenac-Mylan-180mg-Medicated-plaster-EE-I",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T21:07:05.74+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-MPD"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-MID"
+          },
+          {
+            "reference": "AdministrableProductDefinition/Diclofenac-Mylan-180mg-Medicated-plaster-EE-APD"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                  "code": "100000085789",
+                  "display": "Diclofenac epolamine"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "presentationRatio": {
+                "numerator": {
+                  "value": 180,
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000000049",
+                          "display": "equal to"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "milligram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110655"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "Plaster",
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                  "code": "200000002140"
+                }
+              },
+              "referenceStrength": [
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000092272",
+                          "display": "Diclofenac sodium"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 140,
+                      "_comparator": {
+                        "extension": [
+                          {
+                            "url": "http://ema.europa.eu/fhir/extension/comparator",
+                            "valueCoding": {
+                              "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                              "code": "100000000049",
+                              "display": "equal to"
+                            }
+                          }
+                        ]
+                      },
+                      "unit": "milligram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110655"
+                    },
+                    "denominator": {
+                      "value": 1,
+                      "unit": "Plaster",
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                      "code": "200000002140"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Diclofenac-Mylan-180mg-Medicated-plaster-EE-I"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Diclofenac-Mylan-180mg-Medicated-plaster-EE-I"
+    }
+  ]
+}

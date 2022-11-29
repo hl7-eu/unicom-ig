@@ -1,0 +1,968 @@
+{
+  "id": "BuprenorSTADA-5h-Transderm-SE-BS-MedicinalProductDefinition-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "BuprenorSTADA-5h-Transderm-SE-BS-MedicinalProductDefinition",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-08-04T18:04:01.344+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004~200000000006~200000000007~200000000008",
+              "code": "100000073741",
+              "display": "Transdermal patch"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "SE-100000843-00052809"
+          },
+          {
+            "system": "http://ema.europa.eu/fhir/eurdId",
+            "value": "459"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000005003",
+              "code": "200000005004",
+              "display": "Current"
+            }
+          ]
+        },
+        "indication": "Behandling av icke maligna sm\u00e4rtor av m\u00e5ttlig intensitet n\u00e4r en opiod kr\u00e4vs f\u00f6r att uppn\u00e5 tillr\u00e4cklig sm\u00e4rtlindring.  Buprenorphine Stada \u00e4r inte l\u00e4mpligt f\u00f6r behandling av akuta sm\u00e4rttillst\u00e5nd.  Buprenorphine Stada \u00e4r avsett f\u00f6r vuxna.",
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072085",
+              "display": "Medicinal product subject to special medical prescription"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "100000097250",
+                "display": "N02AE01"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Buprenorphine STADA 5 mikrogram/timme depotpl\u00e5ster",
+            "namePart": [
+              {
+                "part": "Buprenorphine STADA",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000003",
+                      "display": "Scientific name part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "5 mikrogram/timme",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "Depotpl\u00e5ster",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000535",
+                      "display": "Sweden"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072288",
+                      "display": "Swedish"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-MedicinalProductDefinition"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-MedicinalProductDefinition"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "BuprenorSTADA-5h-Transderm-SE-BS-RegulatedAuthorization",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-04T08:03:23.995+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/MarketingAuthorizationNumber",
+            "value": "52809"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-MedicinalProductDefinition"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000535",
+                "display": "Sweden"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "100000072099",
+              "display": "Valid"
+            }
+          ]
+        },
+        "statusDate": "2016-06-30",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100001022"
+          },
+          "display": "STADA Arzneimittel AG"
+        },
+        "case": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://ema.europa.eu/fhir/authorisationDateType",
+                "code": "dateOfFirstAuthorisation",
+                "display": "First Authorisation"
+              }
+            ]
+          },
+          "dateDateTime": "2016-06-30"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/BuprenorSTADA-5h-Transderm-SE-BS-RegulatedAuthorization"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/BuprenorSTADA-5h-Transderm-SE-BS-RegulatedAuthorization"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "BuprenorSTADA-5h-Transderm-SE-BS-PackagedProductDefinition",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-04T08:03:24.017+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 12,
+              "unit": "Patch",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002134"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-MedicinalProductDefinition"
+          }
+        ],
+        "description": "P\u00e5se, 12 x 1 pl\u00e5ster",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073547",
+                    "display": "Sachet"
+                  }
+                ]
+              },
+              "quantity": 12,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003217",
+                      "display": "PolyEthylene TerePhthalate"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003207",
+                      "display": "Paper"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003214",
+                      "display": "PolyEthylene"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000012515",
+                      "display": "Ethylene acrylic acid copolymer"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/BuprenorSTADA-5h-Transderm-SE-BS-ManufacturedItemDefinition"
+                    }
+                  },
+                  "amount": {
+                    "value": 1,
+                    "unit": "Patch",
+                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633~200000000014",
+                    "code": "200000002134"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-PackagedProductDefinition"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-PackagedProductDefinition"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "BuprenorSTADA-5h-Transderm-SE-BS-PackagedProductDefinition-02",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-04T08:03:24.027+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 4,
+              "unit": "Patch",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002134"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-MedicinalProductDefinition"
+          }
+        ],
+        "description": "P\u00e5se, 4 x 1 pl\u00e5ster",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073547",
+                    "display": "Sachet"
+                  }
+                ]
+              },
+              "quantity": 4,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003217",
+                      "display": "PolyEthylene TerePhthalate"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003207",
+                      "display": "Paper"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003214",
+                      "display": "PolyEthylene"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000012515",
+                      "display": "Ethylene acrylic acid copolymer"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/BuprenorSTADA-5h-Transderm-SE-BS-ManufacturedItemDefinition"
+                    }
+                  },
+                  "amount": {
+                    "value": 1,
+                    "unit": "Patch",
+                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633~200000000014",
+                    "code": "200000002134"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-PackagedProductDefinition-02"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-PackagedProductDefinition-02"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "BuprenorSTADA-5h-Transderm-SE-BS-PackagedProductDefinition01",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-04T18:04:01.385+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 12,
+              "unit": "Patch",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002134"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-MedicinalProductDefinition"
+          }
+        ],
+        "description": "P\u00e5se, 12 x 1 pl\u00e5ster",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073547",
+                    "display": "Sachet"
+                  }
+                ]
+              },
+              "quantity": 12,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003217",
+                      "display": "PolyEthylene TerePhthalate"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003207",
+                      "display": "Paper"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003214",
+                      "display": "PolyEthylene"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000012515",
+                      "display": "Ethylene acrylic acid copolymer"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/BuprenorSTADA-5h-Transderm-SE-BS-ManufacturedItemDefinition"
+                    }
+                  },
+                  "amount": {
+                    "value": 1,
+                    "unit": "Patch",
+                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633~200000000014",
+                    "code": "200000002134"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-PackagedProductDefinition01"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-PackagedProductDefinition01"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "BuprenorSTADA-5h-Transderm-SE-BS-PackagedProductDefinition02",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-04T18:04:01.397+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 4,
+              "unit": "Patch",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002134"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-MedicinalProductDefinition"
+          }
+        ],
+        "description": "P\u00e5se, 4 x 1 pl\u00e5ster",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073547",
+                    "display": "Sachet"
+                  }
+                ]
+              },
+              "quantity": 4,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003217",
+                      "display": "PolyEthylene TerePhthalate"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003207",
+                      "display": "Paper"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003214",
+                      "display": "PolyEthylene"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    },
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000012515",
+                      "display": "Ethylene acrylic acid copolymer"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/BuprenorSTADA-5h-Transderm-SE-BS-ManufacturedItemDefinition"
+                    }
+                  },
+                  "amount": {
+                    "value": 1,
+                    "unit": "Patch",
+                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633~200000000014",
+                    "code": "200000002134"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-PackagedProductDefinition02"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-PackagedProductDefinition02"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "BuprenorSTADA-5h-Transderm-SE-BS-ManufacturedItemDefinition",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-04T08:03:24.036+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073741",
+              "display": "Transdermal patch"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002134",
+              "display": "Patch"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/BuprenorSTADA-5h-Transderm-SE-BS-ManufacturedItemDefinition"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/BuprenorSTADA-5h-Transderm-SE-BS-ManufacturedItemDefinition"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "BuprenorSTADA-5h-Transderm-SE-BS-Ingredient02",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-04T18:04:01.428+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/BuprenorSTADA-5h-Transderm-SE-BS-MedicinalProductDefinition"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/BuprenorSTADA-5h-Transderm-SE-BS-ManufacturedItemDefinition"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "http://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                  "code": "100000085263",
+                  "display": "Buprenorphine"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "presentationRatio": {
+                "numerator": {
+                  "value": 5,
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000000049",
+                          "display": "equal to"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "milligram(s)",
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110655"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "patch",
+                  "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+                  "code": "200000002134"
+                }
+              },
+              "referenceStrength": [
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000085263",
+                          "display": "Buprenorphine"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 5,
+                      "_comparator": {
+                        "extension": [
+                          {
+                            "url": "http://ema.europa.eu/fhir/extension/comparator",
+                            "valueCoding": {
+                              "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                              "code": "100000000049",
+                              "display": "equal to"
+                            }
+                          }
+                        ]
+                      },
+                      "unit": "milligram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110655"
+                    },
+                    "denominator": {
+                      "value": 1,
+                      "unit": "patch",
+                      "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+                      "code": "200000002134"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/BuprenorSTADA-5h-Transderm-SE-BS-Ingredient02"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/BuprenorSTADA-5h-Transderm-SE-BS-Ingredient02"
+    }
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "id": "Carbalex-200mg-Tablet-EE-MPD-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "Carbalex-200mg-Tablet-EE-MPD",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-12T21:54:00.162+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073664",
+              "display": "Tablet"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "EE-100004168-12067"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000005003",
+              "code": "200000005004",
+              "display": "Current"
+            },
+            {
+              "system": "http://hl7.org/fhir/publication-status",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072084",
+              "display": "Medicinal product subject to medical prescription"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "100000097377",
+                "display": "carbamazepine"
+              },
+              {
+                "system": "http://www.whocc.no/atc",
+                "code": "N03AF01",
+                "display": "carbamazepine"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Carbalex 200 mg tabletid",
+            "namePart": [
+              {
+                "part": "Carbalex",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000002",
+                      "display": "Invented Name Part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "200 mg",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "tabletid",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000388",
+                      "display": "Republic of Estonia"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072172",
+                      "display": "Estonian"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/Carbalex-200mg-Tablet-EE-MPD"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Carbalex-200mg-Tablet-EE-MPD"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "Carbalex-200mg-Tablet-EE-RA",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-12T21:54:00.19+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/MarketingAuthorizationNumber",
+            "value": "391302"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/Carbalex-200mg-Tablet-EE-MPD"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000388",
+                "display": "Republic of Estonia"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "200000017708",
+              "display": "Valid - Renewed/Varied"
+            }
+          ]
+        },
+        "statusDate": "2012-10-29",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100004168"
+          },
+          "display": "G.L. Pharma GmbH"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/Carbalex-200mg-Tablet-EE-RA"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Carbalex-200mg-Tablet-EE-RA"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Carbalex-200mg-Tablet-EE-PPD-1042311",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-12T21:54:00.246+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 50,
+              "unit": "tablet",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002152"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/example/pcid",
+            "value": "EE-100004168-12067-1042311"
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Carbalex-200mg-Tablet-EE-MPD"
+          }
+        ],
+        "description": "50 tabletti blisterpakendis (PVC-Alu).",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072172",
+                "display": "Estonian"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000388",
+                  "display": "Republic of Estonia"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073496",
+                    "display": "Blister"
+                  }
+                ]
+              },
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003222",
+                      "display": "PolyVinyl Chloride"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Carbalex-200mg-Tablet-EE-MID"
+                    }
+                  },
+                  "amount": {
+                    "value": 50
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Carbalex-200mg-Tablet-EE-PPD-1042311"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Carbalex-200mg-Tablet-EE-PPD-1042311"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "Carbalex-200mg-Tablet-EE-MID",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-12T21:54:00.221+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073664",
+              "display": "Tablet"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002152",
+              "display": "Tablet"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/Carbalex-200mg-Tablet-EE-MID"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Carbalex-200mg-Tablet-EE-MID"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Carbalex-200mg-Tablet-EE-I",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-12T21:54:00.232+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Carbalex-200mg-Tablet-EE-MPD"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Carbalex-200mg-Tablet-EE-MID"
+          },
+          {
+            "reference": "AdministrableProductDefinition/Carbalex-200mg-Tablet-EE-APD"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "http://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                  "code": "100000159588",
+                  "display": "CARBAMAZEPINE"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "presentationRatio": {
+                "numerator": {
+                  "value": 200,
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000000049",
+                          "display": "equal to"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "milligram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110655"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "Tablet",
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                  "code": "200000002152"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Carbalex-200mg-Tablet-EE-I"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Carbalex-200mg-Tablet-EE-I"
+    }
+  ]
+}

@@ -1,0 +1,652 @@
+{
+  "id": "Agen-5mg-Tablet-EE-MPD-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "Agen-5mg-Tablet-EE-MPD",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-12T21:45:20.802+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073664",
+              "display": "Tablet"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "EE-100002580-15547"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000005003",
+              "code": "200000005004",
+              "display": "Current"
+            }
+          ]
+        },
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072084",
+              "display": "Medicinal product subject to medical prescription"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "100000095065",
+                "display": "amlodipine"
+              },
+              {
+                "system": "http://www.whocc.no/atc",
+                "code": "C08CA01",
+                "display": "amlodipine"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Agen, 5 mg tabletid",
+            "namePart": [
+              {
+                "part": "Agen",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000002",
+                      "display": "Invented Name Part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "5 mg",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "tabletid",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000388",
+                      "display": "Republic of Estonia"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072172",
+                      "display": "Estonian"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "Agen-5mg-Tablet-EE-RA",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-12T21:45:20.832+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/MarketingAuthorizationNumber",
+            "value": "418303"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000388",
+                "display": "Republic of Estonia"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "200000017708",
+              "display": "Valid - Renewed/Varied"
+            }
+          ]
+        },
+        "statusDate": "2013-06-07",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100002580"
+          },
+          "display": "Zentiva k.s."
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/Agen-5mg-Tablet-EE-RA"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Agen-5mg-Tablet-EE-RA"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Agen-5mg-Tablet-EE-PPD-1109887-A",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-12T21:45:20.892+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 30,
+              "unit": "tablet",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002152"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/example/pcid",
+            "value": "EE-100002580-15547-1109887"
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD"
+          }
+        ],
+        "description": "Tabletid on pakendatud PVC/PVDC/Al blistritesse (valged) v\u00f5i PVC/Al blistritesse (valged).",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072172",
+                "display": "Estonian"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000388",
+                  "display": "Republic of Estonia"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073496",
+                    "display": "Blister"
+                  }
+                ]
+              },
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003222",
+                      "display": "PolyVinyl Chloride"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003225",
+                      "display": "PolyVinylidene Chloride"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID"
+                    }
+                  },
+                  "amount": {
+                    "value": 30
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-A"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-A"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Agen-5mg-Tablet-EE-PPD-1109887-B",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-12T21:45:20.903+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 30,
+              "unit": "tablets",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002152"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/example/pcid",
+            "value": "EE-100002580-15547-1109887"
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD"
+          }
+        ],
+        "description": "Tabletid on pakendatud PVC/PVDC/Al blistritesse (valged) v\u00f5i PVC/Al blistritesse (valged).",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072172",
+                "display": "Estonian"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000388",
+                  "display": "Republic of Estonia"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073496",
+                    "display": "Blister"
+                  }
+                ]
+              },
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003222",
+                      "display": "PolyVinyl Chloride"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID"
+                    }
+                  },
+                  "amount": {
+                    "value": 30
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-B"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-B"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "Agen-5mg-Tablet-EE-MID",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-12T21:45:20.858+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073664",
+              "display": "Tablet"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002152",
+              "display": "Tablet"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Agen-5mg-Tablet-EE-I",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-12T21:45:20.872+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID"
+          },
+          {
+            "reference": "AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "http://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                  "code": "100000090079",
+                  "display": "Amlodipine besilate"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "presentationRatio": {
+                "numerator": {
+                  "value": 6.935,
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000000049",
+                          "display": "equal to"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "milligram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110655"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "Tablet",
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                  "code": "200000002152"
+                }
+              },
+              "referenceStrength": [
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000085259",
+                          "display": "Amlodipine"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 5,
+                      "_comparator": {
+                        "extension": [
+                          {
+                            "url": "http://ema.europa.eu/fhir/extension/comparator",
+                            "valueCoding": {
+                              "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                              "code": "100000000049",
+                              "display": "equal to"
+                            }
+                          }
+                        ]
+                      },
+                      "unit": "milligram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110655"
+                    },
+                    "denominator": {
+                      "value": 1,
+                      "unit": "tablet",
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                      "code": "200000002152"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Agen-5mg-Tablet-EE-I"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Agen-5mg-Tablet-EE-I"
+    }
+  ]
+}

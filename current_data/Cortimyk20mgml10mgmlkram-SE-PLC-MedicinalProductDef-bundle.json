@@ -1,0 +1,753 @@
+{
+  "id": "Cortimyk20mgml10mgmlkram-SE-PLC-MedicinalProductDef-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "Cortimyk20mgml10mgmlkram-SE-PLC-MedicinalProductDef",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-09T14:17:07.043+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004~200000000006~200000000007~200000000008",
+              "code": "100000073712",
+              "display": "Cream"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "SE-100013279-00012627"
+          },
+          {
+            "system": "http://ema.europa.eu/fhir/eurdId",
+            "value": "2052"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000005003",
+              "code": "200000005004",
+              "display": "Current"
+            }
+          ]
+        },
+        "indication": "Tinea (dermatofytoser orsakade av Trichophyton-, Epidermophyton- och Microsporum-arter) och kutana  candidiasis med inflammatoriskt inslag och/eller d\u00e4r kl\u00e5da \u00e4r besv\u00e4rande.",
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "200000002239",
+              "display": "Medicinal product subject to medical prescription exempt for some pack sizes"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "100000095248",
+                "display": "D01AC20"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Cortimyk 20 mg/g + 10 mg/g kr\u00e4m",
+            "namePart": [
+              {
+                "part": "Cortimyk",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000002",
+                      "display": "Invented name part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "20 mg/g + 10 mg/g",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "kr\u00e4m",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000535",
+                      "display": "Sweden"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072288",
+                      "display": "Swedish"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-MedicinalProductDef"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-MedicinalProductDef"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "Cortimyk20mgml10mgmlkram-SE-PLC-RegAutho",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-09T14:17:07.093+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/MarketingAuthorizationNumber",
+            "value": "12627"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-MedicinalProductDef"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000535",
+                "display": "Sweden"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "100000072099",
+              "display": "Valid"
+            }
+          ]
+        },
+        "statusDate": "1995-11-08",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100018530"
+          },
+          "display": "Karo Pharma AB"
+        },
+        "case": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://ema.europa.eu/fhir/authorisationDateType",
+                "code": "dateOfFirstAuthorisation",
+                "display": "First Authorisation"
+              }
+            ]
+          },
+          "dateDateTime": "1995-11-08"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/Cortimyk20mgml10mgmlkram-SE-PLC-RegAutho"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Cortimyk20mgml10mgmlkram-SE-PLC-RegAutho"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Cortimyk20mgml10mgmlkram-SE-PLC-PackageProductDef01",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-09T14:17:07.133+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 1,
+              "unit": "Tube",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002156"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-MedicinalProductDef"
+          }
+        ],
+        "description": "Tub, 20 g",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073561",
+                    "display": "Tube"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-ManufacturedItemDef"
+                    }
+                  },
+                  "amount": {
+                    "value": 20,
+                    "unit": "gram(s)",
+                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633~200000000014",
+                    "code": "100000110654"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-PackageProductDef01"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-PackageProductDef01"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Cortimyk20mgml10mgmlkram-SE-PLC-PackageProductDef02",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-09T14:17:07.154+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 1,
+              "unit": "Tube",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002156"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-MedicinalProductDef"
+          }
+        ],
+        "description": "Tub, 50 g",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073561",
+                    "display": "Tube"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-ManufacturedItemDef"
+                    }
+                  },
+                  "amount": {
+                    "value": 50,
+                    "unit": "gram(s)",
+                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633~200000000014",
+                    "code": "100000110654"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-PackageProductDef02"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-PackageProductDef02"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "Cortimyk20mgml10mgmlkram-SE-PLC-ManufacturedItemDef",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-09T14:17:07.184+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073712",
+              "display": "Cream"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002156",
+              "display": "Tube"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-ManufacturedItemDef"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-ManufacturedItemDef"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Cortimyk20mgml10mgmlkram-SE-PLC-Ingredient01",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-09T14:17:07.203+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-MedicinalProductDef"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-ManufacturedItemDef"
+          },
+          {
+            "reference": "AdministrableProductDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-AdminProductDef"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                  "code": "100000092635",
+                  "display": "Hydrocortisone"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "concentrationRatio": {
+                "numerator": {
+                  "value": 10,
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000000049",
+                          "display": "equal to"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "milligram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110655"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "gram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110654"
+                }
+              },
+              "referenceStrength": [
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000092635",
+                          "display": "Hydrocortisone"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 10,
+                      "_comparator": {
+                        "extension": [
+                          {
+                            "url": "http://ema.europa.eu/fhir/extension/comparator",
+                            "valueCoding": {
+                              "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                              "code": "100000000049",
+                              "display": "equal to"
+                            }
+                          }
+                        ]
+                      },
+                      "unit": "milligram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110655"
+                    },
+                    "denominator": {
+                      "value": 1,
+                      "unit": "gram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110654"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Cortimyk20mgml10mgmlkram-SE-PLC-Ingredient01"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Cortimyk20mgml10mgmlkram-SE-PLC-Ingredient01"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Cortimyk20mgml10mgmlkram-SE-PLC-Ingredient02",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-09T14:17:07.234+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-MedicinalProductDef"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-ManufacturedItemDef"
+          },
+          {
+            "reference": "AdministrableProductDefinition/Cortimyk20mgml10mgmlkram-SE-PLC-AdminProductDef"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                  "code": "100000091859",
+                  "display": "Miconazole nitrate"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "concentrationRatio": {
+                "numerator": {
+                  "value": 20,
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000000049",
+                          "display": "equal to"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "milligram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110655"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "gram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110654"
+                }
+              },
+              "referenceStrength": [
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000090369",
+                          "display": "Miconazole"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 17.37,
+                      "_comparator": {
+                        "extension": [
+                          {
+                            "url": "http://ema.europa.eu/fhir/extension/comparator",
+                            "valueCoding": {
+                              "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                              "code": "100000000049",
+                              "display": "equal to"
+                            }
+                          }
+                        ]
+                      },
+                      "unit": "milligram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110655"
+                    },
+                    "denominator": {
+                      "value": 1,
+                      "unit": "gram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110654"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Cortimyk20mgml10mgmlkram-SE-PLC-Ingredient02"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Cortimyk20mgml10mgmlkram-SE-PLC-Ingredient02"
+    }
+  ]
+}

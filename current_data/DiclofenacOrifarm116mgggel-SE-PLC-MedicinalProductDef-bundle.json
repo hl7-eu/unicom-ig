@@ -1,0 +1,633 @@
+{
+  "id": "DiclofenacOrifarm116mgggel-SE-PLC-MedicinalProductDef-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "DiclofenacOrifarm116mgggel-SE-PLC-MedicinalProductDef",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-24T17:19:10.795+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004~200000000006~200000000007~200000000008",
+              "code": "100000073726",
+              "display": "Gel"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "SE-100002342-00045481"
+          },
+          {
+            "system": "http://ema.europa.eu/fhir/eurdId",
+            "value": "10342"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000005003",
+              "code": "200000005004",
+              "display": "Current"
+            }
+          ]
+        },
+        "indication": "F\u00f6r symtomatisk behandling av lokal sm\u00e4rta med lindrig till m\u00e5ttlig intensitet i samband med inflammation eller muskel- eller ledskada.",
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072076",
+              "display": "Medicinal product not subject to medical prescription"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "100000097012",
+                "display": "M02AA15"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Diclofenac Orifarm 11,6 mg/g gel",
+            "namePart": [
+              {
+                "part": "Diclofenac Orifarm",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000003",
+                      "display": "Scientific name part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "11,6 mg/g",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "gel",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000535",
+                      "display": "Sweden"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072288",
+                      "display": "Swedish"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/DiclofenacOrifarm116mgggel-SE-PLC-MedicinalProductDef"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/DiclofenacOrifarm116mgggel-SE-PLC-MedicinalProductDef"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "DiclofenacOrifarm116mgggel-SE-PLC-RegAutho",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-24T17:19:10.839+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/MarketingAuthorizationNumber",
+            "value": "45481"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/DiclofenacOrifarm116mgggel-SE-PLC-MedicinalProductDef"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000535",
+                "display": "Sweden"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "100000072099",
+              "display": "Valid"
+            }
+          ]
+        },
+        "statusDate": "2011-09-16",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100005206"
+          },
+          "display": "Orifarm Generics A/S"
+        },
+        "case": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://ema.europa.eu/fhir/authorisationDateType",
+                "code": "dateOfFirstAuthorisation",
+                "display": "First Authorisation"
+              }
+            ]
+          },
+          "dateDateTime": "2011-09-16"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/DiclofenacOrifarm116mgggel-SE-PLC-RegAutho"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/DiclofenacOrifarm116mgggel-SE-PLC-RegAutho"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "DiclofenacOrifarm116mgggel-SE-PLC-PackageProductDef01",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-24T17:19:10.877+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 1,
+              "unit": "Tube",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002156"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/DiclofenacOrifarm116mgggel-SE-PLC-MedicinalProductDef"
+          }
+        ],
+        "description": "Tub, 100 g",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "200000002156",
+                    "display": "Tube"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/DiclofenacOrifarm116mgggel-SE-PLC-ManufacturedItemDef"
+                    }
+                  },
+                  "amount": {
+                    "value": 1,
+                    "unit": "Tube",
+                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633~200000000014",
+                    "code": "200000002156"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/DiclofenacOrifarm116mgggel-SE-PLC-PackageProductDef01"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/DiclofenacOrifarm116mgggel-SE-PLC-PackageProductDef01"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "DiclofenacOrifarm116mgggel-SE-PLC-PackageProductDef02",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-24T17:19:10.887+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 1,
+              "unit": "Tube",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002156"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/DiclofenacOrifarm116mgggel-SE-PLC-MedicinalProductDef"
+          }
+        ],
+        "description": "Tub, 50 g",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "200000002156",
+                    "display": "Tube"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/DiclofenacOrifarm116mgggel-SE-PLC-ManufacturedItemDef"
+                    }
+                  },
+                  "amount": {
+                    "value": 1,
+                    "unit": "Tube",
+                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633~200000000014",
+                    "code": "200000002156"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/DiclofenacOrifarm116mgggel-SE-PLC-PackageProductDef02"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/DiclofenacOrifarm116mgggel-SE-PLC-PackageProductDef02"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "DiclofenacOrifarm116mgggel-SE-PLC-ManufacturedItemDef",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-24T17:19:10.897+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073726",
+              "display": "Gel"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002156",
+              "display": "Tube"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/DiclofenacOrifarm116mgggel-SE-PLC-ManufacturedItemDef"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/DiclofenacOrifarm116mgggel-SE-PLC-ManufacturedItemDef"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "DiclofenacOrifarm116mgggel-SE-PLC-Ingredient",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-24T17:19:10.91+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/DiclofenacOrifarm116mgggel-SE-PLC-MedicinalProductDef"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/DiclofenacOrifarm116mgggel-SE-PLC-ManufacturedItemDef"
+          },
+          {
+            "reference": "AdministrableProductDefinition/DiclofenacOrifarm116mgggel-SE-PLC-AdminProductDef"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                  "code": "100000091074",
+                  "display": "Diclofenac diethylamine"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "concentrationRatio": {
+                "numerator": {
+                  "value": 11.6,
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000000049",
+                          "display": "equal to"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "milligram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110655"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "gram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110654"
+                }
+              },
+              "referenceStrength": [
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000092798",
+                          "display": "Diclofenac"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 9.31,
+                      "_comparator": {
+                        "extension": [
+                          {
+                            "url": "http://ema.europa.eu/fhir/extension/comparator",
+                            "valueCoding": {
+                              "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                              "code": "100000000049",
+                              "display": "equal to"
+                            }
+                          }
+                        ]
+                      },
+                      "unit": "milligram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110655"
+                    },
+                    "denominator": {
+                      "value": 1,
+                      "unit": "gram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                      "code": "100000110654"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/DiclofenacOrifarm116mgggel-SE-PLC-Ingredient"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/DiclofenacOrifarm116mgggel-SE-PLC-Ingredient"
+    }
+  ]
+}

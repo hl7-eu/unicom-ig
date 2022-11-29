@@ -1,0 +1,651 @@
+{
+  "id": "Diclac-10mg1g-Gel-EE-MPD-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "Diclac-10mg1g-Gel-EE-MPD",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T21:05:51.225+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073726",
+              "display": "Gel"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/pmsId",
+            "value": "0000000000005"
+          },
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "EE-100002893-17429"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000005003",
+              "code": "200000005004",
+              "display": "Current"
+            },
+            {
+              "system": "http://hl7.org/fhir/publication-status",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072076",
+              "display": "Medicinal product not subject to medical prescription"
+            }
+          ]
+        },
+        "additionalMonitoringIndicator": {
+          "coding": [
+            {
+              "system": "http://ema.europa.eu/fhir/additionalMonitoringIndicator",
+              "code": "False",
+              "display": "False"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "100000097012",
+                "display": "diclofenac"
+              },
+              {
+                "system": "http://www.whocc.no/atc",
+                "code": "M02AA15",
+                "display": "diclofenac"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Diclac 1%, geel",
+            "namePart": [
+              {
+                "part": "Diclac",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000002",
+                      "display": "Invented name part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "10mg/1g",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "geel",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000388",
+                      "display": "Republic of Estonia"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072172",
+                      "display": "Estonian"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/Diclac-10mg1g-Gel-EE-MPD"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Diclac-10mg1g-Gel-EE-MPD"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "Diclac-10mg1g-Gel-EE-RA",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T21:05:51.258+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+            "value": "475405"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/Diclac-10mg1g-Gel-EE-MPD"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000388",
+                "display": "Republic of Estonia"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "200000017708",
+              "display": "Valid - Renewed/Varied"
+            }
+          ]
+        },
+        "statusDate": "2010-02-03",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100002893"
+          },
+          "display": "Sandoz Pharmaceuticals d.d."
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/Diclac-10mg1g-Gel-EE-RA"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Diclac-10mg1g-Gel-EE-RA"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Diclac-10mg1g-Gel-EE-PPD-1153257",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T21:05:51.339+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 1,
+              "unit": "Tube",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002156"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/example/pcid",
+            "value": "EE-100002893-17429-1153257"
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Diclac-10mg1g-Gel-EE-MPD"
+          }
+        ],
+        "description": "Tuub sisaldab 25 g, 50 g v\u00f5i 100 g geeli.",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072172",
+                "display": "Estonian"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000388",
+                  "display": "Republic of Estonia"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073346",
+                    "display": "Tube"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Diclac-10mg1g-Gel-EE-MID"
+                    }
+                  },
+                  "amount": {
+                    "value": 50,
+                    "unit": "gram(s)",
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                    "code": "100000110654"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Diclac-10mg1g-Gel-EE-PPD-1153257"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Diclac-10mg1g-Gel-EE-PPD-1153257"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Diclac-10mg1g-Gel-EE-PPD-1153268",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T21:05:51.355+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 1,
+              "unit": "Tube",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002156"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/example/pcid",
+            "value": "EE-100002893-17429-1153268"
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Diclac-10mg1g-Gel-EE-MPD"
+          }
+        ],
+        "description": "Tuub sisaldab 25 g, 50 g v\u00f5i 100 g geeli.",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072172",
+                "display": "Estonian"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000388",
+                  "display": "Republic of Estonia"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073346",
+                    "display": "Tube"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Diclac-10mg1g-Gel-EE-MID"
+                    }
+                  },
+                  "amount": {
+                    "value": 100,
+                    "unit": "gram(s)",
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                    "code": "100000110654"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Diclac-10mg1g-Gel-EE-PPD-1153268"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Diclac-10mg1g-Gel-EE-PPD-1153268"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "Diclac-10mg1g-Gel-EE-MID",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T21:05:51.294+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073726",
+              "display": "Gel"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002156",
+              "display": "Tube"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/Diclac-10mg1g-Gel-EE-MID"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Diclac-10mg1g-Gel-EE-MID"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Diclac-10mg1g-Gel-EE-I",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T21:05:51.315+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Diclac-10mg1g-Gel-EE-MPD"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Diclac-10mg1g-Gel-EE-MID"
+          },
+          {
+            "reference": "AdministrableProductDefinition/Diclac-10mg1g-Gel-EE-APD"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                  "code": "100000162632",
+                  "display": "DICLOFENAC SODIUM"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "concentrationRatio": {
+                "numerator": {
+                  "value": 10,
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000000049",
+                          "display": "equal to"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "milligram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110655"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "gram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110654"
+                }
+              },
+              "referenceStrength": [
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000092798",
+                          "display": "Diclofenac"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 10,
+                      "_comparator": {
+                        "extension": [
+                          {
+                            "url": "http://ema.europa.eu/fhir/extension/comparator",
+                            "valueCoding": {
+                              "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                              "code": "100000000049",
+                              "display": "equal to"
+                            }
+                          }
+                        ]
+                      },
+                      "unit": "milligram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110655"
+                    },
+                    "denominator": {
+                      "value": 1,
+                      "unit": "gram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110654"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Diclac-10mg1g-Gel-EE-I"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Diclac-10mg1g-Gel-EE-I"
+    }
+  ]
+}

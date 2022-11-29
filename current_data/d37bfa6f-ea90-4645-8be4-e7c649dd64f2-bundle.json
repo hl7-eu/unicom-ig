@@ -1,0 +1,585 @@
+{
+  "id": "d37bfa6f-ea90-4645-8be4-e7c649dd64f2-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "d37bfa6f-ea90-4645-8be4-e7c649dd64f2",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-23T16:14:08.325+00:00"
+        },
+        "language": "EN",
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073665",
+              "display": "Film-coated tablet"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/pmsId",
+            "value": "1234567"
+          },
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "FI-44680"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072084",
+              "display": "Medicinal Product subject to medical prescription"
+            }
+          ]
+        },
+        "additionalMonitoringIndicator": {
+          "coding": [
+            {
+              "system": "http://ema.europa.eu/fhir/additionalMonitoringIndicator",
+              "code": "False",
+              "display": "False"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "100000096162",
+                "display": "amoxicillin and beta-lactamase inhibitor"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Betaklav 500 mg / 125 mg tabletti, kalvop\u00e4\u00e4llysteinen",
+            "namePart": [
+              {
+                "part": "Betaklav",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000002",
+                      "display": "Invented name part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "500mg/125mg",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "tabletti, kalvop\u00e4\u00e4llysteinen",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000394",
+                      "display": "Finland"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072149",
+                      "display": "Finnish"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/d37bfa6f-ea90-4645-8be4-e7c649dd64f2"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/d37bfa6f-ea90-4645-8be4-e7c649dd64f2"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "mpid-pmsmpid-44680",
+        "meta": {
+          "versionId": "3",
+          "lastUpdated": "2022-06-23T16:14:08.596+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+            "value": "32012"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/d37bfa6f-ea90-4645-8be4-e7c649dd64f2"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000394",
+                "display": "Finland"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "200000017708",
+              "display": "Valid - Renewed/Varied"
+            }
+          ]
+        },
+        "statusDate": "2020-12-31",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100000551"
+          }
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/mpid-pmsmpid-44680"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/mpid-pmsmpid-44680"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "1c155b07-c992-4989-9e32-ec536782d502",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-23T16:14:08.62+00:00"
+        },
+        "language": "FI",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 20,
+              "unit": "tablettia"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/pcId",
+            "value": "FI-44680-0001"
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/d37bfa6f-ea90-4645-8be4-e7c649dd64f2"
+          }
+        ],
+        "description": "Rep\u00e4isypakkaus Alu(Al)/Alu(Al) 20 kpl tabletti, kalvop\u00e4\u00e4llysteinen",
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073559",
+                    "display": "Strip"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/d9271259-c537-473e-8fb3-708b2a1d66ac"
+                    }
+                  },
+                  "amount": {
+                    "value": 20
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/1c155b07-c992-4989-9e32-ec536782d502"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/1c155b07-c992-4989-9e32-ec536782d502"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "ccdb8e56-4520-4a02-bfad-fa0cb2f07eef",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-23T16:14:08.746+00:00"
+        },
+        "language": "FI",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 30,
+              "unit": "tablets"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/pcId",
+            "value": "EE-44680-0002"
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/d37bfa6f-ea90-4645-8be4-e7c649dd64f2"
+          }
+        ],
+        "description": "Rep\u00e4isypakkaus Alu(Al)/Alu(Al) 300 kpl tabletti, kalvop\u00e4\u00e4llysteinen",
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073559",
+                    "display": "Strip"
+                  }
+                ]
+              },
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/d9271259-c537-473e-8fb3-708b2a1d66ac"
+                    }
+                  },
+                  "amount": {
+                    "value": 30
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/ccdb8e56-4520-4a02-bfad-fa0cb2f07eef"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/ccdb8e56-4520-4a02-bfad-fa0cb2f07eef"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "622306ee-a452-4498-b02b-7369712ae3e4",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-23T16:14:08.769+00:00"
+        },
+        "language": "EE",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 10,
+              "unit": "tablets"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/pcId",
+            "value": "EE-mpid-0003"
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/d37bfa6f-ea90-4645-8be4-e7c649dd64f2"
+          }
+        ],
+        "description": "Blisterpakend (OPA/Al/PVC foil/Al foil) 10 \u00f5hukese pol\u00fcmeerikattega tabletti karbis",
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073496",
+                    "display": "Blister"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003210",
+                      "display": "OPA"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003222",
+                      "display": "PVC"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/d9271259-c537-473e-8fb3-708b2a1d66ac"
+                    }
+                  },
+                  "amount": {
+                    "value": 10
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/622306ee-a452-4498-b02b-7369712ae3e4"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/622306ee-a452-4498-b02b-7369712ae3e4"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "d9271259-c537-473e-8fb3-708b2a1d66ac",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-23T16:14:08.789+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/subject",
+            "valueReference": {
+              "reference": "MedicinalProductDefinition/d37bfa6f-ea90-4645-8be4-e7c649dd64f2"
+            }
+          }
+        ],
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073665",
+              "display": "Film-coated tablet"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002152",
+              "display": "Tablet"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/d9271259-c537-473e-8fb3-708b2a1d66ac"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/d9271259-c537-473e-8fb3-708b2a1d66ac"
+    }
+  ]
+}

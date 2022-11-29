@@ -1,0 +1,465 @@
+{
+  "id": "bb8c2306-04c5-42df-94c9-aa6d6e68050b-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "bb8c2306-04c5-42df-94c9-aa6d6e68050b",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-22T09:51:53.346+00:00"
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000093533/terms/100000096162",
+                "code": "100000096162",
+                "display": "amoxicillin and beta-lactamase inhibitor"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Augmentin 500 mg + 125 mg Comprimido revestido por pel\u00edcula",
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000000002/terms/100000000501",
+                      "code": "100000000501",
+                      "display": "Portuguese Republic"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000072057/terms/100000072251",
+                      "code": "100000072251",
+                      "display": "Portuguese"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/bb8c2306-04c5-42df-94c9-aa6d6e68050b"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/bb8c2306-04c5-42df-94c9-aa6d6e68050b"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "e571fcab-5886-473a-b627-f72238cd4cdd",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-22T09:51:53.378+00:00"
+        },
+        "contained": [
+          {
+            "resourceType": "Organization",
+            "id": "1",
+            "identifier": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/locations/LOC-100002296",
+                "value": "LOC-100002296"
+              }
+            ]
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/bb8c2306-04c5-42df-94c9-aa6d6e68050b"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/220000000060/terms/220000000061",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "holder": {
+          "reference": "#1",
+          "display": "Glaxosmithkline Produtos Farmaceuticos Lda."
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/e571fcab-5886-473a-b627-f72238cd4cdd"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/e571fcab-5886-473a-b627-f72238cd4cdd"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "e90fb5fe-5531-4280-865e-745865deb686",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-22T09:51:53.434+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 12,
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002152"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/bb8c2306-04c5-42df-94c9-aa6d6e68050b"
+          }
+        ],
+        "description": "12 comprimido blister",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000072057/terms/100000072251",
+                "code": "100000072251",
+                "display": "Portuguese"
+              }
+            }
+          ]
+        },
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346/terms/100000073498",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346/terms/100000073496",
+                    "code": "100000073496",
+                    "display": "Blister"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/cade57d9-734e-4b1a-83a0-743b8af67174"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/e90fb5fe-5531-4280-865e-745865deb686"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/e90fb5fe-5531-4280-865e-745865deb686"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "b50a5d28-02bd-4a16-9715-3e227a4be7d7",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-22T09:51:53.444+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 16,
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002152"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/bb8c2306-04c5-42df-94c9-aa6d6e68050b"
+          }
+        ],
+        "description": "16 comprimido blister",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000072057/terms/100000072251",
+                "code": "100000072251",
+                "display": "Portuguese"
+              }
+            }
+          ]
+        },
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346/terms/100000073498",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346/terms/100000073496",
+                    "code": "100000073496",
+                    "display": "Blister"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/cade57d9-734e-4b1a-83a0-743b8af67174"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/b50a5d28-02bd-4a16-9715-3e227a4be7d7"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/b50a5d28-02bd-4a16-9715-3e227a4be7d7"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "c03f532c-7506-412b-8b8d-518b6205970d",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-22T09:51:53.454+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 30,
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002152"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/bb8c2306-04c5-42df-94c9-aa6d6e68050b"
+          }
+        ],
+        "description": "30 comprimido blister",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000072057/terms/100000072251",
+                "code": "100000072251",
+                "display": "Portuguese"
+              }
+            }
+          ]
+        },
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346/terms/100000073498",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346/terms/100000073496",
+                    "code": "100000073496",
+                    "display": "Blister"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/cade57d9-734e-4b1a-83a0-743b8af67174"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/c03f532c-7506-412b-8b8d-518b6205970d"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/c03f532c-7506-412b-8b8d-518b6205970d"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "cade57d9-734e-4b1a-83a0-743b8af67174",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-22T09:51:53.424+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004/terms/100000073665",
+              "code": "100000073665",
+              "display": "Film-coated tablet"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/cade57d9-734e-4b1a-83a0-743b8af67174"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/cade57d9-734e-4b1a-83a0-743b8af67174"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "0cf52436-fced-4094-bc1f-01ad656685b6",
+        "meta": {
+          "versionId": "3",
+          "lastUpdated": "2022-06-22T10:22:00.894+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/subject",
+            "valueReference": {
+              "reference": "MedicinalProductDefinition/bb8c2306-04c5-42df-94c9-aa6d6e68050b"
+            }
+          }
+        ],
+        "status": "active",
+        "for": [
+          {
+            "reference": "AdministrableProductDefinition/441340e6-207a-4c61-b22d-de5c482c7090"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/cade57d9-734e-4b1a-83a0-743b8af67174"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072050/terms/100000072072",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                  "code": "100000092629",
+                  "display": "Amoxicilina tri-hidratada"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "presentationRatio": {
+                "numerator": {
+                  "value": 573.96,
+                  "unit": "milligram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633/terms/100000110655",
+                  "code": "100000110655"
+                },
+                "denominator": {
+                  "value": 1.0,
+                  "unit": "Tablet",
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000000014/terms/200000002152",
+                  "code": "200000002152"
+                }
+              },
+              "referenceStrength": [
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000091596",
+                          "display": "Amoxicilina"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 500.0,
+                      "unit": "milligram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633/terms/100000110655",
+                      "code": "100000110655"
+                    },
+                    "denominator": {
+                      "value": 1.0,
+                      "unit": "Tablet",
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000000014/terms/200000002152",
+                      "code": "200000002152"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/0cf52436-fced-4094-bc1f-01ad656685b6"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/0cf52436-fced-4094-bc1f-01ad656685b6"
+    }
+  ]
+}
