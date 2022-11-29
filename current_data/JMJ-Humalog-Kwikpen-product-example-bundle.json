@@ -1,0 +1,356 @@
+{
+  "id": "JMJ-Humalog-Kwikpen-product-example-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "JMJ-Humalog-Kwikpen-product-example",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-23T20:35:06.421+00:00"
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/medicinal-product-type",
+              "code": "MedicinalProduct",
+              "display": "Medicinal Product"
+            },
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000025915",
+              "code": "200000025916",
+              "display": "Authorised Medicinal Product"
+            }
+          ]
+        },
+        "domain": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/medicinal-product-domain",
+              "code": "Human",
+              "display": "Human use"
+            },
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/publication-status",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "statusDate": "2022-04-27",
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/legal-status-of-supply",
+              "code": "100000072084",
+              "display": "Medicinal product subject to medical prescription"
+            },
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072084",
+              "display": "Medicinal product subject to medical prescription"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "https://www.whocc.no/atc_ddd_index/",
+                "code": "A10AB04",
+                "display": "insulin lispro"
+              },
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "100000094002",
+                "display": "insulin lispro"
+              }
+            ]
+          }
+        ],
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "urn:iso:std:iso:3166",
+                  "code": "GB",
+                  "display": "United Kingdom of Great Britain and Northern Ireland"
+                },
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000556",
+                  "display": "United Kingdom of Great Britain and Northern Ireland"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "xx",
+                  "code": "xx",
+                  "display": "xx"
+                },
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            },
+            "dateRange": {
+              "start": "1996-04-30"
+            }
+          }
+        ],
+        "name": [
+          {
+            "productName": "Humalog 100 units/ml KwikPen, solution for injection in a pre-filled pen"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/JMJ-Humalog-Kwikpen-product-example"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/JMJ-Humalog-Kwikpen-product-example"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "JMJ-Humalog-UK-authorisation-example",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-23T20:35:06.474+00:00"
+        },
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/JMJ-Humalog-Kwikpen-product-example"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072055",
+              "code": "100000072062",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000556",
+                "display": "United Kingdom of Great Britain and Northern Irelan"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/iso3166-1edition2",
+                "code": "GBR",
+                "display": "United Kingdom of Great Britain and Northern Ireland"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "100000072099",
+              "display": "Valid"
+            }
+          ]
+        },
+        "statusDate": "2006-03-30",
+        "holder": {
+          "display": "Eli Lilly Nederland B.V"
+        },
+        "regulator": {
+          "display": "Medicines and Healthcare products Regulatory Agency"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/JMJ-Humalog-UK-authorisation-example"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/JMJ-Humalog-UK-authorisation-example"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "JMJ-Humalog-Kwikpen-package",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-23T20:35:06.523+00:00"
+        },
+        "name": "Humalog 100 units/ml KwikPen, solution for injection in a pre-filled pen; pack of 5 3ml pens",
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/JMJ-Humalog-Kwikpen-product-example"
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/publication-status",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "statusDate": "2022-04-27",
+        "containedItemQuantity": [
+          {
+            "value": 5
+          }
+        ],
+        "legalStatusOfSupply": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/legal-status-of-supply",
+                  "code": "100000072084",
+                  "display": "Medicinal product subject to medical prescription"
+                },
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000072051",
+                  "code": "100000072084",
+                  "display": "Medicinal product subject to medical prescription"
+                }
+              ]
+            }
+          }
+        ],
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "urn:iso:std:iso:3166",
+                  "code": "GB",
+                  "display": "United Kingdom of Great Britain and Northern Ireland"
+                },
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000556",
+                  "display": "United Kingdom of Great Britain and Northern Ireland"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "xx",
+                  "code": "xx",
+                  "display": "xx"
+                },
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            },
+            "dateRange": {
+              "start": "1996-04-30"
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/packaging-type",
+                "code": "100000073498",
+                "display": "Box"
+              },
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "containedItem": [
+            {
+              "item": {
+                "reference": {
+                  "reference": "ManufacturedItemDefinition/JMJ-Humalog-Kwikpen-manufacturedItem-example"
+                }
+              },
+              "amount": {
+                "value": 4,
+                "unit": "mL",
+                "system": "http://unitsofmeasure.org",
+                "code": "MilliLiter"
+              }
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/JMJ-Humalog-Kwikpen-package"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/JMJ-Humalog-Kwikpen-package"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "JMJ-Humalog-Kwikpen-manufacturedItem-example",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-23T20:35:06.49+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "https://standardterms.edqm.eu/",
+              "code": "11201000",
+              "display": "Solution for injection"
+            },
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073863",
+              "display": "Solution for injection"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "https://standardterms.edqm.eu/",
+              "code": "15037000",
+              "display": "Pen"
+            },
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002135",
+              "display": "Pen"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/JMJ-Humalog-Kwikpen-manufacturedItem-example"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/JMJ-Humalog-Kwikpen-manufacturedItem-example"
+    }
+  ]
+}

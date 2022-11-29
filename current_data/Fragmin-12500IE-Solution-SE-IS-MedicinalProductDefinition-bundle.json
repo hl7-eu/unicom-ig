@@ -1,0 +1,682 @@
+{
+  "id": "Fragmin-12500IE-Solution-SE-IS-MedicinalProductDefinition-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "Fragmin-12500IE-Solution-SE-IS-MedicinalProductDefinition",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-27T11:47:08.131+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000007",
+              "code": "100000074047",
+              "display": "Solution for injection in pre-filled syringe"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "SE-100001390-00019747"
+          },
+          {
+            "system": "http://ema.europa.eu/fhir/eurdId",
+            "value": "922"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000005003",
+              "code": "200000005004",
+              "display": "Current"
+            }
+          ]
+        },
+        "indication": "Behandling av akut djup ventrombos och lungemboli n\u00e4r trombolytisk behandling eller  kirurgi inte \u00e4r aktuell. Trombosprofylax-antikoagulation vid extrakorporeal cirkulation under hemodialys och  hemofiltration. Trombosprofylax vid kirurgi. Profylax till patienter med kraftigt \u00f6kad risk f\u00f6r ven\u00f6s tromboembolism och som \u00e4r tillf\u00e4lligt  immobiliserade pga akut sjukdomstillst\u00e5nd som t ex hj\u00e4rtinsufficiens, andningsinsufficiens,  allvarlig infektion. Instabil kransk\u00e4rlssjukdom (instabil angina och icke Q-v\u00e5gsinfarkt).  Cancerpatienter: Behandling och sekund\u00e4rprevention av djup ventrombos och lungemboli.",
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072084",
+              "display": "Medicinal product subject to medical prescription"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000116677",
+                "code": "100000093533",
+                "display": "B01AB04"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Fragmin\u00ae 12500 IE Injektionsv\u00e4tska, l\u00f6sning i f\u00f6rfylld spruta",
+            "namePart": [
+              {
+                "part": "Fragmin\u00ae",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000002",
+                      "display": "Invented name part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "12500 IE",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "Injektionsv\u00e4tska, l\u00f6sning i f\u00f6rfylld spruta",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000535",
+                      "display": "Sweden"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072288",
+                      "display": "Swedish"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/Fragmin-12500IE-Solution-SE-IS-MedicinalProductDefinition"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Fragmin-12500IE-Solution-SE-IS-MedicinalProductDefinition"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "Fragmin-12500IE-Solution-SE-IS-RegulatedAuthorization",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-27T11:47:08.155+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/MarketingAuthorizationNumber",
+            "value": "19747"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/Fragmin-12500IE-Solution-SE-IS-MedicinalProductDefinition"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000535",
+                "display": "Sweden"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "100000072099",
+              "display": "Valid"
+            }
+          ]
+        },
+        "statusDate": "1997-01-27",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100006423"
+          },
+          "display": "Pfizer AB"
+        },
+        "case": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://ema.europa.eu/fhir/authorisationDateType",
+                "code": "dateOfFirstAuthorisation",
+                "display": "First Authorisation"
+              }
+            ]
+          },
+          "dateDateTime": "1997-01-27"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/Fragmin-12500IE-Solution-SE-IS-RegulatedAuthorization"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Fragmin-12500IE-Solution-SE-IS-RegulatedAuthorization"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Fragmin-12500IE-Solution-SE-IS-PackagedProductDefinition01",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-27T11:47:08.184+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 1,
+              "unit": "Syringe",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002150"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Fragmin-12500IE-Solution-SE-IS-MedicinalProductDefinition"
+          }
+        ],
+        "description": "F\u00f6rfylld spruta, 30 st (6 x 5 x 1 st)",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000174066",
+                    "display": "Unit-dose blister"
+                  }
+                ]
+              },
+              "quantity": 30,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003208",
+                      "display": "Plastic"
+                    }
+                  ]
+                }
+              ],
+              "package": [
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                        "code": "100000073544",
+                        "display": "Pre-filled syringe"
+                      }
+                    ]
+                  },
+                  "quantity": 1,
+                  "material": [
+                    {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                          "code": "200000003203",
+                          "display": "Glass"
+                        }
+                      ]
+                    }
+                  ],
+                  "containedItem": [
+                    {
+                      "item": {
+                        "reference": {
+                          "reference": "ManufacturedItemDefinition/Fragmin-12500IE-Solution-SE-IS-ManufacturedItemDefinition"
+                        }
+                      },
+                      "amount": {
+                        "value": 1,
+                        "unit": "Syringe",
+                        "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+                        "code": "200000002150"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Fragmin-12500IE-Solution-SE-IS-PackagedProductDefinition01"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Fragmin-12500IE-Solution-SE-IS-PackagedProductDefinition01"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Fragmin-12500IE-Solution-SE-IS-PackagedProductDefinition02",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-27T11:47:08.195+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 1,
+              "unit": "Syringe",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002150"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Fragmin-12500IE-Solution-SE-IS-MedicinalProductDefinition"
+          }
+        ],
+        "description": "F\u00f6rfylld spruta, 5 st",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000174066",
+                    "display": "Unit-dose blister"
+                  }
+                ]
+              },
+              "quantity": 5,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003208",
+                      "display": "Plastic"
+                    }
+                  ]
+                }
+              ],
+              "package": [
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                        "code": "100000073544",
+                        "display": "Pre-filled syringe"
+                      }
+                    ]
+                  },
+                  "quantity": 1,
+                  "material": [
+                    {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                          "code": "200000003203",
+                          "display": "Glass"
+                        }
+                      ]
+                    }
+                  ],
+                  "containedItem": [
+                    {
+                      "item": {
+                        "reference": {
+                          "reference": "ManufacturedItemDefinition/Fragmin-12500IE-Solution-SE-IS-ManufacturedItemDefinition"
+                        }
+                      },
+                      "amount": {
+                        "value": 1,
+                        "unit": "Syringe",
+                        "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+                        "code": "200000002150"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Fragmin-12500IE-Solution-SE-IS-PackagedProductDefinition02"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Fragmin-12500IE-Solution-SE-IS-PackagedProductDefinition02"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "Fragmin-12500IE-Solution-SE-IS-ManufacturedItemDefinition",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-27T11:47:08.206+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073863",
+              "display": "Solution for injection"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002150",
+              "display": "Syringe"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/Fragmin-12500IE-Solution-SE-IS-ManufacturedItemDefinition"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Fragmin-12500IE-Solution-SE-IS-ManufacturedItemDefinition"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Fragmin-12500IE-Solution-SE-IS-Ingredient",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-27T11:47:08.217+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Fragmin-12500IE-Solution-SE-IS-MedicinalProductDefinition"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Fragmin-12500IE-Solution-SE-IS-ManufacturedItemDefinition"
+          },
+          {
+            "reference": "AdministrableProductDefinition/Fragmin-12500IE-Solution-SE-IS-AdministrableProductDefinition"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "http://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                  "code": "100000091301",
+                  "display": "dalteparin sodium"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "concentrationRatio": {
+                "numerator": {
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000165006",
+                          "display": "quantity sufficient"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "quantity sufficient",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                  "code": "100000165006"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "unit(s)",
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110756"
+                }
+              },
+              "referenceStrength": [
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000127573",
+                          "display": "dalteparin"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 12500,
+                      "_comparator": {
+                        "extension": [
+                          {
+                            "url": "http://ema.europa.eu/fhir/extension/comparator",
+                            "valueCoding": {
+                              "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                              "code": "100000000049",
+                              "display": "equal to"
+                            }
+                          }
+                        ]
+                      },
+                      "unit": "international unit(s)",
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110671"
+                    },
+                    "denominator": {
+                      "value": 1,
+                      "unit": "unit(s)",
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110756"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Fragmin-12500IE-Solution-SE-IS-Ingredient"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Fragmin-12500IE-Solution-SE-IS-Ingredient"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "id": "JMJ-Co-amoxiclav-product-example-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "JMJ-Co-amoxiclav-product-example",
+        "meta": {
+          "versionId": "8",
+          "lastUpdated": "2022-06-23T17:33:56.924+00:00"
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/medicinal-product-type",
+              "code": "MedicinalProduct",
+              "display": "Medicinal Product"
+            },
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000025915",
+              "code": "200000025916",
+              "display": "Authorised Medicinal Product"
+            }
+          ]
+        },
+        "domain": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/medicinal-product-domain",
+              "code": "Human",
+              "display": "Human use"
+            },
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/publication-status",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "statusDate": "2022-02-21",
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/legal-status-of-supply",
+              "code": "100000072084",
+              "display": "Medicinal product subject to medical prescription"
+            },
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072084",
+              "display": "Medicinal product subject to medical prescription"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "https://www.whocc.no/atc_ddd_index/",
+                "code": "J01CR02",
+                "display": "amoxicillin and beta-lactamase inhibitor"
+              },
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "100000096162",
+                "display": "amoxicillin and beta-lactamase inhibitor"
+              }
+            ]
+          }
+        ],
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "urn:iso:std:iso:3166",
+                  "code": "GB",
+                  "display": "United Kingdom of Great Britain and Northern Ireland"
+                },
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000556",
+                  "display": "United Kingdom of Great Britain and Northern Ireland"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "xx",
+                  "code": "xx",
+                  "display": "xx"
+                },
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            },
+            "dateRange": {
+              "start": "2009-03-25"
+            }
+          }
+        ],
+        "name": [
+          {
+            "productName": "Co-amoxiclav 500 mg/125 mg film-coated tablets"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/JMJ-Co-amoxiclav-product-example"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/JMJ-Co-amoxiclav-product-example"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "JMJ-Co-amoxiclav-authorisation-example",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-06-23T17:33:56.955+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+            "value": "la-la-la-la"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/JMJ-Co-amoxiclav-product-example"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072055",
+              "code": "100000072062",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000556",
+                "display": "United Kingdom of Great Britain and Northern Ireland"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/iso3166-1edition2",
+                "code": "GBR",
+                "display": "United Kingdom of Great Britain and Northern Ireland"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "100000072099",
+              "display": "Valid"
+            }
+          ]
+        },
+        "statusDate": "2021-03-25",
+        "holder": {
+          "display": "Reference for Aurobindo Pharma - Milpharm Ltd"
+        },
+        "regulator": {
+          "display": "Reference for Medicines and Healthcare products Regulatory Agency"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/JMJ-Co-amoxiclav-authorisation-example"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/JMJ-Co-amoxiclav-authorisation-example"
+    }
+  ]
+}
