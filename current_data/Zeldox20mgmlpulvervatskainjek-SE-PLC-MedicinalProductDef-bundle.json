@@ -1,0 +1,761 @@
+{
+  "id": "Zeldox20mgmlpulvervatskainjek-SE-PLC-MedicinalProductDef-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "Zeldox20mgmlpulvervatskainjek-SE-PLC-MedicinalProductDef",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-24T17:07:47.096+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004~200000000006~200000000007~200000000008",
+              "code": "100000073868",
+              "display": "Powder and solvent for solution for injection"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "SE-100023206-00015002"
+          },
+          {
+            "system": "http://ema.europa.eu/fhir/eurdId",
+            "value": "3146"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000005003",
+              "code": "200000005004",
+              "display": "Current"
+            }
+          ]
+        },
+        "indication": "Ziprasidon injektionsv\u00e4tska, l\u00f6sning \u00e4r indicerat f\u00f6r snabb kontroll av agiterade patienter med schizofreni, n\u00e4r peroral terapi inte \u00e4r l\u00e4mpligt, under maximalt tre p\u00e5 varandra f\u00f6ljande dagar.   Behandling med ziprasidon injektionsv\u00e4tska, l\u00f6sning b\u00f6r upph\u00f6ra och peroralt ziprasidon initieras s\u00e5 snart det \u00e4r kliniskt l\u00e4mpligt.",
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072084",
+              "display": "Medicinal product subject to medical prescription"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "100000097488",
+                "display": "N05AE04"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Zeldox 20 mg/ml pulver och v\u00e4tska till injektionsv\u00e4tska, l\u00f6sning",
+            "namePart": [
+              {
+                "part": "Zeldox",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000002",
+                      "display": "Invented name part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "20 mg/ml",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "pulver och v\u00e4tska till injektionsv\u00e4tska, l\u00f6sning",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000535",
+                      "display": "Sweden"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072288",
+                      "display": "Swedish"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-MedicinalProductDef"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-MedicinalProductDef"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "Zeldox20mgmlpulvervatskainjek-SE-PLC-RegAutho",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-24T17:07:47.139+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/MarketingAuthorizationNumber",
+            "value": "15002"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-MedicinalProductDef"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000535",
+                "display": "Sweden"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "100000072099",
+              "display": "Valid"
+            }
+          ]
+        },
+        "statusDate": "2000-08-17",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100032008"
+          },
+          "display": "Upjohn EESV"
+        },
+        "case": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://ema.europa.eu/fhir/authorisationDateType",
+                "code": "dateOfFirstAuthorisation",
+                "display": "First Authorisation"
+              }
+            ]
+          },
+          "dateDateTime": "2000-08-17"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/Zeldox20mgmlpulvervatskainjek-SE-PLC-RegAutho"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Zeldox20mgmlpulvervatskainjek-SE-PLC-RegAutho"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Zeldox20mgmlpulvervatskainjek-SE-PLC-PackageProductDef",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-24T17:07:47.165+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 1,
+              "unit": "Vial",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002158"
+            }
+          },
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 1,
+              "unit": "Ampoule",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002164"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-MedicinalProductDef"
+          }
+        ],
+        "description": "Injektionsflaska och ampull, 1 x (I+II)",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073563",
+                    "display": "Vial"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003204",
+                      "display": "Glass type I"
+                    }
+                  ]
+                }
+              ],
+              "shelfLifeStorage": [
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "https://spor.ema.europa.eu/v1/lists/100000073343",
+                        "code": "100000073403",
+                        "display": "Shelf life of the medicinal product as packaged for sale"
+                      }
+                    ]
+                  },
+                  "periodDuration": {
+                    "value": 3,
+                    "unit": "year",
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                    "code": "200000003434"
+                  },
+                  "specialPrecautionsForStorage": [
+                    {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000073344",
+                          "code": "100000073411",
+                          "display": "Do not store above 30\u00b0C"
+                        }
+                      ]
+                    },
+                    {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000073344",
+                          "code": "100000073420",
+                          "display": "Do not freeze"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-ManufacturedItemDef01"
+                    }
+                  },
+                  "amount": {
+                    "value": 1,
+                    "unit": "Vial",
+                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633~200000000014",
+                    "code": "200000002158"
+                  }
+                }
+              ]
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073490",
+                    "display": "Ampoule"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003204",
+                      "display": "Glass type I"
+                    }
+                  ]
+                }
+              ],
+              "shelfLifeStorage": [
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "https://spor.ema.europa.eu/v1/lists/100000073343",
+                        "code": "100000073403",
+                        "display": "Shelf life of the medicinal product as packaged for sale"
+                      }
+                    ]
+                  },
+                  "periodDuration": {
+                    "value": 3,
+                    "unit": "year",
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                    "code": "200000003434"
+                  },
+                  "specialPrecautionsForStorage": [
+                    {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000073344",
+                          "code": "100000073411",
+                          "display": "Do not store above 30\u00b0C"
+                        }
+                      ]
+                    },
+                    {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000073344",
+                          "code": "100000073420",
+                          "display": "Do not freeze"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-ManufacturedItemDef02"
+                    }
+                  },
+                  "amount": {
+                    "value": 1,
+                    "unit": "Ampoule",
+                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633~200000000014",
+                    "code": "200000002164"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-PackageProductDef"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-PackageProductDef"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "Zeldox20mgmlpulvervatskainjek-SE-PLC-ManufacturedItemDef01",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-24T17:07:47.183+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073866",
+              "display": "Powder for solution for injection"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002158",
+              "display": "Vial"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-ManufacturedItemDef01"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-ManufacturedItemDef01"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Zeldox20mgmlpulvervatskainjek-SE-PLC-Ingredient01",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-24T17:07:47.204+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-MedicinalProductDef"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-ManufacturedItemDef01"
+          },
+          {
+            "reference": "AdministrableProductDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-AdminProductDef"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                  "code": "100000135817",
+                  "display": "Ziprasidone mesilate trihydrate"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "presentationRatio": {
+                "numerator": {
+                  "value": 32.7,
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000000049",
+                          "display": "equal to"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "milligram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110655"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "Vial",
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                  "code": "200000002158"
+                }
+              },
+              "referenceStrength": [
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000078790",
+                          "display": "Ziprasidone"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 24,
+                      "_comparator": {
+                        "extension": [
+                          {
+                            "url": "http://ema.europa.eu/fhir/extension/comparator",
+                            "valueCoding": {
+                              "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                              "code": "100000000049",
+                              "display": "equal to"
+                            }
+                          }
+                        ]
+                      },
+                      "unit": "milligram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110655"
+                    },
+                    "denominator": {
+                      "value": 1,
+                      "unit": "Vial",
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                      "code": "200000002158"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Zeldox20mgmlpulvervatskainjek-SE-PLC-Ingredient01"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Zeldox20mgmlpulvervatskainjek-SE-PLC-Ingredient01"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Zeldox20mgmlpulvervatskainjek-SE-PLC-Ingredient02",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-10-24T17:11:42.777+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-MedicinalProductDef"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-ManufacturedItemDef01"
+          },
+          {
+            "reference": "AdministrableProductDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-AdminProductDef"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072082",
+              "display": "Excipient"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                  "code": "100000085580",
+                  "display": "BETADEX SULFOBUTYL ETHER SODIUM"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Zeldox20mgmlpulvervatskainjek-SE-PLC-Ingredient02"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Zeldox20mgmlpulvervatskainjek-SE-PLC-Ingredient02"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "Zeldox20mgmlpulvervatskainjek-SE-PLC-ManufacturedItemDef02",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-24T17:07:47.193+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000174029",
+              "display": "Solution for solution for injection"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002164",
+              "display": "Ampoule"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-ManufacturedItemDef02"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-ManufacturedItemDef02"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Zeldox20mgmlpulvervatskainjek-SE-PLC-Ingredient03",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-10-24T17:11:42.805+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-MedicinalProductDef"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-ManufacturedItemDef02"
+          },
+          {
+            "reference": "AdministrableProductDefinition/Zeldox20mgmlpulvervatskainjek-SE-PLC-AdminProductDef"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072082",
+              "display": "Excipient"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                  "code": "100000085825",
+                  "display": "Water"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Zeldox20mgmlpulvervatskainjek-SE-PLC-Ingredient03"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Zeldox20mgmlpulvervatskainjek-SE-PLC-Ingredient03"
+    }
+  ]
+}

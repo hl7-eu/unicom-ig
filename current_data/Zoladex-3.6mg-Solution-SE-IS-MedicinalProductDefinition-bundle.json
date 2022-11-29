@@ -1,0 +1,591 @@
+{
+  "id": "Zoladex-3.6mg-Solution-SE-IS-MedicinalProductDefinition-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "Zoladex-3.6mg-Solution-SE-IS-MedicinalProductDefinition",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-27T08:31:19.375+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000007",
+              "code": "100000125753",
+              "display": "Implant in pre-filled syringe"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "SE-100001699-00010810"
+          },
+          {
+            "system": "http://ema.europa.eu/fhir/eurdId",
+            "value": "1562"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000005003",
+              "code": "200000005004",
+              "display": "Current"
+            }
+          ]
+        },
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072084",
+              "display": "Medicinal product subject to medical prescription"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000116677",
+                "code": "100000093533",
+                "display": "L02AE03"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Zoladex\u00ae",
+            "namePart": [
+              {
+                "part": "Zoladex\u00ae 3,6 mg Implantat i f\u00f6rfylld spruta",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000002",
+                      "display": "Invented name part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "3.6 mg",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "Implantat i f\u00f6rfylld spruta",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000535",
+                      "display": "Sweden"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072288",
+                      "display": "Swedish"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/Zoladex-3.6mg-Solution-SE-IS-MedicinalProductDefinition"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Zoladex-3.6mg-Solution-SE-IS-MedicinalProductDefinition"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "Zoladex-3.6mg-Solution-SE-IS-RegulatedAuthorization",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-27T08:31:19.413+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/MarketingAuthorizationNumber",
+            "value": "10810"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/Zoladex-3.6mg-Solution-SE-IS-MedicinalProductDefinition"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000535",
+                "display": "Sweden"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "100000072099",
+              "display": "Valid"
+            }
+          ]
+        },
+        "statusDate": "1988-06-17",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100014112"
+          },
+          "display": "AstraZeneca AB"
+        },
+        "case": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://ema.europa.eu/fhir/authorisationDateType",
+                "code": "dateOfFirstAuthorisation",
+                "display": "First Authorisation"
+              }
+            ]
+          },
+          "dateDateTime": "1988-06-17"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/Zoladex-3.6mg-Solution-SE-IS-RegulatedAuthorization"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Zoladex-3.6mg-Solution-SE-IS-RegulatedAuthorization"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Zoladex-3.6mg-Solution-SE-IS-PackagedProductDefinition",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-10-27T08:36:37.608+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 3.6,
+              "unit": "milligram(s)/dose",
+              "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+              "code": "100000110921"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Zoladex-3.6mg-Solution-SE-IS-MedicinalProductDefinition"
+          }
+        ],
+        "description": "Implantat, f\u00f6rfylld spruta, 1 x 3,6 mg",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "shelfLifeStorage": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073343",
+                    "code": "100000073403",
+                    "display": "Shelf life of the medicinal product as packaged for sale"
+                  }
+                ]
+              },
+              "periodDuration": {
+                "value": 3,
+                "unit": "years"
+              },
+              "specialPrecautionsForStorage": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000073344",
+                      "code": "100000073410",
+                      "display": "Do not store above 25 \u00b0C"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073540",
+                    "display": "Pouch"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003214",
+                      "display": "PolyEthylene"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003217",
+                      "display": "PolyEthylene TerePhthalate"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                }
+              ],
+              "package": [
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                        "code": "100000073544",
+                        "display": "Pre-filled syringe"
+                      }
+                    ]
+                  },
+                  "quantity": 1,
+                  "material": [
+                    {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                          "code": "200000003220",
+                          "display": "PolyStyrene"
+                        }
+                      ]
+                    },
+                    {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                          "code": "200000003215",
+                          "display": "High Density PolyEthylene"
+                        }
+                      ]
+                    },
+                    {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                          "code": "200000003229",
+                          "display": "Steel"
+                        }
+                      ]
+                    }
+                  ],
+                  "containedItem": [
+                    {
+                      "item": {
+                        "reference": {
+                          "reference": "ManufacturedItemDefinition/Zoladex-3.6mg-Solution-SE-IS-ManufacturedItemDefinition"
+                        }
+                      },
+                      "amount": {
+                        "value": 3.6,
+                        "unit": "milligram(s)/dose",
+                        "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                        "code": "100000110921"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Zoladex-3.6mg-Solution-SE-IS-PackagedProductDefinition"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Zoladex-3.6mg-Solution-SE-IS-PackagedProductDefinition"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "Zoladex-3.6mg-Solution-SE-IS-ManufacturedItemDefinition",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-10-27T08:31:19.497+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000007",
+              "code": "100000125753",
+              "display": "Implant in pre-filled syringe"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "Implant",
+              "display": "200000002124"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/Zoladex-3.6mg-Solution-SE-IS-ManufacturedItemDefinition"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Zoladex-3.6mg-Solution-SE-IS-ManufacturedItemDefinition"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Zoladex-3.6mg-Solution-SE-IS-Ingredient",
+        "meta": {
+          "versionId": "3",
+          "lastUpdated": "2022-10-27T08:55:34.339+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Zoladex-3.6mg-Solution-SE-IS-MedicinalProductDefinition"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Zoladex-3.6mg-Solution-SE-IS-ManufacturedItemDefinition"
+          },
+          {
+            "reference": "AdministrableProductDefinition/Zoladex-3.6mg-Solution-SE-IS-AdministrableProductDefinition"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "http://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                  "code": "100000086673",
+                  "display": "Goserelin acetate"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "concentrationRatio": {
+                "numerator": {
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000165006",
+                          "display": "quantity sufficient"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "quantity sufficient",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                  "code": "100000165006"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "dose",
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "200000025238"
+                }
+              },
+              "referenceStrength": [
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000084238",
+                          "display": "Goserelin"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 3.6,
+                      "_comparator": {
+                        "extension": [
+                          {
+                            "url": "http://ema.europa.eu/fhir/extension/comparator",
+                            "valueCoding": {
+                              "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                              "code": "100000000049",
+                              "display": "equal to"
+                            }
+                          }
+                        ]
+                      },
+                      "unit": "milligram(s)",
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110655"
+                    },
+                    "denominator": {
+                      "value": 1,
+                      "unit": "dose",
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "200000025238"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Zoladex-3.6mg-Solution-SE-IS-Ingredient"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Zoladex-3.6mg-Solution-SE-IS-Ingredient"
+    }
+  ]
+}

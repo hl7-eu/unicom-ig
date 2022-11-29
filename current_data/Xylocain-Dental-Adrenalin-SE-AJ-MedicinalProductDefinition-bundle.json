@@ -1,0 +1,930 @@
+{
+  "id": "Xylocain-Dental-Adrenalin-SE-AJ-MedicinalProductDefinition-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "Xylocain-Dental-Adrenalin-SE-AJ-MedicinalProductDefinition",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-11-10T16:23:59.78+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073863",
+              "display": "Solution for injection"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "SE-100003299-00003844"
+          },
+          {
+            "system": "http://ema.europa.eu/fhir/eurdId",
+            "value": "1233"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000005003",
+              "code": "200000005004",
+              "display": "Current"
+            }
+          ]
+        },
+        "indication": "Lokalanestesi inom odontologin, t ex vid operationer, komplicerade extraktioner och vid  parodontal kirurgi. Xylocain Dental adrenalin ger god blodtomhet",
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072084",
+              "display": "Medicinal preoduct subject to medical prescription"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "100000097207",
+                "display": "N01BB52"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Xylocain Dental Adrenalin 20 mg/ml + 12,5 mikrogram/ml Injektionsv\u00e4tska, l\u00f6sning",
+            "namePart": [
+              {
+                "part": "Xylocain",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000002",
+                      "display": "Invented Name Part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "Dental",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000007",
+                      "display": "Intended use part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "Adrenalin",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000003",
+                      "display": "Scientific Name Part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "20 mg/ml + 12,5 mikrogram/ml",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "Injektionsv\u00e4tska, l\u00f6sning",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000535",
+                      "display": "Sweden"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072288",
+                      "display": "Swedish"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/Xylocain-Dental-Adrenalin-SE-AJ-MedicinalProductDefinition"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Xylocain-Dental-Adrenalin-SE-AJ-MedicinalProductDefinition"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "Xylocain-Dental-Adrenalin-SE-AJ-RegulatedAuthorization",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-11-10T16:23:59.807+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/MarketingAuthorizationNumber",
+            "value": "3844"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/Xylocain-Dental-Adrenalin-SE-AJ-MedicinalProductDefinition"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000535",
+                "display": "Sweden"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "100000072099",
+              "display": "Valid"
+            }
+          ]
+        },
+        "statusDate": "1951-05-31",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100007631"
+          },
+          "display": "Dentsply DeTrey GmbH"
+        },
+        "case": {
+          "type": {
+            "coding": [
+              {
+                "system": "http://ema.europa.eu/fhir/authorisationDateType",
+                "code": "dateOfFirstAuthorisation",
+                "display": "First Authorisation"
+              }
+            ]
+          },
+          "dateDateTime": "1951-05-31"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/Xylocain-Dental-Adrenalin-SE-AJ-RegulatedAuthorization"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Xylocain-Dental-Adrenalin-SE-AJ-RegulatedAuthorization"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Xylocain-Dental-Adrenalin-SE-AJ-PackagedProductDefinition01",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-11-10T16:23:59.831+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 100,
+              "unit": "cartridge",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002114"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Xylocain-Dental-Adrenalin-SE-AJ-MedicinalProductDefinition"
+          }
+        ],
+        "description": "Cylinderampull (sj\u00e4lvaspirerande), 100 x 1,8 ml",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "shelfLifeStorage": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073343",
+                    "code": "100000073403",
+                    "display": "Shelf life of the medicinal product as packaged for sale"
+                  }
+                ]
+              },
+              "periodDuration": {
+                "value": 2,
+                "unit": "Year",
+                "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                "code": "200000003434"
+              },
+              "specialPrecautionsForStorage": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000073344",
+                      "code": "100000073414",
+                      "display": "Store in a refrigerator (2\u00b0C - 8\u00b0C)"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000073344",
+                      "code": "100000073420",
+                      "display": "Do not freeze"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000073344",
+                      "code": "100000073423",
+                      "display": "Keep the container in the outer carton"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000073344",
+                      "code": "100000073426",
+                      "display": "in order to protect from light"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073503",
+                    "display": "Cartridge"
+                  }
+                ]
+              },
+              "quantity": 100,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003203",
+                      "display": "Glass"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Xylocain-Dental-Adrenalin-SE-AJ-ManufacturedItemDefinition"
+                    }
+                  },
+                  "amount": {
+                    "value": 1.8,
+                    "unit": "millilitre(s)",
+                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                    "code": "100000110662"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Xylocain-Dental-Adrenalin-SE-AJ-PackagedProductDefinition01"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Xylocain-Dental-Adrenalin-SE-AJ-PackagedProductDefinition01"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Xylocain-Dental-Adrenalin-SE-AJ-PackagedProductDefinition02",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-11-10T16:23:59.863+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/containedItemQuantity",
+            "valueQuantity": {
+              "value": 100,
+              "unit": "cartridge",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002114"
+            }
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Xylocain-Dental-Adrenalin-SE-AJ-MedicinalProductDefinition"
+          }
+        ],
+        "description": "Cylinderampull (sj\u00e4lvaspirerande), 100 x 1,8 ml",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072288",
+                "display": "Swedish"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000535",
+                  "display": "Sweden"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "shelfLifeStorage": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073343",
+                    "code": "100000073403",
+                    "display": "Shelf life of the medicinal product as packaged for sale"
+                  }
+                ]
+              },
+              "periodDuration": {
+                "value": 2,
+                "unit": "Year",
+                "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                "code": "200000003434"
+              },
+              "specialPrecautionsForStorage": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000073344",
+                      "code": "100000073414",
+                      "display": "Store in a refrigerator (2\u00b0C - 8\u00b0C)"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000073344",
+                      "code": "100000073420",
+                      "display": "Do not freeze"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000073344",
+                      "code": "100000073423",
+                      "display": "Keep the container in the outer carton"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000073344",
+                      "code": "100000073426",
+                      "display": "in order to protect from light"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073503",
+                    "display": "Cartridge"
+                  }
+                ]
+              },
+              "quantity": 100,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003203",
+                      "display": "Glass"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Xylocain-Dental-Adrenalin-SE-AJ-ManufacturedItemDefinition"
+                    }
+                  },
+                  "amount": {
+                    "value": 1.8,
+                    "unit": "millilitre(s)",
+                    "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                    "code": "100000110662"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Xylocain-Dental-Adrenalin-SE-AJ-PackagedProductDefinition02"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Xylocain-Dental-Adrenalin-SE-AJ-PackagedProductDefinition02"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "Xylocain-Dental-Adrenalin-SE-AJ-ManufacturedItemDefinition",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-11-10T16:23:59.874+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073863",
+              "display": "Solution for injection"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002114",
+              "display": "Cartridge"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/Xylocain-Dental-Adrenalin-SE-AJ-ManufacturedItemDefinition"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Xylocain-Dental-Adrenalin-SE-AJ-ManufacturedItemDefinition"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Xylocain-Dental-Adrenalin-SE-AJ-Ingredient01",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-11-10T16:23:59.885+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Xylocain-Dental-Adrenalin-SE-AJ-MedicinalProductDefinition"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Xylocain-Dental-Adrenalin-SE-AJ-ManufacturedItemDefinition"
+          },
+          {
+            "reference": "AdministrableProductDefinitionXylocain-Dental-Adrenalin-SE-AJ-AdministrableProductDefinition"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "http://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                  "code": "100000090563",
+                  "display": "Lidocaine hydrochloride monohydrate"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "concentrationRatio": {
+                "numerator": {
+                  "value": 21.33,
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000000052",
+                          "display": "less than or equal to"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "milligram(s)",
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110655"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "millilitre(s)",
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110662"
+                }
+              },
+              "referenceStrength": [
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000139489",
+                          "display": "lidocaine hydrochloride"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 20,
+                      "_comparator": {
+                        "extension": [
+                          {
+                            "url": "http://ema.europa.eu/fhir/extension/comparator",
+                            "valueCoding": {
+                              "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                              "code": "100000000049",
+                              "display": "equal to"
+                            }
+                          }
+                        ]
+                      },
+                      "unit": "milligram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110655"
+                    },
+                    "denominator": {
+                      "value": 1,
+                      "unit": "millilitre(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110662"
+                    }
+                  }
+                },
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000091713",
+                          "display": "lidocaine"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 17.3,
+                      "_comparator": {
+                        "extension": [
+                          {
+                            "url": "http://ema.europa.eu/fhir/extension/comparator",
+                            "valueCoding": {
+                              "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                              "code": "100000000049",
+                              "display": "equal to"
+                            }
+                          }
+                        ]
+                      },
+                      "unit": "milligram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110655"
+                    },
+                    "denominator": {
+                      "value": 1,
+                      "unit": "millilitre(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110662"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Xylocain-Dental-Adrenalin-SE-AJ-Ingredient01"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Xylocain-Dental-Adrenalin-SE-AJ-Ingredient01"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Xylocain-Dental-Adrenalin-SE-AJ-Ingredient02",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-11-10T16:23:59.907+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Xylocain-Dental-Adrenalin-SE-AJ-MedicinalProductDefinition"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Xylocain-Dental-Adrenalin-SE-AJ-ManufacturedItemDefinition"
+          },
+          {
+            "reference": "AdministrableProductDefinitionXylocain-Dental-Adrenalin-SE-AJ-AdministrableProductDefinition"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "http://spor.azure-api.net/sms/api/v2/SubstanceDefinition",
+                  "code": "100000162648",
+                  "display": "Adrenaline tartrate"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "concentrationRatio": {
+                "numerator": {
+                  "value": 22.7,
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000000049",
+                          "display": "equal to"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "microgram(s)",
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110656"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "millilitre(s)",
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110662"
+                }
+              },
+              "referenceStrength": [
+                {
+                  "substance": {
+                    "concept": {
+                      "coding": [
+                        {
+                          "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "code": "100000183979",
+                          "display": "Adrenaline"
+                        }
+                      ]
+                    }
+                  },
+                  "strengthRatio": {
+                    "numerator": {
+                      "value": 12.5,
+                      "_comparator": {
+                        "extension": [
+                          {
+                            "url": "http://ema.europa.eu/fhir/extension/comparator",
+                            "valueCoding": {
+                              "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                              "code": "100000000049",
+                              "display": "equal to"
+                            }
+                          }
+                        ]
+                      },
+                      "unit": "microgram(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110656"
+                    },
+                    "denominator": {
+                      "value": 1,
+                      "unit": "millilitre(s)",
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "code": "100000110662"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Xylocain-Dental-Adrenalin-SE-AJ-Ingredient02"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Xylocain-Dental-Adrenalin-SE-AJ-Ingredient02"
+    }
+  ]
+}

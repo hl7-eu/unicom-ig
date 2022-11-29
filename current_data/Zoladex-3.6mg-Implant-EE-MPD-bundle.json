@@ -1,0 +1,461 @@
+{
+  "id": "Zoladex-3.6mg-Implant-EE-MPD-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "Zoladex-3.6mg-Implant-EE-MPD",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T19:15:01.118+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073874",
+              "display": "Implant"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/pmsId",
+            "value": "0000000000020"
+          },
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "EE-100014112-12130"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000021",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000005003",
+              "code": "200000005004",
+              "display": "Current"
+            },
+            {
+              "system": "http://hl7.org/fhir/publication-status",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072084",
+              "display": "Medicinal Product subject to medical prescription"
+            }
+          ]
+        },
+        "additionalMonitoringIndicator": {
+          "coding": [
+            {
+              "system": "http://ema.europa.eu/fhir/additionalMonitoringIndicator",
+              "code": "False",
+              "display": "False"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "100000096783",
+                "display": "Goserelin"
+              },
+              {
+                "system": "http://www.whocc.no/atc",
+                "code": "L02AE03",
+                "display": "Goserelin"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Zoladex, 3,6 mg implantaat",
+            "namePart": [
+              {
+                "part": "Zoladex",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000002",
+                      "display": "Invented name part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "3.6 mg",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "implantaat",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000388",
+                      "display": "Republic of Estonia"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072172",
+                      "display": "Estonian"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/Zoladex-3.6mg-Implant-EE-MPD"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Zoladex-3.6mg-Implant-EE-MPD"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "Zoladex-3.6mg-Implant-EE-RA",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T19:15:01.138+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+            "value": "062494"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/Zoladex-3.6mg-Implant-EE-MPD"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000388",
+                "display": "Republic of Estonia"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "200000017708",
+              "display": "Valid - Renewed/Varied"
+            }
+          ]
+        },
+        "statusDate": "2014-06-27",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100014112"
+          },
+          "display": "AstraZeneca AB"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/Zoladex-3.6mg-Implant-EE-RA"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Zoladex-3.6mg-Implant-EE-RA"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Zoladex-3.6mg-Implant-EE-PPD-1002621",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T19:15:01.191+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 1,
+              "unit": "Syringe",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002150"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/example/pcid",
+            "value": "EE-EE-100014112-12130-1002621"
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Zoladex-3.6mg-Implant-EE-MPD"
+          }
+        ],
+        "description": "\u00dcht implantaati sisaldav Safe System n\u00f5ela kaitsva kattega s\u00fcstel.",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072172",
+                "display": "Estonian"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000388",
+                  "display": "Republic of Estonia"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073544",
+                    "display": "Pre-filled syringe"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Zoladex-3.6mg-Implant-EE-MID"
+                    }
+                  },
+                  "amount": {
+                    "value": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Zoladex-3.6mg-Implant-EE-PPD-1002621"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Zoladex-3.6mg-Implant-EE-PPD-1002621"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "Zoladex-3.6mg-Implant-EE-MID",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T19:15:01.165+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073874",
+              "display": "Implant"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002124",
+              "display": "Implant"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/Zoladex-3.6mg-Implant-EE-MID"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Zoladex-3.6mg-Implant-EE-MID"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Zoladex-3.6mg-Implant-EE-I",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T19:15:01.177+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Zoladex-3.6mg-Implant-EE-EE-MPD"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Zoladex-3.6mg-Implant-EE-MID"
+          },
+          {
+            "reference": "AdministrableProductDefinition/Zoladex-3.6mg-Implant-EE-APD"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                  "code": "100000084238",
+                  "display": "Goserelin"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "presentationRatio": {
+                "numerator": {
+                  "value": 3.6,
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000000049",
+                          "display": "equal to"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "milligram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110655"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "Implant",
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                  "code": "200000002124"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Zoladex-3.6mg-Implant-EE-I"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Zoladex-3.6mg-Implant-EE-I"
+    }
+  ]
+}
