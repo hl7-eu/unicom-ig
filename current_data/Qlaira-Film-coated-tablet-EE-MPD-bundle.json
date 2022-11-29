@@ -1,0 +1,521 @@
+{
+  "id": "Qlaira-Film-coated-tablet-EE-MPD-BBDL",
+  "type": "transaction",
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicinalProductDefinition",
+        "id": "Qlaira-Film-coated-tablet-EE-MPD",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T18:47:18.818+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://ema.europa.eu/fhir/extension/authorisedDoseForm",
+            "valueCoding": {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073665",
+              "display": "Film-coated tablet"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/pmsId",
+            "value": "0000000000013"
+          },
+          {
+            "system": "http://ema.europa.eu/fhir/mpId",
+            "value": "EE-100001505-22493"
+          }
+        ],
+        "domain": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000000004",
+              "code": "100000000012",
+              "display": "Human use"
+            }
+          ]
+        },
+        "status": {
+          "coding": [
+            {
+              "system": "http://spor.ema.europa.eu/v1/lists/200000005003",
+              "code": "200000005004",
+              "display": "Current"
+            },
+            {
+              "system": "http://hl7.org/fhir/publication-status",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "legalStatusOfSupply": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072051",
+              "code": "100000072084",
+              "display": "Medicinal Product subject to medical prescription"
+            }
+          ]
+        },
+        "additionalMonitoringIndicator": {
+          "coding": [
+            {
+              "system": "http://ema.europa.eu/fhir/additionalMonitoringIndicator",
+              "code": "False",
+              "display": "False"
+            }
+          ]
+        },
+        "classification": [
+          {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000093533",
+                "code": "1100000125013",
+                "display": "Dienogest and estradiol"
+              },
+              {
+                "system": "http://whocc.no/atc",
+                "code": "G03AB08",
+                "display": "Dienogest and estradiol"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "productName": "Qlaira, \u00f5hukese pol\u00fcmeerikattega tabletid",
+            "namePart": [
+              {
+                "part": "Qlaira",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000002",
+                      "display": "Invented name part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "0+3mg/0+1mg/0+0/2mg+2mg/3mg+2mg",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000004",
+                      "display": "Strength part"
+                    }
+                  ]
+                }
+              },
+              {
+                "part": "\u00f5hukese pol\u00fcmeerikattega tabletid",
+                "type": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "code": "220000000005",
+                      "display": "Pharmaceutical dose form part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "countryLanguage": [
+              {
+                "country": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                      "code": "100000000388",
+                      "display": "Republic of Estonia"
+                    }
+                  ]
+                },
+                "language": {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/100000072057",
+                      "code": "100000072172",
+                      "display": "Estonian"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicinalProductDefinition/Qlaira-Film-coated-tablet-EE-MPD"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Qlaira-Film-coated-tablet-EE-MPD"
+    },
+    {
+      "resource": {
+        "resourceType": "RegulatedAuthorization",
+        "id": "Qlaira-Film-coated-tablet-EE-RA",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T18:47:18.891+00:00"
+        },
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/fhir/marketingAuthorizationNumber",
+            "value": "614308"
+          }
+        ],
+        "subject": [
+          {
+            "reference": "MedicinalProductDefinition/Qlaira-Film-coated-tablet-EE-MPD"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/220000000060",
+              "code": "220000000061",
+              "display": "Marketing Authorisation"
+            }
+          ]
+        },
+        "region": [
+          {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000000002",
+                "code": "100000000388",
+                "display": "Republic of Estonia"
+              }
+            ]
+          }
+        ],
+        "status": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072049",
+              "code": "200000017708",
+              "display": "Valid - Renewed/Varied"
+            }
+          ]
+        },
+        "statusDate": "2013-09-02",
+        "holder": {
+          "identifier": {
+            "system": "https://spor.ema.europa.eu/v1/locations",
+            "value": "LOC-100001505"
+          },
+          "display": "Bayer AG"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RegulatedAuthorization/Qlaira-Film-coated-tablet-EE-RA"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Qlaira-Film-coated-tablet-EE-RA"
+    },
+    {
+      "resource": {
+        "resourceType": "PackagedProductDefinition",
+        "id": "Qlaira-Film-coated-tablet-EE-PPD-1322660",
+        "meta": {
+          "versionId": "3",
+          "lastUpdated": "2022-08-17T06:41:28.116+00:00"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.containedItemQuantity",
+            "valueQuantity": {
+              "value": 28,
+              "unit": "Tablet",
+              "system": "http://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002152"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://ema.europa.eu/example/pcid",
+            "value": "EE-100001505-22493-1322660"
+          }
+        ],
+        "packageFor": [
+          {
+            "reference": "MedicinalProductDefinition/Qlaira-Film-coated-tablet-EE-MPD"
+          }
+        ],
+        "description": "L\u00e4bipaistev PVC/alumiinium blister kartongist voldikpakendis.",
+        "_description": {
+          "extension": [
+            {
+              "url": "http://ema.europa.eu/fhir/extension/language",
+              "valueCoding": {
+                "system": "http://spor.ema.europa.eu/v1/lists/100000072057",
+                "code": "100000072172",
+                "display": "Estonian"
+              }
+            }
+          ]
+        },
+        "marketingStatus": [
+          {
+            "country": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000000002",
+                  "code": "100000000388",
+                  "display": "Republic of Estonia"
+                }
+              ]
+            },
+            "status": {
+              "coding": [
+                {
+                  "system": "http://spor.ema.europa.eu/v1/lists/100000072052",
+                  "code": "100000072083",
+                  "display": "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "package": {
+          "type": {
+            "coding": [
+              {
+                "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "code": "100000073498",
+                "display": "Box"
+              }
+            ]
+          },
+          "quantity": 1,
+          "material": [
+            {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "code": "200000003529",
+                  "display": "Cardboard"
+                }
+              ]
+            }
+          ],
+          "package": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "code": "100000073496",
+                    "display": "Blister"
+                  }
+                ]
+              },
+              "quantity": 1,
+              "material": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003200",
+                      "display": "Aluminium"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "code": "200000003222",
+                      "display": "PolyVinyl Chloride"
+                    }
+                  ]
+                }
+              ],
+              "containedItem": [
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Qlaira-Film-coated-tablet-EE-MID-dark-yellow"
+                    }
+                  },
+                  "amount": {
+                    "value": 2
+                  }
+                },
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Qlaira-Film-coated-tablet-EE-MID-medium-red"
+                    }
+                  },
+                  "amount": {
+                    "value": 5
+                  }
+                },
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Qlaira-Film-coated-tablet-EE-MID-light-yellow"
+                    }
+                  },
+                  "amount": {
+                    "value": 17
+                  }
+                },
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Qlaira-Film-coated-tablet-EE-MID-dark-red"
+                    }
+                  },
+                  "amount": {
+                    "value": 2
+                  }
+                },
+                {
+                  "item": {
+                    "reference": {
+                      "reference": "ManufacturedItemDefinition/Qlaira-Film-coated-tablet-EE-MID-white"
+                    }
+                  },
+                  "amount": {
+                    "value": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PackagedProductDefinition/Qlaira-Film-coated-tablet-EE-PPD-1322660"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Qlaira-Film-coated-tablet-EE-PPD-1322660"
+    },
+    {
+      "resource": {
+        "resourceType": "ManufacturedItemDefinition",
+        "id": "Qlaira-Film-coated-tablet-EE-MID-dark-yellow",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-08-14T18:47:18.967+00:00"
+        },
+        "status": "active",
+        "manufacturedDoseForm": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "code": "100000073665",
+              "display": "Film-coated tablet"
+            }
+          ]
+        },
+        "unitOfPresentation": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+              "code": "200000002152",
+              "display": "Tablet"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ManufacturedItemDefinition/Qlaira-Film-coated-tablet-EE-MID-dark-yellow"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Qlaira-Film-coated-tablet-EE-MID-dark-yellow"
+    },
+    {
+      "resource": {
+        "resourceType": "Ingredient",
+        "id": "Qlaira-Film-coated-tablet-EE-I-dark-yellow",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2022-08-14T18:52:32.514+00:00"
+        },
+        "status": "active",
+        "for": [
+          {
+            "reference": "MedicinalProductDefinition/Qlaira-Film-coated-tablet-EE-MPD"
+          },
+          {
+            "reference": "ManufacturedItemDefinition/Qlaira-Film-coated-tablet-EE-MID-dark-yellow"
+          },
+          {
+            "reference": "AdministrableProductDefinition/Qlaira-Film-coated-tablet-EE-APD-dark-yellow"
+          }
+        ],
+        "role": {
+          "coding": [
+            {
+              "system": "https://spor.ema.europa.eu/v1/lists/100000072050",
+              "code": "100000072072",
+              "display": "Active"
+            }
+          ]
+        },
+        "substance": {
+          "code": {
+            "concept": {
+              "coding": [
+                {
+                  "system": "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                  "code": "100000090493",
+                  "display": "Estradiol valerate"
+                }
+              ]
+            }
+          },
+          "strength": [
+            {
+              "presentationRatio": {
+                "numerator": {
+                  "value": 3,
+                  "_comparator": {
+                    "extension": [
+                      {
+                        "url": "http://ema.europa.eu/fhir/extension/comparator",
+                        "valueCoding": {
+                          "system": "https://spor.ema.europa.eu/v1/lists/100000000008",
+                          "code": "100000000049",
+                          "display": "equal to"
+                        }
+                      }
+                    ]
+                  },
+                  "unit": "milligram(s)",
+                  "system": "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "code": "100000110655"
+                },
+                "denominator": {
+                  "value": 1,
+                  "unit": "Tablet",
+                  "system": "https://spor.ema.europa.eu/v1/lists/200000000014",
+                  "code": "200000002152"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Ingredient/Qlaira-Film-coated-tablet-EE-I-dark-yellow"
+      },
+      "fullUrl": "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Qlaira-Film-coated-tablet-EE-I-dark-yellow"
+    }
+  ]
+}
