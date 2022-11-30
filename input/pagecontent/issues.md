@@ -6,7 +6,7 @@ This IG follows the EMA IG, which has been published as a set of text documents.
 
 
 #### FHIR versions
-EMA IG is based on FHIR version 4.6, but UNICOM PPL FHIR IG is based on FHIR R4B (Jan 2022).  OTSI SIIA KUUPÄEVAD
+EMA IG is based on FHIR version 4.6, but UNICOM PPL FHIR IG is based on FHIR R4B.
 These versions introduce many changes, most significantly:
 * direction of reference has been changed for Ingredient
 * pack size as containedItemQuantity (described as extension in EMA IG)
@@ -20,9 +20,11 @@ These versions introduce many changes, most significantly:
 
 
 #### SPOR RMS lists
-* There is no official source for EMA SPOR RMS lists in FHIR format. The lists used in this IG are derived from the versions published by EMA, but there is room for interpretation what exactly should be included in the final FHIR value set. These value sets are not automatically updated from EMA sources.
-* All EMA SPOR RMS lists are defined as different code systems by EMA IG. Most value sets include all codes from the relevant code system. Exceptions to this are Authorised Dose Form (combines four EMA lists) and All Units (combines units of presentation and measurement).
-* EMA SPOR provides their own codes for concepts from international code systems (EDQM, UCUM, WHO ATC, ISO country and IETF language codes). While we can argue if this is the best approach, this IG follows the EMA IG in that regard. For ATC classication separate slices are created to capture WHO ATC code as well as EMA SPOR RMS code. 
+There is no official source for EMA SPOR RMS lists in FHIR format. The lists used in this IG are derived from the versions published by EMA, but there is room for interpretation what exactly should be included in the final FHIR value set. These value sets are not automatically updated from EMA sources.
+
+All EMA SPOR RMS lists are defined as different code systems by EMA IG. Most value sets include all codes from the relevant code system. Exceptions to this are Authorised Dose Form (combines four EMA lists) and All Units (combines units of presentation and measurement).
+
+EMA SPOR provides their own codes for concepts from international code systems (EDQM, UCUM, WHO ATC, ISO country and IETF language codes). While we can argue if this is the best approach, this IG follows the EMA IG in that regard. For ATC classication separate slices are created to capture WHO ATC code as well as EMA SPOR RMS code. 
 
 
 ### Identifiers
@@ -30,11 +32,12 @@ Key product indentifiers (MPID, PCID, PhPID, EMA PMS Id) are not available. In s
 
 
 #### MPID - Medicinal Product Identifier
-The MPID is defined by the following segments:
- • country code segment (ISO 3166-1 alpha-2 code elements);
- • marketing authorisation holder (i.e. location ID) code segment;
- • medicinal product code segment (i.e. unique medicinal product ID).
- Any change of the values related to these three code segments (as described in the Introductory section) should result in the assignment of a new MPID.
+The MPID is defined by the following segments: 
+* country code segment (ISO 3166-1 alpha-2 code elements);
+* marketing authorisation holder (i.e. location ID) code segment;
+* medicinal product code segment (i.e. unique medicinal product ID).
+
+Any change of the values related to these three code segments (as described in the Introductory section) should result in the assignment of a new MPID.  
 This attribute will be automatically generated and maintained by the PMS system. In PPL data the identifier has been left empty or substituted with a fake identifier that follows the rules of the MPID.
 
 Current EMA IG states the LOC-id as the marketing authorisation holder segment in the MPID. There was an expectation for it to be changed into ORG-id in the next EMA IG. Therefore, some products (mostly Estonian) use LOC-id in the MPID, while other products use ORG-id.
