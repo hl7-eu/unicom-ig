@@ -28,8 +28,11 @@ def generate_api_key(url, email, password, http_date=None):
     api_key = f'{email}|{signature}'
     return api_key, http_date
 
+def endpoint_to_url(endpoint):
+    return urllib.parse.urlparse(urllib.parse.urljoin(BASE_URL.geturl(), endpoint))
+
 def make_request(endpoint, email, password):
-    url = urllib.parse.urlparse(urllib.parse.urljoin(BASE_URL.geturl(), endpoint))
+    url = endpoint_to_url(endpoint)
     api_key, http_date = generate_api_key(url, email, password)
 
     headers = {
@@ -45,7 +48,7 @@ def make_request(endpoint, email, password):
 
     return json.loads(resp.text)
 
-def generate_coding_system(output_dir, class_obj, email, password, template):
+def generate_fsh(output_dir, class_obj, email, password, template):
     # create output dir if doesn't exists
     pathlib.Path.mkdir(output_dir, parents=True, exist_ok=True)
 
@@ -54,18 +57,20 @@ def generate_coding_system(output_dir, class_obj, email, password, template):
         return ''.join([s[0].upper(), s[1:]])
 
     class_code = class_obj['code']
-    code_system = to_upper_camel_case(class_obj['name'])
+    name = to_upper_camel_case(class_obj['name'])
 
-    full_class_data = make_request(f'full_data_by_class/{class_code}/1/1', email, password)['content']
+    endpoint = f'full_data_by_class/{class_code}/1/1'
+    full_class_data = make_request(endpoint, email, password)['content']
     
     output_str = template.render(
-        code_system=code_system,
-        id=class_obj['name'].replace(' ', '-'),
+        name=name,
+        instance=class_obj['name'].replace(' ', '-'),
         title=class_obj['name'].capitalize(),
+        edqm_class=class_code,
         codes=full_class_data,
     )
 
-    with open(output_dir / f'{code_system}.fsh', 'wt') as output_file:
+    with open(output_dir / f'{name}.fsh', 'wt') as output_file:
         output_file.write(output_str)
 
 if __name__ == '__main__':
@@ -79,14 +84,14 @@ if __name__ == '__main__':
     print('Fetching edqm class list...')
     classes = make_request('classes', args.email, args.password)['content']
 
-    fsh_template_text = importlib.resources.read_text(templates, 'coding-system.fsh.jinja')
+    fsh_template_text = importlib.resources.read_text(templates, 'value-set.fsh.jinja')
     environment = jinja2.Environment()
     template = environment.from_string(fsh_template_text)
 
-    print(f'Generating code system for {len(classes)} classes in {args.output}...')
+    print(f'Generating FSH for {len(classes)} classes in {args.output}...')
     for class_obj in classes:
-        generate_coding_system(args.output, class_obj, args.email, args.password, template)
+        generate_fsh(args.output, class_obj, args.email, args.password, template)
 
         class_name = class_obj['name']
-        print(f'Generated codesystem for "{class_name}"')
+        print(f'Generated FSH for "{class_name}"')
     pass

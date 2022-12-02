@@ -1,16 +1,19 @@
-CodeSystem: {{ code_system }}
-Id:         {{ id }}
-Title:      "{{ title }}"
-* ^hierarchyMeaning = #is-a
+Instance: {{ instance }}
+InstanceOf: ValueSet
+Usage: #definition
+* name = "{{ name }}"
+* title = "{{ title }}"
+* status = #active
+* experimental = false
+* description = "ValueSet {{ title }} from EDQM, {{ edqm_class }}, see https://standardterms.edqm.eu/#"
+* immutable = false
+* compose.include.system = "https://standardterms.edqm.eu"
 
 {% for code_des in codes %}
-* #{{ code_des.code }}
-    "{{ code_des.english }}"
-    "{{ code_des.definition }}"
-  * ^designation[0].language = #en
-  * ^designation[=].value = "{{ code_des.english }}"
+* compose.include.concept[+].code = #{{ code_des.code }}
+* compose.include.concept[=].display = "{{ code_des.english }}"
   {% for translation in code_des.translations %}
-  * ^designation[+].language = #{{ translation.language|lower }}-{{ translation.region|upper }}
-  * ^designation[=].value = "{{ translation.term }}"
+* compose.include.concept[=].designation[+].language = #{{ translation.language|lower }}-{{ translation.region|upper }}
+* compose.include.concept[=].designation[=].value = "{{ translation.term }}"
   {% endfor %}
 {% endfor %}
