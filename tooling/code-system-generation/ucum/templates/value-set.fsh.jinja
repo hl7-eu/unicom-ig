@@ -1,11 +1,17 @@
-CodeSystem: {{ code_system }}
-Id:         {{ id }}
-Title:      "{{ title }}"
-* ^hierarchyMeaning = #is-a
+Instance: {{ instance }}
+InstanceOf: ValueSet
+Usage: #definition
+* name = "{{ name }}"
+* title = "{{ title }}"
+* status = #active
+* experimental = false
+* description = "ValueSet for UCUM units to be used in eHDSI"
+* immutable = false
+* compose.include.system = "http://hl7.org/fhir/ValueSet/ucum-units"
 
 {% for code_des in codes %}
-* #{{ code_des.code }}
-    "{{ code_des.displayName }}"
-  * ^designation[0].language = #en
-  * ^designation[=].value = "{{ code_des.displayName }}"
+* compose.include.concept[+].code = #{{ code_des.code }}
+* compose.include.concept[=].display = "{{ code_des.displayName }}"
+* compose.include.concept[=].designation[+].language = #en
+* compose.include.concept[=].designation[=].value = "{{ code_des.displayName }}"
 {% endfor %}

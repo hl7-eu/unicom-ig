@@ -28,16 +28,16 @@ if __name__ == '__main__':
         if key not in codes_dict:
             codes_dict[key] = code
 
-    code_system = 'EhdsiUcumUnit'
+    name = 'EhdsiUcumUnit'
     output_str = template.render(
-        code_system=code_system,
-        id='ehdsi-ucum-unit',
+        name=name,
+        instance='ehdsi-ucum-unit',
         title='eHDSI UCUM unit',
         codes=codes_dict.values(),
     )
 
-    print(f'Generating coding system {code_system}...')
-    with open(args.output / f'{code_system}.fsh', 'wt') as output_file:
+    print(f'Generating {name}...')
+    with open(args.output / f'{name}.fsh', 'wt') as output_file:
         output_file.write(output_str)
 
     pass
