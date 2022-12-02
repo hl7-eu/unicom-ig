@@ -12,7 +12,7 @@ if __name__ == '__main__':
     parser.add_argument('--output', '-o', type=pathlib.Path, default=pathlib.Path('out'), help='output directory')
     args = parser.parse_args()
 
-    fsh_template_text = importlib.resources.read_text(templates, 'coding-system.fsh.jinja')
+    fsh_template_text = importlib.resources.read_text(templates, 'value-set.fsh.jinja')
     environment = jinja2.Environment()
     template = environment.from_string(fsh_template_text)
 
