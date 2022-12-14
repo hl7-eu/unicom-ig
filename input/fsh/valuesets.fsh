@@ -13,6 +13,38 @@ Description: "Value set for Anatomical Therapeutic Chemical classification syste
 * include codes from system $100000093533 // Anatomical Therapeutic Chemical classification system - Human
 * include codes from system $100000116677 // Anatomical Therapeutic Chemical classification system - Veterinary
 
+ValueSet: SporRegulatoryStatus
+Id: regulatory-status-spor-vs
+Title: "Regulatory Entitlement Status"
+Description: "Regulatory Entitlement Status"
+* ^experimental = false
+* include codes from system $100000072049 // Regulatory Entitlement Status
+
+ValueSet: SporMarketingStatus
+Id: marketing-status-spor-vs
+Title: "Marketing Status"
+Description: "Marketing Status"
+* ^experimental = false
+* include codes from system $100000072052 // Marketing Status
+
+ValueSet: SporPackaging
+Id: packaging-spor-vs
+Title: "Packaging"
+Description: "Packaging"
+* ^experimental = false
+* include codes from system $100000073346 // Packaging
+
+
+ValueSet: SporShelfLifeType
+Id: shelflifetype-spor-vs
+Title: "Shelf Life Type"
+Description: "Shelf Life Type"
+* ^experimental = false
+* include codes from system $100000073343 // Shelf Life Type
+
+	
+
+
 
 
 // Dose forms
@@ -64,7 +96,7 @@ Description: "EMA SPOR RMS list"
 * ^experimental = false
 * include codes from system $100000072051 // Legal Status for the Supply
 
-ValueSet: Material
+ValueSet: SporMaterial
 Id: material-vs
 Title: "Material"
 Description: "Package material. EMA SPOR RMS LIST."

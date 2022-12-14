@@ -166,7 +166,8 @@ Description: """Regulated Authorization profile defines the Marketing Authorisat
   * ^definition = "EMA IG 2.3"
 
 * status 1..1
-  * coding.system = $100000072049
+* status from SporRegulatoryStatus
+  /* * coding.system = $100000072049 */
   * ^short = "Marketing authorisation status"
   * ^definition = "EMA IG 2.4"
 
@@ -191,12 +192,14 @@ Title: "PPL Manufactured Item profile"
 Description: """Manufactured item is the countable element inside the package"""
 
 * manufacturedDoseForm 1..1
-  * coding.code from pharmaceutical-doseform-vs
+* manufacturedDoseForm from PharmaceuticalDoseForm
+/*   * coding.code from pharmaceutical-doseform-vs */
   * ^short = "Dose form of the manufactured item (before preparing for administration)"
   * ^definition = "EMA IG 4.11.3"
 
 * unitOfPresentation 1..1
-  * coding.code from unit-of-presentation-vs
+* unitOfPresentation from UnitOfPresentation
+/*   * coding.code from unit-of-presentation-vs */
   * ^short = "Unit of presentation of the manufactured item (before preparing for administration)"
   * ^definition = "EMA IG 4.11.1"
 
@@ -215,8 +218,9 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 * formOf only Reference(PPLMedicinalProductDefinition)
 
 * administrableDoseForm 1..1
-  * coding.system = $200000000004
-  * coding.code from pharmaceutical-doseform-vs
+* administrableDoseForm from PharmaceuticalDoseForm
+/*   * coding.system = $200000000004
+  * coding.code from pharmaceutical-doseform-vs */
   * ^short = "Dose form of the administrable product (after preparing for administration)"
   * ^definition = "EMA IG 6.2"
 
@@ -320,8 +324,9 @@ Description: """Packaged Product"""
 * packageFor 1..*
 
 * containedItemQuantity 1..*
-  * system = $200000000014
-  * code from unit-of-presentation-vs
+* containedItemQuantity from UnitOfPresentation
+/*   * system = $200000000014
+  * code from unit-of-presentation-vs */
   * ^short = "Pack size. Repeated for combination packages."
   * ^definition = "EMA IG 4.4"
 
@@ -332,33 +337,39 @@ Description: """Packaged Product"""
 * legalStatusOfSupply 0..1
   * ^short = "Legal status of supply on the packaged product level."
   * ^definition = "EMA IG 4.5. Legal status of supply on the packaged product level. The same information can be repeated/differentiated on the medicinal product level"
-  * code.coding.code from legal-status-for-the-supply-vs
-  * jurisdiction.coding from country-ema-vs
+/*   * code.coding.code from legal-status-for-the-supply-vs */
+  * code from LegalStatusForTheSupply
+  * jurisdiction from CountryEMA
+ /* * jurisdiction.coding from country-ema-vs */
 
 * marketingStatus
   * ^definition = "EMA IG 4.6"
   * country 1..1
-    * coding from country-ema-vs
+  * country from CountryEMA
+/*     * coding from country-ema-vs */
   * status 1..1
-    * coding.system = $100000072052
+  * status from SporMarketingStatus
+  /*   * coding.system = $100000072052 */
 
 * package 1..1
   * type 1..1
+  * type from SporPackaging
     * ^short = "Container type"
     * ^definition = "EMA IG 4.8.1"
-    * coding.system = $100000073346
+/*     * coding.system = $100000073346 */
   
   * quantity 1..1
     * ^definition = "EMA IG 4.8.5"
   
-  * material from material-vs
+  * material from SporMaterial
     //* coding.code from material-vs
     * ^definition = "EMA IG 4.8.7"
  
-  * shelfLifeStorage
+  * shelfLifeStorage  
     * ^definition = "EMA IG 4.12"
     * type 1..1
-    * type.coding.system = $100000073343
+    * type from SporShelfLifeType
+/*     * type.coding.system = $100000073343 */
     * period[x] 1..1
   
   * containedItem
