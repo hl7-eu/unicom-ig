@@ -7,5 +7,5 @@ Usage: #definition
 * experimental = false
 * description = "ValueSet Filter label from EDQM, FIL, see https://standardterms.edqm.eu/#"
 * immutable = false
-* compose.include.system = "https://standardterms.edqm.eu"
+* compose.include.system = $edqm-standardterms
 

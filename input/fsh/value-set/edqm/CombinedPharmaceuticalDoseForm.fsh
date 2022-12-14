@@ -7,7 +7,7 @@ Usage: #definition
 * experimental = false
 * description = "ValueSet Combined pharmaceutical dose form from EDQM, CDF, see https://standardterms.edqm.eu/#"
 * immutable = false
-* compose.include.system = "https://standardterms.edqm.eu"
+* compose.include.system = $edqm-standardterms
 
 
 * compose.include.concept[+].code = #10114000
@@ -2930,9 +2930,11 @@ Usage: #definition
   
 * compose.include.concept[=].designation[+].language = #fi-FI
 * compose.include.concept[=].designation[=].value = "Konsentraatti ja liuotin välikonsentraatiksi infuusionestettä varten, liuos"
-  
-* compose.include.concept[=].designation[+].language = #fr-FR
-* compose.include.concept[=].designation[=].value = ""
+
+ // Commented missing value
+
+/* * compose.include.concept[=].designation[+].language = #fr-FR
+* compose.include.concept[=].designation[=].value = "" */
   
 * compose.include.concept[=].designation[+].language = #ga-EU
 * compose.include.concept[=].designation[=].value = "Tiúchán agus tuaslagóir le haghaidh tiúcháin le haghaidh tuaslagáin le haghaidh iondoirte"

@@ -7,7 +7,7 @@ Usage: #definition
 * experimental = false
 * description = "ValueSet {{ title }} from EDQM, {{ edqm_class }}, see https://standardterms.edqm.eu/#"
 * immutable = false
-* compose.include.system = "https://standardterms.edqm.eu"
+* compose.include.system = $edqm-standardterms
 
 {% for code_des in codes %}
 * compose.include.concept[+].code = #{{ code_des.code }}

@@ -2,8 +2,8 @@ ValueSet: VsWhoAtcUnicom
 Id: whoatc-unicom
 Title: "WHO ATC"
 Description: "World Health Organization Anatomical Therapeutic Chemical (ATC) classification system.  Note: The currently implemented code system and the value set expansion contain only a set of example ATC codes, not the complete code system content."
-* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-* ^url = "http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"
+/* * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset" */
+/* * ^url = "http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips" */
 * ^status = #active
 * ^experimental = false
 * ^publisher = "UNICOM Project"

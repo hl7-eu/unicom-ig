@@ -7,7 +7,7 @@ Usage: #definition
 * experimental = false
 * description = "ValueSet Closure from EDQM, CLO, see https://standardterms.edqm.eu/#"
 * immutable = false
-* compose.include.system = "https://standardterms.edqm.eu"
+* compose.include.system = $edqm-standardterms
 
 
 * compose.include.concept[+].code = #13070000
