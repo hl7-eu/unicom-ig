@@ -46,27 +46,31 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * ^definition = "EMA IG 1.3"
 
 * status 0..1
-  * coding.system = $200000005003 // TO DO: Default 200000005004 'Current'
+* status from SporRecordStatus
+/*   * coding.system = $200000005003 // TO DO: Default 200000005004 'Current' */
   * ^short = "Status of the product's data. Default 200000005004 'Current'"
 
 * legalStatusOfSupply 1..1
-  * coding.code from legal-status-for-the-supply-vs
+* legalStatusOfSupply from LegalStatusForTheSupply
+/*   * coding.code from legal-status-for-the-supply-vs */
   * ^short = "Legal status of supply on the medicinal product level."
   * ^definition = "EMA IG 1.7. Legal status of supply on the medicinal product level. The same information can be repeated/differentiated on the package level"
 
 * combinedPharmaceuticalDoseForm 1..1
-  * coding.code from authorised-doseform-vs 
+* combinedPharmaceuticalDoseForm from AuthorisedDoseForm 
+/*   * coding.code from authorised-doseform-vs  */
   * ^short = "Authorised dose form for the product, incl combination package dose forms"
   * ^definition = "EMA IG 1.5 & 1.6. Authorised dose form for the whole product. As applicable in one of the SPOR RMS list Combined pharmaceutical dose form, Pharmaceutical dose form, Combined term, Combination Package"
 
 * classification 1..*
+* classification from SporAtc (preferred)
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "coding.system"
   * ^slicing.rules = #open
   * ^short = "ATC or other classification"
   * ^definition = "EMA IG 1.13"
-* classification contains
-  atc 1..1
+
+* classification contains atc 1..1
 * classification[atc]
   * coding 
     * ^slicing.discriminator.type = #pattern

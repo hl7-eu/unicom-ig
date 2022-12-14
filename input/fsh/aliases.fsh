@@ -23,6 +23,7 @@ Alias: $100000072052 = https://spor.ema.europa.eu/v1/lists/100000072052 // Marke
 Alias: $100000073346 = https://spor.ema.europa.eu/v1/lists/100000073346 // Packaging
 Alias: $200000003199 = https://spor.ema.europa.eu/v1/lists/200000003199 // Material
 Alias: $100000073343 = https://spor.ema.europa.eu/v1/lists/100000073343 // Shelf Life Type
+Alias: $100000116677 = https://spor.ema.europa.eu/v1/lists/100000116677 // Anatomical Therapeutic Chemical classification system - Veterinary
 
 
 Alias: $sms = https://spor.ema.europa.eu/v2/SubstanceDefinition // EMA SPOR Substance Management System
