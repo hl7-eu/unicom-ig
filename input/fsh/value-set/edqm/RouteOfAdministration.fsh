@@ -7,7 +7,7 @@ Usage: #definition
 * experimental = false
 * description = "ValueSet Route of administration from EDQM, ROA, see https://standardterms.edqm.eu/#"
 * immutable = false
-* compose.include.system = "https://standardterms.edqm.eu"
+* compose.include.system = $edqm-standardterms
 
 
 * compose.include.concept[+].code = #20001000

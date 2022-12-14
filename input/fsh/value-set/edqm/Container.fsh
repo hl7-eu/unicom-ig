@@ -7,7 +7,7 @@ Usage: #definition
 * experimental = false
 * description = "ValueSet Container from EDQM, CON, see https://standardterms.edqm.eu/#"
 * immutable = false
-* compose.include.system = "https://standardterms.edqm.eu"
+* compose.include.system = $edqm-standardterms
 
 
 * compose.include.concept[+].code = #13059000

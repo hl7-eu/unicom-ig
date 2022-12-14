@@ -7,7 +7,7 @@ Usage: #definition
 * experimental = false
 * description = "ValueSet Intended site from EDQM, ISI, see https://standardterms.edqm.eu/#"
 * immutable = false
-* compose.include.system = "https://standardterms.edqm.eu"
+* compose.include.system = $edqm-standardterms
 
 
 * compose.include.concept[+].code = #0021

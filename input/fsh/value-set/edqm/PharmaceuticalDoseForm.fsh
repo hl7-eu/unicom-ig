@@ -7,7 +7,7 @@ Usage: #definition
 * experimental = false
 * description = "ValueSet Pharmaceutical dose form from EDQM, PDF, see https://standardterms.edqm.eu/#"
 * immutable = false
-* compose.include.system = "https://standardterms.edqm.eu"
+* compose.include.system = $edqm-standardterms
 
 
 * compose.include.concept[+].code = #10100500
@@ -1488,8 +1488,8 @@ Usage: #definition
 * compose.include.concept[=].designation[+].language = #bs-BA
 * compose.include.concept[=].designation[=].value = "Liofilizat za suspenziju"
   
-* compose.include.concept[=].designation[+].language = #cs-CZ
-* compose.include.concept[=].designation[=].value = ""
+/* * compose.include.concept[=].designation[+].language = #cs-CZ
+* compose.include.concept[=].designation[=].value = "" */
   
 * compose.include.concept[=].designation[+].language = #da-DK
 * compose.include.concept[=].designation[=].value = "Lyofilisat til suspension"
@@ -43230,8 +43230,8 @@ Usage: #definition
 * compose.include.concept[=].designation[+].language = #ga-EU
 * compose.include.concept[=].designation[=].value = "Ungadh craicneach agus sróine"
   
-* compose.include.concept[=].designation[+].language = #hr-HR
-* compose.include.concept[=].designation[=].value = ""
+/* * compose.include.concept[=].designation[+].language = #hr-HR
+* compose.include.concept[=].designation[=].value = "" */
   
 * compose.include.concept[=].designation[+].language = #hu-HU
 * compose.include.concept[=].designation[=].value = "Külsőleges kenőcs és orrkenőcs"
@@ -44372,8 +44372,8 @@ Usage: #definition
 * compose.include.concept[=].designation[+].language = #fi-FI
 * compose.include.concept[=].designation[=].value = "Korva-/silmä-/nenätipat, liuos"
   
-* compose.include.concept[=].designation[+].language = #fr-FR
-* compose.include.concept[=].designation[=].value = ""
+/* * compose.include.concept[=].designation[+].language = #fr-FR
+* compose.include.concept[=].designation[=].value = "" */
   
 * compose.include.concept[=].designation[+].language = #ga-EU
 * compose.include.concept[=].designation[=].value = "Braonta cluaise/súl/sróine, tuaslagán"
@@ -44536,8 +44536,8 @@ Usage: #definition
 * compose.include.concept[=].designation[+].language = #da-DK
 * compose.include.concept[=].designation[=].value = "-"
   
-* compose.include.concept[=].designation[+].language = #es-ES
-* compose.include.concept[=].designation[=].value = ""
+/* * compose.include.concept[=].designation[+].language = #es-ES
+* compose.include.concept[=].designation[=].value = "" */
   
 * compose.include.concept[=].designation[+].language = #fi-FI
 * compose.include.concept[=].designation[=].value = "-"
@@ -48424,8 +48424,8 @@ Usage: #definition
 * compose.include.concept[=].designation[+].language = #hu-HU
 * compose.include.concept[=].designation[=].value = "Por hemodializáló oldathoz való koncentrátumhoz"
   
-* compose.include.concept[=].designation[+].language = #is-IS
-* compose.include.concept[=].designation[=].value = ""
+/* * compose.include.concept[=].designation[+].language = #is-IS
+* compose.include.concept[=].designation[=].value = "" */
   
 * compose.include.concept[=].designation[+].language = #kk-KZ
 * compose.include.concept[=].designation[=].value = "Гемодиализдік ерітіндіге арналған концентрат дайындау үшін қолданылатын ұнтақ"
@@ -49404,8 +49404,8 @@ Usage: #definition
 * compose.include.concept[=].designation[+].language = #da-DK
 * compose.include.concept[=].designation[=].value = "-"
   
-* compose.include.concept[=].designation[+].language = #es-ES
-* compose.include.concept[=].designation[=].value = ""
+/* * compose.include.concept[=].designation[+].language = #es-ES
+* compose.include.concept[=].designation[=].value = "" */
   
 * compose.include.concept[=].designation[+].language = #fi-FI
 * compose.include.concept[=].designation[=].value = "-"
@@ -50419,8 +50419,8 @@ Usage: #definition
 * compose.include.concept[=].designation[+].language = #da-DK
 * compose.include.concept[=].designation[=].value = "-"
   
-* compose.include.concept[=].designation[+].language = #es-ES
-* compose.include.concept[=].designation[=].value = ""
+/* * compose.include.concept[=].designation[+].language = #es-ES
+* compose.include.concept[=].designation[=].value = "" */
   
 * compose.include.concept[=].designation[+].language = #fi-FI
 * compose.include.concept[=].designation[=].value = "-"

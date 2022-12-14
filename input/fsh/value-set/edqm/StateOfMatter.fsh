@@ -7,7 +7,7 @@ Usage: #definition
 * experimental = false
 * description = "ValueSet State of matter from EDQM, SOM, see https://standardterms.edqm.eu/#"
 * immutable = false
-* compose.include.system = "https://standardterms.edqm.eu"
+* compose.include.system = $edqm-standardterms
 
 
 * compose.include.concept[+].code = #0097
