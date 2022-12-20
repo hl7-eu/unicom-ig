@@ -14,6 +14,16 @@ import pathlib
 
 BASE_URL = urllib.parse.urlparse('https://standardterms.edqm.eu:443/standardterms/api/v1/')
 
+target_locales = [
+    'en',
+    'it',
+    'el',
+    'pt',
+    'de',
+    'es',
+    'fr',
+]
+
 def generate_api_key(url, email, password, http_date=None):
     if http_date is None:
         http_date = datetime.utcnow().strftime('%a, %d %b %G %T GMT')
@@ -68,6 +78,7 @@ def generate_fsh(output_dir, class_obj, email, password, template):
         title=class_obj['name'].capitalize(),
         edqm_class=class_code,
         codes=full_class_data,
+        target_locales=target_locales,
     )
 
     with open(output_dir / f'{name}.fsh', 'wt') as output_file:
@@ -93,5 +104,5 @@ if __name__ == '__main__':
         generate_fsh(args.output, class_obj, args.email, args.password, template)
 
         class_name = class_obj['name']
-        print(f'Generated FSH for "{class_name}"')
+        print(f'Generated FSH for {class_name}')
     pass
