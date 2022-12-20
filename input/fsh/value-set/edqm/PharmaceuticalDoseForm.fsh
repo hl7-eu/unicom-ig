@@ -10529,9 +10529,6 @@ Usage: #definition
 * compose.include.concept[=].designation[+].language = #es
 * compose.include.concept[=].designation[=].value = "Gotas óticas, colirio y gotas nasales en solución"
       
-* compose.include.concept[=].designation[+].language = #fr
-* compose.include.concept[=].designation[=].value = ""
-      
 * compose.include.concept[=].designation[+].language = #pt
 * compose.include.concept[=].designation[=].value = "Gotas auriculares, colírio ou gotas nasais, solução"
       
@@ -10563,9 +10560,6 @@ Usage: #definition
 * compose.include.concept[+].code = #50020500
 * compose.include.concept[=].display = "Effervescent buccal tablet"
 
-* compose.include.concept[=].designation[+].language = #es
-* compose.include.concept[=].designation[=].value = ""
-      
 * compose.include.concept[=].designation[+].language = #fr
 * compose.include.concept[=].designation[=].value = "Comprimé effervescent gingival"
       
@@ -11704,9 +11698,6 @@ Usage: #definition
 * compose.include.concept[+].code = #50051500
 * compose.include.concept[=].display = "Powder for nebuliser solution/solution for injection/infusion"
 
-* compose.include.concept[=].designation[+].language = #es
-* compose.include.concept[=].designation[=].value = ""
-      
 
 
 * compose.include.concept[+].code = #50052000
@@ -11931,9 +11922,6 @@ Usage: #definition
 * compose.include.concept[+].code = #50059000
 * compose.include.concept[=].display = "Solution for injection/concentrate for solution for infusion"
 
-* compose.include.concept[=].designation[+].language = #es
-* compose.include.concept[=].designation[=].value = ""
-      
 
 
 * compose.include.concept[+].code = #50059500

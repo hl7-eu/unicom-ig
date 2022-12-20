@@ -778,9 +778,6 @@ Usage: #definition
 * compose.include.concept[=].designation[+].language = #es
 * compose.include.concept[=].designation[=].value = "Concentrado y disolvente para concentrado para solución para perfusión"
       
-* compose.include.concept[=].designation[+].language = #fr
-* compose.include.concept[=].designation[=].value = ""
-      
 * compose.include.concept[=].designation[+].language = #it
 * compose.include.concept[=].designation[=].value = "Concentrato e solvente per concentrato per soluzione per infusione"
       
