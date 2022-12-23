@@ -168,7 +168,7 @@ Usage: #inline
 * package.material = $200000003199#200000003529 "Cardboard"
 * package.package.type = $100000073346#200000002158 "vial"
 * package.package.quantity = 1
-* package.package.material = $200000003199#200000003205 "Glass type II "
+* package.package.material = $200000003199#200000003205 "Glass type II"
 * package.package.containedItem.item.reference = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034)
 * package.package.containedItem.amount = 100 $100000110633#100000110662 "millilitre(s)"
 
@@ -190,7 +190,7 @@ Usage: #inline
 * package.material = $200000003199#200000003529 "Cardboard"
 * package.package.type = $100000073346#100000073490 "Ampoule"
 * package.package.quantity = 10
-* package.package.material = $200000003199#200000003204 "Glass type I "
+* package.package.material = $200000003199#200000003204 "Glass type I"
 * package.package.containedItem.item.reference = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905)
 * package.package.containedItem.amount = 10 $100000110633#100000110662 "millilitre(s)"
 
@@ -211,6 +211,6 @@ Usage: #inline
 * package.material = $200000003199#200000003529 "Cardboard"
 * package.package.type = $100000073346#100000073493 "Bag"
 * package.package.quantity = 20
-* package.package.material = $200000003199#200000003218 "Polyolefin "
+* package.package.material = $200000003199#200000003218 "Polyolefin"
 * package.package.containedItem.item.reference = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056)
 * package.package.containedItem.amount = 100 $100000110633#100000110662 "millilitre(s)"

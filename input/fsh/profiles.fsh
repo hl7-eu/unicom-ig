@@ -33,7 +33,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
 * identifier[mpid] 
   * system = "http://ema.europa.eu/fhir/mpId"
   * ^short = "MPID"
-  * ^definition = "EMA IG 1.2. MPID if exists. For UNICOM testing data fake MPIDs are used (Country code + MAH LocID + unique code). "
+  * ^definition = "EMA IG 1.2. MPID if exists. For UNICOM testing data fake MPIDs are used (Country code + MAH LocID + unique code)."
 
 * identifier[pmsid]
   * system = "http://ema.europa.eu/fhir/pmsId"
