@@ -2,6 +2,7 @@ CodeSystem: Domain_EMA_CS
 Id: domain-ema-cs
 Title: "Domain EMA"
 Description: "Domain of the medicinal product (human, veterinary, both)"
+* experimental = false
 * ^url = $100000000004
 * ^caseSensitive = false
 * ^status = #draft

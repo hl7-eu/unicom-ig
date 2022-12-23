@@ -2,6 +2,7 @@ CodeSystem: CombinationPackage_EMA_CS
 Id: combination-package-ema-cs
 Title: "Combination Package EMA"
 Description: "Dose forms for combination packages. Based on EDQM. Re-coded with RMS codes. Only used for authorised dose form."
+* experimental = false
 * ^url = $200000000008
 * ^caseSensitive = false
 * ^status = #draft
