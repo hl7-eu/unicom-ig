@@ -56,7 +56,7 @@ Usage: #inline
 * name.namePart[invented].part = "Panodil"
 * name.namePart[strength].part = "500 mg"
 * name.namePart[doseForm].part = "pulver till oral lösning i dospåse"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization
@@ -65,7 +65,7 @@ Usage: #inline
 * identifier.value = "12391"
 * subject = Reference(Panodil500mgoralsolutionsachet-SE-PLC-MPD)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "1994-10-28"
 * holder = Reference(LOC-100005555-PerrigoSverigeAB)
@@ -97,7 +97,7 @@ Usage: #inline
 * description = "Dospåsar, 12 st"
 //  * extension.url = "http://ema.europa.eu/fhir/extension/language"
 //  * extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1

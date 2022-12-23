@@ -203,8 +203,8 @@ Usage: #inline
 * package.material = $200000003199#200000003529 "Cardboard"
 * package.package.type = $100000073346#100000073496 "Blister"
 * package.package.quantity = 1
-* package.package.material[0] = $200000003199#200000003210 "OPA"
+* package.package.material[0] = $200000003199#200000003210 "Orientated PolyAmide"
 * package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.material[+] = $200000003199#200000003222 "PVC"
+* package.package.material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
 * package.package.containedItem.item.reference = Reference(Betaklav-500mg-125mg-EE-MID)
 * package.package.containedItem.amount.value = 14
