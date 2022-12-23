@@ -2,7 +2,7 @@ CodeSystem: Routes_And_Methods_Of_Administration_EMA_CS
 Id: routes-and-methods-of-administration-ema-cs
 Title: "Routes and Methods of Administration EMA"
 Description: "Routes and methods of medication administration. Based on EDQM, re-coded with RMS codes."
-* experimental = false
+* ^experimental = false
 * ^url = $100000073345
 * ^caseSensitive = false
 * ^status = #draft

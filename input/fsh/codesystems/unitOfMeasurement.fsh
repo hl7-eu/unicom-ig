@@ -2,7 +2,7 @@ CodeSystem: UnitOfMeasurement_EMA_CS
 Id: unit-of-measurement-ema-cs
 Title: "Unit of Measurement EMA"
 Description: "Unit of Measurement. Based on UCUM. Re-coded with RMS codes."
-* experimental = false
+* ^experimental = false
 * ^url = $100000110633
 * ^caseSensitive = false
 * ^status = #draft

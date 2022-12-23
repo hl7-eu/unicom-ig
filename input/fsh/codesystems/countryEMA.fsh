@@ -2,7 +2,7 @@ CodeSystem: Country_EMA_CS
 Id: country-ema-cs
 Title: "Country EMA"
 Description: "Country codes by EMA. Based on ISO 3166-1-2, recoded with RMS codes."
-* experimental = false
+* ^experimental = false
 * ^url = $100000000002
 * ^caseSensitive = true
 * ^status = #draft

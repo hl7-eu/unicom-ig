@@ -2,7 +2,7 @@ CodeSystem: UnitOfPresentation_EMA_CS
 Id: unit-of-presentation-ema-cs
 Title: "Unit of Presentation EMA"
 Description: "Unit of presentation list from EMA SPOR. List id 200000000014. Content based on EDQM, re-coded with RMS codes."
-* experimental = false
+* ^experimental = false
 * ^url = $200000000014
 * ^status = #draft
 * ^compositional = false

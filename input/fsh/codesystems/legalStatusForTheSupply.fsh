@@ -3,7 +3,7 @@ CodeSystem: LegalStatusForTheSupply_EMA_CS
 Id: legal-status-for-the-supply-ema-cs
 Title: "Legal Status for the Supply EMA"
 Description: "Legal status of supply. EMA SPOR RMS list."
-* experimental = false
+* ^experimental = false
 * ^url = $100000072051
 * ^caseSensitive = false
 * ^status = #draft
