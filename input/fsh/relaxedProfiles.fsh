@@ -1,6 +1,6 @@
 /* Relaxed profiles. The structure is the same as the strict regulatory profiles, but cardinalities are as soft as technically possible
 and value set bindings have been removed. Code systems, default values, etc are given in comments just for information. 
-The strict profiles should theoretically derive from these profiles but they do not right now. 
+The strict profiles should theoretically derive from these profiles but they do not right now. */
 
 
 // PROFILE: Medicinal Product Definition
@@ -35,11 +35,12 @@ Description: """Intermediate profile for processing PPL Medicinal Product data""
 
 * domain 0..1 
 // * domain from domain-vs
-// * domain = $100000000004#100000000012 "Human use"
+// default * domain = $100000000004#100000000012 "Human use"
   * ^definition = "EMA IG 1.3"
 
 * status 0..1
-// EMA IG or FHIR status  * coding.system = $200000005003 // Default 200000005004 'Current'
+// EMA IG or FHIR status  
+// default * status = $200000005003#200000005004 'Current'
   * ^short = "Status of the product's data. Default 200000005004 'Current'"
 
 * legalStatusOfSupply 0..1
@@ -74,7 +75,7 @@ Description: """Intermediate profile for processing PPL Medicinal Product data""
   * coding[ema]
     * system = $100000093533
     * ^short = "ATC classification as EMA SPOR code"
-  * coding[who] // from whoatc-unicom
+  * coding[who]
     * system = $who-atc
     * ^short = "ATC classification as WHO ATC code"
 
@@ -196,15 +197,13 @@ Description: """Intermediate profile for processing PPL Administrable Product da
   * ^short = "Reference to the Medicinal Product"
 * formOf only Reference(TransitionMedicinalProductDefinition)
 
-* administrableDoseForm 0..1
+* administrableDoseForm 0..1 // from pharmaceutical-doseform-vs
 //  * coding.system = $200000000004
-// from pharmaceutical-doseform-vs
   * ^short = "Dose form of the administrable product (after preparing for administration)"
   * ^definition = "EMA IG 6.2"
 
-* unitOfPresentation 0..1
+* unitOfPresentation 0..1 // from unit-of-presentation-vs
 //  * coding.system = $200000000014
-// from unit-of-presentation-vs
   * ^short = "Unit of presentation of the administrable product (after preparing for administration). Not applicable for certain products/packaging."
   * ^definition = "EMA IG 6.3"
 
@@ -298,9 +297,8 @@ Description: """Intermediate profile for processing PPL Packaged Product data"""
 * packageFor only Reference(TransitionMedicinalProductDefinition)
 * packageFor 0..*
 
-* containedItemQuantity 0..*
+* containedItemQuantity 0..* // from unit-of-presentation-vs
 //  * system = $200000000014
-//  * code from unit-of-presentation-vs
   * ^short = "Pack size. Repeated for combination packages."
   * ^definition = "EMA IG 4.4"
 
@@ -377,9 +375,8 @@ Description: """Intermediate profile for processing PPL Marketing Authorisation 
 * name 0..1
   * ^short = "Marketing authorisation holder's name from OMS"
 
-*/
 
-  /* PROFILE: Bundle for one full product. This profile is not in use right now.
+  /* PROFILE: Bundle for one full product. NOT IN USE - current examples don't have slices, so they would break.
 Profile: TransitionBundle
 Parent: Bundle
 Id: TransitionBundle
