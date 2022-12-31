@@ -184,6 +184,8 @@ Description: "Administrable/Pharmaceutical Product Definition: transformed"
 * producedFrom = Reference(Cefuroxime-MIP-1500mg-EE-MID)
 * routeOfAdministration[0].code = $100000073345#100000073600 "Intramuscular use"
 * routeOfAdministration[+].code = $100000073345#100000073611 "Intravenous use"
+//route of administration gives an error in the qa, that it's duplicated in the MedProd, but it's not. 
+//The error seems to go away, when I comment one of the routes out from here.
 
 Instance: Cefuroxime-MIP-1500mg-EE-MID
 InstanceOf: PPLManufacturedItemDefinition

@@ -7,42 +7,52 @@ Description: "YAZ ethinylestradiol 0.02mg, drosperinone 3mg, includes placebo ta
 * entry[=].request.method = #POST
 * entry[=].request.url = "MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition"
+
 * entry[+].resource = LOC-100016468-BayerAB
 * entry[=].request.method = #POST
 * entry[=].request.url = "Organization/LOC-100016468-BayerAB"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100016468-BayerAB"
+
 * entry[+].resource = Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization
 * entry[=].request.method = #POST
 * entry[=].request.url = "RegulatedAuthorization/Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization"
+
 * entry[+].resource = Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01
 * entry[=].request.method = #POST
 * entry[=].request.url = "AdministrableProductDefinition/Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01"
+
 * entry[+].resource = Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02
 * entry[=].request.method = #POST
 * entry[=].request.url = "AdministrableProductDefinition/Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02"
+
 * entry[+].resource = Yaz-0023mg-tablet-SE-AJ-PackagedProductDefinition
 * entry[=].request.method = #POST
 * entry[=].request.url = "PackagedProductDefinition/Yaz-0023mg-tablet-SE-AJ-PackagedProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Yaz-0023mg-tablet-SE-AJ-PackagedProductDefinition"
+
 * entry[+].resource = Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01
 * entry[=].request.method = #POST
 * entry[=].request.url = "ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01"
+
 * entry[+].resource = Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02
 * entry[=].request.method = #POST
 * entry[=].request.url = "ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02"
+
 * entry[+].resource = Yaz-0023mg-tablet-SE-AJ-Ingredient01
 * entry[=].request.method = #POST
 * entry[=].request.url = "Ingredient/Yaz-0023mg-tablet-SE-AJ-Ingredient01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Yaz-0023mg-tablet-SE-AJ-Ingredient01"
+
 * entry[+].resource = Yaz-0023mg-tablet-SE-AJ-Ingredient02
 * entry[=].request.method = #POST
 * entry[=].request.url = "Ingredient/Yaz-0023mg-tablet-SE-AJ-Ingredient02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Yaz-0023mg-tablet-SE-AJ-Ingredient02"
+
 * entry[+].resource = Yaz-0023mg-tablet-SE-AJ-Ingredient03
 * entry[=].request.method = #POST
 * entry[=].request.url = "Ingredient/Yaz-0023mg-tablet-SE-AJ-Ingredient03"
@@ -69,6 +79,7 @@ Usage: #inline
 * name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
+
 Instance: Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
 Usage: #inline
@@ -80,6 +91,7 @@ Usage: #inline
 * statusDate = "2008-07-03"
 * holder = Reference(LOC-100016468-BayerAB)
 
+
 Instance: LOC-100016468-BayerAB
 InstanceOf: PPLOrganization
 Usage: #inline
@@ -90,6 +102,7 @@ Description: "Marketing Authorisation Holder / Organisation"
 //* case.type = $authorisationDateType#dateOfFirstAuthorisation "First Authorisation"
 //* case.dateDateTime = "2008-07-03"
 
+
 Instance: Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01
 InstanceOf: PPLAdministrableProductDefinition
 Usage: #inline
@@ -99,6 +112,7 @@ Usage: #inline
 * producedFrom = Reference(Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01)
 * routeOfAdministration.code = $100000073345#100000073619 "Oral use"
 
+
 Instance: Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02
 InstanceOf: PPLAdministrableProductDefinition
 Usage: #inline
@@ -107,6 +121,7 @@ Usage: #inline
 * administrableDoseForm = $200000000004#100000073665 "Film-coated tablet"
 * producedFrom = Reference(Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02)
 * routeOfAdministration.code = $100000073345#100000073619 "Oral use"
+
 
 Instance: Yaz-0023mg-tablet-SE-AJ-PackagedProductDefinition
 InstanceOf: PPLPackagedProductDefinition
@@ -122,8 +137,8 @@ Usage: #inline
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
 * package.material = $200000003199#200000003208 "Plastic"
-* package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-* package.shelfLifeStorage.periodDuration = 5 $100000110633#200000003434 "Year"
+//* package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+//* package.shelfLifeStorage.periodDuration = 5 $100000110633#200000003434 "Year"
 * package.package.type = $100000073346#100000073498 "Box"
 * package.package.quantity = 3
 * package.package.material = $200000003199#200000003529 "Cardboard"
@@ -136,6 +151,7 @@ Usage: #inline
 * package.package.package.containedItem[+].item.reference = Reference(Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02)
 * package.package.package.containedItem[=].amount = 4 $200000000014#200000002152 "tablet"
 
+
 Instance: Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01
 InstanceOf: PPLManufacturedItemDefinition
 Usage: #inline
@@ -143,12 +159,14 @@ Usage: #inline
 * manufacturedDoseForm = $200000000004#100000073665 "Film-coated tablet"
 * unitOfPresentation = $200000000014#200000002152 "tablet"
 
+
 Instance: Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02
 InstanceOf: PPLManufacturedItemDefinition
 Usage: #inline
 * status = #active
 * manufacturedDoseForm = $200000000004#100000073665 "Film-coated tablet"
 * unitOfPresentation = $200000000014#200000002152 "tablet"
+
 
 Instance: Yaz-0023mg-tablet-SE-AJ-Ingredient01
 InstanceOf: PPLIngredient
@@ -165,6 +183,7 @@ Usage: #inline
 * substance.strength.referenceStrength.strengthRatio.numerator = 20 $100000110633#100000110656 "microgram(s)"
 * substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "tablet"
 
+
 Instance: Yaz-0023mg-tablet-SE-AJ-Ingredient02
 InstanceOf: PPLIngredient
 Usage: #inline
@@ -179,6 +198,7 @@ Usage: #inline
 * substance.strength.referenceStrength.substance.concept = $sms#100000090052 "lactose"
 * substance.strength.referenceStrength.strengthRatio.numerator = 22 $100000110633#100000110655 "milligram(s)"
 * substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "tablet"
+
 
 Instance: Yaz-0023mg-tablet-SE-AJ-Ingredient03
 InstanceOf: PPLIngredient

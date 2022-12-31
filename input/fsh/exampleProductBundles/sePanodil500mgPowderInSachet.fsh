@@ -1,6 +1,8 @@
 Instance: 012-Panodil-500mg-SolutionInSachet-SE-FullProduct
 InstanceOf: Bundle
 Usage: #example
+Description: "Paracetamol 500mg. Powder for oral solution in sachet. Sweden."
+
 * type = #batch
 * entry[0].resource = Panodil500mgoralsolutionsachet-SE-PLC-MPD
 * entry[=].request.method = #PUT
@@ -59,6 +61,7 @@ Usage: #inline
 * name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
+
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
 Usage: #inline
@@ -72,6 +75,7 @@ Usage: #inline
 //* case.type = $authorisationDateType#dateOfFirstAuthorisation "First Authorisation"
 //* case.dateDateTime = "1994-10-28"
 
+
 Instance: LOC-100005555-PerrigoSverigeAB
 InstanceOf: PPLOrganization
 Usage: #inline
@@ -79,6 +83,7 @@ Description: "Marketing Authorisation Holder / Organisation"
 
 * identifier[loc].value = "LOC-100005555"
 * name = "Perrigo Sverige AB"
+
 
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-APD
 InstanceOf: PPLAdministrableProductDefinition
@@ -88,6 +93,7 @@ Usage: #inline
 * administrableDoseForm = $200000000004#100000073646 "Oral solution"
 * producedFrom = Reference(Panodil500mgoralsolutionsachet-SE-PLC-MID)
 * routeOfAdministration.code = $100000073345#100000073619 "Oral use"
+
 
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef
 InstanceOf: PPLPackagedProductDefinition
@@ -105,12 +111,14 @@ Usage: #inline
 * package.containedItem.item.reference = Reference(Panodil500mgoralsolutionsachet-SE-PLC-MID)
 * package.containedItem.amount = 12 $200000000014#200000002143 "Sachet"
 
+
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-MID
 InstanceOf: PPLManufacturedItemDefinition
 Usage: #inline
 * status = #active
 * manufacturedDoseForm = $200000000004#100000073364 "Powder for oral solution"
 * unitOfPresentation = $200000000014#200000002143 "Sachet"
+
 
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-Ingredient
 InstanceOf: PPLIngredient

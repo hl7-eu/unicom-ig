@@ -1,6 +1,7 @@
 Instance: 011-Betaklav500-125-EE-FullProduct
 InstanceOf: Bundle
 Usage: #example
+Description: "Amoxicillin 500mg, clavulanic acid 125mg. Tablets. Estonia."
 
 * type = #transaction
 * entry[0].resource = Betaklav-500mg-125mg-EE-MPD
@@ -12,6 +13,11 @@ Usage: #example
 * entry[=].request.method = #PUT
 * entry[=].request.url = "RegulatedAuthorization/Betaklav-500mg-125mg-EE-RA"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Betaklav-500mg-125mg-EE-RA"
+
+* entry[+].resource = LOC-100009540-KrkaNovoMesto
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/LOC-100009540-KrkaNovoMesto"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100009540-KrkaNovoMesto"
 
 * entry[+].resource = Betaklav-500mg-125mg-EE-APD
 * entry[=].request.method = #PUT
@@ -80,6 +86,7 @@ Usage: #inline
 * status = $100000072049#200000017708 "Valid - Renewed/Varied"
 * statusDate = "2021-02-03"
 * holder = Reference(LOC-100009540-KrkaNovoMesto)
+
 
 Instance: LOC-100009540-KrkaNovoMesto
 InstanceOf: PPLOrganization

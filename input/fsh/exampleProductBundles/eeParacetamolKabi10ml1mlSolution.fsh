@@ -1,7 +1,7 @@
 Instance: 009-Paracetamol-Kabi10mg-1ml-EE-FullProduct
 InstanceOf: Bundle
 Usage: #example
-Description: "Paracetamol Kabi 10mg/ml solution for infusion. One pharmaceutical product for three different manufactured items."
+Description: "Paracetamol Kabi 10mg/ml solution for infusion. Estonia. One pharmaceutical product for three different manufactured items."
 
 * type = #transaction
 * entry[0].resource = Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD
