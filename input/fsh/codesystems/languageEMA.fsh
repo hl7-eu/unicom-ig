@@ -1,6 +1,8 @@
 CodeSystem: Language_EMA_CS
 Id: language-ema-cs
 Title: "Language EMA"
+Description: "Language codes by EMA. Based on BCP-47, recoded with RMS codes."
+* ^experimental = false
 * ^url = $100000072057
 * ^status = #draft
 * ^caseSensitive = true

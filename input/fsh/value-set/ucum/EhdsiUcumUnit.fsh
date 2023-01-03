@@ -21,9 +21,9 @@ Usage: #definition
 * compose.include.concept[=].designation[=].value = "10 thousand per microliter"
 
 * compose.include.concept[+].code = #10*8
-* compose.include.concept[=].display = "100 million "
+* compose.include.concept[=].display = "100 million"
 * compose.include.concept[=].designation[+].language = #en
-* compose.include.concept[=].designation[=].value = "100 million "
+* compose.include.concept[=].designation[=].value = "100 million"
 
 * compose.include.concept[+].code = #24.h
 * compose.include.concept[=].display = "24 hour"
@@ -511,9 +511,9 @@ Usage: #definition
 * compose.include.concept[=].designation[=].value = "enzyme unit per liter"
 
 * compose.include.concept[+].code = #U{25Cel}/L
-* compose.include.concept[=].display = "enzyme unit per liter at 25 deg Celsius "
+* compose.include.concept[=].display = "enzyme unit per liter at 25 deg Celsius"
 * compose.include.concept[=].designation[+].language = #en
-* compose.include.concept[=].designation[=].value = "enzyme unit per liter at 25 deg Celsius "
+* compose.include.concept[=].designation[=].value = "enzyme unit per liter at 25 deg Celsius"
 
 * compose.include.concept[+].code = #U{37Cel}/L
 * compose.include.concept[=].display = "enzyme unit per liter at 37 deg Celsius"
@@ -666,9 +666,9 @@ Usage: #definition
 * compose.include.concept[=].designation[=].value = "fraction"
 
 * compose.include.concept[+].code = #[Ch]
-* compose.include.concept[=].display = "French (catheter gauge) "
+* compose.include.concept[=].display = "French (catheter gauge)"
 * compose.include.concept[=].designation[+].language = #en
-* compose.include.concept[=].designation[=].value = "French (catheter gauge) "
+* compose.include.concept[=].designation[=].value = "French (catheter gauge)"
 
 * compose.include.concept[+].code = #{GAA_repeats}
 * compose.include.concept[=].display = "GAA trinucleotide repeats"
@@ -701,9 +701,9 @@ Usage: #definition
 * compose.include.concept[=].designation[=].value = "gram meter"
 
 * compose.include.concept[+].code = #g.m/{beat}
-* compose.include.concept[=].display = "gram meter per heart beat "
+* compose.include.concept[=].display = "gram meter per heart beat"
 * compose.include.concept[=].designation[+].language = #en
-* compose.include.concept[=].designation[=].value = "gram meter per heart beat "
+* compose.include.concept[=].designation[=].value = "gram meter per heart beat"
 
 * compose.include.concept[+].code = #g{creat}
 * compose.include.concept[=].display = "gram of creatinine"
@@ -731,9 +731,9 @@ Usage: #definition
 * compose.include.concept[=].designation[=].value = "gram of wet tissue"
 
 * compose.include.concept[+].code = #g/kg/(8.h)
-* compose.include.concept[=].display = "gram per  kilogram per 8 hour "
+* compose.include.concept[=].display = "gram per  kilogram per 8 hour"
 * compose.include.concept[=].designation[+].language = #en
-* compose.include.concept[=].designation[=].value = "gram per  kilogram per 8 hour "
+* compose.include.concept[=].designation[=].value = "gram per  kilogram per 8 hour"
 
 * compose.include.concept[+].code = #g/(100.g)
 * compose.include.concept[=].display = "gram per 100 gram"
@@ -946,9 +946,9 @@ Usage: #definition
 * compose.include.concept[=].designation[=].value = "IgA anticardiolipin unit**"
 
 * compose.include.concept[+].code = #{APS'U}
-* compose.include.concept[=].display = "IgA antiphosphatidylserine unit "
+* compose.include.concept[=].display = "IgA antiphosphatidylserine unit"
 * compose.include.concept[=].designation[+].language = #en
-* compose.include.concept[=].designation[=].value = "IgA antiphosphatidylserine unit "
+* compose.include.concept[=].designation[=].value = "IgA antiphosphatidylserine unit"
 
 * compose.include.concept[+].code = #[GPL'U]/mL
 * compose.include.concept[=].display = "IgG anticardiolipin unit per milliliter**"
@@ -2746,9 +2746,9 @@ Usage: #definition
 * compose.include.concept[=].designation[=].value = "nanogram"
 
 * compose.include.concept[+].code = #ng{FEU}/mL
-* compose.include.concept[=].display = "nanogram fibrinogen equivalent unit per milliliter "
+* compose.include.concept[=].display = "nanogram fibrinogen equivalent unit per milliliter"
 * compose.include.concept[=].designation[+].language = #en
-* compose.include.concept[=].designation[=].value = "nanogram fibrinogen equivalent unit per milliliter "
+* compose.include.concept[=].designation[=].value = "nanogram fibrinogen equivalent unit per milliliter"
 
 * compose.include.concept[+].code = #ng/(24.h)
 * compose.include.concept[=].display = "nanogram per 24 hour"
@@ -2921,9 +2921,9 @@ Usage: #definition
 * compose.include.concept[=].designation[=].value = "nanomole of 1/2 cystine per milligram of protein"
 
 * compose.include.concept[+].code = #nmol{ATP}
-* compose.include.concept[=].display = "nanomole of ATP "
+* compose.include.concept[=].display = "nanomole of ATP"
 * compose.include.concept[=].designation[+].language = #en
-* compose.include.concept[=].designation[=].value = "nanomole of ATP "
+* compose.include.concept[=].designation[=].value = "nanomole of ATP"
 
 * compose.include.concept[+].code = #nmol/(24.h)
 * compose.include.concept[=].display = "nanomole per 24 hour"
@@ -3211,9 +3211,9 @@ Usage: #definition
 * compose.include.concept[=].designation[=].value = "Pascal"
 
 * compose.include.concept[+].code = #/10*10
-* compose.include.concept[=].display = "per 10 billion  "
+* compose.include.concept[=].display = "per 10 billion"
 * compose.include.concept[=].designation[+].language = #en
-* compose.include.concept[=].designation[=].value = "per 10 billion  "
+* compose.include.concept[=].designation[=].value = "per 10 billion"
 
 * compose.include.concept[+].code = #/10*4{RBCs}
 * compose.include.concept[=].display = "per 10 thousand red blood cells"
@@ -3416,9 +3416,9 @@ Usage: #definition
 * compose.include.concept[=].designation[=].value = "per thousand red blood cells"
 
 * compose.include.concept[+].code = #/10*12
-* compose.include.concept[=].display = "per trillion "
+* compose.include.concept[=].display = "per trillion"
 * compose.include.concept[=].designation[+].language = #en
-* compose.include.concept[=].designation[=].value = "per trillion "
+* compose.include.concept[=].designation[=].value = "per trillion"
 
 * compose.include.concept[+].code = #/10*12{RBCs}
 * compose.include.concept[=].display = "per trillion red blood cells"
@@ -3746,9 +3746,9 @@ Usage: #definition
 * compose.include.concept[=].designation[=].value = "picomole per hour per milligram of protein"
 
 * compose.include.concept[+].code = #pmol/h/mL
-* compose.include.concept[=].display = "picomole per hour per milliliter "
+* compose.include.concept[=].display = "picomole per hour per milliliter"
 * compose.include.concept[=].designation[+].language = #en
-* compose.include.concept[=].designation[=].value = "picomole per hour per milliliter "
+* compose.include.concept[=].designation[=].value = "picomole per hour per milliliter"
 
 * compose.include.concept[+].code = #pmol/L
 * compose.include.concept[=].display = "picomole per liter"

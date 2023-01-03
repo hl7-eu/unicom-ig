@@ -10,6 +10,7 @@ Alias: $200000000006 = https://spor.ema.europa.eu/v1/lists/200000000006 // Combi
 Alias: $200000000007 = https://spor.ema.europa.eu/v1/lists/200000000007 // Combined Term
 Alias: $200000000008 = https://spor.ema.europa.eu/v1/lists/200000000008 // Combination Package
 Alias: $100000093533 = https://spor.ema.europa.eu/v1/lists/100000093533 // Anatomical Therapeutic Chemical classification system - Human
+Alias: $100000116677 = https://spor.ema.europa.eu/v1/lists/100000116677 // Anatomical Therapeutic Chemical classification system - Veterinary
 Alias: $100000000002 = https://spor.ema.europa.eu/v1/lists/100000000002 // Country
 Alias: $100000072057 = https://spor.ema.europa.eu/v1/lists/100000072057 // Language
 Alias: $220000000060 = https://spor.ema.europa.eu/v1/lists/220000000060 // Regulatory Entitlement Type

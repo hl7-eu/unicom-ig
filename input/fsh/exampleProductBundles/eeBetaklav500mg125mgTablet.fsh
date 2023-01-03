@@ -1,6 +1,7 @@
 Instance: 011-Betaklav500-125-EE-FullProduct
 InstanceOf: Bundle
 Usage: #example
+Description: "Amoxicillin 500mg, clavulanic acid 125mg. Tablets. Estonia."
 
 * type = #transaction
 * entry[0].resource = Betaklav-500mg-125mg-EE-MPD
@@ -12,6 +13,11 @@ Usage: #example
 * entry[=].request.method = #PUT
 * entry[=].request.url = "RegulatedAuthorization/Betaklav-500mg-125mg-EE-RA"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Betaklav-500mg-125mg-EE-RA"
+
+* entry[+].resource = LOC-100009540-KrkaNovoMesto
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/LOC-100009540-KrkaNovoMesto"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100009540-KrkaNovoMesto"
 
 * entry[+].resource = Betaklav-500mg-125mg-EE-APD
 * entry[=].request.method = #PUT
@@ -80,6 +86,7 @@ Usage: #inline
 * status = $100000072049#200000017708 "Valid - Renewed/Varied"
 * statusDate = "2021-02-03"
 * holder = Reference(LOC-100009540-KrkaNovoMesto)
+
 
 Instance: LOC-100009540-KrkaNovoMesto
 InstanceOf: PPLOrganization
@@ -203,8 +210,8 @@ Usage: #inline
 * package.material = $200000003199#200000003529 "Cardboard"
 * package.package.type = $100000073346#100000073496 "Blister"
 * package.package.quantity = 1
-* package.package.material[0] = $200000003199#200000003210 "OPA"
+* package.package.material[0] = $200000003199#200000003210 "Orientated PolyAmide"
 * package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.material[+] = $200000003199#200000003222 "PVC"
+* package.package.material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
 * package.package.containedItem.item.reference = Reference(Betaklav-500mg-125mg-EE-MID)
 * package.package.containedItem.amount.value = 14

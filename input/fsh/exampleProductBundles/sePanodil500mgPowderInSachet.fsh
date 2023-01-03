@@ -1,6 +1,8 @@
 Instance: 012-Panodil-500mg-SolutionInSachet-SE-FullProduct
 InstanceOf: Bundle
 Usage: #example
+Description: "Paracetamol 500mg. Powder for oral solution in sachet. Sweden."
+
 * type = #batch
 * entry[0].resource = Panodil500mgoralsolutionsachet-SE-PLC-MPD
 * entry[=].request.method = #PUT
@@ -56,8 +58,9 @@ Usage: #inline
 * name.namePart[invented].part = "Panodil"
 * name.namePart[strength].part = "500 mg"
 * name.namePart[doseForm].part = "pulver till oral lösning i dospåse"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+
 
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -65,12 +68,13 @@ Usage: #inline
 * identifier.value = "12391"
 * subject = Reference(Panodil500mgoralsolutionsachet-SE-PLC-MPD)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "1994-10-28"
 * holder = Reference(LOC-100005555-PerrigoSverigeAB)
 //* case.type = $authorisationDateType#dateOfFirstAuthorisation "First Authorisation"
 //* case.dateDateTime = "1994-10-28"
+
 
 Instance: LOC-100005555-PerrigoSverigeAB
 InstanceOf: PPLOrganization
@@ -79,6 +83,7 @@ Description: "Marketing Authorisation Holder / Organisation"
 
 * identifier[loc].value = "LOC-100005555"
 * name = "Perrigo Sverige AB"
+
 
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-APD
 InstanceOf: PPLAdministrableProductDefinition
@@ -89,6 +94,7 @@ Usage: #inline
 * producedFrom = Reference(Panodil500mgoralsolutionsachet-SE-PLC-MID)
 * routeOfAdministration.code = $100000073345#100000073619 "Oral use"
 
+
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef
 InstanceOf: PPLPackagedProductDefinition
 Usage: #inline
@@ -97,7 +103,7 @@ Usage: #inline
 * description = "Dospåsar, 12 st"
 //  * extension.url = "http://ema.europa.eu/fhir/extension/language"
 //  * extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -105,12 +111,14 @@ Usage: #inline
 * package.containedItem.item.reference = Reference(Panodil500mgoralsolutionsachet-SE-PLC-MID)
 * package.containedItem.amount = 12 $200000000014#200000002143 "Sachet"
 
+
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-MID
 InstanceOf: PPLManufacturedItemDefinition
 Usage: #inline
 * status = #active
 * manufacturedDoseForm = $200000000004#100000073364 "Powder for oral solution"
 * unitOfPresentation = $200000000014#200000002143 "Sachet"
+
 
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-Ingredient
 InstanceOf: PPLIngredient
