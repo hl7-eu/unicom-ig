@@ -61,12 +61,12 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * ^definition = "EMA IG 1.5 & 1.6. Authorised dose form for the whole product. As applicable in one of the SPOR RMS list Combined pharmaceutical dose form, Pharmaceutical dose form, Combined term, Combination Package"
 
 * classification 1..*
-//* classification from SporAtc (preferred)
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "coding.system"
   * ^slicing.rules = #open
   * ^short = "ATC or other classification"
   * ^definition = "EMA IG 1.13"
+* classification from SporAtc (preferred)
 * classification contains
   atc 1..1
 * classification[atc]
@@ -136,6 +136,14 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * language.coding[bcp] from LanguageBCP
       * system = $BCP47
 
+// the following attributes are not allowed only to surpress certain qa errors about imaginary terminology bindings (r4b)
+* ingredient 0..0
+* ingredient from SubstancesSMS (example)
+* impurity 0..0
+* impurity from SubstancesSMS (example)
+* characteristic 0..0
+* characteristic.type from NoBinding (example)
+
 
 // PROFILE: Regulated Authorisation 
 Profile: PPLRegulatedAuthorization
@@ -196,6 +204,12 @@ Description: """Manufactured item is the countable element inside the package"""
   * ^short = "Unit of presentation of the manufactured item (before preparing for administration)"
   * ^definition = "EMA IG 4.11.1"
 
+// the following attributes are not allowed only to surpress certain qa errors about imaginary terminology bindings (r4b)
+* ingredient 0..0
+* ingredient from SubstancesSMS (example)
+* property 0..0
+* property.type from NoBinding (example)
+
 // PROFILE: Pharmaceutical/ Administrable Product
 Profile: PPLAdministrableProductDefinition
 Parent: AdministrableProductDefinition
@@ -230,6 +244,13 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 //  * code.coding.system = $100000073345
   * ^definition = "EMA IG 6.6"
 
+// the following attributes are not allowed only to surpress certain qa errors about imaginary terminology bindings (r4b)
+* ingredient 0..0
+* ingredient from SubstancesSMS (example)
+* property 0..0
+* property.type from NoBinding (example)
+
+
 // PROFILE: Ingredient
 Profile: PPLIngredient
 Parent: Ingredient
@@ -247,7 +268,7 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
   * coding.system = $100000072050 //TO DO
 
 * substance
-  * code.concept.coding.system = $sms //TO DO
+  * code from SubstancesSMS
   * ^short = "Substance code from EMA SMS"
   * ^definition = "EMA IG 5.5"
 
@@ -280,8 +301,8 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
       * ^definition = "EMA IG 5.5.3. According to EMA, this is a mandatory element for all products, which is not necessarily accepted by all NCAs, and it is ambivalent in ISO IDMP."
       * ^short = "Strenth expressed in terms of a reference substance; reference strength type not distinguished. According to EMA IG, all products need to have reference strentgh (repeating the strentgh, if needed)"
       * substance 1..1
-        * concept.coding.system = $sms //TO DO
-        * ^short = "Substance code from EMA SMS" 
+        * ^short = "Substance code from EMA SMS"
+      * substance from SubstancesSMS
       * strengthRatio
         * numerator 1..1
       //  * numerator.system = $100000110633
@@ -365,6 +386,10 @@ Description: """Packaged Product"""
       * ^short = "Number of the manufactured items (e.g. tablets) in this package layer or the amount of manufactured item (e.g. 20 g) in the unit of presentation defined in manufactured item definition"
       * ^definition = "EMA IG 4.11.2"
       * code from all-units-vs
+
+// the following attributes are not allowed only to surpress certain qa errors about imaginary terminology bindings (r4b)
+* package.property 0..0
+* package.property.type from NoBinding (example)
 
 
 // TO DO: I'm not sure we want to use Organisation as a separate resource, but right now it is. See the comment at RegulatedAuthorization
