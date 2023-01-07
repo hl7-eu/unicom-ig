@@ -137,7 +137,7 @@ Description: """Intermediate profile for processing PPL Medicinal Product data""
 * impurity 0..0
 * impurity from SubstancesSMS (example)
 * characteristic 0..0
-* characteristic.type from NoBinding (example)
+* characteristic.type from NoBinding
 
 
 // PROFILE: Regulated Authorisation 
