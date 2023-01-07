@@ -142,7 +142,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
 * impurity 0..0
 * impurity from SubstancesSMS (example)
 * characteristic 0..0
-* characteristic.type from NoBinding (example)
+* characteristic.type from NoBinding (required)
 
 
 // PROFILE: Regulated Authorisation 
