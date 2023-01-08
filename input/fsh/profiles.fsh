@@ -61,12 +61,15 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * ^definition = "EMA IG 1.5 & 1.6. Authorised dose form for the whole product. As applicable in one of the SPOR RMS list Combined pharmaceutical dose form, Pharmaceutical dose form, Combined term, Combination Package"
 
 * classification 1..*
+// This binding is only to suppress QA errors about value sets, but it doesn't work without removing the slicing (compare to relaxedProfiles, where the slicing has been temporarily removed)  
+* classification from SporAtc (preferred)
+
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "coding.system"
   * ^slicing.rules = #open
   * ^short = "ATC or other classification"
   * ^definition = "EMA IG 1.13"
-* classification from SporAtc (preferred)
+
 * classification contains
   atc 1..1
 * classification[atc]
@@ -136,7 +139,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * language.coding[bcp] from LanguageBCP
       * system = $BCP47
 
-// the following attributes are not allowed only to surpress certain qa errors about imaginary terminology bindings (r4b)
+// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
 * ingredient 0..0
 * ingredient from SubstancesSMS (example)
 * impurity 0..0
@@ -204,7 +207,7 @@ Description: """Manufactured item is the countable element inside the package"""
   * ^short = "Unit of presentation of the manufactured item (before preparing for administration)"
   * ^definition = "EMA IG 4.11.1"
 
-// the following attributes are not allowed only to surpress certain qa errors about imaginary terminology bindings (r4b)
+// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
 * ingredient 0..0
 * ingredient from SubstancesSMS (example)
 * property 0..0
@@ -244,7 +247,7 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 //  * code.coding.system = $100000073345
   * ^definition = "EMA IG 6.6"
 
-// the following attributes are not allowed only to surpress certain qa errors about imaginary terminology bindings (r4b)
+// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
 * ingredient 0..0
 * ingredient from SubstancesSMS (example)
 * property 0..0
@@ -387,7 +390,7 @@ Description: """Packaged Product"""
       * ^definition = "EMA IG 4.11.2"
       * code from all-units-vs
 
-// the following attributes are not allowed only to surpress certain qa errors about imaginary terminology bindings (r4b)
+// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
 * package.property 0..0
 * package.property.type from NoBinding (example)
 

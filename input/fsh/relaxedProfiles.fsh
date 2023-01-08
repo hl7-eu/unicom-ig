@@ -59,6 +59,7 @@ Description: """Intermediate profile for processing PPL Medicinal Product data""
   * ^slicing.rules = #open
   * ^short = "ATC or other classification"
   * ^definition = "EMA IG 1.13"*/
+// Slicing removed and preferred binding added to suppress QA errors about value sets (r4b) TO DO
 * classification from SporAtc (preferred)
 /* classification contains
   atc 0..1
@@ -131,7 +132,7 @@ Description: """Intermediate profile for processing PPL Medicinal Product data""
     * language.coding[bcp] // from language-bcp-vs
       * system = $BCP47
 
-// the following attributes are not allowed only to surpress certain qa errors about imaginary terminology bindings (r4b)
+// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
 * ingredient 0..0
 * ingredient from SubstancesSMS (example)
 * impurity 0..0
@@ -193,7 +194,7 @@ Description: """Intermediate profile for processing PPL Manufactured Item data""
   * ^short = "Unit of presentation of the manufactured item (before preparing for administration)"
   * ^definition = "EMA IG 4.11.1"
 
-// the following attributes are not allowed only to surpress certain qa errors about imaginary terminology bindings (r4b)
+// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
 * ingredient 0..0
 * ingredient from SubstancesSMS (example)
 * property 0..0
@@ -232,7 +233,7 @@ Description: """Intermediate profile for processing PPL Administrable Product da
 //  * code from routes-and-methods-of-administration-vs
   * ^definition = "EMA IG 6.6"
 
-// the following attributes are not allowed only to surpress certain qa errors about imaginary terminology bindings (r4b)
+// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
 * ingredient 0..0
 * ingredient from SubstancesSMS (example)
 * property 0..0
@@ -369,7 +370,7 @@ Description: """Intermediate profile for processing PPL Packaged Product data"""
       * ^definition = "EMA IG 4.11.2"
     //  * code from all-units-vs (unit of presentation or unit of measurement)
 
-// the following attributes are not allowed only to surpress certain qa errors about imaginary terminology bindings (r4b)
+// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
 * package.property 0..0
 * package.property.type from NoBinding (example)
 
