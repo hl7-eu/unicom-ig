@@ -153,7 +153,6 @@
   {% assign rasf = ras | where: "subject[0].reference", mpd.id | prepend: 'MedicinalProductDefinition/' %}
   {% for rar in rasf %}
   {% assign ra = rar.resource %}
-
   {% endfor %}
   {% endcomment %}
 
@@ -223,10 +222,8 @@
 
   {% comment %}
   {% assign ppds = entry | where: "resource.resourceType","PackagedProductDefinition"%}
-
   {% for ppdr in ppds %}
   {% assign ppd = ppdr.resource %}
-
   Package {{forloop.index}} of {{ ppds | size }}
   {% assign mpdfullid= mpd.id | prepend: 'MedicinalProductDefinition/' %}
   {% if ppd.packageFor[0].reference == mpdfullid %}
@@ -298,21 +295,18 @@
             {{ miding.status | capitalize}}
             </b>
             </p>
-
             <p>
             Role:
             <b>
             {{ miding.role.coding[0].display}}
             </b>
             </p>
-
             <p>
             Substance:
             <b>
             {{ miding.substance.code.concept.coding[0].display}}
             </b>
             </p>
-
             {% for strn in miding.substance.strength %}
             {% if strn.concentrationRatio %}
             <p>
@@ -324,26 +318,21 @@
             </p>
             {% endif %}
             {% endfor %}
-
             {% for strn in miding.substance.strength %}
             {% if strn.presentationRatio %}
             <p>
             Presentation strength:
             <b>
             {{ strn.presentationRatio.numerator.value}} {{ strn.presentationRatio.numerator.unit}} /
-
             {{ strn.presentationRatio.denominator.value}} {{ strn.presentationRatio.denominator.unit}}
             </b>
             </p>
             {% endif %}
             {% endfor %}
-
-
             </div>
             {% endif %}
             {% endfor %}
             </ul>  
-
             </div>
             {% endif %}
             {% endfor %}
