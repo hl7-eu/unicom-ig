@@ -79,7 +79,7 @@ Description: "Marketing Authorisation"
 * identifier.value = "18300"
 * subject = Reference(CanestenKombi-FI-MPD)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000388 "Republic of Estonia"
+* region = $100000000002#100000000394 "Republic of Finland"
 * status = $100000072049#200000017708 "Valid - Renewed/Varied"
 * statusDate = "2009-11-11"
 * holder = Reference(LOC-100004966-BayerOy)
