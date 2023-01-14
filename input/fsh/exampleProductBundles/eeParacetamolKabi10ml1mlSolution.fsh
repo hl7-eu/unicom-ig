@@ -166,7 +166,7 @@ Usage: #inline
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
 * package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#200000002158 "vial"
+* package.package.type = $100000073346#100000073563 "Vial"
 * package.package.quantity = 1
 * package.package.material = $200000003199#200000003205 "Glass type II"
 * package.package.containedItem.item.reference = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034)

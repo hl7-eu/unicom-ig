@@ -25,7 +25,7 @@ Title: "Anatomical Therapeutic Chemical classification system"
 Description: "Value set for Anatomical Therapeutic Chemical classification system Human and Veterinary. It combines 2 SPOR/WHO lists"
 * ^experimental = false
 * include codes from system $100000093533 // Anatomical Therapeutic Chemical classification system - Human
-* include codes from system $100000116677 // Anatomical Therapeutic Chemical classification system - Veterinary
+//* include codes from system $100000116677 // Anatomical Therapeutic Chemical classification system - Veterinary
 
 ValueSet: SporRegulatoryStatus
 Id: regulatory-status-spor-vs

@@ -46,7 +46,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * ^definition = "EMA IG 1.3"
 
 * status 0..1
-* status from SporRecordStatus
+* status from SporRecordStatus (preferred)
   // Default $200000005003#200000005004 'Current'
   * ^short = "Status of the product's data. Default 200000005004 'Current'"
 
@@ -86,7 +86,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * coding[ema] from SporAtc
     * system = $100000093533
     * ^short = "ATC classification as EMA SPOR code"
-  * coding[who] from whoatc-unicom
+  * coding[who] from whoatc-unicom (preferred)
     * system = $who-atc
     * ^short = "ATC classification as WHO ATC code"
 

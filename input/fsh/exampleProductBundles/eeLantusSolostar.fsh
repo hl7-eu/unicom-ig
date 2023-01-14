@@ -14,10 +14,10 @@ Description: "Lantus Solostar, insulin glargine, solution for injection in 3ml p
 * entry[=].request.url = "RegulatedAuthorization/LantusSolostar-EE-RA"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/LantusSolostar-EE-RA"
 
-* entry[+].resource = LOC-100000869-Deutchland
+* entry[+].resource = LOC-100000869-Sanofi-Aventis-Deutchland
 * entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100000869-Deutchland"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100000869-Deutchland"
+* entry[=].request.url = "Organization/LOC-100000869-Sanofi-Aventis-Deutchland"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100000869-Sanofi-Aventis-Deutchland"
 
 * entry[+].resource = LantusSolostar-EE-APD
 * entry[=].request.method = #PUT
@@ -69,7 +69,7 @@ Usage: #inline
 * holder = Reference(LOC-100000869-Sanofi-Aventis-Deutchland)
 
 
-Instance: LOC-100000869-Deutchland
+Instance: LOC-100000869-Sanofi-Aventis-Deutchland
 InstanceOf: PPLOrganization
 Usage: #inline
 Description: "Marketing Authorisation Holder / Organisation"
