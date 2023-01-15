@@ -340,7 +340,7 @@ Description: """Packaged Product"""
 * packageFor 1..*
 
 * containedItemQuantity 1..*
-  * system = $200000000014
+//  * system = $200000000014
   * code from unit-of-presentation-vs
   * ^short = "Pack size. Repeated for combination packages."
   * ^definition = "EMA IG 4.4"
@@ -352,7 +352,7 @@ Description: """Packaged Product"""
 * legalStatusOfSupply 0..1
   * ^short = "Legal status of supply on the packaged product level."
   * ^definition = "EMA IG 4.5. Legal status of supply on the packaged product level. The same information can be repeated/differentiated on the medicinal product level"
-  * code.coding.code from legal-status-for-the-supply-vs
+  * code from legal-status-for-the-supply-vs
   * jurisdiction.coding from country-ema-vs
 
 * marketingStatus
