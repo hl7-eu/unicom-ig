@@ -55,7 +55,7 @@ Usage: #inline
 * combinedPharmaceuticalDoseForm = $200000000004#100000073665 "Film-coated tablet"
 //* indication = "Raseduse vältimine. Jangee 0,02 mg/3 mg väljakirjutamisel tuleb võtta arvesse naisel käesoleval hetkel esinevaid individuaalseid riskifaktoreid, eriti venoosse trombemboolia (VTE) riskifaktoreid ning VTE riski selle ravimiga, võrreldes teiste kombineeritud hormonaalsete kontratseptiividega."
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095785 "G03AA12"
+* classification = $100000093533#100000095785 "drospirenone and ethinylestradiol"
 * name.productName = "Jangee 0.02 mg/3 mg, õhukese polümeerikattega tabletid"
 * name.namePart[invented].part = "Jangee"
 * name.namePart[strength].part = "0.02 mg/3 mg"

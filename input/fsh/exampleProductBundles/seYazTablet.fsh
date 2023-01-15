@@ -64,14 +64,14 @@ InstanceOf: PPLMedicinalProductDefinition
 Usage: #inline
 
 * identifier[mpid].value = "SE-100004813-00026267"
-* identifier[+].system = "http://ema.europa.eu/fhir/eurdId"
-* identifier[=].value = "10217"
+//* identifier[+].system = "http://ema.europa.eu/fhir/eurdId"
+//* identifier[=].value = "10217"
 * domain = $100000000004#100000000012 "Human use"
 * status = $200000005003#200000005004 "Current"
 * combinedPharmaceuticalDoseForm = $200000000004#100000073665 "Film-coated tablet"
 * indication = "Antikonception Vid beslut att förskriva Yaz ska den enskilda kvinnans riskfaktorer beaktas, framför allt de för  venös tromboembolism (VTE), och risken för VTE med Yaz jämfört med andra kombinerade  hormonella preventivmedel (se avsnitt 4.3 och 4.4)."
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095785 "G03AA12"
+* classification = $100000093533#100000095785 "drospirenone and ethinylestradiol"
 * name.productName = "Yaz 0,02 mg/3 mg Filmdragerad tablett"
 * name.namePart[invented].part = "Yaz"
 * name.namePart[strength].part = "0,02 mg/3 mg"

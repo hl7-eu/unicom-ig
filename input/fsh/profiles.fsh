@@ -60,10 +60,10 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * ^short = "Authorised dose form for the product, incl combination package dose forms"
   * ^definition = "EMA IG 1.5 & 1.6. Authorised dose form for the whole product. As applicable in one of the SPOR RMS list Combined pharmaceutical dose form, Pharmaceutical dose form, Combined term, Combination Package"
 
-* classification 1..*
-// This binding is only to suppress QA errors about value sets, but it doesn't work without removing the slicing (compare to relaxedProfiles, where the slicing has been temporarily removed)  
+* classification 1..*  
 * classification from SporAtc (preferred)
-
+  * ^short = "Classification such as ATC (EMA and WHO coding)."
+/*
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "coding.system"
   * ^slicing.rules = #open
@@ -89,7 +89,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * coding[who] from whoatc-unicom (preferred)
     * system = $who-atc
     * ^short = "ATC classification as WHO ATC code"
-
+*/
 * name
   * ^definition = "EMA IG 1.14"
   * productName 1..1

@@ -185,7 +185,7 @@ Title: "Processing Profile - Manufactured Item"
 Description: """Intermediate profile for processing PPL Manufactured Item data"""
 
 * manufacturedDoseForm 1..1 // This is 1..1 in FHIR spec!
-* manufacturedDoseForm from pharmaceutical-doseform-vs (example)
+* manufacturedDoseForm from pharmaceutical-doseform-vs
   * ^short = "Dose form of the manufactured item (before preparing for administration)"
   * ^definition = "EMA IG 4.11.3"
 
@@ -196,9 +196,9 @@ Description: """Intermediate profile for processing PPL Manufactured Item data""
 
 // the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
 * ingredient 0..0
-* ingredient from SubstancesSMS (example)
+* ingredient from SubstancesSMS
 * property 0..0
-* property.type from NoBinding (example)
+* property.type from NoBinding
 
 // PROFILE: Pharmaceutical/ Administrable Product
 Profile: TransitionAdministrableProductDefinition

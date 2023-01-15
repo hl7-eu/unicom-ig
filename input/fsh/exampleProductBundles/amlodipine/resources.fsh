@@ -826,13 +826,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni Kronisk stabil angina pectoris Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Accord 10 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Accord"
 * name.namePart[strength].part = "10 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLaccord-10mg-Tablet-SE-IS-RegulatedAuthorization
@@ -842,7 +842,7 @@ Usage: #inline
 * identifier.value = "26704"
 * subject = Reference(AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2008-10-10"
 * holder = Reference(LOC-100007148-Accord)
@@ -866,7 +866,7 @@ Usage: #inline
 * description = "Blister, 98 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -891,7 +891,7 @@ Usage: #inline
 * description = "Burk, 500 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -955,13 +955,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni Kronisk stabil angina pectoris Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Accord 5 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Accord"
 * name.namePart[strength].part = "5 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLaccord-5mg-Tablet-SE-IS-RegulatedAuthorization
@@ -971,7 +971,7 @@ Usage: #inline
 * identifier.value = "26703"
 * subject = Reference(AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2008-10-10"
 * holder = Reference(LOC-100007148-Accord)
@@ -987,7 +987,7 @@ Usage: #inline
 * description = "Blister, 28 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1012,7 +1012,7 @@ Usage: #inline
 * description = "Blister, 98 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1037,7 +1037,7 @@ Usage: #inline
 * description = "Burk, 500 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1101,13 +1101,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni  Kronisk stabil anginga pectoris  Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Aurobindo 10 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Aurobindo"
 * name.namePart[strength].part = "10 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLaurobindo-10mg-Tablet-SE-IS-RegulatedAuthorization
@@ -1117,7 +1117,7 @@ Usage: #inline
 * identifier.value = "28120"
 * subject = Reference(AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2009-11-20"
 * holder = Reference(LOC-100001116-Aurobindo)
@@ -1141,7 +1141,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1207,13 +1207,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni.  Kronisk stabil angina pectoris. Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Bluefish 10 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Bluefish"
 * name.namePart[strength].part = "10 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLbluefish-10mg-Tablet-SE-IS-RegulatedAuthorization
@@ -1223,7 +1223,7 @@ Usage: #inline
 * identifier.value = "23988"
 * subject = Reference(AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2007-10-26"
 * holder = Reference(LOC-100001076-Bluefish)
@@ -1247,7 +1247,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1313,13 +1313,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni.  Kronisk stabil angina pectoris. Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Bluefish 5 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Bluefish"
 * name.namePart[strength].part = "5 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLbluefish-5mg-Tablet-SE-IS-RegulatedAuthorization
@@ -1329,7 +1329,7 @@ Usage: #inline
 * identifier.value = "23987"
 * subject = Reference(AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2007-10-26"
 * holder = Reference(LOC-100001076-Bluefish)
@@ -1345,7 +1345,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1370,7 +1370,7 @@ Usage: #inline
 * description = "Blister, 30 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1436,13 +1436,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni Kronisk stabil angina pectoris Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Jubilant 10 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Jubilant"
 * name.namePart[strength].part = "10 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLjubilant-10mg-Tablet-SE-IS-RegulatedAuthorization
@@ -1452,7 +1452,7 @@ Usage: #inline
 * identifier.value = "21305"
 * subject = Reference(AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2005-10-07"
 * holder = Reference(LOC-100016348-JubilantPharmaceuticals)
@@ -1476,7 +1476,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1540,13 +1540,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni Kronisk stabil angina pectoris Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Jubilant 5 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Jubilant"
 * name.namePart[strength].part = "5 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLjubilant-5mg-Tablet-SE-IS-RegulatedAuthorization
@@ -1556,7 +1556,7 @@ Usage: #inline
 * identifier.value = "21304"
 * subject = Reference(AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2005-10-07"
 * holder = Reference(LOC-100016348-JubilantPharmaceuticals)
@@ -1570,7 +1570,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1636,13 +1636,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni Kronisk, stabil angina pectoris Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Krka 10 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Krka"
 * name.namePart[strength].part = "10 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLkrka-10mg-Tablet-SE-IS-RegulatedAuthorization
@@ -1652,7 +1652,7 @@ Usage: #inline
 * identifier.value = "23829"
 * subject = Reference(AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2006-12-15"
 * holder = Reference(LOC-100000551-KrkaSverige)
@@ -1676,7 +1676,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1701,7 +1701,7 @@ Usage: #inline
 * description = "Blister, 30 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1767,13 +1767,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni Kronisk, stabil angina pectoris Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Krka 5 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Krka"
 * name.namePart[strength].part = "5 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLkrka-5mg-Tablet-SE-IS-RegulatedAuthorization
@@ -1783,7 +1783,7 @@ Usage: #inline
 * identifier.value = "23828"
 * subject = Reference(AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2006-12-15"
 * holder = Reference(LOC-100000551-KrkaSverige)
@@ -1799,7 +1799,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1824,7 +1824,7 @@ Usage: #inline
 * description = "Blister, 30 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1891,13 +1891,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni Kronisk stabil angina pectoris Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Medical Valley 10 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Medical Valley"
 * name.namePart[strength].part = "10 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLmedvalley-10mg-Tablet-SE-IS-RegulatedAuthorization
@@ -1907,7 +1907,7 @@ Usage: #inline
 * identifier.value = "57542"
 * subject = Reference(AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2019-03-29"
 * holder = Reference(LOC-100001125-MedicalValleyInvest)
@@ -1923,7 +1923,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -1949,7 +1949,7 @@ Usage: #inline
 * description = "Burk, 105 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2015,13 +2015,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni Kronisk stabil angina pectoris Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Medical Valley 5 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Medical Valley"
 * name.namePart[strength].part = "5 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLmedvalley-5mg-Tablet-SE-IS-RegulatedAuthorization
@@ -2031,7 +2031,7 @@ Usage: #inline
 * identifier.value = "57541"
 * subject = Reference(AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2019-03-29"
 * holder = Reference(LOC-100001125-MedicalValleyInvest)
@@ -2055,7 +2055,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2081,7 +2081,7 @@ Usage: #inline
 * description = "Burk, 105 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2146,13 +2146,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "• Hypertoni • Kronisk stabil anginga pectoris • Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodistad 10 mg Tablett"
 * name.namePart[invented].part = "Amlodistad"
 * name.namePart[strength].part = "10 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: Amlodistad-10mg-Tablet-SE-IS-RegulatedAuthorization
@@ -2162,7 +2162,7 @@ Usage: #inline
 * identifier.value = "50372"
 * subject = Reference(Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2015-01-22"
 * holder = Reference(LOC-100001022-StadaArzneimittel)
@@ -2186,7 +2186,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2214,7 +2214,7 @@ Usage: #inline
 * description = "Blister, 30 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2281,13 +2281,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "• Hypertoni • Kronisk stabil anginga pectoris • Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodistad 5 mg Tablett"
 * name.namePart[invented].part = "Amlodistad"
 * name.namePart[strength].part = "5 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: Amlodistad-5mg-Tablet-SE-IS-RegulatedAuthorization
@@ -2296,7 +2296,7 @@ Usage: #inline
 * identifier.value = "50371"
 * subject = Reference(Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2015-01-22"
 * holder = Reference(LOC-100001022-StadaArzneimittel)
@@ -2312,7 +2312,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2339,7 +2339,7 @@ Usage: #inline
 * description = "Blister, 30 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2407,13 +2407,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni. Kronisk stabil angina pectoris. Vasospastisk (Prinzmetals) angina."
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Sandoz 10 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Sandoz"
 * name.namePart[strength].part = "10 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLsandoz-10mg-Tablet-SE-IS-RegulatedAuthorization
@@ -2423,7 +2423,7 @@ Usage: #inline
 * identifier.value = "23888"
 * subject = Reference(AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2007-04-20"
 * holder = Reference(LOC-100001468-SandozAS)
@@ -2447,7 +2447,7 @@ Usage: #inline
 * description = "Burk, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2472,7 +2472,7 @@ Usage: #inline
 * description = "Burk, 105 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2497,7 +2497,7 @@ Usage: #inline
 * description = "Burk, 250 tabletter (dosdispensering)"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2561,13 +2561,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni. Kronisk stabil angina pectoris. Vasospastisk (Prinzmetals) angina."
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Sandoz 5 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Sandoz"
 * name.namePart[strength].part = "5 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLsandoz-5mg-Tablet-SE-IS-RegulatedAuthorization
@@ -2576,7 +2576,7 @@ Usage: #inline
 * identifier.value = "23886"
 * subject = Reference(AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2007-04-20"
 * holder = Reference(LOC-100001468-SandozAS)
@@ -2592,7 +2592,7 @@ Usage: #inline
 * description = "Burk, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2617,7 +2617,7 @@ Usage: #inline
 * description = "Burk, 105 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2642,7 +2642,7 @@ Usage: #inline
 * description = "Burk, 250 tabletter (dosdispensering)"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2707,13 +2707,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni. Kronisk stabil angina pectoris. Vasospastisk (Prinzmetals) angina."
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Teva 10 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Teva"
 * name.namePart[strength].part = "10 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLteva-10mg-Tablet-SE-IS-RegulatedAuthorization
@@ -2723,7 +2723,7 @@ Usage: #inline
 * identifier.value = "26392"
 * subject = Reference(AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2008-07-18"
 * holder = Reference(LOC-100001602-Teva)
@@ -2747,7 +2747,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2776,7 +2776,7 @@ Usage: #inline
 * description = "Burk, 250 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2852,13 +2852,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni. Kronisk stabil angina pectoris. Vasospastisk (Prinzmetals) angina."
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Teva 5 mg Tablett"
 * name.namePart[invented].part = "Amlodipin Teva"
 * name.namePart[strength].part = "5 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLteva-5mg-Tablet-SE-IS-RegulatedAuthorization
@@ -2868,7 +2868,7 @@ Usage: #inline
 * identifier.value = "26391"
 * subject = Reference(AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2008-07-18"
 * holder = Reference(LOC-100001602-Teva)
@@ -2884,7 +2884,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2912,7 +2912,7 @@ Usage: #inline
 * description = "Burk, 250 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -2987,13 +2987,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "• Hypertoni. • Kronisk stabil angina pectoris.  • Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipine Vitabalans 10 mg Tablett"
 * name.namePart[invented].part = "Amlodipine Vitabalans"
 * name.namePart[strength].part = "10 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLvitabalans-10mg-Tablet-SE-IS-RegulatedAuthorization
@@ -3003,7 +3003,7 @@ Usage: #inline
 * identifier.value = "43521"
 * subject = Reference(AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2011-06-23"
 * holder = Reference(LOC-100005946-VitabalansOy)
@@ -3027,7 +3027,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -3054,7 +3054,7 @@ Usage: #inline
 * description = "Blister, 30 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -3124,13 +3124,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "• Hypertoni. • Kronisk stabil angina pectoris.  • Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipine Vitabalans 5 mg Tablett"
 * name.namePart[invented].part = "Amlodipine Vitabalans"
 * name.namePart[strength].part = "5 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLvitabalans-5mg-Tablet-SE-IS-RegulatedAuthorization
@@ -3140,7 +3140,7 @@ Usage: #inline
 * identifier.value = "43520"
 * subject = Reference(AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "2011-06-23"
 * holder = Reference(LOC-100005946-VitabalansOy)
@@ -3156,7 +3156,7 @@ Usage: #inline
 * description = "Blister, 100 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -3183,7 +3183,7 @@ Usage: #inline
 * description = "Blister, 30 tabletter"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -3251,13 +3251,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni Kronisk stabil anginga pectoris Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Norvasc® 10 mg Tablett"
 * name.namePart[invented].part = "Norvasc®"
 * name.namePart[strength].part = "10 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: Norvasc-10mg-Tablet-SE-IS-RegulatedAuthorization
@@ -3267,7 +3267,7 @@ Usage: #inline
 * identifier.value = "11288"
 * subject = Reference(Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "1991-01-18"
 * holder = Reference(LOC-100032008-UpjohnEESV)
@@ -3291,7 +3291,7 @@ Usage: #inline
 * description = "Blister, 98 tabletter (kalenderförpackning)"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
@@ -3359,13 +3359,13 @@ Usage: #inline
 * status = $200000005003#200000005004 "Current"
 * indication = "Hypertoni Kronisk stabil anginga pectoris Vasospastisk (Prinzmetals) angina"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Norvasc® 5 mg Tablett"
 * name.namePart[invented].part = "Norvasc®"
 * name.namePart[strength].part = "5 mg"
 * name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Sweden"
+* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
 * name.countryLanguage.language = $100000072057#100000072288 "Swedish"
 
 Instance: Norvasc-5mg-Tablet-SE-IS-RegulatedAuthorization
@@ -3375,7 +3375,7 @@ Usage: #inline
 * identifier.value = "11287"
 * subject = Reference(Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition)
 * type = $220000000060#220000000061 "Marketing Authorisation"
-* region = $100000000002#100000000535 "Sweden"
+* region = $100000000002#100000000535 "Kingdom of Sweden"
 * status = $100000072049#100000072099 "Valid"
 * statusDate = "1991-01-18"
 * holder = Reference(LOC-100032008-UpjohnEESV)
@@ -3391,7 +3391,7 @@ Usage: #inline
 * description = "Blister, 98 tabletter (kalenderförpackning)"
 // * description.extension.url = "http://ema.europa.eu/fhir/extension/language"
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
-* marketingStatus.country = $100000000002#100000000535 "Sweden"
+* marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
