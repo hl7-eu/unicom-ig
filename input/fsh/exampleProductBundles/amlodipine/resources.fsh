@@ -2,6 +2,7 @@
 Instance: AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -42,6 +43,7 @@ Usage: #example
 Instance: AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -86,6 +88,7 @@ Usage: #example
 Instance: AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -122,6 +125,7 @@ Usage: #example
 Instance: AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -157,6 +161,7 @@ Usage: #example
 Instance: AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -196,6 +201,7 @@ Usage: #example
 Instance: AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -232,6 +238,7 @@ Usage: #example
 Instance: AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -268,6 +275,7 @@ Usage: #example
 Instance: AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -307,6 +315,7 @@ Usage: #example
 Instance: AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -347,6 +356,7 @@ Usage: #example
 Instance: AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -387,6 +397,7 @@ Usage: #example
 Instance: AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -427,6 +438,7 @@ Usage: #example
 Instance: Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -466,6 +478,7 @@ Usage: #example
 Instance: Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -504,6 +517,7 @@ Usage: #example
 Instance: AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -548,6 +562,7 @@ Usage: #example
 Instance: AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -590,6 +605,7 @@ Usage: #example
 Instance: AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -630,6 +646,7 @@ Usage: #example
 Instance: AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -670,6 +687,7 @@ Usage: #example
 Instance: AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -709,6 +727,7 @@ Usage: #example
 Instance: AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -748,6 +767,7 @@ Usage: #example
 Instance: Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -783,6 +803,7 @@ Usage: #example
 Instance: Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
+Description: "Amlodipine 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
