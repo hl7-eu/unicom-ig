@@ -92,7 +92,9 @@ Instance: LOC-100009540-KrkaNovoMesto
 InstanceOf: PPLOrganization
 Usage: #inline
 * identifier[loc].value = "LOC-100009540"
+* identifier[org].value = "ORG-100000627"
 * name = "KRKA, d.d., Novo mesto"
+// This name is on SPC. In OMS, the name is KRKA tovarna zdravil d.d. Novo mesto
 
 
 Instance: Betaklav-500mg-125mg-EE-APD

@@ -1,8 +1,325 @@
-//All Swedish Amlodipine products 
+// 2 Estonian and 20 Swedish Amlodipine products 
+
+Instance: AMLHipres-10mg-Tablet-EE-FullProduct
+InstanceOf: Bundle
+Usage: #example
+Description: "Hipres amlodipine (maleate) 10mg tablets. Estonia."
+* type = #transaction
+* entry[0].resource = Hipres-10mg-Tablet-EE-MPD
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicinalProductDefinition/Hipres-10mg-Tablet-EE-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Hipres-10mg-Tablet-EE-MPD"
+
+* entry[+].resource = LOC-100009540-KrkaNovoMesto
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/LOC-100009540-KrkaNovoMesto"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100009540-KrkaNovoMesto"
+
+* entry[+].resource = Hipres-10mg-Tablet-EE-RA
+* entry[=].request.method = #PUT
+* entry[=].request.url = "RegulatedAuthorization/Hipres-10mg-Tablet-EE-RA"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Hipres-10mg-Tablet-EE-RA"
+
+* entry[+].resource = Hipres-10mg-Tablet-EE-APD
+* entry[=].request.method = #PUT
+* entry[=].request.url = "AdministrableProductDefinition/Hipres-10mg-Tablet-EE-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Hipres-10mg-Tablet-EE-APD"
+
+* entry[+].resource = Hipres-10mg-Tablet-EE-PPD-1122972
+* entry[=].request.method = #PUT
+* entry[=].request.url = "PackagedProductDefinition/Hipres-10mg-Tablet-EE-PPD-1122972"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Hipres-10mg-Tablet-EE-PPD-1122972"
+
+* entry[+].resource = Hipres-10mg-Tablet-EE-PPD-1551406
+* entry[=].request.method = #PUT
+* entry[=].request.url = "PackagedProductDefinition/Hipres-10mg-Tablet-EE-PPD-1551406"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Hipres-10mg-Tablet-EE-PPD-1551406"
+
+* entry[+].resource = Hipres-10mg-Tablet-EE-MID
+* entry[=].request.method = #PUT
+* entry[=].request.url = "ManufacturedItemDefinition/Hipres-10mg-Tablet-EE-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Hipres-10mg-Tablet-EE-MID"
+
+* entry[+].resource = Hipres-10mg-Tablet-EE-I
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Ingredient/Hipres-10mg-Tablet-EE-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Hipres-10mg-Tablet-EE-I"
+
+
+Instance: Hipres-10mg-Tablet-EE-MPD
+InstanceOf: PPLMedicinalProductDefinition
+Usage: #inline
+* identifier[mpid].value = "EE-100009540-1289"
+* domain = $100000000004#100000000012 "Human use"
+* status = $200000005003#200000005004 "Current"
+* combinedPharmaceuticalDoseForm = $200000000004#100000073664 "Tablet"
+* indication = "Hüpertensioon. Krooniline stabiilne stenokardia. Vasospastiline (Prinzmetali) stenokardia."
+* legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
+* name.productName = "Hipres 10 mg tabletid"
+* name.namePart[invented].part = "Hipres"
+* name.namePart[strength].part = "10 mg"
+* name.namePart[doseForm].part = "tabletid"
+* name.countryLanguage.country = $100000000002#100000000388 "Republic of Estonia"
+* name.countryLanguage.language = $100000072057#100000072172 "Estonian"
+
+
+Instance: Hipres-10mg-Tablet-EE-RA
+InstanceOf: PPLRegulatedAuthorization
+Usage: #inline
+* identifier.value = "441504 "
+* subject = Reference(Hipres-10mg-Tablet-EE-MPD)
+* type = $220000000060#220000000061 "Marketing Authorisation"
+* region = $100000000002#100000000388 "Republic of Estonia"
+* status = $100000072049#200000017708 "Renewed/Varied"
+* statusDate = "2014-02-28"
+* holder = Reference(LOC-100009540-KrkaNovoMesto)
+
+//Instance: LOC-100009540-KrkaNovoMesto see in Betaklav 500mg/125mg EE
+
+
+Instance: Hipres-10mg-Tablet-EE-APD
+InstanceOf: PPLAdministrableProductDefinition
+Usage: #inline
+* status = #active
+* formOf = Reference(Hipres-10mg-Tablet-EE-MPD)
+* administrableDoseForm = $200000000004#100000073664 "Tablet"
+* producedFrom = Reference(Hipres-10mg-Tablet-EE-MID)
+* routeOfAdministration.code = $100000073345#100000073619 "Oral use"
+
+
+Instance: Hipres-10mg-Tablet-EE-PPD-1122972
+InstanceOf: PPLPackagedProductDefinition
+Usage: #inline
+* identifier[pcid].value = "EE-100009540-1289-1122972"
+* packageFor = Reference(Hipres-10mg-Tablet-EE-MPD)
+* containedItemQuantity = 30 $200000000014#200000002152 "tablet"
+* description = "Blisterpakend (lamineeritud OPA-Al-PVC foolium, alumiiniumfoolium). 30 tabletti pakendis."
+//  * extension.url = "http://ema.europa.eu/fhir/extension/language"
+//  * extension.valueCoding = $100000072057#100000072172 "Estonian"
+* marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
+* marketingStatus.status = $100000072052#100000072083 "Marketed"
+* package.type = $100000073346#100000073498 "Box"
+* package.quantity = 1
+* package.material = $200000003199#200000003529 "Cardboard"
+* package.package.type = $100000073346#100000073496 "Blister"
+* package.package.quantity = 1
+* package.package.material[0] = $200000003199#200000003200 "Aluminium"
+* package.package.material[+] = $200000003199#200000003210 "Orientated PolyAmide"
+* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* package.package.containedItem[0].item.reference = Reference(Hipres-10mg-Tablet-EE-MID)
+* package.package.containedItem[=].amount = 30 $200000000014#200000002152 "tablet"
+
+
+Instance: Hipres-10mg-Tablet-EE-PPD-1551406
+InstanceOf: PPLPackagedProductDefinition
+Usage: #inline
+* identifier[pcid].value = "EE-100009540-1289-1551406"
+* packageFor = Reference(Hipres-10mg-Tablet-EE-MPD)
+* containedItemQuantity = 60 $200000000014#200000002152 "tablet"
+* description = "Blisterpakend (lamineeritud OPA-Al-PVC foolium, alumiiniumfoolium). 60 tabletti pakendis."
+//  * extension.url = "http://ema.europa.eu/fhir/extension/language"
+//  * extension.valueCoding = $100000072057#100000072172 "Estonian"
+* marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
+* marketingStatus.status = $100000072052#100000072083 "Marketed"
+* package.type = $100000073346#100000073498 "Box"
+* package.quantity = 1
+* package.material = $200000003199#200000003529 "Cardboard"
+* package.package.type = $100000073346#100000073496 "Blister"
+* package.package.quantity = 1
+* package.package.material[0] = $200000003199#200000003200 "Aluminium"
+* package.package.material[+] = $200000003199#200000003210 "Orientated PolyAmide"
+* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* package.package.containedItem[0].item.reference = Reference(Hipres-10mg-Tablet-EE-MID)
+* package.package.containedItem[=].amount = 60 $200000000014#200000002152 "tablet"
+
+
+Instance: Hipres-10mg-Tablet-EE-MID
+InstanceOf: PPLManufacturedItemDefinition
+Usage: #inline
+* status = #active
+* manufacturedDoseForm = $200000000004#100000073664  "Tablet"
+* unitOfPresentation = $200000000014#200000002152 "tablet"
+
+
+Instance: Hipres-10mg-Tablet-EE-I
+InstanceOf: PPLIngredient
+Usage: #inline
+* status = #active
+* for[0] = Reference(Hipres-10mg-Tablet-EE-MPD)
+* for[+] = Reference(Hipres-10mg-Tablet-EE-MID)
+* for[+] = Reference(Hipres-10mg-Tablet-EE-APD)
+* role = $100000072050#100000072072 "Active"
+* substance.code.concept = $sms#100000089370 "Amlodipine maleate"
+* substance.strength.presentationRatio.numerator = 5 $100000110633#100000110655 "milligram(s)"
+* substance.strength.presentationRatio.denominator = 1 $200000000014#200000002152 "tablet"
+* substance.strength.referenceStrength.substance.concept = $sms#100000085259 "Amlodipine"
+* substance.strength.referenceStrength.strengthRatio.numerator = 5 $100000110633#100000110655 "milligram(s)"
+* substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "tablet"
+
+
+Instance: AMLHipres-5mg-Tablet-EE-FullProduct
+InstanceOf: Bundle
+Usage: #example
+Description: "Hipres amlodipine (maleate) 5mg tablet. Estonia."
+* type = #transaction
+* entry[0].resource = Hipres-5mg-Tablet-EE-MPD
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicinalProductDefinition/Hipres-5mg-Tablet-EE-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Hipres-5mg-Tablet-EE-MPD"
+
+* entry[+].resource = LOC-100009540-KrkaNovoMesto
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/LOC-100009540-KrkaNovoMesto"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100009540-KrkaNovoMesto"
+
+* entry[+].resource = Hipres-5mg-Tablet-EE-RA
+* entry[=].request.method = #PUT
+* entry[=].request.url = "RegulatedAuthorization/Hipres-5mg-Tablet-EE-RA"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Hipres-5mg-Tablet-EE-RA"
+
+* entry[+].resource = Hipres-5mg-Tablet-EE-APD
+* entry[=].request.method = #PUT
+* entry[=].request.url = "AdministrableProductDefinition/Hipres-5mg-Tablet-EE-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Hipres-5mg-Tablet-EE-APD"
+
+* entry[+].resource = Hipres-5mg-Tablet-EE-PPD-1122961
+* entry[=].request.method = #PUT
+* entry[=].request.url = "PackagedProductDefinition/Hipres-5mg-Tablet-EE-PPD-1122961"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Hipres-5mg-Tablet-EE-PPD-1122961"
+
+* entry[+].resource = Hipres-5mg-Tablet-EE-PPD-1551383
+* entry[=].request.method = #PUT
+* entry[=].request.url = "PackagedProductDefinition/Hipres-5mg-Tablet-EE-PPD-1551383"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Hipres-5mg-Tablet-EE-PPD-1551383"
+
+* entry[+].resource = Hipres-5mg-Tablet-EE-MID
+* entry[=].request.method = #PUT
+* entry[=].request.url = "ManufacturedItemDefinition/Hipres-5mg-Tablet-EE-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Hipres-5mg-Tablet-EE-MID"
+
+* entry[+].resource = Hipres-5mg-Tablet-EE-I
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Ingredient/Hipres-5mg-Tablet-EE-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Hipres-5mg-Tablet-EE-I"
+
+
+Instance: Hipres-5mg-Tablet-EE-MPD
+InstanceOf: PPLMedicinalProductDefinition
+Usage: #inline
+
+* identifier[mpid].value = "EE-100009540-1288"
+* domain = $100000000004#100000000012 "Human use"
+* status = $200000005003#200000005004 "Current"
+* combinedPharmaceuticalDoseForm = $200000000004#100000073664 "Tablet"
+* indication = "Hüpertensioon. Krooniline stabiilne stenokardia. Vasospastiline (Prinzmetali) stenokardia."
+* legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
+* name.productName = "Hipres 5 mg tabletid"
+* name.namePart[invented].part = "Hipres"
+* name.namePart[strength].part = "5 mg"
+* name.namePart[doseForm].part = "tabletid"
+* name.countryLanguage.country = $100000000002#100000000388 "Republic of Estonia"
+* name.countryLanguage.language = $100000072057#100000072172 "Estonian"
+
+Instance: Hipres-5mg-Tablet-EE-RA
+InstanceOf: PPLRegulatedAuthorization
+Usage: #inline
+* identifier.value = "439004"
+* subject = Reference(Hipres-5mg-Tablet-EE-MPD)
+* type = $220000000060#220000000061 "Marketing Authorisation"
+* region = $100000000002#100000000388 "Republic of Estonia"
+* status = $100000072049#200000017708 "Renewed/Varied"
+* statusDate = "2014-02-28"
+* holder = Reference(LOC-100009540-KrkaNovoMesto)
+
+//Instance: LOC-100009540-KrkaNovoMesto - see Betaklav 500mg/125mg EE.
+
+Instance: Hipres-5mg-Tablet-EE-APD
+InstanceOf: PPLAdministrableProductDefinition
+Usage: #inline
+* status = #active
+* formOf = Reference(Hipres-5mg-Tablet-EE-MPD)
+* administrableDoseForm = $200000000004#100000073664 "Tablet"
+* producedFrom = Reference(Hipres-5mg-Tablet-EE-MID)
+* routeOfAdministration.code = $100000073345#100000073619 "Oral use"
+
+
+Instance: Hipres-5mg-Tablet-EE-PPD-1122961
+InstanceOf: PPLPackagedProductDefinition
+Usage: #inline
+* identifier[pcid].value = "EE-100009540-1288-1122961"
+* packageFor = Reference(Hipres-5mg-Tablet-EE-MPD)
+* containedItemQuantity = 30 $200000000014#200000002152 "Tablet"
+* description = "Blisterpakend (lamineeritud OPA-Al-PVC foolium, alumiiniumfoolium). 30 tabletti pakendis."
+//  * extension.url = "http://ema.europa.eu/fhir/extension/language"
+//  * extension.valueCoding = $100000072057#100000072172 "Estonian"
+* marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
+* marketingStatus.status = $100000072052#100000072083 "Marketed"
+* package.type = $100000073346#100000073498 "Box"
+* package.quantity = 1
+* package.material = $200000003199#200000003529 "Cardboard"
+* package.package.type = $100000073346#100000073496 "Blister"
+* package.package.quantity = 1
+* package.package.material[0] = $200000003199#200000003200 "Aluminium"
+* package.package.material[+] = $200000003199#200000003210 "Orientated PolyAmide"
+* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* package.package.containedItem[0].item.reference = Reference(Hipres-5mg-Tablet-EE-MID)
+* package.package.containedItem[=].amount = 30 $200000000014#200000002152 "Tablet"
+
+Instance: Hipres-5mg-Tablet-EE-PPD-1551383
+InstanceOf: PPLPackagedProductDefinition
+Usage: #inline
+* identifier[pcid].value = "EE-100009540-1288-1551383"
+* packageFor = Reference(Hipres-5mg-Tablet-EE-MPD)
+* containedItemQuantity = 60 $200000000014#200000002152 "Tablet"
+* description = "Blisterpakend (lamineeritud OPA-Al-PVC foolium, alumiiniumfoolium). 60 tabletti pakendis."
+//  * extension.url = "http://ema.europa.eu/fhir/extension/language"
+//  * extension.valueCoding = $100000072057#100000072172 "Estonian"
+* marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
+* marketingStatus.status = $100000072052#100000072083 "Marketed"
+* package.type = $100000073346#100000073498 "Box"
+* package.quantity = 1
+* package.material = $200000003199#200000003529 "Cardboard"
+* package.package.type = $100000073346#100000073496 "Blister"
+* package.package.quantity = 1
+* package.package.material[0] = $200000003199#200000003200 "Aluminium"
+* package.package.material[+] = $200000003199#200000003210 "Orientated PolyAmide"
+* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* package.package.containedItem[0].item.reference = Reference(Hipres-5mg-Tablet-EE-MID)
+* package.package.containedItem[=].amount = 60 $200000000014#200000002152 "tablet"
+
+
+Instance: Hipres-5mg-Tablet-EE-MID
+InstanceOf: PPLManufacturedItemDefinition
+Usage: #inline
+* status = #active
+* manufacturedDoseForm = $200000000004#100000073664  "Tablet"
+* unitOfPresentation = $200000000014#200000002152 "Tablet"
+
+
+Instance: Hipres-5mg-Tablet-EE-I
+InstanceOf: PPLIngredient
+Usage: #inline
+* status = #active
+* for[0] = Reference(Hipres-5mg-Tablet-EE-MPD)
+* for[+] = Reference(Hipres-5mg-Tablet-EE-MID)
+* for[+] = Reference(Hipres-5mg-Tablet-EE-APD)
+* role = $100000072050#100000072072 "Active"
+* substance.code.concept = $sms#100000089370 "Amlodipine maleate"
+* substance.strength.presentationRatio.numerator = 5 $100000110633#100000110655 "milligram(s)"
+* substance.strength.presentationRatio.denominator = 1 $200000000014#200000002152 "tablet"
+* substance.strength.referenceStrength.substance.concept = $sms#100000085259 "Amlodipine"
+* substance.strength.referenceStrength.strengthRatio.numerator = 5 $100000110633#100000110655 "milligram(s)"
+* substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "tablet"
+
+
 Instance: AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 10mg tablet. Sweden."
+Description: "Amlodipine (besylate) 10mg tablets. Sweden."
 * type = #transaction
 * entry[0].resource = AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -27,23 +344,27 @@ Description: "Amlodipine 10mg tablet. Sweden."
 * entry[=].request.method = #PUT
 * entry[=].request.url = "PackagedProductDefinition/AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition01"
+
 * entry[+].resource = AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition02
 * entry[=].request.method = #PUT
 * entry[=].request.url = "PackagedProductDefinition/AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition02"
+
 * entry[+].resource = AMLaccord-10mg-Tablet-SE-IS-ManufacturedItemDefinition
 * entry[=].request.method = #PUT
 * entry[=].request.url = "ManufacturedItemDefinition/AMLaccord-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLaccord-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
+
 * entry[+].resource = AMLaccord-10mg-Tablet-SE-IS-Ingredient
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Ingredient/AMLaccord-10mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLaccord-10mg-Tablet-SE-IS-Ingredient"
 
+
 Instance: AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 5mg tablet. Sweden."
+Description: "Amlodipine (besylate) 5mg tablets. Sweden."
 * type = #transaction
 * entry[0].resource = AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -88,7 +409,7 @@ Description: "Amlodipine 5mg tablet. Sweden."
 Instance: AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 10mg tablet. Sweden."
+Description: "Amlodipine (besylate) 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -125,7 +446,7 @@ Description: "Amlodipine 10mg tablet. Sweden."
 Instance: AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 10mg tablet. Sweden."
+Description: "Amlodipine (besylate) 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -161,7 +482,7 @@ Description: "Amlodipine 10mg tablet. Sweden."
 Instance: AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 5mg tablet. Sweden."
+Description: "Amlodipine (besylate) 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -201,7 +522,7 @@ Description: "Amlodipine 5mg tablet. Sweden."
 Instance: AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 10mg tablet. Sweden."
+Description: "Amlodipine (besylate) 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -238,7 +559,7 @@ Description: "Amlodipine 10mg tablet. Sweden."
 Instance: AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 5mg tablet. Sweden."
+Description: "Amlodipine (besylate) 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -275,7 +596,7 @@ Description: "Amlodipine 5mg tablet. Sweden."
 Instance: AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 10mg tablet. Sweden."
+Description: "Amlodipine (besylate) 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -315,7 +636,7 @@ Description: "Amlodipine 10mg tablet. Sweden."
 Instance: AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 5mg tablet. Sweden."
+Description: "Amlodipine (besylate) 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -356,7 +677,7 @@ Description: "Amlodipine 5mg tablet. Sweden."
 Instance: AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 10mg tablet. Sweden."
+Description: "Amlodipine (besylate) 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -397,7 +718,7 @@ Description: "Amlodipine 10mg tablet. Sweden."
 Instance: AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 5mg tablet. Sweden."
+Description: "Amlodipine (besylate) 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -438,7 +759,7 @@ Description: "Amlodipine 5mg tablet. Sweden."
 Instance: Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 10mg tablet. Sweden."
+Description: "Amlodipine (besylate) 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -478,7 +799,7 @@ Description: "Amlodipine 10mg tablet. Sweden."
 Instance: Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 5mg tablet. Sweden."
+Description: "Amlodipine (besylate) 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -517,7 +838,7 @@ Description: "Amlodipine 5mg tablet. Sweden."
 Instance: AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 10mg tablet. Sweden."
+Description: "Amlodipine (besylate) 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -562,7 +883,7 @@ Description: "Amlodipine 10mg tablet. Sweden."
 Instance: AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 5mg tablet. Sweden."
+Description: "Amlodipine (besylate) 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -605,7 +926,7 @@ Description: "Amlodipine 5mg tablet. Sweden."
 Instance: AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 10mg tablet. Sweden."
+Description: "Amlodipine (besylate) 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -646,7 +967,7 @@ Description: "Amlodipine 10mg tablet. Sweden."
 Instance: AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 5mg tablet. Sweden."
+Description: "Amlodipine (besylate) 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -687,7 +1008,7 @@ Description: "Amlodipine 5mg tablet. Sweden."
 Instance: AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 10mg tablet. Sweden."
+Description: "Amlodipine (besylate) 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -727,7 +1048,7 @@ Description: "Amlodipine 10mg tablet. Sweden."
 Instance: AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 5mg tablet. Sweden."
+Description: "Amlodipine (besylate) 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -767,7 +1088,7 @@ Description: "Amlodipine 5mg tablet. Sweden."
 Instance: Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 10mg tablet. Sweden."
+Description: "Amlodipine (besylate) 10mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
@@ -803,7 +1124,7 @@ Description: "Amlodipine 10mg tablet. Sweden."
 Instance: Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
-Description: "Amlodipine 5mg tablet. Sweden."
+Description: "Amlodipine (besylate) 5mg tablet. Sweden."
 * type = #transaction
 * entry[0].resource = Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition
 * entry[=].request.method = #PUT
