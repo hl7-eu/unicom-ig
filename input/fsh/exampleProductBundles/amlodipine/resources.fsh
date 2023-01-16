@@ -1,5 +1,6 @@
 // 2 Estonian and 20 Swedish Amlodipine products 
 
+//ESTONIAN PRODUCTS
 Instance: AMLHipres-10mg-Tablet-EE-FullProduct
 InstanceOf: Bundle
 Usage: #example
@@ -152,12 +153,14 @@ Usage: #inline
 * for[+] = Reference(Hipres-10mg-Tablet-EE-APD)
 * role = $100000072050#100000072072 "Active"
 * substance.code.concept = $sms#100000089370 "Amlodipine maleate"
-* substance.strength.presentationRatio.numerator = 5 $100000110633#100000110655 "milligram(s)"
+* substance.strength.presentationRatio.numerator = 12.96 $100000110633#100000110655 "milligram(s)"
 * substance.strength.presentationRatio.denominator = 1 $200000000014#200000002152 "tablet"
 * substance.strength.referenceStrength.substance.concept = $sms#100000085259 "Amlodipine"
-* substance.strength.referenceStrength.strengthRatio.numerator = 5 $100000110633#100000110655 "milligram(s)"
+* substance.strength.referenceStrength.strengthRatio.numerator = 10 $100000110633#100000110655 "milligram(s)"
 * substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "tablet"
 
+
+//SWEDISH PRODUCTS
 
 Instance: AMLHipres-5mg-Tablet-EE-FullProduct
 InstanceOf: Bundle
@@ -309,7 +312,7 @@ Usage: #inline
 * for[+] = Reference(Hipres-5mg-Tablet-EE-APD)
 * role = $100000072050#100000072072 "Active"
 * substance.code.concept = $sms#100000089370 "Amlodipine maleate"
-* substance.strength.presentationRatio.numerator = 5 $100000110633#100000110655 "milligram(s)"
+* substance.strength.presentationRatio.numerator = 6.48 $100000110633#100000110655 "milligram(s)"
 * substance.strength.presentationRatio.denominator = 1 $200000000014#200000002152 "tablet"
 * substance.strength.referenceStrength.substance.concept = $sms#100000085259 "Amlodipine"
 * substance.strength.referenceStrength.strengthRatio.numerator = 5 $100000110633#100000110655 "milligram(s)"
