@@ -8,6 +8,16 @@ Description: "Pharmaceutical dose form. Based on EDQM, re-coded with RMS codes."
 * ^status = #draft
 * ^compositional = false
 * ^content = #complete
+
+* ^property[+].code = #has-specialization
+* ^property[=].type = #code
+* ^property[=].uri = "ttp://unicom-project.eu/fhir/ig/concept-properties#has-specialization"
+
+* ^property[+].code = #specializes
+* ^property[=].type = #code
+* ^property[=].uri = "ttp://unicom-project.eu/fhir/ig/concept-properties#specializes"
+
+
 //* ^count = 464
 * #100000073362 "Oral suspension"
 * #100000073363 "Oral gel"
@@ -15,7 +25,6 @@ Description: "Pharmaceutical dose form. Based on EDQM, re-coded with RMS codes."
 * #100000073365 "Granules for oral solution"
 * #100000073367 "Lyophilisate for suspension"
 * #100000073368 "Powder for syrup"
-* #100000073369 "Soluble tablet"
 * #100000073370 "Herbal tea"
 * #100000073371 "Instant herbal tea"
 * #100000073372 "Granules"
@@ -26,7 +35,6 @@ Description: "Pharmaceutical dose form. Based on EDQM, re-coded with RMS codes."
 * #100000073377 "Chewable capsule, soft"
 * #100000073378 "Prolonged-release capsule, soft"
 * #100000073379 "Modified-release capsule, soft"
-* #100000073380 "Coated tablet"
 * #100000073642 "Oral drops, solution"
 * #100000073643 "Oral drops, suspension"
 * #100000073644 "Oral drops, emulsion"
@@ -38,7 +46,6 @@ Description: "Pharmaceutical dose form. Based on EDQM, re-coded with RMS codes."
 * #100000073650 "Granules for oral suspension"
 * #100000073652 "Syrup"
 * #100000073653 "Granules for syrup"
-* #100000073654 "Dispersible tablet"
 * #100000073655 "Oral powder"
 * #100000073656 "Effervescent powder"
 * #100000073657 "Effervescent granules"
@@ -48,11 +55,63 @@ Description: "Pharmaceutical dose form. Based on EDQM, re-coded with RMS codes."
 * #100000073661 "Gastro-resistant capsule, soft"
 * #100000073662 "Prolonged-release capsule, hard"
 * #100000073663 "Modified-release capsule, hard"
+
 * #100000073664 "Tablet"
+  * ^property[+].code = #has-specialization
+  * ^property[=].valueCode = #100000073380
+  * ^property[+].code = #has-specialization
+  * ^property[=].valueCode = #100000073654
+  * ^property[+].code = #has-specialization
+  * ^property[=].valueCode = #100000073665
+  * ^property[+].code = #has-specialization
+  * ^property[=].valueCode = #100000073666
+  * ^property[+].code = #has-specialization
+  * ^property[=].valueCode = #100000073666
+  * ^property[+].code = #has-specialization
+  * ^property[=].valueCode = #100000073667
+  * ^property[+].code = #has-specialization
+  * ^property[=].valueCode = #100000073668
+  * ^property[+].code = #has-specialization
+  * ^property[=].valueCode = #100000073681
+  * ^property[+].code = #has-specialization
+  * ^property[=].valueCode = #100000073683
+  * ^property[+].code = #has-specialization
+  * ^property[=].valueCode = #100000073684
+  * ^property[+].code = #has-specialization
+  * ^property[=].valueCode = #100000073369
+
+* #100000073380 "Coated tablet"
+  * ^property[+].code = #specializes
+  * ^property[=].valueCode = #100000073664
 * #100000073665 "Film-coated tablet"
+  * ^property[+].code = #specializes
+  * ^property[=].valueCode = #100000073664
+* #100000073654 "Dispersible tablet"
+  * ^property[+].code = #specializes
+  * ^property[=].valueCode = #100000073664
 * #100000073666 "Orodispersible tablet"
+  * ^property[+].code = #specializes
+  * ^property[=].valueCode = #100000073664
 * #100000073667 "Gastro-resistant tablet"
+  * ^property[+].code = #specializes
+  * ^property[=].valueCode = #100000073664
 * #100000073668 "Modified-release tablet"
+  * ^property[+].code = #specializes
+  * ^property[=].valueCode = #100000073664
+* #100000073681 "Effervescent tablet"
+  * ^property[+].code = #specializes
+  * ^property[=].valueCode = #100000073664
+* #100000073683 "Prolonged-release tablet"
+  * ^property[+].code = #specializes
+  * ^property[=].valueCode = #100000073664
+* #100000073684 "Chewable tablet"
+  * ^property[+].code = #specializes
+  * ^property[=].valueCode = #100000073664
+* #100000073369 "Soluble tablet"
+  * ^property[+].code = #specializes
+  * ^property[=].valueCode = #100000073664
+
+
 * #100000073669 "Medicated chewing-gum"
 * #100000073670 "Pillules"
 * #100000073671 "Pulsatile-release intraruminal device"
@@ -65,10 +124,7 @@ Description: "Pharmaceutical dose form. Based on EDQM, re-coded with RMS codes."
 * #100000073678 "Gingival solution"
 * #100000073679 "Oromucosal paste"
 * #100000073680 "Gingival gel"
-* #100000073681 "Effervescent tablet"
 * #100000073682 "Oral lyophilisate"
-* #100000073683 "Prolonged-release tablet"
-* #100000073684 "Chewable tablet"
 * #100000073685 "Oral gum"
 * #100000073686 "Continuous-release intraruminal device"
 * #100000073687 "Lick block"
