@@ -12,7 +12,7 @@ Description: "World Health Organization Anatomical Therapeutic Chemical (ATC) cl
 ValueSet: NoBinding
 Id: no-vs
 Title: "Dummy value set" 
-Description: "Dummy value set for surpressing QA errors caused by FHIR R4B broken value set bindings"
+Description: "Dummy value set for suppressing QA errors caused by FHIR R4B broken value set bindings"
 * ^experimental = false
 * include codes from system $100000000004 // Domain (just to have something)
 
