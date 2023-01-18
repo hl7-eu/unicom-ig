@@ -1,3 +1,5 @@
+// The examples are old and broken here. Only use these when you don't care.
+/*
 Instance: Agen-5mg-Tablet-EE-MPD
 InstanceOf: MedicinalProductDefinition
 Usage: #example
@@ -449,3 +451,4 @@ Description: "Packaged Product Definition: combination package of creme and pess
 * package.package[=].containedItem.amount = 20 $100000110633#100000110654 "gram(s)"
 
 
+*/
