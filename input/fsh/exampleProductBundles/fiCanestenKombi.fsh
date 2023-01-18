@@ -175,11 +175,14 @@ kuumasaumattu alaosaan. Pakkauksessa on polyetyleenistä valmistettu asetin. 20 
 alumiiniputkessa"
 //  * extension.url = "http://ema.europa.eu/fhir/extension/language"
 //  * extension.valueCoding = $100000072057#100000072149 "Finnish"
-* marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
+* marketingStatus.country = $100000000002#100000000394 "Republic of Finland"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
 * package.material = $200000003199#200000003529 "Cardboard"
+
+* package.containedItem.item.concept = $100000073346#100000073491 "Applicator"
+
 * package.package[0].type = $100000073346#100000073496 "Blister"
 * package.package[=].quantity = 1
 * package.package[=].containedItem.item.reference = Reference(CanestenKombi-Pessary-FI-MID)
@@ -191,4 +194,4 @@ alumiiniputkessa"
 * package.package[=].containedItem.item.reference = Reference(CanestenKombi-Cream-FI-MID)
 * package.package[=].containedItem.amount = 20 $100000110633#100000110654 "gram(s)"
 
-* package.package[+].containedItem.item.concept = $100000073346#100000073491 "Applicator"
+
