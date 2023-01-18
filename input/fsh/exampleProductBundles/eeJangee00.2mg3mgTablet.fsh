@@ -134,7 +134,7 @@ Usage: #inline
 * for[+] = Reference(Jangee-0.02mg-3mg-Film-coated-tablet-EE-MID)
 * for[+] = Reference(Jangee-0.02mg-3mg-Film-coated-tablet-EE-APD)
 * role = $100000072050#100000072072 "Active"
-* substance.code.concept = $sms#100000091531 "Ethinylestradiol"
+* substance.code.concept = $sms#100000091531 "Ethinylestradiol betadex clathrate"
 * substance.strength.presentationRatio.numerator = 0.02 $100000110633#100000110655 "milligram(s)"
 * substance.strength.presentationRatio.denominator = 1 $200000000014#200000002152 "tablet"
 * substance.strength.referenceStrength.substance.concept = $sms#100000091721 "Ethinylestradiol"
