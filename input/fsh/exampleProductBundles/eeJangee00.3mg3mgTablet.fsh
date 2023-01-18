@@ -69,7 +69,7 @@ Usage: #inline
 * subject = Reference(Jangee-0.03mg-3mg-Film-coated-tablet-EE-MPD)
 * type = $220000000060#220000000061 "Marketing Authorisation"
 * region = $100000000002#100000000388 "Republic of Estonia"
-* status = $100000072049#200000017708 "Renewed/Varied"
+* status = $100000072049#200000017708 "Valid - Renewed/Varied"
 * statusDate = "2016-09-14"
 * holder = Reference(LOC-100005719-ExeltisBalticsUAB)
 

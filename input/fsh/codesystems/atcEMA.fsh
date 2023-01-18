@@ -8,6 +8,7 @@ Description: "ATC classification recoded with EMA SPOR RMS codes. Flat list, WHO
 * ^compositional = false
 * ^content = #complete
 * ^caseSensitive = true
+* ^experimental = false
 * #100000095729 "OTHER GYNECOLOGICALS" "G02"
 * #100000094848 "Pyrazolone derivatives" "C03CD"
 * #100000098548 "DECONGESTANTS AND ANTIALLERGICS" "S01G"

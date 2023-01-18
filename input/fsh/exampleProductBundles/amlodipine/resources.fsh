@@ -69,11 +69,11 @@ Usage: #inline
 Instance: Hipres-10mg-Tablet-EE-RA
 InstanceOf: PPLRegulatedAuthorization
 Usage: #inline
-* identifier.value = "441504 "
+* identifier.value = "441504"
 * subject = Reference(Hipres-10mg-Tablet-EE-MPD)
 * type = $220000000060#220000000061 "Marketing Authorisation"
 * region = $100000000002#100000000388 "Republic of Estonia"
-* status = $100000072049#200000017708 "Renewed/Varied"
+* status = $100000072049#200000017708 "Valid - Renewed/Varied"
 * statusDate = "2014-02-28"
 * holder = Reference(LOC-100009540-KrkaNovoMesto)
 
@@ -234,7 +234,7 @@ Usage: #inline
 * subject = Reference(Hipres-5mg-Tablet-EE-MPD)
 * type = $220000000060#220000000061 "Marketing Authorisation"
 * region = $100000000002#100000000388 "Republic of Estonia"
-* status = $100000072049#200000017708 "Renewed/Varied"
+* status = $100000072049#200000017708 "Valid - Renewed/Varied"
 * statusDate = "2014-02-28"
 * holder = Reference(LOC-100009540-KrkaNovoMesto)
 
@@ -1244,7 +1244,7 @@ Usage: #inline
 // * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
 // * package.shelfLifeStorage.periodDuration.value = 2
 // * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073496 "Bottle"
+* package.package.type = $100000073346#100000073497 "Bottle"
 * package.package.quantity = 1
 * package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
 * package.package.containedItem.item.reference = Reference(AMLaccord-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
@@ -1390,7 +1390,7 @@ Usage: #inline
 // * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
 // * package.shelfLifeStorage.periodDuration.value = 2
 // * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073496 "Bottle"
+* package.package.type = $100000073346#100000073497 "Bottle"
 * package.package.quantity = 1
 * package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
 * package.package.containedItem.item.reference = Reference(AMLaccord-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
@@ -2303,7 +2303,7 @@ Usage: #inline
 // * package.shelfLifeStorage.periodDuration.value = 3
 // * package.shelfLifeStorage.periodDuration.unit = "years"
 // * package.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073411 "Do not store above 30 °C"
-* package.package.type = $100000073346#100000073496 "Bottle"
+* package.package.type = $100000073346#100000073497 "Bottle"
 * package.package.quantity = 1
 * package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
 * package.package.containedItem.item.reference = Reference(AMLmedvalley-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
@@ -2435,7 +2435,7 @@ Usage: #inline
 // * package.shelfLifeStorage.periodDuration.value = 3
 // * package.shelfLifeStorage.periodDuration.unit = "years"
 // * package.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073411 "Do not store above 30 °C"
-* package.package.type = $100000073346#100000073496 "Bottle"
+* package.package.type = $100000073346#100000073497 "Bottle"
 * package.package.quantity = 1
 * package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
 * package.package.containedItem.item.reference = Reference(AMLmedvalley-5mg-Tablet-SE-IS-ManufacturedItemDefinition)

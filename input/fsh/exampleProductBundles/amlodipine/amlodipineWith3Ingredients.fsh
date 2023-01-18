@@ -166,7 +166,6 @@ Usage: #inline
 
 * identifier[pcid].value = "EE-100010531-3310-1448951"
 * description = "Package of 14"
-* status = #active
 * packageFor = Reference(CopaliaHCT-EE-MPD) 
 * statusDate = "2009-11-04"
 * containedItemQuantity = 28 $200000000014#200000002152 "Tablet"
@@ -182,7 +181,7 @@ Usage: #inline
     * containedItem.amount.value = 14
      
     * material[+] = $200000003199#200000003225 "PolyVinylidene Chloride" 
-    * material[+] = $200000003199#200000003222 " PolyVinyl Chloride"
+    * material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
 
 
 Instance: CopaliaHCT-package2-EE-PPD
@@ -193,7 +192,6 @@ Usage: #inline
 
 * identifier[pcid].value = "EE-100010531-3310-1448962"
 * description = "Package of 28"
-* status = #active
 * packageFor = Reference(CopaliaHCT-EE-MPD) 
 * statusDate = "2009-11-04"
 * containedItemQuantity = 28 $200000000014#200000002152 "Tablet"
@@ -209,7 +207,7 @@ Usage: #inline
     * containedItem.amount.value = 14
 
     * material[+] = $200000003199#200000003225 "PolyVinylidene Chloride" 
-    * material[+] = $200000003199#200000003222 " PolyVinyl Chloride"
+    * material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
 
 * packageFor = Reference(CopaliaHCT-EE-MPD)
 
@@ -242,4 +240,4 @@ Usage: #inline
 * formOf = Reference(CopaliaHCT-EE-MPD)
 * administrableDoseForm = $200000000004#100000073665 "Film-coated tablet"
 * unitOfPresentation = $200000000014#200000002152 "Tablet"
-* routeOfAdministration.code = $100000073345#100000073619 "Oral"
+* routeOfAdministration.code = $100000073345#100000073619 "Oral use"
