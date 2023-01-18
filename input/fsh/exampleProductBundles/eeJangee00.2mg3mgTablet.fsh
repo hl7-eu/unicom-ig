@@ -2,7 +2,7 @@ Instance: 007-Jangee-0.02mg-3mg-Film-coated-tablet-EE-FullProduct
 InstanceOf: Bundle
 Usage: #example
 Description: "Jangee ethinylestradiol 0.02mg, drosperinone 3mg. Estonia. Without placebo pills."
-* type = #batch
+* type = #transaction
 * entry[0].resource = Jangee-0.02mg-3mg-Film-coated-tablet-EE-MPD
 * entry[=].request.method = #PUT
 * entry[=].request.url = "MedicinalProductDefinition/Jangee-0.02mg-3mg-Film-coated-tablet-EE-MPD"
