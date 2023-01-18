@@ -1,4 +1,14 @@
 // The examples are old and broken here. Only use these when you don't care.
+
+Instance: LOC-100004795-Wolff-Arzneimittel
+InstanceOf: Organization
+Usage: #example
+Description: "Marketing Authorisation Holder / Organisation"
+* identifier[+]
+  * value = "LOC-100004795"
+  * system = $loc-id
+* name = "Dr. August Wolff GmbH & Co. KG Arzneimittel"
+
 /*
 Instance: Agen-5mg-Tablet-EE-MPD
 InstanceOf: MedicinalProductDefinition
