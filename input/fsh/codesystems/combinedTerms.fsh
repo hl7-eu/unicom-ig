@@ -2,6 +2,7 @@ CodeSystem: CombinedTerm_EMA_CS
 Id: combined-term-ema-cs
 Title: "Combined Term EMA"
 Description: "Combined Term. Based on EDQM. Re-coded with RMS codes. Only used for authorised dose form."
+* ^experimental = false
 * ^url = $200000000007
 * ^caseSensitive = false
 * ^status = #draft

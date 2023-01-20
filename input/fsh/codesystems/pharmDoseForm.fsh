@@ -2,6 +2,7 @@ CodeSystem: PharmaceuticalDoseForm_EMA_CS
 Id: pharmaceutical-dose-form-ema-cs
 Title: "Pharmaceutical Dose Form EMA"
 Description: "Pharmaceutical dose form. Based on EDQM, re-coded with RMS codes."
+* ^experimental = false
 * ^url = $200000000004
 * ^caseSensitive = false
 * ^status = #draft

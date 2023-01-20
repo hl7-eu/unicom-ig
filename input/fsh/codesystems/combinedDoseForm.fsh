@@ -2,6 +2,7 @@ CodeSystem: CombinedPharmaceuticalDoseForm_EMA_CS
 Id: combined-pharmaceutical-dose-form-ema-cs
 Title: "Combined Pharmaceutical Dose Form EMA"
 Description: "Combined Pharmaceutical Dose Form. Based on EDQM. Re-coded with RMS codes. Used only for authorised dose form."
+* ^experimental = false
 * ^url = $200000000006
 * ^caseSensitive = false
 * ^status = #draft
