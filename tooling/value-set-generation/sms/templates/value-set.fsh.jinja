@@ -1,0 +1,15 @@
+Instance: substance
+InstanceOf: ValueSet
+Usage: #definition
+* name = "Substance"
+* title = "Substance"
+* status = #active
+* experimental = false
+* description = "ValueSet Substance from SMS, see https://spor.ema.europa.eu/smswi/#/"
+* immutable = false
+* compose.include.system = "https://spor.ema.europa.eu"
+
+{% for key, row in df.iterrows() %}
+* compose.include.concept[+].code = #{{ row['#SMS_ID'] }}
+* compose.include.concept[=].display = "{{ row['Substance_Name'] }}"
+{% endfor %}

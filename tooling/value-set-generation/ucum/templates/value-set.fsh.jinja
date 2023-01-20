@@ -1,0 +1,17 @@
+Instance: {{ instance }}
+InstanceOf: ValueSet
+Usage: #definition
+* name = "{{ name }}"
+* title = "{{ title }}"
+* status = #active
+* experimental = false
+* description = "ValueSet for UCUM units to be used in eHDSI"
+* immutable = false
+* compose.include.system = "http://hl7.org/fhir/ValueSet/ucum-units"
+
+{% for code_des in codes %}
+* compose.include.concept[+].code = #{{ code_des.code }}
+* compose.include.concept[=].display = "{{ code_des.displayName }}"
+* compose.include.concept[=].designation[+].language = #en
+* compose.include.concept[=].designation[=].value = "{{ code_des.displayName }}"
+{% endfor %}
