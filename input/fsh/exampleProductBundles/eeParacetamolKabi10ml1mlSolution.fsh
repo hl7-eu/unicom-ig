@@ -73,11 +73,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000097305 "Paracetamol"
 * classification[+] = $who-atc#N02BE01 "Paracetamol"
 * name.productName = "Paracetamol Kabi 10 mg/ml, infusioonilahus"
-* name.namePart[invented].part = "Paracetamol Kabi"
-* name.namePart[strength].part = "10 mg/ml"
-* name.namePart[doseForm].part = "infusioonilahus"
-* name.countryLanguage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.countryLanguage.language = $100000072057#100000072172 "Estonian"
+* name.part[invented].part = "Paracetamol Kabi"
+* name.part[strength].part = "10 mg/ml"
+* name.part[doseForm].part = "infusioonilahus"
+* name.usage.country = $100000000002#100000000388 "Republic of Estonia"
+* name.usage.language = $100000072057#100000072172 "Estonian"
 
 Instance: Paracetamol-Kabi-10mg-1ml-solinj-EE-RA
 InstanceOf: PPLRegulatedAuthorization
@@ -163,14 +163,14 @@ Usage: #inline
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#100000073563 "Vial"
-* package.package.quantity = 1
-* package.package.material = $200000003199#200000003205 "Glass type II"
-* package.package.containedItem.item.reference = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034)
-* package.package.containedItem.amount = 100 $100000110633#100000110662 "millilitre(s)"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+* packaging.packaging.type = $100000073346#200000002158 "vial"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material = $200000003199#200000003205 "Glass type II"
+* packaging.packaging.containedItem.item.reference = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034)
+* packaging.packaging.containedItem.amount = 100 $100000110633#100000110662 "millilitre(s)"
 
 
 Instance: Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1799905
@@ -185,14 +185,14 @@ Usage: #inline
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#100000073490 "Ampoule"
-* package.package.quantity = 10
-* package.package.material = $200000003199#200000003204 "Glass type I"
-* package.package.containedItem.item.reference = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905)
-* package.package.containedItem.amount = 10 $100000110633#100000110662 "millilitre(s)"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+* packaging.packaging.type = $100000073346#100000073490 "Ampoule"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material = $200000003199#200000003204 "Glass type I"
+* packaging.packaging.containedItem.item.reference = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905)
+* packaging.packaging.containedItem.amount = 10 $100000110633#100000110662 "millilitre(s)"
 
 Instance: Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424056
 InstanceOf: PPLPackagedProductDefinition
@@ -206,11 +206,11 @@ Usage: #inline
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#100000073493 "Bag"
-* package.package.quantity = 20
-* package.package.material = $200000003199#200000003218 "Polyolefin"
-* package.package.containedItem.item.reference = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056)
-* package.package.containedItem.amount = 100 $100000110633#100000110662 "millilitre(s)"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+* packaging.packaging.type = $100000073346#100000073493 "Bag"
+* packaging.packaging.quantity = 20
+* packaging.packaging.material = $200000003199#200000003218 "Polyolefin"
+* packaging.packaging.containedItem.item.reference = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056)
+* packaging.packaging.containedItem.amount = 100 $100000110633#100000110662 "millilitre(s)"

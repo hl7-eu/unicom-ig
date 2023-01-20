@@ -73,11 +73,11 @@ Usage: #inline
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
 * classification = $100000093533#100000095785 "drospirenone and ethinylestradiol"
 * name.productName = "Yaz 0,02 mg/3 mg Filmdragerad tablett"
-* name.namePart[invented].part = "Yaz"
-* name.namePart[strength].part = "0,02 mg/3 mg"
-* name.namePart[doseForm].part = "Filmdragerad tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Yaz"
+* name.part[strength].part = "0,02 mg/3 mg"
+* name.part[doseForm].part = "Filmdragerad tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 
 Instance: Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization
@@ -134,22 +134,22 @@ Usage: #inline
 //  * extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003208 "Plastic"
-//* package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-//* package.shelfLifeStorage.periodDuration = 5 $100000110633#200000003434 "Year"
-* package.package.type = $100000073346#100000073498 "Box"
-* package.package.quantity = 3
-* package.package.material = $200000003199#200000003529 "Cardboard"
-* package.package.package.type = $100000073346#100000073496 "Blister"
-* package.package.package.quantity = 1
-* package.package.package.material[0] = $200000003199#200000003200 "Aluminium"
-* package.package.package.material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.package.containedItem[0].item.reference = Reference(Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01)
-* package.package.package.containedItem[=].amount = 24 $200000000014#200000002152 "tablet"
-* package.package.package.containedItem[+].item.reference = Reference(Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02)
-* package.package.package.containedItem[=].amount = 4 $200000000014#200000002152 "tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003208 "Plastic"
+//* packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+//* packaging.shelfLifeStorage.periodDuration = 5 $100000110633#200000003434 "Year"
+* packaging.packaging.type = $100000073346#100000073498 "Box"
+* packaging.packaging.quantity = 3
+* packaging.packaging.material = $200000003199#200000003529 "Cardboard"
+* packaging.packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.packaging.quantity = 1
+* packaging.packaging.packaging.material[0] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.packaging.material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.packaging.containedItem[0].item.reference = Reference(Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01)
+* packaging.packaging.packaging.containedItem[=].amount = 24 $200000000014#200000002152 "tablet"
+* packaging.packaging.packaging.containedItem[+].item.reference = Reference(Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02)
+* packaging.packaging.packaging.containedItem[=].amount = 4 $200000000014#200000002152 "tablet"
 
 
 Instance: Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01

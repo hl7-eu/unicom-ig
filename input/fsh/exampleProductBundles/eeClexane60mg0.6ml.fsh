@@ -51,11 +51,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000094266 "Enoxaparin"
 * classification[+] = $who-atc#B01AB05 "Enoxaparin"
 * name.productName = "Clexane, 6000 RÜ (60 mg)/0,6 ml süstelahus süstlis"
-* name.namePart[invented].part = "Clexane"
-* name.namePart[strength].part = "6000 RÜ"
-* name.namePart[doseForm].part = "süstelahus süstlis"
-* name.countryLanguage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.countryLanguage.language = $100000072057#100000072172 "Estonian"
+* name.part[invented].part = "Clexane"
+* name.part[strength].part = "6000 RÜ"
+* name.part[doseForm].part = "süstelahus süstlis"
+* name.usage.country = $100000000002#100000000388 "Republic of Estonia"
+* name.usage.language = $100000072057#100000072172 "Estonian"
 
 Instance: Clexane-60mg-0.6ml-solinj-EE-RA
 InstanceOf: PPLRegulatedAuthorization
@@ -120,11 +120,11 @@ Usage: #inline
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#100000073544 "Pre-filled syringe"
-* package.package.quantity = 2
-* package.package.material = $200000003199#200000003204 "Glass type I"
-* package.package.containedItem.item.reference = Reference(Clexane-60mg-0.6ml-solinj-EE-MID)
-* package.package.containedItem.amount = 0.6 $100000110633#100000110662 "millilitre(s)"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+* packaging.packaging.type = $100000073346#100000073544 "Pre-filled syringe"
+* packaging.packaging.quantity = 2
+* packaging.packaging.material = $200000003199#200000003204 "Glass type I"
+* packaging.packaging.containedItem.item.reference = Reference(Clexane-60mg-0.6ml-solinj-EE-MID)
+* packaging.packaging.containedItem.amount = 0.6 $100000110633#100000110662 "millilitre(s)"
