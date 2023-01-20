@@ -1,3 +1,28 @@
+ValueSet: VsWhoAtcUnicom
+Id: whoatc-unicom
+Title: "WHO ATC"
+Description: "World Health Organization Anatomical Therapeutic Chemical (ATC) classification system.  Note: The currently implemented code system and the value set expansion contain only a set of example ATC codes, not the complete code system content."
+* ^status = #active
+* ^experimental = false
+* ^publisher = "UNICOM Project"
+* ^immutable = false
+* ^copyright = "This artifact includes content from Anatomical Therapeutic Chemical (ATC) classification system. ATC codes are copyright World Health Organization (WHO) Collaborating Centre for Drug Statistics Methodology. Terms & Conditions in https://www.whocc.no/use_of_atc_ddd/"
+* include codes from system $who-atc
+
+ValueSet: NoBinding
+Id: no-vs
+Title: "Dummy value set" 
+Description: "Dummy value set for suppressing QA errors caused by FHIR R4B broken value set bindings"
+* ^experimental = false
+* include codes from system $100000000004 // Domain (just to have something)
+
+ValueSet: SubstancesSMS
+Id: substances-vs
+Title: "EMA SPOR SMS Substances" 
+Description: "Value set for substances, PPL subset from SMS."
+* ^experimental = false
+* include codes from system $sms // EMA SPOR SMS
+
 ValueSet: SporRecordStatus
 Id: record-status-spor-vs
 Title: "Record Status" 
@@ -11,7 +36,7 @@ Title: "Anatomical Therapeutic Chemical classification system"
 Description: "Value set for Anatomical Therapeutic Chemical classification system Human and Veterinary. It combines 2 SPOR/WHO lists"
 * ^experimental = false
 * include codes from system $100000093533 // Anatomical Therapeutic Chemical classification system - Human
-* include codes from system $100000116677 // Anatomical Therapeutic Chemical classification system - Veterinary
+//* include codes from system $100000116677 // Anatomical Therapeutic Chemical classification system - Veterinary
 
 ValueSet: SporRegulatoryStatus
 Id: regulatory-status-spor-vs

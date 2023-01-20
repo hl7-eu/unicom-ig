@@ -34,7 +34,7 @@ The medication data in UNICOM project uses profiles for the following entities:
 - [Marketing Authorisation](StructureDefinition-PPLRegulatedAuthorization.html)
 - [Organization (for marketing authorisation holder)](StructureDefinition-PPLOrganization.html)
 
-On the [Artifacts](Artifacts.html) page you will also find another set of similar profiles, which are described as data transformation profiles. These profiles are very similar to regulatory profiles by structure, but have less restrictions and terminology bindings in order to allow technical data processing while data is still incomplete.
+On the [Artifacts](artifacts.html) page you will also find another set of similar profiles, which are described as data transformation profiles. These profiles are very similar to regulatory profiles by structure, but have less restrictions and terminology bindings in order to allow technical data processing while data is still incomplete.
 
 ### Terminology
 Regulatory profiles use [EMA SPOR RMS](https://spor.ema.europa.eu/rmswi/#/) lists for value sets. 

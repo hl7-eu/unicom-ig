@@ -66,8 +66,8 @@ Usage: #inline
 * combinedPharmaceuticalDoseForm = $200000000004#100000073665 "Film-coated tablet"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal Product subject to medical prescription"
 //* additionalMonitoringIndicator = $additionalMonitoringIndicator#False "False"
-* classification[atc].coding[ema] = $100000093533#100000096162 "amoxicillin and beta-lactamase inhibitor"
-* classification[atc].coding[who] = $who-atc#J01CR02 "amoxicillin and beta-lactamase inhibitor"
+* classification[0] = $100000093533#100000096162 "amoxicillin and beta-lactamase inhibitor"
+* classification[+] = $who-atc#J01CR02 "amoxicillin and beta-lactamase inhibitor"
 * name.productName = "Betaklav, 500 mg/125 mg õhukese polümeerikattega tabletid"
 * name.namePart[invented].part = "Betaklav"
 * name.namePart[strength].part = "500mg/125mg"
@@ -92,7 +92,9 @@ Instance: LOC-100009540-KrkaNovoMesto
 InstanceOf: PPLOrganization
 Usage: #inline
 * identifier[loc].value = "LOC-100009540"
+* identifier[org].value = "ORG-100000627"
 * name = "KRKA, d.d., Novo mesto"
+// This name is on SPC. In OMS, the name is KRKA tovarna zdravil d.d. Novo mesto
 
 
 Instance: Betaklav-500mg-125mg-EE-APD
