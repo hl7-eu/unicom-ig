@@ -7,11 +7,11 @@
     {{ mpd.name[0].productName }}
   </h4>
   {% comment %}and name parts{% endcomment %}
-  {% for namepart in mpd.name[0].namePart %}
+  {% for part in mpd.name[0].part %}
     <p>
-      {{ namepart.type.coding[0].display }}:
+      {{ part.type.coding[0].display }}:
       <b>
-        {{ namepart.part }}
+        {{ part.part }}
       </b>
     </p>
   {% endfor %}
@@ -25,9 +25,9 @@
 
   {% comment %}for each name (currently [0] but should be all) print the languages{% endcomment %}
   {% comment %}FIX{% endcomment %}
-  {% if mpd.name[0].countryLanguage %}
+  {% if mpd.name[0].usage %}
     <div>
-      {% for lang in mpd.name[0].countryLanguage %}
+      {% for lang in mpd.name[0].usage %}
         <p>
           Country:
           <b>
