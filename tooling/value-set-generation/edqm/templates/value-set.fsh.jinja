@@ -1,0 +1,25 @@
+Instance: {{ instance }}
+InstanceOf: ValueSet
+Usage: #definition
+* name = "{{ name }}"
+* title = "{{ title }}"
+* status = #active
+* experimental = false
+* description = "ValueSet {{ title }} from EDQM, {{ edqm_class }}, see https://standardterms.edqm.eu/#"
+* immutable = false
+* compose.include.system = $edqm-standardterms
+
+{% for code_des in codes %}
+
+
+* compose.include.concept[+].code = #{{ code_des.code }}
+* compose.include.concept[=].display = "{{ code_des.english }}"
+{% for translation in code_des.translations -%}
+    {%- with locale_code = translation.language|lower %}
+      {%- if locale_code in target_locales and '' + translation.term != '' %}
+* compose.include.concept[=].designation[+].language = #{{ locale_code }}
+* compose.include.concept[=].designation[=].value = "{{ translation.term }}"
+      {% endif -%}
+    {%- endwith -%}
+  {%- endfor -%}
+{%- endfor -%}

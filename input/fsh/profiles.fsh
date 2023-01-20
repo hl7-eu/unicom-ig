@@ -33,32 +33,35 @@ Description: """Medicinal Product as defined in ISO IDMP"""
 * identifier[mpid] 
   * system = "http://ema.europa.eu/fhir/mpId"
   * ^short = "MPID"
-  * ^definition = "EMA IG 1.2. MPID if exists. For UNICOM testing data fake MPIDs are used (Country code + MAH LocID + unique code). "
+  * ^definition = "EMA IG 1.2. MPID if exists. For UNICOM testing data fake MPIDs are used (Country code + MAH LocID + unique code)."
 
 * identifier[pmsid]
   * system = "http://ema.europa.eu/fhir/pmsId"
   * ^short = "PMS ID"
   * ^definition = "EMA IG 1.1. EMA Product Management System identifier if exists. For UNICOM testing data fake PMS IDs can be used"
 
-* domain 1..1
-* domain = $100000000004#100000000012 "Human use"
+* domain 1..1 
+* domain from Domain
+  //Default $100000000004#100000000012 "Human use"
   * ^definition = "EMA IG 1.3"
 
 * status 0..1
-  * coding.system = $200000005003 // TO DO: Default 200000005004 'Current'
+* status from SporRecordStatus
+  // Default $200000005003#200000005004 'Current'
   * ^short = "Status of the product's data. Default 200000005004 'Current'"
 
 * legalStatusOfSupply 1..1
-  * coding.system = $100000072051 
+* legalStatusOfSupply from LegalStatusForTheSupply
   * ^short = "Legal status of supply on the medicinal product level."
   * ^definition = "EMA IG 1.7. Legal status of supply on the medicinal product level. The same information can be repeated/differentiated on the package level"
 
 * combinedPharmaceuticalDoseForm 1..1
-  * coding.code from authorised-doseform-vs 
+* combinedPharmaceuticalDoseForm from AuthorisedDoseForm 
   * ^short = "Authorised dose form for the product, incl combination package dose forms"
   * ^definition = "EMA IG 1.5 & 1.6. Authorised dose form for the whole product. As applicable in one of the SPOR RMS list Combined pharmaceutical dose form, Pharmaceutical dose form, Combined term, Combination Package"
 
 * classification 1..*
+//* classification from SporAtc (preferred)
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "coding.system"
   * ^slicing.rules = #open
@@ -77,10 +80,10 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * coding contains
     ema 1..1 and
     who 0..1
-  * coding[ema]
+  * coding[ema] from SporAtc
     * system = $100000093533
     * ^short = "ATC classification as EMA SPOR code"
-  * coding[who]
+  * coding[who] from whoatc-unicom
     * system = $who-atc
     * ^short = "ATC classification as WHO ATC code"
 
@@ -88,22 +91,23 @@ Description: """Medicinal Product as defined in ISO IDMP"""
   * ^definition = "EMA IG 1.14"
   * productName 1..1
     * ^definition = "EMA IG 1.14.1"
-  * part 
+  * namePart
     * ^slicing.discriminator.type = #pattern
-    * ^slicing.discriminator.path = "type.coding.code"
+    * ^slicing.discriminator.path = "type"
     * ^slicing.rules = #open
     * ^slicing.ordered = true
+    * ^slicing.description = "Slicing on the name part"
     * ^short = "Medicinal product name part"
     * ^definition = "EMA IG 1.14.3. Name part. Product names are usually combined of these three parts. More parts can be defined and strength and dose form parts can be omitted."
-  * part contains
+  * namePart contains
     invented 1..1 and
     strength 0..1 and
     doseForm 0..1 
-  * part[invented].type = $220000000000#220000000002 "Invented name part"
-  * part[strength].type = $220000000000#220000000004 "Strength part"
-  * part[doseForm].type = $220000000000#220000000005 "Pharmaceutical dose form part"
+  * namePart[invented].type = $220000000000#220000000002 "Invented name part"
+  * namePart[strength].type = $220000000000#220000000004 "Strength part"
+  * namePart[doseForm].type = $220000000000#220000000005 "Pharmaceutical dose form part"
 
-  * usage
+  * countryLanguage
     * ^definition = "EMA IG 1.14.2"
     * country.coding
       * ^slicing.discriminator.type = #pattern
@@ -113,10 +117,11 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * country.coding contains
         ema 1..1 and
         iso 0..1
-    * country.coding[ema]
+    * country.coding[ema] from CountryEMA
       * system = $100000000002
-    * country.coding[iso]
+    * country.coding[iso] from CountryISO
       * system = $iso-country
+
 
     * language.coding
       * ^slicing.discriminator.type = #pattern
@@ -126,9 +131,9 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * language.coding contains
         ema 1..1 and
         bcp 0..1
-    * language.coding[ema]
+    * language.coding[ema] from LanguageEMA
       * system = $100000072057
-    * language.coding[bcp]
+    * language.coding[bcp] from LanguageBCP
       * system = $BCP47
 
 
@@ -152,11 +157,12 @@ Description: """Regulated Authorization profile defines the Marketing Authorisat
 * type = $220000000060#220000000061 "Marketing Authorisation"
 
 * region 1..1
-* region.coding.system = $100000000002
+* region.coding from CountryEMA
   * ^definition = "EMA IG 2.3"
 
 * status 1..1
-  * coding.system = $100000072049
+* status from SporRegulatoryStatus
+  //* coding.system = $100000072049
   * ^short = "Marketing authorisation status"
   * ^definition = "EMA IG 2.4"
 
@@ -181,12 +187,12 @@ Title: "PPL Manufactured Item profile"
 Description: """Manufactured item is the countable element inside the package"""
 
 * manufacturedDoseForm 1..1
-  * coding.system = $200000000004
+* manufacturedDoseForm from PharmaceuticalDoseForm
   * ^short = "Dose form of the manufactured item (before preparing for administration)"
   * ^definition = "EMA IG 4.11.3"
 
 * unitOfPresentation 1..1
-  * coding.system = $200000000014
+* unitOfPresentation from UnitOfPresentation
   * ^short = "Unit of presentation of the manufactured item (before preparing for administration)"
   * ^definition = "EMA IG 4.11.1"
 
@@ -205,12 +211,14 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 * formOf only Reference(PPLMedicinalProductDefinition)
 
 * administrableDoseForm 1..1
-  * coding.system = $200000000004
+* administrableDoseForm from PharmaceuticalDoseForm
+//  * coding.system = $200000000004
   * ^short = "Dose form of the administrable product (after preparing for administration)"
   * ^definition = "EMA IG 6.2"
 
 * unitOfPresentation 0..1
-  * coding.system = $200000000014
+* unitOfPresentation from UnitOfPresentation
+//  * coding.system = $200000000014
   * ^short = "Unit of presentation of the administrable product (after preparing for administration). Not applicable for certain products/packaging."
   * ^definition = "EMA IG 6.3"
 
@@ -218,8 +226,8 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
   * ^short = "References to manufactured items that are used in the preparation of this administrable product"
 * producedFrom only Reference(PPLManufacturedItemDefinition)
 
-* routeOfAdministration
-  * code.coding.system = $100000073345
+* routeOfAdministration.code from RoutesAndMethodsOfAdministration
+//  * code.coding.system = $100000073345
   * ^definition = "EMA IG 6.6"
 
 // PROFILE: Ingredient
@@ -233,11 +241,13 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
   * ^short = "Reference to the medicinal product, pharmaceutical product and/or manufactured item where the ingredient is used"
 * for only Reference(PPLMedicinalProductDefinition or PPLAdministrableProductDefinition or PPLManufacturedItemDefinition)
 
-* role = $100000072050#100000072072 "Active" //TO DO: I would, just in case, turn this into default rather than fixed
+* role // Default 100000072072 "Active"
+  * ^short = "Role of the ingredient. Default is 100000072072|Active as PPL data normally only includes active ingredients."
   * ^definition = "EMA IG 5.1"
+  * coding.system = $100000072050 //TO DO
 
 * substance
-  * code.concept.coding.system = $sms 
+  * code.concept.coding.system = $sms //TO DO
   * ^short = "Substance code from EMA SMS"
   * ^definition = "EMA IG 5.5"
 
@@ -247,33 +257,38 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
       * ^short = "Strength per unit of presentation (10mg/vial or 10mg/0.5ml where 0.5ml is the size of the vial)"
       * ^definition = "EMA IG 5.5.2"
       //* numerator.comparator.coding.system = $100000000008 // TO DO: not easily extendable, what to do with it?
-      * numerator.system 1..1
-      * numerator.system = $100000110633
-      * denominator.system 1..1
+      * numerator from UnitOfMeasurement
+      * numerator 1..1
+    //  * numerator.system = $100000110633
+    //  * numerator.code from unit-of-measurement-vs
+      * denominator 1..1
         * ^short = "Unit of measurement or unit of presentation"
-      * denominator.unit from all-units-vs
+      * denominator from AllUnits
       
     * concentrationRatio
       * ^short = "Strength per unit of measurement (20mg/1ml)"
       * ^definition = "EMA IG 5.5.2"
       //* numerator.comparator.coding.system = $100000000008 // TO DO: not easily extendable, what to do with it?
-      * numerator.system 1..1
-      * numerator.system = $100000110633
-      * denominator.system 1..1
-      * denominator.system = $100000110633
+      * numerator 1..1
+    //  * numerator.system = $100000110633
+      * numerator from UnitOfMeasurement
+      * denominator 1..1
+    //  * denominator.system = $100000110633
+      * denominator from UnitOfMeasurement
 
     * referenceStrength
-      * ^definition = "EMA IG 5.5.3"
-      * ^short = "Strenth expressed in terms of a reference substance; concentration and presentation strength or reference strength type not distinguished."
+      * ^definition = "EMA IG 5.5.3. According to EMA, this is a mandatory element for all products, which is not necessarily accepted by all NCAs, and it is ambivalent in ISO IDMP."
+      * ^short = "Strenth expressed in terms of a reference substance; reference strength type not distinguished. According to EMA IG, all products need to have reference strentgh (repeating the strentgh, if needed)"
       * substance 1..1
-        * concept.coding.system = $sms 
+        * concept.coding.system = $sms //TO DO
         * ^short = "Substance code from EMA SMS" 
       * strengthRatio
-        * numerator.system 1..1
-        * numerator.system = $100000110633
-        * denominator.system 1..1
+        * numerator 1..1
+      //  * numerator.system = $100000110633
+        * numerator from UnitOfMeasurement
+        * denominator 1..1
           * ^short = "Unit of measurement or unit of presentation"
-        * denominator.unit from all-units-vs
+        * denominator from AllUnits
 
         
 // PROFILE: Packaged Product
@@ -302,6 +317,7 @@ Description: """Packaged Product"""
 
 * containedItemQuantity 1..*
   * system = $200000000014
+  * code from unit-of-presentation-vs
   * ^short = "Pack size. Repeated for combination packages."
   * ^definition = "EMA IG 4.4"
 
@@ -312,17 +328,17 @@ Description: """Packaged Product"""
 * legalStatusOfSupply 0..1
   * ^short = "Legal status of supply on the packaged product level."
   * ^definition = "EMA IG 4.5. Legal status of supply on the packaged product level. The same information can be repeated/differentiated on the medicinal product level"
-  * code.coding.system = $100000072051 
-  * jurisdiction.coding.system = $100000000002
+  * code.coding.code from legal-status-for-the-supply-vs
+  * jurisdiction.coding from country-ema-vs
 
 * marketingStatus
   * ^definition = "EMA IG 4.6"
   * country 1..1
-    * coding.system = $100000000002
+    * coding from country-ema-vs
   * status 1..1
     * coding.system = $100000072052
 
-* packaging 1..1
+* package 1..1
   * type 1..1
     * ^short = "Container type"
     * ^definition = "EMA IG 4.8.1"
@@ -331,8 +347,8 @@ Description: """Packaged Product"""
   * quantity 1..1
     * ^definition = "EMA IG 4.8.5"
   
-  * material
-    * coding.system = $200000003199
+  * material from material-vs
+    //* coding.code from material-vs
     * ^definition = "EMA IG 4.8.7"
  
   * shelfLifeStorage
@@ -348,7 +364,7 @@ Description: """Packaged Product"""
     * amount
       * ^short = "Number of the manufactured items (e.g. tablets) in this package layer or the amount of manufactured item (e.g. 20 g) in the unit of presentation defined in manufactured item definition"
       * ^definition = "EMA IG 4.11.2"
-// TO DO: amount.system = $200000000014 or $100000110633
+      * code from all-units-vs
 
 
 // TO DO: I'm not sure we want to use Organisation as a separate resource, but right now it is. See the comment at RegulatedAuthorization
