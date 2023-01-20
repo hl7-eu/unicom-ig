@@ -1,1 +1,0 @@
-Alias: $atc = http://www.whocc.no/atc

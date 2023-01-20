@@ -8,8 +8,8 @@ Description: "Medicinal Product Definition: simple tablets"
 * status = $200000005003#200000005004 "Current"
 * combinedPharmaceuticalDoseForm = $200000000004#100000073664 "Tablet"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095065 "amlodipine"
-* classification[atc].coding[who] = $who-atc#C08CA01 "amlodipine"
+* classification[0] = $100000093533#100000095065 "amlodipine"
+* classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "AGEN 5 mg tabletid"
 * name.namePart[invented].part = "AGEN"
 * name.namePart[strength].part = "5 mg"
@@ -143,8 +143,8 @@ Description: "Medicinal Product Definition: powder for solution"
 * combinedPharmaceuticalDoseForm = $200000000004#100000116186 "Powder for solution for injection/infusion"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal Product subject to medical prescription"
 //* additionalMonitoringIndicator = $additionalMonitoringIndicator#False "False"
-* classification[atc].coding[ema] = $100000093533#100000096183 "Cefuroxime"
-* classification[atc].coding[who] = $who-atc#J01DC02 "cefuroxime"
+* classification[0] = $100000093533#100000096183 "Cefuroxime"
+* classification[+] = $who-atc#J01DC02 "cefuroxime"
 * name.productName = "Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber"
 * name.namePart[invented].part = "Cefuroxime MIP"
 * name.namePart[strength].part = "1500 MG"
@@ -183,9 +183,9 @@ Description: "Administrable/Pharmaceutical Product Definition: transformed"
 * unitOfPresentation = $200000000014#200000002158 "Vial"
 * producedFrom = Reference(Cefuroxime-MIP-1500mg-EE-MID)
 * routeOfAdministration[0].code = $100000073345#100000073600 "Intramuscular use"
-* routeOfAdministration[+].code = $100000073345#100000073611 "Intravenous use"
+//* routeOfAdministration[+].code = $100000073345#100000073611 "Intravenous use"
 //route of administration gives an error in the qa, that it's duplicated in the MedProd, but it's not. 
-//The error seems to go away, when I comment one of the routes out from here.
+//The error seems to go away, when I comment one of the routes out from here. TO DO
 
 Instance: Cefuroxime-MIP-1500mg-EE-MID
 InstanceOf: PPLManufacturedItemDefinition
@@ -231,7 +231,7 @@ Description: "Packaged Product Definition: powder for solution in 1 vial"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
 * package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#200000002158 "vial"
+* package.package.type = $100000073346#100000073563 "Vial"
 * package.package.quantity = 1
 * package.package.material = $200000003199#200000003204 "Glass type I"
 * package.package.containedItem.item.reference = Reference(Cefuroxime-MIP-1500mg-EE-MID)
@@ -252,7 +252,7 @@ Description: "Packaged Product Definition: powder for solution in 10 vials"
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
 * package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#200000002158 "vial"
+* package.package.type = $100000073346#100000073563 "Vial"
 * package.package.quantity = 10
 * package.package.material = $200000003199#200000003204 "Glass type I"
 * package.package.containedItem.item.reference = Reference(Cefuroxime-MIP-1500mg-EE-MID)
@@ -271,8 +271,8 @@ Description: "Medicinal Product Definition: combination product of creme and pes
 //* status.coding[+] = $publication-status#active "Active"
 * combinedPharmaceuticalDoseForm = $200000000008#100000173972 "Cream + pessary"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal Product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095693 "clotrimazole"
-* classification[atc].coding[who] = $who-atc#G01AF02 "clotrimazole"
+* classification[0] = $100000093533#100000095693 "clotrimazole"
+* classification[+] = $who-atc#G01AF02 "clotrimazole"
 * name.productName = "Canifug Cremolum"
 * name.namePart[invented].part = "Canifug Cremolum"
 * name.countryLanguage.country = $100000000002#100000000388 "Republic of Estonia"
@@ -389,7 +389,7 @@ Description: "Packaged Product Definition: combination package of creme and pess
 * package.package[=].material[+] = $200000003199#200000003214 "PolyEthylene"
 * package.package[=].containedItem.item.reference = Reference(CanifugCremolum-100mg-Pessary-EE-MID)
 * package.package[=].containedItem.amount.value = 6
-* package.package[+].type = $100000073346#100000073346 "Tube"
+* package.package[+].type = $100000073346#100000073561 "Tube"
 * package.package[=].quantity = 1
 * package.package[=].material = $200000003199#200000003200 "Aluminium"
 * package.package[=].containedItem.item.reference = Reference(CanifugCremolum-10mg1g-Cream-EE-MID)
