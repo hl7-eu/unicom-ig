@@ -70,8 +70,8 @@ Usage: #inline
 * combinedPharmaceuticalDoseForm = $200000000004#100000073870 "Solution for infusion"
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal Product subject to medical prescription"
 //* additionalMonitoringIndicator = $additionalMonitoringIndicator#True "True"
-* classification[atc].coding[ema] = $100000093533#100000097305 "Paracetamol"
-* classification[atc].coding[who] = $who-atc#N02BE01 "Paracetamol"
+* classification[0] = $100000093533#100000097305 "Paracetamol"
+* classification[+] = $who-atc#N02BE01 "Paracetamol"
 * name.productName = "Paracetamol Kabi 10 mg/ml, infusioonilahus"
 * name.namePart[invented].part = "Paracetamol Kabi"
 * name.namePart[strength].part = "10 mg/ml"
@@ -166,7 +166,7 @@ Usage: #inline
 * package.type = $100000073346#100000073498 "Box"
 * package.quantity = 1
 * package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#200000002158 "vial"
+* package.package.type = $100000073346#100000073563 "Vial"
 * package.package.quantity = 1
 * package.package.material = $200000003199#200000003205 "Glass type II"
 * package.package.containedItem.item.reference = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034)

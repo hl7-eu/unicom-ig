@@ -4001,11 +4001,10 @@ Usage: #definition
 * compose.include.concept[=].designation[=].value = "Todd unit"
 
 * compose.include.concept[+].code = #Torr
-* compose.include.concept[=].display = "Torr 
-"
+* compose.include.concept[=].display = "Torr"
+
 * compose.include.concept[=].designation[+].language = #en
-* compose.include.concept[=].designation[=].value = "Torr 
-"
+* compose.include.concept[=].designation[=].value = "Torr"
 
 * compose.include.concept[+].code = #10*12/L
 * compose.include.concept[=].display = "trillion per liter"

@@ -2,7 +2,7 @@ Instance: 007-Jangee-0.02mg-3mg-Film-coated-tablet-EE-FullProduct
 InstanceOf: Bundle
 Usage: #example
 Description: "Jangee ethinylestradiol 0.02mg, drosperinone 3mg. Estonia. Without placebo pills."
-* type = #batch
+* type = #transaction
 * entry[0].resource = Jangee-0.02mg-3mg-Film-coated-tablet-EE-MPD
 * entry[=].request.method = #PUT
 * entry[=].request.url = "MedicinalProductDefinition/Jangee-0.02mg-3mg-Film-coated-tablet-EE-MPD"
@@ -55,7 +55,7 @@ Usage: #inline
 * combinedPharmaceuticalDoseForm = $200000000004#100000073665 "Film-coated tablet"
 //* indication = "Raseduse vältimine. Jangee 0,02 mg/3 mg väljakirjutamisel tuleb võtta arvesse naisel käesoleval hetkel esinevaid individuaalseid riskifaktoreid, eriti venoosse trombemboolia (VTE) riskifaktoreid ning VTE riski selle ravimiga, võrreldes teiste kombineeritud hormonaalsete kontratseptiividega."
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
-* classification[atc].coding[ema] = $100000093533#100000095785 "G03AA12"
+* classification = $100000093533#100000095785 "drospirenone and ethinylestradiol"
 * name.productName = "Jangee 0.02 mg/3 mg, õhukese polümeerikattega tabletid"
 * name.namePart[invented].part = "Jangee"
 * name.namePart[strength].part = "0.02 mg/3 mg"
@@ -70,7 +70,7 @@ Usage: #inline
 * subject = Reference(Jangee-0.02mg-3mg-Film-coated-tablet-EE-MPD)
 * type = $220000000060#220000000061 "Marketing Authorisation"
 * region = $100000000002#100000000388 "Republic of Estonia"
-* status = $100000072049#200000017708 "Renewed/Varied"
+* status = $100000072049#200000017708 "Valid - Renewed/Varied"
 * statusDate = "2016-09-14"
 * holder = Reference(LOC-100005719-ExeltisBalticsUAB)
 
@@ -134,7 +134,7 @@ Usage: #inline
 * for[+] = Reference(Jangee-0.02mg-3mg-Film-coated-tablet-EE-MID)
 * for[+] = Reference(Jangee-0.02mg-3mg-Film-coated-tablet-EE-APD)
 * role = $100000072050#100000072072 "Active"
-* substance.code.concept = $sms#100000091531 "Ethinylestradiol"
+* substance.code.concept = $sms#100000091531 "Ethinylestradiol betadex clathrate"
 * substance.strength.presentationRatio.numerator = 0.02 $100000110633#100000110655 "milligram(s)"
 * substance.strength.presentationRatio.denominator = 1 $200000000014#200000002152 "tablet"
 * substance.strength.referenceStrength.substance.concept = $sms#100000091721 "Ethinylestradiol"
