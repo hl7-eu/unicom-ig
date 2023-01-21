@@ -1,33 +1,32 @@
-<p>Package: {{ pckg.quantity }} {{ pckg.type.coding[0].display }}
+<p>Package:
+  <b>{{ pckg.quantity }} {{ pckg.type.coding[0].display }}</b>
   {% assign pcks = pckg.material | size %}
   {% if pcks != 0 %}
     {% for pckgm in pckg.material %}
-      ({{ pckgm.coding[0].display }})
+      <b>({{ pckgm.coding[0].display }})</b>
     {% endfor %}
   {% endif %}
 </p>
 
 Containing:
 {% for pckgcontainedItem in pckg.containedItem %}
-  <div class="container rcorners packitem">
-    {{ pckgcontainedItem.amount.value }} {{ pckgcontainedItem.amount.unit }}
+  <b>{{ pckgcontainedItem.amount.value }} {{ pckgcontainedItem.amount.unit }}
     {{ pckgcontainedItem.item.concept.coding[0].display }}
+  </b>
+  {% assign mids = bundle.entry | where: "resource.resourceType", "ManufacturedItemDefinition" %}
+  {% for midr in mids %}
+    {% assign mid = midr.resource %}
+    {% assign fmid = mid.id | prepend: 'ManufacturedItemDefinition/' %}
 
-    {% assign mids = bundle.entry | where: "resource.resourceType", "ManufacturedItemDefinition" %}
-    {% for midr in mids %}
-      {% assign mid = midr.resource %}
-      {% assign fmid = mid.id | prepend: 'ManufacturedItemDefinition/' %}
-
-      {% if pckgcontainedItem.item.reference.reference == fmid %}
-        {% include mid.liquid mid=mid %}
-      {% endif %}
-    {% endfor %}
-  </div>
+    {% if pckgcontainedItem.item.reference.reference == fmid %}
+      {% include mid.liquid mid=mid %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
 
 {% for pckg in pckg.package %}
   <br/>
-  <div class="container rcorners innerpack bleft">
+  <div class="container rcorners innerpack">
     {% include ppd-package.liquid pckg=pckg %}
   </div>
 {% endfor %}

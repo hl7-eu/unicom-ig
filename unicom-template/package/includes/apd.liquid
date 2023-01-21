@@ -1,4 +1,4 @@
-<div class="container bleft rcorners apd">
+<div class="container rcorners apd listcontainer">
   <p class="divtitle">Administrable Product ({{ forloop.index }} of {{ apds | size }})</p>
   <p>
     Dose form:
@@ -8,10 +8,23 @@
   </p>
 
   <p>
-    Presentation unit:
+    Unit of presentation:
     <b>
       {{ apd.unitOfPresentation.coding[0].display }}
     </b>
+  </p>
+
+  <p>
+    Route of administration:
+    <ul>
+      {% for roas in apd.routeOfAdministration %}
+        <li>
+          <b>
+            {{ roas.code.coding[0].display }}
+          </b>
+        </li>
+      {% endfor %}
+    </ul>
   </p>
 
   Ingredients:
@@ -81,18 +94,5 @@
       {% endif %}
     {% endfor %}
   {% endfor %}
-
-
-
-  Route of administration:
-  <ul>
-    {% for roas in apd.routeOfAdministration %}
-      <li>
-        <b>
-          {{ roas.code.coding[0].display }}
-        </b>
-      </li>
-    {% endfor %}
-  </ul>
 
 </div>

@@ -1,4 +1,5 @@
-<div class="container rcorners mid">
+<div class="container rcorners mid listcontainer">
+  <p class="divtitle">Manufactured Item</p>
   <p>
     Dose form:
     <b>
@@ -21,51 +22,7 @@
     {% assign midid = mid.id | prepend: 'ManufacturedItemDefinition/' %}
     {% for midingfor in miding.for %}
       {% if midingfor.reference == midid %}
-        <div class="container m-1 p-1 rcorners miding">
-          Ingredient
-          <b>
-            {{ miding.id }}</b>
-
-          <p>
-            Role:
-            <b>
-              {{ miding.role.coding[0].display }}
-            </b>
-          </p>
-
-          <p>
-            Substance:
-            <b>
-              {{ miding.substance.code.concept.coding[0].display }}
-            </b>
-          </p>
-
-          {% for strn in miding.substance.strength %}
-            {% if strn.concentrationRatio %}
-              <p>
-                Concentration strength:
-                <b>
-                  {{ strn.concentrationRatio.numerator.value }}{{ strn.concentrationRatio.numerator.unit }} /
-                  {{ strn.concentrationRatio.denominator.value }}{{ strn.concentrationRatio.denominator.unit }}
-                </b>
-              </p>
-            {% endif %}
-          {% endfor %}
-
-          {% for strn in miding.substance.strength %}
-            {% if strn.presentationRatio %}
-              <p>
-                Presentation strength:
-                <b>
-                  {{ strn.presentationRatio.numerator.value }} {{ strn.presentationRatio.numerator.unit }} /
-
-                  {{ strn.presentationRatio.denominator.value }} {{ strn.presentationRatio.denominator.unit }}
-                </b>
-              </p>
-            {% endif %}
-          {% endfor %}
-        </div>
-        {% comment %}{% endcomment %}
+        {% include ingredient.liquid miding=miding %}
 
       {% endif %}
     {% endfor %}

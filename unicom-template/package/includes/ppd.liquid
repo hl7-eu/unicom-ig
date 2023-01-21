@@ -6,17 +6,15 @@
 {% endfor %}
 <p>
   Description:
-  <b>
+  <i>
     {{ ppd.description }}
-  </b>
+  </i>
 </p>
 Marketing Status:
 <ul>
   {% for mkts in ppd.marketingStatus %}
     <li>
-      {{ mkts.country.coding[0].display }}:
-      <b>
-        {{ mkts.status.coding[0].display }}
+      <b>{{ mkts.country.coding[0].display }}: {{ mkts.status.coding[0].display }}
       </b>
     </li>
   {% endfor %}
@@ -26,14 +24,14 @@ Marketing Status:
   <ul>
     {% for quant in ppd.containedItemQuantity %}
       <li>
-        {{ quant.value }} {{ quant.unit | pluralize: quant.unit }}</li>
+        <b>{{ quant.value }} {{ quant.unit | pluralize: quant.unit }}</li></b>
     {% endfor %}
   </ul>
 </p>
 
 <p>
   {% assign pckg = ppd.package %}
-  Pack:<div class="container rcorners pack bleft">
+    <div class="container rcorners pack">
     {% comment %}Include the ppd-package (recursive, with pckg as the object to parse) {% endcomment %}
     {% include ppd-package.liquid pckg=pckg %}
   </div>

@@ -6,7 +6,18 @@
   <h4>
     {{ mpd.name[0].productName }}
   </h4>
+
+  {% comment %}and MPD identifiers{% endcomment %}
+  {% for pid in mpd.identifier %}
+    {{ pid.system | split: '/' | last | upcase }}:
+    <b>
+      {{ pid.value }}
+    </b>
+    </br>
+  {% endfor %}
+  <hr>
   {% comment %}and name parts{% endcomment %}
+  <p>Full name: <b>{{ mpd.name[0].productName }}</b></p>
   {% for namepart in mpd.name[0].namePart %}
     <p>
       {{ namepart.type.coding[0].display }}:
@@ -15,68 +26,63 @@
       </b>
     </p>
   {% endfor %}
-  {% comment %}and MPD identifiers{% endcomment %}
-  {% for pid in mpd.identifier %}
-    {{ pid.system | split: '/' | last | upcase }}:
-    <b>
-      {{ pid.value }}
-    </b>
-  {% endfor %}
+
 
   {% comment %}for each name (currently [0] but should be all) print the languages{% endcomment %}
   {% comment %}FIX{% endcomment %}
   {% if mpd.name[0].countryLanguage %}
     <div>
-      {% for lang in mpd.name[0].countryLanguage %}
-        <p>
-          Country:
-          <b>
-            {{ lang.country.coding[0].display }}
-          </b>
-        </p>
-        <p>
-          Language:
-          <b>
-            {{ lang.language.coding[0].display }}
-          </b>
+      <p>
+        Name usage:
+        {% for lang in mpd.name[0].countryLanguage %}
+
+          <b>{{ lang.language.coding[0].display }} ({{ lang.country.coding[0].display }})</b>
         </p>
 
       {% endfor %}
     </div>
   {% endif %}
-  {% comment %}print status and domain{% endcomment %}
-  <div>
-    <p>
-      status: {{ mpd.status.coding[0].display }}
-    </p>
-  </div>
-  <div>
-    <p>
-      Domain: {{ mpd.domain.coding[0].display }}
-    </p>
-  </div>
+  <hr>
   {% comment %}print combined dose form - if there's many, this should be adjusted{% endcomment %}
   <div>
     <p>
-      Combined pharmaceutical dose form: {{ mpd.combinedPharmaceuticalDoseForm.coding[0].display }}
+      Authorised dose form:
+      <b>{{ mpd.combinedPharmaceuticalDoseForm.coding[0].display }}</b>
     </p>
   </div>
   <div>
     <p>
-      Legal Status of Supply: {{ mpd.legalStatusOfSupply.coding[0].display }}
+      Legal status of supply:
+      <b>{{ mpd.legalStatusOfSupply.coding[0].display }}</b>
     </p>
   </div>
-
-  {% comment %}print mpd classification{% endcomment %}
-  <div class="container rcorners classif listcontainer">
-    <div class="container rcorners classif">
-      {% for classif in mpd.classification %}
-        {% for class in classif.coding %}
-          {{ class.display }} ({{ class.code }}) <br/>
-        {% endfor %}
-      {% endfor %}
-    </div>
+  {% comment %}print status and domain{% endcomment %}
+  <div>
+    <p>
+      Domain:
+      <b>{{ mpd.domain.coding[0].display }}</b>
+    </p>
   </div>
+  <div>
+    <p>
+      Resource status:
+      <b>{{ mpd.status.coding[0].display }}</b>
+    </p>
+  </div>
+<hr>
+  {% comment %}print mpd classification{% endcomment %}
+  <div>
+  Product classification:
+    {% for classif in mpd.classification %}
+      <ul>
+          {% for class in classif.coding %}
+            <li> 
+                <b>{{ class.code }}  {{ class.display }}</b>
+            </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>
 
   {% comment %}Get all RAs (RegAuthorization) from the Bundle{% endcomment %}
   {% assign ras = bundle.entry | where: "resource.resourceType", "RegulatedAuthorization" %}
