@@ -7,7 +7,7 @@
     </b>
   </p>
   <p>
-    Presentation unit:
+    Unit of presentation:
     <b>
       {{ mid.unitOfPresentation.coding[0].display }}
     </b>
@@ -22,7 +22,7 @@
     {% assign midid = mid.id | prepend: 'ManufacturedItemDefinition/' %}
     {% for midingfor in miding.for %}
       {% if midingfor.reference == midid %}
-        {% include ingredient.liquid miding=miding %}
+        {% include midingredient.liquid miding=miding %}
 
       {% endif %}
     {% endfor %}
