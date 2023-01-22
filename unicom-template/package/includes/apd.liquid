@@ -29,70 +29,23 @@
 
   Ingredients:
   {% comment %}Get Ings from Bundle {% endcomment %}
-  {% assign apdings = entry | where: "resource.resourceType", "Ingredient" %}
-    {% for apdingr in apdings %}
+
+
+
+  {% assign apdings = bundle.entry | where: "resource.resourceType", "Ingredient" %}
+
+  {% for apdingr in apdings %}
     {% assign apding = apdingr.resource %}
 
-    {% assign apdingtid = apding.id | prepend: 'AdministrableProductDefinition/' %}
-    {% assign apdtid = apd.id | prepend: 'AdministrableProductDefinition/' %}
-
-    {% comment %}if the ingredient's SECOND (TO FIX) .for is the current APD, {% endcomment %}
+    {% assign apdid = apd.id | prepend: 'AdministrableProductDefinition/' %}
 
     {% for apdingfor in apding.for %}
-      {% if apdingfor.reference == apdtid %}
-        <div class="container   rcorners apding">
-          <b>
-            {{ apding.id }}</b>
-          <p>
-            Status:
-            <b>
-              {{ apding.status | capitalize }}
-            </b>
-          </p>
+      {% if apdingfor.reference == apdid %}
+        {% include apdingredient.liquid apding=apding %}
 
-          <p>
-            Role:
-            <b>
-              {{ apding.role.coding[0].display }}
-            </b>
-          </p>
-
-          <p>
-            Substance:
-            <b>
-              {{ apding.substance.code.concept.coding[0].display }}
-            </b>
-          </p>
-
-          {% for strn in apding.substance.strength %}
-            {% if strn.concentrationRatio %}
-              <p>
-                Concentration strength:
-                <b>
-                  {{ strn.concentrationRatio.numerator.value }}{{ strn.concentrationRatio.numerator.unit }} /
-                  {{ strn.concentrationRatio.denominator.value }}{{ strn.concentrationRatio.denominator.unit }}
-                </b>
-              </p>
-            {% endif %}
-          {% endfor %}
-
-          {% for strn in apding.substance.strength %}
-            {% if strn.presentationRatio %}
-              <p>
-                Presentation strength:
-                <b>
-                  {{ strn.presentationRatio.numerator.value }} {{ strn.presentationRatio.numerator.unit }} /
-
-                  {{ strn.presentationRatio.denominator.value }} {{ strn.presentationRatio.denominator.unit }}
-                </b>
-              </p>
-            {% endif %}
-          {% endfor %}
-
-
-        </div>
       {% endif %}
     {% endfor %}
   {% endfor %}
+
 
 </div>
