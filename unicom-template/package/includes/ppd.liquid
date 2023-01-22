@@ -1,16 +1,19 @@
 {% for ppid in ppd.identifier %}
-  {{ ppid.system | split: '/' | last | upcase }}:
+  <p>{{ ppid.system | split: '/' | last | upcase }}:
   <b>
     {{ ppid.value }}
   </b>
+  </p>
 {% endfor %}
 <p>
   Description:
+  </br>
   <i>
     {{ ppd.description }}
   </i>
 </p>
-Marketing Status:
+<p>
+Marketing status:
 <ul>
   {% for mkts in ppd.marketingStatus %}
     <li>
@@ -19,8 +22,9 @@ Marketing Status:
     </li>
   {% endfor %}
 </ul>
+</p>
 <p>
-  Pack Size:
+  Pack size:
   <ul>
     {% for quant in ppd.containedItemQuantity %}
       <li>
@@ -35,5 +39,4 @@ Marketing Status:
     {% comment %}Include the ppd-package (recursive, with pckg as the object to parse) {% endcomment %}
     {% include ppd-package.liquid pckg=pckg %}
   </div>
-
 </p>
