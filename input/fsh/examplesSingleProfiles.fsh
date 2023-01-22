@@ -242,6 +242,7 @@ InstanceOf: PPLPackagedProductDefinition
 Usage: #example
 Description: "Packaged Product Definition: powder for solution in 10 vials"
 
+* identifier[pcid].value = "EE-100009199-27834-1529962"
 * packageFor = Reference(Cefuroxime-MIP-1500mg-EE-MPD)
 * containedItemQuantity = 10 $200000000014#200000002158 "Vial"
 * description = "I tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 10 viaali"
