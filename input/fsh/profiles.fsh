@@ -391,8 +391,8 @@ Description: """Packaged Product"""
       * code from all-units-vs
 
 // the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* package.property 0..0
-* package.property.type from NoBinding (example)
+* packaging.property 0..0
+* packaging.property.type from NoBinding (example)
 
 
 // TO DO: I'm not sure we want to use Organisation as a separate resource, but right now it is. See the comment at RegulatedAuthorization

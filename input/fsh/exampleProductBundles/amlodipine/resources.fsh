@@ -59,11 +59,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Hipres 10 mg tabletid"
-* name.namePart[invented].part = "Hipres"
-* name.namePart[strength].part = "10 mg"
-* name.namePart[doseForm].part = "tabletid"
-* name.countryLanguage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.countryLanguage.language = $100000072057#100000072172 "Estonian"
+* name.part[invented].part = "Hipres"
+* name.part[strength].part = "10 mg"
+* name.part[doseForm].part = "tabletid"
+* name.usage.country = $100000000002#100000000388 "Republic of Estonia"
+* name.usage.language = $100000072057#100000072172 "Estonian"
 
 
 Instance: Hipres-10mg-Tablet-EE-RA
@@ -101,16 +101,16 @@ Usage: #inline
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 1
-* package.package.material[0] = $200000003199#200000003200 "Aluminium"
-* package.package.material[+] = $200000003199#200000003210 "Orientated PolyAmide"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.containedItem[0].item.reference = Reference(Hipres-10mg-Tablet-EE-MID)
-* package.package.containedItem[=].amount = 30 $200000000014#200000002152 "tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material[0] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.material[+] = $200000003199#200000003210 "Orientated PolyAmide"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.containedItem[0].item.reference = Reference(Hipres-10mg-Tablet-EE-MID)
+* packaging.packaging.containedItem[=].amount = 30 $200000000014#200000002152 "tablet"
 
 
 Instance: Hipres-10mg-Tablet-EE-PPD-1551406
@@ -124,16 +124,16 @@ Usage: #inline
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 1
-* package.package.material[0] = $200000003199#200000003200 "Aluminium"
-* package.package.material[+] = $200000003199#200000003210 "Orientated PolyAmide"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.containedItem[0].item.reference = Reference(Hipres-10mg-Tablet-EE-MID)
-* package.package.containedItem[=].amount = 60 $200000000014#200000002152 "tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material[0] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.material[+] = $200000003199#200000003210 "Orientated PolyAmide"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.containedItem[0].item.reference = Reference(Hipres-10mg-Tablet-EE-MID)
+* packaging.packaging.containedItem[=].amount = 60 $200000000014#200000002152 "tablet"
 
 
 Instance: Hipres-10mg-Tablet-EE-MID
@@ -221,11 +221,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Hipres 5 mg tabletid"
-* name.namePart[invented].part = "Hipres"
-* name.namePart[strength].part = "5 mg"
-* name.namePart[doseForm].part = "tabletid"
-* name.countryLanguage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.countryLanguage.language = $100000072057#100000072172 "Estonian"
+* name.part[invented].part = "Hipres"
+* name.part[strength].part = "5 mg"
+* name.part[doseForm].part = "tabletid"
+* name.usage.country = $100000000002#100000000388 "Republic of Estonia"
+* name.usage.language = $100000072057#100000072172 "Estonian"
 
 Instance: Hipres-5mg-Tablet-EE-RA
 InstanceOf: PPLRegulatedAuthorization
@@ -261,16 +261,16 @@ Usage: #inline
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 1
-* package.package.material[0] = $200000003199#200000003200 "Aluminium"
-* package.package.material[+] = $200000003199#200000003210 "Orientated PolyAmide"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.containedItem[0].item.reference = Reference(Hipres-5mg-Tablet-EE-MID)
-* package.package.containedItem[=].amount = 30 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material[0] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.material[+] = $200000003199#200000003210 "Orientated PolyAmide"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.containedItem[0].item.reference = Reference(Hipres-5mg-Tablet-EE-MID)
+* packaging.packaging.containedItem[=].amount = 30 $200000000014#200000002152 "Tablet"
 
 Instance: Hipres-5mg-Tablet-EE-PPD-1551383
 InstanceOf: PPLPackagedProductDefinition
@@ -283,16 +283,16 @@ Usage: #inline
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 1
-* package.package.material[0] = $200000003199#200000003200 "Aluminium"
-* package.package.material[+] = $200000003199#200000003210 "Orientated PolyAmide"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.containedItem[0].item.reference = Reference(Hipres-5mg-Tablet-EE-MID)
-* package.package.containedItem[=].amount = 60 $200000000014#200000002152 "tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material[0] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.material[+] = $200000003199#200000003210 "Orientated PolyAmide"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.containedItem[0].item.reference = Reference(Hipres-5mg-Tablet-EE-MID)
+* packaging.packaging.containedItem[=].amount = 60 $200000000014#200000002152 "tablet"
 
 
 Instance: Hipres-5mg-Tablet-EE-MID
@@ -1174,11 +1174,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Accord 10 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Accord"
-* name.namePart[strength].part = "10 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Accord"
+* name.part[strength].part = "10 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLaccord-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1213,19 +1213,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 7
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLaccord-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 14 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 7
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLaccord-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 14 $200000000014#200000002152 "Tablet"
 
 Instance: AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -1238,17 +1238,17 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 2
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073497 "Bottle"
-* package.package.quantity = 1
-* package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
-* package.package.containedItem.item.reference = Reference(AMLaccord-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 500 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 2
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+* packaging.packaging.type = $100000073346#100000073497 "Bottle"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material = $200000003199#200000003215 "High Density PolyEthylene"
+* packaging.packaging.containedItem.item.reference = Reference(AMLaccord-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 500 $200000000014#200000002152 "Tablet"
 
 Instance: AMLaccord-10mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -1303,11 +1303,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Accord 5 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Accord"
-* name.namePart[strength].part = "5 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Accord"
+* name.part[strength].part = "5 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLaccord-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1334,19 +1334,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 2
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLaccord-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 14 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 2
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLaccord-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 14 $200000000014#200000002152 "Tablet"
 
 Instance: AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -1359,19 +1359,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 7
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLaccord-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 14 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 7
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLaccord-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 14 $200000000014#200000002152 "Tablet"
 
 Instance: AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition03
 InstanceOf: PPLPackagedProductDefinition
@@ -1384,17 +1384,17 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 2
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073497 "Bottle"
-* package.package.quantity = 1
-* package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
-* package.package.containedItem.item.reference = Reference(AMLaccord-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 500 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 2
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+* packaging.packaging.type = $100000073346#100000073497 "Bottle"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material = $200000003199#200000003215 "High Density PolyEthylene"
+* packaging.packaging.containedItem.item.reference = Reference(AMLaccord-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 500 $200000000014#200000002152 "Tablet"
 
 Instance: AMLaccord-5mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -1449,11 +1449,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Aurobindo 10 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Aurobindo"
-* name.namePart[strength].part = "10 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Aurobindo"
+* name.part[strength].part = "10 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLaurobindo-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1488,19 +1488,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 10
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLaurobindo-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLaurobindo-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLaurobindo-10mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -1555,11 +1555,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Bluefish 10 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Bluefish"
-* name.namePart[strength].part = "10 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Bluefish"
+* name.part[strength].part = "10 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLbluefish-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1594,19 +1594,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 10
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLbluefish-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLbluefish-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLbluefish-10mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -1661,11 +1661,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Bluefish 5 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Bluefish"
-* name.namePart[strength].part = "5 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Bluefish"
+* name.part[strength].part = "5 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLbluefish-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1692,19 +1692,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 10
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLbluefish-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLbluefish-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLbluefish-5mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -1717,19 +1717,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 3
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLbluefish-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 3
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLbluefish-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLbluefish-5mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -1784,11 +1784,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Jubilant 10 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Jubilant"
-* name.namePart[strength].part = "10 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Jubilant"
+* name.part[strength].part = "10 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLjubilant-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1823,19 +1823,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073410 "Do not store above 25 °C"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 10
-* package.package.material[0] = $200000003199#200000003208 "Plastic"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLjubilant-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073410 "Do not store above 25 °C"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material[0] = $200000003199#200000003208 "Plastic"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLjubilant-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLjubilant-10mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -1888,11 +1888,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Jubilant 5 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Jubilant"
-* name.namePart[strength].part = "5 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Jubilant"
+* name.part[strength].part = "5 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLjubilant-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1917,19 +1917,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073410 "Do not store above 25 °C"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 10
-* package.package.material[0] = $200000003199#200000003208 "Plastic"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLjubilant-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073410 "Do not store above 25 °C"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material[0] = $200000003199#200000003208 "Plastic"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLjubilant-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLjubilant-5mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -1984,11 +1984,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Krka 10 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Krka"
-* name.namePart[strength].part = "10 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Krka"
+* name.part[strength].part = "10 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLkrka-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2023,19 +2023,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 10
-* package.package.material[0] = $200000003199#200000003210 "Orientated PolyAmide"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.containedItem.item.reference = Reference(AMLkrka-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material[0] = $200000003199#200000003210 "Orientated PolyAmide"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.containedItem.item.reference = Reference(AMLkrka-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLkrka-10mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -2048,19 +2048,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 3
-* package.package.material[0] = $200000003199#200000003210 "Orientated PolyAmide"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.containedItem.item.reference = Reference(AMLkrka-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 3
+* packaging.packaging.material[0] = $200000003199#200000003210 "Orientated PolyAmide"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.containedItem.item.reference = Reference(AMLkrka-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLkrka-10mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -2115,11 +2115,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Krka 5 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Krka"
-* name.namePart[strength].part = "5 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Krka"
+* name.part[strength].part = "5 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLkrka-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2146,19 +2146,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 10
-* package.package.material[0] = $200000003199#200000003210 "Orientated PolyAmide"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.containedItem.item.reference = Reference(AMLkrka-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material[0] = $200000003199#200000003210 "Orientated PolyAmide"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.containedItem.item.reference = Reference(AMLkrka-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLkrka-5mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -2171,19 +2171,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 3
-* package.package.material[0] = $200000003199#200000003210 "Orientated PolyAmide"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.containedItem.item.reference = Reference(AMLkrka-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 3
+* packaging.packaging.material[0] = $200000003199#200000003210 "Orientated PolyAmide"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.containedItem.item.reference = Reference(AMLkrka-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLkrka-5mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -2239,11 +2239,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Medical Valley 10 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Medical Valley"
-* name.namePart[strength].part = "10 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Medical Valley"
+* name.part[strength].part = "10 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLmedvalley-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2270,20 +2270,20 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073411 "Do not store above 30 °C"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 10
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLmedvalley-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073411 "Do not store above 30 °C"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLmedvalley-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLmedvalley-10mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -2296,18 +2296,18 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073411 "Do not store above 30 °C"
-* package.package.type = $100000073346#100000073497 "Bottle"
-* package.package.quantity = 1
-* package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
-* package.package.containedItem.item.reference = Reference(AMLmedvalley-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 105 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073411 "Do not store above 30 °C"
+* packaging.packaging.type = $100000073346#100000073497 "Bottle"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material = $200000003199#200000003215 "High Density PolyEthylene"
+* packaging.packaging.containedItem.item.reference = Reference(AMLmedvalley-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 105 $200000000014#200000002152 "Tablet"
 
 Instance: AMLmedvalley-10mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -2363,11 +2363,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Medical Valley 5 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Medical Valley"
-* name.namePart[strength].part = "5 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Medical Valley"
+* name.part[strength].part = "5 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLmedvalley-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2402,20 +2402,20 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073411 "Do not store above 30 °C"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 10
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLmedvalley-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073411 "Do not store above 30 °C"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLmedvalley-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLmedvalley-5mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -2428,18 +2428,18 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073411 "Do not store above 30 °C"
-* package.package.type = $100000073346#100000073497 "Bottle"
-* package.package.quantity = 1
-* package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
-* package.package.containedItem.item.reference = Reference(AMLmedvalley-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 105 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073411 "Do not store above 30 °C"
+* packaging.packaging.type = $100000073346#100000073497 "Bottle"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material = $200000003199#200000003215 "High Density PolyEthylene"
+* packaging.packaging.containedItem.item.reference = Reference(AMLmedvalley-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 105 $200000000014#200000002152 "Tablet"
 
 Instance: AMLmedvalley-5mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -2494,11 +2494,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodistad 10 mg Tablett"
-* name.namePart[invented].part = "Amlodistad"
-* name.namePart[strength].part = "10 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodistad"
+* name.part[strength].part = "10 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: Amlodistad-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2533,22 +2533,22 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 10
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003214 "PolyEthylene"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(Amlodistad-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003214 "PolyEthylene"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(Amlodistad-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: Amlodistad-10mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -2561,22 +2561,22 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 3
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003214 "PolyEthylene"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(Amlodistad-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 3
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003214 "PolyEthylene"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(Amlodistad-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: Amlodistad-10mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -2629,11 +2629,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodistad 5 mg Tablett"
-* name.namePart[invented].part = "Amlodistad"
-* name.namePart[strength].part = "5 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodistad"
+* name.part[strength].part = "5 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: Amlodistad-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2659,22 +2659,22 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 10
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003214 "PolyEthylene"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(Amlodistad-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003214 "PolyEthylene"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(Amlodistad-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: Amlodistad-5mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -2686,22 +2686,22 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 3
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003214 "PolyEthylene"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(Amlodistad-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 3
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003214 "PolyEthylene"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(Amlodistad-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: Amlodistad-5mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -2755,11 +2755,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Sandoz 10 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Sandoz"
-* name.namePart[strength].part = "10 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Sandoz"
+* name.part[strength].part = "10 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLsandoz-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2794,19 +2794,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073497 "Bottle"
-* package.package.quantity = 1
-* package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
-* package.package.containedItem.item.reference = Reference(AMLsandoz-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 100 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073497 "Bottle"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material = $200000003199#200000003215 "High Density PolyEthylene"
+* packaging.packaging.containedItem.item.reference = Reference(AMLsandoz-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 100 $200000000014#200000002152 "Tablet"
 
 Instance: AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -2819,19 +2819,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073497 "Bottle"
-* package.package.quantity = 1
-* package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
-* package.package.containedItem.item.reference = Reference(AMLsandoz-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 105 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073497 "Bottle"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material = $200000003199#200000003215 "High Density PolyEthylene"
+* packaging.packaging.containedItem.item.reference = Reference(AMLsandoz-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 105 $200000000014#200000002152 "Tablet"
 
 Instance: AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition03
 InstanceOf: PPLPackagedProductDefinition
@@ -2844,19 +2844,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073497 "Bottle"
-* package.package.quantity = 1
-* package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
-* package.package.containedItem.item.reference = Reference(AMLsandoz-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 250 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073497 "Bottle"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material = $200000003199#200000003215 "High Density PolyEthylene"
+* packaging.packaging.containedItem.item.reference = Reference(AMLsandoz-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 250 $200000000014#200000002152 "Tablet"
 
 Instance: AMLsandoz-10mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -2909,11 +2909,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Sandoz 5 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Sandoz"
-* name.namePart[strength].part = "5 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Sandoz"
+* name.part[strength].part = "5 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLsandoz-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2939,19 +2939,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073497 "Bottle"
-* package.package.quantity = 1
-* package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
-* package.package.containedItem.item.reference = Reference(AMLsandoz-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 100 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073497 "Bottle"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material = $200000003199#200000003215 "High Density PolyEthylene"
+* packaging.packaging.containedItem.item.reference = Reference(AMLsandoz-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 100 $200000000014#200000002152 "Tablet"
 
 Instance: AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -2964,19 +2964,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073497 "Bottle"
-* package.package.quantity = 1
-* package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
-* package.package.containedItem.item.reference = Reference(AMLsandoz-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 105 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073497 "Bottle"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material = $200000003199#200000003215 "High Density PolyEthylene"
+* packaging.packaging.containedItem.item.reference = Reference(AMLsandoz-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 105 $200000000014#200000002152 "Tablet"
 
 Instance: AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition03
 InstanceOf: PPLPackagedProductDefinition
@@ -2989,19 +2989,19 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 3
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073497 "Bottle"
-* package.package.quantity = 1
-* package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
-* package.package.containedItem.item.reference = Reference(AMLsandoz-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 250 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 3
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073497 "Bottle"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material = $200000003199#200000003215 "High Density PolyEthylene"
+* packaging.packaging.containedItem.item.reference = Reference(AMLsandoz-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 250 $200000000014#200000002152 "Tablet"
 
 Instance: AMLsandoz-5mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -3055,11 +3055,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Teva 10 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Teva"
-* name.namePart[strength].part = "10 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Teva"
+* name.part[strength].part = "10 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLteva-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -3094,23 +3094,23 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073410 "Do not store above 25 °C"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073421 "Store in the original package"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073427 "in order to protect from moisture"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 10
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLteva-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073410 "Do not store above 25 °C"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073421 "Store in the original package"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073427 "in order to protect from moisture"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLteva-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLteva-10mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -3123,28 +3123,28 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage[0].type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage[=].periodDuration.value = 2
-// * package.shelfLifeStorage[=].periodDuration.unit = "years"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[0] = $100000073344#100000073410 "Do not store above 25 °C"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073421 "Store in the original package"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073427 "in order to protect from moisture"
-// * package.shelfLifeStorage[+].type = $100000073343#100000073404 "Shelf life after first opening the immediate packaging"
-// * package.shelfLifeStorage[=].periodDuration.value = 4
-// * package.shelfLifeStorage[=].periodDuration.unit = "months"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[0] = $100000073344#100000073410 "Do not store above 25 °C"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073421 "Store in the original package"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073427 "in order to protect from moisture"
-* package.package.type = $100000073346#100000073497 "Bottle"
-* package.package.quantity = 1
-* package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
-* package.package.containedItem.item.reference = Reference(AMLteva-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 250 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage[0].type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage[=].periodDuration.value = 2
+// * packaging.shelfLifeStorage[=].periodDuration.unit = "years"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[0] = $100000073344#100000073410 "Do not store above 25 °C"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073421 "Store in the original package"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073427 "in order to protect from moisture"
+// * packaging.shelfLifeStorage[+].type = $100000073343#100000073404 "Shelf life after first opening the immediate packaging"
+// * packaging.shelfLifeStorage[=].periodDuration.value = 4
+// * packaging.shelfLifeStorage[=].periodDuration.unit = "months"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[0] = $100000073344#100000073410 "Do not store above 25 °C"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073421 "Store in the original package"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073427 "in order to protect from moisture"
+* packaging.packaging.type = $100000073346#100000073497 "Bottle"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material = $200000003199#200000003215 "High Density PolyEthylene"
+* packaging.packaging.containedItem.item.reference = Reference(AMLteva-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 250 $200000000014#200000002152 "Tablet"
 
 Instance: AMLteva-10mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -3200,11 +3200,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipin Teva 5 mg Tablett"
-* name.namePart[invented].part = "Amlodipin Teva"
-* name.namePart[strength].part = "5 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipin Teva"
+* name.part[strength].part = "5 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLteva-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -3231,23 +3231,23 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073410 "Do not store above 25 °C"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073421 "Store in the original package"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073427 "in order to protect from moisture"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 10
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLteva-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073410 "Do not store above 25 °C"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073421 "Store in the original package"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073427 "in order to protect from moisture"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLteva-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 10 $200000000014#200000002152 "Tablet"
 
 Instance: AMLteva-5mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -3259,28 +3259,28 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage[0].type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage[=].periodDuration.value = 2
-// * package.shelfLifeStorage[=].periodDuration.unit = "years"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[0] = $100000073344#100000073410 "Do not store above 25 °C"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073421 "Store in the original package"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073427 "in order to protect from moisture"
-// * package.shelfLifeStorage[+].type = $100000073343#100000073404 "Shelf life after first opening the immediate packaging"
-// * package.shelfLifeStorage[=].periodDuration.value = 4
-// * package.shelfLifeStorage[=].periodDuration.unit = "months"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[0] = $100000073344#100000073410 "Do not store above 25 °C"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073421 "Store in the original package"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-// * package.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073427 "in order to protect from moisture"
-* package.package.type = $100000073346#100000073497 "Bottle"
-* package.package.quantity = 1
-* package.package.material = $200000003199#200000003215 "High Density PolyEthylene"
-* package.package.containedItem.item.reference = Reference(AMLteva-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 250 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage[0].type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage[=].periodDuration.value = 2
+// * packaging.shelfLifeStorage[=].periodDuration.unit = "years"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[0] = $100000073344#100000073410 "Do not store above 25 °C"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073421 "Store in the original package"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073427 "in order to protect from moisture"
+// * packaging.shelfLifeStorage[+].type = $100000073343#100000073404 "Shelf life after first opening the immediate packaging"
+// * packaging.shelfLifeStorage[=].periodDuration.value = 4
+// * packaging.shelfLifeStorage[=].periodDuration.unit = "months"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[0] = $100000073344#100000073410 "Do not store above 25 °C"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073421 "Store in the original package"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+// * packaging.shelfLifeStorage[=].specialPrecautionsForStorage[+] = $100000073344#100000073427 "in order to protect from moisture"
+* packaging.packaging.type = $100000073346#100000073497 "Bottle"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material = $200000003199#200000003215 "High Density PolyEthylene"
+* packaging.packaging.containedItem.item.reference = Reference(AMLteva-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 250 $200000000014#200000002152 "Tablet"
 
 Instance: AMLteva-5mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -3335,11 +3335,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipine Vitabalans 10 mg Tablett"
-* name.namePart[invented].part = "Amlodipine Vitabalans"
-* name.namePart[strength].part = "10 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipine Vitabalans"
+* name.part[strength].part = "10 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLvitabalans-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -3374,21 +3374,21 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 4
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLvitabalans-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 25 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 4
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLvitabalans-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 25 $200000000014#200000002152 "Tablet"
 
 Instance: AMLvitabalans-10mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -3401,21 +3401,21 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 1
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLvitabalans-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 30 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLvitabalans-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 30 $200000000014#200000002152 "Tablet"
 
 Instance: AMLvitabalans-10mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -3472,11 +3472,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Amlodipine Vitabalans 5 mg Tablett"
-* name.namePart[invented].part = "Amlodipine Vitabalans"
-* name.namePart[strength].part = "5 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Amlodipine Vitabalans"
+* name.part[strength].part = "5 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: AMLvitabalans-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -3503,21 +3503,21 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 4
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLvitabalans-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 25 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 4
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLvitabalans-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 25 $200000000014#200000002152 "Tablet"
 
 Instance: AMLvitabalans-5mg-Tablet-SE-IS-PackagedProductDefinition02
 InstanceOf: PPLPackagedProductDefinition
@@ -3530,21 +3530,21 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 5
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
-// * package.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 1
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(AMLvitabalans-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 30 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 5
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073423 "Keep the container in the outer carton"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073430 "Protect from light"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 1
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(AMLvitabalans-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 30 $200000000014#200000002152 "Tablet"
 
 Instance: AMLvitabalans-5mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -3599,11 +3599,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Norvasc® 10 mg Tablett"
-* name.namePart[invented].part = "Norvasc®"
-* name.namePart[strength].part = "10 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Norvasc®"
+* name.part[strength].part = "10 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: Norvasc-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -3638,20 +3638,20 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 4
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073410 "Do not store above 25 °C"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 7
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(Norvasc-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 14 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 4
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073410 "Do not store above 25 °C"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 7
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(Norvasc-10mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 14 $200000000014#200000002152 "Tablet"
 
 Instance: Norvasc-10mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
@@ -3707,11 +3707,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "Norvasc® 5 mg Tablett"
-* name.namePart[invented].part = "Norvasc®"
-* name.namePart[strength].part = "5 mg"
-* name.namePart[doseForm].part = "Tablett"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Norvasc®"
+* name.part[strength].part = "5 mg"
+* name.part[doseForm].part = "Tablett"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 Instance: Norvasc-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -3738,20 +3738,20 @@ Usage: #inline
 // * description.extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-// * package.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
-// * package.shelfLifeStorage.periodDuration.value = 4
-// * package.shelfLifeStorage.periodDuration.unit = "years"
-// * package.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073410 "Do not store above 25 °C"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 7
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(Norvasc-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 14 $200000000014#200000002152 "Tablet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+// * packaging.shelfLifeStorage.type = $100000073343#100000073403 "Shelf life of the medicinal product as packaged for sale"
+// * packaging.shelfLifeStorage.periodDuration.value = 4
+// * packaging.shelfLifeStorage.periodDuration.unit = "years"
+// * packaging.shelfLifeStorage.specialPrecautionsForStorage = $100000073344#100000073410 "Do not store above 25 °C"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 7
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(Norvasc-5mg-Tablet-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 14 $200000000014#200000002152 "Tablet"
 
 Instance: Norvasc-5mg-Tablet-SE-IS-ManufacturedItemDefinition
 InstanceOf: PPLManufacturedItemDefinition
