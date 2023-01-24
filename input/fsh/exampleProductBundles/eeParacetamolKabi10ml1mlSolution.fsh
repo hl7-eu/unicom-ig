@@ -157,7 +157,7 @@ InstanceOf: PPLPackagedProductDefinition
 Usage: #inline
 * identifier[pcid].value = "EE-100008123-25101-1424034"
 * packageFor = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD)
-* containedItemQuantity = 1 $200000000014#200000002158 "vial"
+* containedItemQuantity = 1 $200000000014#100000073563 "vial"
 * description = " 50 ml ja 100 ml II tüüpi klaasist viaalid, mis on suletud bromobutüülkorgi ja alumiinium/plastik  äratõmmatava korgiga."
 //  * extension.url = "http://ema.europa.eu/fhir/extension/language"
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
@@ -166,7 +166,7 @@ Usage: #inline
 * packaging.type = $100000073346#100000073498 "Box"
 * packaging.quantity = 1
 * packaging.material = $200000003199#200000003529 "Cardboard"
-* packaging.packaging.type = $100000073346#200000002158 "vial"
+* packaging.packaging.type = $100000073346#100000073563 "vial"
 * packaging.packaging.quantity = 1
 * packaging.packaging.material = $200000003199#200000003205 "Glass type II"
 * packaging.packaging.containedItem.item.reference = Reference(Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034)

@@ -231,7 +231,7 @@ Description: "Packaged Product Definition: powder for solution in 1 vial"
 * packaging.type = $100000073346#100000073498 "Box"
 * packaging.quantity = 1
 * packaging.material = $200000003199#200000003529 "Cardboard"
-* packaging.packaging.type = $100000073346#200000002158 "vial"
+* packaging.packaging.type = $100000073346#100000073563 "vial"
 * packaging.packaging.quantity = 1
 * packaging.packaging.material = $200000003199#200000003204 "Glass type I"
 * packaging.packaging.containedItem.item.reference = Reference(Cefuroxime-MIP-1500mg-EE-MID)
@@ -252,7 +252,7 @@ Description: "Packaged Product Definition: powder for solution in 10 vials"
 * packaging.type = $100000073346#100000073498 "Box"
 * packaging.quantity = 1
 * packaging.material = $200000003199#200000003529 "Cardboard"
-* packaging.packaging.type = $100000073346#200000002158 "vial"
+* packaging.packaging.type = $100000073346#100000073563 "vial"
 * packaging.packaging.quantity = 10
 * packaging.packaging.material = $200000003199#200000003204 "Glass type I"
 * packaging.packaging.containedItem.item.reference = Reference(Cefuroxime-MIP-1500mg-EE-MID)
@@ -389,7 +389,7 @@ Description: "Packaged Product Definition: combination package of creme and pess
 * packaging.packaging[=].material[+] = $200000003199#200000003214 "PolyEthylene"
 * packaging.packaging[=].containedItem.item.reference = Reference(CanifugCremolum-100mg-Pessary-EE-MID)
 * packaging.packaging[=].containedItem.amount.value = 6
-* packaging.packaging[+].type = $100000073346#100000073346 "Tube"
+* packaging.packaging[+].type = $100000073346#100000073561 "Tube"
 * packaging.packaging[=].quantity = 1
 * packaging.packaging[=].material = $200000003199#200000003200 "Aluminium"
 * packaging.packaging[=].containedItem.item.reference = Reference(CanifugCremolum-10mg1g-Cream-EE-MID)
