@@ -25,7 +25,8 @@ Bundle visualizer can be created, modified and used inside a FHIR IG or in a sep
 Bundle visualizer is a generic tool. Even though first introduced in UNICOM project, where it is used for MedicationDefinition resources, it can be used for any kind of resources.
 
 #### Comparison of two viewers
-There is no reason to believe that one viewer is better than the other. Even though they seem quite alike, they serve a slightly different purpose and use a different solution. Here is a list of some of the key differences.
+There is no reason to believe that one viewer is better than the other. Even though they seem quite alike, they serve a slightly different purpose and use a different solution. Here is a list of some of the key differences.  
+
 |UNICOM Bundle Visualizer|IDMP Visualizer|
 |--|--|
 |Open source - anyone can use/customise  | Free to use; not customisable|
