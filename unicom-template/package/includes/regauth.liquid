@@ -1,0 +1,59 @@
+<div class="container rcorners ra listcontainer" title="Authorisation">
+  <p class="divtitle">Authorisation {{ forloop.index }} of {{ ras | size }}</p>
+  Auth id:
+  <b>
+    {% for raid in ra.identifier %}
+      {{ raid.value | join: ", " }}
+    {% endfor %}
+  </b>
+
+  <p>
+    Region:
+    <b>
+      {% for rareg in ra.region %}
+        {{ rareg.coding[0].display }}
+      {% endfor %}
+    </b>
+  </p>
+  <p>
+    Type:
+    <b>
+      {{ ra.type.coding[0].display }}
+    </b>
+  </p>
+  <p>
+    Holder:
+    <b>
+      {{ ra.holder.reference | split: '/' | last }}
+    </b>
+    {% assign holderorg = ra.holder.reference | split: '/' | last %}
+  </p>
+
+  {% comment %}Get Orgs from Bundle {% endcomment %}
+  {% assign orgentries = bundle.entry | where: "resource.resourceType", "Organization" %}
+
+    {% for orgentry in orgentries %}
+    {% assign org = orgentry.resource %}
+    {% assign orgid = org.id %}
+    {% assign orgrefid = org.id | prepend: 'Organization/' %}
+
+
+    {% comment %}See which of the Orgs is referenced from the RA{% endcomment %}
+    {% if ra.holder.reference == orgrefid %}
+      <p>
+        <b>{{ org.name }}</b>
+        ({{ org.identifier[0].system }})</p>
+
+    {% endif %}
+  {% endfor %}
+
+
+
+  <p>
+    Status:
+    <b>
+      {{ ra.status.coding[0].display }} ({{ ra.statusDate }})
+    </b>
+  </p>
+
+</div>
