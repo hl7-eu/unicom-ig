@@ -1,5 +1,7 @@
 // 2 Estonian and 20 Swedish Amlodipine products 
 
+// 1 Greek (Lodipin 10mg capsule) and 2 Estonian (Agen 5mg and 10mg tablet) amlodipine products are in numbered Bundles, see one folder up.
+
 //ESTONIAN PRODUCTS
 Instance: AMLHipres-10mg-Tablet-EE-FullProduct
 InstanceOf: Bundle
@@ -160,7 +162,6 @@ Usage: #inline
 * substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "tablet"
 
 
-//SWEDISH PRODUCTS
 
 Instance: AMLHipres-5mg-Tablet-EE-FullProduct
 InstanceOf: Bundle
@@ -318,6 +319,7 @@ Usage: #inline
 * substance.strength.referenceStrength.strengthRatio.numerator = 5 $100000110633#100000110655 "milligram(s)"
 * substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "tablet"
 
+//SWEDISH PRODUCTS
 
 Instance: AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
