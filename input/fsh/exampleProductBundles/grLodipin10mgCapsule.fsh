@@ -3,7 +3,8 @@
 Instance: 016-Lodipin-10mg-Capsule-GR-FullProduct
 InstanceOf: Bundle
 Usage: #example
-Description: "Lodipin 10mg Capsule. Amlodipine (besilate). Greece."
+Description: "Lodipin 10mg Capsule. Amlodipine (besilate).  Greece."
+
 * type = #transaction
 * entry[0].resource = Lodipin-10mg-Capsule-GR-MPD
 * entry[=].request.method = #PUT
