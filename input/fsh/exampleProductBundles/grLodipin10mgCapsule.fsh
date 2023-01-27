@@ -58,10 +58,10 @@ Usage: #inline
 * legalStatusOfSupply = $100000072051#100000072084 "Medicinal product subject to medical prescription"
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
-* name.productName = "LODIPIN CAPS 10MG/CAP"
+* name.productName = "LODIPIN 10 mg καψάκια, σκληρά"
 * name.namePart[invented].part = "LODIPIN"
-* name.namePart[strength].part = "10MG/CAP"
-* name.namePart[doseForm].part = "CAPS"
+* name.namePart[strength].part = "10 mg"
+* name.namePart[doseForm].part = "καψάκια, σκληρά"
 * name.countryLanguage.country = $100000000002#100000000406 "Hellenic Republic"
 * name.countryLanguage.language = $100000072057#100000072181 "Greek"
 
