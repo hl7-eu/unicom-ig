@@ -27,12 +27,12 @@ spring:
       #If using postgres, then supply the value of ca.uhn.fhir.jpa.model.dialect.HapiFhirPostgres94Dialect
 
       hibernate.dialect: ca.uhn.fhir.jpa.model.dialect.HapiFhirH2Dialect
-      hibernate.hbm2ddl.auto: update
-      hibernate.jdbc.batch_size: 20
-      hibernate.cache.use_query_cache: false
-      hibernate.cache.use_second_level_cache: false
-      hibernate.cache.use_structured_entries: false
-      hibernate.cache.use_minimal_puts: false
+  #      hibernate.hbm2ddl.auto: update
+  #      hibernate.jdbc.batch_size: 20
+  #      hibernate.cache.use_query_cache: false
+  #      hibernate.cache.use_second_level_cache: false
+  #      hibernate.cache.use_structured_entries: false
+  #      hibernate.cache.use_minimal_puts: false
   ###    These settings will enable fulltext search with lucene
       hibernate.search.enabled: true
       hibernate.search.backend.type: lucene
@@ -101,20 +101,20 @@ hapi:
     ##################################################
     #    allowed_bundle_types: COLLECTION,DOCUMENT,MESSAGE,TRANSACTION,TRANSACTIONRESPONSE,BATCH,BATCHRESPONSE,HISTORY,SEARCHSET
     #    allow_cascading_deletes: true
-    allow_contains_searches: true
+    #    allow_contains_searches: true
     #    allow_external_references: true
     allow_multiple_delete: true
     #    allow_override_default_search_params: true
     #    auto_create_placeholder_reference_targets: false
     cql_enabled: true
-    default_encoding: JSON
+    #    default_encoding: JSON
     #    default_pretty_print: true
     #    default_page_size: 20
     #    delete_expunge_enabled: true
     #    enable_repository_validating_interceptor: true
-    enable_index_missing_fields: false
-    enable_index_of_type: true
-    enable_index_contained_resource: false
+    #    enable_index_missing_fields: false
+    #    enable_index_of_type: true
+    #    enable_index_contained_resource: false
     ###  !!Extended Lucene/Elasticsearch Indexing is still a experimental feature, expect some features (e.g. _total=accurate) to not work as expected!!
     ###  more information here: https://hapifhir.io/hapi-fhir/docs/server_jpa/elastic.html
     advanced_lucene_indexing: false
@@ -128,8 +128,8 @@ hapi:
     #    expunge_enabled: true
     #    client_id_strategy: ALPHANUMERIC
     #    fhirpath_interceptor_enabled: false
-    filter_search_enabled: true
-    graphql_enabled: true
+    #    filter_search_enabled: true
+    #    graphql_enabled: true
     #    narrative_enabled: true
     #    mdm_enabled: true
     #    local_base_urls:
@@ -202,7 +202,7 @@ hapi:
 ###   0: NORMALIZED_QUANTITY_SEARCH_NOT_SUPPORTED - default
 ###   1: NORMALIZED_QUANTITY_STORAGE_SUPPORTED
 ###   2: NORMALIZED_QUANTITY_SEARCH_SUPPORTED
-    normalized_quantity_search_level: 2
+#    normalized_quantity_search_level: 2
 #elasticsearch:
 #  debug:
 #    pretty_print_json_log: false
