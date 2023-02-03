@@ -1,6 +1,6 @@
 /* Relaxed profiles. The structure is the same as the strict regulatory profiles, but cardinalities are as soft as technically possible
 and value set bindings have been removed. Code systems, default values, etc are given in comments just for information. 
-The strict profiles should theoretically derive from these profiles but they do not right now. */
+The strict profiles should theoretically derive from these profiles but they do not right now. 
 
 
 // PROFILE: Medicinal Product Definition
@@ -53,15 +53,15 @@ Description: """Intermediate profile for processing PPL Medicinal Product data""
   * ^short = "Authorised dose form for the product, incl combination package dose forms"
   * ^definition = "EMA IG 1.5 & 1.6. Authorised dose form for the whole product. As applicable in one of the SPOR RMS list Combined pharmaceutical dose form, Pharmaceutical dose form, Combined term, Combination Package"
 
-/** classification 0..*
+* classification 0..*
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "coding.system"
   * ^slicing.rules = #open
   * ^short = "ATC or other classification"
-  * ^definition = "EMA IG 1.13"*/
+  * ^definition = "EMA IG 1.13"
 // Slicing removed and preferred binding added to suppress QA errors about value sets (r4b) TO DO
 * classification from SporAtc (preferred)
-/* classification contains
+ classification contains
   atc 0..1
 * classification[atc]
   * coding 
@@ -80,7 +80,7 @@ Description: """Intermediate profile for processing PPL Medicinal Product data""
   * coding[who]
     * system = $who-atc
     * ^short = "ATC classification as WHO ATC code"
-*/
+
 * name
   * ^definition = "EMA IG 1.14"
   * productName 1..1
