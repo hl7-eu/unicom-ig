@@ -1,4 +1,4 @@
-Instance: 006-Yaz-002mg3mg-tablet-SE-FullProduct
+Instance: 006-Yaz-0.02mg3mg-tablet-SE-FullProduct
 InstanceOf: Bundle
 Usage: #example
 Description: "YAZ ethinylestradiol 0.02mg, drosperinone 3mg, includes placebo tablets. Kingdom of Sweden. Different manufactured items in one container."

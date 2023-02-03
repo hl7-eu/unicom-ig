@@ -55,11 +55,11 @@ There is work in progress for creating more ISO IDMP compatible data for UNICOM 
 ### Guidance and references
 
 #### ISO IDMP
-- [ISO 11615](https://www.iso.org/standard/70150.html) Identification of medicinal products - Data elements and structures for the unique identification and exchange of regulated medicinal product information.
-- [ISO 11616](https://www.iso.org/standard/70044.html) Identification of medicinal products - Data elements and structures for the unique identification and exchange of regulated pharmaceutical product information.
-- [ISO 11238](https://www.iso.org/standard/69697.html) Identification of medicinal products - Data elements and structures for the unique identification and exchange of regulated information on substances.
-- [ISO 11239](https://www.iso.org/standard/55032.html) Identification of medicinal products - Data elements and structures for the unique identification and exchange of regulated information on pharmaceutical dose forms, units of presentation, routes of administration and packaging.
-- [ISO 11240](https://www.iso.org/standard/55033.html) Identification of medicinal products - Data elements and structures for the unique identification and exchange of units of measurement.
+- [ISO 11615](https://www.iso.org/standard/70150.html)
+- [ISO 11616](https://www.iso.org/standard/70044.html)
+- [ISO 11238](https://www.iso.org/standard/69697.html)
+- [ISO 11239](https://www.iso.org/standard/55032.html)
+- [ISO 11240](https://www.iso.org/standard/55033.html)
 
 #### HL7 FHIR
 UNICOM implementation guide is based on FHIR version 4.3.0, and the core set of resources can be found in [MedicationDefinition module](https://www.hl7.org/fhir/medication-definition-module.html)).
