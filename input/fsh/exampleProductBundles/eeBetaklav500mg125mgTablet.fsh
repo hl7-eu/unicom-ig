@@ -68,7 +68,7 @@ Usage: #inline
 //* additionalMonitoringIndicator = $additionalMonitoringIndicator#False "False"
 * classification[0] = $100000093533#100000096162 "amoxicillin and beta-lactamase inhibitor"
 * classification[+] = $who-atc#J01CR02 "amoxicillin and beta-lactamase inhibitor"
-* name.productName = "Betaklav, 500 mg/125 mg õhukese polümeerikattega tabletid"
+* name.productName = "Betaklav 500 mg/125 mg õhukese polümeerikattega tabletid"
 * name.part[invented].part = "Betaklav"
 * name.part[strength].part = "500mg/125mg"
 * name.part[doseForm].part = "õhukese polümeerikattega tabletid"
