@@ -9,8 +9,8 @@ Severity:    #error
 
 
 Logical: FullMedicinalProduct
-Title: "Medicinal Product"
-Description: "Medicinal Product"
+Title: "Medicinal Product Logical Model"
+Description: "Logical model for a pilot product list's medicinal product"
 
 * identifier 1..* class "Identifiers"
   * mpId 1..1 II "Medicinal Product Identifier (MPID)"

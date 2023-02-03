@@ -103,10 +103,10 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Table of Contents: toc.html
-  Artifacts: artifacts.html
   Regulatory Data: regulatory.html
   Known Issues: issues.html
+  Table of Contents: toc.html
+  Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
@@ -173,6 +173,11 @@ menu:
 # URL when generating the IG JSON.
 #
 groups:
+  LogicalModel:
+    name: Logical models
+    description: Logical data models as FHIR resources
+    resources:
+    - StructureDefinition/FullMedicinalProduct
   Regulatory:
     name: Regulatory profiles
     description: Profiles for regulatory data, EMA IG and IDMP compliant
