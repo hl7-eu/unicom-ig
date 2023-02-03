@@ -112,7 +112,7 @@ Usage: #inline
 * packaging.packaging.type = $100000073346#100000073563 "Vial"
 * packaging.packaging.quantity = 10
 * packaging.packaging.material = $200000003199#200000003203 "Glass"
-* packaging.packaging.containedItem.item.reference = Reference(CefuroximStragen-1.5g-Powder-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.item.reference = Reference(CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition)
 * packaging.packaging.containedItem.amount = 1 $200000000014#200000002158 "Vial"
 
 

@@ -115,7 +115,7 @@ Usage: #inline
 * packaging.packaging.packaging.material[0] = $200000003199#200000003200 "Aluminium"
 * packaging.packaging.packaging.material[+] = $200000003199#200000003222 "PolyVinyl Chloride"
 * packaging.packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* packaging.packaging.packaging.containedItem[0].item.reference = Reference(Jangee-0.02mg-3mg-Film-coated-tablet-EE-MID)
+* packaging.packaging.packaging.containedItem[0].item.reference = Reference(Jangee-002mg-3mg-Film-coated-tablet-EE-MID)
 * packaging.packaging.packaging.containedItem[=].amount = 21 $200000000014#200000002152 "tablet"
 
 Instance: Jangee-002mg-3mg-Film-coated-tablet-EE-MID

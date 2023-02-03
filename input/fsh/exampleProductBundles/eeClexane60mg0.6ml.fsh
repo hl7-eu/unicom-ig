@@ -126,5 +126,5 @@ Usage: #inline
 * packaging.packaging.type = $100000073346#100000073544 "Pre-filled syringe"
 * packaging.packaging.quantity = 2
 * packaging.packaging.material = $200000003199#200000003204 "Glass type I"
-* packaging.packaging.containedItem.item.reference = Reference(Clexane-60mg-0.6ml-solinj-EE-MID)
+* packaging.packaging.containedItem.item.reference = Reference(Clexane-60mg-06ml-solinj-EE-MID)
 * packaging.packaging.containedItem.amount = 0.6 $100000110633#100000110662 "millilitre(s)"
