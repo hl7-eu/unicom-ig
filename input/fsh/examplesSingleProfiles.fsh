@@ -74,12 +74,12 @@ Description: "Ingredient: amlodipine besilate, presentation strength; amlodipine
 //* substance.strength.presentationRatio.numerator.comparator.extension.url = "http://ema.europa.eu/fhir/extension/comparator"
 //* substance.strength.presentationRatio.numerator.comparator.extension.valueCoding = $100000000008#100000000049 "equal to"
 * substance.strength.presentationRatio.numerator = 6.935 $100000110633#100000110655 "milligram(s)"
-* substance.strength.presentationRatio.denominator = 1 $200000000014#200000002152 //"Tablet"
+* substance.strength.presentationRatio.denominator = 1 $200000000014#200000002152 "Tablet"
 * substance.strength.referenceStrength.substance.concept = $sms#100000085259 "Amlodipine"
 //* substance.strength.referenceStrength.strengthRatio.numerator.comparator.extension.url = "http://ema.europa.eu/fhir/extension/comparator"
 //* substance.strength.referenceStrength.strengthRatio.numerator.comparator.extension.valueCoding = $100000000008#100000000049 "equal to"
 * substance.strength.referenceStrength.strengthRatio.numerator = 5 $100000110633#100000110655 "milligram(s)"
-* substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 //"Tablet"
+* substance.strength.referenceStrength.strengthRatio.denominator = 1 $200000000014#200000002152 "Tablet"
 
 
 Instance: Agen-5mg-Tablet-EE-PPD-1109887-A
@@ -242,6 +242,7 @@ InstanceOf: PPLPackagedProductDefinition
 Usage: #example
 Description: "Packaged Product Definition: powder for solution in 10 vials"
 
+* identifier[pcid].value = "EE-100009199-27834-1529962"
 * packageFor = Reference(Cefuroxime-MIP-1500mg-EE-MPD)
 * containedItemQuantity = 10 $200000000014#200000002158 "Vial"
 * description = "I tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 10 viaali"
