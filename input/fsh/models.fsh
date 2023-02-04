@@ -112,8 +112,10 @@ Description: "Logical model for a pilot product list's medicinal product"
           * value 1..1 QT "Value"
           * unit 0..1 CD "Unit"
         * obeys itemcontent-1
-
-        * containedPackage 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.packagedProductDefinition.packaging "Inner Packages"
+        
+        
+        // this link must be the same root as the sushi-config canonical
+        * containedPackage 0..* contentReference http://unicom-project.eu/fhir/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.packagedProductDefinition.packaging "Inner Packages"
         * manufacturedItem 1..* class "Manufactured item" // this can only be there if there are no inner package
           * manufacturedDoseForm 1..1 CD "Manufactured dose form"
           * unitOfPresentation 1..1 CD "Unit of presentation"
