@@ -85,7 +85,7 @@ Description: """Intermediate profile for processing PPL Medicinal Product data""
   * ^definition = "EMA IG 1.14"
   * productName 1..1
     * ^definition = "EMA IG 1.14.1"
-  * namePart
+  * part
     * ^slicing.discriminator.type = #pattern
     * ^slicing.discriminator.path = "type"
     * ^slicing.rules = #open
@@ -93,15 +93,15 @@ Description: """Intermediate profile for processing PPL Medicinal Product data""
     * ^slicing.description = "Slicing on the name part"
     * ^short = "Medicinal product name part"
     * ^definition = "EMA IG 1.14.3. Name part. Product names are usually combined of these three parts. More parts can be defined and strength and dose form parts can be omitted."
-  * namePart contains
+  * part contains
     invented 0..1 and
     strength 0..1 and
     doseForm 0..1 
-  * namePart[invented].type = $220000000000#220000000002 "Invented name part"
-  * namePart[strength].type = $220000000000#220000000004 "Strength part"
-  * namePart[doseForm].type = $220000000000#220000000005 "Pharmaceutical dose form part"
+  * part[invented].type = $220000000000#220000000002 "Invented name part"
+  * part[strength].type = $220000000000#220000000004 "Strength part"
+  * part[doseForm].type = $220000000000#220000000005 "Pharmaceutical dose form part"
 
-  * countryLanguage
+  * usage
     * ^definition = "EMA IG 1.14.2"
     * country.coding
       * ^slicing.discriminator.type = #pattern
@@ -344,7 +344,7 @@ Description: """Intermediate profile for processing PPL Packaged Product data"""
   * status 1..1 // This is 1..1 in core FHIR spec
 //    * coding.system = $100000072052
 
-* package 0..1
+* packaging 0..1
   * type 0..1
     * ^short = "Container type"
     * ^definition = "EMA IG 4.8.1"
@@ -371,8 +371,8 @@ Description: """Intermediate profile for processing PPL Packaged Product data"""
     //  * code from all-units-vs (unit of presentation or unit of measurement)
 
 // the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* package.property 0..0
-* package.property.type from NoBinding (example)
+* packaging.property 0..0
+* packaging.property.type from NoBinding (example)
 
 
 // TO DO: I'm not sure we want to use Organisation as a separate resource, but right now it is. See the comment at RegulatedAuthorization

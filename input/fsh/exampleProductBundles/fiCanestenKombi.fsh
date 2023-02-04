@@ -68,9 +68,9 @@ Usage: #inline
 * classification[0] = $100000093533#100000095693 "clotrimazole"
 * classification[+] = $who-atc#G01AF02 "clotrimazole"
 * name.productName = "Canesten® Kombi 500 mg emätinpuikko + 10 mg/g emulsiovoide"
-* name.namePart[invented].part = "Canesten Kombi"
-* name.countryLanguage.country = $100000000002#100000000394 "Republic of Finland"
-* name.countryLanguage.language = $100000072057#100000072149 "Finnish"
+* name.part[invented].part = "Canesten Kombi"
+* name.usage.country = $100000000002#100000000394 "Republic of Finland"
+* name.usage.language = $100000072057#100000072149 "Finnish"
 
 Instance: CanestenKombi-FI-RA
 InstanceOf: PPLRegulatedAuthorization
@@ -177,21 +177,21 @@ alumiiniputkessa"
 //  * extension.valueCoding = $100000072057#100000072149 "Finnish"
 * marketingStatus.country = $100000000002#100000000394 "Republic of Finland"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
 
-* package.containedItem.item.concept = $100000073346#100000073491 "Applicator"
+* packaging.containedItem.item.concept = $100000073346#100000073491 "Applicator"
 
-* package.package[0].type = $100000073346#100000073496 "Blister"
-* package.package[=].quantity = 1
-* package.package[=].containedItem.item.reference = Reference(CanestenKombi-Pessary-FI-MID)
-* package.package[=].containedItem.amount.value = 1
+* packaging.packaging[0].type = $100000073346#100000073496 "Blister"
+* packaging.packaging[=].quantity = 1
+* packaging.packaging[=].containedItem.item.reference = Reference(CanestenKombi-Pessary-FI-MID)
+* packaging.packaging[=].containedItem.amount.value = 1
 
-* package.package[+].type = $100000073346#100000073561 "Tube"
-* package.package[=].quantity = 1
-* package.package[=].material = $200000003199#200000003200 "Aluminium"
-* package.package[=].containedItem.item.reference = Reference(CanestenKombi-Cream-FI-MID)
-* package.package[=].containedItem.amount = 20 $100000110633#100000110654 "gram(s)"
+* packaging.packaging[+].type = $100000073346#100000073561 "Tube"
+* packaging.packaging[=].quantity = 1
+* packaging.packaging[=].material = $200000003199#200000003200 "Aluminium"
+* packaging.packaging[=].containedItem.item.reference = Reference(CanestenKombi-Cream-FI-MID)
+* packaging.packaging[=].containedItem.amount = 20 $100000110633#100000110654 "gram(s)"
 
 

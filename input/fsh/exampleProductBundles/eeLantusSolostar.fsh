@@ -51,11 +51,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000094023 "insulin glargine"
 * classification[+] = $who-atc#A10AE04  "insulin glargine"
 * name.productName = "Lantus SoloStar 100 ühikut/ml süstelahus pen-süstlis"
-* name.namePart[invented].part = "Lantus Solostar"
-* name.namePart[strength].part = "100 ühikut/ml"
-* name.namePart[doseForm].part = "süstelahus pen-süstlis"
-* name.countryLanguage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.countryLanguage.language = $100000072057#100000072172 "Estonian"
+* name.part[invented].part = "Lantus Solostar"
+* name.part[strength].part = "100 ühikut/ml"
+* name.part[doseForm].part = "süstelahus pen-süstlis"
+* name.usage.country = $100000000002#100000000388 "Republic of Estonia"
+* name.usage.language = $100000072057#100000072172 "Estonian"
 
 Instance: LantusSolostar-EE-RA
 InstanceOf: PPLRegulatedAuthorization
@@ -124,10 +124,10 @@ Pakendis on 5 pen-süstlit."
 //  * extension.valueCoding = $100000072057#100000072172 "Estonian"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#100000073543 "Pre-filled pen"
-* package.package.quantity = 5
-* package.package.containedItem.item.reference = Reference(LantusSolostar-EE-MID)
-* package.package.containedItem.amount = 3 $100000110633#100000110662 "millilitre(s)"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+* packaging.packaging.type = $100000073346#100000073543 "Pre-filled pen"
+* packaging.packaging.quantity = 5
+* packaging.packaging.containedItem.item.reference = Reference(LantusSolostar-EE-MID)
+* packaging.packaging.containedItem.amount = 3 $100000110633#100000110662 "millilitre(s)"

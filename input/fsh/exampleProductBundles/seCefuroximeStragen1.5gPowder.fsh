@@ -54,11 +54,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000096183 "Cefuroxime"
 * classification[+] = $who-atc#J01DC02 "cefuroxime"
 * name.productName = "Cefuroxim Stragen 1,5 g Pulver till injektions-/infusionsvätska, lösning"
-* name.namePart[invented].part = "Cefuroxim Stragen"
-* name.namePart[strength].part = "1,5 g"
-* name.namePart[doseForm].part = "Pulver till injektions-/infusionsvätska, lösning"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Cefuroxim Stragen"
+* name.part[strength].part = "1,5 g"
+* name.part[doseForm].part = "Pulver till injektions-/infusionsvätska, lösning"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 
 Instance: CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization
@@ -106,14 +106,14 @@ Usage: #inline
 //  * extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003208 "Plastic"
-* package.package.type = $100000073346#100000073563 "Vial"
-* package.package.quantity = 10
-* package.package.material = $200000003199#200000003203 "Glass"
-* package.package.containedItem.item.reference = Reference(CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition)
-* package.package.containedItem.amount = 1 $200000000014#200000002158 "Vial"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003208 "Plastic"
+* packaging.packaging.type = $100000073346#100000073563 "Vial"
+* packaging.packaging.quantity = 10
+* packaging.packaging.material = $200000003199#200000003203 "Glass"
+* packaging.packaging.containedItem.item.reference = Reference(CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition)
+* packaging.packaging.containedItem.amount = 1 $200000000014#200000002158 "Vial"
 
 
 Instance: CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition

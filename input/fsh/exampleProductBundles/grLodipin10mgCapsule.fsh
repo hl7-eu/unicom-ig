@@ -59,11 +59,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000095065 "amlodipine"
 * classification[+] = $who-atc#C08CA01 "amlodipine"
 * name.productName = "LODIPIN 10 mg καψάκια, σκληρά"
-* name.namePart[invented].part = "LODIPIN"
-* name.namePart[strength].part = "10 mg"
-* name.namePart[doseForm].part = "καψάκια, σκληρά"
-* name.countryLanguage.country = $100000000002#100000000406 "Hellenic Republic"
-* name.countryLanguage.language = $100000072057#100000072181 "Greek"
+* name.part[invented].part = "LODIPIN"
+* name.part[strength].part = "10 mg"
+* name.part[doseForm].part = "καψάκια, σκληρά"
+* name.usage.country = $100000000002#100000000406 "Hellenic Republic"
+* name.usage.language = $100000072057#100000072181 "Greek"
 
 
 Instance: Lodipin-10mg-Capsule-GR-RA
@@ -140,16 +140,16 @@ Usage: #inline
 //  * extension.valueCoding = $100000072057#100000072181 "Greek"
 * marketingStatus.country = $100000000002#100000000406 "Hellenic Republic"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 2 // TO DO: should not be mandatory maybe
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(Lodipin-10mg-Capsule-GR-MID)
-* package.package.containedItem.amount.value = 7
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 2 // TO DO: should not be mandatory maybe
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003225 "PolyVinylidene Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(Lodipin-10mg-Capsule-GR-MID)
+* packaging.packaging.containedItem.amount.value = 7
 
 
 Instance: Lodipin-10mg-Capsule-GR-PPD-2802584402038
@@ -166,12 +166,12 @@ Usage: #inline
 //  * extension.valueCoding = $100000072057#100000072181 "Greek"
 * marketingStatus.country = $100000000002#100000000406 "Hellenic Republic"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-* package.package.type = $100000073346#100000073496 "Blister"
-* package.package.quantity = 3 // TO DO: should not be mandatory maybe
-* package.package.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
-* package.package.material[+] = $200000003199#200000003200 "Aluminium"
-* package.package.containedItem.item.reference = Reference(Lodipin-10mg-Capsule-GR-MID)
-* package.package.containedItem.amount.value = 10
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+* packaging.packaging.type = $100000073346#100000073496 "Blister"
+* packaging.packaging.quantity = 3 // TO DO: should not be mandatory maybe
+* packaging.packaging.material[0] = $200000003199#200000003222 "PolyVinyl Chloride"
+* packaging.packaging.material[+] = $200000003199#200000003200 "Aluminium"
+* packaging.packaging.containedItem.item.reference = Reference(Lodipin-10mg-Capsule-GR-MID)
+* packaging.packaging.containedItem.amount.value = 10

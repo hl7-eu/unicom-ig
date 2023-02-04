@@ -3,14 +3,14 @@ Description: "containedItem.containedPackage or containedItem.manufacturedItem S
 Expression:  "containedPackage.exists() implies manufacturedItem.exists().not()"
 Severity:    #error
 
-//FullMedicinalProduct.packagedProductDefinition.package.innerPackage.containedItem
+//FullMedicinalProduct.packagedProductDefinition.package.innerpackaging.containedItem
 
 
 
 
 Logical: FullMedicinalProduct
-Title: "Medicinal Product"
-Description: "Medicinal Product"
+Title: "Medicinal Product Logical Model"
+Description: "Logical model for a pilot product list's medicinal product"
 
 * identifier 1..* class "Identifiers"
   * mpId 1..1 II "Medicinal Product Identifier (MPID)"
@@ -24,7 +24,7 @@ Description: "Medicinal Product"
   * classificationOther 0..* CD "Other classification"
 * name 1..* class "Name"
   * fullName 1..1 ST "Full name"
-  * namePart 0..* class "Name parts"
+  * part 0..* class "Name parts"
     * inventedName 1..1 ST "Invented name part"
     * strength 0..1 ST "Strength part"
     * doseForm 0..1 ST "Dose form part"
@@ -102,7 +102,7 @@ Description: "Medicinal Product"
   * marketingStatus 0..* class "Marketing status"
     * country 1..1 CD "Country"
     * status 1..1 CD "Status"
-  * package 1..1 class "Package"
+  * packaging 1..1 class "Package"
     * packageType 1..1 CD "Package type"
     * quantity 1..1 QT "Package quantity" //always 1 for the outer package
     * material 0..* CD "Package material"
@@ -113,7 +113,7 @@ Description: "Medicinal Product"
           * unit 0..1 CD "Unit"
         * obeys itemcontent-1
 
-        * containedPackage 0..* contentReference http://unicom-project.eu/fhir/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.packagedProductDefinition.package "Inner Packages"
+        * containedPackage 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.packagedProductDefinition.packaging "Inner Packages"
         * manufacturedItem 1..* class "Manufactured item" // this can only be there if there are no inner package
           * manufacturedDoseForm 1..1 CD "Manufactured dose form"
           * unitOfPresentation 1..1 CD "Unit of presentation"
@@ -143,5 +143,3 @@ Description: "Medicinal Product"
 
 
       
-
-

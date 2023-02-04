@@ -73,11 +73,11 @@ Usage: #inline
 * classification[+] = $100000093533#100000116213 "valsartan, amlodipine and hydrochlorothiazide"
 
 * name.productName = "COPALIA HCT 160mg / 12.5mg / 10mg õhukese polümeerikattega tabletid"
-* name.namePart[invented].part = "COPALIA HCT"
-* name.namePart[strength].part = "160mg / 12.5mg / 10mg"
-* name.namePart[doseForm].part = "õhukese polümeerikattega tabletid"
-* name.countryLanguage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.countryLanguage.language = $100000072057#100000072172  "Estonian"
+* name.part[invented].part = "COPALIA HCT"
+* name.part[strength].part = "160mg / 12.5mg / 10mg"
+* name.part[doseForm].part = "õhukese polümeerikattega tabletid"
+* name.usage.country = $100000000002#100000000388 "Republic of Estonia"
+* name.usage.language = $100000072057#100000072172  "Estonian"
 
 
 Instance: CopaliaHCT-ingredient1-EE-I
@@ -171,10 +171,10 @@ Usage: #inline
 * containedItemQuantity = 28 $200000000014#200000002152 "Tablet"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
 * marketingStatus.status = $100000072052#100000072074 "Not marketed"
-* package
+* packaging
   * quantity = 1
   * type = $100000073346#100000073498 "Box"
-  * package.
+  * packaging.
     * type = $100000073346#100000073496 "Blister"
     * quantity = 1
     * containedItem.item.reference = Reference(CopaliaHCT-EE-MID)
@@ -197,10 +197,10 @@ Usage: #inline
 * containedItemQuantity = 28 $200000000014#200000002152 "Tablet"
 * marketingStatus.country = $100000000002#100000000388 "Republic of Estonia"
 * marketingStatus.status = $100000072052#100000072074 "Not marketed"
-* package
+* packaging
   * quantity = 1
   * type = $100000073346#100000073498 "Box"
-  * package.
+  * packaging.
     * type = $100000073346#100000073496 "Blister"
     * quantity = 2
     * containedItem.item.reference = Reference(CopaliaHCT-EE-MID)

@@ -55,11 +55,11 @@ Usage: #inline
 * classification[0] = $100000093533#100000097305 "Paracetamol"
 * classification[+] = $who-atc#N02BE01 "Paracetamol"
 * name.productName = "Panodil 500 mg pulver till oral lösning i dospåse"
-* name.namePart[invented].part = "Panodil"
-* name.namePart[strength].part = "500 mg"
-* name.namePart[doseForm].part = "pulver till oral lösning i dospåse"
-* name.countryLanguage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.countryLanguage.language = $100000072057#100000072288 "Swedish"
+* name.part[invented].part = "Panodil"
+* name.part[strength].part = "500 mg"
+* name.part[doseForm].part = "pulver till oral lösning i dospåse"
+* name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
+* name.usage.language = $100000072057#100000072288 "Swedish"
 
 
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization
@@ -105,11 +105,11 @@ Usage: #inline
 //  * extension.valueCoding = $100000072057#100000072288 "Swedish"
 * marketingStatus.country = $100000000002#100000000535 "Kingdom of Sweden"
 * marketingStatus.status = $100000072052#100000072083 "Marketed"
-* package.type = $100000073346#100000073498 "Box"
-* package.quantity = 1
-* package.material = $200000003199#200000003529 "Cardboard"
-* package.containedItem.item.reference = Reference(Panodil500mgoralsolutionsachet-SE-PLC-MID)
-* package.containedItem.amount = 12 $200000000014#200000002143 "Sachet"
+* packaging.type = $100000073346#100000073498 "Box"
+* packaging.quantity = 1
+* packaging.material = $200000003199#200000003529 "Cardboard"
+* packaging.containedItem.item.reference = Reference(Panodil500mgoralsolutionsachet-SE-PLC-MID)
+* packaging.containedItem.amount = 12 $200000000014#200000002143 "Sachet"
 
 
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-MID
