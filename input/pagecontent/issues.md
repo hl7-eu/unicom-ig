@@ -6,15 +6,15 @@ This IG follows the EMA IG, which has been published as a set of text documents.
 
 
 #### FHIR versions
-EMA IG is based on FHIR version 4.6, but UNICOM PPL FHIR IG is based on FHIR R4B.
+
+EMA IG is based on FHIR version 4.6, but UNICOM PPL FHIR IG is based on R5 Snapshot 3. These versions introduce many changes, most significantly:  
 These versions introduce many changes, most significantly:
 * direction of reference has been changed for Ingredient
 * pack size as containedItemQuantity (described as extension in EMA IG)
-* shelf life no longer has its own data type
+* shelf life no longer has its own data type  
 
-
-R5 Ballot introduces only a few additional changes for the data elements used in this IG:
-* In MedicinalProductDefinition name.countryLanguage has been renamed to name.usage
+UNICOM IG started with FHIR R4B, and this work is still available in a separate branch. Moving to R5 Snapshot3, a few more changes were applied:  
+* In MedicinalProductDefinition name.countryLanguage has been renamed to name.usage, and name.namePart to name.part
 * In PackagedProductDefinition package has been renamed to packaging  
 
 #### SPOR RMS lists
