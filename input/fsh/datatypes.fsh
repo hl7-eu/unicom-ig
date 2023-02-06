@@ -52,3 +52,8 @@ Description: "Date"
 * . ^short = "Date"
 * . ^definition = "Date"
 
+Profile: RTO-QTY-QTY
+Parent: Element
+Description: "Ratio of quantities"
+* . ^short = "Ratio of quantities"
+* . ^definition = "Ratio of quantities"
