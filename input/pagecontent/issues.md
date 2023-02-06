@@ -8,7 +8,6 @@ This IG follows the EMA IG, which has been published as a set of text documents.
 #### FHIR versions
 
 EMA IG is based on FHIR version 4.6, but UNICOM PPL FHIR IG is based on R5 Snapshot 3. These versions introduce many changes, most significantly:  
-These versions introduce many changes, most significantly:
 * direction of reference has been changed for Ingredient
 * pack size as containedItemQuantity (described as extension in EMA IG)
 * shelf life no longer has its own data type  
