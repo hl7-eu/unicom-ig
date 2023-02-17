@@ -3,19 +3,20 @@ Sources: https://wiki.hl7.de/index.php?title=HL7_CDA_Core_Principles
 https://vico.org/HL7_RIM/infrastructure/datatypes_r2/datatypes_r2.html#datyp2introwhat
 */
 
+
 Profile: untyped
 Parent: Element
 Description: "No data type defined"
 * . ^short = "No specific data type assigned"
-* . ^definition = "No specific data type assigned"
-// Wouldn't we want to use ANY from V3 instead of untyped?
+* . ^definition = "No specific data type assigned - should not be used in finished data models"
 
-/*Profile: ANY
+
+Profile: ANY
 Parent: Element
 Description: "An abstract type"
 * . ^short = "Undefined"
 * . ^definition = "An abstract type that defines the basic properties common to all data values defined in this specification. Data Value is an abstract type, meaning that no proper value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type."
-*/
+
 
 Profile: class
 Parent: BackboneElement
