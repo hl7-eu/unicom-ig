@@ -1,15 +1,16 @@
 Instance: combined-pharmaceutical-dose-form
 InstanceOf: ValueSet
 Usage: #definition
+Title: "EDQM Combined Pharmaceutical Dose Form"
+
+
+* title = "EDQM Combined Pharmaceutical Dose Form"
+* description = "ValueSet Combined pharmaceutical dose form from EDQM, CDF, see https://standardterms.edqm.eu/#"
 * name = "CombinedPharmaceuticalDoseForm"
-* title = "Combined pharmaceutical dose form"
 * status = #active
 * experimental = false
-* description = "ValueSet Combined pharmaceutical dose form from EDQM, CDF, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
-
 
 
 * compose.include.concept[+].code = #10114000

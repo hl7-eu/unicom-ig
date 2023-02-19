@@ -1,16 +1,16 @@
 Instance: combined-term
 InstanceOf: ValueSet
 Usage: #definition
+Title: "EDQM Combined Term"
+
+
+* title = "EDQM Combined Term"
+* description = "ValueSet Combined term (dose form) from EDQM, CMT, see https://standardterms.edqm.eu/#"
 * name = "CombinedTerm"
-* title = "Combined term"
 * status = #active
 * experimental = false
-* description = "ValueSet Combined term from EDQM, CMT, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
-
-
 
 * compose.include.concept[+].code = #11210500
 * compose.include.concept[=].display = "Solution for infusion in administration system"

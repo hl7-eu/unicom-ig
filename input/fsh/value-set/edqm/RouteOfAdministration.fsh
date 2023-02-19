@@ -1,15 +1,16 @@
 Instance: route-of-administration
 InstanceOf: ValueSet
 Usage: #definition
+Title: "EDQM Route of Administration"
+
+
+* title = "EDQM Route of Administration"
+* description = "ValueSet Route of administration from EDQM, ROA, see https://standardterms.edqm.eu/#"
 * name = "RouteOfAdministration"
-* title = "Route of administration"
 * status = #active
 * experimental = false
-* description = "ValueSet Route of administration from EDQM, ROA, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
-
 
 
 * compose.include.concept[+].code = #20001000

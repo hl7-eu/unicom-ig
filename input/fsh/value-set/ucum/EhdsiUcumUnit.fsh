@@ -1,11 +1,14 @@
 Instance: ehdsi-ucum-unit
 InstanceOf: ValueSet
 Usage: #definition
+Title: "MyHealth@EU Unit of Measurement (UCUM)"
+
+* title = "MyHealth@EU Unit of Measurement (UCUM)"
+* description = "ValueSet for units based on UCUM to be used in MyHealth@EU crossborder services"
 * name = "EhdsiUcumUnit"
-* title = "eHDSI UCUM unit"
 * status = #active
 * experimental = false
-* description = "ValueSet for UCUM units to be used in eHDSI"
+
 * immutable = false
 * compose.include.system = "http://hl7.org/fhir/ValueSet/ucum-units"
 

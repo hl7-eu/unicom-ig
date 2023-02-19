@@ -1,15 +1,16 @@
 Instance: intended-site
 InstanceOf: ValueSet
 Usage: #definition
+Title: "EDQM Intended Site"
+
+
+* title = "EDQM Intended Site"
+* description = "ValueSet Intended site from EDQM, ISI, see https://standardterms.edqm.eu/#"
 * name = "IntendedSite"
-* title = "Intended site"
 * status = #active
 * experimental = false
-* description = "ValueSet Intended site from EDQM, ISI, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
-
 
 
 * compose.include.concept[+].code = #0021

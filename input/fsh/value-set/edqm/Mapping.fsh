@@ -1,4 +1,4 @@
-Instance: mapping
+/*Instance: mapping
 InstanceOf: ValueSet
 Usage: #definition
 * name = "Mapping"
@@ -9,3 +9,4 @@ Usage: #definition
 * immutable = false
 * compose.include.system = $edqm-standardterms
 
+*/

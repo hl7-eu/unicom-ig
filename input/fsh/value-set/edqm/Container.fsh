@@ -1,16 +1,16 @@
 Instance: container
 InstanceOf: ValueSet
 Usage: #definition
+Title: "EDQM Container"
+
+
+* title = "EDQM Container"
+* description = "ValueSet Container (package type) from EDQM, CON, see https://standardterms.edqm.eu/#"
 * name = "Container"
-* title = "Container"
 * status = #active
 * experimental = false
-* description = "ValueSet Container from EDQM, CON, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
-
-
 
 * compose.include.concept[+].code = #13059000
 * compose.include.concept[=].display = "Unit-dose blister"

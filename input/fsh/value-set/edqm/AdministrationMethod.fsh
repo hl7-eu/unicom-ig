@@ -1,15 +1,16 @@
 Instance: administration-method
 InstanceOf: ValueSet
 Usage: #definition
+Title: "EDQM Administration Method"
+
+
+* title = "EDQM Administration Method"
+* description = "ValueSet Administration method from EDQM, AME, see https://standardterms.edqm.eu/#"
 * name = "AdministrationMethod"
-* title = "Administration method"
 * status = #active
 * experimental = false
-* description = "ValueSet Administration method from EDQM, AME, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
-
 
 
 * compose.include.concept[+].code = #0004

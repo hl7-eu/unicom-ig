@@ -1,11 +1,12 @@
-Instance: state-of-matter
+/*Instance: state-of-matter
 InstanceOf: ValueSet
 Usage: #definition
+Title = "EDQM State of Matter"
 * name = "StateOfMatter"
-* title = "State of matter"
+* title = "EDQM State of Matter"
 * status = #active
 * experimental = false
-* description = "ValueSet State of matter from EDQM, SOM, see https://standardterms.edqm.eu/#"
+* description = "ValueSet State of matter (dose form characteristics) from EDQM, SOM, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
 
@@ -34,3 +35,4 @@ Usage: #definition
 
 * compose.include.concept[+].code = #0101
 * compose.include.concept[=].display = "Unclear"
+*/
