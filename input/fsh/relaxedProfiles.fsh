@@ -132,14 +132,6 @@ Description: """Intermediate profile for processing PPL Medicinal Product data""
     * language.coding[bcp] // from language-bcp-vs
       * system = $BCP47
 
-// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* ingredient 0..0
-* ingredient from SubstancesSMS (example)
-* impurity 0..0
-* impurity from SubstancesSMS (example)
-* characteristic 0..0
-* characteristic.type from NoBinding
-
 
 // PROFILE: Regulated Authorisation 
 Profile: TransitionRegulatedAuthorization
@@ -194,11 +186,6 @@ Description: """Intermediate profile for processing PPL Manufactured Item data""
   * ^short = "Unit of presentation of the manufactured item (before preparing for administration)"
   * ^definition = "EMA IG 4.11.1"
 
-// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* ingredient 0..0
-* ingredient from SubstancesSMS
-* property 0..0
-* property.type from NoBinding
 
 // PROFILE: Pharmaceutical/ Administrable Product
 Profile: TransitionAdministrableProductDefinition
@@ -232,12 +219,6 @@ Description: """Intermediate profile for processing PPL Administrable Product da
 //  * code.coding.system = $100000073345
 //  * code from routes-and-methods-of-administration-vs
   * ^definition = "EMA IG 6.6"
-
-// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* ingredient 0..0
-* ingredient from SubstancesSMS (example)
-* property 0..0
-* property.type from NoBinding (example)
 
 
 // PROFILE: Ingredient
@@ -370,9 +351,6 @@ Description: """Intermediate profile for processing PPL Packaged Product data"""
       * ^definition = "EMA IG 4.11.2"
     //  * code from all-units-vs (unit of presentation or unit of measurement)
 
-// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* packaging.property 0..0
-* packaging.property.type from NoBinding (example)
 
 
 // TO DO: I'm not sure we want to use Organisation as a separate resource, but right now it is. See the comment at RegulatedAuthorization

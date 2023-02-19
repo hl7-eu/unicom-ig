@@ -139,14 +139,6 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * language.coding[bcp] from LanguageBCP
       * system = $BCP47
 
-// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* ingredient 0..0
-* ingredient from SubstancesSMS (example)
-* impurity 0..0
-* impurity from SubstancesSMS (example)
-* characteristic 0..0
-* characteristic.type from NoBinding
-
 
 // PROFILE: Regulated Authorisation 
 Profile: PPLRegulatedAuthorization
@@ -207,11 +199,6 @@ Description: """Manufactured item is the countable element inside the package"""
   * ^short = "Unit of presentation of the manufactured item (before preparing for administration)"
   * ^definition = "EMA IG 4.11.1"
 
-// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* ingredient 0..0
-* ingredient from SubstancesSMS (example)
-* property 0..0
-* property.type from NoBinding (example)
 
 // PROFILE: Pharmaceutical/ Administrable Product
 Profile: PPLAdministrableProductDefinition
@@ -246,12 +233,6 @@ Description: """Administrable product profile defines the ISO IDMP Pharmaceutica
 * routeOfAdministration.code from RoutesAndMethodsOfAdministration
 //  * code.coding.system = $100000073345
   * ^definition = "EMA IG 6.6"
-
-// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* ingredient 0..0
-* ingredient from SubstancesSMS (example)
-* property 0..0
-* property.type from NoBinding (example)
 
 
 // PROFILE: Ingredient
@@ -389,10 +370,6 @@ Description: """Packaged Product"""
       * ^short = "Number of the manufactured items (e.g. tablets) in this package layer or the amount of manufactured item (e.g. 20 g) in the unit of presentation defined in manufactured item definition"
       * ^definition = "EMA IG 4.11.2"
       * code from all-units-vs
-
-// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* packaging.property 0..0
-* packaging.property.type from NoBinding (example)
 
 
 // TO DO: I'm not sure we want to use Organisation as a separate resource, but right now it is. See the comment at RegulatedAuthorization
