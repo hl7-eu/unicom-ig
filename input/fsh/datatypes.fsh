@@ -102,7 +102,7 @@ Description: "IntegerNumber"
 Profile: REAL
 Parent: Element
 Description: "RealNumber"
-* . ^short = "Decimal number"
+* . ^short = "Real number"
 * . ^definition = "A scalar magnitude. Typically used whenever quantities are measured, estimated, or computed from other real numbers. The typical representation is decimal, where the number of significant decimal digits is known as the precision."
 
 Profile: EN
