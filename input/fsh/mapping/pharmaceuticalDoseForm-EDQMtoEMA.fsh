@@ -2170,7 +2170,7 @@ Title: "EDQM-SPOR Pharmaceutical dose forms"
 * group.element[=].display = "Solution for spray"
 * group.source = "https://standardterms.edqm.eu"
 * group.target = "https://spor.ema.europa.eu/v1/lists/200000000004"
-* url = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/ConceptMap/EDQM-SPOR-PharmaceuticalDoseForm"
+//* url = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/ConceptMap/EDQM-SPOR-PharmaceuticalDoseForm"
 * version = "1"
 * sourceScopeCanonical = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/ValueSet/pharmaceutical-dose-form"
 
