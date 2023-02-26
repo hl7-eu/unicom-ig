@@ -149,11 +149,13 @@ Description: "DRAFT. Crossborder eP/eD/PS medicinal product as represented in CD
     * code 0..1 CD "Active ingredient coded element"
     * name 0..1 ST "Active ingredient as text"
 * part 0..* Class "Product part - used for products that contain different manufactured items"
-  * formCode 0..1 CD "Dose form for the manufactured item"
-  * asContent 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.asContent "Packaging in max 3 layers, see above."
-  * asSpecializedKind 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.asSpecializedKind "PhPID for this part of the product - see above."
-  * part 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.part "Part of the part product - see above."
-  * ingredient 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.ingredient "Ingredients for this part of product - see above."
+  * quantity 0..1 PQ "Quantity of this manufactured item in the package"
+  * partProduct 1..1 Class "Description of the manufactured item"
+    * formCode 0..1 CD "Dose form of the manufactured item (not present in wave 6?)"
+    * asContent 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.asContent "Packaging in max 3 layers, see above."
+    * asSpecializedKind 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.asSpecializedKind "PhPID for this part of the product - see above."
+    * part 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.part "Part of the part product - see above."
+    * ingredient 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.ingredient "Ingredients for this part of product - see above."
 
 
 Logical: CrossBorderProduct
