@@ -1,4 +1,4 @@
-/*Instance: edqm-ema-pharmaceuticalDoseForm-cm
+Instance: edqm-ema-pharmaceuticalDoseForm-cm
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "EDQM-SPOR Pharmaceutical dose forms"
@@ -448,9 +448,6 @@ Title: "EDQM-SPOR Pharmaceutical dose forms"
 * group.element[=].target.relationship = #equivalent
 * group.element[=].target.display = "Oral solution"
 * group.element[=].display = "Oral solution"
-* group.element[+].target.code = #200000018781
-* group.element[=].target.relationship = #equivalent
-* group.element[=].target.display = "Pharmaceutical dose form not applicable"
 * group.element[+].code = #13047000
 * group.element[=].target.code = #100000174032
 * group.element[=].target.relationship = #equivalent
@@ -571,9 +568,6 @@ Title: "EDQM-SPOR Pharmaceutical dose forms"
 * group.element[=].target.relationship = #equivalent
 * group.element[=].target.display = "Powder for nebuliser solution"
 * group.element[=].display = "Powder for nebuliser solution"
-* group.element[+].target.code = #200000023323
-* group.element[=].target.relationship = #equivalent
-* group.element[=].target.display = "Not assigned"
 * group.element[+].code = #13007000
 * group.element[=].target.code = #100000174002
 * group.element[=].target.relationship = #equivalent
@@ -2180,4 +2174,3 @@ Title: "EDQM-SPOR Pharmaceutical dose forms"
 * version = "1"
 * sourceScopeCanonical = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/ValueSet/pharmaceutical-dose-form"
 
-*/
