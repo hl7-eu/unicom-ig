@@ -127,8 +127,6 @@ Description: "DRAFT. Crossborder eP/eD/PS medicinal product as represented in CD
     * formcode 0..1 CD "Type of packaging. From eHDSIPackage."
     * asContent 0..1 Class "Next layer of the package - the direction is inside out"
       * quantity 1..1 PQ "Quantity of inner package items in this package item"
-        * unit 0..1 CD "UCUM or EDQM"
-        * value 0..1 REAL "Numerical value"
       * containerPackagedProduct 0..1 Class ""
         * code 0..1 II "Package identifier (PCID or national) if this is the actual outer box"
         * name 0..* ST "Name or description of the package"
@@ -151,13 +149,11 @@ Description: "DRAFT. Crossborder eP/eD/PS medicinal product as represented in CD
     * code 0..1 CD "Active ingredient coded element"
     * name 0..1 ST "Active ingredient as text"
 * part 0..* Class "Product part - used for products that contain different manufactured items"
-  * quantity 0..1 PQ "Amount"
-  * partProduct 0..1 Class "Part product details"
   * formCode 0..1 CD "Dose form for the manufactured item"
   * asContent 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.asContent "Packaging in max 3 layers, see above."
-    * asSpecializedKind 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.asSpecializedKind "PhPID for this part of the product - see above."
-    * part 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.part "Part of the part product - see above."
-    * ingredient 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.ingredient "Ingredients for this part of product - see above."
+  * asSpecializedKind 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.asSpecializedKind "PhPID for this part of the product - see above."
+  * part 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.part "Part of the part product - see above."
+  * ingredient 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.ingredient "Ingredients for this part of product - see above."
 
 
 Logical: CrossBorderProduct
