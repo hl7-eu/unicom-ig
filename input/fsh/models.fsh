@@ -168,7 +168,7 @@ Description: "DRAFT. Crossborder eP/eD/PS medicinal product as a implementation-
         * strength 1..1 RTO "Reference strength"
   * manufacturedItem 0..* Class "Manufactured item if the prescription contains more than one type of items"
     * doseForm 1..1 CD "Manufactured item dose form"
-    * ingredient 0..* Class "See Ingredient above"
+    * ingredient 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/CrossBorderProduct#CrossBorderProduct.constitution.ingredient "Ingredients for this part of product - see above."
     * unitOfPresentation 0..* CD "Unit of presentation for the manufactured item"
     * containedQuantity 0..1 PQ "Manufactured item quantity for liquids (3ml/vial)"
     * manufacturedItemQuantity 1..1 PQ "Number of such manufactured items in this product (5 vials)"
@@ -180,4 +180,4 @@ Description: "DRAFT. Crossborder eP/eD/PS medicinal product as a implementation-
 
 // package type
 // administrable dose form
-    
+// narcotic indicator?    
