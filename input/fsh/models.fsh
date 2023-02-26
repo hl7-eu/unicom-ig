@@ -48,7 +48,7 @@ Description: "Logical model for a pilot product list's medicinal product"
     * language 0..1 CD "Description language"
   * packSize 1..* PQ "Pack size, repeatable for different manufactured items"
   * legalStatusOfSupply 0..1 CD "Legal status of supply on package level"
-  * marketingAuthorisation 0..* https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.marketingAuthorisation "Marketing authorisation on package level"
+  * marketingAuthorisation 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.marketingAuthorisation "Marketing authorisation on package level"
       //Local representative currently not included, but probably needed in several countries
   * marketingStatus 0..* Class "Marketing status"
     * country 1..1 CD "Country"
