@@ -4,7 +4,7 @@ https://vico.org/HL7_RIM/infrastructure/datatypes_r2/datatypes_r2.html#datyp2int
 */
 
 
-Profile: untyped
+Profile: Untyped
 Parent: Element
 Description: "No data type defined"
 * . ^short = "No specific data type assigned"
@@ -18,7 +18,7 @@ Description: "An abstract type"
 * . ^definition = "An abstract type that defines the basic properties common to all data values defined in this specification. Data Value is an abstract type, meaning that no proper value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type."
 
 
-Profile: class
+Profile: Class
 Parent: BackboneElement
 Description: "Class of data elements"
 * . ^short = "group"
@@ -56,13 +56,6 @@ Description: "InstanceIdentifier"
 //If we go custom, I'd say we lose "Instance" and one I.
 // system, value
 
-//I suggest replacing this with PQ or making it a generic quantity: supertype for REAL and INT
-Profile: QT
-Parent: Element
-Description: "Quantity"
-* . ^short = "quantity"
-* . ^definition = "Quantity"
-
 
 Profile: PQ
 Parent: Element
@@ -79,6 +72,7 @@ Description: "TimeStamp"
 * . ^definition = "A quantity specifying a point on the axis of natural time. A point in time is most often represented as a calendar expression."
 // value
 
+
 Profile: DT
 Parent: Element
 Description: "Date"
@@ -86,12 +80,13 @@ Description: "Date"
 * . ^definition = "Date"
 
 
-Profile: RTO //RTO-QTY-QTY
+Profile: RTO
 Parent: Element
 Description: "Ratio"
 * . ^short = "Ratio of quantities"
 * . ^definition = "A quantity constructed as the quotient of a numerator quantity divided by a denominator quantity."
-// Let's go with just RTO
+//numerator PQ, denominator PQ
+
 
 Profile: INT
 Parent: Element
@@ -99,17 +94,26 @@ Description: "IntegerNumber"
 * . ^short = "Integer numbers"
 * . ^definition = "Integer numbers (-1,0,1,2, 100, 3398129, etc.) are precise numbers that are results of counting and enumerating. Integer numbers are discrete, the set of integers is infinite but countable."
 
+
 Profile: REAL
 Parent: Element
 Description: "RealNumber"
-* . ^short = "Real number"
+* . ^short = "By default finite decimal number"
 * . ^definition = "A scalar magnitude. Typically used whenever quantities are measured, estimated, or computed from other real numbers. The typical representation is decimal, where the number of significant decimal digits is known as the precision."
+
 
 Profile: EN
 Parent: Element
 Description: "EntityName"
 * . ^short = "Entity name"
 * . ^definition = "A name for a person, organization, place or thing. A sequence of name parts, such as given name or family name, prefix, suffix, etc."
+
+
+Profile: AD
+Parent: Element
+Description: "Address"
+* . ^short = "Address"
+* . ^definition = "Mailing and home or office addresses. A sequence of address parts, such as street or post office box, city, postal code, country, etc."
 
 
 // Other candidates
