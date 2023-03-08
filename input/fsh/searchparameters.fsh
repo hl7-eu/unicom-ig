@@ -9,3 +9,16 @@ Usage: #definition
 * type = #token
 * expression = "Ingredient.substance.strength.referenceStrength.substance.concept"
 * processingMode = #normal
+
+
+Instance: country
+InstanceOf: SearchParameter
+Usage: #definition
+* status = #active
+* name = "country"
+* description = "Search for MedicinalProductDefinition by country"
+* code = #country
+* base = #MedicinalProductDefinition
+* type = #token
+* expression = "MedicinalProductDefinition.name.usage.country.coding.code"
+* processingMode = #normal
