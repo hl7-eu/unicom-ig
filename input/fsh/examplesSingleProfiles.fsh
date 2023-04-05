@@ -15,7 +15,8 @@ Description: "Medicinal Product Definition: simple tablets"
 * name.part[strength].part = "5 mg"
 * name.part[doseForm].part = "tabletid"
 * name.usage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.usage.language = $100000072057#100000072172 "Estonian"
+//* name.usage.language = urn:ietf:bcp:47#et "Estonian"
+* name.usage.language = urn:ietf:bcp:47#et "Estonian"
 
 
 Instance: Agen-5mg-Tablet-EE-RA
@@ -149,7 +150,8 @@ Description: "Medicinal Product Definition: powder for solution"
 * name.part[invented].part = "Cefuroxime MIP"
 * name.part[strength].part = "1500 MG"
 * name.usage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.usage.language = $100000072057#100000072172 "Estonian"
+//* name.usage.language = urn:ietf:bcp:47#et "Estonian"
+* name.usage.language = urn:ietf:bcp:47#et "Estonian"
 
 Instance: Cefuroxime-MIP-1500mg-EE-RA
 InstanceOf: PPLRegulatedAuthorization
@@ -277,7 +279,8 @@ Description: "Medicinal Product Definition: combination product of creme and pes
 * name.productName = "Canifug Cremolum"
 * name.part[invented].part = "Canifug Cremolum"
 * name.usage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.usage.language = $100000072057#100000072172 "Estonian"
+//* name.usage.language = urn:ietf:bcp:47#et "Estonian"
+* name.usage.language = urn:ietf:bcp:47#et "Estonian"
 
 Instance: CanifugCremolum-EE-RA
 InstanceOf: PPLRegulatedAuthorization

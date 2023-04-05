@@ -61,7 +61,8 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "tabletid"
 * name.usage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.usage.language = $100000072057#100000072172 "Estonian"
+//* name.usage.language = urn:ietf:bcp:47#et "Estonian"
+* name.usage.language = urn:ietf:bcp:47#et "Estonian"
 
 
 Instance: Agen-10mg-Tablet-EE-RA

@@ -60,7 +60,7 @@ Usage: #inline
 * name.part[strength].part = "1,5 g"
 * name.part[doseForm].part = "Pulver till injektions-/infusionsvätska, lösning"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 
 Instance: CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization

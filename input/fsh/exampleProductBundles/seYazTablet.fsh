@@ -79,7 +79,7 @@ Usage: #inline
 * name.part[strength].part = "0,02 mg/3 mg"
 * name.part[doseForm].part = "Filmdragerad tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 
 Instance: Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization

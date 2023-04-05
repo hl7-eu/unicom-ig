@@ -70,7 +70,7 @@ Usage: #inline
 * name.productName = "Canesten® Kombi 500 mg emätinpuikko + 10 mg/g emulsiovoide"
 * name.part[invented].part = "Canesten Kombi"
 * name.usage.country = $100000000002#100000000394 "Republic of Finland"
-* name.usage.language = $100000072057#100000072149 "Finnish"
+* name.usage.language = urn:ietf:bcp:47#fi "Finnish"
 
 Instance: CanestenKombi-FI-RA
 InstanceOf: PPLRegulatedAuthorization
