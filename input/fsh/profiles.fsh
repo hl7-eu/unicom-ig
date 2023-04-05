@@ -98,7 +98,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * ^slicing.discriminator.type = #pattern
     * ^slicing.discriminator.path = "type"
     * ^slicing.rules = #open
-    * ^slicing.ordered = true
+    * ^slicing.ordered = false
     * ^slicing.description = "Slicing on the name part"
     * ^short = "Medicinal product name part"
     * ^definition = "EMA IG 1.14.3. Name part. Product names are usually combined of these three parts. More parts can be defined and strength and dose form parts can be omitted."
@@ -125,14 +125,13 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * country.coding[iso] from CountryISO
       * system = $iso-country
 
-
     * language.coding
       * ^slicing.discriminator.type = #pattern
       * ^slicing.discriminator.path = "system"
       * ^slicing.rules = #open
       * ^short = "EMA or ISO codes for country"
     * language.coding contains
-        ema 1..1 and
+        ema 0..1 and
         bcp 0..1
     * language.coding[ema] from LanguageEMA
       * system = $100000072057

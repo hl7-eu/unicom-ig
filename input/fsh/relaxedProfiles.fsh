@@ -89,7 +89,7 @@ Description: """Intermediate profile for processing PPL Medicinal Product data""
     * ^slicing.discriminator.type = #pattern
     * ^slicing.discriminator.path = "type"
     * ^slicing.rules = #open
-    * ^slicing.ordered = true
+    * ^slicing.ordered = false
     * ^slicing.description = "Slicing on the name part"
     * ^short = "Medicinal product name part"
     * ^definition = "EMA IG 1.14.3. Name part. Product names are usually combined of these three parts. More parts can be defined and strength and dose form parts can be omitted."
