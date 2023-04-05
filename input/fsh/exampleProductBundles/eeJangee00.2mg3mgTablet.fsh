@@ -2,46 +2,48 @@ Instance: 007-Jangee-002mg-3mg-Film-coated-tablet-EE-FullProduct
 InstanceOf: Bundle
 Usage: #example
 Description: "Jangee ethinylestradiol 0.02mg, drosperinone 3mg. Estonia. Without placebo pills."
-* type = #transaction
+
+
+* type = #collection
 * entry[0].resource = Jangee-002mg-3mg-Film-coated-tablet-EE-MPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/Jangee-002mg-3mg-Film-coated-tablet-EE-MPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Jangee-002mg-3mg-Film-coated-tablet-EE-MPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition-Jangee-002mg-3mg-Film-coated-tablet-EE-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Jangee-002mg-3mg-Film-coated-tablet-EE-MPD"
 
 * entry[+].resource = LOC-100005719-ExeltisBalticsUAB
-* entry[=].request.method = #PUT
-* entry[=].request.url = "LOC-100005719-ExeltisBalticsUAB"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100005719-ExeltisBalticsUAB"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "LOC-100005719-ExeltisBalticsUAB"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100005719-ExeltisBalticsUAB"
 
 * entry[+].resource = Jangee-002mg-3mg-Film-coated-tablet-EE-RA
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/Jangee-002mg-3mg-Film-coated-tablet-EE-RA"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Jangee-002mg-3mg-Film-coated-tablet-EE-RA"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization-Jangee-002mg-3mg-Film-coated-tablet-EE-RA"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Jangee-002mg-3mg-Film-coated-tablet-EE-RA"
 
 * entry[+].resource = Jangee-002mg-3mg-Film-coated-tablet-EE-APD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/Jangee-002mg-3mg-Film-coated-tablet-EE-APD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Jangee-002mg-3mg-Film-coated-tablet-EE-APD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition-Jangee-002mg-3mg-Film-coated-tablet-EE-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Jangee-002mg-3mg-Film-coated-tablet-EE-APD"
 
 * entry[+].resource = Jangee-002mg-3mg-Film-coated-tablet-EE-PPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Jangee-002mg-3mg-Film-coated-tablet-EE-PPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Jangee-002mg-3mg-Film-coated-tablet-EE-PPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-Jangee-002mg-3mg-Film-coated-tablet-EE-PPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Jangee-002mg-3mg-Film-coated-tablet-EE-PPD"
 
 * entry[+].resource = Jangee-002mg-3mg-Film-coated-tablet-EE-MID
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Jangee-002mg-3mg-Film-coated-tablet-EE-MID"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Jangee-002mg-3mg-Film-coated-tablet-EE-MID"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-Jangee-002mg-3mg-Film-coated-tablet-EE-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Jangee-002mg-3mg-Film-coated-tablet-EE-MID"
 
 * entry[+].resource = Jangee-002mg-3mg-Film-coated-tablet-EE-I-01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Jangee-002mg-3mg-Film-coated-tablet-EE-I-01"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Jangee-002mg-3mg-Film-coated-tablet-EE-I-01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-Jangee-002mg-3mg-Film-coated-tablet-EE-I-01"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b-Jangee-002mg-3mg-Film-coated-tablet-EE-I-01"
 
 * entry[+].resource = Jangee-002mg-3mg-Film-coated-tablet-EE-I-02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Jangee-002mg-3mg-Film-coated-tablet-EE-I-02"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Jangee-002mg-3mg-Film-coated-tablet-EE-I-02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-Jangee-002mg-3mg-Film-coated-tablet-EE-I-02"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b-Jangee-002mg-3mg-Film-coated-tablet-EE-I-02"
 
 
 Instance: Jangee-002mg-3mg-Film-coated-tablet-EE-MPD

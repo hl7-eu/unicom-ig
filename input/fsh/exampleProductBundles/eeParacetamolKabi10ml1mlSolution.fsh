@@ -3,61 +3,61 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Paracetamol Kabi 10mg/ml solution for infusion. Estonia. One pharmaceutical product for three different manufactured items."
 
-* type = #transaction
+* type = #collection
 * entry[0].resource = Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD"
 
 * entry[+].resource = Paracetamol-Kabi-10mg-1ml-solinj-EE-RA
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/Paracetamol-Kabi-10mg-1ml-solinj-EE-RA"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Paracetamol-Kabi-10mg-1ml-solinj-EE-RA"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization-Paracetamol-Kabi-10mg-1ml-solinj-EE-RA"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Paracetamol-Kabi-10mg-1ml-solinj-EE-RA"
 
 * entry[+].resource = LOC-100008123-FreseniusKabiPolska
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100008123-FreseniusKabiPolska"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100008123-FreseniusKabiPolska"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization/LOC-100008123-FreseniusKabiPolska"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100008123-FreseniusKabiPolska"
 
 * entry[+].resource = Paracetamol-Kabi-10mg-1ml-solinj-EE-APD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-APD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-APD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-APD"
 
 * entry[+].resource = Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034"
 
 * entry[+].resource = Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905"
 
 * entry[+].resource = Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056"
 
 * entry[+].resource = Paracetamol-Kabi-10mg-1ml-solinj-EE-I
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Paracetamol-Kabi-10mg-1ml-solinj-EE-I"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Paracetamol-Kabi-10mg-1ml-solinj-EE-I"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-Paracetamol-Kabi-10mg-1ml-solinj-EE-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Paracetamol-Kabi-10mg-1ml-solinj-EE-I"
 
 * entry[+].resource = Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424034
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424034"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424034"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424034"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424034"
 
 * entry[+].resource = Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1799905
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1799905"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1799905"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1799905"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1799905"
 
 * entry[+].resource = Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424056
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424056"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424056"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424056"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424056"
 
 Instance: Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD
 InstanceOf: PPLMedicinalProductDefinition

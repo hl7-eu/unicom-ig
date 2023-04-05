@@ -3,41 +3,41 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Paracetamol 500mg. Powder for oral solution in sachet. Sweden."
 
-* type = #batch
+* type = #collection
 * entry[0].resource = Panodil500mgoralsolutionsachet-SE-PLC-MPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-MPD"
 
 * entry[+].resource = Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization-Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization"
 
 * entry[+].resource = LOC-100005555-PerrigoSverigeAB
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100005555-PerrigoSverigeAB"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100005555-PerrigoSverigeAB"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization/LOC-100005555-PerrigoSverigeAB"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100005555-PerrigoSverigeAB"
 
 * entry[+].resource = Panodil500mgoralsolutionsachet-SE-PLC-APD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-APD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-APD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-APD"
 
 * entry[+].resource = Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef"
 
 * entry[+].resource = Panodil500mgoralsolutionsachet-SE-PLC-MID
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MID"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MID"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-Panodil500mgoralsolutionsachet-SE-PLC-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Panodil500mgoralsolutionsachet-SE-PLC-MID"
 
 * entry[+].resource = Panodil500mgoralsolutionsachet-SE-PLC-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Panodil500mgoralsolutionsachet-SE-PLC-Ingredient"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Panodil500mgoralsolutionsachet-SE-PLC-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-Panodil500mgoralsolutionsachet-SE-PLC-Ingredient"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Panodil500mgoralsolutionsachet-SE-PLC-Ingredient"
 
 
 Instance: Panodil500mgoralsolutionsachet-SE-PLC-MPD

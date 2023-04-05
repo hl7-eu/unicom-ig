@@ -3,41 +3,41 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Lantus Solostar, insulin glargine, solution for injection in 3ml pre-filled pens."
 
-* type = #transaction
+* type = #collection
 * entry[0].resource = LantusSolostar-EE-MPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/LantusSolostar-EE-MPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/LantusSolostar-EE-MPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition-LantusSolostar-EE-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-LantusSolostar-EE-MPD"
 
 * entry[+].resource = LantusSolostar-EE-RA
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/LantusSolostar-EE-RA"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/LantusSolostar-EE-RA"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization-LantusSolostar-EE-RA"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-LantusSolostar-EE-RA"
 
 * entry[+].resource = LOC-100000869-Sanofi-Aventis-Deutchland
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100000869-Sanofi-Aventis-Deutchland"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100000869-Sanofi-Aventis-Deutchland"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization/LOC-100000869-Sanofi-Aventis-Deutchland"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100000869-Sanofi-Aventis-Deutchland"
 
 * entry[+].resource = LantusSolostar-EE-APD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/LantusSolostar-EE-APD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/LantusSolostar-EE-APD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition-LantusSolostar-EE-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-LantusSolostar-EE-APD"
 
 * entry[+].resource = LantusSolostar-EE-MID
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/LantusSolostar-EE-MID"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/LantusSolostar-EE-MID"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-LantusSolostar-EE-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-LantusSolostar-EE-MID"
 
 * entry[+].resource = LantusSolostar-EE-I
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/LantusSolostar-EE-I"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/LantusSolostar-EE-I"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-LantusSolostar-EE-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-LantusSolostar-EE-I"
 
 * entry[+].resource = LantusSolostar-EE-PPD-1265778
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/LantusSolostar-EE-PPD-1265778"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/LantusSolostar-EE-PPD-1265778"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-LantusSolostar-EE-PPD-1265778"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-LantusSolostar-EE-PPD-1265778"
 
 Instance: LantusSolostar-EE-MPD
 InstanceOf: PPLMedicinalProductDefinition

@@ -3,56 +3,56 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Canesten Kombi. Finland. Combination package of clotrimazole 20mg/g creme and 500mg pessary with an applicator."
 
-* type = #transaction
+* type = #collection
 * entry[0].resource = CanestenKombi-FI-MPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/CanestenKombi-FI-MPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/CanestenKombi-FI-MPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition-CanestenKombi-FI-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-CanestenKombi-FI-MPD"
 
 * entry[+].resource = CanestenKombi-FI-RA
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/CanestenKombi-FI-RA"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/CanestenKombi-FI-RA"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization-CanestenKombi-FI-RA"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-CanestenKombi-FI-RA"
 
 * entry[+].resource = LOC-100004966-BayerOy
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100004966-BayerOy"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100004966-BayerOy"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization/LOC-100004966-BayerOy"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100004966-BayerOy"
 
 * entry[+].resource = CanestenKombi-Cream-FI-APD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/CanestenKombi-Cream-FI-APD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/CanestenKombi-Cream-FI-APD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition-CanestenKombi-Cream-FI-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-CanestenKombi-Cream-FI-APD"
 
 * entry[+].resource = CanestenKombi-Pessary-FI-APD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/CanestenKombi-Pessary-FI-APD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/CanestenKombi-Pessary-FI-APD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition-CanestenKombi-Pessary-FI-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-CanestenKombi-Pessary-FI-APD"
 
 * entry[+].resource = CanestenKombi-Cream-FI-MID
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/CanestenKombi-Cream-FI-MID"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/CanestenKombi-Cream-FI-MID"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-CanestenKombi-Cream-FI-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-CanestenKombi-Cream-FI-MID"
 
 * entry[+].resource = CanestenKombi-Pessary-FI-MID
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/CanestenKombi-Pessary-FI-MID"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/CanestenKombi-Pessary-FI-MID"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-CanestenKombi-Pessary-FI-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-CanestenKombi-Pessary-FI-MID"
 
 * entry[+].resource = CanestenKombi-Cream-FI-I
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/CanestenKombi-Cream-FI-I"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CanestenKombi-Cream-FI-I"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-CanestenKombi-Cream-FI-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CanestenKombi-Cream-FI-I"
 
 * entry[+].resource = CanestenKombi-Pessary-FI-I
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/CanestenKombi-Pessary-FI-I"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CanestenKombi-Pessary-FI-I"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-CanestenKombi-Pessary-FI-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CanestenKombi-Pessary-FI-I"
 
 * entry[+].resource = CanestenKombi-FI-PPD-541276
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/CanestenKombi-FI-PPD-541276"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/CanestenKombi-FI-PPD-541276"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-CanestenKombi-FI-PPD-541276"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-CanestenKombi-FI-PPD-541276"
 
 Instance: CanestenKombi-FI-MPD
 InstanceOf: PPLMedicinalProductDefinition
