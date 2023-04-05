@@ -328,7 +328,7 @@ Instance: AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablets. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -373,7 +373,7 @@ Instance: AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablets. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -418,7 +418,7 @@ Instance: AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -455,7 +455,7 @@ Instance: AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -491,7 +491,7 @@ Instance: AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -531,7 +531,7 @@ Instance: AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -568,7 +568,7 @@ Instance: AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -605,7 +605,7 @@ Instance: AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -645,7 +645,7 @@ Instance: AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -686,7 +686,7 @@ Instance: AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -727,7 +727,7 @@ Instance: AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -768,7 +768,7 @@ Instance: Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -808,7 +808,7 @@ Instance: Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -847,7 +847,7 @@ Instance: AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -892,7 +892,7 @@ Instance: AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -935,7 +935,7 @@ Instance: AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -976,7 +976,7 @@ Instance: AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -1017,7 +1017,7 @@ Instance: AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -1057,7 +1057,7 @@ Instance: AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -1097,7 +1097,7 @@ Instance: Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition"
@@ -1133,7 +1133,7 @@ Instance: Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition
 //* entry[=].request.method = #PUT
 //* entry[=].request.url = "MedicinalProductDefinition/Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition"
