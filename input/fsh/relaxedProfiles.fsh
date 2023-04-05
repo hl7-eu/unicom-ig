@@ -269,7 +269,7 @@ Description: """Intermediate profile for processing PPL Ingredient data"""
     * referenceStrength
       * ^definition = "EMA IG 5.5.3. According to EMA, this is a mandatory element for all products, which is not necessarily accepted by all NCAs, and it is ambivalent in ISO IDMP."
       * ^short = "Strenth expressed in terms of a reference substance; reference strength type not distinguished. According to EMA IG, all products need to have reference strentgh (repeating the strentgh, if needed)"
-      * substance 0..1
+      * substance 1..1
       * substance from SubstancesSMS (example)
         * ^short = "Substance code from EMA SMS" 
       * strengthRatio // This is 1..1 in FHIR spec!
