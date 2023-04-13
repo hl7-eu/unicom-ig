@@ -2,6 +2,7 @@ Instance: edqm-ema-pharmaceuticalDoseForm-cm
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "EDQM-SPOR Pharmaceutical dose forms"
+* experimental = false
 * title = "EDQM-SPOR Pharmaceutical dose forms"
 * description = "Pharmaceutical dose form value set from EDQM mapped to EMA SPOR codes."
 * meta.versionId = "1"
