@@ -103,7 +103,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
     * ^short = "Medicinal product name part"
     * ^definition = "EMA IG 1.14.3. Name part. Product names are usually combined of these three parts. More parts can be defined and strength and dose form parts can be omitted."
   * part contains
-    invented 1..1 and
+    invented 0..1 and
     strength 0..1 and
     doseForm 0..1 
   * part[invented].type = $220000000000#220000000002 "Invented name part"
