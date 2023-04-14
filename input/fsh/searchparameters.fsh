@@ -76,11 +76,12 @@ Usage: #definition
 * base = #Ingredient
 * expression = "Ingredient.substance.strength.presentation.ofType(Ratio)"
 
-* component[+].expression = "denominator"
-* component[=].definition = "http://fhir.hl7.pt:8080/fhir/SearchParameter/strength-presentation-ratio-denominator"
 
 * component[+].expression = "numerator"
 * component[=].definition = "http://fhir.hl7.pt:8080/fhir/SearchParameter/strength-presentation-ratio-numerator"
+
+* component[+].expression = "denominator"
+* component[=].definition = "http://fhir.hl7.pt:8080/fhir/SearchParameter/strength-presentation-ratio-denominator"
 
 
 * type = #composite
