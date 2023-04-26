@@ -1,16 +1,15 @@
 Instance: unit-of-presentation
 InstanceOf: ValueSet
 Usage: #definition
+Title: "EDQM Unit of Presentation"
+
+* title = "EDQM Unit of Presentation"
+* description = "ValueSet Unit of presentation from EDQM, UOP, see https://standardterms.edqm.eu/#"
 * name = "UnitOfPresentation"
-* title = "Unit of presentation"
 * status = #active
 * experimental = false
-* description = "ValueSet Unit of presentation from EDQM, UOP, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
-
-
 
 * compose.include.concept[+].code = #15001000
 * compose.include.concept[=].display = "Actuation"

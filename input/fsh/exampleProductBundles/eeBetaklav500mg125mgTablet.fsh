@@ -3,56 +3,56 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Amoxicillin 500mg, clavulanic acid 125mg. Tablets. Estonia."
 
-* type = #transaction
+* type = #collection
 * entry[0].resource = Betaklav-500mg-125mg-EE-MPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Betaklav-500mg-125mg-EE-MPD"
 
 * entry[+].resource = Betaklav-500mg-125mg-EE-RA
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/Betaklav-500mg-125mg-EE-RA"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Betaklav-500mg-125mg-EE-RA"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/Betaklav-500mg-125mg-EE-RA"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Betaklav-500mg-125mg-EE-RA"
 
 * entry[+].resource = LOC-100009540-KrkaNovoMesto
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100009540-KrkaNovoMesto"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100009540-KrkaNovoMesto"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization/LOC-100009540-KrkaNovoMesto"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100009540-KrkaNovoMesto"
 
 * entry[+].resource = Betaklav-500mg-125mg-EE-APD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/Betaklav-500mg-125mg-EE-APD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Betaklav-500mg-125mg-EE-APD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/Betaklav-500mg-125mg-EE-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Betaklav-500mg-125mg-EE-APD"
 
 * entry[+].resource = Betaklav-500mg-125mg-EE-MID
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Betaklav-500mg-125mg-EE-MID"
 
 * entry[+].resource = Betaklav-500mg-125mg-EE-I-100000092629
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Betaklav-500mg-125mg-EE-I-100000092629"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Betaklav-500mg-125mg-EE-I-100000092629"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/Betaklav-500mg-125mg-EE-I-100000092629"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Betaklav-500mg-125mg-EE-I-100000092629"
 
 * entry[+].resource = Betaklav-500mg-125mg-EE-I-100000093061
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Betaklav-500mg-125mg-EE-I-100000093061"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Betaklav-500mg-125mg-EE-I-100000093061"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/Betaklav-500mg-125mg-EE-I-100000093061"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Betaklav-500mg-125mg-EE-I-100000093061"
 
 * entry[+].resource = Betaklav-500mg-125mg-EE-PPD-1635117
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Betaklav-500mg-125mg-EE-PPD-1635117"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Betaklav-500mg-125mg-EE-PPD-1635117"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/Betaklav-500mg-125mg-EE-PPD-1635117"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Betaklav-500mg-125mg-EE-PPD-1635117"
 
 * entry[+].resource = Betaklav-500mg-125mg-EE-PPD-1635207
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Betaklav-500mg-125mg-EE-PPD-1635207"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Betaklav-500mg-125mg-EE-PPD-1635207"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/Betaklav-500mg-125mg-EE-PPD-1635207"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Betaklav-500mg-125mg-EE-PPD-1635207"
 
 * entry[+].resource = Betaklav-500mg-125mg-EE-PPD-1635139
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Betaklav-500mg-125mg-EE-PPD-1635139"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Betaklav-500mg-125mg-EE-PPD-1635139"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/Betaklav-500mg-125mg-EE-PPD-1635139"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Betaklav-500mg-125mg-EE-PPD-1635139"
 
 
 Instance: Betaklav-500mg-125mg-EE-MPD
@@ -73,7 +73,8 @@ Usage: #inline
 * name.part[strength].part = "500mg/125mg"
 * name.part[doseForm].part = "õhukese polümeerikattega tabletid"
 * name.usage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.usage.language = $100000072057#100000072172 "Estonian"
+//* name.usage.language = urn:ietf:bcp:47#et "Estonian"
+* name.usage.language = urn:ietf:bcp:47#et "Estonian"
 
 
 Instance: Betaklav-500mg-125mg-EE-RA

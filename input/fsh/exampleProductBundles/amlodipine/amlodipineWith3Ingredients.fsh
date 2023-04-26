@@ -4,56 +4,57 @@ Instance: 015-CopaliaHCT-EE-FullProduct
 InstanceOf: Bundle
 Usage: #example
 Description: "Copalia HCT. Valsartan + amlodipine (besilate) + hydrochlorothiazide tablets. Not a PPL product."
-* type = #transaction
+
+* type = #collection
 * entry[0].resource = CopaliaHCT-EE-MPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/CopaliaHCT-EE-MPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/CopaliaHCT-EE-MPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition-CopaliaHCT-EE-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-CopaliaHCT-EE-MPD"
 
 * entry[+].resource = CopaliaHCT-EE-RA
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/CopaliaHCT-EE-RA"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/CopaliaHCT-EE-RA"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization-CopaliaHCT-EE-RA"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-CopaliaHCT-EE-RA"
 
 * entry[+].resource = LOC-100010531-NovartisEuropharmLimited
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100010531-NovartisEuropharmLimited"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100010531-NovartisEuropharmLimited"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization/LOC-100010531-NovartisEuropharmLimited"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100010531-NovartisEuropharmLimited"
 
 * entry[+].resource = CopaliaHCT-EE-APD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/CopaliaHCT-EE-APD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/CopaliaHCT-EE-APD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition-CopaliaHCT-EE-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-CopaliaHCT-EE-APD"
 
 * entry[+].resource = CopaliaHCT-EE-MID
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/CopaliaHCT-EE-MID"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/CopaliaHCT-EE-MID"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-CopaliaHCT-EE-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-CopaliaHCT-EE-MID"
 
 * entry[+].resource = CopaliaHCT-ingredient1-EE-I
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/CopaliaHCT-ingredient1-EE-I"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CopaliaHCT-ingredient1-EE-I"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-CopaliaHCT-ingredient1-EE-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CopaliaHCT-ingredient1-EE-I"
 
 * entry[+].resource = CopaliaHCT-ingredient2-EE-I
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/CopaliaHCT-ingredient2-EE-I"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CopaliaHCT-ingredient2-EE-I"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-CopaliaHCT-ingredient2-EE-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CopaliaHCT-ingredient2-EE-I"
 
 * entry[+].resource = CopaliaHCT-ingredient3-EE-I
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/CopaliaHCT-ingredient3-EE-I"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CopaliaHCT-ingredient3-EE-I"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-CopaliaHCT-ingredient3-EE-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CopaliaHCT-ingredient3-EE-I"
 
 * entry[+].resource = CopaliaHCT-package1-EE-PPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/CopaliaHCT-package1-EE-PPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/CopaliaHCT-package1-EE-PPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-CopaliaHCT-package1-EE-PPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-CopaliaHCT-package1-EE-PPD"
 
 * entry[+].resource = CopaliaHCT-package2-EE-PPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/CopaliaHCT-package2-EE-PPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/CopaliaHCT-package2-EE-PPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-CopaliaHCT-package2-EE-PPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-CopaliaHCT-package2-EE-PPD"
 
 
 Instance: CopaliaHCT-EE-MPD
@@ -77,7 +78,8 @@ Usage: #inline
 * name.part[strength].part = "160mg / 12.5mg / 10mg"
 * name.part[doseForm].part = "õhukese polümeerikattega tabletid"
 * name.usage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.usage.language = $100000072057#100000072172  "Estonian"
+//* name.usage.language = $100000072057#100000072172  "Estonian"
+* name.usage.language = urn:ietf:bcp:47#et  "Estonian"
 
 
 Instance: CopaliaHCT-ingredient1-EE-I

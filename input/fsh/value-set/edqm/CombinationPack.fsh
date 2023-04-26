@@ -1,15 +1,15 @@
 Instance: combination-pack
 InstanceOf: ValueSet
 Usage: #definition
+Title: "EDQM Combination Pack"
+
+* title = "EDQM Combination Pack"
+* description = "ValueSet Combination pack (dose form) from EDQM, CMP, see https://standardterms.edqm.eu/#"
 * name = "CombinationPack"
-* title = "Combination pack"
 * status = #active
 * experimental = false
-* description = "ValueSet Combination pack from EDQM, CMP, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
-
 
 
 * compose.include.concept[+].code = #14001000

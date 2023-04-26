@@ -1,15 +1,16 @@
 Instance: administration-device
 InstanceOf: ValueSet
 Usage: #definition
-* name = "AdministrationDevice"
-* title = "Administration device"
+Title: "EDQM Administration Device"
+
+
+* title = "EDQM Administration Device"
+* description = "ValueSet Administration device from EDQM, DEV, see https://standardterms.edqm.eu/#"
+* name = "AdministrationDevice" 
 * status = #active
 * experimental = false
-* description = "ValueSet Administration device from EDQM, DEV, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
-
 
 
 * compose.include.concept[+].code = #13072000

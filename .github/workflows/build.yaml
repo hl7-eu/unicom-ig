@@ -19,5 +19,63 @@ on:
 
 jobs:
   # This workflow contains a single job called "build"
-  call_build: 
-    uses: openhie/empty-fhir-ig/.github/workflows/main.yml@addheapsize
+#  call_build: 
+#    uses: https://github.com/hl7pt/empty-fhir-ig/blob/addheapsize/.github/workflows/main.yml
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+#jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+   
+      - name: Get branch name
+        run: echo ${GITHUB_REF##*/}
+      - name: Get branch name
+        run: echo ${GITHUB_REPOSITORY}
+    
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - name: Create gh-pages branch if it doesn't exist
+        uses: christopherdavenport/create-ghpages-ifnotexists@v1    
+      - name: Update the image to the latest publisher
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          # Get the latest publisher - don't run the batch script but run the line directly
+          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+
+#      - name: Set env
+#        run: echo ::set-env name=REPOPATH::https://github.com/${{ env.GITHUB_REPOSITORY }}
+#      - name: Test
+#        run: echo $REPOPATH
+
+      - name: Run the IG publisher
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          # Run the publisher - don't run the batch script but run the line directly
+          args: java -jar -Xmx2g ./input-cache/publisher.jar publisher -ig . -auto-ig-build -repo https://github.com/${{github.repository}}
+
+      - name: Get branch names
+        id: branch-name
+        uses: tj-actions/branch-names@v4.3
+
+      - name: Deploy candidate
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        if: ${{ steps.branch-name.outputs.is_default }} == 'false'
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: ./output # The folder the action should deploy.
+          commit-message: Deploy candidate branch
+          target-folder: branches/${{ steps.branch-name.outputs.current_branch }}
+          clean: false 
+
+      - name: Deploy main
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        if: ${{ steps.branch-name.outputs.is_default }} == 'true'
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: ./output # The folder the action should deploy.
+          commit-message: Deploy main branch
+          clean-exclude: branches

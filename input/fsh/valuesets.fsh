@@ -9,12 +9,6 @@ Description: "World Health Organization Anatomical Therapeutic Chemical (ATC) cl
 * ^copyright = "This artifact includes content from Anatomical Therapeutic Chemical (ATC) classification system. ATC codes are copyright World Health Organization (WHO) Collaborating Centre for Drug Statistics Methodology. Terms & Conditions in https://www.whocc.no/use_of_atc_ddd/"
 * include codes from system $who-atc
 
-ValueSet: NoBinding
-Id: no-vs
-Title: "Dummy value set" 
-Description: "Dummy value set for suppressing QA errors caused by FHIR R4B broken value set bindings"
-* ^experimental = false
-* include codes from system $100000000004 // Domain (just to have something)
 
 ValueSet: SubstancesSMS
 Id: substances-vs
@@ -25,14 +19,14 @@ Description: "Value set for substances, PPL subset from SMS."
 
 ValueSet: SporRecordStatus
 Id: record-status-spor-vs
-Title: "Record Status" 
+Title: "EMA SPOR Record Status" 
 Description: "Value set for record status."
 * ^experimental = false
 * include codes from system $200000005003 // Record Status
 
 ValueSet: SporAtc
 Id: atc-spor-vs
-Title: "Anatomical Therapeutic Chemical classification system"
+Title: "EMA SPOR ATC"
 Description: "Value set for Anatomical Therapeutic Chemical classification system Human and Veterinary. It combines 2 SPOR/WHO lists"
 * ^experimental = false
 * include codes from system $100000093533 // Anatomical Therapeutic Chemical classification system - Human
@@ -40,21 +34,21 @@ Description: "Value set for Anatomical Therapeutic Chemical classification syste
 
 ValueSet: SporRegulatoryStatus
 Id: regulatory-status-spor-vs
-Title: "Regulatory Entitlement Status"
+Title: "EMA SPOR Regulatory Entitlement Status"
 Description: "Regulatory Entitlement Status"
 * ^experimental = false
 * include codes from system $100000072049 // Regulatory Entitlement Status
 
 ValueSet: SporMarketingStatus
 Id: marketing-status-spor-vs
-Title: "Marketing Status"
+Title: "EMA SPOR Marketing Status"
 Description: "Marketing Status"
 * ^experimental = false
 * include codes from system $100000072052 // Marketing Status
 
 ValueSet: SporPackaging
 Id: packaging-spor-vs
-Title: "Packaging"
+Title: "EMA SPOR Packaging"
 Description: "Packaging"
 * ^experimental = false
 * include codes from system $100000073346 // Packaging
@@ -62,7 +56,7 @@ Description: "Packaging"
 
 ValueSet: SporShelfLifeType
 Id: shelflifetype-spor-vs
-Title: "Shelf Life Type"
+Title: "EMA SPOR Shelf Life Type"
 Description: "Shelf Life Type"
 * ^experimental = false
 * include codes from system $100000073343 // Shelf Life Type
@@ -70,7 +64,7 @@ Description: "Shelf Life Type"
 // Dose forms
 ValueSet: AuthorisedDoseForm
 Id: authorised-doseform-vs
-Title: "Authorised Dose Form"
+Title: "EMA SPOR Authorised Dose Form"
 Description: "Value set for authorised dose form. Combines 4 SPOR/EDQM lists: Pharmaceutical dose form, Combined pharmaceutical dose form, Combined term, Combination package."
 * ^experimental = false
 * include codes from system $200000000004 // Pharmaceutical Dose Forms
@@ -80,7 +74,7 @@ Description: "Value set for authorised dose form. Combines 4 SPOR/EDQM lists: Ph
 
 ValueSet: PharmaceuticalDoseForm
 Id: pharmaceutical-doseform-vs
-Title: "Pharmaceutical Dose Form"
+Title: "EMA SPOR Pharmaceutical Dose Form"
 Description: "Pharmaceutical dose form. Does not include combination dose forms."
 * ^experimental = false
 * include codes from system $200000000004 // Pharmaceutical Dose Forms
@@ -88,21 +82,21 @@ Description: "Pharmaceutical dose form. Does not include combination dose forms.
 // Units
 ValueSet: UnitOfMeasurement
 Id: unit-of-measurement-vs
-Title: "Unit of Measurement EMA"
+Title: "EMA SPOR Unit of Measurement"
 Description: "Units of measurement. EMA SPOR RMS list based on UCUM."
 * ^experimental = false
 * include codes from system $100000110633 // Unit of Measurement
 
 ValueSet: UnitOfPresentation
 Id: unit-of-presentation-vs
-Title: "Unit of Presentation EMA"
+Title: "EMA SPOR Unit of Presentation"
 Description: "Units of presentation. EMA SPOR RMS list based on EDQM."
 * ^experimental = false
 * include codes from system $200000000014 // Unit of Presentation
 
 ValueSet: AllUnits
 Id: all-units-vs
-Title: "All Units Combined"
+Title: "EMA SPOR All Units Combined"
 Description: "Value set for presentation strength denominator unit, combines units of measurement and units of presentation."
 * ^experimental = false
 * include codes from system $100000110633 // Unit of Measurement
@@ -111,35 +105,35 @@ Description: "Value set for presentation strength denominator unit, combines uni
 // Other EMA value sets
 ValueSet: LegalStatusForTheSupply
 Id: legal-status-for-the-supply-vs
-Title: "Legal Status for the Supply"
+Title: "EMA SPOR Legal Status for the Supply"
 Description: "EMA SPOR RMS list"
 * ^experimental = false
 * include codes from system $100000072051 // Legal Status for the Supply
 
 ValueSet: Material
 Id: material-vs
-Title: "Material"
+Title: "EMA SPOR Material"
 Description: "Package material. EMA SPOR RMS LIST."
 * ^experimental = false
 * include codes from system $200000003199 // Material
 
 ValueSet: RoutesAndMethodsOfAdministration
 Id: routes-and-methods-of-administration-vs
-Title: "Routes and Methods of Administration"
-Description: "Routes and methods of medication administration. EMA SPOR RMS list."
+Title: "EMA SPOR Routes and Methods of Administration"
+Description: "Routes and methods of medication administration. EMA SPOR RMS list, based on EDQM."
 * ^experimental = false
 * include codes from system $100000073345 // Routes and Methods of Administration
 
 ValueSet: Domain
 Id: domain-vs
-Title: "Domain"
+Title: "EMA SPOR Domain"
 Description: "Domain of the medicinal product. EMA SPOR RMS list."
 * ^experimental = false
 * include codes from system $100000000004 // Domain
 
 ValueSet: CountryEMA
 Id: country-ema-vs
-Title: "Country (EMA SPOR RMS)"
+Title: "EMA SPOR Country"
 Description: "Countries. EMA SPOR RMS list."
 * ^experimental = false
 * include codes from system $100000000002 // Country
@@ -153,7 +147,7 @@ Description: "Countries"
 
 ValueSet: LanguageEMA
 Id: language-ema-vs
-Title: "Language (EMA SPOR RMS)"
+Title: "EMA SPOR Language"
 Description: "Languages. EMA SPOR RMS list."
 * ^experimental = false
 * include codes from system $100000072057 // Language

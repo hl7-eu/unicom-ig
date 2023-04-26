@@ -1,16 +1,15 @@
 Instance: closure
 InstanceOf: ValueSet
 Usage: #definition
+Title: "EDQM Closure"
+
+* title = "EDQM Closure"
+* description = "ValueSet Closure (for package description) from EDQM, CLO, see https://standardterms.edqm.eu/#"
 * name = "Closure"
-* title = "Closure"
 * status = #active
 * experimental = false
-* description = "ValueSet Closure from EDQM, CLO, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
-
-
 
 * compose.include.concept[+].code = #13070000
 * compose.include.concept[=].display = "Valve"

@@ -1,4 +1,4 @@
-Instance: Filter-label
+/*Instance: Filter-label
 InstanceOf: ValueSet
 Usage: #definition
 * name = "FilterLabel"
@@ -8,4 +8,4 @@ Usage: #definition
 * description = "ValueSet Filter label from EDQM, FIL, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
+*/

@@ -2,41 +2,43 @@ Instance: 003-CefuroximStragen-1-5g-Powder-SE-FullProduct
 InstanceOf: Bundle
 Usage: #example
 Description: "Cefuroxim Stragen 1.5g Powder for solution for injection/infusion. Sweden. Strength in grams; man. item quantity unknown; transformation before administration."
-* type = #transaction
+
+
+* type = #collection
 * entry[0].resource = CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization-CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization"
 
 * entry[+].resource = LOC-100001098-StragenNordic
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100001098-StragenNordic"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001098-StragenNordic"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization/LOC-100001098-StragenNordic"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001098-StragenNordic"
 
 * entry[+].resource = CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef"
 
 * entry[+].resource = CefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition"
 
 * entry[+].resource = CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition"
 
 * entry[+].resource = CefuroximStragen-1-5g-Powder-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/CefuroximStragen-1-5g-Powder-SE-IS-Ingredient"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CefuroximStragen-1-5g-Powder-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-CefuroximStragen-1-5g-Powder-SE-IS-Ingredient"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CefuroximStragen-1-5g-Powder-SE-IS-Ingredient"
 
 
 Instance: CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition
@@ -58,7 +60,7 @@ Usage: #inline
 * name.part[strength].part = "1,5 g"
 * name.part[doseForm].part = "Pulver till injektions-/infusionsvätska, lösning"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 
 Instance: CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization

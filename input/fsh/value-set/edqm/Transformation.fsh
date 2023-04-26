@@ -1,11 +1,12 @@
-Instance: transformation
+/*Instance: transformation
 InstanceOf: ValueSet
 Usage: #definition
+Title: "EDQM Transformation"
 * name = "Transformation"
-* title = "Transformation"
+* title = "EDQM Transformation"
 * status = #active
 * experimental = false
-* description = "ValueSet Transformation from EDQM, TRA, see https://standardterms.edqm.eu/#"
+* description = "ValueSet Transformation (dose form characteristics) from EDQM, TRA, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
 
@@ -39,3 +40,4 @@ Usage: #definition
 
 * compose.include.concept[+].code = #0043
 * compose.include.concept[=].display = "Unknown"
+*/

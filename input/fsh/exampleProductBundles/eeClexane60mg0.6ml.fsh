@@ -3,41 +3,41 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Clexane, enoxaparine sodium 60mg/0.6ml, 2 pre-filled syringes. Presentation strength per quantity."
 
-* type = #transaction
+* type = #collection
 * entry[0].resource = Clexane-60mg-06ml-solinj-EE-MPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/Clexane-60mg-06ml-solinj-EE-MPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Clexane-60mg-06ml-solinj-EE-MPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition-Clexane-60mg-06ml-solinj-EE-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Clexane-60mg-06ml-solinj-EE-MPD"
 
 * entry[+].resource = Clexane-60mg-06ml-solinj-EE-RA
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/Clexane-60mg-06ml-solinj-EE-RA"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Clexane-60mg-06ml-solinj-EE-RA"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization-Clexane-60mg-06ml-solinj-EE-RA"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Clexane-60mg-06ml-solinj-EE-RA"
 
 * entry[+].resource = LOC-100001368-Sanofi-Aventis
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100001368-Sanofi-Aventis"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001368-Sanofi-Aventis"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization/LOC-100001368-Sanofi-Aventis"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001368-Sanofi-Aventis"
 
 * entry[+].resource = Clexane-60mg-06ml-solinj-EE-APD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/Clexane-60mg-06ml-solinj-EE-APD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Clexane-60mg-06ml-solinj-EE-APD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition-Clexane-60mg-06ml-solinj-EE-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Clexane-60mg-06ml-solinj-EE-APD"
 
 * entry[+].resource = Clexane-60mg-06ml-solinj-EE-MID
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Clexane-60mg-06ml-solinj-EE-MID"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Clexane-60mg-06ml-solinj-EE-MID"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-Clexane-60mg-06ml-solinj-EE-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Clexane-60mg-06ml-solinj-EE-MID"
 
 * entry[+].resource = Clexane-60mg-06ml-solinj-EE-I
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Clexane-60mg-06ml-solinj-EE-I"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Clexane-60mg-06ml-solinj-EE-I"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-Clexane-60mg-06ml-solinj-EE-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Clexane-60mg-06ml-solinj-EE-I"
 
 * entry[+].resource = Clexane-60mg-06ml-solinj-EE-PPD-1065552
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Clexane-60mg-06ml-solinj-EE-PPD-1065552"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Clexane-60mg-06ml-solinj-EE-PPD-1065552"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-Clexane-60mg-06ml-solinj-EE-PPD-1065552"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Clexane-60mg-06ml-solinj-EE-PPD-1065552"
 
 Instance: Clexane-60mg-06ml-solinj-EE-MPD
 InstanceOf: PPLMedicinalProductDefinition
@@ -55,7 +55,8 @@ Usage: #inline
 * name.part[strength].part = "6000 RÜ"
 * name.part[doseForm].part = "süstelahus süstlis"
 * name.usage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.usage.language = $100000072057#100000072172 "Estonian"
+//* name.usage.language = urn:ietf:bcp:47#et "Estonian"
+* name.usage.language = urn:ietf:bcp:47#et "Estonian"
 
 Instance: Clexane-60mg-06ml-solinj-EE-RA
 InstanceOf: PPLRegulatedAuthorization

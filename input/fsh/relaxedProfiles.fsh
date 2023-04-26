@@ -89,7 +89,7 @@ Description: """Intermediate profile for processing PPL Medicinal Product data""
     * ^slicing.discriminator.type = #pattern
     * ^slicing.discriminator.path = "type"
     * ^slicing.rules = #open
-    * ^slicing.ordered = true
+    * ^slicing.ordered = false
     * ^slicing.description = "Slicing on the name part"
     * ^short = "Medicinal product name part"
     * ^definition = "EMA IG 1.14.3. Name part. Product names are usually combined of these three parts. More parts can be defined and strength and dose form parts can be omitted."
@@ -131,14 +131,6 @@ Description: """Intermediate profile for processing PPL Medicinal Product data""
     
     * language.coding[bcp] // from language-bcp-vs
       * system = $BCP47
-
-// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* ingredient 0..0
-* ingredient from SubstancesSMS (example)
-* impurity 0..0
-* impurity from SubstancesSMS (example)
-* characteristic 0..0
-* characteristic.type from NoBinding
 
 
 // PROFILE: Regulated Authorisation 
@@ -194,11 +186,6 @@ Description: """Intermediate profile for processing PPL Manufactured Item data""
   * ^short = "Unit of presentation of the manufactured item (before preparing for administration)"
   * ^definition = "EMA IG 4.11.1"
 
-// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* ingredient 0..0
-* ingredient from SubstancesSMS
-* property 0..0
-* property.type from NoBinding
 
 // PROFILE: Pharmaceutical/ Administrable Product
 Profile: TransitionAdministrableProductDefinition
@@ -232,12 +219,6 @@ Description: """Intermediate profile for processing PPL Administrable Product da
 //  * code.coding.system = $100000073345
 //  * code from routes-and-methods-of-administration-vs
   * ^definition = "EMA IG 6.6"
-
-// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* ingredient 0..0
-* ingredient from SubstancesSMS (example)
-* property 0..0
-* property.type from NoBinding (example)
 
 
 // PROFILE: Ingredient
@@ -288,7 +269,7 @@ Description: """Intermediate profile for processing PPL Ingredient data"""
     * referenceStrength
       * ^definition = "EMA IG 5.5.3. According to EMA, this is a mandatory element for all products, which is not necessarily accepted by all NCAs, and it is ambivalent in ISO IDMP."
       * ^short = "Strenth expressed in terms of a reference substance; reference strength type not distinguished. According to EMA IG, all products need to have reference strentgh (repeating the strentgh, if needed)"
-      * substance 0..1
+      * substance 1..1
       * substance from SubstancesSMS (example)
         * ^short = "Substance code from EMA SMS" 
       * strengthRatio // This is 1..1 in FHIR spec!
@@ -370,9 +351,6 @@ Description: """Intermediate profile for processing PPL Packaged Product data"""
       * ^definition = "EMA IG 4.11.2"
     //  * code from all-units-vs (unit of presentation or unit of measurement)
 
-// the following attributes are not allowed only to suppress certain qa errors about imaginary terminology bindings (r4b)
-* packaging.property 0..0
-* packaging.property.type from NoBinding (example)
 
 
 // TO DO: I'm not sure we want to use Organisation as a separate resource, but right now it is. See the comment at RegulatedAuthorization

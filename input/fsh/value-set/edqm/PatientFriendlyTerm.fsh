@@ -1,15 +1,16 @@
 Instance: patient-friendly-term
 InstanceOf: ValueSet
 Usage: #definition
+Title: "EDQM Patient-friendly Term"
+
+
+* title = "EDQM Patient-friendly Term"
+* description = "ValueSet Patient-friendly term (dose forms) from EDQM, PFT, see https://standardterms.edqm.eu/#"
 * name = "PatientFriendlyTerm"
-* title = "Patient-friendly term"
 * status = #active
 * experimental = false
-* description = "ValueSet Patient-friendly term from EDQM, PFT, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
-
 
 
 * compose.include.concept[+].code = #11010

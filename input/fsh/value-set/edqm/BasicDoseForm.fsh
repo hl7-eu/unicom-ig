@@ -1,15 +1,15 @@
 Instance: basic-dose-form
 InstanceOf: ValueSet
 Usage: #definition
+Title: "EDQM Basic Dose Form"
+
+* title = "EDQM Basic Dose Form"
+* description = "ValueSet Basic dose form from EDQM, BDF, see https://standardterms.edqm.eu/#"
 * name = "BasicDoseForm"
-* title = "Basic dose form"
 * status = #active
 * experimental = false
-* description = "ValueSet Basic dose form from EDQM, BDF, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
-
 
 
 * compose.include.concept[+].code = #0049

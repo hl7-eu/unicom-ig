@@ -1,11 +1,13 @@
-Instance: release-characteristics
+/*Instance: release-characteristics
 InstanceOf: ValueSet
 Usage: #definition
+Title = "EDQM Release Characteristics"
 * name = "ReleaseCharacteristics"
-* title = "Release characteristics"
+
+* title = "EDQM Release Characteristics"
 * status = #active
 * experimental = false
-* description = "ValueSet Release characteristics from EDQM, RCA, see https://standardterms.edqm.eu/#"
+* description = "ValueSet Release characteristics (dose form characteristics) from EDQM, RCA, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
 
@@ -34,3 +36,4 @@ Usage: #definition
 
 * compose.include.concept[+].code = #0048
 * compose.include.concept[=].display = "Unknown"
+*/

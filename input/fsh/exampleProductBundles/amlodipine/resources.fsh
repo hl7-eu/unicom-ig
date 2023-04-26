@@ -7,46 +7,47 @@ Instance: AMLHipres-10mg-Tablet-EE-FullProduct
 InstanceOf: Bundle
 Usage: #example
 Description: "Hipres amlodipine (maleate) 10mg tablets. Estonia."
-* type = #transaction
+
+* type = #collection
 * entry[0].resource = Hipres-10mg-Tablet-EE-MPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/Hipres-10mg-Tablet-EE-MPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Hipres-10mg-Tablet-EE-MPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition-Hipres-10mg-Tablet-EE-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Hipres-10mg-Tablet-EE-MPD"
 
 * entry[+].resource = LOC-100009540-KrkaNovoMesto
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100009540-KrkaNovoMesto"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100009540-KrkaNovoMesto"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100009540-KrkaNovoMesto"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100009540-KrkaNovoMesto"
 
 * entry[+].resource = Hipres-10mg-Tablet-EE-RA
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/Hipres-10mg-Tablet-EE-RA"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Hipres-10mg-Tablet-EE-RA"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization-Hipres-10mg-Tablet-EE-RA"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Hipres-10mg-Tablet-EE-RA"
 
 * entry[+].resource = Hipres-10mg-Tablet-EE-APD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/Hipres-10mg-Tablet-EE-APD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Hipres-10mg-Tablet-EE-APD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition-Hipres-10mg-Tablet-EE-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Hipres-10mg-Tablet-EE-APD"
 
 * entry[+].resource = Hipres-10mg-Tablet-EE-PPD-1122972
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Hipres-10mg-Tablet-EE-PPD-1122972"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Hipres-10mg-Tablet-EE-PPD-1122972"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-Hipres-10mg-Tablet-EE-PPD-1122972"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Hipres-10mg-Tablet-EE-PPD-1122972"
 
 * entry[+].resource = Hipres-10mg-Tablet-EE-PPD-1551406
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Hipres-10mg-Tablet-EE-PPD-1551406"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Hipres-10mg-Tablet-EE-PPD-1551406"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-Hipres-10mg-Tablet-EE-PPD-1551406"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Hipres-10mg-Tablet-EE-PPD-1551406"
 
 * entry[+].resource = Hipres-10mg-Tablet-EE-MID
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Hipres-10mg-Tablet-EE-MID"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Hipres-10mg-Tablet-EE-MID"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-Hipres-10mg-Tablet-EE-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Hipres-10mg-Tablet-EE-MID"
 
 * entry[+].resource = Hipres-10mg-Tablet-EE-I
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Hipres-10mg-Tablet-EE-I"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Hipres-10mg-Tablet-EE-I"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-Hipres-10mg-Tablet-EE-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b-Hipres-10mg-Tablet-EE-I"
 
 
 Instance: Hipres-10mg-Tablet-EE-MPD
@@ -65,7 +66,8 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "tabletid"
 * name.usage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.usage.language = $100000072057#100000072172 "Estonian"
+//* name.usage.language = urn:ietf:bcp:47#et "Estonian"
+* name.usage.language = urn:ietf:bcp:47#et "Estonian"
 
 
 Instance: Hipres-10mg-Tablet-EE-RA
@@ -167,46 +169,46 @@ Instance: AMLHipres-5mg-Tablet-EE-FullProduct
 InstanceOf: Bundle
 Usage: #example
 Description: "Hipres amlodipine (maleate) 5mg tablet. Estonia."
-* type = #transaction
+* type = #collection
 * entry[0].resource = Hipres-5mg-Tablet-EE-MPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/Hipres-5mg-Tablet-EE-MPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Hipres-5mg-Tablet-EE-MPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition-Hipres-5mg-Tablet-EE-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Hipres-5mg-Tablet-EE-MPD"
 
 * entry[+].resource = LOC-100009540-KrkaNovoMesto
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100009540-KrkaNovoMesto"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100009540-KrkaNovoMesto"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100009540-KrkaNovoMesto"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100009540-KrkaNovoMesto"
 
 * entry[+].resource = Hipres-5mg-Tablet-EE-RA
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/Hipres-5mg-Tablet-EE-RA"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Hipres-5mg-Tablet-EE-RA"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization-Hipres-5mg-Tablet-EE-RA"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Hipres-5mg-Tablet-EE-RA"
 
 * entry[+].resource = Hipres-5mg-Tablet-EE-APD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/Hipres-5mg-Tablet-EE-APD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Hipres-5mg-Tablet-EE-APD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition-Hipres-5mg-Tablet-EE-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Hipres-5mg-Tablet-EE-APD"
 
 * entry[+].resource = Hipres-5mg-Tablet-EE-PPD-1122961
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Hipres-5mg-Tablet-EE-PPD-1122961"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Hipres-5mg-Tablet-EE-PPD-1122961"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-Hipres-5mg-Tablet-EE-PPD-1122961"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Hipres-5mg-Tablet-EE-PPD-1122961"
 
 * entry[+].resource = Hipres-5mg-Tablet-EE-PPD-1551383
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Hipres-5mg-Tablet-EE-PPD-1551383"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Hipres-5mg-Tablet-EE-PPD-1551383"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-Hipres-5mg-Tablet-EE-PPD-1551383"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Hipres-5mg-Tablet-EE-PPD-1551383"
 
 * entry[+].resource = Hipres-5mg-Tablet-EE-MID
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Hipres-5mg-Tablet-EE-MID"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Hipres-5mg-Tablet-EE-MID"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-Hipres-5mg-Tablet-EE-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Hipres-5mg-Tablet-EE-MID"
 
 * entry[+].resource = Hipres-5mg-Tablet-EE-I
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Hipres-5mg-Tablet-EE-I"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Hipres-5mg-Tablet-EE-I"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-Hipres-5mg-Tablet-EE-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b-Hipres-5mg-Tablet-EE-I"
 
 
 Instance: Hipres-5mg-Tablet-EE-MPD
@@ -226,7 +228,8 @@ Usage: #inline
 * name.part[strength].part = "5 mg"
 * name.part[doseForm].part = "tabletid"
 * name.usage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.usage.language = $100000072057#100000072172 "Estonian"
+////* name.usage.language = urn:ietf:bcp:47#et "Estonian"
+* name.usage.language = urn:ietf:bcp:47#et "Estonian"
 
 Instance: Hipres-5mg-Tablet-EE-RA
 InstanceOf: PPLRegulatedAuthorization
@@ -325,44 +328,44 @@ Instance: AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablets. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLaccord-10mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLaccord-10mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLaccord-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLaccord-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLaccord-10mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLaccord-10mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLaccord-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLaccord-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100007148-Accord
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100007148-Accord"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100007148-Accord"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100007148-Accord"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100007148-Accord"
 
 * entry[+].resource = AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 
 * entry[+].resource = AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLaccord-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 
 * entry[+].resource = AMLaccord-10mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLaccord-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLaccord-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLaccord-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 
 * entry[+].resource = AMLaccord-10mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLaccord-10mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLaccord-10mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLaccord-10mg-Tablet-SE-IS-Ingredient"
 
 
@@ -370,796 +373,796 @@ Instance: AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablets. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLaccord-5mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLaccord-5mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLaccord-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLaccord-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLaccord-5mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLaccord-5mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLaccord-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLaccord-5mg-Tablet-SE-IS-RegulatedAuthorization"
 
 * entry[+].resource = LOC-100007148-Accord
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100007148-Accord"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100007148-Accord"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100007148-Accord"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100007148-Accord"
 * entry[+].resource = AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition03
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition03"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition03"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLaccord-5mg-Tablet-SE-IS-PackagedProductDefinition03"
 * entry[+].resource = AMLaccord-5mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLaccord-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLaccord-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLaccord-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLaccord-5mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLaccord-5mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLaccord-5mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLaccord-5mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLaurobindo-10mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLaurobindo-10mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLaurobindo-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLaurobindo-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLaurobindo-10mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLaurobindo-10mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLaurobindo-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLaurobindo-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100001116-Aurobindo
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100001116-Aurobindo"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001116-Aurobindo"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100001116-Aurobindo"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001116-Aurobindo"
 
 * entry[+].resource = AMLaurobindo-10mg-Tablet-SE-IS-PackagedProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLaurobindo-10mg-Tablet-SE-IS-PackagedProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLaurobindo-10mg-Tablet-SE-IS-PackagedProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLaurobindo-10mg-Tablet-SE-IS-PackagedProductDefinition"
 * entry[+].resource = AMLaurobindo-10mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLaurobindo-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLaurobindo-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLaurobindo-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLaurobindo-10mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLaurobindo-10mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLaurobindo-10mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLaurobindo-10mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLbluefish-10mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLbluefish-10mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLbluefish-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLbluefish-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLbluefish-10mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLbluefish-10mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLbluefish-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLbluefish-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100001076-Bluefish
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100001076-Bluefish"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001076-Bluefish"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100001076-Bluefish"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001076-Bluefish"
 * entry[+].resource = AMLbluefish-10mg-Tablet-SE-IS-PackagedProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLbluefish-10mg-Tablet-SE-IS-PackagedProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLbluefish-10mg-Tablet-SE-IS-PackagedProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLbluefish-10mg-Tablet-SE-IS-PackagedProductDefinition"
 * entry[+].resource = AMLbluefish-10mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLbluefish-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLbluefish-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLbluefish-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLbluefish-10mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLbluefish-10mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLbluefish-10mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLbluefish-10mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLbluefish-5mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLbluefish-5mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLbluefish-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLbluefish-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLbluefish-5mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLbluefish-5mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLbluefish-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLbluefish-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100001076-Bluefish
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100001076-Bluefish"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001076-Bluefish"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100001076-Bluefish"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001076-Bluefish"
 * entry[+].resource = AMLbluefish-5mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLbluefish-5mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLbluefish-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLbluefish-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = AMLbluefish-5mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLbluefish-5mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLbluefish-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLbluefish-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = AMLbluefish-5mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLbluefish-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLbluefish-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLbluefish-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLbluefish-5mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLbluefish-5mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLbluefish-5mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLbluefish-5mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLjubilant-10mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLjubilant-10mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLjubilant-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLjubilant-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLjubilant-10mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLjubilant-10mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLjubilant-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLjubilant-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100016348-JubilantPharmaceuticals
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100016348-JubilantPharmaceuticals"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100016348-JubilantPharmaceuticals"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100016348-JubilantPharmaceuticals"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100016348-JubilantPharmaceuticals"
 
 * entry[+].resource = AMLjubilant-10mg-Tablet-SE-IS-PackagedProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLjubilant-10mg-Tablet-SE-IS-PackagedProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLjubilant-10mg-Tablet-SE-IS-PackagedProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLjubilant-10mg-Tablet-SE-IS-PackagedProductDefinition"
 * entry[+].resource = AMLjubilant-10mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLjubilant-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLjubilant-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLjubilant-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLjubilant-10mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLjubilant-10mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLjubilant-10mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLjubilant-10mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLjubilant-5mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLjubilant-5mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLjubilant-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLjubilant-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLjubilant-5mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLjubilant-5mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLjubilant-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLjubilant-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100016348-JubilantPharmaceuticals
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100016348-JubilantPharmaceuticals"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100016348-JubilantPharmaceuticals"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100016348-JubilantPharmaceuticals"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100016348-JubilantPharmaceuticals"
 
 * entry[+].resource = AMLjubilant-5mg-Tablet-SE-IS-PackagedProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLjubilant-5mg-Tablet-SE-IS-PackagedProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLjubilant-5mg-Tablet-SE-IS-PackagedProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLjubilant-5mg-Tablet-SE-IS-PackagedProductDefinition"
 * entry[+].resource = AMLjubilant-5mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLjubilant-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLjubilant-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLjubilant-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLjubilant-5mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLjubilant-5mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLjubilant-5mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLjubilant-5mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLkrka-10mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLkrka-10mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLkrka-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLkrka-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLkrka-10mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLkrka-10mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLkrka-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLkrka-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100000551-KrkaSverige
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100000551-KrkaSverige"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100000551-KrkaSverige"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100000551-KrkaSverige"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100000551-KrkaSverige"
 * entry[+].resource = AMLkrka-10mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLkrka-10mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLkrka-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLkrka-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = AMLkrka-10mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLkrka-10mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLkrka-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLkrka-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = AMLkrka-10mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLkrka-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLkrka-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLkrka-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLkrka-10mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLkrka-10mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLkrka-10mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLkrka-10mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLkrka-5mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLkrka-5mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLkrka-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLkrka-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLkrka-5mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLkrka-5mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLkrka-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLkrka-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100000551-KrkaSverige
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100000551-KrkaSverige"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100000551-KrkaSverige"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100000551-KrkaSverige"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100000551-KrkaSverige"
 
 * entry[+].resource = AMLkrka-5mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLkrka-5mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLkrka-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLkrka-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = AMLkrka-5mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLkrka-5mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLkrka-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLkrka-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = AMLkrka-5mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLkrka-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLkrka-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLkrka-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLkrka-5mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLkrka-5mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLkrka-5mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLkrka-5mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLmedvalley-10mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLmedvalley-10mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLmedvalley-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLmedvalley-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLmedvalley-10mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLmedvalley-10mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLmedvalley-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLmedvalley-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100001125-MedicalValleyInvest
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100001125-MedicalValleyInvest"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001125-MedicalValleyInvest"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100001125-MedicalValleyInvest"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001125-MedicalValleyInvest"
 
 * entry[+].resource = AMLmedvalley-10mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLmedvalley-10mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLmedvalley-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLmedvalley-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = AMLmedvalley-10mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLmedvalley-10mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLmedvalley-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLmedvalley-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = AMLmedvalley-10mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLmedvalley-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLmedvalley-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLmedvalley-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLmedvalley-10mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLmedvalley-10mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLmedvalley-10mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLmedvalley-10mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLmedvalley-5mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLmedvalley-5mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLmedvalley-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLmedvalley-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLmedvalley-5mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLmedvalley-5mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLmedvalley-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLmedvalley-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100001125-MedicalValleyInvest
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100001125-MedicalValleyInvest"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001125-MedicalValleyInvest"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100001125-MedicalValleyInvest"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001125-MedicalValleyInvest"
 
 * entry[+].resource = AMLmedvalley-5mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLmedvalley-5mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLmedvalley-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLmedvalley-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = AMLmedvalley-5mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLmedvalley-5mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLmedvalley-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLmedvalley-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = AMLmedvalley-5mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLmedvalley-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLmedvalley-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLmedvalley-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLmedvalley-5mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLmedvalley-5mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLmedvalley-5mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLmedvalley-5mg-Tablet-SE-IS-Ingredient"
 
 Instance: Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = Amlodistad-10mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/Amlodistad-10mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/Amlodistad-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Amlodistad-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = Amlodistad-10mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/Amlodistad-10mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/Amlodistad-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Amlodistad-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100001022-StadaArzneimittel
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100001022-StadaArzneimittel"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001022-StadaArzneimittel"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100001022-StadaArzneimittel"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001022-StadaArzneimittel"
 * entry[+].resource = Amlodistad-10mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Amlodistad-10mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/Amlodistad-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Amlodistad-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = Amlodistad-10mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Amlodistad-10mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/Amlodistad-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Amlodistad-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = Amlodistad-10mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Amlodistad-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/Amlodistad-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Amlodistad-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = Amlodistad-10mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Amlodistad-10mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/Amlodistad-10mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Amlodistad-10mg-Tablet-SE-IS-Ingredient"
 
 Instance: Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[+].resource = Amlodistad-5mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/Amlodistad-5mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/Amlodistad-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Amlodistad-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = Amlodistad-5mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/Amlodistad-5mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/Amlodistad-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Amlodistad-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100001022-StadaArzneimittel
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100001022-StadaArzneimittel"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001022-StadaArzneimittel"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100001022-StadaArzneimittel"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001022-StadaArzneimittel"
 * entry[+].resource = Amlodistad-5mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Amlodistad-5mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/Amlodistad-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Amlodistad-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = Amlodistad-5mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Amlodistad-5mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/Amlodistad-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Amlodistad-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = Amlodistad-5mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Amlodistad-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/Amlodistad-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Amlodistad-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = Amlodistad-5mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Amlodistad-5mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/Amlodistad-5mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Amlodistad-5mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLsandoz-10mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLsandoz-10mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLsandoz-10mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLsandoz-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLsandoz-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100001468-SandozAS
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100001468-SandozAS"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001468-SandozAS"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100001468-SandozAS"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001468-SandozAS"
 
 * entry[+].resource = AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition03
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition03"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition03"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLsandoz-10mg-Tablet-SE-IS-PackagedProductDefinition03"
 * entry[+].resource = AMLsandoz-10mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLsandoz-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLsandoz-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLsandoz-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLsandoz-10mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLsandoz-10mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLsandoz-10mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLsandoz-10mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[+].resource = AMLsandoz-5mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLsandoz-5mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLsandoz-5mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLsandoz-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLsandoz-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100001468-SandozAS
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100001468-SandozAS"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001468-SandozAS"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100001468-SandozAS"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001468-SandozAS"
 * entry[+].resource = AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition03
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition03"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition03"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLsandoz-5mg-Tablet-SE-IS-PackagedProductDefinition03"
 * entry[+].resource = AMLsandoz-5mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLsandoz-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLsandoz-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLsandoz-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLsandoz-5mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLsandoz-5mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLsandoz-5mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLsandoz-5mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLteva-10mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLteva-10mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLteva-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLteva-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLteva-10mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLteva-10mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLteva-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLteva-10mg-Tablet-SE-IS-RegulatedAuthorization"
 
 * entry[+].resource = LOC-100001602-Teva
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100001602-Teva"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001602-Teva"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100001602-Teva"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001602-Teva"
 * entry[+].resource = AMLteva-10mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLteva-10mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLteva-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLteva-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = AMLteva-10mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLteva-10mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLteva-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLteva-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = AMLteva-10mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLteva-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLteva-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLteva-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLteva-10mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLteva-10mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLteva-10mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLteva-10mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLteva-5mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLteva-5mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLteva-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLteva-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLteva-5mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLteva-5mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLteva-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLteva-5mg-Tablet-SE-IS-RegulatedAuthorization"
 
 * entry[+].resource = LOC-100001602-Teva
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100001602-Teva"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100001602-Teva"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100001602-Teva"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001602-Teva"
 * entry[+].resource = AMLteva-5mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLteva-5mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLteva-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLteva-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = AMLteva-5mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLteva-5mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLteva-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLteva-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = AMLteva-5mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLteva-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLteva-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLteva-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLteva-5mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLteva-5mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLteva-5mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLteva-5mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLvitabalans-10mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLvitabalans-10mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLvitabalans-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLvitabalans-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLvitabalans-10mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLvitabalans-10mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLvitabalans-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLvitabalans-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100005946-VitabalansOy
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100005946-VitabalansOy"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100005946-VitabalansOy"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100005946-VitabalansOy"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100005946-VitabalansOy"
 * entry[+].resource = AMLvitabalans-10mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLvitabalans-10mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLvitabalans-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLvitabalans-10mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = AMLvitabalans-10mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLvitabalans-10mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLvitabalans-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLvitabalans-10mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = AMLvitabalans-10mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLvitabalans-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLvitabalans-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLvitabalans-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLvitabalans-10mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLvitabalans-10mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLvitabalans-10mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLvitabalans-10mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = AMLvitabalans-5mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/AMLvitabalans-5mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/AMLvitabalans-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/AMLvitabalans-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = AMLvitabalans-5mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/AMLvitabalans-5mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/AMLvitabalans-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/AMLvitabalans-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100005946-VitabalansOy
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100005946-VitabalansOy"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100005946-VitabalansOy"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100005946-VitabalansOy"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100005946-VitabalansOy"
 * entry[+].resource = AMLvitabalans-5mg-Tablet-SE-IS-PackagedProductDefinition01
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLvitabalans-5mg-Tablet-SE-IS-PackagedProductDefinition01"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLvitabalans-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLvitabalans-5mg-Tablet-SE-IS-PackagedProductDefinition01"
 * entry[+].resource = AMLvitabalans-5mg-Tablet-SE-IS-PackagedProductDefinition02
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/AMLvitabalans-5mg-Tablet-SE-IS-PackagedProductDefinition02"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/AMLvitabalans-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/AMLvitabalans-5mg-Tablet-SE-IS-PackagedProductDefinition02"
 * entry[+].resource = AMLvitabalans-5mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/AMLvitabalans-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/AMLvitabalans-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/AMLvitabalans-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = AMLvitabalans-5mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/AMLvitabalans-5mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/AMLvitabalans-5mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/AMLvitabalans-5mg-Tablet-SE-IS-Ingredient"
 
 Instance: Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 10mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = Norvasc-10mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/Norvasc-10mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/Norvasc-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Norvasc-10mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = Norvasc-10mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/Norvasc-10mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/Norvasc-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Norvasc-10mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100032008-UpjohnEESV
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100032008-UpjohnEESV"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100032008-UpjohnEESV"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100032008-UpjohnEESV"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100032008-UpjohnEESV"
 * entry[+].resource = Norvasc-10mg-Tablet-SE-IS-PackagedProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Norvasc-10mg-Tablet-SE-IS-PackagedProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/Norvasc-10mg-Tablet-SE-IS-PackagedProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Norvasc-10mg-Tablet-SE-IS-PackagedProductDefinition"
 * entry[+].resource = Norvasc-10mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Norvasc-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/Norvasc-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Norvasc-10mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = Norvasc-10mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Norvasc-10mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/Norvasc-10mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Norvasc-10mg-Tablet-SE-IS-Ingredient"
 
 Instance: Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL
 InstanceOf: Bundle
 Usage: #example
 Description: "Amlodipine (besylate) 5mg tablet. Sweden."
-* type = #transaction
+* type = #collection
 * entry[0].resource = Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition"
 
 * entry[+].resource = Norvasc-5mg-Tablet-SE-IS-AdministrableProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/Norvasc-5mg-Tablet-SE-IS-AdministrableProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/Norvasc-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Norvasc-5mg-Tablet-SE-IS-AdministrableProductDefinition"
 
 * entry[+].resource = Norvasc-5mg-Tablet-SE-IS-RegulatedAuthorization
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/Norvasc-5mg-Tablet-SE-IS-RegulatedAuthorization"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/Norvasc-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Norvasc-5mg-Tablet-SE-IS-RegulatedAuthorization"
 * entry[+].resource = LOC-100032008-UpjohnEESV
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100032008-UpjohnEESV"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100032008-UpjohnEESV"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization-LOC-100032008-UpjohnEESV"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100032008-UpjohnEESV"
 * entry[+].resource = Norvasc-5mg-Tablet-SE-IS-PackagedProductDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Norvasc-5mg-Tablet-SE-IS-PackagedProductDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/Norvasc-5mg-Tablet-SE-IS-PackagedProductDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Norvasc-5mg-Tablet-SE-IS-PackagedProductDefinition"
 * entry[+].resource = Norvasc-5mg-Tablet-SE-IS-ManufacturedItemDefinition
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Norvasc-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/Norvasc-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Norvasc-5mg-Tablet-SE-IS-ManufacturedItemDefinition"
 * entry[+].resource = Norvasc-5mg-Tablet-SE-IS-Ingredient
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Norvasc-5mg-Tablet-SE-IS-Ingredient"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/Norvasc-5mg-Tablet-SE-IS-Ingredient"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Norvasc-5mg-Tablet-SE-IS-Ingredient"
 
 Instance: AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition
@@ -1180,7 +1183,7 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLaccord-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1309,7 +1312,7 @@ Usage: #inline
 * name.part[strength].part = "5 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLaccord-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1455,7 +1458,7 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLaurobindo-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1561,7 +1564,7 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLbluefish-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1667,7 +1670,7 @@ Usage: #inline
 * name.part[strength].part = "5 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLbluefish-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1790,7 +1793,7 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLjubilant-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1894,7 +1897,7 @@ Usage: #inline
 * name.part[strength].part = "5 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLjubilant-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -1990,7 +1993,7 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLkrka-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2121,7 +2124,7 @@ Usage: #inline
 * name.part[strength].part = "5 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLkrka-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2245,7 +2248,7 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLmedvalley-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2369,7 +2372,7 @@ Usage: #inline
 * name.part[strength].part = "5 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLmedvalley-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2500,7 +2503,7 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: Amlodistad-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2635,7 +2638,7 @@ Usage: #inline
 * name.part[strength].part = "5 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: Amlodistad-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2761,7 +2764,7 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLsandoz-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -2915,7 +2918,7 @@ Usage: #inline
 * name.part[strength].part = "5 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLsandoz-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -3061,7 +3064,7 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLteva-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -3206,7 +3209,7 @@ Usage: #inline
 * name.part[strength].part = "5 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLteva-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -3341,7 +3344,7 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLvitabalans-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -3478,7 +3481,7 @@ Usage: #inline
 * name.part[strength].part = "5 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: AMLvitabalans-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -3605,7 +3608,7 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: Norvasc-10mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization
@@ -3713,7 +3716,7 @@ Usage: #inline
 * name.part[strength].part = "5 mg"
 * name.part[doseForm].part = "Tablett"
 * name.usage.country = $100000000002#100000000535 "Kingdom of Sweden"
-* name.usage.language = $100000072057#100000072288 "Swedish"
+* name.usage.language = urn:ietf:bcp:47#sv "Swedish"
 
 Instance: Norvasc-5mg-Tablet-SE-IS-RegulatedAuthorization
 InstanceOf: PPLRegulatedAuthorization

@@ -2,46 +2,47 @@ Instance: 002-Agen10mg-EE-FullProduct
 InstanceOf: Bundle
 Usage: #example
 Description: "Agen 10mg Tablet. Estonia. Simple example of one full product as a bundle. Packages, PCIDs, differ by material."
-* type = #transaction
+
+* type = #collection
 * entry[0].resource = Agen-10mg-Tablet-EE-MPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/Agen-10mg-Tablet-EE-MPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Agen-10mg-Tablet-EE-MPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition/Agen-10mg-Tablet-EE-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Agen-10mg-Tablet-EE-MPD"
 
 * entry[+].resource = Agen-10mg-Tablet-EE-RA
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/Agen-10mg-Tablet-EE-RA"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Agen-10mg-Tablet-EE-RA"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization/Agen-10mg-Tablet-EE-RA"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Agen-10mg-Tablet-EE-RA"
 
 * entry[+].resource = LOC-100002580-Zentiva
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100002580-Zentiva"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100002580-Zentiva"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization/LOC-100002580-Zentiva"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100002580-Zentiva"
 
 * entry[+].resource = Agen-10mg-Tablet-EE-APD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/Agen-10mg-Tablet-EE-APD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Agen-10mg-Tablet-EE-APD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition/Agen-10mg-Tablet-EE-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Agen-10mg-Tablet-EE-APD"
 
 * entry[+].resource = Agen-10mg-Tablet-EE-MID
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Agen-10mg-Tablet-EE-MID"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Agen-10mg-Tablet-EE-MID"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition/Agen-10mg-Tablet-EE-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Agen-10mg-Tablet-EE-MID"
 
 * entry[+].resource = Agen-10mg-Tablet-EE-I
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Agen-10mg-Tablet-EE-I"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Agen-10mg-Tablet-EE-I"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient/Agen-10mg-Tablet-EE-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Agen-10mg-Tablet-EE-I"
 
 * entry[+].resource = Agen-10mg-Tablet-EE-PPD-1109900-A
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Agen-10mg-Tablet-EE-PPD-1109900-A"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Agen-10mg-Tablet-EE-PPD-1109900-A"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/Agen-10mg-Tablet-EE-PPD-1109900-A"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Agen-10mg-Tablet-EE-PPD-1109900-A"
 
 * entry[+].resource = Agen-10mg-Tablet-EE-PPD-1109900-B
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Agen-10mg-Tablet-EE-PPD-1109900-B"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Agen-10mg-Tablet-EE-PPD-1109900-B"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition/Agen-10mg-Tablet-EE-PPD-1109900-B"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Agen-10mg-Tablet-EE-PPD-1109900-B"
 
 
 Instance: Agen-10mg-Tablet-EE-MPD
@@ -60,7 +61,8 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "tabletid"
 * name.usage.country = $100000000002#100000000388 "Republic of Estonia"
-* name.usage.language = $100000072057#100000072172 "Estonian"
+//* name.usage.language = urn:ietf:bcp:47#et "Estonian"
+* name.usage.language = urn:ietf:bcp:47#et "Estonian"
 
 
 Instance: Agen-10mg-Tablet-EE-RA

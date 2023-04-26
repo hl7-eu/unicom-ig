@@ -5,46 +5,46 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Lodipin 10mg Capsule. Amlodipine (besilate).  Greece."
 
-* type = #transaction
+* type = #collection
 * entry[0].resource = Lodipin-10mg-Capsule-GR-MPD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicinalProductDefinition/Lodipin-10mg-Capsule-GR-MPD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Lodipin-10mg-Capsule-GR-MPD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "MedicinalProductDefinition-Lodipin-10mg-Capsule-GR-MPD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Lodipin-10mg-Capsule-GR-MPD"
 
 * entry[+].resource = Lodipin-10mg-Capsule-GR-RA
-* entry[=].request.method = #PUT
-* entry[=].request.url = "RegulatedAuthorization/Lodipin-10mg-Capsule-GR-RA"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Lodipin-10mg-Capsule-GR-RA"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "RegulatedAuthorization-Lodipin-10mg-Capsule-GR-RA"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Lodipin-10mg-Capsule-GR-RA"
 
 * entry[+].resource = LOC-100005016-Iasis
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/LOC-100005016-Iasis"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100005016-Iasis"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Organization/LOC-100005016-Iasis"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100005016-Iasis"
 
 * entry[+].resource = Lodipin-10mg-Capsule-GR-APD
-* entry[=].request.method = #PUT
-* entry[=].request.url = "AdministrableProductDefinition/Lodipin-10mg-Capsule-GR-APD"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Lodipin-10mg-Capsule-GR-APD"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "AdministrableProductDefinition-Lodipin-10mg-Capsule-GR-APD"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Lodipin-10mg-Capsule-GR-APD"
 
 * entry[+].resource = Lodipin-10mg-Capsule-GR-MID
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ManufacturedItemDefinition/Lodipin-10mg-Capsule-GR-MID"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Lodipin-10mg-Capsule-GR-MID"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "ManufacturedItemDefinition-Lodipin-10mg-Capsule-GR-MID"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Lodipin-10mg-Capsule-GR-MID"
 
 * entry[+].resource = Lodipin-10mg-Capsule-GR-I
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Ingredient/Lodipin-10mg-Capsule-GR-I"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Lodipin-10mg-Capsule-GR-I"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-Lodipin-10mg-Capsule-GR-I"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Lodipin-10mg-Capsule-GR-I"
 
 * entry[+].resource = Lodipin-10mg-Capsule-GR-PPD-2802584402021
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Lodipin-10mg-Capsule-GR-PPD-2802584402021"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Lodipin-10mg-Capsule-GR-PPD-2802584402021"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-Lodipin-10mg-Capsule-GR-PPD-2802584402021"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Lodipin-10mg-Capsule-GR-PPD-2802584402021"
 
 * entry[+].resource = Lodipin-10mg-Capsule-GR-PPD-2802584402038
-* entry[=].request.method = #PUT
-* entry[=].request.url = "PackagedProductDefinition/Lodipin-10mg-Capsule-GR-PPD-2802584402038"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Lodipin-10mg-Capsule-GR-PPD-2802584402038"
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "PackagedProductDefinition-Lodipin-10mg-Capsule-GR-PPD-2802584402038"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Lodipin-10mg-Capsule-GR-PPD-2802584402038"
 
 
 Instance: Lodipin-10mg-Capsule-GR-MPD
@@ -63,7 +63,8 @@ Usage: #inline
 * name.part[strength].part = "10 mg"
 * name.part[doseForm].part = "καψάκια, σκληρά"
 * name.usage.country = $100000000002#100000000406 "Hellenic Republic"
-* name.usage.language = $100000072057#100000072181 "Greek"
+//* name.usage.language = $100000072057#100000072181 "Greek"
+* name.usage.language = urn:ietf:bcp:47#el "Greek"
 
 
 Instance: Lodipin-10mg-Capsule-GR-RA

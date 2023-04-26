@@ -1,15 +1,16 @@
 Instance: pharmaceutical-dose-form
 InstanceOf: ValueSet
 Usage: #definition
+Title: "EDQM Pharmaceutical Dose Form"
+
+
+* title = "EDQM Pharmaceutical Dose Form"
+* description = "ValueSet Pharmaceutical dose form from EDQM, PDF, see https://standardterms.edqm.eu/#"
 * name = "PharmaceuticalDoseForm"
-* title = "Pharmaceutical dose form"
 * status = #active
 * experimental = false
-* description = "ValueSet Pharmaceutical dose form from EDQM, PDF, see https://standardterms.edqm.eu/#"
 * immutable = false
 * compose.include.system = $edqm-standardterms
-
-
 
 
 * compose.include.concept[+].code = #10100500
