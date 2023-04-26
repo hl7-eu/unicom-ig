@@ -48,7 +48,7 @@ Description: "Logical model for a pilot product list's medicinal product"
     * language 0..1 CD "Description language"
   * packSize 1..* PQ "Pack size, repeatable for different manufactured items"
   * legalStatusOfSupply 0..1 CD "Legal status of supply on package level"
-  * marketingAuthorisation 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.marketingAuthorisation "Marketing authorisation on package level"
+//1  * marketingAuthorisation 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/master/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.marketingAuthorisation "Marketing authorisation on package level"
       //Local representative currently not included, but probably needed in several countries
   * marketingStatus 0..* Class "Marketing status"
     * country 1..1 CD "Country"
@@ -61,7 +61,7 @@ Description: "Logical model for a pilot product list's medicinal product"
       * containedItem 0..* Class "The content of the inner package"
         * amount 1..1 PQ "Amount of manufacturedItems (solid) or size of the manufactured item (liquid)"
         * obeys itemcontent-1
-        * containedPackage 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.packagedProductDefinition.packaging "Inner Packages"
+//1        * containedPackage 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/master/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.packagedProductDefinition.packaging "Inner Packages"
         * manufacturedItem 1..* Class "Manufactured item" // this can only be there if there are no inner package
           * manufacturedDoseForm 1..1 CD "Manufactured dose form"
           * unitOfPresentation 1..1 CD "Unit of presentation"
@@ -99,69 +99,6 @@ Description: "Logical model for a pilot product list's medicinal product"
           * numerator 1..1 PQ "Numerator"
           * denominator 1..1 PQ "Denominator"
 
-* packagedProductDefinition 1..* class "Packaged product"
-  * identifier 0..* class "Package identifier"
-    * pcid 1..1 II "Packaged medicinal product ID (PCID)"
-    * national_id 0..* II "National package identifier"
-  * description 0..1 class "Package description"
-    * language 0..1 CD "Description language"
-  * packSize 1..* class "Pack size"
-    * value 1..1 QT "Value"
-    * unit 1..1 CD "Unit"
-  * legalStatusOfSupply 0..1 CD "Legal status of supply on package level"
-  * marketingAuthorisation 0..* class "Marketing authorisation on package level"
-    * marketingAuthorisationNumber 1..* II "Marketing authorisation number"
-    * region 1..1 CD "Region"
-    * marketingAuthorisationStatus 1..1 CD "Marketing authorisation status"
-    * date 0..1 DT "Status date"
-    * marketingAuthorisationHolder 1..1 class "Marketing authorisation holder"
-      * locationId 1..1 II "Location identifier"
-      * organisationId 0..1 II "Organization identifier"
-      * mahName 1..1 ST "Marketing authorisation holder's name"
-      //Local representative currently not included, but probably needed in several countries
-  * marketingStatus 0..* class "Marketing status"
-    * country 1..1 CD "Country"
-    * status 1..1 CD "Status"
-  * packaging 1..1 class "Package"
-    * packageType 1..1 CD "Package type"
-    * quantity 1..1 QT "Package quantity" //always 1 for the outer package
-    * material 0..* CD "Package material"
-    * innerPackage 0..* class "Inner Package"
-      * containedItem 0..* class "The content of the inner package"
-        * amount 1..1 class "Amount of manufacturedItems (solid) or size of the manufactured item (liquid)"
-          * value 1..1 QT "Value"
-          * unit 0..1 CD "Unit"
-        * obeys itemcontent-1
-        
-        
-        // this link must be the same root as the sushi-config canonical
-        * containedPackage 0..* contentReference http://unicom-project.eu/fhir/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.packagedProductDefinition.packaging "Inner Packages"
-        * manufacturedItem 1..* class "Manufactured item" // this can only be there if there are no inner package
-          * manufacturedDoseForm 1..1 CD "Manufactured dose form"
-          * unitOfPresentation 1..1 CD "Unit of presentation"
-          * ingredient 1..* class "Ingredient"
-            * role 1..1 CD "Ingredient role"
-            * substance 1..1 II "Substance"
-            * strength 1..* class "Strength"
-              * strengthType 1..1 CD "Strength type (concentration or presentation strength)"
-              * strength 1..1 class "Strength"
-                * numerator 1..1 class "Numerator"
-                  * comparator 1..1 CD "Comparator"
-                  * value 1..1 ST "Value"
-                  * unit 1..1 ST "Unit of Measurement"
-                * denominator 1..1 class "Denominator"
-                  * value 1..1 ST "Value"
-                  * unit 1..1 ST "Unit" // which is the unit of presentation, IF the type = presentation
-              * referenceStrength 1..* class "Reference strength"
-                * substance 1..1 II "Substance"
-                * strength 1..1 class "Strength"
-                  * numerator 1..1 class "Numerator"
-                    * comparator 1..1 CD "Comparator"
-                    * value 1..1 ST "Value"
-                    * unit 1..1 ST "Unit of Measurement"
-                  * denominator 1..1 class "Denominator"
-                    * value 1..1 ST "Value"
-                    * unit 1..1 ST "Unit" // which is the unit of presentation, IF the type = presentation
 Logical: ManufacturedMaterial
 Title: "DRAFT: MyHealth@EU medicinal product"
 Description: "DRAFT. Crossborder eP/eD/PS medicinal product as represented in CDA."
@@ -182,7 +119,7 @@ Description: "DRAFT. Crossborder eP/eD/PS medicinal product as represented in CD
         * code 0..1 II "Package identifier (PCID or national) if this is the actual outer box"
         * name 0..* ST "Name or description of the package"
         * formcode 0..1 CD "Type of packaging"
-        * asContent 0..1 contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.asContent "Another layer of packaging. Max 3 expected."
+//1        * asContent 0..1 contentReference https://hl7-eu.github.io/unicom-ig/branches/master/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.asContent "Another layer of packaging. Max 3 expected."
 
 * asSpecializedKind 0..1 Class "ATC classification"
   * generalizedMaterialKind 1..1 Class "ATC classification"
@@ -203,10 +140,10 @@ Description: "DRAFT. Crossborder eP/eD/PS medicinal product as represented in CD
   * quantity 0..1 PQ "Quantity of this manufactured item in the package"
   * partProduct 1..1 Class "Description of the manufactured item"
     * formCode 0..1 CD "Dose form of the manufactured item (not present in wave 6?)"
-    * asContent 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.asContent "Packaging in max 3 layers, see above."
-    * asSpecializedKind 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.asSpecializedKind "PhPID for this part of the product - see above."
-    * part 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.part "Part of the part product - see above."
-    * ingredient 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.ingredient "Ingredients for this part of product - see above."
+//1    * asContent 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/master/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.asContent "Packaging in max 3 layers, see above."
+//1    * asSpecializedKind 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/master/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.asSpecializedKind "PhPID for this part of the product - see above."
+//1    * part 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/master/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.part "Part of the part product - see above."
+//1    * ingredient 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/master/StructureDefinition/ManufacturedMaterial#ManufacturedMaterial.ingredient "Ingredients for this part of product - see above."
 
 
 Logical: CrossBorderProduct
@@ -231,7 +168,7 @@ Description: "DRAFT. Crossborder eP/eD/PS medicinal product as a implementation-
         * strength 1..1 RTO "Reference strength"
   * manufacturedItem 0..* Class "Manufactured item if the prescription contains more than one type of items"
     * doseForm 1..1 CD "Manufactured item dose form"
-    * ingredient 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/mpd-r5/StructureDefinition/CrossBorderProduct#CrossBorderProduct.constitution.ingredient "Ingredients for this part of product - see above."
+//1    * ingredient 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/master/StructureDefinition/CrossBorderProduct#CrossBorderProduct.constitution.ingredient "Ingredients for this part of product - see above."
     * unitOfPresentation 0..* CD "Unit of presentation for the manufactured item"
     * containedQuantity 0..1 PQ "Manufactured item quantity for liquids (3ml/vial)"
     * manufacturedItemQuantity 1..1 PQ "Number of such manufactured items in this product (5 vials)"
@@ -242,27 +179,85 @@ Description: "DRAFT. Crossborder eP/eD/PS medicinal product as a implementation-
 * routeOfAdministration 1..* CD "Route of Administration - if we need it on product level"
 
 
-Logical: CrossBorderProduct2
-Title: "DRAFT: Medicinal Product 2"
-Description: "DRAFT. Crossborder eP/eD/PS medicinal product as a implementation-agnostic logical model"
+Logical: MedicationModel
+Title: "Medication for clinical workflows"
+Description: "DRAFT. eP/eD/PS product"
 
 * medicinalProductIdentifier 0..* II "MPID or national identifier"
 * packagedProductIdentifier 0..* II "PCID or national"
 * pharmaceuticalProductIdentifier 0..* II "PhPID"
 * atc 1..1 CD "ATC code"
+* classification 0..* CD "Classification"
 * packSize 1..* PQ "Overall amount of product (100ml; 20 tablets; 1 creme & 6 pessaries)"
 * name 0..* ST "Name of the product (full name, invented name, other)"
-* authorisedDoseForm 1..1 CD "Authorised/Combined dose form" 
+* doseForm 1..* Class "The intended or existing dose form for the product"
+  * formCode 1..1 CD "The actual dose form"
+  * type 0..1 CD "The type of dose form" 
+//* authorisedDoseForm 0..1 CD "Authorised/Combined dose form" 
+//* pharmaceuticalDoseForm 0..* CD "Pharmaceutical dose form" // not needed if we could have the mapping 
 * manufacturedItem 1..* Class "Manufactured item if the prescription contains more than one type of items"
-  * doseForm 1..1 CD "Manufactured item dose form"
+  * manufacturedDoseForm 1..1 CD "Manufactured item dose form"
   * ingredient 0..* Class "Ingredients"
-    * role 1..1 CD "(might not be needed if only active ingredients are expected)"
+    * role 1..1 CD "Role (might not be needed if only active ingredients are expected)"
     * substance 1..1 CD "Substance"
     * strengthInfo 1..* Class "Concentration or presentation strength"
       * strength 1..1 RTO "Concentration or presentation strength of the precise active ingredient"
-      * referenceStrength 0..* Class "Reference strength; according to the substance+strength type above"
-        * referenceSubstance 1..1 CD "Substance for reference strength"
-        * refstrength 1..1 RTO "Reference strength"
+      * strengthType 1..1 CD "Type of strength that is expressed"
+      * strengthSubstance 0..1 CD "Substance that the strength refers to, if different from the main substance"
+//        * refstrength 1..1 RTO "Reference strength"
+
+/*
+* ingredient
+  * substance = #amlodipine
+  * strengthInfo[+]
+    * strength = "10 mg"
+    * strengthType = #reference
+
+
+* ingredient
+  * substance = #amlodipine
+  * strengthInfo[+]
+    * strength = "10 mg"
+    * strengthType = #reference
+  * strengthInfo[+]
+    * strength = "13.1 mg"
+    * strengthType = #actual
+    * strengthSubstance = #amlodipinebesilate
+
+      
+* ingredient
+  * substance = #amlodipinebesilate
+  * strengthInfo[+]
+    * strength = "13.1 mg"
+    * strengthType = #actual
+
+
+* ingredient
+  * substance = #amlodipine
+  * strengthInfo[+]
+    * strength = "13.1 mg"
+    * strengthType = #actual
+    * strengthSubstance = #amlodipinebesilate
+  * strengthInfo[+]
+    * strength = "10 mg"
+    * strengthType = #reference
+
+ 
+
+* ingredient
+  * substance = #amlodipinebesilate
+  * strengthInfo[+]
+    * strength = "13.1 mg"
+    * strengthType = #actual
+  * strengthInfo[+]
+    * strength = "10 mg"
+    * strengthType = #reference
+    * strengthSubstance = #amlodipine
+
+
+*/
+
+
   * unitOfPresentation 0..* CD "Unit of presentation for the manufactured item"
   * containedQuantity 0..1 PQ "Manufactured item quantity for liquids (3ml/vial)"
   * manufacturedItemQuantity 1..1 PQ "Number of such manufactured items in this product (5 vials)"
