@@ -6,14 +6,13 @@ One goal of UNICOM is to build the bridge between regulatory medication data and
 
 UNICOM FHIR Implementation Guide has separate sections to describe the regulatory data as well as eHealth data, and to draw attention to possible mapping and simplification needs.
 
-In HL7 FHIR, ISO IDMP compatible regulatory resources are in MedicationDefinition module[LINK](https://hl7.org/fhir/medication-definition-module.html). Clinical resources (like MedicationRequest, typically used for e-prescription) use either Medication [LINK](https://hl7.org/fhir/medication.html) resource or codeable concepts defined in a terminology. 
+In HL7 FHIR, ISO IDMP compatible regulatory resources are in [MedicationDefinition module](https://hl7.org/fhir/medication-definition-module.html). Clinical resources (like MedicationRequest, typically used for e-prescription) use either [Medication](https://hl7.org/fhir/medication.html) resource or codeable concepts defined in a terminology. 
 
 #### MyHealth@EU crossborder services
 ##### Data exchange standard
 EU crossborder services (ePrescription, eDispensation, Patient Summary) use HL7 CDA as the common data exchange format (see specifications LINK). Therefore, one of the tasks in UNICOM is to explain how ISO IDMP FHIR resources relate to data elements used in MyHealth@EU CDA templates. Mapping between data elements from FHIR MedicationDefinition module and MyHealth@EU ManufacturedMaterial template was done in cooperation of UNICOM WP1, WP4, and WP6. This mapping will be published in the UNICOM IG soon, it can already be made available on request.
 
-https://hl7-eu.github.io/unicom-ig/StructureDefinition-ManufacturedMaterial.html
-https://hl7-eu.github.io/unicom-ig/StructureDefinition-CrossBorderProduct2.html
+
 
 ##### Preferred code systems
 MyHealth@EU specifies the following code systems for describing medication data:
@@ -27,9 +26,7 @@ All these code systems have been recoded in EMA SPOR, stating in most cases, tha
 
 #### Medicinal products as coded concepts in a terminology
 
-SNOMED CT international edition does not contain information about specific products. Medicinal product concepts are provided as virtual medicinal products, without any indication to brand or excipients. For the same reason, it also does not contain complex packaging and combined dose forms. ///LINKS from SNOMED page.///
+SNOMED CT international edition does not contain information about specific products. Medicinal product concepts are provided as virtual medicinal products, without any indication to brand or excipients. For the same reason, it also does not contain complex packaging and combined dose forms. 
 
 In some countries the SNOMED CT national release centre uses the regulatory data to create national SNOMED CT drug extension, which includes actual branded products. This is used, for example, in Spain and Norway, where regulatory data is used in the clinical domain, but in a completely different format.
 
-National terminologies (Austria)
-Austrian medication list is a FHIR CodeSystem resource, enlisting all medicinal products authorised in Austria and describing the essential attributes of the products in concept properties. The list originates from the regulatory agency, and is derived automatically from the ISO IDMP data.
