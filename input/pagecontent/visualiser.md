@@ -35,7 +35,7 @@ There is no reason to believe that one viewer is better than the other. Even tho
 |Can be used with any kind of FHIR Bundle|Only for MedicationDefinition module resources|
 |Possible to adapt and the looks and content|Not customizable|
 |Template needs to be created and kept up-to-date with data|Out-of-box solution, just copy your url|
-|[Example](https://hl7-eu.github.io/unicom-ig/Bundle-015-CopaliaHCT-EE-FullProduct.html)|[Example](https://idmp-viewer.azurewebsites.net/display-product?url=http://185.11.167.107:8084/fhir/MedicinalProductDefinition/CopaliaHCT-EE-MPD)|
+|[Example](Bundle-015-CopaliaHCT-EE-FullProduct.html)|[Example](https://idmp-viewer.azurewebsites.net/display-product?url=http://185.11.167.107:8084/fhir/MedicinalProductDefinition/CopaliaHCT-EE-MPD)|
 {:.table-bordered .table-sm}
 
 #### Technical considerations
