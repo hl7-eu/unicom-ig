@@ -7,14 +7,14 @@ This IG follows the EMA IG, which has been published as a set of text documents.
 
 #### FHIR versions
 
-EMA IG is based on FHIR version 4.6, but UNICOM PPL FHIR IG is based on R5 Snapshot 3. These versions introduce many changes, most significantly:  
-* direction of reference has been changed for Ingredient
-* pack size as containedItemQuantity (described as extension in EMA IG)
-* shelf life no longer has its own data type  
-
-UNICOM IG started with FHIR R4B, and this work is still available in a separate branch. Moving to R5 Snapshot3, a few more changes were applied:  
+EMA IG is based on FHIR version 4.6, but UNICOM PPL FHIR IG is based on version 5.0.0). This introduces some changes, most significantly:  
+* Direction of reference has been changed for Ingredient
 * In MedicinalProductDefinition name.countryLanguage has been renamed to name.usage, and name.namePart to name.part
 * In PackagedProductDefinition package has been renamed to packaging  
+* Pack size as containedItemQuantity (described as extension in EMA IG)
+
+UNICOM IG started with FHIR R4B, and this work is still available in a separate branch.  
+
 
 #### SPOR RMS lists
 There is no official source for EMA SPOR RMS lists in FHIR format. The lists used in this IG are derived from the versions published by EMA, but there is room for interpretation what exactly should be included in the final FHIR value set. These value sets are not automatically updated from EMA sources.
