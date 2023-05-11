@@ -43,8 +43,8 @@ Usage: #definition
 Instance: strength-presentation-ratio-numerator
 InstanceOf: SearchParameter
 Usage: #definition
-* status = #active
-* url = "http://fhir.hl7.pt:8080/fhir/SearchParameter/strength-presentation-ratio-numerator"
+* status = #active 
+* url = "http://unicom-project.eu/fhir/SearchParameter/strength-presentation-ratio-numerator"
 * name = "strength-presentation-ratio-numerator"
 * description = "Possiblity to search for Ingredient.substance.strength.presentation.ofType(Ratio).numerator"
 * code = #strength-presentation-ratio-numerator
@@ -57,7 +57,7 @@ Instance: strength-presentation-ratio-denominator
 InstanceOf: SearchParameter
 Usage: #definition
 * status = #active
-* url = "http://fhir.hl7.pt:8080/fhir/SearchParameter/strength-presentation-ratio-denominator"
+* url = "http://unicom-project.eu/fhir/SearchParameter/strength-presentation-ratio-denominator"
 * name = "strength-presentation-ratio-numerator"
 * description = "Possiblity to search for Ingredient.substance.strength.presentation.ofType(Ratio).denominator"
 * code = #strength-presentation-ratio-denominator
@@ -78,10 +78,10 @@ Usage: #definition
 
 
 * component[+].expression = "numerator"
-* component[=].definition = "http://fhir.hl7.pt:8080/fhir/SearchParameter/strength-presentation-ratio-numerator"
+* component[=].definition = "http://unicom-project.eu/fhir/SearchParameter/strength-presentation-ratio-numerator"
 
 * component[+].expression = "denominator"
-* component[=].definition = "http://fhir.hl7.pt:8080/fhir/SearchParameter/strength-presentation-ratio-denominator"
+* component[=].definition = "http://unicom-project.eu/fhir/SearchParameter/strength-presentation-ratio-denominator"
 
 
 * type = #composite
@@ -106,7 +106,7 @@ Usage: #definition
 * component[=].definition = "http://hl7.org/fhir/SearchParameter/Ingredient-substance-code"
 
 * component[+].expression = "strength.presentation.ofType(Ratio).numerator"
-* component[=].definition = "http://fhir.hl7.pt:8080/fhir/SearchParameter/strength-presentation-ratio-numerator"
+* component[=].definition = "http://unicom-project.eu/fhir/SearchParameter/strength-presentation-ratio-numerator"
 
 * type = #composite
 * processingMode = #normal
@@ -115,7 +115,7 @@ Instance: strength-presentation-quantity
 InstanceOf: SearchParameter
 Usage: #definition
 * status = #active
-* url = "http://fhir.hl7.pt:8080/fhir/SearchParameter/strength-presentation-quantity"
+* url = "http://unicom-project.eu/fhir/SearchParameter/strength-presentation-quantity"
 * name = "strength-presentation-quantity"
 * description = "Possiblity to search for Ingredient.substance.strength.presentation.ofType(Quantity)"
 * code = #strength-presentation-quantity
@@ -137,7 +137,7 @@ Usage: #definition
 * component[=].definition = "http://hl7.org/fhir/SearchParameter/Ingredient-substance-code"
 
 * component[+].expression = "strength.presentation.ofType(Quantity)"
-* component[=].definition = "http://fhir.hl7.pt:8080/fhir/SearchParameter/strength-presentation-quantity"
+* component[=].definition = "http://unicom-project.eu/fhir/SearchParameter/strength-presentation-quantity"
 
 * type = #composite
 * processingMode = #normal
