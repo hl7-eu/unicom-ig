@@ -63,6 +63,14 @@ A unique PCID is assigned according to the following defining attributes of the 
 When the above defining attributes sets differ in any way a new PCID will be assigned. Pay attention that PCID is dependant on package material. This is also the reason why package material has been included in the PCID data set.
 
 
+#### GTIN - GS1 Global Trade Item Number
+
+ISO IDMP and EMA IG place GTIN identifier under Packaged Product data set (EMA IG chapter 4.8.6 Data carrier identifier).  
+GTIN and PCID do not always map 1:1. For example, in case of centralised procedure, PCID is assigned to a package regardless of the language used on the package. Therefore, one PCID can map to several GTINs, because packages are printed in different languages.  
+
+Also, the same package can have different PCIDs in different countries. For example, the Baltic countries have a procedure where packages are printed with all three languages on it, but the same package is actually registered following the national procedures, and the marketing authorisation holders do not have to be the same. In this case, one GTIN can map to several PCIDs, and the actual package has information about all three marketing authorisations on/in it.  
+
+
 #### PhPID - Pharmaceutical product identifier
 
 Pharmaceutical product identifiers are mostly not present in the data.
