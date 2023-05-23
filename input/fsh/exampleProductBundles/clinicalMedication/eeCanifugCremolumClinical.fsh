@@ -56,7 +56,6 @@ Description: "Clotrimazole cream and pessaries as a generic product, Medication 
 * extension[classification].valueCodeableConcept = $who-atc#G01AF02 "clotrimazole"
 * extension[administrableDoseForm].valueCodeableConcept = $edqm-standardterms#10909000 "Pessary"
 * extension[administrableDoseForm].valueCodeableConcept = $edqm-standardterms#10901000 "Vaginal cream"
-* marketingAuthorizationHolder = Reference(LOC-100004795-Wolff-Arzneimittel)
 * ingredient[0].item.reference = Reference(Clotrimazole-Cream-Generic)
 // should the number of tubes or size of the tube be here?
 * ingredient[+].item.reference = Reference(Clotrimazole-Pessary-Generic)
