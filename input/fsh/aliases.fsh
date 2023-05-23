@@ -32,6 +32,8 @@ Alias: $loc-id = https://spor.ema.europa.eu/v1/locations // EMA OMS Location Ide
 Alias: $org-id = https://spor.ema.europa.eu/v1/organisations // EMA OMS Organisation Identifier
 Alias: $who-atc = http://www.whocc.no/atc // WHO ATC
 Alias: $edqm-standardterms = https://standardterms.edqm.eu // EDQM standard terms
+Alias: $ucum = http://unitsofmeasure.org // UCUM http://hl7.org/fhir/ValueSet/ucum-units
+Alias: $snomed = http://www.snomed.org // SNOMED CT
 
 
 // ===== Value Sets
