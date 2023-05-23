@@ -54,7 +54,6 @@ Description: "Clotrimazole cream and pessaries as a generic product, Medication 
 
 * doseForm = $edqm-standardterms#14001000 "Cream + pessary"
 * extension[classification].valueCodeableConcept = $who-atc#G01AF02 "clotrimazole"
-* extension[name].valueString = "Canifug Cremolum"
 * extension[administrableDoseForm].valueCodeableConcept = $edqm-standardterms#10909000 "Pessary"
 * extension[administrableDoseForm].valueCodeableConcept = $edqm-standardterms#10901000 "Vaginal cream"
 * marketingAuthorizationHolder = Reference(LOC-100004795-Wolff-Arzneimittel)
