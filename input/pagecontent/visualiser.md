@@ -47,12 +47,37 @@ Both options require some validation, to confirm the visualizer is displaying th
 Templates as such are not dependant on FHIR versions, but they make use of FHIR paths and attribute names, which may occasionally change. A changed FHIR path requires an update to the template.
 
 ### How to use it in your IG
+#### Set up the IG
+To set up the IG for using liquid rendering of the resources, it is necessary to set the `produce-jekyll-data` parameter to true.  
+In sushi:
+```yaml
+# parameters:
+#  produce-jekyll-data: true
+```
+or in json:
+```
+"parameter": [
+  {
+    "code": "produce-jekyll-data",
+    "value": "true"
+  },
+```
+
 #### Create a template
 Creating a template from scratch is a developer's job, requiring basic knowledge of FHIR and [Liquid Templates](https://shopify.github.io/liquid/), and quite some patience. Liquid templates are not the easiest way to create a display tool, but as executable scripts (like JavaScript) are not allowed inside an IG, the regular options are off the table.  
 You can find UNICOM templates' code [in our GitHub repository](https://github.com/hl7-eu/unicom-ig/tree/master/unicom-template/package/includes).  
 
 Initial templates may be easier to create in a separate project to make use of a locally run http-server in order to speed up the work.
+#### Create a template
  
-#### Changing a template
+### Maintaining a template
 Changing an existing template where the desired data elements have already been made visible is significantly easier task. Anyone with basic knowledge of html should be able to make simple changes to the templates.  
+Modifying a template inside an Implementation Guide (IG) project can be time-consuming as it requires frequent building of the entire project to verify if the changes have been correctly applied. However, for faster iteration, the building time can be reduced to seconds by modifying the temporary liquid files used by Jekyll and running only Jekyll on the temporary pages. 
 
+To accomplish this, run the following command from the root folder of the IG project:
+
+  `jekyll build --destination ./output -s temp/pages .`
+
+This command instructs Jekyll to build the project using the temporary pages and output the result to the `./output` directory.
+
+It's important to note that this method works with temporary files that are created each time the IG publisher runs. Once the temporary files are generated, you can iterate rapidly. However, remember to copy the results of your iteration (liquid files) back to the `_includes` folder in your source template. The `_includes` folder contains the file that is used by the publisher and will replace the corresponding file in `temp/pages/_includes` when the publisher is executed.
