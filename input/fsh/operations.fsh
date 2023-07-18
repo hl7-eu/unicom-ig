@@ -26,14 +26,14 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
-* parameter[=].documentation = "The dose form"
+* parameter[=].documentation = "The dose form" //which one??
 * parameter[=].type = #Coding
 
 * parameter[+].name = #code
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
-* parameter[=].documentation = "Product code"
+* parameter[=].documentation = "Product code" //can be whatever, MPID, PhPID, or other
 * parameter[=].type = #Coding
 
 * parameter[+].name = #route
@@ -64,5 +64,5 @@ Usage: #definition
 * parameter[=].part[=].min = 0
 * parameter[=].part[=].max = "1"
 * parameter[=].part[=].documentation = "The strength"
-* parameter[=].part[=].type = #SimpleQuantity
+* parameter[=].part[=].type = #Quantity
 
