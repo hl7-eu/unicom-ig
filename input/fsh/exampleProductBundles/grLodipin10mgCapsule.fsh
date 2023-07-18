@@ -64,7 +64,7 @@ Usage: #inline
 * name.part[doseForm].part = "καψάκια, σκληρά"
 * name.usage.country = $100000000002#100000000406 "Hellenic Republic"
 //* name.usage.language = $100000072057#100000072181 "Greek"
-* name.usage.language = urn:ietf:bcp:47#el "Greek"
+* name.usage.language = urn:ietf:bcp:47#el "Modern Greek (1453-)"
 
 
 Instance: Lodipin-10mg-Capsule-GR-RA
