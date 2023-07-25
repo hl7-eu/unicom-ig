@@ -7,18 +7,8 @@ Description: "ATC classification recoded with EMA SPOR RMS codes. Flat list, WHO
 * ^contact.telecom.system = #email
 * ^compositional = false
 * ^content = #complete
-* ^caseSensitive = true
+* ^caseSensitive = false
 * ^experimental = false
-CodeSystem: ATC_Human_EMA
-Id: ATC-Human-EMA
-Title: "ATC Human EMA"
-Description: "ATC classification recoded with EMA SPOR RMS codes. Flat list, WHO ATC codes provided in description field for easier use."
-* ^url = $100000093533
-* ^status = #draft
-* ^contact.telecom.system = #email
-* ^compositional = false
-* ^content = #complete
-* ^caseSensitive = true
 * #100000095729 "OTHER GYNECOLOGICALS" "G02"
 * #100000094848 "Pyrazolone derivatives" "C03CD"
 * #100000098548 "DECONGESTANTS AND ANTIALLERGICS" "S01G"
