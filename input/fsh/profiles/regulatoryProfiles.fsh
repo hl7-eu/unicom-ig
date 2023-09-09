@@ -207,7 +207,7 @@ Title: "PPL Administrable Product profile"
 Description: """Administrable product profile defines the ISO IDMP Pharmaceutical Product concept"""
 
 * identifier
-  * ^short = "PhPID or other relevant identifier"
+  * ^short = "Business identifier for the administrable version of this particular product. This should not be the official PhPID."
 
 * formOf 1..*
   * ^short = "Reference to the Medicinal Product"
