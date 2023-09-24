@@ -48,7 +48,7 @@ Description: "Logical model for a pilot product list's medicinal product"
     * language 0..1 CD "Description language"
   * packSize 1..* PQ "Pack size, repeatable for different manufactured items"
   * legalStatusOfSupply 0..1 CD "Legal status of supply on package level"
-//1  * marketingAuthorisation 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/master/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.marketingAuthorisation "Marketing authorisation on package level"
+  * marketingAuthorisation 0..* contentReference #FullMedicinalProduct.marketingAuthorisation "Marketing authorisation on package level"
       //Local representative currently not included, but probably needed in several countries
   * marketingStatus 0..* Class "Marketing status"
     * country 1..1 CD "Country"
@@ -61,7 +61,7 @@ Description: "Logical model for a pilot product list's medicinal product"
       * containedItem 0..* Class "The content of the inner package"
         * amount 1..1 PQ "Amount of manufacturedItems (solid) or size of the manufactured item (liquid)"
         * obeys itemcontent-1
-//1        * containedPackage 0..* contentReference https://hl7-eu.github.io/unicom-ig/branches/master/StructureDefinition/FullMedicinalProduct#FullMedicinalProduct.packagedProductDefinition.packaging "Inner Packages"
+        * containedPackage 0..* contentReference #FullMedicinalProduct.packagedProductDefinition.packaging "Inner Packages"
         * manufacturedItem 1..* Class "Manufactured item" // this can only be there if there are no inner package
           * manufacturedDoseForm 1..1 CD "Manufactured dose form"
           * unitOfPresentation 1..1 CD "Unit of presentation"
