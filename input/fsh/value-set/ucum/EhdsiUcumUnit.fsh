@@ -10,7 +10,7 @@ Title: "MyHealth@EU Unit of Measurement (UCUM)"
 * experimental = false
 
 * immutable = false
-* compose.include.system = "http://hl7.org/fhir/ValueSet/ucum-units"
+* compose.include.system = $ucum
 
 
 * compose.include.concept[+].code = #10.uN.s/(cm5.m2)

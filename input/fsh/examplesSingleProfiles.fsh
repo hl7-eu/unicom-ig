@@ -88,7 +88,7 @@ InstanceOf: PPLPackagedProductDefinition
 Usage: #example
 Description: "Packaged Product Definition: simple tablets"
 
-* identifier[pcid].value = "EE-100002580-15547-1109887"
+* identifier[pcid].value = "EE-100002580-15547-1109887a"
 * packageFor = Reference(Agen-5mg-Tablet-EE-MPD)
 * containedItemQuantity = 30 $200000000014#200000002152 "Tablet"
 * description = "Tabletid on pakendatud PVC/PVDC/Al blistritesse (valged)."
@@ -112,7 +112,7 @@ Instance: Agen-5mg-Tablet-EE-PPD-1109887-B
 InstanceOf: PPLPackagedProductDefinition
 Usage: #example
 Description: "Packaged Product Definition: simple tablets"
-* identifier[pcid].value = "EE-100002580-15547-1109887"
+* identifier[pcid].value = "EE-100002580-15547-1109887b"
 * packageFor = Reference(Agen-5mg-Tablet-EE-MPD)
 * containedItemQuantity = 30 $200000000014#200000002152 "Tablet"
 * description = "Tabletid on pakendatud PVC/Al blistritesse (valged)."
