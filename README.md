@@ -1,6 +1,5 @@
 # UNICOM FHIR Implementation Guide
 <br> </br>
-###
 ### Publication
 This ImplementationGuide is published in the following locations:
 
