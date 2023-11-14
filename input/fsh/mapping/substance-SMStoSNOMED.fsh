@@ -14,7 +14,7 @@ Title: "SMS-SNOMED CT substances"
 * group.element[=].target.relationship = #equivalent
 * group.element[=].target.display = "Amlodipine"
 * group.element[=].display = "Amlodipine"
-* group.element[+].code = # 100000090079
+* group.element[+].code = #100000090079
 * group.element[=].target.code = #384976003
 * group.element[=].target.relationship = #equivalent
 * group.element[=].target.display = "Amlodipine besilate"
@@ -23,3 +23,11 @@ Title: "SMS-SNOMED CT substances"
 * group.target = $snomed
 * version = "1"
 * sourceScopeCanonical = "http://unicom-project.eu/fhir/ValueSet/substances-vs"
+
+// 100000092667 Cefuroxime  372833007
+// 100000091436	Cefuroxime sodium 48753004
+// 100000091596	Amoxicillin 372687004
+// 100000090113 Amoxicillin sodium 427483001
+// 100000092629 Amoxicillin trihydrate 96068000
+// 100000089842	Clavulanic acid 395939008
+// 100000093061 Potassium clavulanate 395938000 Clavulanate potassium
