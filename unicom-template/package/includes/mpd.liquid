@@ -102,6 +102,7 @@
   {% comment %}Get PPDs from Bundle {% endcomment %}
   {% assign ppds = bundle.entry | where: "resource.resourceType", "PackagedProductDefinition" %}
     {% for ppdr in ppds %}
+    {% assign ppdindex = forloop.index %}
     {% assign ppd = ppdr.resource %}
     {% comment %}Get PPDs that link to MPD, via packagefor[0] {% endcomment %}
     {% comment %}SHOULD FIX: Currently only packageFor[0], but should be any package {% endcomment %}
@@ -110,7 +111,7 @@
       {% for ppdpackageFor in ppd.packageFor %}
         {% if ppdpackageFor.reference == mpdtid %}
           <div class="container rcorners ppd listcontainer"> <p class="divtitle">
-            Package {{ forloop.index }} of {{ ppds | size }}</p>
+            Package {{ ppdindex }} of {{ ppds | size }}</p>
           {% include ppd.liquid ppd=ppd %}
         </div>
       {% endif %}
