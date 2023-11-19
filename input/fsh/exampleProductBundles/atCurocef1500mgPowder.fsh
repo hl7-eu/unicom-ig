@@ -31,7 +31,7 @@ Description: "Curocef 1500mg Powder for solution for injection/infusion. Austria
 
 
 Instance: Curocef-1500mg-Powder-AT-MPD
-InstanceOf: PPLMedicinalProduct
+InstanceOf: PPLMedicinalProductDefinition
 Usage: #inline
 
 * identifier[mpid].value = "AT-100000450-16569"
