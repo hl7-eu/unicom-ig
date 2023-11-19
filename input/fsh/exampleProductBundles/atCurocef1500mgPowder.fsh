@@ -49,7 +49,7 @@ Usage: #inline
 * name.part[strength].part = "1500 mg"
 * name.part[doseForm].part = "Pulver zur Herstellung einer Injektions- oder Infusionslösung"
 * name.usage.country = $100000000002#100000000330 "Austria"
-* name.usage.language = urn:ietf:bcp:47#ge "German" //$100000072057#100000072178
+* name.usage.language = urn:ietf:bcp:47#de "German" //$100000072057#100000072178
 
 
 Instance: Curocef-1500mg-Powder-AT-RA
@@ -108,10 +108,12 @@ Usage: #inline
 * packaging.packaging.material = $200000003199#200000003204 "Glass type I"
 * packaging.packaging.containedItem.item.reference = Reference(Curocef-1500mg-Powder-AT-MID)
 * packaging.packaging.containedItem.amount = 1 $200000000014#200000002164 "Ampoule"
+/*
 * packaging.shelfLifeStorage.periodDuration.value = 3
 * packaging.shelfLifeStorage.periodDuration.unit.value = "year"
 * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
 * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073410 "Do not store above 25 °C"
+*/
 
 Instance: Curocef-1500mg-Powder-AT-PPD-128827002
 InstanceOf: PPLPackagedProductDefinition
@@ -133,10 +135,12 @@ Usage: #inline
 * packaging.packaging.material = $200000003199#200000003204 "Glass type I"
 * packaging.packaging.containedItem.item.reference = Reference(Curocef-1500mg-Powder-AT-MID)
 * packaging.packaging.containedItem.amount = 5 $200000000014#200000002164 "Ampoule"
+/*
 * packaging.shelfLifeStorage.periodDuration.value = 3
 * packaging.shelfLifeStorage.periodDuration.unit.value = "year"
 * packaging.shelfLifeStorage.specialPrecautionsForStorage[0] = $100000073344#100000073421 "Store in the original package"
 * packaging.shelfLifeStorage.specialPrecautionsForStorage[+] = $100000073344#100000073410 "Do not store above 25 °C"
+*/
 
 Instance: Curocef-1500mg-Powder-AT-MID
 InstanceOf: PPLManufacturedItemDefinition
