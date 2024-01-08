@@ -273,7 +273,7 @@ Description: "DRAFT. eP/eD/PS product"
 // narcotic indicator?    
 
 Logical: SctClinicalDrug
-Description: "SNOMED CT Clinical Drug concept as logical model"
+Description: "SNOMED CT Clinical Drug concept as logical data model"
 Title: "SNOMED CT Clinical Drug"
 
 * manufacturedDoseForm 0..1 code "Attribute |Has manufactured dose form|" "Attribute |Has manufactured dose form|"
