@@ -271,3 +271,28 @@ Description: "DRAFT. eP/eD/PS product"
 // package type
 // administrable dose form
 // narcotic indicator?    
+
+Logical: SctClinicalDrug
+Description: "SNOMED CT Clinical Drug concept"
+Title: "SNOMED CT Clinical Drug"
+
+* manufacturedDoseForm 0..1 code "Attribute |Has manufactured dose form|" "Attribute |Has manufactured dose form|"
+* unitOfPresentation 0..1 code "Attribute |Has unit of presentation|" "Attribute |Has unit of presentation|"
+* unitOfPresentationSizeQuantity 0..1 decimal "Attribute |Unit of presentation size quantity|" "Attribute |Unit of presentation size quantity|"
+* unitOfPresenationSizeUnit 0..1 code "Attribute |Unit of presentation size unit|" "Attribute |Unit of presentation size unit|"
+* baseActiveIngredientCount 0..1 integer "Attribute |Count of base of active ingredient|" "Attribute |Count of base of active ingredient|"
+* activeIngredientCount 0..1 integer "Attribute |Count of active ingredient|" "Attribute |Count of active ingredient|"
+* ingredient 0..* BackboneElement "Active ingredients and strengths of the manufactured product" "Active ingredients and strengths of the manufactured product"
+* ingredient.preciseActiveIngredient 0..1 code "Attribute |Has precise active ingredient|" "Attribute |Has precise active ingredient|"
+* ingredient.basisOfStrengthSubstance 0..* code "Attribute |Has basis of strength substance|. Maps to reference strength substance in IDMP." "Attribute |Has basis of strength substance|. Maps to reference strength substance in IDMP."
+* ingredient.strength 0..1 BackboneElement "Amount of the substance recorded as basis of strength" "Amount of the substance recorded as basis of strength"
+* ingredient.strength.presentationStrength 0..* BackboneElement "Presentation strength" "Presentation strength"
+* ingredient.strength.presentationStrength.numeratorValue 0..1 decimal "Attribute |Has presentation strength numerator value|" "Attribute |Has presentation strength numerator value|"
+* ingredient.strength.presentationStrength.numeratorUnit 0..1 code "Attribute |Has presentation strength numerator unit|" "Attribute |Has presentation strength numerator unit|"
+* ingredient.strength.presentationStrength.denominatorValue 0..1 integer "Attribute |Has presentation strength denominator value|" "Attribute |Has presentation strength denominator value|"
+* ingredient.strength.presentationStrength.denominatorUnit 0..1 code "Attribute |Has presentation strength denominator unit|" "Attribute |Has presentation strength denominator unit|"
+* ingredient.strength.concentrationStrength 0..1 BackboneElement "Concentration strength" "Concentration strength"
+* ingredient.strength.concentrationStrength.numeratorValue 0..1 decimal "Attribute |Has concentration strength numerator value|" "Attribute |Has concentration strength numerator value|"
+* ingredient.strength.concentrationStrength.numeratorUnit 0..1 code "Attribute |Has concentration strength numerator unit|" "Attribute |Has concentration strength numerator unit|"
+* ingredient.strength.concentrationStrength.denominatorValue 0..1 integer "Attribute |Has concentration strength denominator value|" "Attribute |Has concentration strength denominator value|"
+* ingredient.strength.concentrationStrength.denominatorUnit 0..1 code "Attribute |Has concentration strength denominator unit|" "Attribute |Has concentration strength denominator unit|"
