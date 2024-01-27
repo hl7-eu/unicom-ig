@@ -241,6 +241,8 @@ Id: PPLIngredient
 Title: "PPL Ingredient profile"
 Description: """Ingredient for the medicinal product, pharmaceutical product and/or manufactured item"""
 
+* obeys strength-required
+
 * for 1..*
   * ^short = "Reference to the medicinal product, pharmaceutical product and/or manufactured item where the ingredient is used"
 * for only Reference(PPLMedicinalProductDefinition or PPLAdministrableProductDefinition or PPLManufacturedItemDefinition)
@@ -255,7 +257,7 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
   * ^short = "Substance code from EMA SMS"
   * ^definition = "EMA IG 5.5"
 
-  * strength 1..*
+  * strength 0..*
     * ^definition = "EMA IG 5.5.2"
     * presentationRatio
       * ^short = "Strength per unit of presentation (10mg/vial or 10mg/0.5ml where 0.5ml is the size of the vial)"
