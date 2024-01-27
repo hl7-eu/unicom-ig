@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="Equivalent"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>dose-form</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#Coding">Coding</a></td><td/><td><div><p>The dose form</p>
+</div></td></tr><tr><td>IN</td><td>code</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#Coding">Coding</a></td><td/><td><div><p>Product code</p>
+</div></td></tr><tr><td>IN</td><td>route</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#Coding">Coding</a></td><td/><td><div><p>Route of administration</p>
+</div></td></tr><tr><td>IN</td><td>ingredient</td><td/><td>0..*</td><td></td><td/><td><div><p>Ingredients</p>
+</div></td></tr><tr><td>IN</td><td>ingredient.substance</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#Coding">Coding</a></td><td/><td><div><p>The substance</p>
+</div></td></tr><tr><td>IN</td><td>ingredient.strength</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#Quantity">Quantity</a></td><td/><td><div><p>The strength</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="http://unicom-project.eu/fhir/OperationDefinition/Equivalent"/>
+  <version value="0.1.0"/>
+  <name value="Equivalent"/>
+  <title value="Equivalent Look Up"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <experimental value="false"/>
+  <date value="2023-12-11T14:40:01+00:00"/>
+  <publisher value="UNICOM"/>
+  <contact>
+    <name value="UNICOM"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://unicom-project.eu"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <affectsState value="false"/>
+  <code value="equivalent"/>
+  <system value="false"/>
+  <type value="true"/>
+  <instance value="true"/>
+  <parameter>
+    <name value="dose-form"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="1"/>
+    <documentation value="The dose form"/>
+    <type value="Coding"/>
+  </parameter>
+  <parameter>
+    <name value="code"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="1"/>
+    <documentation value="Product code"/>
+    <type value="Coding"/>
+  </parameter>
+  <parameter>
+    <name value="route"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="1"/>
+    <documentation value="Route of administration"/>
+    <type value="Coding"/>
+  </parameter>
+  <parameter>
+    <name value="ingredient"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="*"/>
+    <documentation value="Ingredients"/>
+    <part>
+      <name value="substance"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <documentation value="The substance"/>
+      <type value="Coding"/>
+    </part>
+    <part>
+      <name value="strength"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <documentation value="The strength"/>
+      <type value="Quantity"/>
+    </part>
+  </parameter>
+</OperationDefinition>

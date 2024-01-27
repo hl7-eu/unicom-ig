@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/regulatoryStatus-ema-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "regulatoryStatus-ema-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://spor.ema.europa.eu/v1/lists/100000072049</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100000072121<a name=\"regulatoryStatus-ema-cs-100000072121\"> </a></td><td>Revoked</td></tr><tr><td style=\"white-space:nowrap\">200000029967<a name=\"regulatoryStatus-ema-cs-200000029967\"> </a></td><td>Harmonised</td></tr><tr><td style=\"white-space:nowrap\">200000017708<a name=\"regulatoryStatus-ema-cs-200000017708\"> </a></td><td>Valid - Renewed/Varied</td></tr><tr><td style=\"white-space:nowrap\">200000017707<a name=\"regulatoryStatus-ema-cs-200000017707\"> </a></td><td>Valid - Transferred marketing authorisation</td></tr><tr><td style=\"white-space:nowrap\">100000072099<a name=\"regulatoryStatus-ema-cs-100000072099\"> </a></td><td>Valid</td></tr><tr><td style=\"white-space:nowrap\">100000072100<a name=\"regulatoryStatus-ema-cs-100000072100\"> </a></td><td>Expired</td></tr><tr><td style=\"white-space:nowrap\">100000072112<a name=\"regulatoryStatus-ema-cs-100000072112\"> </a></td><td>Not renewed</td></tr><tr><td style=\"white-space:nowrap\">100000072113<a name=\"regulatoryStatus-ema-cs-100000072113\"> </a></td><td>Withdrawn</td></tr><tr><td style=\"white-space:nowrap\">100000072114<a name=\"regulatoryStatus-ema-cs-100000072114\"> </a></td><td>Withdrawn, unspecified</td></tr><tr><td style=\"white-space:nowrap\">200000026056<a name=\"regulatoryStatus-ema-cs-200000026056\"> </a></td><td>Presubmission</td></tr><tr><td style=\"white-space:nowrap\">100000072122<a name=\"regulatoryStatus-ema-cs-100000072122\"> </a></td><td>Suspended</td></tr><tr><td style=\"white-space:nowrap\">100000072123<a name=\"regulatoryStatus-ema-cs-100000072123\"> </a></td><td>Expired due to Sunset Clause</td></tr><tr><td style=\"white-space:nowrap\">200000010409<a name=\"regulatoryStatus-ema-cs-200000010409\"> </a></td><td>Surrendered</td></tr><tr><td style=\"white-space:nowrap\">220000000066<a name=\"regulatoryStatus-ema-cs-220000000066\"> </a></td><td>Pending</td></tr><tr><td style=\"white-space:nowrap\">220000000067<a name=\"regulatoryStatus-ema-cs-220000000067\"> </a></td><td>Rejected</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072049"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "RegulatoryStatus_EMA_CS"] ; # 
+  fhir:title [ fhir:v "Regulatory Entitlement Status EMA SPOR"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-11-04T07:22:15+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Regulatory Entitlement Status EMA SPOR"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compositional [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "15"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "100000072121" ] ;
+     fhir:display [ fhir:v "Revoked" ]
+  ] [
+     fhir:code [ fhir:v "200000029967" ] ;
+     fhir:display [ fhir:v "Harmonised" ]
+  ] [
+     fhir:code [ fhir:v "200000017708" ] ;
+     fhir:display [ fhir:v "Valid - Renewed/Varied" ]
+  ] [
+     fhir:code [ fhir:v "200000017707" ] ;
+     fhir:display [ fhir:v "Valid - Transferred marketing authorisation" ]
+  ] [
+     fhir:code [ fhir:v "100000072099" ] ;
+     fhir:display [ fhir:v "Valid" ]
+  ] [
+     fhir:code [ fhir:v "100000072100" ] ;
+     fhir:display [ fhir:v "Expired" ]
+  ] [
+     fhir:code [ fhir:v "100000072112" ] ;
+     fhir:display [ fhir:v "Not renewed" ]
+  ] [
+     fhir:code [ fhir:v "100000072113" ] ;
+     fhir:display [ fhir:v "Withdrawn" ]
+  ] [
+     fhir:code [ fhir:v "100000072114" ] ;
+     fhir:display [ fhir:v "Withdrawn, unspecified" ]
+  ] [
+     fhir:code [ fhir:v "200000026056" ] ;
+     fhir:display [ fhir:v "Presubmission" ]
+  ] [
+     fhir:code [ fhir:v "100000072122" ] ;
+     fhir:display [ fhir:v "Suspended" ]
+  ] [
+     fhir:code [ fhir:v "100000072123" ] ;
+     fhir:display [ fhir:v "Expired due to Sunset Clause" ]
+  ] [
+     fhir:code [ fhir:v "200000010409" ] ;
+     fhir:display [ fhir:v "Surrendered" ]
+  ] [
+     fhir:code [ fhir:v "220000000066" ] ;
+     fhir:display [ fhir:v "Pending" ]
+  ] [
+     fhir:code [ fhir:v "220000000067" ] ;
+     fhir:display [ fhir:v "Rejected" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/AdministrableProductDefinition/CanifugCremolum-100mg-Pessary-EE-APD> a fhir:AdministrableProductDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CanifugCremolum-100mg-Pessary-EE-APD"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AdministrableProductDefinition</b><a name=\"CanifugCremolum-100mg-Pessary-EE-APD\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AdministrableProductDefinition &quot;CanifugCremolum-100mg-Pessary-EE-APD&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLAdministrableProductDefinition.html\">PPL Administrable Product profile</a></p></div><p><b>status</b>: active</p><p><b>formOf</b>: <a href=\"MedicinalProductDefinition-CanifugCremolum-EE-MPD.html\">MedicinalProductDefinition/CanifugCremolum-EE-MPD</a></p><p><b>administrableDoseForm</b>: Pessary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-pharmaceutical-dose-form-ema-cs.html\">Pharmaceutical Dose Form EMA</a>#100000073815)</span></p><p><b>unitOfPresentation</b>: Pessary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-unit-of-presentation-ema-cs.html\">Unit of Presentation EMA</a>#200000002137)</span></p><p><b>producedFrom</b>: <a href=\"ManufacturedItemDefinition-CanifugCremolum-100mg-Pessary-EE-MID.html\">ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Vaginal use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000073345#100000073639)</span></td></tr></table></div>"
+  ];
+  fhir:AdministrableProductDefinition.status [ fhir:value "active"];
+  fhir:AdministrableProductDefinition.formOf [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/CanifugCremolum-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/CanifugCremolum-EE-MPD" ]
+  ];
+  fhir:AdministrableProductDefinition.administrableDoseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000004" ];
+       fhir:Coding.code [ fhir:value "100000073815" ];
+       fhir:Coding.display [ fhir:value "Pessary" ]
+     ]
+  ];
+  fhir:AdministrableProductDefinition.unitOfPresentation [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000014" ];
+       fhir:Coding.code [ fhir:value "200000002137" ];
+       fhir:Coding.display [ fhir:value "Pessary" ]
+     ]
+  ];
+  fhir:AdministrableProductDefinition.producedFrom [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID>;
+     fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID" ]
+  ];
+  fhir:AdministrableProductDefinition.routeOfAdministration [
+     fhir:index 0;
+     fhir:AdministrableProductDefinition.routeOfAdministration.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000073345" ];
+         fhir:Coding.code [ fhir:value "100000073639" ];
+         fhir:Coding.display [ fhir:value "Vaginal use" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/AdministrableProductDefinition/CanifugCremolum-100mg-Pessary-EE-APD.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

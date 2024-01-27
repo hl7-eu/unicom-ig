@@ -1,0 +1,789 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/language-ema-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "language-ema-cs"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://spor.ema.europa.eu/v1/lists/100000072057</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100000072223<a name=\"language-ema-cs-100000072223\"> </a></td><td>Korean</td></tr><tr><td style=\"white-space:nowrap\">100000072144<a name=\"language-ema-cs-100000072144\"> </a></td><td>Chuvash</td></tr><tr><td style=\"white-space:nowrap\">100000072257<a name=\"language-ema-cs-100000072257\"> </a></td><td>Serbian</td></tr><tr><td style=\"white-space:nowrap\">100000072297<a name=\"language-ema-cs-100000072297\"> </a></td><td>Turkish</td></tr><tr><td style=\"white-space:nowrap\">100000072166<a name=\"language-ema-cs-100000072166\"> </a></td><td>Corsican</td></tr><tr><td style=\"white-space:nowrap\">100000072131<a name=\"language-ema-cs-100000072131\"> </a></td><td>Avaric</td></tr><tr><td style=\"white-space:nowrap\">100000072264<a name=\"language-ema-cs-100000072264\"> </a></td><td>Spanish</td></tr><tr><td style=\"white-space:nowrap\">100000072273<a name=\"language-ema-cs-100000072273\"> </a></td><td>Walloon</td></tr><tr><td style=\"white-space:nowrap\">100000072159<a name=\"language-ema-cs-100000072159\"> </a></td><td>Javanese</td></tr><tr><td style=\"white-space:nowrap\">100000072197<a name=\"language-ema-cs-100000072197\"> </a></td><td>Kashmiri</td></tr><tr><td style=\"white-space:nowrap\">100000072306<a name=\"language-ema-cs-100000072306\"> </a></td><td>Xhosa</td></tr><tr><td style=\"white-space:nowrap\">100000072177<a name=\"language-ema-cs-100000072177\"> </a></td><td>Georgian</td></tr><tr><td style=\"white-space:nowrap\">100000072225<a name=\"language-ema-cs-100000072225\"> </a></td><td>Lao</td></tr><tr><td style=\"white-space:nowrap\">100000072140<a name=\"language-ema-cs-100000072140\"> </a></td><td>Burmese</td></tr><tr><td style=\"white-space:nowrap\">100000072118<a name=\"language-ema-cs-100000072118\"> </a></td><td>Avestan</td></tr><tr><td style=\"white-space:nowrap\">100000072162<a name=\"language-ema-cs-100000072162\"> </a></td><td>Chechen</td></tr><tr><td style=\"white-space:nowrap\">100000072293<a name=\"language-ema-cs-100000072293\"> </a></td><td>Tibetan</td></tr><tr><td style=\"white-space:nowrap\">100000072183<a name=\"language-ema-cs-100000072183\"> </a></td><td>Haitian</td></tr><tr><td style=\"white-space:nowrap\">100000072266<a name=\"language-ema-cs-100000072266\"> </a></td><td>Tahitian</td></tr><tr><td style=\"white-space:nowrap\">100000072255<a name=\"language-ema-cs-100000072255\"> </a></td><td>Russian</td></tr><tr><td style=\"white-space:nowrap\">100000072307<a name=\"language-ema-cs-100000072307\"> </a></td><td>Yiddish</td></tr><tr><td style=\"white-space:nowrap\">100000072296<a name=\"language-ema-cs-100000072296\"> </a></td><td>Tsonga</td></tr><tr><td style=\"white-space:nowrap\">100000072152<a name=\"language-ema-cs-100000072152\"> </a></td><td>Manx</td></tr><tr><td style=\"white-space:nowrap\">100000072236<a name=\"language-ema-cs-100000072236\"> </a></td><td>Maltese</td></tr><tr><td style=\"white-space:nowrap\">100000072282<a name=\"language-ema-cs-100000072282\"> </a></td><td>Shona</td></tr><tr><td style=\"white-space:nowrap\">100000072194<a name=\"language-ema-cs-100000072194\"> </a></td><td>Italian</td></tr><tr><td style=\"white-space:nowrap\">100000072261<a name=\"language-ema-cs-100000072261\"> </a></td><td>Sinhala</td></tr><tr><td style=\"white-space:nowrap\">100000072267<a name=\"language-ema-cs-100000072267\"> </a></td><td>Telugu</td></tr><tr><td style=\"white-space:nowrap\">100000072270<a name=\"language-ema-cs-100000072270\"> </a></td><td>Turkmen</td></tr><tr><td style=\"white-space:nowrap\">100000072198<a name=\"language-ema-cs-100000072198\"> </a></td><td>Kanuri</td></tr><tr><td style=\"white-space:nowrap\">100000072209<a name=\"language-ema-cs-100000072209\"> </a></td><td>Malay</td></tr><tr><td style=\"white-space:nowrap\">100000072265<a name=\"language-ema-cs-100000072265\"> </a></td><td>Sundanese</td></tr><tr><td style=\"white-space:nowrap\">100000072201<a name=\"language-ema-cs-100000072201\"> </a></td><td>Kazakh</td></tr><tr><td style=\"white-space:nowrap\">100000072304<a name=\"language-ema-cs-100000072304\"> </a></td><td>Welsh</td></tr><tr><td style=\"white-space:nowrap\">100000072218<a name=\"language-ema-cs-100000072218\"> </a></td><td>Quechua</td></tr><tr><td style=\"white-space:nowrap\">100000072157<a name=\"language-ema-cs-100000072157\"> </a></td><td>Inuktitut</td></tr><tr><td style=\"white-space:nowrap\">100000072219<a name=\"language-ema-cs-100000072219\"> </a></td><td>Rundi</td></tr><tr><td style=\"white-space:nowrap\">100000072174<a name=\"language-ema-cs-100000072174\"> </a></td><td>Fijian</td></tr><tr><td style=\"white-space:nowrap\">100000072139<a name=\"language-ema-cs-100000072139\"> </a></td><td>Breton</td></tr><tr><td style=\"white-space:nowrap\">100000072301<a name=\"language-ema-cs-100000072301\"> </a></td><td>Venda</td></tr><tr><td style=\"white-space:nowrap\">100000072291<a name=\"language-ema-cs-100000072291\"> </a></td><td>Tajik</td></tr><tr><td style=\"white-space:nowrap\">100000072161<a name=\"language-ema-cs-100000072161\"> </a></td><td>Catalan</td></tr><tr><td style=\"white-space:nowrap\">100000072129<a name=\"language-ema-cs-100000072129\"> </a></td><td>Aragonese</td></tr><tr><td style=\"white-space:nowrap\">100000072244<a name=\"language-ema-cs-100000072244\"> </a></td><td>N'Ko</td></tr><tr><td style=\"white-space:nowrap\">100000072126<a name=\"language-ema-cs-100000072126\"> </a></td><td>Akan</td></tr><tr><td style=\"white-space:nowrap\">100000072246<a name=\"language-ema-cs-100000072246\"> </a></td><td>Ojibwa</td></tr><tr><td style=\"white-space:nowrap\">100000072274<a name=\"language-ema-cs-100000072274\"> </a></td><td>Yoruba</td></tr><tr><td style=\"white-space:nowrap\">100000072179<a name=\"language-ema-cs-100000072179\"> </a></td><td>Irish</td></tr><tr><td style=\"white-space:nowrap\">100000072271<a name=\"language-ema-cs-100000072271\"> </a></td><td>Uighur</td></tr><tr><td style=\"white-space:nowrap\">100000072305<a name=\"language-ema-cs-100000072305\"> </a></td><td>Wolof</td></tr><tr><td style=\"white-space:nowrap\">100000072212<a name=\"language-ema-cs-100000072212\"> </a></td><td>Ndonga</td></tr><tr><td style=\"white-space:nowrap\">100000072178<a name=\"language-ema-cs-100000072178\"> </a></td><td>German</td></tr><tr><td style=\"white-space:nowrap\">100000072148<a name=\"language-ema-cs-100000072148\"> </a></td><td>Ewe</td></tr><tr><td style=\"white-space:nowrap\">100000072294<a name=\"language-ema-cs-100000072294\"> </a></td><td>Tigrinya</td></tr><tr><td style=\"white-space:nowrap\">100000072134<a name=\"language-ema-cs-100000072134\"> </a></td><td>Bambara</td></tr><tr><td style=\"white-space:nowrap\">100000072138<a name=\"language-ema-cs-100000072138\"> </a></td><td>Bislama</td></tr><tr><td style=\"white-space:nowrap\">100000072247<a name=\"language-ema-cs-100000072247\"> </a></td><td>Oromo</td></tr><tr><td style=\"white-space:nowrap\">100000072128<a name=\"language-ema-cs-100000072128\"> </a></td><td>Arabic</td></tr><tr><td style=\"white-space:nowrap\">100000072254<a name=\"language-ema-cs-100000072254\"> </a></td><td>Romanian</td></tr><tr><td style=\"white-space:nowrap\">100000072192<a name=\"language-ema-cs-100000072192\"> </a></td><td>Interlingua (International Auxiliary Language Association)</td></tr><tr><td style=\"white-space:nowrap\">100000072154<a name=\"language-ema-cs-100000072154\"> </a></td><td>Hebrew</td></tr><tr><td style=\"white-space:nowrap\">100000072127<a name=\"language-ema-cs-100000072127\"> </a></td><td>Amharic</td></tr><tr><td style=\"white-space:nowrap\">100000072290<a name=\"language-ema-cs-100000072290\"> </a></td><td>Tatar</td></tr><tr><td style=\"white-space:nowrap\">100000072200<a name=\"language-ema-cs-100000072200\"> </a></td><td>Kikuyu</td></tr><tr><td style=\"white-space:nowrap\">100000072239<a name=\"language-ema-cs-100000072239\"> </a></td><td>South Ndebele</td></tr><tr><td style=\"white-space:nowrap\">100000072216<a name=\"language-ema-cs-100000072216\"> </a></td><td>Panjabi</td></tr><tr><td style=\"white-space:nowrap\">100000072182<a name=\"language-ema-cs-100000072182\"> </a></td><td>Guarani</td></tr><tr><td style=\"white-space:nowrap\">100000072222<a name=\"language-ema-cs-100000072222\"> </a></td><td>Komi</td></tr><tr><td style=\"white-space:nowrap\">100000072251<a name=\"language-ema-cs-100000072251\"> </a></td><td>Portuguese</td></tr><tr><td style=\"white-space:nowrap\">100000072119<a name=\"language-ema-cs-100000072119\"> </a></td><td>Bashkir</td></tr><tr><td style=\"white-space:nowrap\">100000072188<a name=\"language-ema-cs-100000072188\"> </a></td><td>Igbo</td></tr><tr><td style=\"white-space:nowrap\">100000072245<a name=\"language-ema-cs-100000072245\"> </a></td><td>Occitan (post 1500)</td></tr><tr><td style=\"white-space:nowrap\">100000072133<a name=\"language-ema-cs-100000072133\"> </a></td><td>Azerbaijani</td></tr><tr><td style=\"white-space:nowrap\">100000072196<a name=\"language-ema-cs-100000072196\"> </a></td><td>Greenlandic</td></tr><tr><td style=\"white-space:nowrap\">100000072286<a name=\"language-ema-cs-100000072286\"> </a></td><td>Swati</td></tr><tr><td style=\"white-space:nowrap\">100000072168<a name=\"language-ema-cs-100000072168\"> </a></td><td>Danish</td></tr><tr><td style=\"white-space:nowrap\">100000072235<a name=\"language-ema-cs-100000072235\"> </a></td><td>Malagasy</td></tr><tr><td style=\"white-space:nowrap\">100000072141<a name=\"language-ema-cs-100000072141\"> </a></td><td>Bosnian</td></tr><tr><td style=\"white-space:nowrap\">100000072191<a name=\"language-ema-cs-100000072191\"> </a></td><td>Interlingue</td></tr><tr><td style=\"white-space:nowrap\">100000072149<a name=\"language-ema-cs-100000072149\"> </a></td><td>Finnish</td></tr><tr><td style=\"white-space:nowrap\">100000072203<a name=\"language-ema-cs-100000072203\"> </a></td><td>Kongo</td></tr><tr><td style=\"white-space:nowrap\">100000072147<a name=\"language-ema-cs-100000072147\"> </a></td><td>English</td></tr><tr><td style=\"white-space:nowrap\">100000072237<a name=\"language-ema-cs-100000072237\"> </a></td><td>Mongolian</td></tr><tr><td style=\"white-space:nowrap\">100000072199<a name=\"language-ema-cs-100000072199\"> </a></td><td>Central Khmer</td></tr><tr><td style=\"white-space:nowrap\">100000072211<a name=\"language-ema-cs-100000072211\"> </a></td><td>Navaho</td></tr><tr><td style=\"white-space:nowrap\">100000072170<a name=\"language-ema-cs-100000072170\"> </a></td><td>Dzongkha</td></tr><tr><td style=\"white-space:nowrap\">100000072143<a name=\"language-ema-cs-100000072143\"> </a></td><td>Chamorro</td></tr><tr><td style=\"white-space:nowrap\">100000072190<a name=\"language-ema-cs-100000072190\"> </a></td><td>Sichuan Yi</td></tr><tr><td style=\"white-space:nowrap\">100000072233<a name=\"language-ema-cs-100000072233\"> </a></td><td>Maori</td></tr><tr><td style=\"white-space:nowrap\">100000072195<a name=\"language-ema-cs-100000072195\"> </a></td><td>Japanese</td></tr><tr><td style=\"white-space:nowrap\">100000072160<a name=\"language-ema-cs-100000072160\"> </a></td><td>Kannada</td></tr><tr><td style=\"white-space:nowrap\">100000072136<a name=\"language-ema-cs-100000072136\"> </a></td><td>Belarusian</td></tr><tr><td style=\"white-space:nowrap\">100000072258<a name=\"language-ema-cs-100000072258\"> </a></td><td>Croatian</td></tr><tr><td style=\"white-space:nowrap\">100000072229<a name=\"language-ema-cs-100000072229\"> </a></td><td>Luxembourgish</td></tr><tr><td style=\"white-space:nowrap\">100000072176<a name=\"language-ema-cs-100000072176\"> </a></td><td>Western Frisian</td></tr><tr><td style=\"white-space:nowrap\">100000072284<a name=\"language-ema-cs-100000072284\"> </a></td><td>Sotho</td></tr><tr><td style=\"white-space:nowrap\">100000072238<a name=\"language-ema-cs-100000072238\"> </a></td><td>Nauru</td></tr><tr><td style=\"white-space:nowrap\">100000072285<a name=\"language-ema-cs-100000072285\"> </a></td><td>Sardinian</td></tr><tr><td style=\"white-space:nowrap\">100000072153<a name=\"language-ema-cs-100000072153\"> </a></td><td>Gujarati</td></tr><tr><td style=\"white-space:nowrap\">100000072115<a name=\"language-ema-cs-100000072115\"> </a></td><td>Abkhazian</td></tr><tr><td style=\"white-space:nowrap\">100000072215<a name=\"language-ema-cs-100000072215\"> </a></td><td>Oriya</td></tr><tr><td style=\"white-space:nowrap\">100000072164<a name=\"language-ema-cs-100000072164\"> </a></td><td>Church Slavic</td></tr><tr><td style=\"white-space:nowrap\">100000072300<a name=\"language-ema-cs-100000072300\"> </a></td><td>Urdu</td></tr><tr><td style=\"white-space:nowrap\">100000072189<a name=\"language-ema-cs-100000072189\"> </a></td><td>Ido</td></tr><tr><td style=\"white-space:nowrap\">100000072158<a name=\"language-ema-cs-100000072158\"> </a></td><td>Indonesian</td></tr><tr><td style=\"white-space:nowrap\">100000072232<a name=\"language-ema-cs-100000072232\"> </a></td><td>Marshallese</td></tr><tr><td style=\"white-space:nowrap\">100000072193<a name=\"language-ema-cs-100000072193\"> </a></td><td>Inupiaq</td></tr><tr><td style=\"white-space:nowrap\">100000072187<a name=\"language-ema-cs-100000072187\"> </a></td><td>Hungarian</td></tr><tr><td style=\"white-space:nowrap\">100000072125<a name=\"language-ema-cs-100000072125\"> </a></td><td>Afrikaans</td></tr><tr><td style=\"white-space:nowrap\">100000072156<a name=\"language-ema-cs-100000072156\"> </a></td><td>Icelandic</td></tr><tr><td style=\"white-space:nowrap\">100000072208<a name=\"language-ema-cs-100000072208\"> </a></td><td>Malayalam</td></tr><tr><td style=\"white-space:nowrap\">100000072185<a name=\"language-ema-cs-100000072185\"> </a></td><td>Herero</td></tr><tr><td style=\"white-space:nowrap\">100000072206<a name=\"language-ema-cs-100000072206\"> </a></td><td>Lithuanian</td></tr><tr><td style=\"white-space:nowrap\">100000072184<a name=\"language-ema-cs-100000072184\"> </a></td><td>Hausa</td></tr><tr><td style=\"white-space:nowrap\">100000072228<a name=\"language-ema-cs-100000072228\"> </a></td><td>Lingala</td></tr><tr><td style=\"white-space:nowrap\">100000072130<a name=\"language-ema-cs-100000072130\"> </a></td><td>Assamese</td></tr><tr><td style=\"white-space:nowrap\">100000072309<a name=\"language-ema-cs-100000072309\"> </a></td><td>Zulu</td></tr><tr><td style=\"white-space:nowrap\">100000072256<a name=\"language-ema-cs-100000072256\"> </a></td><td>Sango</td></tr><tr><td style=\"white-space:nowrap\">100000072302<a name=\"language-ema-cs-100000072302\"> </a></td><td>Vietnamese</td></tr><tr><td style=\"white-space:nowrap\">100000072221<a name=\"language-ema-cs-100000072221\"> </a></td><td>Kirghiz</td></tr><tr><td style=\"white-space:nowrap\">100000072268<a name=\"language-ema-cs-100000072268\"> </a></td><td>Thai</td></tr><tr><td style=\"white-space:nowrap\">100000072253<a name=\"language-ema-cs-100000072253\"> </a></td><td>Romansh</td></tr><tr><td style=\"white-space:nowrap\">100000072240<a name=\"language-ema-cs-100000072240\"> </a></td><td>North Ndebele</td></tr><tr><td style=\"white-space:nowrap\">100000072249<a name=\"language-ema-cs-100000072249\"> </a></td><td>Persian</td></tr><tr><td style=\"white-space:nowrap\">100000072303<a name=\"language-ema-cs-100000072303\"> </a></td><td>Volap�k</td></tr><tr><td style=\"white-space:nowrap\">100000072308<a name=\"language-ema-cs-100000072308\"> </a></td><td>Zhuang</td></tr><tr><td style=\"white-space:nowrap\">100000072288<a name=\"language-ema-cs-100000072288\"> </a></td><td>Swedish</td></tr><tr><td style=\"white-space:nowrap\">100000072214<a name=\"language-ema-cs-100000072214\"> </a></td><td>Chichewa</td></tr><tr><td style=\"white-space:nowrap\">100000072295<a name=\"language-ema-cs-100000072295\"> </a></td><td>Tswana</td></tr><tr><td style=\"white-space:nowrap\">100000072269<a name=\"language-ema-cs-100000072269\"> </a></td><td>Tonga (Tonga Islands)</td></tr><tr><td style=\"white-space:nowrap\">100000072248<a name=\"language-ema-cs-100000072248\"> </a></td><td>Ossetian</td></tr><tr><td style=\"white-space:nowrap\">100000072137<a name=\"language-ema-cs-100000072137\"> </a></td><td>Bihari</td></tr><tr><td style=\"white-space:nowrap\">100000072281<a name=\"language-ema-cs-100000072281\"> </a></td><td>Samoan</td></tr><tr><td style=\"white-space:nowrap\">100000072142<a name=\"language-ema-cs-100000072142\"> </a></td><td>Bulgarian</td></tr><tr><td style=\"white-space:nowrap\">100000072180<a name=\"language-ema-cs-100000072180\"> </a></td><td>Galician</td></tr><tr><td style=\"white-space:nowrap\">100000072252<a name=\"language-ema-cs-100000072252\"> </a></td><td>Pushto</td></tr><tr><td style=\"white-space:nowrap\">100000072283<a name=\"language-ema-cs-100000072283\"> </a></td><td>Somali</td></tr><tr><td style=\"white-space:nowrap\">100000072116<a name=\"language-ema-cs-100000072116\"> </a></td><td>Albanian</td></tr><tr><td style=\"white-space:nowrap\">100000072259<a name=\"language-ema-cs-100000072259\"> </a></td><td>Slovak</td></tr><tr><td style=\"white-space:nowrap\">100000072220<a name=\"language-ema-cs-100000072220\"> </a></td><td>Sanskrit</td></tr><tr><td style=\"white-space:nowrap\">100000072260<a name=\"language-ema-cs-100000072260\"> </a></td><td>Slovenian</td></tr><tr><td style=\"white-space:nowrap\">100000072231<a name=\"language-ema-cs-100000072231\"> </a></td><td>Macedonian</td></tr><tr><td style=\"white-space:nowrap\">100000072226<a name=\"language-ema-cs-100000072226\"> </a></td><td>Latin</td></tr><tr><td style=\"white-space:nowrap\">100000072171<a name=\"language-ema-cs-100000072171\"> </a></td><td>Esperanto</td></tr><tr><td style=\"white-space:nowrap\">100000072117<a name=\"language-ema-cs-100000072117\"> </a></td><td>Armenian</td></tr><tr><td style=\"white-space:nowrap\">100000072202<a name=\"language-ema-cs-100000072202\"> </a></td><td>Kinyarwanda</td></tr><tr><td style=\"white-space:nowrap\">100000072167<a name=\"language-ema-cs-100000072167\"> </a></td><td>Czech</td></tr><tr><td style=\"white-space:nowrap\">100000072272<a name=\"language-ema-cs-100000072272\"> </a></td><td>Uzbek</td></tr><tr><td style=\"white-space:nowrap\">100000072186<a name=\"language-ema-cs-100000072186\"> </a></td><td>Hindi</td></tr><tr><td style=\"white-space:nowrap\">100000072146<a name=\"language-ema-cs-100000072146\"> </a></td><td>Maldivian</td></tr><tr><td style=\"white-space:nowrap\">100000072151<a name=\"language-ema-cs-100000072151\"> </a></td><td>Gaelic</td></tr><tr><td style=\"white-space:nowrap\">100000072169<a name=\"language-ema-cs-100000072169\"> </a></td><td>Dutch</td></tr><tr><td style=\"white-space:nowrap\">100000072242<a name=\"language-ema-cs-100000072242\"> </a></td><td>Norwegian Nynorsk</td></tr><tr><td style=\"white-space:nowrap\">100000072172<a name=\"language-ema-cs-100000072172\"> </a></td><td>Estonian</td></tr><tr><td style=\"white-space:nowrap\">100000072150<a name=\"language-ema-cs-100000072150\"> </a></td><td>Fulah</td></tr><tr><td style=\"white-space:nowrap\">100000072241<a name=\"language-ema-cs-100000072241\"> </a></td><td>Nepali</td></tr><tr><td style=\"white-space:nowrap\">100000072227<a name=\"language-ema-cs-100000072227\"> </a></td><td>Limburgan</td></tr><tr><td style=\"white-space:nowrap\">100000072213<a name=\"language-ema-cs-100000072213\"> </a></td><td>Bokm�l</td></tr><tr><td style=\"white-space:nowrap\">100000072262<a name=\"language-ema-cs-100000072262\"> </a></td><td>Northern Sami</td></tr><tr><td style=\"white-space:nowrap\">100000072155<a name=\"language-ema-cs-100000072155\"> </a></td><td>Hiri Motu</td></tr><tr><td style=\"white-space:nowrap\">100000072250<a name=\"language-ema-cs-100000072250\"> </a></td><td>Pali</td></tr><tr><td style=\"white-space:nowrap\">100000072234<a name=\"language-ema-cs-100000072234\"> </a></td><td>Marathi</td></tr><tr><td style=\"white-space:nowrap\">100000072181<a name=\"language-ema-cs-100000072181\"> </a></td><td>Greek</td></tr><tr><td style=\"white-space:nowrap\">100000072263<a name=\"language-ema-cs-100000072263\"> </a></td><td>Sindhi</td></tr><tr><td style=\"white-space:nowrap\">100000072205<a name=\"language-ema-cs-100000072205\"> </a></td><td>Latvian</td></tr><tr><td style=\"white-space:nowrap\">100000072165<a name=\"language-ema-cs-100000072165\"> </a></td><td>Cornish</td></tr><tr><td style=\"white-space:nowrap\">100000072163<a name=\"language-ema-cs-100000072163\"> </a></td><td>Chinese</td></tr><tr><td style=\"white-space:nowrap\">100000072173<a name=\"language-ema-cs-100000072173\"> </a></td><td>Faroese</td></tr><tr><td style=\"white-space:nowrap\">100000072289<a name=\"language-ema-cs-100000072289\"> </a></td><td>Tamil</td></tr><tr><td style=\"white-space:nowrap\">100000072243<a name=\"language-ema-cs-100000072243\"> </a></td><td>Norwegian</td></tr><tr><td style=\"white-space:nowrap\">100000072124<a name=\"language-ema-cs-100000072124\"> </a></td><td>Afar</td></tr><tr><td style=\"white-space:nowrap\">100000072175<a name=\"language-ema-cs-100000072175\"> </a></td><td>French</td></tr><tr><td style=\"white-space:nowrap\">100000072132<a name=\"language-ema-cs-100000072132\"> </a></td><td>Aymara</td></tr><tr><td style=\"white-space:nowrap\">100000072298<a name=\"language-ema-cs-100000072298\"> </a></td><td>Twi</td></tr><tr><td style=\"white-space:nowrap\">100000072204<a name=\"language-ema-cs-100000072204\"> </a></td><td>Kurdish</td></tr><tr><td style=\"white-space:nowrap\">100000072299<a name=\"language-ema-cs-100000072299\"> </a></td><td>Ukrainian</td></tr><tr><td style=\"white-space:nowrap\">100000072224<a name=\"language-ema-cs-100000072224\"> </a></td><td>Kuanyama</td></tr><tr><td style=\"white-space:nowrap\">100000072292<a name=\"language-ema-cs-100000072292\"> </a></td><td>Tagalog</td></tr><tr><td style=\"white-space:nowrap\">100000072217<a name=\"language-ema-cs-100000072217\"> </a></td><td>Polish</td></tr><tr><td style=\"white-space:nowrap\">100000072120<a name=\"language-ema-cs-100000072120\"> </a></td><td>Bengali</td></tr><tr><td style=\"white-space:nowrap\">100000072230<a name=\"language-ema-cs-100000072230\"> </a></td><td>Luba-Katanga</td></tr><tr><td style=\"white-space:nowrap\">100000072145<a name=\"language-ema-cs-100000072145\"> </a></td><td>Cree</td></tr><tr><td style=\"white-space:nowrap\">100000072287<a name=\"language-ema-cs-100000072287\"> </a></td><td>Swahili</td></tr><tr><td style=\"white-space:nowrap\">100000072210<a name=\"language-ema-cs-100000072210\"> </a></td><td>Moldavian</td></tr><tr><td style=\"white-space:nowrap\">100000072207<a name=\"language-ema-cs-100000072207\"> </a></td><td>Ganda</td></tr><tr><td style=\"white-space:nowrap\">100000072135<a name=\"language-ema-cs-100000072135\"> </a></td><td>Basque</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072057"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "Language_EMA_CS"]; # 
+  fhir:CodeSystem.title [ fhir:value "Language EMA"]; # 
+  fhir:CodeSystem.status [ fhir:value "draft"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-03T15:06:18+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "UNICOM"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Language codes by EMA. Based on BCP-47, recoded with RMS codes."]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "186"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072223" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Korean" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072144" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chuvash" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072257" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Serbian" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072297" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Turkish" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072166" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Corsican" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072131" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Avaric" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072264" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spanish" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072273" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Walloon" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072159" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Javanese" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072197" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kashmiri" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072306" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Xhosa" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072177" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Georgian" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072225" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lao" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072140" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Burmese" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072118" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Avestan" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072162" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chechen" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072293" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tibetan" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072183" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Haitian" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072266" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tahitian" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072255" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Russian" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072307" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Yiddish" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072296" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tsonga" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072152" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Manx" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072236" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maltese" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072282" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Shona" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072194" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Italian" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072261" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sinhala" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072267" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Telugu" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072270" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Turkmen" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072198" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kanuri" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072209" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Malay" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072265" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sundanese" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072201" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kazakh" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072304" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Welsh" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072218" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Quechua" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072157" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inuktitut" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072219" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rundi" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072174" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fijian" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072139" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Breton" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072301" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Venda" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072291" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tajik" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072161" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Catalan" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072129" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Aragonese" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072244" ];
+     fhir:CodeSystem.concept.display [ fhir:value "N'Ko" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072126" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Akan" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072246" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ojibwa" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072274" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Yoruba" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072179" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Irish" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072271" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Uighur" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072305" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Wolof" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072212" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ndonga" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072178" ];
+     fhir:CodeSystem.concept.display [ fhir:value "German" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072148" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ewe" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072294" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tigrinya" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072134" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bambara" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072138" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bislama" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072247" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromo" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072128" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Arabic" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072254" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Romanian" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072192" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Interlingua (International Auxiliary Language Association)" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072154" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hebrew" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072127" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Amharic" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072290" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tatar" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072200" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kikuyu" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072239" ];
+     fhir:CodeSystem.concept.display [ fhir:value "South Ndebele" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072216" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Panjabi" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072182" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Guarani" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072222" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Komi" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072251" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Portuguese" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072119" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bashkir" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072188" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Igbo" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072245" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Occitan (post 1500)" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072133" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Azerbaijani" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072196" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Greenlandic" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072286" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Swati" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072168" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Danish" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072235" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Malagasy" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072141" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bosnian" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072191" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Interlingue" ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072149" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Finnish" ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072203" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kongo" ]
+  ], [
+     fhir:index 81;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072147" ];
+     fhir:CodeSystem.concept.display [ fhir:value "English" ]
+  ], [
+     fhir:index 82;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072237" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mongolian" ]
+  ], [
+     fhir:index 83;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072199" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Central Khmer" ]
+  ], [
+     fhir:index 84;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072211" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Navaho" ]
+  ], [
+     fhir:index 85;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072170" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dzongkha" ]
+  ], [
+     fhir:index 86;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072143" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chamorro" ]
+  ], [
+     fhir:index 87;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072190" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sichuan Yi" ]
+  ], [
+     fhir:index 88;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072233" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maori" ]
+  ], [
+     fhir:index 89;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072195" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Japanese" ]
+  ], [
+     fhir:index 90;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072160" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kannada" ]
+  ], [
+     fhir:index 91;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072136" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Belarusian" ]
+  ], [
+     fhir:index 92;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072258" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Croatian" ]
+  ], [
+     fhir:index 93;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072229" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Luxembourgish" ]
+  ], [
+     fhir:index 94;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072176" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Western Frisian" ]
+  ], [
+     fhir:index 95;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072284" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sotho" ]
+  ], [
+     fhir:index 96;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072238" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nauru" ]
+  ], [
+     fhir:index 97;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072285" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sardinian" ]
+  ], [
+     fhir:index 98;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072153" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gujarati" ]
+  ], [
+     fhir:index 99;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072115" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Abkhazian" ]
+  ], [
+     fhir:index 100;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072215" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oriya" ]
+  ], [
+     fhir:index 101;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072164" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Church Slavic" ]
+  ], [
+     fhir:index 102;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072300" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urdu" ]
+  ], [
+     fhir:index 103;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072189" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ido" ]
+  ], [
+     fhir:index 104;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072158" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Indonesian" ]
+  ], [
+     fhir:index 105;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072232" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Marshallese" ]
+  ], [
+     fhir:index 106;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072193" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inupiaq" ]
+  ], [
+     fhir:index 107;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072187" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hungarian" ]
+  ], [
+     fhir:index 108;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072125" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Afrikaans" ]
+  ], [
+     fhir:index 109;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072156" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Icelandic" ]
+  ], [
+     fhir:index 110;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072208" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Malayalam" ]
+  ], [
+     fhir:index 111;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072185" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Herero" ]
+  ], [
+     fhir:index 112;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072206" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lithuanian" ]
+  ], [
+     fhir:index 113;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072184" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hausa" ]
+  ], [
+     fhir:index 114;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072228" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lingala" ]
+  ], [
+     fhir:index 115;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072130" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Assamese" ]
+  ], [
+     fhir:index 116;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072309" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zulu" ]
+  ], [
+     fhir:index 117;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072256" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sango" ]
+  ], [
+     fhir:index 118;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072302" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vietnamese" ]
+  ], [
+     fhir:index 119;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072221" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kirghiz" ]
+  ], [
+     fhir:index 120;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072268" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Thai" ]
+  ], [
+     fhir:index 121;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072253" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Romansh" ]
+  ], [
+     fhir:index 122;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072240" ];
+     fhir:CodeSystem.concept.display [ fhir:value "North Ndebele" ]
+  ], [
+     fhir:index 123;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072249" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Persian" ]
+  ], [
+     fhir:index 124;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072303" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Volap�k" ]
+  ], [
+     fhir:index 125;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072308" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zhuang" ]
+  ], [
+     fhir:index 126;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072288" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Swedish" ]
+  ], [
+     fhir:index 127;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072214" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chichewa" ]
+  ], [
+     fhir:index 128;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072295" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tswana" ]
+  ], [
+     fhir:index 129;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072269" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tonga (Tonga Islands)" ]
+  ], [
+     fhir:index 130;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072248" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ossetian" ]
+  ], [
+     fhir:index 131;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072137" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bihari" ]
+  ], [
+     fhir:index 132;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072281" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Samoan" ]
+  ], [
+     fhir:index 133;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072142" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bulgarian" ]
+  ], [
+     fhir:index 134;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072180" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Galician" ]
+  ], [
+     fhir:index 135;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072252" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pushto" ]
+  ], [
+     fhir:index 136;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072283" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Somali" ]
+  ], [
+     fhir:index 137;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072116" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Albanian" ]
+  ], [
+     fhir:index 138;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072259" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Slovak" ]
+  ], [
+     fhir:index 139;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072220" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sanskrit" ]
+  ], [
+     fhir:index 140;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072260" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Slovenian" ]
+  ], [
+     fhir:index 141;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072231" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Macedonian" ]
+  ], [
+     fhir:index 142;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072226" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Latin" ]
+  ], [
+     fhir:index 143;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072171" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Esperanto" ]
+  ], [
+     fhir:index 144;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072117" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Armenian" ]
+  ], [
+     fhir:index 145;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072202" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kinyarwanda" ]
+  ], [
+     fhir:index 146;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072167" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Czech" ]
+  ], [
+     fhir:index 147;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072272" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Uzbek" ]
+  ], [
+     fhir:index 148;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072186" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hindi" ]
+  ], [
+     fhir:index 149;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072146" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maldivian" ]
+  ], [
+     fhir:index 150;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072151" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gaelic" ]
+  ], [
+     fhir:index 151;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072169" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dutch" ]
+  ], [
+     fhir:index 152;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072242" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Norwegian Nynorsk" ]
+  ], [
+     fhir:index 153;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072172" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Estonian" ]
+  ], [
+     fhir:index 154;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072150" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fulah" ]
+  ], [
+     fhir:index 155;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072241" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nepali" ]
+  ], [
+     fhir:index 156;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072227" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Limburgan" ]
+  ], [
+     fhir:index 157;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072213" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bokm�l" ]
+  ], [
+     fhir:index 158;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072262" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Northern Sami" ]
+  ], [
+     fhir:index 159;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072155" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hiri Motu" ]
+  ], [
+     fhir:index 160;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072250" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pali" ]
+  ], [
+     fhir:index 161;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072234" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Marathi" ]
+  ], [
+     fhir:index 162;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072181" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Greek" ]
+  ], [
+     fhir:index 163;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072263" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sindhi" ]
+  ], [
+     fhir:index 164;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072205" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Latvian" ]
+  ], [
+     fhir:index 165;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072165" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cornish" ]
+  ], [
+     fhir:index 166;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072163" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chinese" ]
+  ], [
+     fhir:index 167;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072173" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Faroese" ]
+  ], [
+     fhir:index 168;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072289" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tamil" ]
+  ], [
+     fhir:index 169;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072243" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Norwegian" ]
+  ], [
+     fhir:index 170;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072124" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Afar" ]
+  ], [
+     fhir:index 171;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072175" ];
+     fhir:CodeSystem.concept.display [ fhir:value "French" ]
+  ], [
+     fhir:index 172;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072132" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Aymara" ]
+  ], [
+     fhir:index 173;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072298" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Twi" ]
+  ], [
+     fhir:index 174;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072204" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kurdish" ]
+  ], [
+     fhir:index 175;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072299" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ukrainian" ]
+  ], [
+     fhir:index 176;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072224" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kuanyama" ]
+  ], [
+     fhir:index 177;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072292" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tagalog" ]
+  ], [
+     fhir:index 178;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072217" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Polish" ]
+  ], [
+     fhir:index 179;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072120" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bengali" ]
+  ], [
+     fhir:index 180;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072230" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Luba-Katanga" ]
+  ], [
+     fhir:index 181;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072145" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cree" ]
+  ], [
+     fhir:index 182;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072287" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Swahili" ]
+  ], [
+     fhir:index 183;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072210" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Moldavian" ]
+  ], [
+     fhir:index 184;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072207" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ganda" ]
+  ], [
+     fhir:index 185;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072135" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Basque" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/language-ema-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
