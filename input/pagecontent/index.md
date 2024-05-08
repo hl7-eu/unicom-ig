@@ -43,6 +43,7 @@ UNICOM Implementation Guide is a work result across different work packages. Onl
 
 **Creation of relevant ISO IDMP subset and content guidance:**
 
+*   Rutt Lindström (EE, WP4)
 *   Triin Mäesalu (EE, WP4)
 *   Ursula Tschorn (DE, WP9)
 *   Julie James (UK, WP9)
