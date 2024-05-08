@@ -4,7 +4,7 @@ Instance: Equivalent
 InstanceOf: OperationDefinition
 Usage: #definition
 
-* url = "http://unicom.org/fhir/OperationDefinition/equivalent"
+* url = "http://unicom-project.eu/fhir/OperationDefinition/Equivalent"
 
 * name = "Equivalent"
 * title = "Equivalent Look Up"

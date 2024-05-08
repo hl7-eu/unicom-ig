@@ -28,7 +28,7 @@ Description: """Medicinal Product as defined in ISO IDMP"""
 * identifier contains
   mpid 1..1 and
   pmsid 0..1
-//  * otherid 0..*   //TO DO: What to do about other slices?
+
 
 * identifier[mpid] 
   * system = "http://ema.europa.eu/fhir/mpId"
@@ -241,6 +241,8 @@ Id: PPLIngredient
 Title: "PPL Ingredient profile"
 Description: """Ingredient for the medicinal product, pharmaceutical product and/or manufactured item"""
 
+* obeys strength-required
+
 * for 1..*
   * ^short = "Reference to the medicinal product, pharmaceutical product and/or manufactured item where the ingredient is used"
 * for only Reference(PPLMedicinalProductDefinition or PPLAdministrableProductDefinition or PPLManufacturedItemDefinition)
@@ -255,14 +257,14 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
   * ^short = "Substance code from EMA SMS"
   * ^definition = "EMA IG 5.5"
 
-  * strength 1..*
+  * strength 0..*
     * ^definition = "EMA IG 5.5.2"
     * presentationRatio
       * ^short = "Strength per unit of presentation (10mg/vial or 10mg/0.5ml where 0.5ml is the size of the vial)"
       * ^definition = "EMA IG 5.5.2"
       //* numerator.comparator.coding.system = $100000000008 // TO DO: not easily extendable, what to do with it?
       * numerator from UnitOfMeasurement
-      * numerator 1..1
+      * numerator 0..1
     //  * numerator.system = $100000110633
     //  * numerator.code from unit-of-measurement-vs
       * denominator 1..1
@@ -273,7 +275,7 @@ Description: """Ingredient for the medicinal product, pharmaceutical product and
       * ^short = "Strength per unit of measurement (20mg/1ml)"
       * ^definition = "EMA IG 5.5.2"
       //* numerator.comparator.coding.system = $100000000008 // TO DO: not easily extendable, what to do with it?
-      * numerator 1..1
+      * numerator 0..1
     //  * numerator.system = $100000110633
       * numerator from UnitOfMeasurement
       * denominator 1..1

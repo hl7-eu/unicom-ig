@@ -3,7 +3,7 @@ Parent: Medication
 Id: MedicationAsMedicinalProduct
 Title: "Medication"
 Description: """Medication for clinical use cases (Medication resource), may be branded or generic"""
-* ^url = "https://example.org/fhir/StructureDefinition/MedicationAsMedicinalProduct"
+* ^url = "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"
 * ^status = #draft
 
 * identifier
