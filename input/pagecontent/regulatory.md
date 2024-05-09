@@ -50,7 +50,7 @@ For better understanding, there are also examples of different products as FHIR 
 Not all UNICOM data is hosted inside the implementation guide. 
 There is work in progress for creating more ISO IDMP compatible data for UNICOM pilots to use. Currently, some of the publicly reachable sources are:
 - [WP6 database with FHIR API](https://jpa.unicom.datawizard.it/apps/productlist/index.html)
-- [UFIS server](https://ufisbrowse20220824144527.azurewebsites.net/)
+- [UNICOM toolbox with the data from UFIS](https://sandbox.hl7europe.eu/unicom/)
 
 ### Guidance and references
 
@@ -62,8 +62,8 @@ There is work in progress for creating more ISO IDMP compatible data for UNICOM 
 - [ISO 11240](https://www.iso.org/standard/55033.html) Identification of medicinal products - Data elements and structures for the unique identification and exchange of units of measurement.
 
 #### HL7 FHIR
-UNICOM implementation guide is based on FHIR version 5.0.0 (Snapshot 3), and the core set of resources can be found in [MedicationDefinition module](https://www.hl7.org/fhir/medication-definition-module.html)).
-EMA Implementation Guide is based on [FHIR version 4.6.0](http://hl7.org/fhir/2021May/), which is a slightly older version. Please see [Known Issues](issues.html#fhir-versions) for more information about FHIR versions.
+UNICOM implementation guide is based on FHIR version 5.0.0, and the core set of resources can be found in [MedicationDefinition module](https://www.hl7.org/fhir/medication-definition-module.html).
+EMA Implementation Guide used [FHIR version 4.6.0](http://hl7.org/fhir/2021May/) during UNICOM project, which was a slightly older version. Please see [Known Issues](issues.html#fhir-versions) for more information about FHIR versions.
 
 #### EMA Implementation Guide
 European Medicines Agency has published a set of documents to provide implementation guidance for regulatory authorities. These documents can be publicly accessed on EMA web page:
