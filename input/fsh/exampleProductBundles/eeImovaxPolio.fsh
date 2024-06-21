@@ -35,11 +35,20 @@ Description: "Imovax Polio Suspension for injection. Estonia."
 //* entry[=].request.url = "ManufacturedItemDefinition-ImovaxPolio-EE-IS-ManufacturedItemDefinition"
 * entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-ImovaxPolio-EE-IS-ManufacturedItemDefinition"
 
-* entry[+].resource = ImovaxPolio-EE-IS-Ingredient
+* entry[+].resource = ImovaxPolio-EE-IS-Ingredient-1
 //* entry[=].request.method = #PUT
-//* entry[=].request.url = "Ingredient-ImovaxPolio-EE-IS-Ingredient"
-* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-ImovaxPolio-EE-IS-Ingredient"
+//* entry[=].request.url = "Ingredient-ImovaxPolio-EE-IS-Ingredient-1"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-ImovaxPolio-EE-IS-Ingredient-1"
 
+* entry[+].resource = ImovaxPolio-EE-IS-Ingredient-2
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-ImovaxPolio-EE-IS-Ingredient-2"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-ImovaxPolio-EE-IS-Ingredient-2"
+
+* entry[+].resource = ImovaxPolio-EE-IS-Ingredient-3
+//* entry[=].request.method = #PUT
+//* entry[=].request.url = "Ingredient-ImovaxPolio-EE-IS-Ingredient-3"
+* entry[=].fullUrl = "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-ImovaxPolio-EE-IS-Ingredient-3"
 
 Instance: ImovaxPolio-EE-IS-MedicinalProductDefinition
 InstanceOf: PPLMedicinalProductDefinition
