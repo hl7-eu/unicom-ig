@@ -145,3 +145,38 @@ Usage: #definition
 
 
 
+//https://sandbox.hl7europe.eu/unicom/fhir/MedicinalProductDefinition?_id=Airomir0.1Spray-SE-PLC-MPD
+//&_revinclude=RegulatedAuthorization:subject
+//&_include:iterate=RegulatedAuthorization:holder
+//&_revinclude:iterate=Ingredient:for
+//&_revinclude=PackagedProductDefinition:package-for
+//&_include:iterate=PackagedProductDefinition:manufactured-item
+//&_revinclude=AdministrableProductDefinition:form-of&_revinclude:iterate=Ingredient:for&_include:iterate=Ingredient:for&_format=json
+
+Instance: Manufactured-item-ppd
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "manufactured-item-ppd"
+* title = "manufactured-item-ppd"
+* status = #active
+* experimental = false
+
+* description = "Search on manufactured item for PPD"
+* code = #manufactured-item
+* base = #PackagedProductDefinition
+* type = #reference
+* expression = "PackagedProductDefinition.packaging.containedItem.item.reference"
+
+Instance: Manufactured-item-packaging-ppd
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "manufactured-item-packaging-ppd"
+* title = "manufactured-item-packaging-ppd"
+* status = #active
+* experimental = false
+
+* description = "Search on manufactured item for PPD inside a nested packaging"
+* code = #packaging-manufactured-item
+* base = #PackagedProductDefinition
+* type = #reference
+* expression = "PackagedProductDefinition.packaging.packaging.containedItem.item.reference"
