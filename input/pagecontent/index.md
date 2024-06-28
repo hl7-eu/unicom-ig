@@ -36,13 +36,13 @@ UNICOM Implementation Guide is a work result across different work packages. Onl
 
 **Coordination and FHIR content creation:**
 
-* Rutt Lindström (EE, WP4)
 * José Costa Teixeira (IHE, WP1,5,6)
 * João Almeida (HL7 Europe, WP5)
 * Giorgio Cangioli (HL7 Europe, WP1,5,6,7,8)
 
 **Creation of relevant ISO IDMP subset and content guidance:**
 
+*   Rutt Lindström (EE, WP4)
 *   Triin Mäesalu (EE, WP4)
 *   Ursula Tschorn (DE, WP9)
 *   Julie James (UK, WP9)

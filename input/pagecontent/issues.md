@@ -7,7 +7,7 @@ This IG follows the EMA IG, which has been published as a set of text documents.
 
 #### FHIR versions
 
-EMA IG is based on FHIR version 4.6, but UNICOM PPL FHIR IG is based on version 5.0.0). This introduces some changes, most significantly:  
+During UNICOM, FHIR resources for MedicationDefinition module were still work in progress, and differences between FHIR versions were significant. EMA IG was based on FHIR version 4.6, but UNICOM FHIR IG was updated to newer versions when possible. Current IG is based on version 5.0.0. Most significant changes between v 4.6 and 5.0.0 were:  
 * Direction of reference has been changed for Ingredient
 * In MedicinalProductDefinition name.countryLanguage has been renamed to name.usage, and name.namePart to name.part
 * In PackagedProductDefinition package has been renamed to packaging  
