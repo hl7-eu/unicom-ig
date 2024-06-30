@@ -106,8 +106,8 @@ Usage: #inline
 * substance.code.concept = $sms#100000090152 "Enoxaparin sodium"
 //* substance.strength.concentrationRatio.numerator.comparator.extension.url = "http://ema.europa.eu/fhir/extension/comparator"
 //* substance.strength.concentrationRatio.numerator.comparator.extension.valueCoding = $100000000008#100000000049 "equal to"
-* substance.strength.concentrationRatio.numerator = 60 $100000110633#100000110655 "milligram(s)"
-* substance.strength.concentrationRatio.denominator = 0.6 $100000110633#100000110662 "millilitre(s)"
+* substance.strength.presentationRatio.numerator = 60 $100000110633#100000110655 "milligram(s)"
+* substance.strength.presentationRatio.denominator = 0.6 $100000110633#100000110662 "millilitre(s)"
 
 Instance: Clexane-60mg-06ml-solinj-EE-PPD-1065552
 InstanceOf: PPLPackagedProductDefinition
