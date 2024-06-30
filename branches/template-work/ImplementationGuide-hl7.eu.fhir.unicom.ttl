@@ -1,0 +1,3516 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ImplementationGuide/hl7.eu.fhir.unicom> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hl7.eu.fhir.unicom"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>UnicomIG</h2><p>The official URL for this implementation guide is: </p><pre>http://unicom-project.eu/fhir/ImplementationGuide/hl7.eu.fhir.unicom</pre><div><p>UnicomIG</p>\n</div></div>"
+  ]; # 
+  fhir:ImplementationGuide.url [ fhir:value "http://unicom-project.eu/fhir/ImplementationGuide/hl7.eu.fhir.unicom"]; # 
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"]; # 
+  fhir:ImplementationGuide.name [ fhir:value "UnicomIG"]; # 
+  fhir:ImplementationGuide.title [ fhir:value "UnicomIG"]; # 
+  fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-03T15:06:18+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.publisher [ fhir:value "UNICOM"]; # 
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:ImplementationGuide.description [ fhir:value "UnicomIG"]; # 
+  fhir:ImplementationGuide.packageId [ fhir:value "hl7.eu.fhir.unicom"]; # 
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"]; # 
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.3.0";
+     fhir:index 0
+  ]; # 
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7tx" ];
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ];
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.0" ]
+  ]; # 
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2022+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "produce-jekyll-data" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000004" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000005003" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000000" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072051" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000004" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000006" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000007" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000008" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000093533" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000116677" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000002" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072057" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000060" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072049" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000110633" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073345" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072050" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000008" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072052" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073343" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v2/SubstanceDefinition" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://unicom-project.eu/fhir/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2022+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "produce-jekyll-data" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000004" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000005003" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000000" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072051" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000004" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000006" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000007" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000008" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000093533" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000116677" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000002" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072057" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000060" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072049" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000110633" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073345" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072050" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000008" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072052" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073343" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://spor.ema.europa.eu/v2/SubstanceDefinition" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://unicom-project.eu/fhir/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 90;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 92;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 94;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 95;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 96;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 97;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.grouping [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "Regulatory" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Regulatory profiles" ];
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Profiles for regulatory data, EMA IG and IDMP compliant" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "Relaxed" ];
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Data transformation profiles" ];
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Intermediate data transition profiles, that follow the structure of IDMP, but are less strict" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/CD>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CD" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CD" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Concept descriptor" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/DT>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DT" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DT" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Date" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/II>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/II" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "II" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Instance Identifier" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PPLAdministrableProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PPL Administrable Product profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Administrable product profile defines the ISO IDMP Pharmaceutical Product concept" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Regulatory" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PPLIngredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PPL Ingredient profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ingredient for the medicinal product, pharmaceutical product and/or manufactured item" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Regulatory" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PPLManufacturedItemDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PPL Manufactured Item profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manufactured item is the countable element inside the package" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Regulatory" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PPLMedicinalProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PPL Medicinal Product profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medicinal Product as defined in ISO IDMP" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Regulatory" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PPLOrganization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PPL Organization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Regulatory" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PPLPackagedProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PPL Packaged Product profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Packaged Product" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Regulatory" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PPLRegulatedAuthorization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PPL Marketing Authorisation profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Regulated Authorization profile defines the Marketing Authorisation on product or package level" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Regulatory" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/QT>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/QT" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QT" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Quantity" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/ST>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ST" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ST" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "String" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/TS>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/TS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Time stamp" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/TransitionAdministrableProductDefinition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/TransitionAdministrableProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Processing Profile - Administrable Product" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Intermediate profile for processing PPL Administrable Product data" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Relaxed" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/TransitionIngredient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/TransitionIngredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Processing Profile - Ingredient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Intermediate profile for processing PPL Ingredient data" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Relaxed" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/TransitionManufacturedItemDefinition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/TransitionManufacturedItemDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Processing Profile - Manufactured Item" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Intermediate profile for processing PPL Manufactured Item data" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Relaxed" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/TransitionMedicinalProductDefinition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/TransitionMedicinalProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Processing Profile - Medicinal Product" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Intermediate profile for processing PPL Medicinal Product data" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Relaxed" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/TransitionOrganization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/TransitionOrganization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Processing Profile - Organization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Intermediate profile for processing PPL Marketing Authorisation Holder (Organization) data" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Relaxed" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/TransitionPackagedProductDefinition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/TransitionPackagedProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Processing Profile - Packaged Product" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Intermediate profile for processing PPL Packaged Product data" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Relaxed" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/TransitionRegulatedAuthorization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/TransitionRegulatedAuthorization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Processing Profile - Marketing Authorisation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Intermediate profile for processing PPL Marketing Authorisation (Regulated Authorization) data" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "Relaxed" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/class>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/class" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "class" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Class of data elements" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/untyped>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/untyped" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "untyped" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "No data type defined" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/FullMedicinalProduct>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/FullMedicinalProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medicinal Product" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medicinal Product" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/all-units-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/all-units-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "All Units Combined" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for presentation strength denominator unit, combines units of measurement and units of presentation." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/authorised-doseform-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/authorised-doseform-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Authorised Dose Form" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for authorised dose form. Combines 4 SPOR/EDQM lists: Pharmaceutical dose form, Combined pharmaceutical dose form, Combined term, Combination package." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/country-ema-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/country-ema-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Country (EMA SPOR RMS)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Countries. EMA SPOR RMS list." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/country-iso-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/country-iso-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Country (ISO 3166-1-2)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Countries" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/domain-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/domain-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Domain" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Domain of the medicinal product. EMA SPOR RMS list." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/language-bcp-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/language-bcp-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Language (FHIR)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "All languages" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/language-ema-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/language-ema-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Language (EMA SPOR RMS)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Languages. EMA SPOR RMS list." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/legal-status-for-the-supply-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/legal-status-for-the-supply-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Legal Status for the Supply" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EMA SPOR RMS list" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/material-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/material-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Material" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Package material. EMA SPOR RMS LIST." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/no-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/no-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dummy value set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dummy value set for suppressing QA errors caused by FHIR R4B broken value set bindings" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/pharmaceutical-doseform-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/pharmaceutical-doseform-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pharmaceutical Dose Form" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pharmaceutical dose form. Does not include combination dose forms." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/routes-and-methods-of-administration-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/routes-and-methods-of-administration-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Routes and Methods of Administration" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Routes and methods of medication administration. EMA SPOR RMS list." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/atc-spor-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/atc-spor-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Anatomical Therapeutic Chemical classification system" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for Anatomical Therapeutic Chemical classification system Human and Veterinary. It combines 2 SPOR/WHO lists" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/marketing-status-spor-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/marketing-status-spor-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Marketing Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/packaging-spor-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/packaging-spor-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Packaging" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Packaging" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/record-status-spor-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/record-status-spor-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Record Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for record status." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/regulatory-status-spor-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/regulatory-status-spor-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Regulatory Entitlement Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Regulatory Entitlement Status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/shelflifetype-spor-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/shelflifetype-spor-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Shelf Life Type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Shelf Life Type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/substances-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/substances-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMA SPOR SMS Substances" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for substances, PPL subset from SMS." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/unit-of-measurement-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/unit-of-measurement-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unit of Measurement EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Units of measurement. EMA SPOR RMS list based on UCUM." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/unit-of-presentation-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/unit-of-presentation-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unit of Presentation EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Units of presentation. EMA SPOR RMS list based on EDQM." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/whoatc-unicom>;
+         fhir:Reference.reference [ fhir:value "ValueSet/whoatc-unicom" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO ATC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "World Health Organization Anatomical Therapeutic Chemical (ATC) classification system.  Note: The currently implemented code system and the value set expansion contain only a set of example ATC codes, not the complete code system content." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/ATC-Human-EMA>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/ATC-Human-EMA" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ATC Human EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ATC classification recoded with EMA SPOR RMS codes. Flat list, WHO ATC codes provided in description field for easier use." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/combination-package-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/combination-package-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Combination Package EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dose forms for combination packages. Based on EDQM. Re-coded with RMS codes. Only used for authorised dose form." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/combined-pharmaceutical-dose-form-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/combined-pharmaceutical-dose-form-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Combined Pharmaceutical Dose Form EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Combined Pharmaceutical Dose Form. Based on EDQM. Re-coded with RMS codes. Used only for authorised dose form." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/combined-term-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/combined-term-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Combined Term EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Combined Term. Based on EDQM. Re-coded with RMS codes. Only used for authorised dose form." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/country-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/country-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Country EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Country codes by EMA. Based on ISO 3166-1-2, recoded with RMS codes." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/domain-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/domain-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Domain EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Domain of the medicinal product (human, veterinary, both)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/language-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/language-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Language EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Language codes by EMA. Based on BCP-47, recoded with RMS codes." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/legal-status-for-the-supply-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/legal-status-for-the-supply-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Legal Status for the Supply EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Legal status of supply. EMA SPOR RMS list." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/Marketing-Status-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/Marketing-Status-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Marketing Status EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing status of the product in given country. EMA SPOR RMS codes." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/material-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/material-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Material EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Package material. EMA SPOR RMS list. Hierarchical." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/packaging-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/packaging-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Packaging EMA SPOR" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Package types, including closures and administration devices. Based on EDQM, recoded with EMA SPOR RMS codes." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/pharmaceutical-dose-form-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/pharmaceutical-dose-form-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pharmaceutical Dose Form EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pharmaceutical dose form. Based on EDQM, re-coded with RMS codes." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/recordStatus-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/recordStatus-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Record Status EMA SPOR" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Record Entitlement Status EMA SPOR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/regulatoryStatus-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/regulatoryStatus-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Regulatory Entitlement Status EMA SPOR" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Regulatory Entitlement Status EMA SPOR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/routes-and-methods-of-administration-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/routes-and-methods-of-administration-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Routes and Methods of Administration EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Routes and methods of medication administration. Based on EDQM, re-coded with RMS codes." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/substance-sms-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/substance-sms-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Substances EMA SPOR SMS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "UNICOM PPL substances from EMA SPOR SMS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/unit-of-measurement-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/unit-of-measurement-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unit of Measurement EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unit of Measurement. Based on UCUM. Re-coded with RMS codes." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/CodeSystem/unit-of-presentation-ema-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/unit-of-presentation-ema-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unit of Presentation EMA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unit of presentation list from EMA SPOR. List id 200000000014. Content based on EDQM, re-coded with RMS codes." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/001-Agen5mg-EE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/001-Agen5mg-EE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "001-Agen5mg-EE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Agen 5mg Tablet. Estonia. Simple example of one full product as a bundle. Packages, PCIDs, differ by material." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/002-Agen10mg-EE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/002-Agen10mg-EE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "002-Agen10mg-EE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Agen 10mg Tablet. Estonia. Simple example of one full product as a bundle. Packages, PCIDs, differ by material." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/003-CefuroximStragen-1-5g-Powder-SE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/003-CefuroximStragen-1-5g-Powder-SE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "003-CefuroximStragen-1-5g-Powder-SE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cefuroxim Stragen 1.5g Powder for solution for injection/infusion. Sweden. Strength in grams; man. item quantity unknown; transformation before administration." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/004-Cefuroxime-MIP-1500mg-EE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/004-Cefuroxime-MIP-1500mg-EE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "004-Cefuroxime-MIP-1500mg-EE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cefuroxime MIP 1500mg Powder for solution for injection/infusion. Estonia. Strength in milligrams; man. item quantity unknown; transformation before administration." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/005-CanifugCremolum-EE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/005-CanifugCremolum-EE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "005-CanifugCremolum-EE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Canifug Cremolum. Estonia. Combination package of clotrimazole 10mg/g creme and six 100mg pessaries." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/006-Yaz-002mg3mg-tablet-SE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/006-Yaz-002mg3mg-tablet-SE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "006-Yaz-002mg3mg-tablet-SE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "YAZ ethinylestradiol 0.02mg, drosperinone 3mg, includes placebo tablets. Kingdom of Sweden. Different manufactured items in one container." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/007-Jangee-002mg-3mg-Film-coated-tablet-EE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/007-Jangee-002mg-3mg-Film-coated-tablet-EE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "007-Jangee-002mg-3mg-Film-coated-tablet-EE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jangee ethinylestradiol 0.02mg, drosperinone 3mg. Estonia. Without placebo pills." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/008-Jangee-003mg-3mg-Film-coated-tablet-EE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/008-Jangee-003mg-3mg-Film-coated-tablet-EE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "008-Jangee-003mg-3mg-Film-coated-tablet-EE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jangee ethinylestradiol 0.03mg, drosperinone 3mg. Estonia. Without placebo pills." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/009-Paracetamol-Kabi10mg-1ml-EE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/009-Paracetamol-Kabi10mg-1ml-EE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "009-Paracetamol-Kabi10mg-1ml-EE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paracetamol Kabi 10mg/ml solution for infusion. Estonia. One pharmaceutical product for three different manufactured items." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/010-Clexane-60mg-06ml-EE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/010-Clexane-60mg-06ml-EE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "010-Clexane-60mg-06ml-EE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Clexane, enoxaparine sodium 60mg/0.6ml, 2 pre-filled syringes. Presentation strength per quantity." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/011-Betaklav500-125-EE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/011-Betaklav500-125-EE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "011-Betaklav500-125-EE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amoxicillin 500mg, clavulanic acid 125mg. Tablets. Estonia." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/012-Panodil-500mg-SolutionInSachet-SE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/012-Panodil-500mg-SolutionInSachet-SE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "012-Panodil-500mg-SolutionInSachet-SE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paracetamol 500mg. Powder for oral solution in sachet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/013-LantusSolostar-EE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/013-LantusSolostar-EE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "013-LantusSolostar-EE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Lantus Solostar, insulin glargine, solution for injection in 3ml pre-filled pens." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/014-CanestenKombi-FI-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/014-CanestenKombi-FI-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "014-CanestenKombi-FI-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Canesten Kombi. Finland. Combination package of clotrimazole 20mg/g creme and 500mg pessary with an applicator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/015-CopaliaHCT-EE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/015-CopaliaHCT-EE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "015-CopaliaHCT-EE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Copalia HCT. Valsartan + amlodipine (besilate) + hydrochlorothiazide tablets. Not a PPL product." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/016-Lodipin-10mg-Capsule-GR-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/016-Lodipin-10mg-Capsule-GR-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "016-Lodipin-10mg-Capsule-GR-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Lodipin 10mg Capsule. Amlodipine (besilate).  Greece." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLHipres-10mg-Tablet-EE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLHipres-10mg-Tablet-EE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLHipres-10mg-Tablet-EE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hipres amlodipine (maleate) 10mg tablets. Estonia." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLHipres-5mg-Tablet-EE-FullProduct>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLHipres-5mg-Tablet-EE-FullProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLHipres-5mg-Tablet-EE-FullProduct" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hipres amlodipine (maleate) 5mg tablet. Estonia." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 10mg tablets. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 5mg tablets. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 10mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 10mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 5mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 10mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 5mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 10mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 5mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 90;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 10mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 5mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 92;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 10mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 5mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 94;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 10mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 95;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 5mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 96;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 10mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 97;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 5mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 98;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "AdministrableProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD>;
+         fhir:Reference.reference [ fhir:value "AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Agen-5mg-Tablet-EE-APD" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Administrable/Pharmaceutical Product Definition: simple tablets" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+       ]
+     ], [
+       fhir:index 99;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Ingredient/Agen-5mg-Tablet-EE-I>;
+         fhir:Reference.reference [ fhir:value "Ingredient/Agen-5mg-Tablet-EE-I" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Agen-5mg-Tablet-EE-I" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ingredient: amlodipine besilate, presentation strength; amlodipine, reference strength" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+       ]
+     ], [
+       fhir:index 100;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ManufacturedItemDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Agen-5mg-Tablet-EE-MID" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manufactured Item: simple tablet" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+       ]
+     ], [
+       fhir:index 101;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicinalProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Agen-5mg-Tablet-EE-MPD" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medicinal Product Definition: simple tablets" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>
+       ]
+     ], [
+       fhir:index 102;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PackagedProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-A>;
+         fhir:Reference.reference [ fhir:value "PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-A" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Agen-5mg-Tablet-EE-PPD-1109887-A" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Packaged Product Definition: simple tablets" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+       ]
+     ], [
+       fhir:index 103;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PackagedProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-B>;
+         fhir:Reference.reference [ fhir:value "PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-B" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Agen-5mg-Tablet-EE-PPD-1109887-B" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Packaged Product Definition: simple tablets" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+       ]
+     ], [
+       fhir:index 104;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "RegulatedAuthorization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/RegulatedAuthorization/Agen-5mg-Tablet-EE-RA>;
+         fhir:Reference.reference [ fhir:value "RegulatedAuthorization/Agen-5mg-Tablet-EE-RA" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Agen-5mg-Tablet-EE-RA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorisation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+       ]
+     ], [
+       fhir:index 105;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 10mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 106;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 5mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 107;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "AdministrableProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/CanifugCremolum-100mg-Pessary-EE-APD>;
+         fhir:Reference.reference [ fhir:value "AdministrableProductDefinition/CanifugCremolum-100mg-Pessary-EE-APD" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CanifugCremolum-100mg-Pessary-EE-APD" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Administrable/Pharmaceutical Product Definition: pessaries" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+       ]
+     ], [
+       fhir:index 108;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Ingredient/CanifugCremolum-100mg-Pessary-EE-I>;
+         fhir:Reference.reference [ fhir:value "Ingredient/CanifugCremolum-100mg-Pessary-EE-I" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CanifugCremolum-100mg-Pessary-EE-I" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ingredient: clotrimazole, presentation strength" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+       ]
+     ], [
+       fhir:index 109;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ManufacturedItemDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CanifugCremolum-100mg-Pessary-EE-MID" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manufactured Item: pessary" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+       ]
+     ], [
+       fhir:index 110;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "AdministrableProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/CanifugCremolum-10mg1g-Cream-EE-APD>;
+         fhir:Reference.reference [ fhir:value "AdministrableProductDefinition/CanifugCremolum-10mg1g-Cream-EE-APD" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CanifugCremolum-10mg1g-Cream-EE-APD" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Administrable/Pharmaceutical Product Definition: creme" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+       ]
+     ], [
+       fhir:index 111;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Ingredient/CanifugCremolum-10mg1g-Cream-EE-I>;
+         fhir:Reference.reference [ fhir:value "Ingredient/CanifugCremolum-10mg1g-Cream-EE-I" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CanifugCremolum-10mg1g-Cream-EE-I" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ingredient: clotrimazole, concentration strength" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+       ]
+     ], [
+       fhir:index 112;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ManufacturedItemDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CanifugCremolum-10mg1g-Cream-EE-MID>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/CanifugCremolum-10mg1g-Cream-EE-MID" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CanifugCremolum-10mg1g-Cream-EE-MID" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manufactured Item: cream in tube" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+       ]
+     ], [
+       fhir:index 113;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicinalProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/CanifugCremolum-EE-MPD>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/CanifugCremolum-EE-MPD" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CanifugCremolum-EE-MPD" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medicinal Product Definition: combination product of creme and pessaries" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>
+       ]
+     ], [
+       fhir:index 114;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PackagedProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/PackagedProductDefinition/CanifugCremolum-EE-PPD-1033692>;
+         fhir:Reference.reference [ fhir:value "PackagedProductDefinition/CanifugCremolum-EE-PPD-1033692" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CanifugCremolum-EE-PPD-1033692" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Packaged Product Definition: combination package of creme and pessaries" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+       ]
+     ], [
+       fhir:index 115;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "RegulatedAuthorization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/RegulatedAuthorization/CanifugCremolum-EE-RA>;
+         fhir:Reference.reference [ fhir:value "RegulatedAuthorization/CanifugCremolum-EE-RA" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CanifugCremolum-EE-RA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorisation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+       ]
+     ], [
+       fhir:index 116;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "AdministrableProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/Cefuroxime-MIP-1500mg-EE-APD>;
+         fhir:Reference.reference [ fhir:value "AdministrableProductDefinition/Cefuroxime-MIP-1500mg-EE-APD" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cefuroxime-MIP-1500mg-EE-APD" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Administrable/Pharmaceutical Product Definition: transformed" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+       ]
+     ], [
+       fhir:index 117;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Ingredient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Ingredient/Cefuroxime-MIP-1500mg-EE-I>;
+         fhir:Reference.reference [ fhir:value "Ingredient/Cefuroxime-MIP-1500mg-EE-I" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cefuroxime-MIP-1500mg-EE-I" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ingredient: cefuroxime sodium, presentation strength; cefuroxime sodium, reference strength" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 118;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ManufacturedItemDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID>;
+         fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cefuroxime-MIP-1500mg-EE-MID" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Manufactured Item: powder in vial" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+       ]
+     ], [
+       fhir:index 119;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicinalProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD>;
+         fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cefuroxime-MIP-1500mg-EE-MPD" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medicinal Product Definition: powder for solution" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>
+       ]
+     ], [
+       fhir:index 120;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PackagedProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/PackagedProductDefinition/Cefuroxime-MIP-1500mg-EE-PPD-1529940>;
+         fhir:Reference.reference [ fhir:value "PackagedProductDefinition/Cefuroxime-MIP-1500mg-EE-PPD-1529940" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cefuroxime-MIP-1500mg-EE-PPD-1529940" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Packaged Product Definition: powder for solution in 1 vial" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+       ]
+     ], [
+       fhir:index 121;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PackagedProductDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/PackagedProductDefinition/Cefuroxime-MIP-1500mg-EE-PPD-1529962>;
+         fhir:Reference.reference [ fhir:value "PackagedProductDefinition/Cefuroxime-MIP-1500mg-EE-PPD-1529962" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cefuroxime-MIP-1500mg-EE-PPD-1529962" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Packaged Product Definition: powder for solution in 10 vials" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+       ]
+     ], [
+       fhir:index 122;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "RegulatedAuthorization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/RegulatedAuthorization/Cefuroxime-MIP-1500mg-EE-RA>;
+         fhir:Reference.reference [ fhir:value "RegulatedAuthorization/Cefuroxime-MIP-1500mg-EE-RA" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cefuroxime-MIP-1500mg-EE-RA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorisation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+       ]
+     ], [
+       fhir:index 123;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/Filter-label>;
+         fhir:Reference.reference [ fhir:value "ValueSet/Filter-label" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Filter-label" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Filter label from EDQM, FIL, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 124;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100000551-KrkaSverige>;
+         fhir:Reference.reference [ fhir:value "Organization/LOC-100000551-KrkaSverige" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LOC-100000551-KrkaSverige" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorisation Holder / Organisation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>
+       ]
+     ], [
+       fhir:index 125;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100002580-Zentiva>;
+         fhir:Reference.reference [ fhir:value "Organization/LOC-100002580-Zentiva" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LOC-100002580-Zentiva" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorisation Holder / Organisation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>
+       ]
+     ], [
+       fhir:index 126;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100004795-Wolff-Arzneimittel>;
+         fhir:Reference.reference [ fhir:value "Organization/LOC-100004795-Wolff-Arzneimittel" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LOC-100004795-Wolff-Arzneimittel" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorisation Holder / Organisation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>
+       ]
+     ], [
+       fhir:index 127;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100009199-Mip>;
+         fhir:Reference.reference [ fhir:value "Organization/LOC-100009199-Mip" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LOC-100009199-Mip" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marketing Authorisation Holder / Organisation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization";
+         fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>
+       ]
+     ], [
+       fhir:index 128;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 10mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 129;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/Bundle/Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL>;
+         fhir:Reference.reference [ fhir:value "Bundle/Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amlodipine (besylate) 5mg tablet. Sweden." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 130;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/administration-device>;
+         fhir:Reference.reference [ fhir:value "ValueSet/administration-device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "administration-device" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Administration device from EDQM, DEV, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 131;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/administration-method>;
+         fhir:Reference.reference [ fhir:value "ValueSet/administration-method" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "administration-method" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Administration method from EDQM, AME, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 132;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/basic-dose-form>;
+         fhir:Reference.reference [ fhir:value "ValueSet/basic-dose-form" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "basic-dose-form" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Basic dose form from EDQM, BDF, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 133;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/closure>;
+         fhir:Reference.reference [ fhir:value "ValueSet/closure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "closure" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Closure from EDQM, CLO, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 134;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/combination-pack>;
+         fhir:Reference.reference [ fhir:value "ValueSet/combination-pack" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "combination-pack" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Combination pack from EDQM, CMP, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 135;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/combined-pharmaceutical-dose-form>;
+         fhir:Reference.reference [ fhir:value "ValueSet/combined-pharmaceutical-dose-form" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "combined-pharmaceutical-dose-form" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Combined pharmaceutical dose form from EDQM, CDF, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 136;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/combined-term>;
+         fhir:Reference.reference [ fhir:value "ValueSet/combined-term" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "combined-term" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Combined term from EDQM, CMT, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 137;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/container>;
+         fhir:Reference.reference [ fhir:value "ValueSet/container" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "container" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Container from EDQM, CON, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 138;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/ehdsi-ucum-unit>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ehdsi-ucum-unit" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ehdsi-ucum-unit" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet for UCUM units to be used in eHDSI" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 139;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/intended-site>;
+         fhir:Reference.reference [ fhir:value "ValueSet/intended-site" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "intended-site" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Intended site from EDQM, ISI, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 140;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/mapping>;
+         fhir:Reference.reference [ fhir:value "ValueSet/mapping" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "mapping" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Mapping from EDQM, MAP, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 141;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/packaging-category>;
+         fhir:Reference.reference [ fhir:value "ValueSet/packaging-category" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "packaging-category" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Packaging category from EDQM, PAC, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 142;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/patient-friendly-term>;
+         fhir:Reference.reference [ fhir:value "ValueSet/patient-friendly-term" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-friendly-term" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Patient-friendly term from EDQM, PFT, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 143;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/pharmaceutical-dose-form>;
+         fhir:Reference.reference [ fhir:value "ValueSet/pharmaceutical-dose-form" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "pharmaceutical-dose-form" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Pharmaceutical dose form from EDQM, PDF, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 144;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/release-characteristics>;
+         fhir:Reference.reference [ fhir:value "ValueSet/release-characteristics" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "release-characteristics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Release characteristics from EDQM, RCA, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 145;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/route-of-administration>;
+         fhir:Reference.reference [ fhir:value "ValueSet/route-of-administration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "route-of-administration" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Route of administration from EDQM, ROA, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 146;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/state-of-matter>;
+         fhir:Reference.reference [ fhir:value "ValueSet/state-of-matter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "state-of-matter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet State of matter from EDQM, SOM, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 147;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/transformation>;
+         fhir:Reference.reference [ fhir:value "ValueSet/transformation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "transformation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Transformation from EDQM, TRA, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 148;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://unicom-project.eu/fhir/ValueSet/unit-of-presentation>;
+         fhir:Reference.reference [ fhir:value "ValueSet/unit-of-presentation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "unit-of-presentation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet Unit of presentation from EDQM, UOP, see https://standardterms.edqm.eu/#" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "regulatory.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Regulatory Data" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "issues.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Known Issues" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "visualiser.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Visualiser" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ImplementationGuide/hl7.eu.fhir.unicom.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

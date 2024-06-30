@@ -1,0 +1,1502 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EDQM Administration Device - JSON Representation - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.50"}
+    h3,h4,h5,h6{--heading-prefix:"6.50"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EDQM Administration Device</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-administration-device.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-administration-device.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-administration-device.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: EDQM Administration Device - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2023-10-17
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-administration-device.json" no-download="true">Raw json</a> | <a href="ValueSet-administration-device.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; overflow: hidden"><code>
+{
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">id</a>" : "administration-device",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://standardterms.edqm.eu&lt;/code&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13072000&lt;/td&gt;&lt;td&gt;Oral applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13114000&lt;/td&gt;&lt;td&gt;Pen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30000500&lt;/td&gt;&lt;td&gt;Administration system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30002000&lt;/td&gt;&lt;td&gt;Applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30003000&lt;/td&gt;&lt;td&gt;Automatic injection device&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30005000&lt;/td&gt;&lt;td&gt;Balling gun&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30010000&lt;/td&gt;&lt;td&gt;Brush&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30012000&lt;/td&gt;&lt;td&gt;Cannula&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30016000&lt;/td&gt;&lt;td&gt;Cup&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30017000&lt;/td&gt;&lt;td&gt;Dabbing applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30018200&lt;/td&gt;&lt;td&gt;Dose dispenser&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30019000&lt;/td&gt;&lt;td&gt;Dredging applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30021000&lt;/td&gt;&lt;td&gt;Drench gun&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30022000&lt;/td&gt;&lt;td&gt;Dropper applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30025000&lt;/td&gt;&lt;td&gt;High pressure transdermal delivery device&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30026000&lt;/td&gt;&lt;td&gt;Implanter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30026500&lt;/td&gt;&lt;td&gt;Inhaler&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30027000&lt;/td&gt;&lt;td&gt;In-ovo injection device&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30028000&lt;/td&gt;&lt;td&gt;Injection needle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30029000&lt;/td&gt;&lt;td&gt;Injection syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30030000&lt;/td&gt;&lt;td&gt;Internal graduated calibration chamber&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30031000&lt;/td&gt;&lt;td&gt;Intramammary syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30033000&lt;/td&gt;&lt;td&gt;Measuring device&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30034000&lt;/td&gt;&lt;td&gt;Measuring spoon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30037000&lt;/td&gt;&lt;td&gt;Mouthpiece&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30040000&lt;/td&gt;&lt;td&gt;Multipuncturer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30041000&lt;/td&gt;&lt;td&gt;Nasal applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30042000&lt;/td&gt;&lt;td&gt;Nebuliser&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30043500&lt;/td&gt;&lt;td&gt;Needle-free injector&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30044000&lt;/td&gt;&lt;td&gt;Nozzle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30045000&lt;/td&gt;&lt;td&gt;Oral syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30046000&lt;/td&gt;&lt;td&gt;Pipette&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30053000&lt;/td&gt;&lt;td&gt;Prick test applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30055000&lt;/td&gt;&lt;td&gt;Scarifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30058000&lt;/td&gt;&lt;td&gt;Spatula&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30059000&lt;/td&gt;&lt;td&gt;Spot-on applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30063000&lt;/td&gt;&lt;td&gt;Stab vaccinator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30068000&lt;/td&gt;&lt;td&gt;Vaginal sponge applicator&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Deutsch (German, de)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Greek (el)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Spanish (es)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;French (fr)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Italian (it)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Portuguese (pt)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13072000&lt;/td&gt;&lt;td&gt;Applikator für die orale Verabreichung&lt;/td&gt;&lt;td&gt;Εξάρτημα χορήγησης  από του στόματος&lt;/td&gt;&lt;td&gt;Aplicador para uso oral&lt;/td&gt;&lt;td&gt;Applicateur pour administration orale&lt;/td&gt;&lt;td&gt;Applicatore per somministrazione orale&lt;/td&gt;&lt;td&gt;Aplicador oral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13114000&lt;/td&gt;&lt;td&gt;Pen&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Pluma&lt;/td&gt;&lt;td&gt;Stylo&lt;/td&gt;&lt;td&gt;Penna&lt;/td&gt;&lt;td&gt;Caneta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30000500&lt;/td&gt;&lt;td&gt;Applikationssystem&lt;/td&gt;&lt;td&gt;Σύστημα χορήγησης&lt;/td&gt;&lt;td&gt;Sistema de administración&lt;/td&gt;&lt;td&gt;Système d'administration&lt;/td&gt;&lt;td&gt;Sistema di somministrazione&lt;/td&gt;&lt;td&gt;Sistema de administração&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30002000&lt;/td&gt;&lt;td&gt;Applikator&lt;/td&gt;&lt;td&gt;Εξάρτημα χορήγησης&lt;/td&gt;&lt;td&gt;Aplicador&lt;/td&gt;&lt;td&gt;Applicateur&lt;/td&gt;&lt;td&gt;Applicatore&lt;/td&gt;&lt;td&gt;Aplicador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30003000&lt;/td&gt;&lt;td&gt;automatischer Injektor&lt;/td&gt;&lt;td&gt;Συσκευή αυτόματης ένεσης&lt;/td&gt;&lt;td&gt;Inyector automático&lt;/td&gt;&lt;td&gt;Injecteur automatique&lt;/td&gt;&lt;td&gt;Dispositivo automatico per iniezone&lt;/td&gt;&lt;td&gt;Seringa automática&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30005000&lt;/td&gt;&lt;td&gt;Bolusgeber&lt;/td&gt;&lt;td&gt;Συσκευή χορήγησης βώλων&lt;/td&gt;&lt;td&gt;Aplicador para administración intrarruminal&lt;/td&gt;&lt;td&gt;Applicateur pour dispositif intraruminal&lt;/td&gt;&lt;td&gt;Applicatore per dispositivo intraruminale&lt;/td&gt;&lt;td&gt;Aplicador para bólus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30010000&lt;/td&gt;&lt;td&gt;Pinsel&lt;/td&gt;&lt;td&gt;Ψύκτρα&lt;/td&gt;&lt;td&gt;Pincel&lt;/td&gt;&lt;td&gt;Pinceau applicateur&lt;/td&gt;&lt;td&gt;Pennello&lt;/td&gt;&lt;td&gt;Pincel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30012000&lt;/td&gt;&lt;td&gt;Kanüle&lt;/td&gt;&lt;td&gt;Σωληνίσκος&lt;/td&gt;&lt;td&gt;Cánula&lt;/td&gt;&lt;td&gt;Canule&lt;/td&gt;&lt;td&gt;Cannula&lt;/td&gt;&lt;td&gt;Cânula&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30016000&lt;/td&gt;&lt;td&gt;Messbecher&lt;/td&gt;&lt;td&gt;Κύπελλο&lt;/td&gt;&lt;td&gt;Vaso dosificador&lt;/td&gt;&lt;td&gt;Godet&lt;/td&gt;&lt;td&gt;Bicchiere dosatore&lt;/td&gt;&lt;td&gt;Copo-medida&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30017000&lt;/td&gt;&lt;td&gt;Verschluss mit Tupfer&lt;/td&gt;&lt;td&gt;Πώμα με εξάρτημα επάλειψης&lt;/td&gt;&lt;td&gt;Cierre con aplicador para toques&lt;/td&gt;&lt;td&gt;Embout applicateur&lt;/td&gt;&lt;td&gt;Tappo con applicatore&lt;/td&gt;&lt;td&gt;Fecho com aplicador de contacto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30018200&lt;/td&gt;&lt;td&gt;Dosiergerät&lt;/td&gt;&lt;td&gt;Δοσομετρητής&lt;/td&gt;&lt;td&gt;Dispensador de dosis&lt;/td&gt;&lt;td&gt;Dispensateur de dose&lt;/td&gt;&lt;td&gt;Dispensatore di dose&lt;/td&gt;&lt;td&gt;Dispensador de dose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30019000&lt;/td&gt;&lt;td&gt;Verschluss mit Streuvorrichtung&lt;/td&gt;&lt;td&gt;Πώμα με εξάρτημα επίπασης&lt;/td&gt;&lt;td&gt;Cierre espolvoreador&lt;/td&gt;&lt;td&gt;Embout poudreur&lt;/td&gt;&lt;td&gt;Aspersore&lt;/td&gt;&lt;td&gt;Fecho polvilhador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30021000&lt;/td&gt;&lt;td&gt;Applikator für eine Flüssigkeit zum Einnehmen&lt;/td&gt;&lt;td&gt;Συσκευή χορήγησης στοματικών διαλυμάτων&lt;/td&gt;&lt;td&gt;Pistola dosificadora&lt;/td&gt;&lt;td&gt;Embout buccal&lt;/td&gt;&lt;td&gt;Pistola dosatrice per somministrazioni orali&lt;/td&gt;&lt;td&gt;Pistola doseadora&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30022000&lt;/td&gt;&lt;td&gt;Verschluss mit Tropfer&lt;/td&gt;&lt;td&gt;Σταγονομετρικό βιδωτό πώμα&lt;/td&gt;&lt;td&gt;Tapón cuentagotas&lt;/td&gt;&lt;td&gt;Embout compte-gouttes&lt;/td&gt;&lt;td&gt;Contagocce&lt;/td&gt;&lt;td&gt;Fecho conta-gotas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30025000&lt;/td&gt;&lt;td&gt;Intradermaldruckinjektor&lt;/td&gt;&lt;td&gt;Σύστημα διαδερμικής χορήγησης υπό πίεση&lt;/td&gt;&lt;td&gt;Dispositivo a presión para liberación transdermica&lt;/td&gt;&lt;td&gt;Injecteur intradermique sous pression&lt;/td&gt;&lt;td&gt;Dispositivo sotto pressione a rilascio transdermico&lt;/td&gt;&lt;td&gt;Injector transdérmico sob pressão&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30026000&lt;/td&gt;&lt;td&gt;Implantatinjektor&lt;/td&gt;&lt;td&gt;Συσκευή εμφύτευσης&lt;/td&gt;&lt;td&gt;Inyector de implantes&lt;/td&gt;&lt;td&gt;Pistolet pour implant&lt;/td&gt;&lt;td&gt;Iniettore per impianto&lt;/td&gt;&lt;td&gt;Seringa para implantes&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30026500&lt;/td&gt;&lt;td&gt;Inhalator&lt;/td&gt;&lt;td&gt;Συσκευή εισπνοής&lt;/td&gt;&lt;td&gt;Inhalador&lt;/td&gt;&lt;td&gt;Inhalateur&lt;/td&gt;&lt;td&gt;Inalatore&lt;/td&gt;&lt;td&gt;Inalador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30027000&lt;/td&gt;&lt;td&gt;Eiinjektor&lt;/td&gt;&lt;td&gt;Συσκευή χορήγησης in ovo&lt;/td&gt;&lt;td&gt;Inyector automático in ovo&lt;/td&gt;&lt;td&gt;Dispositif pour injection in ovo&lt;/td&gt;&lt;td&gt;Dispositivo per iniezione in ovo&lt;/td&gt;&lt;td&gt;Seringa para via transcoriónica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30028000&lt;/td&gt;&lt;td&gt;Injektionsnadel&lt;/td&gt;&lt;td&gt;Βελόνη σύριγγας&lt;/td&gt;&lt;td&gt;Aguja para inyección&lt;/td&gt;&lt;td&gt;Aiguille&lt;/td&gt;&lt;td&gt;Ago per iniezione&lt;/td&gt;&lt;td&gt;Agulha para injecção&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30029000&lt;/td&gt;&lt;td&gt;Injektionsspritze&lt;/td&gt;&lt;td&gt;Σύριγγα ένεσης&lt;/td&gt;&lt;td&gt;Jeringa para inyección&lt;/td&gt;&lt;td&gt;Seringue&lt;/td&gt;&lt;td&gt;Siringa per iniezione&lt;/td&gt;&lt;td&gt;Seringa para injectáveis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30030000&lt;/td&gt;&lt;td&gt;Intern graduierte Dosierkammer&lt;/td&gt;&lt;td&gt;Δοσιμετρικό εξάρτημα&lt;/td&gt;&lt;td&gt;Dispensador de dosis múltiples&lt;/td&gt;&lt;td&gt;Dispositif à cran d'arrêt&lt;/td&gt;&lt;td&gt;Bolo ruminale&lt;/td&gt;&lt;td&gt;Câmara de calibração graduada&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30031000&lt;/td&gt;&lt;td&gt;Euterinjektor&lt;/td&gt;&lt;td&gt;Ενδομαστική σύριγγα&lt;/td&gt;&lt;td&gt;Jeringa intramamaria&lt;/td&gt;&lt;td&gt;Seringue pour administration intramammaire&lt;/td&gt;&lt;td&gt;Siringa intramammaria&lt;/td&gt;&lt;td&gt;Injetor intramamário&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30033000&lt;/td&gt;&lt;td&gt;Dosierhilfe&lt;/td&gt;&lt;td&gt;Δοσιμετρικό εξάρτημα&lt;/td&gt;&lt;td&gt;Dosificador&lt;/td&gt;&lt;td&gt;Dispositif de mesure&lt;/td&gt;&lt;td&gt;Dosatore&lt;/td&gt;&lt;td&gt;Dispositivo doseador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30034000&lt;/td&gt;&lt;td&gt;Messlöffel&lt;/td&gt;&lt;td&gt;Δοσιμετρικό κοχλιάριο&lt;/td&gt;&lt;td&gt;Cucharilla de medida&lt;/td&gt;&lt;td&gt;Cuillère-mesure&lt;/td&gt;&lt;td&gt;Cucchiaio dosatore&lt;/td&gt;&lt;td&gt;Colher-medida&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30037000&lt;/td&gt;&lt;td&gt;Mundstück&lt;/td&gt;&lt;td&gt;Εξάρτημα στοματικής προσαρμογής&lt;/td&gt;&lt;td&gt;Aplicador bucal&lt;/td&gt;&lt;td&gt;Embout buccal&lt;/td&gt;&lt;td&gt;Boccaglio&lt;/td&gt;&lt;td&gt;Aplicador bucal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30040000&lt;/td&gt;&lt;td&gt;Multipunkturstempel&lt;/td&gt;&lt;td&gt;Εξάρτημα πολλαπλής νύξεως&lt;/td&gt;&lt;td&gt;Aplicador para punción múltiple&lt;/td&gt;&lt;td&gt;Applicateur pour multipuncture&lt;/td&gt;&lt;td&gt;Dispositivo per intradermoreazione per puntura multipla&lt;/td&gt;&lt;td&gt;Aplicador para punção múltipla&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30041000&lt;/td&gt;&lt;td&gt;Nasenapplikator&lt;/td&gt;&lt;td&gt;Εξάρτημα ρινικής προσαρμογής&lt;/td&gt;&lt;td&gt;Aplicador nasal&lt;/td&gt;&lt;td&gt;Embout nasal&lt;/td&gt;&lt;td&gt;Applicatore nasale&lt;/td&gt;&lt;td&gt;Aplicador nasal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30042000&lt;/td&gt;&lt;td&gt;Vernebler&lt;/td&gt;&lt;td&gt;Εκνεφωτής&lt;/td&gt;&lt;td&gt;Nebulizador&lt;/td&gt;&lt;td&gt;Nébuliseur&lt;/td&gt;&lt;td&gt;Nebulizzatore&lt;/td&gt;&lt;td&gt;Nebulizador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30043500&lt;/td&gt;&lt;td&gt;nadelfreier Injektor&lt;/td&gt;&lt;td&gt;Σύστημα διαδερμικής χορήγησης χωρίς βελόνα&lt;/td&gt;&lt;td&gt;Inyector sin aguja&lt;/td&gt;&lt;td&gt;Injecteur sans aiguille&lt;/td&gt;&lt;td&gt;Iniettore privo di ago&lt;/td&gt;&lt;td&gt;Injetor sem seringa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30044000&lt;/td&gt;&lt;td&gt;Sprühkopf&lt;/td&gt;&lt;td&gt;Ρύγχος&lt;/td&gt;&lt;td&gt;Boquilla&lt;/td&gt;&lt;td&gt;Embout&lt;/td&gt;&lt;td&gt;Erogatore&lt;/td&gt;&lt;td&gt;Adaptador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30045000&lt;/td&gt;&lt;td&gt;Applikationsspritze für Zubereitungen zum Einnehmen&lt;/td&gt;&lt;td&gt;Σύριγγα για χορήγηση από του στόματος&lt;/td&gt;&lt;td&gt;Jeringa para uso oral&lt;/td&gt;&lt;td&gt;Seringue pour administration orale&lt;/td&gt;&lt;td&gt;Siringa per somministrazione orale&lt;/td&gt;&lt;td&gt;Seringa para uso oral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30046000&lt;/td&gt;&lt;td&gt;Pipette&lt;/td&gt;&lt;td&gt;Πιπέτα&lt;/td&gt;&lt;td&gt;Pipeta&lt;/td&gt;&lt;td&gt;Pipette&lt;/td&gt;&lt;td&gt;Pipetta&lt;/td&gt;&lt;td&gt;Pipeta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30053000&lt;/td&gt;&lt;td&gt;Teststempel&lt;/td&gt;&lt;td&gt;Εξάρτημα εφαρμογής αλλεργιογόνων δτα νύξεως&lt;/td&gt;&lt;td&gt;Aplicador para pruebas de alergenos&lt;/td&gt;&lt;td&gt;Applicateur pour prick test&lt;/td&gt;&lt;td&gt;Dispositivo per prick test&lt;/td&gt;&lt;td&gt;Estilete aplicador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30055000&lt;/td&gt;&lt;td&gt;Einritzer&lt;/td&gt;&lt;td&gt;Ακίδα σκαριφισμού&lt;/td&gt;&lt;td&gt;Escarificador&lt;/td&gt;&lt;td&gt;Vaccinostyle&lt;/td&gt;&lt;td&gt;Scarificatore&lt;/td&gt;&lt;td&gt;Escarificador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30058000&lt;/td&gt;&lt;td&gt;Spatel&lt;/td&gt;&lt;td&gt;Σπαθίδα&lt;/td&gt;&lt;td&gt;Espátula&lt;/td&gt;&lt;td&gt;Spatule&lt;/td&gt;&lt;td&gt;Spatola&lt;/td&gt;&lt;td&gt;Espátula&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30059000&lt;/td&gt;&lt;td&gt;Tropfapplikator&lt;/td&gt;&lt;td&gt;Συσκευή επίχυσης σε σημείο&lt;/td&gt;&lt;td&gt;Aplicador para unción puntual&lt;/td&gt;&lt;td&gt;Applicateur pour spot-on&lt;/td&gt;&lt;td&gt;Applicatore per spot-on&lt;/td&gt;&lt;td&gt;Aplicador para unção punctiforme&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30063000&lt;/td&gt;&lt;td&gt;Impfautomat&lt;/td&gt;&lt;td&gt;Ακίδα εμβολιασμού&lt;/td&gt;&lt;td&gt;Punzón&lt;/td&gt;&lt;td&gt;Stylet&lt;/td&gt;&lt;td&gt;Dispositivo a punta per vaccinazione&lt;/td&gt;&lt;td&gt;estilete de inoculação&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30068000&lt;/td&gt;&lt;td&gt;Applikator für ein Schwämmchen zur vaginalen Anwendung&lt;/td&gt;&lt;td&gt;Συσκευή για ενδοκολπική τοποθέτηση σπόγγων&lt;/td&gt;&lt;td&gt;Aplicador de esponjas vaginales&lt;/td&gt;&lt;td&gt;Applicateur pour éponge vaginale&lt;/td&gt;&lt;td&gt;Applicatore per spugnetta intravaginale&lt;/td&gt;&lt;td&gt;Aplicador para esponja vaginal&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">url</a>" : "http://unicom-project.eu/fhir/ValueSet/administration-device",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">name</a>" : "AdministrationDevice",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a>" : "EDQM Administration Device",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a>" : "2023-10-17T08:02:36+00:00",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.publisher">publisher</a>" : "UNICOM",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "UNICOM",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://unicom-project.eu"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">description</a>" : "ValueSet Administration device from EDQM, DEV, see https://standardterms.edqm.eu/#",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.immutable">immutable</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">system</a>" : "https://standardterms.edqm.eu",
+        "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "13072000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Oral applicator",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applikator für die orale Verabreichung"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Εξάρτημα χορήγησης  από του στόματος"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador para uso oral"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicateur pour administration orale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicatore per somministrazione orale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador oral"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "13114000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pen",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pluma"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Stylo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Penna"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Caneta"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30000500",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Administration system",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applikationssystem"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σύστημα χορήγησης"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Sistema de administración"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Système d'administration"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Sistema di somministrazione"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Sistema de administração"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30002000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Applicator",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applikator"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Εξάρτημα χορήγησης"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicateur"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicatore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30003000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Automatic injection device",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "automatischer Injektor"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Συσκευή αυτόματης ένεσης"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inyector automático"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injecteur automatique"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositivo automatico per iniezone"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Seringa automática"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30005000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Balling gun",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bolusgeber"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Συσκευή χορήγησης βώλων"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador para administración intrarruminal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicateur pour dispositif intraruminal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicatore per dispositivo intraruminale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador para bólus"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30010000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Brush",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pinsel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ψύκτρα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pincel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pinceau applicateur"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pennello"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pincel"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30012000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cannula",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Kanüle"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σωληνίσκος"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cánula"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Canule"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cannula"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cânula"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30016000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cup",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Messbecher"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κύπελλο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Vaso dosificador"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Godet"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bicchiere dosatore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Copo-medida"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30017000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Dabbing applicator",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Verschluss mit Tupfer"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Πώμα με εξάρτημα επάλειψης"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cierre con aplicador para toques"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Embout applicateur"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tappo con applicatore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Fecho com aplicador de contacto"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30018200",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Dose dispenser",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dosiergerät"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Δοσομετρητής"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispensador de dosis"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispensateur de dose"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispensatore di dose"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispensador de dose"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30019000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Dredging applicator",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Verschluss mit Streuvorrichtung"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Πώμα με εξάρτημα επίπασης"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cierre espolvoreador"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Embout poudreur"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aspersore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Fecho polvilhador"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30021000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Drench gun",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applikator für eine Flüssigkeit zum Einnehmen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Συσκευή χορήγησης στοματικών διαλυμάτων"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pistola dosificadora"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Embout buccal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pistola dosatrice per somministrazioni orali"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pistola doseadora"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30022000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Dropper applicator",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Verschluss mit Tropfer"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σταγονομετρικό βιδωτό πώμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tapón cuentagotas"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Embout compte-gouttes"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Contagocce"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Fecho conta-gotas"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30025000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "High pressure transdermal delivery device",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Intradermaldruckinjektor"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σύστημα διαδερμικής χορήγησης υπό πίεση"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositivo a presión para liberación transdermica"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injecteur intradermique sous pression"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositivo sotto pressione a rilascio transdermico"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injector transdérmico sob pressão"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30026000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Implanter",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Implantatinjektor"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Συσκευή εμφύτευσης"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inyector de implantes"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pistolet pour implant"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Iniettore per impianto"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Seringa para implantes"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30026500",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inhaler",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inhalator"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Συσκευή εισπνοής"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inhalador"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inhalateur"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inalatore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inalador"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30027000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "In-ovo injection device",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Eiinjektor"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Συσκευή χορήγησης in ovo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inyector automático in ovo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositif pour injection in ovo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositivo per iniezione in ovo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Seringa para via transcoriónica"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30028000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Injection needle",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injektionsnadel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Βελόνη σύριγγας"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aguja para inyección"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aiguille"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ago per iniezione"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Agulha para injecção"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30029000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Injection syringe",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injektionsspritze"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σύριγγα ένεσης"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Jeringa para inyección"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Seringue"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Siringa per iniezione"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Seringa para injectáveis"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30030000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Internal graduated calibration chamber",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Intern graduierte Dosierkammer"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Δοσιμετρικό εξάρτημα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispensador de dosis múltiples"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositif à cran d'arrêt"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bolo ruminale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Câmara de calibração graduada"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30031000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Intramammary syringe",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Euterinjektor"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ενδομαστική σύριγγα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Jeringa intramamaria"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Seringue pour administration intramammaire"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Siringa intramammaria"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injetor intramamário"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30033000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Measuring device",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dosierhilfe"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Δοσιμετρικό εξάρτημα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dosificador"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositif de mesure"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dosatore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositivo doseador"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30034000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Measuring spoon",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Messlöffel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Δοσιμετρικό κοχλιάριο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cucharilla de medida"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cuillère-mesure"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cucchiaio dosatore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Colher-medida"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30037000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Mouthpiece",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Mundstück"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Εξάρτημα στοματικής προσαρμογής"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador bucal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Embout buccal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Boccaglio"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador bucal"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30040000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Multipuncturer",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Multipunkturstempel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Εξάρτημα πολλαπλής νύξεως"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador para punción múltiple"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicateur pour multipuncture"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositivo per intradermoreazione per puntura multipla"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador para punção múltipla"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30041000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nasal applicator",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Nasenapplikator"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Εξάρτημα ρινικής προσαρμογής"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador nasal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Embout nasal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicatore nasale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador nasal"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30042000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nebuliser",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Vernebler"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Εκνεφωτής"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Nebulizador"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Nébuliseur"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Nebulizzatore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Nebulizador"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30043500",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Needle-free injector",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "nadelfreier Injektor"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σύστημα διαδερμικής χορήγησης χωρίς βελόνα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inyector sin aguja"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injecteur sans aiguille"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Iniettore privo di ago"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injetor sem seringa"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30044000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nozzle",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Sprühkopf"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ρύγχος"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Boquilla"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Embout"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erogatore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Adaptador"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30045000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Oral syringe",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applikationsspritze für Zubereitungen zum Einnehmen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σύριγγα για χορήγηση από του στόματος"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Jeringa para uso oral"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Seringue pour administration orale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Siringa per somministrazione orale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Seringa para uso oral"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30046000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pipette",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pipette"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Πιπέτα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pipeta"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pipette"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pipetta"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pipeta"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30053000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Prick test applicator",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Teststempel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Εξάρτημα εφαρμογής αλλεργιογόνων δτα νύξεως"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador para pruebas de alergenos"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicateur pour prick test"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositivo per prick test"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Estilete aplicador"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30055000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Scarifier",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Einritzer"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ακίδα σκαριφισμού"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Escarificador"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Vaccinostyle"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Scarificatore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Escarificador"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30058000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Spatula",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spatel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σπαθίδα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Espátula"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spatule"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spatola"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Espátula"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30059000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Spot-on applicator",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tropfapplikator"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Συσκευή επίχυσης σε σημείο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador para unción puntual"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicateur pour spot-on"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicatore per spot-on"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador para unção punctiforme"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30063000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stab vaccinator",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Impfautomat"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ακίδα εμβολιασμού"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Punzón"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Stylet"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositivo a punta per vaccinazione"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "estilete de inoculação"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "30068000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Vaginal sponge applicator",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applikator für ein Schwämmchen zur vaginalen Anwendung"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Συσκευή για ενδοκολπική τοποθέτηση σπόγγων"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador de esponjas vaginales"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicateur pour éponge vaginale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicatore per spugnetta intravaginale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador para esponja vaginal"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 17, 2023 08:02+0000">2023-10-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

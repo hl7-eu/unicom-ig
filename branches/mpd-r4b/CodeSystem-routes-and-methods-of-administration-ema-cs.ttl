@@ -1,0 +1,589 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/routes-and-methods-of-administration-ema-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "routes-and-methods-of-administration-ema-cs"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://spor.ema.europa.eu/v1/lists/100000073345</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100000073564<a name=\"routes-and-methods-of-administration-ema-cs-100000073564\"> </a></td><td>Auricular use</td></tr><tr><td style=\"white-space:nowrap\">100000073570<a name=\"routes-and-methods-of-administration-ema-cs-100000073570\"> </a></td><td>Endosinusial use</td></tr><tr><td style=\"white-space:nowrap\">100000073571<a name=\"routes-and-methods-of-administration-ema-cs-100000073571\"> </a></td><td>Endotracheopulmonary use</td></tr><tr><td style=\"white-space:nowrap\">100000073566<a name=\"routes-and-methods-of-administration-ema-cs-100000073566\"> </a></td><td>Cutaneous use</td></tr><tr><td style=\"white-space:nowrap\">100000073567<a name=\"routes-and-methods-of-administration-ema-cs-100000073567\"> </a></td><td>Dental use</td></tr><tr><td style=\"white-space:nowrap\">100000073569<a name=\"routes-and-methods-of-administration-ema-cs-100000073569\"> </a></td><td>Endocervical use</td></tr><tr><td style=\"white-space:nowrap\">100000073572<a name=\"routes-and-methods-of-administration-ema-cs-100000073572\"> </a></td><td>Epidural use</td></tr><tr><td style=\"white-space:nowrap\">100000073577<a name=\"routes-and-methods-of-administration-ema-cs-100000073577\"> </a></td><td>Gastric use</td></tr><tr><td style=\"white-space:nowrap\">100000073587<a name=\"routes-and-methods-of-administration-ema-cs-100000073587\"> </a></td><td>Intraarterial use</td></tr><tr><td style=\"white-space:nowrap\">100000073589<a name=\"routes-and-methods-of-administration-ema-cs-100000073589\"> </a></td><td>Intrabursal use</td></tr><tr><td style=\"white-space:nowrap\">100000073594<a name=\"routes-and-methods-of-administration-ema-cs-100000073594\"> </a></td><td>Intracoronary use</td></tr><tr><td style=\"white-space:nowrap\">100000073595<a name=\"routes-and-methods-of-administration-ema-cs-100000073595\"> </a></td><td>Intradermal use</td></tr><tr><td style=\"white-space:nowrap\">100000073601<a name=\"routes-and-methods-of-administration-ema-cs-100000073601\"> </a></td><td>Intraocular use</td></tr><tr><td style=\"white-space:nowrap\">100000073591<a name=\"routes-and-methods-of-administration-ema-cs-100000073591\"> </a></td><td>Intracavernous use</td></tr><tr><td style=\"white-space:nowrap\">100000073579<a name=\"routes-and-methods-of-administration-ema-cs-100000073579\"> </a></td><td>Haemodialysis</td></tr><tr><td style=\"white-space:nowrap\">100000073588<a name=\"routes-and-methods-of-administration-ema-cs-100000073588\"> </a></td><td>Intraarticular use</td></tr><tr><td style=\"white-space:nowrap\">100000073598<a name=\"routes-and-methods-of-administration-ema-cs-100000073598\"> </a></td><td>Intralymphatic use</td></tr><tr><td style=\"white-space:nowrap\">100000073604<a name=\"routes-and-methods-of-administration-ema-cs-100000073604\"> </a></td><td>Intraperitoneal use</td></tr><tr><td style=\"white-space:nowrap\">100000073607<a name=\"routes-and-methods-of-administration-ema-cs-100000073607\"> </a></td><td>Intrasternal use</td></tr><tr><td style=\"white-space:nowrap\">100000073620<a name=\"routes-and-methods-of-administration-ema-cs-100000073620\"> </a></td><td>Oromucosal use</td></tr><tr><td style=\"white-space:nowrap\">100000073597<a name=\"routes-and-methods-of-administration-ema-cs-100000073597\"> </a></td><td>Intralesional use</td></tr><tr><td style=\"white-space:nowrap\">100000073614<a name=\"routes-and-methods-of-administration-ema-cs-100000073614\"> </a></td><td>Laryngopharyngeal use</td></tr><tr><td style=\"white-space:nowrap\">100000073625<a name=\"routes-and-methods-of-administration-ema-cs-100000073625\"> </a></td><td>Periodontal use</td></tr><tr><td style=\"white-space:nowrap\">100000075557<a name=\"routes-and-methods-of-administration-ema-cs-100000075557\"> </a></td><td>Periosseous use</td></tr><tr><td style=\"white-space:nowrap\">100000075266<a name=\"routes-and-methods-of-administration-ema-cs-100000075266\"> </a></td><td>Parenteral use</td></tr><tr><td style=\"white-space:nowrap\">100000075267<a name=\"routes-and-methods-of-administration-ema-cs-100000075267\"> </a></td><td>Other use</td></tr><tr><td style=\"white-space:nowrap\">100000075268<a name=\"routes-and-methods-of-administration-ema-cs-100000075268\"> </a></td><td>Ophthalmic use</td></tr><tr><td style=\"white-space:nowrap\">100000075270<a name=\"routes-and-methods-of-administration-ema-cs-100000075270\"> </a></td><td>Intravenous drip use</td></tr><tr><td style=\"white-space:nowrap\">100000075261<a name=\"routes-and-methods-of-administration-ema-cs-100000075261\"> </a></td><td>Unknown use</td></tr><tr><td style=\"white-space:nowrap\">100000075260<a name=\"routes-and-methods-of-administration-ema-cs-100000075260\"> </a></td><td>Intraprostatic use</td></tr><tr><td style=\"white-space:nowrap\">100000075262<a name=\"routes-and-methods-of-administration-ema-cs-100000075262\"> </a></td><td>Topical use</td></tr><tr><td style=\"white-space:nowrap\">100000075263<a name=\"routes-and-methods-of-administration-ema-cs-100000075263\"> </a></td><td>Subdermal use</td></tr><tr><td style=\"white-space:nowrap\">100000075265<a name=\"routes-and-methods-of-administration-ema-cs-100000075265\"> </a></td><td>Respiratory use</td></tr><tr><td style=\"white-space:nowrap\">100000111216<a name=\"routes-and-methods-of-administration-ema-cs-100000111216\"> </a></td><td>Occlusive dressing technique use</td></tr><tr><td style=\"white-space:nowrap\">100000075237<a name=\"routes-and-methods-of-administration-ema-cs-100000075237\"> </a></td><td>Intraileal use</td></tr><tr><td style=\"white-space:nowrap\">100000075238<a name=\"routes-and-methods-of-administration-ema-cs-100000075238\"> </a></td><td>Intragastric use</td></tr><tr><td style=\"white-space:nowrap\">100000075240<a name=\"routes-and-methods-of-administration-ema-cs-100000075240\"> </a></td><td>Intradural use</td></tr><tr><td style=\"white-space:nowrap\">100000075241<a name=\"routes-and-methods-of-administration-ema-cs-100000075241\"> </a></td><td>Intraduodenal use</td></tr><tr><td style=\"white-space:nowrap\">100000075242<a name=\"routes-and-methods-of-administration-ema-cs-100000075242\"> </a></td><td>Intranasal use</td></tr><tr><td style=\"white-space:nowrap\">100000075243<a name=\"routes-and-methods-of-administration-ema-cs-100000075243\"> </a></td><td>Local use</td></tr><tr><td style=\"white-space:nowrap\">100000075244<a name=\"routes-and-methods-of-administration-ema-cs-100000075244\"> </a></td><td>Not mentioned</td></tr><tr><td style=\"white-space:nowrap\">100000075245<a name=\"routes-and-methods-of-administration-ema-cs-100000075245\"> </a></td><td>In vitro use</td></tr><tr><td style=\"white-space:nowrap\">100000075246<a name=\"routes-and-methods-of-administration-ema-cs-100000075246\"> </a></td><td>Intraabdominal use</td></tr><tr><td style=\"white-space:nowrap\">100000075247<a name=\"routes-and-methods-of-administration-ema-cs-100000075247\"> </a></td><td>Interstitial use</td></tr><tr><td style=\"white-space:nowrap\">100000111217<a name=\"routes-and-methods-of-administration-ema-cs-100000111217\"> </a></td><td>Transplacental use</td></tr><tr><td style=\"white-space:nowrap\">100000075251<a name=\"routes-and-methods-of-administration-ema-cs-100000075251\"> </a></td><td>Conjunctival use</td></tr><tr><td style=\"white-space:nowrap\">100000075252<a name=\"routes-and-methods-of-administration-ema-cs-100000075252\"> </a></td><td>Transmucosal use</td></tr><tr><td style=\"white-space:nowrap\">100000075253<a name=\"routes-and-methods-of-administration-ema-cs-100000075253\"> </a></td><td>Soft tissue use</td></tr><tr><td style=\"white-space:nowrap\">100000075254<a name=\"routes-and-methods-of-administration-ema-cs-100000075254\"> </a></td><td>Percutaneous use</td></tr><tr><td style=\"white-space:nowrap\">100000075255<a name=\"routes-and-methods-of-administration-ema-cs-100000075255\"> </a></td><td>Nasogastric use</td></tr><tr><td style=\"white-space:nowrap\">100000075256<a name=\"routes-and-methods-of-administration-ema-cs-100000075256\"> </a></td><td>Intraventricular use</td></tr><tr><td style=\"white-space:nowrap\">100000075257<a name=\"routes-and-methods-of-administration-ema-cs-100000075257\"> </a></td><td>Intravascular use</td></tr><tr><td style=\"white-space:nowrap\">100000075258<a name=\"routes-and-methods-of-administration-ema-cs-100000075258\"> </a></td><td>Intratympanic use</td></tr><tr><td style=\"white-space:nowrap\">100000075271<a name=\"routes-and-methods-of-administration-ema-cs-100000075271\"> </a></td><td>Intravenous bolus use</td></tr><tr><td style=\"white-space:nowrap\">100000075272<a name=\"routes-and-methods-of-administration-ema-cs-100000075272\"> </a></td><td>Intratracheal use</td></tr><tr><td style=\"white-space:nowrap\">100000075273<a name=\"routes-and-methods-of-administration-ema-cs-100000075273\"> </a></td><td>Intrahepatic use</td></tr><tr><td style=\"white-space:nowrap\">100000075555<a name=\"routes-and-methods-of-administration-ema-cs-100000075555\"> </a></td><td>Intramuscular and intravenous use</td></tr><tr><td style=\"white-space:nowrap\">100000075558<a name=\"routes-and-methods-of-administration-ema-cs-100000075558\"> </a></td><td>Subgingival use</td></tr><tr><td style=\"white-space:nowrap\">100000075559<a name=\"routes-and-methods-of-administration-ema-cs-100000075559\"> </a></td><td>Epicutaneous use</td></tr><tr><td style=\"white-space:nowrap\">100000075673<a name=\"routes-and-methods-of-administration-ema-cs-100000075673\"> </a></td><td>Intraepidermal use</td></tr><tr><td style=\"white-space:nowrap\">100000170847<a name=\"routes-and-methods-of-administration-ema-cs-100000170847\"> </a></td><td>Coarse spray</td></tr><tr><td style=\"white-space:nowrap\">200000010603<a name=\"routes-and-methods-of-administration-ema-cs-200000010603\"> </a></td><td>Intraputaminal use</td></tr><tr><td style=\"white-space:nowrap\">200000012510<a name=\"routes-and-methods-of-administration-ema-cs-200000012510\"> </a></td><td>Instillation</td></tr><tr><td style=\"white-space:nowrap\">200000016447<a name=\"routes-and-methods-of-administration-ema-cs-200000016447\"> </a></td><td>Injection</td></tr><tr><td style=\"white-space:nowrap\">200000016448<a name=\"routes-and-methods-of-administration-ema-cs-200000016448\"> </a></td><td>Solution for infusion</td></tr><tr><td style=\"white-space:nowrap\">200000016449<a name=\"routes-and-methods-of-administration-ema-cs-200000016449\"> </a></td><td>Infusion</td></tr><tr><td style=\"white-space:nowrap\">200000017716<a name=\"routes-and-methods-of-administration-ema-cs-200000017716\"> </a></td><td>External use</td></tr><tr><td style=\"white-space:nowrap\">200000017722<a name=\"routes-and-methods-of-administration-ema-cs-200000017722\"> </a></td><td>Preservative solution</td></tr><tr><td style=\"white-space:nowrap\">200000017723<a name=\"routes-and-methods-of-administration-ema-cs-200000017723\"> </a></td><td>Concentrate for solution for infusion</td></tr><tr><td style=\"white-space:nowrap\">200000017724<a name=\"routes-and-methods-of-administration-ema-cs-200000017724\"> </a></td><td>Solution for injection</td></tr><tr><td style=\"white-space:nowrap\">200000017725<a name=\"routes-and-methods-of-administration-ema-cs-200000017725\"> </a></td><td>Irrigation</td></tr><tr><td style=\"white-space:nowrap\">200000022791<a name=\"routes-and-methods-of-administration-ema-cs-200000022791\"> </a></td><td>Intrafollicular use</td></tr><tr><td style=\"white-space:nowrap\">200000022792<a name=\"routes-and-methods-of-administration-ema-cs-200000022792\"> </a></td><td>Intratesticular use</td></tr><tr><td style=\"white-space:nowrap\">100000075250<a name=\"routes-and-methods-of-administration-ema-cs-100000075250\"> </a></td><td>Enteral use</td></tr><tr><td style=\"white-space:nowrap\">100000111215<a name=\"routes-and-methods-of-administration-ema-cs-100000111215\"> </a></td><td>Intrathoracic use</td></tr><tr><td style=\"white-space:nowrap\">100000111214<a name=\"routes-and-methods-of-administration-ema-cs-100000111214\"> </a></td><td>Intrameningeal use</td></tr><tr><td style=\"white-space:nowrap\">100000143556<a name=\"routes-and-methods-of-administration-ema-cs-100000143556\"> </a></td><td>Nail use</td></tr><tr><td style=\"white-space:nowrap\">100000073584<a name=\"routes-and-methods-of-administration-ema-cs-100000073584\"> </a></td><td>Inhalation use</td></tr><tr><td style=\"white-space:nowrap\">100000073585<a name=\"routes-and-methods-of-administration-ema-cs-100000073585\"> </a></td><td>Intestinal use</td></tr><tr><td style=\"white-space:nowrap\">100000073573<a name=\"routes-and-methods-of-administration-ema-cs-100000073573\"> </a></td><td>Epilesional use</td></tr><tr><td style=\"white-space:nowrap\">100000073574<a name=\"routes-and-methods-of-administration-ema-cs-100000073574\"> </a></td><td>Extraamniotic use</td></tr><tr><td style=\"white-space:nowrap\">100000073578<a name=\"routes-and-methods-of-administration-ema-cs-100000073578\"> </a></td><td>Gingival use</td></tr><tr><td style=\"white-space:nowrap\">100000073586<a name=\"routes-and-methods-of-administration-ema-cs-100000073586\"> </a></td><td>Intraamniotic use</td></tr><tr><td style=\"white-space:nowrap\">100000073590<a name=\"routes-and-methods-of-administration-ema-cs-100000073590\"> </a></td><td>Intracardiac use</td></tr><tr><td style=\"white-space:nowrap\">100000073615<a name=\"routes-and-methods-of-administration-ema-cs-100000073615\"> </a></td><td>Nasal use</td></tr><tr><td style=\"white-space:nowrap\">100000073617<a name=\"routes-and-methods-of-administration-ema-cs-100000073617\"> </a></td><td>Ocular use</td></tr><tr><td style=\"white-space:nowrap\">100000073593<a name=\"routes-and-methods-of-administration-ema-cs-100000073593\"> </a></td><td>Intracervical use</td></tr><tr><td style=\"white-space:nowrap\">100000073596<a name=\"routes-and-methods-of-administration-ema-cs-100000073596\"> </a></td><td>Intradiscal use</td></tr><tr><td style=\"white-space:nowrap\">100000073600<a name=\"routes-and-methods-of-administration-ema-cs-100000073600\"> </a></td><td>Intramuscular use</td></tr><tr><td style=\"white-space:nowrap\">100000073602<a name=\"routes-and-methods-of-administration-ema-cs-100000073602\"> </a></td><td>Intraosseous use</td></tr><tr><td style=\"white-space:nowrap\">100000073603<a name=\"routes-and-methods-of-administration-ema-cs-100000073603\"> </a></td><td>Intrapericardial use</td></tr><tr><td style=\"white-space:nowrap\">100000073605<a name=\"routes-and-methods-of-administration-ema-cs-100000073605\"> </a></td><td>Intrapleural use</td></tr><tr><td style=\"white-space:nowrap\">100000073609<a name=\"routes-and-methods-of-administration-ema-cs-100000073609\"> </a></td><td>Intratumoral use</td></tr><tr><td style=\"white-space:nowrap\">100000073610<a name=\"routes-and-methods-of-administration-ema-cs-100000073610\"> </a></td><td>Intrauterine use</td></tr><tr><td style=\"white-space:nowrap\">100000073611<a name=\"routes-and-methods-of-administration-ema-cs-100000073611\"> </a></td><td>Intravenous use</td></tr><tr><td style=\"white-space:nowrap\">100000073612<a name=\"routes-and-methods-of-administration-ema-cs-100000073612\"> </a></td><td>Intravesical use</td></tr><tr><td style=\"white-space:nowrap\">100000073619<a name=\"routes-and-methods-of-administration-ema-cs-100000073619\"> </a></td><td>Oral use</td></tr><tr><td style=\"white-space:nowrap\">100000073623<a name=\"routes-and-methods-of-administration-ema-cs-100000073623\"> </a></td><td>Periarticular use</td></tr><tr><td style=\"white-space:nowrap\">100000073624<a name=\"routes-and-methods-of-administration-ema-cs-100000073624\"> </a></td><td>Perineural use</td></tr><tr><td style=\"white-space:nowrap\">100000073626<a name=\"routes-and-methods-of-administration-ema-cs-100000073626\"> </a></td><td>Posterior juxtascleral use</td></tr><tr><td style=\"white-space:nowrap\">100000073628<a name=\"routes-and-methods-of-administration-ema-cs-100000073628\"> </a></td><td>Rectal use</td></tr><tr><td style=\"white-space:nowrap\">100000073629<a name=\"routes-and-methods-of-administration-ema-cs-100000073629\"> </a></td><td>Route of administration not applicable</td></tr><tr><td style=\"white-space:nowrap\">100000073630<a name=\"routes-and-methods-of-administration-ema-cs-100000073630\"> </a></td><td>Skin scarification</td></tr><tr><td style=\"white-space:nowrap\">100000073632<a name=\"routes-and-methods-of-administration-ema-cs-100000073632\"> </a></td><td>Subconjunctival use</td></tr><tr><td style=\"white-space:nowrap\">100000073633<a name=\"routes-and-methods-of-administration-ema-cs-100000073633\"> </a></td><td>Subcutaneous use</td></tr><tr><td style=\"white-space:nowrap\">100000073634<a name=\"routes-and-methods-of-administration-ema-cs-100000073634\"> </a></td><td>Sublingual use</td></tr><tr><td style=\"white-space:nowrap\">100000073637<a name=\"routes-and-methods-of-administration-ema-cs-100000073637\"> </a></td><td>Transdermal use</td></tr><tr><td style=\"white-space:nowrap\">100000073639<a name=\"routes-and-methods-of-administration-ema-cs-100000073639\"> </a></td><td>Vaginal use</td></tr><tr><td style=\"white-space:nowrap\">100000075239<a name=\"routes-and-methods-of-administration-ema-cs-100000075239\"> </a></td><td>Intraepidermal use</td></tr><tr><td style=\"white-space:nowrap\">100000075264<a name=\"routes-and-methods-of-administration-ema-cs-100000075264\"> </a></td><td>Retrobulbar use</td></tr><tr><td style=\"white-space:nowrap\">100000075554<a name=\"routes-and-methods-of-administration-ema-cs-100000075554\"> </a></td><td>Submucosal use</td></tr><tr><td style=\"white-space:nowrap\">100000111213<a name=\"routes-and-methods-of-administration-ema-cs-100000111213\"> </a></td><td>Intracorneal use</td></tr><tr><td style=\"white-space:nowrap\">100000075248<a name=\"routes-and-methods-of-administration-ema-cs-100000075248\"> </a></td><td>Infiltration</td></tr><tr><td style=\"white-space:nowrap\">100000075249<a name=\"routes-and-methods-of-administration-ema-cs-100000075249\"> </a></td><td>Implantation</td></tr><tr><td style=\"white-space:nowrap\">100000075269<a name=\"routes-and-methods-of-administration-ema-cs-100000075269\"> </a></td><td>Iontophoresis</td></tr><tr><td style=\"white-space:nowrap\">100000075274<a name=\"routes-and-methods-of-administration-ema-cs-100000075274\"> </a></td><td>Intracisternal use</td></tr><tr><td style=\"white-space:nowrap\">100000075275<a name=\"routes-and-methods-of-administration-ema-cs-100000075275\"> </a></td><td>Buccal use</td></tr><tr><td style=\"white-space:nowrap\">100000075276<a name=\"routes-and-methods-of-administration-ema-cs-100000075276\"> </a></td><td>Intracartilaginous use</td></tr><tr><td style=\"white-space:nowrap\">100000075556<a name=\"routes-and-methods-of-administration-ema-cs-100000075556\"> </a></td><td>Extracorporeal use</td></tr><tr><td style=\"white-space:nowrap\">200000010645<a name=\"routes-and-methods-of-administration-ema-cs-200000010645\"> </a></td><td>Transmammary</td></tr><tr><td style=\"white-space:nowrap\">200000024875<a name=\"routes-and-methods-of-administration-ema-cs-200000024875\"> </a></td><td>Extrapleural use</td></tr><tr><td style=\"white-space:nowrap\">100000125763<a name=\"routes-and-methods-of-administration-ema-cs-100000125763\"> </a></td><td>Intracameral use</td></tr><tr><td style=\"white-space:nowrap\">100000155948<a name=\"routes-and-methods-of-administration-ema-cs-100000155948\"> </a></td><td>Intraportal use</td></tr><tr><td style=\"white-space:nowrap\">100000156091<a name=\"routes-and-methods-of-administration-ema-cs-100000156091\"> </a></td><td>Intracholangiopancreatic use</td></tr><tr><td style=\"white-space:nowrap\">100000156092<a name=\"routes-and-methods-of-administration-ema-cs-100000156092\"> </a></td><td>Peritumoral use</td></tr><tr><td style=\"white-space:nowrap\">100000157797<a name=\"routes-and-methods-of-administration-ema-cs-100000157797\"> </a></td><td>Intraglandular use</td></tr><tr><td style=\"white-space:nowrap\">100000170084<a name=\"routes-and-methods-of-administration-ema-cs-100000170084\"> </a></td><td>Subretinal use</td></tr><tr><td style=\"white-space:nowrap\">100000170279<a name=\"routes-and-methods-of-administration-ema-cs-100000170279\"> </a></td><td>Intracerebroventricular use</td></tr><tr><td style=\"white-space:nowrap\">200000010644<a name=\"routes-and-methods-of-administration-ema-cs-200000010644\"> </a></td><td>Transplacental</td></tr><tr><td style=\"white-space:nowrap\">100000073576<a name=\"routes-and-methods-of-administration-ema-cs-100000073576\"> </a></td><td>Gastroenteral use</td></tr><tr><td style=\"white-space:nowrap\">100000073613<a name=\"routes-and-methods-of-administration-ema-cs-100000073613\"> </a></td><td>Intravitreal use</td></tr><tr><td style=\"white-space:nowrap\">100000073638<a name=\"routes-and-methods-of-administration-ema-cs-100000073638\"> </a></td><td>Urethral use</td></tr><tr><td style=\"white-space:nowrap\">200000010643<a name=\"routes-and-methods-of-administration-ema-cs-200000010643\"> </a></td><td>Topical</td></tr><tr><td style=\"white-space:nowrap\">100000073592<a name=\"routes-and-methods-of-administration-ema-cs-100000073592\"> </a></td><td>Intracerebral use</td></tr><tr><td style=\"white-space:nowrap\">100000073621<a name=\"routes-and-methods-of-administration-ema-cs-100000073621\"> </a></td><td>Oropharyngeal use</td></tr><tr><td style=\"white-space:nowrap\">100000073608<a name=\"routes-and-methods-of-administration-ema-cs-100000073608\"> </a></td><td>Intrathecal use</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073345"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "Routes_And_Methods_Of_Administration_EMA_CS"]; # 
+  fhir:CodeSystem.title [ fhir:value "Routes and Methods of Administration EMA"]; # 
+  fhir:CodeSystem.status [ fhir:value "draft"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-03T15:45:39+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "UNICOM"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Routes and methods of medication administration. Based on EDQM, re-coded with RMS codes."]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "136"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073564" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Auricular use" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073570" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Endosinusial use" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073571" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Endotracheopulmonary use" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073566" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous use" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073567" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental use" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073569" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Endocervical use" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073572" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Epidural use" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073577" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastric use" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073587" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraarterial use" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073589" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intrabursal use" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073594" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intracoronary use" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073595" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intradermal use" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073601" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraocular use" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073591" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intracavernous use" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073579" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Haemodialysis" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073588" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraarticular use" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073598" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intralymphatic use" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073604" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraperitoneal use" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073607" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intrasternal use" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073620" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal use" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073597" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intralesional use" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073614" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laryngopharyngeal use" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073625" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Periodontal use" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075557" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Periosseous use" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075266" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Parenteral use" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075267" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other use" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075268" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ophthalmic use" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075270" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intravenous drip use" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075261" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown use" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075260" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraprostatic use" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075262" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Topical use" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075263" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Subdermal use" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075265" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Respiratory use" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "100000111216" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Occlusive dressing technique use" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075237" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraileal use" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075238" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intragastric use" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075240" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intradural use" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075241" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraduodenal use" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075242" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intranasal use" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075243" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Local use" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075244" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not mentioned" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075245" ];
+     fhir:CodeSystem.concept.display [ fhir:value "In vitro use" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075246" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraabdominal use" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075247" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Interstitial use" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "100000111217" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transplacental use" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075251" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conjunctival use" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075252" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transmucosal use" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075253" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Soft tissue use" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075254" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Percutaneous use" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075255" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasogastric use" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075256" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraventricular use" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075257" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intravascular use" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075258" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intratympanic use" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075271" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intravenous bolus use" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075272" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intratracheal use" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075273" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intrahepatic use" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075555" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intramuscular and intravenous use" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075558" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Subgingival use" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075559" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Epicutaneous use" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075673" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraepidermal use" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "100000170847" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Coarse spray" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "200000010603" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraputaminal use" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "200000012510" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Instillation" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "200000016447" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Injection" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "200000016448" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for infusion" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "200000016449" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Infusion" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "200000017716" ];
+     fhir:CodeSystem.concept.display [ fhir:value "External use" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "200000017722" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Preservative solution" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "200000017723" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for solution for infusion" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "200000017724" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for injection" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "200000017725" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Irrigation" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "200000022791" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intrafollicular use" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "200000022792" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intratesticular use" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075250" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Enteral use" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "100000111215" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intrathoracic use" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "100000111214" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intrameningeal use" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143556" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nail use" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073584" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation use" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073585" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intestinal use" ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073573" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Epilesional use" ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073574" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Extraamniotic use" ]
+  ], [
+     fhir:index 81;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073578" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gingival use" ]
+  ], [
+     fhir:index 82;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073586" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraamniotic use" ]
+  ], [
+     fhir:index 83;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073590" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intracardiac use" ]
+  ], [
+     fhir:index 84;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073615" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal use" ]
+  ], [
+     fhir:index 85;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073617" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ocular use" ]
+  ], [
+     fhir:index 86;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073593" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intracervical use" ]
+  ], [
+     fhir:index 87;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073596" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intradiscal use" ]
+  ], [
+     fhir:index 88;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073600" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intramuscular use" ]
+  ], [
+     fhir:index 89;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073602" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraosseous use" ]
+  ], [
+     fhir:index 90;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073603" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intrapericardial use" ]
+  ], [
+     fhir:index 91;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073605" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intrapleural use" ]
+  ], [
+     fhir:index 92;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073609" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intratumoral use" ]
+  ], [
+     fhir:index 93;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073610" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intrauterine use" ]
+  ], [
+     fhir:index 94;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073611" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intravenous use" ]
+  ], [
+     fhir:index 95;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073612" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intravesical use" ]
+  ], [
+     fhir:index 96;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073619" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral use" ]
+  ], [
+     fhir:index 97;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073623" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Periarticular use" ]
+  ], [
+     fhir:index 98;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073624" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Perineural use" ]
+  ], [
+     fhir:index 99;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073626" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Posterior juxtascleral use" ]
+  ], [
+     fhir:index 100;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073628" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rectal use" ]
+  ], [
+     fhir:index 101;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073629" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Route of administration not applicable" ]
+  ], [
+     fhir:index 102;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073630" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Skin scarification" ]
+  ], [
+     fhir:index 103;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073632" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Subconjunctival use" ]
+  ], [
+     fhir:index 104;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073633" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Subcutaneous use" ]
+  ], [
+     fhir:index 105;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073634" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sublingual use" ]
+  ], [
+     fhir:index 106;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073637" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transdermal use" ]
+  ], [
+     fhir:index 107;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073639" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal use" ]
+  ], [
+     fhir:index 108;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075239" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraepidermal use" ]
+  ], [
+     fhir:index 109;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075264" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Retrobulbar use" ]
+  ], [
+     fhir:index 110;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075554" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Submucosal use" ]
+  ], [
+     fhir:index 111;
+     fhir:CodeSystem.concept.code [ fhir:value "100000111213" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intracorneal use" ]
+  ], [
+     fhir:index 112;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075248" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Infiltration" ]
+  ], [
+     fhir:index 113;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075249" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Implantation" ]
+  ], [
+     fhir:index 114;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075269" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Iontophoresis" ]
+  ], [
+     fhir:index 115;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075274" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intracisternal use" ]
+  ], [
+     fhir:index 116;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075275" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Buccal use" ]
+  ], [
+     fhir:index 117;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075276" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intracartilaginous use" ]
+  ], [
+     fhir:index 118;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075556" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Extracorporeal use" ]
+  ], [
+     fhir:index 119;
+     fhir:CodeSystem.concept.code [ fhir:value "200000010645" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transmammary" ]
+  ], [
+     fhir:index 120;
+     fhir:CodeSystem.concept.code [ fhir:value "200000024875" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Extrapleural use" ]
+  ], [
+     fhir:index 121;
+     fhir:CodeSystem.concept.code [ fhir:value "100000125763" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intracameral use" ]
+  ], [
+     fhir:index 122;
+     fhir:CodeSystem.concept.code [ fhir:value "100000155948" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraportal use" ]
+  ], [
+     fhir:index 123;
+     fhir:CodeSystem.concept.code [ fhir:value "100000156091" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intracholangiopancreatic use" ]
+  ], [
+     fhir:index 124;
+     fhir:CodeSystem.concept.code [ fhir:value "100000156092" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Peritumoral use" ]
+  ], [
+     fhir:index 125;
+     fhir:CodeSystem.concept.code [ fhir:value "100000157797" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraglandular use" ]
+  ], [
+     fhir:index 126;
+     fhir:CodeSystem.concept.code [ fhir:value "100000170084" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Subretinal use" ]
+  ], [
+     fhir:index 127;
+     fhir:CodeSystem.concept.code [ fhir:value "100000170279" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intracerebroventricular use" ]
+  ], [
+     fhir:index 128;
+     fhir:CodeSystem.concept.code [ fhir:value "200000010644" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transplacental" ]
+  ], [
+     fhir:index 129;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073576" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastroenteral use" ]
+  ], [
+     fhir:index 130;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073613" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intravitreal use" ]
+  ], [
+     fhir:index 131;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073638" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urethral use" ]
+  ], [
+     fhir:index 132;
+     fhir:CodeSystem.concept.code [ fhir:value "200000010643" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Topical" ]
+  ], [
+     fhir:index 133;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073592" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intracerebral use" ]
+  ], [
+     fhir:index 134;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073621" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oropharyngeal use" ]
+  ], [
+     fhir:index 135;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073608" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intrathecal use" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/routes-and-methods-of-administration-ema-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PackagedProductDefinition xmlns="http://hl7.org/fhir">
+  <id value="Agen-5mg-Tablet-EE-PPD-1109887-B"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PackagedProductDefinition</b><a name="Agen-5mg-Tablet-EE-PPD-1109887-B"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PackagedProductDefinition &quot;Agen-5mg-Tablet-EE-PPD-1109887-B&quot; </p></div><p><b>identifier</b>: id: EE-100002580-15547-1109887</p><p><b>packageFor</b>: <a href="MedicinalProductDefinition-Agen-5mg-Tablet-EE-MPD.html">MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD</a></p><p><b>containedItemQuantity</b>: 30 Tablet<span style="background: LightGoldenRodYellow"> (Details: http://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = '200000002152')</span></p><p><b>description</b>: Tabletid on pakendatud PVC/Al blistritesse (valged).</p><h3>MarketingStatuses</h3><table class="grid"><tr><td>-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td>*</td><td>Republic of Estonia <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (100000000002#100000000388)</span></td><td>Marketed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (100000072052#100000072083)</span></td></tr></table><blockquote><p><b>package</b></p><p><b>type</b>: Box <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (100000073346#100000073498)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: Cardboard <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (200000003199#200000003529)</span></p><blockquote><p><b>package</b></p><p><b>type</b>: Blister <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (100000073346#100000073496)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (200000003199#200000003222)</span>, Aluminium <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (200000003199#200000003200)</span></p></blockquote></blockquote></div>
+  </text>
+  <identifier>
+    <system value="http://ema.europa.eu/example/pcid"/>
+    <value value="EE-100002580-15547-1109887"/>
+  </identifier>
+  <packageFor>
+    <reference value="MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD"/>
+  </packageFor>
+  <containedItemQuantity>
+    <value value="30"/>
+    <unit value="Tablet"/>
+    <system value="http://spor.ema.europa.eu/v1/lists/200000000014"/>
+    <code value="200000002152"/>
+  </containedItemQuantity>
+  <description value="Tabletid on pakendatud PVC/Al blistritesse (valged)."/>
+  <marketingStatus>
+    <country>
+      <coding>
+        <system value="http://spor.ema.europa.eu/v1/lists/100000000002"/>
+        <code value="100000000388"/>
+        <display value="Republic of Estonia"/>
+      </coding>
+    </country>
+    <status>
+      <coding>
+        <system value="http://spor.ema.europa.eu/v1/lists/100000072052"/>
+        <code value="100000072083"/>
+        <display value="Marketed"/>
+      </coding>
+    </status>
+  </marketingStatus>
+  <package>
+    <type>
+      <coding>
+        <system value="http://spor.ema.europa.eu/v1/lists/100000073346"/>
+        <code value="100000073498"/>
+        <display value="Box"/>
+      </coding>
+    </type>
+    <quantity value="1"/>
+    <material>
+      <coding>
+        <system value="http://spor.ema.europa.eu/v1/lists/200000003199"/>
+        <code value="200000003529"/>
+        <display value="Cardboard"/>
+      </coding>
+    </material>
+    <package>
+      <type>
+        <coding>
+          <system value="http://spor.ema.europa.eu/v1/lists/100000073346"/>
+          <code value="100000073496"/>
+          <display value="Blister"/>
+        </coding>
+      </type>
+      <quantity value="1"/>
+      <material>
+        <coding>
+          <system value="http://spor.ema.europa.eu/v1/lists/200000003199"/>
+          <code value="200000003222"/>
+          <display value="PolyVinyl Chloride"/>
+        </coding>
+      </material>
+      <material>
+        <coding>
+          <system value="http://spor.ema.europa.eu/v1/lists/200000003199"/>
+          <code value="200000003200"/>
+          <display value="Aluminium"/>
+        </coding>
+      </material>
+      <containedItem>
+        <item>
+          <reference>
+            <reference value="ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID"/>
+          </reference>
+        </item>
+        <amount>
+          <value value="30"/>
+        </amount>
+      </containedItem>
+    </package>
+  </package>
+</PackagedProductDefinition>

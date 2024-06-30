@@ -1,0 +1,87 @@
+﻿UnicomIG : Validation Results
+=========================================
+
+err = 6, warn = 35, info = 11
+IG Publisher Version: 1.2.10
+Generated Sun Oct 23 16:04:12 UTC 2022. FHIR version 5.0.0-ballot for hl7.eu.fhir.unicom#0.1.0 (canonical = http://unicom-project.eu/fhir)
+ Build Errors : 0 / 4 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.unicom : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicinalProductDefinition-exampleMPD : 3 / 0 / 4
+ /github/workspace/fsh-generated/resources/StructureDefinition-CD : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DT : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-FullMedicinalProduct : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-II : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MPDBundle : 3 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PPLMedicinalProductDefinition : 0 / 3 / 9
+ /github/workspace/fsh-generated/resources/StructureDefinition-QT : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ST : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-TS : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-class : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-untyped : 0 / 2 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicinalProductDefinition/exampleMPD.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.unicom.json ==
+== fsh-generated/resources/MedicinalProductDefinition-exampleMPD.json ==
+INFORMATION: MedicinalProductDefinition/exampleMPD: MedicinalProductDefinition.identifier[1]: This element does not match any known slice defined in the profile http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition
+ERROR: MedicinalProductDefinition/exampleMPD: MedicinalProductDefinition.name[0].part[0]: Slicing cannot be evaluated: Could not match discriminator ([type.coding.code]) for slice MedicinalProductDefinition.name.part:invented in profile http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: MedicinalProductDefinition/exampleMPD: MedicinalProductDefinition.name[0].part[0]: Slicing cannot be evaluated: Could not match discriminator ([type.coding.code]) for slice MedicinalProductDefinition.name.part:strength in profile http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+ERROR: MedicinalProductDefinition/exampleMPD: MedicinalProductDefinition.name[0].part[0]: Slicing cannot be evaluated: Could not match discriminator ([type.coding.code]) for slice MedicinalProductDefinition.name.part:doseForm in profile http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition - the discriminator [type.coding.code] does not have fixed value, binding or existence assertions
+INFORMATION: MedicinalProductDefinition/exampleMPD: MedicinalProductDefinition.name[0]: MedicinalProductDefinition.name.part:invented: Unable to check minimum required (MedicinalProductDefinition.name.part) due to lack of slicing validation (from http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition)
+INFORMATION: MedicinalProductDefinition/exampleMPD: MedicinalProductDefinition.name[0].part[0].type.coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/#/lists/220000000000/terms' is unknown so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-CD.json ==
+WARNING: StructureDefinition/CD: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace ' coded '
+WARNING: StructureDefinition/CD: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace ' coded '
+WARNING: StructureDefinition.where(url = 'http://unicom-project.eu/fhir/StructureDefinition/CD'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-DT.json ==
+WARNING: StructureDefinition/DT: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace ' Date '
+WARNING: StructureDefinition/DT: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace ' Date '
+WARNING: StructureDefinition.where(url = 'http://unicom-project.eu/fhir/StructureDefinition/DT'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-FullMedicinalProduct.json ==
+WARNING: StructureDefinition/FullMedicinalProduct: StructureDefinition.snapshot.element[62]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters or code generation tools may be broken' Failed
+WARNING: StructureDefinition/FullMedicinalProduct: StructureDefinition.differential.element[62]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters or code generation tools may be broken' Failed
+== fsh-generated/resources/StructureDefinition-II.json ==
+WARNING: StructureDefinition/II: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace ' identifier '
+WARNING: StructureDefinition/II: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace ' identifier '
+WARNING: StructureDefinition.where(url = 'http://unicom-project.eu/fhir/StructureDefinition/II'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-MPDBundle.json ==
+WARNING: StructureDefinition/MPDBundle: StructureDefinition.snapshot.element[0]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
+ERROR: StructureDefinition/MPDBundle: StructureDefinition.snapshot.element[13].binding.extension[0]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: StructureDefinition/MPDBundle: StructureDefinition.snapshot.element[13].binding.extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName' definition is for a simple extension, so it must contain a value, not extensions
+ERROR: StructureDefinition/MPDBundle: StructureDefinition.snapshot.element[13].binding.extension[0]: Extension.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName)
+WARNING: StructureDefinition.where(url = 'http://unicom-project.eu/fhir/StructureDefinition/MPDBundle'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PPLMedicinalProductDefinition.json ==
+WARNING: StructureDefinition/PPLMedicinalProductDefinition: StructureDefinition.snapshot.element[0]: Rule eld-27: 'Mappings SHOULD be unique by key' Failed
+INFORMATION: StructureDefinition/PPLMedicinalProductDefinition: StructureDefinition.snapshot.element[29].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/#/lists/100000000004/terms' is unknown so the code cannot be validated
+WARNING: StructureDefinition/PPLMedicinalProductDefinition: StructureDefinition.snapshot.element[74]: Rule eld-25: 'Order has no meaning (and cannot be asserted to have meaning), so enforcing rules on order is improper' Failed
+INFORMATION: StructureDefinition/PPLMedicinalProductDefinition: StructureDefinition.snapshot.element[85].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/#/lists/220000000000/terms' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/PPLMedicinalProductDefinition: StructureDefinition.snapshot.element[91].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/#/lists/220000000000/terms' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/PPLMedicinalProductDefinition: StructureDefinition.snapshot.element[97].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/#/lists/220000000000/terms' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/PPLMedicinalProductDefinition: StructureDefinition.differential.element[6].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/#/lists/100000000004/terms' is unknown so the code cannot be validated
+WARNING: StructureDefinition/PPLMedicinalProductDefinition: StructureDefinition.differential.element[8]: Rule eld-25: 'Order has no meaning (and cannot be asserted to have meaning), so enforcing rules on order is improper' Failed
+INFORMATION: StructureDefinition/PPLMedicinalProductDefinition: StructureDefinition.differential.element[10].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/#/lists/220000000000/terms' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/PPLMedicinalProductDefinition: StructureDefinition.differential.element[12].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/#/lists/220000000000/terms' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/PPLMedicinalProductDefinition: StructureDefinition.differential.element[14].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://spor.ema.europa.eu/rmswi/#/lists/220000000000/terms' is unknown so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-QT.json ==
+WARNING: StructureDefinition/QT: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace ' quantity '
+WARNING: StructureDefinition/QT: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace ' quantity '
+WARNING: StructureDefinition.where(url = 'http://unicom-project.eu/fhir/StructureDefinition/QT'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-ST.json ==
+WARNING: StructureDefinition/ST: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace ' text '
+WARNING: StructureDefinition/ST: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace ' text '
+WARNING: StructureDefinition.where(url = 'http://unicom-project.eu/fhir/StructureDefinition/ST'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-TS.json ==
+WARNING: StructureDefinition/TS: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace ' TimeStamp '
+WARNING: StructureDefinition/TS: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace ' TimeStamp '
+WARNING: StructureDefinition.where(url = 'http://unicom-project.eu/fhir/StructureDefinition/TS'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-class.json ==
+WARNING: StructureDefinition/class: StructureDefinition: Rule cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: StructureDefinition/class: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace ' group '
+WARNING: StructureDefinition/class: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace ' group '
+WARNING: StructureDefinition.where(url = 'http://unicom-project.eu/fhir/StructureDefinition/class'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-untyped.json ==
+WARNING: StructureDefinition/untyped: StructureDefinition: Rule cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: StructureDefinition.where(url = 'http://unicom-project.eu/fhir/StructureDefinition/untyped'): The Implementation Guide contains no examples for this data type profile

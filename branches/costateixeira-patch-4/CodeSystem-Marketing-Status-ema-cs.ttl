@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/Marketing-Status-ema-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Marketing-Status-ema-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://spor.ema.europa.eu/v1/lists/100000072052</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100000072074<a name=\"Marketing-Status-ema-cs-100000072074\"> </a></td><td>Not marketed</td></tr><tr><td style=\"white-space:nowrap\">100000072083<a name=\"Marketing-Status-ema-cs-100000072083\"> </a></td><td>Marketed</td></tr><tr><td style=\"white-space:nowrap\">200000026055<a name=\"Marketing-Status-ema-cs-200000026055\"> </a></td><td>Never marketed</td></tr><tr><td style=\"white-space:nowrap\">230000000000<a name=\"Marketing-Status-ema-cs-230000000000\"> </a></td><td>Temporarily unavailable</td></tr><tr><td style=\"white-space:nowrap\">100000072075<a name=\"Marketing-Status-ema-cs-100000072075\"> </a></td><td>No data provided</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072052"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Marketing_Status_EMA_CS"] ; # 
+  fhir:title [ fhir:v "Marketing Status EMA"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-11-14T18:51:37+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Marketing status of the product in given country. EMA SPOR RMS codes."] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compositional [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "100000072074" ] ;
+     fhir:display [ fhir:v "Not marketed" ]
+  ] [
+     fhir:code [ fhir:v "100000072083" ] ;
+     fhir:display [ fhir:v "Marketed" ]
+  ] [
+     fhir:code [ fhir:v "200000026055" ] ;
+     fhir:display [ fhir:v "Never marketed" ]
+  ] [
+     fhir:code [ fhir:v "230000000000" ] ;
+     fhir:display [ fhir:v "Temporarily unavailable" ]
+  ] [
+     fhir:code [ fhir:v "100000072075" ] ;
+     fhir:display [ fhir:v "No data provided" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

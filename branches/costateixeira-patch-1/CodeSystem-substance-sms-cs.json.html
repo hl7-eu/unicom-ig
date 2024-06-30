@@ -1,0 +1,755 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Substances EMA SPOR SMS - JSON Representation - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.100"}
+    h3,h4,h5,h6{--heading-prefix:"7.100"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+      <li>
+        <a href="testserver.html">Testing Tool Box</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Substances EMA SPOR SMS</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-substance-sms-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-substance-sms-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-substance-sms-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Substances EMA SPOR SMS - JSON Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2024-05-03
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-substance-sms-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-substance-sms-cs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
+{
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">id</a>" : "substance-sms-cs",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://spor.ema.europa.eu/v2/SubstanceDefinition&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000085259&lt;a name=\&quot;substance-sms-cs-100000085259\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amlodipine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000089370&lt;a name=\&quot;substance-sms-cs-100000089370\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AMLODIPINE MALEATE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000089571&lt;a name=\&quot;substance-sms-cs-100000089571\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amlodipine mesilate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000090079&lt;a name=\&quot;substance-sms-cs-100000090079\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amlodipine besilate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;300000027652&lt;a name=\&quot;substance-sms-cs-300000027652\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amlodipine benzoate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091596&lt;a name=\&quot;substance-sms-cs-100000091596\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amoxicillin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000090113&lt;a name=\&quot;substance-sms-cs-100000090113\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amoxicillin sodium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092629&lt;a name=\&quot;substance-sms-cs-100000092629\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amoxicillin trihydrate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092127&lt;a name=\&quot;substance-sms-cs-100000092127\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Carbamazepine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092667&lt;a name=\&quot;substance-sms-cs-100000092667\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cefuroxime&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000093039&lt;a name=\&quot;substance-sms-cs-100000093039\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cefuroxime axetil&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091436&lt;a name=\&quot;substance-sms-cs-100000091436\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cefuroxime sodium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000089842&lt;a name=\&quot;substance-sms-cs-100000089842\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clavulanic acid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000093061&lt;a name=\&quot;substance-sms-cs-100000093061\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Potassium clavulanate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092121&lt;a name=\&quot;substance-sms-cs-100000092121\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ciclosporin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000155842&lt;a name=\&quot;substance-sms-cs-100000155842\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CICLOSPORIN A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000084546&lt;a name=\&quot;substance-sms-cs-100000084546\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clomipramine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000090503&lt;a name=\&quot;substance-sms-cs-100000090503\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clomipramine hydrochloride&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092074&lt;a name=\&quot;substance-sms-cs-100000092074\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clotrimazole&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000088282&lt;a name=\&quot;substance-sms-cs-100000088282\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chloroquine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000084735&lt;a name=\&quot;substance-sms-cs-100000084735\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHLOROQUINE HYDROCHLORIDE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000090551&lt;a name=\&quot;substance-sms-cs-100000090551\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chloroquine sulfate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092628&lt;a name=\&quot;substance-sms-cs-100000092628\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chloroquine phosphate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000129152&lt;a name=\&quot;substance-sms-cs-100000129152\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;CHLOROQUINE DIPHOSPHATE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092362&lt;a name=\&quot;substance-sms-cs-100000092362\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diazepam&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091074&lt;a name=\&quot;substance-sms-cs-100000091074\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diclofenac diethylamine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092368&lt;a name=\&quot;substance-sms-cs-100000092368\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diclofenac potassium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092798&lt;a name=\&quot;substance-sms-cs-100000092798\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diclofenac&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000085789&lt;a name=\&quot;substance-sms-cs-100000085789\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diclofenac epolamine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092272&lt;a name=\&quot;substance-sms-cs-100000092272\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diclofenac sodium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092375&lt;a name=\&quot;substance-sms-cs-100000092375\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drospirenone&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092359&lt;a name=\&quot;substance-sms-cs-100000092359\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enalapril&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000080222&lt;a name=\&quot;substance-sms-cs-100000080222\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enalaprilat&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091343&lt;a name=\&quot;substance-sms-cs-100000091343\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enalapril maleate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000153305&lt;a name=\&quot;substance-sms-cs-100000153305\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enalapril sodium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000085598&lt;a name=\&quot;substance-sms-cs-100000085598\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enoxaparin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000090152&lt;a name=\&quot;substance-sms-cs-100000090152\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enoxaparin sodium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000090229&lt;a name=\&quot;substance-sms-cs-100000090229\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ergocalciferol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091721&lt;a name=\&quot;substance-sms-cs-100000091721\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ethinylestradiol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000087614&lt;a name=\&quot;substance-sms-cs-100000087614\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Glyceryl trinitrate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000084238&lt;a name=\&quot;substance-sms-cs-100000084238\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Goserelin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000086673&lt;a name=\&quot;substance-sms-cs-100000086673\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Goserelin acetate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000090365&lt;a name=\&quot;substance-sms-cs-100000090365\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ibuprofen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000085009&lt;a name=\&quot;substance-sms-cs-100000085009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ibuprofen sodium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000090111&lt;a name=\&quot;substance-sms-cs-100000090111\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ibuprofen lysine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092228&lt;a name=\&quot;substance-sms-cs-100000092228\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ibuprofen arginine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000175414&lt;a name=\&quot;substance-sms-cs-100000175414\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ibuprofen isobutanolammonium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000140150&lt;a name=\&quot;substance-sms-cs-100000140150\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ibuprofen sodium dihydrate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000133453&lt;a name=\&quot;substance-sms-cs-100000133453\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ibuprofen D,L-lysinate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000079980&lt;a name=\&quot;substance-sms-cs-100000079980\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;IBUPROFEN 1-IDROSSIMETIL-1-METIL ETILAMMONIO&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091825&lt;a name=\&quot;substance-sms-cs-100000091825\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Imatinib mesilate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091894&lt;a name=\&quot;substance-sms-cs-100000091894\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Imatinib&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000085460&lt;a name=\&quot;substance-sms-cs-100000085460\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Insulin glargine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091697&lt;a name=\&quot;substance-sms-cs-100000091697\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Itraconazole&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091713&lt;a name=\&quot;substance-sms-cs-100000091713\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lidocaine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000139489&lt;a name=\&quot;substance-sms-cs-100000139489\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lidocaine hydrochloride&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000085448&lt;a name=\&quot;substance-sms-cs-100000085448\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Metformin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091366&lt;a name=\&quot;substance-sms-cs-100000091366\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Metformin hydrochloride&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091840&lt;a name=\&quot;substance-sms-cs-100000091840\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;METFORMIN EMBONATE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091372&lt;a name=\&quot;substance-sms-cs-100000091372\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Morphine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000076239&lt;a name=\&quot;substance-sms-cs-100000076239\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Morphine sulfate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000090494&lt;a name=\&quot;substance-sms-cs-100000090494\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Morphine hydrochloride&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000076257&lt;a name=\&quot;substance-sms-cs-100000076257\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MORPHINE TARTRATE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092047&lt;a name=\&quot;substance-sms-cs-100000092047\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Omeprazole&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000085918&lt;a name=\&quot;substance-sms-cs-100000085918\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Omeprazole magnesium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000090186&lt;a name=\&quot;substance-sms-cs-100000090186\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Omeprazole sodium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000090270&lt;a name=\&quot;substance-sms-cs-100000090270\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Paracetamol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091461&lt;a name=\&quot;substance-sms-cs-100000091461\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Perindopril&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000088816&lt;a name=\&quot;substance-sms-cs-100000088816\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Perindopril arginine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091602&lt;a name=\&quot;substance-sms-cs-100000091602\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Perindopril tert-butylamine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000130680&lt;a name=\&quot;substance-sms-cs-100000130680\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Perindopril tert-butylamin monohydrate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000141420&lt;a name=\&quot;substance-sms-cs-100000141420\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Perindopril tosilate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091518&lt;a name=\&quot;substance-sms-cs-100000091518\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Calcium carbonate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091629&lt;a name=\&quot;substance-sms-cs-100000091629\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Salbutamol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091786&lt;a name=\&quot;substance-sms-cs-100000091786\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Simvastatin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092635&lt;a name=\&quot;substance-sms-cs-100000092635\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hydrocortisone&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000086186&lt;a name=\&quot;substance-sms-cs-100000086186\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Meglumine acetrizoate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092550&lt;a name=\&quot;substance-sms-cs-100000092550\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hydrocortisone sodium succinate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000086711&lt;a name=\&quot;substance-sms-cs-100000086711\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hydrocortisone valerate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000092260&lt;a name=\&quot;substance-sms-cs-100000092260\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hydrocortisone acetate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000085172&lt;a name=\&quot;substance-sms-cs-100000085172\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hydrocortisone butyrate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000084215&lt;a name=\&quot;substance-sms-cs-100000084215\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hydrocortisone aceponate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000086187&lt;a name=\&quot;substance-sms-cs-100000086187\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hydrocortisone cipionate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000086691&lt;a name=\&quot;substance-sms-cs-100000086691\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HYDROCORTISONE SODIUM PHOSPHATE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000090564&lt;a name=\&quot;substance-sms-cs-100000090564\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Salbutamol sulfate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000115886&lt;a name=\&quot;substance-sms-cs-100000115886\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tafluprost&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000089193&lt;a name=\&quot;substance-sms-cs-100000089193\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Teriparatide&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000084795&lt;a name=\&quot;substance-sms-cs-100000084795\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;TERIPARATIDE ACETATE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000077198&lt;a name=\&quot;substance-sms-cs-100000077198\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tramadol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000093275&lt;a name=\&quot;substance-sms-cs-100000093275\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tramadol hydrochloride&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000089314&lt;a name=\&quot;substance-sms-cs-100000089314\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trastuzumab&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000128434&lt;a name=\&quot;substance-sms-cs-100000128434\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trastuzumab emtansine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000174462&lt;a name=\&quot;substance-sms-cs-100000174462\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trastuzumab deruxtecan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000089154&lt;a name=\&quot;substance-sms-cs-100000089154\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varenicline&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091746&lt;a name=\&quot;substance-sms-cs-100000091746\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varenicline tartrate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091531&lt;a name=\&quot;substance-sms-cs-100000091531\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ethinylestradiol betadex clathrate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000090052&lt;a name=\&quot;substance-sms-cs-100000090052\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LACTOSE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000084759&lt;a name=\&quot;substance-sms-cs-100000084759\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PLACEBO&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000093305&lt;a name=\&quot;substance-sms-cs-100000093305\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lactose monohydrate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000088000&lt;a name=\&quot;substance-sms-cs-100000088000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Valsartan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000091737&lt;a name=\&quot;substance-sms-cs-100000091737\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hydrochlorothiazide&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">url</a>" : "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">name</a>" : "Substance_SMS_CS",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">title</a>" : "Substances EMA SPOR SMS",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">date</a>" : "2024-05-03T19:27:00+00:00",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.publisher">publisher</a>" : "UNICOM",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "UNICOM",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://unicom-project.eu"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.description">description</a>" : "UNICOM PPL substances from EMA SPOR SMS",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.compositional">compositional</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">count</a>" : 101,
+  "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000085259",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Amlodipine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000089370",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "AMLODIPINE MALEATE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000089571",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Amlodipine mesilate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000090079",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Amlodipine besilate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "300000027652",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Amlodipine benzoate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091596",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Amoxicillin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000090113",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Amoxicillin sodium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092629",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Amoxicillin trihydrate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092127",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Carbamazepine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092667",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Cefuroxime"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000093039",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Cefuroxime axetil"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091436",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Cefuroxime sodium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000089842",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Clavulanic acid"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000093061",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Potassium clavulanate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092121",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ciclosporin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000155842",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "CICLOSPORIN A"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000084546",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Clomipramine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000090503",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Clomipramine hydrochloride"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092074",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Clotrimazole"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000088282",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Chloroquine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000084735",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "CHLOROQUINE HYDROCHLORIDE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000090551",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Chloroquine sulfate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092628",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Chloroquine phosphate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000129152",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "CHLOROQUINE DIPHOSPHATE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092362",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diazepam"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091074",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diclofenac diethylamine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092368",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diclofenac potassium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092798",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diclofenac"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000085789",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diclofenac epolamine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092272",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Diclofenac sodium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092375",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Drospirenone"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092359",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Enalapril"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000080222",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Enalaprilat"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091343",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Enalapril maleate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000153305",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Enalapril sodium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000085598",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Enoxaparin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000090152",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Enoxaparin sodium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000090229",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ergocalciferol"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091721",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ethinylestradiol"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000087614",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Glyceryl trinitrate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000084238",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Goserelin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000086673",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Goserelin acetate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000090365",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ibuprofen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000085009",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ibuprofen sodium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000090111",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ibuprofen lysine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092228",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ibuprofen arginine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000175414",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ibuprofen isobutanolammonium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000140150",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ibuprofen sodium dihydrate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000133453",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ibuprofen D,L-lysinate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000079980",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "IBUPROFEN 1-IDROSSIMETIL-1-METIL ETILAMMONIO"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091825",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Imatinib mesilate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091894",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Imatinib"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000085460",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Insulin glargine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091697",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Itraconazole"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091713",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Lidocaine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000139489",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Lidocaine hydrochloride"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000085448",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Metformin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091366",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Metformin hydrochloride"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091840",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "METFORMIN EMBONATE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091372",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Morphine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000076239",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Morphine sulfate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000090494",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Morphine hydrochloride"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000076257",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "MORPHINE TARTRATE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092047",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Omeprazole"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000085918",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Omeprazole magnesium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000090186",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Omeprazole sodium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000090270",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Paracetamol"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091461",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Perindopril"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000088816",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Perindopril arginine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091602",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Perindopril tert-butylamine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000130680",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Perindopril tert-butylamin monohydrate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000141420",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Perindopril tosilate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091518",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Calcium carbonate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091629",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Salbutamol"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091786",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Simvastatin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092635",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Hydrocortisone"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000086186",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Meglumine acetrizoate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092550",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Hydrocortisone sodium succinate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000086711",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Hydrocortisone valerate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000092260",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Hydrocortisone acetate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000085172",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Hydrocortisone butyrate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000084215",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Hydrocortisone aceponate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000086187",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Hydrocortisone cipionate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000086691",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "HYDROCORTISONE SODIUM PHOSPHATE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000090564",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Salbutamol sulfate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000115886",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Tafluprost"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000089193",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Teriparatide"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000084795",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "TERIPARATIDE ACETATE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000077198",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Tramadol"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000093275",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Tramadol hydrochloride"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000089314",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Trastuzumab"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000128434",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Trastuzumab emtansine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000174462",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Trastuzumab deruxtecan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000089154",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Varenicline"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091746",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Varenicline tartrate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091531",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Ethinylestradiol betadex clathrate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000090052",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "LACTOSE"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000084759",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "PLACEBO"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000093305",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Lactose monohydrate"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000088000",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Valsartan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a>" : "100000091737",
+      "<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>" : "Hydrochlorothiazide"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, May 3, 2024 19:27+0000">2024-05-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

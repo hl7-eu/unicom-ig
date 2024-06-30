@@ -1,0 +1,873 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/administration-device> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "administration-device"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>13072000</td><td>Oral applicator</td></tr><tr><td>13114000</td><td>Pen</td></tr><tr><td>30000500</td><td>Administration system</td></tr><tr><td>30002000</td><td>Applicator</td></tr><tr><td>30003000</td><td>Automatic injection device</td></tr><tr><td>30005000</td><td>Balling gun</td></tr><tr><td>30010000</td><td>Brush</td></tr><tr><td>30012000</td><td>Cannula</td></tr><tr><td>30016000</td><td>Cup</td></tr><tr><td>30017000</td><td>Dabbing applicator</td></tr><tr><td>30018200</td><td>Dose dispenser</td></tr><tr><td>30019000</td><td>Dredging applicator</td></tr><tr><td>30021000</td><td>Drench gun</td></tr><tr><td>30022000</td><td>Dropper applicator</td></tr><tr><td>30025000</td><td>High pressure transdermal delivery device</td></tr><tr><td>30026000</td><td>Implanter</td></tr><tr><td>30026500</td><td>Inhaler</td></tr><tr><td>30027000</td><td>In-ovo injection device</td></tr><tr><td>30028000</td><td>Injection needle</td></tr><tr><td>30029000</td><td>Injection syringe</td></tr><tr><td>30030000</td><td>Internal graduated calibration chamber</td></tr><tr><td>30031000</td><td>Intramammary syringe</td></tr><tr><td>30033000</td><td>Measuring device</td></tr><tr><td>30034000</td><td>Measuring spoon</td></tr><tr><td>30037000</td><td>Mouthpiece</td></tr><tr><td>30040000</td><td>Multipuncturer</td></tr><tr><td>30041000</td><td>Nasal applicator</td></tr><tr><td>30042000</td><td>Nebuliser</td></tr><tr><td>30043500</td><td>Needle-free injector</td></tr><tr><td>30044000</td><td>Nozzle</td></tr><tr><td>30045000</td><td>Oral syringe</td></tr><tr><td>30046000</td><td>Pipette</td></tr><tr><td>30053000</td><td>Prick test applicator</td></tr><tr><td>30055000</td><td>Scarifier</td></tr><tr><td>30058000</td><td>Spatula</td></tr><tr><td>30059000</td><td>Spot-on applicator</td></tr><tr><td>30063000</td><td>Stab vaccinator</td></tr><tr><td>30068000</td><td>Vaginal sponge applicator</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>Greek (el)</b></td><td><b>Spanish (es)</b></td><td><b>French (fr)</b></td><td><b>Italian (it)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td>13072000</td><td>Applikator für die orale Verabreichung</td><td>Εξάρτημα χορήγησης  από του στόματος</td><td>Aplicador para uso oral</td><td>Applicateur pour administration orale</td><td>Applicatore per somministrazione orale</td><td>Aplicador oral</td></tr><tr><td>13114000</td><td>Pen</td><td></td><td>Pluma</td><td>Stylo</td><td>Penna</td><td>Caneta</td></tr><tr><td>30000500</td><td>Applikationssystem</td><td>Σύστημα χορήγησης</td><td>Sistema de administración</td><td>Système d'administration</td><td>Sistema di somministrazione</td><td>Sistema de administração</td></tr><tr><td>30002000</td><td>Applikator</td><td>Εξάρτημα χορήγησης</td><td>Aplicador</td><td>Applicateur</td><td>Applicatore</td><td>Aplicador</td></tr><tr><td>30003000</td><td>automatischer Injektor</td><td>Συσκευή αυτόματης ένεσης</td><td>Inyector automático</td><td>Injecteur automatique</td><td>Dispositivo automatico per iniezone</td><td>Seringa automática</td></tr><tr><td>30005000</td><td>Bolusgeber</td><td>Συσκευή χορήγησης βώλων</td><td>Aplicador para administración intrarruminal</td><td>Applicateur pour dispositif intraruminal</td><td>Applicatore per dispositivo intraruminale</td><td>Aplicador para bólus</td></tr><tr><td>30010000</td><td>Pinsel</td><td>Ψύκτρα</td><td>Pincel</td><td>Pinceau applicateur</td><td>Pennello</td><td>Pincel</td></tr><tr><td>30012000</td><td>Kanüle</td><td>Σωληνίσκος</td><td>Cánula</td><td>Canule</td><td>Cannula</td><td>Cânula</td></tr><tr><td>30016000</td><td>Messbecher</td><td>Κύπελλο</td><td>Vaso dosificador</td><td>Godet</td><td>Bicchiere dosatore</td><td>Copo-medida</td></tr><tr><td>30017000</td><td>Verschluss mit Tupfer</td><td>Πώμα με εξάρτημα επάλειψης</td><td>Cierre con aplicador para toques</td><td>Embout applicateur</td><td>Tappo con applicatore</td><td>Fecho com aplicador de contacto</td></tr><tr><td>30018200</td><td>Dosiergerät</td><td>Δοσομετρητής</td><td>Dispensador de dosis</td><td>Dispensateur de dose</td><td>Dispensatore di dose</td><td>Dispensador de dose</td></tr><tr><td>30019000</td><td>Verschluss mit Streuvorrichtung</td><td>Πώμα με εξάρτημα επίπασης</td><td>Cierre espolvoreador</td><td>Embout poudreur</td><td>Aspersore</td><td>Fecho polvilhador</td></tr><tr><td>30021000</td><td>Applikator für eine Flüssigkeit zum Einnehmen</td><td>Συσκευή χορήγησης στοματικών διαλυμάτων</td><td>Pistola dosificadora</td><td>Embout buccal</td><td>Pistola dosatrice per somministrazioni orali</td><td>Pistola doseadora</td></tr><tr><td>30022000</td><td>Verschluss mit Tropfer</td><td>Σταγονομετρικό βιδωτό πώμα</td><td>Tapón cuentagotas</td><td>Embout compte-gouttes</td><td>Contagocce</td><td>Fecho conta-gotas</td></tr><tr><td>30025000</td><td>Intradermaldruckinjektor</td><td>Σύστημα διαδερμικής χορήγησης υπό πίεση</td><td>Dispositivo a presión para liberación transdermica</td><td>Injecteur intradermique sous pression</td><td>Dispositivo sotto pressione a rilascio transdermico</td><td>Injector transdérmico sob pressão</td></tr><tr><td>30026000</td><td>Implantatinjektor</td><td>Συσκευή εμφύτευσης</td><td>Inyector de implantes</td><td>Pistolet pour implant</td><td>Iniettore per impianto</td><td>Seringa para implantes</td></tr><tr><td>30026500</td><td>Inhalator</td><td>Συσκευή εισπνοής</td><td>Inhalador</td><td>Inhalateur</td><td>Inalatore</td><td>Inalador</td></tr><tr><td>30027000</td><td>Eiinjektor</td><td>Συσκευή χορήγησης in ovo</td><td>Inyector automático in ovo</td><td>Dispositif pour injection in ovo</td><td>Dispositivo per iniezione in ovo</td><td>Seringa para via transcoriónica</td></tr><tr><td>30028000</td><td>Injektionsnadel</td><td>Βελόνη σύριγγας</td><td>Aguja para inyección</td><td>Aiguille</td><td>Ago per iniezione</td><td>Agulha para injecção</td></tr><tr><td>30029000</td><td>Injektionsspritze</td><td>Σύριγγα ένεσης</td><td>Jeringa para inyección</td><td>Seringue</td><td>Siringa per iniezione</td><td>Seringa para injectáveis</td></tr><tr><td>30030000</td><td>Intern graduierte Dosierkammer</td><td>Δοσιμετρικό εξάρτημα</td><td>Dispensador de dosis múltiples</td><td>Dispositif à cran d'arrêt</td><td>Bolo ruminale</td><td>Câmara de calibração graduada</td></tr><tr><td>30031000</td><td>Euterinjektor</td><td>Ενδομαστική σύριγγα</td><td>Jeringa intramamaria</td><td>Seringue pour administration intramammaire</td><td>Siringa intramammaria</td><td>Injetor intramamário</td></tr><tr><td>30033000</td><td>Dosierhilfe</td><td>Δοσιμετρικό εξάρτημα</td><td>Dosificador</td><td>Dispositif de mesure</td><td>Dosatore</td><td>Dispositivo doseador</td></tr><tr><td>30034000</td><td>Messlöffel</td><td>Δοσιμετρικό κοχλιάριο</td><td>Cucharilla de medida</td><td>Cuillère-mesure</td><td>Cucchiaio dosatore</td><td>Colher-medida</td></tr><tr><td>30037000</td><td>Mundstück</td><td>Εξάρτημα στοματικής προσαρμογής</td><td>Aplicador bucal</td><td>Embout buccal</td><td>Boccaglio</td><td>Aplicador bucal</td></tr><tr><td>30040000</td><td>Multipunkturstempel</td><td>Εξάρτημα πολλαπλής νύξεως</td><td>Aplicador para punción múltiple</td><td>Applicateur pour multipuncture</td><td>Dispositivo per intradermoreazione per puntura multipla</td><td>Aplicador para punção múltipla</td></tr><tr><td>30041000</td><td>Nasenapplikator</td><td>Εξάρτημα ρινικής προσαρμογής</td><td>Aplicador nasal</td><td>Embout nasal</td><td>Applicatore nasale</td><td>Aplicador nasal</td></tr><tr><td>30042000</td><td>Vernebler</td><td>Εκνεφωτής</td><td>Nebulizador</td><td>Nébuliseur</td><td>Nebulizzatore</td><td>Nebulizador</td></tr><tr><td>30043500</td><td>nadelfreier Injektor</td><td>Σύστημα διαδερμικής χορήγησης χωρίς βελόνα</td><td>Inyector sin aguja</td><td>Injecteur sans aiguille</td><td>Iniettore privo di ago</td><td>Injetor sem seringa</td></tr><tr><td>30044000</td><td>Sprühkopf</td><td>Ρύγχος</td><td>Boquilla</td><td>Embout</td><td>Erogatore</td><td>Adaptador</td></tr><tr><td>30045000</td><td>Applikationsspritze für Zubereitungen zum Einnehmen</td><td>Σύριγγα για χορήγηση από του στόματος</td><td>Jeringa para uso oral</td><td>Seringue pour administration orale</td><td>Siringa per somministrazione orale</td><td>Seringa para uso oral</td></tr><tr><td>30046000</td><td>Pipette</td><td>Πιπέτα</td><td>Pipeta</td><td>Pipette</td><td>Pipetta</td><td>Pipeta</td></tr><tr><td>30053000</td><td>Teststempel</td><td>Εξάρτημα εφαρμογής αλλεργιογόνων δτα νύξεως</td><td>Aplicador para pruebas de alergenos</td><td>Applicateur pour prick test</td><td>Dispositivo per prick test</td><td>Estilete aplicador</td></tr><tr><td>30055000</td><td>Einritzer</td><td>Ακίδα σκαριφισμού</td><td>Escarificador</td><td>Vaccinostyle</td><td>Scarificatore</td><td>Escarificador</td></tr><tr><td>30058000</td><td>Spatel</td><td>Σπαθίδα</td><td>Espátula</td><td>Spatule</td><td>Spatola</td><td>Espátula</td></tr><tr><td>30059000</td><td>Tropfapplikator</td><td>Συσκευή επίχυσης σε σημείο</td><td>Aplicador para unción puntual</td><td>Applicateur pour spot-on</td><td>Applicatore per spot-on</td><td>Aplicador para unção punctiforme</td></tr><tr><td>30063000</td><td>Impfautomat</td><td>Ακίδα εμβολιασμού</td><td>Punzón</td><td>Stylet</td><td>Dispositivo a punta per vaccinazione</td><td>estilete de inoculação</td></tr><tr><td>30068000</td><td>Applikator für ein Schwämmchen zur vaginalen Anwendung</td><td>Συσκευή για ενδοκολπική τοποθέτηση σπόγγων</td><td>Aplicador de esponjas vaginales</td><td>Applicateur pour éponge vaginale</td><td>Applicatore per spugnetta intravaginale</td><td>Aplicador para esponja vaginal</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://unicom-project.eu/fhir/ValueSet/administration-device"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "AdministrationDevice"] ; # 
+  fhir:title [ fhir:v "EDQM Administration Device"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-05-08T21:07:18+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet Administration device from EDQM, DEV, see https://standardterms.edqm.eu/#"] ; # 
+  fhir:immutable [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "13072000" ] ;
+         fhir:display [ fhir:v "Oral applicator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Applikator für die orale Verabreichung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εξάρτημα χορήγησης  από του στόματος" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Aplicador para uso oral" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Applicateur pour administration orale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Applicatore per somministrazione orale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Aplicador oral" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "13114000" ] ;
+         fhir:display [ fhir:v "Pen" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Pen" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Pluma" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Stylo" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Penna" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Caneta" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30000500" ] ;
+         fhir:display [ fhir:v "Administration system" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Applikationssystem" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σύστημα χορήγησης" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Sistema de administración" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Système d'administration" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Sistema di somministrazione" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Sistema de administração" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30002000" ] ;
+         fhir:display [ fhir:v "Applicator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Applikator" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εξάρτημα χορήγησης" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Aplicador" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Applicateur" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Applicatore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Aplicador" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30003000" ] ;
+         fhir:display [ fhir:v "Automatic injection device" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "automatischer Injektor" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Συσκευή αυτόματης ένεσης" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Inyector automático" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Injecteur automatique" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Dispositivo automatico per iniezone" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Seringa automática" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30005000" ] ;
+         fhir:display [ fhir:v "Balling gun" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Bolusgeber" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Συσκευή χορήγησης βώλων" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Aplicador para administración intrarruminal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Applicateur pour dispositif intraruminal" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Applicatore per dispositivo intraruminale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Aplicador para bólus" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30010000" ] ;
+         fhir:display [ fhir:v "Brush" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Pinsel" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ψύκτρα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Pincel" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Pinceau applicateur" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Pennello" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Pincel" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30012000" ] ;
+         fhir:display [ fhir:v "Cannula" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Kanüle" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σωληνίσκος" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cánula" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Canule" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Cannula" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Cânula" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30016000" ] ;
+         fhir:display [ fhir:v "Cup" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Messbecher" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Κύπελλο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vaso dosificador" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Godet" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Bicchiere dosatore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Copo-medida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30017000" ] ;
+         fhir:display [ fhir:v "Dabbing applicator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Verschluss mit Tupfer" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Πώμα με εξάρτημα επάλειψης" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cierre con aplicador para toques" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Embout applicateur" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Tappo con applicatore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fecho com aplicador de contacto" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30018200" ] ;
+         fhir:display [ fhir:v "Dose dispenser" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Dosiergerät" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Δοσομετρητής" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Dispensador de dosis" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Dispensateur de dose" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Dispensatore di dose" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Dispensador de dose" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30019000" ] ;
+         fhir:display [ fhir:v "Dredging applicator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Verschluss mit Streuvorrichtung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Πώμα με εξάρτημα επίπασης" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cierre espolvoreador" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Embout poudreur" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Aspersore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fecho polvilhador" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30021000" ] ;
+         fhir:display [ fhir:v "Drench gun" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Applikator für eine Flüssigkeit zum Einnehmen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Συσκευή χορήγησης στοματικών διαλυμάτων" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Pistola dosificadora" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Embout buccal" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Pistola dosatrice per somministrazioni orali" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Pistola doseadora" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30022000" ] ;
+         fhir:display [ fhir:v "Dropper applicator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Verschluss mit Tropfer" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σταγονομετρικό βιδωτό πώμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Tapón cuentagotas" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Embout compte-gouttes" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Contagocce" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fecho conta-gotas" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30025000" ] ;
+         fhir:display [ fhir:v "High pressure transdermal delivery device" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Intradermaldruckinjektor" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σύστημα διαδερμικής χορήγησης υπό πίεση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Dispositivo a presión para liberación transdermica" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Injecteur intradermique sous pression" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Dispositivo sotto pressione a rilascio transdermico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Injector transdérmico sob pressão" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30026000" ] ;
+         fhir:display [ fhir:v "Implanter" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Implantatinjektor" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Συσκευή εμφύτευσης" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Inyector de implantes" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Pistolet pour implant" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Iniettore per impianto" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Seringa para implantes" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30026500" ] ;
+         fhir:display [ fhir:v "Inhaler" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Inhalator" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Συσκευή εισπνοής" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Inhalador" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Inhalateur" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Inalatore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Inalador" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30027000" ] ;
+         fhir:display [ fhir:v "In-ovo injection device" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Eiinjektor" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Συσκευή χορήγησης in ovo" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Inyector automático in ovo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Dispositif pour injection in ovo" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Dispositivo per iniezione in ovo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Seringa para via transcoriónica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30028000" ] ;
+         fhir:display [ fhir:v "Injection needle" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Injektionsnadel" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Βελόνη σύριγγας" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Aguja para inyección" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Aiguille" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Ago per iniezione" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Agulha para injecção" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30029000" ] ;
+         fhir:display [ fhir:v "Injection syringe" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Injektionsspritze" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σύριγγα ένεσης" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Jeringa para inyección" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Seringue" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Siringa per iniezione" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Seringa para injectáveis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30030000" ] ;
+         fhir:display [ fhir:v "Internal graduated calibration chamber" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Intern graduierte Dosierkammer" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Δοσιμετρικό εξάρτημα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Dispensador de dosis múltiples" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Dispositif à cran d'arrêt" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Bolo ruminale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Câmara de calibração graduada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30031000" ] ;
+         fhir:display [ fhir:v "Intramammary syringe" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Euterinjektor" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδομαστική σύριγγα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Jeringa intramamaria" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Seringue pour administration intramammaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Siringa intramammaria" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Injetor intramamário" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30033000" ] ;
+         fhir:display [ fhir:v "Measuring device" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Dosierhilfe" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Δοσιμετρικό εξάρτημα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Dosificador" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Dispositif de mesure" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Dosatore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Dispositivo doseador" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30034000" ] ;
+         fhir:display [ fhir:v "Measuring spoon" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Messlöffel" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Δοσιμετρικό κοχλιάριο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cucharilla de medida" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Cuillère-mesure" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Cucchiaio dosatore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Colher-medida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30037000" ] ;
+         fhir:display [ fhir:v "Mouthpiece" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Mundstück" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εξάρτημα στοματικής προσαρμογής" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Aplicador bucal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Embout buccal" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Boccaglio" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Aplicador bucal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30040000" ] ;
+         fhir:display [ fhir:v "Multipuncturer" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Multipunkturstempel" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εξάρτημα πολλαπλής νύξεως" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Aplicador para punción múltiple" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Applicateur pour multipuncture" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Dispositivo per intradermoreazione per puntura multipla" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Aplicador para punção múltipla" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30041000" ] ;
+         fhir:display [ fhir:v "Nasal applicator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Nasenapplikator" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εξάρτημα ρινικής προσαρμογής" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Aplicador nasal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Embout nasal" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Applicatore nasale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Aplicador nasal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30042000" ] ;
+         fhir:display [ fhir:v "Nebuliser" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Vernebler" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εκνεφωτής" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Nebulizador" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Nébuliseur" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Nebulizzatore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Nebulizador" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30043500" ] ;
+         fhir:display [ fhir:v "Needle-free injector" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "nadelfreier Injektor" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σύστημα διαδερμικής χορήγησης χωρίς βελόνα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Inyector sin aguja" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Injecteur sans aiguille" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Iniettore privo di ago" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Injetor sem seringa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30044000" ] ;
+         fhir:display [ fhir:v "Nozzle" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Sprühkopf" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ρύγχος" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Boquilla" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Embout" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Erogatore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Adaptador" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30045000" ] ;
+         fhir:display [ fhir:v "Oral syringe" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Applikationsspritze für Zubereitungen zum Einnehmen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σύριγγα για χορήγηση από του στόματος" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Jeringa para uso oral" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Seringue pour administration orale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Siringa per somministrazione orale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Seringa para uso oral" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30046000" ] ;
+         fhir:display [ fhir:v "Pipette" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Pipette" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Πιπέτα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Pipeta" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Pipette" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Pipetta" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Pipeta" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30053000" ] ;
+         fhir:display [ fhir:v "Prick test applicator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Teststempel" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εξάρτημα εφαρμογής αλλεργιογόνων δτα νύξεως" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Aplicador para pruebas de alergenos" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Applicateur pour prick test" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Dispositivo per prick test" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Estilete aplicador" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30055000" ] ;
+         fhir:display [ fhir:v "Scarifier" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Einritzer" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ακίδα σκαριφισμού" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Escarificador" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Vaccinostyle" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Scarificatore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Escarificador" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30058000" ] ;
+         fhir:display [ fhir:v "Spatula" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Spatel" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σπαθίδα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Espátula" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Spatule" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Spatola" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Espátula" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30059000" ] ;
+         fhir:display [ fhir:v "Spot-on applicator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Tropfapplikator" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Συσκευή επίχυσης σε σημείο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Aplicador para unción puntual" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Applicateur pour spot-on" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Applicatore per spot-on" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Aplicador para unção punctiforme" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30063000" ] ;
+         fhir:display [ fhir:v "Stab vaccinator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Impfautomat" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ακίδα εμβολιασμού" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Punzón" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Stylet" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Dispositivo a punta per vaccinazione" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "estilete de inoculação" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30068000" ] ;
+         fhir:display [ fhir:v "Vaginal sponge applicator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Applikator für ein Schwämmchen zur vaginalen Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Συσκευή για ενδοκολπική τοποθέτηση σπόγγων" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Aplicador de esponjas vaginales" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Applicateur pour éponge vaginale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Applicatore per spugnetta intravaginale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Aplicador para esponja vaginal" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,532 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Bundle/004-Cefuroxime-MIP-1500mg-EE-FullProduct> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "004-Cefuroxime-MIP-1500mg-EE-FullProduct"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Cefuroxime-MIP-1500mg-EE-RA"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Cefuroxime-MIP-1500mg-EE-RA> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100009199-Mip"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100009199-Mip> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Cefuroxime-MIP-1500mg-EE-APD"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Cefuroxime-MIP-1500mg-EE-APD> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Cefuroxime-MIP-1500mg-EE-MID"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Cefuroxime-MIP-1500mg-EE-MID> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Cefuroxime-MIP-1500mg-EE-I"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Cefuroxime-MIP-1500mg-EE-I> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Cefuroxime-MIP-1500mg-EE-PPD-1529940"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Cefuroxime-MIP-1500mg-EE-PPD-1529940> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Cefuroxime-MIP-1500mg-EE-PPD-1529962"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Cefuroxime-MIP-1500mg-EE-PPD-1529962> )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD> a fhir:MedicinalProductDefinition ;
+  fhir:id [ fhir:v "Cefuroxime-MIP-1500mg-EE-MPD"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicinalProductDefinition_Cefuroxime-MIP-1500mg-EE-MPD\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicinalProductDefinition Cefuroxime-MIP-1500mg-EE-MPD</b></p><a name=\"Cefuroxime-MIP-1500mg-EE-MPD\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-MPD\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-MPD-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/fhir/mpId</code>/EE-100009199-27834, <code>http://ema.europa.eu/fhir/pmsId</code>/EE0000002</p><p><b>domain</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}\">Human use</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000005003 200000005004}\">Current</span></p><p><b>combinedPharmaceuticalDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000116186}\">Powder for solution for injection/infusion</span></p><p><b>legalStatusOfSupply</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072051 100000072084}\">Medicinal Product subject to medical prescription</span></p><p><b>classification</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000093533 100000096183}\">Cefuroxime</span>, <span title=\"Codes:{http://www.whocc.no/atc J01DC02}\">cefuroxime</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber</p><blockquote><p><b>part</b></p><p><b>part</b>: Cefuroxime MIP</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000002}\">Invented name part</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: 1500 MG</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000004}\">Strength part</span></p></blockquote><h3>Usages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Republic of Estonia</span></td><td><span title=\"Codes:{urn:ietf:bcp:47 et}\">Estonian</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/fhir/mpId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100009199-27834" ]
+  ] [
+     fhir:system [ fhir:v "http://ema.europa.eu/fhir/pmsId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE0000002" ]
+  ] ) ; # 
+  fhir:domain [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000012" ] ;
+       fhir:display [ fhir:v "Human use" ]
+     ] )
+  ] ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000005003"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000005004" ] ;
+       fhir:display [ fhir:v "Current" ]
+     ] )
+  ] ; # 
+  fhir:combinedPharmaceuticalDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000116186" ] ;
+       fhir:display [ fhir:v "Powder for solution for injection/infusion" ]
+     ] )
+  ] ; # 
+  fhir:legalStatusOfSupply [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072051"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072084" ] ;
+       fhir:display [ fhir:v "Medicinal Product subject to medical prescription" ]
+     ] )
+  ] ; # 
+  fhir:classification ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000093533"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000096183" ] ;
+       fhir:display [ fhir:v "Cefuroxime" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J01DC02" ] ;
+       fhir:display [ fhir:v "cefuroxime" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:productName [ fhir:v "Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber" ] ;
+     fhir:part ( [
+       fhir:part [ fhir:v "Cefuroxime MIP" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000002" ] ;
+           fhir:display [ fhir:v "Invented name part" ]
+         ] )
+       ]
+     ] [
+       fhir:part [ fhir:v "1500 MG" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000004" ] ;
+           fhir:display [ fhir:v "Strength part" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:usage ( [
+       fhir:country [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000000388" ] ;
+           fhir:display [ fhir:v "Republic of Estonia" ]
+         ] )
+       ] ;
+       fhir:language [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "et" ] ;
+           fhir:display [ fhir:v "Estonian" ]
+         ] )
+       ]
+     ] )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Cefuroxime-MIP-1500mg-EE-RA> a fhir:RegulatedAuthorization ;
+  fhir:id [ fhir:v "Cefuroxime-MIP-1500mg-EE-RA"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RegulatedAuthorization_Cefuroxime-MIP-1500mg-EE-RA\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RegulatedAuthorization Cefuroxime-MIP-1500mg-EE-RA</b></p><a name=\"Cefuroxime-MIP-1500mg-EE-RA\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-RA\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-RA-en-US\"> </a><p><b>identifier</b>: 805813</p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html\">MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100009199-27834,http://ema.europa.eu/fhir/pmsId#EE0000002; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Powder for solution for injection/infusion; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = Cefuroxime,cefuroxime</a></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000060 220000000061}\">Marketing Authorisation</span></p><p><b>region</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Republic of Estonia</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072049 200000017708}\">Valid - Renewed/Varied</span></p><p><b>statusDate</b>: 2017-12-06</p><p><b>holder</b>: <a href=\"Organization-LOC-100009199-Mip.html\">Organization Mip Pharma GmbH</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "805813" ]
+  ] ) ; # 
+  fhir:subject ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000060"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "220000000061" ] ;
+       fhir:display [ fhir:v "Marketing Authorisation" ]
+     ] )
+  ] ; # 
+  fhir:region ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000388" ] ;
+       fhir:display [ fhir:v "Republic of Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072049"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000017708" ] ;
+       fhir:display [ fhir:v "Valid - Renewed/Varied" ]
+     ] )
+  ] ; # 
+  fhir:statusDate [ fhir:v "2017-12-06"^^xsd:date] ; # 
+  fhir:holder [
+     fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100009199-Mip> ;
+     fhir:reference [ fhir:v "Organization/LOC-100009199-Mip" ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100009199-Mip> a fhir:Organization ;
+  fhir:id [ fhir:v "LOC-100009199-Mip"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_LOC-100009199-Mip\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization LOC-100009199-Mip</b></p><a name=\"LOC-100009199-Mip\"> </a><a name=\"hcLOC-100009199-Mip\"> </a><a name=\"hcLOC-100009199-Mip-en-US\"> </a><p><b>identifier</b>: <code>https://spor.ema.europa.eu/v1/locations</code>/LOC-100009199</p><p><b>name</b>: Mip Pharma GmbH</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/locations"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "LOC-100009199" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Mip Pharma GmbH"] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Cefuroxime-MIP-1500mg-EE-APD> a fhir:AdministrableProductDefinition ;
+  fhir:id [ fhir:v "Cefuroxime-MIP-1500mg-EE-APD"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AdministrableProductDefinition_Cefuroxime-MIP-1500mg-EE-APD\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AdministrableProductDefinition Cefuroxime-MIP-1500mg-EE-APD</b></p><a name=\"Cefuroxime-MIP-1500mg-EE-APD\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-APD\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-APD-en-US\"> </a><p><b>status</b>: Active</p><p><b>formOf</b>: <a href=\"MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html\">MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100009199-27834,http://ema.europa.eu/fhir/pmsId#EE0000002; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Powder for solution for injection/infusion; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = Cefuroxime,cefuroxime</a></p><p><b>administrableDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000074038}\">Solution for injection/infusion</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002158}\">Vial</span></p><p><b>producedFrom</b>: <a href=\"ManufacturedItemDefinition-Cefuroxime-MIP-1500mg-EE-MID.html\">ManufacturedItemDefinition: status = active; manufacturedDoseForm = Powder for solution for injection/infusion; unitOfPresentation = Vial</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073345 100000073600}\">Intramuscular use</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:formOf ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD" ]
+  ] ) ; # 
+  fhir:administrableDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000074038" ] ;
+       fhir:display [ fhir:v "Solution for injection/infusion" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002158" ] ;
+       fhir:display [ fhir:v "Vial" ]
+     ] )
+  ] ; # 
+  fhir:producedFrom ( [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID" ]
+  ] ) ; # 
+  fhir:routeOfAdministration ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073345"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073600" ] ;
+         fhir:display [ fhir:v "Intramuscular use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Cefuroxime-MIP-1500mg-EE-MID> a fhir:ManufacturedItemDefinition ;
+  fhir:id [ fhir:v "Cefuroxime-MIP-1500mg-EE-MID"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ManufacturedItemDefinition_Cefuroxime-MIP-1500mg-EE-MID\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ManufacturedItemDefinition Cefuroxime-MIP-1500mg-EE-MID</b></p><a name=\"Cefuroxime-MIP-1500mg-EE-MID\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-MID\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-MID-en-US\"> </a><p><b>status</b>: Active</p><p><b>manufacturedDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000116186}\">Powder for solution for injection/infusion</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002158}\">Vial</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturedDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000116186" ] ;
+       fhir:display [ fhir:v "Powder for solution for injection/infusion" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002158" ] ;
+       fhir:display [ fhir:v "Vial" ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Cefuroxime-MIP-1500mg-EE-I> a fhir:Ingredient ;
+  fhir:id [ fhir:v "Cefuroxime-MIP-1500mg-EE-I"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Ingredient_Cefuroxime-MIP-1500mg-EE-I\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Ingredient Cefuroxime-MIP-1500mg-EE-I</b></p><a name=\"Cefuroxime-MIP-1500mg-EE-I\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-I\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-I-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: </p><ul><li><a href=\"MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html\">MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100009199-27834,http://ema.europa.eu/fhir/pmsId#EE0000002; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Powder for solution for injection/infusion; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = Cefuroxime,cefuroxime</a></li><li><a href=\"ManufacturedItemDefinition-Cefuroxime-MIP-1500mg-EE-MID.html\">ManufacturedItemDefinition: status = active; manufacturedDoseForm = Powder for solution for injection/infusion; unitOfPresentation = Vial</a></li><li><a href=\"AdministrableProductDefinition-Cefuroxime-MIP-1500mg-EE-APD.html\">AdministrableProductDefinition: status = active; administrableDoseForm = Solution for injection/infusion; unitOfPresentation = Vial</a></li></ul><p><b>role</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000091436}\">CEFUROXIME SODIUM</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 1578 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')</span>/1 Vial<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002158 = 'Vial')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000092667}\">CEFUROXIME</span></td></tr></table><p><b>strength</b>: 1500 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')</span>/1 Vial<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002158 = 'Vial')</span></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/Cefuroxime-MIP-1500mg-EE-APD> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/Cefuroxime-MIP-1500mg-EE-APD" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000091436" ] ;
+           fhir:display [ fhir:v "CEFUROXIME SODIUM" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:presentation [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "1578"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "milligram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110655" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "Vial" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000002158" ]
+         ]
+       ] ;
+       fhir:referenceStrength ( [
+         fhir:substance [
+           fhir:concept [
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "100000092667" ] ;
+               fhir:display [ fhir:v "CEFUROXIME" ]
+             ] )
+           ]
+         ] ;
+         fhir:strength [
+           a fhir:Ratio ;
+           fhir:numerator [
+             fhir:value [ fhir:v "1500"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "milligram(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110655" ]
+           ] ;
+           fhir:denominator [
+             fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "Vial" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "200000002158" ]
+           ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Cefuroxime-MIP-1500mg-EE-PPD-1529940> a fhir:PackagedProductDefinition ;
+  fhir:id [ fhir:v "Cefuroxime-MIP-1500mg-EE-PPD-1529940"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PackagedProductDefinition_Cefuroxime-MIP-1500mg-EE-PPD-1529940\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PackagedProductDefinition Cefuroxime-MIP-1500mg-EE-PPD-1529940</b></p><a name=\"Cefuroxime-MIP-1500mg-EE-PPD-1529940\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-PPD-1529940\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-PPD-1529940-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/example/pcid</code>/EE-100009199-27834-1529940</p><p><b>packageFor</b>: <a href=\"MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html\">MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100009199-27834,http://ema.europa.eu/fhir/pmsId#EE0000002; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Powder for solution for injection/infusion; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = Cefuroxime,cefuroxime</a></p><p><b>containedItemQuantity</b>: 1 vial<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002158 = 'Vial')</span></p><p><b>description</b>: </p><div><p>I tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 1 viaal</p>\n</div><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Republic of Estonia</span></td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072052 100000072083}\">Marketed</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}\">Cardboard</span></p><blockquote><p><b>packaging</b></p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/example/pcid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100009199-27834-1529940" ]
+  ] ) ; # 
+  fhir:packageFor ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD" ]
+  ] ) ; # 
+  fhir:containedItemQuantity ( [
+     fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "vial" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002158" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "I tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 1 viaal"] ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000000388" ] ;
+         fhir:display [ fhir:v "Republic of Estonia" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072052"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000072083" ] ;
+         fhir:display [ fhir:v "Marketed" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073498" ] ;
+         fhir:display [ fhir:v "Box" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "200000003529" ] ;
+         fhir:display [ fhir:v "Cardboard" ]
+       ] )
+     ] ) ;
+     fhir:packaging ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000073563" ] ;
+           fhir:display [ fhir:v "vial" ]
+         ] )
+       ] ;
+       fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+       fhir:material ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003204" ] ;
+           fhir:display [ fhir:v "Glass type I" ]
+         ] )
+       ] ) ;
+       fhir:containedItem ( [
+         fhir:item [
+           fhir:reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID> ;
+             fhir:reference [ fhir:v "ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID" ]
+           ]
+         ] ;
+         fhir:amount [
+           fhir:value [ fhir:v "1"^^xsd:decimal ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Cefuroxime-MIP-1500mg-EE-PPD-1529962> a fhir:PackagedProductDefinition ;
+  fhir:id [ fhir:v "Cefuroxime-MIP-1500mg-EE-PPD-1529962"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PackagedProductDefinition_Cefuroxime-MIP-1500mg-EE-PPD-1529962\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PackagedProductDefinition Cefuroxime-MIP-1500mg-EE-PPD-1529962</b></p><a name=\"Cefuroxime-MIP-1500mg-EE-PPD-1529962\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-PPD-1529962\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-PPD-1529962-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/example/pcid</code>/EE-100009199-27834-1529962</p><p><b>packageFor</b>: <a href=\"MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html\">MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100009199-27834,http://ema.europa.eu/fhir/pmsId#EE0000002; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Powder for solution for injection/infusion; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = Cefuroxime,cefuroxime</a></p><p><b>containedItemQuantity</b>: 10 Vial<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002158 = 'Vial')</span></p><p><b>description</b>: </p><div><p>I tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 10 viaali</p>\n</div><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Republic of Estonia</span></td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072052 100000072083}\">Marketed</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}\">Cardboard</span></p><blockquote><p><b>packaging</b></p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/example/pcid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100009199-27834-1529962" ]
+  ] ) ; # 
+  fhir:packageFor ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD" ]
+  ] ) ; # 
+  fhir:containedItemQuantity ( [
+     fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Vial" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002158" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "I tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 10 viaali"] ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000000388" ] ;
+         fhir:display [ fhir:v "Republic of Estonia" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072052"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000072083" ] ;
+         fhir:display [ fhir:v "Marketed" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073498" ] ;
+         fhir:display [ fhir:v "Box" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "200000003529" ] ;
+         fhir:display [ fhir:v "Cardboard" ]
+       ] )
+     ] ) ;
+     fhir:packaging ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000073563" ] ;
+           fhir:display [ fhir:v "vial" ]
+         ] )
+       ] ;
+       fhir:quantity [ fhir:v "10"^^xsd:integer ] ;
+       fhir:material ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003204" ] ;
+           fhir:display [ fhir:v "Glass type I" ]
+         ] )
+       ] ) ;
+       fhir:containedItem ( [
+         fhir:item [
+           fhir:reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID> ;
+             fhir:reference [ fhir:v "ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID" ]
+           ]
+         ] ;
+         fhir:amount [
+           fhir:value [ fhir:v "1"^^xsd:decimal ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

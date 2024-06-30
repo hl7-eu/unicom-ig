@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Medication/Cefuroxime1500-Medication-Clinical> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Cefuroxime1500-Medication-Clinical"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"Cefuroxime1500-Medication-Clinical\"> </a><a name=\"hcCefuroxime1500-Medication-Clinical\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;Cefuroxime1500-Medication-Clinical&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationAsMedicinalProduct.html\">Medication</a></p></div><p><b>MedicinalProductClassification</b>: cefuroxime <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-WC.html\">WHO ATC</a>#J01DC02)</span></p><p><b>AdministrableDoseForm</b>: Solution for injection/infusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#50060000)</span></p><p><b>doseForm</b>: Powder for solution for injection or infusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#50053000)</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-Cefuroxime1500-Powder-Medication-Item.html\">Medication/Cefuroxime1500-Powder-Medication-Item</a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://unicom-project.eu/fhir/StructureDefinition/medicinal-product-classification"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "J01DC02" ] ;
+         fhir:display [ fhir:v "cefuroxime" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://unicom-project.eu/fhir/StructureDefinition/administrable-doseform"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "50060000" ] ;
+         fhir:display [ fhir:v "Solution for injection/infusion" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:doseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "50053000" ] ;
+       fhir:display [ fhir:v "Powder for solution for injection or infusion" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       fhir:reference [
+         fhir:link <http://unicom-project.eu/fhir/Medication/Cefuroxime1500-Powder-Medication-Item> ;
+         fhir:reference [ fhir:v "Medication/Cefuroxime1500-Powder-Medication-Item" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
