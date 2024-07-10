@@ -1,10 +1,10 @@
 UNICOM FHIR Implementation Guide introduces a novelty feature - a customizable template for visualizing FHIR Bundles. This visualization can be used inside the IG in the [narrative content view of example resources](https://hl7-eu.github.io/unicom-ig/Bundle-010-Clexane-60mg-06ml-EE-FullProduct.html#).
 
 ### Background
-The work of creating ISO IDMP compatible example data for UNICOM pilots to use was one of the tasks of Work Package 4 (national competent authorities). For this purpose, a first solution was created - the UNICOM FHIR Server (UFIS). When creating first instances of products, it became clear that it is nearly impossible to work with such complicated data structures without having a tool for visualizing the full data of one product. For that purpose, UFIS made use of [IDMP viewer by NProgram (Rik Smithies)](https://idmp-viewer.azurewebsites.net/display-product).
-This became one of the most used features of UFIS: data submitters could use the viewer to validate the integrity of submitted data, and other users wanted to see and compare the modelling of medicinal product data.  
+The work of creating ISO IDMP compatible example data for UNICOM pilots to use was one of the tasks of Work Package 4 (national competent authorities). For this purpose, a first solution was created - the UNICOM FHIR Server (UFIS). When creating first instances of products, it became clear that it is nearly impossible to work with such complicated data structures without having a tool for visualizing the full data of one product. For that purpose, UFIS made use of IDMP viewer by NProgram (Rik Smithies), now known as [Vhewer](https://vhewer.com/).
+This viewer was one of the most used features of UFIS: data submitters could use the viewer to validate the integrity of submitted data, and other users wanted to see and compare the modelling of medicinal product data.  
 
-When the official UNICOM IG was finally started, the same challenges were visible, and there was a strong expectation of having the same or similar visualisation inside the implementation guide. However, the IDMP viewer was not reusable outside its context, and was not openly editable for satisfying the UNICOM needs. After some successful changes to the FHIR publishing infrastructure, UNICOM developed a pioneer solution that is open source and well integrated in the tooling  - the Bundle Visualizer you see in this IG.
+When the official UNICOM IG was finally started, the same challenges were visible, and there was a strong expectation of having the same or similar visualisation **inside** the implementation guide. After some successful changes to the FHIR publishing infrastructure, UNICOM developed a pioneer solution that is open source and well integrated in the tooling  - the Bundle Visualizer you see in this IG.
 
 ### Bundle visualizer
 
@@ -23,20 +23,6 @@ This approach means the Bundle visualizer can be created, modified and used insi
 
 Bundle visualizer is a generic tool. Even though first introduced in UNICOM project, where it is used for MedicationDefinition resources, it can be used for any kind of resources.
 
-#### Viewer Comparison
-There is no reason to believe that one viewer is better than the other. Even though they seem quite alike, they serve a slightly different purpose and use a different solution. Here is a list of some of the key differences.  
-
-|UNICOM Bundle Visualizer|NProgram Visualizer|
-|--|--|
-|Open source - anyone can use/customise  | Free to use; not customisable|
-|Works in an IG or server|Works only in server|
-|Works on a Bundle resource|Makes multiple queries|
-|Disregards data that is not included on the template|Automatically includes all data in MedicationDefinition resources|
-|Can be used with any kind of FHIR Bundle|Only for MedicationDefinition module resources|
-|Possible to adapt and the looks and content|Not customizable|
-|Template needs to be created and kept up-to-date with data|Out-of-box solution, just copy your url|
-|[Example](Bundle-015-CopaliaHCT-EE-FullProduct.html)|[Example](https://idmp-viewer.azurewebsites.net/display-product?url=http://185.11.167.107:8084/fhir/MedicinalProductDefinition/CopaliaHCT-EE-MPD)|
-{:.table-bordered .table-sm}
 
 #### Technical considerations
 Requesting the required data set as a bundle might be problematic. It is not a problem when using the visualiser inside the IG, as the example bundles in an IG would always be predefined and manually assembled. However, on a server, you may not always be able to query all the data in a way, that it would be served as one FHIR bundle. Since the solutions are open source and editable, this can be addressed in the future if needed.
