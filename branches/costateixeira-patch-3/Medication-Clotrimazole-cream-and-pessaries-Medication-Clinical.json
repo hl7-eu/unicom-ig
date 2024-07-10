@@ -1,0 +1,52 @@
+{
+  "resourceType" : "Medication",
+  "id" : "Clotrimazole-cream-and-pessaries-Medication-Clinical",
+  "meta" : {
+    "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"Clotrimazole-cream-and-pessaries-Medication-Clinical\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;Clotrimazole-cream-and-pessaries-Medication-Clinical&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationAsMedicinalProduct.html\">Medication</a></p></div><p><b>MedicinalProductClassification</b>: clotrimazole <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-WC.html\">WHO ATC</a>#G01AF02)</span></p><p><b>AdministrableDoseForm</b>: Vaginal cream <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10901000)</span></p><p><b>doseForm</b>: Cream + pessary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#14001000)</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-Clotrimazole-Cream-Generic.html\">Medication/Clotrimazole-Cream-Generic</a></td></tr></table></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication/Clotrimazole-Pessary-Generic\">Medication/Clotrimazole-Pessary-Generic</a></td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://unicom-project.eu/fhir/StructureDefinition/medicinal-product-classification",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.whocc.no/atc",
+        "code" : "G01AF02",
+        "display" : "clotrimazole"
+      }]
+    }
+  },
+  {
+    "url" : "http://unicom-project.eu/fhir/StructureDefinition/administrable-doseform",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://standardterms.edqm.eu",
+        "code" : "10901000",
+        "display" : "Vaginal cream"
+      }]
+    }
+  }],
+  "doseForm" : {
+    "coding" : [{
+      "system" : "https://standardterms.edqm.eu",
+      "code" : "14001000",
+      "display" : "Cream + pessary"
+    }]
+  },
+  "ingredient" : [{
+    "item" : {
+      "reference" : {
+        "reference" : "Medication/Clotrimazole-Cream-Generic"
+      }
+    }
+  },
+  {
+    "item" : {
+      "reference" : {
+        "reference" : "Medication/Clotrimazole-Pessary-Generic"
+      }
+    }
+  }]
+}

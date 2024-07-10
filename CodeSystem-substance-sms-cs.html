@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Substances EMA SPOR SMS - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.101"}
+    h3,h4,h5,h6{--heading-prefix:"7.101"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+      <li>
+        <a href="testserver.html">Testing Tool Box</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Substances EMA SPOR SMS</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-substance-sms-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-substance-sms-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-substance-sms-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Substances EMA SPOR SMS
+
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://spor.ema.europa.eu/v2/SubstanceDefinition<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://spor.ema.europa.eu/v2/SubstanceDefinition"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://spor.ema.europa.eu/v2/SubstanceDefinition|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2024-07-10
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">Substance_SMS_CS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>UNICOM PPL substances from EMA SPOR SMS</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-substances-vs.html">SubstancesSMS</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem substance-sms-cs</b></p><a name="substance-sms-cs"> </a><a name="hcsubstance-sms-cs"> </a><a name="hcsubstance-sms-cs-en-US"> </a><p>This case-sensitive code system <code>https://spor.ema.europa.eu/v2/SubstanceDefinition</code> defines the following codes:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">100000085259<a name="substance-sms-cs-100000085259"> </a></td>
+<td>Amlodipine</td></tr>
+<tr><td style="white-space:nowrap">100000089370<a name="substance-sms-cs-100000089370"> </a></td>
+<td>AMLODIPINE MALEATE</td></tr>
+<tr><td style="white-space:nowrap">100000089571<a name="substance-sms-cs-100000089571"> </a></td>
+<td>Amlodipine mesilate</td></tr>
+<tr><td style="white-space:nowrap">100000090079<a name="substance-sms-cs-100000090079"> </a></td>
+<td>Amlodipine besilate</td></tr>
+<tr><td style="white-space:nowrap">300000027652<a name="substance-sms-cs-300000027652"> </a></td>
+<td>Amlodipine benzoate</td></tr>
+<tr><td style="white-space:nowrap">100000091596<a name="substance-sms-cs-100000091596"> </a></td>
+<td>Amoxicillin</td></tr>
+<tr><td style="white-space:nowrap">100000090113<a name="substance-sms-cs-100000090113"> </a></td>
+<td>Amoxicillin sodium</td></tr>
+<tr><td style="white-space:nowrap">100000092629<a name="substance-sms-cs-100000092629"> </a></td>
+<td>Amoxicillin trihydrate</td></tr>
+<tr><td style="white-space:nowrap">100000092127<a name="substance-sms-cs-100000092127"> </a></td>
+<td>Carbamazepine</td></tr>
+<tr><td style="white-space:nowrap">100000092667<a name="substance-sms-cs-100000092667"> </a></td>
+<td>Cefuroxime</td></tr>
+<tr><td style="white-space:nowrap">100000093039<a name="substance-sms-cs-100000093039"> </a></td>
+<td>Cefuroxime axetil</td></tr>
+<tr><td style="white-space:nowrap">100000091436<a name="substance-sms-cs-100000091436"> </a></td>
+<td>Cefuroxime sodium</td></tr>
+<tr><td style="white-space:nowrap">100000089842<a name="substance-sms-cs-100000089842"> </a></td>
+<td>Clavulanic acid</td></tr>
+<tr><td style="white-space:nowrap">100000093061<a name="substance-sms-cs-100000093061"> </a></td>
+<td>Potassium clavulanate</td></tr>
+<tr><td style="white-space:nowrap">100000092121<a name="substance-sms-cs-100000092121"> </a></td>
+<td>Ciclosporin</td></tr>
+<tr><td style="white-space:nowrap">100000155842<a name="substance-sms-cs-100000155842"> </a></td>
+<td>CICLOSPORIN A</td></tr>
+<tr><td style="white-space:nowrap">100000084546<a name="substance-sms-cs-100000084546"> </a></td>
+<td>Clomipramine</td></tr>
+<tr><td style="white-space:nowrap">100000090503<a name="substance-sms-cs-100000090503"> </a></td>
+<td>Clomipramine hydrochloride</td></tr>
+<tr><td style="white-space:nowrap">100000092074<a name="substance-sms-cs-100000092074"> </a></td>
+<td>Clotrimazole</td></tr>
+<tr><td style="white-space:nowrap">100000088282<a name="substance-sms-cs-100000088282"> </a></td>
+<td>Chloroquine</td></tr>
+<tr><td style="white-space:nowrap">100000084735<a name="substance-sms-cs-100000084735"> </a></td>
+<td>CHLOROQUINE HYDROCHLORIDE</td></tr>
+<tr><td style="white-space:nowrap">100000090551<a name="substance-sms-cs-100000090551"> </a></td>
+<td>Chloroquine sulfate</td></tr>
+<tr><td style="white-space:nowrap">100000092628<a name="substance-sms-cs-100000092628"> </a></td>
+<td>Chloroquine phosphate</td></tr>
+<tr><td style="white-space:nowrap">100000129152<a name="substance-sms-cs-100000129152"> </a></td>
+<td>CHLOROQUINE DIPHOSPHATE</td></tr>
+<tr><td style="white-space:nowrap">100000092362<a name="substance-sms-cs-100000092362"> </a></td>
+<td>Diazepam</td></tr>
+<tr><td style="white-space:nowrap">100000091074<a name="substance-sms-cs-100000091074"> </a></td>
+<td>Diclofenac diethylamine</td></tr>
+<tr><td style="white-space:nowrap">100000092368<a name="substance-sms-cs-100000092368"> </a></td>
+<td>Diclofenac potassium</td></tr>
+<tr><td style="white-space:nowrap">100000092798<a name="substance-sms-cs-100000092798"> </a></td>
+<td>Diclofenac</td></tr>
+<tr><td style="white-space:nowrap">100000085789<a name="substance-sms-cs-100000085789"> </a></td>
+<td>Diclofenac epolamine</td></tr>
+<tr><td style="white-space:nowrap">100000092272<a name="substance-sms-cs-100000092272"> </a></td>
+<td>Diclofenac sodium</td></tr>
+<tr><td style="white-space:nowrap">100000092375<a name="substance-sms-cs-100000092375"> </a></td>
+<td>Drospirenone</td></tr>
+<tr><td style="white-space:nowrap">100000092359<a name="substance-sms-cs-100000092359"> </a></td>
+<td>Enalapril</td></tr>
+<tr><td style="white-space:nowrap">100000080222<a name="substance-sms-cs-100000080222"> </a></td>
+<td>Enalaprilat</td></tr>
+<tr><td style="white-space:nowrap">100000091343<a name="substance-sms-cs-100000091343"> </a></td>
+<td>Enalapril maleate</td></tr>
+<tr><td style="white-space:nowrap">100000153305<a name="substance-sms-cs-100000153305"> </a></td>
+<td>Enalapril sodium</td></tr>
+<tr><td style="white-space:nowrap">100000085598<a name="substance-sms-cs-100000085598"> </a></td>
+<td>Enoxaparin</td></tr>
+<tr><td style="white-space:nowrap">100000090152<a name="substance-sms-cs-100000090152"> </a></td>
+<td>Enoxaparin sodium</td></tr>
+<tr><td style="white-space:nowrap">100000090229<a name="substance-sms-cs-100000090229"> </a></td>
+<td>Ergocalciferol</td></tr>
+<tr><td style="white-space:nowrap">100000091721<a name="substance-sms-cs-100000091721"> </a></td>
+<td>Ethinylestradiol</td></tr>
+<tr><td style="white-space:nowrap">100000087614<a name="substance-sms-cs-100000087614"> </a></td>
+<td>Glyceryl trinitrate</td></tr>
+<tr><td style="white-space:nowrap">100000084238<a name="substance-sms-cs-100000084238"> </a></td>
+<td>Goserelin</td></tr>
+<tr><td style="white-space:nowrap">100000086673<a name="substance-sms-cs-100000086673"> </a></td>
+<td>Goserelin acetate</td></tr>
+<tr><td style="white-space:nowrap">100000090365<a name="substance-sms-cs-100000090365"> </a></td>
+<td>Ibuprofen</td></tr>
+<tr><td style="white-space:nowrap">100000085009<a name="substance-sms-cs-100000085009"> </a></td>
+<td>Ibuprofen sodium</td></tr>
+<tr><td style="white-space:nowrap">100000090111<a name="substance-sms-cs-100000090111"> </a></td>
+<td>Ibuprofen lysine</td></tr>
+<tr><td style="white-space:nowrap">100000092228<a name="substance-sms-cs-100000092228"> </a></td>
+<td>Ibuprofen arginine</td></tr>
+<tr><td style="white-space:nowrap">100000175414<a name="substance-sms-cs-100000175414"> </a></td>
+<td>Ibuprofen isobutanolammonium</td></tr>
+<tr><td style="white-space:nowrap">100000140150<a name="substance-sms-cs-100000140150"> </a></td>
+<td>Ibuprofen sodium dihydrate</td></tr>
+<tr><td style="white-space:nowrap">100000133453<a name="substance-sms-cs-100000133453"> </a></td>
+<td>Ibuprofen D,L-lysinate</td></tr>
+<tr><td style="white-space:nowrap">100000079980<a name="substance-sms-cs-100000079980"> </a></td>
+<td>IBUPROFEN 1-IDROSSIMETIL-1-METIL ETILAMMONIO</td></tr>
+<tr><td style="white-space:nowrap">100000091825<a name="substance-sms-cs-100000091825"> </a></td>
+<td>Imatinib mesilate</td></tr>
+<tr><td style="white-space:nowrap">100000091894<a name="substance-sms-cs-100000091894"> </a></td>
+<td>Imatinib</td></tr>
+<tr><td style="white-space:nowrap">100000085460<a name="substance-sms-cs-100000085460"> </a></td>
+<td>Insulin glargine</td></tr>
+<tr><td style="white-space:nowrap">100000091697<a name="substance-sms-cs-100000091697"> </a></td>
+<td>Itraconazole</td></tr>
+<tr><td style="white-space:nowrap">100000091713<a name="substance-sms-cs-100000091713"> </a></td>
+<td>Lidocaine</td></tr>
+<tr><td style="white-space:nowrap">100000139489<a name="substance-sms-cs-100000139489"> </a></td>
+<td>Lidocaine hydrochloride</td></tr>
+<tr><td style="white-space:nowrap">100000085448<a name="substance-sms-cs-100000085448"> </a></td>
+<td>Metformin</td></tr>
+<tr><td style="white-space:nowrap">100000091366<a name="substance-sms-cs-100000091366"> </a></td>
+<td>Metformin hydrochloride</td></tr>
+<tr><td style="white-space:nowrap">100000091840<a name="substance-sms-cs-100000091840"> </a></td>
+<td>METFORMIN EMBONATE</td></tr>
+<tr><td style="white-space:nowrap">100000091372<a name="substance-sms-cs-100000091372"> </a></td>
+<td>Morphine</td></tr>
+<tr><td style="white-space:nowrap">100000076239<a name="substance-sms-cs-100000076239"> </a></td>
+<td>Morphine sulfate</td></tr>
+<tr><td style="white-space:nowrap">100000090494<a name="substance-sms-cs-100000090494"> </a></td>
+<td>Morphine hydrochloride</td></tr>
+<tr><td style="white-space:nowrap">100000076257<a name="substance-sms-cs-100000076257"> </a></td>
+<td>MORPHINE TARTRATE</td></tr>
+<tr><td style="white-space:nowrap">100000092047<a name="substance-sms-cs-100000092047"> </a></td>
+<td>Omeprazole</td></tr>
+<tr><td style="white-space:nowrap">100000085918<a name="substance-sms-cs-100000085918"> </a></td>
+<td>Omeprazole magnesium</td></tr>
+<tr><td style="white-space:nowrap">100000090186<a name="substance-sms-cs-100000090186"> </a></td>
+<td>Omeprazole sodium</td></tr>
+<tr><td style="white-space:nowrap">100000090270<a name="substance-sms-cs-100000090270"> </a></td>
+<td>Paracetamol</td></tr>
+<tr><td style="white-space:nowrap">100000091461<a name="substance-sms-cs-100000091461"> </a></td>
+<td>Perindopril</td></tr>
+<tr><td style="white-space:nowrap">100000088816<a name="substance-sms-cs-100000088816"> </a></td>
+<td>Perindopril arginine</td></tr>
+<tr><td style="white-space:nowrap">100000091602<a name="substance-sms-cs-100000091602"> </a></td>
+<td>Perindopril tert-butylamine</td></tr>
+<tr><td style="white-space:nowrap">100000130680<a name="substance-sms-cs-100000130680"> </a></td>
+<td>Perindopril tert-butylamin monohydrate</td></tr>
+<tr><td style="white-space:nowrap">100000141420<a name="substance-sms-cs-100000141420"> </a></td>
+<td>Perindopril tosilate</td></tr>
+<tr><td style="white-space:nowrap">100000091518<a name="substance-sms-cs-100000091518"> </a></td>
+<td>Calcium carbonate</td></tr>
+<tr><td style="white-space:nowrap">100000091629<a name="substance-sms-cs-100000091629"> </a></td>
+<td>Salbutamol</td></tr>
+<tr><td style="white-space:nowrap">100000091786<a name="substance-sms-cs-100000091786"> </a></td>
+<td>Simvastatin</td></tr>
+<tr><td style="white-space:nowrap">100000092635<a name="substance-sms-cs-100000092635"> </a></td>
+<td>Hydrocortisone</td></tr>
+<tr><td style="white-space:nowrap">100000086186<a name="substance-sms-cs-100000086186"> </a></td>
+<td>Meglumine acetrizoate</td></tr>
+<tr><td style="white-space:nowrap">100000092550<a name="substance-sms-cs-100000092550"> </a></td>
+<td>Hydrocortisone sodium succinate</td></tr>
+<tr><td style="white-space:nowrap">100000086711<a name="substance-sms-cs-100000086711"> </a></td>
+<td>Hydrocortisone valerate</td></tr>
+<tr><td style="white-space:nowrap">100000092260<a name="substance-sms-cs-100000092260"> </a></td>
+<td>Hydrocortisone acetate</td></tr>
+<tr><td style="white-space:nowrap">100000085172<a name="substance-sms-cs-100000085172"> </a></td>
+<td>Hydrocortisone butyrate</td></tr>
+<tr><td style="white-space:nowrap">100000084215<a name="substance-sms-cs-100000084215"> </a></td>
+<td>Hydrocortisone aceponate</td></tr>
+<tr><td style="white-space:nowrap">100000086187<a name="substance-sms-cs-100000086187"> </a></td>
+<td>Hydrocortisone cipionate</td></tr>
+<tr><td style="white-space:nowrap">100000086691<a name="substance-sms-cs-100000086691"> </a></td>
+<td>HYDROCORTISONE SODIUM PHOSPHATE</td></tr>
+<tr><td style="white-space:nowrap">100000090564<a name="substance-sms-cs-100000090564"> </a></td>
+<td>Salbutamol sulfate</td></tr>
+<tr><td style="white-space:nowrap">100000115886<a name="substance-sms-cs-100000115886"> </a></td>
+<td>Tafluprost</td></tr>
+<tr><td style="white-space:nowrap">100000089193<a name="substance-sms-cs-100000089193"> </a></td>
+<td>Teriparatide</td></tr>
+<tr><td style="white-space:nowrap">100000084795<a name="substance-sms-cs-100000084795"> </a></td>
+<td>TERIPARATIDE ACETATE</td></tr>
+<tr><td style="white-space:nowrap">100000077198<a name="substance-sms-cs-100000077198"> </a></td>
+<td>Tramadol</td></tr>
+<tr><td style="white-space:nowrap">100000093275<a name="substance-sms-cs-100000093275"> </a></td>
+<td>Tramadol hydrochloride</td></tr>
+<tr><td style="white-space:nowrap">100000089314<a name="substance-sms-cs-100000089314"> </a></td>
+<td>Trastuzumab</td></tr>
+<tr><td style="white-space:nowrap">100000128434<a name="substance-sms-cs-100000128434"> </a></td>
+<td>Trastuzumab emtansine</td></tr>
+<tr><td style="white-space:nowrap">100000174462<a name="substance-sms-cs-100000174462"> </a></td>
+<td>Trastuzumab deruxtecan</td></tr>
+<tr><td style="white-space:nowrap">100000089154<a name="substance-sms-cs-100000089154"> </a></td>
+<td>Varenicline</td></tr>
+<tr><td style="white-space:nowrap">100000091746<a name="substance-sms-cs-100000091746"> </a></td>
+<td>Varenicline tartrate</td></tr>
+<tr><td style="white-space:nowrap">100000091531<a name="substance-sms-cs-100000091531"> </a></td>
+<td>Ethinylestradiol betadex clathrate</td></tr>
+<tr><td style="white-space:nowrap">100000090052<a name="substance-sms-cs-100000090052"> </a></td>
+<td>LACTOSE</td></tr>
+<tr><td style="white-space:nowrap">100000084759<a name="substance-sms-cs-100000084759"> </a></td>
+<td>PLACEBO</td></tr>
+<tr><td style="white-space:nowrap">100000093305<a name="substance-sms-cs-100000093305"> </a></td>
+<td>Lactose monohydrate</td></tr>
+<tr><td style="white-space:nowrap">100000088000<a name="substance-sms-cs-100000088000"> </a></td>
+<td>Valsartan</td></tr>
+<tr><td style="white-space:nowrap">100000091737<a name="substance-sms-cs-100000091737"> </a></td>
+<td>Hydrochlorothiazide</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Jul 10, 2024 21:48+0000">2024-07-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

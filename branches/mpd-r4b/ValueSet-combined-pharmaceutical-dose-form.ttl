@@ -1,0 +1,2092 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/combined-pharmaceutical-dose-form> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "combined-pharmaceutical-dose-form"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>10114000</td><td>Powder and solvent for oral solution</td></tr><tr><td>10115000</td><td>Powder and solvent for oral suspension</td></tr><tr><td>10115500</td><td>Powder and solvent for syrup</td></tr><tr><td>10412000</td><td>Powder and solution for dental cement</td></tr><tr><td>10606000</td><td>Eye drops, powder and solvent for solution</td></tr><tr><td>10607000</td><td>Eye drops, powder and solvent for suspension</td></tr><tr><td>10707000</td><td>Ear drops, powder and solvent for suspension</td></tr><tr><td>10800500</td><td>Nasal drops, lyophilisate and solvent for suspension</td></tr><tr><td>11207000</td><td>Powder and solvent for solution for injection</td></tr><tr><td>11208000</td><td>Powder and solvent for suspension for injection</td></tr><tr><td>11214000</td><td>Powder and solvent for solution for infusion</td></tr><tr><td>11214500</td><td>Lyophilisate and solvent for solution for injection</td></tr><tr><td>11214700</td><td>Lyophilisate and suspension for suspension for injection</td></tr><tr><td>11304000</td><td>Powder and solvent for implantation paste</td></tr><tr><td>11604000</td><td>Endotracheopulmonary instillation, powder and solvent for solution</td></tr><tr><td>11605000</td><td>Endotracheopulmonary instillation, powder and solvent for suspension</td></tr><tr><td>11702000</td><td>Powder and solvent for endocervical gel</td></tr><tr><td>12109500</td><td>Fibrin sealant-powder and solvent for fibrin sealant</td></tr><tr><td>12116000</td><td>Powder and solvent for sealant</td></tr><tr><td>13062000</td><td>Powder for concentrate and solution for solution for infusion</td></tr><tr><td>13081000</td><td>Powder and solution for bee-hive solution</td></tr><tr><td>13086000</td><td>Concentrate and solvent for concentrate for oral spray, suspension</td></tr><tr><td>13088000</td><td>Lyophilisate and solvent for oculonasal suspension</td></tr><tr><td>13092000</td><td>Emulsion and lyophilisate for suspension for injection</td></tr><tr><td>13093000</td><td>Lyophilisate and solvent for oral suspension</td></tr><tr><td>13097000</td><td>Nasal spray, lyophilisate and solvent for suspension</td></tr><tr><td>13101000</td><td>Powder and solution for bee-hive dispersion</td></tr><tr><td>13117000</td><td>Lyophilisate and solvent for emulsion for injection</td></tr><tr><td>13119000</td><td>Effervescent powder and powder for oral suspension</td></tr><tr><td>13121000</td><td>Powder and solution for suspension for injection</td></tr><tr><td>13138000</td><td>Gastro-resistant powder and solvent for oral suspension</td></tr><tr><td>13143000</td><td>Concentrate and solvent for dispersion for injection</td></tr><tr><td>13144000</td><td>Concentrate and solvent for intravesical solution</td></tr><tr><td>13150000</td><td>Effervescent powder and suspension for oral suspension</td></tr><tr><td>13153000</td><td>Concentrate and solvent for emulsion for injection</td></tr><tr><td>13157000</td><td>Effervescent granules and suspension for oral suspension</td></tr><tr><td>13160000</td><td>Concentrate and solvent for oral solution</td></tr><tr><td>50001500</td><td>Concentrate and diluent for solution for infusion</td></tr><tr><td>50002000</td><td>Concentrate and solvent for concentrate for solution for infusion</td></tr><tr><td>50003000</td><td>Concentrate and solvent for cutaneous solution</td></tr><tr><td>50004000</td><td>Concentrate and solvent for cutaneous use</td></tr><tr><td>50005000</td><td>Concentrate and solvent for injection</td></tr><tr><td>50006000</td><td>Concentrate and solvent for solution for infusion</td></tr><tr><td>50007000</td><td>Concentrate and solvent for solution for injection</td></tr><tr><td>50007500</td><td>Concentrate and solvent for solution for injection/infusion</td></tr><tr><td>50008000</td><td>Concentrate and solvent for suspension for injection</td></tr><tr><td>50021500</td><td>Emulsion and suspension for emulsion for injection</td></tr><tr><td>50026500</td><td>Granules and solvent for oral suspension</td></tr><tr><td>50027000</td><td>Granules and solvent for suspension for injection</td></tr><tr><td>50034500</td><td>Lyophilisate and solvent for suspension for injection</td></tr><tr><td>50041200</td><td>Powder and gel for gel</td></tr><tr><td>50041500</td><td>Powder and solution for solution for injection</td></tr><tr><td>50042000</td><td>Powder and solvent for concentrate for solution for infusion</td></tr><tr><td>50044000</td><td>Powder and solvent for cutaneous solution</td></tr><tr><td>50044500</td><td>Powder and solvent for dispersion for injection</td></tr><tr><td>50044700</td><td>Powder and solvent for emulsion for injection</td></tr><tr><td>50045000</td><td>Powder and solvent for endosinusial solution</td></tr><tr><td>50045500</td><td>Powder and solvent for epilesional solution</td></tr><tr><td>50046000</td><td>Powder and solvent for gingival gel</td></tr><tr><td>50047000</td><td>Powder and solvent for intraocular instillation solution</td></tr><tr><td>50047500</td><td>Powder and solvent for intravesical solution</td></tr><tr><td>50047600</td><td>Powder and solvent for intravesical suspension</td></tr><tr><td>50047650</td><td>Nasal drops, powder and solvent for solution</td></tr><tr><td>50047700</td><td>Powder and solvent for nebuliser solution</td></tr><tr><td>50048000</td><td>Powder and solvent for prolonged-release suspension for injection</td></tr><tr><td>50048270</td><td>Powder and solvent for solution for injection/skin-prick test</td></tr><tr><td>50048500</td><td>Powder and suspension for suspension for injection</td></tr><tr><td>50048600</td><td>Powder, dispersion and solvent for concentrate for dispersion for infusion</td></tr><tr><td>50055350</td><td>Powder, solvent and matrix for implantation matrix</td></tr><tr><td>50062000</td><td>Suspension and effervescent granules for oral suspension</td></tr><tr><td>50062500</td><td>Suspension and solution for spray</td></tr><tr><td>50062750</td><td>Suspension and solvent for suspension for injection</td></tr><tr><td>50064000</td><td>Tablet and solvent for rectal suspension</td></tr><tr><td>50065000</td><td>Tablet and powder for oral solution</td></tr><tr><td>50071000</td><td>Powder and solvent for dental gel</td></tr><tr><td>50078000</td><td>Gas and solvent for dispersion for injection/infusion</td></tr><tr><td>50080000</td><td>Powder and solvent for solution for injection/infusion</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>Greek (el)</b></td><td><b>Spanish (es)</b></td><td><b>French (fr)</b></td><td><b>Italian (it)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td>10114000</td><td>Pulver und Lösungsmittel zur Herstellung einer Lösung zum Einnehmen</td><td>Κόνις και διαλύτης για πόσιμο διάλυμα</td><td>Polvo y disolvente para solución oral</td><td>Poudre et solvant pour solution buvable</td><td>Polvere e solvente per soluzione orale</td><td>Pó e solvente para solução oral</td></tr><tr><td>10115000</td><td>Pulver und Lösungsmittel zur Herstellung einer Suspension zum Einnehmen</td><td>Κόνις και διαλύτης για πόσιμο εναιώρημα</td><td>Polvo y disolvente para suspensión oral</td><td>Poudre et solvant pour suspension buvable</td><td>Polvere e solvente per sospensione orale</td><td>Pó e veículo para suspensão oral</td></tr><tr><td>10115500</td><td>Pulver und Lösungsmittel zur Herstellung eines Sirups</td><td>Κόνις και διαλύτης για σιρόπι</td><td>Polvo y disolvente para jarabe</td><td>Poudre et solvant pour sirop</td><td>Polvere e solvente per sciroppo</td><td>Pó e solvente para xarope</td></tr><tr><td>10412000</td><td>Pulver und Lösung zur Herstellung eines Dentalzements</td><td>Κόνις και διάλυμα για οδοντοκονία</td><td>Polvo y solución para cemento dental</td><td>Poudre et solution pour ciment dentaire</td><td>Polvere e soluzione per cemento dentale</td><td>Pó e solução para cimento dental</td></tr><tr><td>10606000</td><td>Pulver und Lösungsmittel zur Herstellung von Augentropfen</td><td>Οφθαλμικές σταγόνες, κόνις και διαλύτης για διάλυμα</td><td>Polvo y disolvente para colirio en solución</td><td>Poudre et solvant pour collyre en solution</td><td>Collirio, polvere e solvente per soluzione</td><td>Colírio, pó e solvente para solução</td></tr><tr><td>10607000</td><td>Pulver und Lösungsmittel zur Herstellung einer Augentropfensuspension</td><td>Οφθαλμικές σταγόνες, κόνις και διαλύτης για εναιώρημα</td><td>Polvo y disolvente para colirio en suspensión</td><td>Poudre et solvant pour collyre en suspension</td><td>Collirio, polvere e solvente per sospensione</td><td>Colírio, pó e veículo para suspensão</td></tr><tr><td>10707000</td><td>Pulver und Lösungsmittel zur Herstellung einer Ohrentropfensuspension</td><td>Ωτικές σταγόνες, κόνις και διαλύτης για εναιώρημα</td><td>Polvo y disolvente para gotas óticas en suspensión</td><td>Poudre et solvant pour suspension auriculaire en gouttes</td><td>Gocce auricolari, polvere e solvente per sospensione</td><td>Gotas auriculares, pó e veículo para suspensão</td></tr><tr><td>10800500</td><td>Lyophilisat und Lösungsmittel zur Herstellung von Nasentropfen, Suspension</td><td>Λυοφιλοποιημένο υλικό και διαλύτης για ρινικές σταγόνες, εναιώρημα</td><td>Liofilizado y disolvente para gotas nasales en suspensión</td><td>Lyophilisat et solvant pour suspension nasale en gouttes</td><td>Gocce nasali, liofilizzato e solvente per sospensione</td><td>Liofilizado e veículo para gotas nasais, suspensão</td></tr><tr><td>11207000</td><td>Pulver und Lösungsmittel zur Herstellung einer Injektionslösung</td><td>Κόνις και διαλύτης για ενέσιμο διάλυμα</td><td>Polvo y disolvente para solución inyectable</td><td>Poudre et solvant pour solution injectable</td><td>Polvere e solvente per soluzione iniettabile</td><td>Pó e solvente para solução injetável</td></tr><tr><td>11208000</td><td>Pulver und Lösungsmittel zur Herstellung einer Injektionssuspension</td><td>Κόνις και διαλύτης για ενέσιμο εναιώρημα</td><td>Polvo y disolvente para suspensión inyectable</td><td>Poudre et solvant pour suspension injectable</td><td>Polvere e solvente per sospensione iniettabile</td><td>Pó e veículo para suspensão injetável</td></tr><tr><td>11214000</td><td>Pulver und Lösungsmittel zur Herstellung einer Infusionslösung</td><td>Κόνις και διαλύτης για διάλυμα προς έγχυση</td><td>Polvo y disolvente para solución para perfusión</td><td>Poudre et solvant pour solution pour perfusion</td><td>Polvere e solvente per soluzione per infusione</td><td>Pó e solvente para solução para perfusão</td></tr><tr><td>11214500</td><td>Lyophilisat und Lösungsmittel zur Herstellung einer Injektionslösung</td><td>Λυοφιλοποιημένο υλικό και διαλύτης για ενέσιμο διάλυμα</td><td>Liofilizado y disolvente para solución inyectable</td><td>Lyophilisat et solvant pour solution injectable</td><td></td><td>Liofilizado e solvente para solução injetável</td></tr><tr><td>11214700</td><td>Lyophilisat und Suspension zur Herstellung einer Injektionssuspension</td><td>Λυοφιλοποιημένο υλικό και εναιώρημα για παρασκευή  ενεσίμου εναιωρήματος</td><td>Liofilizado y suspensión para preparación de suspensión inyectable</td><td>Lyophilisat et suspension pour suspension injectable</td><td>Liofilizzato e sospensione per sospensione iniettabile</td><td>Liofilizado e suspensão para suspensão injetável</td></tr><tr><td>11304000</td><td>Pulver und Dispersionsmittel zur Herstellung einer Paste für Implantate</td><td>Κόνις και διαλύτης για φύραμα εμφύτευσης</td><td>Polvo y disolvente para pasta para implantación</td><td>Poudre et solvant pour pâte pour implantation</td><td>Polvere e solvente per pasta per impianto</td><td>Pó e solvente para pasta para implantação</td></tr><tr><td>11604000</td><td>Pulver und Lösungsmittel zur Herstellung einer Lösung zur endotracheopulmonalen Instillation</td><td>Ενδοτραχειοπνευμοική ενστάλλαξη, κόνις και διαλύτης για διάλυμα</td><td>Polvo y disolvente para solución para instilación endotraqueopulmonar</td><td>Poudre et solvant pour solution pour instillation endotrachéobronchique</td><td>Polvere e solvente per soluzione per instillazione endotracheobronchiale</td><td>Pó e solvente para solução para instilação endotraqueobrônquica</td></tr><tr><td>11605000</td><td>Pulver und Lösungsmittel zur Herstellung einer Suspension zur endotracheopulmonalen Instillation</td><td>Ενδοτραχειοπνευμονική ενστάλαξη, κόνις και διαλύτης για εναιώρημα</td><td>Polvo y disolvente para suspensión para instilación endotraqueopulmonar</td><td>Poudre et solvant pour suspension pour instillation endotrachéobronchique</td><td>Polvere e solvente per sospensione per instillazione endotracheobronchiale</td><td>Pó e veículo para suspensão para instilação endotraqueobrônquica</td></tr><tr><td>11702000</td><td>Pulver und Lösungsmittel zur Herstellung eines Gels zur endozervikalen Anwendung</td><td>Κόνις και διαλύτης για ενδοτραχηλική γέλη</td><td>Polvo y disolvente para gel endocervical</td><td>Poudre et solvant pour gel endocervical</td><td>Polvere e solvente per gel endocervicale</td><td>Pó e solvente para gel endocervical</td></tr><tr><td>12109500</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>12116000</td><td>Pulver und Lösungsmittel für einen Gewebekleber</td><td>Κόνις και διαλύτης για παρασκευή συγκολλητικού ιστών</td><td>Polvo y disolvente para adhesivo tisular</td><td>Poudre et solvant pour colle</td><td>Polvere e solvente per adesivo tissutale</td><td>Pó e solvente para cola para tecidos</td></tr><tr><td>13062000</td><td>Pulver zur Herstellung eines Konzentrats und Lösung zur Herstellung einer Infusionslösung</td><td>Κόνις για πυκνό σκεύασμα και διάλυμα για παρασκευή διαλύματος προς έγχυση</td><td>Polvo para concentrado y solución para solución para perfusión</td><td>Poudre pour solution à diluer et solution pour solution pour perfusion</td><td>Polvere per concentrato e soluzione per soluzione per infusione</td><td>Pó para concentrado e solução para solução para perfusão</td></tr><tr><td>13081000</td><td>Pulver und Lösung zur Herstellung einer Lösung für den Bienenstock</td><td>Κόνις και διάλυμα για παρασκευή ενδοκυψελικού διαλύματος</td><td>Polvo y solución para solución para colmenas</td><td>Poudre et solution pour solution pour ruche</td><td></td><td>Pó e solução para solução para colmeias</td></tr><tr><td>13086000</td><td>Konzentrat und Lösungsmittel für ein Konzentrat zur Herstellung eines Sprays zur oralen Anwendung, Suspension</td><td>Πυκνό σκεύασμα και διαλύτης για παρασκευή πυκνού διαλύματος για πόσιμο εκνέφωμα, εναιώρημα</td><td>Concentrado y disolvente para concentrado para suspensión para pulverización oral</td><td></td><td>Concentrato e solvente per spray orale, sospensione concentrata</td><td>Concentrado e veículo para concentrado para suspensão para pulverização oral</td></tr><tr><td>13088000</td><td>Lyophilisat und Lösungsmittel zur Herstellung einer Suspension zur okulonasalen Anwendung</td><td>Λυοφιλοποιημένο υλικό και διαλύτης για οφθαλμορρινικό εναιώρημα</td><td>Liofilizado y disolvente para suspensión oculonasal</td><td>Lyophilisat et solvant pour suspension oculonasale</td><td>Liofilizzato e solvente per sospensione oculonasale</td><td>Liofilizado e veículo para suspensão oculonasal</td></tr><tr><td>13092000</td><td>Emulsion und Lyophilisat zur Herstellung einer Injektionssuspension</td><td>Γαλάκτωμα και λυοφιλοποιημένο υλικό για ενέσιμο εναιώρημα</td><td>Emulsión y liofilizado para suspensión inyectable</td><td>Emulsion et lyophilisat pour suspension injectable</td><td>Emulsione e liofilizzato per sospensione iniettabile</td><td>Emulsão e liofilizado para suspensão injetável</td></tr><tr><td>13093000</td><td>Lyophilisat und Lösungsmittel zur Herstellung einer Suspension zum Einnehmen</td><td>Λυοφιλοποιημένο υλικό και διαλύτης για πόσιμο εναιώρημα</td><td>Liofilizado y disolvente para suspensión oral</td><td>Lyophilisat et solvant pour suspension buvable</td><td></td><td>Liofilizado e veículo para suspensão oral</td></tr><tr><td>13097000</td><td>Nasenspray, Lyophilisat und Lösungsmittel zur Herstellung einer Suspension</td><td>Ρινικό εκνέφωμα, λυοφιλοποιημένο υλικό και διαλύτης για εναιώρημα</td><td>Liofilizado y disolvente para suspensión para pulverización nasal</td><td></td><td>Spray nasale, liofilizzato e solvente per sospensione</td><td>Liofilizado e veículo para suspensão para pulverização nasal</td></tr><tr><td>13101000</td><td>Pulver und Lösung zur Herstellung einer Dispersion für den Bienenstock</td><td>Κόνις και διάλυμα για παρασκευή ενδοκυψελικής διασποράς</td><td>Polvo y solución para dispersión para colmenas</td><td>Poudre et solution pour dispersion pour ruche</td><td>Polvere e soluzione per dispersione per alveare</td><td>Pó e veículo para dispersão para colmeias</td></tr><tr><td>13117000</td><td>Lyophilisat und Lösungsmittel zur Herstellung einer Injektionsemulsion</td><td></td><td>Liofilizado y disolvente para emulsión inyectable</td><td>Lyophilisat et solvant pour émulsion injectable</td><td>Liofilizzato e solvente per emulsione iniettabile</td><td>Liofilizado e veículo para emulsão injetável</td></tr><tr><td>13119000</td><td></td><td></td><td>Polvo efervescente y polvo para suspensión oral</td><td>Poudre effervescente et poudre pour suspension buvable</td><td>Polvere effervescente e polvere per sospensione orale</td><td>Pó efervescente e pó para suspensão oral</td></tr><tr><td>13121000</td><td>Pulver und Lösung zur Herstellung einer Injektionssuspension</td><td></td><td>Polvo y solución para suspensión inyectable</td><td>Poudre et solution pour suspension injectable</td><td>Polvere e soluzione per sospensione iniettabile</td><td>Pó e solução para suspensão injetável</td></tr><tr><td>13138000</td><td></td><td></td><td>Polvo gastrorresistente y disolvente para suspensión oral</td><td></td><td>Polvere gastroresistente e solvente per sospensione orale</td><td>Pó e veículo para suspensão oral gastrorresistente</td></tr><tr><td>13143000</td><td>Konzentrat und Lösungsmittel zur Herstellung einer Injektionsdispersion</td><td></td><td>Concentrado y disolvente para dispersión inyectable</td><td>Dispersion à diluer et solvant pour dispersion injectable</td><td>Concentrato e solvente per dispersione iniettabile</td><td>Concentrado e veículo para dispersão injetável</td></tr><tr><td>13144000</td><td></td><td></td><td>Concentrado y disolvente para solución intravesical</td><td>Solution à diluer et solvant pour solution intravésicale</td><td>Concentrato e solvente per soluzione endovescicale</td><td>Concentrado e solvente para solução intravesical</td></tr><tr><td>13150000</td><td></td><td></td><td>Polvo efervescente y suspensión para suspensión oral</td><td>Poudre effervescente et suspension pour suspension buvable</td><td>Polvere effervescente e sospensione per sospensione orale</td><td>Pó efervescente e suspensão para suspensão oral</td></tr><tr><td>13153000</td><td></td><td></td><td></td><td>Emulsion à diluer et solvant pour émulsion injectable</td><td></td><td>Concentrado e veículo para emulsão injetável</td></tr><tr><td>13157000</td><td></td><td></td><td></td><td></td><td></td><td>Granulado efervesvente e suspensão para suspensão oral</td></tr><tr><td>13160000</td><td></td><td></td><td></td><td></td><td></td><td>Concentrado e solvente para solução oral</td></tr><tr><td>50001500</td><td></td><td>Πυκνό σκεύασμα και αραιωτικό μέσο για παρασκευή διαλύματος προς έγχυση</td><td></td><td>Solution à diluer et diluant pour perfusion d'une solution</td><td></td><td>Concentrado e solvente para solução para perfusão</td></tr><tr><td>50002000</td><td>Konzentrat und Lösungsmittel für ein Konzentrat zur Herstellung einer Infusionslösung</td><td>Πυκνό σκεύασμα και διαλύτης για παρασκευή πυκνού διαλύματος προς έγχυση</td><td>Concentrado y disolvente para concentrado para solución para perfusión</td><td></td><td>Concentrato e solvente per concentrato per soluzione per infusione</td><td>Concentrado e solvente para concentrado para solução para perfusão</td></tr><tr><td>50003000</td><td>Konzentrat und Lösungsmittel zur Herstellung einer Lösung zur Anwendung auf der Haut</td><td>Πυκνό σκεύασμα και διαλύτης για παρασκευή δερματικού διαλύματος</td><td>Concentrado y disolvente para solución cutánea</td><td>Solution à diluer et solvant pour solution cutanée</td><td>Concentrato e solvente per soluzione cutanea</td><td>Concentrado e solvente para solução cutânea</td></tr><tr><td>50004000</td><td></td><td>Πυκνό σκεύασμα και διαλύτης για δερματική χρήση</td><td>Concentrado y disolvente para uso cutáneo</td><td>Solution à diluer et solvant pour application cutanée</td><td>Concentrato e solvente per uso cutaneo</td><td>Concentrado e solvente para uso cutâneo</td></tr><tr><td>50005000</td><td></td><td>Πυκνό σκεύασμα και διαλύτης για ένεση</td><td>Concentrado y disolvente para inyectable</td><td>Solution à diluer et solvant pour injection</td><td></td><td>Concentrado e solvente para injetável</td></tr><tr><td>50006000</td><td>Konzentrat und Lösungsmittel zur Herstellung einer Infusionslösung</td><td>Πυκνό σκεύασμα και διαλύτης για παρασκευή διαλύματος προς έγχυση</td><td>Concentrado y disolvente para solución para perfusión</td><td>Solution à diluer et solvant pour solution pour perfusion</td><td>Concentrato e solvente per soluzione per infusione</td><td>Concentrado e solvente para solução para perfusão</td></tr><tr><td>50007000</td><td>Konzentrat und Lösungsmittel zur Herstellung einer Injektionslösung</td><td>Πυκνό σκεύασμα και διαλύτης για παρασκευή ενεσίμου διαλύματος</td><td>Concentrado y disolvente para solución inyectable</td><td>Solution à diluer et solvant pour solution injectable</td><td>Concentrato e solvente per soluzione iniettabile</td><td>Concentrado e solvente para solução injetável</td></tr><tr><td>50007500</td><td>Konzentrat und Lösungsmittel zur Herstellung einer Injektions-/Infusionslösung</td><td>Πυκνό σκεύασμα και διαλύτης για παρασκευή ενεσίμου διαλύματος /διαλύματος προς έγχυση</td><td>Concentrado y disolvente para solución inyectable y para perfusión</td><td>Solution à diluer et solvant pour solution injectable/pour perfusion</td><td>Concentrato e solvente per soluzione iniettabile/per infusione</td><td>Concentrado e solvente para solução injetável ou para perfusão</td></tr><tr><td>50008000</td><td>Konzentrat und Lösungsmittel zur Herstellung einer Injektionssuspension</td><td>Πυκνό σκεύασμα και διαλύτης για παρασκευή ενεσίμου εναιωρήματος</td><td>Concentrado y disolvente para suspensión inyectable</td><td>Suspension à diluer et solvant pour suspension injectable</td><td>Concentrato e solvente per sospensione iniettabile</td><td>Concentrado e veículo para suspensão injetável</td></tr><tr><td>50021500</td><td>Emulsion und Suspension zur Herstellung einer Emulsion zur Injektion</td><td>Γαλάκτωμα και εναιώρημα για ενέσιμο γαλάκτωμα</td><td>Emulsión y suspensión para preparación de emulsión inyectable</td><td>Emulsion et suspension pour émulsion injectable</td><td>Emulsione e sospensione per emulsione iniettabile</td><td>Emulsão e suspensão para emulsão injetável</td></tr><tr><td>50026500</td><td>Granulat und Lösungsmittel zur Herstellung einer Suspension zum Einnehmen</td><td>Κοκκία και διαλύτης για πόσιμο εναιώρημα</td><td>Granulado y disolvente para suspensión oral</td><td>Granulés et solvant pour suspension buvable</td><td>Granulato e solvente per sospensione orale</td><td>Granulado e veículo para suspensão oral</td></tr><tr><td>50027000</td><td>Granulat und Lösungsmittel zur Herstellung einer Injektionssuspension</td><td>Κοκκία και διαλύτης για παρασκευή ενεσίμου εναιωρήματος</td><td>Granulado y disolvente para suspensión inyectable</td><td>Granulés et solvant pour suspension injectable</td><td>Granulato e solvente per sospensione iniettabile</td><td>Granulado e veículo para suspensão injetável</td></tr><tr><td>50034500</td><td>Lyophilisat und Lösungsmittel zur Herstellung einer Injektionssuspension</td><td>Λυοφιλοποιημένο υλικό και διαλύτης για ενέσιμο εναιώρημα</td><td>Liofilizado y disolvente para suspensión inyectable</td><td>Lyophilisat et solvant pour suspension injectable</td><td></td><td>Liofilizado e veículo para suspensão injetável</td></tr><tr><td>50041200</td><td>Pulver und Gel zur Herstellung eines Gels</td><td>Κόνις και γέλη για παρασκευή γέλης</td><td>Polvo y gel para gel</td><td>Poudre et gel pour gel</td><td>Polvere e gel per gel</td><td>Pó e gel para gel</td></tr><tr><td>50041500</td><td>Pulver und Lösung zur Herstellung einer Injektionslösung</td><td>Κόνις και διάλυμα για παρασκευή ενεσίμου διαλύματος</td><td>Polvo y solución para solución inyectable</td><td>Poudre et solution pour solution injectable</td><td>Polvere e soluzione per soluzione iniettabile</td><td>Pó e solução para solução injetável</td></tr><tr><td>50042000</td><td>Pulver und Lösungsmittel für ein Konzentrat zur Herstellung einer Infusionslösung</td><td>Κόνις και διαλύτης για πυκνό σκεύασμα για παρασκευή διαλύματος προς έγχυση</td><td>Polvo y disolvente para concentrado para solución para perfusión</td><td>Poudre et solvant pour solution à diluer pour perfusion</td><td>Polvere e solvente per concentrato per soluzione per infusione</td><td>Pó e solvente para concentrado para solução para perfusão</td></tr><tr><td>50044000</td><td>Pulver und Lösungsmittel zur Herstellung einer Lösung zur Anwendung auf der Haut</td><td>Κόνις και διαλύτης για δερματικό διάλυμα</td><td>Polvo y disolvente para solución cutánea</td><td>Poudre et solvant pour solution cutanée</td><td>Polvere e solvente per soluzione cutanea</td><td>Pó e solvente para solução cutânea</td></tr><tr><td>50044500</td><td>Pulver und Lösungsmittel zur Herstellung einer Injektionsdispersion</td><td>Κόνις και διαλύτης για παρασκευή ενέσιμης διασποράς</td><td>Polvo y disolvente para dispersión inyectable</td><td>Poudre et solvant pour dispersion injectable</td><td>Polvere e solvente per dispersione iniettabile</td><td>Pó e veículo para dispersão injetável</td></tr><tr><td>50044700</td><td>Pulver und Lösungsmittel zur Herstellung einer Injektionsemulsion</td><td>Κόνις και διαλύτης για ενέσιμο γαλάκτωμα</td><td>Polvo y disolvente para emulsión inyectable</td><td>Poudre et solvant pour émulsion injectable</td><td>Polvere e solvente per emulsione iniettabile</td><td>Pó e veículo para emulsão injetável</td></tr><tr><td>50045000</td><td>Pulver und Lösungsmittel zur Herstellung einer Lösung zur Anwendung in den Nebenhöhlen</td><td>Κόνις και διαλύτης για ενδορρινοκολπικό διάλυμα</td><td>Polvo y disolvente para solución endosinusal</td><td>Poudre et solvant pour solution endosinusale</td><td>Polvere e solvente per soluzione endosinusale</td><td>Pó e solvente para solução endossinusal</td></tr><tr><td>50045500</td><td>Pulver und Lösungsmittel zur Herstellung einer Lösung zum Auftragen auf die Wunde</td><td>Κόνις και διαλύτης για διάλυμα εφαρμογής επί προσβεβλημένης περιοχής</td><td>Polvo y disolvente para solución epilesional</td><td>Poudre et solvant pour solution épilésionnelle</td><td>Polvere e solvente per soluzione epilesionale</td><td>Pó e solvente para solução epilesional</td></tr><tr><td>50046000</td><td>Pulver und Lösungsmittel zur Herstellung eines Gels zur Anwendung am Zahnfleisch</td><td>Κόνις και διαλύτης για παρασκευή γέλης για ούλα</td><td>Polvo y disolvente para gel gingival</td><td>Poudre et solvant pour gel gingival</td><td>Polvere e solvente per gel gengivale</td><td>Pó e solvente para gel gengival</td></tr><tr><td>50047000</td><td>Pulver und Lösungsmittel zur Herstellung einer Lösung zur intraokularen Instillation</td><td>Κόνις και διαλύτης για παρασκευή διαλύματος ενδοφθαλμικής ενστάλαξης</td><td>Polvo y disolvente para solución para instilación por vía intraocular</td><td>Poudre et solvant pour solution pour instillation  intraoculaire</td><td>Polvere e solvente per soluzione per instillazione intraoculare</td><td>Pó e solvente para solução para instilação intraocular</td></tr><tr><td>50047500</td><td>Pulver und Lösungsmittel zur Herstellung einer Lösung zur intravesikalen Anwendung</td><td>Κόνις και διαλύτης για παρασκευή ενδοκυστικού διαλύματος</td><td>Polvo y disolvente para solución intravesical</td><td>Poudre et solvant pour solution intravésicale</td><td>Polvere e solvente per soluzione endovescicale</td><td>Pó e solvente para solução intravesical</td></tr><tr><td>50047600</td><td>Pulver und Lösungsmittel zur Herstellung einer Suspension zur intravesikalen Anwendung</td><td>Κόνις και διαλύτης για ενδοκυστικό εναιώρημα</td><td>Polvo y disolvente para suspensión intravesical</td><td>Poudre et solvant pour suspension intravésicale</td><td>Polvere e solvente per sospensione endovescicale</td><td>Pó e veículo para suspensão intravesical</td></tr><tr><td>50047650</td><td>Pulver und Lösungsmittel zur Herstellung von Nasentropfen, Lösung</td><td>Κόνις και διαλύτης για ρινικές σταγόνες, διάλυμα</td><td>Polvo y disolvente para gotas nasales en solución</td><td>Poudre et solvant pour solution nasale en gouttes</td><td>Gocce nasali, polvere e solvente per soluzione</td><td>Pó e solvente para gotas nasais, solução</td></tr><tr><td>50047700</td><td>Pulver und Lösungsmittel zur Herstellung einer Lösung für einen Vernebler</td><td>Κόνις και διαλύτης για διάλυμα εισπνοής με εκνεφωτή</td><td>Polvo y disolvente para solución para inhalación por nebulizador</td><td>Poudre et solvant pour solution pour inhalation par nébuliseur</td><td>Polvere e solvente per soluzione per nebulizzatore</td><td>Pó e solvente para solução para inalação por nebulização</td></tr><tr><td>50048000</td><td>Pulver und Lösungsmittel zur Herstellung einer Depot-Injektionssuspension</td><td>Κόνις και διαλύτης για παρασκευή ενεσίμου εναιωρήματος παρατεταμένης αποδέσμευσης</td><td>Polvo y disolvente para suspensión inyectable de liberación prolongada</td><td>Poudre et solvant pour suspension injectable à libération prolongée</td><td>Polvere e solvente per sospensione iniettabile a rilascio prolungato</td><td>Pó e veículo para suspensão injetável de libertação prolongada</td></tr><tr><td>50048270</td><td>Pulver und Lösungsmittel zur Herstellung einer Injektionslösung bzw. einer Pricktestlösung</td><td>Κόνις και διαλύτης για παρασκευή διαλύματος για ένεση/έλεγχο με νύξη του δέρματος</td><td>Polvo y disolvente para solución inyectable y para prueba con alergenos por punción</td><td>Poudre et solvant pour solution injectable/pour prick-test</td><td>Polvere e solvente per soluzione iniettabile/per skin prick test</td><td>Pó e solvente para solução injetável ou para teste cutâneo por picada</td></tr><tr><td>50048500</td><td>Pulver und Suspension zur Herstellung einer Injektionssuspension</td><td>Κόνις και εναιώρημα για παρασκευή ενεσίμου εναιωρήματος</td><td>Polvo y suspensión para suspensión inyectable</td><td>Poudre et suspension pour suspension injectable</td><td>Polvere e sospensione per sospensione iniettabile</td><td>Pó e suspensão para suspensão injetável</td></tr><tr><td>50048600</td><td>Pulver, Dispersion und Lösungsmittel für ein Konzentrat zur Herstellung einer Infusionsdispersion</td><td>Κόνις, διασπορά και διαλύτης για παρασκευή πυκνού σκευάσματος για διασπορά προς έγχυση</td><td>Polvo, dispersión y disolvente para concentrado para dispersión para perfusión</td><td>Poudre, dispersion et solvant pour dispersion à diluer pour dispersion pour perfusion</td><td>Polvere, dispersione e solvente per concentrato per dispersione per infusione</td><td>Pó, dispersão e veículo para concentrado para dispersão para perfusão</td></tr><tr><td>50055350</td><td>Pulver, Lösungsmittel und Matrix  zur Herstellung einer Matrix zur Implantation</td><td>Κόνις, διαλύτης και υπόστρωμα για παρασκευή υποστρώματος εμφύτευσης</td><td>Polvo, disolvente y matriz para preparación de matriz para implantación</td><td>Poudre, solvant et matrice pour matrice pour implantation</td><td>Polvere, solvente e matrice per matrice per impianto</td><td>Pó, solvente e matriz para matriz para implantação</td></tr><tr><td>50062000</td><td>Suspension und Brausegranulat zur Herstellung einer Suspension zum Einnehmen</td><td>Εναιώρημα και αναβράζοντα κοκκία για πόσιμο εναιώρημα</td><td>Suspensión y granulado efervescente para suspensión oral</td><td>Suspension et granules effervescents pour suspension buvable</td><td>Sospensione e granulato effervescente per sospensione orale</td><td>Suspensão e granulado efervescente para suspensão oral</td></tr><tr><td>50062500</td><td>Suspension und Lösung zur Herstellung eines Sprays</td><td>Εναιώρημα και διάλυμα για ψεκασμό</td><td>Suspensión y solución para pulverización</td><td>Suspension et solution pour pulvérisation</td><td>Sospensione e soluzione per spray</td><td>Suspensão e solução para pulverização</td></tr><tr><td>50062750</td><td>Suspension und Lösungsmittel zur Herstellung einer Injektionssuspension</td><td>Εναιώρημα και διαλύτης για παρασκευή ενεσίμου εναιώρηματος</td><td>Suspensión y disolvente para suspensión inyectable</td><td>Suspension et solvant pour suspension injectable</td><td></td><td></td></tr><tr><td>50064000</td><td>Tabletten und Lösungsmittel zur Herstellung einer Rektalsuspension</td><td>Δισκίο και διαλύτης για παρασκευή εναιωρήματος από του ορθού</td><td>Comprimido y disolvente para suspensión rectal</td><td>Comprimé et solvant pour suspension rectale</td><td>Compressa e solvente per sospensione rettale</td><td>Comprimido e veículo para suspensão retal</td></tr><tr><td>50065000</td><td>Tabletten und Pulver zur Herstellung einer Lösung zum Einnehmen</td><td>Δισκίο και κόνις για πόσιμο διάλυμα</td><td>Comprimido y polvo para solución oral</td><td>Comprimé et poudre pour solution buvable</td><td>Compressa e polvere per soluzione orale</td><td>Comprimido e pó para solução oral</td></tr><tr><td>50071000</td><td>Pulver und Lösungsmittel zur Herstellung eines Dentalgels</td><td>Κόνις και διαλύτης για οδοντική γέλη</td><td>Polvo y disolvente para gel dental</td><td>Poudre et solvant pour gel dentaire</td><td>Polvere e solvente per gel dentale</td><td>Pó e solvente para gel dental</td></tr><tr><td>50078000</td><td>Gas und Lösungsmittel zur Herstellung einer Injektions-/Infusionsdispersion</td><td>Αέριο και διαλύτης για παρασκευή ενέσιμης διασποράς ή διασποράς προς έγχυση</td><td>Gas y disolvente para dispersión inyectable y para perfusión</td><td>Gaz et solvant pour dispersion injectable/pour perfusion</td><td>Gas e solvente per dispersione iniettabile/ per infusione</td><td>Gás e veículo para dispersão injetável ou para perfusão</td></tr><tr><td>50080000</td><td>Pulver und Lösungsmittel zur Herstellung einer Injektions-/Infusionslösung</td><td>Κόνις και διαλύτης για παρασκευή ενεσίμου διαλύματος ή διαλύματος προς έγχυση</td><td>Polvo y disolvente para solución inyectable y para perfusión</td><td>Poudre et solvant pour solution injectable/pour perfusion</td><td>Polvere e solvente per soluzione iniettabile/ per infusione</td><td>Pó e solvente para solução injetável ou para perfusão</td></tr></table></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://unicom-project.eu/fhir/ValueSet/combined-pharmaceutical-dose-form"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "CombinedPharmaceuticalDoseForm"]; # 
+  fhir:ValueSet.title [ fhir:value "Combined pharmaceutical dose form"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-03T15:45:39+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "UNICOM"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "ValueSet Combined pharmaceutical dose form from EDQM, CDF, see https://standardterms.edqm.eu/#"]; # 
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://standardterms.edqm.eu" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10114000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for oral solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Lösung zum Einnehmen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για πόσιμο διάλυμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para solución oral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution buvable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per soluzione orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para solução oral" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10115000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for oral suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Suspension zum Einnehmen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για πόσιμο εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para suspensión oral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour suspension buvable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per sospensione orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e veículo para suspensão oral" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10115500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for syrup" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung eines Sirups" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για σιρόπι" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para jarabe" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour sirop" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per sciroppo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para xarope" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10412000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solution for dental cement" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösung zur Herstellung eines Dentalzements" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διάλυμα για οδοντοκονία" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y solución para cemento dental" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solution pour ciment dentaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e soluzione per cemento dentale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solução para cimento dental" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10606000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eye drops, powder and solvent for solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung von Augentropfen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Οφθαλμικές σταγόνες, κόνις και διαλύτης για διάλυμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para colirio en solución" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour collyre en solution" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Collirio, polvere e solvente per soluzione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Colírio, pó e solvente para solução" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10607000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eye drops, powder and solvent for suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Augentropfensuspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Οφθαλμικές σταγόνες, κόνις και διαλύτης για εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para colirio en suspensión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour collyre en suspension" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Collirio, polvere e solvente per sospensione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Colírio, pó e veículo para suspensão" ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10707000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ear drops, powder and solvent for suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Ohrentropfensuspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ωτικές σταγόνες, κόνις και διαλύτης για εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para gotas óticas en suspensión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour suspension auriculaire en gouttes" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gocce auricolari, polvere e solvente per sospensione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gotas auriculares, pó e veículo para suspensão" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10800500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasal drops, lyophilisate and solvent for suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat und Lösungsmittel zur Herstellung von Nasentropfen, Suspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Λυοφιλοποιημένο υλικό και διαλύτης για ρινικές σταγόνες, εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado y disolvente para gotas nasales en suspensión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat et solvant pour suspension nasale en gouttes" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gocce nasali, liofilizzato e solvente per sospensione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado e veículo para gotas nasais, suspensão" ]
+         ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11207000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for solution for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Injektionslösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για ενέσιμο διάλυμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para solución inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per soluzione iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para solução injetável" ]
+         ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11208000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for suspension for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Injektionssuspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για ενέσιμο εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para suspensión inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour suspension injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per sospensione iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e veículo para suspensão injetável" ]
+         ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11214000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for solution for infusion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Infusionslösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για διάλυμα προς έγχυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para solución para perfusión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution pour perfusion" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per soluzione per infusione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para solução para perfusão" ]
+         ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11214500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lyophilisate and solvent for solution for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat und Lösungsmittel zur Herstellung einer Injektionslösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Λυοφιλοποιημένο υλικό και διαλύτης για ενέσιμο διάλυμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado y disolvente para solución inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat et solvant pour solution injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado e solvente para solução injetável" ]
+         ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11214700" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lyophilisate and suspension for suspension for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat und Suspension zur Herstellung einer Injektionssuspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Λυοφιλοποιημένο υλικό και εναιώρημα για παρασκευή  ενεσίμου εναιωρήματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado y suspensión para preparación de suspensión inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat et suspension pour suspension injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizzato e sospensione per sospensione iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado e suspensão para suspensão injetável" ]
+         ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11304000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for implantation paste" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Dispersionsmittel zur Herstellung einer Paste für Implantate" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για φύραμα εμφύτευσης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para pasta para implantación" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour pâte pour implantation" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per pasta per impianto" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para pasta para implantação" ]
+         ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11604000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endotracheopulmonary instillation, powder and solvent for solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Lösung zur endotracheopulmonalen Instillation" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοτραχειοπνευμοική ενστάλλαξη, κόνις και διαλύτης για διάλυμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para solución para instilación endotraqueopulmonar" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution pour instillation endotrachéobronchique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per soluzione per instillazione endotracheobronchiale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para solução para instilação endotraqueobrônquica" ]
+         ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11605000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endotracheopulmonary instillation, powder and solvent for suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Suspension zur endotracheopulmonalen Instillation" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοτραχειοπνευμονική ενστάλαξη, κόνις και διαλύτης για εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para suspensión para instilación endotraqueopulmonar" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour suspension pour instillation endotrachéobronchique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per sospensione per instillazione endotracheobronchiale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e veículo para suspensão para instilação endotraqueobrônquica" ]
+         ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11702000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for endocervical gel" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung eines Gels zur endozervikalen Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για ενδοτραχηλική γέλη" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para gel endocervical" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour gel endocervical" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per gel endocervicale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para gel endocervical" ]
+         ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12109500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fibrin sealant-powder and solvent for fibrin sealant" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12116000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for sealant" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel für einen Gewebekleber" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για παρασκευή συγκολλητικού ιστών" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para adhesivo tisular" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour colle" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per adesivo tissutale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para cola para tecidos" ]
+         ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13062000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder for concentrate and solution for solution for infusion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver zur Herstellung eines Konzentrats und Lösung zur Herstellung einer Infusionslösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις για πυκνό σκεύασμα και διάλυμα για παρασκευή διαλύματος προς έγχυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo para concentrado y solución para solución para perfusión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre pour solution à diluer et solution pour solution pour perfusion" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere per concentrato e soluzione per soluzione per infusione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó para concentrado e solução para solução para perfusão" ]
+         ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13081000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solution for bee-hive solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösung zur Herstellung einer Lösung für den Bienenstock" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διάλυμα για παρασκευή ενδοκυψελικού διαλύματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y solución para solución para colmenas" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solution pour solution pour ruche" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solução para solução para colmeias" ]
+         ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13086000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and solvent for concentrate for oral spray, suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Konzentrat und Lösungsmittel für ein Konzentrat zur Herstellung eines Sprays zur oralen Anwendung, Suspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πυκνό σκεύασμα και διαλύτης για παρασκευή πυκνού διαλύματος για πόσιμο εκνέφωμα, εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado y disolvente para concentrado para suspensión para pulverización oral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrato e solvente per spray orale, sospensione concentrata" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e veículo para concentrado para suspensão para pulverização oral" ]
+         ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13088000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lyophilisate and solvent for oculonasal suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat und Lösungsmittel zur Herstellung einer Suspension zur okulonasalen Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Λυοφιλοποιημένο υλικό και διαλύτης για οφθαλμορρινικό εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado y disolvente para suspensión oculonasal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat et solvant pour suspension oculonasale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizzato e solvente per sospensione oculonasale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado e veículo para suspensão oculonasal" ]
+         ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13092000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Emulsion and lyophilisate for suspension for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Emulsion und Lyophilisat zur Herstellung einer Injektionssuspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Γαλάκτωμα και λυοφιλοποιημένο υλικό για ενέσιμο εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Emulsión y liofilizado para suspensión inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Emulsion et lyophilisat pour suspension injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Emulsione e liofilizzato per sospensione iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Emulsão e liofilizado para suspensão injetável" ]
+         ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13093000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lyophilisate and solvent for oral suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat und Lösungsmittel zur Herstellung einer Suspension zum Einnehmen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Λυοφιλοποιημένο υλικό και διαλύτης για πόσιμο εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado y disolvente para suspensión oral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat et solvant pour suspension buvable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado e veículo para suspensão oral" ]
+         ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13097000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasal spray, lyophilisate and solvent for suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nasenspray, Lyophilisat und Lösungsmittel zur Herstellung einer Suspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ρινικό εκνέφωμα, λυοφιλοποιημένο υλικό και διαλύτης για εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado y disolvente para suspensión para pulverización nasal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spray nasale, liofilizzato e solvente per sospensione" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado e veículo para suspensão para pulverização nasal" ]
+         ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13101000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solution for bee-hive dispersion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösung zur Herstellung einer Dispersion für den Bienenstock" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διάλυμα για παρασκευή ενδοκυψελικής διασποράς" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y solución para dispersión para colmenas" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solution pour dispersion pour ruche" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e soluzione per dispersione per alveare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e veículo para dispersão para colmeias" ]
+         ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13117000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lyophilisate and solvent for emulsion for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat und Lösungsmittel zur Herstellung einer Injektionsemulsion" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado y disolvente para emulsión inyectable" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat et solvant pour émulsion injectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizzato e solvente per emulsione iniettabile" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado e veículo para emulsão injetável" ]
+         ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13119000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Effervescent powder and powder for oral suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo efervescente y polvo para suspensión oral" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre effervescente et poudre pour suspension buvable" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere effervescente e polvere per sospensione orale" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó efervescente e pó para suspensão oral" ]
+         ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13121000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solution for suspension for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösung zur Herstellung einer Injektionssuspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y solución para suspensión inyectable" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solution pour suspension injectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e soluzione per sospensione iniettabile" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solução para suspensão injetável" ]
+         ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13138000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastro-resistant powder and solvent for oral suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo gastrorresistente y disolvente para suspensión oral" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere gastroresistente e solvente per sospensione orale" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e veículo para suspensão oral gastrorresistente" ]
+         ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13143000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and solvent for dispersion for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Konzentrat und Lösungsmittel zur Herstellung einer Injektionsdispersion" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado y disolvente para dispersión inyectable" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispersion à diluer et solvant pour dispersion injectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrato e solvente per dispersione iniettabile" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e veículo para dispersão injetável" ]
+         ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13144000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and solvent for intravesical solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado y disolvente para solución intravesical" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Solution à diluer et solvant pour solution intravésicale" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrato e solvente per soluzione endovescicale" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e solvente para solução intravesical" ]
+         ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13150000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Effervescent powder and suspension for oral suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo efervescente y suspensión para suspensión oral" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre effervescente et suspension pour suspension buvable" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere effervescente e sospensione per sospensione orale" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó efervescente e suspensão para suspensão oral" ]
+         ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13153000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and solvent for emulsion for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Emulsion à diluer et solvant pour émulsion injectable" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e veículo para emulsão injetável" ]
+         ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13157000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Effervescent granules and suspension for oral suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Granulado efervesvente e suspensão para suspensão oral" ]
+         ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13160000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and solvent for oral solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e solvente para solução oral" ]
+         ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50001500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and diluent for solution for infusion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πυκνό σκεύασμα και αραιωτικό μέσο για παρασκευή διαλύματος προς έγχυση" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Solution à diluer et diluant pour perfusion d'une solution" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e solvente para solução para perfusão" ]
+         ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50002000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and solvent for concentrate for solution for infusion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Konzentrat und Lösungsmittel für ein Konzentrat zur Herstellung einer Infusionslösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πυκνό σκεύασμα και διαλύτης για παρασκευή πυκνού διαλύματος προς έγχυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado y disolvente para concentrado para solución para perfusión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrato e solvente per concentrato per soluzione per infusione" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e solvente para concentrado para solução para perfusão" ]
+         ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50003000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and solvent for cutaneous solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Konzentrat und Lösungsmittel zur Herstellung einer Lösung zur Anwendung auf der Haut" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πυκνό σκεύασμα και διαλύτης για παρασκευή δερματικού διαλύματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado y disolvente para solución cutánea" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Solution à diluer et solvant pour solution cutanée" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrato e solvente per soluzione cutanea" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e solvente para solução cutânea" ]
+         ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50004000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and solvent for cutaneous use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πυκνό σκεύασμα και διαλύτης για δερματική χρήση" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado y disolvente para uso cutáneo" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Solution à diluer et solvant pour application cutanée" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrato e solvente per uso cutaneo" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e solvente para uso cutâneo" ]
+         ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50005000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and solvent for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πυκνό σκεύασμα και διαλύτης για ένεση" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado y disolvente para inyectable" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Solution à diluer et solvant pour injection" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e solvente para injetável" ]
+         ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50006000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and solvent for solution for infusion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Konzentrat und Lösungsmittel zur Herstellung einer Infusionslösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πυκνό σκεύασμα και διαλύτης για παρασκευή διαλύματος προς έγχυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado y disolvente para solución para perfusión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Solution à diluer et solvant pour solution pour perfusion" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrato e solvente per soluzione per infusione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e solvente para solução para perfusão" ]
+         ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50007000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and solvent for solution for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Konzentrat und Lösungsmittel zur Herstellung einer Injektionslösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πυκνό σκεύασμα και διαλύτης για παρασκευή ενεσίμου διαλύματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado y disolvente para solución inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Solution à diluer et solvant pour solution injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrato e solvente per soluzione iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e solvente para solução injetável" ]
+         ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50007500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and solvent for solution for injection/infusion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Konzentrat und Lösungsmittel zur Herstellung einer Injektions-/Infusionslösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πυκνό σκεύασμα και διαλύτης για παρασκευή ενεσίμου διαλύματος /διαλύματος προς έγχυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado y disolvente para solución inyectable y para perfusión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Solution à diluer et solvant pour solution injectable/pour perfusion" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrato e solvente per soluzione iniettabile/per infusione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e solvente para solução injetável ou para perfusão" ]
+         ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50008000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate and solvent for suspension for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Konzentrat und Lösungsmittel zur Herstellung einer Injektionssuspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πυκνό σκεύασμα και διαλύτης για παρασκευή ενεσίμου εναιωρήματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado y disolvente para suspensión inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suspension à diluer et solvant pour suspension injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrato e solvente per sospensione iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado e veículo para suspensão injetável" ]
+         ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50021500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Emulsion and suspension for emulsion for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Emulsion und Suspension zur Herstellung einer Emulsion zur Injektion" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Γαλάκτωμα και εναιώρημα για ενέσιμο γαλάκτωμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Emulsión y suspensión para preparación de emulsión inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Emulsion et suspension pour émulsion injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Emulsione e sospensione per emulsione iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Emulsão e suspensão para emulsão injetável" ]
+         ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50026500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Granules and solvent for oral suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Granulat und Lösungsmittel zur Herstellung einer Suspension zum Einnehmen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κοκκία και διαλύτης για πόσιμο εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Granulado y disolvente para suspensión oral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Granulés et solvant pour suspension buvable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Granulato e solvente per sospensione orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Granulado e veículo para suspensão oral" ]
+         ]
+       ], [
+         fhir:index 48;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50027000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Granules and solvent for suspension for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Granulat und Lösungsmittel zur Herstellung einer Injektionssuspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κοκκία και διαλύτης για παρασκευή ενεσίμου εναιωρήματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Granulado y disolvente para suspensión inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Granulés et solvant pour suspension injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Granulato e solvente per sospensione iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Granulado e veículo para suspensão injetável" ]
+         ]
+       ], [
+         fhir:index 49;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50034500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lyophilisate and solvent for suspension for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat und Lösungsmittel zur Herstellung einer Injektionssuspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Λυοφιλοποιημένο υλικό και διαλύτης για ενέσιμο εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado y disolvente para suspensión inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lyophilisat et solvant pour suspension injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liofilizado e veículo para suspensão injetável" ]
+         ]
+       ], [
+         fhir:index 50;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50041200" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and gel for gel" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Gel zur Herstellung eines Gels" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και γέλη για παρασκευή γέλης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y gel para gel" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et gel pour gel" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e gel per gel" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e gel para gel" ]
+         ]
+       ], [
+         fhir:index 51;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50041500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solution for solution for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösung zur Herstellung einer Injektionslösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διάλυμα για παρασκευή ενεσίμου διαλύματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y solución para solución inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solution pour solution injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e soluzione per soluzione iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solução para solução injetável" ]
+         ]
+       ], [
+         fhir:index 52;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50042000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for concentrate for solution for infusion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel für ein Konzentrat zur Herstellung einer Infusionslösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για πυκνό σκεύασμα για παρασκευή διαλύματος προς έγχυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para concentrado para solución para perfusión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution à diluer pour perfusion" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per concentrato per soluzione per infusione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para concentrado para solução para perfusão" ]
+         ]
+       ], [
+         fhir:index 53;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50044000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for cutaneous solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Lösung zur Anwendung auf der Haut" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για δερματικό διάλυμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para solución cutánea" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution cutanée" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per soluzione cutanea" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para solução cutânea" ]
+         ]
+       ], [
+         fhir:index 54;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50044500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for dispersion for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Injektionsdispersion" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για παρασκευή ενέσιμης διασποράς" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para dispersión inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour dispersion injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per dispersione iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e veículo para dispersão injetável" ]
+         ]
+       ], [
+         fhir:index 55;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50044700" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for emulsion for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Injektionsemulsion" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για ενέσιμο γαλάκτωμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para emulsión inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour émulsion injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per emulsione iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e veículo para emulsão injetável" ]
+         ]
+       ], [
+         fhir:index 56;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50045000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for endosinusial solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Lösung zur Anwendung in den Nebenhöhlen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για ενδορρινοκολπικό διάλυμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para solución endosinusal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution endosinusale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per soluzione endosinusale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para solução endossinusal" ]
+         ]
+       ], [
+         fhir:index 57;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50045500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for epilesional solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Lösung zum Auftragen auf die Wunde" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για διάλυμα εφαρμογής επί προσβεβλημένης περιοχής" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para solución epilesional" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution épilésionnelle" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per soluzione epilesionale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para solução epilesional" ]
+         ]
+       ], [
+         fhir:index 58;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50046000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for gingival gel" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung eines Gels zur Anwendung am Zahnfleisch" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για παρασκευή γέλης για ούλα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para gel gingival" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour gel gingival" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per gel gengivale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para gel gengival" ]
+         ]
+       ], [
+         fhir:index 59;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50047000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for intraocular instillation solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Lösung zur intraokularen Instillation" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για παρασκευή διαλύματος ενδοφθαλμικής ενστάλαξης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para solución para instilación por vía intraocular" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution pour instillation  intraoculaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per soluzione per instillazione intraoculare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para solução para instilação intraocular" ]
+         ]
+       ], [
+         fhir:index 60;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50047500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for intravesical solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Lösung zur intravesikalen Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για παρασκευή ενδοκυστικού διαλύματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para solución intravesical" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution intravésicale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per soluzione endovescicale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para solução intravesical" ]
+         ]
+       ], [
+         fhir:index 61;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50047600" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for intravesical suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Suspension zur intravesikalen Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για ενδοκυστικό εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para suspensión intravesical" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour suspension intravésicale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per sospensione endovescicale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e veículo para suspensão intravesical" ]
+         ]
+       ], [
+         fhir:index 62;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50047650" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasal drops, powder and solvent for solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung von Nasentropfen, Lösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για ρινικές σταγόνες, διάλυμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para gotas nasales en solución" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution nasale en gouttes" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gocce nasali, polvere e solvente per soluzione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para gotas nasais, solução" ]
+         ]
+       ], [
+         fhir:index 63;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50047700" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for nebuliser solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Lösung für einen Vernebler" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για διάλυμα εισπνοής με εκνεφωτή" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para solución para inhalación por nebulizador" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution pour inhalation par nébuliseur" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per soluzione per nebulizzatore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para solução para inalação por nebulização" ]
+         ]
+       ], [
+         fhir:index 64;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50048000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for prolonged-release suspension for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Depot-Injektionssuspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για παρασκευή ενεσίμου εναιωρήματος παρατεταμένης αποδέσμευσης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para suspensión inyectable de liberación prolongada" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour suspension injectable à libération prolongée" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per sospensione iniettabile a rilascio prolungato" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e veículo para suspensão injetável de libertação prolongada" ]
+         ]
+       ], [
+         fhir:index 65;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50048270" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for solution for injection/skin-prick test" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Injektionslösung bzw. einer Pricktestlösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για παρασκευή διαλύματος για ένεση/έλεγχο με νύξη του δέρματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para solución inyectable y para prueba con alergenos por punción" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution injectable/pour prick-test" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per soluzione iniettabile/per skin prick test" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para solução injetável ou para teste cutâneo por picada" ]
+         ]
+       ], [
+         fhir:index 66;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50048500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and suspension for suspension for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Suspension zur Herstellung einer Injektionssuspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και εναιώρημα για παρασκευή ενεσίμου εναιωρήματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y suspensión para suspensión inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et suspension pour suspension injectable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e sospensione per sospensione iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e suspensão para suspensão injetável" ]
+         ]
+       ], [
+         fhir:index 67;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50048600" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder, dispersion and solvent for concentrate for dispersion for infusion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver, Dispersion und Lösungsmittel für ein Konzentrat zur Herstellung einer Infusionsdispersion" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις, διασπορά και διαλύτης για παρασκευή πυκνού σκευάσματος για διασπορά προς έγχυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo, dispersión y disolvente para concentrado para dispersión para perfusión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre, dispersion et solvant pour dispersion à diluer pour dispersion pour perfusion" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere, dispersione e solvente per concentrato per dispersione per infusione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó, dispersão e veículo para concentrado para dispersão para perfusão" ]
+         ]
+       ], [
+         fhir:index 68;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50055350" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder, solvent and matrix for implantation matrix" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver, Lösungsmittel und Matrix  zur Herstellung einer Matrix zur Implantation" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις, διαλύτης και υπόστρωμα για παρασκευή υποστρώματος εμφύτευσης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo, disolvente y matriz para preparación de matriz para implantación" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre, solvant et matrice pour matrice pour implantation" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere, solvente e matrice per matrice per impianto" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó, solvente e matriz para matriz para implantação" ]
+         ]
+       ], [
+         fhir:index 69;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50062000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suspension and effervescent granules for oral suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suspension und Brausegranulat zur Herstellung einer Suspension zum Einnehmen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εναιώρημα και αναβράζοντα κοκκία για πόσιμο εναιώρημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suspensión y granulado efervescente para suspensión oral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suspension et granules effervescents pour suspension buvable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sospensione e granulato effervescente per sospensione orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suspensão e granulado efervescente para suspensão oral" ]
+         ]
+       ], [
+         fhir:index 70;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50062500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suspension and solution for spray" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suspension und Lösung zur Herstellung eines Sprays" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εναιώρημα και διάλυμα για ψεκασμό" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suspensión y solución para pulverización" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suspension et solution pour pulvérisation" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sospensione e soluzione per spray" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suspensão e solução para pulverização" ]
+         ]
+       ], [
+         fhir:index 71;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50062750" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suspension and solvent for suspension for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suspension und Lösungsmittel zur Herstellung einer Injektionssuspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εναιώρημα και διαλύτης για παρασκευή ενεσίμου εναιώρηματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suspensión y disolvente para suspensión inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suspension et solvant pour suspension injectable" ]
+         ]
+       ], [
+         fhir:index 72;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50064000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tablet and solvent for rectal suspension" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tabletten und Lösungsmittel zur Herstellung einer Rektalsuspension" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Δισκίο και διαλύτης για παρασκευή εναιωρήματος από του ορθού" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Comprimido y disolvente para suspensión rectal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Comprimé et solvant pour suspension rectale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Compressa e solvente per sospensione rettale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Comprimido e veículo para suspensão retal" ]
+         ]
+       ], [
+         fhir:index 73;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50065000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tablet and powder for oral solution" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tabletten und Pulver zur Herstellung einer Lösung zum Einnehmen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Δισκίο και κόνις για πόσιμο διάλυμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Comprimido y polvo para solución oral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Comprimé et poudre pour solution buvable" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Compressa e polvere per soluzione orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Comprimido e pó para solução oral" ]
+         ]
+       ], [
+         fhir:index 74;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50071000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for dental gel" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung eines Dentalgels" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για οδοντική γέλη" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para gel dental" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour gel dentaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per gel dentale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para gel dental" ]
+         ]
+       ], [
+         fhir:index 75;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50078000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gas and solvent for dispersion for injection/infusion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gas und Lösungsmittel zur Herstellung einer Injektions-/Infusionsdispersion" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Αέριο και διαλύτης για παρασκευή ενέσιμης διασποράς ή διασποράς προς έγχυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gas y disolvente para dispersión inyectable y para perfusión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gaz et solvant pour dispersion injectable/pour perfusion" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gas e solvente per dispersione iniettabile/ per infusione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gás e veículo para dispersão injetável ou para perfusão" ]
+         ]
+       ], [
+         fhir:index 76;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50080000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder and solvent for solution for injection/infusion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver und Lösungsmittel zur Herstellung einer Injektions-/Infusionslösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις και διαλύτης για παρασκευή ενεσίμου διαλύματος ή διαλύματος προς έγχυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo y disolvente para solución inyectable y para perfusión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poudre et solvant pour solution injectable/pour perfusion" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere e solvente per soluzione iniettabile/ per infusione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó e solvente para solução injetável ou para perfusão" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/combined-pharmaceutical-dose-form.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="Cefuroxime1500-Medication-Clinical"/>
+  <meta>
+    <profile value="http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication Cefuroxime1500-Medication-Clinical</b></p><a name="Cefuroxime1500-Medication-Clinical"> </a><a name="hcCefuroxime1500-Medication-Clinical"> </a><a name="hcCefuroxime1500-Medication-Clinical-en-US"> </a><p><b>doseForm</b>: <span title="Codes:{https://standardterms.edqm.eu 50053000}">Powder for solution for injection or infusion</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="Medication-Cefuroxime1500-Powder-Medication-Item.html">Medication Cefuroxime (as cefuroxime sodium) 1.5 g powder for solution for infusion and/or injection vial</a></td></tr></table></blockquote></div>
+  </text>
+  <extension url="http://unicom-project.eu/fhir/StructureDefinition/medicinal-product-classification">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://www.whocc.no/atc"/>
+        <code value="J01DC02"/>
+        <display value="cefuroxime"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://unicom-project.eu/fhir/StructureDefinition/administrable-doseform">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://standardterms.edqm.eu"/>
+        <code value="50060000"/>
+        <display value="Solution for injection/infusion"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <doseForm>
+    <coding>
+      <system value="https://standardterms.edqm.eu"/>
+      <code value="50053000"/>
+      <display value="Powder for solution for injection or infusion"/>
+    </coding>
+  </doseForm>
+  <ingredient>
+    <item>
+      <reference>
+        <reference value="Medication/Cefuroxime1500-Powder-Medication-Item"/>
+      </reference>
+    </item>
+  </ingredient>
+</Medication>

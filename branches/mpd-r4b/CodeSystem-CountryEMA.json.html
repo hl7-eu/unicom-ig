@@ -1,0 +1,1394 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.UNICOM\Country EMA - JSON Representation - FHIR v4.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.33"}
+    h3,h4,h5,h6{--heading-prefix:"2.33"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Country EMA</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">UnicomIG - Local Development build (v0.1.0). See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-CountryEMA.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-CountryEMA.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-CountryEMA.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Country EMA - JSON Representation</h2>
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2022-11-20
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-CountryEMA.json" no-download="true">Raw json</a> | <a href="CodeSystem-CountryEMA.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; overflow: hidden"><code>
+{
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.id">id</a>" : "CountryEMA",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system &lt;code&gt;https://spor.ema.europa.eu/v1/lists/100000000002&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000344&lt;a name=\&quot;CountryEMA-100000000344\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Botswana&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000552&lt;a name=\&quot;CountryEMA-100000000552\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tuvalu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000537&lt;a name=\&quot;CountryEMA-100000000537\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Syrian Arab Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000504&lt;a name=\&quot;CountryEMA-100000000504\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Department of R'union&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000354&lt;a name=\&quot;CountryEMA-100000000354\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Canada&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000446&lt;a name=\&quot;CountryEMA-100000000446\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Liberia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000431&lt;a name=\&quot;CountryEMA-100000000431\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Jamaica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000401&lt;a name=\&quot;CountryEMA-100000000401\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of the Gambia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000393&lt;a name=\&quot;CountryEMA-100000000393\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of the Fiji Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000342&lt;a name=\&quot;CountryEMA-100000000342\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Plurinational State of Bolivia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000442&lt;a name=\&quot;CountryEMA-100000000442\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lao People's Democratic Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000542&lt;a name=\&quot;CountryEMA-100000000542\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Timor-Leste&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000335&lt;a name=\&quot;CountryEMA-100000000335\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Barbados&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000521&lt;a name=\&quot;CountryEMA-100000000521\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Sierra Leone&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000548&lt;a name=\&quot;CountryEMA-100000000548\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Tunisia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000469&lt;a name=\&quot;CountryEMA-100000000469\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mongolia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000386&lt;a name=\&quot;CountryEMA-100000000386\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Equatorial Guinea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000445&lt;a name=\&quot;CountryEMA-100000000445\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Lesotho&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000496&lt;a name=\&quot;CountryEMA-100000000496\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Paraguay&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000379&lt;a name=\&quot;CountryEMA-100000000379\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Djibouti&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000558&lt;a name=\&quot;CountryEMA-100000000558\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;United States Minor Outlying Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000384&lt;a name=\&quot;CountryEMA-100000000384\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arab Republic of Egypt&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000534&lt;a name=\&quot;CountryEMA-100000000534\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Eswatini&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000450&lt;a name=\&quot;CountryEMA-100000000450\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Lithuania&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000567&lt;a name=\&quot;CountryEMA-100000000567\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Territory of the Wallis and Futuna Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000488&lt;a name=\&quot;CountryEMA-100000000488\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Commonwealth of the Northern Mariana Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000553&lt;a name=\&quot;CountryEMA-100000000553\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Uganda&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000398&lt;a name=\&quot;CountryEMA-100000000398\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Territory of French Polynesia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000320&lt;a name=\&quot;CountryEMA-100000000320\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Principality of Andorra&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000362&lt;a name=\&quot;CountryEMA-100000000362\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;People's Republic of China&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000353&lt;a name=\&quot;CountryEMA-100000000353\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Cameroon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000540&lt;a name=\&quot;CountryEMA-100000000540\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;United Republic of Tanzania&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000415&lt;a name=\&quot;CountryEMA-100000000415\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cooperative Republic of Guyana&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000347&lt;a name=\&quot;CountryEMA-100000000347\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;British Indian Ocean Territory&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000487&lt;a name=\&quot;CountryEMA-100000000487\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Territory of Norfolk Island&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000439&lt;a name=\&quot;CountryEMA-100000000439\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Korea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000497&lt;a name=\&quot;CountryEMA-100000000497\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Peru&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000380&lt;a name=\&quot;CountryEMA-100000000380\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Commonwealth of Dominica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000339&lt;a name=\&quot;CountryEMA-100000000339\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Benin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000483&lt;a name=\&quot;CountryEMA-100000000483\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Nicaragua&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000368&lt;a name=\&quot;CountryEMA-100000000368\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of the Congo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000352&lt;a name=\&quot;CountryEMA-100000000352\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Cambodia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000345&lt;a name=\&quot;CountryEMA-100000000345\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bouvet Island&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000349&lt;a name=\&quot;CountryEMA-100000000349\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Bulgaria&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000383&lt;a name=\&quot;CountryEMA-100000000383\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Ecuador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000366&lt;a name=\&quot;CountryEMA-100000000366\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Colombia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000509&lt;a name=\&quot;CountryEMA-100000000509\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Federation of Saint Kitts and Nevis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000389&lt;a name=\&quot;CountryEMA-100000000389\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Federal Democratic Republic of Ethiopia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000385&lt;a name=\&quot;CountryEMA-100000000385\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of El Salvador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000454&lt;a name=\&quot;CountryEMA-100000000454\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Madagascar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000443&lt;a name=\&quot;CountryEMA-100000000443\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Latvia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000512&lt;a name=\&quot;CountryEMA-100000000512\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Saint Vincent and the Grenadines&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000493&lt;a name=\&quot;CountryEMA-100000000493\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Occupied Palestinian Territory&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000410&lt;a name=\&quot;CountryEMA-100000000410\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Territory of Guam&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000463&lt;a name=\&quot;CountryEMA-100000000463\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Mauritius&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000428&lt;a name=\&quot;CountryEMA-100000000428\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Isle of Man&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000360&lt;a name=\&quot;CountryEMA-100000000360\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Chad&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000571&lt;a name=\&quot;CountryEMA-100000000571\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Zambia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000429&lt;a name=\&quot;CountryEMA-100000000429\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;State of Israel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000424&lt;a name=\&quot;CountryEMA-100000000424\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Indonesia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000464&lt;a name=\&quot;CountryEMA-100000000464\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Territorial Collectivity of Mayotte&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000016424&lt;a name=\&quot;CountryEMA-200000016424\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cura'ao&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000495&lt;a name=\&quot;CountryEMA-100000000495\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Independent State of Papua New Guinea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000511&lt;a name=\&quot;CountryEMA-100000000511\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Territorial Collectivity of Saint Pierre and Miquelon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000465&lt;a name=\&quot;CountryEMA-100000000465\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;United Mexican States&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000503&lt;a name=\&quot;CountryEMA-100000000503\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;State of Qatar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000543&lt;a name=\&quot;CountryEMA-100000000543\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Togolese Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000390&lt;a name=\&quot;CountryEMA-100000000390\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;European Union&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000507&lt;a name=\&quot;CountryEMA-100000000507\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Rwanda&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000461&lt;a name=\&quot;CountryEMA-100000000461\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Department of Martinique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000400&lt;a name=\&quot;CountryEMA-100000000400\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gabonese Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000423&lt;a name=\&quot;CountryEMA-100000000423\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of India&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000456&lt;a name=\&quot;CountryEMA-100000000456\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Malaysia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000451&lt;a name=\&quot;CountryEMA-100000000451\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grand Duchy of Luxembourg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000535&lt;a name=\&quot;CountryEMA-100000000535\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Sweden&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000110973&lt;a name=\&quot;CountryEMA-100000110973\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Kosovo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000441&lt;a name=\&quot;CountryEMA-100000000441\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kyrgyz Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000350&lt;a name=\&quot;CountryEMA-100000000350\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Burkina Faso&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000536&lt;a name=\&quot;CountryEMA-100000000536\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Swiss Confederation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000356&lt;a name=\&quot;CountryEMA-100000000356\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Cape Verde&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000486&lt;a name=\&quot;CountryEMA-100000000486\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Niue&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000388&lt;a name=\&quot;CountryEMA-100000000388\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Estonia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000417&lt;a name=\&quot;CountryEMA-100000000417\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Territory of Heard Island and McDonald Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000416&lt;a name=\&quot;CountryEMA-100000000416\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Haiti&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000414&lt;a name=\&quot;CountryEMA-100000000414\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Guinea-Bissau&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000526&lt;a name=\&quot;CountryEMA-100000000526\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Somalia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000491&lt;a name=\&quot;CountryEMA-100000000491\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Islamic Republic of Pakistan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000333&lt;a name=\&quot;CountryEMA-100000000333\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Bahrain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000405&lt;a name=\&quot;CountryEMA-100000000405\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gibraltar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000566&lt;a name=\&quot;CountryEMA-100000000566\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Virgin Islands of the United States&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000565&lt;a name=\&quot;CountryEMA-100000000565\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;British Virgin Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000397&lt;a name=\&quot;CountryEMA-100000000397\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Department of French Guiana&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000316&lt;a name=\&quot;CountryEMA-100000000316\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;'land Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000478&lt;a name=\&quot;CountryEMA-100000000478\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of the Netherlands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000550&lt;a name=\&quot;CountryEMA-100000000550\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Turkmenistan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000110993&lt;a name=\&quot;CountryEMA-100000110993\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Saint Martin (French Part)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000563&lt;a name=\&quot;CountryEMA-100000000563\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bolivarian Republic of Venezuela&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000332&lt;a name=\&quot;CountryEMA-100000000332\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;The Commonwealth of the Bahamas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000438&lt;a name=\&quot;CountryEMA-100000000438\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Democratic People's Republic of Korea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000561&lt;a name=\&quot;CountryEMA-100000000561\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Uzbekistan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000419&lt;a name=\&quot;CountryEMA-100000000419\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Honduras&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000411&lt;a name=\&quot;CountryEMA-100000000411\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Guatemala&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000538&lt;a name=\&quot;CountryEMA-100000000538\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Taiwan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000546&lt;a name=\&quot;CountryEMA-100000000546\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Trinidad and Tobago&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000394&lt;a name=\&quot;CountryEMA-100000000394\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Finland&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000525&lt;a name=\&quot;CountryEMA-100000000525\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solomon Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000544&lt;a name=\&quot;CountryEMA-100000000544\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tokelau&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000404&lt;a name=\&quot;CountryEMA-100000000404\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Ghana&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000572&lt;a name=\&quot;CountryEMA-100000000572\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Zimbabwe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000318&lt;a name=\&quot;CountryEMA-100000000318\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;People's Democratic Republic of Algeria&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000391&lt;a name=\&quot;CountryEMA-100000000391\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Faeroe Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000433&lt;a name=\&quot;CountryEMA-100000000433\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Jersey&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000357&lt;a name=\&quot;CountryEMA-100000000357\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cayman Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000369&lt;a name=\&quot;CountryEMA-100000000369\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Democratic Republic of the Congo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000340&lt;a name=\&quot;CountryEMA-100000000340\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bermuda&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000413&lt;a name=\&quot;CountryEMA-100000000413\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Guinea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000329&lt;a name=\&quot;CountryEMA-100000000329\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Commonwealth of Australia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000375&lt;a name=\&quot;CountryEMA-100000000375\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Cyprus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000530&lt;a name=\&quot;CountryEMA-100000000530\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Democratic Socialist Republic of Sri Lanka&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000408&lt;a name=\&quot;CountryEMA-100000000408\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Grenada&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000444&lt;a name=\&quot;CountryEMA-100000000444\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lebanese Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000527&lt;a name=\&quot;CountryEMA-100000000527\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of South Africa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000533&lt;a name=\&quot;CountryEMA-100000000533\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Svalbard and Jan Mayen Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000505&lt;a name=\&quot;CountryEMA-100000000505\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Romania&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000392&lt;a name=\&quot;CountryEMA-100000000392\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Falkland Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000472&lt;a name=\&quot;CountryEMA-100000000472\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Morocco&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000110974&lt;a name=\&quot;CountryEMA-100000110974\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Saint Barthelemy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000473&lt;a name=\&quot;CountryEMA-100000000473\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Mozambique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000568&lt;a name=\&quot;CountryEMA-100000000568\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Western Sahara&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000370&lt;a name=\&quot;CountryEMA-100000000370\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cook Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000330&lt;a name=\&quot;CountryEMA-100000000330\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Austria&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000520&lt;a name=\&quot;CountryEMA-100000000520\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Seychelles&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000363&lt;a name=\&quot;CountryEMA-100000000363\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Christmas Island Territory&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000358&lt;a name=\&quot;CountryEMA-100000000358\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Central African Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000418&lt;a name=\&quot;CountryEMA-100000000418\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;the Holy See (Vatican City State)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000395&lt;a name=\&quot;CountryEMA-100000000395\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;French Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000315&lt;a name=\&quot;CountryEMA-100000000315\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Islamic Republic of Afghanistan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000346&lt;a name=\&quot;CountryEMA-100000000346\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Federative Republic of Brazil&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000455&lt;a name=\&quot;CountryEMA-100000000455\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Malawi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000361&lt;a name=\&quot;CountryEMA-100000000361\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Chile&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000010721&lt;a name=\&quot;CountryEMA-200000010721\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other countries&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000528&lt;a name=\&quot;CountryEMA-100000000528\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;South Georgia and the South Sandwich Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000515&lt;a name=\&quot;CountryEMA-100000000515\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Democratic Republic of S'o Tom' and Pr'ncipe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000564&lt;a name=\&quot;CountryEMA-100000000564\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Socialist Republic of Viet Nam&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000321&lt;a name=\&quot;CountryEMA-100000000321\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Angola&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000539&lt;a name=\&quot;CountryEMA-100000000539\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Tajikistan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000476&lt;a name=\&quot;CountryEMA-100000000476\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Nauru&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000499&lt;a name=\&quot;CountryEMA-100000000499\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pitcairn Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000425&lt;a name=\&quot;CountryEMA-100000000425\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Islamic Republic of Iran&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000437&lt;a name=\&quot;CountryEMA-100000000437\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Kiribati&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000381&lt;a name=\&quot;CountryEMA-100000000381\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dominican Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000517&lt;a name=\&quot;CountryEMA-100000000517\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Senegal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000516&lt;a name=\&quot;CountryEMA-100000000516\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Saudi Arabia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000323&lt;a name=\&quot;CountryEMA-100000000323\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Antarctica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000555&lt;a name=\&quot;CountryEMA-100000000555\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;United Arab Emirates&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000569&lt;a name=\&quot;CountryEMA-100000000569\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Yemen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000407&lt;a name=\&quot;CountryEMA-100000000407\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Greenland&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000502&lt;a name=\&quot;CountryEMA-100000000502\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Commonwealth of Puerto Rico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000531&lt;a name=\&quot;CountryEMA-100000000531\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Sudan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000372&lt;a name=\&quot;CountryEMA-100000000372\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of C'te d'Ivoire&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000325&lt;a name=\&quot;CountryEMA-100000000325\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Argentine Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000557&lt;a name=\&quot;CountryEMA-100000000557\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;United States of America&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000500&lt;a name=\&quot;CountryEMA-100000000500\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Poland&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000532&lt;a name=\&quot;CountryEMA-100000000532\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Suriname&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000399&lt;a name=\&quot;CountryEMA-100000000399\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;French Southern Territories&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000485&lt;a name=\&quot;CountryEMA-100000000485\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Federal Republic of Nigeria&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000448&lt;a name=\&quot;CountryEMA-100000000448\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Great Socialist People's Libyan Arab Jamahiriya&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000409&lt;a name=\&quot;CountryEMA-100000000409\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Department of Guadeloupe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000551&lt;a name=\&quot;CountryEMA-100000000551\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Turks and Caicos Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000541&lt;a name=\&quot;CountryEMA-100000000541\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Thailand&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000458&lt;a name=\&quot;CountryEMA-100000000458\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Mali&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000422&lt;a name=\&quot;CountryEMA-100000000422\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Iceland&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000510&lt;a name=\&quot;CountryEMA-100000000510\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Saint Lucia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000338&lt;a name=\&quot;CountryEMA-100000000338\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Belize&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000471&lt;a name=\&quot;CountryEMA-100000000471\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Montserrat&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000348&lt;a name=\&quot;CountryEMA-100000000348\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Negara Brunei Darussalam&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000319&lt;a name=\&quot;CountryEMA-100000000319\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Territory of American Samoa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000432&lt;a name=\&quot;CountryEMA-100000000432\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Japan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000559&lt;a name=\&quot;CountryEMA-100000000559\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eastern Republic of Uruguay&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000477&lt;a name=\&quot;CountryEMA-100000000477\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Federal Democratic Republic of Nepal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000434&lt;a name=\&quot;CountryEMA-100000000434\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hashemite Kingdom of Jordan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000481&lt;a name=\&quot;CountryEMA-100000000481\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Territory of New Caledonia and Dependencies&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000466&lt;a name=\&quot;CountryEMA-100000000466\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Federated States of Micronesia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000492&lt;a name=\&quot;CountryEMA-100000000492\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Palau&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000513&lt;a name=\&quot;CountryEMA-100000000513\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Independent State of Samoa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000412&lt;a name=\&quot;CountryEMA-100000000412\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Guernsey&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000334&lt;a name=\&quot;CountryEMA-100000000334\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;People's Republic of Bangladesh&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000460&lt;a name=\&quot;CountryEMA-100000000460\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of the Marshall Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000341&lt;a name=\&quot;CountryEMA-100000000341\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Bhutan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000522&lt;a name=\&quot;CountryEMA-100000000522\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Singapore&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000494&lt;a name=\&quot;CountryEMA-100000000494\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Panama&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000529&lt;a name=\&quot;CountryEMA-100000000529\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Spain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000374&lt;a name=\&quot;CountryEMA-100000000374\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Cuba&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000482&lt;a name=\&quot;CountryEMA-100000000482\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;New Zealand&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000351&lt;a name=\&quot;CountryEMA-100000000351\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Burundi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000475&lt;a name=\&quot;CountryEMA-100000000475\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Namibia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000420&lt;a name=\&quot;CountryEMA-100000000420\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hong Kong Special Administrative Region of the People's Republic of China&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000387&lt;a name=\&quot;CountryEMA-100000000387\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;State of Eritrea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000462&lt;a name=\&quot;CountryEMA-100000000462\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Islamic Republic of Mauritania&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000474&lt;a name=\&quot;CountryEMA-100000000474\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Union of Myanmar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000562&lt;a name=\&quot;CountryEMA-100000000562\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Vanuatu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000545&lt;a name=\&quot;CountryEMA-100000000545\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Tonga&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000371&lt;a name=\&quot;CountryEMA-100000000371\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Costa Rica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000365&lt;a name=\&quot;CountryEMA-100000000365\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Territory of Cocos (Keeling) Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000327&lt;a name=\&quot;CountryEMA-100000000327\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aruba&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000498&lt;a name=\&quot;CountryEMA-100000000498\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of the Philippines&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000457&lt;a name=\&quot;CountryEMA-100000000457\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Maldives&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000324&lt;a name=\&quot;CountryEMA-100000000324\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Antigua and Barbuda&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000436&lt;a name=\&quot;CountryEMA-100000000436\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Kenya&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000440&lt;a name=\&quot;CountryEMA-100000000440\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;State of Kuwait&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000490&lt;a name=\&quot;CountryEMA-100000000490\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sultanate of Oman&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000426&lt;a name=\&quot;CountryEMA-100000000426\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Iraq&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000322&lt;a name=\&quot;CountryEMA-100000000322\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anguilla&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000459&lt;a name=\&quot;CountryEMA-100000000459\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Malta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000367&lt;a name=\&quot;CountryEMA-100000000367\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Union of the Comoros&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000508&lt;a name=\&quot;CountryEMA-100000000508\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Saint Helena&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000560&lt;a name=\&quot;CountryEMA-100000000560\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Union of Soviet Socialist Republics&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000355&lt;a name=\&quot;CountryEMA-100000000355\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Autonomous Community of the Canary Islands&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000378&lt;a name=\&quot;CountryEMA-100000000378\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diego Garcia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000570&lt;a name=\&quot;CountryEMA-100000000570\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yugoslavia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000382&lt;a name=\&quot;CountryEMA-100000000382\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Democratic Republic of East Timor&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000447&lt;a name=\&quot;CountryEMA-100000000447\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Libya Fezzan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000396&lt;a name=\&quot;CountryEMA-100000000396\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Metropolitan France&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000547&lt;a name=\&quot;CountryEMA-100000000547\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tristan da Cunha&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000480&lt;a name=\&quot;CountryEMA-100000000480\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neutral Zone&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000359&lt;a name=\&quot;CountryEMA-100000000359\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ceuta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000364&lt;a name=\&quot;CountryEMA-100000000364\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Clipperton Island&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000479&lt;a name=\&quot;CountryEMA-100000000479\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Netherlands Antilles&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000328&lt;a name=\&quot;CountryEMA-100000000328\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ascension Island&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000519&lt;a name=\&quot;CountryEMA-100000000519\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;State Union of Serbia and Montenegro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000026063&lt;a name=\&quot;CountryEMA-200000026063\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of South Sudan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000421&lt;a name=\&quot;CountryEMA-100000000421\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Hungary&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000430&lt;a name=\&quot;CountryEMA-100000000430\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Italian Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000449&lt;a name=\&quot;CountryEMA-100000000449\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Principality of Liechtenstein&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000452&lt;a name=\&quot;CountryEMA-100000000452\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Macao Special Administrative Region of the People's Republic of China&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000453&lt;a name=\&quot;CountryEMA-100000000453\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of North Macedonia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000468&lt;a name=\&quot;CountryEMA-100000000468\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Principality of Monaco&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000470&lt;a name=\&quot;CountryEMA-100000000470\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Montenegro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000484&lt;a name=\&quot;CountryEMA-100000000484\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Niger&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000489&lt;a name=\&quot;CountryEMA-100000000489\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Norway&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000506&lt;a name=\&quot;CountryEMA-100000000506\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Russian Federation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000514&lt;a name=\&quot;CountryEMA-100000000514\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of San Marino&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000523&lt;a name=\&quot;CountryEMA-100000000523\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Slovak Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000524&lt;a name=\&quot;CountryEMA-100000000524\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Slovenia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000554&lt;a name=\&quot;CountryEMA-100000000554\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ukraine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000556&lt;a name=\&quot;CountryEMA-100000000556\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;United Kingdom of Great Britain and Northern Ireland&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000326&lt;a name=\&quot;CountryEMA-100000000326\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Armenia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000518&lt;a name=\&quot;CountryEMA-100000000518\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Serbia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000331&lt;a name=\&quot;CountryEMA-100000000331\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Azerbaijan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000336&lt;a name=\&quot;CountryEMA-100000000336\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Belarus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000337&lt;a name=\&quot;CountryEMA-100000000337\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Belgium&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;240000000000&lt;a name=\&quot;CountryEMA-240000000000\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;United Kingdom (Northern Ireland)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000373&lt;a name=\&quot;CountryEMA-100000000373\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Croatia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000376&lt;a name=\&quot;CountryEMA-100000000376\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Czech Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000377&lt;a name=\&quot;CountryEMA-100000000377\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kingdom of Denmark&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000403&lt;a name=\&quot;CountryEMA-100000000403\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Federal Republic of Germany&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000406&lt;a name=\&quot;CountryEMA-100000000406\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hellenic Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000317&lt;a name=\&quot;CountryEMA-100000000317\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Albania&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000343&lt;a name=\&quot;CountryEMA-100000000343\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bosnia and Herzegovina&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000402&lt;a name=\&quot;CountryEMA-100000000402\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Georgia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000427&lt;a name=\&quot;CountryEMA-100000000427\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ireland&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000435&lt;a name=\&quot;CountryEMA-100000000435\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Kazakhstan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000467&lt;a name=\&quot;CountryEMA-100000000467\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Moldova&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000501&lt;a name=\&quot;CountryEMA-100000000501\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Portuguese Republic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000000549&lt;a name=\&quot;CountryEMA-100000000549\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Republic of Turkey&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.url">url</a>" : "https://spor.ema.europa.eu/v1/lists/100000000002",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.name">name</a>" : "CountryEma",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.title">title</a>" : "Country EMA",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.date">date</a>" : "2022-11-20T17:48:06+00:00",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.publisher">publisher</a>" : "UNICOM",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "UNICOM",
+      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://medigree.net"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.description">description</a>" : "Country codes by EMA. Based on ISO 3166-1-2, recoded with RMS codes.",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.compositional">compositional</a>" : false,
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.count">count</a>" : 265,
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000344",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Botswana"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000552",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Tuvalu"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000537",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Syrian Arab Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000504",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Department of R'union"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000354",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Canada"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000446",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Liberia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000431",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Jamaica"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000401",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of the Gambia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000393",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of the Fiji Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000342",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Plurinational State of Bolivia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000442",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Lao People's Democratic Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000542",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Timor-Leste"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000335",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Barbados"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000521",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Sierra Leone"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000548",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Tunisia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000469",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Mongolia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000386",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Equatorial Guinea"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000445",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Lesotho"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000496",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Paraguay"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000379",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Djibouti"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000558",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "United States Minor Outlying Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000384",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Arab Republic of Egypt"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000534",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Eswatini"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000450",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Lithuania"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000567",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Territory of the Wallis and Futuna Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000488",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Commonwealth of the Northern Mariana Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000553",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Uganda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000398",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Territory of French Polynesia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000320",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Principality of Andorra"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000362",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "People's Republic of China"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000353",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Cameroon"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000540",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "United Republic of Tanzania"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000415",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Cooperative Republic of Guyana"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000347",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "British Indian Ocean Territory"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000487",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Territory of Norfolk Island"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000439",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Korea"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000497",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Peru"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000380",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Commonwealth of Dominica"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000339",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Benin"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000483",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Nicaragua"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000368",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of the Congo"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000352",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Cambodia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000345",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Bouvet Island"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000349",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Bulgaria"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000383",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Ecuador"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000366",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Colombia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000509",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Federation of Saint Kitts and Nevis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000389",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Federal Democratic Republic of Ethiopia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000385",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of El Salvador"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000454",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Madagascar"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000443",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Latvia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000512",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Saint Vincent and the Grenadines"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000493",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Occupied Palestinian Territory"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000410",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Territory of Guam"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000463",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Mauritius"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000428",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Isle of Man"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000360",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Chad"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000571",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Zambia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000429",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "State of Israel"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000424",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Indonesia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000464",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Territorial Collectivity of Mayotte"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000016424",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Cura'ao"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000495",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Independent State of Papua New Guinea"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000511",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Territorial Collectivity of Saint Pierre and Miquelon"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000465",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "United Mexican States"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000503",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "State of Qatar"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000543",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Togolese Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000390",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "European Union"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000507",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Rwanda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000461",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Department of Martinique"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000400",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Gabonese Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000423",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of India"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000456",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Malaysia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000451",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Grand Duchy of Luxembourg"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000535",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Sweden"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000110973",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Kosovo"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000441",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kyrgyz Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000350",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Burkina Faso"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000536",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Swiss Confederation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000356",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Cape Verde"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000486",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Niue"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000388",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Estonia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000417",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Territory of Heard Island and McDonald Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000416",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Haiti"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000414",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Guinea-Bissau"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000526",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Somalia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000491",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Islamic Republic of Pakistan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000333",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Bahrain"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000405",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Gibraltar"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000566",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Virgin Islands of the United States"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000565",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "British Virgin Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000397",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Department of French Guiana"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000316",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "'land Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000478",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of the Netherlands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000550",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Turkmenistan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000110993",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Saint Martin (French Part)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000563",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Bolivarian Republic of Venezuela"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000332",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "The Commonwealth of the Bahamas"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000438",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Democratic People's Republic of Korea"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000561",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Uzbekistan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000419",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Honduras"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000411",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Guatemala"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000538",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Taiwan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000546",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Trinidad and Tobago"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000394",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Finland"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000525",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solomon Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000544",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Tokelau"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000404",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Ghana"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000572",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Zimbabwe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000318",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "People's Democratic Republic of Algeria"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000391",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Faeroe Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000433",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Jersey"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000357",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Cayman Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000369",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Democratic Republic of the Congo"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000340",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Bermuda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000413",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Guinea"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000329",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Commonwealth of Australia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000375",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Cyprus"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000530",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Democratic Socialist Republic of Sri Lanka"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000408",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Grenada"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000444",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Lebanese Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000527",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of South Africa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000533",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Svalbard and Jan Mayen Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000505",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Romania"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000392",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Falkland Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000472",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Morocco"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000110974",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Saint Barthelemy"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000473",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Mozambique"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000568",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Western Sahara"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000370",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Cook Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000330",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Austria"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000520",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Seychelles"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000363",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Christmas Island Territory"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000358",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Central African Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000418",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "the Holy See (Vatican City State)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000395",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "French Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000315",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Islamic Republic of Afghanistan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000346",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Federative Republic of Brazil"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000455",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Malawi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000361",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Chile"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000010721",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Other countries"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000528",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "South Georgia and the South Sandwich Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000515",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Democratic Republic of S'o Tom' and Pr'ncipe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000564",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Socialist Republic of Viet Nam"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000321",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Angola"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000539",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Tajikistan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000476",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Nauru"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000499",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Pitcairn Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000425",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Islamic Republic of Iran"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000437",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Kiribati"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000381",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Dominican Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000517",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Senegal"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000516",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Saudi Arabia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000323",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Antarctica"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000555",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "United Arab Emirates"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000569",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Yemen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000407",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Greenland"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000502",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Commonwealth of Puerto Rico"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000531",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Sudan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000372",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of C'te d'Ivoire"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000325",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Argentine Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000557",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "United States of America"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000500",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Poland"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000532",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Suriname"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000399",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "French Southern Territories"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000485",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Federal Republic of Nigeria"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000448",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Great Socialist People's Libyan Arab Jamahiriya"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000409",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Department of Guadeloupe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000551",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Turks and Caicos Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000541",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Thailand"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000458",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Mali"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000422",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Iceland"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000510",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Saint Lucia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000338",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Belize"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000471",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Montserrat"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000348",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Negara Brunei Darussalam"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000319",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Territory of American Samoa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000432",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Japan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000559",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Eastern Republic of Uruguay"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000477",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Federal Democratic Republic of Nepal"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000434",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Hashemite Kingdom of Jordan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000481",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Territory of New Caledonia and Dependencies"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000466",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Federated States of Micronesia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000492",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Palau"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000513",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Independent State of Samoa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000412",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Guernsey"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000334",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "People's Republic of Bangladesh"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000460",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of the Marshall Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000341",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Bhutan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000522",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Singapore"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000494",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Panama"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000529",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Spain"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000374",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Cuba"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000482",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "New Zealand"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000351",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Burundi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000475",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Namibia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000420",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Hong Kong Special Administrative Region of the People's Republic of China"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000387",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "State of Eritrea"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000462",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Islamic Republic of Mauritania"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000474",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Union of Myanmar"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000562",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Vanuatu"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000545",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Tonga"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000371",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Costa Rica"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000365",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Territory of Cocos (Keeling) Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000327",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Aruba"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000498",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of the Philippines"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000457",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Maldives"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000324",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Antigua and Barbuda"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000436",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Kenya"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000440",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "State of Kuwait"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000490",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Sultanate of Oman"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000426",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Iraq"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000322",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Anguilla"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000459",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Malta"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000367",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Union of the Comoros"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000508",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Saint Helena"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000560",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Union of Soviet Socialist Republics"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000355",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Autonomous Community of the Canary Islands"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000378",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Diego Garcia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000570",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Yugoslavia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000382",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Democratic Republic of East Timor"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000447",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Libya Fezzan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000396",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Metropolitan France"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000547",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Tristan da Cunha"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000480",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Neutral Zone"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000359",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Ceuta"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000364",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Clipperton Island"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000479",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Netherlands Antilles"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000328",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Ascension Island"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000519",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "State Union of Serbia and Montenegro"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000026063",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of South Sudan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000421",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Hungary"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000430",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Italian Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000449",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Principality of Liechtenstein"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000452",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Macao Special Administrative Region of the People's Republic of China"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000453",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of North Macedonia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000468",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Principality of Monaco"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000470",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Montenegro"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000484",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Niger"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000489",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Norway"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000506",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Russian Federation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000514",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of San Marino"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000523",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Slovak Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000524",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Slovenia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000554",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Ukraine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000556",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "United Kingdom of Great Britain and Northern Ireland"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000326",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Armenia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000518",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Serbia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000331",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Azerbaijan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000336",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Belarus"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000337",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Belgium"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "240000000000",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "United Kingdom (Northern Ireland)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000373",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Croatia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000376",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Czech Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000377",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Kingdom of Denmark"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000403",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Federal Republic of Germany"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000406",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Hellenic Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000317",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Albania"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000343",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Bosnia and Herzegovina"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000402",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Georgia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000427",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Ireland"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000435",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Kazakhstan"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000467",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Moldova"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000501",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Portuguese Republic"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000000549",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Republic of Turkey"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://medigree.net">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.3.0</a>. Generated <span title="Sun, Nov 20, 2022 17:48+0000">2022-11-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

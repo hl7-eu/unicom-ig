@@ -1,0 +1,1238 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/container> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "container"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>13059000</td><td>Unit-dose blister</td></tr><tr><td>13063000</td><td>Pre-filled injector</td></tr><tr><td>13073000</td><td>Pre-filled oral syringe</td></tr><tr><td>13074000</td><td>Pre-filled oral applicator</td></tr><tr><td>13125000</td><td>Wrapper</td></tr><tr><td>13131000</td><td>Capsule for opening</td></tr><tr><td>13142000</td><td>Pouch</td></tr><tr><td>13151000</td><td>Tablet tube</td></tr><tr><td>13156000</td><td>Gas cylinder bundle</td></tr><tr><td>30001000</td><td>Ampoule</td></tr><tr><td>30004000</td><td>Bag</td></tr><tr><td>30006000</td><td>Barrel</td></tr><tr><td>30007000</td><td>Blister</td></tr><tr><td>30008000</td><td>Bottle</td></tr><tr><td>30009000</td><td>Box</td></tr><tr><td>30011500</td><td>Calendar package</td></tr><tr><td>30014000</td><td>Cartridge</td></tr><tr><td>30015500</td><td>Container</td></tr><tr><td>30018000</td><td>Dart</td></tr><tr><td>30018300</td><td>Dose-dispenser cartridge</td></tr><tr><td>30020000</td><td>Dredging container</td></tr><tr><td>30023000</td><td>Dropper container</td></tr><tr><td>30023005</td><td>Fixed cryogenic vessel</td></tr><tr><td>30024000</td><td>Gas cylinder</td></tr><tr><td>30032000</td><td>Jar</td></tr><tr><td>30036005</td><td>Mobile cryogenic vessel</td></tr><tr><td>30038000</td><td>Multidose container</td></tr><tr><td>30039000</td><td>Multidose container with airless pump</td></tr><tr><td>30039400</td><td>Multidose container with metering pump</td></tr><tr><td>30039500</td><td>Multidose container with pump</td></tr><tr><td>30045500</td><td>Pack</td></tr><tr><td>30048000</td><td>Pour-on container</td></tr><tr><td>30049000</td><td>Pre-filled gastroenteral tube</td></tr><tr><td>30050000</td><td>Pre-filled pen</td></tr><tr><td>30051000</td><td>Pre-filled syringe</td></tr><tr><td>30052000</td><td>Pressurised container</td></tr><tr><td>30053500</td><td>Roll-on container</td></tr><tr><td>30054000</td><td>Sachet</td></tr><tr><td>30057000</td><td>Single-dose container</td></tr><tr><td>30060000</td><td>Spray container</td></tr><tr><td>30064500</td><td>Straw</td></tr><tr><td>30065000</td><td>Strip</td></tr><tr><td>30066000</td><td>Tablet container</td></tr><tr><td>30067000</td><td>Tube</td></tr><tr><td>30069000</td><td>Vial</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>Greek (el)</b></td><td><b>Spanish (es)</b></td><td><b>French (fr)</b></td><td><b>Italian (it)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td>13059000</td><td>Einzeldosis-Blisterpackung</td><td>Κυψέλη μονάδων δόσης</td><td>Blíster unidosis</td><td>Plaquette unitaire</td><td>Blister divisibile per dose unitaria</td><td>Blister em dose unitária</td></tr><tr><td>13063000</td><td>Fertiginjektor</td><td>Προγεμισμένος εγχυτήρας</td><td>Inyector precargado</td><td>Injecteur prérempli</td><td>Iniettore preriempito</td><td>Injetor pré-cheio</td></tr><tr><td>13073000</td><td>Fertigspritze für orale Verabreichung</td><td>Προγεμισμένη σύριγγα για χορήγηση από του στόματος</td><td>Jeringa precargada para uso oral</td><td>Seringue préremplie pour administration orale</td><td>Siringa preriempita per somministrazione orale</td><td>Seringa oral pré-cheia</td></tr><tr><td>13074000</td><td>Fertigapplikator für die orale Verabreichung</td><td>Προγεμισμένο εξάρτημα χορήγησης από του στόματος</td><td>Aplicador precargado para uso oral</td><td>Applicateur prérempli pour administration orale</td><td>Applicatore preriempito per somministrazione orale</td><td>Aplicador oral pré-cheio</td></tr><tr><td>13125000</td><td>Hülle</td><td></td><td>Envoltorio</td><td></td><td>Involucro</td><td>Envoltório</td></tr><tr><td>13131000</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>13142000</td><td></td><td></td><td>Bolsa</td><td></td><td>Sacchetto</td><td></td></tr><tr><td>13151000</td><td>Tablettenröhrchen</td><td></td><td>Tubo para comprimidos</td><td>Tube pour comprimés</td><td>Tubo per compresse</td><td>Tubo para comprimidos</td></tr><tr><td>13156000</td><td>Gasflaschenbündel</td><td></td><td>Bloque de balas de gas</td><td>Bouteilles de gaz en cadre</td><td></td><td></td></tr><tr><td>30001000</td><td>Ampulle</td><td>Φύσιγγα</td><td>Ampolla</td><td>Ampoule</td><td>Fiala</td><td>Ampola</td></tr><tr><td>30004000</td><td>Beutel</td><td>Σάκκος</td><td>Bolsa</td><td>Poche</td><td>Sacca</td><td>Saco</td></tr><tr><td>30006000</td><td>Kanister</td><td>Βαρέλι</td><td>Bidón</td><td>Fût</td><td>Fusto</td><td>Barrica</td></tr><tr><td>30007000</td><td>Blisterpackung</td><td>Κυψέλη</td><td>Blíster</td><td>Plaquette</td><td>Blister</td><td>Blister</td></tr><tr><td>30008000</td><td>Flasche</td><td>Φιάλη</td><td>Frasco</td><td>Flacon</td><td>Flacone</td><td>Frasco</td></tr><tr><td>30009000</td><td>Schachtel</td><td>Κουτί</td><td>Caja</td><td>Boîte</td><td>Scatola</td><td>Caixa</td></tr><tr><td>30011500</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>30014000</td><td>Patrone</td><td>Φυσίγγιο</td><td>Cartucho</td><td>Cartouche</td><td>Cartuccia</td><td>Cartucho</td></tr><tr><td>30015500</td><td>Behältnis</td><td>Περιέκτης</td><td>Envase</td><td>Récipient</td><td>Contenitore</td><td>Recipiente</td></tr><tr><td>30018000</td><td>Pfeil</td><td>Εκτοξευόμενη σύριγγα</td><td>Dardo</td><td>Fléchette</td><td>Cartuccia siringa</td><td>Dardo</td></tr><tr><td>30018300</td><td>Patrone für ein Dosiergerät</td><td>Φυσίγγιο δοσομετρητή</td><td>Cartucho para dispensador de dosis</td><td>Cartouche pour dispensateur de dose</td><td>Cartuccia per dispositivo di somministrazione</td><td>Cartucho para dispensador de dose</td></tr><tr><td>30020000</td><td>Streudose</td><td>Περιέκτης επίπασης</td><td>Envase espolvoreador</td><td>Flacon poudreur</td><td>Contenitore aspersore</td><td>Frasco polvilhador</td></tr><tr><td>30023000</td><td>Tropfbehältnis</td><td>Σταγονομετρικό φιαλίδιο</td><td>Envase cuentagotas</td><td>Flacon compte-gouttes</td><td>Flacone contagocce</td><td>Frasco conta-gotas</td></tr><tr><td>30023005</td><td>Ortsfestes Behältnis für kälteverflüssigte Gase</td><td>Κρυογόνο δοχείο, ακίνητο</td><td>RECIPIENTE CRIOGÉNICO FIJO</td><td>récipient cryogénique fixe</td><td>Recipiente criogenico fisso</td><td>Recipiente criogénico fixo</td></tr><tr><td>30024000</td><td>Druckbehältnis</td><td>Οβίδα αερίων</td><td>Bala de gas</td><td>Bouteille de gaz</td><td>Bombola</td><td>Cilindro de gás</td></tr><tr><td>30032000</td><td>Weithalsgefäss</td><td>Βάζο</td><td>Tarro</td><td>Pot</td><td>Vasetto</td><td>Boião</td></tr><tr><td>30036005</td><td>Mobiles Behältnis für kälteverflüssigte Gase</td><td>Κρυογόνο δοχείο, φορητό</td><td>RECIPIENTE CRIOGÉNICO MÓVIL</td><td>récipient cryogénique mobile</td><td>Recipiente criogenico mobile</td><td>Recipiente criogénico móvel</td></tr><tr><td>30038000</td><td>Mehrdosenbehältnis</td><td>Περιέκτης πολλαπλών δόσεων</td><td>Envase multidosis</td><td>Récipient multidose</td><td>Contenitore multidose</td><td>Recipiente multidose</td></tr><tr><td>30039000</td><td>Mehrdosenbehältnis mit gasfreiem Pumpsystem</td><td>Περιέκτης πολλαπλών δόσεων με αυτλία χωρις χρήση αέρα</td><td>Envase multidosis con bombeo sin entrada de aire</td><td>Récipient multidose avec système de fermeture sans entrée d'air</td><td>Contenitore multidose con pompa a tenuta d'aria</td><td>Recipiente multidose com sistema de fecho sem entrada de ar</td></tr><tr><td>30039400</td><td>Mehrdosenbehältnis mit Dosierpumpe</td><td>Περιέκτης πολλαπλών δόσεων με δοσιμετρική αντλία</td><td>Envase multidosis con bomba dosificadora</td><td>Récipient multidose avec pompe doseuse</td><td>Contenitore multidose con pompa dosatrice</td><td>Recipiente multidose com bomba doseadora</td></tr><tr><td>30039500</td><td>Mehrdosenbehältnis mit Pumpe</td><td>Περιέκτης πολλαπλών δόσεων με αντλία</td><td>Envase multidosis con bomba</td><td>Récipient multidose avec pompe</td><td>Contenitore multidose con pompa</td><td>Recipiente multidose com bomba</td></tr><tr><td>30045500</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>30048000</td><td>Gießbehältnis</td><td>Περιέκτης κατάλληλος για επίχυση</td><td>Envase con aplicador para unción continua</td><td>Récipient pour pour-on</td><td>Contenitore per pour-on</td><td>Recipiente com aplicador para unção contínua</td></tr><tr><td>30049000</td><td>vorgefüllter Schlauch zur gastrointestinalen Anwendung</td><td>Προγεμισμένος γαστροεντερικός σωλήνας</td><td>Sonda precargada</td><td>Sonde préremplie</td><td>Tubo gastroenterico preriempito</td><td>Sonda gastroentérica pré-cheia</td></tr><tr><td>30050000</td><td>Fertigpen</td><td>Προγεμισμένη συσκευή τύπου πένας</td><td>Pluma precargada</td><td>Stylo prérempli</td><td>Penna preriempita</td><td>Caneta pré-cheia</td></tr><tr><td>30051000</td><td>Fertigspritze</td><td>Προγεμισμένη σύριγγα</td><td>Jeringa precargada</td><td>Seringue préremplie</td><td>Siringa preriempita</td><td>Seringa pré-cheia</td></tr><tr><td>30052000</td><td>Druckbehältnis</td><td>Περιέκτης υπό πίεση</td><td>Envase a presión</td><td>Récipient pressurisé</td><td>Contenitore sotto pressione</td><td>Recipiente pressurizado</td></tr><tr><td>30053500</td><td>Roll-on Behältnis</td><td>Περιέκτης με περιστρεφόμενη κεφαλή</td><td>Envase con aplicador de bola</td><td>Récipient avec applicateur à bille</td><td>Contenitore con applicatore a sfera</td><td>Recipiente com aplicador roll-on</td></tr><tr><td>30054000</td><td>Beutel</td><td>Φακελίσκος</td><td>Sobre</td><td>Sachet</td><td>Bustina</td><td>Saqueta</td></tr><tr><td>30057000</td><td>Einzeldosisbehältnis</td><td>Περιέκτης μίας δόσης</td><td>Envase unidosis</td><td>Récipient unidose</td><td>Contenitore monodose</td><td>Recipiente unidose</td></tr><tr><td>30060000</td><td>Spraydose</td><td>Περιέκτης ψεκασμού</td><td>Envase pulverizador</td><td>Flacon pulvérisateur</td><td>Flacone nebulizzatore</td><td>Frasco nebulizador</td></tr><tr><td>30064500</td><td>Trinkhalm</td><td>Καλαμίσκος</td><td>Pajita medicamentosa</td><td>Paille</td><td>Cannuccia</td><td>Palhinha</td></tr><tr><td>30065000</td><td>Folienstreifen</td><td>Ταινία</td><td>Tira</td><td>Film thermosoudé</td><td>Strip</td><td>Fita termossoldada</td></tr><tr><td>30066000</td><td>Tablettenbehältnis</td><td>Περιέκτης δισκίων</td><td>Envase de comprimidos</td><td>Pilulier</td><td>Contenitore per compresse</td><td>Recipiente para comprimidos</td></tr><tr><td>30067000</td><td>Tube</td><td>Σωληνάριο</td><td>Tubo</td><td>Tube</td><td>Tubo</td><td>Bisnaga</td></tr><tr><td>30069000</td><td>Durchstechflasche</td><td>Φιαλίδιο</td><td>Vial</td><td>Flacon</td><td>Flaconcino</td><td>Frasco para injetáveis</td></tr></table></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://unicom-project.eu/fhir/ValueSet/container"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "Container"]; # 
+  fhir:ValueSet.title [ fhir:value "Container"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-03T15:45:39+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "UNICOM"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "ValueSet Container from EDQM, CON, see https://standardterms.edqm.eu/#"]; # 
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://standardterms.edqm.eu" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13059000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unit-dose blister" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Einzeldosis-Blisterpackung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κυψέλη μονάδων δόσης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Blíster unidosis" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Plaquette unitaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Blister divisibile per dose unitaria" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Blister em dose unitária" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13063000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pre-filled injector" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fertiginjektor" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Προγεμισμένος εγχυτήρας" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inyector precargado" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injecteur prérempli" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Iniettore preriempito" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injetor pré-cheio" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13073000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pre-filled oral syringe" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fertigspritze für orale Verabreichung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Προγεμισμένη σύριγγα για χορήγηση από του στόματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Jeringa precargada para uso oral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seringue préremplie pour administration orale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Siringa preriempita per somministrazione orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seringa oral pré-cheia" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13074000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pre-filled oral applicator" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fertigapplikator für die orale Verabreichung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Προγεμισμένο εξάρτημα χορήγησης από του στόματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador precargado para uso oral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicateur prérempli pour administration orale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicatore preriempito per somministrazione orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador oral pré-cheio" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13125000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Wrapper" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hülle" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envoltorio" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Involucro" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envoltório" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13131000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Capsule for opening" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13142000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pouch" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bolsa" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sacchetto" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13151000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tablet tube" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tablettenröhrchen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tubo para comprimidos" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tube pour comprimés" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tubo per compresse" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tubo para comprimidos" ]
+         ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13156000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gas cylinder bundle" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gasflaschenbündel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bloque de balas de gas" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bouteilles de gaz en cadre" ]
+         ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30001000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ampoule" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ampulle" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Φύσιγγα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ampolla" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ampoule" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fiala" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ampola" ]
+         ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30004000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bag" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Beutel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Σάκκος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bolsa" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Poche" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sacca" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Saco" ]
+         ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30006000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Barrel" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kanister" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Βαρέλι" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bidón" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fût" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fusto" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Barrica" ]
+         ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30007000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blister" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Blisterpackung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κυψέλη" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Blíster" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Plaquette" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Blister" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Blister" ]
+         ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30008000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bottle" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flasche" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Φιάλη" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Frasco" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flacon" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flacone" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Frasco" ]
+         ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30009000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Box" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Schachtel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κουτί" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Caja" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Boîte" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Scatola" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Caixa" ]
+         ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30011500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calendar package" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30014000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cartridge" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Patrone" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Φυσίγγιο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cartucho" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cartouche" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cartuccia" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cartucho" ]
+         ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30015500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Container" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Behältnis" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιέκτης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envase" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Récipient" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contenitore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente" ]
+         ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30018000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dart" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfeil" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εκτοξευόμενη σύριγγα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dardo" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fléchette" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cartuccia siringa" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dardo" ]
+         ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30018300" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dose-dispenser cartridge" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Patrone für ein Dosiergerät" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Φυσίγγιο δοσομετρητή" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cartucho para dispensador de dosis" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cartouche pour dispensateur de dose" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cartuccia per dispositivo di somministrazione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cartucho para dispensador de dose" ]
+         ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30020000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dredging container" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Streudose" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιέκτης επίπασης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envase espolvoreador" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flacon poudreur" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contenitore aspersore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Frasco polvilhador" ]
+         ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30023000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dropper container" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tropfbehältnis" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Σταγονομετρικό φιαλίδιο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envase cuentagotas" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flacon compte-gouttes" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flacone contagocce" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Frasco conta-gotas" ]
+         ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30023005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fixed cryogenic vessel" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ortsfestes Behältnis für kälteverflüssigte Gase" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κρυογόνο δοχείο, ακίνητο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "RECIPIENTE CRIOGÉNICO FIJO" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "récipient cryogénique fixe" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente criogenico fisso" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente criogénico fixo" ]
+         ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30024000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gas cylinder" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Druckbehältnis" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Οβίδα αερίων" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bala de gas" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bouteille de gaz" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bombola" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cilindro de gás" ]
+         ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30032000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Jar" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Weithalsgefäss" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Βάζο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tarro" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pot" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vasetto" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Boião" ]
+         ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30036005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mobile cryogenic vessel" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mobiles Behältnis für kälteverflüssigte Gase" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κρυογόνο δοχείο, φορητό" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "RECIPIENTE CRIOGÉNICO MÓVIL" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "récipient cryogénique mobile" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente criogenico mobile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente criogénico móvel" ]
+         ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30038000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Multidose container" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mehrdosenbehältnis" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιέκτης πολλαπλών δόσεων" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envase multidosis" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Récipient multidose" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contenitore multidose" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente multidose" ]
+         ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30039000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Multidose container with airless pump" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mehrdosenbehältnis mit gasfreiem Pumpsystem" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιέκτης πολλαπλών δόσεων με αυτλία χωρις χρήση αέρα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envase multidosis con bombeo sin entrada de aire" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Récipient multidose avec système de fermeture sans entrée d'air" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contenitore multidose con pompa a tenuta d'aria" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente multidose com sistema de fecho sem entrada de ar" ]
+         ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30039400" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Multidose container with metering pump" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mehrdosenbehältnis mit Dosierpumpe" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιέκτης πολλαπλών δόσεων με δοσιμετρική αντλία" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envase multidosis con bomba dosificadora" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Récipient multidose avec pompe doseuse" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contenitore multidose con pompa dosatrice" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente multidose com bomba doseadora" ]
+         ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30039500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Multidose container with pump" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mehrdosenbehältnis mit Pumpe" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιέκτης πολλαπλών δόσεων με αντλία" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envase multidosis con bomba" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Récipient multidose avec pompe" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contenitore multidose con pompa" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente multidose com bomba" ]
+         ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30045500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pack" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30048000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pour-on container" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gießbehältnis" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιέκτης κατάλληλος για επίχυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envase con aplicador para unción continua" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Récipient pour pour-on" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contenitore per pour-on" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente com aplicador para unção contínua" ]
+         ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30049000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pre-filled gastroenteral tube" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "vorgefüllter Schlauch zur gastrointestinalen Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Προγεμισμένος γαστροεντερικός σωλήνας" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sonda precargada" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sonde préremplie" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tubo gastroenterico preriempito" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sonda gastroentérica pré-cheia" ]
+         ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30050000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pre-filled pen" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fertigpen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Προγεμισμένη συσκευή τύπου πένας" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pluma precargada" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Stylo prérempli" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Penna preriempita" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Caneta pré-cheia" ]
+         ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30051000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pre-filled syringe" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fertigspritze" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Προγεμισμένη σύριγγα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Jeringa precargada" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seringue préremplie" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Siringa preriempita" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seringa pré-cheia" ]
+         ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30052000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pressurised container" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Druckbehältnis" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιέκτης υπό πίεση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envase a presión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Récipient pressurisé" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contenitore sotto pressione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente pressurizado" ]
+         ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30053500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Roll-on container" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Roll-on Behältnis" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιέκτης με περιστρεφόμενη κεφαλή" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envase con aplicador de bola" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Récipient avec applicateur à bille" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contenitore con applicatore a sfera" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente com aplicador roll-on" ]
+         ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30054000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sachet" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Beutel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Φακελίσκος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sobre" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sachet" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bustina" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Saqueta" ]
+         ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30057000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Single-dose container" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Einzeldosisbehältnis" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιέκτης μίας δόσης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envase unidosis" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Récipient unidose" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contenitore monodose" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente unidose" ]
+         ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30060000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spray container" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spraydose" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιέκτης ψεκασμού" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envase pulverizador" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flacon pulvérisateur" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flacone nebulizzatore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Frasco nebulizador" ]
+         ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30064500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Straw" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Trinkhalm" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Καλαμίσκος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pajita medicamentosa" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Paille" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cannuccia" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Palhinha" ]
+         ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30065000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Strip" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Folienstreifen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ταινία" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tira" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Film thermosoudé" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Strip" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fita termossoldada" ]
+         ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30066000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tablet container" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tablettenbehältnis" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιέκτης δισκίων" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Envase de comprimidos" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pilulier" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contenitore per compresse" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Recipiente para comprimidos" ]
+         ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30067000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tube" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tube" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Σωληνάριο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tubo" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tube" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tubo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bisnaga" ]
+         ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30069000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vial" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Durchstechflasche" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Φιαλίδιο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vial" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flacon" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flaconcino" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Frasco para injetáveis" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/container.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,2042 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EDQM Unit of Presentation - JSON Representation - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.63"}
+    h3,h4,h5,h6{--heading-prefix:"6.63"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EDQM Unit of Presentation</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-unit-of-presentation.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-unit-of-presentation.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-unit-of-presentation.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: EDQM Unit of Presentation - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2023-10-17
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-unit-of-presentation.json" no-download="true">Raw json</a> | <a href="ValueSet-unit-of-presentation.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; overflow: hidden"><code>
+{
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">id</a>" : "unit-of-presentation",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://standardterms.edqm.eu&lt;/code&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15001000&lt;/td&gt;&lt;td&gt;Actuation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15002000&lt;/td&gt;&lt;td&gt;Ampoule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15004000&lt;/td&gt;&lt;td&gt;Applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15005000&lt;/td&gt;&lt;td&gt;Bag&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15006000&lt;/td&gt;&lt;td&gt;Barrel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15007000&lt;/td&gt;&lt;td&gt;Blister&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15008000&lt;/td&gt;&lt;td&gt;Block&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15009000&lt;/td&gt;&lt;td&gt;Bottle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15011000&lt;/td&gt;&lt;td&gt;Cachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15012000&lt;/td&gt;&lt;td&gt;Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15013000&lt;/td&gt;&lt;td&gt;Cartridge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15015000&lt;/td&gt;&lt;td&gt;Collar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15016000&lt;/td&gt;&lt;td&gt;Container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15017000&lt;/td&gt;&lt;td&gt;Cup&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15018000&lt;/td&gt;&lt;td&gt;Cylinder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15019000&lt;/td&gt;&lt;td&gt;Dart&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15021000&lt;/td&gt;&lt;td&gt;Dressing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15022000&lt;/td&gt;&lt;td&gt;Drop&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15023000&lt;/td&gt;&lt;td&gt;Film&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15024000&lt;/td&gt;&lt;td&gt;Chewing gum&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15025000&lt;/td&gt;&lt;td&gt;Implant&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15026000&lt;/td&gt;&lt;td&gt;Inhaler&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15027000&lt;/td&gt;&lt;td&gt;Insert&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15028000&lt;/td&gt;&lt;td&gt;Jar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15029000&lt;/td&gt;&lt;td&gt;Lozenge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15030000&lt;/td&gt;&lt;td&gt;Lyophilisate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15031000&lt;/td&gt;&lt;td&gt;Matrix&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15033000&lt;/td&gt;&lt;td&gt;Pad&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15034000&lt;/td&gt;&lt;td&gt;Paper&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15035000&lt;/td&gt;&lt;td&gt;Pastille&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15036000&lt;/td&gt;&lt;td&gt;Patch&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15037000&lt;/td&gt;&lt;td&gt;Pen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15038000&lt;/td&gt;&lt;td&gt;Pendant&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15039000&lt;/td&gt;&lt;td&gt;Pessary&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15040000&lt;/td&gt;&lt;td&gt;Pillule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15041000&lt;/td&gt;&lt;td&gt;Pipette&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15042000&lt;/td&gt;&lt;td&gt;Plaster&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15043000&lt;/td&gt;&lt;td&gt;Plug&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15044000&lt;/td&gt;&lt;td&gt;Pouch&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15045000&lt;/td&gt;&lt;td&gt;Sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15046000&lt;/td&gt;&lt;td&gt;Sponge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15047000&lt;/td&gt;&lt;td&gt;Spoonful&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15048000&lt;/td&gt;&lt;td&gt;Stick&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15049000&lt;/td&gt;&lt;td&gt;Straw&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15050000&lt;/td&gt;&lt;td&gt;Strip&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15051000&lt;/td&gt;&lt;td&gt;Suppository&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15052000&lt;/td&gt;&lt;td&gt;Syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15053000&lt;/td&gt;&lt;td&gt;System&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15054000&lt;/td&gt;&lt;td&gt;Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15055000&lt;/td&gt;&lt;td&gt;Tag&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15056000&lt;/td&gt;&lt;td&gt;Tampon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15057000&lt;/td&gt;&lt;td&gt;Thread&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15058000&lt;/td&gt;&lt;td&gt;Tube&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15059000&lt;/td&gt;&lt;td&gt;Vessel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15060000&lt;/td&gt;&lt;td&gt;Vial&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15061000&lt;/td&gt;&lt;td&gt;Puff&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15062000&lt;/td&gt;&lt;td&gt;Swab&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Deutsch (German, de)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Greek (el)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Spanish (es)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;French (fr)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Italian (it)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Portuguese (pt)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15001000&lt;/td&gt;&lt;td&gt;Betätigung (Sprühstoß)&lt;/td&gt;&lt;td&gt;Ενεργοποίηση&lt;/td&gt;&lt;td&gt;Pulsación&lt;/td&gt;&lt;td&gt;Bouffée&lt;/td&gt;&lt;td&gt;Erogazione&lt;/td&gt;&lt;td&gt;Aplicação&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15002000&lt;/td&gt;&lt;td&gt;Ampulle&lt;/td&gt;&lt;td&gt;Φύσιγγα&lt;/td&gt;&lt;td&gt;Ampolla&lt;/td&gt;&lt;td&gt;Ampoule&lt;/td&gt;&lt;td&gt;Fiala&lt;/td&gt;&lt;td&gt;Ampola&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15004000&lt;/td&gt;&lt;td&gt;Applikator&lt;/td&gt;&lt;td&gt;Εξάρτημα χορήγησης&lt;/td&gt;&lt;td&gt;Aplicador&lt;/td&gt;&lt;td&gt;Applicateur&lt;/td&gt;&lt;td&gt;Applicatore&lt;/td&gt;&lt;td&gt;Aplicador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15005000&lt;/td&gt;&lt;td&gt;Beutel&lt;/td&gt;&lt;td&gt;Σάκκος&lt;/td&gt;&lt;td&gt;Bolsa&lt;/td&gt;&lt;td&gt;Poche&lt;/td&gt;&lt;td&gt;Sacca&lt;/td&gt;&lt;td&gt;Saco&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15006000&lt;/td&gt;&lt;td&gt;Kanister&lt;/td&gt;&lt;td&gt;Βαρέλι&lt;/td&gt;&lt;td&gt;Barril&lt;/td&gt;&lt;td&gt;Fût&lt;/td&gt;&lt;td&gt;Fusto&lt;/td&gt;&lt;td&gt;Barrica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15007000&lt;/td&gt;&lt;td&gt;Blisterpackung&lt;/td&gt;&lt;td&gt;Κυψέλη&lt;/td&gt;&lt;td&gt;Blíster&lt;/td&gt;&lt;td&gt;Plaquette&lt;/td&gt;&lt;td&gt;Blister&lt;/td&gt;&lt;td&gt;Blister&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15008000&lt;/td&gt;&lt;td&gt;Stein&lt;/td&gt;&lt;td&gt;Πλάκα&lt;/td&gt;&lt;td&gt;Bloque&lt;/td&gt;&lt;td&gt;Bloc&lt;/td&gt;&lt;td&gt;Blocco&lt;/td&gt;&lt;td&gt;Bloco&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15009000&lt;/td&gt;&lt;td&gt;Flasche&lt;/td&gt;&lt;td&gt;Φιάλη&lt;/td&gt;&lt;td&gt;Frasco&lt;/td&gt;&lt;td&gt;Flacon&lt;/td&gt;&lt;td&gt;Flacone&lt;/td&gt;&lt;td&gt;Frasco&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15011000&lt;/td&gt;&lt;td&gt;Oblatenkapsel&lt;/td&gt;&lt;td&gt;Αμυλοκαψάκιο&lt;/td&gt;&lt;td&gt;Sello&lt;/td&gt;&lt;td&gt;Cachet&lt;/td&gt;&lt;td&gt;Cachet&lt;/td&gt;&lt;td&gt;Hóstia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15012000&lt;/td&gt;&lt;td&gt;Kapsel&lt;/td&gt;&lt;td&gt;Καψάκιο&lt;/td&gt;&lt;td&gt;Cápsula&lt;/td&gt;&lt;td&gt;Gélule ou capsule molle selon la forme pharmaceutique complète&lt;/td&gt;&lt;td&gt;Capsula&lt;/td&gt;&lt;td&gt;Cápsula&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15013000&lt;/td&gt;&lt;td&gt;Patrone&lt;/td&gt;&lt;td&gt;Φυσίγγιο&lt;/td&gt;&lt;td&gt;Cartucho&lt;/td&gt;&lt;td&gt;Cartouche&lt;/td&gt;&lt;td&gt;Cartuccia&lt;/td&gt;&lt;td&gt;Cartucho&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15015000&lt;/td&gt;&lt;td&gt;Halsband&lt;/td&gt;&lt;td&gt;Περιλαίμιο&lt;/td&gt;&lt;td&gt;Collar&lt;/td&gt;&lt;td&gt;Collier&lt;/td&gt;&lt;td&gt;Collare&lt;/td&gt;&lt;td&gt;Coleira&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15016000&lt;/td&gt;&lt;td&gt;Behältnis&lt;/td&gt;&lt;td&gt;Περιέκτης&lt;/td&gt;&lt;td&gt;Envase&lt;/td&gt;&lt;td&gt;Récipient&lt;/td&gt;&lt;td&gt;Contenitore&lt;/td&gt;&lt;td&gt;Recipiente&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15017000&lt;/td&gt;&lt;td&gt;Messbecher&lt;/td&gt;&lt;td&gt;Κύπελλο&lt;/td&gt;&lt;td&gt;Vaso dosificador&lt;/td&gt;&lt;td&gt;Godet&lt;/td&gt;&lt;td&gt;Bicchiere dosatore&lt;/td&gt;&lt;td&gt;Copo-medida&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15018000&lt;/td&gt;&lt;td&gt;Behältnis&lt;/td&gt;&lt;td&gt;Κύλινδρος&lt;/td&gt;&lt;td&gt;Bala&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Cilindro&lt;/td&gt;&lt;td&gt;Cilindro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15019000&lt;/td&gt;&lt;td&gt;Pfeil&lt;/td&gt;&lt;td&gt;Εκτοξευόμενη σύριγγα&lt;/td&gt;&lt;td&gt;Dardo&lt;/td&gt;&lt;td&gt;Fléchette&lt;/td&gt;&lt;td&gt;Dardo&lt;/td&gt;&lt;td&gt;Dardo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15021000&lt;/td&gt;&lt;td&gt;Verband&lt;/td&gt;&lt;td&gt;Επίδεσμος&lt;/td&gt;&lt;td&gt;Apósito&lt;/td&gt;&lt;td&gt;Compresse&lt;/td&gt;&lt;td&gt;Garza&lt;/td&gt;&lt;td&gt;Penso&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15022000&lt;/td&gt;&lt;td&gt;Tropfen&lt;/td&gt;&lt;td&gt;Σταγόνα&lt;/td&gt;&lt;td&gt;Gota&lt;/td&gt;&lt;td&gt;Goutte&lt;/td&gt;&lt;td&gt;Goccia&lt;/td&gt;&lt;td&gt;Gota&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15023000&lt;/td&gt;&lt;td&gt;Film&lt;/td&gt;&lt;td&gt;Υμένιο&lt;/td&gt;&lt;td&gt;Película&lt;/td&gt;&lt;td&gt;Film&lt;/td&gt;&lt;td&gt;Film&lt;/td&gt;&lt;td&gt;Película&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15024000&lt;/td&gt;&lt;td&gt;Kaugummi&lt;/td&gt;&lt;td&gt;Μασώμενο κόμμι&lt;/td&gt;&lt;td&gt;Chicle&lt;/td&gt;&lt;td&gt;Gomme à mâcher&lt;/td&gt;&lt;td&gt;Gomma da masticare&lt;/td&gt;&lt;td&gt;Goma para mascar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15025000&lt;/td&gt;&lt;td&gt;Implantat&lt;/td&gt;&lt;td&gt;Εμφύτευμα&lt;/td&gt;&lt;td&gt;Implante&lt;/td&gt;&lt;td&gt;Implant&lt;/td&gt;&lt;td&gt;Impianto&lt;/td&gt;&lt;td&gt;Implante&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15026000&lt;/td&gt;&lt;td&gt;Inhalator&lt;/td&gt;&lt;td&gt;Συσκευή εισπνοής&lt;/td&gt;&lt;td&gt;Inhalador&lt;/td&gt;&lt;td&gt;Inhalateur&lt;/td&gt;&lt;td&gt;Inalatore&lt;/td&gt;&lt;td&gt;Inalador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15027000&lt;/td&gt;&lt;td&gt;Insert&lt;/td&gt;&lt;td&gt;Ένθεμα&lt;/td&gt;&lt;td&gt;Inserto&lt;/td&gt;&lt;td&gt;Insert&lt;/td&gt;&lt;td&gt;Inserto&lt;/td&gt;&lt;td&gt;Inserto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15028000&lt;/td&gt;&lt;td&gt;Weithalsgefäß&lt;/td&gt;&lt;td&gt;Βάζο&lt;/td&gt;&lt;td&gt;Tarro&lt;/td&gt;&lt;td&gt;Pot&lt;/td&gt;&lt;td&gt;Vasetto&lt;/td&gt;&lt;td&gt;Boião&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15029000&lt;/td&gt;&lt;td&gt;Lutschtablette&lt;/td&gt;&lt;td&gt;Τροχίσκος&lt;/td&gt;&lt;td&gt;Pastilla para chupar&lt;/td&gt;&lt;td&gt;Pastille&lt;/td&gt;&lt;td&gt;Pastiglia&lt;/td&gt;&lt;td&gt;Pastilha&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15030000&lt;/td&gt;&lt;td&gt;Lyophilisat&lt;/td&gt;&lt;td&gt;Λυοφιλοποιημένο υλικό&lt;/td&gt;&lt;td&gt;Liofilizado&lt;/td&gt;&lt;td&gt;Lyophilisat&lt;/td&gt;&lt;td&gt;Liofilizzato&lt;/td&gt;&lt;td&gt;Liofilizado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15031000&lt;/td&gt;&lt;td&gt;Matrix&lt;/td&gt;&lt;td&gt;Υπόστρωμα&lt;/td&gt;&lt;td&gt;Matriz&lt;/td&gt;&lt;td&gt;Matrice&lt;/td&gt;&lt;td&gt;Matrice&lt;/td&gt;&lt;td&gt;Matriz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15033000&lt;/td&gt;&lt;td&gt;Tampon&lt;/td&gt;&lt;td&gt;Επίθεμα&lt;/td&gt;&lt;td&gt;Tampón&lt;/td&gt;&lt;td&gt;Tampon&lt;/td&gt;&lt;td&gt;Tampone&lt;/td&gt;&lt;td&gt;Tampão&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15034000&lt;/td&gt;&lt;td&gt;Papier&lt;/td&gt;&lt;td&gt;Χάρτης&lt;/td&gt;&lt;td&gt;Papel&lt;/td&gt;&lt;td&gt;Papier&lt;/td&gt;&lt;td&gt;Carta&lt;/td&gt;&lt;td&gt;Papel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15035000&lt;/td&gt;&lt;td&gt;Pastille&lt;/td&gt;&lt;td&gt;Παστίλλια&lt;/td&gt;&lt;td&gt;Pastilla blanda&lt;/td&gt;&lt;td&gt;Pastille&lt;/td&gt;&lt;td&gt;Pastiglia molle&lt;/td&gt;&lt;td&gt;Pastilha mole&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15036000&lt;/td&gt;&lt;td&gt;Pflaster&lt;/td&gt;&lt;td&gt;Επίθεμα&lt;/td&gt;&lt;td&gt;Parche&lt;/td&gt;&lt;td&gt;Patch&lt;/td&gt;&lt;td&gt;Cerotto&lt;/td&gt;&lt;td&gt;Adesivo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15037000&lt;/td&gt;&lt;td&gt;Pen&lt;/td&gt;&lt;td&gt;Συσκευή τύπου πένας&lt;/td&gt;&lt;td&gt;Pluma&lt;/td&gt;&lt;td&gt;Stylo&lt;/td&gt;&lt;td&gt;Penna&lt;/td&gt;&lt;td&gt;Caneta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15038000&lt;/td&gt;&lt;td&gt;Manschette&lt;/td&gt;&lt;td&gt;Κρεμαστό εξάρτημα&lt;/td&gt;&lt;td&gt;Colgante&lt;/td&gt;&lt;td&gt;Manchon&lt;/td&gt;&lt;td&gt;Manicotto&lt;/td&gt;&lt;td&gt;Berloque&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15039000&lt;/td&gt;&lt;td&gt;Pessary&lt;/td&gt;&lt;td&gt;Κολπικό υπόθετο&lt;/td&gt;&lt;td&gt;Óvulo&lt;/td&gt;&lt;td&gt;Ovule&lt;/td&gt;&lt;td&gt;Ovulo&lt;/td&gt;&lt;td&gt;Óvulo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15040000&lt;/td&gt;&lt;td&gt;Streukügelchen&lt;/td&gt;&lt;td&gt;Καταπότιο&lt;/td&gt;&lt;td&gt;Glóbulo&lt;/td&gt;&lt;td&gt;Granule&lt;/td&gt;&lt;td&gt;Granuli&lt;/td&gt;&lt;td&gt;Grânulo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15041000&lt;/td&gt;&lt;td&gt;Pipette&lt;/td&gt;&lt;td&gt;Πιπέτα&lt;/td&gt;&lt;td&gt;Pipeta&lt;/td&gt;&lt;td&gt;Pipette&lt;/td&gt;&lt;td&gt;Pipetta&lt;/td&gt;&lt;td&gt;Pipeta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15042000&lt;/td&gt;&lt;td&gt;Pflaster&lt;/td&gt;&lt;td&gt;Έμπλαστρο&lt;/td&gt;&lt;td&gt;Apósito adhesivo&lt;/td&gt;&lt;td&gt;Emplâtre&lt;/td&gt;&lt;td&gt;Cerotto&lt;/td&gt;&lt;td&gt;Emplastro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15043000&lt;/td&gt;&lt;td&gt;Einsatz&lt;/td&gt;&lt;td&gt;Βύσμα&lt;/td&gt;&lt;td&gt;Soporte&lt;/td&gt;&lt;td&gt;Support poreux&lt;/td&gt;&lt;td&gt;Supporto&lt;/td&gt;&lt;td&gt;Suporte&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15044000&lt;/td&gt;&lt;td&gt;Beutelchen&lt;/td&gt;&lt;td&gt;Θύλακας&lt;/td&gt;&lt;td&gt;Bolsita&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Sacchetto&lt;/td&gt;&lt;td&gt;Bolsa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15045000&lt;/td&gt;&lt;td&gt;Beutel&lt;/td&gt;&lt;td&gt;Φακελίσκος&lt;/td&gt;&lt;td&gt;Sobre&lt;/td&gt;&lt;td&gt;Sachet&lt;/td&gt;&lt;td&gt;Bustina&lt;/td&gt;&lt;td&gt;Saqueta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15046000&lt;/td&gt;&lt;td&gt;Schwämmchen&lt;/td&gt;&lt;td&gt;Σπόγγος&lt;/td&gt;&lt;td&gt;Esponja&lt;/td&gt;&lt;td&gt;Eponge&lt;/td&gt;&lt;td&gt;Spugna&lt;/td&gt;&lt;td&gt;Esponja&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15047000&lt;/td&gt;&lt;td&gt;ein Löffel voll&lt;/td&gt;&lt;td&gt;Κουταλιά&lt;/td&gt;&lt;td&gt;Cucharada&lt;/td&gt;&lt;td&gt;Cuillère-mesure&lt;/td&gt;&lt;td&gt;Cucchiaio&lt;/td&gt;&lt;td&gt;Colher-medida&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15048000&lt;/td&gt;&lt;td&gt;Stäbchen&lt;/td&gt;&lt;td&gt;Ραβδίο&lt;/td&gt;&lt;td&gt;Barra (para intramamario, Candelilla)&lt;/td&gt;&lt;td&gt;Bâton&lt;/td&gt;&lt;td&gt;Stick&lt;/td&gt;&lt;td&gt;Lápis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15049000&lt;/td&gt;&lt;td&gt;Trinkhalm&lt;/td&gt;&lt;td&gt;Καλαμίσκος&lt;/td&gt;&lt;td&gt;Pajita&lt;/td&gt;&lt;td&gt;Paille&lt;/td&gt;&lt;td&gt;Cannuccia&lt;/td&gt;&lt;td&gt;Palhinha&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15050000&lt;/td&gt;&lt;td&gt;Streifen&lt;/td&gt;&lt;td&gt;Ταινία&lt;/td&gt;&lt;td&gt;Tira&lt;/td&gt;&lt;td&gt;A voir en fonction du libellé de la composition&lt;/td&gt;&lt;td&gt;Strip&lt;/td&gt;&lt;td&gt;Fita&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15051000&lt;/td&gt;&lt;td&gt;Zäpfchen&lt;/td&gt;&lt;td&gt;Υπόθετο&lt;/td&gt;&lt;td&gt;Supositorio&lt;/td&gt;&lt;td&gt;Suppositoire&lt;/td&gt;&lt;td&gt;Supposta&lt;/td&gt;&lt;td&gt;Supositório&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15052000&lt;/td&gt;&lt;td&gt;Spritze&lt;/td&gt;&lt;td&gt;Σύριγγα&lt;/td&gt;&lt;td&gt;Jeringa&lt;/td&gt;&lt;td&gt;Seringue&lt;/td&gt;&lt;td&gt;Siringa&lt;/td&gt;&lt;td&gt;Seringa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15053000&lt;/td&gt;&lt;td&gt;System&lt;/td&gt;&lt;td&gt;Σύστημα (χορήγησης)&lt;/td&gt;&lt;td&gt;Sistema&lt;/td&gt;&lt;td&gt;Système&lt;/td&gt;&lt;td&gt;Sistema&lt;/td&gt;&lt;td&gt;Sistema&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15054000&lt;/td&gt;&lt;td&gt;Tablette&lt;/td&gt;&lt;td&gt;Δισκίο&lt;/td&gt;&lt;td&gt;Comprimido&lt;/td&gt;&lt;td&gt;Comprimé&lt;/td&gt;&lt;td&gt;Compressa&lt;/td&gt;&lt;td&gt;Comprimido&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15055000&lt;/td&gt;&lt;td&gt;Marke&lt;/td&gt;&lt;td&gt;Βύσμα&lt;/td&gt;&lt;td&gt;Crotal&lt;/td&gt;&lt;td&gt;Plaquette&lt;/td&gt;&lt;td&gt;Placchetta&lt;/td&gt;&lt;td&gt;Brinco&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15056000&lt;/td&gt;&lt;td&gt;Tampon&lt;/td&gt;&lt;td&gt;Βύσμα&lt;/td&gt;&lt;td&gt;Tampón&lt;/td&gt;&lt;td&gt;Tampon&lt;/td&gt;&lt;td&gt;Tampone&lt;/td&gt;&lt;td&gt;Tampão&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15057000&lt;/td&gt;&lt;td&gt;Faden&lt;/td&gt;&lt;td&gt;Νήμα&lt;/td&gt;&lt;td&gt;Hilo&lt;/td&gt;&lt;td&gt;Fil&lt;/td&gt;&lt;td&gt;Filo&lt;/td&gt;&lt;td&gt;Fio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15058000&lt;/td&gt;&lt;td&gt;Tube&lt;/td&gt;&lt;td&gt;Σωληνάριο&lt;/td&gt;&lt;td&gt;Tubo&lt;/td&gt;&lt;td&gt;Tube&lt;/td&gt;&lt;td&gt;Tubo&lt;/td&gt;&lt;td&gt;Bisnaga&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15059000&lt;/td&gt;&lt;td&gt;Behältnis&lt;/td&gt;&lt;td&gt;Δοχείο&lt;/td&gt;&lt;td&gt;Recipiente&lt;/td&gt;&lt;td&gt;Récipient&lt;/td&gt;&lt;td&gt;Recipiente a tenuta&lt;/td&gt;&lt;td&gt;Recipiente&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15060000&lt;/td&gt;&lt;td&gt;Durchstechflasche&lt;/td&gt;&lt;td&gt;Φιαλίδιο&lt;/td&gt;&lt;td&gt;Vial&lt;/td&gt;&lt;td&gt;Flacon&lt;/td&gt;&lt;td&gt;Flaconcino&lt;/td&gt;&lt;td&gt;Frasco para injetáveis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15061000&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15062000&lt;/td&gt;&lt;td&gt;Tupfer&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Bastoncillo&lt;/td&gt;&lt;td&gt;Tampon en applicateur&lt;/td&gt;&lt;td&gt;Tampone&lt;/td&gt;&lt;td&gt;Zaragatoa&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">url</a>" : "http://unicom-project.eu/fhir/ValueSet/unit-of-presentation",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">name</a>" : "UnitOfPresentation",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a>" : "EDQM Unit of Presentation",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a>" : "2023-10-17T08:02:36+00:00",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.publisher">publisher</a>" : "UNICOM",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "UNICOM",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://unicom-project.eu"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">description</a>" : "ValueSet Unit of presentation from EDQM, UOP, see https://standardterms.edqm.eu/#",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.immutable">immutable</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">system</a>" : "https://standardterms.edqm.eu",
+        "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15001000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Actuation",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Betätigung (Sprühstoß)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ενεργοποίηση"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulsación"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bouffée"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erogazione"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicação"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15002000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ampoule",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ampulle"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Φύσιγγα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ampolla"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ampoule"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Fiala"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ampola"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15004000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Applicator",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applikator"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Εξάρτημα χορήγησης"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicateur"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Applicatore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Aplicador"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15005000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Bag",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Beutel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σάκκος"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bolsa"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Poche"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Sacca"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Saco"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15006000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Barrel",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Kanister"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Βαρέλι"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Barril"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Fût"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Fusto"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Barrica"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15007000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Blister",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Blisterpackung"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κυψέλη"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Blíster"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Plaquette"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Blister"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Blister"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15008000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Block",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Stein"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Πλάκα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bloque"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bloc"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Blocco"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bloco"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15009000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Bottle",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flasche"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Φιάλη"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Frasco"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flacon"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flacone"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Frasco"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15011000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cachet",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Oblatenkapsel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Αμυλοκαψάκιο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Sello"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cachet"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cachet"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Hóstia"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15012000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Capsule",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Kapsel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Καψάκιο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cápsula"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gélule ou capsule molle selon la forme pharmaceutique complète"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Capsula"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cápsula"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15013000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cartridge",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Patrone"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Φυσίγγιο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cartucho"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cartouche"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cartuccia"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cartucho"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15015000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Collar",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Halsband"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Περιλαίμιο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Collar"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Collier"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Collare"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Coleira"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15016000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Container",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Behältnis"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Περιέκτης"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Envase"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Récipient"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Contenitore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Recipiente"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15017000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cup",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Messbecher"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κύπελλο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Vaso dosificador"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Godet"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bicchiere dosatore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Copo-medida"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15018000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cylinder",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Behältnis"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κύλινδρος"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bala"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cilindro"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cilindro"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15019000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Dart",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pfeil"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Εκτοξευόμενη σύριγγα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dardo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Fléchette"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dardo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dardo"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15021000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Dressing",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Verband"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Επίδεσμος"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Apósito"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Compresse"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Garza"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Penso"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15022000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Drop",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tropfen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σταγόνα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gota"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Goutte"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Goccia"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gota"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15023000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Film",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Film"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Υμένιο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Película"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Film"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Film"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Película"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15024000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chewing gum",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Kaugummi"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Μασώμενο κόμμι"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Chicle"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gomme à mâcher"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gomma da masticare"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Goma para mascar"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15025000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Implant",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Implantat"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Εμφύτευμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Implante"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Implant"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Impianto"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Implante"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15026000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inhaler",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inhalator"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Συσκευή εισπνοής"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inhalador"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inhalateur"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inalatore"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inalador"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15027000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Insert",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Insert"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ένθεμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inserto"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Insert"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inserto"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inserto"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15028000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Jar",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Weithalsgefäß"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Βάζο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tarro"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pot"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Vasetto"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Boião"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15029000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Lozenge",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Lutschtablette"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Τροχίσκος"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pastilla para chupar"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pastille"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pastiglia"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pastilha"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15030000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Lyophilisate",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Lyophilisat"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Λυοφιλοποιημένο υλικό"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Liofilizado"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Lyophilisat"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Liofilizzato"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Liofilizado"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15031000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Matrix",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Matrix"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Υπόστρωμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Matriz"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Matrice"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Matrice"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Matriz"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15033000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pad",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tampon"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Επίθεμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tampón"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tampon"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tampone"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tampão"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15034000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Paper",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Papier"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Χάρτης"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Papel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Papier"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Carta"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Papel"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15035000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pastille",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pastille"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Παστίλλια"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pastilla blanda"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pastille"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pastiglia molle"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pastilha mole"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15036000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Patch",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pflaster"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Επίθεμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Parche"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Patch"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cerotto"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Adesivo"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15037000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pen",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Συσκευή τύπου πένας"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pluma"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Stylo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Penna"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Caneta"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15038000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pendant",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Manschette"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κρεμαστό εξάρτημα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Colgante"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Manchon"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Manicotto"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Berloque"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15039000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pessary",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pessary"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κολπικό υπόθετο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Óvulo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ovule"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ovulo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Óvulo"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15040000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pillule",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Streukügelchen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Καταπότιο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Glóbulo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Granule"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Granuli"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Grânulo"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15041000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pipette",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pipette"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Πιπέτα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pipeta"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pipette"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pipetta"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pipeta"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15042000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Plaster",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pflaster"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Έμπλαστρο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Apósito adhesivo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Emplâtre"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cerotto"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Emplastro"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15043000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Plug",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Einsatz"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Βύσμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Soporte"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Support poreux"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Supporto"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Suporte"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15044000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pouch",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Beutelchen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Θύλακας"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bolsita"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Sacchetto"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bolsa"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15045000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sachet",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Beutel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Φακελίσκος"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Sobre"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Sachet"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bustina"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Saqueta"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15046000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sponge",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Schwämmchen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σπόγγος"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Esponja"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Eponge"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spugna"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Esponja"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15047000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Spoonful",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "ein Löffel voll"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κουταλιά"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cucharada"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cuillère-mesure"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cucchiaio"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Colher-medida"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15048000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Stick",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Stäbchen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ραβδίο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Barra (para intramamario, Candelilla)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bâton"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Stick"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Lápis"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15049000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Straw",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Trinkhalm"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Καλαμίσκος"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pajita"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Paille"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cannuccia"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Palhinha"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15050000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Strip",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Streifen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ταινία"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tira"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "A voir en fonction du libellé de la composition"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Strip"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Fita"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15051000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Suppository",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Zäpfchen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Υπόθετο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Supositorio"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Suppositoire"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Supposta"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Supositório"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15052000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Syringe",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spritze"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σύριγγα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Jeringa"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Seringue"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Siringa"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Seringa"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15053000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "System",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "System"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σύστημα (χορήγησης)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Sistema"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Système"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Sistema"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Sistema"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15054000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tablet",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tablette"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Δισκίο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Comprimido"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Comprimé"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Compressa"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Comprimido"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15055000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tag",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Marke"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Βύσμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Crotal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Plaquette"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Placchetta"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Brinco"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15056000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tampon",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tampon"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Βύσμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tampón"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tampon"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tampone"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tampão"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15057000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Thread",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Faden"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Νήμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Hilo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Fil"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Filo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Fio"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15058000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tube",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tube"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Σωληνάριο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tubo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tube"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tubo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bisnaga"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15059000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Vessel",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Behältnis"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Δοχείο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Recipiente"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Récipient"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Recipiente a tenuta"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Recipiente"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15060000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Vial",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Durchstechflasche"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Φιαλίδιο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Vial"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flacon"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flaconcino"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Frasco para injetáveis"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15061000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Puff"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15062000",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Swab",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tupfer"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bastoncillo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tampon en applicateur"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tampone"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Zaragatoa"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 17, 2023 08:02+0000">2023-10-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

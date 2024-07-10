@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/OperationDefinition/Equivalent> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Equivalent"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>dose-form</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>The dose form</p>\n</div></td></tr><tr><td>IN</td><td>code</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>Product code</p>\n</div></td></tr><tr><td>IN</td><td>route</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>Route of administration</p>\n</div></td></tr><tr><td>IN</td><td>ingredient</td><td/><td>0..*</td><td></td><td/><td><div><p>Ingredients</p>\n</div></td></tr><tr><td>IN</td><td>ingredient.substance</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>The substance</p>\n</div></td></tr><tr><td>IN</td><td>ingredient.strength</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#Quantity\">Quantity</a></td><td/><td><div><p>The strength</p>\n</div></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://unicom-project.eu/fhir/OperationDefinition/Equivalent"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Equivalent"] ; # 
+  fhir:title [ fhir:v "Equivalent Look Up"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:kind [ fhir:v "operation"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-11-04T07:22:15+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:affectsState [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:code [ fhir:v "equivalent"] ; # 
+  fhir:system [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:instance [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "dose-form" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "The dose form" ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:name [ fhir:v "code" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Product code" ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:name [ fhir:v "route" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Route of administration" ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:name [ fhir:v "ingredient" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Ingredients" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "substance" ] ;
+       fhir:use [ fhir:v "in" ] ;
+       fhir:min [ fhir:v "0"^^xsd:integer ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:documentation [ fhir:v "The substance" ] ;
+       fhir:type [ fhir:v "Coding" ]
+     ] [
+       fhir:name [ fhir:v "strength" ] ;
+       fhir:use [ fhir:v "in" ] ;
+       fhir:min [ fhir:v "0"^^xsd:integer ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:documentation [ fhir:v "The strength" ] ;
+       fhir:type [ fhir:v "Quantity" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

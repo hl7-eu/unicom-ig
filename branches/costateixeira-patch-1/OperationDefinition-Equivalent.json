@@ -1,0 +1,83 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "Equivalent",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>dose-form</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>The dose form</p>\n</div></td></tr><tr><td>IN</td><td>code</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>Product code</p>\n</div></td></tr><tr><td>IN</td><td>route</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>Route of administration</p>\n</div></td></tr><tr><td>IN</td><td>ingredient</td><td/><td>0..*</td><td></td><td/><td><div><p>Ingredients</p>\n</div></td></tr><tr><td>IN</td><td>ingredient.substance</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>The substance</p>\n</div></td></tr><tr><td>IN</td><td>ingredient.strength</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#Quantity\">Quantity</a></td><td/><td><div><p>The strength</p>\n</div></td></tr></table></div>"
+  },
+  "url" : "http://unicom-project.eu/fhir/OperationDefinition/Equivalent",
+  "version" : "0.1.0",
+  "name" : "Equivalent",
+  "title" : "Equivalent Look Up",
+  "status" : "active",
+  "kind" : "operation",
+  "experimental" : false,
+  "date" : "2024-05-03T19:27:00+00:00",
+  "publisher" : "UNICOM",
+  "contact" : [{
+    "name" : "UNICOM",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://unicom-project.eu"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "affectsState" : false,
+  "code" : "equivalent",
+  "system" : false,
+  "type" : true,
+  "instance" : true,
+  "parameter" : [{
+    "name" : "dose-form",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "The dose form",
+    "type" : "Coding"
+  },
+  {
+    "name" : "code",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Product code",
+    "type" : "Coding"
+  },
+  {
+    "name" : "route",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Route of administration",
+    "type" : "Coding"
+  },
+  {
+    "name" : "ingredient",
+    "use" : "in",
+    "min" : 0,
+    "max" : "*",
+    "documentation" : "Ingredients",
+    "part" : [{
+      "name" : "substance",
+      "use" : "in",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "The substance",
+      "type" : "Coding"
+    },
+    {
+      "name" : "strength",
+      "use" : "in",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "The strength",
+      "type" : "Quantity"
+    }]
+  }]
+}

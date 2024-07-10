@@ -1,0 +1,256 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/basic-dose-form> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "basic-dose-form"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0049</td><td>Block</td></tr><tr><td>0050</td><td>Cachet</td></tr><tr><td>0051</td><td>Capsule</td></tr><tr><td>0052</td><td>Film</td></tr><tr><td>0053</td><td>Granules</td></tr><tr><td>0054</td><td>Gum</td></tr><tr><td>0055</td><td>Implant</td></tr><tr><td>0056</td><td>Impregnated material</td></tr><tr><td>0057</td><td>Intraruminal device</td></tr><tr><td>0058</td><td>Lozenge</td></tr><tr><td>0059</td><td>Lyophilisate</td></tr><tr><td>0060</td><td>Pastille</td></tr><tr><td>0061</td><td>Patch</td></tr><tr><td>0062</td><td>Pellets</td></tr><tr><td>0063</td><td>Pessary</td></tr><tr><td>0064</td><td>Pillules</td></tr><tr><td>0065</td><td>Plaster</td></tr><tr><td>0066</td><td>Powder</td></tr><tr><td>0067</td><td>Stick</td></tr><tr><td>0068</td><td>Suppository</td></tr><tr><td>0069</td><td>Tablet</td></tr><tr><td>0070</td><td>Tea</td></tr><tr><td>0071</td><td>Cream</td></tr><tr><td>0072</td><td>Foam</td></tr><tr><td>0073</td><td>Gel</td></tr><tr><td>0074</td><td>Ointment</td></tr><tr><td>0075</td><td>Paste</td></tr><tr><td>0076</td><td>Poultice</td></tr><tr><td>0077</td><td>Collodion</td></tr><tr><td>0078</td><td>Concentrate</td></tr><tr><td>0079</td><td>Dispersion</td></tr><tr><td>0080</td><td>Emulsion</td></tr><tr><td>0081</td><td>Lacquer</td></tr><tr><td>0082</td><td>Liquid</td></tr><tr><td>0083</td><td>Solution</td></tr><tr><td>0084</td><td>Solvent</td></tr><tr><td>0085</td><td>Suspension</td></tr><tr><td>0086</td><td>Syrup</td></tr><tr><td>0087</td><td>Medicinal gas</td></tr><tr><td>0088</td><td>Insert</td></tr><tr><td>0089</td><td>Additive (unspecified)</td></tr><tr><td>0090</td><td>Drops (unspecified)</td></tr><tr><td>0091</td><td>Premix (unspecified)</td></tr><tr><td>0092</td><td>Radiopharmaceutical</td></tr><tr><td>0093</td><td>Shampoo</td></tr><tr><td>0094</td><td>Spray (unspecified)</td></tr><tr><td>0095</td><td>System</td></tr><tr><td>0096</td><td>Unknown</td></tr><tr><td>0102</td><td>Pouch</td></tr><tr><td>0103</td><td>Cement</td></tr><tr><td>0114</td><td>Herbal material (unprocessed)</td></tr><tr><td>0115</td><td>Live animal</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://unicom-project.eu/fhir/ValueSet/basic-dose-form"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "BasicDoseForm"]; # 
+  fhir:ValueSet.title [ fhir:value "Basic dose form"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-24T10:33:27+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "UNICOM"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "ValueSet Basic dose form from EDQM, BDF, see https://standardterms.edqm.eu/#"]; # 
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://standardterms.edqm.eu" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0049" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Block" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0050" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cachet" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0051" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Capsule" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0052" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Film" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0053" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Granules" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0054" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gum" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0055" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Implant" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0056" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Impregnated material" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0057" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraruminal device" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0058" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lozenge" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0059" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lyophilisate" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0060" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pastille" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0061" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patch" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0062" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pellets" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0063" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pessary" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0064" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pillules" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0065" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Plaster" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0066" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0067" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stick" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0068" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suppository" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0069" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tablet" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0070" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tea" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0071" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cream" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0072" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Foam" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0073" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gel" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0074" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ointment" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0075" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Paste" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0076" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Poultice" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0077" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Collodion" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0078" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Concentrate" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0079" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dispersion" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0080" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Emulsion" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0081" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lacquer" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0082" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Liquid" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0083" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Solution" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0084" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Solvent" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0085" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suspension" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0086" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Syrup" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0087" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicinal gas" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0088" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Insert" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0089" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Additive (unspecified)" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0090" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drops (unspecified)" ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0091" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Premix (unspecified)" ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0092" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Radiopharmaceutical" ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0093" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Shampoo" ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0094" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spray (unspecified)" ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0095" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "System" ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0096" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unknown" ]
+       ], [
+         fhir:index 48;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0102" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pouch" ]
+       ], [
+         fhir:index 49;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0103" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cement" ]
+       ], [
+         fhir:index 50;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0114" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Herbal material (unprocessed)" ]
+       ], [
+         fhir:index 51;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0115" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Live animal" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/basic-dose-form.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

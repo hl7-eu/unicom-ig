@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.UNICOM\Language (EMA SPOR RMS) - FHIR v4.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.30"}
+    h3,h4,h5,h6{--heading-prefix:"5.30"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="regulatory.html">Regulatory Data</a>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Language (EMA SPOR RMS)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-language-ema-vs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-language-ema-vs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-language-ema-vs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: Language (EMA SPOR RMS)
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://unicom-project.eu/fhir/ValueSet/language-ema-vs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://unicom-project.eu/fhir/ValueSet/language-ema-vs"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://unicom-project.eu/fhir/ValueSet/language-ema-vs|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2023-02-03
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">LanguageEMA</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Languages. EMA SPOR RMS list.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-PPLMedicinalProductDefinition.html">PPL Medicinal Product profile</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-language-ema-cs.html"><code>https://spor.ema.europa.eu/v1/lists/100000072057</code></a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 186 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-language-ema-cs.html">Language EMA v0.1.0 (CodeSystem)</a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072223"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072223">100000072223</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Korean</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072144"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072144">100000072144</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Chuvash</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072257"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072257">100000072257</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Serbian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072297"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072297">100000072297</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Turkish</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072166"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072166">100000072166</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Corsican</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072131"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072131">100000072131</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Avaric</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072264"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072264">100000072264</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Spanish</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072273"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072273">100000072273</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Walloon</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072159"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072159">100000072159</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Javanese</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072197"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072197">100000072197</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Kashmiri</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072306"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072306">100000072306</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Xhosa</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072177"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072177">100000072177</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Georgian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072225"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072225">100000072225</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Lao</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072140"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072140">100000072140</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Burmese</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072118"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072118">100000072118</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Avestan</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072162"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072162">100000072162</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Chechen</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072293"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072293">100000072293</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Tibetan</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072183"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072183">100000072183</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Haitian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072266"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072266">100000072266</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Tahitian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072255"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072255">100000072255</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Russian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072307"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072307">100000072307</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Yiddish</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072296"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072296">100000072296</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Tsonga</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072152"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072152">100000072152</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Manx</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072236"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072236">100000072236</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Maltese</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072282"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072282">100000072282</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Shona</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072194"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072194">100000072194</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Italian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072261"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072261">100000072261</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Sinhala</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072267"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072267">100000072267</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Telugu</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072270"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072270">100000072270</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Turkmen</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072198"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072198">100000072198</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Kanuri</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072209"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072209">100000072209</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Malay</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072265"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072265">100000072265</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Sundanese</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072201"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072201">100000072201</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Kazakh</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072304"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072304">100000072304</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Welsh</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072218"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072218">100000072218</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Quechua</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072157"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072157">100000072157</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Inuktitut</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072219"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072219">100000072219</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Rundi</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072174"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072174">100000072174</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Fijian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072139"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072139">100000072139</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Breton</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072301"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072301">100000072301</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Venda</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072291"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072291">100000072291</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Tajik</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072161"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072161">100000072161</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Catalan</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072129"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072129">100000072129</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Aragonese</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072244"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072244">100000072244</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>N'Ko</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072126"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072126">100000072126</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Akan</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072246"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072246">100000072246</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Ojibwa</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072274"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072274">100000072274</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Yoruba</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072179"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072179">100000072179</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Irish</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072271"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072271">100000072271</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Uighur</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072305"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072305">100000072305</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Wolof</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072212"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072212">100000072212</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Ndonga</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072178"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072178">100000072178</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>German</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072148"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072148">100000072148</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Ewe</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072294"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072294">100000072294</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Tigrinya</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072134"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072134">100000072134</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Bambara</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072138"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072138">100000072138</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Bislama</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072247"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072247">100000072247</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Oromo</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072128"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072128">100000072128</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Arabic</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072254"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072254">100000072254</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Romanian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072192"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072192">100000072192</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Interlingua (International Auxiliary Language Association)</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072154"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072154">100000072154</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Hebrew</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072127"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072127">100000072127</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Amharic</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072290"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072290">100000072290</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Tatar</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072200"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072200">100000072200</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Kikuyu</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072239"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072239">100000072239</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>South Ndebele</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072216"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072216">100000072216</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Panjabi</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072182"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072182">100000072182</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Guarani</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072222"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072222">100000072222</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Komi</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072251"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072251">100000072251</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Portuguese</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072119"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072119">100000072119</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Bashkir</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072188"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072188">100000072188</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Igbo</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072245"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072245">100000072245</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Occitan (post 1500)</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072133"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072133">100000072133</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Azerbaijani</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072196"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072196">100000072196</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Greenlandic</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072286"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072286">100000072286</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Swati</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072168"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072168">100000072168</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Danish</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072235"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072235">100000072235</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Malagasy</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072141"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072141">100000072141</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Bosnian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072191"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072191">100000072191</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Interlingue</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072149"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072149">100000072149</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Finnish</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072203"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072203">100000072203</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Kongo</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072147"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072147">100000072147</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>English</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072237"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072237">100000072237</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Mongolian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072199"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072199">100000072199</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Central Khmer</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072211"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072211">100000072211</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Navaho</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072170"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072170">100000072170</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Dzongkha</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072143"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072143">100000072143</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Chamorro</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072190"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072190">100000072190</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Sichuan Yi</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072233"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072233">100000072233</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Maori</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072195"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072195">100000072195</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Japanese</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072160"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072160">100000072160</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Kannada</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072136"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072136">100000072136</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Belarusian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072258"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072258">100000072258</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Croatian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072229"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072229">100000072229</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Luxembourgish</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072176"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072176">100000072176</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Western Frisian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072284"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072284">100000072284</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Sotho</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072238"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072238">100000072238</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Nauru</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072285"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072285">100000072285</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Sardinian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072153"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072153">100000072153</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Gujarati</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072115"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072115">100000072115</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Abkhazian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072215"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072215">100000072215</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Oriya</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072164"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072164">100000072164</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Church Slavic</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072300"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072300">100000072300</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Urdu</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072189"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072189">100000072189</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Ido</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072158"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072158">100000072158</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Indonesian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072232"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072232">100000072232</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Marshallese</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072193"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072193">100000072193</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Inupiaq</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072187"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072187">100000072187</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Hungarian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072125"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072125">100000072125</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Afrikaans</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072156"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072156">100000072156</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Icelandic</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072208"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072208">100000072208</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Malayalam</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072185"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072185">100000072185</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Herero</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072206"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072206">100000072206</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Lithuanian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072184"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072184">100000072184</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Hausa</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072228"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072228">100000072228</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Lingala</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072130"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072130">100000072130</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Assamese</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072309"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072309">100000072309</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Zulu</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072256"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072256">100000072256</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Sango</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072302"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072302">100000072302</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Vietnamese</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072221"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072221">100000072221</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Kirghiz</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072268"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072268">100000072268</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Thai</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072253"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072253">100000072253</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Romansh</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072240"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072240">100000072240</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>North Ndebele</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072249"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072249">100000072249</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Persian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072303"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072303">100000072303</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Volap�k</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072308"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072308">100000072308</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Zhuang</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072288"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072288">100000072288</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Swedish</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072214"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072214">100000072214</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Chichewa</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072295"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072295">100000072295</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Tswana</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072269"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072269">100000072269</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Tonga (Tonga Islands)</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072248"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072248">100000072248</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Ossetian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072137"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072137">100000072137</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Bihari</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072281"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072281">100000072281</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Samoan</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072142"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072142">100000072142</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Bulgarian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072180"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072180">100000072180</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Galician</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072252"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072252">100000072252</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Pushto</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072283"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072283">100000072283</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Somali</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072116"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072116">100000072116</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Albanian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072259"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072259">100000072259</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Slovak</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072220"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072220">100000072220</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Sanskrit</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072260"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072260">100000072260</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Slovenian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072231"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072231">100000072231</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Macedonian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072226"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072226">100000072226</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Latin</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072171"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072171">100000072171</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Esperanto</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072117"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072117">100000072117</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Armenian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072202"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072202">100000072202</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Kinyarwanda</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072167"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072167">100000072167</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Czech</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072272"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072272">100000072272</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Uzbek</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072186"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072186">100000072186</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Hindi</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072146"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072146">100000072146</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Maldivian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072151"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072151">100000072151</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Gaelic</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072169"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072169">100000072169</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Dutch</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072242"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072242">100000072242</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Norwegian Nynorsk</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072172"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072172">100000072172</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Estonian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072150"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072150">100000072150</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Fulah</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072241"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072241">100000072241</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Nepali</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072227"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072227">100000072227</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Limburgan</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072213"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072213">100000072213</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Bokm�l</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072262"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072262">100000072262</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Northern Sami</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072155"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072155">100000072155</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Hiri Motu</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072250"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072250">100000072250</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Pali</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072234"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072234">100000072234</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Marathi</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072181"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072181">100000072181</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Greek</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072263"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072263">100000072263</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Sindhi</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072205"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072205">100000072205</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Latvian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072165"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072165">100000072165</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Cornish</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072163"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072163">100000072163</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Chinese</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072173"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072173">100000072173</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Faroese</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072289"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072289">100000072289</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Tamil</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072243"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072243">100000072243</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Norwegian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072124"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072124">100000072124</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Afar</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072175"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072175">100000072175</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>French</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072132"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072132">100000072132</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Aymara</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072298"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072298">100000072298</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Twi</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072204"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072204">100000072204</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Kurdish</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072299"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072299">100000072299</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Ukrainian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072224"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072224">100000072224</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Kuanyama</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072292"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072292">100000072292</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Tagalog</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072217"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072217">100000072217</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Polish</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072120"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072120">100000072120</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Bengali</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072230"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072230">100000072230</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Luba-Katanga</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072145"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072145">100000072145</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Cree</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072287"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072287">100000072287</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Swahili</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072210"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072210">100000072210</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Moldavian</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072207"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072207">100000072207</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Ganda</td></tr><tr><td style="white-space:nowrap"><a name="https---spor.ema.europa.eu-v1-lists-100000072057-100000072135"> </a>  <a href="CodeSystem-language-ema-cs.html#language-ema-cs-100000072135">100000072135</a></td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td><td>Basque</td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://build.fhir.org/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.3.0</a>. Generated <span title="Fri, Feb 3, 2023 15:45+0000">2023-02-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

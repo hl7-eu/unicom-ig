@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Medication/CanifugCremolum-EE-Pessary-Medication-Item> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CanifugCremolum-EE-Pessary-Medication-Item"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication CanifugCremolum-EE-Pessary-Medication-Item</b></p><a name=\"CanifugCremolum-EE-Pessary-Medication-Item\"> </a><a name=\"hcCanifugCremolum-EE-Pessary-Medication-Item\"> </a><a name=\"hcCanifugCremolum-EE-Pessary-Medication-Item-en-US\"> </a><p><b>doseForm</b>: <span title=\"Codes:{https://standardterms.edqm.eu 10909000}\">Pessary</span></p><p><b>totalVolume</b>: 6 Pessary<span style=\"background: LightGoldenRodYellow\"> (Details: standardterms.edqm.eu  code15039000 = '15039000')</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000092074}\">CLOTRIMAZOLE</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 100 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 Pessary<span style=\"background: LightGoldenRodYellow\"> (Details: standardterms.edqm.eu  code15039000 = '15039000')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:doseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10909000" ] ;
+       fhir:display [ fhir:v "Pessary" ]
+     ] )
+  ] ; # 
+  fhir:totalVolume [
+     fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Pessary" ] ;
+     fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "15039000" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000092074" ] ;
+           fhir:display [ fhir:v "CLOTRIMAZOLE" ]
+         ] )
+       ]
+     ] ;
+     fhir:isActive [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:strength [
+       a fhir:Ratio ;
+       fhir:numerator [
+         fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "milligram" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Pessary" ] ;
+         fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "15039000" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

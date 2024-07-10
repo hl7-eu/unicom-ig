@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/combination-package-ema-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "combination-package-ema-cs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://spor.ema.europa.eu/v1/lists/200000000008</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100000173972<a name=\"combination-package-ema-cs-100000173972\"> </a></td><td>Cream + pessary</td></tr><tr><td style=\"white-space:nowrap\">100000173973<a name=\"combination-package-ema-cs-100000173973\"> </a></td><td>Cutaneous solution + medicated sponge</td></tr><tr><td style=\"white-space:nowrap\">100000173974<a name=\"combination-package-ema-cs-100000173974\"> </a></td><td>Gastro-resistant tablet + rectal suspension</td></tr><tr><td style=\"white-space:nowrap\">100000173975<a name=\"combination-package-ema-cs-100000173975\"> </a></td><td>Vaginal capsule, soft + vaginal cream</td></tr><tr><td style=\"white-space:nowrap\">100000173976<a name=\"combination-package-ema-cs-100000173976\"> </a></td><td>Vaginal cream + vaginal tablet</td></tr><tr><td style=\"white-space:nowrap\">100000173977<a name=\"combination-package-ema-cs-100000173977\"> </a></td><td>Effervescent granules + film-coated tablet</td></tr><tr><td style=\"white-space:nowrap\">100000173978<a name=\"combination-package-ema-cs-100000173978\"> </a></td><td>Effervescent tablet + film-coated tablet</td></tr><tr><td style=\"white-space:nowrap\">100000173979<a name=\"combination-package-ema-cs-100000173979\"> </a></td><td>Tablet + vaginal tablet</td></tr><tr><td style=\"white-space:nowrap\">100000173980<a name=\"combination-package-ema-cs-100000173980\"> </a></td><td>Cream + vaginal capsule, soft</td></tr><tr><td style=\"white-space:nowrap\">100000173981<a name=\"combination-package-ema-cs-100000173981\"> </a></td><td>Cream + vaginal tablet</td></tr><tr><td style=\"white-space:nowrap\">200000028535<a name=\"combination-package-ema-cs-200000028535\"> </a></td><td>Eye drops, solution + eye ointment</td></tr><tr><td style=\"white-space:nowrap\">200000010779<a name=\"combination-package-ema-cs-200000010779\"> </a></td><td>Ointment + vaginal tablet</td></tr><tr><td style=\"white-space:nowrap\">200000002334<a name=\"combination-package-ema-cs-200000002334\"> </a></td><td>Film-coated tablet + pessary</td></tr><tr><td style=\"white-space:nowrap\">200000003175<a name=\"combination-package-ema-cs-200000003175\"> </a></td><td>Capsule, soft + tablet</td></tr><tr><td style=\"white-space:nowrap\">200000003176<a name=\"combination-package-ema-cs-200000003176\"> </a></td><td>Capsule, hard + tablet</td></tr><tr><td style=\"white-space:nowrap\">200000003177<a name=\"combination-package-ema-cs-200000003177\"> </a></td><td>Film-coated tablet + tablet</td></tr><tr><td style=\"white-space:nowrap\">200000015757<a name=\"combination-package-ema-cs-200000015757\"> </a></td><td>Effervescent granules + gastro-resistant tablet</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000008"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "CombinationPackage_EMA_CS"];
+  fhir:CodeSystem.title [ fhir:value "Combination Package EMA"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2022-11-18T19:50:12+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "UNICOM"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://medigree.net" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Dose forms for combination packages. Based on EDQM. Re-coded with RMS codes. Only used for authorised dose form."];
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "17"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173972" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cream + pessary" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173973" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous solution + medicated sponge" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173974" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastro-resistant tablet + rectal suspension" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173975" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal capsule, soft + vaginal cream" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173976" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal cream + vaginal tablet" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173977" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Effervescent granules + film-coated tablet" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173978" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Effervescent tablet + film-coated tablet" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173979" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tablet + vaginal tablet" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173980" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cream + vaginal capsule, soft" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173981" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cream + vaginal tablet" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "200000028535" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye drops, solution + eye ointment" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "200000010779" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ointment + vaginal tablet" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "200000002334" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Film-coated tablet + pessary" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "200000003175" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Capsule, soft + tablet" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "200000003176" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Capsule, hard + tablet" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "200000003177" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Film-coated tablet + tablet" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "200000015757" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Effervescent granules + gastro-resistant tablet" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/combination-package-ema-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicinalProductDefinition xmlns="http://hl7.org/fhir">
+  <id value="exampleMPD"/>
+  <meta>
+    <profile value="http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicinalProductDefinition</b><a name="exampleMPD"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicinalProductDefinition "exampleMPD" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PPLMedicinalProductDefinition.html">PPL MedicinalProductDefinition profile</a></p></div><p><b>identifier</b>: id: 123, id: EE123</p><blockquote><p><b>name</b></p><p><b>productName</b>: whatever</p><h3>Parts</h3><table class="grid"><tr><td>-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>invented name</td><td>invented <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (terms#invented)</span></td></tr></table></blockquote></div>
+  </text>
+  <identifier>
+    <system value="http://1"/>
+    <value value="123"/>
+  </identifier>
+  <identifier>
+    <system value="http://estonia.ee"/>
+    <value value="EE123"/>
+  </identifier>
+  <name>
+    <productName value="whatever"/>
+    <part>
+      <part value="invented name"/>
+      <type>
+        <coding>
+          <system value="https://spor.ema.europa.eu/rmswi/#/lists/220000000000/terms"/>
+          <code value="invented"/>
+        </coding>
+      </type>
+    </part>
+  </name>
+</MedicinalProductDefinition>
