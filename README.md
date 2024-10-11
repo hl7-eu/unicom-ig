@@ -3,7 +3,7 @@
 ### Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __http://build.fhir.org/ig/hl7-eu/unicom-ig__  
+Continuous Build: __https://hl7-eu.github.io/unicom-ig__ __http://build.fhir.org/ig/hl7-eu/unicom-ig__  
 Canonical / permanent URL: 
 <br/>
 
