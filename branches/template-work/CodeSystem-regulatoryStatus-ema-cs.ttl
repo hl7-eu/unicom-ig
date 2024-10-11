@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/regulatoryStatus-ema-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "regulatoryStatus-ema-cs"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://spor.ema.europa.eu/v1/lists/100000072049</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100000072121<a name=\"regulatoryStatus-ema-cs-100000072121\"> </a></td><td>Revoked</td></tr><tr><td style=\"white-space:nowrap\">200000029967<a name=\"regulatoryStatus-ema-cs-200000029967\"> </a></td><td>Harmonised</td></tr><tr><td style=\"white-space:nowrap\">200000017708<a name=\"regulatoryStatus-ema-cs-200000017708\"> </a></td><td>Valid - Renewed/Varied</td></tr><tr><td style=\"white-space:nowrap\">200000017707<a name=\"regulatoryStatus-ema-cs-200000017707\"> </a></td><td>Valid - Transferred marketing authorisation</td></tr><tr><td style=\"white-space:nowrap\">100000072099<a name=\"regulatoryStatus-ema-cs-100000072099\"> </a></td><td>Valid</td></tr><tr><td style=\"white-space:nowrap\">100000072100<a name=\"regulatoryStatus-ema-cs-100000072100\"> </a></td><td>Expired</td></tr><tr><td style=\"white-space:nowrap\">100000072112<a name=\"regulatoryStatus-ema-cs-100000072112\"> </a></td><td>Not renewed</td></tr><tr><td style=\"white-space:nowrap\">100000072113<a name=\"regulatoryStatus-ema-cs-100000072113\"> </a></td><td>Withdrawn</td></tr><tr><td style=\"white-space:nowrap\">100000072114<a name=\"regulatoryStatus-ema-cs-100000072114\"> </a></td><td>Withdrawn, unspecified</td></tr><tr><td style=\"white-space:nowrap\">200000026056<a name=\"regulatoryStatus-ema-cs-200000026056\"> </a></td><td>Presubmission</td></tr><tr><td style=\"white-space:nowrap\">100000072122<a name=\"regulatoryStatus-ema-cs-100000072122\"> </a></td><td>Suspended</td></tr><tr><td style=\"white-space:nowrap\">100000072123<a name=\"regulatoryStatus-ema-cs-100000072123\"> </a></td><td>Expired due to Sunset Clause</td></tr><tr><td style=\"white-space:nowrap\">200000010409<a name=\"regulatoryStatus-ema-cs-200000010409\"> </a></td><td>Surrendered</td></tr><tr><td style=\"white-space:nowrap\">220000000066<a name=\"regulatoryStatus-ema-cs-220000000066\"> </a></td><td>Pending</td></tr><tr><td style=\"white-space:nowrap\">220000000067<a name=\"regulatoryStatus-ema-cs-220000000067\"> </a></td><td>Rejected</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072049"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "RegulatoryStatus_EMA_CS"]; # 
+  fhir:CodeSystem.title [ fhir:value "Regulatory Entitlement Status EMA SPOR"]; # 
+  fhir:CodeSystem.status [ fhir:value "draft"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-03T15:06:18+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "UNICOM"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Regulatory Entitlement Status EMA SPOR"]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "15"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072121" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Revoked" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "200000029967" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Harmonised" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "200000017708" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Valid - Renewed/Varied" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "200000017707" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Valid - Transferred marketing authorisation" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072099" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Valid" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072100" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Expired" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not renewed" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Withdrawn" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Withdrawn, unspecified" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "200000026056" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Presubmission" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072122" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Suspended" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072123" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Expired due to Sunset Clause" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "200000010409" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Surrendered" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "220000000066" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pending" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "220000000067" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rejected" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/regulatoryStatus-ema-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

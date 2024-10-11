@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="CefuroximeMIP-EE-Medication-Clinical"/>
+  <meta>
+    <profile value="http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication CefuroximeMIP-EE-Medication-Clinical</b></p><a name="CefuroximeMIP-EE-Medication-Clinical"> </a><a name="hcCefuroximeMIP-EE-Medication-Clinical"> </a><a name="CefuroximeMIP-EE-Medication-Clinical-en-US"> </a><p><b>MedicinalProductClassification</b>: <span title="Codes:{http://www.whocc.no/atc J01DC02}">cefuroxime</span></p><p><b>MedicinalProductName</b>: Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber</p><p><b>AdministrableDoseForm</b>: <span title="Codes:{https://standardterms.edqm.eu 50060000}">Solution for injection/infusion</span></p><p><b>identifier</b>: <code>http://ema.europa.eu/fhir/mpId</code>/EE-100009199-27834, <code>http://ema.europa.eu/fhir/pcId</code>/EE-100009199-27834-1529940</p><p><b>marketingAuthorizationHolder</b>: <a href="Organization-LOC-100009199-Mip.html">Organization Mip Pharma GmbH</a></p><p><b>doseForm</b>: <span title="Codes:{https://standardterms.edqm.eu 50053000}">Powder for solution for injection or infusion</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="Medication-CefuroximeMIP-EE-Powder-Medication-Item.html">Medication: doseForm = Powder for solution for injection or infusion; totalVolume = 1 Vial</a></td></tr></table></blockquote></div>
+  </text>
+  <extension url="http://unicom-project.eu/fhir/StructureDefinition/medicinal-product-classification">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://www.whocc.no/atc"/>
+        <code value="J01DC02"/>
+        <display value="cefuroxime"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://unicom-project.eu/fhir/StructureDefinition/medicinal-product-name">
+    <valueString value="Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber"/>
+  </extension>
+  <extension url="http://unicom-project.eu/fhir/StructureDefinition/administrable-doseform">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://standardterms.edqm.eu"/>
+        <code value="50060000"/>
+        <display value="Solution for injection/infusion"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://ema.europa.eu/fhir/mpId"/>
+    <value value="EE-100009199-27834"/>
+  </identifier>
+  <identifier>
+    <system value="http://ema.europa.eu/fhir/pcId"/>
+    <value value="EE-100009199-27834-1529940"/>
+  </identifier>
+  <marketingAuthorizationHolder>
+    <reference value="Organization/LOC-100009199-Mip"/>
+  </marketingAuthorizationHolder>
+  <doseForm>
+    <coding>
+      <system value="https://standardterms.edqm.eu"/>
+      <code value="50053000"/>
+      <display value="Powder for solution for injection or infusion"/>
+    </coding>
+  </doseForm>
+  <ingredient>
+    <item>
+      <reference>
+        <reference value="Medication/CefuroximeMIP-EE-Powder-Medication-Item"/>
+      </reference>
+    </item>
+  </ingredient>
+</Medication>

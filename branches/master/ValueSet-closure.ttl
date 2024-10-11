@@ -1,0 +1,320 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/closure> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "closure"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet closure</b></p><a name=\"closure\"> </a><a name=\"hcclosure\"> </a><a name=\"closure-en-US\"> </a><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>13070000</td><td>Valve</td></tr><tr><td>13132000</td><td>Lid</td></tr><tr><td>30011000</td><td>Brush applicator</td></tr><tr><td>30013000</td><td>Cap</td></tr><tr><td>30015000</td><td>Child-resistant closure</td></tr><tr><td>30035000</td><td>Metering pump</td></tr><tr><td>30036000</td><td>Metering valve</td></tr><tr><td>30043000</td><td>Needle applicator</td></tr><tr><td>30047000</td><td>Pipette applicator</td></tr><tr><td>30056000</td><td>Screw cap</td></tr><tr><td>30061000</td><td>Spray pump</td></tr><tr><td>30062000</td><td>Spray valve</td></tr><tr><td>30064000</td><td>Stopper</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>Greek (el)</b></td><td><b>Spanish (es)</b></td><td><b>French (fr)</b></td><td><b>Italian (it)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td>13070000</td><td>Ventil</td><td>Βαλβίδα</td><td>Válvula</td><td>Valve</td><td>Valvola</td><td>Válvula</td></tr><tr><td>13132000</td><td>Verschlusskappe</td><td></td><td>Tapa a presión</td><td></td><td>Coperchio di protezione</td><td>Tampa de pressão</td></tr><tr><td>30011000</td><td>Verschluss mit Pinsel</td><td>Ψυκτροφόρο πώμα</td><td>Pincel aplicador</td><td>Embout avec pinceau</td><td>Tappo con applicatore a pennello</td><td>Fecho com pincel</td></tr><tr><td>30013000</td><td>Schutzkappe</td><td>Πώμα</td><td>Cápsula de cierre</td><td>Opercule</td><td>Capsula di chiusura</td><td>Cápsula de fecho</td></tr><tr><td>30015000</td><td>kindergesicherter Verschluss</td><td>Πώμα ασφαλείας για παιδιά</td><td>Cierre de seguridad a prueba de niños</td><td>Fermeture de sécurité enfant</td><td>Chiusura a prova di bambino</td><td>Fecho resistente à abertura por crianças</td></tr><tr><td>30035000</td><td>Dosierpumpe</td><td>Δοσιμετρική αντλία</td><td>Bomba dosificadora</td><td>Pompe doseuse</td><td>Pompa dosatrice</td><td>Fecho com bomba doseadora</td></tr><tr><td>30036000</td><td>Dosierventil</td><td>Δοσιμετρική βαλβίδα</td><td>Válvula dosificadora</td><td>Valve doseuse</td><td>Valvola dosatrice</td><td>Fecho com válvula doseadora</td></tr><tr><td>30043000</td><td>Verschluss mit Nadel</td><td>Σύστημα εφαρμογής με βελόνα</td><td>Cierre con aguja incorporada</td><td>Embout avec aiguille</td><td>Applicatore con ago</td><td>Fecho com agulha</td></tr><tr><td>30047000</td><td>Verschluss mit Pipette</td><td>Ογκομετρικό πώμα</td><td>Pipeta aplicadora</td><td>Embout pipette</td><td>Chiusura con pipetta</td><td>Fecho com pipeta</td></tr><tr><td>30056000</td><td>Schraubdeckel</td><td>Βιδωτό πώμα</td><td>Cierre de rosca</td><td>Bouchon à vis</td><td>Tappo a vite</td><td>Fecho com rosca</td></tr><tr><td>30061000</td><td>Sprühpumpe</td><td>Αντλία ψεκασμού</td><td>Bomba pulverizadora</td><td>Pompe pour pulvérisation</td><td>Pompa spray</td><td>Fecho com bomba nebulizadora</td></tr><tr><td>30062000</td><td>Sprühventil</td><td>Βαλβίδα ψεκασμού</td><td>Válvula pulverizadora</td><td>Valve</td><td>Valvola spray</td><td>Fecho com válvula nebulizadora</td></tr><tr><td>30064000</td><td>Stopfen</td><td>Πώμα εισχώρησης</td><td>Tapón</td><td>Bouchon</td><td>Tappo</td><td>Rolha</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://unicom-project.eu/fhir/ValueSet/closure"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Closure"] ; # 
+  fhir:title [ fhir:v "EDQM Closure"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-10-11T10:53:19+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet Closure (for package description) from EDQM, CLO, see https://standardterms.edqm.eu/#"] ; # 
+  fhir:immutable [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "13070000" ] ;
+         fhir:display [ fhir:v "Valve" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Ventil" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Βαλβίδα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Válvula" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Valve" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Valvola" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Válvula" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "13132000" ] ;
+         fhir:display [ fhir:v "Lid" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Verschlusskappe" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Tapa a presión" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Coperchio di protezione" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Tampa de pressão" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30011000" ] ;
+         fhir:display [ fhir:v "Brush applicator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Verschluss mit Pinsel" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ψυκτροφόρο πώμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Pincel aplicador" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Embout avec pinceau" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Tappo con applicatore a pennello" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fecho com pincel" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30013000" ] ;
+         fhir:display [ fhir:v "Cap" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Schutzkappe" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Πώμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cápsula de cierre" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Opercule" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Capsula di chiusura" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Cápsula de fecho" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30015000" ] ;
+         fhir:display [ fhir:v "Child-resistant closure" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "kindergesicherter Verschluss" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Πώμα ασφαλείας για παιδιά" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cierre de seguridad a prueba de niños" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Fermeture de sécurité enfant" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Chiusura a prova di bambino" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fecho resistente à abertura por crianças" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30035000" ] ;
+         fhir:display [ fhir:v "Metering pump" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Dosierpumpe" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Δοσιμετρική αντλία" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Bomba dosificadora" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Pompe doseuse" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Pompa dosatrice" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fecho com bomba doseadora" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30036000" ] ;
+         fhir:display [ fhir:v "Metering valve" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Dosierventil" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Δοσιμετρική βαλβίδα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Válvula dosificadora" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Valve doseuse" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Valvola dosatrice" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fecho com válvula doseadora" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30043000" ] ;
+         fhir:display [ fhir:v "Needle applicator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Verschluss mit Nadel" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σύστημα εφαρμογής με βελόνα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cierre con aguja incorporada" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Embout avec aiguille" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Applicatore con ago" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fecho com agulha" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30047000" ] ;
+         fhir:display [ fhir:v "Pipette applicator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Verschluss mit Pipette" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ογκομετρικό πώμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Pipeta aplicadora" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Embout pipette" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Chiusura con pipetta" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fecho com pipeta" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30056000" ] ;
+         fhir:display [ fhir:v "Screw cap" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Schraubdeckel" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Βιδωτό πώμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cierre de rosca" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Bouchon à vis" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Tappo a vite" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fecho com rosca" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30061000" ] ;
+         fhir:display [ fhir:v "Spray pump" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Sprühpumpe" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Αντλία ψεκασμού" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Bomba pulverizadora" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Pompe pour pulvérisation" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Pompa spray" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fecho com bomba nebulizadora" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30062000" ] ;
+         fhir:display [ fhir:v "Spray valve" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Sprühventil" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Βαλβίδα ψεκασμού" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Válvula pulverizadora" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Valve" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Valvola spray" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fecho com válvula nebulizadora" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "30064000" ] ;
+         fhir:display [ fhir:v "Stopper" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Stopfen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Πώμα εισχώρησης" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Tapón" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Bouchon" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Tappo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Rolha" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

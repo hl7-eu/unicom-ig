@@ -1,0 +1,596 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/language-ema-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "language-ema-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem language-ema-cs</b></p><a name=\"language-ema-cs\"> </a><a name=\"hclanguage-ema-cs\"> </a><a name=\"language-ema-cs-en-US\"> </a><p>This case-sensitive code system <code>https://spor.ema.europa.eu/v1/lists/100000072057</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100000072223<a name=\"language-ema-cs-100000072223\"> </a></td><td>Korean</td></tr><tr><td style=\"white-space:nowrap\">100000072144<a name=\"language-ema-cs-100000072144\"> </a></td><td>Chuvash</td></tr><tr><td style=\"white-space:nowrap\">100000072257<a name=\"language-ema-cs-100000072257\"> </a></td><td>Serbian</td></tr><tr><td style=\"white-space:nowrap\">100000072297<a name=\"language-ema-cs-100000072297\"> </a></td><td>Turkish</td></tr><tr><td style=\"white-space:nowrap\">100000072166<a name=\"language-ema-cs-100000072166\"> </a></td><td>Corsican</td></tr><tr><td style=\"white-space:nowrap\">100000072131<a name=\"language-ema-cs-100000072131\"> </a></td><td>Avaric</td></tr><tr><td style=\"white-space:nowrap\">100000072264<a name=\"language-ema-cs-100000072264\"> </a></td><td>Spanish</td></tr><tr><td style=\"white-space:nowrap\">100000072273<a name=\"language-ema-cs-100000072273\"> </a></td><td>Walloon</td></tr><tr><td style=\"white-space:nowrap\">100000072159<a name=\"language-ema-cs-100000072159\"> </a></td><td>Javanese</td></tr><tr><td style=\"white-space:nowrap\">100000072197<a name=\"language-ema-cs-100000072197\"> </a></td><td>Kashmiri</td></tr><tr><td style=\"white-space:nowrap\">100000072306<a name=\"language-ema-cs-100000072306\"> </a></td><td>Xhosa</td></tr><tr><td style=\"white-space:nowrap\">100000072177<a name=\"language-ema-cs-100000072177\"> </a></td><td>Georgian</td></tr><tr><td style=\"white-space:nowrap\">100000072225<a name=\"language-ema-cs-100000072225\"> </a></td><td>Lao</td></tr><tr><td style=\"white-space:nowrap\">100000072140<a name=\"language-ema-cs-100000072140\"> </a></td><td>Burmese</td></tr><tr><td style=\"white-space:nowrap\">100000072118<a name=\"language-ema-cs-100000072118\"> </a></td><td>Avestan</td></tr><tr><td style=\"white-space:nowrap\">100000072162<a name=\"language-ema-cs-100000072162\"> </a></td><td>Chechen</td></tr><tr><td style=\"white-space:nowrap\">100000072293<a name=\"language-ema-cs-100000072293\"> </a></td><td>Tibetan</td></tr><tr><td style=\"white-space:nowrap\">100000072183<a name=\"language-ema-cs-100000072183\"> </a></td><td>Haitian</td></tr><tr><td style=\"white-space:nowrap\">100000072266<a name=\"language-ema-cs-100000072266\"> </a></td><td>Tahitian</td></tr><tr><td style=\"white-space:nowrap\">100000072255<a name=\"language-ema-cs-100000072255\"> </a></td><td>Russian</td></tr><tr><td style=\"white-space:nowrap\">100000072307<a name=\"language-ema-cs-100000072307\"> </a></td><td>Yiddish</td></tr><tr><td style=\"white-space:nowrap\">100000072296<a name=\"language-ema-cs-100000072296\"> </a></td><td>Tsonga</td></tr><tr><td style=\"white-space:nowrap\">100000072152<a name=\"language-ema-cs-100000072152\"> </a></td><td>Manx</td></tr><tr><td style=\"white-space:nowrap\">100000072236<a name=\"language-ema-cs-100000072236\"> </a></td><td>Maltese</td></tr><tr><td style=\"white-space:nowrap\">100000072282<a name=\"language-ema-cs-100000072282\"> </a></td><td>Shona</td></tr><tr><td style=\"white-space:nowrap\">100000072194<a name=\"language-ema-cs-100000072194\"> </a></td><td>Italian</td></tr><tr><td style=\"white-space:nowrap\">100000072261<a name=\"language-ema-cs-100000072261\"> </a></td><td>Sinhala</td></tr><tr><td style=\"white-space:nowrap\">100000072267<a name=\"language-ema-cs-100000072267\"> </a></td><td>Telugu</td></tr><tr><td style=\"white-space:nowrap\">100000072270<a name=\"language-ema-cs-100000072270\"> </a></td><td>Turkmen</td></tr><tr><td style=\"white-space:nowrap\">100000072198<a name=\"language-ema-cs-100000072198\"> </a></td><td>Kanuri</td></tr><tr><td style=\"white-space:nowrap\">100000072209<a name=\"language-ema-cs-100000072209\"> </a></td><td>Malay</td></tr><tr><td style=\"white-space:nowrap\">100000072265<a name=\"language-ema-cs-100000072265\"> </a></td><td>Sundanese</td></tr><tr><td style=\"white-space:nowrap\">100000072201<a name=\"language-ema-cs-100000072201\"> </a></td><td>Kazakh</td></tr><tr><td style=\"white-space:nowrap\">100000072304<a name=\"language-ema-cs-100000072304\"> </a></td><td>Welsh</td></tr><tr><td style=\"white-space:nowrap\">100000072218<a name=\"language-ema-cs-100000072218\"> </a></td><td>Quechua</td></tr><tr><td style=\"white-space:nowrap\">100000072157<a name=\"language-ema-cs-100000072157\"> </a></td><td>Inuktitut</td></tr><tr><td style=\"white-space:nowrap\">100000072219<a name=\"language-ema-cs-100000072219\"> </a></td><td>Rundi</td></tr><tr><td style=\"white-space:nowrap\">100000072174<a name=\"language-ema-cs-100000072174\"> </a></td><td>Fijian</td></tr><tr><td style=\"white-space:nowrap\">100000072139<a name=\"language-ema-cs-100000072139\"> </a></td><td>Breton</td></tr><tr><td style=\"white-space:nowrap\">100000072301<a name=\"language-ema-cs-100000072301\"> </a></td><td>Venda</td></tr><tr><td style=\"white-space:nowrap\">100000072291<a name=\"language-ema-cs-100000072291\"> </a></td><td>Tajik</td></tr><tr><td style=\"white-space:nowrap\">100000072161<a name=\"language-ema-cs-100000072161\"> </a></td><td>Catalan</td></tr><tr><td style=\"white-space:nowrap\">100000072129<a name=\"language-ema-cs-100000072129\"> </a></td><td>Aragonese</td></tr><tr><td style=\"white-space:nowrap\">100000072244<a name=\"language-ema-cs-100000072244\"> </a></td><td>N'Ko</td></tr><tr><td style=\"white-space:nowrap\">100000072126<a name=\"language-ema-cs-100000072126\"> </a></td><td>Akan</td></tr><tr><td style=\"white-space:nowrap\">100000072246<a name=\"language-ema-cs-100000072246\"> </a></td><td>Ojibwa</td></tr><tr><td style=\"white-space:nowrap\">100000072274<a name=\"language-ema-cs-100000072274\"> </a></td><td>Yoruba</td></tr><tr><td style=\"white-space:nowrap\">100000072179<a name=\"language-ema-cs-100000072179\"> </a></td><td>Irish</td></tr><tr><td style=\"white-space:nowrap\">100000072271<a name=\"language-ema-cs-100000072271\"> </a></td><td>Uighur</td></tr><tr><td style=\"white-space:nowrap\">100000072305<a name=\"language-ema-cs-100000072305\"> </a></td><td>Wolof</td></tr><tr><td style=\"white-space:nowrap\">100000072212<a name=\"language-ema-cs-100000072212\"> </a></td><td>Ndonga</td></tr><tr><td style=\"white-space:nowrap\">100000072178<a name=\"language-ema-cs-100000072178\"> </a></td><td>German</td></tr><tr><td style=\"white-space:nowrap\">100000072148<a name=\"language-ema-cs-100000072148\"> </a></td><td>Ewe</td></tr><tr><td style=\"white-space:nowrap\">100000072294<a name=\"language-ema-cs-100000072294\"> </a></td><td>Tigrinya</td></tr><tr><td style=\"white-space:nowrap\">100000072134<a name=\"language-ema-cs-100000072134\"> </a></td><td>Bambara</td></tr><tr><td style=\"white-space:nowrap\">100000072138<a name=\"language-ema-cs-100000072138\"> </a></td><td>Bislama</td></tr><tr><td style=\"white-space:nowrap\">100000072247<a name=\"language-ema-cs-100000072247\"> </a></td><td>Oromo</td></tr><tr><td style=\"white-space:nowrap\">100000072128<a name=\"language-ema-cs-100000072128\"> </a></td><td>Arabic</td></tr><tr><td style=\"white-space:nowrap\">100000072254<a name=\"language-ema-cs-100000072254\"> </a></td><td>Romanian</td></tr><tr><td style=\"white-space:nowrap\">100000072192<a name=\"language-ema-cs-100000072192\"> </a></td><td>Interlingua (International Auxiliary Language Association)</td></tr><tr><td style=\"white-space:nowrap\">100000072154<a name=\"language-ema-cs-100000072154\"> </a></td><td>Hebrew</td></tr><tr><td style=\"white-space:nowrap\">100000072127<a name=\"language-ema-cs-100000072127\"> </a></td><td>Amharic</td></tr><tr><td style=\"white-space:nowrap\">100000072290<a name=\"language-ema-cs-100000072290\"> </a></td><td>Tatar</td></tr><tr><td style=\"white-space:nowrap\">100000072200<a name=\"language-ema-cs-100000072200\"> </a></td><td>Kikuyu</td></tr><tr><td style=\"white-space:nowrap\">100000072239<a name=\"language-ema-cs-100000072239\"> </a></td><td>South Ndebele</td></tr><tr><td style=\"white-space:nowrap\">100000072216<a name=\"language-ema-cs-100000072216\"> </a></td><td>Panjabi</td></tr><tr><td style=\"white-space:nowrap\">100000072182<a name=\"language-ema-cs-100000072182\"> </a></td><td>Guarani</td></tr><tr><td style=\"white-space:nowrap\">100000072222<a name=\"language-ema-cs-100000072222\"> </a></td><td>Komi</td></tr><tr><td style=\"white-space:nowrap\">100000072251<a name=\"language-ema-cs-100000072251\"> </a></td><td>Portuguese</td></tr><tr><td style=\"white-space:nowrap\">100000072119<a name=\"language-ema-cs-100000072119\"> </a></td><td>Bashkir</td></tr><tr><td style=\"white-space:nowrap\">100000072188<a name=\"language-ema-cs-100000072188\"> </a></td><td>Igbo</td></tr><tr><td style=\"white-space:nowrap\">100000072245<a name=\"language-ema-cs-100000072245\"> </a></td><td>Occitan (post 1500)</td></tr><tr><td style=\"white-space:nowrap\">100000072133<a name=\"language-ema-cs-100000072133\"> </a></td><td>Azerbaijani</td></tr><tr><td style=\"white-space:nowrap\">100000072196<a name=\"language-ema-cs-100000072196\"> </a></td><td>Greenlandic</td></tr><tr><td style=\"white-space:nowrap\">100000072286<a name=\"language-ema-cs-100000072286\"> </a></td><td>Swati</td></tr><tr><td style=\"white-space:nowrap\">100000072168<a name=\"language-ema-cs-100000072168\"> </a></td><td>Danish</td></tr><tr><td style=\"white-space:nowrap\">100000072235<a name=\"language-ema-cs-100000072235\"> </a></td><td>Malagasy</td></tr><tr><td style=\"white-space:nowrap\">100000072141<a name=\"language-ema-cs-100000072141\"> </a></td><td>Bosnian</td></tr><tr><td style=\"white-space:nowrap\">100000072191<a name=\"language-ema-cs-100000072191\"> </a></td><td>Interlingue</td></tr><tr><td style=\"white-space:nowrap\">100000072149<a name=\"language-ema-cs-100000072149\"> </a></td><td>Finnish</td></tr><tr><td style=\"white-space:nowrap\">100000072203<a name=\"language-ema-cs-100000072203\"> </a></td><td>Kongo</td></tr><tr><td style=\"white-space:nowrap\">100000072147<a name=\"language-ema-cs-100000072147\"> </a></td><td>English</td></tr><tr><td style=\"white-space:nowrap\">100000072237<a name=\"language-ema-cs-100000072237\"> </a></td><td>Mongolian</td></tr><tr><td style=\"white-space:nowrap\">100000072199<a name=\"language-ema-cs-100000072199\"> </a></td><td>Central Khmer</td></tr><tr><td style=\"white-space:nowrap\">100000072211<a name=\"language-ema-cs-100000072211\"> </a></td><td>Navaho</td></tr><tr><td style=\"white-space:nowrap\">100000072170<a name=\"language-ema-cs-100000072170\"> </a></td><td>Dzongkha</td></tr><tr><td style=\"white-space:nowrap\">100000072143<a name=\"language-ema-cs-100000072143\"> </a></td><td>Chamorro</td></tr><tr><td style=\"white-space:nowrap\">100000072190<a name=\"language-ema-cs-100000072190\"> </a></td><td>Sichuan Yi</td></tr><tr><td style=\"white-space:nowrap\">100000072233<a name=\"language-ema-cs-100000072233\"> </a></td><td>Maori</td></tr><tr><td style=\"white-space:nowrap\">100000072195<a name=\"language-ema-cs-100000072195\"> </a></td><td>Japanese</td></tr><tr><td style=\"white-space:nowrap\">100000072160<a name=\"language-ema-cs-100000072160\"> </a></td><td>Kannada</td></tr><tr><td style=\"white-space:nowrap\">100000072136<a name=\"language-ema-cs-100000072136\"> </a></td><td>Belarusian</td></tr><tr><td style=\"white-space:nowrap\">100000072258<a name=\"language-ema-cs-100000072258\"> </a></td><td>Croatian</td></tr><tr><td style=\"white-space:nowrap\">100000072229<a name=\"language-ema-cs-100000072229\"> </a></td><td>Luxembourgish</td></tr><tr><td style=\"white-space:nowrap\">100000072176<a name=\"language-ema-cs-100000072176\"> </a></td><td>Western Frisian</td></tr><tr><td style=\"white-space:nowrap\">100000072284<a name=\"language-ema-cs-100000072284\"> </a></td><td>Sotho</td></tr><tr><td style=\"white-space:nowrap\">100000072238<a name=\"language-ema-cs-100000072238\"> </a></td><td>Nauru</td></tr><tr><td style=\"white-space:nowrap\">100000072285<a name=\"language-ema-cs-100000072285\"> </a></td><td>Sardinian</td></tr><tr><td style=\"white-space:nowrap\">100000072153<a name=\"language-ema-cs-100000072153\"> </a></td><td>Gujarati</td></tr><tr><td style=\"white-space:nowrap\">100000072115<a name=\"language-ema-cs-100000072115\"> </a></td><td>Abkhazian</td></tr><tr><td style=\"white-space:nowrap\">100000072215<a name=\"language-ema-cs-100000072215\"> </a></td><td>Oriya</td></tr><tr><td style=\"white-space:nowrap\">100000072164<a name=\"language-ema-cs-100000072164\"> </a></td><td>Church Slavic</td></tr><tr><td style=\"white-space:nowrap\">100000072300<a name=\"language-ema-cs-100000072300\"> </a></td><td>Urdu</td></tr><tr><td style=\"white-space:nowrap\">100000072189<a name=\"language-ema-cs-100000072189\"> </a></td><td>Ido</td></tr><tr><td style=\"white-space:nowrap\">100000072158<a name=\"language-ema-cs-100000072158\"> </a></td><td>Indonesian</td></tr><tr><td style=\"white-space:nowrap\">100000072232<a name=\"language-ema-cs-100000072232\"> </a></td><td>Marshallese</td></tr><tr><td style=\"white-space:nowrap\">100000072193<a name=\"language-ema-cs-100000072193\"> </a></td><td>Inupiaq</td></tr><tr><td style=\"white-space:nowrap\">100000072187<a name=\"language-ema-cs-100000072187\"> </a></td><td>Hungarian</td></tr><tr><td style=\"white-space:nowrap\">100000072125<a name=\"language-ema-cs-100000072125\"> </a></td><td>Afrikaans</td></tr><tr><td style=\"white-space:nowrap\">100000072156<a name=\"language-ema-cs-100000072156\"> </a></td><td>Icelandic</td></tr><tr><td style=\"white-space:nowrap\">100000072208<a name=\"language-ema-cs-100000072208\"> </a></td><td>Malayalam</td></tr><tr><td style=\"white-space:nowrap\">100000072185<a name=\"language-ema-cs-100000072185\"> </a></td><td>Herero</td></tr><tr><td style=\"white-space:nowrap\">100000072206<a name=\"language-ema-cs-100000072206\"> </a></td><td>Lithuanian</td></tr><tr><td style=\"white-space:nowrap\">100000072184<a name=\"language-ema-cs-100000072184\"> </a></td><td>Hausa</td></tr><tr><td style=\"white-space:nowrap\">100000072228<a name=\"language-ema-cs-100000072228\"> </a></td><td>Lingala</td></tr><tr><td style=\"white-space:nowrap\">100000072130<a name=\"language-ema-cs-100000072130\"> </a></td><td>Assamese</td></tr><tr><td style=\"white-space:nowrap\">100000072309<a name=\"language-ema-cs-100000072309\"> </a></td><td>Zulu</td></tr><tr><td style=\"white-space:nowrap\">100000072256<a name=\"language-ema-cs-100000072256\"> </a></td><td>Sango</td></tr><tr><td style=\"white-space:nowrap\">100000072302<a name=\"language-ema-cs-100000072302\"> </a></td><td>Vietnamese</td></tr><tr><td style=\"white-space:nowrap\">100000072221<a name=\"language-ema-cs-100000072221\"> </a></td><td>Kirghiz</td></tr><tr><td style=\"white-space:nowrap\">100000072268<a name=\"language-ema-cs-100000072268\"> </a></td><td>Thai</td></tr><tr><td style=\"white-space:nowrap\">100000072253<a name=\"language-ema-cs-100000072253\"> </a></td><td>Romansh</td></tr><tr><td style=\"white-space:nowrap\">100000072240<a name=\"language-ema-cs-100000072240\"> </a></td><td>North Ndebele</td></tr><tr><td style=\"white-space:nowrap\">100000072249<a name=\"language-ema-cs-100000072249\"> </a></td><td>Persian</td></tr><tr><td style=\"white-space:nowrap\">100000072303<a name=\"language-ema-cs-100000072303\"> </a></td><td>Volap�k</td></tr><tr><td style=\"white-space:nowrap\">100000072308<a name=\"language-ema-cs-100000072308\"> </a></td><td>Zhuang</td></tr><tr><td style=\"white-space:nowrap\">100000072288<a name=\"language-ema-cs-100000072288\"> </a></td><td>Swedish</td></tr><tr><td style=\"white-space:nowrap\">100000072214<a name=\"language-ema-cs-100000072214\"> </a></td><td>Chichewa</td></tr><tr><td style=\"white-space:nowrap\">100000072295<a name=\"language-ema-cs-100000072295\"> </a></td><td>Tswana</td></tr><tr><td style=\"white-space:nowrap\">100000072269<a name=\"language-ema-cs-100000072269\"> </a></td><td>Tonga (Tonga Islands)</td></tr><tr><td style=\"white-space:nowrap\">100000072248<a name=\"language-ema-cs-100000072248\"> </a></td><td>Ossetian</td></tr><tr><td style=\"white-space:nowrap\">100000072137<a name=\"language-ema-cs-100000072137\"> </a></td><td>Bihari</td></tr><tr><td style=\"white-space:nowrap\">100000072281<a name=\"language-ema-cs-100000072281\"> </a></td><td>Samoan</td></tr><tr><td style=\"white-space:nowrap\">100000072142<a name=\"language-ema-cs-100000072142\"> </a></td><td>Bulgarian</td></tr><tr><td style=\"white-space:nowrap\">100000072180<a name=\"language-ema-cs-100000072180\"> </a></td><td>Galician</td></tr><tr><td style=\"white-space:nowrap\">100000072252<a name=\"language-ema-cs-100000072252\"> </a></td><td>Pushto</td></tr><tr><td style=\"white-space:nowrap\">100000072283<a name=\"language-ema-cs-100000072283\"> </a></td><td>Somali</td></tr><tr><td style=\"white-space:nowrap\">100000072116<a name=\"language-ema-cs-100000072116\"> </a></td><td>Albanian</td></tr><tr><td style=\"white-space:nowrap\">100000072259<a name=\"language-ema-cs-100000072259\"> </a></td><td>Slovak</td></tr><tr><td style=\"white-space:nowrap\">100000072220<a name=\"language-ema-cs-100000072220\"> </a></td><td>Sanskrit</td></tr><tr><td style=\"white-space:nowrap\">100000072260<a name=\"language-ema-cs-100000072260\"> </a></td><td>Slovenian</td></tr><tr><td style=\"white-space:nowrap\">100000072231<a name=\"language-ema-cs-100000072231\"> </a></td><td>Macedonian</td></tr><tr><td style=\"white-space:nowrap\">100000072226<a name=\"language-ema-cs-100000072226\"> </a></td><td>Latin</td></tr><tr><td style=\"white-space:nowrap\">100000072171<a name=\"language-ema-cs-100000072171\"> </a></td><td>Esperanto</td></tr><tr><td style=\"white-space:nowrap\">100000072117<a name=\"language-ema-cs-100000072117\"> </a></td><td>Armenian</td></tr><tr><td style=\"white-space:nowrap\">100000072202<a name=\"language-ema-cs-100000072202\"> </a></td><td>Kinyarwanda</td></tr><tr><td style=\"white-space:nowrap\">100000072167<a name=\"language-ema-cs-100000072167\"> </a></td><td>Czech</td></tr><tr><td style=\"white-space:nowrap\">100000072272<a name=\"language-ema-cs-100000072272\"> </a></td><td>Uzbek</td></tr><tr><td style=\"white-space:nowrap\">100000072186<a name=\"language-ema-cs-100000072186\"> </a></td><td>Hindi</td></tr><tr><td style=\"white-space:nowrap\">100000072146<a name=\"language-ema-cs-100000072146\"> </a></td><td>Maldivian</td></tr><tr><td style=\"white-space:nowrap\">100000072151<a name=\"language-ema-cs-100000072151\"> </a></td><td>Gaelic</td></tr><tr><td style=\"white-space:nowrap\">100000072169<a name=\"language-ema-cs-100000072169\"> </a></td><td>Dutch</td></tr><tr><td style=\"white-space:nowrap\">100000072242<a name=\"language-ema-cs-100000072242\"> </a></td><td>Norwegian Nynorsk</td></tr><tr><td style=\"white-space:nowrap\">100000072172<a name=\"language-ema-cs-100000072172\"> </a></td><td>Estonian</td></tr><tr><td style=\"white-space:nowrap\">100000072150<a name=\"language-ema-cs-100000072150\"> </a></td><td>Fulah</td></tr><tr><td style=\"white-space:nowrap\">100000072241<a name=\"language-ema-cs-100000072241\"> </a></td><td>Nepali</td></tr><tr><td style=\"white-space:nowrap\">100000072227<a name=\"language-ema-cs-100000072227\"> </a></td><td>Limburgan</td></tr><tr><td style=\"white-space:nowrap\">100000072213<a name=\"language-ema-cs-100000072213\"> </a></td><td>Bokm�l</td></tr><tr><td style=\"white-space:nowrap\">100000072262<a name=\"language-ema-cs-100000072262\"> </a></td><td>Northern Sami</td></tr><tr><td style=\"white-space:nowrap\">100000072155<a name=\"language-ema-cs-100000072155\"> </a></td><td>Hiri Motu</td></tr><tr><td style=\"white-space:nowrap\">100000072250<a name=\"language-ema-cs-100000072250\"> </a></td><td>Pali</td></tr><tr><td style=\"white-space:nowrap\">100000072234<a name=\"language-ema-cs-100000072234\"> </a></td><td>Marathi</td></tr><tr><td style=\"white-space:nowrap\">100000072181<a name=\"language-ema-cs-100000072181\"> </a></td><td>Greek</td></tr><tr><td style=\"white-space:nowrap\">100000072263<a name=\"language-ema-cs-100000072263\"> </a></td><td>Sindhi</td></tr><tr><td style=\"white-space:nowrap\">100000072205<a name=\"language-ema-cs-100000072205\"> </a></td><td>Latvian</td></tr><tr><td style=\"white-space:nowrap\">100000072165<a name=\"language-ema-cs-100000072165\"> </a></td><td>Cornish</td></tr><tr><td style=\"white-space:nowrap\">100000072163<a name=\"language-ema-cs-100000072163\"> </a></td><td>Chinese</td></tr><tr><td style=\"white-space:nowrap\">100000072173<a name=\"language-ema-cs-100000072173\"> </a></td><td>Faroese</td></tr><tr><td style=\"white-space:nowrap\">100000072289<a name=\"language-ema-cs-100000072289\"> </a></td><td>Tamil</td></tr><tr><td style=\"white-space:nowrap\">100000072243<a name=\"language-ema-cs-100000072243\"> </a></td><td>Norwegian</td></tr><tr><td style=\"white-space:nowrap\">100000072124<a name=\"language-ema-cs-100000072124\"> </a></td><td>Afar</td></tr><tr><td style=\"white-space:nowrap\">100000072175<a name=\"language-ema-cs-100000072175\"> </a></td><td>French</td></tr><tr><td style=\"white-space:nowrap\">100000072132<a name=\"language-ema-cs-100000072132\"> </a></td><td>Aymara</td></tr><tr><td style=\"white-space:nowrap\">100000072298<a name=\"language-ema-cs-100000072298\"> </a></td><td>Twi</td></tr><tr><td style=\"white-space:nowrap\">100000072204<a name=\"language-ema-cs-100000072204\"> </a></td><td>Kurdish</td></tr><tr><td style=\"white-space:nowrap\">100000072299<a name=\"language-ema-cs-100000072299\"> </a></td><td>Ukrainian</td></tr><tr><td style=\"white-space:nowrap\">100000072224<a name=\"language-ema-cs-100000072224\"> </a></td><td>Kuanyama</td></tr><tr><td style=\"white-space:nowrap\">100000072292<a name=\"language-ema-cs-100000072292\"> </a></td><td>Tagalog</td></tr><tr><td style=\"white-space:nowrap\">100000072217<a name=\"language-ema-cs-100000072217\"> </a></td><td>Polish</td></tr><tr><td style=\"white-space:nowrap\">100000072120<a name=\"language-ema-cs-100000072120\"> </a></td><td>Bengali</td></tr><tr><td style=\"white-space:nowrap\">100000072230<a name=\"language-ema-cs-100000072230\"> </a></td><td>Luba-Katanga</td></tr><tr><td style=\"white-space:nowrap\">100000072145<a name=\"language-ema-cs-100000072145\"> </a></td><td>Cree</td></tr><tr><td style=\"white-space:nowrap\">100000072287<a name=\"language-ema-cs-100000072287\"> </a></td><td>Swahili</td></tr><tr><td style=\"white-space:nowrap\">100000072210<a name=\"language-ema-cs-100000072210\"> </a></td><td>Moldavian</td></tr><tr><td style=\"white-space:nowrap\">100000072207<a name=\"language-ema-cs-100000072207\"> </a></td><td>Ganda</td></tr><tr><td style=\"white-space:nowrap\">100000072135<a name=\"language-ema-cs-100000072135\"> </a></td><td>Basque</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072057"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Language_EMA_CS"] ; # 
+  fhir:title [ fhir:v "Language EMA"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-10-11T11:06:08+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Language codes by EMA. Based on BCP-47, recoded with RMS codes."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compositional [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "186"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "100000072223" ] ;
+     fhir:display [ fhir:v "Korean" ]
+  ] [
+     fhir:code [ fhir:v "100000072144" ] ;
+     fhir:display [ fhir:v "Chuvash" ]
+  ] [
+     fhir:code [ fhir:v "100000072257" ] ;
+     fhir:display [ fhir:v "Serbian" ]
+  ] [
+     fhir:code [ fhir:v "100000072297" ] ;
+     fhir:display [ fhir:v "Turkish" ]
+  ] [
+     fhir:code [ fhir:v "100000072166" ] ;
+     fhir:display [ fhir:v "Corsican" ]
+  ] [
+     fhir:code [ fhir:v "100000072131" ] ;
+     fhir:display [ fhir:v "Avaric" ]
+  ] [
+     fhir:code [ fhir:v "100000072264" ] ;
+     fhir:display [ fhir:v "Spanish" ]
+  ] [
+     fhir:code [ fhir:v "100000072273" ] ;
+     fhir:display [ fhir:v "Walloon" ]
+  ] [
+     fhir:code [ fhir:v "100000072159" ] ;
+     fhir:display [ fhir:v "Javanese" ]
+  ] [
+     fhir:code [ fhir:v "100000072197" ] ;
+     fhir:display [ fhir:v "Kashmiri" ]
+  ] [
+     fhir:code [ fhir:v "100000072306" ] ;
+     fhir:display [ fhir:v "Xhosa" ]
+  ] [
+     fhir:code [ fhir:v "100000072177" ] ;
+     fhir:display [ fhir:v "Georgian" ]
+  ] [
+     fhir:code [ fhir:v "100000072225" ] ;
+     fhir:display [ fhir:v "Lao" ]
+  ] [
+     fhir:code [ fhir:v "100000072140" ] ;
+     fhir:display [ fhir:v "Burmese" ]
+  ] [
+     fhir:code [ fhir:v "100000072118" ] ;
+     fhir:display [ fhir:v "Avestan" ]
+  ] [
+     fhir:code [ fhir:v "100000072162" ] ;
+     fhir:display [ fhir:v "Chechen" ]
+  ] [
+     fhir:code [ fhir:v "100000072293" ] ;
+     fhir:display [ fhir:v "Tibetan" ]
+  ] [
+     fhir:code [ fhir:v "100000072183" ] ;
+     fhir:display [ fhir:v "Haitian" ]
+  ] [
+     fhir:code [ fhir:v "100000072266" ] ;
+     fhir:display [ fhir:v "Tahitian" ]
+  ] [
+     fhir:code [ fhir:v "100000072255" ] ;
+     fhir:display [ fhir:v "Russian" ]
+  ] [
+     fhir:code [ fhir:v "100000072307" ] ;
+     fhir:display [ fhir:v "Yiddish" ]
+  ] [
+     fhir:code [ fhir:v "100000072296" ] ;
+     fhir:display [ fhir:v "Tsonga" ]
+  ] [
+     fhir:code [ fhir:v "100000072152" ] ;
+     fhir:display [ fhir:v "Manx" ]
+  ] [
+     fhir:code [ fhir:v "100000072236" ] ;
+     fhir:display [ fhir:v "Maltese" ]
+  ] [
+     fhir:code [ fhir:v "100000072282" ] ;
+     fhir:display [ fhir:v "Shona" ]
+  ] [
+     fhir:code [ fhir:v "100000072194" ] ;
+     fhir:display [ fhir:v "Italian" ]
+  ] [
+     fhir:code [ fhir:v "100000072261" ] ;
+     fhir:display [ fhir:v "Sinhala" ]
+  ] [
+     fhir:code [ fhir:v "100000072267" ] ;
+     fhir:display [ fhir:v "Telugu" ]
+  ] [
+     fhir:code [ fhir:v "100000072270" ] ;
+     fhir:display [ fhir:v "Turkmen" ]
+  ] [
+     fhir:code [ fhir:v "100000072198" ] ;
+     fhir:display [ fhir:v "Kanuri" ]
+  ] [
+     fhir:code [ fhir:v "100000072209" ] ;
+     fhir:display [ fhir:v "Malay" ]
+  ] [
+     fhir:code [ fhir:v "100000072265" ] ;
+     fhir:display [ fhir:v "Sundanese" ]
+  ] [
+     fhir:code [ fhir:v "100000072201" ] ;
+     fhir:display [ fhir:v "Kazakh" ]
+  ] [
+     fhir:code [ fhir:v "100000072304" ] ;
+     fhir:display [ fhir:v "Welsh" ]
+  ] [
+     fhir:code [ fhir:v "100000072218" ] ;
+     fhir:display [ fhir:v "Quechua" ]
+  ] [
+     fhir:code [ fhir:v "100000072157" ] ;
+     fhir:display [ fhir:v "Inuktitut" ]
+  ] [
+     fhir:code [ fhir:v "100000072219" ] ;
+     fhir:display [ fhir:v "Rundi" ]
+  ] [
+     fhir:code [ fhir:v "100000072174" ] ;
+     fhir:display [ fhir:v "Fijian" ]
+  ] [
+     fhir:code [ fhir:v "100000072139" ] ;
+     fhir:display [ fhir:v "Breton" ]
+  ] [
+     fhir:code [ fhir:v "100000072301" ] ;
+     fhir:display [ fhir:v "Venda" ]
+  ] [
+     fhir:code [ fhir:v "100000072291" ] ;
+     fhir:display [ fhir:v "Tajik" ]
+  ] [
+     fhir:code [ fhir:v "100000072161" ] ;
+     fhir:display [ fhir:v "Catalan" ]
+  ] [
+     fhir:code [ fhir:v "100000072129" ] ;
+     fhir:display [ fhir:v "Aragonese" ]
+  ] [
+     fhir:code [ fhir:v "100000072244" ] ;
+     fhir:display [ fhir:v "N'Ko" ]
+  ] [
+     fhir:code [ fhir:v "100000072126" ] ;
+     fhir:display [ fhir:v "Akan" ]
+  ] [
+     fhir:code [ fhir:v "100000072246" ] ;
+     fhir:display [ fhir:v "Ojibwa" ]
+  ] [
+     fhir:code [ fhir:v "100000072274" ] ;
+     fhir:display [ fhir:v "Yoruba" ]
+  ] [
+     fhir:code [ fhir:v "100000072179" ] ;
+     fhir:display [ fhir:v "Irish" ]
+  ] [
+     fhir:code [ fhir:v "100000072271" ] ;
+     fhir:display [ fhir:v "Uighur" ]
+  ] [
+     fhir:code [ fhir:v "100000072305" ] ;
+     fhir:display [ fhir:v "Wolof" ]
+  ] [
+     fhir:code [ fhir:v "100000072212" ] ;
+     fhir:display [ fhir:v "Ndonga" ]
+  ] [
+     fhir:code [ fhir:v "100000072178" ] ;
+     fhir:display [ fhir:v "German" ]
+  ] [
+     fhir:code [ fhir:v "100000072148" ] ;
+     fhir:display [ fhir:v "Ewe" ]
+  ] [
+     fhir:code [ fhir:v "100000072294" ] ;
+     fhir:display [ fhir:v "Tigrinya" ]
+  ] [
+     fhir:code [ fhir:v "100000072134" ] ;
+     fhir:display [ fhir:v "Bambara" ]
+  ] [
+     fhir:code [ fhir:v "100000072138" ] ;
+     fhir:display [ fhir:v "Bislama" ]
+  ] [
+     fhir:code [ fhir:v "100000072247" ] ;
+     fhir:display [ fhir:v "Oromo" ]
+  ] [
+     fhir:code [ fhir:v "100000072128" ] ;
+     fhir:display [ fhir:v "Arabic" ]
+  ] [
+     fhir:code [ fhir:v "100000072254" ] ;
+     fhir:display [ fhir:v "Romanian" ]
+  ] [
+     fhir:code [ fhir:v "100000072192" ] ;
+     fhir:display [ fhir:v "Interlingua (International Auxiliary Language Association)" ]
+  ] [
+     fhir:code [ fhir:v "100000072154" ] ;
+     fhir:display [ fhir:v "Hebrew" ]
+  ] [
+     fhir:code [ fhir:v "100000072127" ] ;
+     fhir:display [ fhir:v "Amharic" ]
+  ] [
+     fhir:code [ fhir:v "100000072290" ] ;
+     fhir:display [ fhir:v "Tatar" ]
+  ] [
+     fhir:code [ fhir:v "100000072200" ] ;
+     fhir:display [ fhir:v "Kikuyu" ]
+  ] [
+     fhir:code [ fhir:v "100000072239" ] ;
+     fhir:display [ fhir:v "South Ndebele" ]
+  ] [
+     fhir:code [ fhir:v "100000072216" ] ;
+     fhir:display [ fhir:v "Panjabi" ]
+  ] [
+     fhir:code [ fhir:v "100000072182" ] ;
+     fhir:display [ fhir:v "Guarani" ]
+  ] [
+     fhir:code [ fhir:v "100000072222" ] ;
+     fhir:display [ fhir:v "Komi" ]
+  ] [
+     fhir:code [ fhir:v "100000072251" ] ;
+     fhir:display [ fhir:v "Portuguese" ]
+  ] [
+     fhir:code [ fhir:v "100000072119" ] ;
+     fhir:display [ fhir:v "Bashkir" ]
+  ] [
+     fhir:code [ fhir:v "100000072188" ] ;
+     fhir:display [ fhir:v "Igbo" ]
+  ] [
+     fhir:code [ fhir:v "100000072245" ] ;
+     fhir:display [ fhir:v "Occitan (post 1500)" ]
+  ] [
+     fhir:code [ fhir:v "100000072133" ] ;
+     fhir:display [ fhir:v "Azerbaijani" ]
+  ] [
+     fhir:code [ fhir:v "100000072196" ] ;
+     fhir:display [ fhir:v "Greenlandic" ]
+  ] [
+     fhir:code [ fhir:v "100000072286" ] ;
+     fhir:display [ fhir:v "Swati" ]
+  ] [
+     fhir:code [ fhir:v "100000072168" ] ;
+     fhir:display [ fhir:v "Danish" ]
+  ] [
+     fhir:code [ fhir:v "100000072235" ] ;
+     fhir:display [ fhir:v "Malagasy" ]
+  ] [
+     fhir:code [ fhir:v "100000072141" ] ;
+     fhir:display [ fhir:v "Bosnian" ]
+  ] [
+     fhir:code [ fhir:v "100000072191" ] ;
+     fhir:display [ fhir:v "Interlingue" ]
+  ] [
+     fhir:code [ fhir:v "100000072149" ] ;
+     fhir:display [ fhir:v "Finnish" ]
+  ] [
+     fhir:code [ fhir:v "100000072203" ] ;
+     fhir:display [ fhir:v "Kongo" ]
+  ] [
+     fhir:code [ fhir:v "100000072147" ] ;
+     fhir:display [ fhir:v "English" ]
+  ] [
+     fhir:code [ fhir:v "100000072237" ] ;
+     fhir:display [ fhir:v "Mongolian" ]
+  ] [
+     fhir:code [ fhir:v "100000072199" ] ;
+     fhir:display [ fhir:v "Central Khmer" ]
+  ] [
+     fhir:code [ fhir:v "100000072211" ] ;
+     fhir:display [ fhir:v "Navaho" ]
+  ] [
+     fhir:code [ fhir:v "100000072170" ] ;
+     fhir:display [ fhir:v "Dzongkha" ]
+  ] [
+     fhir:code [ fhir:v "100000072143" ] ;
+     fhir:display [ fhir:v "Chamorro" ]
+  ] [
+     fhir:code [ fhir:v "100000072190" ] ;
+     fhir:display [ fhir:v "Sichuan Yi" ]
+  ] [
+     fhir:code [ fhir:v "100000072233" ] ;
+     fhir:display [ fhir:v "Maori" ]
+  ] [
+     fhir:code [ fhir:v "100000072195" ] ;
+     fhir:display [ fhir:v "Japanese" ]
+  ] [
+     fhir:code [ fhir:v "100000072160" ] ;
+     fhir:display [ fhir:v "Kannada" ]
+  ] [
+     fhir:code [ fhir:v "100000072136" ] ;
+     fhir:display [ fhir:v "Belarusian" ]
+  ] [
+     fhir:code [ fhir:v "100000072258" ] ;
+     fhir:display [ fhir:v "Croatian" ]
+  ] [
+     fhir:code [ fhir:v "100000072229" ] ;
+     fhir:display [ fhir:v "Luxembourgish" ]
+  ] [
+     fhir:code [ fhir:v "100000072176" ] ;
+     fhir:display [ fhir:v "Western Frisian" ]
+  ] [
+     fhir:code [ fhir:v "100000072284" ] ;
+     fhir:display [ fhir:v "Sotho" ]
+  ] [
+     fhir:code [ fhir:v "100000072238" ] ;
+     fhir:display [ fhir:v "Nauru" ]
+  ] [
+     fhir:code [ fhir:v "100000072285" ] ;
+     fhir:display [ fhir:v "Sardinian" ]
+  ] [
+     fhir:code [ fhir:v "100000072153" ] ;
+     fhir:display [ fhir:v "Gujarati" ]
+  ] [
+     fhir:code [ fhir:v "100000072115" ] ;
+     fhir:display [ fhir:v "Abkhazian" ]
+  ] [
+     fhir:code [ fhir:v "100000072215" ] ;
+     fhir:display [ fhir:v "Oriya" ]
+  ] [
+     fhir:code [ fhir:v "100000072164" ] ;
+     fhir:display [ fhir:v "Church Slavic" ]
+  ] [
+     fhir:code [ fhir:v "100000072300" ] ;
+     fhir:display [ fhir:v "Urdu" ]
+  ] [
+     fhir:code [ fhir:v "100000072189" ] ;
+     fhir:display [ fhir:v "Ido" ]
+  ] [
+     fhir:code [ fhir:v "100000072158" ] ;
+     fhir:display [ fhir:v "Indonesian" ]
+  ] [
+     fhir:code [ fhir:v "100000072232" ] ;
+     fhir:display [ fhir:v "Marshallese" ]
+  ] [
+     fhir:code [ fhir:v "100000072193" ] ;
+     fhir:display [ fhir:v "Inupiaq" ]
+  ] [
+     fhir:code [ fhir:v "100000072187" ] ;
+     fhir:display [ fhir:v "Hungarian" ]
+  ] [
+     fhir:code [ fhir:v "100000072125" ] ;
+     fhir:display [ fhir:v "Afrikaans" ]
+  ] [
+     fhir:code [ fhir:v "100000072156" ] ;
+     fhir:display [ fhir:v "Icelandic" ]
+  ] [
+     fhir:code [ fhir:v "100000072208" ] ;
+     fhir:display [ fhir:v "Malayalam" ]
+  ] [
+     fhir:code [ fhir:v "100000072185" ] ;
+     fhir:display [ fhir:v "Herero" ]
+  ] [
+     fhir:code [ fhir:v "100000072206" ] ;
+     fhir:display [ fhir:v "Lithuanian" ]
+  ] [
+     fhir:code [ fhir:v "100000072184" ] ;
+     fhir:display [ fhir:v "Hausa" ]
+  ] [
+     fhir:code [ fhir:v "100000072228" ] ;
+     fhir:display [ fhir:v "Lingala" ]
+  ] [
+     fhir:code [ fhir:v "100000072130" ] ;
+     fhir:display [ fhir:v "Assamese" ]
+  ] [
+     fhir:code [ fhir:v "100000072309" ] ;
+     fhir:display [ fhir:v "Zulu" ]
+  ] [
+     fhir:code [ fhir:v "100000072256" ] ;
+     fhir:display [ fhir:v "Sango" ]
+  ] [
+     fhir:code [ fhir:v "100000072302" ] ;
+     fhir:display [ fhir:v "Vietnamese" ]
+  ] [
+     fhir:code [ fhir:v "100000072221" ] ;
+     fhir:display [ fhir:v "Kirghiz" ]
+  ] [
+     fhir:code [ fhir:v "100000072268" ] ;
+     fhir:display [ fhir:v "Thai" ]
+  ] [
+     fhir:code [ fhir:v "100000072253" ] ;
+     fhir:display [ fhir:v "Romansh" ]
+  ] [
+     fhir:code [ fhir:v "100000072240" ] ;
+     fhir:display [ fhir:v "North Ndebele" ]
+  ] [
+     fhir:code [ fhir:v "100000072249" ] ;
+     fhir:display [ fhir:v "Persian" ]
+  ] [
+     fhir:code [ fhir:v "100000072303" ] ;
+     fhir:display [ fhir:v "Volap�k" ]
+  ] [
+     fhir:code [ fhir:v "100000072308" ] ;
+     fhir:display [ fhir:v "Zhuang" ]
+  ] [
+     fhir:code [ fhir:v "100000072288" ] ;
+     fhir:display [ fhir:v "Swedish" ]
+  ] [
+     fhir:code [ fhir:v "100000072214" ] ;
+     fhir:display [ fhir:v "Chichewa" ]
+  ] [
+     fhir:code [ fhir:v "100000072295" ] ;
+     fhir:display [ fhir:v "Tswana" ]
+  ] [
+     fhir:code [ fhir:v "100000072269" ] ;
+     fhir:display [ fhir:v "Tonga (Tonga Islands)" ]
+  ] [
+     fhir:code [ fhir:v "100000072248" ] ;
+     fhir:display [ fhir:v "Ossetian" ]
+  ] [
+     fhir:code [ fhir:v "100000072137" ] ;
+     fhir:display [ fhir:v "Bihari" ]
+  ] [
+     fhir:code [ fhir:v "100000072281" ] ;
+     fhir:display [ fhir:v "Samoan" ]
+  ] [
+     fhir:code [ fhir:v "100000072142" ] ;
+     fhir:display [ fhir:v "Bulgarian" ]
+  ] [
+     fhir:code [ fhir:v "100000072180" ] ;
+     fhir:display [ fhir:v "Galician" ]
+  ] [
+     fhir:code [ fhir:v "100000072252" ] ;
+     fhir:display [ fhir:v "Pushto" ]
+  ] [
+     fhir:code [ fhir:v "100000072283" ] ;
+     fhir:display [ fhir:v "Somali" ]
+  ] [
+     fhir:code [ fhir:v "100000072116" ] ;
+     fhir:display [ fhir:v "Albanian" ]
+  ] [
+     fhir:code [ fhir:v "100000072259" ] ;
+     fhir:display [ fhir:v "Slovak" ]
+  ] [
+     fhir:code [ fhir:v "100000072220" ] ;
+     fhir:display [ fhir:v "Sanskrit" ]
+  ] [
+     fhir:code [ fhir:v "100000072260" ] ;
+     fhir:display [ fhir:v "Slovenian" ]
+  ] [
+     fhir:code [ fhir:v "100000072231" ] ;
+     fhir:display [ fhir:v "Macedonian" ]
+  ] [
+     fhir:code [ fhir:v "100000072226" ] ;
+     fhir:display [ fhir:v "Latin" ]
+  ] [
+     fhir:code [ fhir:v "100000072171" ] ;
+     fhir:display [ fhir:v "Esperanto" ]
+  ] [
+     fhir:code [ fhir:v "100000072117" ] ;
+     fhir:display [ fhir:v "Armenian" ]
+  ] [
+     fhir:code [ fhir:v "100000072202" ] ;
+     fhir:display [ fhir:v "Kinyarwanda" ]
+  ] [
+     fhir:code [ fhir:v "100000072167" ] ;
+     fhir:display [ fhir:v "Czech" ]
+  ] [
+     fhir:code [ fhir:v "100000072272" ] ;
+     fhir:display [ fhir:v "Uzbek" ]
+  ] [
+     fhir:code [ fhir:v "100000072186" ] ;
+     fhir:display [ fhir:v "Hindi" ]
+  ] [
+     fhir:code [ fhir:v "100000072146" ] ;
+     fhir:display [ fhir:v "Maldivian" ]
+  ] [
+     fhir:code [ fhir:v "100000072151" ] ;
+     fhir:display [ fhir:v "Gaelic" ]
+  ] [
+     fhir:code [ fhir:v "100000072169" ] ;
+     fhir:display [ fhir:v "Dutch" ]
+  ] [
+     fhir:code [ fhir:v "100000072242" ] ;
+     fhir:display [ fhir:v "Norwegian Nynorsk" ]
+  ] [
+     fhir:code [ fhir:v "100000072172" ] ;
+     fhir:display [ fhir:v "Estonian" ]
+  ] [
+     fhir:code [ fhir:v "100000072150" ] ;
+     fhir:display [ fhir:v "Fulah" ]
+  ] [
+     fhir:code [ fhir:v "100000072241" ] ;
+     fhir:display [ fhir:v "Nepali" ]
+  ] [
+     fhir:code [ fhir:v "100000072227" ] ;
+     fhir:display [ fhir:v "Limburgan" ]
+  ] [
+     fhir:code [ fhir:v "100000072213" ] ;
+     fhir:display [ fhir:v "Bokm�l" ]
+  ] [
+     fhir:code [ fhir:v "100000072262" ] ;
+     fhir:display [ fhir:v "Northern Sami" ]
+  ] [
+     fhir:code [ fhir:v "100000072155" ] ;
+     fhir:display [ fhir:v "Hiri Motu" ]
+  ] [
+     fhir:code [ fhir:v "100000072250" ] ;
+     fhir:display [ fhir:v "Pali" ]
+  ] [
+     fhir:code [ fhir:v "100000072234" ] ;
+     fhir:display [ fhir:v "Marathi" ]
+  ] [
+     fhir:code [ fhir:v "100000072181" ] ;
+     fhir:display [ fhir:v "Greek" ]
+  ] [
+     fhir:code [ fhir:v "100000072263" ] ;
+     fhir:display [ fhir:v "Sindhi" ]
+  ] [
+     fhir:code [ fhir:v "100000072205" ] ;
+     fhir:display [ fhir:v "Latvian" ]
+  ] [
+     fhir:code [ fhir:v "100000072165" ] ;
+     fhir:display [ fhir:v "Cornish" ]
+  ] [
+     fhir:code [ fhir:v "100000072163" ] ;
+     fhir:display [ fhir:v "Chinese" ]
+  ] [
+     fhir:code [ fhir:v "100000072173" ] ;
+     fhir:display [ fhir:v "Faroese" ]
+  ] [
+     fhir:code [ fhir:v "100000072289" ] ;
+     fhir:display [ fhir:v "Tamil" ]
+  ] [
+     fhir:code [ fhir:v "100000072243" ] ;
+     fhir:display [ fhir:v "Norwegian" ]
+  ] [
+     fhir:code [ fhir:v "100000072124" ] ;
+     fhir:display [ fhir:v "Afar" ]
+  ] [
+     fhir:code [ fhir:v "100000072175" ] ;
+     fhir:display [ fhir:v "French" ]
+  ] [
+     fhir:code [ fhir:v "100000072132" ] ;
+     fhir:display [ fhir:v "Aymara" ]
+  ] [
+     fhir:code [ fhir:v "100000072298" ] ;
+     fhir:display [ fhir:v "Twi" ]
+  ] [
+     fhir:code [ fhir:v "100000072204" ] ;
+     fhir:display [ fhir:v "Kurdish" ]
+  ] [
+     fhir:code [ fhir:v "100000072299" ] ;
+     fhir:display [ fhir:v "Ukrainian" ]
+  ] [
+     fhir:code [ fhir:v "100000072224" ] ;
+     fhir:display [ fhir:v "Kuanyama" ]
+  ] [
+     fhir:code [ fhir:v "100000072292" ] ;
+     fhir:display [ fhir:v "Tagalog" ]
+  ] [
+     fhir:code [ fhir:v "100000072217" ] ;
+     fhir:display [ fhir:v "Polish" ]
+  ] [
+     fhir:code [ fhir:v "100000072120" ] ;
+     fhir:display [ fhir:v "Bengali" ]
+  ] [
+     fhir:code [ fhir:v "100000072230" ] ;
+     fhir:display [ fhir:v "Luba-Katanga" ]
+  ] [
+     fhir:code [ fhir:v "100000072145" ] ;
+     fhir:display [ fhir:v "Cree" ]
+  ] [
+     fhir:code [ fhir:v "100000072287" ] ;
+     fhir:display [ fhir:v "Swahili" ]
+  ] [
+     fhir:code [ fhir:v "100000072210" ] ;
+     fhir:display [ fhir:v "Moldavian" ]
+  ] [
+     fhir:code [ fhir:v "100000072207" ] ;
+     fhir:display [ fhir:v "Ganda" ]
+  ] [
+     fhir:code [ fhir:v "100000072135" ] ;
+     fhir:display [ fhir:v "Basque" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

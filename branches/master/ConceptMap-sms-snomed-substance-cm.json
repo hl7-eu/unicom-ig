@@ -1,0 +1,50 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "sms-snomed-substance-cm",
+  "meta" : {
+    "versionId" : "1",
+    "lastUpdated" : "2023-02-17T17:40:44.521+00:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap sms-snomed-substance-cm</b></p><a name=\"sms-snomed-substance-cm\"> </a><a name=\"hcsms-snomed-substance-cm\"> </a><a name=\"sms-snomed-substance-cm-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2023-02-17 17:40:44+0000</p></div><p>Mapping from <a href=\"ValueSet-substances-vs.html\">EMA SPOR SMS Substances</a> to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-substance-sms-cs.html\">Substances EMA SPOR SMS</a> to <code>http://www.snomed.org</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>100000085259 (Amlodipine)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>386864001 (Amlodipine)</td></tr><tr><td>100000090079 (Amlodipine besilate)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>384976003 (Amlodipine besilate)</td></tr></table></div>"
+  },
+  "url" : "http://unicom-project.eu/fhir/ConceptMap/sms-snomed-substance-cm",
+  "version" : "0.1.0",
+  "title" : "SPOR-SNOMED CT substances",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-10-11T10:53:19+00:00",
+  "publisher" : "UNICOM",
+  "contact" : [{
+    "name" : "UNICOM",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://unicom-project.eu"
+    }]
+  }],
+  "description" : "EMA SPOR SMS mapped to SNOMED CT concepts. Small example.",
+  "sourceScopeCanonical" : "http://unicom-project.eu/fhir/ValueSet/substances-vs",
+  "group" : [{
+    "source" : "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+    "target" : "http://www.snomed.org",
+    "element" : [{
+      "code" : "100000085259",
+      "display" : "Amlodipine",
+      "target" : [{
+        "code" : "386864001",
+        "display" : "Amlodipine",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "100000090079",
+      "display" : "Amlodipine besilate",
+      "target" : [{
+        "code" : "384976003",
+        "display" : "Amlodipine besilate",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

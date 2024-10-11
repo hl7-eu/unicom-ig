@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Medication/Clotrimazole-Cream-Generic> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Clotrimazole-Cream-Generic"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"Clotrimazole-Cream-Generic\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;Clotrimazole-Cream-Generic&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationAsManufacturedItem.html\">Medication as manufactured item</a></p></div><p><b>code</b>: Clotrimazole 20 mg/g vaginal cream <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (www.snomed.org#326215009)</span></p><p><b>doseForm</b>: Vaginal cream <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (standardterms.edqm.eu#10901000)</span></p><p><b>totalVolume</b>: 20 gram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td>CLOTRIMAZOLE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-substance-sms-cs.html\">Substances EMA SPOR SMS</a>#100000092074)</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 10 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 gram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code g = 'g')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.snomed.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "326215009" ] ;
+       fhir:display [ fhir:v "Clotrimazole 20 mg/g vaginal cream" ]
+     ] )
+  ] ; # 
+  fhir:doseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10901000" ] ;
+       fhir:display [ fhir:v "Vaginal cream" ]
+     ] )
+  ] ; # 
+  fhir:totalVolume [
+     fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "gram" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "g" ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000092074" ] ;
+           fhir:display [ fhir:v "CLOTRIMAZOLE" ]
+         ] )
+       ]
+     ] ;
+     fhir:isActive [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:strength [
+       a fhir:Ratio ;
+       fhir:numerator [
+         fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "milligram" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "gram" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "g" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

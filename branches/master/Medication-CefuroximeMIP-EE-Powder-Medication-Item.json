@@ -1,0 +1,50 @@
+{
+  "resourceType" : "Medication",
+  "id" : "CefuroximeMIP-EE-Powder-Medication-Item",
+  "meta" : {
+    "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication CefuroximeMIP-EE-Powder-Medication-Item</b></p><a name=\"CefuroximeMIP-EE-Powder-Medication-Item\"> </a><a name=\"hcCefuroximeMIP-EE-Powder-Medication-Item\"> </a><a name=\"CefuroximeMIP-EE-Powder-Medication-Item-en-US\"> </a><p><b>doseForm</b>: <span title=\"Codes:{https://standardterms.edqm.eu 50053000}\">Powder for solution for injection or infusion</span></p><p><b>totalVolume</b>: 1 Vial<span style=\"background: LightGoldenRodYellow\"> (Details: standardterms.edqm.eu  code15060000 = '15060000')</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000092667}\">CEFUROXIME</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 1500 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 Vial<span style=\"background: LightGoldenRodYellow\"> (Details: standardterms.edqm.eu  code15060000 = '15060000')</span></p></blockquote></div>"
+  },
+  "doseForm" : {
+    "coding" : [{
+      "system" : "https://standardterms.edqm.eu",
+      "code" : "50053000",
+      "display" : "Powder for solution for injection or infusion"
+    }]
+  },
+  "totalVolume" : {
+    "value" : 1,
+    "unit" : "Vial",
+    "system" : "https://standardterms.edqm.eu",
+    "code" : "15060000"
+  },
+  "ingredient" : [{
+    "item" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+          "code" : "100000092667",
+          "display" : "CEFUROXIME"
+        }]
+      }
+    },
+    "isActive" : true,
+    "strengthRatio" : {
+      "numerator" : {
+        "value" : 1500,
+        "unit" : "milligram",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "value" : 1,
+        "unit" : "Vial",
+        "system" : "https://standardterms.edqm.eu",
+        "code" : "15060000"
+      }
+    }
+  }]
+}

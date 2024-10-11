@@ -1,0 +1,849 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Bundle/009-Paracetamol-Kabi10mg-1ml-EE-FullProduct> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "009-Paracetamol-Kabi10mg-1ml-EE-FullProduct"]; # 
+  fhir:Bundle.type [ fhir:value "transaction"]; # 
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD" ];
+     fhir:Bundle.entry.resource <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Paracetamol-Kabi-10mg-1ml-solinj-EE-RA" ];
+     fhir:Bundle.entry.resource <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Paracetamol-Kabi-10mg-1ml-solinj-EE-RA>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "RegulatedAuthorization/Paracetamol-Kabi-10mg-1ml-solinj-EE-RA" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100008123-FreseniusKabiPolska" ];
+     fhir:Bundle.entry.resource <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100008123-FreseniusKabiPolska>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Organization/LOC-100008123-FreseniusKabiPolska" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-APD" ];
+     fhir:Bundle.entry.resource <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-APD>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "AdministrableProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-APD" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034" ];
+     fhir:Bundle.entry.resource <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905" ];
+     fhir:Bundle.entry.resource <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056" ];
+     fhir:Bundle.entry.resource <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Paracetamol-Kabi-10mg-1ml-solinj-EE-I" ];
+     fhir:Bundle.entry.resource <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Paracetamol-Kabi-10mg-1ml-solinj-EE-I>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Ingredient/Paracetamol-Kabi-10mg-1ml-solinj-EE-I" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424034" ];
+     fhir:Bundle.entry.resource <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424034>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424034" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1799905" ];
+     fhir:Bundle.entry.resource <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1799905>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1799905" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424056" ];
+     fhir:Bundle.entry.resource <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424056>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424056" ]
+     ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD> a fhir:MedicinalProductDefinition;
+  fhir:Resource.id [ fhir:value "Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicinalProductDefinition</b><a name=\"Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicinalProductDefinition &quot;Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLMedicinalProductDefinition.html\">PPL Medicinal Product profile</a></p></div><p><b>identifier</b>: id: EE-100008123-25101, id: 0000000030</p><p><b>domain</b>: Human use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-domain-ema-cs.html\">Domain EMA</a>#100000000012)</span></p><p><b>status</b>: Current <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-recordStatus-ema-cs.html\">Record Status EMA SPOR</a>#200000005004)</span></p><p><b>combinedPharmaceuticalDoseForm</b>: Solution for infusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-pharmaceutical-dose-form-ema-cs.html\">Pharmaceutical Dose Form EMA</a>#100000073870)</span></p><p><b>legalStatusOfSupply</b>: Medicinal Product subject to medical prescription <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-legal-status-for-the-supply-ema-cs.html\">Legal Status for the Supply EMA</a>#100000072084)</span></p><p><b>classification</b>: Paracetamol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ATC-Human-EMA.html\">ATC Human EMA</a>#100000097305)</span>, Paracetamol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#N02BE01)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Paracetamol Kabi 10 mg/ml, infusioonilahus</p><blockquote><p><b>part</b></p><p><b>part</b>: Paracetamol Kabi</p><p><b>type</b>: Invented name part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (220000000000#220000000002)</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: 10 mg/ml</p><p><b>type</b>: Strength part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (220000000000#220000000004)</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: infusioonilahus</p><p><b>type</b>: Pharmaceutical dose form part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (220000000000#220000000005)</span></p></blockquote><h3>Usages</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-country-ema-cs.html\">Country EMA</a>#100000000388)</span></td><td>Estonian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-language-ema-cs.html\">Language EMA</a>#100000072172)</span></td></tr></table></blockquote></div>"
+  ]; # 
+  fhir:MedicinalProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://ema.europa.eu/fhir/mpId" ];
+     fhir:Identifier.value [ fhir:value "EE-100008123-25101" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "http://ema.europa.eu/fhir/pmsId" ];
+     fhir:Identifier.value [ fhir:value "0000000030" ]
+  ]; # 
+  fhir:MedicinalProductDefinition.domain [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000004" ];
+       fhir:Coding.code [ fhir:value "100000000012" ];
+       fhir:Coding.display [ fhir:value "Human use" ]
+     ]
+  ]; # 
+  fhir:MedicinalProductDefinition.status [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000005003" ];
+       fhir:Coding.code [ fhir:value "200000005004" ];
+       fhir:Coding.display [ fhir:value "Current" ]
+     ]
+  ]; # 
+  fhir:MedicinalProductDefinition.combinedPharmaceuticalDoseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000004" ];
+       fhir:Coding.code [ fhir:value "100000073870" ];
+       fhir:Coding.display [ fhir:value "Solution for infusion" ]
+     ]
+  ]; # 
+  fhir:MedicinalProductDefinition.legalStatusOfSupply [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072051" ];
+       fhir:Coding.code [ fhir:value "100000072084" ];
+       fhir:Coding.display [ fhir:value "Medicinal Product subject to medical prescription" ]
+     ]
+  ]; # 
+  fhir:MedicinalProductDefinition.classification [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000093533" ];
+       fhir:Coding.code [ fhir:value "100000097305" ];
+       fhir:Coding.display [ fhir:value "Paracetamol" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "N02BE01" ];
+       fhir:Coding.display [ fhir:value "Paracetamol" ]
+     ]
+  ]; # 
+  fhir:MedicinalProductDefinition.name [
+     fhir:index 0;
+     fhir:MedicinalProductDefinition.name.productName [ fhir:value "Paracetamol Kabi 10 mg/ml, infusioonilahus" ];
+     fhir:MedicinalProductDefinition.name.part [
+       fhir:index 0;
+       fhir:MedicinalProductDefinition.name.part.part [ fhir:value "Paracetamol Kabi" ];
+       fhir:MedicinalProductDefinition.name.part.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000000" ];
+           fhir:Coding.code [ fhir:value "220000000002" ];
+           fhir:Coding.display [ fhir:value "Invented name part" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:MedicinalProductDefinition.name.part.part [ fhir:value "10 mg/ml" ];
+       fhir:MedicinalProductDefinition.name.part.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000000" ];
+           fhir:Coding.code [ fhir:value "220000000004" ];
+           fhir:Coding.display [ fhir:value "Strength part" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:MedicinalProductDefinition.name.part.part [ fhir:value "infusioonilahus" ];
+       fhir:MedicinalProductDefinition.name.part.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000000" ];
+           fhir:Coding.code [ fhir:value "220000000005" ];
+           fhir:Coding.display [ fhir:value "Pharmaceutical dose form part" ]
+         ]
+       ]
+     ];
+     fhir:MedicinalProductDefinition.name.usage [
+       fhir:index 0;
+       fhir:MedicinalProductDefinition.name.usage.country [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000002" ];
+           fhir:Coding.code [ fhir:value "100000000388" ];
+           fhir:Coding.display [ fhir:value "Republic of Estonia" ]
+         ]
+       ];
+       fhir:MedicinalProductDefinition.name.usage.language [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072172" ];
+           fhir:Coding.display [ fhir:value "Estonian" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/Paracetamol-Kabi-10mg-1ml-solinj-EE-RA> a fhir:RegulatedAuthorization;
+  fhir:Resource.id [ fhir:value "Paracetamol-Kabi-10mg-1ml-solinj-EE-RA"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RegulatedAuthorization</b><a name=\"Paracetamol-Kabi-10mg-1ml-solinj-EE-RA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RegulatedAuthorization &quot;Paracetamol-Kabi-10mg-1ml-solinj-EE-RA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLRegulatedAuthorization.html\">PPL Marketing Authorisation profile</a></p></div><p><b>identifier</b>: id: 715010</p><p><b>subject</b>: <a href=\"#MedicinalProductDefinition_Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD\">See above (MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD)</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (220000000060#220000000061)</span></p><p><b>region</b>: Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-country-ema-cs.html\">Country EMA</a>#100000000388)</span></p><p><b>status</b>: Valid - Renewed/Varied <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-regulatoryStatus-ema-cs.html\">Regulatory Entitlement Status EMA SPOR</a>#200000017708)</span></p><p><b>statusDate</b>: 2015-09-17</p><p><b>holder</b>: <a href=\"#Organization_LOC-100008123-FreseniusKabiPolska\">See above (Organization/LOC-100008123-FreseniusKabiPolska)</a></p></div>"
+  ]; # 
+  fhir:RegulatedAuthorization.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "715010" ]
+  ]; # 
+  fhir:RegulatedAuthorization.subject [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD" ]
+  ]; # 
+  fhir:RegulatedAuthorization.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/220000000060" ];
+       fhir:Coding.code [ fhir:value "220000000061" ];
+       fhir:Coding.display [ fhir:value "Marketing Authorisation" ]
+     ]
+  ]; # 
+  fhir:RegulatedAuthorization.region [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000002" ];
+       fhir:Coding.code [ fhir:value "100000000388" ];
+       fhir:Coding.display [ fhir:value "Republic of Estonia" ]
+     ]
+  ]; # 
+  fhir:RegulatedAuthorization.status [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072049" ];
+       fhir:Coding.code [ fhir:value "200000017708" ];
+       fhir:Coding.display [ fhir:value "Valid - Renewed/Varied" ]
+     ]
+  ]; # 
+  fhir:RegulatedAuthorization.statusDate [ fhir:value "2015-09-17"^^xsd:date]; # 
+  fhir:RegulatedAuthorization.holder [
+     fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100008123-FreseniusKabiPolska>;
+     fhir:Reference.reference [ fhir:value "Organization/LOC-100008123-FreseniusKabiPolska" ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100008123-FreseniusKabiPolska> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "LOC-100008123-FreseniusKabiPolska"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"LOC-100008123-FreseniusKabiPolska\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;LOC-100008123-FreseniusKabiPolska&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLOrganization.html\">PPL Organization</a></p></div><p><b>identifier</b>: id: LOC-100008123</p><p><b>name</b>: Fresenius Kabi Polska Sp. z o.o.</p></div>"
+  ]; # 
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://spor.ema.europa.eu/v1/locations" ];
+     fhir:Identifier.value [ fhir:value "LOC-100008123" ]
+  ]; # 
+  fhir:Organization.name [ fhir:value "Fresenius Kabi Polska Sp. z o.o."] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-APD> a fhir:AdministrableProductDefinition;
+  fhir:Resource.id [ fhir:value "Paracetamol-Kabi-10mg-1ml-solinj-EE-APD"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AdministrableProductDefinition</b><a name=\"Paracetamol-Kabi-10mg-1ml-solinj-EE-APD\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AdministrableProductDefinition &quot;Paracetamol-Kabi-10mg-1ml-solinj-EE-APD&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLAdministrableProductDefinition.html\">PPL Administrable Product profile</a></p></div><p><b>status</b>: active</p><p><b>formOf</b>: <a href=\"#MedicinalProductDefinition_Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD\">See above (MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD)</a></p><p><b>administrableDoseForm</b>: Solution for solution for infusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-pharmaceutical-dose-form-ema-cs.html\">Pharmaceutical Dose Form EMA</a>#100000174051)</span></p><p><b>unitOfPresentation</b>: Vial <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-unit-of-presentation-ema-cs.html\">Unit of Presentation EMA</a>#200000002158)</span></p><p><b>producedFrom</b>: <a href=\"#ManufacturedItemDefinition_Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034\">See above (ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034)</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Intravenous use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-routes-and-methods-of-administration-ema-cs.html\">Routes and Methods of Administration EMA</a>#100000073611)</span></td></tr></table></div>"
+  ]; # 
+  fhir:AdministrableProductDefinition.status [ fhir:value "active"]; # 
+  fhir:AdministrableProductDefinition.formOf [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD" ]
+  ]; # 
+  fhir:AdministrableProductDefinition.administrableDoseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000004" ];
+       fhir:Coding.code [ fhir:value "100000174051" ];
+       fhir:Coding.display [ fhir:value "Solution for solution for infusion" ]
+     ]
+  ]; # 
+  fhir:AdministrableProductDefinition.unitOfPresentation [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ];
+       fhir:Coding.code [ fhir:value "200000002158" ];
+       fhir:Coding.display [ fhir:value "Vial" ]
+     ]
+  ]; # 
+  fhir:AdministrableProductDefinition.producedFrom [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034>;
+     fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034" ]
+  ]; # 
+  fhir:AdministrableProductDefinition.routeOfAdministration [
+     fhir:index 0;
+     fhir:AdministrableProductDefinition.routeOfAdministration.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073345" ];
+         fhir:Coding.code [ fhir:value "100000073611" ];
+         fhir:Coding.display [ fhir:value "Intravenous use" ]
+       ]
+     ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034> a fhir:ManufacturedItemDefinition;
+  fhir:Resource.id [ fhir:value "Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ManufacturedItemDefinition</b><a name=\"Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ManufacturedItemDefinition &quot;Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLManufacturedItemDefinition.html\">PPL Manufactured Item profile</a></p></div><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Solution for infusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-pharmaceutical-dose-form-ema-cs.html\">Pharmaceutical Dose Form EMA</a>#100000073870)</span></p><p><b>unitOfPresentation</b>: Vial <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-unit-of-presentation-ema-cs.html\">Unit of Presentation EMA</a>#200000002158)</span></p></div>"
+  ]; # 
+  fhir:ManufacturedItemDefinition.status [ fhir:value "active"]; # 
+  fhir:ManufacturedItemDefinition.manufacturedDoseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000004" ];
+       fhir:Coding.code [ fhir:value "100000073870" ];
+       fhir:Coding.display [ fhir:value "Solution for infusion" ]
+     ]
+  ]; # 
+  fhir:ManufacturedItemDefinition.unitOfPresentation [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ];
+       fhir:Coding.code [ fhir:value "200000002158" ];
+       fhir:Coding.display [ fhir:value "Vial" ]
+     ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905> a fhir:ManufacturedItemDefinition;
+  fhir:Resource.id [ fhir:value "Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ManufacturedItemDefinition</b><a name=\"Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ManufacturedItemDefinition &quot;Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLManufacturedItemDefinition.html\">PPL Manufactured Item profile</a></p></div><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Solution for infusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-pharmaceutical-dose-form-ema-cs.html\">Pharmaceutical Dose Form EMA</a>#100000073870)</span></p><p><b>unitOfPresentation</b>: Ampoule <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-unit-of-presentation-ema-cs.html\">Unit of Presentation EMA</a>#200000002164)</span></p></div>"
+  ]; # 
+  fhir:ManufacturedItemDefinition.status [ fhir:value "active"]; # 
+  fhir:ManufacturedItemDefinition.manufacturedDoseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000004" ];
+       fhir:Coding.code [ fhir:value "100000073870" ];
+       fhir:Coding.display [ fhir:value "Solution for infusion" ]
+     ]
+  ]; # 
+  fhir:ManufacturedItemDefinition.unitOfPresentation [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ];
+       fhir:Coding.code [ fhir:value "200000002164" ];
+       fhir:Coding.display [ fhir:value "Ampoule" ]
+     ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056> a fhir:ManufacturedItemDefinition;
+  fhir:Resource.id [ fhir:value "Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ManufacturedItemDefinition</b><a name=\"Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ManufacturedItemDefinition &quot;Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLManufacturedItemDefinition.html\">PPL Manufactured Item profile</a></p></div><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Solution for infusion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-pharmaceutical-dose-form-ema-cs.html\">Pharmaceutical Dose Form EMA</a>#100000073870)</span></p><p><b>unitOfPresentation</b>: Bag <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-unit-of-presentation-ema-cs.html\">Unit of Presentation EMA</a>#200000002166)</span></p></div>"
+  ]; # 
+  fhir:ManufacturedItemDefinition.status [ fhir:value "active"]; # 
+  fhir:ManufacturedItemDefinition.manufacturedDoseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000004" ];
+       fhir:Coding.code [ fhir:value "100000073870" ];
+       fhir:Coding.display [ fhir:value "Solution for infusion" ]
+     ]
+  ]; # 
+  fhir:ManufacturedItemDefinition.unitOfPresentation [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ];
+       fhir:Coding.code [ fhir:value "200000002166" ];
+       fhir:Coding.display [ fhir:value "Bag" ]
+     ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/Paracetamol-Kabi-10mg-1ml-solinj-EE-I> a fhir:Ingredient;
+  fhir:Resource.id [ fhir:value "Paracetamol-Kabi-10mg-1ml-solinj-EE-I"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Ingredient</b><a name=\"Paracetamol-Kabi-10mg-1ml-solinj-EE-I\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Ingredient &quot;Paracetamol-Kabi-10mg-1ml-solinj-EE-I&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLIngredient.html\">PPL Ingredient profile</a></p></div><p><b>status</b>: active</p><p><b>for</b>: </p><ul><li><a href=\"#MedicinalProductDefinition_Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD\">See above (MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD)</a></li><li><a href=\"#ManufacturedItemDefinition_Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034\">See above (ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034)</a></li><li><a href=\"#ManufacturedItemDefinition_Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905\">See above (ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905)</a></li><li><a href=\"#ManufacturedItemDefinition_Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056\">See above (ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056)</a></li><li><a href=\"#AdministrableProductDefinition_Paracetamol-Kabi-10mg-1ml-solinj-EE-APD\">See above (AdministrableProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-APD)</a></li></ul><p><b>role</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000072050#100000072072)</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td>-</td><td><b>Concept</b></td></tr><tr><td>*</td><td>Paracetamol <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-substance-sms-cs.html\">Substances EMA SPOR SMS</a>#100000090270)</span></td></tr></table><h3>Strengths</h3><table class=\"grid\"><tr><td>-</td><td><b>Concentration[x]</b></td></tr><tr><td>*</td><td>10 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')</span>/1 millilitre(s)<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110662 = 'millilitre(s)')</span></td></tr></table></blockquote></div>"
+  ]; # 
+  fhir:Ingredient.status [ fhir:value "active"]; # 
+  fhir:Ingredient.for [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034>;
+     fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905>;
+     fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905" ]
+  ], [
+     fhir:index 3;
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056>;
+     fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056" ]
+  ], [
+     fhir:index 4;
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-APD>;
+     fhir:Reference.reference [ fhir:value "AdministrableProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-APD" ]
+  ]; # 
+  fhir:Ingredient.role [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072050" ];
+       fhir:Coding.code [ fhir:value "100000072072" ];
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ]; # 
+  fhir:Ingredient.substance [
+     fhir:Ingredient.substance.code [
+       fhir:CodeableReference.concept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v2/SubstanceDefinition" ];
+           fhir:Coding.code [ fhir:value "100000090270" ];
+           fhir:Coding.display [ fhir:value "Paracetamol" ]
+         ]
+       ]
+     ];
+     fhir:Ingredient.substance.strength [
+       fhir:index 0;
+       fhir:Ingredient.substance.strength.concentrationRatio [
+         fhir:Ratio.numerator [
+           fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "milligram(s)" ];
+           fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000110633" ];
+           fhir:Quantity.code [ fhir:value "100000110655" ]
+         ];
+         fhir:Ratio.denominator [
+           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "millilitre(s)" ];
+           fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000110633" ];
+           fhir:Quantity.code [ fhir:value "100000110662" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424034> a fhir:PackagedProductDefinition;
+  fhir:Resource.id [ fhir:value "Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424034"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PackagedProductDefinition</b><a name=\"Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424034\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PackagedProductDefinition &quot;Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424034&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLPackagedProductDefinition.html\">PPL Packaged Product profile</a></p></div><p><b>identifier</b>: id: EE-100008123-25101-1424034</p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD\">See above (MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD)</a></p><p><b>containedItemQuantity</b>: 1 Vial<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002158 = 'Vial')</span></p><p><b>description</b>:  50 ml ja 100 ml II tüüpi klaasist viaalid, mis on suletud bromobutüülkorgi ja alumiinium/plastik  äratõmmatava korgiga.</p><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td>*</td><td>Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-country-ema-cs.html\">Country EMA</a>#100000000388)</span></td><td>Marketed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-Marketing-Status-ema-cs.html\">Marketing Status EMA</a>#100000072083)</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: Box <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-packaging-ema-cs.html\">Packaging EMA SPOR</a>#100000073498)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: Cardboard <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003529)</span></p><blockquote><p><b>packaging</b></p><p><b>type</b>: vial <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-packaging-ema-cs.html\">Packaging EMA SPOR</a>#100000073563)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: Glass type II <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003205)</span></p></blockquote></blockquote></div>"
+  ]; # 
+  fhir:PackagedProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://ema.europa.eu/example/pcid" ];
+     fhir:Identifier.value [ fhir:value "EE-100008123-25101-1424034" ]
+  ]; # 
+  fhir:PackagedProductDefinition.packageFor [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD" ]
+  ]; # 
+  fhir:PackagedProductDefinition.containedItemQuantity [
+     fhir:index 0;
+     fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "Vial" ];
+     fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ];
+     fhir:Quantity.code [ fhir:value "200000002158" ]
+  ]; # 
+  fhir:PackagedProductDefinition.description [ fhir:value " 50 ml ja 100 ml II tüüpi klaasist viaalid, mis on suletud bromobutüülkorgi ja alumiinium/plastik  äratõmmatava korgiga."]; # 
+  fhir:PackagedProductDefinition.marketingStatus [
+     fhir:index 0;
+     fhir:MarketingStatus.country [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000002" ];
+         fhir:Coding.code [ fhir:value "100000000388" ];
+         fhir:Coding.display [ fhir:value "Republic of Estonia" ]
+       ]
+     ];
+     fhir:MarketingStatus.status [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072052" ];
+         fhir:Coding.code [ fhir:value "100000072083" ];
+         fhir:Coding.display [ fhir:value "Marketed" ]
+       ]
+     ]
+  ]; # 
+  fhir:PackagedProductDefinition.packaging [
+     fhir:PackagedProductDefinition.packaging.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ];
+         fhir:Coding.code [ fhir:value "100000073498" ];
+         fhir:Coding.display [ fhir:value "Box" ]
+       ]
+     ];
+     fhir:PackagedProductDefinition.packaging.quantity [ fhir:value "1"^^xsd:integer ];
+     fhir:PackagedProductDefinition.packaging.material [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ];
+         fhir:Coding.code [ fhir:value "200000003529" ];
+         fhir:Coding.display [ fhir:value "Cardboard" ]
+       ]
+     ];
+     fhir:PackagedProductDefinition.packaging.packaging [
+       fhir:index 0;
+       fhir:PackagedProductDefinition.packaging.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ];
+           fhir:Coding.code [ fhir:value "100000073563" ];
+           fhir:Coding.display [ fhir:value "vial" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.packaging.quantity [ fhir:value "1"^^xsd:integer ];
+       fhir:PackagedProductDefinition.packaging.material [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ];
+           fhir:Coding.code [ fhir:value "200000003205" ];
+           fhir:Coding.display [ fhir:value "Glass type II" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.packaging.containedItem [
+         fhir:index 0;
+         fhir:PackagedProductDefinition.packaging.containedItem.item [
+           fhir:CodeableReference.reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034>;
+             fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424034" ]
+           ]
+         ];
+         fhir:PackagedProductDefinition.packaging.containedItem.amount [
+           fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "millilitre(s)" ];
+           fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000110633" ];
+           fhir:Quantity.code [ fhir:value "100000110662" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1799905> a fhir:PackagedProductDefinition;
+  fhir:Resource.id [ fhir:value "Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1799905"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PackagedProductDefinition</b><a name=\"Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1799905\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PackagedProductDefinition &quot;Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1799905&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLPackagedProductDefinition.html\">PPL Packaged Product profile</a></p></div><p><b>identifier</b>: id: EE-100008123-25101-1799905</p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD\">See above (MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD)</a></p><p><b>containedItemQuantity</b>: 10 Ampoule<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002164 = 'Ampoule')</span></p><p><b>description</b>: 10 ml I tüüpi värvitust klaasist ampullid.</p><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td>*</td><td>Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-country-ema-cs.html\">Country EMA</a>#100000000388)</span></td><td>Marketed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-Marketing-Status-ema-cs.html\">Marketing Status EMA</a>#100000072083)</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: Box <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-packaging-ema-cs.html\">Packaging EMA SPOR</a>#100000073498)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: Cardboard <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003529)</span></p><blockquote><p><b>packaging</b></p><p><b>type</b>: Ampoule <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-packaging-ema-cs.html\">Packaging EMA SPOR</a>#100000073490)</span></p><p><b>quantity</b>: 10</p><p><b>material</b>: Glass type I <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003204)</span></p></blockquote></blockquote></div>"
+  ]; # 
+  fhir:PackagedProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://ema.europa.eu/example/pcid" ];
+     fhir:Identifier.value [ fhir:value "EE-100008123-25101-1799905" ]
+  ]; # 
+  fhir:PackagedProductDefinition.packageFor [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD" ]
+  ]; # 
+  fhir:PackagedProductDefinition.containedItemQuantity [
+     fhir:index 0;
+     fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "Ampoule" ];
+     fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ];
+     fhir:Quantity.code [ fhir:value "200000002164" ]
+  ]; # 
+  fhir:PackagedProductDefinition.description [ fhir:value "10 ml I tüüpi värvitust klaasist ampullid."]; # 
+  fhir:PackagedProductDefinition.marketingStatus [
+     fhir:index 0;
+     fhir:MarketingStatus.country [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000002" ];
+         fhir:Coding.code [ fhir:value "100000000388" ];
+         fhir:Coding.display [ fhir:value "Republic of Estonia" ]
+       ]
+     ];
+     fhir:MarketingStatus.status [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072052" ];
+         fhir:Coding.code [ fhir:value "100000072083" ];
+         fhir:Coding.display [ fhir:value "Marketed" ]
+       ]
+     ]
+  ]; # 
+  fhir:PackagedProductDefinition.packaging [
+     fhir:PackagedProductDefinition.packaging.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ];
+         fhir:Coding.code [ fhir:value "100000073498" ];
+         fhir:Coding.display [ fhir:value "Box" ]
+       ]
+     ];
+     fhir:PackagedProductDefinition.packaging.quantity [ fhir:value "1"^^xsd:integer ];
+     fhir:PackagedProductDefinition.packaging.material [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ];
+         fhir:Coding.code [ fhir:value "200000003529" ];
+         fhir:Coding.display [ fhir:value "Cardboard" ]
+       ]
+     ];
+     fhir:PackagedProductDefinition.packaging.packaging [
+       fhir:index 0;
+       fhir:PackagedProductDefinition.packaging.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ];
+           fhir:Coding.code [ fhir:value "100000073490" ];
+           fhir:Coding.display [ fhir:value "Ampoule" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.packaging.quantity [ fhir:value "10"^^xsd:integer ];
+       fhir:PackagedProductDefinition.packaging.material [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ];
+           fhir:Coding.code [ fhir:value "200000003204" ];
+           fhir:Coding.display [ fhir:value "Glass type I" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.packaging.containedItem [
+         fhir:index 0;
+         fhir:PackagedProductDefinition.packaging.containedItem.item [
+           fhir:CodeableReference.reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905>;
+             fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1799905" ]
+           ]
+         ];
+         fhir:PackagedProductDefinition.packaging.containedItem.amount [
+           fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "millilitre(s)" ];
+           fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000110633" ];
+           fhir:Quantity.code [ fhir:value "100000110662" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424056> a fhir:PackagedProductDefinition;
+  fhir:Resource.id [ fhir:value "Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424056"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PackagedProductDefinition</b><a name=\"Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424056\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PackagedProductDefinition &quot;Paracetamol-Kabi-10mg-1ml-solinj-EE-PPD-1424056&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLPackagedProductDefinition.html\">PPL Packaged Product profile</a></p></div><p><b>identifier</b>: id: EE-100008123-25101-1424056</p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD\">See above (MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD)</a></p><p><b>containedItemQuantity</b>: 1 Bag<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002166 = 'Bag')</span></p><p><b>description</b>: 50 ml ja 100 ml plastkotid, millel on manustamisport (infusiooniport) ja lisamisport (süsteport); kotid koosnevad polüolefiinist sisekihist ja alumiiniumisisaldusega kattekihist ning sisaldavad hapnikuabsorbenti. Kotid on suletud polüisopreenist korgi ja polüpropüleenist kaanega.</p><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td>*</td><td>Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-country-ema-cs.html\">Country EMA</a>#100000000388)</span></td><td>Marketed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-Marketing-Status-ema-cs.html\">Marketing Status EMA</a>#100000072083)</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: Box <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-packaging-ema-cs.html\">Packaging EMA SPOR</a>#100000073498)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: Cardboard <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003529)</span></p><blockquote><p><b>packaging</b></p><p><b>type</b>: Bag <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-packaging-ema-cs.html\">Packaging EMA SPOR</a>#100000073493)</span></p><p><b>quantity</b>: 20</p><p><b>material</b>: Polyolefin <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003218)</span></p></blockquote></blockquote></div>"
+  ]; # 
+  fhir:PackagedProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://ema.europa.eu/example/pcid" ];
+     fhir:Identifier.value [ fhir:value "EE-100008123-25101-1424056" ]
+  ]; # 
+  fhir:PackagedProductDefinition.packageFor [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MPD" ]
+  ]; # 
+  fhir:PackagedProductDefinition.containedItemQuantity [
+     fhir:index 0;
+     fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "Bag" ];
+     fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ];
+     fhir:Quantity.code [ fhir:value "200000002166" ]
+  ]; # 
+  fhir:PackagedProductDefinition.description [ fhir:value "50 ml ja 100 ml plastkotid, millel on manustamisport (infusiooniport) ja lisamisport (süsteport); kotid koosnevad polüolefiinist sisekihist ja alumiiniumisisaldusega kattekihist ning sisaldavad hapnikuabsorbenti. Kotid on suletud polüisopreenist korgi ja polüpropüleenist kaanega."]; # 
+  fhir:PackagedProductDefinition.marketingStatus [
+     fhir:index 0;
+     fhir:MarketingStatus.country [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000000002" ];
+         fhir:Coding.code [ fhir:value "100000000388" ];
+         fhir:Coding.display [ fhir:value "Republic of Estonia" ]
+       ]
+     ];
+     fhir:MarketingStatus.status [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072052" ];
+         fhir:Coding.code [ fhir:value "100000072083" ];
+         fhir:Coding.display [ fhir:value "Marketed" ]
+       ]
+     ]
+  ]; # 
+  fhir:PackagedProductDefinition.packaging [
+     fhir:PackagedProductDefinition.packaging.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ];
+         fhir:Coding.code [ fhir:value "100000073498" ];
+         fhir:Coding.display [ fhir:value "Box" ]
+       ]
+     ];
+     fhir:PackagedProductDefinition.packaging.quantity [ fhir:value "1"^^xsd:integer ];
+     fhir:PackagedProductDefinition.packaging.material [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ];
+         fhir:Coding.code [ fhir:value "200000003529" ];
+         fhir:Coding.display [ fhir:value "Cardboard" ]
+       ]
+     ];
+     fhir:PackagedProductDefinition.packaging.packaging [
+       fhir:index 0;
+       fhir:PackagedProductDefinition.packaging.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346" ];
+           fhir:Coding.code [ fhir:value "100000073493" ];
+           fhir:Coding.display [ fhir:value "Bag" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.packaging.quantity [ fhir:value "20"^^xsd:integer ];
+       fhir:PackagedProductDefinition.packaging.material [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000003199" ];
+           fhir:Coding.code [ fhir:value "200000003218" ];
+           fhir:Coding.display [ fhir:value "Polyolefin" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.packaging.containedItem [
+         fhir:index 0;
+         fhir:PackagedProductDefinition.packaging.containedItem.item [
+           fhir:CodeableReference.reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056>;
+             fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Paracetamol-Kabi-10mg-1ml-solinj-EE-MID-1424056" ]
+           ]
+         ];
+         fhir:PackagedProductDefinition.packaging.containedItem.amount [
+           fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "millilitre(s)" ];
+           fhir:Quantity.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000110633" ];
+           fhir:Quantity.code [ fhir:value "100000110662" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Bundle/009-Paracetamol-Kabi10mg-1ml-EE-FullProduct.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

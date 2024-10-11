@@ -1,0 +1,946 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>004-Cefuroxime-MIP-1500mg-EE-FullProduct - JSON Representation - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.111"}
+    h3,h4,h5,h6{--heading-prefix:"7.111"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+      <li>
+        <a href="testserver.html">Testing Tool Box</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>004-Cefuroxime-MIP-1500mg-EE-FullProduct</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig/tree/master">https://github.com/hl7-eu/unicom-ig/tree/master</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-004-Cefuroxime-MIP-1500mg-EE-FullProduct.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-004-Cefuroxime-MIP-1500mg-EE-FullProduct.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-004-Cefuroxime-MIP-1500mg-EE-FullProduct.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: 004-Cefuroxime-MIP-1500mg-EE-FullProduct - JSON Representation</h2>
+
+
+<p><a href="Bundle-004-Cefuroxime-MIP-1500mg-EE-FullProduct.json" no-download="true">Raw json</a> | <a href="Bundle-004-Cefuroxime-MIP-1500mg-EE-FullProduct.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R5/bundle.html#Bundle">resourceType</a>" : "Bundle",
+  "<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.id">id</a>" : "004-Cefuroxime-MIP-1500mg-EE-FullProduct",
+  "<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.type">type</a>" : "collection",
+  "<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD",
+      "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html">resourceType</a>" : "MedicinalProductDefinition",
+        "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.id">id</a>" : "Cefuroxime-MIP-1500mg-EE-MPD",
+        "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-PPLMedicinalProductDefinition.html" style="color: Maroon">&#x1F517;</a> "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;MedicinalProductDefinition_Cefuroxime-MIP-1500mg-EE-MPD\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: MedicinalProductDefinition Cefuroxime-MIP-1500mg-EE-MPD&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-MPD\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCefuroxime-MIP-1500mg-EE-MPD\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-MPD-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://ema.europa.eu/fhir/mpId&lt;/code&gt;/EE-100009199-27834, &lt;code&gt;http://ema.europa.eu/fhir/pmsId&lt;/code&gt;/EE0000002&lt;/p&gt;&lt;p&gt;&lt;b&gt;domain&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}\&quot;&gt;Human use&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/200000005003 200000005004}\&quot;&gt;Current&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;combinedPharmaceuticalDoseForm&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000116186}\&quot;&gt;Powder for solution for injection/infusion&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;legalStatusOfSupply&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000072051 100000072084}\&quot;&gt;Medicinal Product subject to medical prescription&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;classification&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000093533 100000096183}\&quot;&gt;Cefuroxime&lt;/span&gt;, &lt;span title=\&quot;Codes:{http://www.whocc.no/atc J01DC02}\&quot;&gt;cefuroxime&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;productName&lt;/b&gt;: Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;part&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;part&lt;/b&gt;: Cefuroxime MIP&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000002}\&quot;&gt;Invented name part&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;part&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;part&lt;/b&gt;: 1500 MG&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000004}\&quot;&gt;Strength part&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Usages&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\&quot;&gt;Republic of Estonia&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{urn:ietf:bcp:47 et}\&quot;&gt;Estonian&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://ema.europa.eu/fhir/mpId",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "EE-100009199-27834"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://ema.europa.eu/fhir/pmsId",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "EE0000002"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.domain">domain</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000000004",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000000012",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Human use"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.status">status</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000005003",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "200000005004",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Current"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.combinedPharmaceuticalDoseForm">combinedPharmaceuticalDoseForm</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000116186",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Powder for solution for injection/infusion"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.legalStatusOfSupply">legalStatusOfSupply</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000072051",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000072084",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Medicinal Product subject to medical prescription"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.classification">classification</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000093533",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000096183",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Cefuroxime"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://www.whocc.no/atc",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "J01DC02",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "cefuroxime"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name">name</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.productName">productName</a>" : "Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber",
+            "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.part">part</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.part.part">part</a>" : "Cefuroxime MIP",
+                "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.part.type">type</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "220000000002",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Invented name part"
+                    }
+                  ]
+                }
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.part.part">part</a>" : "1500 MG",
+                "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.part.type">type</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/220000000000",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "220000000004",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Strength part"
+                    }
+                  ]
+                }
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.usage">usage</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.usage.country">country</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000000002",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000000388",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Republic of Estonia"
+                    }
+                  ]
+                },
+                "<a href="http://hl7.org/fhir/R5/medicinalproductdefinition.html#MedicinalProductDefinition.name.usage.language">language</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "urn:ietf:bcp:47",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "et",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Estonian"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Cefuroxime-MIP-1500mg-EE-RA",
+      "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html">resourceType</a>" : "RegulatedAuthorization",
+        "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.id">id</a>" : "Cefuroxime-MIP-1500mg-EE-RA",
+        "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-PPLRegulatedAuthorization.html" style="color: Maroon">&#x1F517;</a> "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;RegulatedAuthorization_Cefuroxime-MIP-1500mg-EE-RA\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: RegulatedAuthorization Cefuroxime-MIP-1500mg-EE-RA&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-RA\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCefuroxime-MIP-1500mg-EE-RA\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-RA-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 805813&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html\&quot;&gt;MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100009199-27834,http://ema.europa.eu/fhir/pmsId#EE0000002; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Powder for solution for injection/infusion; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = Cefuroxime,cefuroxime&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/220000000060 220000000061}\&quot;&gt;Marketing Authorisation&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;region&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\&quot;&gt;Republic of Estonia&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000072049 200000017708}\&quot;&gt;Valid - Renewed/Varied&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2017-12-06&lt;/p&gt;&lt;p&gt;&lt;b&gt;holder&lt;/b&gt;: &lt;a href=\&quot;Organization-LOC-100009199-Mip.html\&quot;&gt;Organization Mip Pharma GmbH&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "805813"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.subject">subject</a>" : [
+          {
+            <a href="MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.type">type</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/220000000060",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "220000000061",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Marketing Authorisation"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.region">region</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000000002",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000000388",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Republic of Estonia"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.status">status</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000072049",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "200000017708",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Valid - Renewed/Varied"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.statusDate">statusDate</a>" : "2017-12-06",
+        "<a href="http://hl7.org/fhir/R5/regulatedauthorization.html#RegulatedAuthorization.holder">holder</a>" : {
+          <a href="Organization-LOC-100009199-Mip.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "Organization/LOC-100009199-Mip"
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100009199-Mip",
+      "<a href="http://hl7.org/fhir/R5/organization.html#Organization">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R5/organization.html">resourceType</a>" : "Organization",
+        "<a href="http://hl7.org/fhir/R5/organization.html#Organization.id">id</a>" : "LOC-100009199-Mip",
+        "<a href="http://hl7.org/fhir/R5/organization.html#Organization.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-PPLOrganization.html" style="color: Maroon">&#x1F517;</a> "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/organization.html#Organization.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Organization_LOC-100009199-Mip\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization LOC-100009199-Mip&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;LOC-100009199-Mip\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcLOC-100009199-Mip\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;LOC-100009199-Mip-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://spor.ema.europa.eu/v1/locations&lt;/code&gt;/LOC-100009199&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Mip Pharma GmbH&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R5/organization.html#Organization.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "https://spor.ema.europa.eu/v1/locations",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "LOC-100009199"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/organization.html#Organization.name">name</a>" : "Mip Pharma GmbH"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Cefuroxime-MIP-1500mg-EE-APD",
+      "<a href="http://hl7.org/fhir/R5/administrableproductdefinition.html#AdministrableProductDefinition">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R5/administrableproductdefinition.html">resourceType</a>" : "AdministrableProductDefinition",
+        "<a href="http://hl7.org/fhir/R5/administrableproductdefinition.html#AdministrableProductDefinition.id">id</a>" : "Cefuroxime-MIP-1500mg-EE-APD",
+        "<a href="http://hl7.org/fhir/R5/administrableproductdefinition.html#AdministrableProductDefinition.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-PPLAdministrableProductDefinition.html" style="color: Maroon">&#x1F517;</a> "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/administrableproductdefinition.html#AdministrableProductDefinition.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;AdministrableProductDefinition_Cefuroxime-MIP-1500mg-EE-APD\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: AdministrableProductDefinition Cefuroxime-MIP-1500mg-EE-APD&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-APD\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCefuroxime-MIP-1500mg-EE-APD\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-APD-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;formOf&lt;/b&gt;: &lt;a href=\&quot;MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html\&quot;&gt;MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100009199-27834,http://ema.europa.eu/fhir/pmsId#EE0000002; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Powder for solution for injection/infusion; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = Cefuroxime,cefuroxime&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;administrableDoseForm&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000074038}\&quot;&gt;Solution for injection/infusion&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;unitOfPresentation&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002158}\&quot;&gt;Vial&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;producedFrom&lt;/b&gt;: &lt;a href=\&quot;ManufacturedItemDefinition-Cefuroxime-MIP-1500mg-EE-MID.html\&quot;&gt;ManufacturedItemDefinition: status = active; manufacturedDoseForm = Powder for solution for injection/infusion; unitOfPresentation = Vial&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;RouteOfAdministrations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000073345 100000073600}\&quot;&gt;Intramuscular use&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R5/administrableproductdefinition.html#AdministrableProductDefinition.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R5/administrableproductdefinition.html#AdministrableProductDefinition.formOf">formOf</a>" : [
+          {
+            <a href="MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/administrableproductdefinition.html#AdministrableProductDefinition.administrableDoseForm">administrableDoseForm</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000074038",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Solution for injection/infusion"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/administrableproductdefinition.html#AdministrableProductDefinition.unitOfPresentation">unitOfPresentation</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000000014",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "200000002158",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Vial"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/administrableproductdefinition.html#AdministrableProductDefinition.producedFrom">producedFrom</a>" : [
+          {
+            <a href="ManufacturedItemDefinition-Cefuroxime-MIP-1500mg-EE-MID.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration">routeOfAdministration</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000073345",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000073600",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Intramuscular use"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Cefuroxime-MIP-1500mg-EE-MID",
+      "<a href="http://hl7.org/fhir/R5/manufactureditemdefinition.html#ManufacturedItemDefinition">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R5/manufactureditemdefinition.html">resourceType</a>" : "ManufacturedItemDefinition",
+        "<a href="http://hl7.org/fhir/R5/manufactureditemdefinition.html#ManufacturedItemDefinition.id">id</a>" : "Cefuroxime-MIP-1500mg-EE-MID",
+        "<a href="http://hl7.org/fhir/R5/manufactureditemdefinition.html#ManufacturedItemDefinition.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-PPLManufacturedItemDefinition.html" style="color: Maroon">&#x1F517;</a> "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/manufactureditemdefinition.html#ManufacturedItemDefinition.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;ManufacturedItemDefinition_Cefuroxime-MIP-1500mg-EE-MID\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ManufacturedItemDefinition Cefuroxime-MIP-1500mg-EE-MID&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-MID\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCefuroxime-MIP-1500mg-EE-MID\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-MID-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturedDoseForm&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000116186}\&quot;&gt;Powder for solution for injection/infusion&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;unitOfPresentation&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002158}\&quot;&gt;Vial&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R5/manufactureditemdefinition.html#ManufacturedItemDefinition.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R5/manufactureditemdefinition.html#ManufacturedItemDefinition.manufacturedDoseForm">manufacturedDoseForm</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000000004",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000116186",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Powder for solution for injection/infusion"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/manufactureditemdefinition.html#ManufacturedItemDefinition.unitOfPresentation">unitOfPresentation</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000000014",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "200000002158",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Vial"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Cefuroxime-MIP-1500mg-EE-I",
+      "<a href="http://hl7.org/fhir/R5/ingredient.html#Ingredient">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R5/ingredient.html">resourceType</a>" : "Ingredient",
+        "<a href="http://hl7.org/fhir/R5/ingredient.html#Ingredient.id">id</a>" : "Cefuroxime-MIP-1500mg-EE-I",
+        "<a href="http://hl7.org/fhir/R5/ingredient.html#Ingredient.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Ingredient_Cefuroxime-MIP-1500mg-EE-I\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Ingredient Cefuroxime-MIP-1500mg-EE-I&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-I\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCefuroxime-MIP-1500mg-EE-I\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-I-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html\&quot;&gt;MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100009199-27834,http://ema.europa.eu/fhir/pmsId#EE0000002; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Powder for solution for injection/infusion; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = Cefuroxime,cefuroxime&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;ManufacturedItemDefinition-Cefuroxime-MIP-1500mg-EE-MID.html\&quot;&gt;ManufacturedItemDefinition: status = active; manufacturedDoseForm = Powder for solution for injection/infusion; unitOfPresentation = Vial&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;AdministrableProductDefinition-Cefuroxime-MIP-1500mg-EE-APD.html\&quot;&gt;AdministrableProductDefinition: status = active; administrableDoseForm = Solution for injection/infusion; unitOfPresentation = Vial&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\&quot;&gt;Active&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Codes&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000091436}\&quot;&gt;CEFUROXIME SODIUM&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;strength&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;presentation&lt;/b&gt;: 1578 milligram(s)&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')&lt;/span&gt;/1 Vial&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: Unit of Presentation EMA  code200000002158 = 'Vial')&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;referenceStrength&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Substances&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000092667}\&quot;&gt;CEFUROXIME&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;strength&lt;/b&gt;: 1500 milligram(s)&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')&lt;/span&gt;/1 Vial&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: Unit of Presentation EMA  code200000002158 = 'Vial')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R5/ingredient.html#Ingredient.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R5/ingredient.html#Ingredient.for">for</a>" : [
+          {
+            <a href="MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD"
+          },
+          {
+            <a href="ManufacturedItemDefinition-Cefuroxime-MIP-1500mg-EE-MID.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID"
+          },
+          {
+            <a href="AdministrableProductDefinition-Cefuroxime-MIP-1500mg-EE-APD.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "AdministrableProductDefinition/Cefuroxime-MIP-1500mg-EE-APD"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/ingredient.html#Ingredient.role">role</a>" : {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000072050",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000072072",
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Active"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/ingredient.html#Ingredient.substance">substance</a>" : {
+          "<a href="http://hl7.org/fhir/R5/ingredient.html#Ingredient.substance.code">code</a>" : {
+            "<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000091436",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "CEFUROXIME SODIUM"
+                }
+              ]
+            }
+          },
+          "<a href="http://hl7.org/fhir/R5/ingredient.html#Ingredient.substance.strength">strength</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/ingredient.html#Ingredient.substance.strength.presentation[x]">presentationRatio</a>" : {
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#Ratio.numerator">numerator</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a>" : 1578,
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.unit">unit</a>" : "milligram(s)",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000110633",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.code">code</a>" : "100000110655"
+                },
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#Ratio.denominator">denominator</a>" : {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 1,
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "Vial",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000000014",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "200000002158"
+                }
+              },
+              "<a href="http://hl7.org/fhir/R5/ingredient.html#Ingredient.substance.strength.referenceStrength">referenceStrength</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R5/ingredient.html#Ingredient.substance.strength.referenceStrength.substance">substance</a>" : {
+                    "<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#CodeableReference.concept">concept</a>" : {
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+                          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000092667",
+                          "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "CEFUROXIME"
+                        }
+                      ]
+                    }
+                  },
+                  "<a href="http://hl7.org/fhir/R5/ingredient.html#Ingredient.substance.strength.referenceStrength.strength[x]">strengthRatio</a>" : {
+                    "<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#Ratio.numerator">numerator</a>" : {
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a>" : 1500,
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.unit">unit</a>" : "milligram(s)",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000110633",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.code">code</a>" : "100000110655"
+                    },
+                    "<a href="http://hl7.org/fhir/R5/datatypes.html#Ratio#Ratio.denominator">denominator</a>" : {
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 1,
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.unit">unit</a>" : "Vial",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000000014",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity.code">code</a>" : "200000002158"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Cefuroxime-MIP-1500mg-EE-PPD-1529940",
+      "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html">resourceType</a>" : "PackagedProductDefinition",
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.id">id</a>" : "Cefuroxime-MIP-1500mg-EE-PPD-1529940",
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-PPLPackagedProductDefinition.html" style="color: Maroon">&#x1F517;</a> "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;PackagedProductDefinition_Cefuroxime-MIP-1500mg-EE-PPD-1529940\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: PackagedProductDefinition Cefuroxime-MIP-1500mg-EE-PPD-1529940&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-PPD-1529940\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCefuroxime-MIP-1500mg-EE-PPD-1529940\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-PPD-1529940-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://ema.europa.eu/example/pcid&lt;/code&gt;/EE-100009199-27834-1529940&lt;/p&gt;&lt;p&gt;&lt;b&gt;packageFor&lt;/b&gt;: &lt;a href=\&quot;MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html\&quot;&gt;MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100009199-27834,http://ema.europa.eu/fhir/pmsId#EE0000002; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Powder for solution for injection/infusion; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = Cefuroxime,cefuroxime&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;containedItemQuantity&lt;/b&gt;: 1 vial&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: Unit of Presentation EMA  code200000002158 = 'Vial')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;/p&gt;&lt;div&gt;&lt;p&gt;I tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 1 viaal&lt;/p&gt;\n&lt;/div&gt;&lt;h3&gt;MarketingStatuses&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\&quot;&gt;Republic of Estonia&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000072052 100000072083}\&quot;&gt;Marketed&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;packaging&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\&quot;&gt;Box&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;material&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}\&quot;&gt;Cardboard&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;packaging&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://ema.europa.eu/example/pcid",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "EE-100009199-27834-1529940"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packageFor">packageFor</a>" : [
+          {
+            <a href="MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.containedItemQuantity">containedItemQuantity</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a>" : 1,
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.unit">unit</a>" : "vial",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000000014",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.code">code</a>" : "200000002158"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.description">description</a>" : "I tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 1 viaal",
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.marketingStatus">marketingStatus</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.country">country</a>" : {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000000002",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000000388",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Republic of Estonia"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.status">status</a>" : {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000072052",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000072083",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging">packaging</a>" : {
+          "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.type">type</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000073498",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Box"
+              }
+            ]
+          },
+          "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.quantity">quantity</a>" : 1,
+          "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.material">material</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "200000003529",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Cardboard"
+                }
+              ]
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.packaging">packaging</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.type">type</a>" : {
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000073563",
+                    "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "vial"
+                  }
+                ]
+              },
+              "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.quantity">quantity</a>" : 1,
+              "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.material">material</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "200000003204",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Glass type I"
+                    }
+                  ]
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.containedItem">containedItem</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.containedItem.item">item</a>" : {
+                    "<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#CodeableReference.reference">reference</a>" : {
+                      <a href="ManufacturedItemDefinition-Cefuroxime-MIP-1500mg-EE-MID.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID"
+                    }
+                  },
+                  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.containedItem.amount">amount</a>" : {
+                    "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a>" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Cefuroxime-MIP-1500mg-EE-PPD-1529962",
+      "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html">resourceType</a>" : "PackagedProductDefinition",
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.id">id</a>" : "Cefuroxime-MIP-1500mg-EE-PPD-1529962",
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-PPLPackagedProductDefinition.html" style="color: Maroon">&#x1F517;</a> "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;PackagedProductDefinition_Cefuroxime-MIP-1500mg-EE-PPD-1529962\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: PackagedProductDefinition Cefuroxime-MIP-1500mg-EE-PPD-1529962&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-PPD-1529962\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCefuroxime-MIP-1500mg-EE-PPD-1529962\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Cefuroxime-MIP-1500mg-EE-PPD-1529962-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://ema.europa.eu/example/pcid&lt;/code&gt;/EE-100009199-27834-1529962&lt;/p&gt;&lt;p&gt;&lt;b&gt;packageFor&lt;/b&gt;: &lt;a href=\&quot;MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html\&quot;&gt;MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100009199-27834,http://ema.europa.eu/fhir/pmsId#EE0000002; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Powder for solution for injection/infusion; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = Cefuroxime,cefuroxime&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;containedItemQuantity&lt;/b&gt;: 10 Vial&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: Unit of Presentation EMA  code200000002158 = 'Vial')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;/p&gt;&lt;div&gt;&lt;p&gt;I tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 10 viaali&lt;/p&gt;\n&lt;/div&gt;&lt;h3&gt;MarketingStatuses&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\&quot;&gt;Republic of Estonia&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000072052 100000072083}\&quot;&gt;Marketed&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;packaging&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\&quot;&gt;Box&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;material&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}\&quot;&gt;Cardboard&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;packaging&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.system">system</a>" : "http://ema.europa.eu/example/pcid",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "EE-100009199-27834-1529962"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packageFor">packageFor</a>" : [
+          {
+            <a href="MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.containedItemQuantity">containedItemQuantity</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a>" : 10,
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.unit">unit</a>" : "Vial",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000000014",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.code">code</a>" : "200000002158"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.description">description</a>" : "I tüüpi klaasist viaal, mis on suletud klorobutüülkummist korgi ning flip-off kattega, 10 viaali",
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.marketingStatus">marketingStatus</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.country">country</a>" : {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000000002",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000000388",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Republic of Estonia"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R5/marketingstatus.html#MarketingStatus#MarketingStatus.status">status</a>" : {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000072052",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000072083",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Marketed"
+                }
+              ]
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging">packaging</a>" : {
+          "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.type">type</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000073346",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000073498",
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Box"
+              }
+            ]
+          },
+          "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.quantity">quantity</a>" : 1,
+          "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.material">material</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000003199",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "200000003529",
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Cardboard"
+                }
+              ]
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.packaging">packaging</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.type">type</a>" : {
+                "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/100000073346",
+                    "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "100000073563",
+                    "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "vial"
+                  }
+                ]
+              },
+              "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.quantity">quantity</a>" : 10,
+              "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.material">material</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "https://spor.ema.europa.eu/v1/lists/200000003199",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "200000003204",
+                      "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Glass type I"
+                    }
+                  ]
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.containedItem">containedItem</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.containedItem.item">item</a>" : {
+                    "<a href="http://hl7.org/fhir/R5/references.html#CodeableReference#CodeableReference.reference">reference</a>" : {
+                      <a href="ManufacturedItemDefinition-Cefuroxime-MIP-1500mg-EE-MID.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID"
+                    }
+                  },
+                  "<a href="http://hl7.org/fhir/R5/packagedproductdefinition.html#PackagedProductDefinition.packaging.containedItem.amount">amount</a>" : {
+                    "<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a>" : 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Oct 11, 2024 11:06+0000">2024-10-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/domain-ema-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "domain-ema-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem domain-ema-cs</b></p><a name=\"domain-ema-cs\"> </a><a name=\"hcdomain-ema-cs\"> </a><a name=\"domain-ema-cs-en-US\"> </a><p>This case-insensitive code system <code>https://spor.ema.europa.eu/v1/lists/100000000004</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100000000012<a name=\"domain-ema-cs-100000000012\"> </a></td><td>Human use</td></tr><tr><td style=\"white-space:nowrap\">100000000013<a name=\"domain-ema-cs-100000000013\"> </a></td><td>Veterinary use</td></tr><tr><td style=\"white-space:nowrap\">100000000014<a name=\"domain-ema-cs-100000000014\"> </a></td><td>Human and Veterinary use</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000004"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Domain_EMA_CS"] ; # 
+  fhir:title [ fhir:v "Domain EMA"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-10-11T10:53:19+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Domain of the medicinal product (human, veterinary, both)"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compositional [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "100000000012" ] ;
+     fhir:display [ fhir:v "Human use" ]
+  ] [
+     fhir:code [ fhir:v "100000000013" ] ;
+     fhir:display [ fhir:v "Veterinary use" ]
+  ] [
+     fhir:code [ fhir:v "100000000014" ] ;
+     fhir:display [ fhir:v "Human and Veterinary use" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

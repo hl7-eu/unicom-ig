@@ -1,0 +1,2275 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/route-of-administration> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "route-of-administration"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>20001000</td><td>Auricular use</td></tr><tr><td>20002000</td><td>Beak dipping</td></tr><tr><td>20002500</td><td>Buccal use</td></tr><tr><td>20003000</td><td>Cutaneous use</td></tr><tr><td>20004000</td><td>Dental use</td></tr><tr><td>20005000</td><td>Dipping</td></tr><tr><td>20006000</td><td>Endocervical use</td></tr><tr><td>20007000</td><td>Endosinusial use</td></tr><tr><td>20008000</td><td>Endotracheopulmonary use</td></tr><tr><td>20009000</td><td>Epidural use</td></tr><tr><td>20010000</td><td>Epilesional use</td></tr><tr><td>20011000</td><td>Extraamniotic use</td></tr><tr><td>20011500</td><td>Extracorporeal use</td></tr><tr><td>20012000</td><td>Foot-stab use</td></tr><tr><td>20013000</td><td>Gastroenteral use</td></tr><tr><td>20013500</td><td>Gastric use</td></tr><tr><td>20014000</td><td>Gingival use</td></tr><tr><td>20015000</td><td>Haemodialysis</td></tr><tr><td>20015500</td><td>Implantation</td></tr><tr><td>20015700</td><td>In drinking water use</td></tr><tr><td>20016000</td><td>In drinking water/milk use</td></tr><tr><td>20017000</td><td>In ovo</td></tr><tr><td>20018000</td><td>In-feed use</td></tr><tr><td>20019000</td><td>In-hive use</td></tr><tr><td>20019500</td><td>Infiltration</td></tr><tr><td>20020000</td><td>Inhalation use</td></tr><tr><td>20021000</td><td>Intestinal use</td></tr><tr><td>20022000</td><td>Intraamniotic use</td></tr><tr><td>20023000</td><td>Intraarterial use</td></tr><tr><td>20024000</td><td>Intraarticular use</td></tr><tr><td>20025000</td><td>Intrabursal use</td></tr><tr><td>20025500</td><td>Intracameral use</td></tr><tr><td>20026000</td><td>Intracardiac use</td></tr><tr><td>20026500</td><td>Intracartilaginous use</td></tr><tr><td>20027000</td><td>Intracavernous use</td></tr><tr><td>20027010</td><td>Intracerebral use</td></tr><tr><td>20028000</td><td>Intracervical use</td></tr><tr><td>20028300</td><td>Intracholangiopancreatic use</td></tr><tr><td>20028500</td><td>Intracisternal use</td></tr><tr><td>20029000</td><td>Intracoronary use</td></tr><tr><td>20030000</td><td>Intradermal use</td></tr><tr><td>20031000</td><td>Intradiscal use</td></tr><tr><td>20031500</td><td>Intraepidermal use</td></tr><tr><td>20031700</td><td>Intraglandular use</td></tr><tr><td>20032000</td><td>Intralesional use</td></tr><tr><td>20033000</td><td>Intralymphatic use</td></tr><tr><td>20034000</td><td>Intramammary use</td></tr><tr><td>20035000</td><td>Intramuscular use</td></tr><tr><td>20036000</td><td>Intraocular use</td></tr><tr><td>20036500</td><td>Intraosseous use</td></tr><tr><td>20037000</td><td>Intrapericardial use</td></tr><tr><td>20038000</td><td>Intraperitoneal use</td></tr><tr><td>20039000</td><td>Intrapleural use</td></tr><tr><td>20039200</td><td>Intraportal use</td></tr><tr><td>20039500</td><td>Intraprostatic use</td></tr><tr><td>20039800</td><td>Intrapulmonary use</td></tr><tr><td>20040000</td><td>Intraruminal use</td></tr><tr><td>20041000</td><td>Intrasternal use</td></tr><tr><td>20042000</td><td>Intrathecal use</td></tr><tr><td>20043000</td><td>Intratumoral use</td></tr><tr><td>20044000</td><td>Intrauterine use</td></tr><tr><td>20045000</td><td>Intravenous use</td></tr><tr><td>20046000</td><td>Intravesical use</td></tr><tr><td>20047000</td><td>Intravitreal use</td></tr><tr><td>20047500</td><td>Iontophoresis</td></tr><tr><td>20048000</td><td>Laryngopharyngeal use</td></tr><tr><td>20048500</td><td>Nail use</td></tr><tr><td>20049000</td><td>Nasal use</td></tr><tr><td>20050000</td><td>Nebulisation use</td></tr><tr><td>20051000</td><td>Ocular use</td></tr><tr><td>20052000</td><td>Oculonasal use</td></tr><tr><td>20053000</td><td>Oral use</td></tr><tr><td>20054000</td><td>Oromucosal use</td></tr><tr><td>20055000</td><td>Oropharyngeal use</td></tr><tr><td>20056000</td><td>Paravertebral use</td></tr><tr><td>20057000</td><td>Periarticular use</td></tr><tr><td>20058000</td><td>Perineural use</td></tr><tr><td>20059000</td><td>Periodontal use</td></tr><tr><td>20059300</td><td>Periosseous use</td></tr><tr><td>20059400</td><td>Peritumoral use</td></tr><tr><td>20059500</td><td>Posterior juxtascleral use</td></tr><tr><td>20060000</td><td>Pour-on use</td></tr><tr><td>20061000</td><td>Rectal use</td></tr><tr><td>20061500</td><td>Retrobulbar use</td></tr><tr><td>20062000</td><td>Route of administration not applicable</td></tr><tr><td>20063000</td><td>Skin scarification</td></tr><tr><td>20064000</td><td>Spot-on use</td></tr><tr><td>20065000</td><td>Subconjunctival use</td></tr><tr><td>20066000</td><td>Subcutaneous use</td></tr><tr><td>20067000</td><td>Sublingual use</td></tr><tr><td>20067500</td><td>Submucosal use</td></tr><tr><td>20068000</td><td>Teat use</td></tr><tr><td>20069000</td><td>Top-dressing use</td></tr><tr><td>20070000</td><td>Transdermal use</td></tr><tr><td>20071000</td><td>Urethral use</td></tr><tr><td>20072000</td><td>Vaginal use</td></tr><tr><td>20073000</td><td>Water-borne use</td></tr><tr><td>20074000</td><td>Wing-web-stab use</td></tr><tr><td>20080000</td><td>Intracerebroventricular use</td></tr><tr><td>20081000</td><td>Subretinal use</td></tr><tr><td>20084000</td><td>Intracorneal use</td></tr><tr><td>20086000</td><td>Intraputaminal use</td></tr><tr><td>20087000</td><td>Extrapleural use</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>Greek (el)</b></td><td><b>Spanish (es)</b></td><td><b>French (fr)</b></td><td><b>Italian (it)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td>20001000</td><td>Anwendung am Ohr</td><td>Ωτική χρήση</td><td>Vía ótica</td><td>Voie auriculaire</td><td>Uso auricolare</td><td>Uso auricular</td></tr><tr><td>20002000</td><td>Eintauchen des Schnabels</td><td>Χορήγηση με εμβάπτιση ράμφους</td><td>Administración por inmersión del pico</td><td>Administration par trempage du bec</td><td>Immersione del becco</td><td>Uso aculear</td></tr><tr><td>20002500</td><td>Buccale Anwendung</td><td>Παρειακή χορήγηση</td><td>Vía bucal</td><td>Voie buccogingivale</td><td>Somministrazione buccale</td><td>Uso bucal</td></tr><tr><td>20003000</td><td>Anwendung auf der Haut</td><td>Δερματική χρήση</td><td>Uso cutáneo</td><td>Voie cutanée</td><td>Uso cutaneo</td><td>Uso cutâneo</td></tr><tr><td>20004000</td><td>dentale Anwendung</td><td>Οδοντική χρήση</td><td>Uso dental</td><td>Voie dentaire</td><td>Uso dentale</td><td>Uso dental</td></tr><tr><td>20005000</td><td>Badebehandlung</td><td>Εμβάπτιση</td><td>Baño</td><td>Trempage</td><td>Immersione</td><td>Banho medicamentoso</td></tr><tr><td>20006000</td><td>endozervikale Anwendung</td><td>Ενδοτραχηλική χρήση</td><td>Vía endocervical</td><td>Voie endocervicale</td><td>Uso endocervicale</td><td>Via endocervical</td></tr><tr><td>20007000</td><td>Anwendung in den Nebenhöhlen</td><td>Ενδορρινοκολπική χρήση</td><td>Vía endosinusal</td><td>Voie endosinusale</td><td>Uso endosinusiale</td><td>Uso endossinusal</td></tr><tr><td>20008000</td><td>endotracheopulmonale Anwendung</td><td>Ενδοτραχειοπνευμονική χρήση</td><td>Vía endotraqueopulmonar</td><td>Voie endotrachéobronchique</td><td>Uso endotracheobronchiale</td><td>Via endotraqueobrônquica</td></tr><tr><td>20009000</td><td>epidurale Anwendung</td><td>Επισκληρίδιος χρήση</td><td>Vía epidural</td><td>Voie péridurale</td><td>Uso epidurale</td><td>Via epidural</td></tr><tr><td>20010000</td><td>zum Auftragen auf die Wunde</td><td>Χρήση επί της βλάβης</td><td>Uso epilesional</td><td>Voie épilésionnelle</td><td>Uso epilesionale</td><td>Uso epilesional</td></tr><tr><td>20011000</td><td>extraamniotische Anwendung</td><td>Εξωαμνιακή χρήση</td><td>Vía extraamniótica</td><td>Voie extra-amniotique</td><td>Uso extra-amniotico</td><td>Via extra-amniótica</td></tr><tr><td>20011500</td><td>extrakorporale Anwendung</td><td>Εξωσωματική χρήση</td><td>Uso extracorporal</td><td>Voie extracorporelle</td><td>Uso extracorporeo</td><td>Uso extracorpóreo</td></tr><tr><td>20012000</td><td>Fussstichapplikation</td><td>Χορήγηση με νύγμα πέλματος</td><td>Punción en la almohadilla plantar</td><td>Administration par transfixion dans les pattes</td><td>Uso podale</td><td>Uso intrapodal</td></tr><tr><td>20013000</td><td>gastrointestinale Anwendung</td><td>Γαστρεντερική χρήση</td><td>Vía gastroentérica</td><td>Voie gastro-entérale</td><td>Uso gastrointestinale</td><td>Via gastroentérica</td></tr><tr><td>20013500</td><td>zur Anwendung mittels Magensonde</td><td>Γαστρική χρήση</td><td>uso gástrico</td><td>Voie gastrique</td><td>Uso gastrico</td><td>Via gástrica</td></tr><tr><td>20014000</td><td>Anwendung am Zahnfleisch</td><td>Χρήση επί των ούλων</td><td>Uso gingival</td><td>Voie gingivale</td><td>Uso gengivale</td><td>Uso gengival</td></tr><tr><td>20015000</td><td>Hämodialyse</td><td>Αιμοδιαπίδυση</td><td>Hemodiálisis</td><td>Hémodialyse</td><td>Emodialisi</td><td>Hemodiálise</td></tr><tr><td>20015500</td><td>zur Implantation</td><td>Εμφύτευση</td><td>Implantación</td><td>Implantation</td><td>Impianto</td><td>Implantação</td></tr><tr><td>20015700</td><td>zum Eingeben über das Trinkwasser</td><td>Χορήγηση με το πόσιμο νερό</td><td>Administración en agua de bebida</td><td>Administration dans l'eau de boisson</td><td>Somministrazione in acqua da bere</td><td>Administração na água de bebida</td></tr><tr><td>20016000</td><td>zum Eingeben über das Trinkwasser/ die Milch</td><td>Χορήγηση με το πόσιμο νερό/γάλα</td><td>Administración en agua de bebida o en leche</td><td>Administration dans l'eau de boisson/ le lait</td><td>Somministrazione in acqua da bere/latte</td><td>Alimento medicamentoso líquido</td></tr><tr><td>20017000</td><td>in das Ei</td><td>in ovo χορήγηση</td><td>In ovo</td><td>In ovo</td><td>In ovo</td><td>Via transcoriónica</td></tr><tr><td>20018000</td><td>zum Eingeben über das Futter</td><td>Χορήγηση εντός τροφής</td><td>Administración en el alimento</td><td>Administration dans l'alimentation</td><td>Somministrazione con il mangime</td><td>Alimento medicamentoso sólido</td></tr><tr><td>20019000</td><td>Anwendung im Bienenstock</td><td>Ενδοκυψελική χρήση</td><td>Uso en las colmenas</td><td>Traitement dans la ruche</td><td>Trattamento in alveare</td><td>Aplicação apícola</td></tr><tr><td>20019500</td><td>Infiltration</td><td>Διήθηση (ιατρ.)</td><td>Infiltración</td><td>Infiltration</td><td>Infiltrazione</td><td>Infiltração</td></tr><tr><td>20020000</td><td>zur Inhalation</td><td>Χρήση δια εισπνοής</td><td>Vía inhalatoria</td><td>Voie inhalée</td><td>Uso inalatorio</td><td>Via inalatoria</td></tr><tr><td>20021000</td><td>intestinale Anwendung</td><td>Εντερική χρήση</td><td>Uso intestinal</td><td>Voie intestinale</td><td>Uso intestinale</td><td>Via intestinal</td></tr><tr><td>20022000</td><td>intraamniotische Anwendung</td><td>Ενδοαμνιακή χρήση</td><td>Vía intraamniótica</td><td>Voie intraamniotique</td><td>Uso intra-amniotico</td><td>Via intra-amniótica</td></tr><tr><td>20023000</td><td>intraarterielle Anwendung</td><td>Ενδοαρτηριακή χρήση</td><td>Vía intraarterial</td><td>Voie intraartérielle</td><td>Uso endoarterioso</td><td>Via intra-arterial</td></tr><tr><td>20024000</td><td>intraartikuläre Anwendung</td><td>Ενδοαρθρική χρήση</td><td>Vía intraarticular</td><td>Voie intraarticulaire</td><td>Uso intra-articolare</td><td>Via intra-articular</td></tr><tr><td>20025000</td><td>intrabursale Anwendung</td><td>Ενδοθυλακική χρήση</td><td>Vía intrasinovial</td><td>Voie intrabursale</td><td>Uso intrabursale</td><td>Via intrassinovial</td></tr><tr><td>20025500</td><td>intrakamerale Anwendung</td><td>Χορήγηση ενδοθαλαμική στον οφθαλμικό</td><td>Uso intracameral</td><td>Voie intracamérulaire</td><td>Uso intracamerale</td><td>Via Intracameral</td></tr><tr><td>20026000</td><td>intracardiale Anwendung</td><td>Ενδοκαρδιακή χρήση</td><td>Vía intracardiaca</td><td>Voie intracardiaque</td><td>Uso intracardiaco</td><td>Via intracardíaca</td></tr><tr><td>20026500</td><td>intrakartilaginäre Anwendung</td><td>Ενδοχόνδρειος χορήγηση</td><td>Uso intracartilaginoso</td><td>Voie intracartilagineuse</td><td>Uso intracartilagineo</td><td>Via intracartilaginosa</td></tr><tr><td>20027000</td><td>intrakavernöse Anwendung</td><td>Ενδοσηραγγική χρήση</td><td>Vía intracavernosa</td><td>Voie intracaverneuse</td><td>Uso intracavernoso</td><td>Via intracavernosa</td></tr><tr><td>20027010</td><td>Intrazerebrale Anwendung</td><td>Ενδοεγκεφαλική χρήση</td><td>VÍA INTRACEREBRAL</td><td>Voie intracérébrale</td><td>Uso intracerebrale</td><td>Via intracerebral</td></tr><tr><td>20028000</td><td>intrazervikale Anwendung</td><td>Ενδοτραχηλική χρήση</td><td>Vía intracervical</td><td>Voie intracervicale</td><td>Uso intracervicale</td><td>Via intracervical</td></tr><tr><td>20028300</td><td>zur Anwendung in der Cholangiopankreatikographie</td><td>Ενδοχολαγγειοπαγκρεατική χρήση</td><td>Uso intracolangiopancreático</td><td>Voie intracholangiopancréatique</td><td>Uso intracolangiopancreatico</td><td>Via intracolangiopancreática</td></tr><tr><td>20028500</td><td>intracisternale Anwendung</td><td>Χορήγηση ενδοκοιλιακή στο κεντρικό νευρικό σύστημα</td><td>Uso intracisternal</td><td>Voie intracisternale</td><td>Uso intracisternale</td><td>Via intracisternal</td></tr><tr><td>20029000</td><td>intrakoronare Anwendung</td><td>Ενδοστεφανιαία χρήση</td><td>Vía intracoronaria</td><td>Voie intracoronaire</td><td>Uso intracoronarico</td><td>Via intracoronária</td></tr><tr><td>20030000</td><td>intradermale Anwendung</td><td>Ενδοδερμική χρήση</td><td>Vía intradérmica</td><td>Voie intradermique</td><td>Uso intradermico</td><td>Via intradérmica</td></tr><tr><td>20031000</td><td>intradiskale Anwendung</td><td>Ενδομεσοσπονδύλια χρήση</td><td>Vía intradiscal</td><td>Voie intradiscale</td><td>Uso intradiscale</td><td>Via intradiscal</td></tr><tr><td>20031500</td><td>intraepidermale Anwendung</td><td>Ενδοεπιδερμική χρήση</td><td>Vía intraepidérmica</td><td>Voie intraépidermique</td><td>Uso intraepidermico</td><td>Via intraepidérmica</td></tr><tr><td>20031700</td><td>intraglanduläre Anwendung</td><td>Ενδοαδενική χρήση</td><td>Uso intraglandular</td><td>Voie intraglandulaire</td><td>Uso intraghiandolare</td><td>Via intraglandular</td></tr><tr><td>20032000</td><td>intraläsionale Anwendung</td><td>Ενδοβλαβική χρήση</td><td>Vía intralesional</td><td>Voie intralésionnelle</td><td>Uso intralesionale</td><td>Uso intralesional</td></tr><tr><td>20033000</td><td>intralymphatische Anwendung</td><td>Ενδολεμφαγγειακή χρήση</td><td>Vía intralinfática</td><td>Voie intralymphatique</td><td>Uso intralinfatico</td><td>Via intralinfática</td></tr><tr><td>20034000</td><td>intramammäre Anwendung</td><td>Ενδομαστική οδός</td><td>Vía intramamaria</td><td>Voie intramammaire</td><td>Per uso intramammario</td><td>Via intramamária</td></tr><tr><td>20035000</td><td>intramuskuläre Anwendung</td><td>Ενδομυική χρήση</td><td>Vía intramuscular</td><td>Voie intramusculaire</td><td>Uso intramuscolare</td><td>Via intramuscular</td></tr><tr><td>20036000</td><td>intraokulare Anwendung</td><td>Ενδοφθάλμια χορήγηση</td><td>Vía intraocular</td><td>Voie intraoculaire</td><td>Uso intraoculare</td><td>Uso intraocular</td></tr><tr><td>20036500</td><td>intraossäre Anwendung</td><td>Ενδοοστική χρήση</td><td>Vía intraósea</td><td>Voie intraosseuse</td><td>Uso intraosseo</td><td>Uso intraósseo</td></tr><tr><td>20037000</td><td>Intraperikardial</td><td>Ενδοπερικαρδιακή χρήση</td><td>Vía intrapericárdica</td><td>Voie intrapéricardiaque</td><td>Uso intrapericardico</td><td>Via intrapericárdica</td></tr><tr><td>20038000</td><td>intraperitoneale Anwendung</td><td>Ενδοπεριτοναϊκή χρήση</td><td>Vía intraperitoneal</td><td>Voie intrapéritonéale</td><td>Uso intraperitoneale</td><td>Via intraperitoneal</td></tr><tr><td>20039000</td><td>intrapleurale Anwendung</td><td>Ενδοϋπεζωκοτική χρήση</td><td>Vía intrapleural</td><td>Voie intrapleurale</td><td>Uso intrapleurico</td><td>Via intrapleural</td></tr><tr><td>20039200</td><td>intraportale Anwendung</td><td>Ενδοπυλαία χρήση</td><td>Uso intraportal</td><td>Voie intraportale</td><td>Uso intraportale</td><td>Via intraportal</td></tr><tr><td>20039500</td><td>intraprostatische Anwendung</td><td>Ενδοπροστατική χρήση</td><td>Uso intraprostático</td><td>Voie intraprostatique</td><td>Uso intraprostatico</td><td>Via intraprostática</td></tr><tr><td>20039800</td><td>intrapulmonale Anwendung</td><td>Ενδοπνευμονική χρήση</td><td>Uso intrapulmonar</td><td>Voie intrabronchique</td><td>Uso intrabronchiale</td><td>Via intrapulmonar</td></tr><tr><td>20040000</td><td>intraruminale Anwendung</td><td>Ενδομεγαλοκοιλιοκή χρήση</td><td>Vía intrarruminal</td><td>Voie intraruminale</td><td>Per uso intraruminale</td><td>Via intrarruminal</td></tr><tr><td>20041000</td><td>intrasternale Anwendung</td><td>Ενδοστερνική χρήση</td><td>Vía intraesternal</td><td>Voie intrasternale</td><td>Uso intrasternale</td><td>Via intraesternal</td></tr><tr><td>20042000</td><td>intrathekale Anwendung</td><td>Ενδορραχιαία χρήση</td><td>Vía intratecal</td><td>Voie intrathécale</td><td>Uso intratecale</td><td>Via intratecal</td></tr><tr><td>20043000</td><td>intratumorale Anwendung</td><td>Ενδοογκική χρήση</td><td>Vía intratumoral</td><td>Voie intratumorale</td><td>Uso intratumorale</td><td>Via intratumoral</td></tr><tr><td>20044000</td><td>intrauterine Anwendung</td><td>Ενδομήτρια χρήση</td><td>Vía intrauterina</td><td>Voie intra-utérine</td><td>Uso intrauterino</td><td>Via intrauterina</td></tr><tr><td>20045000</td><td>intravenöse Anwendung</td><td>Ενδοφλέβια χρήση</td><td>Vía intravenosa</td><td>Voie intraveineuse</td><td>Uso endovenoso</td><td>Via intravenosa</td></tr><tr><td>20046000</td><td>intravesikale Anwendung</td><td>Ενδοκυστική χρήση</td><td>Vía intravesical</td><td>Voie intravésicale</td><td>Uso endovescicale</td><td>Via intravesical</td></tr><tr><td>20047000</td><td>intravitreale Anwendung</td><td>Ενδοϋαλωδης χορήγηση</td><td>Vía intravítrea</td><td>Voie intravitréenne</td><td>Uso intravitreo</td><td>Uso intravítreo</td></tr><tr><td>20047500</td><td>zur Iontophorese</td><td>Ιοντοφόρηση</td><td>Iontoforesis</td><td>Iontophorèse</td><td>Iontoforesi</td><td>Iontoforese</td></tr><tr><td>20048000</td><td>zur Anwendung im Rachen und am Kehlkopf</td><td>Λαρυγγοφαρυγγική χρήση</td><td>Uso laringofaríngeo</td><td>Voie laryngopharyngée</td><td>Uso laringofaringeo</td><td>Uso laringofaríngeo</td></tr><tr><td>20048500</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>20049000</td><td>nasale Anwendung</td><td>Ρινική χρήση</td><td>Vía nasal</td><td>Voie nasale</td><td>Uso nasale</td><td>Via nasal</td></tr><tr><td>20050000</td><td>zum Vernebeln</td><td>Χορήγηση με εκνέφωση</td><td>Nebulización</td><td>Administration par nébulisation</td><td>Nebulizzazione</td><td>Nebulização</td></tr><tr><td>20051000</td><td>Anwendung am Auge</td><td>Οφθαλμική χρήση</td><td>Vía oftálmica</td><td>Voie ophtalmique</td><td>Uso oftalmico</td><td>Uso oftálmico</td></tr><tr><td>20052000</td><td>okulonasale Anwendung</td><td>Οφθαλμορρινική ενστάλλαξη</td><td>Vía oculonasal</td><td>Voie oculonasale</td><td>Per uso oculonasale</td><td>Via oculonasal</td></tr><tr><td>20053000</td><td>zum Einnehmen</td><td>Από στόματος χρήση</td><td>Vía oral</td><td>Voie orale</td><td>Uso orale</td><td>Via oral</td></tr><tr><td>20054000</td><td>Anwendung in der Mundhöhle</td><td>Χρήση στο στοματικό βλεννογόνο</td><td>Vía bucal</td><td>Voie buccale</td><td>Per mucosa orale</td><td>Via bucal</td></tr><tr><td>20055000</td><td>zur Anwendung im Mund- und Rachenraum</td><td>Στοματοφαρυγγική χρήση</td><td>Uso bucofaríngeo</td><td>Voie oropharyngée</td><td>Uso orofaringeo</td><td>Uso orofaríngeo</td></tr><tr><td>20056000</td><td>paravertebrale Anwendung</td><td>Παρασπονδυλική χρήση</td><td>Vía paravertebral</td><td>Voie paravertébrale</td><td>Uso paravertebrale</td><td>Via paravertebral</td></tr><tr><td>20057000</td><td>periartikuläre Anwendung</td><td>Περιαρθρική χρήση</td><td>Vía periarticular</td><td>Voie périarticulaire</td><td>Uso periarticolare</td><td>Via periarticular</td></tr><tr><td>20058000</td><td>perineurale Anwendung</td><td>Περινευρική χρήση</td><td>Vía perineural</td><td>Voie périneurale</td><td>Uso perineurale</td><td>Via perineural</td></tr><tr><td>20059000</td><td>periodontale Anwendung</td><td>Περιοδοντική χρήση</td><td>Uso periodontal</td><td>Voie périodontale</td><td>Uso periodontale</td><td>Uso periodontal</td></tr><tr><td>20059300</td><td>periossäre Anwendung</td><td>Περιοστική χρήση</td><td>Uso perióseo</td><td>Voie périosseuse</td><td>Uso periosseo</td><td>Via perióssea</td></tr><tr><td>20059400</td><td>peritumorale Anwendung</td><td>Περιογκική χρήση</td><td>Uso peritumoral</td><td>Voie péritumorale</td><td>Uso peritumorale</td><td>Via peritumoral</td></tr><tr><td>20059500</td><td>posteriore juxtasclerale Anwendung</td><td>Χρήση στο οπίσθιο μέρος του σκληρού χιτώνα</td><td>Vía yuxtaescleral posterior</td><td>Voie juxta-sclérale postérieure</td><td>Uso iuxtasclerale posteriore</td><td>Via justa-escleral posterior</td></tr><tr><td>20060000</td><td>Übergießen</td><td>Επίχυση</td><td>Unción dorsal continua</td><td>Pour-on</td><td>Pour-on</td><td>Unção contínua</td></tr><tr><td>20061000</td><td>rektale Anwendung</td><td>Ορθική χρήση</td><td>Vía rectal</td><td>Voie rectale</td><td>Uso rettale</td><td>Via retal</td></tr><tr><td>20061500</td><td>retrobulbäre Anwendung</td><td>Οπισθοβολβική χρήση</td><td>Uso retrobulbar</td><td>Voie rétrobulbaire</td><td>Uso retrobulbare</td><td>Via retrobulbar</td></tr><tr><td>20062000</td><td>Art der Anwendung nicht spezifizierbar</td><td>Οδός χορήγησης μη εφαρμοζόμενη ή μη εξειδικευόμενη</td><td>Otra vía</td><td>Autre(s)</td><td>Via di somministrazione non specificabile</td><td>Via de administração não especificada</td></tr><tr><td>20063000</td><td>Einritzen der Haut</td><td>Σκαριφισμός</td><td>Escarificación</td><td>Scarification</td><td>Scarificazione</td><td>Escarificação</td></tr><tr><td>20064000</td><td>Auftropfen</td><td>Επίχυση σε σημείο</td><td>Unción dorsal puntual</td><td>Spot-on</td><td>Spot-on</td><td>Unção punctiforme</td></tr><tr><td>20065000</td><td>subkonjunktivale Anwendung</td><td>Υποεπιπεφυκωτική χρήση</td><td>Vía subconjuntival</td><td>Voie sous-conjonctivale</td><td>Uso subcongiuntivale</td><td>Via subconjuntival</td></tr><tr><td>20066000</td><td>subkutane Anwendung</td><td>Υποδόρια χρήση</td><td>Vía subcutánea</td><td>Voie sous-cutanée</td><td>Uso sottocutaneo</td><td>Via subcutânea</td></tr><tr><td>20067000</td><td>Sublingual</td><td>Υπογλώσσια χρήοη</td><td>Vía sublingual</td><td>Voie sublinguale</td><td>Uso sublinguale</td><td>Via sublingual</td></tr><tr><td>20067500</td><td>submuköse Anwendung</td><td>Υποβλεννογόνειος χορήγηση</td><td>Vía submucosal</td><td>Voie sous-muqueuse</td><td>Uso sottomucosale</td><td>Via submucosa</td></tr><tr><td>20068000</td><td>Zitzenbehandlung</td><td>Θηλαία χρήση</td><td>Uso mamario externo</td><td>Administration mammaire</td><td>Uso mammario</td><td>Uso mamário externo</td></tr><tr><td>20069000</td><td>Aufstreuen auf das Futter</td><td>Χορήγηση με επίπαση πάνω στην τροφή</td><td>Administración sobre el alimento</td><td>Administration par saupoudrage sur l'alimentation</td><td>Somministrazione mediante dispersione superficiale sugli alimenti</td><td>Dispersão superficial no alimento</td></tr><tr><td>20070000</td><td>transdermale Anwendung</td><td>Διαδερμική χρήση</td><td>Vía transdérmica</td><td>Voie transdermique</td><td>Uso transdermico</td><td>Via transdérmica</td></tr><tr><td>20071000</td><td>Anwendung in der Harnröhre</td><td>Ουρηθρική χρήση</td><td>Vía uretral</td><td>Voie urétrale</td><td>Uso uretrale</td><td>Via uretral</td></tr><tr><td>20072000</td><td>vaginale Anwendung</td><td>Κολπική χρήση</td><td>Vía vaginal</td><td>Voie vaginale</td><td>Uso vaginale</td><td>Uso vaginal</td></tr><tr><td>20073000</td><td>Anwendung im Wasser</td><td>Διυδατική χρήση</td><td>Uso en el medio acuático</td><td>Balnéation dans l'eau</td><td>Trattamento per immersione</td><td>Uso no meio aquático</td></tr><tr><td>20074000</td><td>Flügelstichapplikation</td><td>Χορήγηση με νύγμα πτέρυγας</td><td>Punción en la membrana del ala</td><td>Administration par transfixion</td><td>Puntura alare</td><td>Inoculação alar</td></tr><tr><td>20080000</td><td>intracerebroventrikuläre Anwendung</td><td>Ενδοεγκεφαλοκοιλιακή χρήση</td><td>Vía intracerebroventricular</td><td>Voie intracérébroventriculaire</td><td>Uso intracerebroventricolare</td><td>Via intracerebroventricular</td></tr><tr><td>20081000</td><td>subretinale Anwendung</td><td>Υπαμφιβληστροειδική χρήση</td><td>Uso subretinal</td><td>Voie subrétinale</td><td>Uso sottoretinico</td><td>Via subretiniana</td></tr><tr><td>20084000</td><td>intracorneale Anwendung</td><td></td><td>Vía intracorneal</td><td>Voie intracornéenne</td><td>Uso intracorneale</td><td>Via intracorneal</td></tr><tr><td>20086000</td><td>Intraputaminale Anwendung</td><td></td><td>Vía intraputaminal</td><td></td><td>Intraputaminale</td><td>Via intraputaminal</td></tr><tr><td>20087000</td><td>extrapleurale Anwendung</td><td></td><td>Vía extrapleural</td><td>Voie extrapleurale</td><td>Uso extrapleurico</td><td>Via extrapleural</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://unicom-project.eu/fhir/ValueSet/route-of-administration"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "RouteOfAdministration"] ; # 
+  fhir:title [ fhir:v "EDQM Route of Administration"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-11T14:40:01+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet Route of administration from EDQM, ROA, see https://standardterms.edqm.eu/#"] ; # 
+  fhir:immutable [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "20001000" ] ;
+         fhir:display [ fhir:v "Auricular use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Anwendung am Ohr" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ωτική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía ótica" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie auriculaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso auricolare" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso auricular" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20002000" ] ;
+         fhir:display [ fhir:v "Beak dipping" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Eintauchen des Schnabels" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χορήγηση με εμβάπτιση ράμφους" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Administración por inmersión del pico" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Administration par trempage du bec" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Immersione del becco" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso aculear" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20002500" ] ;
+         fhir:display [ fhir:v "Buccal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Buccale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Παρειακή χορήγηση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía bucal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie buccogingivale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Somministrazione buccale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso bucal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20003000" ] ;
+         fhir:display [ fhir:v "Cutaneous use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Anwendung auf der Haut" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Δερματική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso cutáneo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie cutanée" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso cutaneo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso cutâneo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20004000" ] ;
+         fhir:display [ fhir:v "Dental use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "dentale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Οδοντική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso dental" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie dentaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso dentale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso dental" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20005000" ] ;
+         fhir:display [ fhir:v "Dipping" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Badebehandlung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εμβάπτιση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Baño" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Trempage" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Immersione" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Banho medicamentoso" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20006000" ] ;
+         fhir:display [ fhir:v "Endocervical use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "endozervikale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοτραχηλική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía endocervical" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie endocervicale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso endocervicale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via endocervical" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20007000" ] ;
+         fhir:display [ fhir:v "Endosinusial use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Anwendung in den Nebenhöhlen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδορρινοκολπική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía endosinusal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie endosinusale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso endosinusiale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso endossinusal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20008000" ] ;
+         fhir:display [ fhir:v "Endotracheopulmonary use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "endotracheopulmonale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοτραχειοπνευμονική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía endotraqueopulmonar" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie endotrachéobronchique" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso endotracheobronchiale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via endotraqueobrônquica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20009000" ] ;
+         fhir:display [ fhir:v "Epidural use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "epidurale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Επισκληρίδιος χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía epidural" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie péridurale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso epidurale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via epidural" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20010000" ] ;
+         fhir:display [ fhir:v "Epilesional use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "zum Auftragen auf die Wunde" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χρήση επί της βλάβης" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso epilesional" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie épilésionnelle" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso epilesionale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso epilesional" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20011000" ] ;
+         fhir:display [ fhir:v "Extraamniotic use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "extraamniotische Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εξωαμνιακή χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía extraamniótica" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie extra-amniotique" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso extra-amniotico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via extra-amniótica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20011500" ] ;
+         fhir:display [ fhir:v "Extracorporeal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "extrakorporale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εξωσωματική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso extracorporal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie extracorporelle" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso extracorporeo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso extracorpóreo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20012000" ] ;
+         fhir:display [ fhir:v "Foot-stab use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Fussstichapplikation" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χορήγηση με νύγμα πέλματος" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Punción en la almohadilla plantar" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Administration par transfixion dans les pattes" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso podale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso intrapodal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20013000" ] ;
+         fhir:display [ fhir:v "Gastroenteral use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "gastrointestinale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Γαστρεντερική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía gastroentérica" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie gastro-entérale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso gastrointestinale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via gastroentérica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20013500" ] ;
+         fhir:display [ fhir:v "Gastric use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "zur Anwendung mittels Magensonde" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Γαστρική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "uso gástrico" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie gastrique" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso gastrico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via gástrica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20014000" ] ;
+         fhir:display [ fhir:v "Gingival use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Anwendung am Zahnfleisch" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χρήση επί των ούλων" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso gingival" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie gingivale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso gengivale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso gengival" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20015000" ] ;
+         fhir:display [ fhir:v "Haemodialysis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Hämodialyse" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Αιμοδιαπίδυση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Hemodiálisis" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Hémodialyse" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Emodialisi" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Hemodiálise" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20015500" ] ;
+         fhir:display [ fhir:v "Implantation" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "zur Implantation" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εμφύτευση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Implantación" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Implantation" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Impianto" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Implantação" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20015700" ] ;
+         fhir:display [ fhir:v "In drinking water use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "zum Eingeben über das Trinkwasser" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χορήγηση με το πόσιμο νερό" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Administración en agua de bebida" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Administration dans l'eau de boisson" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Somministrazione in acqua da bere" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Administração na água de bebida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20016000" ] ;
+         fhir:display [ fhir:v "In drinking water/milk use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "zum Eingeben über das Trinkwasser/ die Milch" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χορήγηση με το πόσιμο νερό/γάλα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Administración en agua de bebida o en leche" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Administration dans l'eau de boisson/ le lait" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Somministrazione in acqua da bere/latte" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Alimento medicamentoso líquido" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20017000" ] ;
+         fhir:display [ fhir:v "In ovo" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "in das Ei" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "in ovo χορήγηση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "In ovo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "In ovo" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "In ovo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via transcoriónica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20018000" ] ;
+         fhir:display [ fhir:v "In-feed use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "zum Eingeben über das Futter" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χορήγηση εντός τροφής" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Administración en el alimento" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Administration dans l'alimentation" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Somministrazione con il mangime" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Alimento medicamentoso sólido" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20019000" ] ;
+         fhir:display [ fhir:v "In-hive use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Anwendung im Bienenstock" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοκυψελική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso en las colmenas" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Traitement dans la ruche" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Trattamento in alveare" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Aplicação apícola" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20019500" ] ;
+         fhir:display [ fhir:v "Infiltration" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Infiltration" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Διήθηση (ιατρ.)" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Infiltración" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Infiltration" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Infiltrazione" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Infiltração" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20020000" ] ;
+         fhir:display [ fhir:v "Inhalation use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "zur Inhalation" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χρήση δια εισπνοής" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía inhalatoria" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie inhalée" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso inalatorio" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via inalatoria" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20021000" ] ;
+         fhir:display [ fhir:v "Intestinal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intestinale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εντερική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso intestinal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intestinale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intestinale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intestinal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20022000" ] ;
+         fhir:display [ fhir:v "Intraamniotic use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intraamniotische Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοαμνιακή χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intraamniótica" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intraamniotique" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intra-amniotico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intra-amniótica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20023000" ] ;
+         fhir:display [ fhir:v "Intraarterial use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intraarterielle Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοαρτηριακή χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intraarterial" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intraartérielle" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso endoarterioso" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intra-arterial" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20024000" ] ;
+         fhir:display [ fhir:v "Intraarticular use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intraartikuläre Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοαρθρική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intraarticular" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intraarticulaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intra-articolare" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intra-articular" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20025000" ] ;
+         fhir:display [ fhir:v "Intrabursal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intrabursale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοθυλακική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intrasinovial" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intrabursale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intrabursale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intrassinovial" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20025500" ] ;
+         fhir:display [ fhir:v "Intracameral use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intrakamerale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χορήγηση ενδοθαλαμική στον οφθαλμικό" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso intracameral" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intracamérulaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intracamerale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via Intracameral" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20026000" ] ;
+         fhir:display [ fhir:v "Intracardiac use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intracardiale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοκαρδιακή χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intracardiaca" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intracardiaque" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intracardiaco" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intracardíaca" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20026500" ] ;
+         fhir:display [ fhir:v "Intracartilaginous use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intrakartilaginäre Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοχόνδρειος χορήγηση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso intracartilaginoso" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intracartilagineuse" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intracartilagineo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intracartilaginosa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20027000" ] ;
+         fhir:display [ fhir:v "Intracavernous use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intrakavernöse Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοσηραγγική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intracavernosa" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intracaverneuse" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intracavernoso" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intracavernosa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20027010" ] ;
+         fhir:display [ fhir:v "Intracerebral use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Intrazerebrale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοεγκεφαλική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "VÍA INTRACEREBRAL" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intracérébrale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intracerebrale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intracerebral" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20028000" ] ;
+         fhir:display [ fhir:v "Intracervical use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intrazervikale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοτραχηλική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intracervical" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intracervicale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intracervicale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intracervical" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20028300" ] ;
+         fhir:display [ fhir:v "Intracholangiopancreatic use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "zur Anwendung in der Cholangiopankreatikographie" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοχολαγγειοπαγκρεατική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso intracolangiopancreático" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intracholangiopancréatique" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intracolangiopancreatico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intracolangiopancreática" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20028500" ] ;
+         fhir:display [ fhir:v "Intracisternal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intracisternale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χορήγηση ενδοκοιλιακή στο κεντρικό νευρικό σύστημα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso intracisternal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intracisternale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intracisternale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intracisternal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20029000" ] ;
+         fhir:display [ fhir:v "Intracoronary use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intrakoronare Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοστεφανιαία χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intracoronaria" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intracoronaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intracoronarico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intracoronária" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20030000" ] ;
+         fhir:display [ fhir:v "Intradermal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intradermale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοδερμική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intradérmica" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intradermique" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intradermico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intradérmica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20031000" ] ;
+         fhir:display [ fhir:v "Intradiscal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intradiskale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδομεσοσπονδύλια χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intradiscal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intradiscale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intradiscale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intradiscal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20031500" ] ;
+         fhir:display [ fhir:v "Intraepidermal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intraepidermale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοεπιδερμική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intraepidérmica" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intraépidermique" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intraepidermico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intraepidérmica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20031700" ] ;
+         fhir:display [ fhir:v "Intraglandular use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intraglanduläre Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοαδενική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso intraglandular" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intraglandulaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intraghiandolare" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intraglandular" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20032000" ] ;
+         fhir:display [ fhir:v "Intralesional use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intraläsionale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοβλαβική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intralesional" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intralésionnelle" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intralesionale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso intralesional" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20033000" ] ;
+         fhir:display [ fhir:v "Intralymphatic use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intralymphatische Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδολεμφαγγειακή χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intralinfática" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intralymphatique" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intralinfatico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intralinfática" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20034000" ] ;
+         fhir:display [ fhir:v "Intramammary use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intramammäre Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδομαστική οδός" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intramamaria" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intramammaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Per uso intramammario" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intramamária" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20035000" ] ;
+         fhir:display [ fhir:v "Intramuscular use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intramuskuläre Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδομυική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intramuscular" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intramusculaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intramuscolare" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intramuscular" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20036000" ] ;
+         fhir:display [ fhir:v "Intraocular use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intraokulare Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοφθάλμια χορήγηση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intraocular" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intraoculaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intraoculare" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso intraocular" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20036500" ] ;
+         fhir:display [ fhir:v "Intraosseous use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intraossäre Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοοστική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intraósea" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intraosseuse" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intraosseo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso intraósseo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20037000" ] ;
+         fhir:display [ fhir:v "Intrapericardial use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Intraperikardial" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοπερικαρδιακή χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intrapericárdica" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intrapéricardiaque" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intrapericardico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intrapericárdica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20038000" ] ;
+         fhir:display [ fhir:v "Intraperitoneal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intraperitoneale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοπεριτοναϊκή χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intraperitoneal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intrapéritonéale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intraperitoneale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intraperitoneal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20039000" ] ;
+         fhir:display [ fhir:v "Intrapleural use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intrapleurale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοϋπεζωκοτική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intrapleural" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intrapleurale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intrapleurico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intrapleural" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20039200" ] ;
+         fhir:display [ fhir:v "Intraportal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intraportale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοπυλαία χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso intraportal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intraportale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intraportale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intraportal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20039500" ] ;
+         fhir:display [ fhir:v "Intraprostatic use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intraprostatische Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοπροστατική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso intraprostático" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intraprostatique" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intraprostatico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intraprostática" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20039800" ] ;
+         fhir:display [ fhir:v "Intrapulmonary use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intrapulmonale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοπνευμονική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso intrapulmonar" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intrabronchique" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intrabronchiale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intrapulmonar" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20040000" ] ;
+         fhir:display [ fhir:v "Intraruminal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intraruminale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδομεγαλοκοιλιοκή χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intrarruminal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intraruminale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Per uso intraruminale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intrarruminal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20041000" ] ;
+         fhir:display [ fhir:v "Intrasternal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intrasternale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοστερνική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intraesternal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intrasternale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intrasternale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intraesternal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20042000" ] ;
+         fhir:display [ fhir:v "Intrathecal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intrathekale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδορραχιαία χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intratecal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intrathécale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intratecale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intratecal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20043000" ] ;
+         fhir:display [ fhir:v "Intratumoral use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intratumorale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοογκική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intratumoral" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intratumorale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intratumorale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intratumoral" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20044000" ] ;
+         fhir:display [ fhir:v "Intrauterine use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intrauterine Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδομήτρια χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intrauterina" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intra-utérine" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intrauterino" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intrauterina" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20045000" ] ;
+         fhir:display [ fhir:v "Intravenous use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intravenöse Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοφλέβια χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intravenosa" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intraveineuse" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso endovenoso" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intravenosa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20046000" ] ;
+         fhir:display [ fhir:v "Intravesical use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intravesikale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοκυστική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intravesical" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intravésicale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso endovescicale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intravesical" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20047000" ] ;
+         fhir:display [ fhir:v "Intravitreal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intravitreale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοϋαλωδης χορήγηση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intravítrea" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intravitréenne" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intravitreo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso intravítreo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20047500" ] ;
+         fhir:display [ fhir:v "Iontophoresis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "zur Iontophorese" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ιοντοφόρηση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Iontoforesis" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Iontophorèse" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Iontoforesi" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Iontoforese" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20048000" ] ;
+         fhir:display [ fhir:v "Laryngopharyngeal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "zur Anwendung im Rachen und am Kehlkopf" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Λαρυγγοφαρυγγική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso laringofaríngeo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie laryngopharyngée" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso laringofaringeo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso laringofaríngeo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20048500" ] ;
+         fhir:display [ fhir:v "Nail use" ]
+       ] [
+         fhir:code [ fhir:v "20049000" ] ;
+         fhir:display [ fhir:v "Nasal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "nasale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ρινική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía nasal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie nasale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso nasale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via nasal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20050000" ] ;
+         fhir:display [ fhir:v "Nebulisation use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "zum Vernebeln" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χορήγηση με εκνέφωση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Nebulización" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Administration par nébulisation" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Nebulizzazione" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Nebulização" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20051000" ] ;
+         fhir:display [ fhir:v "Ocular use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Anwendung am Auge" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Οφθαλμική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía oftálmica" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie ophtalmique" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso oftalmico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso oftálmico" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20052000" ] ;
+         fhir:display [ fhir:v "Oculonasal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "okulonasale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Οφθαλμορρινική ενστάλλαξη" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía oculonasal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie oculonasale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Per uso oculonasale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via oculonasal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "zum Einnehmen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Από στόματος χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía oral" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie orale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso orale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via oral" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20054000" ] ;
+         fhir:display [ fhir:v "Oromucosal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Anwendung in der Mundhöhle" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χρήση στο στοματικό βλεννογόνο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía bucal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie buccale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Per mucosa orale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via bucal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20055000" ] ;
+         fhir:display [ fhir:v "Oropharyngeal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "zur Anwendung im Mund- und Rachenraum" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Στοματοφαρυγγική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso bucofaríngeo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie oropharyngée" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso orofaringeo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso orofaríngeo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20056000" ] ;
+         fhir:display [ fhir:v "Paravertebral use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "paravertebrale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Παρασπονδυλική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía paravertebral" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie paravertébrale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso paravertebrale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via paravertebral" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20057000" ] ;
+         fhir:display [ fhir:v "Periarticular use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "periartikuläre Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Περιαρθρική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía periarticular" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie périarticulaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso periarticolare" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via periarticular" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20058000" ] ;
+         fhir:display [ fhir:v "Perineural use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "perineurale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Περινευρική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía perineural" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie périneurale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso perineurale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via perineural" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20059000" ] ;
+         fhir:display [ fhir:v "Periodontal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "periodontale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Περιοδοντική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso periodontal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie périodontale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso periodontale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso periodontal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20059300" ] ;
+         fhir:display [ fhir:v "Periosseous use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "periossäre Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Περιοστική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso perióseo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie périosseuse" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso periosseo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via perióssea" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20059400" ] ;
+         fhir:display [ fhir:v "Peritumoral use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "peritumorale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Περιογκική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso peritumoral" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie péritumorale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso peritumorale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via peritumoral" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20059500" ] ;
+         fhir:display [ fhir:v "Posterior juxtascleral use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "posteriore juxtasclerale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χρήση στο οπίσθιο μέρος του σκληρού χιτώνα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía yuxtaescleral posterior" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie juxta-sclérale postérieure" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso iuxtasclerale posteriore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via justa-escleral posterior" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20060000" ] ;
+         fhir:display [ fhir:v "Pour-on use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Übergießen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Επίχυση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Unción dorsal continua" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Pour-on" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Pour-on" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Unção contínua" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20061000" ] ;
+         fhir:display [ fhir:v "Rectal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "rektale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ορθική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía rectal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie rectale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso rettale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via retal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20061500" ] ;
+         fhir:display [ fhir:v "Retrobulbar use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "retrobulbäre Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Οπισθοβολβική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso retrobulbar" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie rétrobulbaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso retrobulbare" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via retrobulbar" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20062000" ] ;
+         fhir:display [ fhir:v "Route of administration not applicable" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Art der Anwendung nicht spezifizierbar" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Οδός χορήγησης μη εφαρμοζόμενη ή μη εξειδικευόμενη" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Otra vía" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Autre(s)" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Via di somministrazione non specificabile" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via de administração não especificada" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20063000" ] ;
+         fhir:display [ fhir:v "Skin scarification" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Einritzen der Haut" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σκαριφισμός" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Escarificación" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Scarification" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Scarificazione" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Escarificação" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20064000" ] ;
+         fhir:display [ fhir:v "Spot-on use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Auftropfen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Επίχυση σε σημείο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Unción dorsal puntual" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Spot-on" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Spot-on" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Unção punctiforme" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20065000" ] ;
+         fhir:display [ fhir:v "Subconjunctival use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "subkonjunktivale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Υποεπιπεφυκωτική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía subconjuntival" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie sous-conjonctivale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso subcongiuntivale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via subconjuntival" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20066000" ] ;
+         fhir:display [ fhir:v "Subcutaneous use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "subkutane Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Υποδόρια χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía subcutánea" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie sous-cutanée" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso sottocutaneo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via subcutânea" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20067000" ] ;
+         fhir:display [ fhir:v "Sublingual use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Sublingual" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Υπογλώσσια χρήοη" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía sublingual" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie sublinguale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso sublinguale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via sublingual" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20067500" ] ;
+         fhir:display [ fhir:v "Submucosal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "submuköse Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Υποβλεννογόνειος χορήγηση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía submucosal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie sous-muqueuse" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso sottomucosale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via submucosa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20068000" ] ;
+         fhir:display [ fhir:v "Teat use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Zitzenbehandlung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Θηλαία χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso mamario externo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Administration mammaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso mammario" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso mamário externo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20069000" ] ;
+         fhir:display [ fhir:v "Top-dressing use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Aufstreuen auf das Futter" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χορήγηση με επίπαση πάνω στην τροφή" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Administración sobre el alimento" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Administration par saupoudrage sur l'alimentation" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Somministrazione mediante dispersione superficiale sugli alimenti" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Dispersão superficial no alimento" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20070000" ] ;
+         fhir:display [ fhir:v "Transdermal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "transdermale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Διαδερμική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía transdérmica" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie transdermique" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso transdermico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via transdérmica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20071000" ] ;
+         fhir:display [ fhir:v "Urethral use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Anwendung in der Harnröhre" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ουρηθρική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía uretral" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie urétrale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso uretrale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via uretral" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20072000" ] ;
+         fhir:display [ fhir:v "Vaginal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "vaginale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Κολπική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía vaginal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie vaginale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso vaginale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso vaginal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20073000" ] ;
+         fhir:display [ fhir:v "Water-borne use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Anwendung im Wasser" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Διυδατική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso en el medio acuático" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Balnéation dans l'eau" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Trattamento per immersione" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Uso no meio aquático" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20074000" ] ;
+         fhir:display [ fhir:v "Wing-web-stab use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Flügelstichapplikation" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χορήγηση με νύγμα πτέρυγας" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Punción en la membrana del ala" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Administration par transfixion" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Puntura alare" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Inoculação alar" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20080000" ] ;
+         fhir:display [ fhir:v "Intracerebroventricular use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intracerebroventrikuläre Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενδοεγκεφαλοκοιλιακή χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intracerebroventricular" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intracérébroventriculaire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intracerebroventricolare" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intracerebroventricular" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20081000" ] ;
+         fhir:display [ fhir:v "Subretinal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "subretinale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Υπαμφιβληστροειδική χρήση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Uso subretinal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie subrétinale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso sottoretinico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via subretiniana" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20084000" ] ;
+         fhir:display [ fhir:v "Intracorneal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "intracorneale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intracorneal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie intracornéenne" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso intracorneale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intracorneal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20086000" ] ;
+         fhir:display [ fhir:v "Intraputaminal use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Intraputaminale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía intraputaminal" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Intraputaminale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via intraputaminal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20087000" ] ;
+         fhir:display [ fhir:v "Extrapleural use" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "extrapleurale Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vía extrapleural" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Voie extrapleurale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Uso extrapleurico" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Via extrapleural" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

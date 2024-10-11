@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/administration-method> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "administration-method"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet administration-method</b></p><a name=\"administration-method\"> </a><a name=\"hcadministration-method\"> </a><a name=\"administration-method-en-US\"> </a><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0004</td><td>Administration</td></tr><tr><td>0005</td><td>Application</td></tr><tr><td>0006</td><td>Bathing</td></tr><tr><td>0007</td><td>Chewing</td></tr><tr><td>0008</td><td>Gargling</td></tr><tr><td>0009</td><td>Infusion</td></tr><tr><td>0010</td><td>Inhalation</td></tr><tr><td>0011</td><td>Injection</td></tr><tr><td>0012</td><td>Insertion</td></tr><tr><td>0013</td><td>Instillation</td></tr><tr><td>0014</td><td>Orodispersion</td></tr><tr><td>0015</td><td>Rinsing/washing</td></tr><tr><td>0017</td><td>Spraying</td></tr><tr><td>0018</td><td>Sucking</td></tr><tr><td>0019</td><td>Swallowing</td></tr><tr><td>0020</td><td>Not specified</td></tr><tr><td>0111</td><td>Burning</td></tr><tr><td>0112</td><td>Dialysis</td></tr><tr><td>0113</td><td>Implantation</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://unicom-project.eu/fhir/ValueSet/administration-method"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "AdministrationMethod"] ; # 
+  fhir:title [ fhir:v "EDQM Administration Method"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-10-11T10:53:19+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet Administration method from EDQM, AME, see https://standardterms.edqm.eu/#"] ; # 
+  fhir:immutable [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "0004" ] ;
+         fhir:display [ fhir:v "Administration" ]
+       ] [
+         fhir:code [ fhir:v "0005" ] ;
+         fhir:display [ fhir:v "Application" ]
+       ] [
+         fhir:code [ fhir:v "0006" ] ;
+         fhir:display [ fhir:v "Bathing" ]
+       ] [
+         fhir:code [ fhir:v "0007" ] ;
+         fhir:display [ fhir:v "Chewing" ]
+       ] [
+         fhir:code [ fhir:v "0008" ] ;
+         fhir:display [ fhir:v "Gargling" ]
+       ] [
+         fhir:code [ fhir:v "0009" ] ;
+         fhir:display [ fhir:v "Infusion" ]
+       ] [
+         fhir:code [ fhir:v "0010" ] ;
+         fhir:display [ fhir:v "Inhalation" ]
+       ] [
+         fhir:code [ fhir:v "0011" ] ;
+         fhir:display [ fhir:v "Injection" ]
+       ] [
+         fhir:code [ fhir:v "0012" ] ;
+         fhir:display [ fhir:v "Insertion" ]
+       ] [
+         fhir:code [ fhir:v "0013" ] ;
+         fhir:display [ fhir:v "Instillation" ]
+       ] [
+         fhir:code [ fhir:v "0014" ] ;
+         fhir:display [ fhir:v "Orodispersion" ]
+       ] [
+         fhir:code [ fhir:v "0015" ] ;
+         fhir:display [ fhir:v "Rinsing/washing" ]
+       ] [
+         fhir:code [ fhir:v "0017" ] ;
+         fhir:display [ fhir:v "Spraying" ]
+       ] [
+         fhir:code [ fhir:v "0018" ] ;
+         fhir:display [ fhir:v "Sucking" ]
+       ] [
+         fhir:code [ fhir:v "0019" ] ;
+         fhir:display [ fhir:v "Swallowing" ]
+       ] [
+         fhir:code [ fhir:v "0020" ] ;
+         fhir:display [ fhir:v "Not specified" ]
+       ] [
+         fhir:code [ fhir:v "0111" ] ;
+         fhir:display [ fhir:v "Burning" ]
+       ] [
+         fhir:code [ fhir:v "0112" ] ;
+         fhir:display [ fhir:v "Dialysis" ]
+       ] [
+         fhir:code [ fhir:v "0113" ] ;
+         fhir:display [ fhir:v "Implantation" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

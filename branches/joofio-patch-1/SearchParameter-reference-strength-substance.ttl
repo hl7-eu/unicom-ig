@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/SearchParameter/reference-strength-substance> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "reference-strength-substance"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>reference-strength-substance</h2><p>Parameter <code>reference-strength-substance</code>:<code>token</code></p><div><p>Possiblity to search ingredient for substance.strength.referenceStrength.substance.concept</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/5.0.0-snapshot3/ingredient.html\">Ingredient</a></td></tr><tr><td>Expression</td><td><code>Ingredient.substance.strength.referenceStrength.substance.concept</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  ]; # 
+  fhir:SearchParameter.url [ fhir:value "http://unicom-project.eu/fhir/SearchParameter/reference-strength-substance"]; # 
+  fhir:SearchParameter.version [ fhir:value "0.1.0"]; # 
+  fhir:SearchParameter.name [ fhir:value "reference-strength-substance"]; # 
+  fhir:SearchParameter.status [ fhir:value "active"]; # 
+  fhir:SearchParameter.date [ fhir:value "2023-02-24T10:33:27+00:00"^^xsd:dateTime]; # 
+  fhir:SearchParameter.publisher [ fhir:value "UNICOM"]; # 
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:SearchParameter.description [ fhir:value "Possiblity to search ingredient for substance.strength.referenceStrength.substance.concept"]; # 
+  fhir:SearchParameter.code [ fhir:value "reference-strength-substance"]; # 
+  fhir:SearchParameter.base [
+     fhir:value "Ingredient";
+     fhir:index 0
+  ]; # 
+  fhir:SearchParameter.type [ fhir:value "token"]; # 
+  fhir:SearchParameter.expression [ fhir:value "Ingredient.substance.strength.referenceStrength.substance.concept"]; # 
+  fhir:SearchParameter.processingMode [ fhir:value "normal"] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/SearchParameter/reference-strength-substance.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

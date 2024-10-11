@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="CanifugCremolum-EE-Cream-Medication-Item"/>
+  <meta>
+    <profile value="http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication CanifugCremolum-EE-Cream-Medication-Item</b></p><a name="CanifugCremolum-EE-Cream-Medication-Item"> </a><a name="hcCanifugCremolum-EE-Cream-Medication-Item"> </a><a name="CanifugCremolum-EE-Cream-Medication-Item-en-US"> </a><p><b>doseForm</b>: <span title="Codes:{https://standardterms.edqm.eu 10901000}">Vaginal cream</span></p><p><b>totalVolume</b>: 20 gram<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg = 'g')</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000092074}">CLOTRIMAZOLE</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 10 milligram<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 gram<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg = 'g')</span></p></blockquote></div>
+  </text>
+  <doseForm>
+    <coding>
+      <system value="https://standardterms.edqm.eu"/>
+      <code value="10901000"/>
+      <display value="Vaginal cream"/>
+    </coding>
+  </doseForm>
+  <totalVolume>
+    <value value="20"/>
+    <unit value="gram"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="g"/>
+  </totalVolume>
+  <ingredient>
+    <item>
+      <concept>
+        <coding>
+          <system value="https://spor.ema.europa.eu/v2/SubstanceDefinition"/>
+          <code value="100000092074"/>
+          <display value="CLOTRIMAZOLE"/>
+        </coding>
+      </concept>
+    </item>
+    <isActive value="true"/>
+    <strengthRatio>
+      <numerator>
+        <value value="10"/>
+        <unit value="milligram"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </numerator>
+      <denominator>
+        <value value="1"/>
+        <unit value="gram"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="g"/>
+      </denominator>
+    </strengthRatio>
+  </ingredient>
+</Medication>

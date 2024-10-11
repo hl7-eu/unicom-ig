@@ -1,0 +1,449 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/substance-sms-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "substance-sms-cs"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://spor.ema.europa.eu/v2/SubstanceDefinition</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100000085259<a name=\"substance-sms-cs-100000085259\"> </a></td><td>Amlodipine</td></tr><tr><td style=\"white-space:nowrap\">100000089370<a name=\"substance-sms-cs-100000089370\"> </a></td><td>AMLODIPINE MALEATE</td></tr><tr><td style=\"white-space:nowrap\">100000089571<a name=\"substance-sms-cs-100000089571\"> </a></td><td>Amlodipine mesilate</td></tr><tr><td style=\"white-space:nowrap\">100000090079<a name=\"substance-sms-cs-100000090079\"> </a></td><td>Amlodipine besilate</td></tr><tr><td style=\"white-space:nowrap\">300000027652<a name=\"substance-sms-cs-300000027652\"> </a></td><td>Amlodipine benzoate</td></tr><tr><td style=\"white-space:nowrap\">100000091596<a name=\"substance-sms-cs-100000091596\"> </a></td><td>Amoxicillin</td></tr><tr><td style=\"white-space:nowrap\">100000090113<a name=\"substance-sms-cs-100000090113\"> </a></td><td>Amoxicillin sodium</td></tr><tr><td style=\"white-space:nowrap\">100000092629<a name=\"substance-sms-cs-100000092629\"> </a></td><td>Amoxicillin trihydrate</td></tr><tr><td style=\"white-space:nowrap\">100000092127<a name=\"substance-sms-cs-100000092127\"> </a></td><td>Carbamazepine</td></tr><tr><td style=\"white-space:nowrap\">100000092667<a name=\"substance-sms-cs-100000092667\"> </a></td><td>Cefuroxime</td></tr><tr><td style=\"white-space:nowrap\">100000093039<a name=\"substance-sms-cs-100000093039\"> </a></td><td>Cefuroxime axetil</td></tr><tr><td style=\"white-space:nowrap\">100000091436<a name=\"substance-sms-cs-100000091436\"> </a></td><td>Cefuroxime sodium</td></tr><tr><td style=\"white-space:nowrap\">100000089842<a name=\"substance-sms-cs-100000089842\"> </a></td><td>Clavulanic acid</td></tr><tr><td style=\"white-space:nowrap\">100000093061<a name=\"substance-sms-cs-100000093061\"> </a></td><td>Potassium clavulanate</td></tr><tr><td style=\"white-space:nowrap\">100000092121<a name=\"substance-sms-cs-100000092121\"> </a></td><td>Ciclosporin</td></tr><tr><td style=\"white-space:nowrap\">100000155842<a name=\"substance-sms-cs-100000155842\"> </a></td><td>CICLOSPORIN A</td></tr><tr><td style=\"white-space:nowrap\">100000084546<a name=\"substance-sms-cs-100000084546\"> </a></td><td>Clomipramine</td></tr><tr><td style=\"white-space:nowrap\">100000090503<a name=\"substance-sms-cs-100000090503\"> </a></td><td>Clomipramine hydrochloride</td></tr><tr><td style=\"white-space:nowrap\">100000092074<a name=\"substance-sms-cs-100000092074\"> </a></td><td>Clotrimazole</td></tr><tr><td style=\"white-space:nowrap\">100000088282<a name=\"substance-sms-cs-100000088282\"> </a></td><td>Chloroquine</td></tr><tr><td style=\"white-space:nowrap\">100000084735<a name=\"substance-sms-cs-100000084735\"> </a></td><td>CHLOROQUINE HYDROCHLORIDE</td></tr><tr><td style=\"white-space:nowrap\">100000090551<a name=\"substance-sms-cs-100000090551\"> </a></td><td>Chloroquine sulfate</td></tr><tr><td style=\"white-space:nowrap\">100000092628<a name=\"substance-sms-cs-100000092628\"> </a></td><td>Chloroquine phosphate</td></tr><tr><td style=\"white-space:nowrap\">100000129152<a name=\"substance-sms-cs-100000129152\"> </a></td><td>CHLOROQUINE DIPHOSPHATE</td></tr><tr><td style=\"white-space:nowrap\">100000092362<a name=\"substance-sms-cs-100000092362\"> </a></td><td>Diazepam</td></tr><tr><td style=\"white-space:nowrap\">100000091074<a name=\"substance-sms-cs-100000091074\"> </a></td><td>Diclofenac diethylamine</td></tr><tr><td style=\"white-space:nowrap\">100000092368<a name=\"substance-sms-cs-100000092368\"> </a></td><td>Diclofenac potassium</td></tr><tr><td style=\"white-space:nowrap\">100000092798<a name=\"substance-sms-cs-100000092798\"> </a></td><td>Diclofenac</td></tr><tr><td style=\"white-space:nowrap\">100000085789<a name=\"substance-sms-cs-100000085789\"> </a></td><td>Diclofenac epolamine</td></tr><tr><td style=\"white-space:nowrap\">100000092272<a name=\"substance-sms-cs-100000092272\"> </a></td><td>Diclofenac sodium</td></tr><tr><td style=\"white-space:nowrap\">100000092375<a name=\"substance-sms-cs-100000092375\"> </a></td><td>Drospirenone</td></tr><tr><td style=\"white-space:nowrap\">100000092359<a name=\"substance-sms-cs-100000092359\"> </a></td><td>Enalapril</td></tr><tr><td style=\"white-space:nowrap\">100000080222<a name=\"substance-sms-cs-100000080222\"> </a></td><td>Enalaprilat</td></tr><tr><td style=\"white-space:nowrap\">100000091343<a name=\"substance-sms-cs-100000091343\"> </a></td><td>Enalapril maleate</td></tr><tr><td style=\"white-space:nowrap\">100000153305<a name=\"substance-sms-cs-100000153305\"> </a></td><td>Enalapril sodium</td></tr><tr><td style=\"white-space:nowrap\">100000085598<a name=\"substance-sms-cs-100000085598\"> </a></td><td>Enoxaparin</td></tr><tr><td style=\"white-space:nowrap\">100000090152<a name=\"substance-sms-cs-100000090152\"> </a></td><td>Enoxaparin sodium</td></tr><tr><td style=\"white-space:nowrap\">100000090229<a name=\"substance-sms-cs-100000090229\"> </a></td><td>Ergocalciferol</td></tr><tr><td style=\"white-space:nowrap\">100000091721<a name=\"substance-sms-cs-100000091721\"> </a></td><td>Ethinylestradiol</td></tr><tr><td style=\"white-space:nowrap\">100000087614<a name=\"substance-sms-cs-100000087614\"> </a></td><td>Glyceryl trinitrate</td></tr><tr><td style=\"white-space:nowrap\">100000084238<a name=\"substance-sms-cs-100000084238\"> </a></td><td>Goserelin</td></tr><tr><td style=\"white-space:nowrap\">100000086673<a name=\"substance-sms-cs-100000086673\"> </a></td><td>Goserelin acetate</td></tr><tr><td style=\"white-space:nowrap\">100000090365<a name=\"substance-sms-cs-100000090365\"> </a></td><td>Ibuprofen</td></tr><tr><td style=\"white-space:nowrap\">100000085009<a name=\"substance-sms-cs-100000085009\"> </a></td><td>Ibuprofen sodium</td></tr><tr><td style=\"white-space:nowrap\">100000090111<a name=\"substance-sms-cs-100000090111\"> </a></td><td>Ibuprofen lysine</td></tr><tr><td style=\"white-space:nowrap\">100000092228<a name=\"substance-sms-cs-100000092228\"> </a></td><td>Ibuprofen arginine</td></tr><tr><td style=\"white-space:nowrap\">100000175414<a name=\"substance-sms-cs-100000175414\"> </a></td><td>Ibuprofen isobutanolammonium</td></tr><tr><td style=\"white-space:nowrap\">100000140150<a name=\"substance-sms-cs-100000140150\"> </a></td><td>Ibuprofen sodium dihydrate</td></tr><tr><td style=\"white-space:nowrap\">100000133453<a name=\"substance-sms-cs-100000133453\"> </a></td><td>Ibuprofen D,L-lysinate</td></tr><tr><td style=\"white-space:nowrap\">100000079980<a name=\"substance-sms-cs-100000079980\"> </a></td><td>IBUPROFEN 1-IDROSSIMETIL-1-METIL ETILAMMONIO</td></tr><tr><td style=\"white-space:nowrap\">100000091825<a name=\"substance-sms-cs-100000091825\"> </a></td><td>Imatinib mesilate</td></tr><tr><td style=\"white-space:nowrap\">100000091894<a name=\"substance-sms-cs-100000091894\"> </a></td><td>Imatinib</td></tr><tr><td style=\"white-space:nowrap\">100000085460<a name=\"substance-sms-cs-100000085460\"> </a></td><td>Insulin glargine</td></tr><tr><td style=\"white-space:nowrap\">100000091697<a name=\"substance-sms-cs-100000091697\"> </a></td><td>Itraconazole</td></tr><tr><td style=\"white-space:nowrap\">100000091713<a name=\"substance-sms-cs-100000091713\"> </a></td><td>Lidocaine</td></tr><tr><td style=\"white-space:nowrap\">100000139489<a name=\"substance-sms-cs-100000139489\"> </a></td><td>Lidocaine hydrochloride</td></tr><tr><td style=\"white-space:nowrap\">100000085448<a name=\"substance-sms-cs-100000085448\"> </a></td><td>Metformin</td></tr><tr><td style=\"white-space:nowrap\">100000091366<a name=\"substance-sms-cs-100000091366\"> </a></td><td>Metformin hydrochloride</td></tr><tr><td style=\"white-space:nowrap\">100000091840<a name=\"substance-sms-cs-100000091840\"> </a></td><td>METFORMIN EMBONATE</td></tr><tr><td style=\"white-space:nowrap\">100000091372<a name=\"substance-sms-cs-100000091372\"> </a></td><td>Morphine</td></tr><tr><td style=\"white-space:nowrap\">100000076239<a name=\"substance-sms-cs-100000076239\"> </a></td><td>Morphine sulfate</td></tr><tr><td style=\"white-space:nowrap\">100000090494<a name=\"substance-sms-cs-100000090494\"> </a></td><td>Morphine hydrochloride</td></tr><tr><td style=\"white-space:nowrap\">100000076257<a name=\"substance-sms-cs-100000076257\"> </a></td><td>MORPHINE TARTRATE</td></tr><tr><td style=\"white-space:nowrap\">100000092047<a name=\"substance-sms-cs-100000092047\"> </a></td><td>Omeprazole</td></tr><tr><td style=\"white-space:nowrap\">100000085918<a name=\"substance-sms-cs-100000085918\"> </a></td><td>Omeprazole magnesium</td></tr><tr><td style=\"white-space:nowrap\">100000090186<a name=\"substance-sms-cs-100000090186\"> </a></td><td>Omeprazole sodium</td></tr><tr><td style=\"white-space:nowrap\">100000090270<a name=\"substance-sms-cs-100000090270\"> </a></td><td>Paracetamol</td></tr><tr><td style=\"white-space:nowrap\">100000091461<a name=\"substance-sms-cs-100000091461\"> </a></td><td>Perindopril</td></tr><tr><td style=\"white-space:nowrap\">100000088816<a name=\"substance-sms-cs-100000088816\"> </a></td><td>Perindopril arginine</td></tr><tr><td style=\"white-space:nowrap\">100000091602<a name=\"substance-sms-cs-100000091602\"> </a></td><td>Perindopril tert-butylamine</td></tr><tr><td style=\"white-space:nowrap\">100000130680<a name=\"substance-sms-cs-100000130680\"> </a></td><td>Perindopril tert-butylamin monohydrate</td></tr><tr><td style=\"white-space:nowrap\">100000141420<a name=\"substance-sms-cs-100000141420\"> </a></td><td>Perindopril tosilate</td></tr><tr><td style=\"white-space:nowrap\">100000091518<a name=\"substance-sms-cs-100000091518\"> </a></td><td>Calcium carbonate</td></tr><tr><td style=\"white-space:nowrap\">100000091629<a name=\"substance-sms-cs-100000091629\"> </a></td><td>Salbutamol</td></tr><tr><td style=\"white-space:nowrap\">100000091786<a name=\"substance-sms-cs-100000091786\"> </a></td><td>Simvastatin</td></tr><tr><td style=\"white-space:nowrap\">100000092635<a name=\"substance-sms-cs-100000092635\"> </a></td><td>Hydrocortisone</td></tr><tr><td style=\"white-space:nowrap\">100000086186<a name=\"substance-sms-cs-100000086186\"> </a></td><td>Meglumine acetrizoate</td></tr><tr><td style=\"white-space:nowrap\">100000092550<a name=\"substance-sms-cs-100000092550\"> </a></td><td>Hydrocortisone sodium succinate</td></tr><tr><td style=\"white-space:nowrap\">100000086711<a name=\"substance-sms-cs-100000086711\"> </a></td><td>Hydrocortisone valerate</td></tr><tr><td style=\"white-space:nowrap\">100000092260<a name=\"substance-sms-cs-100000092260\"> </a></td><td>Hydrocortisone acetate</td></tr><tr><td style=\"white-space:nowrap\">100000085172<a name=\"substance-sms-cs-100000085172\"> </a></td><td>Hydrocortisone butyrate</td></tr><tr><td style=\"white-space:nowrap\">100000084215<a name=\"substance-sms-cs-100000084215\"> </a></td><td>Hydrocortisone aceponate</td></tr><tr><td style=\"white-space:nowrap\">100000086187<a name=\"substance-sms-cs-100000086187\"> </a></td><td>Hydrocortisone cipionate</td></tr><tr><td style=\"white-space:nowrap\">100000086691<a name=\"substance-sms-cs-100000086691\"> </a></td><td>HYDROCORTISONE SODIUM PHOSPHATE</td></tr><tr><td style=\"white-space:nowrap\">100000090564<a name=\"substance-sms-cs-100000090564\"> </a></td><td>Salbutamol sulfate</td></tr><tr><td style=\"white-space:nowrap\">100000115886<a name=\"substance-sms-cs-100000115886\"> </a></td><td>Tafluprost</td></tr><tr><td style=\"white-space:nowrap\">100000089193<a name=\"substance-sms-cs-100000089193\"> </a></td><td>Teriparatide</td></tr><tr><td style=\"white-space:nowrap\">100000084795<a name=\"substance-sms-cs-100000084795\"> </a></td><td>TERIPARATIDE ACETATE</td></tr><tr><td style=\"white-space:nowrap\">100000077198<a name=\"substance-sms-cs-100000077198\"> </a></td><td>Tramadol</td></tr><tr><td style=\"white-space:nowrap\">100000093275<a name=\"substance-sms-cs-100000093275\"> </a></td><td>Tramadol hydrochloride</td></tr><tr><td style=\"white-space:nowrap\">100000089314<a name=\"substance-sms-cs-100000089314\"> </a></td><td>Trastuzumab</td></tr><tr><td style=\"white-space:nowrap\">100000128434<a name=\"substance-sms-cs-100000128434\"> </a></td><td>Trastuzumab emtansine</td></tr><tr><td style=\"white-space:nowrap\">100000174462<a name=\"substance-sms-cs-100000174462\"> </a></td><td>Trastuzumab deruxtecan</td></tr><tr><td style=\"white-space:nowrap\">100000089154<a name=\"substance-sms-cs-100000089154\"> </a></td><td>Varenicline</td></tr><tr><td style=\"white-space:nowrap\">100000091746<a name=\"substance-sms-cs-100000091746\"> </a></td><td>Varenicline tartrate</td></tr><tr><td style=\"white-space:nowrap\">100000091531<a name=\"substance-sms-cs-100000091531\"> </a></td><td>Ethinylestradiol betadex clathrate</td></tr><tr><td style=\"white-space:nowrap\">100000090052<a name=\"substance-sms-cs-100000090052\"> </a></td><td>LACTOSE</td></tr><tr><td style=\"white-space:nowrap\">100000084759<a name=\"substance-sms-cs-100000084759\"> </a></td><td>PLACEBO</td></tr><tr><td style=\"white-space:nowrap\">100000093305<a name=\"substance-sms-cs-100000093305\"> </a></td><td>Lactose monohydrate</td></tr><tr><td style=\"white-space:nowrap\">100000088000<a name=\"substance-sms-cs-100000088000\"> </a></td><td>Valsartan</td></tr><tr><td style=\"white-space:nowrap\">100000091737<a name=\"substance-sms-cs-100000091737\"> </a></td><td>Hydrochlorothiazide</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://spor.ema.europa.eu/v2/SubstanceDefinition"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "Substance_SMS_CS"]; # 
+  fhir:CodeSystem.title [ fhir:value "Substances EMA SPOR SMS"]; # 
+  fhir:CodeSystem.status [ fhir:value "draft"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-24T10:33:27+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "UNICOM"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "UNICOM PPL substances from EMA SPOR SMS"]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "101"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "100000085259" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Amlodipine" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "100000089370" ];
+     fhir:CodeSystem.concept.display [ fhir:value "AMLODIPINE MALEATE" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "100000089571" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Amlodipine mesilate" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "100000090079" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Amlodipine besilate" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "300000027652" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Amlodipine benzoate" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091596" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Amoxicillin" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "100000090113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Amoxicillin sodium" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092629" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Amoxicillin trihydrate" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092127" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Carbamazepine" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092667" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cefuroxime" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "100000093039" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cefuroxime axetil" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091436" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cefuroxime sodium" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "100000089842" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Clavulanic acid" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "100000093061" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Potassium clavulanate" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092121" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ciclosporin" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "100000155842" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CICLOSPORIN A" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "100000084546" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Clomipramine" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "100000090503" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Clomipramine hydrochloride" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092074" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Clotrimazole" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "100000088282" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chloroquine" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "100000084735" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CHLOROQUINE HYDROCHLORIDE" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "100000090551" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chloroquine sulfate" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092628" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chloroquine phosphate" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "100000129152" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CHLOROQUINE DIPHOSPHATE" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092362" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Diazepam" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091074" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Diclofenac diethylamine" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092368" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Diclofenac potassium" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092798" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Diclofenac" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "100000085789" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Diclofenac epolamine" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092272" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Diclofenac sodium" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092375" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Drospirenone" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092359" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Enalapril" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "100000080222" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Enalaprilat" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091343" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Enalapril maleate" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "100000153305" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Enalapril sodium" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "100000085598" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Enoxaparin" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "100000090152" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Enoxaparin sodium" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "100000090229" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ergocalciferol" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091721" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ethinylestradiol" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "100000087614" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Glyceryl trinitrate" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "100000084238" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Goserelin" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "100000086673" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Goserelin acetate" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "100000090365" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ibuprofen" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "100000085009" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ibuprofen sodium" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "100000090111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ibuprofen lysine" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092228" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ibuprofen arginine" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "100000175414" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ibuprofen isobutanolammonium" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "100000140150" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ibuprofen sodium dihydrate" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "100000133453" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ibuprofen D,L-lysinate" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "100000079980" ];
+     fhir:CodeSystem.concept.display [ fhir:value "IBUPROFEN 1-IDROSSIMETIL-1-METIL ETILAMMONIO" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091825" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Imatinib mesilate" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091894" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Imatinib" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "100000085460" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Insulin glargine" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091697" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Itraconazole" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091713" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lidocaine" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "100000139489" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lidocaine hydrochloride" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "100000085448" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Metformin" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091366" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Metformin hydrochloride" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091840" ];
+     fhir:CodeSystem.concept.display [ fhir:value "METFORMIN EMBONATE" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091372" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Morphine" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "100000076239" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Morphine sulfate" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "100000090494" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Morphine hydrochloride" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "100000076257" ];
+     fhir:CodeSystem.concept.display [ fhir:value "MORPHINE TARTRATE" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092047" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Omeprazole" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "100000085918" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Omeprazole magnesium" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "100000090186" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Omeprazole sodium" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "100000090270" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Paracetamol" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091461" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Perindopril" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "100000088816" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Perindopril arginine" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091602" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Perindopril tert-butylamine" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "100000130680" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Perindopril tert-butylamin monohydrate" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "100000141420" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Perindopril tosilate" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091518" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Calcium carbonate" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091629" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Salbutamol" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091786" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Simvastatin" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092635" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hydrocortisone" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "100000086186" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Meglumine acetrizoate" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092550" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hydrocortisone sodium succinate" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "100000086711" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hydrocortisone valerate" ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "100000092260" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hydrocortisone acetate" ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "100000085172" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hydrocortisone butyrate" ]
+  ], [
+     fhir:index 81;
+     fhir:CodeSystem.concept.code [ fhir:value "100000084215" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hydrocortisone aceponate" ]
+  ], [
+     fhir:index 82;
+     fhir:CodeSystem.concept.code [ fhir:value "100000086187" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hydrocortisone cipionate" ]
+  ], [
+     fhir:index 83;
+     fhir:CodeSystem.concept.code [ fhir:value "100000086691" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HYDROCORTISONE SODIUM PHOSPHATE" ]
+  ], [
+     fhir:index 84;
+     fhir:CodeSystem.concept.code [ fhir:value "100000090564" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Salbutamol sulfate" ]
+  ], [
+     fhir:index 85;
+     fhir:CodeSystem.concept.code [ fhir:value "100000115886" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tafluprost" ]
+  ], [
+     fhir:index 86;
+     fhir:CodeSystem.concept.code [ fhir:value "100000089193" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Teriparatide" ]
+  ], [
+     fhir:index 87;
+     fhir:CodeSystem.concept.code [ fhir:value "100000084795" ];
+     fhir:CodeSystem.concept.display [ fhir:value "TERIPARATIDE ACETATE" ]
+  ], [
+     fhir:index 88;
+     fhir:CodeSystem.concept.code [ fhir:value "100000077198" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tramadol" ]
+  ], [
+     fhir:index 89;
+     fhir:CodeSystem.concept.code [ fhir:value "100000093275" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tramadol hydrochloride" ]
+  ], [
+     fhir:index 90;
+     fhir:CodeSystem.concept.code [ fhir:value "100000089314" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Trastuzumab" ]
+  ], [
+     fhir:index 91;
+     fhir:CodeSystem.concept.code [ fhir:value "100000128434" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Trastuzumab emtansine" ]
+  ], [
+     fhir:index 92;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174462" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Trastuzumab deruxtecan" ]
+  ], [
+     fhir:index 93;
+     fhir:CodeSystem.concept.code [ fhir:value "100000089154" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Varenicline" ]
+  ], [
+     fhir:index 94;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091746" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Varenicline tartrate" ]
+  ], [
+     fhir:index 95;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091531" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ethinylestradiol betadex clathrate" ]
+  ], [
+     fhir:index 96;
+     fhir:CodeSystem.concept.code [ fhir:value "100000090052" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LACTOSE" ]
+  ], [
+     fhir:index 97;
+     fhir:CodeSystem.concept.code [ fhir:value "100000084759" ];
+     fhir:CodeSystem.concept.display [ fhir:value "PLACEBO" ]
+  ], [
+     fhir:index 98;
+     fhir:CodeSystem.concept.code [ fhir:value "100000093305" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lactose monohydrate" ]
+  ], [
+     fhir:index 99;
+     fhir:CodeSystem.concept.code [ fhir:value "100000088000" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Valsartan" ]
+  ], [
+     fhir:index 100;
+     fhir:CodeSystem.concept.code [ fhir:value "100000091737" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hydrochlorothiazide" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/substance-sms-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

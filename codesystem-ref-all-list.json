@@ -1,0 +1,677 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-ingredientstrength",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MedicationIngredientStrengthCodes",
+      "title" : "Medication Ingredient Strength Codes",
+      "description" : "Medication Ingredient Strength Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.2062"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medication-ingredientstrength.html" : "Medication Ingredient Strength Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MedicationStatusCodes",
+      "title" : "Medication Status Codes",
+      "description" : "Medication Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1380"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medication-status.html" : "Medication Status Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/administrable-dose-form",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AdministrableDoseForm",
+      "title" : "Administrable Dose Form",
+      "description" : "Dose form for a medication, in the form suitable for administering to the patient, after mixing, where necessary.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2032"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-administrable-dose-form.html" : "Administrable Dose Form"
+    },
+    {
+      "url" : "http://hl7.org/fhir/animal-tissue-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AnimalTissueType",
+      "title" : "Animal Tissue Type",
+      "description" : "A tissue type of an animal.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2033"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-animal-tissue-type.html" : "Animal Tissue Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/combined-dose-form",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CombinedDoseForm",
+      "title" : "Combined Dose Form",
+      "description" : "Dose forms for a product as a whole, considering all individual parts, but before any mixing",
+      "oids" : ["2.16.840.1.113883.4.642.4.1923"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-combined-dose-form.html" : "Combined Dose Form"
+    },
+    {
+      "url" : "http://hl7.org/fhir/identifier-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "oids" : ["2.16.840.1.113883.4.642.1.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-identifier-use.html" : "IdentifierUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ingredient-function",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IngredientFunction",
+      "title" : "Ingredient Function",
+      "description" : "A classification of the ingredient identifying its precise purpose(s) in the drug product (beyond e.g. active/inactive).",
+      "oids" : ["2.16.840.1.113883.4.642.4.2079"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-ingredient-function.html" : "Ingredient Function"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ingredient-manufacturer-role",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IngredientManufacturerRole",
+      "title" : "Ingredient Manufacturer Role",
+      "description" : "The way in which this manufacturer is associated with the ingredient. For example whether it is a possible one (others allowed), or an exclusive authorized one for this ingredient. Note that this is not the manufacturing process role",
+      "oids" : ["2.16.840.1.113883.4.642.4.2078"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-ingredient-manufacturer-role.html" : "Ingredient Manufacturer Role"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ingredient-role",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IngredientRole",
+      "title" : "Ingredient Role",
+      "description" : "A classification of the ingredient identifying its purpose within the product, e.g. active, inactive.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2080"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-ingredient-role.html" : "Ingredient Role"
+    },
+    {
+      "url" : "http://hl7.org/fhir/legal-status-of-supply",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "LegalStatusOfSupply",
+      "title" : "Legal Status Of Supply",
+      "description" : "The prescription supply types appropriate to a medicinal product",
+      "oids" : ["2.16.840.1.113883.4.642.4.1912"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-legal-status-of-supply.html" : "Legal Status Of Supply"
+    },
+    {
+      "url" : "http://hl7.org/fhir/medicinal-product-additional-monitoring",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AdditionalMonitoring",
+      "title" : "Additional Monitoring",
+      "description" : "Extra monitoring defined for a Medicinal Product.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1919"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicinal-product-additional-monitoring.html" : "Additional Monitoring"
+    },
+    {
+      "url" : "http://hl7.org/fhir/medicinal-product-confidentiality",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ProductConfidentiality",
+      "title" : "Product Confidentiality",
+      "description" : "Confidentiality rating, e.g. commercial sensitivity for a Medicinal Product.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1913"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicinal-product-confidentiality.html" : "Product Confidentiality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/medicinal-product-contact-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ProductContactType",
+      "title" : "Product Contact Type",
+      "description" : "Contact type for a Medicinal Product.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1925"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicinal-product-contact-type.html" : "Product Contact Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/medicinal-product-cross-reference-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ProductCrossReferenceType",
+      "title" : "Product Cross Reference Type",
+      "description" : "Relationship to another Medicinal Product.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1921"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicinal-product-cross-reference-type.html" : "Product Cross Reference Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/medicinal-product-domain",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MedicinalProductDomain",
+      "title" : "Medicinal Product Domain",
+      "description" : "Applicable domain for this product (e.g. human, veterinary).",
+      "oids" : ["2.16.840.1.113883.4.642.4.1917"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicinal-product-domain.html" : "Medicinal Product Domain"
+    },
+    {
+      "url" : "http://hl7.org/fhir/medicinal-product-name-part-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ProductNamePartType",
+      "title" : "Product Name Part Type",
+      "description" : "Type of part of a name for a Medicinal Product.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1924"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicinal-product-name-part-type.html" : "Product Name Part Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/medicinal-product-name-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ProductNameType",
+      "title" : "Product Name Type",
+      "description" : "Type of a name for a Medicinal Product.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1922"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicinal-product-name-type.html" : "Product Name Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/medicinal-product-package-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MedicinalProductPackageType",
+      "title" : "Medicinal Product Package Type",
+      "description" : "Types of medicinal product packs",
+      "oids" : ["2.16.840.1.113883.4.642.4.1918"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicinal-product-package-type.html" : "Medicinal Product Package Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/medicinal-product-pediatric-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PediatricUse",
+      "title" : "Pediatric Use",
+      "description" : "Suitability for age groups, in particular children.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1914"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicinal-product-pediatric-use.html" : "Pediatric Use"
+    },
+    {
+      "url" : "http://hl7.org/fhir/medicinal-product-special-measures",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "SpecialMeasures",
+      "title" : "Special Measures",
+      "description" : "Extra measures defined for a Medicinal Product, such as requirement to conduct post-authorization studies.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1915"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicinal-product-special-measures.html" : "Special Measures"
+    },
+    {
+      "url" : "http://hl7.org/fhir/medicinal-product-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MedicinalProductType",
+      "title" : "Medicinal Product Type",
+      "description" : "Overall defining type of this Medicinal Product.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1916"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-medicinal-product-type.html" : "Medicinal Product Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/package-material",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PackageMaterial",
+      "title" : "Package Material",
+      "description" : "A material used in the construction of packages and their components.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1964"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-package-material.html" : "Package Material"
+    },
+    {
+      "url" : "http://hl7.org/fhir/package-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PackageType",
+      "title" : "Package Type",
+      "description" : "A high level categorisation of a package.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1963"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-package-type.html" : "Package Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/packaging-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PackagingType",
+      "title" : "Packaging Type",
+      "description" : "A type of packaging.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1966"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-packaging-type.html" : "Packaging Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/product-intended-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ProductIntendedUse",
+      "title" : "Product Intended Use",
+      "description" : "ProductIntendedUse",
+      "oids" : ["2.16.840.1.113883.4.642.4.1908"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-product-intended-use.html" : "Product Intended Use"
+    },
+    {
+      "url" : "http://hl7.org/fhir/publication-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "oids" : ["2.16.840.1.113883.4.642.4.4"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-publication-status.html" : "PublicationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/quantity-comparator",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "oids" : ["2.16.840.1.113883.4.642.4.60"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-quantity-comparator.html" : "QuantityComparator"
+    },
+    {
+      "url" : "http://hl7.org/fhir/regulated-authorization-basis",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "RegulatedAuthorizationBasis",
+      "title" : "Regulated Authorization Basis",
+      "description" : "RegulatedAuthorizationBasis",
+      "oids" : ["2.16.840.1.113883.4.642.4.1907"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-regulated-authorization-basis.html" : "Regulated Authorization Basis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/regulated-authorization-case-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "RegulatedAuthorizationCaseType",
+      "title" : "Regulated Authorization Case Type",
+      "description" : "RegulatedAuthorizationCaseType",
+      "oids" : ["2.16.840.1.113883.4.642.4.1910"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-regulated-authorization-case-type.html" : "Regulated Authorization Case Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/regulated-authorization-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "RegulatedAuthorizationType",
+      "title" : "Regulated Authorization Type",
+      "description" : "RegulatedAuthorizationType",
+      "oids" : ["2.16.840.1.113883.4.642.4.1909"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-regulated-authorization-type.html" : "Regulated Authorization Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/target-species",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "TargetSpecies",
+      "title" : "Target Species",
+      "description" : "A species for which a medicinal product is intended.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2030"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-target-species.html" : "Target Species"
+    },
+    {
+      "url" : "http://hl7.org/fhir/unit-of-presentation",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "UnitOfPresentation",
+      "title" : "Unit Of Presentation",
+      "description" : "The presentation type in which an administrable medicinal product is given to a patient.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2031"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-unit-of-presentation.html" : "Unit Of Presentation"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-organization-type.html" : "Organization Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-identifier-type.html" : "Identifier Type Codes"
+    },
+    {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "ValueSet-ehdsi-ucum-unit.html" : "MyHealth@EU Unit of Measurement (UCUM)"
+    },
+    {
+      "url" : "http://www.whocc.no/atc",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "WC",
+      "title" : "WHO ATC",
+      "description" : "WHO ATC",
+      "oids" : ["2.16.840.1.113883.6.73"],
+      "uses" : {
+      },
+      "ValueSet-whoatc-unicom.html" : "WHO ATC"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/100000000002",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Country_EMA_CS",
+      "title" : "Country EMA",
+      "description" : "Country codes by EMA. Based on ISO 3166-1-2, recoded with RMS codes.",
+      "uses" : {
+      },
+      "ValueSet-country-ema-vs.html" : "EMA SPOR Country"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/100000000004",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Domain_EMA_CS",
+      "title" : "Domain EMA",
+      "description" : "Domain of the medicinal product (human, veterinary, both)",
+      "uses" : {
+      },
+      "ValueSet-domain-vs.html" : "EMA SPOR Domain"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/100000072049",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RegulatoryStatus_EMA_CS",
+      "title" : "Regulatory Entitlement Status EMA SPOR",
+      "description" : "Regulatory Entitlement Status EMA SPOR",
+      "uses" : {
+      },
+      "ValueSet-regulatory-status-spor-vs.html" : "EMA SPOR Regulatory Entitlement Status"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/100000072051",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LegalStatusForTheSupply_EMA_CS",
+      "title" : "Legal Status for the Supply EMA",
+      "description" : "Legal status of supply. EMA SPOR RMS list.",
+      "uses" : {
+      },
+      "ValueSet-legal-status-for-the-supply-vs.html" : "EMA SPOR Legal Status for the Supply"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/100000072052",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Marketing_Status_EMA_CS",
+      "title" : "Marketing Status EMA",
+      "description" : "Marketing status of the product in given country. EMA SPOR RMS codes.",
+      "uses" : {
+      },
+      "ValueSet-marketing-status-spor-vs.html" : "EMA SPOR Marketing Status"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/100000072057",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Language_EMA_CS",
+      "title" : "Language EMA",
+      "description" : "Language codes by EMA. Based on BCP-47, recoded with RMS codes.",
+      "uses" : {
+      },
+      "ValueSet-language-ema-vs.html" : "EMA SPOR Language"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/100000073345",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Routes_And_Methods_Of_Administration_EMA_CS",
+      "title" : "Routes and Methods of Administration EMA",
+      "description" : "Routes and methods of medication administration. Based on EDQM, re-coded with RMS codes.",
+      "uses" : {
+      },
+      "ValueSet-routes-and-methods-of-administration-vs.html" : "EMA SPOR Routes and Methods of Administration"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/100000073346",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Packaging_EMA_CS",
+      "title" : "Packaging EMA SPOR",
+      "description" : "Package types, including closures and administration devices. Based on EDQM, recoded with EMA SPOR RMS codes.",
+      "uses" : {
+      },
+      "ValueSet-packaging-spor-vs.html" : "EMA SPOR Packaging"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/100000093533",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ATC_Human_EMA",
+      "title" : "ATC Human EMA",
+      "description" : "ATC classification recoded with EMA SPOR RMS codes. Flat list, WHO ATC codes provided in description field for easier use.",
+      "uses" : {
+      },
+      "ValueSet-atc-spor-vs.html" : "EMA SPOR ATC"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/100000110633",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "UnitOfMeasurement_EMA_CS",
+      "title" : "Unit of Measurement EMA",
+      "description" : "Unit of Measurement. Based on UCUM. Re-coded with RMS codes.",
+      "uses" : {
+      },
+      "ValueSet-all-units-vs.html" : "EMA SPOR All Units Combined",
+      "ValueSet-unit-of-measurement-vs.html" : "EMA SPOR Unit of Measurement"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/200000000004",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PharmaceuticalDoseForm_EMA_CS",
+      "title" : "Pharmaceutical Dose Form EMA",
+      "description" : "Pharmaceutical dose form. Based on EDQM, re-coded with RMS codes.",
+      "uses" : {
+      },
+      "ConceptMap-edqm-ema-pharmaceuticalDoseForm-cm.html" : "EDQM-SPOR Pharmaceutical dose forms",
+      "ValueSet-authorised-doseform-vs.html" : "EMA SPOR Authorised Dose Form",
+      "ValueSet-pharmaceutical-doseform-vs.html" : "EMA SPOR Pharmaceutical Dose Form"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/200000000006",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CombinedPharmaceuticalDoseForm_EMA_CS",
+      "title" : "Combined Pharmaceutical Dose Form EMA",
+      "description" : "Combined Pharmaceutical Dose Form. Based on EDQM. Re-coded with RMS codes. Used only for authorised dose form.",
+      "uses" : {
+      },
+      "ValueSet-authorised-doseform-vs.html" : "EMA SPOR Authorised Dose Form"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/200000000007",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CombinedTerm_EMA_CS",
+      "title" : "Combined Term EMA",
+      "description" : "Combined Term. Based on EDQM. Re-coded with RMS codes. Only used for authorised dose form.",
+      "uses" : {
+      },
+      "ValueSet-authorised-doseform-vs.html" : "EMA SPOR Authorised Dose Form"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/200000000008",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CombinationPackage_EMA_CS",
+      "title" : "Combination Package EMA",
+      "description" : "Dose forms for combination packages. Based on EDQM. Re-coded with RMS codes. Only used for authorised dose form.",
+      "uses" : {
+      },
+      "ValueSet-authorised-doseform-vs.html" : "EMA SPOR Authorised Dose Form"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/200000000014",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "UnitOfPresentation_EMA_CS",
+      "title" : "Unit of Presentation EMA",
+      "description" : "Unit of presentation list from EMA SPOR. List id 200000000014. Content based on EDQM, re-coded with RMS codes.",
+      "uses" : {
+      },
+      "ValueSet-unit-of-presentation-vs.html" : "EMA SPOR Unit of Presentation",
+      "ValueSet-all-units-vs.html" : "EMA SPOR All Units Combined"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/200000003199",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Material_EMA_CS",
+      "title" : "Material EMA",
+      "description" : "Package material. EMA SPOR RMS list. Hierarchical.",
+      "uses" : {
+      },
+      "ValueSet-material-vs.html" : "EMA SPOR Material"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v1/lists/200000005003",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RecordStatus_EMA_CS",
+      "title" : "Record Status EMA SPOR",
+      "description" : "Record Entitlement Status EMA SPOR",
+      "uses" : {
+      },
+      "ValueSet-record-status-spor-vs.html" : "EMA SPOR Record Status"
+    },
+    {
+      "url" : "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Substance_SMS_CS",
+      "title" : "Substances EMA SPOR SMS",
+      "description" : "UNICOM PPL substances from EMA SPOR SMS",
+      "uses" : {
+      },
+      "ValueSet-substances-vs.html" : "EMA SPOR SMS Substances",
+      "ConceptMap-sms-snomed-substance-cm.html" : "SPOR-SNOMED CT substances"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages",
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-jurisdiction.html" : "Jurisdiction ValueSet",
+      "http://hl7.org/fhir/R5/valueset-country.html" : "Country ValueSet"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166:-2",
+      "version" : "2013-11",
+      "status" : "retired",
+      "name" : "Iso3166_2",
+      "title" : "ISO 3166 Part 2 Country Subdivision Codes",
+      "description" : "Identifies the coding system published in the ISO 3166-2 Standard for Country Subdivision codes. This standard is released periodically, and a new OID will be assigned by ISO for new editions.",
+      "oids" : ["1.0.3166.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-jurisdiction.html" : "Jurisdiction ValueSet"
+    }
+  ]
+}

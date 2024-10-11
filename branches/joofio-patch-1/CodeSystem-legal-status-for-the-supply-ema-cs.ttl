@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/legal-status-for-the-supply-ema-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "legal-status-for-the-supply-ema-cs"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://spor.ema.europa.eu/v1/lists/100000072051</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100000072076<a name=\"legal-status-for-the-supply-ema-cs-100000072076\"> </a></td><td>Medicinal product not subject to medical prescription</td></tr><tr><td style=\"white-space:nowrap\">100000072077<a name=\"legal-status-for-the-supply-ema-cs-100000072077\"> </a></td><td>Medicinal product on medical prescription for renewable or non-renewable delivery</td></tr><tr><td style=\"white-space:nowrap\">100000072078<a name=\"legal-status-for-the-supply-ema-cs-100000072078\"> </a></td><td>Medicinal product subject to restricted medical prescription</td></tr><tr><td style=\"white-space:nowrap\">100000072079<a name=\"legal-status-for-the-supply-ema-cs-100000072079\"> </a></td><td>Medicinal product on medical prescription for non-renewable delivery</td></tr><tr><td style=\"white-space:nowrap\">100000072084<a name=\"legal-status-for-the-supply-ema-cs-100000072084\"> </a></td><td>Medicinal product subject to medical prescription</td></tr><tr><td style=\"white-space:nowrap\">100000072085<a name=\"legal-status-for-the-supply-ema-cs-100000072085\"> </a></td><td>Medicinal product subject to special medical prescription</td></tr><tr><td style=\"white-space:nowrap\">100000072086<a name=\"legal-status-for-the-supply-ema-cs-100000072086\"> </a></td><td>Medicinal product on medical prescription for renewable delivery</td></tr><tr><td style=\"white-space:nowrap\">100000157313<a name=\"legal-status-for-the-supply-ema-cs-100000157313\"> </a></td><td>Medicinal product subject to special and restricted medical prescription</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000072051"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "LegalStatusForTheSupply_EMA_CS"]; # 
+  fhir:CodeSystem.title [ fhir:value "Legal Status for the Supply EMA"]; # 
+  fhir:CodeSystem.status [ fhir:value "draft"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-24T10:33:27+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "UNICOM"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Legal status of supply. EMA SPOR RMS list."]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "8"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072076" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicinal product not subject to medical prescription" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072077" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicinal product on medical prescription for renewable or non-renewable delivery" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072078" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicinal product subject to restricted medical prescription" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072079" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicinal product on medical prescription for non-renewable delivery" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072084" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicinal product subject to medical prescription" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072085" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicinal product subject to special medical prescription" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "100000072086" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicinal product on medical prescription for renewable delivery" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "100000157313" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicinal product subject to special and restricted medical prescription" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/legal-status-for-the-supply-ema-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

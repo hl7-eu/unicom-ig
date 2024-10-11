@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="CanifugCremolum-EE-Medication-Clinical"/>
+  <meta>
+    <profile value="http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication CanifugCremolum-EE-Medication-Clinical</b></p><a name="CanifugCremolum-EE-Medication-Clinical"> </a><a name="hcCanifugCremolum-EE-Medication-Clinical"> </a><a name="hcCanifugCremolum-EE-Medication-Clinical-en-US"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/fhir/mpId</code>/EE-100004795-10280, <code>http://ema.europa.eu/fhir/pcId</code>/EE-100004795-10280-1033692</p><p><b>marketingAuthorizationHolder</b>: <a href="Organization-LOC-100004795-Wolff-Arzneimittel.html">Organization Dr. August Wolff GmbH &amp; Co. KG Arzneimittel</a></p><p><b>doseForm</b>: <span title="Codes:{https://standardterms.edqm.eu 14001000}">Cream + pessary</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="Medication-CanifugCremolum-EE-Cream-Medication-Item.html">Medication: doseForm = Vaginal cream; totalVolume = 20 gram</a></td></tr></table></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="Medication-CanifugCremolum-EE-Pessary-Medication-Item.html">Medication: doseForm = Pessary; totalVolume = 6 Pessary</a></td></tr></table></blockquote></div>
+  </text>
+  <extension url="http://unicom-project.eu/fhir/StructureDefinition/medicinal-product-classification">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://www.whocc.no/atc"/>
+        <code value="G01AF02"/>
+        <display value="clotrimazole"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://unicom-project.eu/fhir/StructureDefinition/medicinal-product-name">
+    <valueString value="Canifug Cremolum"/>
+  </extension>
+  <extension url="http://unicom-project.eu/fhir/StructureDefinition/administrable-doseform">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://standardterms.edqm.eu"/>
+        <code value="10901000"/>
+        <display value="Vaginal cream"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://ema.europa.eu/fhir/mpId"/>
+    <value value="EE-100004795-10280"/>
+  </identifier>
+  <identifier>
+    <system value="http://ema.europa.eu/fhir/pcId"/>
+    <value value="EE-100004795-10280-1033692"/>
+  </identifier>
+  <marketingAuthorizationHolder>
+    <reference value="Organization/LOC-100004795-Wolff-Arzneimittel"/>
+  </marketingAuthorizationHolder>
+  <doseForm>
+    <coding>
+      <system value="https://standardterms.edqm.eu"/>
+      <code value="14001000"/>
+      <display value="Cream + pessary"/>
+    </coding>
+  </doseForm>
+  <ingredient>
+    <item>
+      <reference>
+        <reference value="Medication/CanifugCremolum-EE-Cream-Medication-Item"/>
+      </reference>
+    </item>
+  </ingredient>
+  <ingredient>
+    <item>
+      <reference>
+        <reference value="Medication/CanifugCremolum-EE-Pessary-Medication-Item"/>
+      </reference>
+    </item>
+  </ingredient>
+</Medication>

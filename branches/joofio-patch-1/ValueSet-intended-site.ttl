@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/intended-site> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "intended-site"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0021</td><td>Auricular</td></tr><tr><td>0022</td><td>Cutaneous/Transdermal</td></tr><tr><td>0023</td><td>Dental</td></tr><tr><td>0024</td><td>Environmental</td></tr><tr><td>0025</td><td>Extracorporeal</td></tr><tr><td>0026</td><td>Intramammary</td></tr><tr><td>0027</td><td>Intrauterine</td></tr><tr><td>0028</td><td>Intravesical/Urethral</td></tr><tr><td>0029</td><td>Nasal</td></tr><tr><td>0030</td><td>Ocular</td></tr><tr><td>0031</td><td>Oral</td></tr><tr><td>0032</td><td>Oromucosal</td></tr><tr><td>0033</td><td>Parenteral</td></tr><tr><td>0034</td><td>Pulmonary</td></tr><tr><td>0035</td><td>Rectal</td></tr><tr><td>0036</td><td>Vaginal</td></tr><tr><td>0037</td><td>Unknown/Miscellaneous</td></tr><tr><td>0105</td><td>Endocervical</td></tr><tr><td>0106</td><td>Gastric</td></tr><tr><td>0107</td><td>Gastroenteral</td></tr><tr><td>0108</td><td>Intestinal</td></tr><tr><td>0109</td><td>Intraperitoneal</td></tr><tr><td>0110</td><td>Oculonasal</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://unicom-project.eu/fhir/ValueSet/intended-site"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "IntendedSite"]; # 
+  fhir:ValueSet.title [ fhir:value "Intended site"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-24T10:33:27+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "UNICOM"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "ValueSet Intended site from EDQM, ISI, see https://standardterms.edqm.eu/#"]; # 
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://standardterms.edqm.eu" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0021" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Auricular" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0022" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cutaneous/Transdermal" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0023" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dental" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0024" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Environmental" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0025" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Extracorporeal" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0026" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intramammary" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0027" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intrauterine" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0028" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intravesical/Urethral" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0029" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasal" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0030" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ocular" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0031" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oral" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0032" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oromucosal" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0033" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Parenteral" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0034" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulmonary" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0035" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rectal" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0036" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vaginal" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0037" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unknown/Miscellaneous" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0105" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endocervical" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0106" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastric" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0107" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastroenteral" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0108" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intestinal" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0109" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraperitoneal" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0110" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oculonasal" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/intended-site.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

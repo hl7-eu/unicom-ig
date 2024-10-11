@@ -1,0 +1,546 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EDQM Closure - TTL Representation - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.56"}
+    h3,h4,h5,h6{--heading-prefix:"7.56"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+      <li>
+        <a href="testserver.html">Testing Tool Box</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EDQM Closure</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig/tree/master">https://github.com/hl7-eu/unicom-ig/tree/master</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-closure.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-closure.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-closure.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: EDQM Closure - TTL Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2024-10-11
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-closure.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-closure.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:ValueSet ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;closure&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet closure&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;closure\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcclosure\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;closure-en-US\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://standardterms.edqm.eu&lt;/code&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13070000&lt;/td&gt;&lt;td&gt;Valve&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13132000&lt;/td&gt;&lt;td&gt;Lid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30011000&lt;/td&gt;&lt;td&gt;Brush applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30013000&lt;/td&gt;&lt;td&gt;Cap&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30015000&lt;/td&gt;&lt;td&gt;Child-resistant closure&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30035000&lt;/td&gt;&lt;td&gt;Metering pump&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30036000&lt;/td&gt;&lt;td&gt;Metering valve&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30043000&lt;/td&gt;&lt;td&gt;Needle applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30047000&lt;/td&gt;&lt;td&gt;Pipette applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30056000&lt;/td&gt;&lt;td&gt;Screw cap&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30061000&lt;/td&gt;&lt;td&gt;Spray pump&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30062000&lt;/td&gt;&lt;td&gt;Spray valve&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30064000&lt;/td&gt;&lt;td&gt;Stopper&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Deutsch (German, de)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Greek (el)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Spanish (es)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;French (fr)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Italian (it)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Portuguese (pt)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13070000&lt;/td&gt;&lt;td&gt;Ventil&lt;/td&gt;&lt;td&gt;Βαλβίδα&lt;/td&gt;&lt;td&gt;Válvula&lt;/td&gt;&lt;td&gt;Valve&lt;/td&gt;&lt;td&gt;Valvola&lt;/td&gt;&lt;td&gt;Válvula&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13132000&lt;/td&gt;&lt;td&gt;Verschlusskappe&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Tapa a presión&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Coperchio di protezione&lt;/td&gt;&lt;td&gt;Tampa de pressão&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30011000&lt;/td&gt;&lt;td&gt;Verschluss mit Pinsel&lt;/td&gt;&lt;td&gt;Ψυκτροφόρο πώμα&lt;/td&gt;&lt;td&gt;Pincel aplicador&lt;/td&gt;&lt;td&gt;Embout avec pinceau&lt;/td&gt;&lt;td&gt;Tappo con applicatore a pennello&lt;/td&gt;&lt;td&gt;Fecho com pincel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30013000&lt;/td&gt;&lt;td&gt;Schutzkappe&lt;/td&gt;&lt;td&gt;Πώμα&lt;/td&gt;&lt;td&gt;Cápsula de cierre&lt;/td&gt;&lt;td&gt;Opercule&lt;/td&gt;&lt;td&gt;Capsula di chiusura&lt;/td&gt;&lt;td&gt;Cápsula de fecho&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30015000&lt;/td&gt;&lt;td&gt;kindergesicherter Verschluss&lt;/td&gt;&lt;td&gt;Πώμα ασφαλείας για παιδιά&lt;/td&gt;&lt;td&gt;Cierre de seguridad a prueba de niños&lt;/td&gt;&lt;td&gt;Fermeture de sécurité enfant&lt;/td&gt;&lt;td&gt;Chiusura a prova di bambino&lt;/td&gt;&lt;td&gt;Fecho resistente à abertura por crianças&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30035000&lt;/td&gt;&lt;td&gt;Dosierpumpe&lt;/td&gt;&lt;td&gt;Δοσιμετρική αντλία&lt;/td&gt;&lt;td&gt;Bomba dosificadora&lt;/td&gt;&lt;td&gt;Pompe doseuse&lt;/td&gt;&lt;td&gt;Pompa dosatrice&lt;/td&gt;&lt;td&gt;Fecho com bomba doseadora&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30036000&lt;/td&gt;&lt;td&gt;Dosierventil&lt;/td&gt;&lt;td&gt;Δοσιμετρική βαλβίδα&lt;/td&gt;&lt;td&gt;Válvula dosificadora&lt;/td&gt;&lt;td&gt;Valve doseuse&lt;/td&gt;&lt;td&gt;Valvola dosatrice&lt;/td&gt;&lt;td&gt;Fecho com válvula doseadora&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30043000&lt;/td&gt;&lt;td&gt;Verschluss mit Nadel&lt;/td&gt;&lt;td&gt;Σύστημα εφαρμογής με βελόνα&lt;/td&gt;&lt;td&gt;Cierre con aguja incorporada&lt;/td&gt;&lt;td&gt;Embout avec aiguille&lt;/td&gt;&lt;td&gt;Applicatore con ago&lt;/td&gt;&lt;td&gt;Fecho com agulha&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30047000&lt;/td&gt;&lt;td&gt;Verschluss mit Pipette&lt;/td&gt;&lt;td&gt;Ογκομετρικό πώμα&lt;/td&gt;&lt;td&gt;Pipeta aplicadora&lt;/td&gt;&lt;td&gt;Embout pipette&lt;/td&gt;&lt;td&gt;Chiusura con pipetta&lt;/td&gt;&lt;td&gt;Fecho com pipeta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30056000&lt;/td&gt;&lt;td&gt;Schraubdeckel&lt;/td&gt;&lt;td&gt;Βιδωτό πώμα&lt;/td&gt;&lt;td&gt;Cierre de rosca&lt;/td&gt;&lt;td&gt;Bouchon à vis&lt;/td&gt;&lt;td&gt;Tappo a vite&lt;/td&gt;&lt;td&gt;Fecho com rosca&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30061000&lt;/td&gt;&lt;td&gt;Sprühpumpe&lt;/td&gt;&lt;td&gt;Αντλία ψεκασμού&lt;/td&gt;&lt;td&gt;Bomba pulverizadora&lt;/td&gt;&lt;td&gt;Pompe pour pulvérisation&lt;/td&gt;&lt;td&gt;Pompa spray&lt;/td&gt;&lt;td&gt;Fecho com bomba nebulizadora&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30062000&lt;/td&gt;&lt;td&gt;Sprühventil&lt;/td&gt;&lt;td&gt;Βαλβίδα ψεκασμού&lt;/td&gt;&lt;td&gt;Válvula pulverizadora&lt;/td&gt;&lt;td&gt;Valve&lt;/td&gt;&lt;td&gt;Valvola spray&lt;/td&gt;&lt;td&gt;Fecho com válvula nebulizadora&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30064000&lt;/td&gt;&lt;td&gt;Stopfen&lt;/td&gt;&lt;td&gt;Πώμα εισχώρησης&lt;/td&gt;&lt;td&gt;Tapón&lt;/td&gt;&lt;td&gt;Bouchon&lt;/td&gt;&lt;td&gt;Tappo&lt;/td&gt;&lt;td&gt;Rolha&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://unicom-project.eu/fhir/ValueSet/closure&quot;^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;0.1.0&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Closure&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;EDQM Closure&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2024-10-11T11:06:08+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;UNICOM&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;UNICOM&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;http://unicom-project.eu&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;ValueSet Closure (for package description) from EDQM, CLO, see https://standardterms.edqm.eu/#&quot;] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.immutable">fhir:immutable</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">fhir:compose</a> [
+    ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">fhir:include</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;https://standardterms.edqm.eu&quot;^^xsd:anyURI ] ;
+      ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">fhir:concept</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;13070000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Valve&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Ventil&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;el&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Βαλβίδα&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Válvula&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;fr&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Valve&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Valvola&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Válvula&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;13132000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Lid&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Verschlusskappe&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tapa a presión&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Coperchio di protezione&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tampa de pressão&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;30011000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Brush applicator&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Verschluss mit Pinsel&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;el&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Ψυκτροφόρο πώμα&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Pincel aplicador&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;fr&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Embout avec pinceau&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tappo con applicatore a pennello&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Fecho com pincel&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;30013000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Cap&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Schutzkappe&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;el&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Πώμα&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Cápsula de cierre&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;fr&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Opercule&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Capsula di chiusura&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Cápsula de fecho&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;30015000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Child-resistant closure&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;kindergesicherter Verschluss&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;el&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Πώμα ασφαλείας για παιδιά&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Cierre de seguridad a prueba de niños&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;fr&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Fermeture de sécurité enfant&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Chiusura a prova di bambino&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Fecho resistente à abertura por crianças&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;30035000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Metering pump&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Dosierpumpe&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;el&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Δοσιμετρική αντλία&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Bomba dosificadora&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;fr&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Pompe doseuse&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Pompa dosatrice&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Fecho com bomba doseadora&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;30036000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Metering valve&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Dosierventil&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;el&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Δοσιμετρική βαλβίδα&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Válvula dosificadora&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;fr&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Valve doseuse&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Valvola dosatrice&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Fecho com válvula doseadora&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;30043000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Needle applicator&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Verschluss mit Nadel&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;el&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Σύστημα εφαρμογής με βελόνα&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Cierre con aguja incorporada&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;fr&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Embout avec aiguille&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Applicatore con ago&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Fecho com agulha&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;30047000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Pipette applicator&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Verschluss mit Pipette&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;el&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Ογκομετρικό πώμα&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Pipeta aplicadora&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;fr&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Embout pipette&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Chiusura con pipetta&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Fecho com pipeta&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;30056000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Screw cap&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Schraubdeckel&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;el&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Βιδωτό πώμα&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Cierre de rosca&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;fr&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Bouchon à vis&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tappo a vite&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Fecho com rosca&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;30061000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Spray pump&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sprühpumpe&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;el&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Αντλία ψεκασμού&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Bomba pulverizadora&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;fr&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Pompe pour pulvérisation&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Pompa spray&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Fecho com bomba nebulizadora&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;30062000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Spray valve&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Sprühventil&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;el&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Βαλβίδα ψεκασμού&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Válvula pulverizadora&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;fr&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Valve&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Valvola spray&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Fecho com válvula nebulizadora&quot; ]         ] )       ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;30064000&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Stopper&quot; ] ;
+        ( <a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">fhir:designation</a> [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;de&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Stopfen&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;el&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Πώμα εισχώρησης&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;es&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tapón&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;fr&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Bouchon&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;it&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Tappo&quot; ]         ] [
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;pt&quot; ] ;
+<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Rolha&quot; ]         ] )       ] )     ] )
+  ] . # 
+
+</code></pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Oct 11, 2024 11:06+0000">2024-10-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

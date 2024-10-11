@@ -1,0 +1,369 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/packaging-ema-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "packaging-ema-cs"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://spor.ema.europa.eu/v1/lists/100000073346</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100000073530<a name=\"packaging-ema-cs-100000073530\"> </a></td><td>Multidose container</td></tr><tr><td style=\"white-space:nowrap\">100000073520<a name=\"packaging-ema-cs-100000073520\"> </a></td><td>Injection syringe</td></tr><tr><td style=\"white-space:nowrap\">100000073529<a name=\"packaging-ema-cs-100000073529\"> </a></td><td>Mouthpiece</td></tr><tr><td style=\"white-space:nowrap\">100000073502<a name=\"packaging-ema-cs-100000073502\"> </a></td><td>Cap</td></tr><tr><td style=\"white-space:nowrap\">100000073513<a name=\"packaging-ema-cs-100000073513\"> </a></td><td>Fixed cryogenic vessel</td></tr><tr><td style=\"white-space:nowrap\">100000073500<a name=\"packaging-ema-cs-100000073500\"> </a></td><td>Brush applicator</td></tr><tr><td style=\"white-space:nowrap\">100000073495<a name=\"packaging-ema-cs-100000073495\"> </a></td><td>Barrel</td></tr><tr><td style=\"white-space:nowrap\">100000073496<a name=\"packaging-ema-cs-100000073496\"> </a></td><td>Blister</td></tr><tr><td style=\"white-space:nowrap\">100000073497<a name=\"packaging-ema-cs-100000073497\"> </a></td><td>Bottle</td></tr><tr><td style=\"white-space:nowrap\">100000073509<a name=\"packaging-ema-cs-100000073509\"> </a></td><td>Dredging container</td></tr><tr><td style=\"white-space:nowrap\">100000073511<a name=\"packaging-ema-cs-100000073511\"> </a></td><td>Dropper applicator</td></tr><tr><td style=\"white-space:nowrap\">100000073539<a name=\"packaging-ema-cs-100000073539\"> </a></td><td>Pipette applicator</td></tr><tr><td style=\"white-space:nowrap\">100000073490<a name=\"packaging-ema-cs-100000073490\"> </a></td><td>Ampoule</td></tr><tr><td style=\"white-space:nowrap\">100000073505<a name=\"packaging-ema-cs-100000073505\"> </a></td><td>Cup</td></tr><tr><td style=\"white-space:nowrap\">100000073506<a name=\"packaging-ema-cs-100000073506\"> </a></td><td>Dabbing applicator</td></tr><tr><td style=\"white-space:nowrap\">100000073508<a name=\"packaging-ema-cs-100000073508\"> </a></td><td>Dredging applicator</td></tr><tr><td style=\"white-space:nowrap\">100000073512<a name=\"packaging-ema-cs-100000073512\"> </a></td><td>Dropper container</td></tr><tr><td style=\"white-space:nowrap\">100000073517<a name=\"packaging-ema-cs-100000073517\"> </a></td><td>Inhaler</td></tr><tr><td style=\"white-space:nowrap\">100000073527<a name=\"packaging-ema-cs-100000073527\"> </a></td><td>Metering valve</td></tr><tr><td style=\"white-space:nowrap\">100000073535<a name=\"packaging-ema-cs-100000073535\"> </a></td><td>Needle applicator</td></tr><tr><td style=\"white-space:nowrap\">100000073519<a name=\"packaging-ema-cs-100000073519\"> </a></td><td>Injection needle</td></tr><tr><td style=\"white-space:nowrap\">100000073526<a name=\"packaging-ema-cs-100000073526\"> </a></td><td>Metering pump</td></tr><tr><td style=\"white-space:nowrap\">100000073523<a name=\"packaging-ema-cs-100000073523\"> </a></td><td>Jar</td></tr><tr><td style=\"white-space:nowrap\">100000073524<a name=\"packaging-ema-cs-100000073524\"> </a></td><td>Measuring device</td></tr><tr><td style=\"white-space:nowrap\">100000073525<a name=\"packaging-ema-cs-100000073525\"> </a></td><td>Measuring spoon</td></tr><tr><td style=\"white-space:nowrap\">100000073528<a name=\"packaging-ema-cs-100000073528\"> </a></td><td>Mobile cryogenic vessel</td></tr><tr><td style=\"white-space:nowrap\">100000073558<a name=\"packaging-ema-cs-100000073558\"> </a></td><td>Straw</td></tr><tr><td style=\"white-space:nowrap\">100000073531<a name=\"packaging-ema-cs-100000073531\"> </a></td><td>Multidose container with airless pump</td></tr><tr><td style=\"white-space:nowrap\">100000073532<a name=\"packaging-ema-cs-100000073532\"> </a></td><td>Multipuncturer</td></tr><tr><td style=\"white-space:nowrap\">100000073533<a name=\"packaging-ema-cs-100000073533\"> </a></td><td>Nasal applicator</td></tr><tr><td style=\"white-space:nowrap\">100000073534<a name=\"packaging-ema-cs-100000073534\"> </a></td><td>Nebuliser</td></tr><tr><td style=\"white-space:nowrap\">100000073536<a name=\"packaging-ema-cs-100000073536\"> </a></td><td>Nozzle</td></tr><tr><td style=\"white-space:nowrap\">100000073538<a name=\"packaging-ema-cs-100000073538\"> </a></td><td>Pipette</td></tr><tr><td style=\"white-space:nowrap\">200000024874<a name=\"packaging-ema-cs-200000024874\"> </a></td><td>Tablet tube</td></tr><tr><td style=\"white-space:nowrap\">100000073540<a name=\"packaging-ema-cs-100000073540\"> </a></td><td>Pouch</td></tr><tr><td style=\"white-space:nowrap\">100000073491<a name=\"packaging-ema-cs-100000073491\"> </a></td><td>Applicator</td></tr><tr><td style=\"white-space:nowrap\">100000073542<a name=\"packaging-ema-cs-100000073542\"> </a></td><td>Pre-filled gastroenteral tube</td></tr><tr><td style=\"white-space:nowrap\">100000073543<a name=\"packaging-ema-cs-100000073543\"> </a></td><td>Pre-filled pen</td></tr><tr><td style=\"white-space:nowrap\">100000073555<a name=\"packaging-ema-cs-100000073555\"> </a></td><td>Spray valve</td></tr><tr><td style=\"white-space:nowrap\">100000073545<a name=\"packaging-ema-cs-100000073545\"> </a></td><td>Pressurised container</td></tr><tr><td style=\"white-space:nowrap\">100000073554<a name=\"packaging-ema-cs-100000073554\"> </a></td><td>Spray pump</td></tr><tr><td style=\"white-space:nowrap\">100000073546<a name=\"packaging-ema-cs-100000073546\"> </a></td><td>Prick test applicator</td></tr><tr><td style=\"white-space:nowrap\">100000073547<a name=\"packaging-ema-cs-100000073547\"> </a></td><td>Sachet</td></tr><tr><td style=\"white-space:nowrap\">100000073550<a name=\"packaging-ema-cs-100000073550\"> </a></td><td>Single-dose container</td></tr><tr><td style=\"white-space:nowrap\">100000073551<a name=\"packaging-ema-cs-100000073551\"> </a></td><td>Spatula</td></tr><tr><td style=\"white-space:nowrap\">100000073553<a name=\"packaging-ema-cs-100000073553\"> </a></td><td>Spray container</td></tr><tr><td style=\"white-space:nowrap\">100000073563<a name=\"packaging-ema-cs-100000073563\"> </a></td><td>Vial</td></tr><tr><td style=\"white-space:nowrap\">100000073498<a name=\"packaging-ema-cs-100000073498\"> </a></td><td>Box</td></tr><tr><td style=\"white-space:nowrap\">100000073499<a name=\"packaging-ema-cs-100000073499\"> </a></td><td>Brush</td></tr><tr><td style=\"white-space:nowrap\">100000073501<a name=\"packaging-ema-cs-100000073501\"> </a></td><td>Cannula</td></tr><tr><td style=\"white-space:nowrap\">100000073559<a name=\"packaging-ema-cs-100000073559\"> </a></td><td>Strip</td></tr><tr><td style=\"white-space:nowrap\">100000073560<a name=\"packaging-ema-cs-100000073560\"> </a></td><td>Tablet container</td></tr><tr><td style=\"white-space:nowrap\">100000075664<a name=\"packaging-ema-cs-100000075664\"> </a></td><td>Administration system</td></tr><tr><td style=\"white-space:nowrap\">100000116196<a name=\"packaging-ema-cs-100000116196\"> </a></td><td>Needle-free injector</td></tr><tr><td style=\"white-space:nowrap\">100000116197<a name=\"packaging-ema-cs-100000116197\"> </a></td><td>Roll-on container</td></tr><tr><td style=\"white-space:nowrap\">100000137702<a name=\"packaging-ema-cs-100000137702\"> </a></td><td>Container</td></tr><tr><td style=\"white-space:nowrap\">100000143554<a name=\"packaging-ema-cs-100000143554\"> </a></td><td>Multidose container with metering pump</td></tr><tr><td style=\"white-space:nowrap\">100000166980<a name=\"packaging-ema-cs-100000166980\"> </a></td><td>Valve</td></tr><tr><td style=\"white-space:nowrap\">200000010647<a name=\"packaging-ema-cs-200000010647\"> </a></td><td>Lid</td></tr><tr><td style=\"white-space:nowrap\">100000173982<a name=\"packaging-ema-cs-100000173982\"> </a></td><td>Oral applicator</td></tr><tr><td style=\"white-space:nowrap\">100000173983<a name=\"packaging-ema-cs-100000173983\"> </a></td><td>Dose dispenser</td></tr><tr><td style=\"white-space:nowrap\">100000174066<a name=\"packaging-ema-cs-100000174066\"> </a></td><td>Unit-dose blister</td></tr><tr><td style=\"white-space:nowrap\">100000174067<a name=\"packaging-ema-cs-100000174067\"> </a></td><td>Pre-filled injector</td></tr><tr><td style=\"white-space:nowrap\">100000174068<a name=\"packaging-ema-cs-100000174068\"> </a></td><td>Pre-filled oral syringe</td></tr><tr><td style=\"white-space:nowrap\">100000174069<a name=\"packaging-ema-cs-100000174069\"> </a></td><td>Pre-filled oral applicator</td></tr><tr><td style=\"white-space:nowrap\">100000174070<a name=\"packaging-ema-cs-100000174070\"> </a></td><td>Dose-dispenser cartridge</td></tr><tr><td style=\"white-space:nowrap\">200000005068<a name=\"packaging-ema-cs-200000005068\"> </a></td><td>Pen</td></tr><tr><td style=\"white-space:nowrap\">100000073514<a name=\"packaging-ema-cs-100000073514\"> </a></td><td>Gas cylinder</td></tr><tr><td style=\"white-space:nowrap\">100000073561<a name=\"packaging-ema-cs-100000073561\"> </a></td><td>Tube</td></tr><tr><td style=\"white-space:nowrap\">200000005585<a name=\"packaging-ema-cs-200000005585\"> </a></td><td>Wrapper</td></tr><tr><td style=\"white-space:nowrap\">100000073504<a name=\"packaging-ema-cs-100000073504\"> </a></td><td>Child-resistant closure</td></tr><tr><td style=\"white-space:nowrap\">100000073549<a name=\"packaging-ema-cs-100000073549\"> </a></td><td>Screw cap</td></tr><tr><td style=\"white-space:nowrap\">100000073557<a name=\"packaging-ema-cs-100000073557\"> </a></td><td>Stopper</td></tr><tr><td style=\"white-space:nowrap\">100000073493<a name=\"packaging-ema-cs-100000073493\"> </a></td><td>Bag</td></tr><tr><td style=\"white-space:nowrap\">100000073503<a name=\"packaging-ema-cs-100000073503\"> </a></td><td>Cartridge</td></tr><tr><td style=\"white-space:nowrap\">100000073537<a name=\"packaging-ema-cs-100000073537\"> </a></td><td>Oral syringe</td></tr><tr><td style=\"white-space:nowrap\">100000125779<a name=\"packaging-ema-cs-100000125779\"> </a></td><td>Multidose container with pump</td></tr><tr><td style=\"white-space:nowrap\">100000073544<a name=\"packaging-ema-cs-100000073544\"> </a></td><td>Pre-filled syringe</td></tr><tr><td style=\"white-space:nowrap\">200000026021<a name=\"packaging-ema-cs-200000026021\"> </a></td><td>Gas cylinder bundle</td></tr><tr><td style=\"white-space:nowrap\">100000163233<a name=\"packaging-ema-cs-100000163233\"> </a></td><td>disk</td></tr><tr><td style=\"white-space:nowrap\">100000163234<a name=\"packaging-ema-cs-100000163234\"> </a></td><td>plunger</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000073346"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "Packaging_EMA_CS"]; # 
+  fhir:CodeSystem.title [ fhir:value "Packaging EMA SPOR"]; # 
+  fhir:CodeSystem.status [ fhir:value "draft"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-03T15:06:18+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "UNICOM"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Package types, including closures and administration devices. Based on EDQM, recoded with EMA SPOR RMS codes."]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "81"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073530" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multidose container" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073520" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Injection syringe" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073529" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mouthpiece" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073502" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cap" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073513" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fixed cryogenic vessel" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073500" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Brush applicator" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073495" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Barrel" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073496" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Blister" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073497" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bottle" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073509" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dredging container" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073511" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dropper applicator" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073539" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pipette applicator" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073490" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ampoule" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073505" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cup" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073506" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dabbing applicator" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073508" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dredging applicator" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073512" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dropper container" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073517" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhaler" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073527" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Metering valve" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073535" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Needle applicator" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073519" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Injection needle" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073526" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Metering pump" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073523" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Jar" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073524" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Measuring device" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073525" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Measuring spoon" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073528" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mobile cryogenic vessel" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073558" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Straw" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073531" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multidose container with airless pump" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073532" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multipuncturer" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073533" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal applicator" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073534" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nebuliser" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073536" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nozzle" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073538" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pipette" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "200000024874" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tablet tube" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073540" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pouch" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073491" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Applicator" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073542" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pre-filled gastroenteral tube" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073543" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pre-filled pen" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073555" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spray valve" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073545" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pressurised container" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073554" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spray pump" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073546" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prick test applicator" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073547" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sachet" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073550" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Single-dose container" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073551" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spatula" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073553" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spray container" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073563" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vial" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073498" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Box" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073499" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Brush" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073501" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cannula" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073559" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Strip" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073560" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tablet container" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075664" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Administration system" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116196" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Needle-free injector" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116197" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Roll-on container" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "100000137702" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Container" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143554" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multidose container with metering pump" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "100000166980" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Valve" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "200000010647" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lid" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173982" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral applicator" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173983" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dose dispenser" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174066" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unit-dose blister" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174067" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pre-filled injector" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174068" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pre-filled oral syringe" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174069" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pre-filled oral applicator" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174070" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dose-dispenser cartridge" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "200000005068" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pen" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073514" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gas cylinder" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073561" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tube" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "200000005585" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Wrapper" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073504" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Child-resistant closure" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073549" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Screw cap" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073557" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Stopper" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073493" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bag" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073503" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cartridge" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073537" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral syringe" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "100000125779" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multidose container with pump" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073544" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pre-filled syringe" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "200000026021" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gas cylinder bundle" ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "100000163233" ];
+     fhir:CodeSystem.concept.display [ fhir:value "disk" ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "100000163234" ];
+     fhir:CodeSystem.concept.display [ fhir:value "plunger" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/packaging-ema-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

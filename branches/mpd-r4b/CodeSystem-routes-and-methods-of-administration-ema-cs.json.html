@@ -1,0 +1,888 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.UNICOM\Routes and Methods of Administration EMA - JSON Representation - FHIR v4.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.80"}
+    h3,h4,h5,h6{--heading-prefix:"5.80"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="regulatory.html">Regulatory Data</a>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Routes and Methods of Administration EMA</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-routes-and-methods-of-administration-ema-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-routes-and-methods-of-administration-ema-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-routes-and-methods-of-administration-ema-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Routes and Methods of Administration EMA - JSON Representation</h2>
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2023-02-03
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-routes-and-methods-of-administration-ema-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-routes-and-methods-of-administration-ema-cs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; overflow: hidden"><code>
+{
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.id">id</a>" : "routes-and-methods-of-administration-ema-cs",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system &lt;code&gt;https://spor.ema.europa.eu/v1/lists/100000073345&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073564&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073564\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Auricular use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073570&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073570\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Endosinusial use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073571&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073571\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Endotracheopulmonary use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073566&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073566\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cutaneous use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073567&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073567\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dental use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073569&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073569\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Endocervical use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073572&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073572\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Epidural use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073577&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073577\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gastric use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073587&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073587\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraarterial use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073589&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073589\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intrabursal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073594&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073594\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intracoronary use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073595&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073595\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intradermal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073601&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073601\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraocular use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073591&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073591\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intracavernous use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073579&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073579\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Haemodialysis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073588&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073588\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraarticular use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073598&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073598\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intralymphatic use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073604&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073604\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraperitoneal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073607&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073607\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intrasternal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073620&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073620\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oromucosal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073597&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073597\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intralesional use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073614&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073614\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Laryngopharyngeal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073625&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073625\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Periodontal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075557&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075557\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Periosseous use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075266&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075266\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Parenteral use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075267&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075267\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075268&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075268\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ophthalmic use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075270&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075270\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intravenous drip use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075261&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075261\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unknown use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075260&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075260\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraprostatic use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075262&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075262\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Topical use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075263&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075263\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Subdermal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075265&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075265\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Respiratory use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000111216&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000111216\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Occlusive dressing technique use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075237&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075237\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraileal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075238&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075238\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intragastric use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075240&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075240\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intradural use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075241&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075241\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraduodenal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075242&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075242\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intranasal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075243&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075243\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Local use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075244&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075244\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Not mentioned&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075245&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075245\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;In vitro use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075246&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075246\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraabdominal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075247&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075247\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Interstitial use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000111217&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000111217\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transplacental use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075251&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075251\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Conjunctival use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075252&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075252\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transmucosal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075253&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075253\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Soft tissue use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075254&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075254\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Percutaneous use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075255&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075255\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nasogastric use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075256&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075256\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraventricular use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075257&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075257\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intravascular use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075258&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075258\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intratympanic use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075271&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075271\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intravenous bolus use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075272&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075272\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intratracheal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075273&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075273\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intrahepatic use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075555&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075555\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intramuscular and intravenous use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075558&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075558\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Subgingival use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075559&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075559\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Epicutaneous use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075673&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075673\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraepidermal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000170847&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000170847\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Coarse spray&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000010603&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000010603\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraputaminal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000012510&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000012510\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Instillation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000016447&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000016447\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000016448&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000016448\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for infusion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000016449&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000016449\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Infusion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000017716&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000017716\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;External use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000017722&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000017722\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Preservative solution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000017723&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000017723\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Concentrate for solution for infusion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000017724&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000017724\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000017725&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000017725\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irrigation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000022791&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000022791\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intrafollicular use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000022792&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000022792\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intratesticular use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075250&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075250\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Enteral use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000111215&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000111215\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intrathoracic use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000111214&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000111214\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intrameningeal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000143556&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000143556\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nail use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073584&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073584\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inhalation use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073585&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073585\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intestinal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073573&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073573\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Epilesional use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073574&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073574\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Extraamniotic use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073578&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073578\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gingival use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073586&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073586\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraamniotic use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073590&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073590\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intracardiac use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073615&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073615\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nasal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073617&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073617\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ocular use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073593&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073593\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intracervical use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073596&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073596\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intradiscal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073600&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073600\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intramuscular use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073602&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073602\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraosseous use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073603&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073603\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intrapericardial use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073605&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073605\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intrapleural use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073609&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073609\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intratumoral use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073610&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073610\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intrauterine use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073611&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073611\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intravenous use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073612&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073612\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intravesical use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073619&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073619\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073623&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073623\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Periarticular use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073624&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073624\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Perineural use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073626&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073626\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Posterior juxtascleral use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073628&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073628\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rectal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073629&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073629\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Route of administration not applicable&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073630&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073630\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Skin scarification&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073632&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073632\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Subconjunctival use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073633&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073633\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Subcutaneous use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073634&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073634\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sublingual use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073637&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073637\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transdermal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073639&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073639\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vaginal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075239&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075239\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraepidermal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075264&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075264\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Retrobulbar use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075554&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075554\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Submucosal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000111213&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000111213\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intracorneal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075248&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075248\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Infiltration&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075249&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075249\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Implantation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075269&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075269\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Iontophoresis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075274&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075274\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intracisternal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075275&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075275\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Buccal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075276&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075276\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intracartilaginous use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075556&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000075556\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Extracorporeal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000010645&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000010645\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transmammary&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000024875&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000024875\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Extrapleural use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125763&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000125763\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intracameral use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000155948&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000155948\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraportal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000156091&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000156091\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intracholangiopancreatic use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000156092&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000156092\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Peritumoral use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000157797&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000157797\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intraglandular use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000170084&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000170084\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Subretinal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000170279&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000170279\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intracerebroventricular use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000010644&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000010644\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transplacental&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073576&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073576\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gastroenteral use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073613&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073613\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intravitreal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073638&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073638\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urethral use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000010643&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-200000010643\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Topical&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073592&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073592\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intracerebral use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073621&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073621\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oropharyngeal use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073608&lt;a name=\&quot;routes-and-methods-of-administration-ema-cs-100000073608\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intrathecal use&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.url">url</a>" : "https://spor.ema.europa.eu/v1/lists/100000073345",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.name">name</a>" : "Routes_And_Methods_Of_Administration_EMA_CS",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.title">title</a>" : "Routes and Methods of Administration EMA",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.date">date</a>" : "2023-02-03T15:45:39+00:00",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.publisher">publisher</a>" : "UNICOM",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "UNICOM",
+      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://unicom-project.eu"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.description">description</a>" : "Routes and methods of medication administration. Based on EDQM, re-coded with RMS codes.",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : false,
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.compositional">compositional</a>" : false,
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.count">count</a>" : 136,
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073564",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Auricular use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073570",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Endosinusial use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073571",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Endotracheopulmonary use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073566",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Cutaneous use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073567",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Dental use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073569",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Endocervical use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073572",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Epidural use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073577",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Gastric use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073587",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraarterial use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073589",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intrabursal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073594",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intracoronary use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073595",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intradermal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073601",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraocular use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073591",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intracavernous use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073579",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Haemodialysis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073588",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraarticular use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073598",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intralymphatic use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073604",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraperitoneal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073607",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intrasternal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073620",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oromucosal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073597",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intralesional use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073614",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Laryngopharyngeal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073625",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Periodontal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075557",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Periosseous use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075266",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Parenteral use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075267",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Other use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075268",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Ophthalmic use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075270",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intravenous drip use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075261",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Unknown use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075260",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraprostatic use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075262",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Topical use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075263",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Subdermal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075265",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Respiratory use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000111216",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Occlusive dressing technique use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075237",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraileal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075238",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intragastric use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075240",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intradural use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075241",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraduodenal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075242",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intranasal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075243",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Local use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075244",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Not mentioned"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075245",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "In vitro use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075246",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraabdominal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075247",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Interstitial use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000111217",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Transplacental use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075251",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Conjunctival use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075252",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Transmucosal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075253",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Soft tissue use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075254",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Percutaneous use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075255",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Nasogastric use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075256",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraventricular use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075257",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intravascular use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075258",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intratympanic use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075271",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intravenous bolus use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075272",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intratracheal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075273",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intrahepatic use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075555",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intramuscular and intravenous use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075558",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Subgingival use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075559",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Epicutaneous use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075673",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraepidermal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000170847",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Coarse spray"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000010603",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraputaminal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000012510",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Instillation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000016447",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Injection"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000016448",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for infusion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000016449",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Infusion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000017716",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "External use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000017722",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Preservative solution"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000017723",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Concentrate for solution for infusion"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000017724",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for injection"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000017725",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Irrigation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000022791",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intrafollicular use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000022792",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intratesticular use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075250",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Enteral use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000111215",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intrathoracic use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000111214",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intrameningeal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000143556",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Nail use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073584",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Inhalation use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073585",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intestinal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073573",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Epilesional use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073574",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Extraamniotic use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073578",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Gingival use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073586",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraamniotic use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073590",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intracardiac use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073615",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Nasal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073617",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Ocular use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073593",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intracervical use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073596",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intradiscal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073600",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intramuscular use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073602",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraosseous use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073603",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intrapericardial use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073605",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intrapleural use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073609",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intratumoral use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073610",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intrauterine use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073611",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intravenous use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073612",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intravesical use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073619",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073623",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Periarticular use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073624",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Perineural use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073626",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Posterior juxtascleral use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073628",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Rectal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073629",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Route of administration not applicable"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073630",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Skin scarification"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073632",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Subconjunctival use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073633",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Subcutaneous use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073634",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Sublingual use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073637",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Transdermal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073639",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Vaginal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075239",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraepidermal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075264",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Retrobulbar use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075554",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Submucosal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000111213",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intracorneal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075248",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Infiltration"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075249",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Implantation"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075269",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Iontophoresis"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075274",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intracisternal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075275",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Buccal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075276",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intracartilaginous use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075556",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Extracorporeal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000010645",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Transmammary"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000024875",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Extrapleural use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125763",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intracameral use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000155948",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraportal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000156091",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intracholangiopancreatic use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000156092",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Peritumoral use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000157797",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intraglandular use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000170084",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Subretinal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000170279",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intracerebroventricular use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000010644",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Transplacental"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073576",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Gastroenteral use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073613",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intravitreal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073638",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Urethral use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000010643",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Topical"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073592",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intracerebral use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073621",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oropharyngeal use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073608",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intrathecal use"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.3.0</a>. Generated <span title="Fri, Feb 3, 2023 15:45+0000">2023-02-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

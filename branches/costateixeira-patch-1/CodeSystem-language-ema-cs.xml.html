@@ -1,0 +1,1091 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Language EMA - XML Representation - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.91"}
+    h3,h4,h5,h6{--heading-prefix:"7.91"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+      <li>
+        <a href="testserver.html">Testing Tool Box</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Language EMA</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-language-ema-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-language-ema-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-language-ema-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Language EMA - XML Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2024-05-03
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-language-ema-cs.xml" no-download="true">Raw xml</a> | <a href="CodeSystem-language-ema-cs.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
+
+&lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;language-ema-cs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://spor.ema.europa.eu/v1/lists/100000072057&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072223&lt;a name=&quot;language-ema-cs-100000072223&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Korean&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072144&lt;a name=&quot;language-ema-cs-100000072144&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chuvash&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072257&lt;a name=&quot;language-ema-cs-100000072257&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Serbian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072297&lt;a name=&quot;language-ema-cs-100000072297&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Turkish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072166&lt;a name=&quot;language-ema-cs-100000072166&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Corsican&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072131&lt;a name=&quot;language-ema-cs-100000072131&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avaric&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072264&lt;a name=&quot;language-ema-cs-100000072264&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spanish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072273&lt;a name=&quot;language-ema-cs-100000072273&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Walloon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072159&lt;a name=&quot;language-ema-cs-100000072159&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Javanese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072197&lt;a name=&quot;language-ema-cs-100000072197&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kashmiri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072306&lt;a name=&quot;language-ema-cs-100000072306&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Xhosa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072177&lt;a name=&quot;language-ema-cs-100000072177&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Georgian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072225&lt;a name=&quot;language-ema-cs-100000072225&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lao&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072140&lt;a name=&quot;language-ema-cs-100000072140&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Burmese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072118&lt;a name=&quot;language-ema-cs-100000072118&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Avestan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072162&lt;a name=&quot;language-ema-cs-100000072162&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chechen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072293&lt;a name=&quot;language-ema-cs-100000072293&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tibetan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072183&lt;a name=&quot;language-ema-cs-100000072183&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Haitian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072266&lt;a name=&quot;language-ema-cs-100000072266&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tahitian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072255&lt;a name=&quot;language-ema-cs-100000072255&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Russian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072307&lt;a name=&quot;language-ema-cs-100000072307&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yiddish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072296&lt;a name=&quot;language-ema-cs-100000072296&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tsonga&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072152&lt;a name=&quot;language-ema-cs-100000072152&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Manx&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072236&lt;a name=&quot;language-ema-cs-100000072236&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maltese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072282&lt;a name=&quot;language-ema-cs-100000072282&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Shona&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072194&lt;a name=&quot;language-ema-cs-100000072194&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Italian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072261&lt;a name=&quot;language-ema-cs-100000072261&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sinhala&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072267&lt;a name=&quot;language-ema-cs-100000072267&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Telugu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072270&lt;a name=&quot;language-ema-cs-100000072270&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Turkmen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072198&lt;a name=&quot;language-ema-cs-100000072198&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kanuri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072209&lt;a name=&quot;language-ema-cs-100000072209&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Malay&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072265&lt;a name=&quot;language-ema-cs-100000072265&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sundanese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072201&lt;a name=&quot;language-ema-cs-100000072201&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kazakh&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072304&lt;a name=&quot;language-ema-cs-100000072304&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Welsh&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072218&lt;a name=&quot;language-ema-cs-100000072218&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Quechua&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072157&lt;a name=&quot;language-ema-cs-100000072157&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inuktitut&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072219&lt;a name=&quot;language-ema-cs-100000072219&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rundi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072174&lt;a name=&quot;language-ema-cs-100000072174&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fijian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072139&lt;a name=&quot;language-ema-cs-100000072139&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Breton&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072301&lt;a name=&quot;language-ema-cs-100000072301&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Venda&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072291&lt;a name=&quot;language-ema-cs-100000072291&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tajik&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072161&lt;a name=&quot;language-ema-cs-100000072161&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Catalan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072129&lt;a name=&quot;language-ema-cs-100000072129&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aragonese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072244&lt;a name=&quot;language-ema-cs-100000072244&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;N'Ko&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072126&lt;a name=&quot;language-ema-cs-100000072126&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Akan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072246&lt;a name=&quot;language-ema-cs-100000072246&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ojibwa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072274&lt;a name=&quot;language-ema-cs-100000072274&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Yoruba&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072179&lt;a name=&quot;language-ema-cs-100000072179&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Irish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072271&lt;a name=&quot;language-ema-cs-100000072271&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uighur&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072305&lt;a name=&quot;language-ema-cs-100000072305&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Wolof&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072212&lt;a name=&quot;language-ema-cs-100000072212&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ndonga&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072178&lt;a name=&quot;language-ema-cs-100000072178&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;German&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072148&lt;a name=&quot;language-ema-cs-100000072148&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ewe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072294&lt;a name=&quot;language-ema-cs-100000072294&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tigrinya&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072134&lt;a name=&quot;language-ema-cs-100000072134&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bambara&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072138&lt;a name=&quot;language-ema-cs-100000072138&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bislama&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072247&lt;a name=&quot;language-ema-cs-100000072247&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oromo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072128&lt;a name=&quot;language-ema-cs-100000072128&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Arabic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072254&lt;a name=&quot;language-ema-cs-100000072254&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Romanian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072192&lt;a name=&quot;language-ema-cs-100000072192&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Interlingua (International Auxiliary Language Association)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072154&lt;a name=&quot;language-ema-cs-100000072154&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hebrew&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072127&lt;a name=&quot;language-ema-cs-100000072127&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amharic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072290&lt;a name=&quot;language-ema-cs-100000072290&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tatar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072200&lt;a name=&quot;language-ema-cs-100000072200&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kikuyu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072239&lt;a name=&quot;language-ema-cs-100000072239&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;South Ndebele&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072216&lt;a name=&quot;language-ema-cs-100000072216&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Panjabi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072182&lt;a name=&quot;language-ema-cs-100000072182&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Guarani&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072222&lt;a name=&quot;language-ema-cs-100000072222&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Komi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072251&lt;a name=&quot;language-ema-cs-100000072251&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Portuguese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072119&lt;a name=&quot;language-ema-cs-100000072119&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bashkir&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072188&lt;a name=&quot;language-ema-cs-100000072188&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Igbo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072245&lt;a name=&quot;language-ema-cs-100000072245&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Occitan (post 1500)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072133&lt;a name=&quot;language-ema-cs-100000072133&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Azerbaijani&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072196&lt;a name=&quot;language-ema-cs-100000072196&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Greenlandic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072286&lt;a name=&quot;language-ema-cs-100000072286&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Swati&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072168&lt;a name=&quot;language-ema-cs-100000072168&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Danish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072235&lt;a name=&quot;language-ema-cs-100000072235&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Malagasy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072141&lt;a name=&quot;language-ema-cs-100000072141&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bosnian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072191&lt;a name=&quot;language-ema-cs-100000072191&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Interlingue&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072149&lt;a name=&quot;language-ema-cs-100000072149&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Finnish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072203&lt;a name=&quot;language-ema-cs-100000072203&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kongo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072147&lt;a name=&quot;language-ema-cs-100000072147&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;English&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072237&lt;a name=&quot;language-ema-cs-100000072237&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mongolian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072199&lt;a name=&quot;language-ema-cs-100000072199&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Central Khmer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072211&lt;a name=&quot;language-ema-cs-100000072211&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Navaho&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072170&lt;a name=&quot;language-ema-cs-100000072170&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dzongkha&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072143&lt;a name=&quot;language-ema-cs-100000072143&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chamorro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072190&lt;a name=&quot;language-ema-cs-100000072190&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sichuan Yi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072233&lt;a name=&quot;language-ema-cs-100000072233&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maori&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072195&lt;a name=&quot;language-ema-cs-100000072195&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Japanese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072160&lt;a name=&quot;language-ema-cs-100000072160&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kannada&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072136&lt;a name=&quot;language-ema-cs-100000072136&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Belarusian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072258&lt;a name=&quot;language-ema-cs-100000072258&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Croatian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072229&lt;a name=&quot;language-ema-cs-100000072229&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Luxembourgish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072176&lt;a name=&quot;language-ema-cs-100000072176&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Western Frisian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072284&lt;a name=&quot;language-ema-cs-100000072284&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sotho&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072238&lt;a name=&quot;language-ema-cs-100000072238&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nauru&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072285&lt;a name=&quot;language-ema-cs-100000072285&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sardinian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072153&lt;a name=&quot;language-ema-cs-100000072153&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gujarati&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072115&lt;a name=&quot;language-ema-cs-100000072115&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Abkhazian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072215&lt;a name=&quot;language-ema-cs-100000072215&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oriya&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072164&lt;a name=&quot;language-ema-cs-100000072164&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Church Slavic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072300&lt;a name=&quot;language-ema-cs-100000072300&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urdu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072189&lt;a name=&quot;language-ema-cs-100000072189&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ido&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072158&lt;a name=&quot;language-ema-cs-100000072158&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indonesian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072232&lt;a name=&quot;language-ema-cs-100000072232&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Marshallese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072193&lt;a name=&quot;language-ema-cs-100000072193&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inupiaq&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072187&lt;a name=&quot;language-ema-cs-100000072187&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hungarian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072125&lt;a name=&quot;language-ema-cs-100000072125&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Afrikaans&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072156&lt;a name=&quot;language-ema-cs-100000072156&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Icelandic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072208&lt;a name=&quot;language-ema-cs-100000072208&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Malayalam&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072185&lt;a name=&quot;language-ema-cs-100000072185&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Herero&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072206&lt;a name=&quot;language-ema-cs-100000072206&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lithuanian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072184&lt;a name=&quot;language-ema-cs-100000072184&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hausa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072228&lt;a name=&quot;language-ema-cs-100000072228&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lingala&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072130&lt;a name=&quot;language-ema-cs-100000072130&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Assamese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072309&lt;a name=&quot;language-ema-cs-100000072309&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zulu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072256&lt;a name=&quot;language-ema-cs-100000072256&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sango&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072302&lt;a name=&quot;language-ema-cs-100000072302&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vietnamese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072221&lt;a name=&quot;language-ema-cs-100000072221&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kirghiz&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072268&lt;a name=&quot;language-ema-cs-100000072268&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Thai&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072253&lt;a name=&quot;language-ema-cs-100000072253&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Romansh&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072240&lt;a name=&quot;language-ema-cs-100000072240&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;North Ndebele&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072249&lt;a name=&quot;language-ema-cs-100000072249&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Persian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072303&lt;a name=&quot;language-ema-cs-100000072303&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volap�k&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072308&lt;a name=&quot;language-ema-cs-100000072308&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Zhuang&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072288&lt;a name=&quot;language-ema-cs-100000072288&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Swedish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072214&lt;a name=&quot;language-ema-cs-100000072214&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chichewa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072295&lt;a name=&quot;language-ema-cs-100000072295&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tswana&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072269&lt;a name=&quot;language-ema-cs-100000072269&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tonga (Tonga Islands)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072248&lt;a name=&quot;language-ema-cs-100000072248&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ossetian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072137&lt;a name=&quot;language-ema-cs-100000072137&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bihari&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072281&lt;a name=&quot;language-ema-cs-100000072281&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Samoan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072142&lt;a name=&quot;language-ema-cs-100000072142&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bulgarian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072180&lt;a name=&quot;language-ema-cs-100000072180&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Galician&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072252&lt;a name=&quot;language-ema-cs-100000072252&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pushto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072283&lt;a name=&quot;language-ema-cs-100000072283&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Somali&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072116&lt;a name=&quot;language-ema-cs-100000072116&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Albanian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072259&lt;a name=&quot;language-ema-cs-100000072259&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Slovak&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072220&lt;a name=&quot;language-ema-cs-100000072220&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sanskrit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072260&lt;a name=&quot;language-ema-cs-100000072260&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Slovenian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072231&lt;a name=&quot;language-ema-cs-100000072231&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Macedonian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072226&lt;a name=&quot;language-ema-cs-100000072226&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Latin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072171&lt;a name=&quot;language-ema-cs-100000072171&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Esperanto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072117&lt;a name=&quot;language-ema-cs-100000072117&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Armenian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072202&lt;a name=&quot;language-ema-cs-100000072202&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kinyarwanda&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072167&lt;a name=&quot;language-ema-cs-100000072167&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Czech&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072272&lt;a name=&quot;language-ema-cs-100000072272&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uzbek&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072186&lt;a name=&quot;language-ema-cs-100000072186&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hindi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072146&lt;a name=&quot;language-ema-cs-100000072146&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maldivian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072151&lt;a name=&quot;language-ema-cs-100000072151&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gaelic&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072169&lt;a name=&quot;language-ema-cs-100000072169&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dutch&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072242&lt;a name=&quot;language-ema-cs-100000072242&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Norwegian Nynorsk&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072172&lt;a name=&quot;language-ema-cs-100000072172&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Estonian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072150&lt;a name=&quot;language-ema-cs-100000072150&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fulah&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072241&lt;a name=&quot;language-ema-cs-100000072241&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nepali&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072227&lt;a name=&quot;language-ema-cs-100000072227&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Limburgan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072213&lt;a name=&quot;language-ema-cs-100000072213&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bokm�l&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072262&lt;a name=&quot;language-ema-cs-100000072262&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Northern Sami&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072155&lt;a name=&quot;language-ema-cs-100000072155&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hiri Motu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072250&lt;a name=&quot;language-ema-cs-100000072250&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pali&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072234&lt;a name=&quot;language-ema-cs-100000072234&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Marathi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072181&lt;a name=&quot;language-ema-cs-100000072181&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Greek&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072263&lt;a name=&quot;language-ema-cs-100000072263&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sindhi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072205&lt;a name=&quot;language-ema-cs-100000072205&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Latvian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072165&lt;a name=&quot;language-ema-cs-100000072165&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cornish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072163&lt;a name=&quot;language-ema-cs-100000072163&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chinese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072173&lt;a name=&quot;language-ema-cs-100000072173&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Faroese&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072289&lt;a name=&quot;language-ema-cs-100000072289&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tamil&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072243&lt;a name=&quot;language-ema-cs-100000072243&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Norwegian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072124&lt;a name=&quot;language-ema-cs-100000072124&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Afar&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072175&lt;a name=&quot;language-ema-cs-100000072175&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;French&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072132&lt;a name=&quot;language-ema-cs-100000072132&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aymara&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072298&lt;a name=&quot;language-ema-cs-100000072298&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Twi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072204&lt;a name=&quot;language-ema-cs-100000072204&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kurdish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072299&lt;a name=&quot;language-ema-cs-100000072299&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ukrainian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072224&lt;a name=&quot;language-ema-cs-100000072224&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kuanyama&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072292&lt;a name=&quot;language-ema-cs-100000072292&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tagalog&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072217&lt;a name=&quot;language-ema-cs-100000072217&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Polish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072120&lt;a name=&quot;language-ema-cs-100000072120&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bengali&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072230&lt;a name=&quot;language-ema-cs-100000072230&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Luba-Katanga&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072145&lt;a name=&quot;language-ema-cs-100000072145&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cree&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072287&lt;a name=&quot;language-ema-cs-100000072287&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Swahili&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072210&lt;a name=&quot;language-ema-cs-100000072210&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Moldavian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072207&lt;a name=&quot;language-ema-cs-100000072207&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ganda&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;100000072135&lt;a name=&quot;language-ema-cs-100000072135&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Basque&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;https://spor.ema.europa.eu/v1/lists/100000072057&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Language_EMA_CS&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Language EMA&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2024-05-03T19:27:00+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;UNICOM&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;UNICOM&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;http://unicom-project.eu&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.description">description</a>
+               <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Language codes by EMA. Based on BCP-47, recoded with RMS codes.&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.compositional">compositional</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">value</a>=&quot;186&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072223&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Korean&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072144&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Chuvash&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072257&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Serbian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072297&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Turkish&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072166&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Corsican&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072131&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Avaric&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072264&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Spanish&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072273&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Walloon&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072159&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Javanese&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072197&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Kashmiri&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072306&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Xhosa&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072177&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Georgian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072225&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Lao&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072140&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Burmese&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072118&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Avestan&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072162&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Chechen&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072293&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tibetan&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072183&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Haitian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072266&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tahitian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072255&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Russian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072307&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Yiddish&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072296&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tsonga&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072152&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Manx&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072236&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Maltese&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072282&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Shona&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072194&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Italian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072261&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sinhala&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072267&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Telugu&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072270&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Turkmen&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072198&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Kanuri&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072209&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Malay&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072265&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sundanese&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072201&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Kazakh&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072304&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Welsh&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072218&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Quechua&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072157&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Inuktitut&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072219&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Rundi&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072174&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Fijian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072139&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Breton&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072301&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Venda&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072291&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tajik&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072161&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Catalan&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072129&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aragonese&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072244&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;N'Ko&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072126&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Akan&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072246&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ojibwa&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072274&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Yoruba&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072179&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Irish&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072271&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uighur&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072305&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Wolof&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072212&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ndonga&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072178&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;German&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072148&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ewe&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072294&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tigrinya&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072134&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bambara&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072138&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bislama&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072247&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Oromo&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072128&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Arabic&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072254&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Romanian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072192&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Interlingua (International Auxiliary Language Association)&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072154&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Hebrew&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072127&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Amharic&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072290&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tatar&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072200&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Kikuyu&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072239&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;South Ndebele&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072216&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Panjabi&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072182&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Guarani&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072222&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Komi&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072251&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Portuguese&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072119&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bashkir&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072188&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Igbo&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072245&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Occitan (post 1500)&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072133&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Azerbaijani&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072196&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Greenlandic&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072286&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Swati&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072168&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Danish&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072235&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Malagasy&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072141&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bosnian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072191&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Interlingue&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072149&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Finnish&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072203&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Kongo&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072147&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;English&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072237&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Mongolian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072199&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Central Khmer&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072211&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Navaho&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072170&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dzongkha&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072143&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Chamorro&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072190&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sichuan Yi&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072233&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Maori&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072195&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Japanese&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072160&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Kannada&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072136&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Belarusian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072258&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Croatian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072229&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Luxembourgish&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072176&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Western Frisian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072284&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sotho&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072238&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nauru&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072285&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sardinian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072153&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Gujarati&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072115&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Abkhazian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072215&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Oriya&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072164&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Church Slavic&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072300&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Urdu&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072189&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ido&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072158&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Indonesian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072232&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Marshallese&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072193&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Inupiaq&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072187&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Hungarian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072125&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Afrikaans&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072156&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Icelandic&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072208&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Malayalam&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072185&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Herero&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072206&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Lithuanian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072184&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Hausa&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072228&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Lingala&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072130&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Assamese&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072309&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Zulu&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072256&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sango&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072302&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Vietnamese&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072221&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Kirghiz&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072268&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Thai&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072253&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Romansh&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072240&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;North Ndebele&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072249&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Persian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072303&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Volap�k&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072308&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Zhuang&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072288&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Swedish&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072214&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Chichewa&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072295&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tswana&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072269&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tonga (Tonga Islands)&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072248&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ossetian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072137&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bihari&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072281&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Samoan&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072142&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bulgarian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072180&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Galician&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072252&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pushto&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072283&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Somali&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072116&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Albanian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072259&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Slovak&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072220&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sanskrit&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072260&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Slovenian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072231&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Macedonian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072226&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Latin&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072171&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Esperanto&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072117&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Armenian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072202&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Kinyarwanda&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072167&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Czech&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072272&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Uzbek&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072186&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Hindi&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072146&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Maldivian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072151&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Gaelic&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072169&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dutch&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072242&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Norwegian Nynorsk&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072172&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Estonian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072150&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Fulah&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072241&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nepali&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072227&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Limburgan&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072213&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bokm�l&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072262&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Northern Sami&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072155&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Hiri Motu&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072250&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pali&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072234&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Marathi&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072181&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Greek&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072263&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sindhi&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072205&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Latvian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072165&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cornish&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072163&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Chinese&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072173&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Faroese&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072289&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tamil&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072243&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Norwegian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072124&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Afar&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072175&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;French&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072132&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aymara&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072298&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Twi&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072204&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Kurdish&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072299&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ukrainian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072224&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Kuanyama&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072292&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tagalog&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072217&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Polish&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072120&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bengali&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072230&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Luba-Katanga&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072145&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cree&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072287&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Swahili&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072210&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Moldavian&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072207&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ganda&quot;/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;100000072135&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Basque&quot;/&gt;
+  &lt;/concept&gt;
+&lt;/CodeSystem&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, May 3, 2024 19:27+0000">2024-05-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

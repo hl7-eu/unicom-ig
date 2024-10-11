@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Combined Pharmaceutical Dose Form EMA - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.87"}
+    h3,h4,h5,h6{--heading-prefix:"7.87"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+      <li>
+        <a href="testserver.html">Testing Tool Box</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Combined Pharmaceutical Dose Form EMA</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This is not an authorized publication; it is the continuous build for version 0.1.0. This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-combined-pharmaceutical-dose-form-ema-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-combined-pharmaceutical-dose-form-ema-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-combined-pharmaceutical-dose-form-ema-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Combined Pharmaceutical Dose Form EMA
+
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://spor.ema.europa.eu/v1/lists/200000000006<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://spor.ema.europa.eu/v1/lists/200000000006"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://spor.ema.europa.eu/v1/lists/200000000006|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2023-11-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">CombinedPharmaceuticalDoseForm_EMA_CS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Combined Pharmaceutical Dose Form. Based on EDQM. Re-coded with RMS codes. Used only for authorised dose form.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-authorised-doseform-vs.html">AuthorisedDoseForm</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://spor.ema.europa.eu/v1/lists/200000000006</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">100000073366<a name="combined-pharmaceutical-dose-form-ema-cs-100000073366"> </a></td><td>Powder and solvent for oral solution</td></tr><tr><td style="white-space:nowrap">100000073651<a name="combined-pharmaceutical-dose-form-ema-cs-100000073651"> </a></td><td>Powder and solvent for oral suspension</td></tr><tr><td style="white-space:nowrap">100000073774<a name="combined-pharmaceutical-dose-form-ema-cs-100000073774"> </a></td><td>Eye drops, powder and solvent for solution</td></tr><tr><td style="white-space:nowrap">100000073781<a name="combined-pharmaceutical-dose-form-ema-cs-100000073781"> </a></td><td>Eye drops, powder and solvent for suspension</td></tr><tr><td style="white-space:nowrap">100000073801<a name="combined-pharmaceutical-dose-form-ema-cs-100000073801"> </a></td><td>Ear drops, powder and solvent for suspension</td></tr><tr><td style="white-space:nowrap">100000073860<a name="combined-pharmaceutical-dose-form-ema-cs-100000073860"> </a></td><td>Powder and solvent for solution for infusion</td></tr><tr><td style="white-space:nowrap">100000073868<a name="combined-pharmaceutical-dose-form-ema-cs-100000073868"> </a></td><td>Powder and solvent for solution for injection</td></tr><tr><td style="white-space:nowrap">100000073869<a name="combined-pharmaceutical-dose-form-ema-cs-100000073869"> </a></td><td>Powder and solvent for suspension for injection</td></tr><tr><td style="white-space:nowrap">100000073884<a name="combined-pharmaceutical-dose-form-ema-cs-100000073884"> </a></td><td>Powder and solvent for implantation paste</td></tr><tr><td style="white-space:nowrap">100000073891<a name="combined-pharmaceutical-dose-form-ema-cs-100000073891"> </a></td><td>Endotracheopulmonary instillation, powder and solvent for solution</td></tr><tr><td style="white-space:nowrap">100000073892<a name="combined-pharmaceutical-dose-form-ema-cs-100000073892"> </a></td><td>Powder and solvent for endocervical gel</td></tr><tr><td style="white-space:nowrap">100000073941<a name="combined-pharmaceutical-dose-form-ema-cs-100000073941"> </a></td><td>Powder and solvent for sealant</td></tr><tr><td style="white-space:nowrap">100000073972<a name="combined-pharmaceutical-dose-form-ema-cs-100000073972"> </a></td><td>Concentrate and solvent for concentrate for solution for infusion</td></tr><tr><td style="white-space:nowrap">100000073973<a name="combined-pharmaceutical-dose-form-ema-cs-100000073973"> </a></td><td>Concentrate and solvent for cutaneous use</td></tr><tr><td style="white-space:nowrap">100000073974<a name="combined-pharmaceutical-dose-form-ema-cs-100000073974"> </a></td><td>Concentrate and solvent for injection</td></tr><tr><td style="white-space:nowrap">100000073975<a name="combined-pharmaceutical-dose-form-ema-cs-100000073975"> </a></td><td>Concentrate and solvent for solution for infusion</td></tr><tr><td style="white-space:nowrap">100000073987<a name="combined-pharmaceutical-dose-form-ema-cs-100000073987"> </a></td><td>Concentrate and diluent for solution for infusion</td></tr><tr><td style="white-space:nowrap">100000073988<a name="combined-pharmaceutical-dose-form-ema-cs-100000073988"> </a></td><td>Concentrate and solvent for cutaneous solution</td></tr><tr><td style="white-space:nowrap">100000073989<a name="combined-pharmaceutical-dose-form-ema-cs-100000073989"> </a></td><td>Concentrate and solvent for solution for injection</td></tr><tr><td style="white-space:nowrap">100000073990<a name="combined-pharmaceutical-dose-form-ema-cs-100000073990"> </a></td><td>Concentrate and solvent for suspension for injection</td></tr><tr><td style="white-space:nowrap">100000073999<a name="combined-pharmaceutical-dose-form-ema-cs-100000073999"> </a></td><td>Granules and solvent for suspension for injection</td></tr><tr><td style="white-space:nowrap">100000074015<a name="combined-pharmaceutical-dose-form-ema-cs-100000074015"> </a></td><td>Powder and solvent for concentrate for solution for infusion</td></tr><tr><td style="white-space:nowrap">100000074016<a name="combined-pharmaceutical-dose-form-ema-cs-100000074016"> </a></td><td>Powder and solvent for cutaneous solution</td></tr><tr><td style="white-space:nowrap">100000074017<a name="combined-pharmaceutical-dose-form-ema-cs-100000074017"> </a></td><td>Powder and solvent for gingival gel</td></tr><tr><td style="white-space:nowrap">100000074018<a name="combined-pharmaceutical-dose-form-ema-cs-100000074018"> </a></td><td>Powder and solvent for prolonged-release suspension for injection</td></tr><tr><td style="white-space:nowrap">100000074030<a name="combined-pharmaceutical-dose-form-ema-cs-100000074030"> </a></td><td>Powder and solvent for endosinusial solution</td></tr><tr><td style="white-space:nowrap">100000074031<a name="combined-pharmaceutical-dose-form-ema-cs-100000074031"> </a></td><td>Powder and solvent for intraocular instillation solution</td></tr><tr><td style="white-space:nowrap">100000074032<a name="combined-pharmaceutical-dose-form-ema-cs-100000074032"> </a></td><td>Powder and suspension for suspension for injection</td></tr><tr><td style="white-space:nowrap">100000074048<a name="combined-pharmaceutical-dose-form-ema-cs-100000074048"> </a></td><td>Suspension and effervescent granules for oral suspension</td></tr><tr><td style="white-space:nowrap">100000074051<a name="combined-pharmaceutical-dose-form-ema-cs-100000074051"> </a></td><td>Tablet and solvent for rectal suspension</td></tr><tr><td style="white-space:nowrap">100000074053<a name="combined-pharmaceutical-dose-form-ema-cs-100000074053"> </a></td><td>Powder and solvent for dental gel</td></tr><tr><td style="white-space:nowrap">100000074056<a name="combined-pharmaceutical-dose-form-ema-cs-100000074056"> </a></td><td>Gas and solvent for dispersion for injection/infusion</td></tr><tr><td style="white-space:nowrap">100000074057<a name="combined-pharmaceutical-dose-form-ema-cs-100000074057"> </a></td><td>Powder and solvent for solution for injection/infusion</td></tr><tr><td style="white-space:nowrap">100000074061<a name="combined-pharmaceutical-dose-form-ema-cs-100000074061"> </a></td><td>Suspension and solution for spray</td></tr><tr><td style="white-space:nowrap">100000074064<a name="combined-pharmaceutical-dose-form-ema-cs-100000074064"> </a></td><td>Tablet and powder for oral solution</td></tr><tr><td style="white-space:nowrap">100000075580<a name="combined-pharmaceutical-dose-form-ema-cs-100000075580"> </a></td><td>Emulsion and suspension for emulsion for injection</td></tr><tr><td style="white-space:nowrap">100000075584<a name="combined-pharmaceutical-dose-form-ema-cs-100000075584"> </a></td><td>Powder and solvent for dispersion for injection</td></tr><tr><td style="white-space:nowrap">100000075587<a name="combined-pharmaceutical-dose-form-ema-cs-100000075587"> </a></td><td>Powder for mouth wash</td></tr><tr><td style="white-space:nowrap">100000116137<a name="combined-pharmaceutical-dose-form-ema-cs-100000116137"> </a></td><td>Lyophilisate and solvent for solution for injection</td></tr><tr><td style="white-space:nowrap">100000116141<a name="combined-pharmaceutical-dose-form-ema-cs-100000116141"> </a></td><td>Fibrin sealant-powder and solvent for fibrin sealant</td></tr><tr><td style="white-space:nowrap">100000116155<a name="combined-pharmaceutical-dose-form-ema-cs-100000116155"> </a></td><td>Granules and solvent for oral suspension</td></tr><tr><td style="white-space:nowrap">100000116160<a name="combined-pharmaceutical-dose-form-ema-cs-100000116160"> </a></td><td>Lyophilisate and solvent for suspension for injection</td></tr><tr><td style="white-space:nowrap">100000116172<a name="combined-pharmaceutical-dose-form-ema-cs-100000116172"> </a></td><td>Powder and gel for gel</td></tr><tr><td style="white-space:nowrap">100000116173<a name="combined-pharmaceutical-dose-form-ema-cs-100000116173"> </a></td><td>Powder and solution for solution for injection</td></tr><tr><td style="white-space:nowrap">100000116174<a name="combined-pharmaceutical-dose-form-ema-cs-100000116174"> </a></td><td>Powder and solvent for epilesional solution</td></tr><tr><td style="white-space:nowrap">100000116175<a name="combined-pharmaceutical-dose-form-ema-cs-100000116175"> </a></td><td>Powder and solvent for intravesical solution</td></tr><tr><td style="white-space:nowrap">100000116176<a name="combined-pharmaceutical-dose-form-ema-cs-100000116176"> </a></td><td>Powder and solvent for intravesical suspension</td></tr><tr><td style="white-space:nowrap">100000116177<a name="combined-pharmaceutical-dose-form-ema-cs-100000116177"> </a></td><td>Powder and solvent for nebuliser solution</td></tr><tr><td style="white-space:nowrap">100000116179<a name="combined-pharmaceutical-dose-form-ema-cs-100000116179"> </a></td><td>Powder, dispersion and solvent for concentrate for dispersion for infusion</td></tr><tr><td style="white-space:nowrap">100000125746<a name="combined-pharmaceutical-dose-form-ema-cs-100000125746"> </a></td><td>Powder and solvent for emulsion for injection</td></tr><tr><td style="white-space:nowrap">100000125747<a name="combined-pharmaceutical-dose-form-ema-cs-100000125747"> </a></td><td>Nasal drops, powder and solvent for solution</td></tr><tr><td style="white-space:nowrap">100000125777<a name="combined-pharmaceutical-dose-form-ema-cs-100000125777"> </a></td><td>Suspension and solvent for suspension for injection</td></tr><tr><td style="white-space:nowrap">100000136318<a name="combined-pharmaceutical-dose-form-ema-cs-100000136318"> </a></td><td>Concentrate and solvent for solution for injection/infusion</td></tr><tr><td style="white-space:nowrap">100000136325<a name="combined-pharmaceutical-dose-form-ema-cs-100000136325"> </a></td><td>Powder and solvent for solution for injection/skin-prick test</td></tr><tr><td style="white-space:nowrap">100000136558<a name="combined-pharmaceutical-dose-form-ema-cs-100000136558"> </a></td><td>Lyophilisate and solvent for suspension for nasal administration</td></tr><tr><td style="white-space:nowrap">100000136560<a name="combined-pharmaceutical-dose-form-ema-cs-100000136560"> </a></td><td>Powder and solvent for solution for sealant</td></tr><tr><td style="white-space:nowrap">100000136907<a name="combined-pharmaceutical-dose-form-ema-cs-100000136907"> </a></td><td>Solution for dispersion for injection/infusion</td></tr><tr><td style="white-space:nowrap">100000143502<a name="combined-pharmaceutical-dose-form-ema-cs-100000143502"> </a></td><td>Powder and solution for dental cement</td></tr><tr><td style="white-space:nowrap">100000143546<a name="combined-pharmaceutical-dose-form-ema-cs-100000143546"> </a></td><td>Endotracheopulmonary instillation, powder and solvent for suspension</td></tr><tr><td style="white-space:nowrap">100000143552<a name="combined-pharmaceutical-dose-form-ema-cs-100000143552"> </a></td><td>Powder, solvent and matrix for implantation matrix</td></tr><tr><td style="white-space:nowrap">100000156068<a name="combined-pharmaceutical-dose-form-ema-cs-100000156068"> </a></td><td>Nasal drops, lyophilisate and solvent for suspension</td></tr><tr><td style="white-space:nowrap">100000157796<a name="combined-pharmaceutical-dose-form-ema-cs-100000157796"> </a></td><td>Lyophilisate and suspension for suspension for injection</td></tr><tr><td style="white-space:nowrap">100000164467<a name="combined-pharmaceutical-dose-form-ema-cs-100000164467"> </a></td><td>Powder for concentrate and solution for solution for infusion</td></tr><tr><td style="white-space:nowrap">100000169997<a name="combined-pharmaceutical-dose-form-ema-cs-100000169997"> </a></td><td>Powder and solution for bee-hive solution</td></tr><tr><td style="white-space:nowrap">100000170588<a name="combined-pharmaceutical-dose-form-ema-cs-100000170588"> </a></td><td>Suspension and solvent for oral spray</td></tr><tr><td style="white-space:nowrap">100000171127<a name="combined-pharmaceutical-dose-form-ema-cs-100000171127"> </a></td><td>Lyophilisate and solvent for oral suspension</td></tr><tr><td style="white-space:nowrap">100000171193<a name="combined-pharmaceutical-dose-form-ema-cs-100000171193"> </a></td><td>Concentrate and solvent for concentrate for oral spray, suspension</td></tr><tr><td style="white-space:nowrap">100000171238<a name="combined-pharmaceutical-dose-form-ema-cs-100000171238"> </a></td><td>Lyophilisate and solvent for oculonasal suspension</td></tr><tr><td style="white-space:nowrap">100000171935<a name="combined-pharmaceutical-dose-form-ema-cs-100000171935"> </a></td><td>Emulsion and lyophilisate for suspension for injection</td></tr><tr><td style="white-space:nowrap">100000174065<a name="combined-pharmaceutical-dose-form-ema-cs-100000174065"> </a></td><td>Powder and solvent for syrup</td></tr><tr><td style="white-space:nowrap">200000002161<a name="combined-pharmaceutical-dose-form-ema-cs-200000002161"> </a></td><td>Nasal spray, lyophilisate and solvent for suspension</td></tr><tr><td style="white-space:nowrap">200000002287<a name="combined-pharmaceutical-dose-form-ema-cs-200000002287"> </a></td><td>Powder and solution for bee-hive dispersion</td></tr><tr><td style="white-space:nowrap">200000004201<a name="combined-pharmaceutical-dose-form-ema-cs-200000004201"> </a></td><td>Solution and dispersion for nebuliser dispersion</td></tr><tr><td style="white-space:nowrap">200000004819<a name="combined-pharmaceutical-dose-form-ema-cs-200000004819"> </a></td><td>Effervescent powder and powder for oral suspension</td></tr><tr><td style="white-space:nowrap">200000004820<a name="combined-pharmaceutical-dose-form-ema-cs-200000004820"> </a></td><td>Lyophilisate and solvent for emulsion for injection</td></tr><tr><td style="white-space:nowrap">200000005547<a name="combined-pharmaceutical-dose-form-ema-cs-200000005547"> </a></td><td>Powder and solution for suspension for injection</td></tr><tr><td style="white-space:nowrap">200000010382<a name="combined-pharmaceutical-dose-form-ema-cs-200000010382"> </a></td><td>Lyophilisate and solvent for suspension for nasal spray or injection</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Nov 20, 2023 21:10+0000">2023-11-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

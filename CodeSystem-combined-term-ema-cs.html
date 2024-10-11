@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Combined Term EMA - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.91"}
+    h3,h4,h5,h6{--heading-prefix:"7.91"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+      <li>
+        <a href="testserver.html">Testing Tool Box</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Combined Term EMA</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig/tree/master">https://github.com/hl7-eu/unicom-ig/tree/master</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-combined-term-ema-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-combined-term-ema-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-combined-term-ema-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Combined Term EMA
+
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://spor.ema.europa.eu/v1/lists/200000000007<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://spor.ema.europa.eu/v1/lists/200000000007"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://spor.ema.europa.eu/v1/lists/200000000007|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2024-10-11
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">CombinedTerm_EMA_CS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Combined Term. Based on EDQM. Re-coded with RMS codes. Only used for authorised dose form.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-authorised-doseform-vs.html">AuthorisedDoseForm</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem combined-term-ema-cs</b></p><a name="combined-term-ema-cs"> </a><a name="hccombined-term-ema-cs"> </a><a name="combined-term-ema-cs-en-US"> </a><p>This case-insensitive code system <code>https://spor.ema.europa.eu/v1/lists/200000000007</code> defines the following codes:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">100000136320<a name="combined-term-ema-cs-100000136320"> </a></td>
+<td>Eye drops, prolonged-release solution in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000136321<a name="combined-term-ema-cs-100000136321"> </a></td>
+<td>Eye drops, suspension in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000136322<a name="combined-term-ema-cs-100000136322"> </a></td>
+<td>Eye ointment in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000136323<a name="combined-term-ema-cs-100000136323"> </a></td>
+<td>Granules for oral solution in sachet</td></tr>
+<tr><td style="white-space:nowrap">200000017731<a name="combined-term-ema-cs-200000017731"> </a></td>
+<td>Powder for oral suspension in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000166823<a name="combined-term-ema-cs-100000166823"> </a></td>
+<td>Solution for injection in pre-filled injector</td></tr>
+<tr><td style="white-space:nowrap">100000167461<a name="combined-term-ema-cs-100000167461"> </a></td>
+<td>Solution for injection in dose-dispenser cartridge</td></tr>
+<tr><td style="white-space:nowrap">100000174056<a name="combined-term-ema-cs-100000174056"> </a></td>
+<td>Solution for injection in administration system</td></tr>
+<tr><td style="white-space:nowrap">100000174057<a name="combined-term-ema-cs-100000174057"> </a></td>
+<td>Powder and solvent for prolonged-release suspension for injection in pre-filled syringe</td></tr>
+<tr><td style="white-space:nowrap">100000174058<a name="combined-term-ema-cs-100000174058"> </a></td>
+<td>Powder for oral/rectal suspension in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000174059<a name="combined-term-ema-cs-100000174059"> </a></td>
+<td>Suspension for injection in pre-filled injector</td></tr>
+<tr><td style="white-space:nowrap">100000174060<a name="combined-term-ema-cs-100000174060"> </a></td>
+<td>Gel in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000174061<a name="combined-term-ema-cs-100000174061"> </a></td>
+<td>Oral suspension in pre-filled oral applicator</td></tr>
+<tr><td style="white-space:nowrap">100000174062<a name="combined-term-ema-cs-100000174062"> </a></td>
+<td>Oral emulsion in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000174063<a name="combined-term-ema-cs-100000174063"> </a></td>
+<td>Oral paste in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000174064<a name="combined-term-ema-cs-100000174064"> </a></td>
+<td>Powder and solvent for prolonged-release suspension for injection in pre-filled pen</td></tr>
+<tr><td style="white-space:nowrap">200000018794<a name="combined-term-ema-cs-200000018794"> </a></td>
+<td>Oral solution in multidose container with metering pump</td></tr>
+<tr><td style="white-space:nowrap">100000156069<a name="combined-term-ema-cs-100000156069"> </a></td>
+<td>Film-coated tablet and gastro-resistant granules in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000156090<a name="combined-term-ema-cs-100000156090"> </a></td>
+<td>Ear drops, solution in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000171807<a name="combined-term-ema-cs-100000171807"> </a></td>
+<td>Granules in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000172024<a name="combined-term-ema-cs-100000172024"> </a></td>
+<td>Syrup in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000172025<a name="combined-term-ema-cs-100000172025"> </a></td>
+<td>Emulsion for infusion in administration system</td></tr>
+<tr><td style="white-space:nowrap">200000025956<a name="combined-term-ema-cs-200000025956"> </a></td>
+<td>Film-coated granules in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">200000027808<a name="combined-term-ema-cs-200000027808"> </a></td>
+<td>Dispersion for injection in pre-filled syringe</td></tr>
+<tr><td style="white-space:nowrap">200000003532<a name="combined-term-ema-cs-200000003532"> </a></td>
+<td>Powder and solvent for suspension for injection in multidose container</td></tr>
+<tr><td style="white-space:nowrap">200000003533<a name="combined-term-ema-cs-200000003533"> </a></td>
+<td>Solution for injection in multidose container</td></tr>
+<tr><td style="white-space:nowrap">200000003534<a name="combined-term-ema-cs-200000003534"> </a></td>
+<td>Suspension for injection in multidose container</td></tr>
+<tr><td style="white-space:nowrap">200000003542<a name="combined-term-ema-cs-200000003542"> </a></td>
+<td>Granules in capsule for opening</td></tr>
+<tr><td style="white-space:nowrap">200000003970<a name="combined-term-ema-cs-200000003970"> </a></td>
+<td>Prolonged-release suspension for injection in pre-filled pen</td></tr>
+<tr><td style="white-space:nowrap">200000003584<a name="combined-term-ema-cs-200000003584"> </a></td>
+<td>Solution for injection in vial</td></tr>
+<tr><td style="white-space:nowrap">200000005491<a name="combined-term-ema-cs-200000005491"> </a></td>
+<td>Nasal powder in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">200000010389<a name="combined-term-ema-cs-200000010389"> </a></td>
+<td>Solution for infusion in cartridge</td></tr>
+<tr><td style="white-space:nowrap">200000010633<a name="combined-term-ema-cs-200000010633"> </a></td>
+<td>Solution for injection in pre-filled syringe in disposable cassette</td></tr>
+<tr><td style="white-space:nowrap">200000010731<a name="combined-term-ema-cs-200000010731"> </a></td>
+<td>Oral powder in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000073997<a name="combined-term-ema-cs-100000073997"> </a></td>
+<td>Eye drops, solution in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000074028<a name="combined-term-ema-cs-100000074028"> </a></td>
+<td>Pillules in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000074039<a name="combined-term-ema-cs-100000074039"> </a></td>
+<td>Solution for injection in pre-filled pen</td></tr>
+<tr><td style="white-space:nowrap">100000074046<a name="combined-term-ema-cs-100000074046"> </a></td>
+<td>Solution for injection in cartridge</td></tr>
+<tr><td style="white-space:nowrap">100000074047<a name="combined-term-ema-cs-100000074047"> </a></td>
+<td>Solution for injection in pre-filled syringe</td></tr>
+<tr><td style="white-space:nowrap">100000074050<a name="combined-term-ema-cs-100000074050"> </a></td>
+<td>Suspension for injection in pre-filled pen</td></tr>
+<tr><td style="white-space:nowrap">100000074062<a name="combined-term-ema-cs-100000074062"> </a></td>
+<td>Suspension for injection in cartridge</td></tr>
+<tr><td style="white-space:nowrap">100000074063<a name="combined-term-ema-cs-100000074063"> </a></td>
+<td>Suspension for injection in pre-filled syringe</td></tr>
+<tr><td style="white-space:nowrap">200000002333<a name="combined-term-ema-cs-200000002333"> </a></td>
+<td>Eye drops</td></tr>
+<tr><td style="white-space:nowrap">200000015352<a name="combined-term-ema-cs-200000015352"> </a></td>
+<td>Oral powder in capsules for opening</td></tr>
+<tr><td style="white-space:nowrap">200000015396<a name="combined-term-ema-cs-200000015396"> </a></td>
+<td>Transdermal gel in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000075575<a name="combined-term-ema-cs-100000075575"> </a></td>
+<td>Solution for infusion in administration system</td></tr>
+<tr><td style="white-space:nowrap">100000075582<a name="combined-term-ema-cs-100000075582"> </a></td>
+<td>Herbal tea in bag</td></tr>
+<tr><td style="white-space:nowrap">100000075583<a name="combined-term-ema-cs-100000075583"> </a></td>
+<td>Intravitreal implant in applicator</td></tr>
+<tr><td style="white-space:nowrap">100000075585<a name="combined-term-ema-cs-100000075585"> </a></td>
+<td>Powder and solvent for solution for injection in pre-filled syringe</td></tr>
+<tr><td style="white-space:nowrap">100000075588<a name="combined-term-ema-cs-100000075588"> </a></td>
+<td>Solution for injection/infusion in pre-filled syringe</td></tr>
+<tr><td style="white-space:nowrap">200000015536<a name="combined-term-ema-cs-200000015536"> </a></td>
+<td>Concentrate for dispersion for injection</td></tr>
+<tr><td style="white-space:nowrap">200000002380<a name="combined-term-ema-cs-200000002380"> </a></td>
+<td>Cutaneous solution in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000116144<a name="combined-term-ema-cs-100000116144"> </a></td>
+<td>Coated granules in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000116166<a name="combined-term-ema-cs-100000116166"> </a></td>
+<td>Nasal spray, solution in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000116178<a name="combined-term-ema-cs-100000116178"> </a></td>
+<td>Powder and solvent for suspension for injection in pre-filled syringe</td></tr>
+<tr><td style="white-space:nowrap">100000116190<a name="combined-term-ema-cs-100000116190"> </a></td>
+<td>Solution for injection in needle-free injector</td></tr>
+<tr><td style="white-space:nowrap">200000016198<a name="combined-term-ema-cs-200000016198"> </a></td>
+<td>Oral solution in bottle</td></tr>
+<tr><td style="white-space:nowrap">200000016458<a name="combined-term-ema-cs-200000016458"> </a></td>
+<td>Oral suspension in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000125712<a name="combined-term-ema-cs-100000125712"> </a></td>
+<td>Gel in pressurised container</td></tr>
+<tr><td style="white-space:nowrap">100000125738<a name="combined-term-ema-cs-100000125738"> </a></td>
+<td>Ear drops, suspension in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000125739<a name="combined-term-ema-cs-100000125739"> </a></td>
+<td>Emulsion for injection/infusion in pre-filled syringe</td></tr>
+<tr><td style="white-space:nowrap">100000125740<a name="combined-term-ema-cs-100000125740"> </a></td>
+<td>Eye gel in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000125741<a name="combined-term-ema-cs-100000125741"> </a></td>
+<td>Gastro-resistant granules for oral suspension in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000125742<a name="combined-term-ema-cs-100000125742"> </a></td>
+<td>Granules for oral suspension in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000125743<a name="combined-term-ema-cs-100000125743"> </a></td>
+<td>Granules in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000125744<a name="combined-term-ema-cs-100000125744"> </a></td>
+<td>Nasal drops, solution in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000125745<a name="combined-term-ema-cs-100000125745"> </a></td>
+<td>Oral powder in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000125748<a name="combined-term-ema-cs-100000125748"> </a></td>
+<td>Powder and solvent for solution for injection in cartridge</td></tr>
+<tr><td style="white-space:nowrap">100000125749<a name="combined-term-ema-cs-100000125749"> </a></td>
+<td>Powder and solvent for solution for injection in pre-filled pen</td></tr>
+<tr><td style="white-space:nowrap">100000125752<a name="combined-term-ema-cs-100000125752"> </a></td>
+<td>Powder for oral solution in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000125753<a name="combined-term-ema-cs-100000125753"> </a></td>
+<td>Implant in pre-filled syringe</td></tr>
+<tr><td style="white-space:nowrap">100000125756<a name="combined-term-ema-cs-100000125756"> </a></td>
+<td>Oral solution in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000125757<a name="combined-term-ema-cs-100000125757"> </a></td>
+<td>Oral solution in single-dose container</td></tr>
+<tr><td style="white-space:nowrap">100000125758<a name="combined-term-ema-cs-100000125758"> </a></td>
+<td>Oral suspension in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000125762<a name="combined-term-ema-cs-100000125762"> </a></td>
+<td>Solution and suspension for suspension for injection in pre-filled syringe</td></tr>
+<tr><td style="white-space:nowrap">100000125773<a name="combined-term-ema-cs-100000125773"> </a></td>
+<td>Prolonged-release granules for oral suspension in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000125774<a name="combined-term-ema-cs-100000125774"> </a></td>
+<td>Prolonged-release granules in sachet</td></tr>
+<tr><td style="white-space:nowrap">100000125775<a name="combined-term-ema-cs-100000125775"> </a></td>
+<td>Prolonged-release suspension for injection in pre-filled syringe</td></tr>
+<tr><td style="white-space:nowrap">100000125776<a name="combined-term-ema-cs-100000125776"> </a></td>
+<td>Solution for infusion in pre-filled syringe</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Oct 11, 2024 11:06+0000">2024-10-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

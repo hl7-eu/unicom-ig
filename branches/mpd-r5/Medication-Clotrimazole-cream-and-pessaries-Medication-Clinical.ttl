@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Medication/Clotrimazole-cream-and-pessaries-Medication-Clinical> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Clotrimazole-cream-and-pessaries-Medication-Clinical"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication Clotrimazole-cream-and-pessaries-Medication-Clinical</b></p><a name=\"Clotrimazole-cream-and-pessaries-Medication-Clinical\"> </a><a name=\"hcClotrimazole-cream-and-pessaries-Medication-Clinical\"> </a><a name=\"hcClotrimazole-cream-and-pessaries-Medication-Clinical-en-US\"> </a><p><b>doseForm</b>: <span title=\"Codes:{https://standardterms.edqm.eu 14001000}\">Cream + pessary</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-Clotrimazole-Cream-Generic.html\">Medication Clotrimazole 20 mg/g vaginal cream</a></td></tr></table></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication/Clotrimazole-Pessary-Generic\">Medication/Clotrimazole-Pessary-Generic</a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://unicom-project.eu/fhir/StructureDefinition/medicinal-product-classification"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "G01AF02" ] ;
+         fhir:display [ fhir:v "clotrimazole" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://unicom-project.eu/fhir/StructureDefinition/administrable-doseform"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10901000" ] ;
+         fhir:display [ fhir:v "Vaginal cream" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:doseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "14001000" ] ;
+       fhir:display [ fhir:v "Cream + pessary" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       fhir:reference [
+         fhir:link <http://unicom-project.eu/fhir/Medication/Clotrimazole-Cream-Generic> ;
+         fhir:reference [ fhir:v "Medication/Clotrimazole-Cream-Generic" ]
+       ]
+     ]
+  ] [
+     fhir:item [
+       fhir:reference [
+         fhir:link <http://unicom-project.eu/fhir/Medication/Clotrimazole-Pessary-Generic> ;
+         fhir:reference [ fhir:v "Medication/Clotrimazole-Pessary-Generic" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

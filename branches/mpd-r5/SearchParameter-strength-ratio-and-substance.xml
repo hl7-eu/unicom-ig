@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="strength-ratio-and-substance"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter strength-ratio-and-substance</b></p><a name="strength-ratio-and-substance"> </a><a name="hcstrength-ratio-and-substance"> </a><a name="hcstrength-ratio-and-substance-en-US"> </a><h2>strength-ratio-and-substance</h2><p>Parameter <code>strength-ratio-and-substance</code>:<code>composite</code></p><div><p>Possiblity to search for substance and strength at the same time</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R5/ingredient.html">Ingredient</a></td></tr><tr><td>Expression</td><td><code>Ingredient.substance</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table><p><b>Comparators</b></p><table class="grid"><tr><td>http://hl7.org/fhir/SearchParameter/Ingredient-substance-code</td><td><code>code.concept</code></td></tr><tr><td><a href="SearchParameter-strength-presentation-ratio-numerator.html">strength-presentation-ratio-numerator</a></td><td><code>strength.presentation.ofType(Ratio).numerator</code></td></tr></table></div>
+  </text>
+  <url value="http://unicom-project.eu/fhir/SearchParameter/strength-ratio-and-substance"/>
+  <version value="0.1.0"/>
+  <name value="strength-ratio-and-substance"/>
+  <status value="active"/>
+  <date value="2024-07-10T21:48:54+00:00"/>
+  <publisher value="UNICOM"/>
+  <contact>
+    <name value="UNICOM"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://unicom-project.eu"/>
+    </telecom>
+  </contact>
+  <description value="Possiblity to search for substance and strength at the same time"/>
+  <code value="strength-ratio-and-substance"/>
+  <base value="Ingredient"/>
+  <type value="composite"/>
+  <expression value="Ingredient.substance"/>
+  <processingMode value="normal"/>
+  <component>
+    <definition value="http://hl7.org/fhir/SearchParameter/Ingredient-substance-code"/>
+    <expression value="code.concept"/>
+  </component>
+  <component>
+    <definition value="http://unicom-project.eu/fhir/SearchParameter/strength-presentation-ratio-numerator"/>
+    <expression value="strength.presentation.ofType(Ratio).numerator"/>
+  </component>
+</SearchParameter>

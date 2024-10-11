@@ -1,0 +1,1726 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EDQM Patient-friendly Term - JSON Representation - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.63"}
+    h3,h4,h5,h6{--heading-prefix:"7.63"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+      <li>
+        <a href="testserver.html">Testing Tool Box</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EDQM Patient-friendly Term</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-patient-friendly-term.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-patient-friendly-term.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-patient-friendly-term.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: EDQM Patient-friendly Term - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2024-10-11
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-patient-friendly-term.json" no-download="true">Raw json</a> | <a href="ValueSet-patient-friendly-term.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">id</a>" : "patient-friendly-term",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet patient-friendly-term&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;patient-friendly-term\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcpatient-friendly-term\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;patient-friendly-term-en-US\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://standardterms.edqm.eu&lt;/code&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11010&lt;/td&gt;&lt;td&gt;Oral drops&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11050&lt;/td&gt;&lt;td&gt;Oral liquid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12100&lt;/td&gt;&lt;td&gt;Capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12120&lt;/td&gt;&lt;td&gt;Gastro-resistant capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12150&lt;/td&gt;&lt;td&gt;Prolonged-release capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12200&lt;/td&gt;&lt;td&gt;Tablet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12320&lt;/td&gt;&lt;td&gt;Intraruminal device&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12350&lt;/td&gt;&lt;td&gt;Medicated premix&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13050&lt;/td&gt;&lt;td&gt;Oromucosal liquid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13100&lt;/td&gt;&lt;td&gt;Oromucosal spray&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13150&lt;/td&gt;&lt;td&gt;Sublingual spray&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13220&lt;/td&gt;&lt;td&gt;Lozenge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;14050&lt;/td&gt;&lt;td&gt;Dental liquid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15090&lt;/td&gt;&lt;td&gt;Cutaneous spray&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15130&lt;/td&gt;&lt;td&gt;Cutaneous liquid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15290&lt;/td&gt;&lt;td&gt;Dip&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15320&lt;/td&gt;&lt;td&gt;Dip concentrate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15370&lt;/td&gt;&lt;td&gt;Pour-on&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15400&lt;/td&gt;&lt;td&gt;Spot-on&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15430&lt;/td&gt;&lt;td&gt;Teat dip&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15460&lt;/td&gt;&lt;td&gt;Teat spray&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;16040&lt;/td&gt;&lt;td&gt;Eye drops&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;17040&lt;/td&gt;&lt;td&gt;Ear drops&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;17090&lt;/td&gt;&lt;td&gt;Ear spray&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;17120&lt;/td&gt;&lt;td&gt;Ear wash&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18040&lt;/td&gt;&lt;td&gt;Nasal drops&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18080&lt;/td&gt;&lt;td&gt;Nasal spray&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;19050&lt;/td&gt;&lt;td&gt;Vaginal liquid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;19100&lt;/td&gt;&lt;td&gt;Vaginal capsule&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;20050&lt;/td&gt;&lt;td&gt;Enema&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;21010&lt;/td&gt;&lt;td&gt;Nebuliser liquid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;21060&lt;/td&gt;&lt;td&gt;Pressurised inhalation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;21100&lt;/td&gt;&lt;td&gt;Inhalation powder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;21140&lt;/td&gt;&lt;td&gt;Inhalation vapour&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22010&lt;/td&gt;&lt;td&gt;Injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22030&lt;/td&gt;&lt;td&gt;Powder for concentrate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22050&lt;/td&gt;&lt;td&gt;Powder for injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22060&lt;/td&gt;&lt;td&gt;Powder for prolonged-release injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22090&lt;/td&gt;&lt;td&gt;Sterile concentrate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22100&lt;/td&gt;&lt;td&gt;Infusion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22120&lt;/td&gt;&lt;td&gt;Powder for infusion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;26010&lt;/td&gt;&lt;td&gt;Endotracheopulmonary instillation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;29020&lt;/td&gt;&lt;td&gt;Intrauterine liquid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;31030&lt;/td&gt;&lt;td&gt;Blood fraction modifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;31080&lt;/td&gt;&lt;td&gt;Gastroenteral liquid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;31090&lt;/td&gt;&lt;td&gt;Chewing gum&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;31100&lt;/td&gt;&lt;td&gt;Injection/infusion&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Deutsch (German, de)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Greek (el)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Spanish (es)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;French (fr)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Italian (it)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Portuguese (pt)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11010&lt;/td&gt;&lt;td&gt;Tropfen zum Einnehmen&lt;/td&gt;&lt;td&gt;Πόσιμες σταγόνες&lt;/td&gt;&lt;td&gt;Gotas orales&lt;/td&gt;&lt;td&gt;Gouttes buvables&lt;/td&gt;&lt;td&gt;Gocce orali&lt;/td&gt;&lt;td&gt;Gotas orais&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;11050&lt;/td&gt;&lt;td&gt;Flüssigkeit zum Einnehmen&lt;/td&gt;&lt;td&gt;Πόσιμο υγρό&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Liquido orale&lt;/td&gt;&lt;td&gt;Líquido oral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12100&lt;/td&gt;&lt;td&gt;Kapsel&lt;/td&gt;&lt;td&gt;Καψάκιο&lt;/td&gt;&lt;td&gt;Cápsula&lt;/td&gt;&lt;td&gt;Capsule ou Gélule selon le cas&lt;/td&gt;&lt;td&gt;Capsula&lt;/td&gt;&lt;td&gt;Cápsula&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12120&lt;/td&gt;&lt;td&gt;magensaftresistente Kapsel&lt;/td&gt;&lt;td&gt;Γαστροανθεκτικό καψάκιο&lt;/td&gt;&lt;td&gt;Cápsula gastrorresistente&lt;/td&gt;&lt;td&gt;Capsule ou Gélule gastrorésistante selon le cas&lt;/td&gt;&lt;td&gt;Capsula gastroresistente&lt;/td&gt;&lt;td&gt;Cápsula gastrorresistente&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12150&lt;/td&gt;&lt;td&gt;Retardkapsel&lt;/td&gt;&lt;td&gt;Καψάκιο παρατεταμένης αποδέσμευσης&lt;/td&gt;&lt;td&gt;Cápsula de liberación prolongada&lt;/td&gt;&lt;td&gt;Capsule ou Gélule à libération prolongée selon le cas&lt;/td&gt;&lt;td&gt;Capsula a rilascio prolungato&lt;/td&gt;&lt;td&gt;Cápsula de libertação prolongada&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12200&lt;/td&gt;&lt;td&gt;Tablette&lt;/td&gt;&lt;td&gt;Δισκίο&lt;/td&gt;&lt;td&gt;Comprimido&lt;/td&gt;&lt;td&gt;Comprimé&lt;/td&gt;&lt;td&gt;Compressa&lt;/td&gt;&lt;td&gt;Comprimido&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12320&lt;/td&gt;&lt;td&gt;Intraruminales System&lt;/td&gt;&lt;td&gt;Συσκευή χορήγησης στη μεγάλη κοιλία&lt;/td&gt;&lt;td&gt;Dispositivo intrarruminal&lt;/td&gt;&lt;td&gt;Dispositif intraruminal&lt;/td&gt;&lt;td&gt;Dispositivo intraruminale&lt;/td&gt;&lt;td&gt;Bólus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;12350&lt;/td&gt;&lt;td&gt;Arzneimittel-Vormischung&lt;/td&gt;&lt;td&gt;Πρόμιγμα για φαρμακούχο τροφή&lt;/td&gt;&lt;td&gt;Premezcla&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Premiscela medicamentosa&lt;/td&gt;&lt;td&gt;Pré-mistura medicamentosa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13050&lt;/td&gt;&lt;td&gt;Flüssigkeit zur Anwendung in der Mundhöhle&lt;/td&gt;&lt;td&gt;Στοματικό υγρό&lt;/td&gt;&lt;td&gt;Líquido bucal&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Liquido per mucosa orale&lt;/td&gt;&lt;td&gt;Líquido bucal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13100&lt;/td&gt;&lt;td&gt;Spray zur Anwendung in der Mundhöhle&lt;/td&gt;&lt;td&gt;Στοματικό εκνέφωμα&lt;/td&gt;&lt;td&gt;Pulverización bucal&lt;/td&gt;&lt;td&gt;Pulvérisation buccale&lt;/td&gt;&lt;td&gt;Spray per mucosa orale&lt;/td&gt;&lt;td&gt;Pulverização bucal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13150&lt;/td&gt;&lt;td&gt;Sublingualspray&lt;/td&gt;&lt;td&gt;Υπογλώσσιο εκνέφωμα&lt;/td&gt;&lt;td&gt;Solución para pulverización sublingual&lt;/td&gt;&lt;td&gt;Solution pour pulvérisation sublinguale&lt;/td&gt;&lt;td&gt;Spray sublinguale&lt;/td&gt;&lt;td&gt;Preparação para pulverização sublingual&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13220&lt;/td&gt;&lt;td&gt;Lutschtablette&lt;/td&gt;&lt;td&gt;Τροχίσκος&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Comprimé à sucer&lt;/td&gt;&lt;td&gt;Pastiglia&lt;/td&gt;&lt;td&gt;Pastilha&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;14050&lt;/td&gt;&lt;td&gt;Dentalflüssigkeit&lt;/td&gt;&lt;td&gt;Οδοντικό υγρό&lt;/td&gt;&lt;td&gt;Líquido dental&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Liquido dentale&lt;/td&gt;&lt;td&gt;Líquido dental&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15090&lt;/td&gt;&lt;td&gt;Spray zur Anwendung auf der Haut&lt;/td&gt;&lt;td&gt;Δερματικό εκνέφωμα&lt;/td&gt;&lt;td&gt;Pulverización cutánea&lt;/td&gt;&lt;td&gt;Pulvérisation cutanée&lt;/td&gt;&lt;td&gt;Spray cutaneo&lt;/td&gt;&lt;td&gt;Pulverização cutânea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15130&lt;/td&gt;&lt;td&gt;Flüssigkeit zur Anwendung auf der Haut&lt;/td&gt;&lt;td&gt;Δερματικό υγρό&lt;/td&gt;&lt;td&gt;Líquido cutáneo&lt;/td&gt;&lt;td&gt;Liquide cutané&lt;/td&gt;&lt;td&gt;Liquido cutaneo&lt;/td&gt;&lt;td&gt;Líquido cutâneo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15290&lt;/td&gt;&lt;td&gt;Tauchbad&lt;/td&gt;&lt;td&gt;Υγρό εμβάπτισης&lt;/td&gt;&lt;td&gt;Baño&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Bagno&lt;/td&gt;&lt;td&gt;Banho medicamentoso&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15320&lt;/td&gt;&lt;td&gt;Konzentrat zur Herstellung eines Tauchbades&lt;/td&gt;&lt;td&gt;Πυκνό διάλυμα για παρασκευή μέσων εμβάπτισης&lt;/td&gt;&lt;td&gt;Concentrado para baño&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Concentrato per bagno&lt;/td&gt;&lt;td&gt;Concentrado para banho medicamentoso&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15370&lt;/td&gt;&lt;td&gt;Flüssigkeit zum Übergiessen&lt;/td&gt;&lt;td&gt;Επίχυμα&lt;/td&gt;&lt;td&gt;Pour-on&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Pour-on&lt;/td&gt;&lt;td&gt;Unção contínua&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15400&lt;/td&gt;&lt;td&gt;Flüssigkeit zum Auftropfen&lt;/td&gt;&lt;td&gt;Επίχυμα&lt;/td&gt;&lt;td&gt;Spot-on&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Spot-on&lt;/td&gt;&lt;td&gt;Unção punctiforme&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15430&lt;/td&gt;&lt;td&gt;Zitzentauchmittel&lt;/td&gt;&lt;td&gt;Υγρό εμβάπτισης θηλής&lt;/td&gt;&lt;td&gt;Baño para pezones&lt;/td&gt;&lt;td&gt;Trempage mammaire&lt;/td&gt;&lt;td&gt;Immersione della mammella&lt;/td&gt;&lt;td&gt;Banho medicamentoso do úbere&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;15460&lt;/td&gt;&lt;td&gt;Zitzenspray&lt;/td&gt;&lt;td&gt;Υγρό ψεκασμού θηλής&lt;/td&gt;&lt;td&gt;Pulverización para pezones&lt;/td&gt;&lt;td&gt;Pulvérisation mammaire&lt;/td&gt;&lt;td&gt;Spray mammario&lt;/td&gt;&lt;td&gt;Líquido para pulverização do úbere&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;16040&lt;/td&gt;&lt;td&gt;Augentropfen&lt;/td&gt;&lt;td&gt;Οφθαλμικές σταγόνες&lt;/td&gt;&lt;td&gt;Colirio&lt;/td&gt;&lt;td&gt;Collyre&lt;/td&gt;&lt;td&gt;Collirio&lt;/td&gt;&lt;td&gt;Colírio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;17040&lt;/td&gt;&lt;td&gt;Ohrentropfen&lt;/td&gt;&lt;td&gt;Ωτικές σταγόνες&lt;/td&gt;&lt;td&gt;Gotas óticas&lt;/td&gt;&lt;td&gt;Gouttes auriculaires&lt;/td&gt;&lt;td&gt;Gocce auricolari&lt;/td&gt;&lt;td&gt;Gotas auriculares&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;17090&lt;/td&gt;&lt;td&gt;Ohrenspray&lt;/td&gt;&lt;td&gt;Ωτικό εκνέφωμα&lt;/td&gt;&lt;td&gt;Pulverización ótica&lt;/td&gt;&lt;td&gt;Pulvérisation auriculaire&lt;/td&gt;&lt;td&gt;Spray auricolare&lt;/td&gt;&lt;td&gt;Pulverização auricular&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;17120&lt;/td&gt;&lt;td&gt;Ohrenspülung&lt;/td&gt;&lt;td&gt;Ωτικό πλύμα&lt;/td&gt;&lt;td&gt;Lavado ótico&lt;/td&gt;&lt;td&gt;Lavage auriculaire&lt;/td&gt;&lt;td&gt;Lavaggio auricolare&lt;/td&gt;&lt;td&gt;Lavagem auricular&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18040&lt;/td&gt;&lt;td&gt;Nasentropfen&lt;/td&gt;&lt;td&gt;Ρινικές σταγόνες&lt;/td&gt;&lt;td&gt;Gotas nasales&lt;/td&gt;&lt;td&gt;Gouttes nasales&lt;/td&gt;&lt;td&gt;Gocce nasali&lt;/td&gt;&lt;td&gt;Gotas nasais&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18080&lt;/td&gt;&lt;td&gt;Nasenspray&lt;/td&gt;&lt;td&gt;Ρινικό εκνέφωμα&lt;/td&gt;&lt;td&gt;Pulverización nasal&lt;/td&gt;&lt;td&gt;Pulvérisation nasale&lt;/td&gt;&lt;td&gt;Spray nasale&lt;/td&gt;&lt;td&gt;Pulverização nasal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;19050&lt;/td&gt;&lt;td&gt;Flüssigkeit zur vaginalen Anwendung&lt;/td&gt;&lt;td&gt;Κολπικό υγρό&lt;/td&gt;&lt;td&gt;Líquido vaginal&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Lavanda vaginale&lt;/td&gt;&lt;td&gt;Líquido vaginal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;19100&lt;/td&gt;&lt;td&gt;Vaginalkapsel&lt;/td&gt;&lt;td&gt;Κολπικό καψάκιο&lt;/td&gt;&lt;td&gt;Cápsula vaginal&lt;/td&gt;&lt;td&gt;Capsule ou Gélule vaginale selon le cas&lt;/td&gt;&lt;td&gt;Capsula vaginale&lt;/td&gt;&lt;td&gt;Cápsula vaginal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;20050&lt;/td&gt;&lt;td&gt;Klistier&lt;/td&gt;&lt;td&gt;Υποκλυσμός&lt;/td&gt;&lt;td&gt;Enema&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Clistere&lt;/td&gt;&lt;td&gt;Enema&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;21010&lt;/td&gt;&lt;td&gt;Flüssigkeit für einen Vernebler&lt;/td&gt;&lt;td&gt;Υγρό για εισπνοή με εκνεφωτή&lt;/td&gt;&lt;td&gt;Líquido para nebulizador&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Liquido da nebulizzare&lt;/td&gt;&lt;td&gt;Líquido para nebulização&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;21060&lt;/td&gt;&lt;td&gt;Druckgasinhalation&lt;/td&gt;&lt;td&gt;Υγρό για εισπνοή υπό πίεση&lt;/td&gt;&lt;td&gt;Inhalación en envase a presión&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Liquido pressurizzato per inalazione&lt;/td&gt;&lt;td&gt;Líquido pressurizado para inalação&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;21100&lt;/td&gt;&lt;td&gt;Pulver zur Inhalation&lt;/td&gt;&lt;td&gt;Κόνις για εισπνοή&lt;/td&gt;&lt;td&gt;Polvo para inhalación&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Polvere per inalazione&lt;/td&gt;&lt;td&gt;Pó para inalação&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;21140&lt;/td&gt;&lt;td&gt;Dampf zur Inhalation&lt;/td&gt;&lt;td&gt;Εισπνεόμενοι ατμοί&lt;/td&gt;&lt;td&gt;Vapor para inhalación&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Suffumigi&lt;/td&gt;&lt;td&gt;Vapor para inalação&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22010&lt;/td&gt;&lt;td&gt;Injektion&lt;/td&gt;&lt;td&gt;Ενέσιμο&lt;/td&gt;&lt;td&gt;Inyectable&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Iniettabile&lt;/td&gt;&lt;td&gt;Injetável&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22030&lt;/td&gt;&lt;td&gt;Pulver zur Herstellung eines Konzentrats&lt;/td&gt;&lt;td&gt;Κόνις για πυκνό σκεύασμα&lt;/td&gt;&lt;td&gt;Polvo para concentrado&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Polvere per concentrato&lt;/td&gt;&lt;td&gt;Pó para concentrado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22050&lt;/td&gt;&lt;td&gt;Pulver zur Herstellung einer Injektionszubereitung&lt;/td&gt;&lt;td&gt;Κόνις για ενέσιμο&lt;/td&gt;&lt;td&gt;Polvo para inyectable&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Polvere per preparazione iniettabile&lt;/td&gt;&lt;td&gt;Pó para uso injetável&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22060&lt;/td&gt;&lt;td&gt;Pulver zur Herstellung einer Depot-Injektion&lt;/td&gt;&lt;td&gt;Κόνις για παρατεταμένης αποδέσμευσης ενέσιμο&lt;/td&gt;&lt;td&gt;Polvo para inyectable de liberación prolongada&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Polvere per preparazione iniettabile a rilascio prolungato&lt;/td&gt;&lt;td&gt;Pó para suspensão injetável de libertação prolongada&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22090&lt;/td&gt;&lt;td&gt;steriles Konzentrat&lt;/td&gt;&lt;td&gt;Στείρο πυκνό διάλυμα&lt;/td&gt;&lt;td&gt;Concentrado estéril&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Concentrato sterile&lt;/td&gt;&lt;td&gt;Concentrado estéril&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22100&lt;/td&gt;&lt;td&gt;Infusion&lt;/td&gt;&lt;td&gt;Εγχυση&lt;/td&gt;&lt;td&gt;Perfusión&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Infusione&lt;/td&gt;&lt;td&gt;Perfusão&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;22120&lt;/td&gt;&lt;td&gt;Pulver zur Herstellung einer Infusionslösung&lt;/td&gt;&lt;td&gt;Κόνις για διάλυμα προς έγχυση&lt;/td&gt;&lt;td&gt;Polvo para perfusión&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Polvere per infusione&lt;/td&gt;&lt;td&gt;Pó para perfusão&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;26010&lt;/td&gt;&lt;td&gt;Lösung zur endotracheopulmonalen Instillation&lt;/td&gt;&lt;td&gt;Ενδοτραχειοπνευμονική ενστάλλαξη&lt;/td&gt;&lt;td&gt;Instilación endotraqueopulmonar&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Instillazione endotracheobronchiale&lt;/td&gt;&lt;td&gt;Instilação endotraqueobrônquica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;29020&lt;/td&gt;&lt;td&gt;Flüssigkeit zur intrauterinen Anwendung&lt;/td&gt;&lt;td&gt;Ενδομητριαίο υγρό&lt;/td&gt;&lt;td&gt;Líquido intrauterino&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Liquido per uso intrauterino&lt;/td&gt;&lt;td&gt;Líquido intrauterino&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;31030&lt;/td&gt;&lt;td&gt;Zubereitung zur Modifikation einer Blutfraktion&lt;/td&gt;&lt;td&gt;Τροποποιητής κλάσματος αίματος&lt;/td&gt;&lt;td&gt;Modificador de fracción sanguínea&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Modificatore di componenti ematici&lt;/td&gt;&lt;td&gt;Modificador da fração sanguínea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;31080&lt;/td&gt;&lt;td&gt;Flüssigkeit zur gastrointestinalen Anwendung&lt;/td&gt;&lt;td&gt;Γαστρεντερικό υγρό&lt;/td&gt;&lt;td&gt;Líquido gastroentérico&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Liquido gastroenterico&lt;/td&gt;&lt;td&gt;Líquido gastroentérico&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;31090&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;31100&lt;/td&gt;&lt;td&gt;Injektion/Infusion&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Injection/perfusion&lt;/td&gt;&lt;td&gt;Iniezione/infusione&lt;/td&gt;&lt;td&gt;Injetável ou perfusão&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">url</a>" : "http://unicom-project.eu/fhir/ValueSet/patient-friendly-term",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">name</a>" : "PatientFriendlyTerm",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a>" : "EDQM Patient-friendly Term",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a>" : "2024-10-11T10:53:19+00:00",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.publisher">publisher</a>" : "UNICOM",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "UNICOM",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://unicom-project.eu"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">description</a>" : "ValueSet Patient-friendly term (dose forms) from EDQM, PFT, see https://standardterms.edqm.eu/#",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.immutable">immutable</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">system</a>" : "https://standardterms.edqm.eu",
+        "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "11010",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Oral drops",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tropfen zum Einnehmen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Πόσιμες σταγόνες"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gotas orales"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gouttes buvables"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gocce orali"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gotas orais"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "11050",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Oral liquid",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flüssigkeit zum Einnehmen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Πόσιμο υγρό"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Liquido orale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido oral"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "12100",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Capsule",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Kapsel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Καψάκιο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cápsula"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Capsule ou Gélule selon le cas"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Capsula"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cápsula"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "12120",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Gastro-resistant capsule",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "magensaftresistente Kapsel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Γαστροανθεκτικό καψάκιο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cápsula gastrorresistente"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Capsule ou Gélule gastrorésistante selon le cas"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Capsula gastroresistente"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cápsula gastrorresistente"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "12150",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Prolonged-release capsule",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Retardkapsel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Καψάκιο παρατεταμένης αποδέσμευσης"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cápsula de liberación prolongada"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Capsule ou Gélule à libération prolongée selon le cas"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Capsula a rilascio prolungato"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cápsula de libertação prolongada"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "12200",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tablet",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tablette"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Δισκίο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Comprimido"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Comprimé"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Compressa"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Comprimido"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "12320",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Intraruminal device",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Intraruminales System"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Συσκευή χορήγησης στη μεγάλη κοιλία"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositivo intrarruminal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositif intraruminal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dispositivo intraruminale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bólus"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "12350",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Medicated premix",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Arzneimittel-Vormischung"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Πρόμιγμα για φαρμακούχο τροφή"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Premezcla"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Premiscela medicamentosa"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pré-mistura medicamentosa"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "13050",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Oromucosal liquid",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flüssigkeit zur Anwendung in der Mundhöhle"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Στοματικό υγρό"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido bucal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Liquido per mucosa orale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido bucal"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "13100",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Oromucosal spray",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spray zur Anwendung in der Mundhöhle"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Στοματικό εκνέφωμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulverización bucal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulvérisation buccale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spray per mucosa orale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulverização bucal"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "13150",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sublingual spray",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Sublingualspray"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Υπογλώσσιο εκνέφωμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Solución para pulverización sublingual"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Solution pour pulvérisation sublinguale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spray sublinguale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Preparação para pulverização sublingual"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "13220",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Lozenge",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Lutschtablette"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Τροχίσκος"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Comprimé à sucer"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pastiglia"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pastilha"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "14050",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Dental liquid",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dentalflüssigkeit"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Οδοντικό υγρό"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido dental"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Liquido dentale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido dental"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15090",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cutaneous spray",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spray zur Anwendung auf der Haut"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Δερματικό εκνέφωμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulverización cutánea"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulvérisation cutanée"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spray cutaneo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulverização cutânea"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15130",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cutaneous liquid",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flüssigkeit zur Anwendung auf der Haut"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Δερματικό υγρό"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido cutáneo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Liquide cutané"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Liquido cutaneo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido cutâneo"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15290",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Dip",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Tauchbad"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Υγρό εμβάπτισης"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Baño"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Bagno"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Banho medicamentoso"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15320",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Dip concentrate",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Konzentrat zur Herstellung eines Tauchbades"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Πυκνό διάλυμα για παρασκευή μέσων εμβάπτισης"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Concentrado para baño"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Concentrato per bagno"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Concentrado para banho medicamentoso"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15370",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pour-on",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flüssigkeit zum Übergiessen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Επίχυμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pour-on"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pour-on"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Unção contínua"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15400",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Spot-on",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flüssigkeit zum Auftropfen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Επίχυμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spot-on"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spot-on"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Unção punctiforme"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15430",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Teat dip",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Zitzentauchmittel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Υγρό εμβάπτισης θηλής"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Baño para pezones"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Trempage mammaire"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Immersione della mammella"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Banho medicamentoso do úbere"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "15460",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Teat spray",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Zitzenspray"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Υγρό ψεκασμού θηλής"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulverización para pezones"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulvérisation mammaire"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spray mammario"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido para pulverização do úbere"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "16040",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Eye drops",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Augentropfen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Οφθαλμικές σταγόνες"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Colirio"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Collyre"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Collirio"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Colírio"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "17040",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ear drops",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ohrentropfen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ωτικές σταγόνες"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gotas óticas"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gouttes auriculaires"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gocce auricolari"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gotas auriculares"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "17090",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ear spray",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ohrenspray"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ωτικό εκνέφωμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulverización ótica"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulvérisation auriculaire"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spray auricolare"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulverização auricular"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "17120",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ear wash",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ohrenspülung"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ωτικό πλύμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Lavado ótico"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Lavage auriculaire"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Lavaggio auricolare"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Lavagem auricular"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18040",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nasal drops",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Nasentropfen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ρινικές σταγόνες"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gotas nasales"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gouttes nasales"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gocce nasali"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Gotas nasais"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18080",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nasal spray",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Nasenspray"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ρινικό εκνέφωμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulverización nasal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulvérisation nasale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Spray nasale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulverização nasal"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "19050",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Vaginal liquid",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flüssigkeit zur vaginalen Anwendung"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κολπικό υγρό"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido vaginal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Lavanda vaginale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido vaginal"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "19100",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Vaginal capsule",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Vaginalkapsel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κολπικό καψάκιο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cápsula vaginal"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Capsule ou Gélule vaginale selon le cas"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Capsula vaginale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Cápsula vaginal"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "20050",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Enema",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Klistier"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Υποκλυσμός"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Enema"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Clistere"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Enema"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "21010",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nebuliser liquid",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flüssigkeit für einen Vernebler"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Υγρό για εισπνοή με εκνεφωτή"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido para nebulizador"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Liquido da nebulizzare"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido para nebulização"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "21060",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pressurised inhalation",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Druckgasinhalation"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Υγρό για εισπνοή υπό πίεση"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inhalación en envase a presión"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Liquido pressurizzato per inalazione"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido pressurizado para inalação"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "21100",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inhalation powder",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulver zur Inhalation"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κόνις για εισπνοή"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Polvo para inhalación"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Polvere per inalazione"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pó para inalação"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "21140",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inhalation vapour",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Dampf zur Inhalation"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Εισπνεόμενοι ατμοί"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Vapor para inhalación"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Suffumigi"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Vapor para inalação"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "22010",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Injection",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injektion"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ενέσιμο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Inyectable"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Iniettabile"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injetável"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "22030",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Powder for concentrate",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulver zur Herstellung eines Konzentrats"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κόνις για πυκνό σκεύασμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Polvo para concentrado"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Polvere per concentrato"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pó para concentrado"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "22050",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Powder for injection",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulver zur Herstellung einer Injektionszubereitung"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κόνις για ενέσιμο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Polvo para inyectable"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Polvere per preparazione iniettabile"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pó para uso injetável"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "22060",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Powder for prolonged-release injection",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulver zur Herstellung einer Depot-Injektion"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κόνις για παρατεταμένης αποδέσμευσης ενέσιμο"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Polvo para inyectable de liberación prolongada"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Polvere per preparazione iniettabile a rilascio prolungato"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pó para suspensão injetável de libertação prolongada"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "22090",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sterile concentrate",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "steriles Konzentrat"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Στείρο πυκνό διάλυμα"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Concentrado estéril"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Concentrato sterile"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Concentrado estéril"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "22100",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Infusion",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Infusion"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Εγχυση"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Perfusión"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Infusione"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Perfusão"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "22120",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Powder for infusion",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pulver zur Herstellung einer Infusionslösung"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Κόνις για διάλυμα προς έγχυση"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Polvo para perfusión"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Polvere per infusione"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pó para perfusão"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "26010",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Endotracheopulmonary instillation",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Lösung zur endotracheopulmonalen Instillation"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ενδοτραχειοπνευμονική ενστάλλαξη"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Instilación endotraqueopulmonar"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Instillazione endotracheobronchiale"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Instilação endotraqueobrônquica"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "29020",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Intrauterine liquid",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flüssigkeit zur intrauterinen Anwendung"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Ενδομητριαίο υγρό"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido intrauterino"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Liquido per uso intrauterino"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido intrauterino"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "31030",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Blood fraction modifier",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Zubereitung zur Modifikation einer Blutfraktion"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Τροποποιητής κλάσματος αίματος"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Modificador de fracción sanguínea"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Modificatore di componenti ematici"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Modificador da fração sanguínea"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "31080",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Gastroenteral liquid",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Flüssigkeit zur gastrointestinalen Anwendung"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "el",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Γαστρεντερικό υγρό"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "es",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido gastroentérico"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "-"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Liquido gastroenterico"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Líquido gastroentérico"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "31090",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chewing gum"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "31100",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Injection/infusion",
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injektion/Infusion"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injection/perfusion"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Iniezione/infusione"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "pt",
+                "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injetável ou perfusão"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Oct 11, 2024 10:53+0000">2024-10-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

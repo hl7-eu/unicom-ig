@@ -1,0 +1,726 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Bundle/006-Yaz-002mg3mg-tablet-SE-FullProduct> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "006-Yaz-002mg3mg-tablet-SE-FullProduct"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100016468-BayerAB"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100016468-BayerAB> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Yaz-0023mg-tablet-SE-AJ-PackagedProductDefinition"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Yaz-0023mg-tablet-SE-AJ-PackagedProductDefinition> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Yaz-0023mg-tablet-SE-AJ-Ingredient01"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Yaz-0023mg-tablet-SE-AJ-Ingredient01> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Yaz-0023mg-tablet-SE-AJ-Ingredient02"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Yaz-0023mg-tablet-SE-AJ-Ingredient02> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Yaz-0023mg-tablet-SE-AJ-Ingredient03"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Yaz-0023mg-tablet-SE-AJ-Ingredient03> )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition> a fhir:MedicinalProductDefinition ;
+  fhir:id [ fhir:v "Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicinalProductDefinition_Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicinalProductDefinition Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition</b></p><a name=\"Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition\"> </a><a name=\"hcYaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition\"> </a><a name=\"Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/fhir/mpId</code>/SE-100004813-00026267</p><p><b>domain</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}\">Human use</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000005003 200000005004}\">Current</span></p><p><b>combinedPharmaceuticalDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073665}\">Film-coated tablet</span></p><p><b>indication</b>: </p><div><p>Antikonception Vid beslut att förskriva Yaz ska den enskilda kvinnans riskfaktorer beaktas, framför allt de för  venös tromboembolism (VTE), och risken för VTE med Yaz jämfört med andra kombinerade  hormonella preventivmedel (se avsnitt 4.3 och 4.4).</p>\n</div><p><b>legalStatusOfSupply</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072051 100000072084}\">Medicinal product subject to medical prescription</span></p><p><b>classification</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000093533 100000095785}\">drospirenone and ethinylestradiol</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Yaz 0,02 mg/3 mg Filmdragerad tablett</p><blockquote><p><b>part</b></p><p><b>part</b>: Yaz</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000002}\">Invented name part</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: 0,02 mg/3 mg</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000004}\">Strength part</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: Filmdragerad tablett</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000005}\">Pharmaceutical dose form part</span></p></blockquote><h3>Usages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000535}\">Kingdom of Sweden</span></td><td><span title=\"Codes:{urn:ietf:bcp:47 sv}\">Swedish</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/fhir/mpId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "SE-100004813-00026267" ]
+  ] ) ; # 
+  fhir:domain [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000012" ] ;
+       fhir:display [ fhir:v "Human use" ]
+     ] )
+  ] ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000005003"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000005004" ] ;
+       fhir:display [ fhir:v "Current" ]
+     ] )
+  ] ; # 
+  fhir:combinedPharmaceuticalDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073665" ] ;
+       fhir:display [ fhir:v "Film-coated tablet" ]
+     ] )
+  ] ; # 
+  fhir:indication [ fhir:v "Antikonception Vid beslut att förskriva Yaz ska den enskilda kvinnans riskfaktorer beaktas, framför allt de för  venös tromboembolism (VTE), och risken för VTE med Yaz jämfört med andra kombinerade  hormonella preventivmedel (se avsnitt 4.3 och 4.4)."] ; # 
+  fhir:legalStatusOfSupply [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072051"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072084" ] ;
+       fhir:display [ fhir:v "Medicinal product subject to medical prescription" ]
+     ] )
+  ] ; # 
+  fhir:classification ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000093533"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000095785" ] ;
+       fhir:display [ fhir:v "drospirenone and ethinylestradiol" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:productName [ fhir:v "Yaz 0,02 mg/3 mg Filmdragerad tablett" ] ;
+     fhir:part ( [
+       fhir:part [ fhir:v "Yaz" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000002" ] ;
+           fhir:display [ fhir:v "Invented name part" ]
+         ] )
+       ]
+     ] [
+       fhir:part [ fhir:v "0,02 mg/3 mg" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000004" ] ;
+           fhir:display [ fhir:v "Strength part" ]
+         ] )
+       ]
+     ] [
+       fhir:part [ fhir:v "Filmdragerad tablett" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000005" ] ;
+           fhir:display [ fhir:v "Pharmaceutical dose form part" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:usage ( [
+       fhir:country [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000000535" ] ;
+           fhir:display [ fhir:v "Kingdom of Sweden" ]
+         ] )
+       ] ;
+       fhir:language [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "sv" ] ;
+           fhir:display [ fhir:v "Swedish" ]
+         ] )
+       ]
+     ] )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100016468-BayerAB> a fhir:Organization ;
+  fhir:id [ fhir:v "LOC-100016468-BayerAB"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_LOC-100016468-BayerAB\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization LOC-100016468-BayerAB</b></p><a name=\"LOC-100016468-BayerAB\"> </a><a name=\"hcLOC-100016468-BayerAB\"> </a><a name=\"LOC-100016468-BayerAB-en-US\"> </a><p><b>identifier</b>: <code>https://spor.ema.europa.eu/v1/locations</code>/LOC-100016468</p><p><b>name</b>: Bayer AB</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/locations"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "LOC-100016468" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Bayer AB"] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization> a fhir:RegulatedAuthorization ;
+  fhir:id [ fhir:v "Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RegulatedAuthorization_Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RegulatedAuthorization Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization</b></p><a name=\"Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization\"> </a><a name=\"hcYaz-0023mg-tablet-SE-AJ-RegulatedAuthorization\"> </a><a name=\"Yaz-0023mg-tablet-SE-AJ-RegulatedAuthorization-en-US\"> </a><p><b>identifier</b>: 26267</p><p><b>subject</b>: <a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#MedicinalProductDefinition_Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition\">Bundle: type = collection</a></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000060 220000000061}\">Marketing Authorisation</span></p><p><b>region</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000535}\">Kingdom of Sweden</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072049 100000072099}\">Valid</span></p><p><b>statusDate</b>: 2008-07-03</p><p><b>holder</b>: <a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#Organization_LOC-100016468-BayerAB\">Bundle: type = collection</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "26267" ]
+  ] ) ; # 
+  fhir:subject ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000060"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "220000000061" ] ;
+       fhir:display [ fhir:v "Marketing Authorisation" ]
+     ] )
+  ] ; # 
+  fhir:region ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000535" ] ;
+       fhir:display [ fhir:v "Kingdom of Sweden" ]
+     ] )
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072049"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072099" ] ;
+       fhir:display [ fhir:v "Valid" ]
+     ] )
+  ] ; # 
+  fhir:statusDate [ fhir:v "2008-07-03"^^xsd:date] ; # 
+  fhir:holder [
+     fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100016468-BayerAB> ;
+     fhir:reference [ fhir:v "Organization/LOC-100016468-BayerAB" ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01> a fhir:AdministrableProductDefinition ;
+  fhir:id [ fhir:v "Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AdministrableProductDefinition_Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AdministrableProductDefinition Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01</b></p><a name=\"Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01\"> </a><a name=\"hcYaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01\"> </a><a name=\"Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01-en-US\"> </a><p><b>status</b>: Active</p><p><b>formOf</b>: <a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#MedicinalProductDefinition_Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition\">Bundle: type = collection</a></p><p><b>administrableDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073665}\">Film-coated tablet</span></p><p><b>producedFrom</b>: <a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#ManufacturedItemDefinition_Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01\">Bundle: type = collection</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073345 100000073619}\">Oral use</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:formOf ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition" ]
+  ] ) ; # 
+  fhir:administrableDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073665" ] ;
+       fhir:display [ fhir:v "Film-coated tablet" ]
+     ] )
+  ] ; # 
+  fhir:producedFrom ( [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01" ]
+  ] ) ; # 
+  fhir:routeOfAdministration ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073345"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073619" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02> a fhir:AdministrableProductDefinition ;
+  fhir:id [ fhir:v "Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AdministrableProductDefinition_Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AdministrableProductDefinition Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02</b></p><a name=\"Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02\"> </a><a name=\"hcYaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02\"> </a><a name=\"Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02-en-US\"> </a><p><b>status</b>: Active</p><p><b>formOf</b>: <a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#MedicinalProductDefinition_Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition\">Bundle: type = collection</a></p><p><b>administrableDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073665}\">Film-coated tablet</span></p><p><b>producedFrom</b>: <a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#ManufacturedItemDefinition_Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02\">Bundle: type = collection</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073345 100000073619}\">Oral use</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:formOf ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition" ]
+  ] ) ; # 
+  fhir:administrableDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073665" ] ;
+       fhir:display [ fhir:v "Film-coated tablet" ]
+     ] )
+  ] ; # 
+  fhir:producedFrom ( [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02" ]
+  ] ) ; # 
+  fhir:routeOfAdministration ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073345"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073619" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Yaz-0023mg-tablet-SE-AJ-PackagedProductDefinition> a fhir:PackagedProductDefinition ;
+  fhir:id [ fhir:v "Yaz-0023mg-tablet-SE-AJ-PackagedProductDefinition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PackagedProductDefinition_Yaz-0023mg-tablet-SE-AJ-PackagedProductDefinition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PackagedProductDefinition Yaz-0023mg-tablet-SE-AJ-PackagedProductDefinition</b></p><a name=\"Yaz-0023mg-tablet-SE-AJ-PackagedProductDefinition\"> </a><a name=\"hcYaz-0023mg-tablet-SE-AJ-PackagedProductDefinition\"> </a><a name=\"Yaz-0023mg-tablet-SE-AJ-PackagedProductDefinition-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/example/pcid</code>/?ngen-9?</p><p><b>packageFor</b>: <a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#MedicinalProductDefinition_Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition\">Bundle: type = collection</a></p><p><b>containedItemQuantity</b>: 84 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002152 = 'Tablet')</span></p><p><b>description</b>: </p><div><p>Blister, 3 x 28 tabletter</p>\n</div><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000535}\">Kingdom of Sweden</span></td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072052 100000072083}\">Marketed</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000003199 200000003208}\">Plastic</span></p><blockquote><p><b>packaging</b></p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/example/pcid"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:packageFor ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition" ]
+  ] ) ; # 
+  fhir:containedItemQuantity ( [
+     fhir:value [ fhir:v "84"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "tablet" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002152" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "Blister, 3 x 28 tabletter"] ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000000535" ] ;
+         fhir:display [ fhir:v "Kingdom of Sweden" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072052"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000072083" ] ;
+         fhir:display [ fhir:v "Marketed" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073498" ] ;
+         fhir:display [ fhir:v "Box" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "200000003208" ] ;
+         fhir:display [ fhir:v "Plastic" ]
+       ] )
+     ] ) ;
+     fhir:packaging ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000073498" ] ;
+           fhir:display [ fhir:v "Box" ]
+         ] )
+       ] ;
+       fhir:quantity [ fhir:v "3"^^xsd:integer ] ;
+       fhir:material ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003529" ] ;
+           fhir:display [ fhir:v "Cardboard" ]
+         ] )
+       ] ) ;
+       fhir:packaging ( [
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000073496" ] ;
+             fhir:display [ fhir:v "Blister" ]
+           ] )
+         ] ;
+         fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+         fhir:material ( [
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "200000003200" ] ;
+             fhir:display [ fhir:v "Aluminium" ]
+           ] )
+         ] [
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "200000003222" ] ;
+             fhir:display [ fhir:v "PolyVinyl Chloride" ]
+           ] )
+         ] ) ;
+         fhir:containedItem ( [
+           fhir:item [
+             fhir:reference [
+               fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01> ;
+               fhir:reference [ fhir:v "ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01" ]
+             ]
+           ] ;
+           fhir:amount [
+             fhir:value [ fhir:v "24"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "tablet" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "200000002152" ]
+           ]
+         ] [
+           fhir:item [
+             fhir:reference [
+               fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02> ;
+               fhir:reference [ fhir:v "ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02" ]
+             ]
+           ] ;
+           fhir:amount [
+             fhir:value [ fhir:v "4"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "tablet" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "200000002152" ]
+           ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01> a fhir:ManufacturedItemDefinition ;
+  fhir:id [ fhir:v "Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ManufacturedItemDefinition_Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ManufacturedItemDefinition Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01</b></p><a name=\"Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01\"> </a><a name=\"hcYaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01\"> </a><a name=\"Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01-en-US\"> </a><p><b>status</b>: Active</p><p><b>manufacturedDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073665}\">Film-coated tablet</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002152}\">tablet</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturedDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073665" ] ;
+       fhir:display [ fhir:v "Film-coated tablet" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002152" ] ;
+       fhir:display [ fhir:v "tablet" ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02> a fhir:ManufacturedItemDefinition ;
+  fhir:id [ fhir:v "Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ManufacturedItemDefinition_Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ManufacturedItemDefinition Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02</b></p><a name=\"Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02\"> </a><a name=\"hcYaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02\"> </a><a name=\"Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02-en-US\"> </a><p><b>status</b>: Active</p><p><b>manufacturedDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073665}\">Film-coated tablet</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002152}\">tablet</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturedDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073665" ] ;
+       fhir:display [ fhir:v "Film-coated tablet" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002152" ] ;
+       fhir:display [ fhir:v "tablet" ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Yaz-0023mg-tablet-SE-AJ-Ingredient01> a fhir:Ingredient ;
+  fhir:id [ fhir:v "Yaz-0023mg-tablet-SE-AJ-Ingredient01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Ingredient_Yaz-0023mg-tablet-SE-AJ-Ingredient01\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Ingredient Yaz-0023mg-tablet-SE-AJ-Ingredient01</b></p><a name=\"Yaz-0023mg-tablet-SE-AJ-Ingredient01\"> </a><a name=\"hcYaz-0023mg-tablet-SE-AJ-Ingredient01\"> </a><a name=\"Yaz-0023mg-tablet-SE-AJ-Ingredient01-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: </p><ul><li><a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#MedicinalProductDefinition_Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition\">Bundle: type = collection</a></li><li><a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#ManufacturedItemDefinition_Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01\">Bundle: type = collection</a></li><li><a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#AdministrableProductDefinition_Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01\">Bundle: type = collection</a></li></ul><p><b>role</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000091531}\">Ethinylestradiol betadex clathrate</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 173.17 microgram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110656 = 'microgram(s)')</span>/1 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002152 = 'Tablet')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000091721}\">Ethinylestradiol</span></td></tr></table><p><b>strength</b>: 20 microgram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110656 = 'microgram(s)')</span>/1 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002152 = 'Tablet')</span></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000091531" ] ;
+           fhir:display [ fhir:v "Ethinylestradiol betadex clathrate" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:presentation [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "173.17"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "microgram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110656" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "tablet" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000002152" ]
+         ]
+       ] ;
+       fhir:referenceStrength ( [
+         fhir:substance [
+           fhir:concept [
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "100000091721" ] ;
+               fhir:display [ fhir:v "Ethinylestradiol" ]
+             ] )
+           ]
+         ] ;
+         fhir:strength [
+           a fhir:Ratio ;
+           fhir:numerator [
+             fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "microgram(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110656" ]
+           ] ;
+           fhir:denominator [
+             fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "tablet" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "200000002152" ]
+           ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Yaz-0023mg-tablet-SE-AJ-Ingredient02> a fhir:Ingredient ;
+  fhir:id [ fhir:v "Yaz-0023mg-tablet-SE-AJ-Ingredient02"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Ingredient_Yaz-0023mg-tablet-SE-AJ-Ingredient02\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Ingredient Yaz-0023mg-tablet-SE-AJ-Ingredient02</b></p><a name=\"Yaz-0023mg-tablet-SE-AJ-Ingredient02\"> </a><a name=\"hcYaz-0023mg-tablet-SE-AJ-Ingredient02\"> </a><a name=\"Yaz-0023mg-tablet-SE-AJ-Ingredient02-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: </p><ul><li><a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#MedicinalProductDefinition_Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition\">Bundle: type = collection</a></li><li><a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#ManufacturedItemDefinition_Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02\">Bundle: type = collection</a></li><li><a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#AdministrableProductDefinition_Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02\">Bundle: type = collection</a></li></ul><p><b>role</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072082}\">Excipient</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000093305}\">Lactose monohydrate</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 23.2 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')</span>/1 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002152 = 'Tablet')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000090052}\">lactose</span></td></tr></table><p><b>strength</b>: 22 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')</span>/1 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002152 = 'Tablet')</span></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition02" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition02" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072082" ] ;
+       fhir:display [ fhir:v "Excipient" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000093305" ] ;
+           fhir:display [ fhir:v "Lactose monohydrate" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:presentation [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "23.2"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "milligram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110655" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "tablet" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000002152" ]
+         ]
+       ] ;
+       fhir:referenceStrength ( [
+         fhir:substance [
+           fhir:concept [
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "100000090052" ] ;
+               fhir:display [ fhir:v "lactose" ]
+             ] )
+           ]
+         ] ;
+         fhir:strength [
+           a fhir:Ratio ;
+           fhir:numerator [
+             fhir:value [ fhir:v "22"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "milligram(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110655" ]
+           ] ;
+           fhir:denominator [
+             fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "tablet" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "200000002152" ]
+           ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Yaz-0023mg-tablet-SE-AJ-Ingredient03> a fhir:Ingredient ;
+  fhir:id [ fhir:v "Yaz-0023mg-tablet-SE-AJ-Ingredient03"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Ingredient_Yaz-0023mg-tablet-SE-AJ-Ingredient03\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Ingredient Yaz-0023mg-tablet-SE-AJ-Ingredient03</b></p><a name=\"Yaz-0023mg-tablet-SE-AJ-Ingredient03\"> </a><a name=\"hcYaz-0023mg-tablet-SE-AJ-Ingredient03\"> </a><a name=\"Yaz-0023mg-tablet-SE-AJ-Ingredient03-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: </p><ul><li><a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#MedicinalProductDefinition_Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition\">Bundle: type = collection</a></li><li><a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#ManufacturedItemDefinition_Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01\">Bundle: type = collection</a></li><li><a href=\"Bundle-006-Yaz-002mg3mg-tablet-SE-FullProduct.html#AdministrableProductDefinition_Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01\">Bundle: type = collection</a></li></ul><p><b>role</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000092375}\">drospirenone</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 3 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')</span>/1 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002152 = 'Tablet')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000092375}\">drospirenone</span></td></tr></table><p><b>strength</b>: 3 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')</span>/1 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002152 = 'Tablet')</span></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Yaz-0023mg-tablet-SE-AJ-MedicinalProductDefinition" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/Yaz-0023mg-tablet-SE-AJ-ManufacturedItemDefinition01" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/Yaz-0023mg-tablet-SE-AJ-AdministrableProductDefinition01" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000092375" ] ;
+           fhir:display [ fhir:v "drospirenone" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:presentation [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "3"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "milligram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110655" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "tablet" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000002152" ]
+         ]
+       ] ;
+       fhir:referenceStrength ( [
+         fhir:substance [
+           fhir:concept [
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "100000092375" ] ;
+               fhir:display [ fhir:v "drospirenone" ]
+             ] )
+           ]
+         ] ;
+         fhir:strength [
+           a fhir:Ratio ;
+           fhir:numerator [
+             fhir:value [ fhir:v "3"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "milligram(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110655" ]
+           ] ;
+           fhir:denominator [
+             fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "tablet" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "200000002152" ]
+           ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

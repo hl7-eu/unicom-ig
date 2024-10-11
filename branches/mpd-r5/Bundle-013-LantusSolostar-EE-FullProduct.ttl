@@ -1,0 +1,425 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Bundle/013-LantusSolostar-EE-FullProduct> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "013-LantusSolostar-EE-FullProduct"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-LantusSolostar-EE-MPD"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-LantusSolostar-EE-MPD> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-LantusSolostar-EE-RA"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-LantusSolostar-EE-RA> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100000869-Sanofi-Aventis-Deutchland"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100000869-Sanofi-Aventis-Deutchland> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-LantusSolostar-EE-APD"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-LantusSolostar-EE-APD> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-LantusSolostar-EE-MID"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-LantusSolostar-EE-MID> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-LantusSolostar-EE-I"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-LantusSolostar-EE-I> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-LantusSolostar-EE-PPD-1265778"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-LantusSolostar-EE-PPD-1265778> )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-LantusSolostar-EE-MPD> a fhir:MedicinalProductDefinition ;
+  fhir:id [ fhir:v "LantusSolostar-EE-MPD"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicinalProductDefinition_LantusSolostar-EE-MPD\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicinalProductDefinition LantusSolostar-EE-MPD</b></p><a name=\"LantusSolostar-EE-MPD\"> </a><a name=\"hcLantusSolostar-EE-MPD\"> </a><a name=\"hcLantusSolostar-EE-MPD-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/fhir/mpId</code>/EE-100000869-3157</p><p><b>domain</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}\">Human use</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000005003 200000005004}\">Current</span></p><p><b>combinedPharmaceuticalDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000007 100000074039}\">Solution for injection in pre-filled pen</span></p><p><b>legalStatusOfSupply</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072051 100000072084}\">Medicinal product subject to medical prescription</span></p><p><b>classification</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000093533 100000094023}\">insulin glargine</span>, <span title=\"Codes:{http://www.whocc.no/atc A10AE04}\">insulin glargine</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Lantus SoloStar 100 ühikut/ml süstelahus pen-süstlis</p><blockquote><p><b>part</b></p><p><b>part</b>: Lantus Solostar</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000002}\">Invented name part</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: 100 ühikut/ml</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000004}\">Strength part</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: süstelahus pen-süstlis</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000005}\">Pharmaceutical dose form part</span></p></blockquote><h3>Usages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Republic of Estonia</span></td><td><span title=\"Codes:{urn:ietf:bcp:47 et}\">Estonian</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/fhir/mpId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100000869-3157" ]
+  ] ) ; # 
+  fhir:domain [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000012" ] ;
+       fhir:display [ fhir:v "Human use" ]
+     ] )
+  ] ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000005003"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000005004" ] ;
+       fhir:display [ fhir:v "Current" ]
+     ] )
+  ] ; # 
+  fhir:combinedPharmaceuticalDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000007"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000074039" ] ;
+       fhir:display [ fhir:v "Solution for injection in pre-filled pen" ]
+     ] )
+  ] ; # 
+  fhir:legalStatusOfSupply [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072051"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072084" ] ;
+       fhir:display [ fhir:v "Medicinal product subject to medical prescription" ]
+     ] )
+  ] ; # 
+  fhir:classification ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000093533"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000094023" ] ;
+       fhir:display [ fhir:v "insulin glargine" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "A10AE04" ] ;
+       fhir:display [ fhir:v "insulin glargine" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:productName [ fhir:v "Lantus SoloStar 100 ühikut/ml süstelahus pen-süstlis" ] ;
+     fhir:part ( [
+       fhir:part [ fhir:v "Lantus Solostar" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000002" ] ;
+           fhir:display [ fhir:v "Invented name part" ]
+         ] )
+       ]
+     ] [
+       fhir:part [ fhir:v "100 ühikut/ml" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000004" ] ;
+           fhir:display [ fhir:v "Strength part" ]
+         ] )
+       ]
+     ] [
+       fhir:part [ fhir:v "süstelahus pen-süstlis" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000005" ] ;
+           fhir:display [ fhir:v "Pharmaceutical dose form part" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:usage ( [
+       fhir:country [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000000388" ] ;
+           fhir:display [ fhir:v "Republic of Estonia" ]
+         ] )
+       ] ;
+       fhir:language [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "et" ] ;
+           fhir:display [ fhir:v "Estonian" ]
+         ] )
+       ]
+     ] )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-LantusSolostar-EE-RA> a fhir:RegulatedAuthorization ;
+  fhir:id [ fhir:v "LantusSolostar-EE-RA"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RegulatedAuthorization_LantusSolostar-EE-RA\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RegulatedAuthorization LantusSolostar-EE-RA</b></p><a name=\"LantusSolostar-EE-RA\"> </a><a name=\"hcLantusSolostar-EE-RA\"> </a><a name=\"hcLantusSolostar-EE-RA-en-US\"> </a><p><b>identifier</b>: EU/1/00/134</p><p><b>subject</b>: <a href=\"Bundle-013-LantusSolostar-EE-FullProduct.html#MedicinalProductDefinition_LantusSolostar-EE-MPD\">Bundle: type = collection</a></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000060 220000000061}\">Marketing Authorisation</span></p><p><b>region</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000390}\">European Union</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072049 200000017708}\">Valid - Renewed/Varied</span></p><p><b>statusDate</b>: 2022-06-28</p><p><b>holder</b>: <a href=\"Bundle-013-LantusSolostar-EE-FullProduct.html#Organization_LOC-100000869-Sanofi-Aventis-Deutchland\">Bundle: type = collection</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "EU/1/00/134" ]
+  ] ) ; # 
+  fhir:subject ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/LantusSolostar-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/LantusSolostar-EE-MPD" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000060"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "220000000061" ] ;
+       fhir:display [ fhir:v "Marketing Authorisation" ]
+     ] )
+  ] ; # 
+  fhir:region ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000390" ] ;
+       fhir:display [ fhir:v "European Union" ]
+     ] )
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072049"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000017708" ] ;
+       fhir:display [ fhir:v "Valid - Renewed/Varied" ]
+     ] )
+  ] ; # 
+  fhir:statusDate [ fhir:v "2022-06-28"^^xsd:date] ; # 
+  fhir:holder [
+     fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100000869-Sanofi-Aventis-Deutchland> ;
+     fhir:reference [ fhir:v "Organization/LOC-100000869-Sanofi-Aventis-Deutchland" ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100000869-Sanofi-Aventis-Deutchland> a fhir:Organization ;
+  fhir:id [ fhir:v "LOC-100000869-Sanofi-Aventis-Deutchland"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_LOC-100000869-Sanofi-Aventis-Deutchland\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization LOC-100000869-Sanofi-Aventis-Deutchland</b></p><a name=\"LOC-100000869-Sanofi-Aventis-Deutchland\"> </a><a name=\"hcLOC-100000869-Sanofi-Aventis-Deutchland\"> </a><a name=\"hcLOC-100000869-Sanofi-Aventis-Deutchland-en-US\"> </a><p><b>identifier</b>: <code>https://spor.ema.europa.eu/v1/locations</code>/LOC-100000869, <code>https://spor.ema.europa.eu/v1/organisations</code>/ORG-100001175</p><p><b>name</b>: Sanofi-Aventis Deutschland GmbH</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/locations"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "LOC-100000869" ]
+  ] [
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/organisations"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ORG-100001175" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Sanofi-Aventis Deutschland GmbH"] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-LantusSolostar-EE-APD> a fhir:AdministrableProductDefinition ;
+  fhir:id [ fhir:v "LantusSolostar-EE-APD"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AdministrableProductDefinition_LantusSolostar-EE-APD\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AdministrableProductDefinition LantusSolostar-EE-APD</b></p><a name=\"LantusSolostar-EE-APD\"> </a><a name=\"hcLantusSolostar-EE-APD\"> </a><a name=\"hcLantusSolostar-EE-APD-en-US\"> </a><p><b>status</b>: Active</p><p><b>formOf</b>: <a href=\"Bundle-013-LantusSolostar-EE-FullProduct.html#MedicinalProductDefinition_LantusSolostar-EE-MPD\">Bundle: type = collection</a></p><p><b>administrableDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073863}\">Solution for injection</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002135}\">Pen</span></p><p><b>producedFrom</b>: <a href=\"Bundle-013-LantusSolostar-EE-FullProduct.html#ManufacturedItemDefinition_LantusSolostar-EE-MID\">Bundle: type = collection</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073345 100000073633}\">Subcutaneous use</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:formOf ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/LantusSolostar-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/LantusSolostar-EE-MPD" ]
+  ] ) ; # 
+  fhir:administrableDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073863" ] ;
+       fhir:display [ fhir:v "Solution for injection" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002135" ] ;
+       fhir:display [ fhir:v "Pen" ]
+     ] )
+  ] ; # 
+  fhir:producedFrom ( [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/LantusSolostar-EE-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/LantusSolostar-EE-MID" ]
+  ] ) ; # 
+  fhir:routeOfAdministration ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073345"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073633" ] ;
+         fhir:display [ fhir:v "Subcutaneous use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-LantusSolostar-EE-MID> a fhir:ManufacturedItemDefinition ;
+  fhir:id [ fhir:v "LantusSolostar-EE-MID"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ManufacturedItemDefinition_LantusSolostar-EE-MID\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ManufacturedItemDefinition LantusSolostar-EE-MID</b></p><a name=\"LantusSolostar-EE-MID\"> </a><a name=\"hcLantusSolostar-EE-MID\"> </a><a name=\"hcLantusSolostar-EE-MID-en-US\"> </a><p><b>status</b>: Active</p><p><b>manufacturedDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073863}\">Solution for injection</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002135}\">Pen</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturedDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073863" ] ;
+       fhir:display [ fhir:v "Solution for injection" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002135" ] ;
+       fhir:display [ fhir:v "Pen" ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-LantusSolostar-EE-I> a fhir:Ingredient ;
+  fhir:id [ fhir:v "LantusSolostar-EE-I"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Ingredient_LantusSolostar-EE-I\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Ingredient LantusSolostar-EE-I</b></p><a name=\"LantusSolostar-EE-I\"> </a><a name=\"hcLantusSolostar-EE-I\"> </a><a name=\"hcLantusSolostar-EE-I-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: </p><ul><li><a href=\"Bundle-013-LantusSolostar-EE-FullProduct.html#MedicinalProductDefinition_LantusSolostar-EE-MPD\">Bundle: type = collection</a></li><li><a href=\"Bundle-013-LantusSolostar-EE-FullProduct.html#ManufacturedItemDefinition_LantusSolostar-EE-MID\">Bundle: type = collection</a></li><li><a href=\"Bundle-013-LantusSolostar-EE-FullProduct.html#AdministrableProductDefinition_LantusSolostar-EE-APD\">Bundle: type = collection</a></li></ul><p><b>role</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000085460}\">Insulin glargine</span></td></tr></table><h3>Strengths</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concentration[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>100 unit(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110756 = 'unit(s)')</span>/1 millilitre(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110662 = 'millilitre(s)')</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/LantusSolostar-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/LantusSolostar-EE-MPD" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/LantusSolostar-EE-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/LantusSolostar-EE-MID" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/LantusSolostar-EE-APD> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/LantusSolostar-EE-APD" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000085460" ] ;
+           fhir:display [ fhir:v "Insulin glargine" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:concentration [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "unit(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110756" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "millilitre(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110662" ]
+         ]
+       ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-LantusSolostar-EE-PPD-1265778> a fhir:PackagedProductDefinition ;
+  fhir:id [ fhir:v "LantusSolostar-EE-PPD-1265778"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PackagedProductDefinition_LantusSolostar-EE-PPD-1265778\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PackagedProductDefinition LantusSolostar-EE-PPD-1265778</b></p><a name=\"LantusSolostar-EE-PPD-1265778\"> </a><a name=\"hcLantusSolostar-EE-PPD-1265778\"> </a><a name=\"hcLantusSolostar-EE-PPD-1265778-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/example/pcid</code>/EE-100000869-3157-1265778</p><p><b>packageFor</b>: <a href=\"Bundle-013-LantusSolostar-EE-FullProduct.html#MedicinalProductDefinition_LantusSolostar-EE-MPD\">Bundle: type = collection</a></p><p><b>containedItemQuantity</b>: 5 Pen<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002135 = 'Pen')</span></p><p><b>description</b>: </p><div><p>Lantus SoloStar 100 ühikut/ml süstelahus pen-süstlis. I tüüpi värvitust klaasist kolbampull musta värvi kolvi (broombutüülkumm), äärikkattega\n(alumiinium) ja korgiga (broombutüülkumm või polüisopreenlaminaat ja broombutüülkumm);\nsisaldab 3 ml süstelahust. Kolbampull on paigaldatud mittetäidetavasse pen-süstlisse. Nõelad ei sisaldu pakendis.\nPakendis on 5 pen-süstlit.</p>\n</div><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Republic of Estonia</span></td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072052 100000072083}\">Marketed</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}\">Cardboard</span></p><blockquote><p><b>packaging</b></p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/example/pcid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100000869-3157-1265778" ]
+  ] ) ; # 
+  fhir:packageFor ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/LantusSolostar-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/LantusSolostar-EE-MPD" ]
+  ] ) ; # 
+  fhir:containedItemQuantity ( [
+     fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Pen" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002135" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "Lantus SoloStar 100 ühikut/ml süstelahus pen-süstlis. I tüüpi värvitust klaasist kolbampull musta värvi kolvi (broombutüülkumm), äärikkattega\n(alumiinium) ja korgiga (broombutüülkumm või polüisopreenlaminaat ja broombutüülkumm);\nsisaldab 3 ml süstelahust. Kolbampull on paigaldatud mittetäidetavasse pen-süstlisse. Nõelad ei sisaldu pakendis.\nPakendis on 5 pen-süstlit."] ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000000388" ] ;
+         fhir:display [ fhir:v "Republic of Estonia" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072052"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000072083" ] ;
+         fhir:display [ fhir:v "Marketed" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073498" ] ;
+         fhir:display [ fhir:v "Box" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "200000003529" ] ;
+         fhir:display [ fhir:v "Cardboard" ]
+       ] )
+     ] ) ;
+     fhir:packaging ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000073543" ] ;
+           fhir:display [ fhir:v "Pre-filled pen" ]
+         ] )
+       ] ;
+       fhir:quantity [ fhir:v "5"^^xsd:integer ] ;
+       fhir:containedItem ( [
+         fhir:item [
+           fhir:reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/LantusSolostar-EE-MID> ;
+             fhir:reference [ fhir:v "ManufacturedItemDefinition/LantusSolostar-EE-MID" ]
+           ]
+         ] ;
+         fhir:amount [
+           fhir:value [ fhir:v "3"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "millilitre(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110662" ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

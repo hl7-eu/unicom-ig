@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="CanifugCremolum-EE-Pessary-Medication-Item"/>
+  <meta>
+    <profile value="http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="CanifugCremolum-EE-Pessary-Medication-Item"> </a><a name="hcCanifugCremolum-EE-Pessary-Medication-Item"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;CanifugCremolum-EE-Pessary-Medication-Item&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MedicationAsManufacturedItem.html">Medication as manufactured item</a></p></div><p><b>doseForm</b>: Pessary <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#10909000)</span></p><p><b>totalVolume</b>: 6 Pessary<span style="background: LightGoldenRodYellow"> (Details: https://standardterms.edqm.eu code 15039000 = '15039000')</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td>CLOTRIMAZOLE <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-substance-sms-cs.html">Substances EMA SPOR SMS</a>#100000092074)</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 100 milligram<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Pessary<span style="background: LightGoldenRodYellow"> (Details: https://standardterms.edqm.eu code 15039000 = '15039000')</span></p></blockquote></div>
+  </text>
+  <doseForm>
+    <coding>
+      <system value="https://standardterms.edqm.eu"/>
+      <code value="10909000"/>
+      <display value="Pessary"/>
+    </coding>
+  </doseForm>
+  <totalVolume>
+    <value value="6"/>
+    <unit value="Pessary"/>
+    <system value="https://standardterms.edqm.eu"/>
+    <code value="15039000"/>
+  </totalVolume>
+  <ingredient>
+    <item>
+      <concept>
+        <coding>
+          <system value="https://spor.ema.europa.eu/v2/SubstanceDefinition"/>
+          <code value="100000092074"/>
+          <display value="CLOTRIMAZOLE"/>
+        </coding>
+      </concept>
+    </item>
+    <isActive value="true"/>
+    <strengthRatio>
+      <numerator>
+        <value value="100"/>
+        <unit value="milligram"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </numerator>
+      <denominator>
+        <value value="1"/>
+        <unit value="Pessary"/>
+        <system value="https://standardterms.edqm.eu"/>
+        <code value="15039000"/>
+      </denominator>
+    </strengthRatio>
+  </ingredient>
+</Medication>

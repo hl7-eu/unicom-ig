@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="sms-snomed-substance-cm"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-02-17T17:40:44.521+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap sms-snomed-substance-cm</b></p><a name="sms-snomed-substance-cm"> </a><a name="hcsms-snomed-substance-cm"> </a><a name="sms-snomed-substance-cm-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 1; Last updated: 2023-02-17 17:40:44+0000</p></div><p>Mapping from <a href="ValueSet-substances-vs.html">EMA SPOR SMS Substances</a> to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href="CodeSystem-substance-sms-cs.html">Substances EMA SPOR SMS</a> to <code>http://www.snomed.org</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>100000085259 (Amlodipine)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>386864001 (Amlodipine)</td></tr><tr><td>100000090079 (Amlodipine besilate)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>384976003 (Amlodipine besilate)</td></tr></table></div>
+  </text>
+  <url value="http://unicom-project.eu/fhir/ConceptMap/sms-snomed-substance-cm"/>
+  <version value="0.1.0"/>
+  <title value="SPOR-SNOMED CT substances"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-10-11T11:06:08+00:00"/>
+  <publisher value="UNICOM"/>
+  <contact>
+    <name value="UNICOM"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://unicom-project.eu"/>
+    </telecom>
+  </contact>
+  <description value="EMA SPOR SMS mapped to SNOMED CT concepts. Small example."/>
+  <sourceScopeCanonical value="http://unicom-project.eu/fhir/ValueSet/substances-vs"/>
+  <group>
+    <source value="https://spor.ema.europa.eu/v2/SubstanceDefinition"/>
+    <target value="http://www.snomed.org"/>
+    <element>
+      <code value="100000085259"/>
+      <display value="Amlodipine"/>
+      <target>
+        <code value="386864001"/>
+        <display value="Amlodipine"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="100000090079"/>
+      <display value="Amlodipine besilate"/>
+      <target>
+        <code value="384976003"/>
+        <display value="Amlodipine besilate"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EMA SPOR SMS Substances - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.82"}
+    h3,h4,h5,h6{--heading-prefix:"7.82"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+      <li>
+        <a href="testserver.html">Testing Tool Box</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EMA SPOR SMS Substances</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig/tree/master">https://github.com/hl7-eu/unicom-ig/tree/master</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-substances-vs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-substances-vs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-substances-vs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: EMA SPOR SMS Substances
+
+  </h2>
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://unicom-project.eu/fhir/ValueSet/substances-vs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://unicom-project.eu/fhir/ValueSet/substances-vs"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://unicom-project.eu/fhir/ValueSet/substances-vs|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2024-10-11
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">SubstancesSMS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Value set for substances, PPL subset from SMS.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-MedicationAsManufacturedItem.html">Medication as manufactured item</a></li>
+ <li><a href="StructureDefinition-PPLIngredient.html">PPL Ingredient profile</a></li>
+ <li><a href="StructureDefinition-TransitionIngredient.html">Processing Profile - Ingredient</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet substances-vs</b></p><a name="substances-vs"> </a><a name="hcsubstances-vs"> </a><a name="substances-vs-en-US"> </a>
+<ul><li>Include all codes defined in <a href="CodeSystem-substance-sms-cs.html"><code>https://spor.ema.europa.eu/v2/SubstanceDefinition</code></a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-substance-sms-cs.html">codesystem Substances EMA SPOR SMS v0.1.0 (CodeSystem)</a></p><p>This value set contains 104 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b><a href="ConceptMap-sms-snomed-substance-cm.html">SPOR-SNOMED CT substances</a></b></td></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000085259"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000085259">100000085259</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Amlodipine</td><td><span title="EQUIVALENT">~</span>ConceptMap-sms-snomed-substance-cm.html</td></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000089370"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000089370">100000089370</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>AMLODIPINE MALEATE</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000089571"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000089571">100000089571</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Amlodipine mesilate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000090079"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000090079">100000090079</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Amlodipine besilate</td><td><span title="EQUIVALENT">~</span>ConceptMap-sms-snomed-substance-cm.html</td></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-300000027652"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-300000027652">300000027652</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Amlodipine benzoate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091596"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091596">100000091596</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Amoxicillin</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000090113"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000090113">100000090113</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Amoxicillin sodium</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092629"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092629">100000092629</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Amoxicillin trihydrate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092127"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092127">100000092127</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Carbamazepine</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092667"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092667">100000092667</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Cefuroxime</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000093039"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000093039">100000093039</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Cefuroxime axetil</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091436"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091436">100000091436</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Cefuroxime sodium</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000089842"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000089842">100000089842</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Clavulanic acid</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000093061"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000093061">100000093061</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Potassium clavulanate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092121"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092121">100000092121</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Ciclosporin</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000155842"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000155842">100000155842</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>CICLOSPORIN A</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000084546"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000084546">100000084546</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Clomipramine</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000090503"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000090503">100000090503</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Clomipramine hydrochloride</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092074"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092074">100000092074</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Clotrimazole</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000088282"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000088282">100000088282</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Chloroquine</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000084735"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000084735">100000084735</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>CHLOROQUINE HYDROCHLORIDE</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000090551"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000090551">100000090551</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Chloroquine sulfate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092628"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092628">100000092628</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Chloroquine phosphate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000129152"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000129152">100000129152</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>CHLOROQUINE DIPHOSPHATE</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092362"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092362">100000092362</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Diazepam</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091074"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091074">100000091074</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Diclofenac diethylamine</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092368"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092368">100000092368</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Diclofenac potassium</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092798"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092798">100000092798</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Diclofenac</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000085789"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000085789">100000085789</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Diclofenac epolamine</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092272"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092272">100000092272</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Diclofenac sodium</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092375"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092375">100000092375</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Drospirenone</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092359"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092359">100000092359</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Enalapril</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000080222"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000080222">100000080222</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Enalaprilat</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091343"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091343">100000091343</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Enalapril maleate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000153305"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000153305">100000153305</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Enalapril sodium</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000085598"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000085598">100000085598</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Enoxaparin</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000090152"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000090152">100000090152</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Enoxaparin sodium</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000090229"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000090229">100000090229</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Ergocalciferol</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091721"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091721">100000091721</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Ethinylestradiol</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000087614"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000087614">100000087614</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Glyceryl trinitrate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000084238"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000084238">100000084238</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Goserelin</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000086673"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000086673">100000086673</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Goserelin acetate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000090365"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000090365">100000090365</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Ibuprofen</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000085009"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000085009">100000085009</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Ibuprofen sodium</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000090111"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000090111">100000090111</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Ibuprofen lysine</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092228"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092228">100000092228</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Ibuprofen arginine</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000175414"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000175414">100000175414</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Ibuprofen isobutanolammonium</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000140150"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000140150">100000140150</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Ibuprofen sodium dihydrate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000133453"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000133453">100000133453</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Ibuprofen D,L-lysinate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000079980"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000079980">100000079980</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>IBUPROFEN 1-IDROSSIMETIL-1-METIL ETILAMMONIO</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091825"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091825">100000091825</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Imatinib mesilate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091894"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091894">100000091894</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Imatinib</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000085460"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000085460">100000085460</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Insulin glargine</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091697"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091697">100000091697</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Itraconazole</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091713"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091713">100000091713</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Lidocaine</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000139489"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000139489">100000139489</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Lidocaine hydrochloride</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000085448"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000085448">100000085448</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Metformin</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091366"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091366">100000091366</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Metformin hydrochloride</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091840"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091840">100000091840</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>METFORMIN EMBONATE</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091372"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091372">100000091372</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Morphine</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000076239"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000076239">100000076239</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Morphine sulfate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000090494"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000090494">100000090494</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Morphine hydrochloride</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000076257"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000076257">100000076257</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>MORPHINE TARTRATE</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092047"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092047">100000092047</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Omeprazole</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000085918"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000085918">100000085918</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Omeprazole magnesium</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000090186"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000090186">100000090186</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Omeprazole sodium</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000090270"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000090270">100000090270</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Paracetamol</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091461"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091461">100000091461</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Perindopril</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000088816"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000088816">100000088816</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Perindopril arginine</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091602"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091602">100000091602</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Perindopril tert-butylamine</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000130680"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000130680">100000130680</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Perindopril tert-butylamin monohydrate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000141420"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000141420">100000141420</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Perindopril tosilate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091518"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091518">100000091518</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Calcium carbonate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091629"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091629">100000091629</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Salbutamol</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091786"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091786">100000091786</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Simvastatin</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092635"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092635">100000092635</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Hydrocortisone</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000086186"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000086186">100000086186</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Meglumine acetrizoate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092550"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092550">100000092550</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Hydrocortisone sodium succinate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000086711"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000086711">100000086711</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Hydrocortisone valerate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000092260"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000092260">100000092260</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Hydrocortisone acetate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000085172"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000085172">100000085172</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Hydrocortisone butyrate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000084215"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000084215">100000084215</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Hydrocortisone aceponate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000086187"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000086187">100000086187</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Hydrocortisone cipionate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000086691"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000086691">100000086691</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>HYDROCORTISONE SODIUM PHOSPHATE</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000090564"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000090564">100000090564</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Salbutamol sulfate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000115886"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000115886">100000115886</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Tafluprost</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000089193"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000089193">100000089193</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Teriparatide</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000084795"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000084795">100000084795</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>TERIPARATIDE ACETATE</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000077198"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000077198">100000077198</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Tramadol</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000093275"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000093275">100000093275</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Tramadol hydrochloride</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000089314"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000089314">100000089314</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Trastuzumab</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000128434"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000128434">100000128434</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Trastuzumab emtansine</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000174462"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000174462">100000174462</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Trastuzumab deruxtecan</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000089154"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000089154">100000089154</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Varenicline</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091746"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091746">100000091746</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Varenicline tartrate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091531"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091531">100000091531</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Ethinylestradiol betadex clathrate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000090052"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000090052">100000090052</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>LACTOSE</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000084759"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000084759">100000084759</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>PLACEBO</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000093305"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000093305">100000093305</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Lactose monohydrate</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000088000"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000088000">100000088000</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Valsartan</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000091737"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000091737">100000091737</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Hydrochlorothiazide</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000089279"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000089279">100000089279</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Poliovirus (inactivated) type 1 (Mahoney strain)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000089268"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000089268">100000089268</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Poliovirus (inactivated) type 2 (MEF-1 strain)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-https://spor.ema.europa.eu/v2/SubstanceDefinition-100000089267"> </a>  <a href="CodeSystem-substance-sms-cs.html#substance-sms-cs-100000089267">100000089267</a></td><td>https://spor.ema.europa.eu/v2/SubstanceDefinition</td><td>Poliovirus (inactivated) type 3 (Saukett strain)</td><td/></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R5/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Oct 11, 2024 11:06+0000">2024-10-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

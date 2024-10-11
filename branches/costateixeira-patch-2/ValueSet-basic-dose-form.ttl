@@ -1,0 +1,196 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/basic-dose-form> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "basic-dose-form"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0049</td><td>Block</td></tr><tr><td>0050</td><td>Cachet</td></tr><tr><td>0051</td><td>Capsule</td></tr><tr><td>0052</td><td>Film</td></tr><tr><td>0053</td><td>Granules</td></tr><tr><td>0054</td><td>Gum</td></tr><tr><td>0055</td><td>Implant</td></tr><tr><td>0056</td><td>Impregnated material</td></tr><tr><td>0057</td><td>Intraruminal device</td></tr><tr><td>0058</td><td>Lozenge</td></tr><tr><td>0059</td><td>Lyophilisate</td></tr><tr><td>0060</td><td>Pastille</td></tr><tr><td>0061</td><td>Patch</td></tr><tr><td>0062</td><td>Pellets</td></tr><tr><td>0063</td><td>Pessary</td></tr><tr><td>0064</td><td>Pillules</td></tr><tr><td>0065</td><td>Plaster</td></tr><tr><td>0066</td><td>Powder</td></tr><tr><td>0067</td><td>Stick</td></tr><tr><td>0068</td><td>Suppository</td></tr><tr><td>0069</td><td>Tablet</td></tr><tr><td>0070</td><td>Tea</td></tr><tr><td>0071</td><td>Cream</td></tr><tr><td>0072</td><td>Foam</td></tr><tr><td>0073</td><td>Gel</td></tr><tr><td>0074</td><td>Ointment</td></tr><tr><td>0075</td><td>Paste</td></tr><tr><td>0076</td><td>Poultice</td></tr><tr><td>0077</td><td>Collodion</td></tr><tr><td>0078</td><td>Concentrate</td></tr><tr><td>0079</td><td>Dispersion</td></tr><tr><td>0080</td><td>Emulsion</td></tr><tr><td>0081</td><td>Lacquer</td></tr><tr><td>0082</td><td>Liquid</td></tr><tr><td>0083</td><td>Solution</td></tr><tr><td>0084</td><td>Solvent</td></tr><tr><td>0085</td><td>Suspension</td></tr><tr><td>0086</td><td>Syrup</td></tr><tr><td>0087</td><td>Medicinal gas</td></tr><tr><td>0088</td><td>Insert</td></tr><tr><td>0089</td><td>Additive (unspecified)</td></tr><tr><td>0090</td><td>Drops (unspecified)</td></tr><tr><td>0091</td><td>Premix (unspecified)</td></tr><tr><td>0092</td><td>Radiopharmaceutical</td></tr><tr><td>0093</td><td>Shampoo</td></tr><tr><td>0094</td><td>Spray (unspecified)</td></tr><tr><td>0095</td><td>System</td></tr><tr><td>0096</td><td>Unknown</td></tr><tr><td>0102</td><td>Pouch</td></tr><tr><td>0103</td><td>Cement</td></tr><tr><td>0114</td><td>Herbal material (unprocessed)</td></tr><tr><td>0115</td><td>Live animal</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://unicom-project.eu/fhir/ValueSet/basic-dose-form"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "BasicDoseForm"] ; # 
+  fhir:title [ fhir:v "EDQM Basic Dose Form"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-17T08:02:36+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet Basic dose form from EDQM, BDF, see https://standardterms.edqm.eu/#"] ; # 
+  fhir:immutable [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "0049" ] ;
+         fhir:display [ fhir:v "Block" ]
+       ] [
+         fhir:code [ fhir:v "0050" ] ;
+         fhir:display [ fhir:v "Cachet" ]
+       ] [
+         fhir:code [ fhir:v "0051" ] ;
+         fhir:display [ fhir:v "Capsule" ]
+       ] [
+         fhir:code [ fhir:v "0052" ] ;
+         fhir:display [ fhir:v "Film" ]
+       ] [
+         fhir:code [ fhir:v "0053" ] ;
+         fhir:display [ fhir:v "Granules" ]
+       ] [
+         fhir:code [ fhir:v "0054" ] ;
+         fhir:display [ fhir:v "Gum" ]
+       ] [
+         fhir:code [ fhir:v "0055" ] ;
+         fhir:display [ fhir:v "Implant" ]
+       ] [
+         fhir:code [ fhir:v "0056" ] ;
+         fhir:display [ fhir:v "Impregnated material" ]
+       ] [
+         fhir:code [ fhir:v "0057" ] ;
+         fhir:display [ fhir:v "Intraruminal device" ]
+       ] [
+         fhir:code [ fhir:v "0058" ] ;
+         fhir:display [ fhir:v "Lozenge" ]
+       ] [
+         fhir:code [ fhir:v "0059" ] ;
+         fhir:display [ fhir:v "Lyophilisate" ]
+       ] [
+         fhir:code [ fhir:v "0060" ] ;
+         fhir:display [ fhir:v "Pastille" ]
+       ] [
+         fhir:code [ fhir:v "0061" ] ;
+         fhir:display [ fhir:v "Patch" ]
+       ] [
+         fhir:code [ fhir:v "0062" ] ;
+         fhir:display [ fhir:v "Pellets" ]
+       ] [
+         fhir:code [ fhir:v "0063" ] ;
+         fhir:display [ fhir:v "Pessary" ]
+       ] [
+         fhir:code [ fhir:v "0064" ] ;
+         fhir:display [ fhir:v "Pillules" ]
+       ] [
+         fhir:code [ fhir:v "0065" ] ;
+         fhir:display [ fhir:v "Plaster" ]
+       ] [
+         fhir:code [ fhir:v "0066" ] ;
+         fhir:display [ fhir:v "Powder" ]
+       ] [
+         fhir:code [ fhir:v "0067" ] ;
+         fhir:display [ fhir:v "Stick" ]
+       ] [
+         fhir:code [ fhir:v "0068" ] ;
+         fhir:display [ fhir:v "Suppository" ]
+       ] [
+         fhir:code [ fhir:v "0069" ] ;
+         fhir:display [ fhir:v "Tablet" ]
+       ] [
+         fhir:code [ fhir:v "0070" ] ;
+         fhir:display [ fhir:v "Tea" ]
+       ] [
+         fhir:code [ fhir:v "0071" ] ;
+         fhir:display [ fhir:v "Cream" ]
+       ] [
+         fhir:code [ fhir:v "0072" ] ;
+         fhir:display [ fhir:v "Foam" ]
+       ] [
+         fhir:code [ fhir:v "0073" ] ;
+         fhir:display [ fhir:v "Gel" ]
+       ] [
+         fhir:code [ fhir:v "0074" ] ;
+         fhir:display [ fhir:v "Ointment" ]
+       ] [
+         fhir:code [ fhir:v "0075" ] ;
+         fhir:display [ fhir:v "Paste" ]
+       ] [
+         fhir:code [ fhir:v "0076" ] ;
+         fhir:display [ fhir:v "Poultice" ]
+       ] [
+         fhir:code [ fhir:v "0077" ] ;
+         fhir:display [ fhir:v "Collodion" ]
+       ] [
+         fhir:code [ fhir:v "0078" ] ;
+         fhir:display [ fhir:v "Concentrate" ]
+       ] [
+         fhir:code [ fhir:v "0079" ] ;
+         fhir:display [ fhir:v "Dispersion" ]
+       ] [
+         fhir:code [ fhir:v "0080" ] ;
+         fhir:display [ fhir:v "Emulsion" ]
+       ] [
+         fhir:code [ fhir:v "0081" ] ;
+         fhir:display [ fhir:v "Lacquer" ]
+       ] [
+         fhir:code [ fhir:v "0082" ] ;
+         fhir:display [ fhir:v "Liquid" ]
+       ] [
+         fhir:code [ fhir:v "0083" ] ;
+         fhir:display [ fhir:v "Solution" ]
+       ] [
+         fhir:code [ fhir:v "0084" ] ;
+         fhir:display [ fhir:v "Solvent" ]
+       ] [
+         fhir:code [ fhir:v "0085" ] ;
+         fhir:display [ fhir:v "Suspension" ]
+       ] [
+         fhir:code [ fhir:v "0086" ] ;
+         fhir:display [ fhir:v "Syrup" ]
+       ] [
+         fhir:code [ fhir:v "0087" ] ;
+         fhir:display [ fhir:v "Medicinal gas" ]
+       ] [
+         fhir:code [ fhir:v "0088" ] ;
+         fhir:display [ fhir:v "Insert" ]
+       ] [
+         fhir:code [ fhir:v "0089" ] ;
+         fhir:display [ fhir:v "Additive (unspecified)" ]
+       ] [
+         fhir:code [ fhir:v "0090" ] ;
+         fhir:display [ fhir:v "Drops (unspecified)" ]
+       ] [
+         fhir:code [ fhir:v "0091" ] ;
+         fhir:display [ fhir:v "Premix (unspecified)" ]
+       ] [
+         fhir:code [ fhir:v "0092" ] ;
+         fhir:display [ fhir:v "Radiopharmaceutical" ]
+       ] [
+         fhir:code [ fhir:v "0093" ] ;
+         fhir:display [ fhir:v "Shampoo" ]
+       ] [
+         fhir:code [ fhir:v "0094" ] ;
+         fhir:display [ fhir:v "Spray (unspecified)" ]
+       ] [
+         fhir:code [ fhir:v "0095" ] ;
+         fhir:display [ fhir:v "System" ]
+       ] [
+         fhir:code [ fhir:v "0096" ] ;
+         fhir:display [ fhir:v "Unknown" ]
+       ] [
+         fhir:code [ fhir:v "0102" ] ;
+         fhir:display [ fhir:v "Pouch" ]
+       ] [
+         fhir:code [ fhir:v "0103" ] ;
+         fhir:display [ fhir:v "Cement" ]
+       ] [
+         fhir:code [ fhir:v "0114" ] ;
+         fhir:display [ fhir:v "Herbal material (unprocessed)" ]
+       ] [
+         fhir:code [ fhir:v "0115" ] ;
+         fhir:display [ fhir:v "Live animal" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

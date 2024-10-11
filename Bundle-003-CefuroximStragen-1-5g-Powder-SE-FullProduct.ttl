@@ -1,0 +1,452 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Bundle/003-CefuroximStragen-1-5g-Powder-SE-FullProduct> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "003-CefuroximStragen-1-5g-Powder-SE-FullProduct"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001098-StragenNordic"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001098-StragenNordic> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CefuroximStragen-1-5g-Powder-SE-IS-Ingredient"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CefuroximStragen-1-5g-Powder-SE-IS-Ingredient> )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition> a fhir:MedicinalProductDefinition ;
+  fhir:id [ fhir:v "CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicinalProductDefinition_CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicinalProductDefinition CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition</b></p><a name=\"CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition\"> </a><a name=\"hcCefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition\"> </a><a name=\"CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/fhir/eurdId</code>/615</p><p><b>domain</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}\">Human use</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000005003 200000005004}\">Current</span></p><p><b>combinedPharmaceuticalDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000116186}\">Powder for solution for injection/infusion</span></p><p><b>indication</b>: </p><div><p>Cefuroxim Stragen är avsett för behandling av nedanstående infektioner hos vuxna och barn, även  nyfödda (från födelsen). • Samhällsförvärvad pneumoni • Akut exacerbation av kronisk bronkit. • Komplicerade urinvägsinfektioner, även pyelonefrit. • Mjukdelsinfektioner: cellulit, erysipelas och sårinfektioner. • Intraabdominella infektioner. • Profylax mot infektion inför gastrointestinal (även esofageal), ortopedisk, kardiovaskulär och  gynekologisk operation (även kejsarsnitt). Vid behandling och förebyggande av infektioner då det är mycket troligt att anaeroba organismer  påträffas ska cefuroxim administreras tillsammans med ett lämpligt antianaerobt antibiotikum. Hänsyn ska tas till officiella riktlinjer om lämplig användning av antibakteriella medel.</p>\n</div><p><b>legalStatusOfSupply</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072051 100000072084}\">Medicinal product subject to medical prescription</span></p><p><b>classification</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000093533 100000096183}\">Cefuroxime</span>, <span title=\"Codes:{http://www.whocc.no/atc J01DC02}\">cefuroxime</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Cefuroxim Stragen 1,5 g Pulver till injektions-/infusionsvätska, lösning</p><blockquote><p><b>part</b></p><p><b>part</b>: Cefuroxim Stragen</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000002}\">Invented name part</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: 1,5 g</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000004}\">Strength part</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: Pulver till injektions-/infusionsvätska, lösning</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000005}\">Pharmaceutical dose form part</span></p></blockquote><h3>Usages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000535}\">Kingdom of Sweden</span></td><td><span title=\"Codes:{urn:ietf:bcp:47 sv}\">Swedish</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/fhir/eurdId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "615" ]
+  ] ) ; # 
+  fhir:domain [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000012" ] ;
+       fhir:display [ fhir:v "Human use" ]
+     ] )
+  ] ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000005003"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000005004" ] ;
+       fhir:display [ fhir:v "Current" ]
+     ] )
+  ] ; # 
+  fhir:combinedPharmaceuticalDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000116186" ] ;
+       fhir:display [ fhir:v "Powder for solution for injection/infusion" ]
+     ] )
+  ] ; # 
+  fhir:indication [ fhir:v "Cefuroxim Stragen är avsett för behandling av nedanstående infektioner hos vuxna och barn, även  nyfödda (från födelsen). • Samhällsförvärvad pneumoni • Akut exacerbation av kronisk bronkit. • Komplicerade urinvägsinfektioner, även pyelonefrit. • Mjukdelsinfektioner: cellulit, erysipelas och sårinfektioner. • Intraabdominella infektioner. • Profylax mot infektion inför gastrointestinal (även esofageal), ortopedisk, kardiovaskulär och  gynekologisk operation (även kejsarsnitt). Vid behandling och förebyggande av infektioner då det är mycket troligt att anaeroba organismer  påträffas ska cefuroxim administreras tillsammans med ett lämpligt antianaerobt antibiotikum. Hänsyn ska tas till officiella riktlinjer om lämplig användning av antibakteriella medel. "] ; # 
+  fhir:legalStatusOfSupply [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072051"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072084" ] ;
+       fhir:display [ fhir:v "Medicinal product subject to medical prescription" ]
+     ] )
+  ] ; # 
+  fhir:classification ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000093533"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000096183" ] ;
+       fhir:display [ fhir:v "Cefuroxime" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J01DC02" ] ;
+       fhir:display [ fhir:v "cefuroxime" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:productName [ fhir:v "Cefuroxim Stragen 1,5 g Pulver till injektions-/infusionsvätska, lösning" ] ;
+     fhir:part ( [
+       fhir:part [ fhir:v "Cefuroxim Stragen" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000002" ] ;
+           fhir:display [ fhir:v "Invented name part" ]
+         ] )
+       ]
+     ] [
+       fhir:part [ fhir:v "1,5 g" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000004" ] ;
+           fhir:display [ fhir:v "Strength part" ]
+         ] )
+       ]
+     ] [
+       fhir:part [ fhir:v "Pulver till injektions-/infusionsvätska, lösning" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000005" ] ;
+           fhir:display [ fhir:v "Pharmaceutical dose form part" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:usage ( [
+       fhir:country [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000000535" ] ;
+           fhir:display [ fhir:v "Kingdom of Sweden" ]
+         ] )
+       ] ;
+       fhir:language [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "sv" ] ;
+           fhir:display [ fhir:v "Swedish" ]
+         ] )
+       ]
+     ] )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization> a fhir:RegulatedAuthorization ;
+  fhir:id [ fhir:v "CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RegulatedAuthorization_CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RegulatedAuthorization CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization</b></p><a name=\"CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization\"> </a><a name=\"hcCefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization\"> </a><a name=\"CefuroximStragen-1-5g-Powder-SE-IS-RegulatedAuthorization-en-US\"> </a><p><b>identifier</b>: 50006</p><p><b>subject</b>: <a href=\"Bundle-003-CefuroximStragen-1-5g-Powder-SE-FullProduct.html#MedicinalProductDefinition_CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition\">Bundle: type = collection</a></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000060 220000000061}\">Marketing Authorisation</span></p><p><b>region</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000535}\">Kingdom of Sweden</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072049 100000072099}\">Valid</span></p><p><b>statusDate</b>: 2014-06-11</p><p><b>holder</b>: <a href=\"Bundle-003-CefuroximStragen-1-5g-Powder-SE-FullProduct.html#Organization_LOC-100001098-StragenNordic\">Bundle: type = collection</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "50006" ]
+  ] ) ; # 
+  fhir:subject ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000060"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "220000000061" ] ;
+       fhir:display [ fhir:v "Marketing Authorisation" ]
+     ] )
+  ] ; # 
+  fhir:region ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000535" ] ;
+       fhir:display [ fhir:v "Kingdom of Sweden" ]
+     ] )
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072049"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072099" ] ;
+       fhir:display [ fhir:v "Valid" ]
+     ] )
+  ] ; # 
+  fhir:statusDate [ fhir:v "2014-06-11"^^xsd:date] ; # 
+  fhir:holder [
+     fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100001098-StragenNordic> ;
+     fhir:reference [ fhir:v "Organization/LOC-100001098-StragenNordic" ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100001098-StragenNordic> a fhir:Organization ;
+  fhir:id [ fhir:v "LOC-100001098-StragenNordic"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_LOC-100001098-StragenNordic\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization LOC-100001098-StragenNordic</b></p><a name=\"LOC-100001098-StragenNordic\"> </a><a name=\"hcLOC-100001098-StragenNordic\"> </a><a name=\"LOC-100001098-StragenNordic-en-US\"> </a><p><b>identifier</b>: <code>https://spor.ema.europa.eu/v1/locations</code>/LOC-100001098</p><p><b>name</b>: Stragen Nordic A/S</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/locations"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "LOC-100001098" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Stragen Nordic A/S"] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef> a fhir:AdministrableProductDefinition ;
+  fhir:id [ fhir:v "CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AdministrableProductDefinition_CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AdministrableProductDefinition CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef</b></p><a name=\"CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef\"> </a><a name=\"hcCefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef\"> </a><a name=\"CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef-en-US\"> </a><p><b>status</b>: Active</p><p><b>formOf</b>: <a href=\"Bundle-003-CefuroximStragen-1-5g-Powder-SE-FullProduct.html#MedicinalProductDefinition_CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition\">Bundle: type = collection</a></p><p><b>administrableDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000074038}\">Solution for injection/infusion</span></p><p><b>producedFrom</b>: <a href=\"Bundle-003-CefuroximStragen-1-5g-Powder-SE-FullProduct.html#ManufacturedItemDefinition_CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition\">Bundle: type = collection</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073345 100000073600}, {https://spor.ema.europa.eu/v1/lists/100000073345 100000073611}\">Intramuscular use</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:formOf ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition" ]
+  ] ) ; # 
+  fhir:administrableDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000074038" ] ;
+       fhir:display [ fhir:v "Solution for injection/infusion" ]
+     ] )
+  ] ; # 
+  fhir:producedFrom ( [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition" ]
+  ] ) ; # 
+  fhir:routeOfAdministration ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073345"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073600" ] ;
+         fhir:display [ fhir:v "Intramuscular use" ]
+       ] [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073345"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073611" ] ;
+         fhir:display [ fhir:v "Intravenous use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-CefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition> a fhir:PackagedProductDefinition ;
+  fhir:id [ fhir:v "CefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PackagedProductDefinition_CefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PackagedProductDefinition CefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition</b></p><a name=\"CefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition\"> </a><a name=\"hcCefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition\"> </a><a name=\"CefuroximStragen-1-5g-Powder-SE-IS-PackagedProductDefinition-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/example/pcid</code>/?ngen-9?</p><p><b>packageFor</b>: <a href=\"Bundle-003-CefuroximStragen-1-5g-Powder-SE-FullProduct.html#MedicinalProductDefinition_CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition\">Bundle: type = collection</a></p><p><b>containedItemQuantity</b>: 10 Vial<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002158 = 'Vial')</span></p><p><b>description</b>: </p><div><p>Injektionsflaska, 10 st (10 x 1,5 g)</p>\n</div><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000535}\">Kingdom of Sweden</span></td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072052 100000072083}\">Marketed</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000003199 200000003208}\">Plastic</span></p><blockquote><p><b>packaging</b></p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/example/pcid"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:packageFor ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition" ]
+  ] ) ; # 
+  fhir:containedItemQuantity ( [
+     fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Vial" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002158" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "Injektionsflaska, 10 st (10 x 1,5 g)"] ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000000535" ] ;
+         fhir:display [ fhir:v "Kingdom of Sweden" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072052"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000072083" ] ;
+         fhir:display [ fhir:v "Marketed" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073498" ] ;
+         fhir:display [ fhir:v "Box" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "200000003208" ] ;
+         fhir:display [ fhir:v "Plastic" ]
+       ] )
+     ] ) ;
+     fhir:packaging ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000073563" ] ;
+           fhir:display [ fhir:v "Vial" ]
+         ] )
+       ] ;
+       fhir:quantity [ fhir:v "10"^^xsd:integer ] ;
+       fhir:material ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003203" ] ;
+           fhir:display [ fhir:v "Glass" ]
+         ] )
+       ] ) ;
+       fhir:containedItem ( [
+         fhir:item [
+           fhir:reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition> ;
+             fhir:reference [ fhir:v "ManufacturedItemDefinition/CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition" ]
+           ]
+         ] ;
+         fhir:amount [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "Vial" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000002158" ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition> a fhir:ManufacturedItemDefinition ;
+  fhir:id [ fhir:v "CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ManufacturedItemDefinition_CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ManufacturedItemDefinition CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition</b></p><a name=\"CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition\"> </a><a name=\"hcCefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition\"> </a><a name=\"CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition-en-US\"> </a><p><b>status</b>: Active</p><p><b>manufacturedDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000116186}\">Powder for solution for injection/infusion</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002158}\">Vial</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturedDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000116186" ] ;
+       fhir:display [ fhir:v "Powder for solution for injection/infusion" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002158" ] ;
+       fhir:display [ fhir:v "Vial" ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CefuroximStragen-1-5g-Powder-SE-IS-Ingredient> a fhir:Ingredient ;
+  fhir:id [ fhir:v "CefuroximStragen-1-5g-Powder-SE-IS-Ingredient"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Ingredient_CefuroximStragen-1-5g-Powder-SE-IS-Ingredient\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Ingredient CefuroximStragen-1-5g-Powder-SE-IS-Ingredient</b></p><a name=\"CefuroximStragen-1-5g-Powder-SE-IS-Ingredient\"> </a><a name=\"hcCefuroximStragen-1-5g-Powder-SE-IS-Ingredient\"> </a><a name=\"CefuroximStragen-1-5g-Powder-SE-IS-Ingredient-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: </p><ul><li><a href=\"Bundle-003-CefuroximStragen-1-5g-Powder-SE-FullProduct.html#MedicinalProductDefinition_CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition\">Bundle: type = collection</a></li><li><a href=\"Bundle-003-CefuroximStragen-1-5g-Powder-SE-FullProduct.html#ManufacturedItemDefinition_CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition\">Bundle: type = collection</a></li><li><a href=\"Bundle-003-CefuroximStragen-1-5g-Powder-SE-FullProduct.html#AdministrableProductDefinition_CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef\">Bundle: type = collection</a></li></ul><p><b>role</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000091436}\">cefuroxime sodium</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 1.578 gram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110654 = 'gram(s)')</span>/1 countable unit(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code200000027120 = 'countable unit(s)')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000092667}\">cefuroxime</span></td></tr></table><p><b>strength</b>: 1.5 gram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110654 = 'gram(s)')</span>/1 countable unit(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code200000027120 = 'countable unit(s)')</span></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-MedicinalProductDefinition" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/CefuroximStragen-1-5g-Powder-SE-IS-ManufacturedItemDefinition" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/CefuroximStragen-1-5g-Powder-SE-IS-AdminProdDef" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000091436" ] ;
+           fhir:display [ fhir:v "cefuroxime sodium" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:presentation [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "1.578"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "gram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110654" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "countable unit(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000027120" ]
+         ]
+       ] ;
+       fhir:referenceStrength ( [
+         fhir:substance [
+           fhir:concept [
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "100000092667" ] ;
+               fhir:display [ fhir:v "cefuroxime" ]
+             ] )
+           ]
+         ] ;
+         fhir:strength [
+           a fhir:Ratio ;
+           fhir:numerator [
+             fhir:value [ fhir:v "1.5"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "gram(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110654" ]
+           ] ;
+           fhir:denominator [
+             fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "countable unit(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "200000027120" ]
+           ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

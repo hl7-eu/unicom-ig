@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.UNICOM\Known Issues - FHIR v4.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="regulatory.html">Regulatory Data</a>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Known Issues</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Known Issues</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#general" id="markdown-toc-general">General</a></li>
+  <li><a href="#identifiers" id="markdown-toc-identifiers">Identifiers</a></li>
+  <li><a href="#medicinal-product--marketing-authorisation" id="markdown-toc-medicinal-product--marketing-authorisation">Medicinal Product &amp; Marketing Authorisation</a></li>
+  <li><a href="#pharmaceuticaladministrable-product" id="markdown-toc-pharmaceuticaladministrable-product">Pharmaceutical/Administrable Product</a></li>
+  <li><a href="#ingredient--manufactured-item" id="markdown-toc-ingredient--manufactured-item">Ingredient &amp; Manufactured Item</a></li>
+  <li><a href="#packaged-product" id="markdown-toc-packaged-product">Packaged Product</a></li>
+</ul>
+
+</div>
+<h3 id="general">General</h3>
+
+<h4 id="ema-iso-idmp-implementation-guide">EMA ISO IDMP Implementation Guide</h4>
+
+<p>This IG follows the EMA IG, which has been published as a set of text documents. Currently, we don’t have profiles for EMA IG, but we have the information needed for the profiles in the textual IG. Based on that information, the UNICOM PPL FHIR IG aims to be compliant with the EMA IG, but the number of data elements has been significantly reduced. Also, the elements defined as mandatory may differ.</p>
+
+<h4 id="fhir-versions">FHIR versions</h4>
+<p>EMA IG is based on FHIR version 4.6, but UNICOM PPL FHIR IG is based on FHIR R4B.
+These versions introduce many changes, most significantly:</p>
+<ul>
+  <li>direction of reference has been changed for Ingredient</li>
+  <li>pack size as containedItemQuantity (described as extension in EMA IG)</li>
+  <li>shelf life no longer has its own data type</li>
+</ul>
+
+<p>R5 Ballot introduces only a few additional changes for the data elements used in this IG:</p>
+<ul>
+  <li>In MedicinalProductDefinition name.countryLanguage has been renamed to name.usage</li>
+  <li>In PackagedProductDefinition package has been renamed to packaging</li>
+</ul>
+
+<h4 id="spor-rms-lists">SPOR RMS lists</h4>
+<p>There is no official source for EMA SPOR RMS lists in FHIR format. The lists used in this IG are derived from the versions published by EMA, but there is room for interpretation what exactly should be included in the final FHIR value set. These value sets are not automatically updated from EMA sources.</p>
+
+<p>All EMA SPOR RMS lists are defined as different code systems by EMA IG. Most value sets include all codes from the relevant code system. Exceptions to this are Authorised Dose Form (combines four EMA lists) and All Units (combines units of presentation and measurement).</p>
+
+<p>EMA SPOR provides their own codes for concepts from international code systems (EDQM, UCUM, WHO ATC, ISO country and IETF language codes). While we can argue if this is the best approach, this IG follows the EMA IG in that regard. For ATC classication separate slices are created to capture WHO ATC code as well as EMA SPOR RMS code.</p>
+
+<h4 id="dose-form-attributes">Dose form attributes</h4>
+<p>Pharmaceutical dose form attributes (state of matter, etc) are not included in the example data, because this information is related to the dose form as such, not product. Information about dose form attributes is included in the EMA SPOR list and EDQM value set.</p>
+
+<h3 id="identifiers">Identifiers</h3>
+<p>Key product indentifiers (MPID, PCID, PhPID, EMA PMS Id) are not available. In some cases fake identifiers have been used in the example data (see below). While only key identifiers have been explicitly mentioned in the profiles, other (including national) identifiers can be also provided.</p>
+
+<h4 id="mpid---medicinal-product-identifier">MPID - Medicinal product identifier</h4>
+<p>The MPID is defined by the following segments:</p>
+<ul>
+  <li>country code segment (ISO 3166-1 alpha-2 code elements);</li>
+  <li>marketing authorisation holder (i.e. location ID) code segment;</li>
+  <li>medicinal product code segment (i.e. unique medicinal product ID).</li>
+</ul>
+
+<p>Any change of the values related to these three code segments (as described in the Introductory section) should result in the assignment of a new MPID.<br />
+This attribute will be automatically generated and maintained by the PMS system. In PPL data the identifier has been left empty or substituted with a fake identifier that follows the rules of the MPID.</p>
+
+<p>Current EMA IG states the LOC-id as the marketing authorisation holder segment in the MPID. There was an expectation for it to be changed into ORG-id in the next EMA IG. Therefore, some products (mostly Estonian) use LOC-id in the MPID, while other products use ORG-id.</p>
+
+<h4 id="ema-pms-identifier">EMA PMS Identifier</h4>
+<p>In PMS, each individual medicinal product entry is assigned a single and unique PMS identifier (PMS ID) that remains unchanged through the lifecycle of the medicinal product. The PMS ID is a supplementary stable ID to any existing authorisation number or equivalent identifier as assigned by an authorising body.
+The PMS ID is automatically generated by the PMS system based on the first submission of the medicinal product data to PMS. In PPL data the identifier has been left empty or substituted with a fake identifier.</p>
+
+<h4 id="pcid---packaged-product-identifier">PCID - Packaged product identifier</h4>
+
+<p>There are two components of a PCID:</p>
+<ul>
+  <li>MPID for the Medicinal Product;</li>
+  <li>Package description code segment, which refers to a unique identifier for each package e.g. 0001, 0002 etc.</li>
+</ul>
+
+<p>Any change of the values related to these code segments shall result in the assignment of a new PCID.
+A unique PCID is assigned according to the following defining attributes of the package code segment:</p>
+<ul>
+  <li>package item (container)(s) — the type, quantity (items per package), material(s);</li>
+  <li>package component(s) — type, material(s)</li>
+  <li>manufactured item(s) — manufactured dose form, unit of presentation, quantity (items per package).</li>
+</ul>
+
+<p>When the above defining attributes sets differ in any way a new PCID will be assigned. Pay attention that PCID is dependant on package material. This is also the reason why package material has been included in the PCID data set.</p>
+
+<h4 id="phpid---pharmaceutical-product-identifier">PhPID - Pharmaceutical product identifier</h4>
+
+<p>Pharmaceutical product identifiers are mostly not present in the data.</p>
+
+<h3 id="medicinal-product--marketing-authorisation">Medicinal Product &amp; Marketing Authorisation</h3>
+
+<h4 id="name-and-name-parts">Name and name parts</h4>
+<p>In regulatory data all products have a full name. 
+In EMA IG name parts are considered mandatory, but the rules for using name parts allow situations where name parts don’t add up to full name or are not describable according to the requirements. 
+The order of name parts is not defined in EMA IG. All name parts (except delimiter part) can occur only once. An example in this IG where full name cannot be composed of name parts and is not conformant with EMA IG is <a href="Bundle-014-CanestenKombi-FI-FullProduct.html">Canesten Kombi from Finland</a>.</p>
+
+<p>Full name: <strong>Canesten® Kombi 500 mg emätinpuikko + 10 mg/g emulsiovoide</strong><br />
+Name parts:</p>
+<ul>
+  <li><strong>Canesten</strong> - invented name part;</li>
+  <li><strong>®</strong> - trademark part;</li>
+  <li><strong>500 mg</strong> - strength part;</li>
+  <li><strong>emätinpuikko</strong> - dose form part;</li>
+  <li><strong>+</strong> - delimiter part;</li>
+  <li><strong>10mg/g</strong> - strength part 2 (only one strength part allowed in EMA IG);</li>
+  <li><strong>emulsiovoide</strong> - dose form part 2 (only one dose form part allowed in EMA IG).</li>
+</ul>
+
+<p>In this IG only three name parts are defined, but other name parts can be used in product data if needed. All name parts are textual and provided in the language of the marketing authorisation region.</p>
+
+<h4 id="authorised-dose-form">Authorised dose form</h4>
+<p>EMA IG specifies two different dose forms for MedicinalProductDefinition: Authorised Pharmaceutical Form and Combined Pharmaceutical Form. However, authorised pharmaceutical form is defined as an extension, while combined pharmaceutical dose form is usually left blank or it repeats authorised dose form. Therefore, this profile does not use extension for authorised dose form, but expresses authorised dose form in the combinedPharmaceuticalDoseForm attribute, which according to FHIR specification is “The dose form for a single part product, or combined form of a multiple part product”.</p>
+
+<p>Authorised dose form uses a value set that combines four different EMA SPOR lists. Manufactured item dose form and pharmaceutical dose form only use EMA SPOR list “Pharmaceutical dose form”. Value sets are provided in the implementation guide.</p>
+
+<h4 id="marketing-authorisation">Marketing Authorisation</h4>
+<p>Information about marketing authorisation is captured in the RegulatedAuthorization resource, using type ‘marketing authorisation’.
+Status of the marketing authorisation comes from EMA RMS value set. There are several different values for marking a valid marketing authorisation. The EMA IG allows using any of the values from the list, so different countries, products may have a different concept used (for example, ‘valid’ or ‘valid/renewed’ both indicate that the marketing authorisation is valid).</p>
+
+<h3 id="pharmaceuticaladministrable-product">Pharmaceutical/Administrable Product</h3>
+
+<h4 id="phpid-not-unique">PhPID not unique</h4>
+<p>The system of PhPIDs is used for classification, not identification of pharmaceutical products. PhPIDs are calculated from active ingredients, Pharmaceutical/Administrable Product definition itself also includes information about all the excipients in the product. Therefore, L4 PhPID does not identify a pharmaceutical product, and it is wrong to assume that PhPIDs could be unique within a system.</p>
+
+<h4 id="shareability-of-administrable-products">Shareability of administrable products</h4>
+<p>Pharmaceutical/administrable products are normally not shared between medicinal products, as the list of excipients would be different in the original source. PPL example only has data about active ingredients, which results in having multiple seemingly identical pharmaceutical/administrable products.</p>
+
+<h4 id="producedfrom-attribute">producedFrom attribute</h4>
+<p>ProducedForm attribute references manufactured items that the administrable product contains. For example, a combination product of creme and tablets, would probably have two pharmaceutical products and either one would have producedFrom attribute to only one of these manufactured items. A combination product of powder and solvent for solution, would have the solution as the pharmaceutical product and it would reference both manufactured items. 
+While this information is useful and easy to provide in FHIR, this link between pharmaceutical products and manufactured items is not present in ISO IDMP logical model or EMA IG.</p>
+
+<h4 id="unit-of-presentation">Unit of presentation</h4>
+<p>Unit of presentation is used as a product charecteristic in the pharmaceutical/administrable product. According to EMA, no unit of presentation is defined for continuous pharmaceutical products (creme tubes, bottles, etc). There is no clear line between continuous and non-continuous products, especially when simple administration devices are provided in the package. Different interpretations may exist.</p>
+
+<h3 id="ingredient--manufactured-item">Ingredient &amp; Manufactured Item</h3>
+
+<h4 id="concentration-and-presentation-strength">Concentration and presentation strength</h4>
+
+<p>Presentation strength can be per mass/volume of the unit of presentation.
+Example: for a 0.6ml vial, both 6mg/vial and 6mg/0.6ml are considered presentation strength, but 10mg/1ml is concentration strength.</p>
+
+<p>Presentation strength is typically given per manufactured item, but it can also be given for the volume of simplistic administration device that comes within the package (measuring cup, spoon, etc).</p>
+
+<p>Reference strength does not have a distinction between presentation or concentration strength. In ISO IDMP model, reference strength is a subelement of strength, and the type of strength would be clear from the context. In FHIR, reference strength is positioned on the same level with concentration and presentation strength, which means that it cannot be stated if the reference strength used is concentration or presentation strength (normally it does not cause problems, as it’s implied by the units used).</p>
+
+<h4 id="reference-strength">Reference strength</h4>
+
+<p>The most fiery discussions during the creation of this IG were around reference strength. The final decision was to conform to EMA IG (Ch 2. p 176; Ch 8. p28) and specify reference strength for all the active ingredients, simply repeating the strength in cases where no reference substance exists (e.g. clotrimazole).</p>
+
+<p>There is no reference strength type in the EMA IG or FHIR specification, therefore this data element is not used in the PPL examples either. Reference strength in CDA documents can only be used together with the type of the reference strength, so this minor discrepancy has strong implications in certain contexts.</p>
+
+<h4 id="comparator">Comparator</h4>
+
+<p>According to EMA IG, each strength needs a comparator and an extension is used for using a comparator concept from RMS list. However, FHIR does not allow using a comparator (not even as an extension) for ‘eguals to’, which is considered to be the default value.</p>
+
+<h4 id="shareability-of-ingredients--manufactured-items">Shareability of ingredients &amp; manufactured items</h4>
+
+<p>Ingredient resources are not shared between medicinal products. They can be shared between manufactured items within one medicinal product, but it cannot be guaranteed. 
+Ingredient can be and usually is shared between manufactured item and administrable/pharmaceutical product within the same medicinal product. However, for products that go through transformation, it is possible that the manufactured item ingredient may differ from administrable product ingredient (e.g. products where solid dose form is transformed into a solution, strength may change).</p>
+
+<p>Ingredients reference manufactured items, which they belong to. This also defines the shareability of manufactured items. For example, vial of 2ml and vial of 5ml would have identical-looking manufactured items, because the size of vial is not included in the manufactured item definition. However, they would still have to have different IDs, because the linked ingredient contains presentation strength per vial, which would differ for 2ml and 5ml vial.</p>
+
+<h4 id="order-of-ingredients">Order of ingredients</h4>
+
+<p>Order of ingredients is not defined in ISO IDMP or EMA IG. This does not normally cause problems in data model or queries, but may result in inconsistency how data is displayed in the user interface. This IG does not provide a solution to this problem.</p>
+
+<h3 id="packaged-product">Packaged Product</h3>
+
+<h4 id="number-of-packages">Number of packages</h4>
+<p>Product data may not include all pack sizes available in the country. Typically, more common pack sizes are used.</p>
+
+<p>Some packages differ only by package material - these examples are included to show the implication of the package material being used for calculating PCID (see more below).</p>
+
+<h4 id="shelf-life--storage">Shelf life / Storage</h4>
+<p>In EMA IG shelf life period is using EMA SPOR codes for units. In FHIR, UCUM is required. Shelf life periods have been omitted from the data for now, but IG itself allows creating data with UCUM units if needed for a specific use case.</p>
+
+<h4 id="outermost-package">Outermost package</h4>
+<p>The outermost package type according to EMA IG is always ‘Box’, even if it doesn’t exist in reality (for example, calendar blisters bundled together with a film, are still considered a box).</p>
+
+<h4 id="package-material">Package material</h4>
+
+<p>PCID is dependant on the package material, therefore it is included in the data.</p>
+
+<p>If different layers (blister’s top/bottom layer) are made of the same material, the material is not repeated as there is no way to distinguish layers or parts of a package.</p>
+
+<p>Package material list in SPOR may not be sufficient for all cases. There might be a layer of dessicant for which the exact material may even be unknown. The package with dessicant may have different storage conditions than an equal package without dessicant.</p>
+
+<h4 id="device">Device</h4>
+<p>Currently, providing information about simple administration devices, like applicators or spoons, is not covered in the IG, but this data can be included according to the general FHIR specification.</p>
+
+<h4 id="manufactured-item-quantity">Manufactured Item quantity</h4>
+<p>Element containedItem.Quantity in FHIR represents the size of the manufactured item (3ml vial) as well as the number of the manufactured items (14 tablets). Despite semantically they refer to different type of information, it does not normally cause confusion understanding the data.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.3.0</a>. Generated <span title="Fri, Feb 3, 2023 15:45+0000">2023-02-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

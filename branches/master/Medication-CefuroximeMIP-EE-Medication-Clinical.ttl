@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Medication/CefuroximeMIP-EE-Medication-Clinical> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CefuroximeMIP-EE-Medication-Clinical"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication CefuroximeMIP-EE-Medication-Clinical</b></p><a name=\"CefuroximeMIP-EE-Medication-Clinical\"> </a><a name=\"hcCefuroximeMIP-EE-Medication-Clinical\"> </a><a name=\"CefuroximeMIP-EE-Medication-Clinical-en-US\"> </a><p><b>MedicinalProductClassification</b>: <span title=\"Codes:{http://www.whocc.no/atc J01DC02}\">cefuroxime</span></p><p><b>MedicinalProductName</b>: Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber</p><p><b>AdministrableDoseForm</b>: <span title=\"Codes:{https://standardterms.edqm.eu 50060000}\">Solution for injection/infusion</span></p><p><b>identifier</b>: <code>http://ema.europa.eu/fhir/mpId</code>/EE-100009199-27834, <code>http://ema.europa.eu/fhir/pcId</code>/EE-100009199-27834-1529940</p><p><b>marketingAuthorizationHolder</b>: <a href=\"Organization-LOC-100009199-Mip.html\">Organization Mip Pharma GmbH</a></p><p><b>doseForm</b>: <span title=\"Codes:{https://standardterms.edqm.eu 50053000}\">Powder for solution for injection or infusion</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-CefuroximeMIP-EE-Powder-Medication-Item.html\">Medication: doseForm = Powder for solution for injection or infusion; totalVolume = 1 Vial</a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://unicom-project.eu/fhir/StructureDefinition/medicinal-product-classification"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "J01DC02" ] ;
+         fhir:display [ fhir:v "cefuroxime" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://unicom-project.eu/fhir/StructureDefinition/medicinal-product-name"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber" ]
+  ] [
+     fhir:url [ fhir:v "http://unicom-project.eu/fhir/StructureDefinition/administrable-doseform"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "50060000" ] ;
+         fhir:display [ fhir:v "Solution for injection/infusion" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/fhir/mpId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100009199-27834" ]
+  ] [
+     fhir:system [ fhir:v "http://ema.europa.eu/fhir/pcId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100009199-27834-1529940" ]
+  ] ) ; # 
+  fhir:marketingAuthorizationHolder [
+     fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100009199-Mip> ;
+     fhir:reference [ fhir:v "Organization/LOC-100009199-Mip" ]
+  ] ; # 
+  fhir:doseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "50053000" ] ;
+       fhir:display [ fhir:v "Powder for solution for injection or infusion" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       fhir:reference [
+         fhir:link <http://unicom-project.eu/fhir/Medication/CefuroximeMIP-EE-Powder-Medication-Item> ;
+         fhir:reference [ fhir:v "Medication/CefuroximeMIP-EE-Powder-Medication-Item" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
