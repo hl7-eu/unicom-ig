@@ -1,0 +1,60 @@
+{
+  "resourceType" : "Medication",
+  "id" : "CefuroximeMIP-EE-Medication-Clinical",
+  "meta" : {
+    "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication CefuroximeMIP-EE-Medication-Clinical</b></p><a name=\"CefuroximeMIP-EE-Medication-Clinical\"> </a><a name=\"hcCefuroximeMIP-EE-Medication-Clinical\"> </a><a name=\"hcCefuroximeMIP-EE-Medication-Clinical-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/fhir/mpId</code>/EE-100009199-27834, <code>http://ema.europa.eu/fhir/pcId</code>/EE-100009199-27834-1529940</p><p><b>marketingAuthorizationHolder</b>: <a href=\"Organization-LOC-100009199-Mip.html\">Organization Mip Pharma GmbH</a></p><p><b>doseForm</b>: <span title=\"Codes:{https://standardterms.edqm.eu 50053000}\">Powder for solution for injection or infusion</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-CefuroximeMIP-EE-Powder-Medication-Item.html\">Medication: doseForm = Powder for solution for injection or infusion; totalVolume = 1 Vial</a></td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://unicom-project.eu/fhir/StructureDefinition/medicinal-product-classification",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.whocc.no/atc",
+        "code" : "J01DC02",
+        "display" : "cefuroxime"
+      }]
+    }
+  },
+  {
+    "url" : "http://unicom-project.eu/fhir/StructureDefinition/medicinal-product-name",
+    "valueString" : "Cefuroxime MIP 1500 mg, süste-/infusioonilahuse pulber"
+  },
+  {
+    "url" : "http://unicom-project.eu/fhir/StructureDefinition/administrable-doseform",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://standardterms.edqm.eu",
+        "code" : "50060000",
+        "display" : "Solution for injection/infusion"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://ema.europa.eu/fhir/mpId",
+    "value" : "EE-100009199-27834"
+  },
+  {
+    "system" : "http://ema.europa.eu/fhir/pcId",
+    "value" : "EE-100009199-27834-1529940"
+  }],
+  "marketingAuthorizationHolder" : {
+    "reference" : "Organization/LOC-100009199-Mip"
+  },
+  "doseForm" : {
+    "coding" : [{
+      "system" : "https://standardterms.edqm.eu",
+      "code" : "50053000",
+      "display" : "Powder for solution for injection or infusion"
+    }]
+  },
+  "ingredient" : [{
+    "item" : {
+      "reference" : {
+        "reference" : "Medication/CefuroximeMIP-EE-Powder-Medication-Item"
+      }
+    }
+  }]
+}

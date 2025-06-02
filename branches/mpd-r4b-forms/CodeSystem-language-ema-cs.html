@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.UNICOM\Language EMA - FHIR v4.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.35"}
+    h3,h4,h5,h6{--heading-prefix:"3.35"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="71" alt="Project home" src="assets/images/home.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span><br/>0.1.0 - ci-build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Language EMA</b></li>
+          
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">UnicomIG - Local Development build (v0.1.0). See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="CodeSystem-language-ema-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-language-ema-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-language-ema-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Language EMA</h2>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+    <b>Summary</b>
+  </p>
+
+  <table class="grid">
+<tbody>
+<tr><td>Defining URL:</td><td>https://spor.ema.europa.eu/v1/lists/100000072057</td></tr>
+ <tr><td>Version:</td><td>0.1.0</td></tr>
+ <tr><td>Name:</td><td>Language_EMA_CS</td></tr>
+ <tr><td>Title:</td><td>Language EMA</td></tr>
+ <tr><td>Status:</td><td>Draft as of 2022-11-29 09:56:36+0000</td></tr>
+ <tr><td>Publisher:</td><td>UNICOM</td></tr>
+ <tr><td>Content:</td><td>Complete: All the concepts defined by the code system are included in the code system resource</td></tr>
+ <tr><td>Source Resource:</td><td><a href="CodeSystem-language-ema-cs.xml.html">XML</a> / <a href="CodeSystem-language-ema-cs.json.html">JSON</a> / <a href="CodeSystem-language-ema-cs.ttl.html">Turtle</a></td></tr>
+</tbody></table>
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-language-ema-vs.html">LanguageEMA</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://spor.ema.europa.eu/v1/lists/100000072057</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">100000072223<a name="language-ema-cs-100000072223"> </a></td><td>Korean</td></tr><tr><td style="white-space:nowrap">100000072144<a name="language-ema-cs-100000072144"> </a></td><td>Chuvash</td></tr><tr><td style="white-space:nowrap">100000072257<a name="language-ema-cs-100000072257"> </a></td><td>Serbian</td></tr><tr><td style="white-space:nowrap">100000072297<a name="language-ema-cs-100000072297"> </a></td><td>Turkish</td></tr><tr><td style="white-space:nowrap">100000072166<a name="language-ema-cs-100000072166"> </a></td><td>Corsican</td></tr><tr><td style="white-space:nowrap">100000072131<a name="language-ema-cs-100000072131"> </a></td><td>Avaric</td></tr><tr><td style="white-space:nowrap">100000072264<a name="language-ema-cs-100000072264"> </a></td><td>Spanish</td></tr><tr><td style="white-space:nowrap">100000072273<a name="language-ema-cs-100000072273"> </a></td><td>Walloon</td></tr><tr><td style="white-space:nowrap">100000072159<a name="language-ema-cs-100000072159"> </a></td><td>Javanese</td></tr><tr><td style="white-space:nowrap">100000072197<a name="language-ema-cs-100000072197"> </a></td><td>Kashmiri</td></tr><tr><td style="white-space:nowrap">100000072306<a name="language-ema-cs-100000072306"> </a></td><td>Xhosa</td></tr><tr><td style="white-space:nowrap">100000072177<a name="language-ema-cs-100000072177"> </a></td><td>Georgian</td></tr><tr><td style="white-space:nowrap">100000072225<a name="language-ema-cs-100000072225"> </a></td><td>Lao</td></tr><tr><td style="white-space:nowrap">100000072140<a name="language-ema-cs-100000072140"> </a></td><td>Burmese</td></tr><tr><td style="white-space:nowrap">100000072118<a name="language-ema-cs-100000072118"> </a></td><td>Avestan</td></tr><tr><td style="white-space:nowrap">100000072162<a name="language-ema-cs-100000072162"> </a></td><td>Chechen</td></tr><tr><td style="white-space:nowrap">100000072293<a name="language-ema-cs-100000072293"> </a></td><td>Tibetan</td></tr><tr><td style="white-space:nowrap">100000072183<a name="language-ema-cs-100000072183"> </a></td><td>Haitian</td></tr><tr><td style="white-space:nowrap">100000072266<a name="language-ema-cs-100000072266"> </a></td><td>Tahitian</td></tr><tr><td style="white-space:nowrap">100000072255<a name="language-ema-cs-100000072255"> </a></td><td>Russian</td></tr><tr><td style="white-space:nowrap">100000072307<a name="language-ema-cs-100000072307"> </a></td><td>Yiddish</td></tr><tr><td style="white-space:nowrap">100000072296<a name="language-ema-cs-100000072296"> </a></td><td>Tsonga</td></tr><tr><td style="white-space:nowrap">100000072152<a name="language-ema-cs-100000072152"> </a></td><td>Manx</td></tr><tr><td style="white-space:nowrap">100000072236<a name="language-ema-cs-100000072236"> </a></td><td>Maltese</td></tr><tr><td style="white-space:nowrap">100000072282<a name="language-ema-cs-100000072282"> </a></td><td>Shona</td></tr><tr><td style="white-space:nowrap">100000072194<a name="language-ema-cs-100000072194"> </a></td><td>Italian</td></tr><tr><td style="white-space:nowrap">100000072261<a name="language-ema-cs-100000072261"> </a></td><td>Sinhala</td></tr><tr><td style="white-space:nowrap">100000072267<a name="language-ema-cs-100000072267"> </a></td><td>Telugu</td></tr><tr><td style="white-space:nowrap">100000072270<a name="language-ema-cs-100000072270"> </a></td><td>Turkmen</td></tr><tr><td style="white-space:nowrap">100000072198<a name="language-ema-cs-100000072198"> </a></td><td>Kanuri</td></tr><tr><td style="white-space:nowrap">100000072209<a name="language-ema-cs-100000072209"> </a></td><td>Malay</td></tr><tr><td style="white-space:nowrap">100000072265<a name="language-ema-cs-100000072265"> </a></td><td>Sundanese</td></tr><tr><td style="white-space:nowrap">100000072201<a name="language-ema-cs-100000072201"> </a></td><td>Kazakh</td></tr><tr><td style="white-space:nowrap">100000072304<a name="language-ema-cs-100000072304"> </a></td><td>Welsh</td></tr><tr><td style="white-space:nowrap">100000072218<a name="language-ema-cs-100000072218"> </a></td><td>Quechua</td></tr><tr><td style="white-space:nowrap">100000072157<a name="language-ema-cs-100000072157"> </a></td><td>Inuktitut</td></tr><tr><td style="white-space:nowrap">100000072219<a name="language-ema-cs-100000072219"> </a></td><td>Rundi</td></tr><tr><td style="white-space:nowrap">100000072174<a name="language-ema-cs-100000072174"> </a></td><td>Fijian</td></tr><tr><td style="white-space:nowrap">100000072139<a name="language-ema-cs-100000072139"> </a></td><td>Breton</td></tr><tr><td style="white-space:nowrap">100000072301<a name="language-ema-cs-100000072301"> </a></td><td>Venda</td></tr><tr><td style="white-space:nowrap">100000072291<a name="language-ema-cs-100000072291"> </a></td><td>Tajik</td></tr><tr><td style="white-space:nowrap">100000072161<a name="language-ema-cs-100000072161"> </a></td><td>Catalan</td></tr><tr><td style="white-space:nowrap">100000072129<a name="language-ema-cs-100000072129"> </a></td><td>Aragonese</td></tr><tr><td style="white-space:nowrap">100000072244<a name="language-ema-cs-100000072244"> </a></td><td>N'Ko</td></tr><tr><td style="white-space:nowrap">100000072126<a name="language-ema-cs-100000072126"> </a></td><td>Akan</td></tr><tr><td style="white-space:nowrap">100000072246<a name="language-ema-cs-100000072246"> </a></td><td>Ojibwa</td></tr><tr><td style="white-space:nowrap">100000072274<a name="language-ema-cs-100000072274"> </a></td><td>Yoruba</td></tr><tr><td style="white-space:nowrap">100000072179<a name="language-ema-cs-100000072179"> </a></td><td>Irish</td></tr><tr><td style="white-space:nowrap">100000072271<a name="language-ema-cs-100000072271"> </a></td><td>Uighur</td></tr><tr><td style="white-space:nowrap">100000072305<a name="language-ema-cs-100000072305"> </a></td><td>Wolof</td></tr><tr><td style="white-space:nowrap">100000072212<a name="language-ema-cs-100000072212"> </a></td><td>Ndonga</td></tr><tr><td style="white-space:nowrap">100000072178<a name="language-ema-cs-100000072178"> </a></td><td>German</td></tr><tr><td style="white-space:nowrap">100000072148<a name="language-ema-cs-100000072148"> </a></td><td>Ewe</td></tr><tr><td style="white-space:nowrap">100000072294<a name="language-ema-cs-100000072294"> </a></td><td>Tigrinya</td></tr><tr><td style="white-space:nowrap">100000072134<a name="language-ema-cs-100000072134"> </a></td><td>Bambara</td></tr><tr><td style="white-space:nowrap">100000072138<a name="language-ema-cs-100000072138"> </a></td><td>Bislama</td></tr><tr><td style="white-space:nowrap">100000072247<a name="language-ema-cs-100000072247"> </a></td><td>Oromo</td></tr><tr><td style="white-space:nowrap">100000072128<a name="language-ema-cs-100000072128"> </a></td><td>Arabic</td></tr><tr><td style="white-space:nowrap">100000072254<a name="language-ema-cs-100000072254"> </a></td><td>Romanian</td></tr><tr><td style="white-space:nowrap">100000072192<a name="language-ema-cs-100000072192"> </a></td><td>Interlingua (International Auxiliary Language Association)</td></tr><tr><td style="white-space:nowrap">100000072154<a name="language-ema-cs-100000072154"> </a></td><td>Hebrew</td></tr><tr><td style="white-space:nowrap">100000072127<a name="language-ema-cs-100000072127"> </a></td><td>Amharic</td></tr><tr><td style="white-space:nowrap">100000072290<a name="language-ema-cs-100000072290"> </a></td><td>Tatar</td></tr><tr><td style="white-space:nowrap">100000072200<a name="language-ema-cs-100000072200"> </a></td><td>Kikuyu</td></tr><tr><td style="white-space:nowrap">100000072239<a name="language-ema-cs-100000072239"> </a></td><td>South Ndebele</td></tr><tr><td style="white-space:nowrap">100000072216<a name="language-ema-cs-100000072216"> </a></td><td>Panjabi</td></tr><tr><td style="white-space:nowrap">100000072182<a name="language-ema-cs-100000072182"> </a></td><td>Guarani</td></tr><tr><td style="white-space:nowrap">100000072222<a name="language-ema-cs-100000072222"> </a></td><td>Komi</td></tr><tr><td style="white-space:nowrap">100000072251<a name="language-ema-cs-100000072251"> </a></td><td>Portuguese</td></tr><tr><td style="white-space:nowrap">100000072119<a name="language-ema-cs-100000072119"> </a></td><td>Bashkir</td></tr><tr><td style="white-space:nowrap">100000072188<a name="language-ema-cs-100000072188"> </a></td><td>Igbo</td></tr><tr><td style="white-space:nowrap">100000072245<a name="language-ema-cs-100000072245"> </a></td><td>Occitan (post 1500)</td></tr><tr><td style="white-space:nowrap">100000072133<a name="language-ema-cs-100000072133"> </a></td><td>Azerbaijani</td></tr><tr><td style="white-space:nowrap">100000072196<a name="language-ema-cs-100000072196"> </a></td><td>Greenlandic</td></tr><tr><td style="white-space:nowrap">100000072286<a name="language-ema-cs-100000072286"> </a></td><td>Swati</td></tr><tr><td style="white-space:nowrap">100000072168<a name="language-ema-cs-100000072168"> </a></td><td>Danish</td></tr><tr><td style="white-space:nowrap">100000072235<a name="language-ema-cs-100000072235"> </a></td><td>Malagasy</td></tr><tr><td style="white-space:nowrap">100000072141<a name="language-ema-cs-100000072141"> </a></td><td>Bosnian</td></tr><tr><td style="white-space:nowrap">100000072191<a name="language-ema-cs-100000072191"> </a></td><td>Interlingue</td></tr><tr><td style="white-space:nowrap">100000072149<a name="language-ema-cs-100000072149"> </a></td><td>Finnish</td></tr><tr><td style="white-space:nowrap">100000072203<a name="language-ema-cs-100000072203"> </a></td><td>Kongo</td></tr><tr><td style="white-space:nowrap">100000072147<a name="language-ema-cs-100000072147"> </a></td><td>English</td></tr><tr><td style="white-space:nowrap">100000072237<a name="language-ema-cs-100000072237"> </a></td><td>Mongolian</td></tr><tr><td style="white-space:nowrap">100000072199<a name="language-ema-cs-100000072199"> </a></td><td>Central Khmer</td></tr><tr><td style="white-space:nowrap">100000072211<a name="language-ema-cs-100000072211"> </a></td><td>Navaho</td></tr><tr><td style="white-space:nowrap">100000072170<a name="language-ema-cs-100000072170"> </a></td><td>Dzongkha</td></tr><tr><td style="white-space:nowrap">100000072143<a name="language-ema-cs-100000072143"> </a></td><td>Chamorro</td></tr><tr><td style="white-space:nowrap">100000072190<a name="language-ema-cs-100000072190"> </a></td><td>Sichuan Yi</td></tr><tr><td style="white-space:nowrap">100000072233<a name="language-ema-cs-100000072233"> </a></td><td>Maori</td></tr><tr><td style="white-space:nowrap">100000072195<a name="language-ema-cs-100000072195"> </a></td><td>Japanese</td></tr><tr><td style="white-space:nowrap">100000072160<a name="language-ema-cs-100000072160"> </a></td><td>Kannada</td></tr><tr><td style="white-space:nowrap">100000072136<a name="language-ema-cs-100000072136"> </a></td><td>Belarusian</td></tr><tr><td style="white-space:nowrap">100000072258<a name="language-ema-cs-100000072258"> </a></td><td>Croatian</td></tr><tr><td style="white-space:nowrap">100000072229<a name="language-ema-cs-100000072229"> </a></td><td>Luxembourgish</td></tr><tr><td style="white-space:nowrap">100000072176<a name="language-ema-cs-100000072176"> </a></td><td>Western Frisian</td></tr><tr><td style="white-space:nowrap">100000072284<a name="language-ema-cs-100000072284"> </a></td><td>Sotho</td></tr><tr><td style="white-space:nowrap">100000072238<a name="language-ema-cs-100000072238"> </a></td><td>Nauru</td></tr><tr><td style="white-space:nowrap">100000072285<a name="language-ema-cs-100000072285"> </a></td><td>Sardinian</td></tr><tr><td style="white-space:nowrap">100000072153<a name="language-ema-cs-100000072153"> </a></td><td>Gujarati</td></tr><tr><td style="white-space:nowrap">100000072115<a name="language-ema-cs-100000072115"> </a></td><td>Abkhazian</td></tr><tr><td style="white-space:nowrap">100000072215<a name="language-ema-cs-100000072215"> </a></td><td>Oriya</td></tr><tr><td style="white-space:nowrap">100000072164<a name="language-ema-cs-100000072164"> </a></td><td>Church Slavic</td></tr><tr><td style="white-space:nowrap">100000072300<a name="language-ema-cs-100000072300"> </a></td><td>Urdu</td></tr><tr><td style="white-space:nowrap">100000072189<a name="language-ema-cs-100000072189"> </a></td><td>Ido</td></tr><tr><td style="white-space:nowrap">100000072158<a name="language-ema-cs-100000072158"> </a></td><td>Indonesian</td></tr><tr><td style="white-space:nowrap">100000072232<a name="language-ema-cs-100000072232"> </a></td><td>Marshallese</td></tr><tr><td style="white-space:nowrap">100000072193<a name="language-ema-cs-100000072193"> </a></td><td>Inupiaq</td></tr><tr><td style="white-space:nowrap">100000072187<a name="language-ema-cs-100000072187"> </a></td><td>Hungarian</td></tr><tr><td style="white-space:nowrap">100000072125<a name="language-ema-cs-100000072125"> </a></td><td>Afrikaans</td></tr><tr><td style="white-space:nowrap">100000072156<a name="language-ema-cs-100000072156"> </a></td><td>Icelandic</td></tr><tr><td style="white-space:nowrap">100000072208<a name="language-ema-cs-100000072208"> </a></td><td>Malayalam</td></tr><tr><td style="white-space:nowrap">100000072185<a name="language-ema-cs-100000072185"> </a></td><td>Herero</td></tr><tr><td style="white-space:nowrap">100000072206<a name="language-ema-cs-100000072206"> </a></td><td>Lithuanian</td></tr><tr><td style="white-space:nowrap">100000072184<a name="language-ema-cs-100000072184"> </a></td><td>Hausa</td></tr><tr><td style="white-space:nowrap">100000072228<a name="language-ema-cs-100000072228"> </a></td><td>Lingala</td></tr><tr><td style="white-space:nowrap">100000072130<a name="language-ema-cs-100000072130"> </a></td><td>Assamese</td></tr><tr><td style="white-space:nowrap">100000072309<a name="language-ema-cs-100000072309"> </a></td><td>Zulu</td></tr><tr><td style="white-space:nowrap">100000072256<a name="language-ema-cs-100000072256"> </a></td><td>Sango</td></tr><tr><td style="white-space:nowrap">100000072302<a name="language-ema-cs-100000072302"> </a></td><td>Vietnamese</td></tr><tr><td style="white-space:nowrap">100000072221<a name="language-ema-cs-100000072221"> </a></td><td>Kirghiz</td></tr><tr><td style="white-space:nowrap">100000072268<a name="language-ema-cs-100000072268"> </a></td><td>Thai</td></tr><tr><td style="white-space:nowrap">100000072253<a name="language-ema-cs-100000072253"> </a></td><td>Romansh</td></tr><tr><td style="white-space:nowrap">100000072240<a name="language-ema-cs-100000072240"> </a></td><td>North Ndebele</td></tr><tr><td style="white-space:nowrap">100000072249<a name="language-ema-cs-100000072249"> </a></td><td>Persian</td></tr><tr><td style="white-space:nowrap">100000072303<a name="language-ema-cs-100000072303"> </a></td><td>Volap�k</td></tr><tr><td style="white-space:nowrap">100000072308<a name="language-ema-cs-100000072308"> </a></td><td>Zhuang</td></tr><tr><td style="white-space:nowrap">100000072288<a name="language-ema-cs-100000072288"> </a></td><td>Swedish</td></tr><tr><td style="white-space:nowrap">100000072214<a name="language-ema-cs-100000072214"> </a></td><td>Chichewa</td></tr><tr><td style="white-space:nowrap">100000072295<a name="language-ema-cs-100000072295"> </a></td><td>Tswana</td></tr><tr><td style="white-space:nowrap">100000072269<a name="language-ema-cs-100000072269"> </a></td><td>Tonga (Tonga Islands)</td></tr><tr><td style="white-space:nowrap">100000072248<a name="language-ema-cs-100000072248"> </a></td><td>Ossetian</td></tr><tr><td style="white-space:nowrap">100000072137<a name="language-ema-cs-100000072137"> </a></td><td>Bihari</td></tr><tr><td style="white-space:nowrap">100000072281<a name="language-ema-cs-100000072281"> </a></td><td>Samoan</td></tr><tr><td style="white-space:nowrap">100000072142<a name="language-ema-cs-100000072142"> </a></td><td>Bulgarian</td></tr><tr><td style="white-space:nowrap">100000072180<a name="language-ema-cs-100000072180"> </a></td><td>Galician</td></tr><tr><td style="white-space:nowrap">100000072252<a name="language-ema-cs-100000072252"> </a></td><td>Pushto</td></tr><tr><td style="white-space:nowrap">100000072283<a name="language-ema-cs-100000072283"> </a></td><td>Somali</td></tr><tr><td style="white-space:nowrap">100000072116<a name="language-ema-cs-100000072116"> </a></td><td>Albanian</td></tr><tr><td style="white-space:nowrap">100000072259<a name="language-ema-cs-100000072259"> </a></td><td>Slovak</td></tr><tr><td style="white-space:nowrap">100000072220<a name="language-ema-cs-100000072220"> </a></td><td>Sanskrit</td></tr><tr><td style="white-space:nowrap">100000072260<a name="language-ema-cs-100000072260"> </a></td><td>Slovenian</td></tr><tr><td style="white-space:nowrap">100000072231<a name="language-ema-cs-100000072231"> </a></td><td>Macedonian</td></tr><tr><td style="white-space:nowrap">100000072226<a name="language-ema-cs-100000072226"> </a></td><td>Latin</td></tr><tr><td style="white-space:nowrap">100000072171<a name="language-ema-cs-100000072171"> </a></td><td>Esperanto</td></tr><tr><td style="white-space:nowrap">100000072117<a name="language-ema-cs-100000072117"> </a></td><td>Armenian</td></tr><tr><td style="white-space:nowrap">100000072202<a name="language-ema-cs-100000072202"> </a></td><td>Kinyarwanda</td></tr><tr><td style="white-space:nowrap">100000072167<a name="language-ema-cs-100000072167"> </a></td><td>Czech</td></tr><tr><td style="white-space:nowrap">100000072272<a name="language-ema-cs-100000072272"> </a></td><td>Uzbek</td></tr><tr><td style="white-space:nowrap">100000072186<a name="language-ema-cs-100000072186"> </a></td><td>Hindi</td></tr><tr><td style="white-space:nowrap">100000072146<a name="language-ema-cs-100000072146"> </a></td><td>Maldivian</td></tr><tr><td style="white-space:nowrap">100000072151<a name="language-ema-cs-100000072151"> </a></td><td>Gaelic</td></tr><tr><td style="white-space:nowrap">100000072169<a name="language-ema-cs-100000072169"> </a></td><td>Dutch</td></tr><tr><td style="white-space:nowrap">100000072242<a name="language-ema-cs-100000072242"> </a></td><td>Norwegian Nynorsk</td></tr><tr><td style="white-space:nowrap">100000072172<a name="language-ema-cs-100000072172"> </a></td><td>Estonian</td></tr><tr><td style="white-space:nowrap">100000072150<a name="language-ema-cs-100000072150"> </a></td><td>Fulah</td></tr><tr><td style="white-space:nowrap">100000072241<a name="language-ema-cs-100000072241"> </a></td><td>Nepali</td></tr><tr><td style="white-space:nowrap">100000072227<a name="language-ema-cs-100000072227"> </a></td><td>Limburgan</td></tr><tr><td style="white-space:nowrap">100000072213<a name="language-ema-cs-100000072213"> </a></td><td>Bokm�l</td></tr><tr><td style="white-space:nowrap">100000072262<a name="language-ema-cs-100000072262"> </a></td><td>Northern Sami</td></tr><tr><td style="white-space:nowrap">100000072155<a name="language-ema-cs-100000072155"> </a></td><td>Hiri Motu</td></tr><tr><td style="white-space:nowrap">100000072250<a name="language-ema-cs-100000072250"> </a></td><td>Pali</td></tr><tr><td style="white-space:nowrap">100000072234<a name="language-ema-cs-100000072234"> </a></td><td>Marathi</td></tr><tr><td style="white-space:nowrap">100000072181<a name="language-ema-cs-100000072181"> </a></td><td>Greek</td></tr><tr><td style="white-space:nowrap">100000072263<a name="language-ema-cs-100000072263"> </a></td><td>Sindhi</td></tr><tr><td style="white-space:nowrap">100000072205<a name="language-ema-cs-100000072205"> </a></td><td>Latvian</td></tr><tr><td style="white-space:nowrap">100000072165<a name="language-ema-cs-100000072165"> </a></td><td>Cornish</td></tr><tr><td style="white-space:nowrap">100000072163<a name="language-ema-cs-100000072163"> </a></td><td>Chinese</td></tr><tr><td style="white-space:nowrap">100000072173<a name="language-ema-cs-100000072173"> </a></td><td>Faroese</td></tr><tr><td style="white-space:nowrap">100000072289<a name="language-ema-cs-100000072289"> </a></td><td>Tamil</td></tr><tr><td style="white-space:nowrap">100000072243<a name="language-ema-cs-100000072243"> </a></td><td>Norwegian</td></tr><tr><td style="white-space:nowrap">100000072124<a name="language-ema-cs-100000072124"> </a></td><td>Afar</td></tr><tr><td style="white-space:nowrap">100000072175<a name="language-ema-cs-100000072175"> </a></td><td>French</td></tr><tr><td style="white-space:nowrap">100000072132<a name="language-ema-cs-100000072132"> </a></td><td>Aymara</td></tr><tr><td style="white-space:nowrap">100000072298<a name="language-ema-cs-100000072298"> </a></td><td>Twi</td></tr><tr><td style="white-space:nowrap">100000072204<a name="language-ema-cs-100000072204"> </a></td><td>Kurdish</td></tr><tr><td style="white-space:nowrap">100000072299<a name="language-ema-cs-100000072299"> </a></td><td>Ukrainian</td></tr><tr><td style="white-space:nowrap">100000072224<a name="language-ema-cs-100000072224"> </a></td><td>Kuanyama</td></tr><tr><td style="white-space:nowrap">100000072292<a name="language-ema-cs-100000072292"> </a></td><td>Tagalog</td></tr><tr><td style="white-space:nowrap">100000072217<a name="language-ema-cs-100000072217"> </a></td><td>Polish</td></tr><tr><td style="white-space:nowrap">100000072120<a name="language-ema-cs-100000072120"> </a></td><td>Bengali</td></tr><tr><td style="white-space:nowrap">100000072230<a name="language-ema-cs-100000072230"> </a></td><td>Luba-Katanga</td></tr><tr><td style="white-space:nowrap">100000072145<a name="language-ema-cs-100000072145"> </a></td><td>Cree</td></tr><tr><td style="white-space:nowrap">100000072287<a name="language-ema-cs-100000072287"> </a></td><td>Swahili</td></tr><tr><td style="white-space:nowrap">100000072210<a name="language-ema-cs-100000072210"> </a></td><td>Moldavian</td></tr><tr><td style="white-space:nowrap">100000072207<a name="language-ema-cs-100000072207"> </a></td><td>Ganda</td></tr><tr><td style="white-space:nowrap">100000072135<a name="language-ema-cs-100000072135"> </a></td><td>Basque</td></tr></table></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color: #81BEF7" href="http://medigree.net">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/">FHIR 4.3.0</a>. Generated <span title="Tue, Nov 29, 2022 21:56+0000">2022-11-29</span>
+          <br/>
+          <span style="color: #FFFF77">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

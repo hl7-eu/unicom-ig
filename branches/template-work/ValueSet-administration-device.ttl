@@ -1,0 +1,1146 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/administration-device> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "administration-device"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>13072000</td><td>Oral applicator</td></tr><tr><td>13114000</td><td>Pen</td></tr><tr><td>30000500</td><td>Administration system</td></tr><tr><td>30002000</td><td>Applicator</td></tr><tr><td>30003000</td><td>Automatic injection device</td></tr><tr><td>30005000</td><td>Balling gun</td></tr><tr><td>30010000</td><td>Brush</td></tr><tr><td>30012000</td><td>Cannula</td></tr><tr><td>30016000</td><td>Cup</td></tr><tr><td>30017000</td><td>Dabbing applicator</td></tr><tr><td>30018200</td><td>Dose dispenser</td></tr><tr><td>30019000</td><td>Dredging applicator</td></tr><tr><td>30021000</td><td>Drench gun</td></tr><tr><td>30022000</td><td>Dropper applicator</td></tr><tr><td>30025000</td><td>High pressure transdermal delivery device</td></tr><tr><td>30026000</td><td>Implanter</td></tr><tr><td>30026500</td><td>Inhaler</td></tr><tr><td>30027000</td><td>In-ovo injection device</td></tr><tr><td>30028000</td><td>Injection needle</td></tr><tr><td>30029000</td><td>Injection syringe</td></tr><tr><td>30030000</td><td>Internal graduated calibration chamber</td></tr><tr><td>30031000</td><td>Intramammary syringe</td></tr><tr><td>30033000</td><td>Measuring device</td></tr><tr><td>30034000</td><td>Measuring spoon</td></tr><tr><td>30037000</td><td>Mouthpiece</td></tr><tr><td>30040000</td><td>Multipuncturer</td></tr><tr><td>30041000</td><td>Nasal applicator</td></tr><tr><td>30042000</td><td>Nebuliser</td></tr><tr><td>30043500</td><td>Needle-free injector</td></tr><tr><td>30044000</td><td>Nozzle</td></tr><tr><td>30045000</td><td>Oral syringe</td></tr><tr><td>30046000</td><td>Pipette</td></tr><tr><td>30053000</td><td>Prick test applicator</td></tr><tr><td>30055000</td><td>Scarifier</td></tr><tr><td>30058000</td><td>Spatula</td></tr><tr><td>30059000</td><td>Spot-on applicator</td></tr><tr><td>30063000</td><td>Stab vaccinator</td></tr><tr><td>30068000</td><td>Vaginal sponge applicator</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>Greek (el)</b></td><td><b>Spanish (es)</b></td><td><b>French (fr)</b></td><td><b>Italian (it)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td>13072000</td><td>Applikator für die orale Verabreichung</td><td>Εξάρτημα χορήγησης  από του στόματος</td><td>Aplicador para uso oral</td><td>Applicateur pour administration orale</td><td>Applicatore per somministrazione orale</td><td>Aplicador oral</td></tr><tr><td>13114000</td><td>Pen</td><td></td><td>Pluma</td><td>Stylo</td><td>Penna</td><td>Caneta</td></tr><tr><td>30000500</td><td>Applikationssystem</td><td>Σύστημα χορήγησης</td><td>Sistema de administración</td><td>Système d'administration</td><td>Sistema di somministrazione</td><td>Sistema de administração</td></tr><tr><td>30002000</td><td>Applikator</td><td>Εξάρτημα χορήγησης</td><td>Aplicador</td><td>Applicateur</td><td>Applicatore</td><td>Aplicador</td></tr><tr><td>30003000</td><td>automatischer Injektor</td><td>Συσκευή αυτόματης ένεσης</td><td>Inyector automático</td><td>Injecteur automatique</td><td>Dispositivo automatico per iniezone</td><td>Seringa automática</td></tr><tr><td>30005000</td><td>Bolusgeber</td><td>Συσκευή χορήγησης βώλων</td><td>Aplicador para administración intrarruminal</td><td>Applicateur pour dispositif intraruminal</td><td>Applicatore per dispositivo intraruminale</td><td>Aplicador para bólus</td></tr><tr><td>30010000</td><td>Pinsel</td><td>Ψύκτρα</td><td>Pincel</td><td>Pinceau applicateur</td><td>Pennello</td><td>Pincel</td></tr><tr><td>30012000</td><td>Kanüle</td><td>Σωληνίσκος</td><td>Cánula</td><td>Canule</td><td>Cannula</td><td>Cânula</td></tr><tr><td>30016000</td><td>Messbecher</td><td>Κύπελλο</td><td>Vaso dosificador</td><td>Godet</td><td>Bicchiere dosatore</td><td>Copo-medida</td></tr><tr><td>30017000</td><td>Verschluss mit Tupfer</td><td>Πώμα με εξάρτημα επάλειψης</td><td>Cierre con aplicador para toques</td><td>Embout applicateur</td><td>Tappo con applicatore</td><td>Fecho com aplicador de contacto</td></tr><tr><td>30018200</td><td>Dosiergerät</td><td>Δοσομετρητής</td><td>Dispensador de dosis</td><td>Dispensateur de dose</td><td>Dispensatore di dose</td><td>Dispensador de dose</td></tr><tr><td>30019000</td><td>Verschluss mit Streuvorrichtung</td><td>Πώμα με εξάρτημα επίπασης</td><td>Cierre espolvoreador</td><td>Embout poudreur</td><td>Aspersore</td><td>Fecho polvilhador</td></tr><tr><td>30021000</td><td>Applikator für eine Flüssigkeit zum Einnehmen</td><td>Συσκευή χορήγησης στοματικών διαλυμάτων</td><td>Pistola dosificadora</td><td>Embout buccal</td><td>Pistola dosatrice per somministrazioni orali</td><td>Pistola doseadora</td></tr><tr><td>30022000</td><td>Verschluss mit Tropfer</td><td>Σταγονομετρικό βιδωτό πώμα</td><td>Tapón cuentagotas</td><td>Embout compte-gouttes</td><td>Contagocce</td><td>Fecho conta-gotas</td></tr><tr><td>30025000</td><td>Intradermaldruckinjektor</td><td>Σύστημα διαδερμικής χορήγησης υπό πίεση</td><td>Dispositivo a presión para liberación transdermica</td><td>Injecteur intradermique sous pression</td><td>Dispositivo sotto pressione a rilascio transdermico</td><td>Injector transdérmico sob pressão</td></tr><tr><td>30026000</td><td>Implantatinjektor</td><td>Συσκευή εμφύτευσης</td><td>Inyector de implantes</td><td>Pistolet pour implant</td><td>Iniettore per impianto</td><td>Seringa para implantes</td></tr><tr><td>30026500</td><td>Inhalator</td><td>Συσκευή εισπνοής</td><td>Inhalador</td><td>Inhalateur</td><td>Inalatore</td><td>Inalador</td></tr><tr><td>30027000</td><td>Eiinjektor</td><td>Συσκευή χορήγησης in ovo</td><td>Inyector automático in ovo</td><td>Dispositif pour injection in ovo</td><td>Dispositivo per iniezione in ovo</td><td>Seringa para via transcoriónica</td></tr><tr><td>30028000</td><td>Injektionsnadel</td><td>Βελόνη σύριγγας</td><td>Aguja para inyección</td><td>Aiguille</td><td>Ago per iniezione</td><td>Agulha para injecção</td></tr><tr><td>30029000</td><td>Injektionsspritze</td><td>Σύριγγα ένεσης</td><td>Jeringa para inyección</td><td>Seringue</td><td>Siringa per iniezione</td><td>Seringa para injectáveis</td></tr><tr><td>30030000</td><td>Intern graduierte Dosierkammer</td><td>Δοσιμετρικό εξάρτημα</td><td>Dispensador de dosis múltiples</td><td>Dispositif à cran d'arrêt</td><td>Bolo ruminale</td><td>Câmara de calibração graduada</td></tr><tr><td>30031000</td><td>Euterinjektor</td><td>Ενδομαστική σύριγγα</td><td>Jeringa intramamaria</td><td>Seringue pour administration intramammaire</td><td>Siringa intramammaria</td><td>Injetor intramamário</td></tr><tr><td>30033000</td><td>Dosierhilfe</td><td>Δοσιμετρικό εξάρτημα</td><td>Dosificador</td><td>Dispositif de mesure</td><td>Dosatore</td><td>Dispositivo doseador</td></tr><tr><td>30034000</td><td>Messlöffel</td><td>Δοσιμετρικό κοχλιάριο</td><td>Cucharilla de medida</td><td>Cuillère-mesure</td><td>Cucchiaio dosatore</td><td>Colher-medida</td></tr><tr><td>30037000</td><td>Mundstück</td><td>Εξάρτημα στοματικής προσαρμογής</td><td>Aplicador bucal</td><td>Embout buccal</td><td>Boccaglio</td><td>Aplicador bucal</td></tr><tr><td>30040000</td><td>Multipunkturstempel</td><td>Εξάρτημα πολλαπλής νύξεως</td><td>Aplicador para punción múltiple</td><td>Applicateur pour multipuncture</td><td>Dispositivo per intradermoreazione per puntura multipla</td><td>Aplicador para punção múltipla</td></tr><tr><td>30041000</td><td>Nasenapplikator</td><td>Εξάρτημα ρινικής προσαρμογής</td><td>Aplicador nasal</td><td>Embout nasal</td><td>Applicatore nasale</td><td>Aplicador nasal</td></tr><tr><td>30042000</td><td>Vernebler</td><td>Εκνεφωτής</td><td>Nebulizador</td><td>Nébuliseur</td><td>Nebulizzatore</td><td>Nebulizador</td></tr><tr><td>30043500</td><td>nadelfreier Injektor</td><td>Σύστημα διαδερμικής χορήγησης χωρίς βελόνα</td><td>Inyector sin aguja</td><td>Injecteur sans aiguille</td><td>Iniettore privo di ago</td><td>Injetor sem seringa</td></tr><tr><td>30044000</td><td>Sprühkopf</td><td>Ρύγχος</td><td>Boquilla</td><td>Embout</td><td>Erogatore</td><td>Adaptador</td></tr><tr><td>30045000</td><td>Applikationsspritze für Zubereitungen zum Einnehmen</td><td>Σύριγγα για χορήγηση από του στόματος</td><td>Jeringa para uso oral</td><td>Seringue pour administration orale</td><td>Siringa per somministrazione orale</td><td>Seringa para uso oral</td></tr><tr><td>30046000</td><td>Pipette</td><td>Πιπέτα</td><td>Pipeta</td><td>Pipette</td><td>Pipetta</td><td>Pipeta</td></tr><tr><td>30053000</td><td>Teststempel</td><td>Εξάρτημα εφαρμογής αλλεργιογόνων δτα νύξεως</td><td>Aplicador para pruebas de alergenos</td><td>Applicateur pour prick test</td><td>Dispositivo per prick test</td><td>Estilete aplicador</td></tr><tr><td>30055000</td><td>Einritzer</td><td>Ακίδα σκαριφισμού</td><td>Escarificador</td><td>Vaccinostyle</td><td>Scarificatore</td><td>Escarificador</td></tr><tr><td>30058000</td><td>Spatel</td><td>Σπαθίδα</td><td>Espátula</td><td>Spatule</td><td>Spatola</td><td>Espátula</td></tr><tr><td>30059000</td><td>Tropfapplikator</td><td>Συσκευή επίχυσης σε σημείο</td><td>Aplicador para unción puntual</td><td>Applicateur pour spot-on</td><td>Applicatore per spot-on</td><td>Aplicador para unção punctiforme</td></tr><tr><td>30063000</td><td>Impfautomat</td><td>Ακίδα εμβολιασμού</td><td>Punzón</td><td>Stylet</td><td>Dispositivo a punta per vaccinazione</td><td>estilete de inoculação</td></tr><tr><td>30068000</td><td>Applikator für ein Schwämmchen zur vaginalen Anwendung</td><td>Συσκευή για ενδοκολπική τοποθέτηση σπόγγων</td><td>Aplicador de esponjas vaginales</td><td>Applicateur pour éponge vaginale</td><td>Applicatore per spugnetta intravaginale</td><td>Aplicador para esponja vaginal</td></tr></table></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://unicom-project.eu/fhir/ValueSet/administration-device"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "AdministrationDevice"]; # 
+  fhir:ValueSet.title [ fhir:value "Administration device"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-03T15:06:18+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "UNICOM"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "ValueSet Administration device from EDQM, DEV, see https://standardterms.edqm.eu/#"]; # 
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://standardterms.edqm.eu" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13072000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oral applicator" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applikator für die orale Verabreichung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εξάρτημα χορήγησης  από του στόματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador para uso oral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicateur pour administration orale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicatore per somministrazione orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador oral" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13114000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pen" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pluma" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Stylo" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Penna" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Caneta" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30000500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Administration system" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applikationssystem" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Σύστημα χορήγησης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sistema de administración" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Système d'administration" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sistema di somministrazione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sistema de administração" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30002000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Applicator" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applikator" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εξάρτημα χορήγησης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicateur" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicatore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30003000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Automatic injection device" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "automatischer Injektor" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Συσκευή αυτόματης ένεσης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inyector automático" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injecteur automatique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositivo automatico per iniezone" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seringa automática" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30005000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Balling gun" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bolusgeber" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Συσκευή χορήγησης βώλων" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador para administración intrarruminal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicateur pour dispositif intraruminal" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicatore per dispositivo intraruminale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador para bólus" ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30010000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Brush" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pinsel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ψύκτρα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pincel" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pinceau applicateur" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pennello" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pincel" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30012000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cannula" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kanüle" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Σωληνίσκος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cánula" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Canule" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cannula" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cânula" ]
+         ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30016000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cup" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Messbecher" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κύπελλο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vaso dosificador" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Godet" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bicchiere dosatore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Copo-medida" ]
+         ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30017000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dabbing applicator" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Verschluss mit Tupfer" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πώμα με εξάρτημα επάλειψης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cierre con aplicador para toques" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Embout applicateur" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tappo con applicatore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fecho com aplicador de contacto" ]
+         ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30018200" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dose dispenser" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dosiergerät" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Δοσομετρητής" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispensador de dosis" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispensateur de dose" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispensatore di dose" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispensador de dose" ]
+         ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30019000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dredging applicator" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Verschluss mit Streuvorrichtung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πώμα με εξάρτημα επίπασης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cierre espolvoreador" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Embout poudreur" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aspersore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fecho polvilhador" ]
+         ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30021000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Drench gun" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applikator für eine Flüssigkeit zum Einnehmen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Συσκευή χορήγησης στοματικών διαλυμάτων" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pistola dosificadora" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Embout buccal" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pistola dosatrice per somministrazioni orali" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pistola doseadora" ]
+         ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30022000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dropper applicator" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Verschluss mit Tropfer" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Σταγονομετρικό βιδωτό πώμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tapón cuentagotas" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Embout compte-gouttes" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Contagocce" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fecho conta-gotas" ]
+         ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30025000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "High pressure transdermal delivery device" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Intradermaldruckinjektor" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Σύστημα διαδερμικής χορήγησης υπό πίεση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositivo a presión para liberación transdermica" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injecteur intradermique sous pression" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositivo sotto pressione a rilascio transdermico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injector transdérmico sob pressão" ]
+         ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30026000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Implanter" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Implantatinjektor" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Συσκευή εμφύτευσης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inyector de implantes" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pistolet pour implant" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Iniettore per impianto" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seringa para implantes" ]
+         ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30026500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inhaler" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inhalator" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Συσκευή εισπνοής" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inhalador" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inhalateur" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inalatore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inalador" ]
+         ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30027000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "In-ovo injection device" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Eiinjektor" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Συσκευή χορήγησης in ovo" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inyector automático in ovo" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositif pour injection in ovo" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositivo per iniezione in ovo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seringa para via transcoriónica" ]
+         ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30028000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Injection needle" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injektionsnadel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Βελόνη σύριγγας" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aguja para inyección" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aiguille" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ago per iniezione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Agulha para injecção" ]
+         ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30029000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Injection syringe" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injektionsspritze" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Σύριγγα ένεσης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Jeringa para inyección" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seringue" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Siringa per iniezione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seringa para injectáveis" ]
+         ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30030000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Internal graduated calibration chamber" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Intern graduierte Dosierkammer" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Δοσιμετρικό εξάρτημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispensador de dosis múltiples" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositif à cran d'arrêt" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bolo ruminale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Câmara de calibração graduada" ]
+         ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30031000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intramammary syringe" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Euterinjektor" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδομαστική σύριγγα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Jeringa intramamaria" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seringue pour administration intramammaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Siringa intramammaria" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injetor intramamário" ]
+         ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30033000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Measuring device" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dosierhilfe" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Δοσιμετρικό εξάρτημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dosificador" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositif de mesure" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dosatore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositivo doseador" ]
+         ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30034000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Measuring spoon" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Messlöffel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Δοσιμετρικό κοχλιάριο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cucharilla de medida" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cuillère-mesure" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cucchiaio dosatore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Colher-medida" ]
+         ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30037000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mouthpiece" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mundstück" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εξάρτημα στοματικής προσαρμογής" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador bucal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Embout buccal" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Boccaglio" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador bucal" ]
+         ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30040000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Multipuncturer" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Multipunkturstempel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εξάρτημα πολλαπλής νύξεως" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador para punción múltiple" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicateur pour multipuncture" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositivo per intradermoreazione per puntura multipla" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador para punção múltipla" ]
+         ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30041000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasal applicator" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nasenapplikator" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εξάρτημα ρινικής προσαρμογής" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador nasal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Embout nasal" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicatore nasale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador nasal" ]
+         ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30042000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nebuliser" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vernebler" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εκνεφωτής" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nebulizador" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nébuliseur" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nebulizzatore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nebulizador" ]
+         ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30043500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Needle-free injector" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "nadelfreier Injektor" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Σύστημα διαδερμικής χορήγησης χωρίς βελόνα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inyector sin aguja" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injecteur sans aiguille" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Iniettore privo di ago" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injetor sem seringa" ]
+         ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30044000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nozzle" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sprühkopf" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ρύγχος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Boquilla" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Embout" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Erogatore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Adaptador" ]
+         ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30045000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oral syringe" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applikationsspritze für Zubereitungen zum Einnehmen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Σύριγγα για χορήγηση από του στόματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Jeringa para uso oral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seringue pour administration orale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Siringa per somministrazione orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Seringa para uso oral" ]
+         ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30046000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pipette" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pipette" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πιπέτα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pipeta" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pipette" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pipetta" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pipeta" ]
+         ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30053000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prick test applicator" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Teststempel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εξάρτημα εφαρμογής αλλεργιογόνων δτα νύξεως" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador para pruebas de alergenos" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicateur pour prick test" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositivo per prick test" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Estilete aplicador" ]
+         ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30055000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Scarifier" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Einritzer" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ακίδα σκαριφισμού" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Escarificador" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vaccinostyle" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Scarificatore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Escarificador" ]
+         ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30058000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spatula" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spatel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Σπαθίδα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Espátula" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spatule" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spatola" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Espátula" ]
+         ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30059000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spot-on applicator" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tropfapplikator" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Συσκευή επίχυσης σε σημείο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador para unción puntual" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicateur pour spot-on" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicatore per spot-on" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador para unção punctiforme" ]
+         ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30063000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stab vaccinator" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Impfautomat" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ακίδα εμβολιασμού" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Punzón" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Stylet" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositivo a punta per vaccinazione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "estilete de inoculação" ]
+         ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30068000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vaginal sponge applicator" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applikator für ein Schwämmchen zur vaginalen Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Συσκευή για ενδοκολπική τοποθέτηση σπόγγων" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador de esponjas vaginales" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicateur pour éponge vaginale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Applicatore per spugnetta intravaginale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicador para esponja vaginal" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/administration-device.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

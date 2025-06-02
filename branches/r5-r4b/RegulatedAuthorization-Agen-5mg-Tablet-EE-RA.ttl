@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/RegulatedAuthorization/Agen-5mg-Tablet-EE-RA> a fhir:RegulatedAuthorization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Agen-5mg-Tablet-EE-RA"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RegulatedAuthorization</b><a name=\"Agen-5mg-Tablet-EE-RA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RegulatedAuthorization &quot;Agen-5mg-Tablet-EE-RA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLRegulatedAuthorization.html\">PPL Marketing Authorisation profile</a></p></div><p><b>identifier</b>: id: 418303</p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-Agen-5mg-Tablet-EE-MPD.html\">MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (220000000060#220000000061)</span></p><p><b>region</b>: Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000000002#100000000388)</span></p><p><b>status</b>: Valid - Renewed/Varied <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000072049#200000017708)</span></p><p><b>statusDate</b>: 2013-06-07</p><p><b>holder</b>: <a href=\"Organization-LOC-100002580-Zentiva.html\">Organization/LOC-100002580-Zentiva</a> &quot;Zentiva k.s.&quot;</p></div>"
+  ];
+  fhir:RegulatedAuthorization.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "418303" ]
+  ];
+  fhir:RegulatedAuthorization.subject [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD" ]
+  ];
+  fhir:RegulatedAuthorization.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/220000000060" ];
+       fhir:Coding.code [ fhir:value "220000000061" ];
+       fhir:Coding.display [ fhir:value "Marketing Authorisation" ]
+     ]
+  ];
+  fhir:RegulatedAuthorization.region [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000000002" ];
+       fhir:Coding.code [ fhir:value "100000000388" ];
+       fhir:Coding.display [ fhir:value "Republic of Estonia" ]
+     ]
+  ];
+  fhir:RegulatedAuthorization.status [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000072049" ];
+       fhir:Coding.code [ fhir:value "200000017708" ];
+       fhir:Coding.display [ fhir:value "Valid - Renewed/Varied" ]
+     ]
+  ];
+  fhir:RegulatedAuthorization.statusDate [ fhir:value "2013-06-07"^^xsd:date];
+  fhir:RegulatedAuthorization.holder [
+     fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100002580-Zentiva>;
+     fhir:Reference.reference [ fhir:value "Organization/LOC-100002580-Zentiva" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/RegulatedAuthorization/Agen-5mg-Tablet-EE-RA.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

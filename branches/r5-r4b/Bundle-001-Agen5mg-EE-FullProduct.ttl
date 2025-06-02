@@ -1,0 +1,658 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Bundle/001-Agen5mg-EE-FullProduct> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "001-Agen5mg-EE-FullProduct"];
+  fhir:Bundle.type [ fhir:value "transaction"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://medigree.net/fhir/idmp/ee/MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD" ];
+     fhir:Bundle.entry.resource <http://medigree.net/fhir/idmp/ee/MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://medigree.net/fhir/idmp/ee/RegulatedAuthorization/Agen-5mg-Tablet-EE-RA" ];
+     fhir:Bundle.entry.resource <http://medigree.net/fhir/idmp/ee/RegulatedAuthorization/Agen-5mg-Tablet-EE-RA>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "RegulatedAuthorization/Agen-5mg-Tablet-EE-RA" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://medigree.net/fhir/idmp/ee/AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD" ];
+     fhir:Bundle.entry.resource <http://medigree.net/fhir/idmp/ee/AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://medigree.net/fhir/idmp/ee/ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID" ];
+     fhir:Bundle.entry.resource <http://medigree.net/fhir/idmp/ee/ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://medigree.net/fhir/idmp/ee/Ingredient/Agen-5mg-Tablet-EE-I" ];
+     fhir:Bundle.entry.resource <http://medigree.net/fhir/idmp/ee/Ingredient/Agen-5mg-Tablet-EE-I>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Ingredient/Agen-5mg-Tablet-EE-I" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://medigree.net/fhir/idmp/ee/PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-A" ];
+     fhir:Bundle.entry.resource <http://medigree.net/fhir/idmp/ee/PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-A>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-A" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://medigree.net/fhir/idmp/ee/PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-B" ];
+     fhir:Bundle.entry.resource <http://medigree.net/fhir/idmp/ee/PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-B>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-B" ]
+     ]
+  ] .
+
+<http://medigree.net/fhir/idmp/ee/MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD> a fhir:MedicinalProductDefinition;
+  fhir:Resource.id [ fhir:value "Agen-5mg-Tablet-EE-MPD"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicinalProductDefinition</b><a name=\"Agen-5mg-Tablet-EE-MPD\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicinalProductDefinition &quot;Agen-5mg-Tablet-EE-MPD&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLMedicinalProductDefinition.html\">PPL Medicinal Product profile</a></p></div><p><b>identifier</b>: id: EE-100002580-15547</p><p><b>domain</b>: Human use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000000004#100000000012)</span></p><p><b>status</b>: Current <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (200000005003#200000005004)</span></p><p><b>combinedPharmaceuticalDoseForm</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-pharmaceutical-dose-form-ema-cs.html\">Pharmaceutical Dose Form EMA</a>#100000073664)</span></p><p><b>legalStatusOfSupply</b>: Medicinal product subject to medical prescription <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000072051#100000072084)</span></p><p><b>classification</b>: amlodipine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000093533#100000095065; <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-WC.html\">WHO ATC</a>#C08CA01)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: AGEN 5 mg tabletid</p><blockquote><p><b>namePart</b></p><p><b>part</b>: AGEN</p><p><b>type</b>: Invented name part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (220000000000#220000000002)</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: 5 mg</p><p><b>type</b>: Strength part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (220000000000#220000000004)</span></p></blockquote><blockquote><p><b>namePart</b></p><p><b>part</b>: tabletid</p><p><b>type</b>: Pharmaceutical dose form part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (220000000000#220000000005)</span></p></blockquote><h3>CountryLanguages</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td>*</td><td>Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000000002#100000000388)</span></td><td>Estonian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000072057#100000072172)</span></td></tr></table></blockquote></div>"
+  ];
+  fhir:MedicinalProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://ema.europa.eu/fhir/mpId" ];
+     fhir:Identifier.value [ fhir:value "EE-100002580-15547" ]
+  ];
+  fhir:MedicinalProductDefinition.domain [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000000004" ];
+       fhir:Coding.code [ fhir:value "100000000012" ];
+       fhir:Coding.display [ fhir:value "Human use" ]
+     ]
+  ];
+  fhir:MedicinalProductDefinition.status [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000005003" ];
+       fhir:Coding.code [ fhir:value "200000005004" ];
+       fhir:Coding.display [ fhir:value "Current" ]
+     ]
+  ];
+  fhir:MedicinalProductDefinition.combinedPharmaceuticalDoseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000004" ];
+       fhir:Coding.code [ fhir:value "100000073664" ];
+       fhir:Coding.display [ fhir:value "Tablet" ]
+     ]
+  ];
+  fhir:MedicinalProductDefinition.legalStatusOfSupply [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000072051" ];
+       fhir:Coding.code [ fhir:value "100000072084" ];
+       fhir:Coding.display [ fhir:value "Medicinal product subject to medical prescription" ]
+     ]
+  ];
+  fhir:MedicinalProductDefinition.classification [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000093533" ];
+       fhir:Coding.code [ fhir:value "100000095065" ];
+       fhir:Coding.display [ fhir:value "amlodipine" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "C08CA01" ];
+       fhir:Coding.display [ fhir:value "amlodipine" ]
+     ]
+  ];
+  fhir:MedicinalProductDefinition.name [
+     fhir:index 0;
+     fhir:MedicinalProductDefinition.name.productName [ fhir:value "AGEN 5 mg tabletid" ];
+     fhir:MedicinalProductDefinition.name.namePart [
+       fhir:index 0;
+       fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "AGEN" ];
+       fhir:MedicinalProductDefinition.name.namePart.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/220000000000" ];
+           fhir:Coding.code [ fhir:value "220000000002" ];
+           fhir:Coding.display [ fhir:value "Invented name part" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "5 mg" ];
+       fhir:MedicinalProductDefinition.name.namePart.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/220000000000" ];
+           fhir:Coding.code [ fhir:value "220000000004" ];
+           fhir:Coding.display [ fhir:value "Strength part" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:MedicinalProductDefinition.name.namePart.part [ fhir:value "tabletid" ];
+       fhir:MedicinalProductDefinition.name.namePart.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/220000000000" ];
+           fhir:Coding.code [ fhir:value "220000000005" ];
+           fhir:Coding.display [ fhir:value "Pharmaceutical dose form part" ]
+         ]
+       ]
+     ];
+     fhir:MedicinalProductDefinition.name.countryLanguage [
+       fhir:index 0;
+       fhir:MedicinalProductDefinition.name.countryLanguage.country [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000000002" ];
+           fhir:Coding.code [ fhir:value "100000000388" ];
+           fhir:Coding.display [ fhir:value "Republic of Estonia" ]
+         ]
+       ];
+       fhir:MedicinalProductDefinition.name.countryLanguage.language [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000072057" ];
+           fhir:Coding.code [ fhir:value "100000072172" ];
+           fhir:Coding.display [ fhir:value "Estonian" ]
+         ]
+       ]
+     ]
+  ] .
+
+<http://medigree.net/fhir/idmp/ee/RegulatedAuthorization/Agen-5mg-Tablet-EE-RA> a fhir:RegulatedAuthorization;
+  fhir:Resource.id [ fhir:value "Agen-5mg-Tablet-EE-RA"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RegulatedAuthorization</b><a name=\"Agen-5mg-Tablet-EE-RA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RegulatedAuthorization &quot;Agen-5mg-Tablet-EE-RA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLRegulatedAuthorization.html\">PPL Marketing Authorisation profile</a></p></div><p><b>identifier</b>: id: 418303</p><p><b>subject</b>: <a href=\"#MedicinalProductDefinition_Agen-5mg-Tablet-EE-MPD\">See above (MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD)</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (220000000060#220000000061)</span></p><p><b>region</b>: Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000000002#100000000388)</span></p><p><b>status</b>: Valid - Renewed/Varied <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000072049#200000017708)</span></p><p><b>statusDate</b>: 2013-06-07</p><p><b>holder</b>: <a href=\"Organization-LOC-100002580-Zentiva.html\">Organization/LOC-100002580-Zentiva</a> &quot;Zentiva k.s.&quot;</p></div>"
+  ];
+  fhir:RegulatedAuthorization.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "418303" ]
+  ];
+  fhir:RegulatedAuthorization.subject [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD" ]
+  ];
+  fhir:RegulatedAuthorization.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/220000000060" ];
+       fhir:Coding.code [ fhir:value "220000000061" ];
+       fhir:Coding.display [ fhir:value "Marketing Authorisation" ]
+     ]
+  ];
+  fhir:RegulatedAuthorization.region [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000000002" ];
+       fhir:Coding.code [ fhir:value "100000000388" ];
+       fhir:Coding.display [ fhir:value "Republic of Estonia" ]
+     ]
+  ];
+  fhir:RegulatedAuthorization.status [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000072049" ];
+       fhir:Coding.code [ fhir:value "200000017708" ];
+       fhir:Coding.display [ fhir:value "Valid - Renewed/Varied" ]
+     ]
+  ];
+  fhir:RegulatedAuthorization.statusDate [ fhir:value "2013-06-07"^^xsd:date];
+  fhir:RegulatedAuthorization.holder [
+     fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100002580-Zentiva>;
+     fhir:Reference.reference [ fhir:value "Organization/LOC-100002580-Zentiva" ]
+  ] .
+
+<http://medigree.net/fhir/idmp/ee/AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD> a fhir:AdministrableProductDefinition;
+  fhir:Resource.id [ fhir:value "Agen-5mg-Tablet-EE-APD"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AdministrableProductDefinition</b><a name=\"Agen-5mg-Tablet-EE-APD\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AdministrableProductDefinition &quot;Agen-5mg-Tablet-EE-APD&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLAdministrableProductDefinition.html\">PPL Administrable Product profile</a></p></div><p><b>status</b>: active</p><p><b>formOf</b>: <a href=\"#MedicinalProductDefinition_Agen-5mg-Tablet-EE-MPD\">See above (MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD)</a></p><p><b>administrableDoseForm</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-pharmaceutical-dose-form-ema-cs.html\">Pharmaceutical Dose Form EMA</a>#100000073664)</span></p><p><b>unitOfPresentation</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-unit-of-presentation-ema-cs.html\">Unit of Presentation EMA</a>#200000002152)</span></p><p><b>producedFrom</b>: <a href=\"#ManufacturedItemDefinition_Agen-5mg-Tablet-EE-MID\">See above (ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID)</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000073345#100000073619)</span></td></tr></table></div>"
+  ];
+  fhir:AdministrableProductDefinition.status [ fhir:value "active"];
+  fhir:AdministrableProductDefinition.formOf [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD" ]
+  ];
+  fhir:AdministrableProductDefinition.administrableDoseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000004" ];
+       fhir:Coding.code [ fhir:value "100000073664" ];
+       fhir:Coding.display [ fhir:value "Tablet" ]
+     ]
+  ];
+  fhir:AdministrableProductDefinition.unitOfPresentation [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000014" ];
+       fhir:Coding.code [ fhir:value "200000002152" ];
+       fhir:Coding.display [ fhir:value "Tablet" ]
+     ]
+  ];
+  fhir:AdministrableProductDefinition.producedFrom [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID>;
+     fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID" ]
+  ];
+  fhir:AdministrableProductDefinition.routeOfAdministration [
+     fhir:index 0;
+     fhir:AdministrableProductDefinition.routeOfAdministration.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000073345" ];
+         fhir:Coding.code [ fhir:value "100000073619" ];
+         fhir:Coding.display [ fhir:value "Oral use" ]
+       ]
+     ]
+  ] .
+
+<http://medigree.net/fhir/idmp/ee/ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID> a fhir:ManufacturedItemDefinition;
+  fhir:Resource.id [ fhir:value "Agen-5mg-Tablet-EE-MID"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ManufacturedItemDefinition</b><a name=\"Agen-5mg-Tablet-EE-MID\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ManufacturedItemDefinition &quot;Agen-5mg-Tablet-EE-MID&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLManufacturedItemDefinition.html\">PPL Manufactured Item profile</a></p></div><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-pharmaceutical-dose-form-ema-cs.html\">Pharmaceutical Dose Form EMA</a>#100000073664)</span></p><p><b>unitOfPresentation</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-unit-of-presentation-ema-cs.html\">Unit of Presentation EMA</a>#200000002152)</span></p></div>"
+  ];
+  fhir:ManufacturedItemDefinition.status [ fhir:value "active"];
+  fhir:ManufacturedItemDefinition.manufacturedDoseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000004" ];
+       fhir:Coding.code [ fhir:value "100000073664" ];
+       fhir:Coding.display [ fhir:value "Tablet" ]
+     ]
+  ];
+  fhir:ManufacturedItemDefinition.unitOfPresentation [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000014" ];
+       fhir:Coding.code [ fhir:value "200000002152" ];
+       fhir:Coding.display [ fhir:value "Tablet" ]
+     ]
+  ] .
+
+<http://medigree.net/fhir/idmp/ee/Ingredient/Agen-5mg-Tablet-EE-I> a fhir:Ingredient;
+  fhir:Resource.id [ fhir:value "Agen-5mg-Tablet-EE-I"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Ingredient</b><a name=\"Agen-5mg-Tablet-EE-I\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Ingredient &quot;Agen-5mg-Tablet-EE-I&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLIngredient.html\">PPL Ingredient profile</a></p></div><p><b>status</b>: active</p><p><b>for</b>: </p><ul><li><a href=\"#MedicinalProductDefinition_Agen-5mg-Tablet-EE-MPD\">See above (MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD)</a></li><li><a href=\"#ManufacturedItemDefinition_Agen-5mg-Tablet-EE-MID\">See above (ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID)</a></li><li><a href=\"#AdministrableProductDefinition_Agen-5mg-Tablet-EE-APD\">See above (AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD)</a></li></ul><p><b>role</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000072050#100000072072)</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td>-</td><td><b>Concept</b></td></tr><tr><td>*</td><td>Amlodipine besilate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (SubstanceDefinition#100000090079)</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 6.935 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: http://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td>-</td><td><b>Concept</b></td></tr><tr><td>*</td><td>Amlodipine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (SubstanceDefinition#100000085259)</span></td></tr></table><p><b>strength</b>: 5 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: http://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')</span></p></blockquote></blockquote></blockquote></div>"
+  ];
+  fhir:Ingredient.status [ fhir:value "active"];
+  fhir:Ingredient.for [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID>;
+     fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD>;
+     fhir:Reference.reference [ fhir:value "AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD" ]
+  ];
+  fhir:Ingredient.role [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000072050" ];
+       fhir:Coding.code [ fhir:value "100000072072" ];
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ];
+  fhir:Ingredient.substance [
+     fhir:Ingredient.substance.code [
+       fhir:CodeableReference.concept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v2/SubstanceDefinition" ];
+           fhir:Coding.code [ fhir:value "100000090079" ];
+           fhir:Coding.display [ fhir:value "Amlodipine besilate" ]
+         ]
+       ]
+     ];
+     fhir:Ingredient.substance.strength [
+       fhir:index 0;
+       fhir:Ingredient.substance.strength.presentationRatio [
+         fhir:Ratio.numerator [
+           fhir:Quantity.value [ fhir:value "6.935"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "milligram(s)" ];
+           fhir:Quantity.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000110633" ];
+           fhir:Quantity.code [ fhir:value "100000110655" ]
+         ];
+         fhir:Ratio.denominator [
+           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "Tablet" ];
+           fhir:Quantity.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000014" ];
+           fhir:Quantity.code [ fhir:value "200000002152" ]
+         ]
+       ];
+       fhir:Ingredient.substance.strength.referenceStrength [
+         fhir:index 0;
+         fhir:Ingredient.substance.strength.referenceStrength.substance [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v2/SubstanceDefinition" ];
+               fhir:Coding.code [ fhir:value "100000085259" ];
+               fhir:Coding.display [ fhir:value "Amlodipine" ]
+             ]
+           ]
+         ];
+         fhir:Ingredient.substance.strength.referenceStrength.strengthRatio [
+           fhir:Ratio.numerator [
+             fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ];
+             fhir:Quantity.unit [ fhir:value "milligram(s)" ];
+             fhir:Quantity.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000110633" ];
+             fhir:Quantity.code [ fhir:value "100000110655" ]
+           ];
+           fhir:Ratio.denominator [
+             fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+             fhir:Quantity.unit [ fhir:value "Tablet" ];
+             fhir:Quantity.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000014" ];
+             fhir:Quantity.code [ fhir:value "200000002152" ]
+           ]
+         ]
+       ]
+     ]
+  ] .
+
+<http://medigree.net/fhir/idmp/ee/PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-A> a fhir:PackagedProductDefinition;
+  fhir:Resource.id [ fhir:value "Agen-5mg-Tablet-EE-PPD-1109887-A"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PackagedProductDefinition</b><a name=\"Agen-5mg-Tablet-EE-PPD-1109887-A\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PackagedProductDefinition &quot;Agen-5mg-Tablet-EE-PPD-1109887-A&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLPackagedProductDefinition.html\">PPL Packaged Product profile</a></p></div><p><b>identifier</b>: id: EE-100002580-15547-1109887</p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_Agen-5mg-Tablet-EE-MPD\">See above (MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD)</a></p><p><b>containedItemQuantity</b>: 30 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')</span></p><p><b>description</b>: Tabletid on pakendatud PVC/PVDC/Al blistritesse (valged).</p><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td>*</td><td>Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000000002#100000000388)</span></td><td>Marketed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000072052#100000072083)</span></td></tr></table><blockquote><p><b>package</b></p><p><b>type</b>: Box <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000073346#100000073498)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: Cardboard <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (200000003199#200000003529)</span></p><blockquote><p><b>package</b></p><p><b>type</b>: Blister <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000073346#100000073496)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (200000003199#200000003222)</span>, PolyVinylidene Chloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (200000003199#200000003225)</span>, Aluminium <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (200000003199#200000003200)</span></p></blockquote></blockquote></div>"
+  ];
+  fhir:PackagedProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://ema.europa.eu/example/pcid" ];
+     fhir:Identifier.value [ fhir:value "EE-100002580-15547-1109887" ]
+  ];
+  fhir:PackagedProductDefinition.packageFor [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD" ]
+  ];
+  fhir:PackagedProductDefinition.containedItemQuantity [
+     fhir:index 0;
+     fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "Tablet" ];
+     fhir:Quantity.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000014" ];
+     fhir:Quantity.code [ fhir:value "200000002152" ]
+  ];
+  fhir:PackagedProductDefinition.description [ fhir:value "Tabletid on pakendatud PVC/PVDC/Al blistritesse (valged)."];
+  fhir:PackagedProductDefinition.marketingStatus [
+     fhir:index 0;
+     fhir:MarketingStatus.country [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000000002" ];
+         fhir:Coding.code [ fhir:value "100000000388" ];
+         fhir:Coding.display [ fhir:value "Republic of Estonia" ]
+       ]
+     ];
+     fhir:MarketingStatus.status [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000072052" ];
+         fhir:Coding.code [ fhir:value "100000072083" ];
+         fhir:Coding.display [ fhir:value "Marketed" ]
+       ]
+     ]
+  ];
+  fhir:PackagedProductDefinition.package [
+     fhir:PackagedProductDefinition.package.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000073346" ];
+         fhir:Coding.code [ fhir:value "100000073498" ];
+         fhir:Coding.display [ fhir:value "Box" ]
+       ]
+     ];
+     fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
+     fhir:PackagedProductDefinition.package.material [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000003199" ];
+         fhir:Coding.code [ fhir:value "200000003529" ];
+         fhir:Coding.display [ fhir:value "Cardboard" ]
+       ]
+     ];
+     fhir:PackagedProductDefinition.package.package [
+       fhir:index 0;
+       fhir:PackagedProductDefinition.package.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000073346" ];
+           fhir:Coding.code [ fhir:value "100000073496" ];
+           fhir:Coding.display [ fhir:value "Blister" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
+       fhir:PackagedProductDefinition.package.material [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000003199" ];
+           fhir:Coding.code [ fhir:value "200000003222" ];
+           fhir:Coding.display [ fhir:value "PolyVinyl Chloride" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000003199" ];
+           fhir:Coding.code [ fhir:value "200000003225" ];
+           fhir:Coding.display [ fhir:value "PolyVinylidene Chloride" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000003199" ];
+           fhir:Coding.code [ fhir:value "200000003200" ];
+           fhir:Coding.display [ fhir:value "Aluminium" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.package.containedItem [
+         fhir:index 0;
+         fhir:PackagedProductDefinition.package.containedItem.item [
+           fhir:CodeableReference.reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID>;
+             fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID" ]
+           ]
+         ];
+         fhir:PackagedProductDefinition.package.containedItem.amount [
+           fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ]
+         ]
+       ]
+     ]
+  ] .
+
+<http://medigree.net/fhir/idmp/ee/PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-B> a fhir:PackagedProductDefinition;
+  fhir:Resource.id [ fhir:value "Agen-5mg-Tablet-EE-PPD-1109887-B"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition";
+       fhir:index 0;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PackagedProductDefinition</b><a name=\"Agen-5mg-Tablet-EE-PPD-1109887-B\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PackagedProductDefinition &quot;Agen-5mg-Tablet-EE-PPD-1109887-B&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLPackagedProductDefinition.html\">PPL Packaged Product profile</a></p></div><p><b>identifier</b>: id: EE-100002580-15547-1109887</p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_Agen-5mg-Tablet-EE-MPD\">See above (MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD)</a></p><p><b>containedItemQuantity</b>: 30 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: http://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')</span></p><p><b>description</b>: Tabletid on pakendatud PVC/Al blistritesse (valged).</p><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td>-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td>*</td><td>Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000000002#100000000388)</span></td><td>Marketed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000072052#100000072083)</span></td></tr></table><blockquote><p><b>package</b></p><p><b>type</b>: Box <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000073346#100000073498)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: Cardboard <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (200000003199#200000003529)</span></p><blockquote><p><b>package</b></p><p><b>type</b>: Blister <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000073346#100000073496)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: PolyVinyl Chloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (200000003199#200000003222)</span>, Aluminium <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (200000003199#200000003200)</span></p></blockquote></blockquote></div>"
+  ];
+  fhir:PackagedProductDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://ema.europa.eu/example/pcid" ];
+     fhir:Identifier.value [ fhir:value "EE-100002580-15547-1109887" ]
+  ];
+  fhir:PackagedProductDefinition.packageFor [
+     fhir:index 0;
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD" ]
+  ];
+  fhir:PackagedProductDefinition.containedItemQuantity [
+     fhir:index 0;
+     fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "Tablet" ];
+     fhir:Quantity.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000014" ];
+     fhir:Quantity.code [ fhir:value "200000002152" ]
+  ];
+  fhir:PackagedProductDefinition.description [ fhir:value "Tabletid on pakendatud PVC/Al blistritesse (valged)."];
+  fhir:PackagedProductDefinition.marketingStatus [
+     fhir:index 0;
+     fhir:MarketingStatus.country [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000000002" ];
+         fhir:Coding.code [ fhir:value "100000000388" ];
+         fhir:Coding.display [ fhir:value "Republic of Estonia" ]
+       ]
+     ];
+     fhir:MarketingStatus.status [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000072052" ];
+         fhir:Coding.code [ fhir:value "100000072083" ];
+         fhir:Coding.display [ fhir:value "Marketed" ]
+       ]
+     ]
+  ];
+  fhir:PackagedProductDefinition.package [
+     fhir:PackagedProductDefinition.package.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000073346" ];
+         fhir:Coding.code [ fhir:value "100000073498" ];
+         fhir:Coding.display [ fhir:value "Box" ]
+       ]
+     ];
+     fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
+     fhir:PackagedProductDefinition.package.material [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000003199" ];
+         fhir:Coding.code [ fhir:value "200000003529" ];
+         fhir:Coding.display [ fhir:value "Cardboard" ]
+       ]
+     ];
+     fhir:PackagedProductDefinition.package.package [
+       fhir:index 0;
+       fhir:PackagedProductDefinition.package.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000073346" ];
+           fhir:Coding.code [ fhir:value "100000073496" ];
+           fhir:Coding.display [ fhir:value "Blister" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.package.quantity [ fhir:value "1"^^xsd:integer ];
+       fhir:PackagedProductDefinition.package.material [
+         fhir:index 0;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000003199" ];
+           fhir:Coding.code [ fhir:value "200000003222" ];
+           fhir:Coding.display [ fhir:value "PolyVinyl Chloride" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000003199" ];
+           fhir:Coding.code [ fhir:value "200000003200" ];
+           fhir:Coding.display [ fhir:value "Aluminium" ]
+         ]
+       ];
+       fhir:PackagedProductDefinition.package.containedItem [
+         fhir:index 0;
+         fhir:PackagedProductDefinition.package.containedItem.item [
+           fhir:CodeableReference.reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID>;
+             fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID" ]
+           ]
+         ];
+         fhir:PackagedProductDefinition.package.containedItem.amount [
+           fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Bundle/001-Agen5mg-EE-FullProduct.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

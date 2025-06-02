@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ConceptMap/sms-snomed-substance-cm> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sms-snomed-substance-cm"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-02-17T17:40:44.521+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap sms-snomed-substance-cm</b></p><a name=\"sms-snomed-substance-cm\"> </a><a name=\"hcsms-snomed-substance-cm\"> </a><a name=\"hcsms-snomed-substance-cm-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: versionId: id (PrimitiveType/ConceptMap.meta.versionId): native = id -&gt; 1; Last updated: 2023-02-17 17:40:44+0000</p></div><p>Mapping from <a href=\"ValueSet-substances-vs.html\">EMA SPOR SMS Substances</a> to (not specified)</p><p>DRAFT (not intended for production usage). Published on 2024-07-10 21:48:54+0000 by UNICOM  (UNICOM: <a href=\"http://unicom-project.eu\">http://unicom-project.eu</a>). </p><div><p>EMA SPOR SMS mapped to SNOMED CT concepts. Small example.</p>\n</div><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-substance-sms-cs.html\">Substances EMA SPOR SMS</a> to <code>http://www.snomed.org</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>100000085259 (Amlodipine)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>386864001 (Amlodipine)</td></tr><tr><td>100000090079 (Amlodipine besilate)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>384976003 (Amlodipine besilate)</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://unicom-project.eu/fhir/ConceptMap/sms-snomed-substance-cm"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "SPOR-SNOMED CT substances"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-10T21:48:54+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "EMA SPOR SMS mapped to SNOMED CT concepts. Small example."] ; # 
+  fhir:sourceScope [
+     fhir:v "http://unicom-project.eu/fhir/ValueSet/substances-vs"^^xsd:anyURI ;
+     fhir:link <http://unicom-project.eu/fhir/ValueSet/substances-vs>
+  ] ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ;
+       fhir:link <https://spor.ema.europa.eu/v2/SubstanceDefinition>
+     ] ;
+     fhir:target [
+       fhir:v "http://www.snomed.org"^^xsd:anyURI ;
+       fhir:link <http://www.snomed.org>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "100000085259" ] ;
+       fhir:display [ fhir:v "Amlodipine" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "386864001" ] ;
+         fhir:display [ fhir:v "Amlodipine" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "100000090079" ] ;
+       fhir:display [ fhir:v "Amlodipine besilate" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "384976003" ] ;
+         fhir:display [ fhir:v "Amlodipine besilate" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

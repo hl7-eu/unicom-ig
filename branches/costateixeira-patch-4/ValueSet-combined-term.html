@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EDQM Combined Term - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.56"}
+    h3,h4,h5,h6{--heading-prefix:"6.56"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EDQM Combined Term</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This is not an authorized publication; it is the continuous build for version 0.1.0. This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-combined-term.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-combined-term.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-combined-term.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: EDQM Combined Term
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://unicom-project.eu/fhir/ValueSet/combined-term<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://unicom-project.eu/fhir/ValueSet/combined-term"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://unicom-project.eu/fhir/ValueSet/combined-term|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2023-11-14
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">CombinedTerm</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>ValueSet Combined term (dose form) from EDQM, CMT, see https://standardterms.edqm.eu/#</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>11210500</td><td>Solution for infusion in administration system</td></tr><tr><td>13053000</td><td>Solution for injection in administration system</td></tr><tr><td>13057000</td><td>Powder and solvent for prolonged-release suspension for injection in pre-filled syringe</td></tr><tr><td>13060000</td><td>Powder for oral/rectal suspension in sachet</td></tr><tr><td>13064000</td><td>Suspension for injection in pre-filled injector</td></tr><tr><td>13068000</td><td>Solution for injection in pre-filled injector</td></tr><tr><td>13069000</td><td>Gel in sachet</td></tr><tr><td>13071000</td><td>Solution for injection in dose-dispenser cartridge</td></tr><tr><td>13075000</td><td>Oral suspension in pre-filled oral applicator</td></tr><tr><td>13083000</td><td>Bee-hive dispersion in sachet</td></tr><tr><td>13090000</td><td>Granules in single-dose container</td></tr><tr><td>13094000</td><td>Syrup in sachet</td></tr><tr><td>13095000</td><td>Emulsion for infusion in administration system</td></tr><tr><td>13103000</td><td>Cutaneous solution in single-dose container</td></tr><tr><td>13104000</td><td>Eye drops, emulsion in single-dose container</td></tr><tr><td>13108000</td><td>Powder and solvent for suspension for injection in multidose container</td></tr><tr><td>13109000</td><td>Solution for injection in multidose container</td></tr><tr><td>13110000</td><td>Suspension for injection in multidose container</td></tr><tr><td>13112000</td><td>Prolonged-release suspension for injection in pre-filled pen</td></tr><tr><td>13120000</td><td>Nasal powder in single-dose container</td></tr><tr><td>13122000</td><td>Solution for infusion in cartridge</td></tr><tr><td>13130000</td><td>Oral powder in single-dose container</td></tr><tr><td>13137000</td><td>Transdermal gel in sachet</td></tr><tr><td>13146000</td><td>Oral solution in multidose container with metering pump</td></tr><tr><td>13147000</td><td>Powder for oral suspension in sachet</td></tr><tr><td>13155000</td><td>Film-coated granules in single-dose container</td></tr><tr><td>13161000</td><td>Dispersion for injection in pre-filled syringe</td></tr><tr><td>50001250</td><td>Coated granules in sachet</td></tr><tr><td>50017200</td><td>Ear drops, solution in single-dose container</td></tr><tr><td>50017550</td><td>Ear drops, suspension in single-dose container</td></tr><tr><td>50021250</td><td>Emulsion for injection/infusion in pre-filled syringe</td></tr><tr><td>50022500</td><td>Eye drops, prolonged-release solution in single-dose container</td></tr><tr><td>50023000</td><td>Eye drops, solution in single-dose container</td></tr><tr><td>50023100</td><td>Eye drops, suspension in single-dose container</td></tr><tr><td>50023300</td><td>Eye gel in single-dose container</td></tr><tr><td>50023400</td><td>Eye ointment in single-dose container</td></tr><tr><td>50023700</td><td>Film-coated tablet and gastro-resistant granules in sachet</td></tr><tr><td>50026150</td><td>Gastro-resistant granules for oral suspension in sachet</td></tr><tr><td>50026400</td><td>Gel in pressurised container</td></tr><tr><td>50029170</td><td>Granules for oral solution in sachet</td></tr><tr><td>50029200</td><td>Granules for oral suspension in sachet</td></tr><tr><td>50029550</td><td>Granules in sachet</td></tr><tr><td>50029700</td><td>Herbal tea in bag</td></tr><tr><td>50029750</td><td>Implant in pre-filled syringe</td></tr><tr><td>50033500</td><td>Intravitreal implant in applicator</td></tr><tr><td>50036200</td><td>Nasal drops, solution in single-dose container</td></tr><tr><td>50037250</td><td>Nasal spray, solution in single-dose container</td></tr><tr><td>50037450</td><td>Nebuliser solution in single-dose container</td></tr><tr><td>50037600</td><td>Oral emulsion in sachet</td></tr><tr><td>50037700</td><td>Oral paste in sachet</td></tr><tr><td>50037800</td><td>Oral powder in sachet</td></tr><tr><td>50038600</td><td>Oral solution in sachet</td></tr><tr><td>50038650</td><td>Oral solution in single-dose container</td></tr><tr><td>50038700</td><td>Oral suspension in sachet</td></tr><tr><td>50039300</td><td>Oromucosal powder in pouch</td></tr><tr><td>50041000</td><td>Pillules in single-dose container</td></tr><tr><td>50048010</td><td>Powder and solvent for prolonged-release suspension for injection in pre-filled pen</td></tr><tr><td>50048050</td><td>Powder and solvent for solution for injection in cartridge</td></tr><tr><td>50048150</td><td>Powder and solvent for solution for injection in pre-filled pen</td></tr><tr><td>50048250</td><td>Powder and solvent for solution for injection in pre-filled syringe</td></tr><tr><td>50048300</td><td>Powder and solvent for suspension for injection in pre-filled syringe</td></tr><tr><td>50048400</td><td>Powder and solvent in pre-filled syringe for solution for injection</td></tr><tr><td>50052500</td><td>Powder for oral solution in sachet</td></tr><tr><td>50056150</td><td>Prolonged-release granules for oral suspension in sachet</td></tr><tr><td>50056200</td><td>Prolonged-release granules in sachet</td></tr><tr><td>50056250</td><td>Prolonged-release suspension for injection in pre-filled syringe</td></tr><tr><td>50056600</td><td>Solution and suspension for suspension for injection in pre-filled syringe</td></tr><tr><td>50058500</td><td>Solution for infusion in pre-filled syringe</td></tr><tr><td>50060100</td><td>Solution for injection in cartridge</td></tr><tr><td>50060150</td><td>Solution for injection in needle-free injector</td></tr><tr><td>50060200</td><td>Solution for injection in pre-filled pen</td></tr><tr><td>50060300</td><td>Solution for injection in pre-filled syringe</td></tr><tr><td>50060400</td><td>Solution for injection in pre-filled syringe with automatic needle guard</td></tr><tr><td>50060500</td><td>Solution for injection/infusion in pre-filled syringe</td></tr><tr><td>50063100</td><td>Suspension for injection in cartridge</td></tr><tr><td>50063200</td><td>Suspension for injection in pre-filled pen</td></tr><tr><td>50063300</td><td>Suspension for injection in pre-filled syringe</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>Greek (el)</b></td><td><b>Spanish (es)</b></td><td><b>French (fr)</b></td><td><b>Italian (it)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td>11210500</td><td>Infusionslösung im Applikationssystem</td><td>Διάλυ&mu;α για έγχυση σε σύστη&mu;α χορήγησης</td><td>Solución para perfusión en sistema de administración</td><td>Solution pour perfusion en système d'administration</td><td>Soluzione per infusione in sistema di somministrazione</td><td>Solução para perfusão em sistema de administração</td></tr><tr><td>13053000</td><td>Injektionslösung in einem Applikationssystem</td><td>Ενέσι&mu;ο διάλυ&mu;α σε σύστη&mu;α χορήγησης</td><td>Solución inyectable en sistema de administración</td><td>Solution injectable en système d'administration</td><td>Soluzione iniettabile in sistema di somministrazione</td><td>Solução injetável em sistema de administração</td></tr><tr><td>13057000</td><td>Pulver und Lösungsmittel zur Herstellung einer Depot-Injektionssuspension in einer Fertigspritze</td><td>Κόνις και διαλύτης για παρασκευή ενέσι&mu;ου εναιωρή&mu;ατος παρατετα&mu;ένης αποδέσ&mu;ευσης σε προγε&mu;ισ&mu;ένη σύριγγα</td><td>Polvo y disolvente para suspensión inyectable de liberación prolongada en jeringa precargada</td><td>Poudre et solvant pour suspension injectable à libération prolongée en seringue préremplie</td><td>Polvere e solvente per sospensione iniettabile a rilascio prolungato in siringa preriempita</td><td>Pó e veículo para suspensão injetável de libertação prolongada em seringa pré-cheia</td></tr><tr><td>13060000</td><td>Pulver zur Herstellung einer Suspension zum Einnehmen / Rektalsuspension im Beutel</td><td>Κόνις για εναιώρη&mu;α από του στό&mu;ατος/από του ορθού σε φακελίσκο</td><td>Polvo para suspensión oral y rectal en sobre</td><td>Poudre pour suspension buvable/ rectale en sachet</td><td>Polvere per sospensione orale/rettale in bustina</td><td>Pó para suspensão oral ou retal em saqueta</td></tr><tr><td>13064000</td><td>Injektionssuspension im Fertiginjektor</td><td>Ενέσι&mu;ο εναιώρη&mu;α σε προγε&mu;ισ&mu;ένο εγχυτήρα</td><td>Suspensión inyectable en inyector precargado</td><td>Suspension injectable en injecteur prérempli</td><td>Sospensione iniettabile in iniettore preriempito</td><td>Suspensão injetável em injetor pré-cheio</td></tr><tr><td>13068000</td><td>Injektionslösung im Fertiginjektor</td><td>Ενέσι&mu;ο διάλυ&mu;α σε προγε&mu;ισ&mu;ένο σύστη&mu;α χορήγησης</td><td>Solución inyectable en inyector precargado</td><td>Solution injectable en injecteur prérempli</td><td>Soluzione iniettabile in iniettore preriempito</td><td>Solução injetável em injetor pré-cheio</td></tr><tr><td>13069000</td><td>Gel im Beutel</td><td>Γέλη σε φακελίσκο</td><td>Gel en sobre</td><td>Gel en sachet</td><td>Gel in bustina</td><td>Gel em saquetas</td></tr><tr><td>13071000</td><td>Injektionslösung in einer Patrone für ein Dosiergerät</td><td>Ενέσι&mu;ο διάλυ&mu;α σε φυσίγγιο δοσο&mu;ετρητή</td><td>Solución inyectable en cartucho para dispensador de dosis</td><td>Solution injectable en cartouche pour dispensateur de dose</td><td>Soluzione iniettabile in cartuccia per dispositivo di somministrazione</td><td>Solução injetável em cartucho para dispensador de dose</td></tr><tr><td>13075000</td><td>Suspension zum Einnehmen in einem Fertigapplikator für die orale Verabreichung</td><td>Πόσι&mu;ο εναιώρη&mu;α σε προγε&mu;ισ&mu;ένο εξάρτη&mu;α χορήγησης από του στό&mu;ατος</td><td>Suspensión oral en aplicador precargado para uso oral</td><td>Suspension buvable en applicateur prérempli pour administration orale</td><td>Sospensione orale in applicatore preriempito per somministrazione orale</td><td>Suspensão oral em aplicador oral pré-cheio</td></tr><tr><td>13083000</td><td>Dispersion im Beutel für den Bienenstock</td><td>Ενδοκυψελική διασπορά σε φακελίσκο</td><td>Dispersión para colmenas en sobre</td><td>Dispersion pour ruche en sachet</td><td>Dispersione per alveare in bustina</td><td>Dispersão para colmeias em saquetas</td></tr><tr><td>13090000</td><td>Granulat im Einzeldosisbehältnis</td><td>Κοκκία σε περιέκτη &mu;ίας δόσης</td><td>Granulado en envase unidosis</td><td>Granulés en récipient unidose</td><td>Granulato in contenitore monodose</td><td>Granulado em recipiente unidose</td></tr><tr><td>13094000</td><td>Sirup im Beutel</td><td>Σιρόπι σε φακελίσκο</td><td>Jarabe en sobre</td><td>Sirop en sachet</td><td>Sciroppo in bustina</td><td>Xarope em saquetas</td></tr><tr><td>13095000</td><td>Emulsion zur Infusion im Applikationssystem</td><td>Γαλάκτω&mu;α για έγχυση σε σύστη&mu;α χορήγησης</td><td>Emulsión para perfusión en sistema de administración</td><td>Emulsion pour perfusion en système d'administration</td><td>Emulsione per infusione in dispositivo di somministrazione</td><td>Emulsão para perfusão em sistema de administração</td></tr><tr><td>13103000</td><td>Lösung zur Anwendung auf der Haut im Einzeldosisbehältnis</td><td>Δερ&mu;ατικό διάλυ&mu;α σε περιέκτη &mu;ίας δόσης</td><td>Solución cutánea en envase unidosis</td><td>Solution cutanée en récipient unidose</td><td>Soluzione cutanea in contenitore monodose</td><td>Solução cutânea em recipiente unidose</td></tr><tr><td>13104000</td><td>Augentropfen, Emulsion im Einzeldosisbehältnis</td><td>Οφθαλ&mu;ικές σταγόνες, γαλάκτω&mu;α σε περιέκτη &mu;ίας δόσης</td><td>Gotas óticas en emulsión en envase unidosis</td><td>Emulsion ophtalmique en gouttes en récipient unidose</td><td>Collirio, emulsione in contenitore monodose</td><td>Colírio, emulsão em recipiente unidose</td></tr><tr><td>13108000</td><td>Pulver und Lösungsmittel zur Herstellung einer Injektionssuspension in einem Mehrdosenbehältnis</td><td></td><td>Polvo y disolvente para suspensión inyectable en envase multidosis</td><td>Poudre et solvant pour suspension injectable en récipient multidose</td><td>Polvere e solvente per sospensione iniettabile in contenitore multidose</td><td>Pó e veículo para suspensão injetável em recipiente multidose</td></tr><tr><td>13109000</td><td>Injektionslösung in einem Mehrdosenbehältnis</td><td></td><td>Solución inyectable en envase multidosis</td><td>Solution injectable en récipient multidose</td><td>Soluzione iniettabile in contenitore multidose</td><td>Solução injetável em recipiente multidose</td></tr><tr><td>13110000</td><td>Injektionssuspension in einem Mehrdosenbehältnis</td><td></td><td>Suspensión inyectable en envase multidosis</td><td>Suspension injectable en récipient multidose</td><td>Sospensione iniettabile in contenitore multidose</td><td>Suspensão injetável em recipiente multidose</td></tr><tr><td>13112000</td><td>Depot-Injektionssuspension im Fertigpen</td><td></td><td>Suspensión inyectable de liberación prolongada en pluma precargada</td><td>Suspension injectable à libération prolongée en stylo prérempli</td><td>Sospensione iniettabile a rilascio prolungato in penna preriempita</td><td>Suspensão injetável de libertação prolongada em caneta pré-cheia</td></tr><tr><td>13120000</td><td>Nasenpulver im Einzeldosisbehältnis</td><td>Ρινική κόνις σε περιέκτη &mu;ίας δόσης</td><td>Polvo nasal en envase unidosis</td><td>Poudre nasale en récipient unidose</td><td>Polvere nasale in contenitore monodose</td><td>Pó nasal em recipiente unidose</td></tr><tr><td>13122000</td><td>Infusionslösung in einer Patrone</td><td></td><td>Solución para perfusión en cartucho</td><td>Solution pour perfusion en cartouche</td><td>Soluzione per infusione in cartuccia</td><td>Solução para perfusão em cartucho</td></tr><tr><td>13130000</td><td>Pulver zum Einnehmen im Einzeldosisbehältnis</td><td></td><td>Polvo oral en envase unidosis</td><td></td><td>Polvere orale in contenitore monodose</td><td>Pó oral em recipiente unidose</td></tr><tr><td>13137000</td><td>Transdermales Gel im Beutel</td><td></td><td>Gel transdérmico en sobre</td><td></td><td>Gel transdermico in bustina</td><td>Gel transdérmico em saquetas</td></tr><tr><td>13146000</td><td>Lösung zum Einnehmen im Mehrdosenbehältnis mit Dosierpumpe</td><td></td><td>Solución oral en envase multidosis con bomba dosificadora</td><td>Solution buvable en récipient multidose avec pompe doseuse</td><td>Soluzione orale in contenitore multidose con pompa dosatrice</td><td>Solução oral em recipiente multidose com bomba doseadora</td></tr><tr><td>13147000</td><td></td><td></td><td>Polvo para suspensión oral en sobre</td><td>Poudre pour suspension buvable en sachet</td><td>Polvere per sospensione orale in bustina</td><td>Pó para suspensão oral em saqueta</td></tr><tr><td>13155000</td><td></td><td></td><td></td><td></td><td></td><td>Granulado revestido por película em recipiente unidose</td></tr><tr><td>13161000</td><td>Injektionsdispersion in einer Fertigspritze</td><td></td><td></td><td>Dispersion injectable en seringue préremplie</td><td></td><td>Dispersão injetável em seringa pré-cheia</td></tr><tr><td>50001250</td><td>Überzogenes Granulat im Beutel</td><td>Επικαλυ&mu;&mu;ένα κοκκία σε φακελίσκο</td><td>Granulado recubierto en sobre</td><td>Granulés enrobés en sachet</td><td>Granulato rivestito in bustina</td><td>Granulado revestido em saqueta</td></tr><tr><td>50017200</td><td>Ohrentropfen, Lösung im Einzeldosisbehältnis</td><td>Ωτικές σταγόνες, διάλυ&mu;α  σε περιέκτη &mu;ίας δόσης</td><td>Gotas óticas en solución en envase unidosis</td><td>Solution auriculaire en gouttes en récipient unidose</td><td>Gocce auricolari, soluzione in contenitore monodose</td><td>Gotas auriculares, solução em recipiente unidose</td></tr><tr><td>50017550</td><td>Ohrentropfensuspension im Einzeldosisbehältnis</td><td>Ωτικές σταγόνες, εναιώρη&mu;α, σε περιέκτη &mu;ίας δόσης</td><td>Gotas óticas en suspensión en envase unidosis</td><td>Suspension auriculaire en gouttes en récipient unidose</td><td>Gocce auricolari, sospensione in contenitore monodose</td><td>Gotas auriculares, suspensão em recipiente unidose</td></tr><tr><td>50021250</td><td>Emulsion zur Injektion/Infusion in einer Fertigspritze</td><td>Ενέσι&mu;ο γαλάκτω&mu;α/γαλάκτω&mu;α για έγχυση σε προγε&mu;ισ&mu;ένη σύριγγα</td><td>Emulsión inyectable y para perfusión en jeringa precargada</td><td>Emulsion injectable/pour perfusion en seringue préremplie</td><td>Emulsione iniettabile/per infusione in siringa preriempita</td><td>Emulsão injetável ou para perfusão em seringa pré-cheia</td></tr><tr><td>50022500</td><td>Augentropfen mit verlängerter Wirkungsdauer im Einzeldosisbehältnis</td><td>Οφθαλ&mu;ικές σταγόνες, διάλυ&mu;α παρατετα&mu;ένης αποδέσ&mu;ευσης σε περιέκτη &mu;ίας δόσης</td><td>Colirio en solución de liberación prolongada en envase unidosis</td><td>Collyre en solution à libération prolongée en récipient unidose</td><td>Collirio, soluzione a rilascio prolungato in contenitore monodose</td><td>Colírio, solução de libertação prolongada em recipiente unidose</td></tr><tr><td>50023000</td><td>Augentropfen, Lösung im Einzeldosisbehältnis</td><td>Οφθαλ&mu;ικές σταγόνες, διάλυ&mu;α σε περιέκτη &mu;ίας δόσης</td><td>Colirio en solución en envase unidosis</td><td>Collyre en solution en récipient unidose</td><td>Collirio, soluzione in contenitore monodose</td><td>Colírio, solução em recipiente unidose</td></tr><tr><td>50023100</td><td>Augentropfen, Suspension im Einzeldosisbehältnis</td><td>Οφθαλ&mu;ικές σταγόνες, εναιώρη&mu;α σε περιέκτη &mu;ίας δόσης</td><td>Colirio en suspensión en envase unidosis</td><td>Collyre en suspension en récipient unidose</td><td>Collirio, sospensione in contenitore monodose</td><td>Colírio, suspensão em recipiente unidose</td></tr><tr><td>50023300</td><td>Augengel im Einzeldosisbehältnis</td><td>Οφθαλ&mu;ική γέλη σε περιέκτη &mu;ίας χρήσης</td><td>Gel oftálmico en envase unidosis</td><td>Gel ophtalmique en récipient unidose</td><td>Gel oftalmico in contenitore monodose</td><td>Gel oftálmico em recipiente unidose</td></tr><tr><td>50023400</td><td>Augensalbe im Einzeldosisbehältnis</td><td>Οφθαλ&mu;ική αλοιφή σε περιέκτη &mu;ίας δόσης</td><td>Pomada oftálmica en envase unidosis</td><td>Pommade ophtalmique en récipient unidose</td><td>Unguento oftalmico in contenitore monodose</td><td>Pomada oftálmica em recipiente unidose</td></tr><tr><td>50023700</td><td>Filmtablette und magensaftresistentes Granulat im Beutel</td><td>Επικαλυ&mu;&mu;ένο &mu;ε λεπτό υ&mu;ένιο δισκίο και γαστροανθεκτικά κοκκία σε φακελίσκο</td><td>Comprimido recubierto con película y granulado gastrorresistente en sobre</td><td>Comprimé pelliculé et granulés gastrorésistant en sachet</td><td>Compressa rivestita con film e granulato gastroresistente in bustina</td><td>Comprimido revestido por película e granulado gastrorresistente em saqueta</td></tr><tr><td>50026150</td><td>magensaftresistentes Granulat zur Herstellung einer Suspension zum Einnehmen im Beutel</td><td>Γαστροανθεκτικά κοκκία σε φακελίσκο για πόσι&mu;ο εναιώρη&mu;α</td><td>Granulado gastrorresistente para suspensión oral en sobre</td><td>Granulés gastrorésistants pour suspension buvable en sachet</td><td>Granulato gastroresistente per sospensione orale in bustina</td><td>Granulado gastrorresistente para suspensão oral em saqueta</td></tr><tr><td>50026400</td><td>Gel im Druckbehältnis</td><td>Γέλη σε περιέκτη υπό πίεση</td><td>Gel en envase a presión</td><td>Gel en récipient pressurisé</td><td>Gel in contenitore pressurizzato</td><td>Gel em recipiente pressurizado</td></tr><tr><td>50029170</td><td>Granulat zur Herstellung einer Lösung zum Einnehmen im Beutel</td><td>Κοκκία σε φακελίσκο για παρασκευή πόσι&mu;ου διαλύ&mu;ατος</td><td>Granulado para solución oral en sobre</td><td>Granulés pour solution buvable en sachet</td><td>Granulato per soluzione orale in bustina</td><td>Granulado para solução oral em saqueta</td></tr><tr><td>50029200</td><td>Granulat zur Herstellung einer Suspension zum Einnehmen im Beutel</td><td>Κοκκία για πόσι&mu;ο εναιώρη&mu;α σε φακελίσκο</td><td>Granulado para suspensión oral en sobre</td><td>Granulés pour suspension buvable en sachet</td><td>Granulato per sospensione orale in bustina</td><td>Granulado para suspensão oral em saqueta</td></tr><tr><td>50029550</td><td>Granulat im Beutel</td><td>Κοκκία σε φακελίσκο</td><td>Granulado en sobre</td><td>Granulés en sachet</td><td>Granulato in bustina</td><td>Granulado em saqueta</td></tr><tr><td>50029700</td><td>Arzneitee im Beutel</td><td>Φυτικό τέιον σε φακελίσκους</td><td>Plantas en bolsita para infusión</td><td>Plante pour tisane en sachet</td><td>Tisana in bustina</td><td>Chá medicinal em saqueta</td></tr><tr><td>50029750</td><td>Fertigspritze mit Implantat</td><td>Ε&mu;φύτευ&mu;α σε προγε&mu;ισ&mu;ένη σύριγγα</td><td>Implante en jeringa precargada</td><td>Implant en seringue préremplie</td><td>Impianto in siringa preriempita</td><td>Implante em seringa pré-cheia</td></tr><tr><td>50033500</td><td>intravitreales Implantat im Applikator</td><td>Ενδοϋαλώδες  ε&mu;φύτευ&mu;α σε σύστη&mu;α εφαρ&mu;ογής</td><td>Implante intravítreo en aplicador</td><td>Implant vitréen en applicateur</td><td>Impianto intravitreale in applicatore</td><td>Implante intravítreo em aplicador</td></tr><tr><td>50036200</td><td>Nasentropfen, Lösung im Einzeldosisbehältnis</td><td>Ρινικές σταγόνες, διάλυ&mu;α σε περιέκτη &mu;ίας δόσης</td><td>Gotas nasales en solución en envase unidosis</td><td>Solution nasale en gouttes en récipient unidose</td><td>Gocce nasali, soluzione in contenitore monodose</td><td>Gotas nasais, solução em recipiente unidose</td></tr><tr><td>50037250</td><td>Nasenspray, Lösung im Einzeldosisbehältnis</td><td>Ρινικό εκνέφω&mu;α, διάλυ&mu;α σε περιέκτη &mu;ίας δόσης</td><td>Solución para pulverización nasal en envase unidosis</td><td>Solution pour pulvérisation nasale en récipient unidose</td><td>Spray nasale, soluzione in contenitore monodose</td><td>Solução para pulverização nasal em recipiente unidose</td></tr><tr><td>50037450</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>50037600</td><td>Emulsion zum Einnehmen im Beutel</td><td>Πόσι&mu;ο γαλάκτω&mu;α σε φακελίσκο</td><td>Emulsión oral en sobre</td><td>Emulsion buvable en sachet</td><td>Emulsione orale in bustina</td><td>Emulsão oral em saquetas</td></tr><tr><td>50037700</td><td>Paste zum Einnehmen im Beutel</td><td>Στο&mu;ατική πάστα σε φακελίσκο</td><td>Pasta oral en sobre</td><td>Pâte orale en sachet</td><td>Pasta orale in bustina</td><td>Pasta oral em saquetas</td></tr><tr><td>50037800</td><td>Pulver zum Einnehmen im Beutel</td><td>Πόσι&mu;η κόνις σε φακελίσκο</td><td>Polvo oral en sobre</td><td>Poudre orale en sachet</td><td>Polvere orale in bustina</td><td>Pó oral em saqueta</td></tr><tr><td>50038600</td><td>Lösung zum Einnehmen im Beutel</td><td>Πόσι&mu;ο διάλυ&mu;α σε φακελίσκο</td><td>Solucion oral en sobre</td><td>Solution buvable en sachet</td><td>Soluzione orale in bustina</td><td>Solução oral em saqueta</td></tr><tr><td>50038650</td><td>Lösung zum Einnehmen im Einzeldosisbehältnis</td><td>Πόσι&mu;ο διάλυ&mu;α σε περιέκτη &mu;ίας δόσης</td><td>Solución oral en envase unidosis</td><td>Solution buvable en récipient unidose</td><td>Soluzione orale in contenitore monodose</td><td>Solução oral em recipiente unidose</td></tr><tr><td>50038700</td><td>Suspension zum Einnehmen im Beutel</td><td>Πόσι&mu;ο εναιώρη&mu;α σε φακελίσκο</td><td>Suspensión oral en sobre</td><td>Suspension buvable en sachet</td><td>Sospensione orale in bustina</td><td>Suspensão oral em saqueta</td></tr><tr><td>50039300</td><td>Pulverbeutelchen zur Anwendung in Mundhöhle</td><td>Στο&mu;ατική κόνις σε θύλακα</td><td>Polvo bucal en bolsita</td><td>-</td><td>Polvere per mucosa orale in sacchetta</td><td>Pó bucal em bolsa</td></tr><tr><td>50041000</td><td>Streukügelchen im Einzeldosisbehältnis</td><td>Καταπότια, περιέκτης &mu;ίας δόσης</td><td>Envase unidosis para glóbulos</td><td>Granules en récipient unidose</td><td>Granuli in contenitore monodose</td><td>Grânulos em recipiente unidose</td></tr><tr><td>50048010</td><td>Pulver und Lösungsmittel zur Herstellung einer Depot-Injektionssuspension im Fertigpen</td><td>Κόνις και διαλύτης για παρασκευή ενέσι&mu;ου εναιωρή&mu;ατος παρατετα&mu;ένης αποδέσ&mu;ευσης σε προγε&mu;ισ&mu;ένη συσκευή τύπου πένας</td><td>Polvo y disolvente para suspensión inyectable de liberación prolongada en pluma precargada</td><td>Poudre et solvant pour suspension injectable à libération prolongée en stylo prérempli</td><td>Polvere e solvente per sospensione iniettabile a rilascio prolungato in penna preriempita</td><td>Pó e veículo para suspensão injetável de libertação prolongada em caneta pré-cheia</td></tr><tr><td>50048050</td><td>Pulver und Lösungsmittel zur Herstellung einer Injektionslösung in einer Patrone</td><td>Κόνις και διαλύτης για ενέσι&mu;ο διάλυ&mu;α σε φυσίγγιο</td><td>Polvo y disolvente para solución inyectable en cartucho</td><td>Poudre et solvant pour solution injectable en cartouche</td><td>Polvere e solvente per soluzione iniettabile in cartuccia</td><td>Pó e solvente para solução injetável em cartucho</td></tr><tr><td>50048150</td><td>Pulver und Lösungsmittel zur Herstellung einer Injektionslösung im Fertigpen</td><td>Κόνις και διαλύτης για ενέσι&mu;ο διάλυ&mu;α σε προγε&mu;ισ&mu;ένη συσκευή τύπου πένας</td><td>Polvo y disolvente para solución inyectable en pluma precargada</td><td>Poudre et solvant pour solution injectable en stylo prérempli</td><td>Polvere e solvente per soluzione iniettabile in penna preriempita</td><td>Pó e solvente para solução injetável em caneta pré-cheia</td></tr><tr><td>50048250</td><td>Pulver und Lösungsmittel zur Herstellung einer Injektionslösung in einer Fertigspritze</td><td>Κόνις και διαλύτης για παρασκευή ενεσί&mu;ου διαλύ&mu;ατος σε προγε&mu;ισ&mu;ένη σύριγγα</td><td>Polvo y disolvente para solución inyectable en jeringa precargada</td><td>Poudre et solvant pour solution injectable en seringue pré-remplie</td><td>Polvere e solvente per soluzione iniettabile in siringa preriempita</td><td>Pó e solvente para solução injetável em seringa pré-cheia</td></tr><tr><td>50048300</td><td>Pulver und Lösungsmittel zur Herstellung einer Injektionssuspension in einer Fertigspritze</td><td>Κόνις και διαλύτης για ενέσι&mu;ο εναιώρη&mu;α σε προγε&mu;ισ&mu;ένη σύριγγα</td><td>Polvo y disolvente para suspensión inyectable en jeringa precargada</td><td>Poudre et solvant pour suspension injectable en seringue préremplie</td><td>Polvere e solvente per sospensione iniettabile in siringa preriempita</td><td>Pó e veículo para suspensão injetável em seringa pré-cheia</td></tr><tr><td>50048400</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>50052500</td><td>Pulver zur Herstellung einer Lösung zum Einnehmen im Beutel</td><td>Κόνις για πόσι&mu;ο διάλυ&mu;α σε φακελίσκο</td><td>Polvo para solución oral en sobre</td><td>Poudre pour solution buvable en sachet</td><td>Polvere per soluzione orale in bustina</td><td>Pó para solução oral em saqueta</td></tr><tr><td>50056150</td><td>Retardgranulat zur Herstellung einer Suspension zum Einnehmen im Beutel</td><td>Κοκκία παρατετα&mu;ένης αποδέσ&mu;ευσης σε φακελίσκο για παρασκευή ποσί&mu;ου εναιωρή&mu;ατος</td><td>Granulado de liberación prolongada para suspensión oral en sobre</td><td>Granulés à libération prolongée pour suspension buvable en sachet</td><td>Granulato a rilascio prolungato per sospensione orale in bustina</td><td>Granulado de libertação prolongada para suspensão oral em saqueta</td></tr><tr><td>50056200</td><td>Retardgranulat im Beutel</td><td>Κοκκία παρατετα&mu;ένης αποδέσ&mu;ευσης σε φακελίσκο</td><td>Granulado de liberación prolongada en sobre</td><td>Granulés à libération prolongée en sachet</td><td>Granulato a rilascio prolungato in bustina</td><td>Granulado de libertação prolongada em saqueta</td></tr><tr><td>50056250</td><td>Depot-Injektionssuspension in einer Fertigspritze</td><td>Ενέσι&mu;ο εναιώρη&mu;α παρατετα&mu;ένης αποδέσ&mu;ευσης σε προγε&mu;ισ&mu;ένη σύριγγα</td><td>Suspensión inyectable de liberación prolongada en jeringa precargada</td><td>Suspension injectable à libération prolongée en seringue préremplie</td><td>Sospensione iniettabile a rilascio prolungato in siringa preriempita</td><td>Suspensão de libertação prolongada em seringa pré-cheia</td></tr><tr><td>50056600</td><td>Lösung und Suspension zur Herstellung einer Injektionssuspension in einer Fertigspritze</td><td>Διάλυ&mu;α και εναιώρη&mu;α για παρασκευή ενεσί&mu;ου εναιωρή&mu;ατος σε προγε&mu;ισ&mu;ένη σύριγγα</td><td>Solución y suspensión para suspensión inyectable en jeringa precargada</td><td>Solution et suspension pour suspension injectable en seringue préremplie</td><td>Soluzione e sospensione per sospensione iniettabile in siringa preriempita</td><td>Solução e suspensão para suspensão injetável em seringa pré-cheia</td></tr><tr><td>50058500</td><td>Infusionslösung in einer Fertigspritze</td><td>Διάλυ&mu;α προς έγχυση σε προγε&mu;ισ&mu;ένη σύριγγα</td><td>Solución para perfusión en jeringa precargada</td><td>Solution pour perfusion en seringue préremplie</td><td>Soluzione per infusione in siringa preriempita</td><td>Solução para perfusão em seringa pré-cheia</td></tr><tr><td>50060100</td><td>Injektionslösung in einer Patrone</td><td>Ενέσι&mu;ο διάλυ&mu;α σε φυσίγγιο</td><td>Solución inyectable en cartucho</td><td>Solution injectable en cartouche</td><td>Soluzione iniettabile in cartuccia</td><td>Solução injetável em cartucho</td></tr><tr><td>50060150</td><td>Injektionslösung in einem nadelfreien Injektor</td><td>Ενέσι&mu;ο διάλυ&mu;α σε σύστη&mu;α διαδερ&mu;ικής χορήγησης χωρίς βελόνα</td><td>Solución inyectable en inyector sin aguja</td><td>Solution injectable en injecteur sans aiguille</td><td>Soluzione iniettabile in iniettore privo di ago</td><td>Solução injetável em injetor sem seringa</td></tr><tr><td>50060200</td><td>Injektionslösung im Fertigpen</td><td>Ενέσι&mu;ο διάλυ&mu;α σε προγε&mu;ισ&mu;ένη συσκευή τύπου πένας</td><td>Solución inyectable en pluma precargada</td><td>Solution injectable en stylo prérempli</td><td>Soluzione iniettabile in penna preriempita</td><td>Solução injetável em caneta pré-cheia</td></tr><tr><td>50060300</td><td>Injektionslösung in einer Fertigspritze</td><td>Ενέσι&mu;ο διάλυ&mu;α σε προγε&mu;ισ&mu;ένη σύριγγα</td><td>Solución inyectable en jeringa precargada</td><td>Solution injectable en seringue préremplie</td><td>Soluzione iniettabile in siringa preriempita</td><td>Solução injetável em seringa pré-cheia</td></tr><tr><td>50060400</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>50060500</td><td>Injektions-/Infusionslösung in einer Fertigspritze</td><td>Διάλυ&mu;α για ένεση/έγχυση σε προγε&mu;ισ&mu;ένη σύριγγα</td><td>Solución inyectable y para perfusión en jeringa precargada</td><td>Solution injectable/pour perfusion en seringue préremplie</td><td>Soluzione iniettabile/per infusione in siringa preriempita</td><td>Solução injetável ou para perfusão em seringa pré-cheia</td></tr><tr><td>50063100</td><td>Injektionssuspension in einer Patrone</td><td>Ενέσι&mu;ο εναιώρη&mu;α σε φυσίγγιο</td><td>Suspensión inyectable en cartucho</td><td>Suspension injectable en cartouche</td><td>Sospensione iniettabile in cartuccia</td><td>Suspensão injetável em cartucho</td></tr><tr><td>50063200</td><td>Injektionssuspension im Fertigpen</td><td>Ενέσι&mu;ο εναιώρη&mu;α σε προγε&mu;ισ&mu;ένη συσκευή τύπου πένας</td><td>Suspensión inyectable en pluma precargada</td><td>Suspension injectable en stylo prérempli</td><td>Sospensione iniettabile in penna preriempita</td><td>Suspensão injetável em caneta pré-cheia</td></tr><tr><td>50063300</td><td>Injektionssuspension in einer Fertigspritze</td><td>Ενέσι&mu;ο εναιώρη&mu;α σε προγε&mu;ισ&mu;ένη σύριγγα</td><td>Suspensión inyectable en jeringa precargada</td><td>Suspension injectable en seringue préremplie</td><td>Sospensione iniettabile in siringa preriempita</td><td>Suspensão injetável em seringa pré-cheia</td></tr></table></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <p><span style="color: maroon; font-weight: bold" title="Publication Tooling Error: [Unable to expand imported value set: Error from http://tx.fhir.org/r4: Unable to provide support for code system https://standardterms.edqm.eu, Error from http://tx.fhir.org/r4: Unable to provide support for code system https://standardterms.edqm.eu]">No Expansion for this valueset (Unknown Code System<!-- [Unable to expand imported value set: Error from http://tx.fhir.org/r4: Unable to provide support for code system https://standardterms.edqm.eu, Error from http://tx.fhir.org/r4: Unable to provide support for code system https://standardterms.edqm.eu] -->)</span></p>
+
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R5/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 14, 2023 18:51+0000">2023-11-14</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

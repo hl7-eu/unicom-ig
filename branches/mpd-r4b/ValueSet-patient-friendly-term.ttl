@@ -1,0 +1,1374 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/patient-friendly-term> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "patient-friendly-term"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>11010</td><td>Oral drops</td></tr><tr><td>11050</td><td>Oral liquid</td></tr><tr><td>12100</td><td>Capsule</td></tr><tr><td>12120</td><td>Gastro-resistant capsule</td></tr><tr><td>12150</td><td>Prolonged-release capsule</td></tr><tr><td>12200</td><td>Tablet</td></tr><tr><td>12320</td><td>Intraruminal device</td></tr><tr><td>12350</td><td>Medicated premix</td></tr><tr><td>13050</td><td>Oromucosal liquid</td></tr><tr><td>13100</td><td>Oromucosal spray</td></tr><tr><td>13150</td><td>Sublingual spray</td></tr><tr><td>13220</td><td>Lozenge</td></tr><tr><td>14050</td><td>Dental liquid</td></tr><tr><td>15090</td><td>Cutaneous spray</td></tr><tr><td>15130</td><td>Cutaneous liquid</td></tr><tr><td>15290</td><td>Dip</td></tr><tr><td>15320</td><td>Dip concentrate</td></tr><tr><td>15370</td><td>Pour-on</td></tr><tr><td>15400</td><td>Spot-on</td></tr><tr><td>15430</td><td>Teat dip</td></tr><tr><td>15460</td><td>Teat spray</td></tr><tr><td>16040</td><td>Eye drops</td></tr><tr><td>17040</td><td>Ear drops</td></tr><tr><td>17090</td><td>Ear spray</td></tr><tr><td>17120</td><td>Ear wash</td></tr><tr><td>18040</td><td>Nasal drops</td></tr><tr><td>18080</td><td>Nasal spray</td></tr><tr><td>19050</td><td>Vaginal liquid</td></tr><tr><td>19100</td><td>Vaginal capsule</td></tr><tr><td>20050</td><td>Enema</td></tr><tr><td>21010</td><td>Nebuliser liquid</td></tr><tr><td>21060</td><td>Pressurised inhalation</td></tr><tr><td>21100</td><td>Inhalation powder</td></tr><tr><td>21140</td><td>Inhalation vapour</td></tr><tr><td>22010</td><td>Injection</td></tr><tr><td>22030</td><td>Powder for concentrate</td></tr><tr><td>22050</td><td>Powder for injection</td></tr><tr><td>22060</td><td>Powder for prolonged-release injection</td></tr><tr><td>22090</td><td>Sterile concentrate</td></tr><tr><td>22100</td><td>Infusion</td></tr><tr><td>22120</td><td>Powder for infusion</td></tr><tr><td>26010</td><td>Endotracheopulmonary instillation</td></tr><tr><td>29020</td><td>Intrauterine liquid</td></tr><tr><td>31030</td><td>Blood fraction modifier</td></tr><tr><td>31080</td><td>Gastroenteral liquid</td></tr><tr><td>31090</td><td>Chewing gum</td></tr><tr><td>31100</td><td>Injection/infusion</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>Greek (el)</b></td><td><b>Spanish (es)</b></td><td><b>French (fr)</b></td><td><b>Italian (it)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td>11010</td><td>Tropfen zum Einnehmen</td><td>Πόσιμες σταγόνες</td><td>Gotas orales</td><td>Gouttes buvables</td><td>Gocce orali</td><td>Gotas orais</td></tr><tr><td>11050</td><td>Flüssigkeit zum Einnehmen</td><td>Πόσιμο υγρό</td><td>-</td><td>-</td><td>Liquido orale</td><td>Líquido oral</td></tr><tr><td>12100</td><td>Kapsel</td><td>Καψάκιο</td><td>Cápsula</td><td>Capsule ou Gélule selon le cas</td><td>Capsula</td><td>Cápsula</td></tr><tr><td>12120</td><td>magensaftresistente Kapsel</td><td>Γαστροανθεκτικό καψάκιο</td><td>Cápsula gastrorresistente</td><td>Capsule ou Gélule gastrorésistante selon le cas</td><td>Capsula gastroresistente</td><td>Cápsula gastrorresistente</td></tr><tr><td>12150</td><td>Retardkapsel</td><td>Καψάκιο παρατεταμένης αποδέσμευσης</td><td>Cápsula de liberación prolongada</td><td>Capsule ou Gélule à libération prolongée selon le cas</td><td>Capsula a rilascio prolungato</td><td>Cápsula de libertação prolongada</td></tr><tr><td>12200</td><td>Tablette</td><td>Δισκίο</td><td>Comprimido</td><td>Comprimé</td><td>Compressa</td><td>Comprimido</td></tr><tr><td>12320</td><td>Intraruminales System</td><td>Συσκευή χορήγησης στη μεγάλη κοιλία</td><td>Dispositivo intrarruminal</td><td>Dispositif intraruminal</td><td>Dispositivo intraruminale</td><td>Bólus</td></tr><tr><td>12350</td><td>Arzneimittel-Vormischung</td><td>Πρόμιγμα για φαρμακούχο τροφή</td><td>Premezcla</td><td>-</td><td>Premiscela medicamentosa</td><td>Pré-mistura medicamentosa</td></tr><tr><td>13050</td><td>Flüssigkeit zur Anwendung in der Mundhöhle</td><td>Στοματικό υγρό</td><td>Líquido bucal</td><td>-</td><td>Liquido per mucosa orale</td><td>Líquido bucal</td></tr><tr><td>13100</td><td>Spray zur Anwendung in der Mundhöhle</td><td>Στοματικό εκνέφωμα</td><td>Pulverización bucal</td><td>Pulvérisation buccale</td><td>Spray per mucosa orale</td><td>Pulverização bucal</td></tr><tr><td>13150</td><td>Sublingualspray</td><td>Υπογλώσσιο εκνέφωμα</td><td>Solución para pulverización sublingual</td><td>Solution pour pulvérisation sublinguale</td><td>Spray sublinguale</td><td>Preparação para pulverização sublingual</td></tr><tr><td>13220</td><td>Lutschtablette</td><td>Τροχίσκος</td><td></td><td>Comprimé à sucer</td><td>Pastiglia</td><td>Pastilha</td></tr><tr><td>14050</td><td>Dentalflüssigkeit</td><td>Οδοντικό υγρό</td><td>Líquido dental</td><td>-</td><td>Liquido dentale</td><td>Líquido dental</td></tr><tr><td>15090</td><td>Spray zur Anwendung auf der Haut</td><td>Δερματικό εκνέφωμα</td><td>Pulverización cutánea</td><td>Pulvérisation cutanée</td><td>Spray cutaneo</td><td>Pulverização cutânea</td></tr><tr><td>15130</td><td>Flüssigkeit zur Anwendung auf der Haut</td><td>Δερματικό υγρό</td><td>Líquido cutáneo</td><td>Liquide cutané</td><td>Liquido cutaneo</td><td>Líquido cutâneo</td></tr><tr><td>15290</td><td>Tauchbad</td><td>Υγρό εμβάπτισης</td><td>Baño</td><td>-</td><td>Bagno</td><td>Banho medicamentoso</td></tr><tr><td>15320</td><td>Konzentrat zur Herstellung eines Tauchbades</td><td>Πυκνό διάλυμα για παρασκευή μέσων εμβάπτισης</td><td>Concentrado para baño</td><td>-</td><td>Concentrato per bagno</td><td>Concentrado para banho medicamentoso</td></tr><tr><td>15370</td><td>Flüssigkeit zum Übergiessen</td><td>Επίχυμα</td><td>Pour-on</td><td>-</td><td>Pour-on</td><td>Unção contínua</td></tr><tr><td>15400</td><td>Flüssigkeit zum Auftropfen</td><td>Επίχυμα</td><td>Spot-on</td><td>-</td><td>Spot-on</td><td>Unção punctiforme</td></tr><tr><td>15430</td><td>Zitzentauchmittel</td><td>Υγρό εμβάπτισης θηλής</td><td>Baño para pezones</td><td>Trempage mammaire</td><td>Immersione della mammella</td><td>Banho medicamentoso do úbere</td></tr><tr><td>15460</td><td>Zitzenspray</td><td>Υγρό ψεκασμού θηλής</td><td>Pulverización para pezones</td><td>Pulvérisation mammaire</td><td>Spray mammario</td><td>Líquido para pulverização do úbere</td></tr><tr><td>16040</td><td>Augentropfen</td><td>Οφθαλμικές σταγόνες</td><td>Colirio</td><td>Collyre</td><td>Collirio</td><td>Colírio</td></tr><tr><td>17040</td><td>Ohrentropfen</td><td>Ωτικές σταγόνες</td><td>Gotas óticas</td><td>Gouttes auriculaires</td><td>Gocce auricolari</td><td>Gotas auriculares</td></tr><tr><td>17090</td><td>Ohrenspray</td><td>Ωτικό εκνέφωμα</td><td>Pulverización ótica</td><td>Pulvérisation auriculaire</td><td>Spray auricolare</td><td>Pulverização auricular</td></tr><tr><td>17120</td><td>Ohrenspülung</td><td>Ωτικό πλύμα</td><td>Lavado ótico</td><td>Lavage auriculaire</td><td>Lavaggio auricolare</td><td>Lavagem auricular</td></tr><tr><td>18040</td><td>Nasentropfen</td><td>Ρινικές σταγόνες</td><td>Gotas nasales</td><td>Gouttes nasales</td><td>Gocce nasali</td><td>Gotas nasais</td></tr><tr><td>18080</td><td>Nasenspray</td><td>Ρινικό εκνέφωμα</td><td>Pulverización nasal</td><td>Pulvérisation nasale</td><td>Spray nasale</td><td>Pulverização nasal</td></tr><tr><td>19050</td><td>Flüssigkeit zur vaginalen Anwendung</td><td>Κολπικό υγρό</td><td>Líquido vaginal</td><td>-</td><td>Lavanda vaginale</td><td>Líquido vaginal</td></tr><tr><td>19100</td><td>Vaginalkapsel</td><td>Κολπικό καψάκιο</td><td>Cápsula vaginal</td><td>Capsule ou Gélule vaginale selon le cas</td><td>Capsula vaginale</td><td>Cápsula vaginal</td></tr><tr><td>20050</td><td>Klistier</td><td>Υποκλυσμός</td><td>Enema</td><td>-</td><td>Clistere</td><td>Enema</td></tr><tr><td>21010</td><td>Flüssigkeit für einen Vernebler</td><td>Υγρό για εισπνοή με εκνεφωτή</td><td>Líquido para nebulizador</td><td>-</td><td>Liquido da nebulizzare</td><td>Líquido para nebulização</td></tr><tr><td>21060</td><td>Druckgasinhalation</td><td>Υγρό για εισπνοή υπό πίεση</td><td>Inhalación en envase a presión</td><td>-</td><td>Liquido pressurizzato per inalazione</td><td>Líquido pressurizado para inalação</td></tr><tr><td>21100</td><td>Pulver zur Inhalation</td><td>Κόνις για εισπνοή</td><td>Polvo para inhalación</td><td>-</td><td>Polvere per inalazione</td><td>Pó para inalação</td></tr><tr><td>21140</td><td>Dampf zur Inhalation</td><td>Εισπνεόμενοι ατμοί</td><td>Vapor para inhalación</td><td>-</td><td>Suffumigi</td><td>Vapor para inalação</td></tr><tr><td>22010</td><td>Injektion</td><td>Ενέσιμο</td><td>Inyectable</td><td>-</td><td>Iniettabile</td><td>Injetável</td></tr><tr><td>22030</td><td>Pulver zur Herstellung eines Konzentrats</td><td>Κόνις για πυκνό σκεύασμα</td><td>Polvo para concentrado</td><td>-</td><td>Polvere per concentrato</td><td>Pó para concentrado</td></tr><tr><td>22050</td><td>Pulver zur Herstellung einer Injektionszubereitung</td><td>Κόνις για ενέσιμο</td><td>Polvo para inyectable</td><td>-</td><td>Polvere per preparazione iniettabile</td><td>Pó para uso injetável</td></tr><tr><td>22060</td><td>Pulver zur Herstellung einer Depot-Injektion</td><td>Κόνις για παρατεταμένης αποδέσμευσης ενέσιμο</td><td>Polvo para inyectable de liberación prolongada</td><td>-</td><td>Polvere per preparazione iniettabile a rilascio prolungato</td><td>Pó para suspensão injetável de libertação prolongada</td></tr><tr><td>22090</td><td>steriles Konzentrat</td><td>Στείρο πυκνό διάλυμα</td><td>Concentrado estéril</td><td>-</td><td>Concentrato sterile</td><td>Concentrado estéril</td></tr><tr><td>22100</td><td>Infusion</td><td>Εγχυση</td><td>Perfusión</td><td>-</td><td>Infusione</td><td>Perfusão</td></tr><tr><td>22120</td><td>Pulver zur Herstellung einer Infusionslösung</td><td>Κόνις για διάλυμα προς έγχυση</td><td>Polvo para perfusión</td><td>-</td><td>Polvere per infusione</td><td>Pó para perfusão</td></tr><tr><td>26010</td><td>Lösung zur endotracheopulmonalen Instillation</td><td>Ενδοτραχειοπνευμονική ενστάλλαξη</td><td>Instilación endotraqueopulmonar</td><td>-</td><td>Instillazione endotracheobronchiale</td><td>Instilação endotraqueobrônquica</td></tr><tr><td>29020</td><td>Flüssigkeit zur intrauterinen Anwendung</td><td>Ενδομητριαίο υγρό</td><td>Líquido intrauterino</td><td>-</td><td>Liquido per uso intrauterino</td><td>Líquido intrauterino</td></tr><tr><td>31030</td><td>Zubereitung zur Modifikation einer Blutfraktion</td><td>Τροποποιητής κλάσματος αίματος</td><td>Modificador de fracción sanguínea</td><td>-</td><td>Modificatore di componenti ematici</td><td>Modificador da fração sanguínea</td></tr><tr><td>31080</td><td>Flüssigkeit zur gastrointestinalen Anwendung</td><td>Γαστρεντερικό υγρό</td><td>Líquido gastroentérico</td><td>-</td><td>Liquido gastroenterico</td><td>Líquido gastroentérico</td></tr><tr><td>31090</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>31100</td><td>Injektion/Infusion</td><td></td><td></td><td>Injection/perfusion</td><td>Iniezione/infusione</td><td>Injetável ou perfusão</td></tr></table></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://unicom-project.eu/fhir/ValueSet/patient-friendly-term"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "PatientFriendlyTerm"]; # 
+  fhir:ValueSet.title [ fhir:value "Patient-friendly term"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-03T15:45:39+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "UNICOM"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "ValueSet Patient-friendly term from EDQM, PFT, see https://standardterms.edqm.eu/#"]; # 
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://standardterms.edqm.eu" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11010" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oral drops" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tropfen zum Einnehmen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πόσιμες σταγόνες" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gotas orales" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gouttes buvables" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gocce orali" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gotas orais" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11050" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oral liquid" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flüssigkeit zum Einnehmen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πόσιμο υγρό" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liquido orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido oral" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12100" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Capsule" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kapsel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Καψάκιο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cápsula" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Capsule ou Gélule selon le cas" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Capsula" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cápsula" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12120" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastro-resistant capsule" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "magensaftresistente Kapsel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Γαστροανθεκτικό καψάκιο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cápsula gastrorresistente" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Capsule ou Gélule gastrorésistante selon le cas" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Capsula gastroresistente" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cápsula gastrorresistente" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12150" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prolonged-release capsule" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Retardkapsel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Καψάκιο παρατεταμένης αποδέσμευσης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cápsula de liberación prolongada" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Capsule ou Gélule à libération prolongée selon le cas" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Capsula a rilascio prolungato" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cápsula de libertação prolongada" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12200" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tablet" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tablette" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Δισκίο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Comprimido" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Comprimé" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Compressa" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Comprimido" ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12320" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraruminal device" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Intraruminales System" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Συσκευή χορήγησης στη μεγάλη κοιλία" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositivo intrarruminal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositif intraruminal" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispositivo intraruminale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bólus" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12350" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medicated premix" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Arzneimittel-Vormischung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πρόμιγμα για φαρμακούχο τροφή" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Premezcla" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Premiscela medicamentosa" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pré-mistura medicamentosa" ]
+         ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13050" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oromucosal liquid" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flüssigkeit zur Anwendung in der Mundhöhle" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Στοματικό υγρό" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido bucal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liquido per mucosa orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido bucal" ]
+         ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13100" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oromucosal spray" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spray zur Anwendung in der Mundhöhle" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Στοματικό εκνέφωμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulverización bucal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulvérisation buccale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spray per mucosa orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulverização bucal" ]
+         ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13150" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sublingual spray" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sublingualspray" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Υπογλώσσιο εκνέφωμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Solución para pulverización sublingual" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Solution pour pulvérisation sublinguale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spray sublinguale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Preparação para pulverização sublingual" ]
+         ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13220" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lozenge" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lutschtablette" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Τροχίσκος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Comprimé à sucer" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pastiglia" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pastilha" ]
+         ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14050" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dental liquid" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dentalflüssigkeit" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Οδοντικό υγρό" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido dental" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liquido dentale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido dental" ]
+         ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15090" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cutaneous spray" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spray zur Anwendung auf der Haut" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Δερματικό εκνέφωμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulverización cutánea" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulvérisation cutanée" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spray cutaneo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulverização cutânea" ]
+         ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15130" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cutaneous liquid" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flüssigkeit zur Anwendung auf der Haut" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Δερματικό υγρό" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido cutáneo" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liquide cutané" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liquido cutaneo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido cutâneo" ]
+         ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15290" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dip" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tauchbad" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Υγρό εμβάπτισης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Baño" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bagno" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Banho medicamentoso" ]
+         ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15320" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dip concentrate" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Konzentrat zur Herstellung eines Tauchbades" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Πυκνό διάλυμα για παρασκευή μέσων εμβάπτισης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado para baño" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrato per bagno" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado para banho medicamentoso" ]
+         ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15370" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pour-on" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flüssigkeit zum Übergiessen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Επίχυμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pour-on" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pour-on" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Unção contínua" ]
+         ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15400" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spot-on" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flüssigkeit zum Auftropfen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Επίχυμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spot-on" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spot-on" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Unção punctiforme" ]
+         ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15430" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Teat dip" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Zitzentauchmittel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Υγρό εμβάπτισης θηλής" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Baño para pezones" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Trempage mammaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Immersione della mammella" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Banho medicamentoso do úbere" ]
+         ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15460" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Teat spray" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Zitzenspray" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Υγρό ψεκασμού θηλής" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulverización para pezones" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulvérisation mammaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spray mammario" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido para pulverização do úbere" ]
+         ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16040" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eye drops" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Augentropfen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Οφθαλμικές σταγόνες" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Colirio" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Collyre" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Collirio" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Colírio" ]
+         ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17040" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ear drops" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ohrentropfen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ωτικές σταγόνες" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gotas óticas" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gouttes auriculaires" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gocce auricolari" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gotas auriculares" ]
+         ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17090" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ear spray" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ohrenspray" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ωτικό εκνέφωμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulverización ótica" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulvérisation auriculaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spray auricolare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulverização auricular" ]
+         ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17120" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ear wash" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ohrenspülung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ωτικό πλύμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lavado ótico" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lavage auriculaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lavaggio auricolare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lavagem auricular" ]
+         ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "18040" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasal drops" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nasentropfen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ρινικές σταγόνες" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gotas nasales" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gouttes nasales" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gocce nasali" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gotas nasais" ]
+         ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "18080" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasal spray" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nasenspray" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ρινικό εκνέφωμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulverización nasal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulvérisation nasale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spray nasale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulverização nasal" ]
+         ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "19050" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vaginal liquid" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flüssigkeit zur vaginalen Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κολπικό υγρό" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido vaginal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lavanda vaginale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido vaginal" ]
+         ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "19100" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vaginal capsule" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vaginalkapsel" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κολπικό καψάκιο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cápsula vaginal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Capsule ou Gélule vaginale selon le cas" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Capsula vaginale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cápsula vaginal" ]
+         ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20050" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Enema" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Klistier" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Υποκλυσμός" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Enema" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Clistere" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Enema" ]
+         ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21010" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nebuliser liquid" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flüssigkeit für einen Vernebler" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Υγρό για εισπνοή με εκνεφωτή" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido para nebulizador" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liquido da nebulizzare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido para nebulização" ]
+         ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21060" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pressurised inhalation" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Druckgasinhalation" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Υγρό για εισπνοή υπό πίεση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inhalación en envase a presión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liquido pressurizzato per inalazione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido pressurizado para inalação" ]
+         ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21100" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inhalation powder" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver zur Inhalation" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις για εισπνοή" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo para inhalación" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere per inalazione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó para inalação" ]
+         ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21140" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inhalation vapour" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dampf zur Inhalation" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εισπνεόμενοι ατμοί" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vapor para inhalación" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suffumigi" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vapor para inalação" ]
+         ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22010" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injektion" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενέσιμο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injetável" ]
+         ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22030" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder for concentrate" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver zur Herstellung eines Konzentrats" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις για πυκνό σκεύασμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo para concentrado" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere per concentrato" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó para concentrado" ]
+         ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22050" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder for injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver zur Herstellung einer Injektionszubereitung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις για ενέσιμο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo para inyectable" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere per preparazione iniettabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó para uso injetável" ]
+         ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22060" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder for prolonged-release injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver zur Herstellung einer Depot-Injektion" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις για παρατεταμένης αποδέσμευσης ενέσιμο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo para inyectable de liberación prolongada" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere per preparazione iniettabile a rilascio prolungato" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó para suspensão injetável de libertação prolongada" ]
+         ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22090" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sterile concentrate" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "steriles Konzentrat" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Στείρο πυκνό διάλυμα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado estéril" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrato sterile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Concentrado estéril" ]
+         ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22100" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Infusion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Infusion" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εγχυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Perfusión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Infusione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Perfusão" ]
+         ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22120" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Powder for infusion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulver zur Herstellung einer Infusionslösung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κόνις για διάλυμα προς έγχυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvo para perfusión" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polvere per infusione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pó para perfusão" ]
+         ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26010" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endotracheopulmonary instillation" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lösung zur endotracheopulmonalen Instillation" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοτραχειοπνευμονική ενστάλλαξη" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Instilación endotraqueopulmonar" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Instillazione endotracheobronchiale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Instilação endotraqueobrônquica" ]
+         ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "29020" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intrauterine liquid" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flüssigkeit zur intrauterinen Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδομητριαίο υγρό" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido intrauterino" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liquido per uso intrauterino" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido intrauterino" ]
+         ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31030" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood fraction modifier" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Zubereitung zur Modifikation einer Blutfraktion" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Τροποποιητής κλάσματος αίματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Modificador de fracción sanguínea" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Modificatore di componenti ematici" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Modificador da fração sanguínea" ]
+         ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31080" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastroenteral liquid" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flüssigkeit zur gastrointestinalen Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Γαστρεντερικό υγρό" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido gastroentérico" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "-" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liquido gastroenterico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Líquido gastroentérico" ]
+         ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31090" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chewing gum" ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31100" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Injection/infusion" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injektion/Infusion" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injection/perfusion" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Iniezione/infusione" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Injetável ou perfusão" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/patient-friendly-term.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

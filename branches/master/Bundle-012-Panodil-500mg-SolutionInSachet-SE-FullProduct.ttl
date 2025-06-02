@@ -1,0 +1,431 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Bundle/012-Panodil-500mg-SolutionInSachet-SE-FullProduct> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "012-Panodil-500mg-SolutionInSachet-SE-FullProduct"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-MPD"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-MPD> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100005555-PerrigoSverigeAB"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100005555-PerrigoSverigeAB> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-APD"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-APD> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Panodil500mgoralsolutionsachet-SE-PLC-MID"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Panodil500mgoralsolutionsachet-SE-PLC-MID> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Panodil500mgoralsolutionsachet-SE-PLC-Ingredient"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Panodil500mgoralsolutionsachet-SE-PLC-Ingredient> )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-MPD> a fhir:MedicinalProductDefinition ;
+  fhir:id [ fhir:v "Panodil500mgoralsolutionsachet-SE-PLC-MPD"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicinalProductDefinition_Panodil500mgoralsolutionsachet-SE-PLC-MPD\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicinalProductDefinition Panodil500mgoralsolutionsachet-SE-PLC-MPD</b></p><a name=\"Panodil500mgoralsolutionsachet-SE-PLC-MPD\"> </a><a name=\"hcPanodil500mgoralsolutionsachet-SE-PLC-MPD\"> </a><a name=\"Panodil500mgoralsolutionsachet-SE-PLC-MPD-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/fhir/eurdId</code>/2283</p><p><b>domain</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}\">Human use</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000005003 200000005004}\">Current</span></p><p><b>combinedPharmaceuticalDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000007 100000125752}\">Powder for oral solution in sachet</span></p><p><b>indication</b>: </p><div><p>Panodil 500 mg pulver till oral lösning i dospåse används mot huvudvärk, tandvärk, feber vid förkylningssjukdomar, menstruationssmärtor, muskel- och ledvärk, som analgetikum vid reumatiska smärtor, hyperpyrexi. För vuxna och barn över 12 år.</p>\n</div><p><b>legalStatusOfSupply</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072051 100000072076}\">Medicinal product not subject to medical prescription</span></p><p><b>classification</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000093533 100000097305}\">Paracetamol</span>, <span title=\"Codes:{http://www.whocc.no/atc N02BE01}\">Paracetamol</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Panodil 500 mg pulver till oral lösning i dospåse</p><blockquote><p><b>part</b></p><p><b>part</b>: Panodil</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000002}\">Invented name part</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: 500 mg</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000004}\">Strength part</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: pulver till oral lösning i dospåse</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000005}\">Pharmaceutical dose form part</span></p></blockquote><h3>Usages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000535}\">Kingdom of Sweden</span></td><td><span title=\"Codes:{urn:ietf:bcp:47 sv}\">Swedish</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/fhir/eurdId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2283" ]
+  ] ) ; # 
+  fhir:domain [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000012" ] ;
+       fhir:display [ fhir:v "Human use" ]
+     ] )
+  ] ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000005003"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000005004" ] ;
+       fhir:display [ fhir:v "Current" ]
+     ] )
+  ] ; # 
+  fhir:combinedPharmaceuticalDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000007"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000125752" ] ;
+       fhir:display [ fhir:v "Powder for oral solution in sachet" ]
+     ] )
+  ] ; # 
+  fhir:indication [ fhir:v "Panodil 500 mg pulver till oral lösning i dospåse används mot huvudvärk, tandvärk, feber vid förkylningssjukdomar, menstruationssmärtor, muskel- och ledvärk, som analgetikum vid reumatiska smärtor, hyperpyrexi. För vuxna och barn över 12 år."] ; # 
+  fhir:legalStatusOfSupply [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072051"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072076" ] ;
+       fhir:display [ fhir:v "Medicinal product not subject to medical prescription" ]
+     ] )
+  ] ; # 
+  fhir:classification ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000093533"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000097305" ] ;
+       fhir:display [ fhir:v "Paracetamol" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "N02BE01" ] ;
+       fhir:display [ fhir:v "Paracetamol" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:productName [ fhir:v "Panodil 500 mg pulver till oral lösning i dospåse" ] ;
+     fhir:part ( [
+       fhir:part [ fhir:v "Panodil" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000002" ] ;
+           fhir:display [ fhir:v "Invented name part" ]
+         ] )
+       ]
+     ] [
+       fhir:part [ fhir:v "500 mg" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000004" ] ;
+           fhir:display [ fhir:v "Strength part" ]
+         ] )
+       ]
+     ] [
+       fhir:part [ fhir:v "pulver till oral lösning i dospåse" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000005" ] ;
+           fhir:display [ fhir:v "Pharmaceutical dose form part" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:usage ( [
+       fhir:country [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000000535" ] ;
+           fhir:display [ fhir:v "Kingdom of Sweden" ]
+         ] )
+       ] ;
+       fhir:language [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "sv" ] ;
+           fhir:display [ fhir:v "Swedish" ]
+         ] )
+       ]
+     ] )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization> a fhir:RegulatedAuthorization ;
+  fhir:id [ fhir:v "Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RegulatedAuthorization_Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RegulatedAuthorization Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization</b></p><a name=\"Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization\"> </a><a name=\"hcPanodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization\"> </a><a name=\"Panodil500mgoralsolutionsachet-SE-PLC-RegulatedAuthorization-en-US\"> </a><p><b>identifier</b>: 12391</p><p><b>subject</b>: <a href=\"Bundle-012-Panodil-500mg-SolutionInSachet-SE-FullProduct.html#MedicinalProductDefinition_Panodil500mgoralsolutionsachet-SE-PLC-MPD\">Bundle: type = collection</a></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000060 220000000061}\">Marketing Authorisation</span></p><p><b>region</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000535}\">Kingdom of Sweden</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072049 100000072099}\">Valid</span></p><p><b>statusDate</b>: 1994-10-28</p><p><b>holder</b>: <a href=\"Bundle-012-Panodil-500mg-SolutionInSachet-SE-FullProduct.html#Organization_LOC-100005555-PerrigoSverigeAB\">Bundle: type = collection</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "12391" ]
+  ] ) ; # 
+  fhir:subject ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MPD" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000060"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "220000000061" ] ;
+       fhir:display [ fhir:v "Marketing Authorisation" ]
+     ] )
+  ] ; # 
+  fhir:region ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000535" ] ;
+       fhir:display [ fhir:v "Kingdom of Sweden" ]
+     ] )
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072049"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072099" ] ;
+       fhir:display [ fhir:v "Valid" ]
+     ] )
+  ] ; # 
+  fhir:statusDate [ fhir:v "1994-10-28"^^xsd:date] ; # 
+  fhir:holder [
+     fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100005555-PerrigoSverigeAB> ;
+     fhir:reference [ fhir:v "Organization/LOC-100005555-PerrigoSverigeAB" ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100005555-PerrigoSverigeAB> a fhir:Organization ;
+  fhir:id [ fhir:v "LOC-100005555-PerrigoSverigeAB"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_LOC-100005555-PerrigoSverigeAB\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization LOC-100005555-PerrigoSverigeAB</b></p><a name=\"LOC-100005555-PerrigoSverigeAB\"> </a><a name=\"hcLOC-100005555-PerrigoSverigeAB\"> </a><a name=\"LOC-100005555-PerrigoSverigeAB-en-US\"> </a><p><b>identifier</b>: <code>https://spor.ema.europa.eu/v1/locations</code>/LOC-100005555</p><p><b>name</b>: Perrigo Sverige AB</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/locations"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "LOC-100005555" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Perrigo Sverige AB"] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-APD> a fhir:AdministrableProductDefinition ;
+  fhir:id [ fhir:v "Panodil500mgoralsolutionsachet-SE-PLC-APD"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AdministrableProductDefinition_Panodil500mgoralsolutionsachet-SE-PLC-APD\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AdministrableProductDefinition Panodil500mgoralsolutionsachet-SE-PLC-APD</b></p><a name=\"Panodil500mgoralsolutionsachet-SE-PLC-APD\"> </a><a name=\"hcPanodil500mgoralsolutionsachet-SE-PLC-APD\"> </a><a name=\"Panodil500mgoralsolutionsachet-SE-PLC-APD-en-US\"> </a><p><b>status</b>: Active</p><p><b>formOf</b>: <a href=\"Bundle-012-Panodil-500mg-SolutionInSachet-SE-FullProduct.html#MedicinalProductDefinition_Panodil500mgoralsolutionsachet-SE-PLC-MPD\">Bundle: type = collection</a></p><p><b>administrableDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073646}\">Oral solution</span></p><p><b>producedFrom</b>: <a href=\"Bundle-012-Panodil-500mg-SolutionInSachet-SE-FullProduct.html#ManufacturedItemDefinition_Panodil500mgoralsolutionsachet-SE-PLC-MID\">Bundle: type = collection</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073345 100000073619}\">Oral use</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:formOf ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MPD" ]
+  ] ) ; # 
+  fhir:administrableDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073646" ] ;
+       fhir:display [ fhir:v "Oral solution" ]
+     ] )
+  ] ; # 
+  fhir:producedFrom ( [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MID" ]
+  ] ) ; # 
+  fhir:routeOfAdministration ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073345"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073619" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef> a fhir:PackagedProductDefinition ;
+  fhir:id [ fhir:v "Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PackagedProductDefinition_Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PackagedProductDefinition Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef</b></p><a name=\"Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef\"> </a><a name=\"hcPanodil500mgoralsolutionsachet-SE-PLC-PackageProductDef\"> </a><a name=\"Panodil500mgoralsolutionsachet-SE-PLC-PackageProductDef-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/example/pcid</code>/?ngen-9?</p><p><b>packageFor</b>: <a href=\"Bundle-012-Panodil-500mg-SolutionInSachet-SE-FullProduct.html#MedicinalProductDefinition_Panodil500mgoralsolutionsachet-SE-PLC-MPD\">Bundle: type = collection</a></p><p><b>containedItemQuantity</b>: 12 Sachet<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002143 = 'Sachet')</span></p><p><b>description</b>: </p><div><p>Dospåsar, 12 st</p>\n</div><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000535}\">Kingdom of Sweden</span></td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072052 100000072083}\">Marketed</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}\">Cardboard</span></p><blockquote><p><b>containedItem</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Bundle-012-Panodil-500mg-SolutionInSachet-SE-FullProduct.html#ManufacturedItemDefinition_Panodil500mgoralsolutionsachet-SE-PLC-MID\">Bundle: type = collection</a></td></tr></table><p><b>amount</b>: 12 Sachet<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002143 = 'Sachet')</span></p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/example/pcid"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:packageFor ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MPD" ]
+  ] ) ; # 
+  fhir:containedItemQuantity ( [
+     fhir:value [ fhir:v "12"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Sachet" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002143" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "Dospåsar, 12 st"] ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000000535" ] ;
+         fhir:display [ fhir:v "Kingdom of Sweden" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072052"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000072083" ] ;
+         fhir:display [ fhir:v "Marketed" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073498" ] ;
+         fhir:display [ fhir:v "Box" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "200000003529" ] ;
+         fhir:display [ fhir:v "Cardboard" ]
+       ] )
+     ] ) ;
+     fhir:containedItem ( [
+       fhir:item [
+         fhir:reference [
+           fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MID> ;
+           fhir:reference [ fhir:v "ManufacturedItemDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MID" ]
+         ]
+       ] ;
+       fhir:amount [
+         fhir:value [ fhir:v "12"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Sachet" ] ;
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "200000002143" ]
+       ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Panodil500mgoralsolutionsachet-SE-PLC-MID> a fhir:ManufacturedItemDefinition ;
+  fhir:id [ fhir:v "Panodil500mgoralsolutionsachet-SE-PLC-MID"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ManufacturedItemDefinition_Panodil500mgoralsolutionsachet-SE-PLC-MID\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ManufacturedItemDefinition Panodil500mgoralsolutionsachet-SE-PLC-MID</b></p><a name=\"Panodil500mgoralsolutionsachet-SE-PLC-MID\"> </a><a name=\"hcPanodil500mgoralsolutionsachet-SE-PLC-MID\"> </a><a name=\"Panodil500mgoralsolutionsachet-SE-PLC-MID-en-US\"> </a><p><b>status</b>: Active</p><p><b>manufacturedDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073364}\">Powder for oral solution</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002143}\">Sachet</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturedDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073364" ] ;
+       fhir:display [ fhir:v "Powder for oral solution" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002143" ] ;
+       fhir:display [ fhir:v "Sachet" ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Panodil500mgoralsolutionsachet-SE-PLC-Ingredient> a fhir:Ingredient ;
+  fhir:id [ fhir:v "Panodil500mgoralsolutionsachet-SE-PLC-Ingredient"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Ingredient_Panodil500mgoralsolutionsachet-SE-PLC-Ingredient\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Ingredient Panodil500mgoralsolutionsachet-SE-PLC-Ingredient</b></p><a name=\"Panodil500mgoralsolutionsachet-SE-PLC-Ingredient\"> </a><a name=\"hcPanodil500mgoralsolutionsachet-SE-PLC-Ingredient\"> </a><a name=\"Panodil500mgoralsolutionsachet-SE-PLC-Ingredient-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: </p><ul><li><a href=\"Bundle-012-Panodil-500mg-SolutionInSachet-SE-FullProduct.html#MedicinalProductDefinition_Panodil500mgoralsolutionsachet-SE-PLC-MPD\">Bundle: type = collection</a></li><li><a href=\"Bundle-012-Panodil-500mg-SolutionInSachet-SE-FullProduct.html#ManufacturedItemDefinition_Panodil500mgoralsolutionsachet-SE-PLC-MID\">Bundle: type = collection</a></li><li><a href=\"Bundle-012-Panodil-500mg-SolutionInSachet-SE-FullProduct.html#AdministrableProductDefinition_Panodil500mgoralsolutionsachet-SE-PLC-APD\">Bundle: type = collection</a></li></ul><p><b>role</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000090270}\">Paracetamol</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 500 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')</span>/1 Sachet<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002143 = 'Sachet')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000090270}\">Paracetamol</span></td></tr></table><p><b>strength</b>: 500 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')</span>/1 Sachet<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002143 = 'Sachet')</span></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MPD" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/Panodil500mgoralsolutionsachet-SE-PLC-MID" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-APD> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/Panodil500mgoralsolutionsachet-SE-PLC-APD" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000090270" ] ;
+           fhir:display [ fhir:v "Paracetamol" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:presentation [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "500"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "milligram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110655" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "Sachet" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000002143" ]
+         ]
+       ] ;
+       fhir:referenceStrength ( [
+         fhir:substance [
+           fhir:concept [
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "100000090270" ] ;
+               fhir:display [ fhir:v "Paracetamol" ]
+             ] )
+           ]
+         ] ;
+         fhir:strength [
+           a fhir:Ratio ;
+           fhir:numerator [
+             fhir:value [ fhir:v "500"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "milligram(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110655" ]
+           ] ;
+           fhir:denominator [
+             fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "Sachet" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "200000002143" ]
+           ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

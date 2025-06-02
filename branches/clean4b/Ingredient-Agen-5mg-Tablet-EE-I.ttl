@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7-eu.github.io/unicom-ig/Ingredient/Agen-5mg-Tablet-EE-I> a fhir:Ingredient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Agen-5mg-Tablet-EE-I"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Ingredient</b><a name=\"Agen-5mg-Tablet-EE-I\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Ingredient &quot;Agen-5mg-Tablet-EE-I&quot; </p></div><p><b>status</b>: active</p><p><b>for</b>: </p><ul><li><a href=\"MedicinalProductDefinition-Agen-5mg-Tablet-EE-MPD.html\">MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD</a></li><li><a href=\"ManufacturedItemDefinition-Agen-5mg-Tablet-EE-MID.html\">ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID</a></li><li><a href=\"AdministrableProductDefinition-Agen-5mg-Tablet-EE-APD.html\">AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD</a></li></ul><p><b>role</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000072050#100000072072)</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td>-</td><td><b>Concept</b></td></tr><tr><td>*</td><td>Amlodipine besilate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (SubstanceDefinition#100000090079)</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 6.935 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: http://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = '100000110655')</span>/1(unit 200000002152 from http://spor.ema.europa.eu/v1/lists/200000000014)<span style=\"background: LightGoldenRodYellow\"> (Details: http://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = '200000002152')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td>-</td><td><b>Concept</b></td></tr><tr><td>*</td><td>Amlodipine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (SubstanceDefinition#100000085259)</span></td></tr></table><p><b>strength</b>: 5 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: http://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = '100000110655')</span>/1(unit 200000002152 from http://spor.ema.europa.eu/v1/lists/200000000014)<span style=\"background: LightGoldenRodYellow\"> (Details: http://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = '200000002152')</span></p></blockquote></blockquote></blockquote></div>"
+  ];
+  fhir:Ingredient.status [ fhir:value "active"];
+  fhir:Ingredient.for [
+     fhir:index 0;
+     fhir:link <http://hl7-eu.github.io/unicom-ig/MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD>;
+     fhir:Reference.reference [ fhir:value "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://hl7-eu.github.io/unicom-ig/ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID>;
+     fhir:Reference.reference [ fhir:value "ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://hl7-eu.github.io/unicom-ig/AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD>;
+     fhir:Reference.reference [ fhir:value "AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD" ]
+  ];
+  fhir:Ingredient.role [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000072050" ];
+       fhir:Coding.code [ fhir:value "100000072072" ];
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ];
+  fhir:Ingredient.substance [
+     fhir:Ingredient.substance.code [
+       fhir:CodeableReference.concept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v2/SubstanceDefinition" ];
+           fhir:Coding.code [ fhir:value "100000090079" ];
+           fhir:Coding.display [ fhir:value "Amlodipine besilate" ]
+         ]
+       ]
+     ];
+     fhir:Ingredient.substance.strength [
+       fhir:index 0;
+       fhir:Ingredient.substance.strength.presentationRatio [
+         fhir:Ratio.numerator [
+           fhir:Quantity.value [ fhir:value "6.935"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "milligram(s)" ];
+           fhir:Quantity.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000110633" ];
+           fhir:Quantity.code [ fhir:value "100000110655" ]
+         ];
+         fhir:Ratio.denominator [
+           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+           fhir:Quantity.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000014" ];
+           fhir:Quantity.code [ fhir:value "200000002152" ]
+         ]
+       ];
+       fhir:Ingredient.substance.strength.referenceStrength [
+         fhir:index 0;
+         fhir:Ingredient.substance.strength.referenceStrength.substance [
+           fhir:CodeableReference.concept [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "https://spor.ema.europa.eu/v2/SubstanceDefinition" ];
+               fhir:Coding.code [ fhir:value "100000085259" ];
+               fhir:Coding.display [ fhir:value "Amlodipine" ]
+             ]
+           ]
+         ];
+         fhir:Ingredient.substance.strength.referenceStrength.strengthRatio [
+           fhir:Ratio.numerator [
+             fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ];
+             fhir:Quantity.unit [ fhir:value "milligram(s)" ];
+             fhir:Quantity.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/100000110633" ];
+             fhir:Quantity.code [ fhir:value "100000110655" ]
+           ];
+           fhir:Ratio.denominator [
+             fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+             fhir:Quantity.system [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000014" ];
+             fhir:Quantity.code [ fhir:value "200000002152" ]
+           ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7-eu.github.io/unicom-ig/Ingredient/Agen-5mg-Tablet-EE-I.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

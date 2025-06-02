@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/PackagedProductDefinition/CanifugCremolum-EE-PPD-1033692> a fhir:PackagedProductDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CanifugCremolum-EE-PPD-1033692"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PackagedProductDefinition CanifugCremolum-EE-PPD-1033692</b></p><a name=\"CanifugCremolum-EE-PPD-1033692\"> </a><a name=\"hcCanifugCremolum-EE-PPD-1033692\"> </a><a name=\"CanifugCremolum-EE-PPD-1033692-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/example/pcid</code>/EE-100004795-10280-1033692</p><p><b>packageFor</b>: <a href=\"MedicinalProductDefinition-CanifugCremolum-EE-MPD.html\">MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100004795-10280,http://ema.europa.eu/fhir/pmsId#EE00000003; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Cream + pessary; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = clotrimazole,clotrimazole</a></p><p><b>containedItemQuantity</b>: 6 Pessary<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002137 = 'Pessary')</span>, 1 Tube<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002156 = 'Tube')</span></p><p><b>description</b>: </p><div><p>Alu/PE-fooliumist valmistatud ribapakend, mis on asetatud väliskarpi. Kreem on alumiiniumtuubis ja omakorda pappkarbis. Kombineeritud pakend sisaldab: 6 vaginaalsuposiiti ja 20 g kreemi</p>\n</div><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Republic of Estonia</span></td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072052 100000072083}\">Marketed</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}\">Cardboard</span></p><blockquote><p><b>packaging</b></p></blockquote><blockquote><p><b>packaging</b></p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/example/pcid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100004795-10280-1033692" ]
+  ] ) ; # 
+  fhir:packageFor ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/CanifugCremolum-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/CanifugCremolum-EE-MPD" ]
+  ] ) ; # 
+  fhir:containedItemQuantity ( [
+     fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Pessary" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002137" ]
+  ] [
+     fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Tube" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002156" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "Alu/PE-fooliumist valmistatud ribapakend, mis on asetatud väliskarpi. Kreem on alumiiniumtuubis ja omakorda pappkarbis. Kombineeritud pakend sisaldab: 6 vaginaalsuposiiti ja 20 g kreemi"] ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000000388" ] ;
+         fhir:display [ fhir:v "Republic of Estonia" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072052"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000072083" ] ;
+         fhir:display [ fhir:v "Marketed" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073498" ] ;
+         fhir:display [ fhir:v "Box" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "200000003529" ] ;
+         fhir:display [ fhir:v "Cardboard" ]
+       ] )
+     ] ) ;
+     fhir:packaging ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000073559" ] ;
+           fhir:display [ fhir:v "Strip" ]
+         ] )
+       ] ;
+       fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+       fhir:material ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003200" ] ;
+           fhir:display [ fhir:v "Aluminium" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003214" ] ;
+           fhir:display [ fhir:v "PolyEthylene" ]
+         ] )
+       ] ) ;
+       fhir:containedItem ( [
+         fhir:item [
+           fhir:reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID> ;
+             fhir:reference [ fhir:v "ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID" ]
+           ]
+         ] ;
+         fhir:amount [
+           fhir:value [ fhir:v "6"^^xsd:decimal ]
+         ]
+       ] )
+     ] [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000073561" ] ;
+           fhir:display [ fhir:v "Tube" ]
+         ] )
+       ] ;
+       fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+       fhir:material ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003200" ] ;
+           fhir:display [ fhir:v "Aluminium" ]
+         ] )
+       ] ) ;
+       fhir:containedItem ( [
+         fhir:item [
+           fhir:reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CanifugCremolum-10mg1g-Cream-EE-MID> ;
+             fhir:reference [ fhir:v "ManufacturedItemDefinition/CanifugCremolum-10mg1g-Cream-EE-MID" ]
+           ]
+         ] ;
+         fhir:amount [
+           fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "gram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110654" ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

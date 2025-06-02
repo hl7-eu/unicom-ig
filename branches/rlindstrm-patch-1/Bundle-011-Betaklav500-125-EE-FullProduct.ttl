@@ -1,0 +1,742 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Bundle/011-Betaklav500-125-EE-FullProduct> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "011-Betaklav500-125-EE-FullProduct"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Betaklav-500mg-125mg-EE-MPD"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Betaklav-500mg-125mg-EE-MPD> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Betaklav-500mg-125mg-EE-RA"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Betaklav-500mg-125mg-EE-RA> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100009540-KrkaNovoMesto"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100009540-KrkaNovoMesto> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Betaklav-500mg-125mg-EE-APD"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Betaklav-500mg-125mg-EE-APD> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Betaklav-500mg-125mg-EE-MID"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Betaklav-500mg-125mg-EE-MID> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Betaklav-500mg-125mg-EE-I-100000092629"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Betaklav-500mg-125mg-EE-I-100000092629> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Betaklav-500mg-125mg-EE-I-100000093061"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Betaklav-500mg-125mg-EE-I-100000093061> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Betaklav-500mg-125mg-EE-PPD-1635117"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Betaklav-500mg-125mg-EE-PPD-1635117> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Betaklav-500mg-125mg-EE-PPD-1635207"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Betaklav-500mg-125mg-EE-PPD-1635207> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Betaklav-500mg-125mg-EE-PPD-1635139"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Betaklav-500mg-125mg-EE-PPD-1635139> )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-Betaklav-500mg-125mg-EE-MPD> a fhir:MedicinalProductDefinition ;
+  fhir:id [ fhir:v "Betaklav-500mg-125mg-EE-MPD"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicinalProductDefinition</b><a name=\"Betaklav-500mg-125mg-EE-MPD\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicinalProductDefinition &quot;Betaklav-500mg-125mg-EE-MPD&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLMedicinalProductDefinition.html\">PPL Medicinal Product profile</a></p></div><p><b>identifier</b>: id: EE-100009540-30722, id: 0000000000006</p><p><b>domain</b>: Human use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-domain-ema-cs.html\">Domain EMA</a>#100000000012)</span></p><p><b>status</b>: Current <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-recordStatus-ema-cs.html\">Record Status EMA SPOR</a>#200000005004)</span></p><p><b>combinedPharmaceuticalDoseForm</b>: Film-coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-pharmaceutical-dose-form-ema-cs.html\">Pharmaceutical Dose Form EMA</a>#100000073665)</span></p><p><b>legalStatusOfSupply</b>: Medicinal Product subject to medical prescription <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-legal-status-for-the-supply-ema-cs.html\">Legal Status for the Supply EMA</a>#100000072084)</span></p><p><b>classification</b>: amoxicillin and beta-lactamase inhibitor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ATC-Human-EMA.html\">ATC Human EMA</a>#100000096162)</span>, amoxicillin and beta-lactamase inhibitor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-WC.html\">WHO ATC</a>#J01CR02)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Betaklav 500 mg/125 mg õhukese polümeerikattega tabletid</p><blockquote><p><b>part</b></p><p><b>part</b>: Betaklav</p><p><b>type</b>: Invented name part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (220000000000#220000000002)</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: 500mg/125mg</p><p><b>type</b>: Strength part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (220000000000#220000000004)</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: õhukese polümeerikattega tabletid</p><p><b>type</b>: Pharmaceutical dose form part <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (220000000000#220000000005)</span></p></blockquote><h3>Usages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td style=\"display: none\">*</td><td>Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-country-ema-cs.html\">Country EMA</a>#100000000388)</span></td><td>Estonian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ietf3066.html\">Tags for the Identification of Languages</a>#et)</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/fhir/mpId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100009540-30722" ]
+  ] [
+     fhir:system [ fhir:v "http://ema.europa.eu/fhir/pmsId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0000000000006" ]
+  ] ) ; # 
+  fhir:domain [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000012" ] ;
+       fhir:display [ fhir:v "Human use" ]
+     ] )
+  ] ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000005003"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000005004" ] ;
+       fhir:display [ fhir:v "Current" ]
+     ] )
+  ] ; # 
+  fhir:combinedPharmaceuticalDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073665" ] ;
+       fhir:display [ fhir:v "Film-coated tablet" ]
+     ] )
+  ] ; # 
+  fhir:legalStatusOfSupply [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072051"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072084" ] ;
+       fhir:display [ fhir:v "Medicinal Product subject to medical prescription" ]
+     ] )
+  ] ; # 
+  fhir:classification ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000093533"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000096162" ] ;
+       fhir:display [ fhir:v "amoxicillin and beta-lactamase inhibitor" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J01CR02" ] ;
+       fhir:display [ fhir:v "amoxicillin and beta-lactamase inhibitor" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:productName [ fhir:v "Betaklav 500 mg/125 mg õhukese polümeerikattega tabletid" ] ;
+     fhir:part ( [
+       fhir:part [ fhir:v "Betaklav" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000002" ] ;
+           fhir:display [ fhir:v "Invented name part" ]
+         ] )
+       ]
+     ] [
+       fhir:part [ fhir:v "500mg/125mg" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000004" ] ;
+           fhir:display [ fhir:v "Strength part" ]
+         ] )
+       ]
+     ] [
+       fhir:part [ fhir:v "õhukese polümeerikattega tabletid" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000005" ] ;
+           fhir:display [ fhir:v "Pharmaceutical dose form part" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:usage ( [
+       fhir:country [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000000388" ] ;
+           fhir:display [ fhir:v "Republic of Estonia" ]
+         ] )
+       ] ;
+       fhir:language [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "et" ] ;
+           fhir:display [ fhir:v "Estonian" ]
+         ] )
+       ]
+     ] )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-Betaklav-500mg-125mg-EE-RA> a fhir:RegulatedAuthorization ;
+  fhir:id [ fhir:v "Betaklav-500mg-125mg-EE-RA"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RegulatedAuthorization</b><a name=\"Betaklav-500mg-125mg-EE-RA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RegulatedAuthorization &quot;Betaklav-500mg-125mg-EE-RA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLRegulatedAuthorization.html\">PPL Marketing Authorisation profile</a></p></div><p><b>identifier</b>: id: 879415</p><p><b>subject</b>: <a href=\"#MedicinalProductDefinition_Betaklav-500mg-125mg-EE-MPD\">See above (MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD)</a></p><p><b>type</b>: Marketing Authorisation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (220000000060#220000000061)</span></p><p><b>region</b>: Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-country-ema-cs.html\">Country EMA</a>#100000000388)</span></p><p><b>status</b>: Valid - Renewed/Varied <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-regulatoryStatus-ema-cs.html\">Regulatory Entitlement Status EMA SPOR</a>#200000017708)</span></p><p><b>statusDate</b>: 2021-02-03</p><p><b>holder</b>: <a href=\"#Organization_LOC-100009540-KrkaNovoMesto\">See above (Organization/LOC-100009540-KrkaNovoMesto)</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "879415" ]
+  ] ) ; # 
+  fhir:subject ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000060"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "220000000061" ] ;
+       fhir:display [ fhir:v "Marketing Authorisation" ]
+     ] )
+  ] ; # 
+  fhir:region ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000388" ] ;
+       fhir:display [ fhir:v "Republic of Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072049"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000017708" ] ;
+       fhir:display [ fhir:v "Valid - Renewed/Varied" ]
+     ] )
+  ] ; # 
+  fhir:statusDate [ fhir:v "2021-02-03"^^xsd:date] ; # 
+  fhir:holder [
+     fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100009540-KrkaNovoMesto> ;
+     fhir:reference [ fhir:v "Organization/LOC-100009540-KrkaNovoMesto" ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100009540-KrkaNovoMesto> a fhir:Organization ;
+  fhir:id [ fhir:v "LOC-100009540-KrkaNovoMesto"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"LOC-100009540-KrkaNovoMesto\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;LOC-100009540-KrkaNovoMesto&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLOrganization.html\">PPL Organization</a></p></div><p><b>identifier</b>: id: LOC-100009540, id: ORG-100000627</p><p><b>name</b>: KRKA, d.d., Novo mesto</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/locations"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "LOC-100009540" ]
+  ] [
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/organisations"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ORG-100000627" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "KRKA, d.d., Novo mesto"] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-Betaklav-500mg-125mg-EE-APD> a fhir:AdministrableProductDefinition ;
+  fhir:id [ fhir:v "Betaklav-500mg-125mg-EE-APD"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AdministrableProductDefinition</b><a name=\"Betaklav-500mg-125mg-EE-APD\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AdministrableProductDefinition &quot;Betaklav-500mg-125mg-EE-APD&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLAdministrableProductDefinition.html\">PPL Administrable Product profile</a></p></div><p><b>status</b>: active</p><p><b>formOf</b>: <a href=\"#MedicinalProductDefinition_Betaklav-500mg-125mg-EE-MPD\">See above (MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD)</a></p><p><b>administrableDoseForm</b>: Film-coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-pharmaceutical-dose-form-ema-cs.html\">Pharmaceutical Dose Form EMA</a>#100000073665)</span></p><p><b>unitOfPresentation</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-unit-of-presentation-ema-cs.html\">Unit of Presentation EMA</a>#200000002152)</span></p><p><b>producedFrom</b>: <a href=\"#ManufacturedItemDefinition_Betaklav-500mg-125mg-EE-MID\">See above (ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID)</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-routes-and-methods-of-administration-ema-cs.html\">Routes and Methods of Administration EMA</a>#100000073619)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:formOf ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD" ]
+  ] ) ; # 
+  fhir:administrableDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073665" ] ;
+       fhir:display [ fhir:v "Film-coated tablet" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002152" ] ;
+       fhir:display [ fhir:v "Tablet" ]
+     ] )
+  ] ; # 
+  fhir:producedFrom ( [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID" ]
+  ] ) ; # 
+  fhir:routeOfAdministration ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073345"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073619" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-Betaklav-500mg-125mg-EE-MID> a fhir:ManufacturedItemDefinition ;
+  fhir:id [ fhir:v "Betaklav-500mg-125mg-EE-MID"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ManufacturedItemDefinition</b><a name=\"Betaklav-500mg-125mg-EE-MID\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ManufacturedItemDefinition &quot;Betaklav-500mg-125mg-EE-MID&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLManufacturedItemDefinition.html\">PPL Manufactured Item profile</a></p></div><p><b>status</b>: active</p><p><b>manufacturedDoseForm</b>: Film-coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-pharmaceutical-dose-form-ema-cs.html\">Pharmaceutical Dose Form EMA</a>#100000073665)</span></p><p><b>unitOfPresentation</b>: Tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-unit-of-presentation-ema-cs.html\">Unit of Presentation EMA</a>#200000002152)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturedDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073665" ] ;
+       fhir:display [ fhir:v "Film-coated tablet" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002152" ] ;
+       fhir:display [ fhir:v "Tablet" ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Betaklav-500mg-125mg-EE-I-100000092629> a fhir:Ingredient ;
+  fhir:id [ fhir:v "Betaklav-500mg-125mg-EE-I-100000092629"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Ingredient</b><a name=\"Betaklav-500mg-125mg-EE-I-100000092629\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Ingredient &quot;Betaklav-500mg-125mg-EE-I-100000092629&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLIngredient.html\">PPL Ingredient profile</a></p></div><p><b>status</b>: active</p><p><b>for</b>: </p><ul><li><a href=\"#MedicinalProductDefinition_Betaklav-500mg-125mg-EE-MPD\">See above (MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD)</a></li><li><a href=\"#ManufacturedItemDefinition_Betaklav-500mg-125mg-EE-MID\">See above (ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID)</a></li><li><a href=\"#AdministrableProductDefinition_Betaklav-500mg-125mg-EE-APD\">See above (AdministrableProductDefinition/Betaklav-500mg-125mg-EE-APD)</a></li></ul><p><b>role</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000072050#100000072072)</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td>AMOXICILLIN TRIHYDRATE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-substance-sms-cs.html\">Substances EMA SPOR SMS</a>#100000092629)</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 573.892 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')</span>/1 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td>Amoxicillin <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-substance-sms-cs.html\">Substances EMA SPOR SMS</a>#100000091596)</span></td></tr></table><p><b>strength</b>: 500 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')</span>/1 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')</span></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/Betaklav-500mg-125mg-EE-APD> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/Betaklav-500mg-125mg-EE-APD" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000092629" ] ;
+           fhir:display [ fhir:v "AMOXICILLIN TRIHYDRATE" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:presentation [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "573.892"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "milligram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110655" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "tablet" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000002152" ]
+         ]
+       ] ;
+       fhir:referenceStrength ( [
+         fhir:substance [
+           fhir:concept [
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "100000091596" ] ;
+               fhir:display [ fhir:v "Amoxicillin" ]
+             ] )
+           ]
+         ] ;
+         fhir:strength [
+           a fhir:Ratio ;
+           fhir:numerator [
+             fhir:value [ fhir:v "500"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "milligram(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110655" ]
+           ] ;
+           fhir:denominator [
+             fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "tablet" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "200000002152" ]
+           ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-Betaklav-500mg-125mg-EE-I-100000093061> a fhir:Ingredient ;
+  fhir:id [ fhir:v "Betaklav-500mg-125mg-EE-I-100000093061"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Ingredient</b><a name=\"Betaklav-500mg-125mg-EE-I-100000093061\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Ingredient &quot;Betaklav-500mg-125mg-EE-I-100000093061&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLIngredient.html\">PPL Ingredient profile</a></p></div><p><b>status</b>: active</p><p><b>for</b>: </p><ul><li><a href=\"#MedicinalProductDefinition_Betaklav-500mg-125mg-EE-MPD\">See above (MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD)</a></li><li><a href=\"#ManufacturedItemDefinition_Betaklav-500mg-125mg-EE-MID\">See above (ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID)</a></li><li><a href=\"#AdministrableProductDefinition_Betaklav-500mg-125mg-EE-APD\">See above (AdministrableProductDefinition/Betaklav-500mg-125mg-EE-APD)</a></li></ul><p><b>role</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000072050#100000072072)</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td>POTASSIUM CLAVULANATE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-substance-sms-cs.html\">Substances EMA SPOR SMS</a>#100000093061)</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 151.915 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')</span>/1 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td>CLAVULANIC ACID <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-substance-sms-cs.html\">Substances EMA SPOR SMS</a>#100000089842)</span></td></tr></table><p><b>strength</b>: 125 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')</span>/1 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')</span></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/Betaklav-500mg-125mg-EE-APD> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/Betaklav-500mg-125mg-EE-APD" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000093061" ] ;
+           fhir:display [ fhir:v "POTASSIUM CLAVULANATE" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:presentation [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "151.915"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "milligram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110655" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "tablet" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000002152" ]
+         ]
+       ] ;
+       fhir:referenceStrength ( [
+         fhir:substance [
+           fhir:concept [
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "100000089842" ] ;
+               fhir:display [ fhir:v "CLAVULANIC ACID" ]
+             ] )
+           ]
+         ] ;
+         fhir:strength [
+           a fhir:Ratio ;
+           fhir:numerator [
+             fhir:value [ fhir:v "125"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "milligram(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110655" ]
+           ] ;
+           fhir:denominator [
+             fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "tablet" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "200000002152" ]
+           ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Betaklav-500mg-125mg-EE-PPD-1635117> a fhir:PackagedProductDefinition ;
+  fhir:id [ fhir:v "Betaklav-500mg-125mg-EE-PPD-1635117"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PackagedProductDefinition</b><a name=\"Betaklav-500mg-125mg-EE-PPD-1635117\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PackagedProductDefinition &quot;Betaklav-500mg-125mg-EE-PPD-1635117&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLPackagedProductDefinition.html\">PPL Packaged Product profile</a></p></div><p><b>identifier</b>: id: EE-100009540-30722-1635117</p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_Betaklav-500mg-125mg-EE-MPD\">See above (MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD)</a></p><p><b>containedItemQuantity</b>: 10 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')</span></p><p><b>description</b>: Ribapakend (Al/Al) 10 õhukese polümeerikattega tabletti karbis</p><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td>Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-country-ema-cs.html\">Country EMA</a>#100000000388)</span></td><td>Marketed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-Marketing-Status-ema-cs.html\">Marketing Status EMA</a>#100000072083)</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: Box <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-packaging-ema-cs.html\">Packaging EMA SPOR</a>#100000073498)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: Cardboard <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003529)</span></p><blockquote><p><b>packaging</b></p><p><b>type</b>: Strip <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-packaging-ema-cs.html\">Packaging EMA SPOR</a>#100000073559)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: Aluminium <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003200)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/example/pcid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100009540-30722-1635117" ]
+  ] ) ; # 
+  fhir:packageFor ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD" ]
+  ] ) ; # 
+  fhir:containedItemQuantity ( [
+     fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "tablet" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002152" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "Ribapakend (Al/Al) 10 õhukese polümeerikattega tabletti karbis"] ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000000388" ] ;
+         fhir:display [ fhir:v "Republic of Estonia" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072052"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000072083" ] ;
+         fhir:display [ fhir:v "Marketed" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073498" ] ;
+         fhir:display [ fhir:v "Box" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "200000003529" ] ;
+         fhir:display [ fhir:v "Cardboard" ]
+       ] )
+     ] ) ;
+     fhir:packaging ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000073559" ] ;
+           fhir:display [ fhir:v "Strip" ]
+         ] )
+       ] ;
+       fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+       fhir:material ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003200" ] ;
+           fhir:display [ fhir:v "Aluminium" ]
+         ] )
+       ] ) ;
+       fhir:containedItem ( [
+         fhir:item [
+           fhir:reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID> ;
+             fhir:reference [ fhir:v "ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID" ]
+           ]
+         ] ;
+         fhir:amount [
+           fhir:value [ fhir:v "10"^^xsd:decimal ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Betaklav-500mg-125mg-EE-PPD-1635207> a fhir:PackagedProductDefinition ;
+  fhir:id [ fhir:v "Betaklav-500mg-125mg-EE-PPD-1635207"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PackagedProductDefinition</b><a name=\"Betaklav-500mg-125mg-EE-PPD-1635207\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PackagedProductDefinition &quot;Betaklav-500mg-125mg-EE-PPD-1635207&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLPackagedProductDefinition.html\">PPL Packaged Product profile</a></p></div><p><b>identifier</b>: id: EE-100009540-30722-1635207</p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_Betaklav-500mg-125mg-EE-MPD\">See above (MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD)</a></p><p><b>containedItemQuantity</b>: 500 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')</span></p><p><b>description</b>: Ribapakend (Al/Al) 500 õhukese polümeerikattega tabletti karbis</p><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td>Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-country-ema-cs.html\">Country EMA</a>#100000000388)</span></td><td>Marketed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-Marketing-Status-ema-cs.html\">Marketing Status EMA</a>#100000072083)</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: Box <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-packaging-ema-cs.html\">Packaging EMA SPOR</a>#100000073498)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: Cardboard <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003529)</span></p><blockquote><p><b>packaging</b></p><p><b>type</b>: Strip <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-packaging-ema-cs.html\">Packaging EMA SPOR</a>#100000073559)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: Aluminium <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003200)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/example/pcid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100009540-30722-1635207" ]
+  ] ) ; # 
+  fhir:packageFor ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD" ]
+  ] ) ; # 
+  fhir:containedItemQuantity ( [
+     fhir:value [ fhir:v "500"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "tablet" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002152" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "Ribapakend (Al/Al) 500 õhukese polümeerikattega tabletti karbis"] ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000000388" ] ;
+         fhir:display [ fhir:v "Republic of Estonia" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072052"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000072083" ] ;
+         fhir:display [ fhir:v "Marketed" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073498" ] ;
+         fhir:display [ fhir:v "Box" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "200000003529" ] ;
+         fhir:display [ fhir:v "Cardboard" ]
+       ] )
+     ] ) ;
+     fhir:packaging ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000073559" ] ;
+           fhir:display [ fhir:v "Strip" ]
+         ] )
+       ] ;
+       fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+       fhir:material ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003200" ] ;
+           fhir:display [ fhir:v "Aluminium" ]
+         ] )
+       ] ) ;
+       fhir:containedItem ( [
+         fhir:item [
+           fhir:reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID> ;
+             fhir:reference [ fhir:v "ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID" ]
+           ]
+         ] ;
+         fhir:amount [
+           fhir:value [ fhir:v "500"^^xsd:decimal ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-Betaklav-500mg-125mg-EE-PPD-1635139> a fhir:PackagedProductDefinition ;
+  fhir:id [ fhir:v "Betaklav-500mg-125mg-EE-PPD-1635139"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PackagedProductDefinition</b><a name=\"Betaklav-500mg-125mg-EE-PPD-1635139\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PackagedProductDefinition &quot;Betaklav-500mg-125mg-EE-PPD-1635139&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLPackagedProductDefinition.html\">PPL Packaged Product profile</a></p></div><p><b>identifier</b>: id: EE-100009540-30722-1635139</p><p><b>packageFor</b>: <a href=\"#MedicinalProductDefinition_Betaklav-500mg-125mg-EE-MPD\">See above (MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD)</a></p><p><b>containedItemQuantity</b>: 14 tablet<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')</span></p><p><b>description</b>: Blisterpakend (OPA/Al/PVC foil/Al foil) 14 õhukese polümeerikattega tabletti karbis</p><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td>Republic of Estonia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-country-ema-cs.html\">Country EMA</a>#100000000388)</span></td><td>Marketed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-Marketing-Status-ema-cs.html\">Marketing Status EMA</a>#100000072083)</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: Box <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-packaging-ema-cs.html\">Packaging EMA SPOR</a>#100000073498)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: Cardboard <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003529)</span></p><blockquote><p><b>packaging</b></p><p><b>type</b>: Blister <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-packaging-ema-cs.html\">Packaging EMA SPOR</a>#100000073496)</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: Orientated PolyAmide <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003210)</span>, Aluminium <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003200)</span>, PolyVinyl Chloride <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-material-ema-cs.html\">Material EMA</a>#200000003222)</span></p><blockquote><p><b>containedItem</b></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/example/pcid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100009540-30722-1635139" ]
+  ] ) ; # 
+  fhir:packageFor ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Betaklav-500mg-125mg-EE-MPD" ]
+  ] ) ; # 
+  fhir:containedItemQuantity ( [
+     fhir:value [ fhir:v "14"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "tablet" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002152" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "Blisterpakend (OPA/Al/PVC foil/Al foil) 14 õhukese polümeerikattega tabletti karbis"] ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000000388" ] ;
+         fhir:display [ fhir:v "Republic of Estonia" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072052"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000072083" ] ;
+         fhir:display [ fhir:v "Marketed" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073498" ] ;
+         fhir:display [ fhir:v "Box" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "200000003529" ] ;
+         fhir:display [ fhir:v "Cardboard" ]
+       ] )
+     ] ) ;
+     fhir:packaging ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000073496" ] ;
+           fhir:display [ fhir:v "Blister" ]
+         ] )
+       ] ;
+       fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+       fhir:material ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003210" ] ;
+           fhir:display [ fhir:v "Orientated PolyAmide" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003200" ] ;
+           fhir:display [ fhir:v "Aluminium" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003222" ] ;
+           fhir:display [ fhir:v "PolyVinyl Chloride" ]
+         ] )
+       ] ) ;
+       fhir:containedItem ( [
+         fhir:item [
+           fhir:reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID> ;
+             fhir:reference [ fhir:v "ManufacturedItemDefinition/Betaklav-500mg-125mg-EE-MID" ]
+           ]
+         ] ;
+         fhir:amount [
+           fhir:value [ fhir:v "14"^^xsd:decimal ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,615 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Bundle/017-ImovaxPolio-EE-FullProduct> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "017-ImovaxPolio-EE-FullProduct"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-ImovaxPolio-EE-IS-MedicinalProductDefinition"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-ImovaxPolio-EE-IS-MedicinalProductDefinition> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-ImovaxPolio-EE-IS-RegulatedAuthorization"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-ImovaxPolio-EE-IS-RegulatedAuthorization> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100010589-SanofiPasteur"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100010589-SanofiPasteur> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-ImovaxPolio-EE-IS-AdminProdDef"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-ImovaxPolio-EE-IS-AdminProdDef> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-ImovaxPolio-EE-IS-PackagedProductDefinition"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-ImovaxPolio-EE-IS-PackagedProductDefinition> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-ImovaxPolio-EE-IS-ManufacturedItemDefinition"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-ImovaxPolio-EE-IS-ManufacturedItemDefinition> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-ImovaxPolio-EE-IS-Ingredient-1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-ImovaxPolio-EE-IS-Ingredient-1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-ImovaxPolio-EE-IS-Ingredient-2"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-ImovaxPolio-EE-IS-Ingredient-2> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-ImovaxPolio-EE-IS-Ingredient-3"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-ImovaxPolio-EE-IS-Ingredient-3> )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-ImovaxPolio-EE-IS-MedicinalProductDefinition> a fhir:MedicinalProductDefinition ;
+  fhir:id [ fhir:v "ImovaxPolio-EE-IS-MedicinalProductDefinition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicinalProductDefinition_ImovaxPolio-EE-IS-MedicinalProductDefinition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicinalProductDefinition ImovaxPolio-EE-IS-MedicinalProductDefinition</b></p><a name=\"ImovaxPolio-EE-IS-MedicinalProductDefinition\"> </a><a name=\"hcImovaxPolio-EE-IS-MedicinalProductDefinition\"> </a><a name=\"ImovaxPolio-EE-IS-MedicinalProductDefinition-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/fhir/mpId</code>/EE-100010589-1025985</p><p><b>domain</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}\">Human use</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000005003 200000005004}\">Current</span></p><p><b>combinedPharmaceuticalDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000007 100000074050}\">Suspension for injection in pre-filled pen</span></p><p><b>indication</b>: </p><div><p>Poliomüeliidi ennetamine (esmane vaktsineerimine ja revaktsineerimine) väikelastel, lastel ja\ntäiskasvanutel.</p>\n</div><p><b>legalStatusOfSupply</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072051 100000072084}\">Medicinal product subject to medical prescription</span></p><p><b>classification</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000093533 100000096580}\">poliomyelitis, trivalent, inactivated, whole virus</span>, <span title=\"Codes:{http://www.whocc.no/atc J07BF03}\">poliomyelitis, trivalent, inactivated, whole virus</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Imovax Polio, süstesuspensioon süstlis</p><blockquote><p><b>part</b></p><p><b>part</b>: Imovax Polio</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000002}\">Invented name part</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: süstesuspensioon süstlis</p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000005}\">Pharmaceutical dose form part</span></p></blockquote><h3>Usages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Estonia</span></td><td><span title=\"Codes:{urn:ietf:bcp:47 et}\">Estonian</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/fhir/mpId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100010589-1025985" ]
+  ] ) ; # 
+  fhir:domain [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000012" ] ;
+       fhir:display [ fhir:v "Human use" ]
+     ] )
+  ] ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000005003"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000005004" ] ;
+       fhir:display [ fhir:v "Current" ]
+     ] )
+  ] ; # 
+  fhir:combinedPharmaceuticalDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000007"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000074050" ] ;
+       fhir:display [ fhir:v "Suspension for injection in pre-filled pen" ]
+     ] )
+  ] ; # 
+  fhir:indication [ fhir:v "Poliomüeliidi ennetamine (esmane vaktsineerimine ja revaktsineerimine) väikelastel, lastel ja\r\ntäiskasvanutel."] ; # 
+  fhir:legalStatusOfSupply [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072051"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072084" ] ;
+       fhir:display [ fhir:v "Medicinal product subject to medical prescription" ]
+     ] )
+  ] ; # 
+  fhir:classification ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000093533"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000096580" ] ;
+       fhir:display [ fhir:v "poliomyelitis, trivalent, inactivated, whole virus" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J07BF03" ] ;
+       fhir:display [ fhir:v "poliomyelitis, trivalent, inactivated, whole virus" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:productName [ fhir:v "Imovax Polio, süstesuspensioon süstlis" ] ;
+     fhir:part ( [
+       fhir:part [ fhir:v "Imovax Polio" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000002" ] ;
+           fhir:display [ fhir:v "Invented name part" ]
+         ] )
+       ]
+     ] [
+       fhir:part [ fhir:v "süstesuspensioon süstlis" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000005" ] ;
+           fhir:display [ fhir:v "Pharmaceutical dose form part" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:usage ( [
+       fhir:country [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000000388" ] ;
+           fhir:display [ fhir:v "Estonia" ]
+         ] )
+       ] ;
+       fhir:language [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "et" ] ;
+           fhir:display [ fhir:v "Estonian" ]
+         ] )
+       ]
+     ] )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-ImovaxPolio-EE-IS-RegulatedAuthorization> a fhir:RegulatedAuthorization ;
+  fhir:id [ fhir:v "ImovaxPolio-EE-IS-RegulatedAuthorization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RegulatedAuthorization_ImovaxPolio-EE-IS-RegulatedAuthorization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RegulatedAuthorization ImovaxPolio-EE-IS-RegulatedAuthorization</b></p><a name=\"ImovaxPolio-EE-IS-RegulatedAuthorization\"> </a><a name=\"hcImovaxPolio-EE-IS-RegulatedAuthorization\"> </a><a name=\"ImovaxPolio-EE-IS-RegulatedAuthorization-en-US\"> </a><p><b>identifier</b>: 301700</p><p><b>subject</b>: <a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#MedicinalProductDefinition_ImovaxPolio-EE-IS-MedicinalProductDefinition\">Bundle: type = collection</a></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000060 220000000061}\">Marketing Authorisation</span></p><p><b>region</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Estonia</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072049 100000072099}\">Valid</span></p><p><b>statusDate</b>: 2000-02-25</p><p><b>holder</b>: <a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#Organization_LOC-100010589-SanofiPasteur\">Bundle: type = collection</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "301700" ]
+  ] ) ; # 
+  fhir:subject ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/ImovaxPolio-EE-IS-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/ImovaxPolio-EE-IS-MedicinalProductDefinition" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000060"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "220000000061" ] ;
+       fhir:display [ fhir:v "Marketing Authorisation" ]
+     ] )
+  ] ; # 
+  fhir:region ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000388" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072049"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072099" ] ;
+       fhir:display [ fhir:v "Valid" ]
+     ] )
+  ] ; # 
+  fhir:statusDate [ fhir:v "2000-02-25"^^xsd:date] ; # 
+  fhir:holder [
+     fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100010589-SanofiPasteur> ;
+     fhir:reference [ fhir:v "Organization/LOC-100010589-SanofiPasteur" ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100010589-SanofiPasteur> a fhir:Organization ;
+  fhir:id [ fhir:v "LOC-100010589-SanofiPasteur"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_LOC-100010589-SanofiPasteur\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization LOC-100010589-SanofiPasteur</b></p><a name=\"LOC-100010589-SanofiPasteur\"> </a><a name=\"hcLOC-100010589-SanofiPasteur\"> </a><a name=\"LOC-100010589-SanofiPasteur-en-US\"> </a><p><b>identifier</b>: <code>https://spor.ema.europa.eu/v1/locations</code>/LOC-100010589</p><p><b>name</b>: Sanofi Pasteur</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/locations"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "LOC-100010589" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Sanofi Pasteur"] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-ImovaxPolio-EE-IS-AdminProdDef> a fhir:AdministrableProductDefinition ;
+  fhir:id [ fhir:v "ImovaxPolio-EE-IS-AdminProdDef"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AdministrableProductDefinition_ImovaxPolio-EE-IS-AdminProdDef\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AdministrableProductDefinition ImovaxPolio-EE-IS-AdminProdDef</b></p><a name=\"ImovaxPolio-EE-IS-AdminProdDef\"> </a><a name=\"hcImovaxPolio-EE-IS-AdminProdDef\"> </a><a name=\"ImovaxPolio-EE-IS-AdminProdDef-en-US\"> </a><p><b>status</b>: Active</p><p><b>formOf</b>: <a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#MedicinalProductDefinition_ImovaxPolio-EE-IS-MedicinalProductDefinition\">Bundle: type = collection</a></p><p><b>administrableDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073864}\">Suspension for injection</span></p><p><b>producedFrom</b>: <a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#ManufacturedItemDefinition_ImovaxPolio-EE-IS-ManufacturedItemDefinition\">Bundle: type = collection</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073345 100000073600}\">Intramuscular use</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:formOf ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/ImovaxPolio-EE-IS-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/ImovaxPolio-EE-IS-MedicinalProductDefinition" ]
+  ] ) ; # 
+  fhir:administrableDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073864" ] ;
+       fhir:display [ fhir:v "Suspension for injection" ]
+     ] )
+  ] ; # 
+  fhir:producedFrom ( [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/ImovaxPolio-EE-IS-ManufacturedItemDefinition> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/ImovaxPolio-EE-IS-ManufacturedItemDefinition" ]
+  ] ) ; # 
+  fhir:routeOfAdministration ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073345"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073600" ] ;
+         fhir:display [ fhir:v "Intramuscular use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-ImovaxPolio-EE-IS-PackagedProductDefinition> a fhir:PackagedProductDefinition ;
+  fhir:id [ fhir:v "ImovaxPolio-EE-IS-PackagedProductDefinition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PackagedProductDefinition_ImovaxPolio-EE-IS-PackagedProductDefinition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PackagedProductDefinition ImovaxPolio-EE-IS-PackagedProductDefinition</b></p><a name=\"ImovaxPolio-EE-IS-PackagedProductDefinition\"> </a><a name=\"hcImovaxPolio-EE-IS-PackagedProductDefinition\"> </a><a name=\"ImovaxPolio-EE-IS-PackagedProductDefinition-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/example/pcid</code>/?ngen-9?</p><p><b>packageFor</b>: <a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#MedicinalProductDefinition_ImovaxPolio-EE-IS-MedicinalProductDefinition\">Bundle: type = collection</a></p><p><b>containedItemQuantity</b>: 1 Pen<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002135 = 'Pen')</span></p><p><b>description</b>: </p><div><p>0,5 ml süstesuspensiooni eeltäidetud süstlas (I tüüpi klaas), mis on varustatud kolbkorgiga\n(klorobutüülist) – karbis 1 tk.</p>\n</div><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Estonia</span></td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072052 100000072083}\">Marketed</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}\">Cardboard</span></p><blockquote><p><b>packaging</b></p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/example/pcid"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:packageFor ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/ImovaxPolio-EE-IS-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/ImovaxPolio-EE-IS-MedicinalProductDefinition" ]
+  ] ) ; # 
+  fhir:containedItemQuantity ( [
+     fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Pen" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002135" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "0,5 ml süstesuspensiooni eeltäidetud süstlas (I tüüpi klaas), mis on varustatud kolbkorgiga\r\n(klorobutüülist) – karbis 1 tk."] ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000000388" ] ;
+         fhir:display [ fhir:v "Estonia" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072052"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000072083" ] ;
+         fhir:display [ fhir:v "Marketed" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073498" ] ;
+         fhir:display [ fhir:v "Box" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "200000003529" ] ;
+         fhir:display [ fhir:v "Cardboard" ]
+       ] )
+     ] ) ;
+     fhir:packaging ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000073543" ] ;
+           fhir:display [ fhir:v "Prefilled pen" ]
+         ] )
+       ] ;
+       fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+       fhir:material ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003203" ] ;
+           fhir:display [ fhir:v "Glass" ]
+         ] )
+       ] ) ;
+       fhir:containedItem ( [
+         fhir:item [
+           fhir:reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/ImovaxPolio-EE-IS-ManufacturedItemDefinition> ;
+             fhir:reference [ fhir:v "ManufacturedItemDefinition/ImovaxPolio-EE-IS-ManufacturedItemDefinition" ]
+           ]
+         ] ;
+         fhir:amount [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "Pen" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000002135" ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-ImovaxPolio-EE-IS-ManufacturedItemDefinition> a fhir:ManufacturedItemDefinition ;
+  fhir:id [ fhir:v "ImovaxPolio-EE-IS-ManufacturedItemDefinition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ManufacturedItemDefinition_ImovaxPolio-EE-IS-ManufacturedItemDefinition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ManufacturedItemDefinition ImovaxPolio-EE-IS-ManufacturedItemDefinition</b></p><a name=\"ImovaxPolio-EE-IS-ManufacturedItemDefinition\"> </a><a name=\"hcImovaxPolio-EE-IS-ManufacturedItemDefinition\"> </a><a name=\"ImovaxPolio-EE-IS-ManufacturedItemDefinition-en-US\"> </a><p><b>status</b>: Active</p><p><b>manufacturedDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073864}\">Suspension for injection</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002135}\">Pen</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturedDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073864" ] ;
+       fhir:display [ fhir:v "Suspension for injection" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002135" ] ;
+       fhir:display [ fhir:v "Pen" ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-ImovaxPolio-EE-IS-Ingredient-1> a fhir:Ingredient ;
+  fhir:id [ fhir:v "ImovaxPolio-EE-IS-Ingredient-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Ingredient_ImovaxPolio-EE-IS-Ingredient-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Ingredient ImovaxPolio-EE-IS-Ingredient-1</b></p><a name=\"ImovaxPolio-EE-IS-Ingredient-1\"> </a><a name=\"hcImovaxPolio-EE-IS-Ingredient-1\"> </a><a name=\"ImovaxPolio-EE-IS-Ingredient-1-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: </p><ul><li><a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#MedicinalProductDefinition_ImovaxPolio-EE-IS-MedicinalProductDefinition\">Bundle: type = collection</a></li><li><a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#ManufacturedItemDefinition_ImovaxPolio-EE-IS-ManufacturedItemDefinition\">Bundle: type = collection</a></li><li><a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#AdministrableProductDefinition_ImovaxPolio-EE-IS-AdminProdDef\">Bundle: type = collection</a></li></ul><p><b>role</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000089279}\">Poliovirus (inactivated) type 1 (Mahoney strain)</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 29 D antigen unit(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110782 = 'D antigen unit(s)')</span>/0.5 millilitre(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110662 = 'millilitre(s)')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000089279}\">Poliovirus (inactivated) type 1 (Mahoney strain)</span></td></tr></table><p><b>strength</b>: 29 D antigen unit(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110782 = 'D antigen unit(s)')</span>/0.5 millilitre(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110662 = 'millilitre(s)')</span></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/ImovaxPolio-EE-IS-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/ImovaxPolio-EE-IS-MedicinalProductDefinition" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/ImovaxPolio-EE-IS-ManufacturedItemDefinition> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/ImovaxPolio-EE-IS-ManufacturedItemDefinition" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/ImovaxPolio-EE-IS-AdminProdDef> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/ImovaxPolio-EE-IS-AdminProdDef" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000089279" ] ;
+           fhir:display [ fhir:v "Poliovirus (inactivated) type 1 (Mahoney strain)" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:presentation [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "29"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "D antigen unit(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110782" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "0.5"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "millilitre(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110662" ]
+         ]
+       ] ;
+       fhir:referenceStrength ( [
+         fhir:substance [
+           fhir:concept [
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "100000089279" ] ;
+               fhir:display [ fhir:v "Poliovirus (inactivated) type 1 (Mahoney strain)" ]
+             ] )
+           ]
+         ] ;
+         fhir:strength [
+           a fhir:Ratio ;
+           fhir:numerator [
+             fhir:value [ fhir:v "29"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "D antigen unit(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110782" ]
+           ] ;
+           fhir:denominator [
+             fhir:value [ fhir:v "0.5"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "millilitre(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110662" ]
+           ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-ImovaxPolio-EE-IS-Ingredient-2> a fhir:Ingredient ;
+  fhir:id [ fhir:v "ImovaxPolio-EE-IS-Ingredient-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Ingredient_ImovaxPolio-EE-IS-Ingredient-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Ingredient ImovaxPolio-EE-IS-Ingredient-2</b></p><a name=\"ImovaxPolio-EE-IS-Ingredient-2\"> </a><a name=\"hcImovaxPolio-EE-IS-Ingredient-2\"> </a><a name=\"ImovaxPolio-EE-IS-Ingredient-2-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: </p><ul><li><a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#MedicinalProductDefinition_ImovaxPolio-EE-IS-MedicinalProductDefinition\">Bundle: type = collection</a></li><li><a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#ManufacturedItemDefinition_ImovaxPolio-EE-IS-ManufacturedItemDefinition\">Bundle: type = collection</a></li><li><a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#AdministrableProductDefinition_ImovaxPolio-EE-IS-AdminProdDef\">Bundle: type = collection</a></li></ul><p><b>role</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000089268}\">Poliovirus (inactivated) type 2 (MEF-1 strain)</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 7 D antigen unit(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110782 = 'D antigen unit(s)')</span>/0.5 millilitre(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110662 = 'millilitre(s)')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000089268}\">Poliovirus (inactivated) type 2 (MEF-1 strain)</span></td></tr></table><p><b>strength</b>: 7 D antigen unit(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110782 = 'D antigen unit(s)')</span>/0.5 millilitre(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110662 = 'millilitre(s)')</span></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/ImovaxPolio-EE-IS-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/ImovaxPolio-EE-IS-MedicinalProductDefinition" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/ImovaxPolio-EE-IS-ManufacturedItemDefinition> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/ImovaxPolio-EE-IS-ManufacturedItemDefinition" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/ImovaxPolio-EE-IS-AdminProdDef> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/ImovaxPolio-EE-IS-AdminProdDef" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000089268" ] ;
+           fhir:display [ fhir:v "Poliovirus (inactivated) type 2 (MEF-1 strain)" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:presentation [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "7"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "D antigen unit(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110782" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "0.5"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "millilitre(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110662" ]
+         ]
+       ] ;
+       fhir:referenceStrength ( [
+         fhir:substance [
+           fhir:concept [
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "100000089268" ] ;
+               fhir:display [ fhir:v "Poliovirus (inactivated) type 2 (MEF-1 strain)" ]
+             ] )
+           ]
+         ] ;
+         fhir:strength [
+           a fhir:Ratio ;
+           fhir:numerator [
+             fhir:value [ fhir:v "7"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "D antigen unit(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110782" ]
+           ] ;
+           fhir:denominator [
+             fhir:value [ fhir:v "0.5"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "millilitre(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110662" ]
+           ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-ImovaxPolio-EE-IS-Ingredient-3> a fhir:Ingredient ;
+  fhir:id [ fhir:v "ImovaxPolio-EE-IS-Ingredient-3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Ingredient_ImovaxPolio-EE-IS-Ingredient-3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Ingredient ImovaxPolio-EE-IS-Ingredient-3</b></p><a name=\"ImovaxPolio-EE-IS-Ingredient-3\"> </a><a name=\"hcImovaxPolio-EE-IS-Ingredient-3\"> </a><a name=\"ImovaxPolio-EE-IS-Ingredient-3-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: </p><ul><li><a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#MedicinalProductDefinition_ImovaxPolio-EE-IS-MedicinalProductDefinition\">Bundle: type = collection</a></li><li><a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#ManufacturedItemDefinition_ImovaxPolio-EE-IS-ManufacturedItemDefinition\">Bundle: type = collection</a></li><li><a href=\"Bundle-017-ImovaxPolio-EE-FullProduct.html#AdministrableProductDefinition_ImovaxPolio-EE-IS-AdminProdDef\">Bundle: type = collection</a></li></ul><p><b>role</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000089267}\">Poliovirus (inactivated) type 3 (Saukett strain)</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 26 D antigen unit(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110782 = 'D antigen unit(s)')</span>/0.5 millilitre(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110662 = 'millilitre(s)')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000089267}\">Poliovirus (inactivated) type 3 (Saukett strain)</span></td></tr></table><p><b>strength</b>: 26 D antigen unit(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110782 = 'D antigen unit(s)')</span>/0.5 millilitre(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110662 = 'millilitre(s)')</span></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/ImovaxPolio-EE-IS-MedicinalProductDefinition> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/ImovaxPolio-EE-IS-MedicinalProductDefinition" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/ImovaxPolio-EE-IS-ManufacturedItemDefinition> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/ImovaxPolio-EE-IS-ManufacturedItemDefinition" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/ImovaxPolio-EE-IS-AdminProdDef> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/ImovaxPolio-EE-IS-AdminProdDef" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000089267" ] ;
+           fhir:display [ fhir:v "Poliovirus (inactivated) type 3 (Saukett strain)" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:presentation [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "26"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "D antigen unit(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110782" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "0.5"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "millilitre(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110662" ]
+         ]
+       ] ;
+       fhir:referenceStrength ( [
+         fhir:substance [
+           fhir:concept [
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "100000089267" ] ;
+               fhir:display [ fhir:v "Poliovirus (inactivated) type 3 (Saukett strain)" ]
+             ] )
+           ]
+         ] ;
+         fhir:strength [
+           a fhir:Ratio ;
+           fhir:numerator [
+             fhir:value [ fhir:v "26"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "D antigen unit(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110782" ]
+           ] ;
+           fhir:denominator [
+             fhir:value [ fhir:v "0.5"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "millilitre(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110662" ]
+           ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

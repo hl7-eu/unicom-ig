@@ -1,0 +1,593 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Bundle/005-CanifugCremolum-EE-FullProduct> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "005-CanifugCremolum-EE-FullProduct"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-CanifugCremolum-EE-MPD"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-CanifugCremolum-EE-MPD> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-CanifugCremolum-EE-RA"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-CanifugCremolum-EE-RA> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100004795-Wolff-Arzneimittel"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100004795-Wolff-Arzneimittel> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-CanifugCremolum-10mg1g-Cream-EE-APD"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-CanifugCremolum-10mg1g-Cream-EE-APD> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-CanifugCremolum-100mg-Pessary-EE-APD"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-CanifugCremolum-100mg-Pessary-EE-APD> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-CanifugCremolum-10mg1g-Cream-EE-MID"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-CanifugCremolum-10mg1g-Cream-EE-MID> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-CanifugCremolum-100mg-Pessary-EE-MID"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-CanifugCremolum-100mg-Pessary-EE-MID> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CanifugCremolum-10mg1g-Cream-EE-I"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CanifugCremolum-10mg1g-Cream-EE-I> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CanifugCremolum-100mg-Pessary-EE-I"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CanifugCremolum-100mg-Pessary-EE-I> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-CanifugCremolum-EE-PPD-1033692"^^xsd:anyURI ] ;
+     fhir:resource ( <https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-CanifugCremolum-EE-PPD-1033692> )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition-CanifugCremolum-EE-MPD> a fhir:MedicinalProductDefinition ;
+  fhir:id [ fhir:v "CanifugCremolum-EE-MPD"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicinalProductDefinition_CanifugCremolum-EE-MPD\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicinalProductDefinition CanifugCremolum-EE-MPD</b></p><a name=\"CanifugCremolum-EE-MPD\"> </a><a name=\"hcCanifugCremolum-EE-MPD\"> </a><a name=\"hcCanifugCremolum-EE-MPD-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/fhir/mpId</code>/EE-100004795-10280, <code>http://ema.europa.eu/fhir/pmsId</code>/EE00000003</p><p><b>domain</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000004 100000000012}\">Human use</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000005003 200000005004}\">Current</span></p><p><b>combinedPharmaceuticalDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000008 100000173972}\">Cream + pessary</span></p><p><b>legalStatusOfSupply</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072051 100000072084}\">Medicinal Product subject to medical prescription</span></p><p><b>classification</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000093533 100000095693}\">clotrimazole</span>, <span title=\"Codes:{http://www.whocc.no/atc G01AF02}\">clotrimazole</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: Canifug Cremolum</p><h3>Parts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Part</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Canifug Cremolum</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000000 220000000002}\">Invented name part</span></td></tr></table><h3>Usages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Language</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Republic of Estonia</span></td><td><span title=\"Codes:{urn:ietf:bcp:47 et}\">Estonian</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/fhir/mpId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100004795-10280" ]
+  ] [
+     fhir:system [ fhir:v "http://ema.europa.eu/fhir/pmsId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE00000003" ]
+  ] ) ; # 
+  fhir:domain [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000012" ] ;
+       fhir:display [ fhir:v "Human use" ]
+     ] )
+  ] ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000005003"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000005004" ] ;
+       fhir:display [ fhir:v "Current" ]
+     ] )
+  ] ; # 
+  fhir:combinedPharmaceuticalDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000008"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000173972" ] ;
+       fhir:display [ fhir:v "Cream + pessary" ]
+     ] )
+  ] ; # 
+  fhir:legalStatusOfSupply [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072051"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072084" ] ;
+       fhir:display [ fhir:v "Medicinal Product subject to medical prescription" ]
+     ] )
+  ] ; # 
+  fhir:classification ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000093533"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000095693" ] ;
+       fhir:display [ fhir:v "clotrimazole" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "G01AF02" ] ;
+       fhir:display [ fhir:v "clotrimazole" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:productName [ fhir:v "Canifug Cremolum" ] ;
+     fhir:part ( [
+       fhir:part [ fhir:v "Canifug Cremolum" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000000"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "220000000002" ] ;
+           fhir:display [ fhir:v "Invented name part" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:usage ( [
+       fhir:country [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000000388" ] ;
+           fhir:display [ fhir:v "Republic of Estonia" ]
+         ] )
+       ] ;
+       fhir:language [
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "et" ] ;
+           fhir:display [ fhir:v "Estonian" ]
+         ] )
+       ]
+     ] )
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization-CanifugCremolum-EE-RA> a fhir:RegulatedAuthorization ;
+  fhir:id [ fhir:v "CanifugCremolum-EE-RA"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RegulatedAuthorization_CanifugCremolum-EE-RA\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RegulatedAuthorization CanifugCremolum-EE-RA</b></p><a name=\"CanifugCremolum-EE-RA\"> </a><a name=\"hcCanifugCremolum-EE-RA\"> </a><a name=\"hcCanifugCremolum-EE-RA-en-US\"> </a><p><b>identifier</b>: 366201</p><p><b>subject</b>: <a href=\"MedicinalProductDefinition-CanifugCremolum-EE-MPD.html\">MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100004795-10280,http://ema.europa.eu/fhir/pmsId#EE00000003; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Cream + pessary; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = clotrimazole,clotrimazole</a></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/220000000060 220000000061}\">Marketing Authorisation</span></p><p><b>region</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Republic of Estonia</span></p><p><b>status</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072049 200000017708}\">Valid - Renewed/Varied</span></p><p><b>statusDate</b>: 2011-10-19</p><p><b>holder</b>: <a href=\"Organization-LOC-100004795-Wolff-Arzneimittel.html\">Organization Dr. August Wolff GmbH &amp; Co. KG Arzneimittel</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "366201" ]
+  ] ) ; # 
+  fhir:subject ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/CanifugCremolum-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/CanifugCremolum-EE-MPD" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/220000000060"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "220000000061" ] ;
+       fhir:display [ fhir:v "Marketing Authorisation" ]
+     ] )
+  ] ; # 
+  fhir:region ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000000388" ] ;
+       fhir:display [ fhir:v "Republic of Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:status [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072049"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000017708" ] ;
+       fhir:display [ fhir:v "Valid - Renewed/Varied" ]
+     ] )
+  ] ; # 
+  fhir:statusDate [ fhir:v "2011-10-19"^^xsd:date] ; # 
+  fhir:holder [
+     fhir:link <http://unicom-project.eu/fhir/Organization/LOC-100004795-Wolff-Arzneimittel> ;
+     fhir:reference [ fhir:v "Organization/LOC-100004795-Wolff-Arzneimittel" ]
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization-LOC-100004795-Wolff-Arzneimittel> a fhir:Organization ;
+  fhir:id [ fhir:v "LOC-100004795-Wolff-Arzneimittel"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_LOC-100004795-Wolff-Arzneimittel\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization LOC-100004795-Wolff-Arzneimittel</b></p><a name=\"LOC-100004795-Wolff-Arzneimittel\"> </a><a name=\"hcLOC-100004795-Wolff-Arzneimittel\"> </a><a name=\"hcLOC-100004795-Wolff-Arzneimittel-en-US\"> </a><p><b>identifier</b>: <code>https://spor.ema.europa.eu/v1/locations</code>/LOC-100004795</p><p><b>name</b>: Dr. August Wolff GmbH &amp; Co. KG Arzneimittel</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/locations"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "LOC-100004795" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Dr. August Wolff GmbH & Co. KG Arzneimittel"] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-CanifugCremolum-10mg1g-Cream-EE-APD> a fhir:AdministrableProductDefinition ;
+  fhir:id [ fhir:v "CanifugCremolum-10mg1g-Cream-EE-APD"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AdministrableProductDefinition_CanifugCremolum-10mg1g-Cream-EE-APD\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AdministrableProductDefinition CanifugCremolum-10mg1g-Cream-EE-APD</b></p><a name=\"CanifugCremolum-10mg1g-Cream-EE-APD\"> </a><a name=\"hcCanifugCremolum-10mg1g-Cream-EE-APD\"> </a><a name=\"hcCanifugCremolum-10mg1g-Cream-EE-APD-en-US\"> </a><p><b>status</b>: Active</p><p><b>formOf</b>: <a href=\"MedicinalProductDefinition-CanifugCremolum-EE-MPD.html\">MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100004795-10280,http://ema.europa.eu/fhir/pmsId#EE00000003; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Cream + pessary; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = clotrimazole,clotrimazole</a></p><p><b>administrableDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073712}\">Cream</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002156}\">Tube</span></p><p><b>producedFrom</b>: <a href=\"ManufacturedItemDefinition-CanifugCremolum-10mg1g-Cream-EE-MID.html\">ManufacturedItemDefinition: status = active; manufacturedDoseForm = Cream; unitOfPresentation = Tube</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073345 100000073566}\">Cutaneous use</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:formOf ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/CanifugCremolum-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/CanifugCremolum-EE-MPD" ]
+  ] ) ; # 
+  fhir:administrableDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073712" ] ;
+       fhir:display [ fhir:v "Cream" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002156" ] ;
+       fhir:display [ fhir:v "Tube" ]
+     ] )
+  ] ; # 
+  fhir:producedFrom ( [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CanifugCremolum-10mg1g-Cream-EE-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/CanifugCremolum-10mg1g-Cream-EE-MID" ]
+  ] ) ; # 
+  fhir:routeOfAdministration ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073345"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073566" ] ;
+         fhir:display [ fhir:v "Cutaneous use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition-CanifugCremolum-100mg-Pessary-EE-APD> a fhir:AdministrableProductDefinition ;
+  fhir:id [ fhir:v "CanifugCremolum-100mg-Pessary-EE-APD"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AdministrableProductDefinition_CanifugCremolum-100mg-Pessary-EE-APD\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AdministrableProductDefinition CanifugCremolum-100mg-Pessary-EE-APD</b></p><a name=\"CanifugCremolum-100mg-Pessary-EE-APD\"> </a><a name=\"hcCanifugCremolum-100mg-Pessary-EE-APD\"> </a><a name=\"hcCanifugCremolum-100mg-Pessary-EE-APD-en-US\"> </a><p><b>status</b>: Active</p><p><b>formOf</b>: <a href=\"MedicinalProductDefinition-CanifugCremolum-EE-MPD.html\">MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100004795-10280,http://ema.europa.eu/fhir/pmsId#EE00000003; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Cream + pessary; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = clotrimazole,clotrimazole</a></p><p><b>administrableDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073815}\">Pessary</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002137}\">Pessary</span></p><p><b>producedFrom</b>: <a href=\"ManufacturedItemDefinition-CanifugCremolum-100mg-Pessary-EE-MID.html\">ManufacturedItemDefinition: status = active; manufacturedDoseForm = Pessary; unitOfPresentation = Pessary</a></p><h3>RouteOfAdministrations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073345 100000073639}\">Vaginal use</span></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:formOf ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/CanifugCremolum-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/CanifugCremolum-EE-MPD" ]
+  ] ) ; # 
+  fhir:administrableDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073815" ] ;
+       fhir:display [ fhir:v "Pessary" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002137" ] ;
+       fhir:display [ fhir:v "Pessary" ]
+     ] )
+  ] ; # 
+  fhir:producedFrom ( [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID" ]
+  ] ) ; # 
+  fhir:routeOfAdministration ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073345"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073639" ] ;
+         fhir:display [ fhir:v "Vaginal use" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-CanifugCremolum-10mg1g-Cream-EE-MID> a fhir:ManufacturedItemDefinition ;
+  fhir:id [ fhir:v "CanifugCremolum-10mg1g-Cream-EE-MID"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ManufacturedItemDefinition_CanifugCremolum-10mg1g-Cream-EE-MID\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ManufacturedItemDefinition CanifugCremolum-10mg1g-Cream-EE-MID</b></p><a name=\"CanifugCremolum-10mg1g-Cream-EE-MID\"> </a><a name=\"hcCanifugCremolum-10mg1g-Cream-EE-MID\"> </a><a name=\"hcCanifugCremolum-10mg1g-Cream-EE-MID-en-US\"> </a><p><b>status</b>: Active</p><p><b>manufacturedDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073712}\">Cream</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002156}\">Tube</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturedDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073712" ] ;
+       fhir:display [ fhir:v "Cream" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002156" ] ;
+       fhir:display [ fhir:v "Tube" ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition-CanifugCremolum-100mg-Pessary-EE-MID> a fhir:ManufacturedItemDefinition ;
+  fhir:id [ fhir:v "CanifugCremolum-100mg-Pessary-EE-MID"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ManufacturedItemDefinition_CanifugCremolum-100mg-Pessary-EE-MID\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ManufacturedItemDefinition CanifugCremolum-100mg-Pessary-EE-MID</b></p><a name=\"CanifugCremolum-100mg-Pessary-EE-MID\"> </a><a name=\"hcCanifugCremolum-100mg-Pessary-EE-MID\"> </a><a name=\"hcCanifugCremolum-100mg-Pessary-EE-MID-en-US\"> </a><p><b>status</b>: Active</p><p><b>manufacturedDoseForm</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000004 100000073815}\">Pessary</span></p><p><b>unitOfPresentation</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000000014 200000002137}\">Pessary</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturedDoseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000004"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000073815" ] ;
+       fhir:display [ fhir:v "Pessary" ]
+     ] )
+  ] ; # 
+  fhir:unitOfPresentation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "200000002137" ] ;
+       fhir:display [ fhir:v "Pessary" ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CanifugCremolum-10mg1g-Cream-EE-I> a fhir:Ingredient ;
+  fhir:id [ fhir:v "CanifugCremolum-10mg1g-Cream-EE-I"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Ingredient_CanifugCremolum-10mg1g-Cream-EE-I\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Ingredient CanifugCremolum-10mg1g-Cream-EE-I</b></p><a name=\"CanifugCremolum-10mg1g-Cream-EE-I\"> </a><a name=\"hcCanifugCremolum-10mg1g-Cream-EE-I\"> </a><a name=\"hcCanifugCremolum-10mg1g-Cream-EE-I-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: </p><ul><li><a href=\"MedicinalProductDefinition-CanifugCremolum-EE-MPD.html\">MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100004795-10280,http://ema.europa.eu/fhir/pmsId#EE00000003; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Cream + pessary; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = clotrimazole,clotrimazole</a></li><li><a href=\"ManufacturedItemDefinition-CanifugCremolum-10mg1g-Cream-EE-MID.html\">ManufacturedItemDefinition: status = active; manufacturedDoseForm = Cream; unitOfPresentation = Tube</a></li><li><a href=\"AdministrableProductDefinition-CanifugCremolum-10mg1g-Cream-EE-APD.html\">AdministrableProductDefinition: status = active; administrableDoseForm = Cream; unitOfPresentation = Tube</a></li></ul><p><b>role</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000092074}\">CLOTRIMAZOLE</span></td></tr></table><h3>Strengths</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concentration[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')</span>/1 gram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110654 = 'gram(s)')</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/CanifugCremolum-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/CanifugCremolum-EE-MPD" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CanifugCremolum-10mg1g-Cream-EE-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/CanifugCremolum-10mg1g-Cream-EE-MID" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/CanifugCremolum-10mg1g-Cream-EE-APD> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/CanifugCremolum-10mg1g-Cream-EE-APD" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000092074" ] ;
+           fhir:display [ fhir:v "CLOTRIMAZOLE" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:concentration [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "milligram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110655" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "gram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110654" ]
+         ]
+       ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient-CanifugCremolum-100mg-Pessary-EE-I> a fhir:Ingredient ;
+  fhir:id [ fhir:v "CanifugCremolum-100mg-Pessary-EE-I"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Ingredient_CanifugCremolum-100mg-Pessary-EE-I\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Ingredient CanifugCremolum-100mg-Pessary-EE-I</b></p><a name=\"CanifugCremolum-100mg-Pessary-EE-I\"> </a><a name=\"hcCanifugCremolum-100mg-Pessary-EE-I\"> </a><a name=\"hcCanifugCremolum-100mg-Pessary-EE-I-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: </p><ul><li><a href=\"MedicinalProductDefinition-CanifugCremolum-EE-MPD.html\">MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100004795-10280,http://ema.europa.eu/fhir/pmsId#EE00000003; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Cream + pessary; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = clotrimazole,clotrimazole</a></li><li><a href=\"ManufacturedItemDefinition-CanifugCremolum-100mg-Pessary-EE-MID.html\">ManufacturedItemDefinition: status = active; manufacturedDoseForm = Pessary; unitOfPresentation = Pessary</a></li><li><a href=\"AdministrableProductDefinition-CanifugCremolum-100mg-Pessary-EE-APD.html\">AdministrableProductDefinition: status = active; administrableDoseForm = Pessary; unitOfPresentation = Pessary</a></li></ul><p><b>role</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000092074}\">CLOTRIMAZOLE</span></td></tr></table><h3>Strengths</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Presentation[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>100 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')</span>/1 Pessary<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002137 = 'Pessary')</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/CanifugCremolum-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/CanifugCremolum-EE-MPD" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/CanifugCremolum-100mg-Pessary-EE-APD> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/CanifugCremolum-100mg-Pessary-EE-APD" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000092074" ] ;
+           fhir:display [ fhir:v "CLOTRIMAZOLE" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:presentation [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "milligram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110655" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "Pessary" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000002137" ]
+         ]
+       ]
+     ] )
+  ] . # 
+
+<https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition-CanifugCremolum-EE-PPD-1033692> a fhir:PackagedProductDefinition ;
+  fhir:id [ fhir:v "CanifugCremolum-EE-PPD-1033692"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"^^xsd:anyURI ;
+       fhir:link <http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PackagedProductDefinition_CanifugCremolum-EE-PPD-1033692\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PackagedProductDefinition CanifugCremolum-EE-PPD-1033692</b></p><a name=\"CanifugCremolum-EE-PPD-1033692\"> </a><a name=\"hcCanifugCremolum-EE-PPD-1033692\"> </a><a name=\"hcCanifugCremolum-EE-PPD-1033692-en-US\"> </a><p><b>identifier</b>: <code>http://ema.europa.eu/example/pcid</code>/EE-100004795-10280-1033692</p><p><b>packageFor</b>: <a href=\"MedicinalProductDefinition-CanifugCremolum-EE-MPD.html\">MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100004795-10280,http://ema.europa.eu/fhir/pmsId#EE00000003; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Cream + pessary; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = clotrimazole,clotrimazole</a></p><p><b>containedItemQuantity</b>: 6 Pessary<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002137 = 'Pessary')</span>, 1 Tube<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002156 = 'Tube')</span></p><p><b>description</b>: </p><div><p>Alu/PE-fooliumist valmistatud ribapakend, mis on asetatud väliskarpi. Kreem on alumiiniumtuubis ja omakorda pappkarbis. Kombineeritud pakend sisaldab: 6 vaginaalsuposiiti ja 20 g kreemi</p>\n</div><h3>MarketingStatuses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Country</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000000002 100000000388}\">Republic of Estonia</span></td><td><span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072052 100000072083}\">Marketed</span></td></tr></table><blockquote><p><b>packaging</b></p><p><b>type</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000073346 100000073498}\">Box</span></p><p><b>quantity</b>: 1</p><p><b>material</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/200000003199 200000003529}\">Cardboard</span></p><blockquote><p><b>packaging</b></p></blockquote><blockquote><p><b>packaging</b></p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://ema.europa.eu/example/pcid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EE-100004795-10280-1033692" ]
+  ] ) ; # 
+  fhir:packageFor ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/CanifugCremolum-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/CanifugCremolum-EE-MPD" ]
+  ] ) ; # 
+  fhir:containedItemQuantity ( [
+     fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Pessary" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002137" ]
+  ] [
+     fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Tube" ] ;
+     fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "200000002156" ]
+  ] ) ; # 
+  fhir:description [ fhir:v "Alu/PE-fooliumist valmistatud ribapakend, mis on asetatud väliskarpi. Kreem on alumiiniumtuubis ja omakorda pappkarbis. Kombineeritud pakend sisaldab: 6 vaginaalsuposiiti ja 20 g kreemi"] ; # 
+  fhir:marketingStatus ( [
+     fhir:country [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000000388" ] ;
+         fhir:display [ fhir:v "Republic of Estonia" ]
+       ] )
+     ] ;
+     fhir:status [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072052"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000072083" ] ;
+         fhir:display [ fhir:v "Marketed" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:packaging [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "100000073498" ] ;
+         fhir:display [ fhir:v "Box" ]
+       ] )
+     ] ;
+     fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+     fhir:material ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "200000003529" ] ;
+         fhir:display [ fhir:v "Cardboard" ]
+       ] )
+     ] ) ;
+     fhir:packaging ( [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000073559" ] ;
+           fhir:display [ fhir:v "Strip" ]
+         ] )
+       ] ;
+       fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+       fhir:material ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003200" ] ;
+           fhir:display [ fhir:v "Aluminium" ]
+         ] )
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003214" ] ;
+           fhir:display [ fhir:v "PolyEthylene" ]
+         ] )
+       ] ) ;
+       fhir:containedItem ( [
+         fhir:item [
+           fhir:reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID> ;
+             fhir:reference [ fhir:v "ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID" ]
+           ]
+         ] ;
+         fhir:amount [
+           fhir:value [ fhir:v "6"^^xsd:decimal ]
+         ]
+       ] )
+     ] [
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000073346"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000073561" ] ;
+           fhir:display [ fhir:v "Tube" ]
+         ] )
+       ] ;
+       fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+       fhir:material ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000003199"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000003200" ] ;
+           fhir:display [ fhir:v "Aluminium" ]
+         ] )
+       ] ) ;
+       fhir:containedItem ( [
+         fhir:item [
+           fhir:reference [
+             fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/CanifugCremolum-10mg1g-Cream-EE-MID> ;
+             fhir:reference [ fhir:v "ManufacturedItemDefinition/CanifugCremolum-10mg1g-Cream-EE-MID" ]
+           ]
+         ] ;
+         fhir:amount [
+           fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "gram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110654" ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

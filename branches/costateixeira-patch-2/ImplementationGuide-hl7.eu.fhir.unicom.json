@@ -1,0 +1,2743 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "hl7.eu.fhir.unicom",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>UnicomIG</h2><p>The official URL for this implementation guide is: </p><pre>http://unicom-project.eu/fhir/ImplementationGuide/hl7.eu.fhir.unicom</pre><div><p>UnicomIG</p>\n</div></div>"
+  },
+  "url" : "http://unicom-project.eu/fhir/ImplementationGuide/hl7.eu.fhir.unicom",
+  "version" : "0.1.0",
+  "name" : "UnicomIG",
+  "title" : "UnicomIG",
+  "status" : "draft",
+  "date" : "2023-10-17T08:02:36+00:00",
+  "publisher" : "UNICOM",
+  "contact" : [{
+    "name" : "UNICOM",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://unicom-project.eu"
+    }]
+  }],
+  "description" : "UnicomIG",
+  "packageId" : "hl7.eu.fhir.unicom",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["5.0.0"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r5",
+    "version" : "5.3.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r5",
+    "version" : "1.0.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#current"
+    }],
+    "grouping" : [{
+      "id" : "LogicalModel",
+      "name" : "Logical models",
+      "description" : "Logical data models as FHIR resources"
+    },
+    {
+      "id" : "Regulatory",
+      "name" : "Regulatory profiles",
+      "description" : "Profiles for regulatory data, EMA IG and IDMP compliant"
+    },
+    {
+      "id" : "Relaxed",
+      "name" : "Data transformation profiles",
+      "description" : "Intermediate data transition profiles, that follow the structure of IDMP, but are less strict"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/001-Agen5mg-EE-FullProduct"
+      },
+      "name" : "001-Agen5mg-EE-FullProduct",
+      "description" : "Agen 5mg Tablet. Estonia. Simple example of one full product as a bundle. Packages, PCIDs, differ by material.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/002-Agen10mg-EE-FullProduct"
+      },
+      "name" : "002-Agen10mg-EE-FullProduct",
+      "description" : "Agen 10mg Tablet. Estonia. Simple example of one full product as a bundle. Packages, PCIDs, differ by material.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/003-CefuroximStragen-1-5g-Powder-SE-FullProduct"
+      },
+      "name" : "003-CefuroximStragen-1-5g-Powder-SE-FullProduct",
+      "description" : "Cefuroxim Stragen 1.5g Powder for solution for injection/infusion. Sweden. Strength in grams; man. item quantity unknown; transformation before administration.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/004-Cefuroxime-MIP-1500mg-EE-FullProduct"
+      },
+      "name" : "004-Cefuroxime-MIP-1500mg-EE-FullProduct",
+      "description" : "Cefuroxime MIP 1500mg Powder for solution for injection/infusion. Estonia. Strength in milligrams; man. item quantity unknown; transformation before administration.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/005-CanifugCremolum-EE-FullProduct"
+      },
+      "name" : "005-CanifugCremolum-EE-FullProduct",
+      "description" : "Canifug Cremolum. Estonia. Combination package of clotrimazole 10mg/g creme and six 100mg pessaries.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/006-Yaz-002mg3mg-tablet-SE-FullProduct"
+      },
+      "name" : "006-Yaz-002mg3mg-tablet-SE-FullProduct",
+      "description" : "YAZ ethinylestradiol 0.02mg, drosperinone 3mg, includes placebo tablets. Kingdom of Sweden. Different manufactured items in one container.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/007-Jangee-002mg-3mg-Film-coated-tablet-EE-FullProduct"
+      },
+      "name" : "007-Jangee-002mg-3mg-Film-coated-tablet-EE-FullProduct",
+      "description" : "Jangee ethinylestradiol 0.02mg, drosperinone 3mg. Estonia. Without placebo pills.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/008-Jangee-003mg-3mg-Film-coated-tablet-EE-FullProduct"
+      },
+      "name" : "008-Jangee-003mg-3mg-Film-coated-tablet-EE-FullProduct",
+      "description" : "Jangee ethinylestradiol 0.03mg, drosperinone 3mg. Estonia. Without placebo pills.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/009-Paracetamol-Kabi10mg-1ml-EE-FullProduct"
+      },
+      "name" : "009-Paracetamol-Kabi10mg-1ml-EE-FullProduct",
+      "description" : "Paracetamol Kabi 10mg/ml solution for infusion. Estonia. One pharmaceutical product for three different manufactured items.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/010-Clexane-60mg-06ml-EE-FullProduct"
+      },
+      "name" : "010-Clexane-60mg-06ml-EE-FullProduct",
+      "description" : "Clexane, enoxaparine sodium 60mg/0.6ml, 2 pre-filled syringes. Presentation strength per quantity.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/011-Betaklav500-125-EE-FullProduct"
+      },
+      "name" : "011-Betaklav500-125-EE-FullProduct",
+      "description" : "Amoxicillin 500mg, clavulanic acid 125mg. Tablets. Estonia.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/012-Panodil-500mg-SolutionInSachet-SE-FullProduct"
+      },
+      "name" : "012-Panodil-500mg-SolutionInSachet-SE-FullProduct",
+      "description" : "Paracetamol 500mg. Powder for oral solution in sachet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/013-LantusSolostar-EE-FullProduct"
+      },
+      "name" : "013-LantusSolostar-EE-FullProduct",
+      "description" : "Lantus Solostar, insulin glargine, solution for injection in 3ml pre-filled pens.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/014-CanestenKombi-FI-FullProduct"
+      },
+      "name" : "014-CanestenKombi-FI-FullProduct",
+      "description" : "Canesten Kombi. Finland. Combination package of clotrimazole 20mg/g creme and 500mg pessary with an applicator.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/015-CopaliaHCT-EE-FullProduct"
+      },
+      "name" : "015-CopaliaHCT-EE-FullProduct",
+      "description" : "Copalia HCT. Valsartan + amlodipine (besilate) + hydrochlorothiazide tablets. Not a PPL product.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/016-Lodipin-10mg-Capsule-GR-FullProduct"
+      },
+      "name" : "016-Lodipin-10mg-Capsule-GR-FullProduct",
+      "description" : "Lodipin 10mg Capsule. Amlodipine (besilate).  Greece.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AD"
+      },
+      "name" : "AD",
+      "description" : "Address",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/administrable-doseform"
+      },
+      "name" : "AdministrableDoseForm",
+      "description" : "Administrable dose form for the product",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AdministrableProductDefinition"
+      }],
+      "reference" : {
+        "reference" : "AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD"
+      },
+      "name" : "Agen-5mg-Tablet-EE-APD",
+      "description" : "Administrable/Pharmaceutical Product Definition: simple tablets",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Ingredient"
+      }],
+      "reference" : {
+        "reference" : "Ingredient/Agen-5mg-Tablet-EE-I"
+      },
+      "name" : "Agen-5mg-Tablet-EE-I",
+      "description" : "Ingredient: amlodipine besilate, presentation strength; amlodipine, reference strength",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ManufacturedItemDefinition"
+      }],
+      "reference" : {
+        "reference" : "ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID"
+      },
+      "name" : "Agen-5mg-Tablet-EE-MID",
+      "description" : "Manufactured Item: simple tablet",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicinalProductDefinition"
+      }],
+      "reference" : {
+        "reference" : "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD"
+      },
+      "name" : "Agen-5mg-Tablet-EE-MPD",
+      "description" : "Medicinal Product Definition: simple tablets",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PackagedProductDefinition"
+      }],
+      "reference" : {
+        "reference" : "PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-A"
+      },
+      "name" : "Agen-5mg-Tablet-EE-PPD-1109887-A",
+      "description" : "Packaged Product Definition: simple tablets",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PackagedProductDefinition"
+      }],
+      "reference" : {
+        "reference" : "PackagedProductDefinition/Agen-5mg-Tablet-EE-PPD-1109887-B"
+      },
+      "name" : "Agen-5mg-Tablet-EE-PPD-1109887-B",
+      "description" : "Packaged Product Definition: simple tablets",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RegulatedAuthorization"
+      }],
+      "reference" : {
+        "reference" : "RegulatedAuthorization/Agen-5mg-Tablet-EE-RA"
+      },
+      "name" : "Agen-5mg-Tablet-EE-RA",
+      "description" : "Marketing Authorisation",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLaccord-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 10mg tablets. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLaccord-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 5mg tablets. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLaurobindo-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 10mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLbluefish-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 10mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLbluefish-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 5mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLHipres-10mg-Tablet-EE-FullProduct"
+      },
+      "name" : "AMLHipres-10mg-Tablet-EE-FullProduct",
+      "description" : "Hipres amlodipine (maleate) 10mg tablets. Estonia.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLHipres-5mg-Tablet-EE-FullProduct"
+      },
+      "name" : "AMLHipres-5mg-Tablet-EE-FullProduct",
+      "description" : "Hipres amlodipine (maleate) 5mg tablet. Estonia.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLjubilant-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 10mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLjubilant-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 5mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLkrka-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 10mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLkrka-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 5mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLmedvalley-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 10mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLmedvalley-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 5mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "Amlodistad-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 10mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "Amlodistad-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 5mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLsandoz-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 10mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLsandoz-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 5mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLteva-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 10mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLteva-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 5mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLvitabalans-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 10mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "AMLvitabalans-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 5mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ANY"
+      },
+      "name" : "ANY",
+      "description" : "An abstract type",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ATC-Human-EMA"
+      },
+      "name" : "ATC Human EMA",
+      "description" : "ATC classification recoded with EMA SPOR RMS codes. Flat list, WHO ATC codes provided in description field for easier use.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BL"
+      },
+      "name" : "BL",
+      "description" : "Boolean - true or false",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AdministrableProductDefinition"
+      }],
+      "reference" : {
+        "reference" : "AdministrableProductDefinition/CanifugCremolum-100mg-Pessary-EE-APD"
+      },
+      "name" : "CanifugCremolum-100mg-Pessary-EE-APD",
+      "description" : "Administrable/Pharmaceutical Product Definition: pessaries",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Ingredient"
+      }],
+      "reference" : {
+        "reference" : "Ingredient/CanifugCremolum-100mg-Pessary-EE-I"
+      },
+      "name" : "CanifugCremolum-100mg-Pessary-EE-I",
+      "description" : "Ingredient: clotrimazole, presentation strength",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ManufacturedItemDefinition"
+      }],
+      "reference" : {
+        "reference" : "ManufacturedItemDefinition/CanifugCremolum-100mg-Pessary-EE-MID"
+      },
+      "name" : "CanifugCremolum-100mg-Pessary-EE-MID",
+      "description" : "Manufactured Item: pessary",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AdministrableProductDefinition"
+      }],
+      "reference" : {
+        "reference" : "AdministrableProductDefinition/CanifugCremolum-10mg1g-Cream-EE-APD"
+      },
+      "name" : "CanifugCremolum-10mg1g-Cream-EE-APD",
+      "description" : "Administrable/Pharmaceutical Product Definition: creme",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Ingredient"
+      }],
+      "reference" : {
+        "reference" : "Ingredient/CanifugCremolum-10mg1g-Cream-EE-I"
+      },
+      "name" : "CanifugCremolum-10mg1g-Cream-EE-I",
+      "description" : "Ingredient: clotrimazole, concentration strength",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ManufacturedItemDefinition"
+      }],
+      "reference" : {
+        "reference" : "ManufacturedItemDefinition/CanifugCremolum-10mg1g-Cream-EE-MID"
+      },
+      "name" : "CanifugCremolum-10mg1g-Cream-EE-MID",
+      "description" : "Manufactured Item: cream in tube",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/CanifugCremolum-EE-Cream-Medication-Item"
+      },
+      "name" : "CanifugCremolum-EE-Cream-Medication-Item",
+      "description" : "Clotrimazole cream as part of Canifug Cremolum product (ISO IDMP manufactured item)",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem",
+      "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/CanifugCremolum-EE-Medication-Clinical"
+      },
+      "name" : "CanifugCremolum-EE-Medication-Clinical",
+      "description" : "Canifug Cremolum in Medication resource as a registered packaged product: combination product of 20g creme and 6 pessaries",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct",
+      "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicinalProductDefinition"
+      }],
+      "reference" : {
+        "reference" : "MedicinalProductDefinition/CanifugCremolum-EE-MPD"
+      },
+      "name" : "CanifugCremolum-EE-MPD",
+      "description" : "Medicinal Product Definition: combination product of creme and pessaries",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/CanifugCremolum-EE-Pessary-Medication-Item"
+      },
+      "name" : "CanifugCremolum-EE-Pessary-Medication-Item",
+      "description" : "Clotrimazole pessary as part of Canifug Cremolum product (ISO IDMP manufactured item)",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem",
+      "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PackagedProductDefinition"
+      }],
+      "reference" : {
+        "reference" : "PackagedProductDefinition/CanifugCremolum-EE-PPD-1033692"
+      },
+      "name" : "CanifugCremolum-EE-PPD-1033692",
+      "description" : "Packaged Product Definition: combination package of creme and pessaries",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RegulatedAuthorization"
+      }],
+      "reference" : {
+        "reference" : "RegulatedAuthorization/CanifugCremolum-EE-RA"
+      },
+      "name" : "CanifugCremolum-EE-RA",
+      "description" : "Marketing Authorisation",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CD"
+      },
+      "name" : "CD",
+      "description" : "ConceptDescriptor",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AdministrableProductDefinition"
+      }],
+      "reference" : {
+        "reference" : "AdministrableProductDefinition/Cefuroxime-MIP-1500mg-EE-APD"
+      },
+      "name" : "Cefuroxime-MIP-1500mg-EE-APD",
+      "description" : "Administrable/Pharmaceutical Product Definition: transformed",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Ingredient"
+      }],
+      "reference" : {
+        "reference" : "Ingredient/Cefuroxime-MIP-1500mg-EE-I"
+      },
+      "name" : "Cefuroxime-MIP-1500mg-EE-I",
+      "description" : "Ingredient: cefuroxime sodium, presentation strength; cefuroxime sodium, reference strength",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ManufacturedItemDefinition"
+      }],
+      "reference" : {
+        "reference" : "ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID"
+      },
+      "name" : "Cefuroxime-MIP-1500mg-EE-MID",
+      "description" : "Manufactured Item: powder in vial",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicinalProductDefinition"
+      }],
+      "reference" : {
+        "reference" : "MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD"
+      },
+      "name" : "Cefuroxime-MIP-1500mg-EE-MPD",
+      "description" : "Medicinal Product Definition: powder for solution",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PackagedProductDefinition"
+      }],
+      "reference" : {
+        "reference" : "PackagedProductDefinition/Cefuroxime-MIP-1500mg-EE-PPD-1529940"
+      },
+      "name" : "Cefuroxime-MIP-1500mg-EE-PPD-1529940",
+      "description" : "Packaged Product Definition: powder for solution in 1 vial",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PackagedProductDefinition"
+      }],
+      "reference" : {
+        "reference" : "PackagedProductDefinition/Cefuroxime-MIP-1500mg-EE-PPD-1529962"
+      },
+      "name" : "Cefuroxime-MIP-1500mg-EE-PPD-1529962",
+      "description" : "Packaged Product Definition: powder for solution in 10 vials",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RegulatedAuthorization"
+      }],
+      "reference" : {
+        "reference" : "RegulatedAuthorization/Cefuroxime-MIP-1500mg-EE-RA"
+      },
+      "name" : "Cefuroxime-MIP-1500mg-EE-RA",
+      "description" : "Marketing Authorisation",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/Cefuroxime1500-Medication-Clinical"
+      },
+      "name" : "Cefuroxime1500-Medication-Clinical",
+      "description" : "Cefuroxime 1500mg powder for solution in Medication resource as a generic product",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct",
+      "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/Cefuroxime1500-Powder-Medication-Item"
+      },
+      "name" : "Cefuroxime1500-Powder-Medication-Item",
+      "description" : "Cefuroxime 1500mg powder in a vial (ISO IDMP manufactured item). Note, that strength can be expressed in grams or milligrams.",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem",
+      "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/CefuroximeMIP-EE-Medication-Clinical"
+      },
+      "name" : "CefuroximeMIP-EE-Medication-Clinical",
+      "description" : "Cefuroxime 1500mg powder for solution in Medication resource as a registered packaged product",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct",
+      "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/CefuroximeMIP-EE-Powder-Medication-Item"
+      },
+      "name" : "CefuroximeMIP-EE-Powder-Medication-Item",
+      "description" : "Cefuroxime 1500mg powder in a vial (ISO IDMP manufactured item)",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem",
+      "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Class"
+      },
+      "name" : "Class",
+      "description" : "Class of data elements",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/Clotrimazole-cream-and-pessaries-Medication-Clinical"
+      },
+      "name" : "Clotrimazole-cream-and-pessaries-Medication-Clinical",
+      "description" : "Clotrimazole cream and pessaries as a generic product, Medication resource",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct",
+      "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/Clotrimazole-Cream-Generic"
+      },
+      "name" : "Clotrimazole-Cream-Generic",
+      "description" : "Clotrimazole cream (ISO IDMP manufactured item)",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem",
+      "http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/combination-package-ema-cs"
+      },
+      "name" : "Combination Package EMA",
+      "description" : "Dose forms for combination packages. Based on EDQM. Re-coded with RMS codes. Only used for authorised dose form.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/combined-pharmaceutical-dose-form-ema-cs"
+      },
+      "name" : "Combined Pharmaceutical Dose Form EMA",
+      "description" : "Combined Pharmaceutical Dose Form. Based on EDQM. Re-coded with RMS codes. Used only for authorised dose form.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/combined-term-ema-cs"
+      },
+      "name" : "Combined Term EMA",
+      "description" : "Combined Term. Based on EDQM. Re-coded with RMS codes. Only used for authorised dose form.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/country"
+      },
+      "name" : "country",
+      "description" : "Search for MedicinalProductDefinition by country",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/country-iso-vs"
+      },
+      "name" : "Country (ISO 3166-1-2)",
+      "description" : "Countries",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/country-ema-cs"
+      },
+      "name" : "Country EMA",
+      "description" : "Country codes by EMA. Based on ISO 3166-1-2, recoded with RMS codes.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/domain-ema-cs"
+      },
+      "name" : "Domain EMA",
+      "description" : "Domain of the medicinal product (human, veterinary, both)",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CrossBorderProduct"
+      },
+      "name" : "DRAFT: Medicinal Product in crossborder eP/eD",
+      "description" : "DRAFT. Crossborder eP/eD/PS medicinal product as a implementation-agnostic logical model",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ManufacturedMaterial"
+      },
+      "name" : "DRAFT: MyHealth@EU medicinal product",
+      "description" : "DRAFT. Crossborder eP/eD/PS medicinal product as represented in CDA.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DT"
+      },
+      "name" : "DT",
+      "description" : "Date",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/administration-device"
+      },
+      "name" : "EDQM Administration Device",
+      "description" : "ValueSet Administration device from EDQM, DEV, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/administration-method"
+      },
+      "name" : "EDQM Administration Method",
+      "description" : "ValueSet Administration method from EDQM, AME, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/basic-dose-form"
+      },
+      "name" : "EDQM Basic Dose Form",
+      "description" : "ValueSet Basic dose form from EDQM, BDF, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/closure"
+      },
+      "name" : "EDQM Closure",
+      "description" : "ValueSet Closure (for package description) from EDQM, CLO, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/combination-pack"
+      },
+      "name" : "EDQM Combination Pack",
+      "description" : "ValueSet Combination pack (dose form) from EDQM, CMP, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/combined-pharmaceutical-dose-form"
+      },
+      "name" : "EDQM Combined Pharmaceutical Dose Form",
+      "description" : "ValueSet Combined pharmaceutical dose form from EDQM, CDF, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/combined-term"
+      },
+      "name" : "EDQM Combined Term",
+      "description" : "ValueSet Combined term (dose form) from EDQM, CMT, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/container"
+      },
+      "name" : "EDQM Container",
+      "description" : "ValueSet Container (package type) from EDQM, CON, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/intended-site"
+      },
+      "name" : "EDQM Intended Site",
+      "description" : "ValueSet Intended site from EDQM, ISI, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/packaging-category"
+      },
+      "name" : "EDQM Packaging Category",
+      "description" : "ValueSet Packaging category from EDQM, PAC, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/patient-friendly-term"
+      },
+      "name" : "EDQM Patient-friendly Term",
+      "description" : "ValueSet Patient-friendly term (dose forms) from EDQM, PFT, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/pharmaceutical-dose-form"
+      },
+      "name" : "EDQM Pharmaceutical Dose Form",
+      "description" : "ValueSet Pharmaceutical dose form from EDQM, PDF, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/route-of-administration"
+      },
+      "name" : "EDQM Route of Administration",
+      "description" : "ValueSet Route of administration from EDQM, ROA, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/unit-of-presentation"
+      },
+      "name" : "EDQM Unit of Presentation",
+      "description" : "ValueSet Unit of presentation from EDQM, UOP, see https://standardterms.edqm.eu/#",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/edqm-ema-pharmaceuticalDoseForm-cm"
+      },
+      "name" : "EDQM-SPOR Pharmaceutical dose forms",
+      "description" : "Pharmaceutical dose form value set from EDQM mapped to EMA SPOR codes.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/all-units-vs"
+      },
+      "name" : "EMA SPOR All Units Combined",
+      "description" : "Value set for presentation strength denominator unit, combines units of measurement and units of presentation.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/atc-spor-vs"
+      },
+      "name" : "EMA SPOR ATC",
+      "description" : "Value set for Anatomical Therapeutic Chemical classification system Human and Veterinary. It combines 2 SPOR/WHO lists",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/authorised-doseform-vs"
+      },
+      "name" : "EMA SPOR Authorised Dose Form",
+      "description" : "Value set for authorised dose form. Combines 4 SPOR/EDQM lists: Pharmaceutical dose form, Combined pharmaceutical dose form, Combined term, Combination package.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/country-ema-vs"
+      },
+      "name" : "EMA SPOR Country",
+      "description" : "Countries. EMA SPOR RMS list.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/domain-vs"
+      },
+      "name" : "EMA SPOR Domain",
+      "description" : "Domain of the medicinal product. EMA SPOR RMS list.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/language-ema-vs"
+      },
+      "name" : "EMA SPOR Language",
+      "description" : "Languages. EMA SPOR RMS list.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/legal-status-for-the-supply-vs"
+      },
+      "name" : "EMA SPOR Legal Status for the Supply",
+      "description" : "EMA SPOR RMS list",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/marketing-status-spor-vs"
+      },
+      "name" : "EMA SPOR Marketing Status",
+      "description" : "Marketing Status",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/material-vs"
+      },
+      "name" : "EMA SPOR Material",
+      "description" : "Package material. EMA SPOR RMS LIST.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/packaging-spor-vs"
+      },
+      "name" : "EMA SPOR Packaging",
+      "description" : "Packaging",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/pharmaceutical-doseform-vs"
+      },
+      "name" : "EMA SPOR Pharmaceutical Dose Form",
+      "description" : "Pharmaceutical dose form. Does not include combination dose forms.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/record-status-spor-vs"
+      },
+      "name" : "EMA SPOR Record Status",
+      "description" : "Value set for record status.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/regulatory-status-spor-vs"
+      },
+      "name" : "EMA SPOR Regulatory Entitlement Status",
+      "description" : "Regulatory Entitlement Status",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/routes-and-methods-of-administration-vs"
+      },
+      "name" : "EMA SPOR Routes and Methods of Administration",
+      "description" : "Routes and methods of medication administration. EMA SPOR RMS list, based on EDQM.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/shelflifetype-spor-vs"
+      },
+      "name" : "EMA SPOR Shelf Life Type",
+      "description" : "Shelf Life Type",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/substances-vs"
+      },
+      "name" : "EMA SPOR SMS Substances",
+      "description" : "Value set for substances, PPL subset from SMS.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/unit-of-measurement-vs"
+      },
+      "name" : "EMA SPOR Unit of Measurement",
+      "description" : "Units of measurement. EMA SPOR RMS list based on UCUM.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/unit-of-presentation-vs"
+      },
+      "name" : "EMA SPOR Unit of Presentation",
+      "description" : "Units of presentation. EMA SPOR RMS list based on EDQM.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EN"
+      },
+      "name" : "EN",
+      "description" : "EntityName",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/Equivalent"
+      },
+      "name" : "Equivalent Look Up",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/II"
+      },
+      "name" : "II",
+      "description" : "InstanceIdentifier",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/INT"
+      },
+      "name" : "INT",
+      "description" : "IntegerNumber",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/language-bcp-vs"
+      },
+      "name" : "Language (FHIR)",
+      "description" : "All languages",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/language-ema-cs"
+      },
+      "name" : "Language EMA",
+      "description" : "Language codes by EMA. Based on BCP-47, recoded with RMS codes.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/legal-status-for-the-supply-ema-cs"
+      },
+      "name" : "Legal Status for the Supply EMA",
+      "description" : "Legal status of supply. EMA SPOR RMS list.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/LOC-100000551-KrkaSverige"
+      },
+      "name" : "LOC-100000551-KrkaSverige",
+      "description" : "Marketing Authorisation Holder / Organisation",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/LOC-100002580-Zentiva"
+      },
+      "name" : "LOC-100002580-Zentiva",
+      "description" : "Marketing Authorisation Holder / Organisation",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/LOC-100004795-Wolff-Arzneimittel"
+      },
+      "name" : "LOC-100004795-Wolff-Arzneimittel",
+      "description" : "Marketing Authorisation Holder / Organisation",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/LOC-100009199-Mip"
+      },
+      "name" : "LOC-100009199-Mip",
+      "description" : "Marketing Authorisation Holder / Organisation",
+      "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization",
+      "http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Marketing-Status-ema-cs"
+      },
+      "name" : "Marketing Status EMA",
+      "description" : "Marketing status of the product in given country. EMA SPOR RMS codes.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/material-ema-cs"
+      },
+      "name" : "Material EMA",
+      "description" : "Package material. EMA SPOR RMS list. Hierarchical.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MedicationAsMedicinalProduct"
+      },
+      "name" : "Medication",
+      "description" : "Medication for clinical use cases (Medication resource), may be branded or generic",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MedicationAsManufacturedItem"
+      },
+      "name" : "Medication as manufactured item",
+      "description" : "Manufactured Item as a part of a product for clinical use cases (Medication resource)",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MedicationModel"
+      },
+      "name" : "Medication for clinical workflows",
+      "description" : "DRAFT. eP/eD/PS product",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/FullMedicinalProduct"
+      },
+      "name" : "Medicinal Product Logical Model",
+      "description" : "Logical model for a pilot product list's medicinal product",
+      "isExample" : false,
+      "groupingId" : "LogicalModel"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medicinal-product-classification"
+      },
+      "name" : "MedicinalProductClassification",
+      "description" : "Classification of the product, e.g. ATC.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medicinal-product-name"
+      },
+      "name" : "MedicinalProductName",
+      "description" : "Registered name for the medicinal product.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ehdsi-ucum-unit"
+      },
+      "name" : "MyHealth@EU Unit of Measurement (UCUM)",
+      "description" : "ValueSet for units based on UCUM to be used in MyHealth@EU crossborder services",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/name-language-correct"
+      },
+      "name" : "name-language-correct",
+      "description" : "Possiblity to search ingredient for MedicinalProductDefinition.name.usage.language",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "Norvasc-10mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 10mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL"
+      },
+      "name" : "Norvasc-5mg-Tablet-SE-IS-MedicinalProductDefinition-BBDL",
+      "description" : "Amlodipine (besylate) 5mg tablet. Sweden.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/packaging-ema-cs"
+      },
+      "name" : "Packaging EMA SPOR",
+      "description" : "Package types, including closures and administration devices. Based on EDQM, recoded with EMA SPOR RMS codes.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/pharmaceutical-dose-form-ema-cs"
+      },
+      "name" : "Pharmaceutical Dose Form EMA",
+      "description" : "Pharmaceutical dose form. Based on EDQM, re-coded with RMS codes.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PPLAdministrableProductDefinition"
+      },
+      "name" : "PPL Administrable Product profile",
+      "description" : "Administrable product profile defines the ISO IDMP Pharmaceutical Product concept",
+      "isExample" : false,
+      "groupingId" : "Regulatory"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PPLIngredient"
+      },
+      "name" : "PPL Ingredient profile",
+      "description" : "Ingredient for the medicinal product, pharmaceutical product and/or manufactured item",
+      "isExample" : false,
+      "groupingId" : "Regulatory"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PPLManufacturedItemDefinition"
+      },
+      "name" : "PPL Manufactured Item profile",
+      "description" : "Manufactured item is the countable element inside the package",
+      "isExample" : false,
+      "groupingId" : "Regulatory"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PPLRegulatedAuthorization"
+      },
+      "name" : "PPL Marketing Authorisation profile",
+      "description" : "Regulated Authorization profile defines the Marketing Authorisation on product or package level",
+      "isExample" : false,
+      "groupingId" : "Regulatory"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PPLMedicinalProductDefinition"
+      },
+      "name" : "PPL Medicinal Product profile",
+      "description" : "Medicinal Product as defined in ISO IDMP",
+      "isExample" : false,
+      "groupingId" : "Regulatory"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PPLOrganization"
+      },
+      "name" : "PPL Organization",
+      "description" : "Organization",
+      "isExample" : false,
+      "groupingId" : "Regulatory"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PPLPackagedProductDefinition"
+      },
+      "name" : "PPL Packaged Product profile",
+      "description" : "Packaged Product",
+      "isExample" : false,
+      "groupingId" : "Regulatory"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PQ"
+      },
+      "name" : "PQ",
+      "description" : "PhysicalQuantity",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TransitionAdministrableProductDefinition"
+      },
+      "name" : "Processing Profile - Administrable Product",
+      "description" : "Intermediate profile for processing PPL Administrable Product data",
+      "isExample" : false,
+      "groupingId" : "Relaxed"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TransitionIngredient"
+      },
+      "name" : "Processing Profile - Ingredient",
+      "description" : "Intermediate profile for processing PPL Ingredient data",
+      "isExample" : false,
+      "groupingId" : "Relaxed"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TransitionManufacturedItemDefinition"
+      },
+      "name" : "Processing Profile - Manufactured Item",
+      "description" : "Intermediate profile for processing PPL Manufactured Item data",
+      "isExample" : false,
+      "groupingId" : "Relaxed"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TransitionRegulatedAuthorization"
+      },
+      "name" : "Processing Profile - Marketing Authorisation",
+      "description" : "Intermediate profile for processing PPL Marketing Authorisation (Regulated Authorization) data",
+      "isExample" : false,
+      "groupingId" : "Relaxed"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TransitionMedicinalProductDefinition"
+      },
+      "name" : "Processing Profile - Medicinal Product",
+      "description" : "Intermediate profile for processing PPL Medicinal Product data",
+      "isExample" : false,
+      "groupingId" : "Relaxed"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TransitionOrganization"
+      },
+      "name" : "Processing Profile - Organization",
+      "description" : "Intermediate profile for processing PPL Marketing Authorisation Holder (Organization) data",
+      "isExample" : false,
+      "groupingId" : "Relaxed"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TransitionPackagedProductDefinition"
+      },
+      "name" : "Processing Profile - Packaged Product",
+      "description" : "Intermediate profile for processing PPL Packaged Product data",
+      "isExample" : false,
+      "groupingId" : "Relaxed"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/REAL"
+      },
+      "name" : "REAL",
+      "description" : "RealNumber",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/recordStatus-ema-cs"
+      },
+      "name" : "Record Status EMA SPOR",
+      "description" : "Record Entitlement Status EMA SPOR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/reference-strength-substance"
+      },
+      "name" : "reference-strength-substance",
+      "description" : "Possiblity to search ingredient for substance.strength.referenceStrength.substance.concept",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/regulatoryStatus-ema-cs"
+      },
+      "name" : "Regulatory Entitlement Status EMA SPOR",
+      "description" : "Regulatory Entitlement Status EMA SPOR",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/routes-and-methods-of-administration-ema-cs"
+      },
+      "name" : "Routes and Methods of Administration EMA",
+      "description" : "Routes and methods of medication administration. Based on EDQM, re-coded with RMS codes.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RTO"
+      },
+      "name" : "RTO",
+      "description" : "Ratio",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ST"
+      },
+      "name" : "ST",
+      "description" : "CharacterString",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/strength-presentation-quantity"
+      },
+      "name" : "strength-presentation-quantity",
+      "description" : "Possiblity to search for Ingredient.substance.strength.presentation.ofType(Quantity)",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/strength-presentation-ratio"
+      },
+      "name" : "strength-presentation-ratio",
+      "description" : "Possiblity to search for substance and strength at the same time",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/strength-presentation-ratio-denominator"
+      },
+      "name" : "strength-presentation-ratio-denominator",
+      "description" : "Possiblity to search for Ingredient.substance.strength.presentation.ofType(Ratio).denominator",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/strength-presentation-ratio-numerator"
+      },
+      "name" : "strength-presentation-ratio-numerator",
+      "description" : "Possiblity to search for Ingredient.substance.strength.presentation.ofType(Ratio).numerator",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/strength-quantity-and-substance"
+      },
+      "name" : "strength-quantity-and-substance",
+      "description" : "Possiblity to search for substance and strength at the same time",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/strength-ratio-and-substance"
+      },
+      "name" : "strength-ratio-and-substance",
+      "description" : "Possiblity to search for substance and strength at the same time",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/substance-sms-cs"
+      },
+      "name" : "Substances EMA SPOR SMS",
+      "description" : "UNICOM PPL substances from EMA SPOR SMS",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TS"
+      },
+      "name" : "TS",
+      "description" : "TimeStamp",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/unit-of-measurement-ema-cs"
+      },
+      "name" : "Unit of Measurement EMA",
+      "description" : "Unit of Measurement. Based on UCUM. Re-coded with RMS codes.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/unit-of-presentation-ema-cs"
+      },
+      "name" : "Unit of Presentation EMA",
+      "description" : "Unit of presentation list from EMA SPOR. List id 200000000014. Content based on EDQM, re-coded with RMS codes.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Untyped"
+      },
+      "name" : "Untyped",
+      "description" : "No data type defined",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/whoatc-unicom"
+      },
+      "name" : "WHO ATC",
+      "description" : "World Health Organization Anatomical Therapeutic Chemical (ATC) classification system.  Note: The currently implemented code system and the value set expansion contain only a set of example ATC codes, not the complete code system content.",
+      "isExample" : false
+    }],
+    "page" : {
+      "sourceUrl" : "toc.html",
+      "name" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "sourceUrl" : "index.html",
+        "name" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "regulatory.html",
+        "name" : "regulatory.html",
+        "title" : "Regulatory Data",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "clinical.html",
+        "name" : "clinical.html",
+        "title" : "Clinical Data",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "issues.html",
+        "name" : "issues.html",
+        "title" : "Known Issues",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "visualiser.html",
+        "name" : "visualiser.html",
+        "title" : "Visualiser",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "copyrightyear"
+      },
+      "value" : "2022+"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "releaselabel"
+      },
+      "value" : "ci-build"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "produce-jekyll-data"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000000004"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/200000005003"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/220000000000"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000072051"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/200000000004"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/200000000006"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/200000000007"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/200000000008"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000093533"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000116677"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000000002"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000072057"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/220000000060"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000072049"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/200000000014"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000110633"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000073345"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000072050"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000000008"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000072052"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000073346"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/200000003199"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v1/lists/100000073343"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "special-url"
+      },
+      "value" : "https://spor.ema.europa.eu/v2/SubstanceDefinition"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "autoload-resources"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/examples"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/extensions"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/models"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/operations"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/profiles"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/maps"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/testing"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/history"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "template/config"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "input/images"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "template/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "input/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-qa"
+      },
+      "value" : "temp/qa"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-temp"
+      },
+      "value" : "temp/pages"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-output"
+      },
+      "value" : "output"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-tx-cache"
+      },
+      "value" : "input-cache/txcache"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-suppressed-warnings"
+      },
+      "value" : "input/ignoreWarnings.txt"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-history"
+      },
+      "value" : "http://unicom-project.eu/fhir/history.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-html"
+      },
+      "value" : "template-page.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-md"
+      },
+      "value" : "template-page-md.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-contact"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-context"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-copyright"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-jurisdiction"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-license"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-publisher"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-version"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-wg"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "active-tables"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "fmm-definition"
+      },
+      "value" : "http://hl7.org/fhir/versions.html#maturity"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "propagate-status"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludelogbinaryformat"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "tabbed-snapshots"
+      },
+      "value" : "true"
+    }]
+  }
+}

@@ -1,0 +1,650 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.UNICOM\Combined Term EMA - JSON Representation - FHIR v4.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.21"}
+    h3,h4,h5,h6{--heading-prefix:"2.21"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Combined Term EMA</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">UnicomIG - Local Development build (v0.1.0). See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-combined-term-ema-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-combined-term-ema-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-combined-term-ema-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Combined Term EMA - JSON Representation</h2>
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2022-11-18
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-combined-term-ema-cs.json" no-download="true">Raw json</a> | <a href="CodeSystem-combined-term-ema-cs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; overflow: hidden"><code>
+{
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.id">id</a>" : "combined-term-ema-cs",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system &lt;code&gt;http://spor.ema.europa.eu/v1/lists/200000000007&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000136320&lt;a name=\&quot;combined-term-ema-cs-100000136320\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eye drops, prolonged-release solution in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000136321&lt;a name=\&quot;combined-term-ema-cs-100000136321\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eye drops, suspension in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000136322&lt;a name=\&quot;combined-term-ema-cs-100000136322\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eye ointment in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000136323&lt;a name=\&quot;combined-term-ema-cs-100000136323\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Granules for oral solution in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000017731&lt;a name=\&quot;combined-term-ema-cs-200000017731\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Powder for oral suspension in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000166823&lt;a name=\&quot;combined-term-ema-cs-100000166823\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for injection in pre-filled injector&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000167461&lt;a name=\&quot;combined-term-ema-cs-100000167461\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for injection in dose-dispenser cartridge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000174056&lt;a name=\&quot;combined-term-ema-cs-100000174056\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for injection in administration system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000174057&lt;a name=\&quot;combined-term-ema-cs-100000174057\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Powder and solvent for prolonged-release suspension for injection in pre-filled syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000174058&lt;a name=\&quot;combined-term-ema-cs-100000174058\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Powder for oral/rectal suspension in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000174059&lt;a name=\&quot;combined-term-ema-cs-100000174059\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Suspension for injection in pre-filled injector&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000174060&lt;a name=\&quot;combined-term-ema-cs-100000174060\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gel in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000174061&lt;a name=\&quot;combined-term-ema-cs-100000174061\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral suspension in pre-filled oral applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000174062&lt;a name=\&quot;combined-term-ema-cs-100000174062\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral emulsion in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000174063&lt;a name=\&quot;combined-term-ema-cs-100000174063\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral paste in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000174064&lt;a name=\&quot;combined-term-ema-cs-100000174064\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Powder and solvent for prolonged-release suspension for injection in pre-filled pen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000018794&lt;a name=\&quot;combined-term-ema-cs-200000018794\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral solution in multidose container with metering pump&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000156069&lt;a name=\&quot;combined-term-ema-cs-100000156069\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Film-coated tablet and gastro-resistant granules in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000156090&lt;a name=\&quot;combined-term-ema-cs-100000156090\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ear drops, solution in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000171807&lt;a name=\&quot;combined-term-ema-cs-100000171807\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Granules in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000172024&lt;a name=\&quot;combined-term-ema-cs-100000172024\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Syrup in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000172025&lt;a name=\&quot;combined-term-ema-cs-100000172025\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emulsion for infusion in administration system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000025956&lt;a name=\&quot;combined-term-ema-cs-200000025956\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Film-coated granules in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000027808&lt;a name=\&quot;combined-term-ema-cs-200000027808\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dispersion for injection in pre-filled syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000003532&lt;a name=\&quot;combined-term-ema-cs-200000003532\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Powder and solvent for suspension for injection in multidose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000003533&lt;a name=\&quot;combined-term-ema-cs-200000003533\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for injection in multidose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000003534&lt;a name=\&quot;combined-term-ema-cs-200000003534\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Suspension for injection in multidose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000003542&lt;a name=\&quot;combined-term-ema-cs-200000003542\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Granules in capsule for opening&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000003970&lt;a name=\&quot;combined-term-ema-cs-200000003970\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prolonged-release suspension for injection in pre-filled pen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000003584&lt;a name=\&quot;combined-term-ema-cs-200000003584\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for injection in vial&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000005491&lt;a name=\&quot;combined-term-ema-cs-200000005491\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nasal powder in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000010389&lt;a name=\&quot;combined-term-ema-cs-200000010389\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for infusion in cartridge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000010633&lt;a name=\&quot;combined-term-ema-cs-200000010633\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for injection in pre-filled syringe in disposable cassette&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000010731&lt;a name=\&quot;combined-term-ema-cs-200000010731\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral powder in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000073997&lt;a name=\&quot;combined-term-ema-cs-100000073997\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eye drops, solution in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000074028&lt;a name=\&quot;combined-term-ema-cs-100000074028\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pillules in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000074039&lt;a name=\&quot;combined-term-ema-cs-100000074039\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for injection in pre-filled pen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000074046&lt;a name=\&quot;combined-term-ema-cs-100000074046\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for injection in cartridge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000074047&lt;a name=\&quot;combined-term-ema-cs-100000074047\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for injection in pre-filled syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000074050&lt;a name=\&quot;combined-term-ema-cs-100000074050\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Suspension for injection in pre-filled pen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000074062&lt;a name=\&quot;combined-term-ema-cs-100000074062\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Suspension for injection in cartridge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000074063&lt;a name=\&quot;combined-term-ema-cs-100000074063\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Suspension for injection in pre-filled syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000002333&lt;a name=\&quot;combined-term-ema-cs-200000002333\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eye drops&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000015352&lt;a name=\&quot;combined-term-ema-cs-200000015352\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral powder in capsules for opening&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000015396&lt;a name=\&quot;combined-term-ema-cs-200000015396\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transdermal gel in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075575&lt;a name=\&quot;combined-term-ema-cs-100000075575\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for infusion in administration system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075582&lt;a name=\&quot;combined-term-ema-cs-100000075582\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Herbal tea in bag&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075583&lt;a name=\&quot;combined-term-ema-cs-100000075583\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intravitreal implant in applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075585&lt;a name=\&quot;combined-term-ema-cs-100000075585\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Powder and solvent for solution for injection in pre-filled syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000075588&lt;a name=\&quot;combined-term-ema-cs-100000075588\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for injection/infusion in pre-filled syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000015536&lt;a name=\&quot;combined-term-ema-cs-200000015536\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Concentrate for dispersion for injection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000002380&lt;a name=\&quot;combined-term-ema-cs-200000002380\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cutaneous solution in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000116144&lt;a name=\&quot;combined-term-ema-cs-100000116144\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Coated granules in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000116166&lt;a name=\&quot;combined-term-ema-cs-100000116166\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nasal spray, solution in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000116178&lt;a name=\&quot;combined-term-ema-cs-100000116178\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Powder and solvent for suspension for injection in pre-filled syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000116190&lt;a name=\&quot;combined-term-ema-cs-100000116190\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for injection in needle-free injector&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000016198&lt;a name=\&quot;combined-term-ema-cs-200000016198\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral solution in bottle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;200000016458&lt;a name=\&quot;combined-term-ema-cs-200000016458\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral suspension in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125712&lt;a name=\&quot;combined-term-ema-cs-100000125712\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gel in pressurised container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125738&lt;a name=\&quot;combined-term-ema-cs-100000125738\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ear drops, suspension in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125739&lt;a name=\&quot;combined-term-ema-cs-100000125739\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emulsion for injection/infusion in pre-filled syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125740&lt;a name=\&quot;combined-term-ema-cs-100000125740\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eye gel in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125741&lt;a name=\&quot;combined-term-ema-cs-100000125741\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gastro-resistant granules for oral suspension in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125742&lt;a name=\&quot;combined-term-ema-cs-100000125742\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Granules for oral suspension in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125743&lt;a name=\&quot;combined-term-ema-cs-100000125743\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Granules in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125744&lt;a name=\&quot;combined-term-ema-cs-100000125744\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nasal drops, solution in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125745&lt;a name=\&quot;combined-term-ema-cs-100000125745\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral powder in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125748&lt;a name=\&quot;combined-term-ema-cs-100000125748\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Powder and solvent for solution for injection in cartridge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125749&lt;a name=\&quot;combined-term-ema-cs-100000125749\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Powder and solvent for solution for injection in pre-filled pen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125752&lt;a name=\&quot;combined-term-ema-cs-100000125752\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Powder for oral solution in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125753&lt;a name=\&quot;combined-term-ema-cs-100000125753\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Implant in pre-filled syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125756&lt;a name=\&quot;combined-term-ema-cs-100000125756\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral solution in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125757&lt;a name=\&quot;combined-term-ema-cs-100000125757\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral solution in single-dose container&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125758&lt;a name=\&quot;combined-term-ema-cs-100000125758\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral suspension in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125762&lt;a name=\&quot;combined-term-ema-cs-100000125762\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution and suspension for suspension for injection in pre-filled syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125773&lt;a name=\&quot;combined-term-ema-cs-100000125773\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prolonged-release granules for oral suspension in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125774&lt;a name=\&quot;combined-term-ema-cs-100000125774\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prolonged-release granules in sachet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125775&lt;a name=\&quot;combined-term-ema-cs-100000125775\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Prolonged-release suspension for injection in pre-filled syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;100000125776&lt;a name=\&quot;combined-term-ema-cs-100000125776\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solution for infusion in pre-filled syringe&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.url">url</a>" : "http://spor.ema.europa.eu/v1/lists/200000000007",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.name">name</a>" : "CombinedTerm_EMA_CS",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.title">title</a>" : "Combined Term EMA",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.date">date</a>" : "2022-11-18T19:50:12+00:00",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.publisher">publisher</a>" : "UNICOM",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "UNICOM",
+      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://medigree.net"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.description">description</a>" : "Combined Term. Based on EDQM. Re-coded with RMS codes. Only used for authorised dose form.",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : false,
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.compositional">compositional</a>" : false,
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.count">count</a>" : 79,
+  "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000136320",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Eye drops, prolonged-release solution in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000136321",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Eye drops, suspension in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000136322",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Eye ointment in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000136323",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Granules for oral solution in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000017731",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Powder for oral suspension in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000166823",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for injection in pre-filled injector"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000167461",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for injection in dose-dispenser cartridge"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000174056",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for injection in administration system"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000174057",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Powder and solvent for prolonged-release suspension for injection in pre-filled syringe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000174058",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Powder for oral/rectal suspension in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000174059",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Suspension for injection in pre-filled injector"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000174060",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Gel in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000174061",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral suspension in pre-filled oral applicator"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000174062",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral emulsion in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000174063",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral paste in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000174064",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Powder and solvent for prolonged-release suspension for injection in pre-filled pen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000018794",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral solution in multidose container with metering pump"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000156069",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Film-coated tablet and gastro-resistant granules in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000156090",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Ear drops, solution in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000171807",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Granules in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000172024",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Syrup in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000172025",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Emulsion for infusion in administration system"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000025956",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Film-coated granules in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000027808",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Dispersion for injection in pre-filled syringe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000003532",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Powder and solvent for suspension for injection in multidose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000003533",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for injection in multidose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000003534",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Suspension for injection in multidose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000003542",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Granules in capsule for opening"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000003970",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Prolonged-release suspension for injection in pre-filled pen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000003584",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for injection in vial"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000005491",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Nasal powder in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000010389",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for infusion in cartridge"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000010633",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for injection in pre-filled syringe in disposable cassette"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000010731",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral powder in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000073997",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Eye drops, solution in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000074028",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Pillules in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000074039",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for injection in pre-filled pen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000074046",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for injection in cartridge"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000074047",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for injection in pre-filled syringe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000074050",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Suspension for injection in pre-filled pen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000074062",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Suspension for injection in cartridge"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000074063",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Suspension for injection in pre-filled syringe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000002333",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Eye drops"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000015352",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral powder in capsules for opening"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000015396",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Transdermal gel in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075575",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for infusion in administration system"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075582",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Herbal tea in bag"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075583",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Intravitreal implant in applicator"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075585",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Powder and solvent for solution for injection in pre-filled syringe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000075588",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for injection/infusion in pre-filled syringe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000015536",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Concentrate for dispersion for injection"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000002380",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Cutaneous solution in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000116144",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Coated granules in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000116166",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Nasal spray, solution in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000116178",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Powder and solvent for suspension for injection in pre-filled syringe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000116190",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for injection in needle-free injector"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000016198",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral solution in bottle"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "200000016458",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral suspension in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125712",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Gel in pressurised container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125738",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Ear drops, suspension in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125739",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Emulsion for injection/infusion in pre-filled syringe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125740",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Eye gel in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125741",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Gastro-resistant granules for oral suspension in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125742",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Granules for oral suspension in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125743",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Granules in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125744",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Nasal drops, solution in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125745",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral powder in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125748",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Powder and solvent for solution for injection in cartridge"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125749",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Powder and solvent for solution for injection in pre-filled pen"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125752",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Powder for oral solution in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125753",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Implant in pre-filled syringe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125756",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral solution in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125757",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral solution in single-dose container"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125758",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Oral suspension in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125762",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution and suspension for suspension for injection in pre-filled syringe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125773",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Prolonged-release granules for oral suspension in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125774",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Prolonged-release granules in sachet"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125775",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Prolonged-release suspension for injection in pre-filled syringe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.code">code</a>" : "100000125776",
+      "<a href="http://hl7.org/fhir/R4B/codesystem.html#CodeSystem.concept.display">display</a>" : "Solution for infusion in pre-filled syringe"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://medigree.net">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.3.0</a>. Generated <span title="Fri, Nov 18, 2022 19:50+0000">2022-11-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

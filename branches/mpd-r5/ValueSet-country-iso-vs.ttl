@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/country-iso-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "country-iso-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet country-iso-vs</b></p><a name=\"country-iso-vs\"> </a><a name=\"hccountry-iso-vs\"> </a><a name=\"hccountry-iso-vs-en-US\"> </a><ul><li>Include all codes defined in <code>https://www.hl7.org/fhir/valueset-country.html</code></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://unicom-project.eu/fhir/ValueSet/country-iso-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CountryISO"] ; # 
+  fhir:title [ fhir:v "Country (ISO 3166-1-2)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-10T21:48:54+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Countries"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://www.hl7.org/fhir/valueset-country.html"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

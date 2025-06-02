@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/all-units-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "all-units-vs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-unit-of-measurement-ema-cs.html\"><code>https://spor.ema.europa.eu/v1/lists/100000110633</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-unit-of-presentation-ema-cs.html\"><code>https://spor.ema.europa.eu/v1/lists/200000000014</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://unicom-project.eu/fhir/ValueSet/all-units-vs"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "AllUnits"];
+  fhir:ValueSet.title [ fhir:value "All Units Combined"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-11-29T21:56:36+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "UNICOM"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://medigree.net" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Value set for presentation strength denominator unit, combines units of measurement and units of presentation."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/100000110633" ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://spor.ema.europa.eu/v1/lists/200000000014" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/all-units-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

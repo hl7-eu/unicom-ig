@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "authorised-doseform-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-pharmaceutical-dose-form-ema-cs.html\"><code>https://spor.ema.europa.eu/v1/lists/200000000004</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-combined-pharmaceutical-dose-form-ema-cs.html\"><code>https://spor.ema.europa.eu/v1/lists/200000000006</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-combined-term-ema-cs.html\"><code>https://spor.ema.europa.eu/v1/lists/200000000007</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-combination-package-ema-cs.html\"><code>https://spor.ema.europa.eu/v1/lists/200000000008</code></a></li></ul></div>"
+  },
+  "url" : "http://unicom-project.eu/fhir/ValueSet/authorised-doseform-vs",
+  "version" : "0.1.0",
+  "name" : "AuthorisedDoseForm",
+  "title" : "EMA SPOR Authorised Dose Form",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-11-20T21:10:00+00:00",
+  "publisher" : "UNICOM",
+  "contact" : [{
+    "name" : "UNICOM",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://unicom-project.eu"
+    }]
+  }],
+  "description" : "Value set for authorised dose form. Combines 4 SPOR/EDQM lists: Pharmaceutical dose form, Combined pharmaceutical dose form, Combined term, Combination package.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://spor.ema.europa.eu/v1/lists/200000000004"
+    },
+    {
+      "system" : "https://spor.ema.europa.eu/v1/lists/200000000006"
+    },
+    {
+      "system" : "https://spor.ema.europa.eu/v1/lists/200000000007"
+    },
+    {
+      "system" : "https://spor.ema.europa.eu/v1/lists/200000000008"
+    }]
+  }
+}

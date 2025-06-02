@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Visualiser - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Visualiser</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Visualiser</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#bundle-visualizer" id="markdown-toc-bundle-visualizer">Bundle visualizer</a></li>
+  <li><a href="#how-to-use-it-in-your-ig" id="markdown-toc-how-to-use-it-in-your-ig">How to use it in your IG</a></li>
+  <li><a href="#maintaining-a-template" id="markdown-toc-maintaining-a-template">Maintaining a template</a></li>
+</ul>
+
+</div>
+<p>UNICOM FHIR Implementation Guide introduces a novelty feature - a customizable template for visualizing FHIR Bundles. This visualization can be used inside the IG in the <a href="https://hl7-eu.github.io/unicom-ig/Bundle-010-Clexane-60mg-06ml-EE-FullProduct.html#">narrative content view of example resources</a>.</p>
+
+<h3 id="background">Background</h3>
+<p>The work of creating ISO IDMP compatible example data for UNICOM pilots to use was one of the tasks of Work Package 4 (national competent authorities). For this purpose, a first solution was created - the UNICOM FHIR Server (UFIS). When creating first instances of products, it became clear that it is nearly impossible to work with such complicated data structures without having a tool for visualizing the full data of one product. For that purpose, UFIS made use of <a href="https://idmp-viewer.azurewebsites.net/display-product">IDMP viewer by NProgram (Rik Smithies)</a>.
+This became one of the most used features of UFIS: data submitters could use the viewer to validate the integrity of submitted data, and other users wanted to see and compare the modelling of medicinal product data.</p>
+
+<p>When the official UNICOM IG was finally started, the same challenges were visible, and there was a strong expectation of having the same or similar visualisation inside the implementation guide. However, the IDMP viewer was not reusable outside its context, and was not openly editable for satisfying the UNICOM needs. After some successful changes to the FHIR publishing infrastructure, UNICOM developed a pioneer solution that is open source and well integrated in the tooling  - the Bundle Visualizer you see in this IG.</p>
+
+<h3 id="bundle-visualizer">Bundle visualizer</h3>
+
+<h4 id="use-case">Use case</h4>
+<p>The primary use case for Bundle visualizer is to provide clean and easy-to-read visualization of FHIR bundles that consist of several resources that add up to one set of data or a document. This can be used instead of a narrative content view in the examples.</p>
+
+<p>This specific visualization serves as an explanation of how the resources are assembled together. It is not meant to demonstrate the layout of the data in an actual user interface.</p>
+
+<p>Another important use case is the validation of example data. Complicated examples that consist of several FHIR resources are difficult to create manually. It is easy to lose references between resources, bundle up wrong resources, or make mistakes in the data. UNICOM IG aims to provide a big amount of examples of actual medication data, which means that the content validation of example data has been extremely important. This would not be possible without a visualization tool.</p>
+
+<h4 id="how-it-works">How it works</h4>
+<p>Bundle visualizer, as stated in the name, works on a FHIR Bundle. This Bundle can be provided to the visualizer or obtained from a adequately designed search query, which returns the desired kind of bundle. Different templates can be applied to different resource types, which can then be assembled together into one view in an appropriate way.</p>
+
+<p>To integrate with and make the most of the FHIR tooling, the Bundle viewer uses <a href="https://shopify.github.io/liquid/">Liquid Templates</a>. 
+This approach means the Bundle visualizer can be created, modified and used inside a FHIR IG or in a separate project.</p>
+
+<p>Bundle visualizer is a generic tool. Even though first introduced in UNICOM project, where it is used for MedicationDefinition resources, it can be used for any kind of resources.</p>
+
+<h4 id="viewer-comparison">Viewer Comparison</h4>
+<p>There is no reason to believe that one viewer is better than the other. Even though they seem quite alike, they serve a slightly different purpose and use a different solution. Here is a list of some of the key differences.</p>
+
+<table class="table-bordered table-sm">
+  <thead>
+    <tr>
+      <th>UNICOM Bundle Visualizer</th>
+      <th>NProgram Visualizer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Open source - anyone can use/customise</td>
+      <td>Free to use; not customisable</td>
+    </tr>
+    <tr>
+      <td>Works in an IG or server</td>
+      <td>Works only in server</td>
+    </tr>
+    <tr>
+      <td>Works on a Bundle resource</td>
+      <td>Makes multiple queries</td>
+    </tr>
+    <tr>
+      <td>Disregards data that is not included on the template</td>
+      <td>Automatically includes all data in MedicationDefinition resources</td>
+    </tr>
+    <tr>
+      <td>Can be used with any kind of FHIR Bundle</td>
+      <td>Only for MedicationDefinition module resources</td>
+    </tr>
+    <tr>
+      <td>Possible to adapt and the looks and content</td>
+      <td>Not customizable</td>
+    </tr>
+    <tr>
+      <td>Template needs to be created and kept up-to-date with data</td>
+      <td>Out-of-box solution, just copy your url</td>
+    </tr>
+    <tr>
+      <td><a href="Bundle-015-CopaliaHCT-EE-FullProduct.html">Example</a></td>
+      <td><a href="https://idmp-viewer.azurewebsites.net/display-product?url=http://185.11.167.107:8084/fhir/MedicinalProductDefinition/CopaliaHCT-EE-MPD">Example</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="technical-considerations">Technical considerations</h4>
+<p>Requesting the required data set as a bundle might be problematic. It is not a problem when using the visualiser inside the IG, as the example bundles in an IG would always be predefined and manually assembled. However, on a server, you may not always be able to query all the data in a way, that it would be served as one FHIR bundle. Since the solutions are open source and editable, this can be addressed in the future if needed.</p>
+
+<p>The template disregards all data that is not explicitly included in the template. Therefore, it is important to keep the templates up-to-date with the data model and make sure all the data that is included in the examples are also made visible via the templates.<br />
+Both options require some validation, to confirm the visualizer is displaying the data correctly.</p>
+
+<p>Templates as such are not dependant on FHIR versions, but they make use of FHIR paths and attribute names, which may occasionally change. A changed FHIR path requires an update to the template.</p>
+
+<h3 id="how-to-use-it-in-your-ig">How to use it in your IG</h3>
+<h4 id="set-up-the-ig">Set up the IG</h4>
+<p>To set up the IG for using liquid rendering of the resources, it is necessary to set the <code class="language-plaintext highlighter-rouge">produce-jekyll-data</code> parameter to true.<br />
+In sushi:</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># parameters:</span>
+<span class="c1">#  produce-jekyll-data: true</span>
+</code></pre></div></div>
+<p>or in json:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"parameter": [
+  {
+    "code": "produce-jekyll-data",
+    "value": "true"
+  },
+</code></pre></div></div>
+
+<h4 id="create-a-template">Create a template</h4>
+<p>Creating a template from scratch is a developer’s job, requiring basic knowledge of FHIR and <a href="https://shopify.github.io/liquid/">Liquid Templates</a>, and quite some patience. Liquid templates are not the easiest way to create a display tool, but as executable scripts (like JavaScript) are not allowed inside an IG, the regular options are off the table.<br />
+You can find UNICOM templates’ code <a href="https://github.com/hl7-eu/unicom-ig/tree/master/unicom-template/package/includes">in our GitHub repository</a>.</p>
+
+<p>Initial templates may be easier to create in a separate project to make use of a locally run http-server in order to speed up the work.</p>
+<h4 id="create-a-template-1">Create a template</h4>
+
+<h3 id="maintaining-a-template">Maintaining a template</h3>
+<p>Changing an existing template where the desired data elements have already been made visible is significantly easier task. Anyone with basic knowledge of html should be able to make simple changes to the templates.<br />
+Modifying a template inside an Implementation Guide (IG) project can be time-consuming as it requires frequent building of the entire project to verify if the changes have been correctly applied. However, for faster iteration, the building time can be reduced to seconds by modifying the temporary liquid files used by Jekyll and running only Jekyll on the temporary pages.</p>
+
+<p>To accomplish this, run the following command from the root folder of the IG project:</p>
+
+<p><code class="language-plaintext highlighter-rouge">jekyll build --destination ./output -s temp/pages .</code></p>
+
+<p>This command instructs Jekyll to build the project using the temporary pages and output the result to the <code class="language-plaintext highlighter-rouge">./output</code> directory.</p>
+
+<p>It’s important to note that this method works with temporary files that are created each time the IG publisher runs. Once the temporary files are generated, you can iterate rapidly. However, remember to copy the results of your iteration (liquid files) back to the <code class="language-plaintext highlighter-rouge">_includes</code> folder in your source template. The <code class="language-plaintext highlighter-rouge">_includes</code> folder contains the file that is used by the publisher and will replace the corresponding file in <code class="language-plaintext highlighter-rouge">temp/pages/_includes</code> when the publisher is executed.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 17, 2023 08:02+0000">2023-10-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

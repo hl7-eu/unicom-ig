@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/transformation> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "transformation"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0038</td><td>Dilution</td></tr><tr><td>0039</td><td>Dispersion</td></tr><tr><td>0040</td><td>Dissolution</td></tr><tr><td>0041</td><td>Mixing</td></tr><tr><td>0042</td><td>No transformation</td></tr><tr><td>0043</td><td>Unknown</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://unicom-project.eu/fhir/ValueSet/transformation"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "Transformation"]; # 
+  fhir:ValueSet.title [ fhir:value "Transformation"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-03T15:06:18+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "UNICOM"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "ValueSet Transformation from EDQM, TRA, see https://standardterms.edqm.eu/#"]; # 
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://standardterms.edqm.eu" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0038" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dilution" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0039" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dispersion" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0040" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dissolution" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0041" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mixing" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0042" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No transformation" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "0043" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unknown" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/transformation.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

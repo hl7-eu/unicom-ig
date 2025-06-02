@@ -1,0 +1,80 @@
+{
+  "resourceType" : "Ingredient",
+  "id" : "Agen-5mg-Tablet-EE-I",
+  "meta" : {
+    "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Ingredient</b><a name=\"Agen-5mg-Tablet-EE-I\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Ingredient &quot;Agen-5mg-Tablet-EE-I&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PPLIngredient.html\">PPL Ingredient profile</a></p></div><p><b>status</b>: active</p><p><b>for</b>: </p><ul><li><a href=\"MedicinalProductDefinition-Agen-5mg-Tablet-EE-MPD.html\">MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD</a></li><li><a href=\"ManufacturedItemDefinition-Agen-5mg-Tablet-EE-MID.html\">ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID</a></li><li><a href=\"AdministrableProductDefinition-Agen-5mg-Tablet-EE-APD.html\">AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD</a></li></ul><p><b>role</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (100000072050#100000072072)</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td>-</td><td><b>Concept</b></td></tr><tr><td>*</td><td>Amlodipine besilate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-substance-sms-cs.html\">Substances EMA SPOR SMS</a>#100000090079)</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 6.935 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td>-</td><td><b>Concept</b></td></tr><tr><td>*</td><td>Amlodipine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-substance-sms-cs.html\">Substances EMA SPOR SMS</a>#100000085259)</span></td></tr></table><p><b>strength</b>: 5 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')</span>/1 Tablet<span style=\"background: LightGoldenRodYellow\"> (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')</span></p></blockquote></blockquote></blockquote></div>"
+  },
+  "status" : "active",
+  "for" : [{
+    "reference" : "MedicinalProductDefinition/Agen-5mg-Tablet-EE-MPD"
+  },
+  {
+    "reference" : "ManufacturedItemDefinition/Agen-5mg-Tablet-EE-MID"
+  },
+  {
+    "reference" : "AdministrableProductDefinition/Agen-5mg-Tablet-EE-APD"
+  }],
+  "role" : {
+    "coding" : [{
+      "system" : "https://spor.ema.europa.eu/v1/lists/100000072050",
+      "code" : "100000072072",
+      "display" : "Active"
+    }]
+  },
+  "substance" : {
+    "code" : {
+      "concept" : {
+        "coding" : [{
+          "system" : "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+          "code" : "100000090079",
+          "display" : "Amlodipine besilate"
+        }]
+      }
+    },
+    "strength" : [{
+      "presentationRatio" : {
+        "numerator" : {
+          "value" : 6.935,
+          "unit" : "milligram(s)",
+          "system" : "https://spor.ema.europa.eu/v1/lists/100000110633",
+          "code" : "100000110655"
+        },
+        "denominator" : {
+          "value" : 1,
+          "unit" : "Tablet",
+          "system" : "https://spor.ema.europa.eu/v1/lists/200000000014",
+          "code" : "200000002152"
+        }
+      },
+      "referenceStrength" : [{
+        "substance" : {
+          "concept" : {
+            "coding" : [{
+              "system" : "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+              "code" : "100000085259",
+              "display" : "Amlodipine"
+            }]
+          }
+        },
+        "strengthRatio" : {
+          "numerator" : {
+            "value" : 5,
+            "unit" : "milligram(s)",
+            "system" : "https://spor.ema.europa.eu/v1/lists/100000110633",
+            "code" : "100000110655"
+          },
+          "denominator" : {
+            "value" : 1,
+            "unit" : "Tablet",
+            "system" : "https://spor.ema.europa.eu/v1/lists/200000000014",
+            "code" : "200000002152"
+          }
+        }
+      }]
+    }]
+  }
+}

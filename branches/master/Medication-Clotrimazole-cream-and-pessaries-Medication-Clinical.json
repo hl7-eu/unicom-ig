@@ -1,0 +1,52 @@
+{
+  "resourceType" : "Medication",
+  "id" : "Clotrimazole-cream-and-pessaries-Medication-Clinical",
+  "meta" : {
+    "profile" : ["http://unicom-project.eu/fhir/StructureDefinition/MedicationAsMedicinalProduct"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication Clotrimazole-cream-and-pessaries-Medication-Clinical</b></p><a name=\"Clotrimazole-cream-and-pessaries-Medication-Clinical\"> </a><a name=\"hcClotrimazole-cream-and-pessaries-Medication-Clinical\"> </a><a name=\"Clotrimazole-cream-and-pessaries-Medication-Clinical-en-US\"> </a><p><b>MedicinalProductClassification</b>: <span title=\"Codes:{http://www.whocc.no/atc G01AF02}\">clotrimazole</span></p><p><b>AdministrableDoseForm</b>: <span title=\"Codes:{https://standardterms.edqm.eu 10901000}\">Vaginal cream</span></p><p><b>doseForm</b>: <span title=\"Codes:{https://standardterms.edqm.eu 14001000}\">Cream + pessary</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-Clotrimazole-Cream-Generic.html\">Medication Clotrimazole 20 mg/g vaginal cream</a></td></tr></table></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication/Clotrimazole-Pessary-Generic\">Medication/Clotrimazole-Pessary-Generic</a></td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://unicom-project.eu/fhir/StructureDefinition/medicinal-product-classification",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.whocc.no/atc",
+        "code" : "G01AF02",
+        "display" : "clotrimazole"
+      }]
+    }
+  },
+  {
+    "url" : "http://unicom-project.eu/fhir/StructureDefinition/administrable-doseform",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://standardterms.edqm.eu",
+        "code" : "10901000",
+        "display" : "Vaginal cream"
+      }]
+    }
+  }],
+  "doseForm" : {
+    "coding" : [{
+      "system" : "https://standardterms.edqm.eu",
+      "code" : "14001000",
+      "display" : "Cream + pessary"
+    }]
+  },
+  "ingredient" : [{
+    "item" : {
+      "reference" : {
+        "reference" : "Medication/Clotrimazole-Cream-Generic"
+      }
+    }
+  },
+  {
+    "item" : {
+      "reference" : {
+        "reference" : "Medication/Clotrimazole-Pessary-Generic"
+      }
+    }
+  }]
+}

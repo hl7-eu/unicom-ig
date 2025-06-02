@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Unit of Measurement EMA - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.101"}
+    h3,h4,h5,h6{--heading-prefix:"7.101"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+      <li>
+        <a href="testserver.html">Testing Tool Box</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Unit of Measurement EMA</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-unit-of-measurement-ema-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-unit-of-measurement-ema-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-unit-of-measurement-ema-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Unit of Measurement EMA
+
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://spor.ema.europa.eu/v1/lists/100000110633<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://spor.ema.europa.eu/v1/lists/100000110633"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://spor.ema.europa.eu/v1/lists/100000110633|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2024-05-03
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">UnitOfMeasurement_EMA_CS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Unit of Measurement. Based on UCUM. Re-coded with RMS codes.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-all-units-vs.html">AllUnits</a></li>
+ <li><a href="ValueSet-unit-of-measurement-vs.html">UnitOfMeasurement</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://spor.ema.europa.eu/v1/lists/100000110633</code> defines the following codes:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">100000155670<a name="unit-of-measurement-ema-cs-100000155670"> </a></td>
+<td>millilitre(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000155671<a name="unit-of-measurement-ema-cs-100000155671"> </a></td>
+<td>millilitre(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000158395<a name="unit-of-measurement-ema-cs-100000158395"> </a></td>
+<td>Relative Percentage Survival</td></tr>
+<tr><td style="white-space:nowrap">100000161021<a name="unit-of-measurement-ema-cs-100000161021"> </a></td>
+<td>log2 geometric mean titre</td></tr>
+<tr><td style="white-space:nowrap">100000163235<a name="unit-of-measurement-ema-cs-100000163235"> </a></td>
+<td>haemagglutinating units</td></tr>
+<tr><td style="white-space:nowrap">100000164205<a name="unit-of-measurement-ema-cs-100000164205"> </a></td>
+<td>millilitre(s)/dose</td></tr>
+<tr><td style="white-space:nowrap">100000166072<a name="unit-of-measurement-ema-cs-100000166072"> </a></td>
+<td>microgram(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000166092<a name="unit-of-measurement-ema-cs-100000166092"> </a></td>
+<td>microgram(s)/hour</td></tr>
+<tr><td style="white-space:nowrap">100000166219<a name="unit-of-measurement-ema-cs-100000166219"> </a></td>
+<td>focus forming unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000166268<a name="unit-of-measurement-ema-cs-100000166268"> </a></td>
+<td>LD100 concentration for mice after i.m. injection after 5 days</td></tr>
+<tr><td style="white-space:nowrap">100000166343<a name="unit-of-measurement-ema-cs-100000166343"> </a></td>
+<td>percent volume/weight</td></tr>
+<tr><td style="white-space:nowrap">100000166389<a name="unit-of-measurement-ema-cs-100000166389"> </a></td>
+<td>millilitre(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000166578<a name="unit-of-measurement-ema-cs-100000166578"> </a></td>
+<td>50% neutralising dose/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000166600<a name="unit-of-measurement-ema-cs-100000166600"> </a></td>
+<td>relative potency</td></tr>
+<tr><td style="white-space:nowrap">100000166604<a name="unit-of-measurement-ema-cs-100000166604"> </a></td>
+<td>European Pharmacopoeia Unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000166608<a name="unit-of-measurement-ema-cs-100000166608"> </a></td>
+<td>micrograms(s)/square centimetre</td></tr>
+<tr><td style="white-space:nowrap">100000166625<a name="unit-of-measurement-ema-cs-100000166625"> </a></td>
+<td>Standardised Quality units House Dust Mite</td></tr>
+<tr><td style="white-space:nowrap">100000166626<a name="unit-of-measurement-ema-cs-100000166626"> </a></td>
+<td>Allergy Unit Equivalent</td></tr>
+<tr><td style="white-space:nowrap">100000166630<a name="unit-of-measurement-ema-cs-100000166630"> </a></td>
+<td>allergen unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000166631<a name="unit-of-measurement-ema-cs-100000166631"> </a></td>
+<td>noon unit</td></tr>
+<tr><td style="white-space:nowrap">100000166774<a name="unit-of-measurement-ema-cs-100000166774"> </a></td>
+<td>million international units/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000166856<a name="unit-of-measurement-ema-cs-100000166856"> </a></td>
+<td>index of reactivity/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000166862<a name="unit-of-measurement-ema-cs-100000166862"> </a></td>
+<td>gram(s)/dose</td></tr>
+<tr><td style="white-space:nowrap">100000166876<a name="unit-of-measurement-ema-cs-100000166876"> </a></td>
+<td>index of concentration/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000167030<a name="unit-of-measurement-ema-cs-100000167030"> </a></td>
+<td>colony forming unit(s)/dose</td></tr>
+<tr><td style="white-space:nowrap">100000167151<a name="unit-of-measurement-ema-cs-100000167151"> </a></td>
+<td>milligram(s)/square centimetre</td></tr>
+<tr><td style="white-space:nowrap">100000167436<a name="unit-of-measurement-ema-cs-100000167436"> </a></td>
+<td>Centesimal potentisation</td></tr>
+<tr><td style="white-space:nowrap">100000167437<a name="unit-of-measurement-ema-cs-100000167437"> </a></td>
+<td>Decimal potentisation</td></tr>
+<tr><td style="white-space:nowrap">100000167445<a name="unit-of-measurement-ema-cs-100000167445"> </a></td>
+<td>milligram(s)/milligram</td></tr>
+<tr><td style="white-space:nowrap">100000167531<a name="unit-of-measurement-ema-cs-100000167531"> </a></td>
+<td>Allergy Unit(s) Modified</td></tr>
+<tr><td style="white-space:nowrap">100000168907<a name="unit-of-measurement-ema-cs-100000168907"> </a></td>
+<td>Allergy Unit Equivalent/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000169998<a name="unit-of-measurement-ema-cs-100000169998"> </a></td>
+<td>billion spores</td></tr>
+<tr><td style="white-space:nowrap">200000018828<a name="unit-of-measurement-ema-cs-200000018828"> </a></td>
+<td>Immunofluorescence units</td></tr>
+<tr><td style="white-space:nowrap">200000018830<a name="unit-of-measurement-ema-cs-200000018830"> </a></td>
+<td>log10 haemagglutination inhibiting unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000018831<a name="unit-of-measurement-ema-cs-200000018831"> </a></td>
+<td>log10 serum neutralising unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000018839<a name="unit-of-measurement-ema-cs-200000018839"> </a></td>
+<td>virus neutralising unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000022787<a name="unit-of-measurement-ema-cs-200000022787"> </a></td>
+<td>Toxic unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000018832<a name="unit-of-measurement-ema-cs-200000018832"> </a></td>
+<td>log2 serum neutralising unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000018837<a name="unit-of-measurement-ema-cs-200000018837"> </a></td>
+<td>serum neutralising unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000018840<a name="unit-of-measurement-ema-cs-200000018840"> </a></td>
+<td>log10 virus neutralising unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000156970<a name="unit-of-measurement-ema-cs-100000156970"> </a></td>
+<td>milligram(s)/unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000156971<a name="unit-of-measurement-ema-cs-100000156971"> </a></td>
+<td>gram(s)/kilogram(s)</td></tr>
+<tr><td style="white-space:nowrap">100000156972<a name="unit-of-measurement-ema-cs-100000156972"> </a></td>
+<td>gram(s)/unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000156973<a name="unit-of-measurement-ema-cs-100000156973"> </a></td>
+<td>Fluorescent Focus Forming Unit</td></tr>
+<tr><td style="white-space:nowrap">100000156990<a name="unit-of-measurement-ema-cs-100000156990"> </a></td>
+<td>international unit(s)/unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000172034<a name="unit-of-measurement-ema-cs-100000172034"> </a></td>
+<td>50% Protective Dose</td></tr>
+<tr><td style="white-space:nowrap">100000172654<a name="unit-of-measurement-ema-cs-100000172654"> </a></td>
+<td>noon unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000172970<a name="unit-of-measurement-ema-cs-100000172970"> </a></td>
+<td>venom unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000023346<a name="unit-of-measurement-ema-cs-200000023346"> </a></td>
+<td>log10 colony forming unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000023393<a name="unit-of-measurement-ema-cs-200000023393"> </a></td>
+<td>80% Protective Dose</td></tr>
+<tr><td style="white-space:nowrap">200000024891<a name="unit-of-measurement-ema-cs-200000024891"> </a></td>
+<td>70% Protective Dose</td></tr>
+<tr><td style="white-space:nowrap">200000025190<a name="unit-of-measurement-ema-cs-200000025190"> </a></td>
+<td>relative unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000025191<a name="unit-of-measurement-ema-cs-200000025191"> </a></td>
+<td>log10 immunofluorescence unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000025239<a name="unit-of-measurement-ema-cs-200000025239"> </a></td>
+<td>log10 relative potency</td></tr>
+<tr><td style="white-space:nowrap">200000003173<a name="unit-of-measurement-ema-cs-200000003173"> </a></td>
+<td>log2 virus neutralising unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000003174<a name="unit-of-measurement-ema-cs-200000003174"> </a></td>
+<td>log2 haemagglutination inhibiting unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000025261<a name="unit-of-measurement-ema-cs-200000025261"> </a></td>
+<td>million cells</td></tr>
+<tr><td style="white-space:nowrap">200000025913<a name="unit-of-measurement-ema-cs-200000025913"> </a></td>
+<td>genome copies/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000025931<a name="unit-of-measurement-ema-cs-200000025931"> </a></td>
+<td>80% effective dose in guinea pig</td></tr>
+<tr><td style="white-space:nowrap">200000025932<a name="unit-of-measurement-ema-cs-200000025932"> </a></td>
+<td>60% effective dose in rabbit</td></tr>
+<tr><td style="white-space:nowrap">200000025934<a name="unit-of-measurement-ema-cs-200000025934"> </a></td>
+<td>log 10 50% infective dose in chicken</td></tr>
+<tr><td style="white-space:nowrap">200000025936<a name="unit-of-measurement-ema-cs-200000025936"> </a></td>
+<td>90% protective dose in guinea pig</td></tr>
+<tr><td style="white-space:nowrap">200000025938<a name="unit-of-measurement-ema-cs-200000025938"> </a></td>
+<td>Indirect immunofluorescence unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000025939<a name="unit-of-measurement-ema-cs-200000025939"> </a></td>
+<td>Percentage protective dose</td></tr>
+<tr><td style="white-space:nowrap">200000025933<a name="unit-of-measurement-ema-cs-200000025933"> </a></td>
+<td>80% effective dose in rabbit</td></tr>
+<tr><td style="white-space:nowrap">200000025935<a name="unit-of-measurement-ema-cs-200000025935"> </a></td>
+<td>50% neutralisation dose</td></tr>
+<tr><td style="white-space:nowrap">200000025937<a name="unit-of-measurement-ema-cs-200000025937"> </a></td>
+<td>Inclusion forming unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000003230<a name="unit-of-measurement-ema-cs-200000003230"> </a></td>
+<td>Standardised Quality units Betula verrucosa</td></tr>
+<tr><td style="white-space:nowrap">200000000121<a name="unit-of-measurement-ema-cs-200000000121"> </a></td>
+<td>Allergan unit</td></tr>
+<tr><td style="white-space:nowrap">200000000122<a name="unit-of-measurement-ema-cs-200000000122"> </a></td>
+<td>Allergen unit for Ambrosia Artemisiifolia</td></tr>
+<tr><td style="white-space:nowrap">200000000125<a name="unit-of-measurement-ema-cs-200000000125"> </a></td>
+<td>Allergy unit nominal (AUN)</td></tr>
+<tr><td style="white-space:nowrap">200000000126<a name="unit-of-measurement-ema-cs-200000000126"> </a></td>
+<td>Allergy unit</td></tr>
+<tr><td style="white-space:nowrap">200000000127<a name="unit-of-measurement-ema-cs-200000000127"> </a></td>
+<td>APL unit</td></tr>
+<tr><td style="white-space:nowrap">200000000128<a name="unit-of-measurement-ema-cs-200000000128"> </a></td>
+<td>Arbitary unit</td></tr>
+<tr><td style="white-space:nowrap">200000000129<a name="unit-of-measurement-ema-cs-200000000129"> </a></td>
+<td>Bethesda unit</td></tr>
+<tr><td style="white-space:nowrap">200000000130<a name="unit-of-measurement-ema-cs-200000000130"> </a></td>
+<td>Biological allergy unit (BAU)</td></tr>
+<tr><td style="white-space:nowrap">200000000131<a name="unit-of-measurement-ema-cs-200000000131"> </a></td>
+<td>Bodansky unit</td></tr>
+<tr><td style="white-space:nowrap">200000000132<a name="unit-of-measurement-ema-cs-200000000132"> </a></td>
+<td>British Pharmacopoeia unit</td></tr>
+<tr><td style="white-space:nowrap">200000000133<a name="unit-of-measurement-ema-cs-200000000133"> </a></td>
+<td>BU (Biological unit)</td></tr>
+<tr><td style="white-space:nowrap">200000000134<a name="unit-of-measurement-ema-cs-200000000134"> </a></td>
+<td>Clinical unit</td></tr>
+<tr><td style="white-space:nowrap">200000000135<a name="unit-of-measurement-ema-cs-200000000135"> </a></td>
+<td>Colony forming unit</td></tr>
+<tr><td style="white-space:nowrap">200000000136<a name="unit-of-measurement-ema-cs-200000000136"> </a></td>
+<td>Cubic centimetre</td></tr>
+<tr><td style="white-space:nowrap">200000000137<a name="unit-of-measurement-ema-cs-200000000137"> </a></td>
+<td>DPP (1 DPP = 1 HEPL</td></tr>
+<tr><td style="white-space:nowrap">200000000138<a name="unit-of-measurement-ema-cs-200000000138"> </a></td>
+<td>Dye unit</td></tr>
+<tr><td style="white-space:nowrap">200000000139<a name="unit-of-measurement-ema-cs-200000000139"> </a></td>
+<td>Equivalent</td></tr>
+<tr><td style="white-space:nowrap">200000000140<a name="unit-of-measurement-ema-cs-200000000140"> </a></td>
+<td>FIP</td></tr>
+<tr><td style="white-space:nowrap">200000000141<a name="unit-of-measurement-ema-cs-200000000141"> </a></td>
+<td>Genome Copies (GC)</td></tr>
+<tr><td style="white-space:nowrap">200000000142<a name="unit-of-measurement-ema-cs-200000000142"> </a></td>
+<td>GPL unit</td></tr>
+<tr><td style="white-space:nowrap">200000000143<a name="unit-of-measurement-ema-cs-200000000143"> </a></td>
+<td>Gram Percent</td></tr>
+<tr><td style="white-space:nowrap">200000000144<a name="unit-of-measurement-ema-cs-200000000144"> </a></td>
+<td>Gram Haemagglutinin</td></tr>
+<tr><td style="white-space:nowrap">200000000145<a name="unit-of-measurement-ema-cs-200000000145"> </a></td>
+<td>Gram/Hour</td></tr>
+<tr><td style="white-space:nowrap">200000000146<a name="unit-of-measurement-ema-cs-200000000146"> </a></td>
+<td>Histamine Equivalent Prick (HEP)</td></tr>
+<tr><td style="white-space:nowrap">200000000147<a name="unit-of-measurement-ema-cs-200000000147"> </a></td>
+<td>Homeopathic Potency Of Centesimal Hahnemannian Series</td></tr>
+<tr><td style="white-space:nowrap">200000000148<a name="unit-of-measurement-ema-cs-200000000148"> </a></td>
+<td>Homeopathic Potency Of Centesimal Korsakovian Series</td></tr>
+<tr><td style="white-space:nowrap">200000000149<a name="unit-of-measurement-ema-cs-200000000149"> </a></td>
+<td>Homeopathic Potency Of Decimal Hahnemannian Series</td></tr>
+<tr><td style="white-space:nowrap">200000000150<a name="unit-of-measurement-ema-cs-200000000150"> </a></td>
+<td>Homeopathic Potency Of Decimal Korsakovian Series</td></tr>
+<tr><td style="white-space:nowrap">200000000151<a name="unit-of-measurement-ema-cs-200000000151"> </a></td>
+<td>Homeopathic Potency Of Millesimal Hahnemannian Series</td></tr>
+<tr><td style="white-space:nowrap">200000000152<a name="unit-of-measurement-ema-cs-200000000152"> </a></td>
+<td>Homeopathic Potency Of Millesimal Korsakovian Series</td></tr>
+<tr><td style="white-space:nowrap">200000000153<a name="unit-of-measurement-ema-cs-200000000153"> </a></td>
+<td>Homeopathic Potency Of Quintamillesimal Hahnemannian Series</td></tr>
+<tr><td style="white-space:nowrap">200000000154<a name="unit-of-measurement-ema-cs-200000000154"> </a></td>
+<td>Homeopathic Potency Of Quintamillesimal Korsakovian Series</td></tr>
+<tr><td style="white-space:nowrap">200000000155<a name="unit-of-measurement-ema-cs-200000000155"> </a></td>
+<td>Kallikrein Inactivator unit</td></tr>
+<tr><td style="white-space:nowrap">200000000156<a name="unit-of-measurement-ema-cs-200000000156"> </a></td>
+<td>King-Armstrong unit</td></tr>
+<tr><td style="white-space:nowrap">200000000157<a name="unit-of-measurement-ema-cs-200000000157"> </a></td>
+<td>Kunkel unit</td></tr>
+<tr><td style="white-space:nowrap">200000000158<a name="unit-of-measurement-ema-cs-200000000158"> </a></td>
+<td>LD50 unit (Lethal Dose 50%)</td></tr>
+<tr><td style="white-space:nowrap">200000000159<a name="unit-of-measurement-ema-cs-200000000159"> </a></td>
+<td>Lipoprotein Lipase Releasing unit (LSU)</td></tr>
+<tr><td style="white-space:nowrap">200000000160<a name="unit-of-measurement-ema-cs-200000000160"> </a></td>
+<td>Mac Lagan unit</td></tr>
+<tr><td style="white-space:nowrap">200000000161<a name="unit-of-measurement-ema-cs-200000000161"> </a></td>
+<td>Molar</td></tr>
+<tr><td style="white-space:nowrap">200000000162<a name="unit-of-measurement-ema-cs-200000000162"> </a></td>
+<td>MPL unit</td></tr>
+<tr><td style="white-space:nowrap">200000000163<a name="unit-of-measurement-ema-cs-200000000163"> </a></td>
+<td>NIH unit of Thrombin inhibited</td></tr>
+<tr><td style="white-space:nowrap">200000000164<a name="unit-of-measurement-ema-cs-200000000164"> </a></td>
+<td>Nitrogen treatment unit (NTU)</td></tr>
+<tr><td style="white-space:nowrap">200000000165<a name="unit-of-measurement-ema-cs-200000000165"> </a></td>
+<td>Organisms</td></tr>
+<tr><td style="white-space:nowrap">200000000166<a name="unit-of-measurement-ema-cs-200000000166"> </a></td>
+<td>Osmol</td></tr>
+<tr><td style="white-space:nowrap">200000000167<a name="unit-of-measurement-ema-cs-200000000167"> </a></td>
+<td>Parts per billion</td></tr>
+<tr><td style="white-space:nowrap">200000000168<a name="unit-of-measurement-ema-cs-200000000168"> </a></td>
+<td>Parts per thousand</td></tr>
+<tr><td style="white-space:nowrap">200000000169<a name="unit-of-measurement-ema-cs-200000000169"> </a></td>
+<td>Parts per trillion</td></tr>
+<tr><td style="white-space:nowrap">200000000170<a name="unit-of-measurement-ema-cs-200000000170"> </a></td>
+<td>Piece</td></tr>
+<tr><td style="white-space:nowrap">200000000171<a name="unit-of-measurement-ema-cs-200000000171"> </a></td>
+<td>Pressor unit</td></tr>
+<tr><td style="white-space:nowrap">200000000172<a name="unit-of-measurement-ema-cs-200000000172"> </a></td>
+<td>Protein nitrogen unit</td></tr>
+<tr><td style="white-space:nowrap">200000000173<a name="unit-of-measurement-ema-cs-200000000173"> </a></td>
+<td>Protein unit (PUN)</td></tr>
+<tr><td style="white-space:nowrap">200000000174<a name="unit-of-measurement-ema-cs-200000000174"> </a></td>
+<td>Radian</td></tr>
+<tr><td style="white-space:nowrap">200000000175<a name="unit-of-measurement-ema-cs-200000000175"> </a></td>
+<td>Revolution</td></tr>
+<tr><td style="white-space:nowrap">200000000176<a name="unit-of-measurement-ema-cs-200000000176"> </a></td>
+<td>SBU (standardised biological unit)</td></tr>
+<tr><td style="white-space:nowrap">200000000177<a name="unit-of-measurement-ema-cs-200000000177"> </a></td>
+<td>Somogyi unit</td></tr>
+<tr><td style="white-space:nowrap">200000000178<a name="unit-of-measurement-ema-cs-200000000178"> </a></td>
+<td>Specific treatment unit (STU)</td></tr>
+<tr><td style="white-space:nowrap">200000000179<a name="unit-of-measurement-ema-cs-200000000179"> </a></td>
+<td>Spore</td></tr>
+<tr><td style="white-space:nowrap">200000000180<a name="unit-of-measurement-ema-cs-200000000180"> </a></td>
+<td>Standardised quality plus (SQ+)</td></tr>
+<tr><td style="white-space:nowrap">200000000181<a name="unit-of-measurement-ema-cs-200000000181"> </a></td>
+<td>Sublingual unit (SU)</td></tr>
+<tr><td style="white-space:nowrap">200000000182<a name="unit-of-measurement-ema-cs-200000000182"> </a></td>
+<td>Todd unit</td></tr>
+<tr><td style="white-space:nowrap">200000000183<a name="unit-of-measurement-ema-cs-200000000183"> </a></td>
+<td>Therapeutic unit (TU)</td></tr>
+<tr><td style="white-space:nowrap">200000000184<a name="unit-of-measurement-ema-cs-200000000184"> </a></td>
+<td>U. CEIP</td></tr>
+<tr><td style="white-space:nowrap">200000000185<a name="unit-of-measurement-ema-cs-200000000185"> </a></td>
+<td>UAH (anti heparin unit)</td></tr>
+<tr><td style="white-space:nowrap">200000000186<a name="unit-of-measurement-ema-cs-200000000186"> </a></td>
+<td>United States Pharmacopeia unit</td></tr>
+<tr><td style="white-space:nowrap">200000000187<a name="unit-of-measurement-ema-cs-200000000187"> </a></td>
+<td>Vector genome</td></tr>
+<tr><td style="white-space:nowrap">200000026014<a name="unit-of-measurement-ema-cs-200000026014"> </a></td>
+<td>log10 slow agglutination unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000027120<a name="unit-of-measurement-ema-cs-200000027120"> </a></td>
+<td>countable unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000027122<a name="unit-of-measurement-ema-cs-200000027122"> </a></td>
+<td>venom unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000027134<a name="unit-of-measurement-ema-cs-200000027134"> </a></td>
+<td>log2 antibody titre</td></tr>
+<tr><td style="white-space:nowrap">200000027920<a name="unit-of-measurement-ema-cs-200000027920"> </a></td>
+<td>agglutination K titer</td></tr>
+<tr><td style="white-space:nowrap">200000003425<a name="unit-of-measurement-ema-cs-200000003425"> </a></td>
+<td>log2/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000028942<a name="unit-of-measurement-ema-cs-200000028942"> </a></td>
+<td>head(s)</td></tr>
+<tr><td style="white-space:nowrap">200000029589<a name="unit-of-measurement-ema-cs-200000029589"> </a></td>
+<td>standardised biological unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000029590<a name="unit-of-measurement-ema-cs-200000029590"> </a></td>
+<td>biological allergy unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000003433<a name="unit-of-measurement-ema-cs-200000003433"> </a></td>
+<td>month</td></tr>
+<tr><td style="white-space:nowrap">200000003434<a name="unit-of-measurement-ema-cs-200000003434"> </a></td>
+<td>year</td></tr>
+<tr><td style="white-space:nowrap">200000003442<a name="unit-of-measurement-ema-cs-200000003442"> </a></td>
+<td>sublingual unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000003443<a name="unit-of-measurement-ema-cs-200000003443"> </a></td>
+<td>diagnostic biological unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000003445<a name="unit-of-measurement-ema-cs-200000003445"> </a></td>
+<td>microgram(s)/unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000003437<a name="unit-of-measurement-ema-cs-200000003437"> </a></td>
+<td>treatment standardised unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000003438<a name="unit-of-measurement-ema-cs-200000003438"> </a></td>
+<td>week</td></tr>
+<tr><td style="white-space:nowrap">200000003439<a name="unit-of-measurement-ema-cs-200000003439"> </a></td>
+<td>dalton(s)</td></tr>
+<tr><td style="white-space:nowrap">200000003440<a name="unit-of-measurement-ema-cs-200000003440"> </a></td>
+<td>kilodalton(s)</td></tr>
+<tr><td style="white-space:nowrap">200000003441<a name="unit-of-measurement-ema-cs-200000003441"> </a></td>
+<td>treatment polymerised unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000003447<a name="unit-of-measurement-ema-cs-200000003447"> </a></td>
+<td>gram(s)/mole</td></tr>
+<tr><td style="white-space:nowrap">200000003530<a name="unit-of-measurement-ema-cs-200000003530"> </a></td>
+<td>international unit(s)/drop</td></tr>
+<tr><td style="white-space:nowrap">200000003536<a name="unit-of-measurement-ema-cs-200000003536"> </a></td>
+<td>nanometre(s)</td></tr>
+<tr><td style="white-space:nowrap">200000003573<a name="unit-of-measurement-ema-cs-200000003573"> </a></td>
+<td>million unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000003966<a name="unit-of-measurement-ema-cs-200000003966"> </a></td>
+<td>spheroid(s)/square centimetre</td></tr>
+<tr><td style="white-space:nowrap">200000005299<a name="unit-of-measurement-ema-cs-200000005299"> </a></td>
+<td>log10 plaque forming unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000005300<a name="unit-of-measurement-ema-cs-200000005300"> </a></td>
+<td>focus forming unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000005301<a name="unit-of-measurement-ema-cs-200000005301"> </a></td>
+<td>log10 cell culture infective dose 50/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000005415<a name="unit-of-measurement-ema-cs-200000005415"> </a></td>
+<td>standard reactivity unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000005839<a name="unit-of-measurement-ema-cs-200000005839"> </a></td>
+<td>D antigen unit(s)/dose</td></tr>
+<tr><td style="white-space:nowrap">200000005852<a name="unit-of-measurement-ema-cs-200000005852"> </a></td>
+<td>percent weight/volume/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000005840<a name="unit-of-measurement-ema-cs-200000005840"> </a></td>
+<td>international unit(s)/dose</td></tr>
+<tr><td style="white-space:nowrap">200000005841<a name="unit-of-measurement-ema-cs-200000005841"> </a></td>
+<td>tissue culture infective dose 50/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000005843<a name="unit-of-measurement-ema-cs-200000005843"> </a></td>
+<td>U. CEIP/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000005844<a name="unit-of-measurement-ema-cs-200000005844"> </a></td>
+<td>LD50 unit (Lethal Dose 50%)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000005848<a name="unit-of-measurement-ema-cs-200000005848"> </a></td>
+<td>milligram(s)/microlitre</td></tr>
+<tr><td style="white-space:nowrap">200000005849<a name="unit-of-measurement-ema-cs-200000005849"> </a></td>
+<td>microgram(s) Haemagglutinin/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000005842<a name="unit-of-measurement-ema-cs-200000005842"> </a></td>
+<td>unit(s)/dose</td></tr>
+<tr><td style="white-space:nowrap">200000005845<a name="unit-of-measurement-ema-cs-200000005845"> </a></td>
+<td>plaque forming unit equiv 1000 mouse LD50/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000005846<a name="unit-of-measurement-ema-cs-200000005846"> </a></td>
+<td>gram(s)/milligram</td></tr>
+<tr><td style="white-space:nowrap">200000010383<a name="unit-of-measurement-ema-cs-200000010383"> </a></td>
+<td>million cell culture infective dose 50/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000010384<a name="unit-of-measurement-ema-cs-200000010384"> </a></td>
+<td>nanogram(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000002246<a name="unit-of-measurement-ema-cs-200000002246"> </a></td>
+<td>Therapeutic Unit(s)/mililiter</td></tr>
+<tr><td style="white-space:nowrap">200000012227<a name="unit-of-measurement-ema-cs-200000012227"> </a></td>
+<td>milliinternational unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000002330<a name="unit-of-measurement-ema-cs-200000002330"> </a></td>
+<td>milligram(s)/centimetre</td></tr>
+<tr><td style="white-space:nowrap">200000013766<a name="unit-of-measurement-ema-cs-200000013766"> </a></td>
+<td>micromole(s)/dose</td></tr>
+<tr><td style="white-space:nowrap">200000002378<a name="unit-of-measurement-ema-cs-200000002378"> </a></td>
+<td>haemagglutination inhibiting unit(s)</td></tr>
+<tr><td style="white-space:nowrap">200000002382<a name="unit-of-measurement-ema-cs-200000002382"> </a></td>
+<td>capsid particle(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">200000015709<a name="unit-of-measurement-ema-cs-200000015709"> </a></td>
+<td>Protective Dose</td></tr>
+<tr><td style="white-space:nowrap">100000110653<a name="unit-of-measurement-ema-cs-100000110653"> </a></td>
+<td>kilogram(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110654<a name="unit-of-measurement-ema-cs-100000110654"> </a></td>
+<td>gram(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110655<a name="unit-of-measurement-ema-cs-100000110655"> </a></td>
+<td>milligram(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110656<a name="unit-of-measurement-ema-cs-100000110656"> </a></td>
+<td>microgram(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110657<a name="unit-of-measurement-ema-cs-100000110657"> </a></td>
+<td>milligram(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110658<a name="unit-of-measurement-ema-cs-100000110658"> </a></td>
+<td>microgram(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110659<a name="unit-of-measurement-ema-cs-100000110659"> </a></td>
+<td>milligram(s)/square metre</td></tr>
+<tr><td style="white-space:nowrap">100000110660<a name="unit-of-measurement-ema-cs-100000110660"> </a></td>
+<td>microgram(s)/square metre</td></tr>
+<tr><td style="white-space:nowrap">100000110661<a name="unit-of-measurement-ema-cs-100000110661"> </a></td>
+<td>litre(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110662<a name="unit-of-measurement-ema-cs-100000110662"> </a></td>
+<td>millilitre(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110663<a name="unit-of-measurement-ema-cs-100000110663"> </a></td>
+<td>microlitre(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110664<a name="unit-of-measurement-ema-cs-100000110664"> </a></td>
+<td>becquerel(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110665<a name="unit-of-measurement-ema-cs-100000110665"> </a></td>
+<td>megabecquerel(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110666<a name="unit-of-measurement-ema-cs-100000110666"> </a></td>
+<td>kilobecquerel(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110667<a name="unit-of-measurement-ema-cs-100000110667"> </a></td>
+<td>curie(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110668<a name="unit-of-measurement-ema-cs-100000110668"> </a></td>
+<td>millicurie(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110669<a name="unit-of-measurement-ema-cs-100000110669"> </a></td>
+<td>microcurie(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110670<a name="unit-of-measurement-ema-cs-100000110670"> </a></td>
+<td>mole(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110671<a name="unit-of-measurement-ema-cs-100000110671"> </a></td>
+<td>international unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110672<a name="unit-of-measurement-ema-cs-100000110672"> </a></td>
+<td>international unit(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110673<a name="unit-of-measurement-ema-cs-100000110673"> </a></td>
+<td>milliequivalent(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110674<a name="unit-of-measurement-ema-cs-100000110674"> </a></td>
+<td>percent</td></tr>
+<tr><td style="white-space:nowrap">100000110675<a name="unit-of-measurement-ema-cs-100000110675"> </a></td>
+<td>drop(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110676<a name="unit-of-measurement-ema-cs-100000110676"> </a></td>
+<td>dosage form</td></tr>
+<tr><td style="white-space:nowrap">100000110677<a name="unit-of-measurement-ema-cs-100000110677"> </a></td>
+<td>kilogram(s)/cubic metre</td></tr>
+<tr><td style="white-space:nowrap">100000110678<a name="unit-of-measurement-ema-cs-100000110678"> </a></td>
+<td>gram(s)/cubic metre</td></tr>
+<tr><td style="white-space:nowrap">100000110679<a name="unit-of-measurement-ema-cs-100000110679"> </a></td>
+<td>milligram(s)/cubic metre</td></tr>
+<tr><td style="white-space:nowrap">100000110680<a name="unit-of-measurement-ema-cs-100000110680"> </a></td>
+<td>microgram(s)/cubic metre</td></tr>
+<tr><td style="white-space:nowrap">100000110681<a name="unit-of-measurement-ema-cs-100000110681"> </a></td>
+<td>kilogram(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110682<a name="unit-of-measurement-ema-cs-100000110682"> </a></td>
+<td>gram(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">200000015750<a name="unit-of-measurement-ema-cs-200000015750"> </a></td>
+<td>centimetre</td></tr>
+<tr><td style="white-space:nowrap">200000015749<a name="unit-of-measurement-ema-cs-200000015749"> </a></td>
+<td>other</td></tr>
+<tr><td style="white-space:nowrap">200000015751<a name="unit-of-measurement-ema-cs-200000015751"> </a></td>
+<td>Embryo Infective Dose</td></tr>
+<tr><td style="white-space:nowrap">200000015752<a name="unit-of-measurement-ema-cs-200000015752"> </a></td>
+<td>micrometre(s)</td></tr>
+<tr><td style="white-space:nowrap">200000015754<a name="unit-of-measurement-ema-cs-200000015754"> </a></td>
+<td>unknown</td></tr>
+<tr><td style="white-space:nowrap">100000110683<a name="unit-of-measurement-ema-cs-100000110683"> </a></td>
+<td>milligram(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110684<a name="unit-of-measurement-ema-cs-100000110684"> </a></td>
+<td>microgram(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110685<a name="unit-of-measurement-ema-cs-100000110685"> </a></td>
+<td>gram(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110686<a name="unit-of-measurement-ema-cs-100000110686"> </a></td>
+<td>milligram(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110687<a name="unit-of-measurement-ema-cs-100000110687"> </a></td>
+<td>microgram(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110688<a name="unit-of-measurement-ema-cs-100000110688"> </a></td>
+<td>microgram(s)/microlitre</td></tr>
+<tr><td style="white-space:nowrap">100000110689<a name="unit-of-measurement-ema-cs-100000110689"> </a></td>
+<td>mole(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110690<a name="unit-of-measurement-ema-cs-100000110690"> </a></td>
+<td>mole(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110691<a name="unit-of-measurement-ema-cs-100000110691"> </a></td>
+<td>mole(s)/milligram</td></tr>
+<tr><td style="white-space:nowrap">100000110692<a name="unit-of-measurement-ema-cs-100000110692"> </a></td>
+<td>mole(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110693<a name="unit-of-measurement-ema-cs-100000110693"> </a></td>
+<td>mole(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110694<a name="unit-of-measurement-ema-cs-100000110694"> </a></td>
+<td>becquerel(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110695<a name="unit-of-measurement-ema-cs-100000110695"> </a></td>
+<td>becquerel(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110696<a name="unit-of-measurement-ema-cs-100000110696"> </a></td>
+<td>becquerel(s)/microlitre</td></tr>
+<tr><td style="white-space:nowrap">100000110697<a name="unit-of-measurement-ema-cs-100000110697"> </a></td>
+<td>becquerel(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110698<a name="unit-of-measurement-ema-cs-100000110698"> </a></td>
+<td>becquerel(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110699<a name="unit-of-measurement-ema-cs-100000110699"> </a></td>
+<td>becquerel(s)/milligram</td></tr>
+<tr><td style="white-space:nowrap">100000110700<a name="unit-of-measurement-ema-cs-100000110700"> </a></td>
+<td>becquerel(s)/microgram</td></tr>
+<tr><td style="white-space:nowrap">100000110701<a name="unit-of-measurement-ema-cs-100000110701"> </a></td>
+<td>kilobecquerel(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110702<a name="unit-of-measurement-ema-cs-100000110702"> </a></td>
+<td>kilobecquerel(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110703<a name="unit-of-measurement-ema-cs-100000110703"> </a></td>
+<td>kilobecquerel(s)/microlitre</td></tr>
+<tr><td style="white-space:nowrap">100000110704<a name="unit-of-measurement-ema-cs-100000110704"> </a></td>
+<td>megabecquerel(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110705<a name="unit-of-measurement-ema-cs-100000110705"> </a></td>
+<td>megabecquerel(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110706<a name="unit-of-measurement-ema-cs-100000110706"> </a></td>
+<td>kilobecquerel(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110707<a name="unit-of-measurement-ema-cs-100000110707"> </a></td>
+<td>kilobecquerel(s)/milligram</td></tr>
+<tr><td style="white-space:nowrap">100000110708<a name="unit-of-measurement-ema-cs-100000110708"> </a></td>
+<td>kilobecquerel(s)/microgram</td></tr>
+<tr><td style="white-space:nowrap">100000110709<a name="unit-of-measurement-ema-cs-100000110709"> </a></td>
+<td>megabecquerel(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110710<a name="unit-of-measurement-ema-cs-100000110710"> </a></td>
+<td>megabecquerel(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110711<a name="unit-of-measurement-ema-cs-100000110711"> </a></td>
+<td>megabecquerel(s)/milligram</td></tr>
+<tr><td style="white-space:nowrap">100000110712<a name="unit-of-measurement-ema-cs-100000110712"> </a></td>
+<td>curie(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110713<a name="unit-of-measurement-ema-cs-100000110713"> </a></td>
+<td>curie(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110714<a name="unit-of-measurement-ema-cs-100000110714"> </a></td>
+<td>curie(s)/microlitre</td></tr>
+<tr><td style="white-space:nowrap">100000110715<a name="unit-of-measurement-ema-cs-100000110715"> </a></td>
+<td>curie(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110716<a name="unit-of-measurement-ema-cs-100000110716"> </a></td>
+<td>curie(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110717<a name="unit-of-measurement-ema-cs-100000110717"> </a></td>
+<td>curie(s)/milligram</td></tr>
+<tr><td style="white-space:nowrap">100000110718<a name="unit-of-measurement-ema-cs-100000110718"> </a></td>
+<td>curie(s)/microgram</td></tr>
+<tr><td style="white-space:nowrap">100000110719<a name="unit-of-measurement-ema-cs-100000110719"> </a></td>
+<td>millicurie(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110720<a name="unit-of-measurement-ema-cs-100000110720"> </a></td>
+<td>millicurie(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110721<a name="unit-of-measurement-ema-cs-100000110721"> </a></td>
+<td>millicurie(s)/microlitre</td></tr>
+<tr><td style="white-space:nowrap">100000110722<a name="unit-of-measurement-ema-cs-100000110722"> </a></td>
+<td>millicurie(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110723<a name="unit-of-measurement-ema-cs-100000110723"> </a></td>
+<td>millicurie(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110724<a name="unit-of-measurement-ema-cs-100000110724"> </a></td>
+<td>millicurie(s)/milligram</td></tr>
+<tr><td style="white-space:nowrap">100000110725<a name="unit-of-measurement-ema-cs-100000110725"> </a></td>
+<td>millicurie(s)/microgram</td></tr>
+<tr><td style="white-space:nowrap">100000110726<a name="unit-of-measurement-ema-cs-100000110726"> </a></td>
+<td>microcurie(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110727<a name="unit-of-measurement-ema-cs-100000110727"> </a></td>
+<td>microcurie(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110728<a name="unit-of-measurement-ema-cs-100000110728"> </a></td>
+<td>microcurie(s)/microlitre</td></tr>
+<tr><td style="white-space:nowrap">100000110729<a name="unit-of-measurement-ema-cs-100000110729"> </a></td>
+<td>microcurie(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110730<a name="unit-of-measurement-ema-cs-100000110730"> </a></td>
+<td>microcurie(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110731<a name="unit-of-measurement-ema-cs-100000110731"> </a></td>
+<td>microcurie(s)/milligram</td></tr>
+<tr><td style="white-space:nowrap">100000110732<a name="unit-of-measurement-ema-cs-100000110732"> </a></td>
+<td>microcurie(s)/microgram</td></tr>
+<tr><td style="white-space:nowrap">100000110733<a name="unit-of-measurement-ema-cs-100000110733"> </a></td>
+<td>international unit(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110734<a name="unit-of-measurement-ema-cs-100000110734"> </a></td>
+<td>international unit(s)/milligram</td></tr>
+<tr><td style="white-space:nowrap">100000110735<a name="unit-of-measurement-ema-cs-100000110735"> </a></td>
+<td>international unit(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110736<a name="unit-of-measurement-ema-cs-100000110736"> </a></td>
+<td>international unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110737<a name="unit-of-measurement-ema-cs-100000110737"> </a></td>
+<td>milliequivalent(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110738<a name="unit-of-measurement-ema-cs-100000110738"> </a></td>
+<td>milliequivalent(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110739<a name="unit-of-measurement-ema-cs-100000110739"> </a></td>
+<td>milliequivalent(s)/microlitre</td></tr>
+<tr><td style="white-space:nowrap">100000110740<a name="unit-of-measurement-ema-cs-100000110740"> </a></td>
+<td>milliequivalent(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110741<a name="unit-of-measurement-ema-cs-100000110741"> </a></td>
+<td>milliequivalent(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110742<a name="unit-of-measurement-ema-cs-100000110742"> </a></td>
+<td>milliequivalent(s)/milligram</td></tr>
+<tr><td style="white-space:nowrap">100000110743<a name="unit-of-measurement-ema-cs-100000110743"> </a></td>
+<td>milliequivalent(s)/microgram</td></tr>
+<tr><td style="white-space:nowrap">100000110744<a name="unit-of-measurement-ema-cs-100000110744"> </a></td>
+<td>kilogram(s)/square metre</td></tr>
+<tr><td style="white-space:nowrap">100000110745<a name="unit-of-measurement-ema-cs-100000110745"> </a></td>
+<td>millimole(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110746<a name="unit-of-measurement-ema-cs-100000110746"> </a></td>
+<td>millimole(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110747<a name="unit-of-measurement-ema-cs-100000110747"> </a></td>
+<td>millimole(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110748<a name="unit-of-measurement-ema-cs-100000110748"> </a></td>
+<td>millimole(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110749<a name="unit-of-measurement-ema-cs-100000110749"> </a></td>
+<td>millimole(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110750<a name="unit-of-measurement-ema-cs-100000110750"> </a></td>
+<td>percent weight/weight</td></tr>
+<tr><td style="white-space:nowrap">100000110751<a name="unit-of-measurement-ema-cs-100000110751"> </a></td>
+<td>percent weight/volume</td></tr>
+<tr><td style="white-space:nowrap">100000110752<a name="unit-of-measurement-ema-cs-100000110752"> </a></td>
+<td>percent volume/volume</td></tr>
+<tr><td style="white-space:nowrap">100000110753<a name="unit-of-measurement-ema-cs-100000110753"> </a></td>
+<td>milligram(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110754<a name="unit-of-measurement-ema-cs-100000110754"> </a></td>
+<td>plaque forming unit</td></tr>
+<tr><td style="white-space:nowrap">100000110755<a name="unit-of-measurement-ema-cs-100000110755"> </a></td>
+<td>microlitre(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110756<a name="unit-of-measurement-ema-cs-100000110756"> </a></td>
+<td>unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110758<a name="unit-of-measurement-ema-cs-100000110758"> </a></td>
+<td>50% Embryo Infective Dose</td></tr>
+<tr><td style="white-space:nowrap">100000110759<a name="unit-of-measurement-ema-cs-100000110759"> </a></td>
+<td>50% Embryo Infective Dose/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110760<a name="unit-of-measurement-ema-cs-100000110760"> </a></td>
+<td>allergy unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110761<a name="unit-of-measurement-ema-cs-100000110761"> </a></td>
+<td>ampere</td></tr>
+<tr><td style="white-space:nowrap">100000110762<a name="unit-of-measurement-ema-cs-100000110762"> </a></td>
+<td>antigen unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110763<a name="unit-of-measurement-ema-cs-100000110763"> </a></td>
+<td>antigen unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110764<a name="unit-of-measurement-ema-cs-100000110764"> </a></td>
+<td>anti-thrombin unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110765<a name="unit-of-measurement-ema-cs-100000110765"> </a></td>
+<td>anti-Xa activity International Unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110766<a name="unit-of-measurement-ema-cs-100000110766"> </a></td>
+<td>anti-Xa activity International Unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110767<a name="unit-of-measurement-ema-cs-100000110767"> </a></td>
+<td>billion colony forming units</td></tr>
+<tr><td style="white-space:nowrap">100000110768<a name="unit-of-measurement-ema-cs-100000110768"> </a></td>
+<td>billion colony forming units/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110769<a name="unit-of-measurement-ema-cs-100000110769"> </a></td>
+<td>billion colony forming units/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110770<a name="unit-of-measurement-ema-cs-100000110770"> </a></td>
+<td>billion organisms</td></tr>
+<tr><td style="white-space:nowrap">100000110771<a name="unit-of-measurement-ema-cs-100000110771"> </a></td>
+<td>billion organisms/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110772<a name="unit-of-measurement-ema-cs-100000110772"> </a></td>
+<td>billion organisms/milligram</td></tr>
+<tr><td style="white-space:nowrap">100000110773<a name="unit-of-measurement-ema-cs-100000110773"> </a></td>
+<td>billion organisms/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110774<a name="unit-of-measurement-ema-cs-100000110774"> </a></td>
+<td>candela</td></tr>
+<tr><td style="white-space:nowrap">100000110775<a name="unit-of-measurement-ema-cs-100000110775"> </a></td>
+<td>cell culture infective dose 50</td></tr>
+<tr><td style="white-space:nowrap">100000110776<a name="unit-of-measurement-ema-cs-100000110776"> </a></td>
+<td>cell culture infective dose 50/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110777<a name="unit-of-measurement-ema-cs-100000110777"> </a></td>
+<td>celsius temperature</td></tr>
+<tr><td style="white-space:nowrap">100000110778<a name="unit-of-measurement-ema-cs-100000110778"> </a></td>
+<td>colony forming unit(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110779<a name="unit-of-measurement-ema-cs-100000110779"> </a></td>
+<td>colony forming unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110780<a name="unit-of-measurement-ema-cs-100000110780"> </a></td>
+<td>coulomb</td></tr>
+<tr><td style="white-space:nowrap">100000110781<a name="unit-of-measurement-ema-cs-100000110781"> </a></td>
+<td>cubic metre</td></tr>
+<tr><td style="white-space:nowrap">100000110782<a name="unit-of-measurement-ema-cs-100000110782"> </a></td>
+<td>D antigen unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110783<a name="unit-of-measurement-ema-cs-100000110783"> </a></td>
+<td>D antigen unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110784<a name="unit-of-measurement-ema-cs-100000110784"> </a></td>
+<td>day</td></tr>
+<tr><td style="white-space:nowrap">100000110785<a name="unit-of-measurement-ema-cs-100000110785"> </a></td>
+<td>degree</td></tr>
+<tr><td style="white-space:nowrap">100000110786<a name="unit-of-measurement-ema-cs-100000110786"> </a></td>
+<td>enzyme-linked immunosorbent assay unit</td></tr>
+<tr><td style="white-space:nowrap">100000110787<a name="unit-of-measurement-ema-cs-100000110787"> </a></td>
+<td>enzyme-linked immunosorbent assay unit/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110788<a name="unit-of-measurement-ema-cs-100000110788"> </a></td>
+<td>enzyme-linked immunosorbent assay unit/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110789<a name="unit-of-measurement-ema-cs-100000110789"> </a></td>
+<td>farad</td></tr>
+<tr><td style="white-space:nowrap">100000110790<a name="unit-of-measurement-ema-cs-100000110790"> </a></td>
+<td>fluorescent assay infectious dose 50%</td></tr>
+<tr><td style="white-space:nowrap">100000110791<a name="unit-of-measurement-ema-cs-100000110791"> </a></td>
+<td>fluorescent assay infectious dose 50%/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110792<a name="unit-of-measurement-ema-cs-100000110792"> </a></td>
+<td>gigabecquerel(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110793<a name="unit-of-measurement-ema-cs-100000110793"> </a></td>
+<td>gigabecquerel/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110794<a name="unit-of-measurement-ema-cs-100000110794"> </a></td>
+<td>gigabecquerel/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110795<a name="unit-of-measurement-ema-cs-100000110795"> </a></td>
+<td>gigabecquerel/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110796<a name="unit-of-measurement-ema-cs-100000110796"> </a></td>
+<td>gigabecquerel/microgram</td></tr>
+<tr><td style="white-space:nowrap">100000110797<a name="unit-of-measurement-ema-cs-100000110797"> </a></td>
+<td>gigabecquerel/microlitre</td></tr>
+<tr><td style="white-space:nowrap">100000110798<a name="unit-of-measurement-ema-cs-100000110798"> </a></td>
+<td>gigabecquerel/milligram</td></tr>
+<tr><td style="white-space:nowrap">100000110799<a name="unit-of-measurement-ema-cs-100000110799"> </a></td>
+<td>gigabecquerel/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110800<a name="unit-of-measurement-ema-cs-100000110800"> </a></td>
+<td>gram(s)/square metre</td></tr>
+<tr><td style="white-space:nowrap">100000110801<a name="unit-of-measurement-ema-cs-100000110801"> </a></td>
+<td>gray</td></tr>
+<tr><td style="white-space:nowrap">100000110802<a name="unit-of-measurement-ema-cs-100000110802"> </a></td>
+<td>henry</td></tr>
+<tr><td style="white-space:nowrap">100000110803<a name="unit-of-measurement-ema-cs-100000110803"> </a></td>
+<td>hertz</td></tr>
+<tr><td style="white-space:nowrap">100000110804<a name="unit-of-measurement-ema-cs-100000110804"> </a></td>
+<td>hour</td></tr>
+<tr><td style="white-space:nowrap">100000110805<a name="unit-of-measurement-ema-cs-100000110805"> </a></td>
+<td>international opacity unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110806<a name="unit-of-measurement-ema-cs-100000110806"> </a></td>
+<td>joule</td></tr>
+<tr><td style="white-space:nowrap">100000110807<a name="unit-of-measurement-ema-cs-100000110807"> </a></td>
+<td>kallikrein inactivator unit/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110808<a name="unit-of-measurement-ema-cs-100000110808"> </a></td>
+<td>katal</td></tr>
+<tr><td style="white-space:nowrap">100000110809<a name="unit-of-measurement-ema-cs-100000110809"> </a></td>
+<td>kelvin</td></tr>
+<tr><td style="white-space:nowrap">100000110810<a name="unit-of-measurement-ema-cs-100000110810"> </a></td>
+<td>kilo international units</td></tr>
+<tr><td style="white-space:nowrap">100000110811<a name="unit-of-measurement-ema-cs-100000110811"> </a></td>
+<td>kilo units</td></tr>
+<tr><td style="white-space:nowrap">100000110812<a name="unit-of-measurement-ema-cs-100000110812"> </a></td>
+<td>kilobecquerel(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110813<a name="unit-of-measurement-ema-cs-100000110813"> </a></td>
+<td>lactose unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110814<a name="unit-of-measurement-ema-cs-100000110814"> </a></td>
+<td>lime flocculation unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110815<a name="unit-of-measurement-ema-cs-100000110815"> </a></td>
+<td>lime flocculation unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110816<a name="unit-of-measurement-ema-cs-100000110816"> </a></td>
+<td>log 10 50% embryo infective dose</td></tr>
+<tr><td style="white-space:nowrap">100000110817<a name="unit-of-measurement-ema-cs-100000110817"> </a></td>
+<td>log 10 50% embryo infective dose/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110818<a name="unit-of-measurement-ema-cs-100000110818"> </a></td>
+<td>log10 cell culture infective dose 50</td></tr>
+<tr><td style="white-space:nowrap">100000110819<a name="unit-of-measurement-ema-cs-100000110819"> </a></td>
+<td>log10 cell culture infective dose 50/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110820<a name="unit-of-measurement-ema-cs-100000110820"> </a></td>
+<td>log10 enzyme-linked immunosorbent assay unit</td></tr>
+<tr><td style="white-space:nowrap">100000110821<a name="unit-of-measurement-ema-cs-100000110821"> </a></td>
+<td>log10 enzyme-linked immunosorbent assay unit/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110822<a name="unit-of-measurement-ema-cs-100000110822"> </a></td>
+<td>log10 fluorescent assay infectious dose 50%</td></tr>
+<tr><td style="white-space:nowrap">100000110823<a name="unit-of-measurement-ema-cs-100000110823"> </a></td>
+<td>log10 fluorescent assay infectious dose 50%/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110824<a name="unit-of-measurement-ema-cs-100000110824"> </a></td>
+<td>log10 plaque forming unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110825<a name="unit-of-measurement-ema-cs-100000110825"> </a></td>
+<td>log10 plaque forming unit(s)/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110826<a name="unit-of-measurement-ema-cs-100000110826"> </a></td>
+<td>log10 tissue culture infective dose 50</td></tr>
+<tr><td style="white-space:nowrap">100000110827<a name="unit-of-measurement-ema-cs-100000110827"> </a></td>
+<td>log10 tissue culture infective dose 50/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110828<a name="unit-of-measurement-ema-cs-100000110828"> </a></td>
+<td>log10/ml</td></tr>
+<tr><td style="white-space:nowrap">100000110829<a name="unit-of-measurement-ema-cs-100000110829"> </a></td>
+<td>loomis unit</td></tr>
+<tr><td style="white-space:nowrap">100000110830<a name="unit-of-measurement-ema-cs-100000110830"> </a></td>
+<td>loomis unit/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110831<a name="unit-of-measurement-ema-cs-100000110831"> </a></td>
+<td>loomis unit/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110832<a name="unit-of-measurement-ema-cs-100000110832"> </a></td>
+<td>lumen</td></tr>
+<tr><td style="white-space:nowrap">100000110833<a name="unit-of-measurement-ema-cs-100000110833"> </a></td>
+<td>lux</td></tr>
+<tr><td style="white-space:nowrap">100000110834<a name="unit-of-measurement-ema-cs-100000110834"> </a></td>
+<td>megabecquerel(s)/microgram</td></tr>
+<tr><td style="white-space:nowrap">100000110835<a name="unit-of-measurement-ema-cs-100000110835"> </a></td>
+<td>megabecquerel(s)/microlitre</td></tr>
+<tr><td style="white-space:nowrap">100000110836<a name="unit-of-measurement-ema-cs-100000110836"> </a></td>
+<td>metre</td></tr>
+<tr><td style="white-space:nowrap">100000110837<a name="unit-of-measurement-ema-cs-100000110837"> </a></td>
+<td>microkatal</td></tr>
+<tr><td style="white-space:nowrap">100000110839<a name="unit-of-measurement-ema-cs-100000110839"> </a></td>
+<td>micromole(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110840<a name="unit-of-measurement-ema-cs-100000110840"> </a></td>
+<td>micromole(s)/litre</td></tr>
+<tr><td style="white-space:nowrap">100000110841<a name="unit-of-measurement-ema-cs-100000110841"> </a></td>
+<td>micromole(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110842<a name="unit-of-measurement-ema-cs-100000110842"> </a></td>
+<td>millikatal</td></tr>
+<tr><td style="white-space:nowrap">100000110843<a name="unit-of-measurement-ema-cs-100000110843"> </a></td>
+<td>millilitre(s)/square cm</td></tr>
+<tr><td style="white-space:nowrap">100000110844<a name="unit-of-measurement-ema-cs-100000110844"> </a></td>
+<td>millimetre(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110845<a name="unit-of-measurement-ema-cs-100000110845"> </a></td>
+<td>million colony forming units</td></tr>
+<tr><td style="white-space:nowrap">100000110846<a name="unit-of-measurement-ema-cs-100000110846"> </a></td>
+<td>million colony forming units/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110847<a name="unit-of-measurement-ema-cs-100000110847"> </a></td>
+<td>million colony forming units/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110848<a name="unit-of-measurement-ema-cs-100000110848"> </a></td>
+<td>million international units</td></tr>
+<tr><td style="white-space:nowrap">100000110849<a name="unit-of-measurement-ema-cs-100000110849"> </a></td>
+<td>million organisms</td></tr>
+<tr><td style="white-space:nowrap">100000110850<a name="unit-of-measurement-ema-cs-100000110850"> </a></td>
+<td>million organisms/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110851<a name="unit-of-measurement-ema-cs-100000110851"> </a></td>
+<td>million organisms/milligram</td></tr>
+<tr><td style="white-space:nowrap">100000110852<a name="unit-of-measurement-ema-cs-100000110852"> </a></td>
+<td>million organisms/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110853<a name="unit-of-measurement-ema-cs-100000110853"> </a></td>
+<td>million units</td></tr>
+<tr><td style="white-space:nowrap">100000110854<a name="unit-of-measurement-ema-cs-100000110854"> </a></td>
+<td>milliosmol(s)/kilogram</td></tr>
+<tr><td style="white-space:nowrap">100000110855<a name="unit-of-measurement-ema-cs-100000110855"> </a></td>
+<td>minute</td></tr>
+<tr><td style="white-space:nowrap">100000110856<a name="unit-of-measurement-ema-cs-100000110856"> </a></td>
+<td>nanocurie(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110857<a name="unit-of-measurement-ema-cs-100000110857"> </a></td>
+<td>nanogram(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110858<a name="unit-of-measurement-ema-cs-100000110858"> </a></td>
+<td>nanokatal</td></tr>
+<tr><td style="white-space:nowrap">100000110859<a name="unit-of-measurement-ema-cs-100000110859"> </a></td>
+<td>nanolitre(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110860<a name="unit-of-measurement-ema-cs-100000110860"> </a></td>
+<td>nanomole(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110861<a name="unit-of-measurement-ema-cs-100000110861"> </a></td>
+<td>nanomole(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110862<a name="unit-of-measurement-ema-cs-100000110862"> </a></td>
+<td>newton</td></tr>
+<tr><td style="white-space:nowrap">100000110863<a name="unit-of-measurement-ema-cs-100000110863"> </a></td>
+<td>NIH units of Thrombin inhibited/square centimetre</td></tr>
+<tr><td style="white-space:nowrap">100000110864<a name="unit-of-measurement-ema-cs-100000110864"> </a></td>
+<td>ohm</td></tr>
+<tr><td style="white-space:nowrap">100000110865<a name="unit-of-measurement-ema-cs-100000110865"> </a></td>
+<td>ounce</td></tr>
+<tr><td style="white-space:nowrap">100000110866<a name="unit-of-measurement-ema-cs-100000110866"> </a></td>
+<td>part per million</td></tr>
+<tr><td style="white-space:nowrap">100000110867<a name="unit-of-measurement-ema-cs-100000110867"> </a></td>
+<td>pascal</td></tr>
+<tr><td style="white-space:nowrap">100000110868<a name="unit-of-measurement-ema-cs-100000110868"> </a></td>
+<td>picogram(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110869<a name="unit-of-measurement-ema-cs-100000110869"> </a></td>
+<td>picokatal</td></tr>
+<tr><td style="white-space:nowrap">100000110870<a name="unit-of-measurement-ema-cs-100000110870"> </a></td>
+<td>plaque forming unit equiv 1000 mouse LD50</td></tr>
+<tr><td style="white-space:nowrap">100000110871<a name="unit-of-measurement-ema-cs-100000110871"> </a></td>
+<td>plaque forming unit(s)/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110872<a name="unit-of-measurement-ema-cs-100000110872"> </a></td>
+<td>plaque forming unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110873<a name="unit-of-measurement-ema-cs-100000110873"> </a></td>
+<td>pock forming unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110874<a name="unit-of-measurement-ema-cs-100000110874"> </a></td>
+<td>pound</td></tr>
+<tr><td style="white-space:nowrap">100000110875<a name="unit-of-measurement-ema-cs-100000110875"> </a></td>
+<td>pressor units/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110876<a name="unit-of-measurement-ema-cs-100000110876"> </a></td>
+<td>protein nitrogen units/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110878<a name="unit-of-measurement-ema-cs-100000110878"> </a></td>
+<td>revolution/minute</td></tr>
+<tr><td style="white-space:nowrap">100000110879<a name="unit-of-measurement-ema-cs-100000110879"> </a></td>
+<td>second</td></tr>
+<tr><td style="white-space:nowrap">100000110880<a name="unit-of-measurement-ema-cs-100000110880"> </a></td>
+<td>siemens</td></tr>
+<tr><td style="white-space:nowrap">100000110881<a name="unit-of-measurement-ema-cs-100000110881"> </a></td>
+<td>sievert</td></tr>
+<tr><td style="white-space:nowrap">100000110882<a name="unit-of-measurement-ema-cs-100000110882"> </a></td>
+<td>square centimetre</td></tr>
+<tr><td style="white-space:nowrap">100000110883<a name="unit-of-measurement-ema-cs-100000110883"> </a></td>
+<td>square metre</td></tr>
+<tr><td style="white-space:nowrap">100000110884<a name="unit-of-measurement-ema-cs-100000110884"> </a></td>
+<td>tesla</td></tr>
+<tr><td style="white-space:nowrap">100000110885<a name="unit-of-measurement-ema-cs-100000110885"> </a></td>
+<td>thousand colony forming units</td></tr>
+<tr><td style="white-space:nowrap">100000110886<a name="unit-of-measurement-ema-cs-100000110886"> </a></td>
+<td>thousand colony forming units/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110887<a name="unit-of-measurement-ema-cs-100000110887"> </a></td>
+<td>thousand colony forming units/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110888<a name="unit-of-measurement-ema-cs-100000110888"> </a></td>
+<td>thousand organisms</td></tr>
+<tr><td style="white-space:nowrap">100000110889<a name="unit-of-measurement-ema-cs-100000110889"> </a></td>
+<td>thousand organisms/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110890<a name="unit-of-measurement-ema-cs-100000110890"> </a></td>
+<td>thousand organisms/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110891<a name="unit-of-measurement-ema-cs-100000110891"> </a></td>
+<td>tissue culture infective dose 50/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110892<a name="unit-of-measurement-ema-cs-100000110892"> </a></td>
+<td>titre</td></tr>
+<tr><td style="white-space:nowrap">100000110893<a name="unit-of-measurement-ema-cs-100000110893"> </a></td>
+<td>tonne(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110894<a name="unit-of-measurement-ema-cs-100000110894"> </a></td>
+<td>tuberculin unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110895<a name="unit-of-measurement-ema-cs-100000110895"> </a></td>
+<td>tuberculin unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110896<a name="unit-of-measurement-ema-cs-100000110896"> </a></td>
+<td>unit(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110897<a name="unit-of-measurement-ema-cs-100000110897"> </a></td>
+<td>unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110898<a name="unit-of-measurement-ema-cs-100000110898"> </a></td>
+<td>volt</td></tr>
+<tr><td style="white-space:nowrap">100000110899<a name="unit-of-measurement-ema-cs-100000110899"> </a></td>
+<td>watt</td></tr>
+<tr><td style="white-space:nowrap">100000110900<a name="unit-of-measurement-ema-cs-100000110900"> </a></td>
+<td>weber</td></tr>
+<tr><td style="white-space:nowrap">100000110901<a name="unit-of-measurement-ema-cs-100000110901"> </a></td>
+<td>milligram(s)/hour</td></tr>
+<tr><td style="white-space:nowrap">100000110905<a name="unit-of-measurement-ema-cs-100000110905"> </a></td>
+<td>Standardised Quality Unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110906<a name="unit-of-measurement-ema-cs-100000110906"> </a></td>
+<td>Bioequivalent Allergy Unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110907<a name="unit-of-measurement-ema-cs-100000110907"> </a></td>
+<td>Bioequivalent Allergy Unit(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110908<a name="unit-of-measurement-ema-cs-100000110908"> </a></td>
+<td>milligram(s)/kilogram/hour</td></tr>
+<tr><td style="white-space:nowrap">100000110909<a name="unit-of-measurement-ema-cs-100000110909"> </a></td>
+<td>Infectious unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110910<a name="unit-of-measurement-ema-cs-100000110910"> </a></td>
+<td>microgram(s) Haemagglutinin</td></tr>
+<tr><td style="white-space:nowrap">100000110911<a name="unit-of-measurement-ema-cs-100000110911"> </a></td>
+<td>microgram(s)/24 hours</td></tr>
+<tr><td style="white-space:nowrap">100000110912<a name="unit-of-measurement-ema-cs-100000110912"> </a></td>
+<td>milligram(s)/24 hours</td></tr>
+<tr><td style="white-space:nowrap">100000110913<a name="unit-of-measurement-ema-cs-100000110913"> </a></td>
+<td>tissue culture infective dose 50</td></tr>
+<tr><td style="white-space:nowrap">100000110914<a name="unit-of-measurement-ema-cs-100000110914"> </a></td>
+<td>Standardised Quality units Tablet</td></tr>
+<tr><td style="white-space:nowrap">100000110915<a name="unit-of-measurement-ema-cs-100000110915"> </a></td>
+<td>milligram(s)/cubic centimetre</td></tr>
+<tr><td style="white-space:nowrap">100000110916<a name="unit-of-measurement-ema-cs-100000110916"> </a></td>
+<td>Index of Reactivity</td></tr>
+<tr><td style="white-space:nowrap">100000110917<a name="unit-of-measurement-ema-cs-100000110917"> </a></td>
+<td>Index of Concentration</td></tr>
+<tr><td style="white-space:nowrap">100000110918<a name="unit-of-measurement-ema-cs-100000110918"> </a></td>
+<td>Christensen Unit(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110919<a name="unit-of-measurement-ema-cs-100000110919"> </a></td>
+<td>Christensen Unit(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110920<a name="unit-of-measurement-ema-cs-100000110920"> </a></td>
+<td>microgram(s)/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110921<a name="unit-of-measurement-ema-cs-100000110921"> </a></td>
+<td>milligram(s)/dose</td></tr>
+<tr><td style="white-space:nowrap">100000110922<a name="unit-of-measurement-ema-cs-100000110922"> </a></td>
+<td>gram(s)/gram</td></tr>
+<tr><td style="white-space:nowrap">100000110923<a name="unit-of-measurement-ema-cs-100000110923"> </a></td>
+<td>viral particle(s)</td></tr>
+<tr><td style="white-space:nowrap">100000110924<a name="unit-of-measurement-ema-cs-100000110924"> </a></td>
+<td>viral particle(s)/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000110925<a name="unit-of-measurement-ema-cs-100000110925"> </a></td>
+<td>cells/microlitre</td></tr>
+<tr><td style="white-space:nowrap">100000110926<a name="unit-of-measurement-ema-cs-100000110926"> </a></td>
+<td>vector genome per ml</td></tr>
+<tr><td style="white-space:nowrap">100000151832<a name="unit-of-measurement-ema-cs-100000151832"> </a></td>
+<td>cells</td></tr>
+<tr><td style="white-space:nowrap">100000151833<a name="unit-of-measurement-ema-cs-100000151833"> </a></td>
+<td>cells/millilitre</td></tr>
+<tr><td style="white-space:nowrap">100000151834<a name="unit-of-measurement-ema-cs-100000151834"> </a></td>
+<td>cells/square centimetre</td></tr>
+<tr><td style="white-space:nowrap">100000151835<a name="unit-of-measurement-ema-cs-100000151835"> </a></td>
+<td>part per million volume/volume</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, May 3, 2024 19:27+0000">2024-05-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

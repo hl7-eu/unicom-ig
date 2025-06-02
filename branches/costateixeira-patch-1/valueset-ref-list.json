@@ -1,0 +1,401 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/administration-device",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "AdministrationDevice",
+      "title" : "EDQM Administration Device",
+      "description" : "ValueSet Administration device from EDQM, DEV, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/administration-method",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "AdministrationMethod",
+      "title" : "EDQM Administration Method",
+      "description" : "ValueSet Administration method from EDQM, AME, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/all-units-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AllUnits",
+      "title" : "EMA SPOR All Units Combined",
+      "description" : "Value set for presentation strength denominator unit, combines units of measurement and units of presentation.",
+      "systems" : [
+        "https://spor.ema.europa.eu/v1/lists/200000000014",
+        "https://spor.ema.europa.eu/v1/lists/100000110633"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PPLPackagedProductDefinition.html" : "PPL Packaged Product profile",
+      "StructureDefinition-PPLIngredient.html" : "PPL Ingredient profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/atc-spor-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SporAtc",
+      "title" : "EMA SPOR ATC",
+      "description" : "Value set for Anatomical Therapeutic Chemical classification system Human and Veterinary. It combines 2 SPOR/WHO lists",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/100000093533"],
+      "uses" : {
+      },
+      "StructureDefinition-TransitionMedicinalProductDefinition.html" : "Processing Profile - Medicinal Product",
+      "StructureDefinition-PPLMedicinalProductDefinition.html" : "PPL Medicinal Product profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/authorised-doseform-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AuthorisedDoseForm",
+      "title" : "EMA SPOR Authorised Dose Form",
+      "description" : "Value set for authorised dose form. Combines 4 SPOR/EDQM lists: Pharmaceutical dose form, Combined pharmaceutical dose form, Combined term, Combination package.",
+      "systems" : [
+        "https://spor.ema.europa.eu/v1/lists/200000000004",
+        "https://spor.ema.europa.eu/v1/lists/200000000006",
+        "https://spor.ema.europa.eu/v1/lists/200000000008",
+        "https://spor.ema.europa.eu/v1/lists/200000000007"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PPLMedicinalProductDefinition.html" : "PPL Medicinal Product profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/basic-dose-form",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "BasicDoseForm",
+      "title" : "EDQM Basic Dose Form",
+      "description" : "ValueSet Basic dose form from EDQM, BDF, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/closure",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "Closure",
+      "title" : "EDQM Closure",
+      "description" : "ValueSet Closure (for package description) from EDQM, CLO, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/combination-pack",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CombinationPack",
+      "title" : "EDQM Combination Pack",
+      "description" : "ValueSet Combination pack (dose form) from EDQM, CMP, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/combined-pharmaceutical-dose-form",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CombinedPharmaceuticalDoseForm",
+      "title" : "EDQM Combined Pharmaceutical Dose Form",
+      "description" : "ValueSet Combined pharmaceutical dose form from EDQM, CDF, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/combined-term",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CombinedTerm",
+      "title" : "EDQM Combined Term",
+      "description" : "ValueSet Combined term (dose form) from EDQM, CMT, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/container",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "Container",
+      "title" : "EDQM Container",
+      "description" : "ValueSet Container (package type) from EDQM, CON, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/country-ema-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CountryEMA",
+      "title" : "EMA SPOR Country",
+      "description" : "Countries. EMA SPOR RMS list.",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/100000000002"],
+      "uses" : {
+      },
+      "StructureDefinition-PPLPackagedProductDefinition.html" : "PPL Packaged Product profile",
+      "StructureDefinition-PPLMedicinalProductDefinition.html" : "PPL Medicinal Product profile",
+      "StructureDefinition-PPLRegulatedAuthorization.html" : "PPL Marketing Authorisation profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/country-iso-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CountryISO",
+      "title" : "Country (ISO 3166-1-2)",
+      "description" : "Countries",
+      "systems" : ["https://www.hl7.org/fhir/valueset-country.html"],
+      "uses" : {
+      },
+      "StructureDefinition-PPLMedicinalProductDefinition.html" : "PPL Medicinal Product profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/domain-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Domain",
+      "title" : "EMA SPOR Domain",
+      "description" : "Domain of the medicinal product. EMA SPOR RMS list.",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/100000000004"],
+      "uses" : {
+      },
+      "StructureDefinition-PPLMedicinalProductDefinition.html" : "PPL Medicinal Product profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/ehdsi-ucum-unit",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EhdsiUcumUnit",
+      "title" : "MyHealth@EU Unit of Measurement (UCUM)",
+      "description" : "ValueSet for units based on UCUM to be used in MyHealth@EU crossborder services",
+      "systems" : ["http://unitsofmeasure.org"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/intended-site",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IntendedSite",
+      "title" : "EDQM Intended Site",
+      "description" : "ValueSet Intended site from EDQM, ISI, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/language-bcp-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LanguageBCP",
+      "title" : "Language (FHIR)",
+      "description" : "All languages",
+      "systems" : ["http://hl7.org/fhir/ValueSet/all-languages"],
+      "uses" : {
+      },
+      "StructureDefinition-PPLMedicinalProductDefinition.html" : "PPL Medicinal Product profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/language-ema-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LanguageEMA",
+      "title" : "EMA SPOR Language",
+      "description" : "Languages. EMA SPOR RMS list.",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/100000072057"],
+      "uses" : {
+      },
+      "StructureDefinition-PPLMedicinalProductDefinition.html" : "PPL Medicinal Product profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/legal-status-for-the-supply-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LegalStatusForTheSupply",
+      "title" : "EMA SPOR Legal Status for the Supply",
+      "description" : "EMA SPOR RMS list",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/100000072051"],
+      "uses" : {
+      },
+      "StructureDefinition-PPLPackagedProductDefinition.html" : "PPL Packaged Product profile",
+      "StructureDefinition-PPLMedicinalProductDefinition.html" : "PPL Medicinal Product profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/marketing-status-spor-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SporMarketingStatus",
+      "title" : "EMA SPOR Marketing Status",
+      "description" : "Marketing Status",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/100000072052"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/material-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Material",
+      "title" : "EMA SPOR Material",
+      "description" : "Package material. EMA SPOR RMS LIST.",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/200000003199"],
+      "uses" : {
+      },
+      "StructureDefinition-PPLPackagedProductDefinition.html" : "PPL Packaged Product profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/packaging-category",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "PackagingCategory",
+      "title" : "EDQM Packaging Category",
+      "description" : "ValueSet Packaging category from EDQM, PAC, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/packaging-spor-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SporPackaging",
+      "title" : "EMA SPOR Packaging",
+      "description" : "Packaging",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/100000073346"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/patient-friendly-term",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "PatientFriendlyTerm",
+      "title" : "EDQM Patient-friendly Term",
+      "description" : "ValueSet Patient-friendly term (dose forms) from EDQM, PFT, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/pharmaceutical-dose-form",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "PharmaceuticalDoseForm",
+      "title" : "EDQM Pharmaceutical Dose Form",
+      "description" : "ValueSet Pharmaceutical dose form from EDQM, PDF, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"],
+      "uses" : {
+      },
+      "StructureDefinition-administrable-doseform.html" : "AdministrableDoseForm"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/pharmaceutical-doseform-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PharmaceuticalDoseForm",
+      "title" : "EMA SPOR Pharmaceutical Dose Form",
+      "description" : "Pharmaceutical dose form. Does not include combination dose forms.",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/200000000004"],
+      "uses" : {
+      },
+      "StructureDefinition-PPLAdministrableProductDefinition.html" : "PPL Administrable Product profile",
+      "StructureDefinition-PPLManufacturedItemDefinition.html" : "PPL Manufactured Item profile",
+      "StructureDefinition-TransitionManufacturedItemDefinition.html" : "Processing Profile - Manufactured Item"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/record-status-spor-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SporRecordStatus",
+      "title" : "EMA SPOR Record Status",
+      "description" : "Value set for record status.",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/200000005003"],
+      "uses" : {
+      },
+      "StructureDefinition-PPLMedicinalProductDefinition.html" : "PPL Medicinal Product profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/regulatory-status-spor-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SporRegulatoryStatus",
+      "title" : "EMA SPOR Regulatory Entitlement Status",
+      "description" : "Regulatory Entitlement Status",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/100000072049"],
+      "uses" : {
+      },
+      "StructureDefinition-PPLRegulatedAuthorization.html" : "PPL Marketing Authorisation profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/route-of-administration",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RouteOfAdministration",
+      "title" : "EDQM Route of Administration",
+      "description" : "ValueSet Route of administration from EDQM, ROA, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/routes-and-methods-of-administration-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RoutesAndMethodsOfAdministration",
+      "title" : "EMA SPOR Routes and Methods of Administration",
+      "description" : "Routes and methods of medication administration. EMA SPOR RMS list, based on EDQM.",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/100000073345"],
+      "uses" : {
+      },
+      "StructureDefinition-PPLAdministrableProductDefinition.html" : "PPL Administrable Product profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/shelflifetype-spor-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SporShelfLifeType",
+      "title" : "EMA SPOR Shelf Life Type",
+      "description" : "Shelf Life Type",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/100000073343"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/substances-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SubstancesSMS",
+      "title" : "EMA SPOR SMS Substances",
+      "description" : "Value set for substances, PPL subset from SMS.",
+      "systems" : ["https://spor.ema.europa.eu/v2/SubstanceDefinition"],
+      "uses" : {
+      },
+      "StructureDefinition-TransitionIngredient.html" : "Processing Profile - Ingredient",
+      "StructureDefinition-MedicationAsManufacturedItem.html" : "Medication as manufactured item",
+      "StructureDefinition-PPLIngredient.html" : "PPL Ingredient profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/unit-of-measurement-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "UnitOfMeasurement",
+      "title" : "EMA SPOR Unit of Measurement",
+      "description" : "Units of measurement. EMA SPOR RMS list based on UCUM.",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/100000110633"],
+      "uses" : {
+      },
+      "StructureDefinition-PPLIngredient.html" : "PPL Ingredient profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/unit-of-presentation",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "UnitOfPresentation",
+      "title" : "EDQM Unit of Presentation",
+      "description" : "ValueSet Unit of presentation from EDQM, UOP, see https://standardterms.edqm.eu/#",
+      "systems" : ["https://standardterms.edqm.eu"]
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/unit-of-presentation-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "UnitOfPresentation",
+      "title" : "EMA SPOR Unit of Presentation",
+      "description" : "Units of presentation. EMA SPOR RMS list based on EDQM.",
+      "systems" : ["https://spor.ema.europa.eu/v1/lists/200000000014"],
+      "uses" : {
+      },
+      "StructureDefinition-PPLPackagedProductDefinition.html" : "PPL Packaged Product profile",
+      "StructureDefinition-PPLAdministrableProductDefinition.html" : "PPL Administrable Product profile",
+      "StructureDefinition-PPLManufacturedItemDefinition.html" : "PPL Manufactured Item profile"
+    },
+    {
+      "url" : "http://unicom-project.eu/fhir/ValueSet/whoatc-unicom",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VsWhoAtcUnicom",
+      "title" : "WHO ATC",
+      "description" : "World Health Organization Anatomical Therapeutic Chemical (ATC) classification system.  Note: The currently implemented code system and the value set expansion contain only a set of example ATC codes, not the complete code system content.",
+      "systems" : ["http://www.whocc.no/atc"]
+    }
+  ]
+}

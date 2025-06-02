@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Regulatory Data - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+      <li>
+        <a href="testserver.html">Testing Tool Box</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Regulatory Data</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Regulatory Data</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#logical-model" id="markdown-toc-logical-model">Logical model</a></li>
+  <li><a href="#profiles" id="markdown-toc-profiles">Profiles</a></li>
+  <li><a href="#terminology" id="markdown-toc-terminology">Terminology</a></li>
+  <li><a href="#example-data" id="markdown-toc-example-data">Example Data</a></li>
+  <li><a href="#guidance-and-references" id="markdown-toc-guidance-and-references">Guidance and references</a></li>
+</ul>
+
+</div>
+
+<h3 id="overview">Overview</h3>
+<p>This is FHIR Implementation Guide for UNICOM project, created to assist work with pilot product list product data in FHIR.</p>
+
+<p>This specification is a combined effort of several work packages of UNICOM project.</p>
+
+<p>The implementation guide consists of the following   artifacts:</p>
+<ul>
+  <li>Logical model for defining medicinal product (basic data   elements suitable for wide range of different use cases);</li>
+  <li>FHIR profiles for defining a medicinal product using resources in Medication Definition module.</li>
+  <li>Example resources for different
+ medicinal products.</li>
+</ul>
+
+<p>Implementation guide follows the EMA Product Management Service specifications (including EMA SPOR terminology), but it does not cover full regulatory data.</p>
+
+<p>Data elements for product definition are considered enough for most clinical and cross-border data exchange use cases. Data elements specific to regulatory use cases, have been omitted in order to provide cleaner and easier overview of core medication data.</p>
+
+<p>References to source information in EMA implementation guide are made available in the profiles (hover the name of the attribute to see corresponding EMA IG paragraph).</p>
+
+<p>Profiles specify the core set of attributes, but are left open for additions if something more specific needed. For example, national identifiers are not defined as separate attributes in the profile, but this data can always be added in accordance with the specification of the underlying FHIR resource. Please note that on the Artifacts page, there are two types of profiles: regulatory profiles and transition profiles. While regulatory profiles follow the EMA IG, the transition profiles are purely a technical intermediate product to allow processing incomplete data.</p>
+
+<h3 id="logical-model">Logical model</h3>
+<p>ISO IDMP logical model includes full regulatory data, which is usually more than needed in the eHealth services. 
+<a href="StructureDefinition-FullMedicinalProduct.html"><strong>UNICOM IG logical model</strong></a> is a subset of ISO IDMP data that is typically used to represent core medication data.
+Logical model is described using a FHIR logical model resource, but it is not implementation-specific, and it aims to describe the regulatory data model in a simple and logical way.</p>
+
+<h3 id="profiles">Profiles</h3>
+<p>The aim of profiling was to combine FHIR base specification with EMA ISO IDMP Implementation Guide (specifying cardinalities and value set bindings, and adding additional information).
+The medication data in UNICOM project uses profiles for the following entities:</p>
+<ul>
+  <li><a href="StructureDefinition-PPLMedicinalProductDefinition.html">Medicinal Product</a></li>
+  <li><a href="StructureDefinition-PPLAdministrableProductDefinition.html">Administrable/Pharmaceutical Product</a></li>
+  <li><a href="StructureDefinition-PPLPackagedProductDefinition.html">Packaged Product</a></li>
+  <li><a href="StructureDefinition-PPLManufacturedItemDefinition.html">Manufactured Item</a></li>
+  <li><a href="StructureDefinition-PPLIngredient.html">Ingredient</a></li>
+  <li><a href="StructureDefinition-PPLRegulatedAuthorization.html">Marketing Authorisation</a></li>
+  <li><a href="StructureDefinition-PPLOrganization.html">Organization (for marketing authorisation holder)</a></li>
+</ul>
+
+<p>On the <a href="artifacts.html">Artifacts</a> page you will also find another set of similar profiles, which are described as data transformation profiles. These profiles are very similar to regulatory profiles by structure, but have less restrictions and terminology bindings in order to allow technical data processing while data is still incomplete.</p>
+
+<h3 id="terminology">Terminology</h3>
+<p>Regulatory profiles use <a href="https://spor.ema.europa.eu/rmswi/#/">EMA SPOR RMS</a> lists for value sets.</p>
+
+<p>UNICOM implementation guide also includes international terminologies like WHO ATC, EDQM, UCUM, etc.</p>
+
+<p>Value set bindings are defined in profiles, value sets can be found on the Artifacts page (section <a href="artifacts.html#terminology-value-sets">Value Sets</a> and section <a href="artifacts.html#terminology-code-systems">Code Systems</a>).</p>
+
+<h3 id="example-data">Example Data</h3>
+<p>All FHIR profiles are illustrated with example data. 
+For better understanding, there are also examples of different products as FHIR bundles. Please see the Artifacts page <a href="artifacts.html#example-example-instances">Example Instances section</a>.</p>
+
+<p>Not all UNICOM data is hosted inside the implementation guide. 
+There is work in progress for creating more ISO IDMP compatible data for UNICOM pilots to use. Currently, some of the publicly reachable sources are:</p>
+<ul>
+  <li><a href="https://jpa.unicom.datawizard.it/apps/productlist/index.html">WP6 database with FHIR API</a></li>
+  <li><a href="https://ufisbrowse20220824144527.azurewebsites.net/">UFIS server</a></li>
+</ul>
+
+<h3 id="guidance-and-references">Guidance and references</h3>
+
+<h4 id="iso-idmp">ISO IDMP</h4>
+<ul>
+  <li><a href="https://www.iso.org/standard/70150.html">ISO 11615</a> Identification of medicinal products - Data elements and structures for the unique identification and exchange of regulated medicinal product information.</li>
+  <li><a href="https://www.iso.org/standard/70044.html">ISO 11616</a> Identification of medicinal products - Data elements and structures for the unique identification and exchange of regulated pharmaceutical product information.</li>
+  <li><a href="https://www.iso.org/standard/69697.html">ISO 11238</a> Identification of medicinal products - Data elements and structures for the unique identification and exchange of regulated information on substances.</li>
+  <li><a href="https://www.iso.org/standard/55032.html">ISO 11239</a> Identification of medicinal products - Data elements and structures for the unique identification and exchange of regulated information on pharmaceutical dose forms, units of presentation, routes of administration and packaging.</li>
+  <li><a href="https://www.iso.org/standard/55033.html">ISO 11240</a> Identification of medicinal products - Data elements and structures for the unique identification and exchange of units of measurement.</li>
+</ul>
+
+<h4 id="hl7-fhir">HL7 FHIR</h4>
+<p>UNICOM implementation guide is based on FHIR version 5.0.0 (Snapshot 3), and the core set of resources can be found in <a href="https://www.hl7.org/fhir/medication-definition-module.html">MedicationDefinition module</a>).
+EMA Implementation Guide is based on <a href="http://hl7.org/fhir/2021May/">FHIR version 4.6.0</a>, which is a slightly older version. Please see <a href="issues.html#fhir-versions">Known Issues</a> for more information about FHIR versions.</p>
+
+<h4 id="ema-implementation-guide">EMA Implementation Guide</h4>
+<p>European Medicines Agency has published a set of documents to provide implementation guidance for regulatory authorities. These documents can be publicly accessed on EMA web page:
+<a href="https://www.ema.europa.eu/en/human-regulatory/research-development/data-medicines-iso-idmp-standards/spor-master-data/substance-product-data-management-services#eu-idmp-implementation-guide---version-2.1.1-section">EMA EU ISO IDMP Implementation Guide 2.1</a></p>
+
+<p>For UNICOM IG users, the following parts of EMA IG may be of more interest:</p>
+<ul>
+  <li><a href="https://www.ema.europa.eu/documents/regulatory-procedural-guideline/product-management-services-pms-implementation-international-organization-standardization-iso_en-0.pdf">Product management services IG with FHIR references</a></li>
+  <li><a href="https://www.ema.europa.eu/documents/regulatory-procedural-guideline/product-management-service-pms-implementation-international-organization-standardization-iso_en.pdf">Practical examples</a></li>
+  <li><a href="https://www.ema.europa.eu/documents/other/product-management-service-pms-implementation-international-organization-standardization-iso_en.pdf">Full representation of ISO IDMP</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Dec 11, 2023 14:40+0000">2023-12-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

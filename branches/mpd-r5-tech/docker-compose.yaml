@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  fhir-server:
+    image: costateixeira/hapi-fhir-jpaserver-starter:latest
+    ports:
+      - ${server_port:-8080}:8080
+    environment:
+      - spring.config.location=${ig_url}/application.yaml
+  ember:
+    image: jkiddo/ember:latest
+    environment:
+      - location=${ig_url}/package.tgz
+      - serverBase=http://fhir-server:8080/fhir  # Leave this as is, this is ember stuff

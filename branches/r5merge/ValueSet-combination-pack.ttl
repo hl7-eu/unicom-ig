@@ -1,0 +1,356 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/combination-pack> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "combination-pack"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>14001000</td><td>Cream + pessary</td></tr><tr><td>14002000</td><td>Cutaneous solution + medicated sponge</td></tr><tr><td>14003000</td><td>Gastro-resistant tablet + rectal suspension</td></tr><tr><td>14004000</td><td>Vaginal capsule, soft + vaginal cream</td></tr><tr><td>14005000</td><td>Vaginal cream + vaginal tablet</td></tr><tr><td>14006000</td><td>Effervescent granules + film-coated tablet</td></tr><tr><td>14007000</td><td>Effervescent tablet + film-coated tablet</td></tr><tr><td>14008000</td><td>Tablet + vaginal tablet</td></tr><tr><td>14009000</td><td>Cream + vaginal capsule, soft</td></tr><tr><td>14010000</td><td>Cream + vaginal tablet</td></tr><tr><td>14011000</td><td>Film-coated tablet + pessary</td></tr><tr><td>14012000</td><td>Capsule, soft + tablet</td></tr><tr><td>14013000</td><td>Capsule, hard + tablet</td></tr><tr><td>14014000</td><td>Film-coated tablet + tablet</td></tr><tr><td>14015000</td><td>Ointment + vaginal tablet</td></tr><tr><td>14016000</td><td>Effervescent granules + gastro-resistant tablet</td></tr><tr><td>14017000</td><td>Eye drops, solution + eye ointment</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>Greek (el)</b></td><td><b>Spanish (es)</b></td><td><b>French (fr)</b></td><td><b>Italian (it)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td>14001000</td><td>Creme und Vaginalzäpfchen</td><td>Κρέμα +  Κολπικό υπόθετο</td><td>Crema + óvulo</td><td>Crème + ovule</td><td>Crema + ovulo</td><td>Creme + óvulo</td></tr><tr><td>14002000</td><td></td><td>Δερματικό διάλυμα + Σπόγγος φαρμακούχος</td><td>Solución cutánea + esponja medicamentosa</td><td>Solution cutanée + éponge médicamenteuse</td><td>Soluzione cutanea + spugna medicata</td><td>Solução cutânea + esponja medicamentosa</td></tr><tr><td>14003000</td><td>Magensaftresistente Tablette und Rektalsuspension</td><td>Γαστροανθεκτικό δισκίο + Ορθικό εναιώρημα</td><td>Comprimido gastrorresistente + suspensión rectal</td><td>Comprimé gastrorésistant + suspension rectale</td><td>Compressa gastroresistente + sospensione rettale</td><td>Comprimido gastrorresistente + suspensão retal</td></tr><tr><td>14004000</td><td>Weichkapsel zur vaginalen Anwendung und Vaginalcreme</td><td>Κολπικό καψάκιο, μαλακό + κολπική κρέμα</td><td>Cápsula blanda vaginal + crema vaginal</td><td>Capsule molle vaginale + crème vaginale</td><td>Capsula molle vaginale + crema vaginale</td><td>Cápsula mole vaginal + creme vaginal</td></tr><tr><td>14005000</td><td>Vaginalcreme und Vaginaltablette</td><td>Κολπική κρέμα + κολπικό δισκίο</td><td>Crema vaginal + comprimido vaginal</td><td>Crème vaginale + comprimé vaginal</td><td>Crema vaginale + compressa vaginale</td><td>Creme vaginal + comprimido vaginal</td></tr><tr><td>14006000</td><td>Brausegranulat und Filmtablette</td><td>Αναβράζοντα κοκκία + επικαλυμμένο με λεπτό υμένιο δισκίο</td><td>Granulado efervescente + comprimido recubierto con película</td><td>Granulés effervescents + comprimé pelliculé</td><td>Granulato effervescente + compressa rivestita con film</td><td>Granulado efervescente + comprimido revestido por película</td></tr><tr><td>14007000</td><td>Brausetablette und Filmtablette</td><td>Αναβράζον δισκίο +  επικαλυμμένο με λεπτό υμένιο δισκίο</td><td>Comprimido efervescente + comprimido recubierto con película</td><td>Comprimé effervescent + comprimé pelliculé</td><td>Compressa effervescente + compressa rivestita con film</td><td>Comprimido efervescente + comprimido revestido por película</td></tr><tr><td>14008000</td><td>Tablette und Vaginaltablette</td><td>Δισκίο + κολπικό δισκίο</td><td>Comprimido + comprimido vaginal</td><td>Comprimé + comprimé vaginal</td><td>Compressa + compressa vaginale</td><td>Comprimido + comprimido vaginal</td></tr><tr><td>14009000</td><td>Creme und Weichkapsel zur vaginalen Anwendung</td><td>Κρέμα + κολπικό καψάκιο, μαλακό</td><td>Crema + cápsula vaginal blanda</td><td>Crème + capsule molle vaginale</td><td>Crema + capsula molle vaginale</td><td>Creme + cápsula mole vaginal</td></tr><tr><td>14010000</td><td>Creme und Vaginaltablette</td><td>Κρέμα + κολπικό δισκίο</td><td>Crema + comprimido vaginal</td><td>Crème + comprimé vaginal</td><td>Crema + compressa vaginale</td><td>Creme + comprimido vaginal</td></tr><tr><td>14011000</td><td>Filmtablette und Vaginalzäpfchen</td><td>Επικαλυμμένο με λεπτό υμένιο δισκίο + κολπικό υπόθετο</td><td>Comprimido recubierto con película + óvulo</td><td></td><td>Compressa rivestita con film + ovulo</td><td>Comprimido revestido por película + óvulo</td></tr><tr><td>14012000</td><td>Weichkapsel und Tablette</td><td></td><td>Cápsula blanda + comprimido</td><td></td><td>Capsula molle + compressa</td><td>Cápsula mole + comprimido</td></tr><tr><td>14013000</td><td>Hartkapsel und Tablette</td><td></td><td>Cápsula dura + comprimido</td><td></td><td>Capsula rigida + compressa</td><td>Cápsula + comprimido</td></tr><tr><td>14014000</td><td>Filmtablette und Tablette</td><td></td><td>Comprimido recubierto con película + comprimido</td><td></td><td>Compressa rivestita con film + compressa</td><td>Comprimido revestido por película + comprimido</td></tr><tr><td>14015000</td><td></td><td></td><td>Pomada + comprimido vaginal</td><td></td><td>Unguento + compressa vaginale</td><td>Pomada + Comprimido vaginal</td></tr><tr><td>14016000</td><td></td><td></td><td>Granulado efervescente + Comprimido gastrorresistente</td><td>Granulés effervescents + comprimé gastrorésistant</td><td>Granulato effervescente + compressa gastroresistente</td><td>Granulado efervescente + comprimido gastrorresistente</td></tr><tr><td>14017000</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://unicom-project.eu/fhir/ValueSet/combination-pack"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CombinationPack"] ; # 
+  fhir:title [ fhir:v "EDQM Combination Pack"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-05-08T21:07:18+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet Combination pack (dose form) from EDQM, CMP, see https://standardterms.edqm.eu/#"] ; # 
+  fhir:immutable [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "14001000" ] ;
+         fhir:display [ fhir:v "Cream + pessary" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Creme und Vaginalzäpfchen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Κρέμα +  Κολπικό υπόθετο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Crema + óvulo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Crème + ovule" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Crema + ovulo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Creme + óvulo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14002000" ] ;
+         fhir:display [ fhir:v "Cutaneous solution + medicated sponge" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Δερματικό διάλυμα + Σπόγγος φαρμακούχος" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Solución cutánea + esponja medicamentosa" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Solution cutanée + éponge médicamenteuse" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Soluzione cutanea + spugna medicata" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Solução cutânea + esponja medicamentosa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14003000" ] ;
+         fhir:display [ fhir:v "Gastro-resistant tablet + rectal suspension" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Magensaftresistente Tablette und Rektalsuspension" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Γαστροανθεκτικό δισκίο + Ορθικό εναιώρημα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Comprimido gastrorresistente + suspensión rectal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Comprimé gastrorésistant + suspension rectale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Compressa gastroresistente + sospensione rettale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Comprimido gastrorresistente + suspensão retal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14004000" ] ;
+         fhir:display [ fhir:v "Vaginal capsule, soft + vaginal cream" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Weichkapsel zur vaginalen Anwendung und Vaginalcreme" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Κολπικό καψάκιο, μαλακό + κολπική κρέμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cápsula blanda vaginal + crema vaginal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Capsule molle vaginale + crème vaginale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Capsula molle vaginale + crema vaginale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Cápsula mole vaginal + creme vaginal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14005000" ] ;
+         fhir:display [ fhir:v "Vaginal cream + vaginal tablet" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Vaginalcreme und Vaginaltablette" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Κολπική κρέμα + κολπικό δισκίο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Crema vaginal + comprimido vaginal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Crème vaginale + comprimé vaginal" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Crema vaginale + compressa vaginale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Creme vaginal + comprimido vaginal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14006000" ] ;
+         fhir:display [ fhir:v "Effervescent granules + film-coated tablet" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Brausegranulat und Filmtablette" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Αναβράζοντα κοκκία + επικαλυμμένο με λεπτό υμένιο δισκίο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Granulado efervescente + comprimido recubierto con película" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Granulés effervescents + comprimé pelliculé" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Granulato effervescente + compressa rivestita con film" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Granulado efervescente + comprimido revestido por película" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14007000" ] ;
+         fhir:display [ fhir:v "Effervescent tablet + film-coated tablet" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Brausetablette und Filmtablette" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Αναβράζον δισκίο +  επικαλυμμένο με λεπτό υμένιο δισκίο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Comprimido efervescente + comprimido recubierto con película" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Comprimé effervescent + comprimé pelliculé" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Compressa effervescente + compressa rivestita con film" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Comprimido efervescente + comprimido revestido por película" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14008000" ] ;
+         fhir:display [ fhir:v "Tablet + vaginal tablet" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Tablette und Vaginaltablette" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Δισκίο + κολπικό δισκίο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Comprimido + comprimido vaginal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Comprimé + comprimé vaginal" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Compressa + compressa vaginale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Comprimido + comprimido vaginal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14009000" ] ;
+         fhir:display [ fhir:v "Cream + vaginal capsule, soft" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Creme und Weichkapsel zur vaginalen Anwendung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Κρέμα + κολπικό καψάκιο, μαλακό" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Crema + cápsula vaginal blanda" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Crème + capsule molle vaginale" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Crema + capsula molle vaginale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Creme + cápsula mole vaginal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14010000" ] ;
+         fhir:display [ fhir:v "Cream + vaginal tablet" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Creme und Vaginaltablette" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Κρέμα + κολπικό δισκίο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Crema + comprimido vaginal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Crème + comprimé vaginal" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Crema + compressa vaginale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Creme + comprimido vaginal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14011000" ] ;
+         fhir:display [ fhir:v "Film-coated tablet + pessary" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Filmtablette und Vaginalzäpfchen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Επικαλυμμένο με λεπτό υμένιο δισκίο + κολπικό υπόθετο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Comprimido recubierto con película + óvulo" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Compressa rivestita con film + ovulo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Comprimido revestido por película + óvulo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14012000" ] ;
+         fhir:display [ fhir:v "Capsule, soft + tablet" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Weichkapsel und Tablette" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cápsula blanda + comprimido" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Capsula molle + compressa" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Cápsula mole + comprimido" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14013000" ] ;
+         fhir:display [ fhir:v "Capsule, hard + tablet" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Hartkapsel und Tablette" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cápsula dura + comprimido" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Capsula rigida + compressa" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Cápsula + comprimido" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14014000" ] ;
+         fhir:display [ fhir:v "Film-coated tablet + tablet" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Filmtablette und Tablette" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Comprimido recubierto con película + comprimido" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Compressa rivestita con film + compressa" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Comprimido revestido por película + comprimido" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14015000" ] ;
+         fhir:display [ fhir:v "Ointment + vaginal tablet" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Pomada + comprimido vaginal" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Unguento + compressa vaginale" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Pomada + Comprimido vaginal" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14016000" ] ;
+         fhir:display [ fhir:v "Effervescent granules + gastro-resistant tablet" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Granulado efervescente + Comprimido gastrorresistente" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Granulés effervescents + comprimé gastrorésistant" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Granulato effervescente + compressa gastroresistente" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Granulado efervescente + comprimido gastrorresistente" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14017000" ] ;
+         fhir:display [ fhir:v "Eye drops, solution + eye ointment" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,1421 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EDQM Administration Device - XML Representation - UnicomIG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.50"}
+    h3,h4,h5,h6{--heading-prefix:"6.50"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Using IDMP
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="regulatory.html">Regulatory</a>
+      </li>
+      <li>
+        <a href="clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Features
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="visualiser.html">Visualiser</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EDQM Administration Device</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-administration-device.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-administration-device.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-administration-device.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: EDQM Administration Device - XML Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2023-10-17
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-administration-device.xml" no-download="true">Raw xml</a> | <a href="ValueSet-administration-device.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; overflow: hidden"><code>
+
+&lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;administration-device&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://standardterms.edqm.eu&lt;/code&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13072000&lt;/td&gt;&lt;td&gt;Oral applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13114000&lt;/td&gt;&lt;td&gt;Pen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30000500&lt;/td&gt;&lt;td&gt;Administration system&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30002000&lt;/td&gt;&lt;td&gt;Applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30003000&lt;/td&gt;&lt;td&gt;Automatic injection device&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30005000&lt;/td&gt;&lt;td&gt;Balling gun&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30010000&lt;/td&gt;&lt;td&gt;Brush&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30012000&lt;/td&gt;&lt;td&gt;Cannula&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30016000&lt;/td&gt;&lt;td&gt;Cup&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30017000&lt;/td&gt;&lt;td&gt;Dabbing applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30018200&lt;/td&gt;&lt;td&gt;Dose dispenser&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30019000&lt;/td&gt;&lt;td&gt;Dredging applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30021000&lt;/td&gt;&lt;td&gt;Drench gun&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30022000&lt;/td&gt;&lt;td&gt;Dropper applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30025000&lt;/td&gt;&lt;td&gt;High pressure transdermal delivery device&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30026000&lt;/td&gt;&lt;td&gt;Implanter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30026500&lt;/td&gt;&lt;td&gt;Inhaler&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30027000&lt;/td&gt;&lt;td&gt;In-ovo injection device&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30028000&lt;/td&gt;&lt;td&gt;Injection needle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30029000&lt;/td&gt;&lt;td&gt;Injection syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30030000&lt;/td&gt;&lt;td&gt;Internal graduated calibration chamber&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30031000&lt;/td&gt;&lt;td&gt;Intramammary syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30033000&lt;/td&gt;&lt;td&gt;Measuring device&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30034000&lt;/td&gt;&lt;td&gt;Measuring spoon&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30037000&lt;/td&gt;&lt;td&gt;Mouthpiece&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30040000&lt;/td&gt;&lt;td&gt;Multipuncturer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30041000&lt;/td&gt;&lt;td&gt;Nasal applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30042000&lt;/td&gt;&lt;td&gt;Nebuliser&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30043500&lt;/td&gt;&lt;td&gt;Needle-free injector&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30044000&lt;/td&gt;&lt;td&gt;Nozzle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30045000&lt;/td&gt;&lt;td&gt;Oral syringe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30046000&lt;/td&gt;&lt;td&gt;Pipette&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30053000&lt;/td&gt;&lt;td&gt;Prick test applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30055000&lt;/td&gt;&lt;td&gt;Scarifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30058000&lt;/td&gt;&lt;td&gt;Spatula&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30059000&lt;/td&gt;&lt;td&gt;Spot-on applicator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30063000&lt;/td&gt;&lt;td&gt;Stab vaccinator&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30068000&lt;/td&gt;&lt;td&gt;Vaginal sponge applicator&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Deutsch (German, de)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Greek (el)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Spanish (es)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;French (fr)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Italian (it)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Portuguese (pt)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13072000&lt;/td&gt;&lt;td&gt;Applikator für die orale Verabreichung&lt;/td&gt;&lt;td&gt;Εξάρτημα χορήγησης  από του στόματος&lt;/td&gt;&lt;td&gt;Aplicador para uso oral&lt;/td&gt;&lt;td&gt;Applicateur pour administration orale&lt;/td&gt;&lt;td&gt;Applicatore per somministrazione orale&lt;/td&gt;&lt;td&gt;Aplicador oral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;13114000&lt;/td&gt;&lt;td&gt;Pen&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Pluma&lt;/td&gt;&lt;td&gt;Stylo&lt;/td&gt;&lt;td&gt;Penna&lt;/td&gt;&lt;td&gt;Caneta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30000500&lt;/td&gt;&lt;td&gt;Applikationssystem&lt;/td&gt;&lt;td&gt;Σύστημα χορήγησης&lt;/td&gt;&lt;td&gt;Sistema de administración&lt;/td&gt;&lt;td&gt;Système d'administration&lt;/td&gt;&lt;td&gt;Sistema di somministrazione&lt;/td&gt;&lt;td&gt;Sistema de administração&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30002000&lt;/td&gt;&lt;td&gt;Applikator&lt;/td&gt;&lt;td&gt;Εξάρτημα χορήγησης&lt;/td&gt;&lt;td&gt;Aplicador&lt;/td&gt;&lt;td&gt;Applicateur&lt;/td&gt;&lt;td&gt;Applicatore&lt;/td&gt;&lt;td&gt;Aplicador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30003000&lt;/td&gt;&lt;td&gt;automatischer Injektor&lt;/td&gt;&lt;td&gt;Συσκευή αυτόματης ένεσης&lt;/td&gt;&lt;td&gt;Inyector automático&lt;/td&gt;&lt;td&gt;Injecteur automatique&lt;/td&gt;&lt;td&gt;Dispositivo automatico per iniezone&lt;/td&gt;&lt;td&gt;Seringa automática&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30005000&lt;/td&gt;&lt;td&gt;Bolusgeber&lt;/td&gt;&lt;td&gt;Συσκευή χορήγησης βώλων&lt;/td&gt;&lt;td&gt;Aplicador para administración intrarruminal&lt;/td&gt;&lt;td&gt;Applicateur pour dispositif intraruminal&lt;/td&gt;&lt;td&gt;Applicatore per dispositivo intraruminale&lt;/td&gt;&lt;td&gt;Aplicador para bólus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30010000&lt;/td&gt;&lt;td&gt;Pinsel&lt;/td&gt;&lt;td&gt;Ψύκτρα&lt;/td&gt;&lt;td&gt;Pincel&lt;/td&gt;&lt;td&gt;Pinceau applicateur&lt;/td&gt;&lt;td&gt;Pennello&lt;/td&gt;&lt;td&gt;Pincel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30012000&lt;/td&gt;&lt;td&gt;Kanüle&lt;/td&gt;&lt;td&gt;Σωληνίσκος&lt;/td&gt;&lt;td&gt;Cánula&lt;/td&gt;&lt;td&gt;Canule&lt;/td&gt;&lt;td&gt;Cannula&lt;/td&gt;&lt;td&gt;Cânula&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30016000&lt;/td&gt;&lt;td&gt;Messbecher&lt;/td&gt;&lt;td&gt;Κύπελλο&lt;/td&gt;&lt;td&gt;Vaso dosificador&lt;/td&gt;&lt;td&gt;Godet&lt;/td&gt;&lt;td&gt;Bicchiere dosatore&lt;/td&gt;&lt;td&gt;Copo-medida&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30017000&lt;/td&gt;&lt;td&gt;Verschluss mit Tupfer&lt;/td&gt;&lt;td&gt;Πώμα με εξάρτημα επάλειψης&lt;/td&gt;&lt;td&gt;Cierre con aplicador para toques&lt;/td&gt;&lt;td&gt;Embout applicateur&lt;/td&gt;&lt;td&gt;Tappo con applicatore&lt;/td&gt;&lt;td&gt;Fecho com aplicador de contacto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30018200&lt;/td&gt;&lt;td&gt;Dosiergerät&lt;/td&gt;&lt;td&gt;Δοσομετρητής&lt;/td&gt;&lt;td&gt;Dispensador de dosis&lt;/td&gt;&lt;td&gt;Dispensateur de dose&lt;/td&gt;&lt;td&gt;Dispensatore di dose&lt;/td&gt;&lt;td&gt;Dispensador de dose&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30019000&lt;/td&gt;&lt;td&gt;Verschluss mit Streuvorrichtung&lt;/td&gt;&lt;td&gt;Πώμα με εξάρτημα επίπασης&lt;/td&gt;&lt;td&gt;Cierre espolvoreador&lt;/td&gt;&lt;td&gt;Embout poudreur&lt;/td&gt;&lt;td&gt;Aspersore&lt;/td&gt;&lt;td&gt;Fecho polvilhador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30021000&lt;/td&gt;&lt;td&gt;Applikator für eine Flüssigkeit zum Einnehmen&lt;/td&gt;&lt;td&gt;Συσκευή χορήγησης στοματικών διαλυμάτων&lt;/td&gt;&lt;td&gt;Pistola dosificadora&lt;/td&gt;&lt;td&gt;Embout buccal&lt;/td&gt;&lt;td&gt;Pistola dosatrice per somministrazioni orali&lt;/td&gt;&lt;td&gt;Pistola doseadora&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30022000&lt;/td&gt;&lt;td&gt;Verschluss mit Tropfer&lt;/td&gt;&lt;td&gt;Σταγονομετρικό βιδωτό πώμα&lt;/td&gt;&lt;td&gt;Tapón cuentagotas&lt;/td&gt;&lt;td&gt;Embout compte-gouttes&lt;/td&gt;&lt;td&gt;Contagocce&lt;/td&gt;&lt;td&gt;Fecho conta-gotas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30025000&lt;/td&gt;&lt;td&gt;Intradermaldruckinjektor&lt;/td&gt;&lt;td&gt;Σύστημα διαδερμικής χορήγησης υπό πίεση&lt;/td&gt;&lt;td&gt;Dispositivo a presión para liberación transdermica&lt;/td&gt;&lt;td&gt;Injecteur intradermique sous pression&lt;/td&gt;&lt;td&gt;Dispositivo sotto pressione a rilascio transdermico&lt;/td&gt;&lt;td&gt;Injector transdérmico sob pressão&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30026000&lt;/td&gt;&lt;td&gt;Implantatinjektor&lt;/td&gt;&lt;td&gt;Συσκευή εμφύτευσης&lt;/td&gt;&lt;td&gt;Inyector de implantes&lt;/td&gt;&lt;td&gt;Pistolet pour implant&lt;/td&gt;&lt;td&gt;Iniettore per impianto&lt;/td&gt;&lt;td&gt;Seringa para implantes&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30026500&lt;/td&gt;&lt;td&gt;Inhalator&lt;/td&gt;&lt;td&gt;Συσκευή εισπνοής&lt;/td&gt;&lt;td&gt;Inhalador&lt;/td&gt;&lt;td&gt;Inhalateur&lt;/td&gt;&lt;td&gt;Inalatore&lt;/td&gt;&lt;td&gt;Inalador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30027000&lt;/td&gt;&lt;td&gt;Eiinjektor&lt;/td&gt;&lt;td&gt;Συσκευή χορήγησης in ovo&lt;/td&gt;&lt;td&gt;Inyector automático in ovo&lt;/td&gt;&lt;td&gt;Dispositif pour injection in ovo&lt;/td&gt;&lt;td&gt;Dispositivo per iniezione in ovo&lt;/td&gt;&lt;td&gt;Seringa para via transcoriónica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30028000&lt;/td&gt;&lt;td&gt;Injektionsnadel&lt;/td&gt;&lt;td&gt;Βελόνη σύριγγας&lt;/td&gt;&lt;td&gt;Aguja para inyección&lt;/td&gt;&lt;td&gt;Aiguille&lt;/td&gt;&lt;td&gt;Ago per iniezione&lt;/td&gt;&lt;td&gt;Agulha para injecção&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30029000&lt;/td&gt;&lt;td&gt;Injektionsspritze&lt;/td&gt;&lt;td&gt;Σύριγγα ένεσης&lt;/td&gt;&lt;td&gt;Jeringa para inyección&lt;/td&gt;&lt;td&gt;Seringue&lt;/td&gt;&lt;td&gt;Siringa per iniezione&lt;/td&gt;&lt;td&gt;Seringa para injectáveis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30030000&lt;/td&gt;&lt;td&gt;Intern graduierte Dosierkammer&lt;/td&gt;&lt;td&gt;Δοσιμετρικό εξάρτημα&lt;/td&gt;&lt;td&gt;Dispensador de dosis múltiples&lt;/td&gt;&lt;td&gt;Dispositif à cran d'arrêt&lt;/td&gt;&lt;td&gt;Bolo ruminale&lt;/td&gt;&lt;td&gt;Câmara de calibração graduada&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30031000&lt;/td&gt;&lt;td&gt;Euterinjektor&lt;/td&gt;&lt;td&gt;Ενδομαστική σύριγγα&lt;/td&gt;&lt;td&gt;Jeringa intramamaria&lt;/td&gt;&lt;td&gt;Seringue pour administration intramammaire&lt;/td&gt;&lt;td&gt;Siringa intramammaria&lt;/td&gt;&lt;td&gt;Injetor intramamário&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30033000&lt;/td&gt;&lt;td&gt;Dosierhilfe&lt;/td&gt;&lt;td&gt;Δοσιμετρικό εξάρτημα&lt;/td&gt;&lt;td&gt;Dosificador&lt;/td&gt;&lt;td&gt;Dispositif de mesure&lt;/td&gt;&lt;td&gt;Dosatore&lt;/td&gt;&lt;td&gt;Dispositivo doseador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30034000&lt;/td&gt;&lt;td&gt;Messlöffel&lt;/td&gt;&lt;td&gt;Δοσιμετρικό κοχλιάριο&lt;/td&gt;&lt;td&gt;Cucharilla de medida&lt;/td&gt;&lt;td&gt;Cuillère-mesure&lt;/td&gt;&lt;td&gt;Cucchiaio dosatore&lt;/td&gt;&lt;td&gt;Colher-medida&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30037000&lt;/td&gt;&lt;td&gt;Mundstück&lt;/td&gt;&lt;td&gt;Εξάρτημα στοματικής προσαρμογής&lt;/td&gt;&lt;td&gt;Aplicador bucal&lt;/td&gt;&lt;td&gt;Embout buccal&lt;/td&gt;&lt;td&gt;Boccaglio&lt;/td&gt;&lt;td&gt;Aplicador bucal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30040000&lt;/td&gt;&lt;td&gt;Multipunkturstempel&lt;/td&gt;&lt;td&gt;Εξάρτημα πολλαπλής νύξεως&lt;/td&gt;&lt;td&gt;Aplicador para punción múltiple&lt;/td&gt;&lt;td&gt;Applicateur pour multipuncture&lt;/td&gt;&lt;td&gt;Dispositivo per intradermoreazione per puntura multipla&lt;/td&gt;&lt;td&gt;Aplicador para punção múltipla&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30041000&lt;/td&gt;&lt;td&gt;Nasenapplikator&lt;/td&gt;&lt;td&gt;Εξάρτημα ρινικής προσαρμογής&lt;/td&gt;&lt;td&gt;Aplicador nasal&lt;/td&gt;&lt;td&gt;Embout nasal&lt;/td&gt;&lt;td&gt;Applicatore nasale&lt;/td&gt;&lt;td&gt;Aplicador nasal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30042000&lt;/td&gt;&lt;td&gt;Vernebler&lt;/td&gt;&lt;td&gt;Εκνεφωτής&lt;/td&gt;&lt;td&gt;Nebulizador&lt;/td&gt;&lt;td&gt;Nébuliseur&lt;/td&gt;&lt;td&gt;Nebulizzatore&lt;/td&gt;&lt;td&gt;Nebulizador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30043500&lt;/td&gt;&lt;td&gt;nadelfreier Injektor&lt;/td&gt;&lt;td&gt;Σύστημα διαδερμικής χορήγησης χωρίς βελόνα&lt;/td&gt;&lt;td&gt;Inyector sin aguja&lt;/td&gt;&lt;td&gt;Injecteur sans aiguille&lt;/td&gt;&lt;td&gt;Iniettore privo di ago&lt;/td&gt;&lt;td&gt;Injetor sem seringa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30044000&lt;/td&gt;&lt;td&gt;Sprühkopf&lt;/td&gt;&lt;td&gt;Ρύγχος&lt;/td&gt;&lt;td&gt;Boquilla&lt;/td&gt;&lt;td&gt;Embout&lt;/td&gt;&lt;td&gt;Erogatore&lt;/td&gt;&lt;td&gt;Adaptador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30045000&lt;/td&gt;&lt;td&gt;Applikationsspritze für Zubereitungen zum Einnehmen&lt;/td&gt;&lt;td&gt;Σύριγγα για χορήγηση από του στόματος&lt;/td&gt;&lt;td&gt;Jeringa para uso oral&lt;/td&gt;&lt;td&gt;Seringue pour administration orale&lt;/td&gt;&lt;td&gt;Siringa per somministrazione orale&lt;/td&gt;&lt;td&gt;Seringa para uso oral&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30046000&lt;/td&gt;&lt;td&gt;Pipette&lt;/td&gt;&lt;td&gt;Πιπέτα&lt;/td&gt;&lt;td&gt;Pipeta&lt;/td&gt;&lt;td&gt;Pipette&lt;/td&gt;&lt;td&gt;Pipetta&lt;/td&gt;&lt;td&gt;Pipeta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30053000&lt;/td&gt;&lt;td&gt;Teststempel&lt;/td&gt;&lt;td&gt;Εξάρτημα εφαρμογής αλλεργιογόνων δτα νύξεως&lt;/td&gt;&lt;td&gt;Aplicador para pruebas de alergenos&lt;/td&gt;&lt;td&gt;Applicateur pour prick test&lt;/td&gt;&lt;td&gt;Dispositivo per prick test&lt;/td&gt;&lt;td&gt;Estilete aplicador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30055000&lt;/td&gt;&lt;td&gt;Einritzer&lt;/td&gt;&lt;td&gt;Ακίδα σκαριφισμού&lt;/td&gt;&lt;td&gt;Escarificador&lt;/td&gt;&lt;td&gt;Vaccinostyle&lt;/td&gt;&lt;td&gt;Scarificatore&lt;/td&gt;&lt;td&gt;Escarificador&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30058000&lt;/td&gt;&lt;td&gt;Spatel&lt;/td&gt;&lt;td&gt;Σπαθίδα&lt;/td&gt;&lt;td&gt;Espátula&lt;/td&gt;&lt;td&gt;Spatule&lt;/td&gt;&lt;td&gt;Spatola&lt;/td&gt;&lt;td&gt;Espátula&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30059000&lt;/td&gt;&lt;td&gt;Tropfapplikator&lt;/td&gt;&lt;td&gt;Συσκευή επίχυσης σε σημείο&lt;/td&gt;&lt;td&gt;Aplicador para unción puntual&lt;/td&gt;&lt;td&gt;Applicateur pour spot-on&lt;/td&gt;&lt;td&gt;Applicatore per spot-on&lt;/td&gt;&lt;td&gt;Aplicador para unção punctiforme&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30063000&lt;/td&gt;&lt;td&gt;Impfautomat&lt;/td&gt;&lt;td&gt;Ακίδα εμβολιασμού&lt;/td&gt;&lt;td&gt;Punzón&lt;/td&gt;&lt;td&gt;Stylet&lt;/td&gt;&lt;td&gt;Dispositivo a punta per vaccinazione&lt;/td&gt;&lt;td&gt;estilete de inoculação&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;30068000&lt;/td&gt;&lt;td&gt;Applikator für ein Schwämmchen zur vaginalen Anwendung&lt;/td&gt;&lt;td&gt;Συσκευή για ενδοκολπική τοποθέτηση σπόγγων&lt;/td&gt;&lt;td&gt;Aplicador de esponjas vaginales&lt;/td&gt;&lt;td&gt;Applicateur pour éponge vaginale&lt;/td&gt;&lt;td&gt;Applicatore per spugnetta intravaginale&lt;/td&gt;&lt;td&gt;Aplicador para esponja vaginal&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">url</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://unicom-project.eu/fhir/ValueSet/administration-device&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;AdministrationDevice&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;EDQM Administration Device&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2023-10-17T08:02:36+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;UNICOM&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;UNICOM&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;http://unicom-project.eu&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">description</a>
+               <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;ValueSet Administration device from EDQM, DEV, see https://standardterms.edqm.eu/#&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.immutable">immutable</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">compose</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;https://standardterms.edqm.eu&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;13072000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Oral applicator&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applikator für die orale Verabreichung&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Εξάρτημα χορήγησης  από του στόματος&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador para uso oral&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicateur pour administration orale&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicatore per somministrazione orale&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador oral&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;13114000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pen&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pen&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pluma&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Stylo&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Penna&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Caneta&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30000500&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Administration system&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applikationssystem&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Σύστημα χορήγησης&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sistema de administración&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Système d'administration&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sistema di somministrazione&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sistema de administração&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30002000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicator&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applikator&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Εξάρτημα χορήγησης&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicateur&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicatore&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30003000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Automatic injection device&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;automatischer Injektor&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Συσκευή αυτόματης ένεσης&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Inyector automático&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Injecteur automatique&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispositivo automatico per iniezone&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Seringa automática&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30005000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Balling gun&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bolusgeber&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Συσκευή χορήγησης βώλων&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador para administración intrarruminal&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicateur pour dispositif intraruminal&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicatore per dispositivo intraruminale&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador para bólus&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30010000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Brush&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pinsel&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ψύκτρα&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pincel&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pinceau applicateur&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pennello&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pincel&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30012000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cannula&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Kanüle&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Σωληνίσκος&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cánula&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Canule&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cannula&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cânula&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30016000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cup&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Messbecher&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Κύπελλο&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Vaso dosificador&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Godet&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bicchiere dosatore&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Copo-medida&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30017000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dabbing applicator&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Verschluss mit Tupfer&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Πώμα με εξάρτημα επάλειψης&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cierre con aplicador para toques&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Embout applicateur&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tappo con applicatore&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Fecho com aplicador de contacto&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30018200&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dose dispenser&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dosiergerät&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Δοσομετρητής&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispensador de dosis&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispensateur de dose&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispensatore di dose&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispensador de dose&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30019000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dredging applicator&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Verschluss mit Streuvorrichtung&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Πώμα με εξάρτημα επίπασης&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cierre espolvoreador&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Embout poudreur&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aspersore&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Fecho polvilhador&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30021000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Drench gun&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applikator für eine Flüssigkeit zum Einnehmen&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Συσκευή χορήγησης στοματικών διαλυμάτων&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pistola dosificadora&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Embout buccal&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pistola dosatrice per somministrazioni orali&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pistola doseadora&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30022000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dropper applicator&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Verschluss mit Tropfer&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Σταγονομετρικό βιδωτό πώμα&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tapón cuentagotas&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Embout compte-gouttes&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Contagocce&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Fecho conta-gotas&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30025000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;High pressure transdermal delivery device&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Intradermaldruckinjektor&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Σύστημα διαδερμικής χορήγησης υπό πίεση&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispositivo a presión para liberación transdermica&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Injecteur intradermique sous pression&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispositivo sotto pressione a rilascio transdermico&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Injector transdérmico sob pressão&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30026000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Implanter&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Implantatinjektor&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Συσκευή εμφύτευσης&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Inyector de implantes&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pistolet pour implant&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Iniettore per impianto&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Seringa para implantes&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30026500&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Inhaler&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Inhalator&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Συσκευή εισπνοής&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Inhalador&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Inhalateur&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Inalatore&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Inalador&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30027000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;In-ovo injection device&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Eiinjektor&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Συσκευή χορήγησης in ovo&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Inyector automático in ovo&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispositif pour injection in ovo&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispositivo per iniezione in ovo&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Seringa para via transcoriónica&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30028000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Injection needle&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Injektionsnadel&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Βελόνη σύριγγας&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aguja para inyección&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aiguille&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ago per iniezione&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Agulha para injecção&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30029000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Injection syringe&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Injektionsspritze&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Σύριγγα ένεσης&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Jeringa para inyección&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Seringue&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Siringa per iniezione&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Seringa para injectáveis&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30030000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Internal graduated calibration chamber&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Intern graduierte Dosierkammer&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Δοσιμετρικό εξάρτημα&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispensador de dosis múltiples&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispositif à cran d'arrêt&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Bolo ruminale&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Câmara de calibração graduada&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30031000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Intramammary syringe&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Euterinjektor&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ενδομαστική σύριγγα&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Jeringa intramamaria&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Seringue pour administration intramammaire&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Siringa intramammaria&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Injetor intramamário&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30033000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Measuring device&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dosierhilfe&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Δοσιμετρικό εξάρτημα&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dosificador&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispositif de mesure&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dosatore&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispositivo doseador&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30034000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Measuring spoon&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Messlöffel&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Δοσιμετρικό κοχλιάριο&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cucharilla de medida&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cuillère-mesure&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Cucchiaio dosatore&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Colher-medida&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30037000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Mouthpiece&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Mundstück&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Εξάρτημα στοματικής προσαρμογής&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador bucal&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Embout buccal&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Boccaglio&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador bucal&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30040000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Multipuncturer&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Multipunkturstempel&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Εξάρτημα πολλαπλής νύξεως&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador para punción múltiple&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicateur pour multipuncture&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispositivo per intradermoreazione per puntura multipla&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador para punção múltipla&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30041000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nasal applicator&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nasenapplikator&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Εξάρτημα ρινικής προσαρμογής&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador nasal&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Embout nasal&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicatore nasale&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador nasal&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30042000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nebuliser&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Vernebler&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Εκνεφωτής&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nebulizador&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nébuliseur&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nebulizzatore&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nebulizador&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30043500&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Needle-free injector&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;nadelfreier Injektor&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Σύστημα διαδερμικής χορήγησης χωρίς βελόνα&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Inyector sin aguja&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Injecteur sans aiguille&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Iniettore privo di ago&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Injetor sem seringa&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30044000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Nozzle&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sprühkopf&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ρύγχος&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Boquilla&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Embout&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Erogatore&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Adaptador&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30045000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Oral syringe&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applikationsspritze für Zubereitungen zum Einnehmen&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Σύριγγα για χορήγηση από του στόματος&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Jeringa para uso oral&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Seringue pour administration orale&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Siringa per somministrazione orale&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Seringa para uso oral&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30046000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pipette&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pipette&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Πιπέτα&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pipeta&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pipette&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pipetta&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pipeta&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30053000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Prick test applicator&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Teststempel&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Εξάρτημα εφαρμογής αλλεργιογόνων δτα νύξεως&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador para pruebas de alergenos&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicateur pour prick test&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispositivo per prick test&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Estilete aplicador&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30055000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Scarifier&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Einritzer&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ακίδα σκαριφισμού&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Escarificador&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Vaccinostyle&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Scarificatore&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Escarificador&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30058000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Spatula&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Spatel&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Σπαθίδα&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Espátula&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Spatule&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Spatola&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Espátula&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30059000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Spot-on applicator&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Tropfapplikator&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Συσκευή επίχυσης σε σημείο&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador para unción puntual&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicateur pour spot-on&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicatore per spot-on&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador para unção punctiforme&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30063000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Stab vaccinator&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Impfautomat&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Ακίδα εμβολιασμού&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Punzón&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Stylet&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Dispositivo a punta per vaccinazione&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;estilete de inoculação&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;30068000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Vaginal sponge applicator&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applikator für ein Schwämmchen zur vaginalen Anwendung&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;el&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Συσκευή για ενδοκολπική τοποθέτηση σπόγγων&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;es&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador de esponjas vaginales&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicateur pour éponge vaginale&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;it&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Applicatore per spugnetta intravaginale&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;pt&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Aplicador para esponja vaginal&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+    &lt;/include&gt;
+  &lt;/compose&gt;
+&lt;/ValueSet&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 17, 2023 08:02+0000">2023-10-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,2994 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/route-of-administration> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "route-of-administration"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>20001000</td><td>Auricular use</td></tr><tr><td>20002000</td><td>Beak dipping</td></tr><tr><td>20002500</td><td>Buccal use</td></tr><tr><td>20003000</td><td>Cutaneous use</td></tr><tr><td>20004000</td><td>Dental use</td></tr><tr><td>20005000</td><td>Dipping</td></tr><tr><td>20006000</td><td>Endocervical use</td></tr><tr><td>20007000</td><td>Endosinusial use</td></tr><tr><td>20008000</td><td>Endotracheopulmonary use</td></tr><tr><td>20009000</td><td>Epidural use</td></tr><tr><td>20010000</td><td>Epilesional use</td></tr><tr><td>20011000</td><td>Extraamniotic use</td></tr><tr><td>20011500</td><td>Extracorporeal use</td></tr><tr><td>20012000</td><td>Foot-stab use</td></tr><tr><td>20013000</td><td>Gastroenteral use</td></tr><tr><td>20013500</td><td>Gastric use</td></tr><tr><td>20014000</td><td>Gingival use</td></tr><tr><td>20015000</td><td>Haemodialysis</td></tr><tr><td>20015500</td><td>Implantation</td></tr><tr><td>20015700</td><td>In drinking water use</td></tr><tr><td>20016000</td><td>In drinking water/milk use</td></tr><tr><td>20017000</td><td>In ovo</td></tr><tr><td>20018000</td><td>In-feed use</td></tr><tr><td>20019000</td><td>In-hive use</td></tr><tr><td>20019500</td><td>Infiltration</td></tr><tr><td>20020000</td><td>Inhalation use</td></tr><tr><td>20021000</td><td>Intestinal use</td></tr><tr><td>20022000</td><td>Intraamniotic use</td></tr><tr><td>20023000</td><td>Intraarterial use</td></tr><tr><td>20024000</td><td>Intraarticular use</td></tr><tr><td>20025000</td><td>Intrabursal use</td></tr><tr><td>20025500</td><td>Intracameral use</td></tr><tr><td>20026000</td><td>Intracardiac use</td></tr><tr><td>20026500</td><td>Intracartilaginous use</td></tr><tr><td>20027000</td><td>Intracavernous use</td></tr><tr><td>20027010</td><td>Intracerebral use</td></tr><tr><td>20028000</td><td>Intracervical use</td></tr><tr><td>20028300</td><td>Intracholangiopancreatic use</td></tr><tr><td>20028500</td><td>Intracisternal use</td></tr><tr><td>20029000</td><td>Intracoronary use</td></tr><tr><td>20030000</td><td>Intradermal use</td></tr><tr><td>20031000</td><td>Intradiscal use</td></tr><tr><td>20031500</td><td>Intraepidermal use</td></tr><tr><td>20031700</td><td>Intraglandular use</td></tr><tr><td>20032000</td><td>Intralesional use</td></tr><tr><td>20033000</td><td>Intralymphatic use</td></tr><tr><td>20034000</td><td>Intramammary use</td></tr><tr><td>20035000</td><td>Intramuscular use</td></tr><tr><td>20036000</td><td>Intraocular use</td></tr><tr><td>20036500</td><td>Intraosseous use</td></tr><tr><td>20037000</td><td>Intrapericardial use</td></tr><tr><td>20038000</td><td>Intraperitoneal use</td></tr><tr><td>20039000</td><td>Intrapleural use</td></tr><tr><td>20039200</td><td>Intraportal use</td></tr><tr><td>20039500</td><td>Intraprostatic use</td></tr><tr><td>20039800</td><td>Intrapulmonary use</td></tr><tr><td>20040000</td><td>Intraruminal use</td></tr><tr><td>20041000</td><td>Intrasternal use</td></tr><tr><td>20042000</td><td>Intrathecal use</td></tr><tr><td>20043000</td><td>Intratumoral use</td></tr><tr><td>20044000</td><td>Intrauterine use</td></tr><tr><td>20045000</td><td>Intravenous use</td></tr><tr><td>20046000</td><td>Intravesical use</td></tr><tr><td>20047000</td><td>Intravitreal use</td></tr><tr><td>20047500</td><td>Iontophoresis</td></tr><tr><td>20048000</td><td>Laryngopharyngeal use</td></tr><tr><td>20048500</td><td>Nail use</td></tr><tr><td>20049000</td><td>Nasal use</td></tr><tr><td>20050000</td><td>Nebulisation use</td></tr><tr><td>20051000</td><td>Ocular use</td></tr><tr><td>20052000</td><td>Oculonasal use</td></tr><tr><td>20053000</td><td>Oral use</td></tr><tr><td>20054000</td><td>Oromucosal use</td></tr><tr><td>20055000</td><td>Oropharyngeal use</td></tr><tr><td>20056000</td><td>Paravertebral use</td></tr><tr><td>20057000</td><td>Periarticular use</td></tr><tr><td>20058000</td><td>Perineural use</td></tr><tr><td>20059000</td><td>Periodontal use</td></tr><tr><td>20059300</td><td>Periosseous use</td></tr><tr><td>20059400</td><td>Peritumoral use</td></tr><tr><td>20059500</td><td>Posterior juxtascleral use</td></tr><tr><td>20060000</td><td>Pour-on use</td></tr><tr><td>20061000</td><td>Rectal use</td></tr><tr><td>20061500</td><td>Retrobulbar use</td></tr><tr><td>20062000</td><td>Route of administration not applicable</td></tr><tr><td>20063000</td><td>Skin scarification</td></tr><tr><td>20064000</td><td>Spot-on use</td></tr><tr><td>20065000</td><td>Subconjunctival use</td></tr><tr><td>20066000</td><td>Subcutaneous use</td></tr><tr><td>20067000</td><td>Sublingual use</td></tr><tr><td>20067500</td><td>Submucosal use</td></tr><tr><td>20068000</td><td>Teat use</td></tr><tr><td>20069000</td><td>Top-dressing use</td></tr><tr><td>20070000</td><td>Transdermal use</td></tr><tr><td>20071000</td><td>Urethral use</td></tr><tr><td>20072000</td><td>Vaginal use</td></tr><tr><td>20073000</td><td>Water-borne use</td></tr><tr><td>20074000</td><td>Wing-web-stab use</td></tr><tr><td>20080000</td><td>Intracerebroventricular use</td></tr><tr><td>20081000</td><td>Subretinal use</td></tr><tr><td>20084000</td><td>Intracorneal use</td></tr><tr><td>20086000</td><td>Intraputaminal use</td></tr><tr><td>20087000</td><td>Extrapleural use</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>Greek (el)</b></td><td><b>Spanish (es)</b></td><td><b>French (fr)</b></td><td><b>Italian (it)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td>20001000</td><td>Anwendung am Ohr</td><td>Ωτική χρήση</td><td>Vía ótica</td><td>Voie auriculaire</td><td>Uso auricolare</td><td>Uso auricular</td></tr><tr><td>20002000</td><td>Eintauchen des Schnabels</td><td>Χορήγηση με εμβάπτιση ράμφους</td><td>Administración por inmersión del pico</td><td>Administration par trempage du bec</td><td>Immersione del becco</td><td>Uso aculear</td></tr><tr><td>20002500</td><td>Buccale Anwendung</td><td>Παρειακή χορήγηση</td><td>Vía bucal</td><td>Voie buccogingivale</td><td>Somministrazione buccale</td><td>Uso bucal</td></tr><tr><td>20003000</td><td>Anwendung auf der Haut</td><td>Δερματική χρήση</td><td>Uso cutáneo</td><td>Voie cutanée</td><td>Uso cutaneo</td><td>Uso cutâneo</td></tr><tr><td>20004000</td><td>dentale Anwendung</td><td>Οδοντική χρήση</td><td>Uso dental</td><td>Voie dentaire</td><td>Uso dentale</td><td>Uso dental</td></tr><tr><td>20005000</td><td>Badebehandlung</td><td>Εμβάπτιση</td><td>Baño</td><td>Trempage</td><td>Immersione</td><td>Banho medicamentoso</td></tr><tr><td>20006000</td><td>endozervikale Anwendung</td><td>Ενδοτραχηλική χρήση</td><td>Vía endocervical</td><td>Voie endocervicale</td><td>Uso endocervicale</td><td>Via endocervical</td></tr><tr><td>20007000</td><td>Anwendung in den Nebenhöhlen</td><td>Ενδορρινοκολπική χρήση</td><td>Vía endosinusal</td><td>Voie endosinusale</td><td>Uso endosinusiale</td><td>Uso endossinusal</td></tr><tr><td>20008000</td><td>endotracheopulmonale Anwendung</td><td>Ενδοτραχειοπνευμονική χρήση</td><td>Vía endotraqueopulmonar</td><td>Voie endotrachéobronchique</td><td>Uso endotracheobronchiale</td><td>Via endotraqueobrônquica</td></tr><tr><td>20009000</td><td>epidurale Anwendung</td><td>Επισκληρίδιος χρήση</td><td>Vía epidural</td><td>Voie péridurale</td><td>Uso epidurale</td><td>Via epidural</td></tr><tr><td>20010000</td><td>zum Auftragen auf die Wunde</td><td>Χρήση επί της βλάβης</td><td>Uso epilesional</td><td>Voie épilésionnelle</td><td>Uso epilesionale</td><td>Uso epilesional</td></tr><tr><td>20011000</td><td>extraamniotische Anwendung</td><td>Εξωαμνιακή χρήση</td><td>Vía extraamniótica</td><td>Voie extra-amniotique</td><td>Uso extra-amniotico</td><td>Via extra-amniótica</td></tr><tr><td>20011500</td><td>extrakorporale Anwendung</td><td>Εξωσωματική χρήση</td><td>Uso extracorporal</td><td>Voie extracorporelle</td><td>Uso extracorporeo</td><td>Uso extracorpóreo</td></tr><tr><td>20012000</td><td>Fussstichapplikation</td><td>Χορήγηση με νύγμα πέλματος</td><td>Punción en la almohadilla plantar</td><td>Administration par transfixion dans les pattes</td><td>Uso podale</td><td>Uso intrapodal</td></tr><tr><td>20013000</td><td>gastrointestinale Anwendung</td><td>Γαστρεντερική χρήση</td><td>Vía gastroentérica</td><td>Voie gastro-entérale</td><td>Uso gastrointestinale</td><td>Via gastroentérica</td></tr><tr><td>20013500</td><td>zur Anwendung mittels Magensonde</td><td>Γαστρική χρήση</td><td>uso gástrico</td><td>Voie gastrique</td><td>Uso gastrico</td><td>Via gástrica</td></tr><tr><td>20014000</td><td>Anwendung am Zahnfleisch</td><td>Χρήση επί των ούλων</td><td>Uso gingival</td><td>Voie gingivale</td><td>Uso gengivale</td><td>Uso gengival</td></tr><tr><td>20015000</td><td>Hämodialyse</td><td>Αιμοδιαπίδυση</td><td>Hemodiálisis</td><td>Hémodialyse</td><td>Emodialisi</td><td>Hemodiálise</td></tr><tr><td>20015500</td><td>zur Implantation</td><td>Εμφύτευση</td><td>Implantación</td><td>Implantation</td><td>Impianto</td><td>Implantação</td></tr><tr><td>20015700</td><td>zum Eingeben über das Trinkwasser</td><td>Χορήγηση με το πόσιμο νερό</td><td>Administración en agua de bebida</td><td>Administration dans l'eau de boisson</td><td>Somministrazione in acqua da bere</td><td>Administração na água de bebida</td></tr><tr><td>20016000</td><td>zum Eingeben über das Trinkwasser/ die Milch</td><td>Χορήγηση με το πόσιμο νερό/γάλα</td><td>Administración en agua de bebida o en leche</td><td>Administration dans l'eau de boisson/ le lait</td><td>Somministrazione in acqua da bere/latte</td><td>Alimento medicamentoso líquido</td></tr><tr><td>20017000</td><td>in das Ei</td><td>in ovo χορήγηση</td><td>In ovo</td><td>In ovo</td><td>In ovo</td><td>Via transcoriónica</td></tr><tr><td>20018000</td><td>zum Eingeben über das Futter</td><td>Χορήγηση εντός τροφής</td><td>Administración en el alimento</td><td>Administration dans l'alimentation</td><td>Somministrazione con il mangime</td><td>Alimento medicamentoso sólido</td></tr><tr><td>20019000</td><td>Anwendung im Bienenstock</td><td>Ενδοκυψελική χρήση</td><td>Uso en las colmenas</td><td>Traitement dans la ruche</td><td>Trattamento in alveare</td><td>Aplicação apícola</td></tr><tr><td>20019500</td><td>Infiltration</td><td>Διήθηση (ιατρ.)</td><td>Infiltración</td><td>Infiltration</td><td>Infiltrazione</td><td>Infiltração</td></tr><tr><td>20020000</td><td>zur Inhalation</td><td>Χρήση δια εισπνοής</td><td>Vía inhalatoria</td><td>Voie inhalée</td><td>Uso inalatorio</td><td>Via inalatoria</td></tr><tr><td>20021000</td><td>intestinale Anwendung</td><td>Εντερική χρήση</td><td>Uso intestinal</td><td>Voie intestinale</td><td>Uso intestinale</td><td>Via intestinal</td></tr><tr><td>20022000</td><td>intraamniotische Anwendung</td><td>Ενδοαμνιακή χρήση</td><td>Vía intraamniótica</td><td>Voie intraamniotique</td><td>Uso intra-amniotico</td><td>Via intra-amniótica</td></tr><tr><td>20023000</td><td>intraarterielle Anwendung</td><td>Ενδοαρτηριακή χρήση</td><td>Vía intraarterial</td><td>Voie intraartérielle</td><td>Uso endoarterioso</td><td>Via intra-arterial</td></tr><tr><td>20024000</td><td>intraartikuläre Anwendung</td><td>Ενδοαρθρική χρήση</td><td>Vía intraarticular</td><td>Voie intraarticulaire</td><td>Uso intra-articolare</td><td>Via intra-articular</td></tr><tr><td>20025000</td><td>intrabursale Anwendung</td><td>Ενδοθυλακική χρήση</td><td>Vía intrasinovial</td><td>Voie intrabursale</td><td>Uso intrabursale</td><td>Via intrassinovial</td></tr><tr><td>20025500</td><td>intrakamerale Anwendung</td><td>Χορήγηση ενδοθαλαμική στον οφθαλμικό</td><td>Uso intracameral</td><td>Voie intracamérulaire</td><td>Uso intracamerale</td><td>Via Intracameral</td></tr><tr><td>20026000</td><td>intracardiale Anwendung</td><td>Ενδοκαρδιακή χρήση</td><td>Vía intracardiaca</td><td>Voie intracardiaque</td><td>Uso intracardiaco</td><td>Via intracardíaca</td></tr><tr><td>20026500</td><td>intrakartilaginäre Anwendung</td><td>Ενδοχόνδρειος χορήγηση</td><td>Uso intracartilaginoso</td><td>Voie intracartilagineuse</td><td>Uso intracartilagineo</td><td>Via intracartilaginosa</td></tr><tr><td>20027000</td><td>intrakavernöse Anwendung</td><td>Ενδοσηραγγική χρήση</td><td>Vía intracavernosa</td><td>Voie intracaverneuse</td><td>Uso intracavernoso</td><td>Via intracavernosa</td></tr><tr><td>20027010</td><td>Intrazerebrale Anwendung</td><td>Ενδοεγκεφαλική χρήση</td><td>VÍA INTRACEREBRAL</td><td>Voie intracérébrale</td><td>Uso intracerebrale</td><td>Via intracerebral</td></tr><tr><td>20028000</td><td>intrazervikale Anwendung</td><td>Ενδοτραχηλική χρήση</td><td>Vía intracervical</td><td>Voie intracervicale</td><td>Uso intracervicale</td><td>Via intracervical</td></tr><tr><td>20028300</td><td>zur Anwendung in der Cholangiopankreatikographie</td><td>Ενδοχολαγγειοπαγκρεατική χρήση</td><td>Uso intracolangiopancreático</td><td>Voie intracholangiopancréatique</td><td>Uso intracolangiopancreatico</td><td>Via intracolangiopancreática</td></tr><tr><td>20028500</td><td>intracisternale Anwendung</td><td>Χορήγηση ενδοκοιλιακή στο κεντρικό νευρικό σύστημα</td><td>Uso intracisternal</td><td>Voie intracisternale</td><td>Uso intracisternale</td><td>Via intracisternal</td></tr><tr><td>20029000</td><td>intrakoronare Anwendung</td><td>Ενδοστεφανιαία χρήση</td><td>Vía intracoronaria</td><td>Voie intracoronaire</td><td>Uso intracoronarico</td><td>Via intracoronária</td></tr><tr><td>20030000</td><td>intradermale Anwendung</td><td>Ενδοδερμική χρήση</td><td>Vía intradérmica</td><td>Voie intradermique</td><td>Uso intradermico</td><td>Via intradérmica</td></tr><tr><td>20031000</td><td>intradiskale Anwendung</td><td>Ενδομεσοσπονδύλια χρήση</td><td>Vía intradiscal</td><td>Voie intradiscale</td><td>Uso intradiscale</td><td>Via intradiscal</td></tr><tr><td>20031500</td><td>intraepidermale Anwendung</td><td>Ενδοεπιδερμική χρήση</td><td>Vía intraepidérmica</td><td>Voie intraépidermique</td><td>Uso intraepidermico</td><td>Via intraepidérmica</td></tr><tr><td>20031700</td><td>intraglanduläre Anwendung</td><td>Ενδοαδενική χρήση</td><td>Uso intraglandular</td><td>Voie intraglandulaire</td><td>Uso intraghiandolare</td><td>Via intraglandular</td></tr><tr><td>20032000</td><td>intraläsionale Anwendung</td><td>Ενδοβλαβική χρήση</td><td>Vía intralesional</td><td>Voie intralésionnelle</td><td>Uso intralesionale</td><td>Uso intralesional</td></tr><tr><td>20033000</td><td>intralymphatische Anwendung</td><td>Ενδολεμφαγγειακή χρήση</td><td>Vía intralinfática</td><td>Voie intralymphatique</td><td>Uso intralinfatico</td><td>Via intralinfática</td></tr><tr><td>20034000</td><td>intramammäre Anwendung</td><td>Ενδομαστική οδός</td><td>Vía intramamaria</td><td>Voie intramammaire</td><td>Per uso intramammario</td><td>Via intramamária</td></tr><tr><td>20035000</td><td>intramuskuläre Anwendung</td><td>Ενδομυική χρήση</td><td>Vía intramuscular</td><td>Voie intramusculaire</td><td>Uso intramuscolare</td><td>Via intramuscular</td></tr><tr><td>20036000</td><td>intraokulare Anwendung</td><td>Ενδοφθάλμια χορήγηση</td><td>Vía intraocular</td><td>Voie intraoculaire</td><td>Uso intraoculare</td><td>Uso intraocular</td></tr><tr><td>20036500</td><td>intraossäre Anwendung</td><td>Ενδοοστική χρήση</td><td>Vía intraósea</td><td>Voie intraosseuse</td><td>Uso intraosseo</td><td>Uso intraósseo</td></tr><tr><td>20037000</td><td>Intraperikardial</td><td>Ενδοπερικαρδιακή χρήση</td><td>Vía intrapericárdica</td><td>Voie intrapéricardiaque</td><td>Uso intrapericardico</td><td>Via intrapericárdica</td></tr><tr><td>20038000</td><td>intraperitoneale Anwendung</td><td>Ενδοπεριτοναϊκή χρήση</td><td>Vía intraperitoneal</td><td>Voie intrapéritonéale</td><td>Uso intraperitoneale</td><td>Via intraperitoneal</td></tr><tr><td>20039000</td><td>intrapleurale Anwendung</td><td>Ενδοϋπεζωκοτική χρήση</td><td>Vía intrapleural</td><td>Voie intrapleurale</td><td>Uso intrapleurico</td><td>Via intrapleural</td></tr><tr><td>20039200</td><td>intraportale Anwendung</td><td>Ενδοπυλαία χρήση</td><td>Uso intraportal</td><td>Voie intraportale</td><td>Uso intraportale</td><td>Via intraportal</td></tr><tr><td>20039500</td><td>intraprostatische Anwendung</td><td>Ενδοπροστατική χρήση</td><td>Uso intraprostático</td><td>Voie intraprostatique</td><td>Uso intraprostatico</td><td>Via intraprostática</td></tr><tr><td>20039800</td><td>intrapulmonale Anwendung</td><td>Ενδοπνευμονική χρήση</td><td>Uso intrapulmonar</td><td>Voie intrabronchique</td><td>Uso intrabronchiale</td><td>Via intrapulmonar</td></tr><tr><td>20040000</td><td>intraruminale Anwendung</td><td>Ενδομεγαλοκοιλιοκή χρήση</td><td>Vía intrarruminal</td><td>Voie intraruminale</td><td>Per uso intraruminale</td><td>Via intrarruminal</td></tr><tr><td>20041000</td><td>intrasternale Anwendung</td><td>Ενδοστερνική χρήση</td><td>Vía intraesternal</td><td>Voie intrasternale</td><td>Uso intrasternale</td><td>Via intraesternal</td></tr><tr><td>20042000</td><td>intrathekale Anwendung</td><td>Ενδορραχιαία χρήση</td><td>Vía intratecal</td><td>Voie intrathécale</td><td>Uso intratecale</td><td>Via intratecal</td></tr><tr><td>20043000</td><td>intratumorale Anwendung</td><td>Ενδοογκική χρήση</td><td>Vía intratumoral</td><td>Voie intratumorale</td><td>Uso intratumorale</td><td>Via intratumoral</td></tr><tr><td>20044000</td><td>intrauterine Anwendung</td><td>Ενδομήτρια χρήση</td><td>Vía intrauterina</td><td>Voie intra-utérine</td><td>Uso intrauterino</td><td>Via intrauterina</td></tr><tr><td>20045000</td><td>intravenöse Anwendung</td><td>Ενδοφλέβια χρήση</td><td>Vía intravenosa</td><td>Voie intraveineuse</td><td>Uso endovenoso</td><td>Via intravenosa</td></tr><tr><td>20046000</td><td>intravesikale Anwendung</td><td>Ενδοκυστική χρήση</td><td>Vía intravesical</td><td>Voie intravésicale</td><td>Uso endovescicale</td><td>Via intravesical</td></tr><tr><td>20047000</td><td>intravitreale Anwendung</td><td>Ενδοϋαλωδης χορήγηση</td><td>Vía intravítrea</td><td>Voie intravitréenne</td><td>Uso intravitreo</td><td>Uso intravítreo</td></tr><tr><td>20047500</td><td>zur Iontophorese</td><td>Ιοντοφόρηση</td><td>Iontoforesis</td><td>Iontophorèse</td><td>Iontoforesi</td><td>Iontoforese</td></tr><tr><td>20048000</td><td>zur Anwendung im Rachen und am Kehlkopf</td><td>Λαρυγγοφαρυγγική χρήση</td><td>Uso laringofaríngeo</td><td>Voie laryngopharyngée</td><td>Uso laringofaringeo</td><td>Uso laringofaríngeo</td></tr><tr><td>20048500</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>20049000</td><td>nasale Anwendung</td><td>Ρινική χρήση</td><td>Vía nasal</td><td>Voie nasale</td><td>Uso nasale</td><td>Via nasal</td></tr><tr><td>20050000</td><td>zum Vernebeln</td><td>Χορήγηση με εκνέφωση</td><td>Nebulización</td><td>Administration par nébulisation</td><td>Nebulizzazione</td><td>Nebulização</td></tr><tr><td>20051000</td><td>Anwendung am Auge</td><td>Οφθαλμική χρήση</td><td>Vía oftálmica</td><td>Voie ophtalmique</td><td>Uso oftalmico</td><td>Uso oftálmico</td></tr><tr><td>20052000</td><td>okulonasale Anwendung</td><td>Οφθαλμορρινική ενστάλλαξη</td><td>Vía oculonasal</td><td>Voie oculonasale</td><td>Per uso oculonasale</td><td>Via oculonasal</td></tr><tr><td>20053000</td><td>zum Einnehmen</td><td>Από στόματος χρήση</td><td>Vía oral</td><td>Voie orale</td><td>Uso orale</td><td>Via oral</td></tr><tr><td>20054000</td><td>Anwendung in der Mundhöhle</td><td>Χρήση στο στοματικό βλεννογόνο</td><td>Vía bucal</td><td>Voie buccale</td><td>Per mucosa orale</td><td>Via bucal</td></tr><tr><td>20055000</td><td>zur Anwendung im Mund- und Rachenraum</td><td>Στοματοφαρυγγική χρήση</td><td>Uso bucofaríngeo</td><td>Voie oropharyngée</td><td>Uso orofaringeo</td><td>Uso orofaríngeo</td></tr><tr><td>20056000</td><td>paravertebrale Anwendung</td><td>Παρασπονδυλική χρήση</td><td>Vía paravertebral</td><td>Voie paravertébrale</td><td>Uso paravertebrale</td><td>Via paravertebral</td></tr><tr><td>20057000</td><td>periartikuläre Anwendung</td><td>Περιαρθρική χρήση</td><td>Vía periarticular</td><td>Voie périarticulaire</td><td>Uso periarticolare</td><td>Via periarticular</td></tr><tr><td>20058000</td><td>perineurale Anwendung</td><td>Περινευρική χρήση</td><td>Vía perineural</td><td>Voie périneurale</td><td>Uso perineurale</td><td>Via perineural</td></tr><tr><td>20059000</td><td>periodontale Anwendung</td><td>Περιοδοντική χρήση</td><td>Uso periodontal</td><td>Voie périodontale</td><td>Uso periodontale</td><td>Uso periodontal</td></tr><tr><td>20059300</td><td>periossäre Anwendung</td><td>Περιοστική χρήση</td><td>Uso perióseo</td><td>Voie périosseuse</td><td>Uso periosseo</td><td>Via perióssea</td></tr><tr><td>20059400</td><td>peritumorale Anwendung</td><td>Περιογκική χρήση</td><td>Uso peritumoral</td><td>Voie péritumorale</td><td>Uso peritumorale</td><td>Via peritumoral</td></tr><tr><td>20059500</td><td>posteriore juxtasclerale Anwendung</td><td>Χρήση στο οπίσθιο μέρος του σκληρού χιτώνα</td><td>Vía yuxtaescleral posterior</td><td>Voie juxta-sclérale postérieure</td><td>Uso iuxtasclerale posteriore</td><td>Via justa-escleral posterior</td></tr><tr><td>20060000</td><td>Übergießen</td><td>Επίχυση</td><td>Unción dorsal continua</td><td>Pour-on</td><td>Pour-on</td><td>Unção contínua</td></tr><tr><td>20061000</td><td>rektale Anwendung</td><td>Ορθική χρήση</td><td>Vía rectal</td><td>Voie rectale</td><td>Uso rettale</td><td>Via retal</td></tr><tr><td>20061500</td><td>retrobulbäre Anwendung</td><td>Οπισθοβολβική χρήση</td><td>Uso retrobulbar</td><td>Voie rétrobulbaire</td><td>Uso retrobulbare</td><td>Via retrobulbar</td></tr><tr><td>20062000</td><td>Art der Anwendung nicht spezifizierbar</td><td>Οδός χορήγησης μη εφαρμοζόμενη ή μη εξειδικευόμενη</td><td>Otra vía</td><td>Autre(s)</td><td>Via di somministrazione non specificabile</td><td>Via de administração não especificada</td></tr><tr><td>20063000</td><td>Einritzen der Haut</td><td>Σκαριφισμός</td><td>Escarificación</td><td>Scarification</td><td>Scarificazione</td><td>Escarificação</td></tr><tr><td>20064000</td><td>Auftropfen</td><td>Επίχυση σε σημείο</td><td>Unción dorsal puntual</td><td>Spot-on</td><td>Spot-on</td><td>Unção punctiforme</td></tr><tr><td>20065000</td><td>subkonjunktivale Anwendung</td><td>Υποεπιπεφυκωτική χρήση</td><td>Vía subconjuntival</td><td>Voie sous-conjonctivale</td><td>Uso subcongiuntivale</td><td>Via subconjuntival</td></tr><tr><td>20066000</td><td>subkutane Anwendung</td><td>Υποδόρια χρήση</td><td>Vía subcutánea</td><td>Voie sous-cutanée</td><td>Uso sottocutaneo</td><td>Via subcutânea</td></tr><tr><td>20067000</td><td>Sublingual</td><td>Υπογλώσσια χρήοη</td><td>Vía sublingual</td><td>Voie sublinguale</td><td>Uso sublinguale</td><td>Via sublingual</td></tr><tr><td>20067500</td><td>submuköse Anwendung</td><td>Υποβλεννογόνειος χορήγηση</td><td>Vía submucosal</td><td>Voie sous-muqueuse</td><td>Uso sottomucosale</td><td>Via submucosa</td></tr><tr><td>20068000</td><td>Zitzenbehandlung</td><td>Θηλαία χρήση</td><td>Uso mamario externo</td><td>Administration mammaire</td><td>Uso mammario</td><td>Uso mamário externo</td></tr><tr><td>20069000</td><td>Aufstreuen auf das Futter</td><td>Χορήγηση με επίπαση πάνω στην τροφή</td><td>Administración sobre el alimento</td><td>Administration par saupoudrage sur l'alimentation</td><td>Somministrazione mediante dispersione superficiale sugli alimenti</td><td>Dispersão superficial no alimento</td></tr><tr><td>20070000</td><td>transdermale Anwendung</td><td>Διαδερμική χρήση</td><td>Vía transdérmica</td><td>Voie transdermique</td><td>Uso transdermico</td><td>Via transdérmica</td></tr><tr><td>20071000</td><td>Anwendung in der Harnröhre</td><td>Ουρηθρική χρήση</td><td>Vía uretral</td><td>Voie urétrale</td><td>Uso uretrale</td><td>Via uretral</td></tr><tr><td>20072000</td><td>vaginale Anwendung</td><td>Κολπική χρήση</td><td>Vía vaginal</td><td>Voie vaginale</td><td>Uso vaginale</td><td>Uso vaginal</td></tr><tr><td>20073000</td><td>Anwendung im Wasser</td><td>Διυδατική χρήση</td><td>Uso en el medio acuático</td><td>Balnéation dans l'eau</td><td>Trattamento per immersione</td><td>Uso no meio aquático</td></tr><tr><td>20074000</td><td>Flügelstichapplikation</td><td>Χορήγηση με νύγμα πτέρυγας</td><td>Punción en la membrana del ala</td><td>Administration par transfixion</td><td>Puntura alare</td><td>Inoculação alar</td></tr><tr><td>20080000</td><td>intracerebroventrikuläre Anwendung</td><td>Ενδοεγκεφαλοκοιλιακή χρήση</td><td>Vía intracerebroventricular</td><td>Voie intracérébroventriculaire</td><td>Uso intracerebroventricolare</td><td>Via intracerebroventricular</td></tr><tr><td>20081000</td><td>subretinale Anwendung</td><td>Υπαμφιβληστροειδική χρήση</td><td>Uso subretinal</td><td>Voie subrétinale</td><td>Uso sottoretinico</td><td>Via subretiniana</td></tr><tr><td>20084000</td><td>intracorneale Anwendung</td><td></td><td>Vía intracorneal</td><td>Voie intracornéenne</td><td>Uso intracorneale</td><td>Via intracorneal</td></tr><tr><td>20086000</td><td>Intraputaminale Anwendung</td><td></td><td>Vía intraputaminal</td><td></td><td>Intraputaminale</td><td>Via intraputaminal</td></tr><tr><td>20087000</td><td>extrapleurale Anwendung</td><td></td><td>Vía extrapleural</td><td>Voie extrapleurale</td><td>Uso extrapleurico</td><td>Via extrapleural</td></tr></table></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://unicom-project.eu/fhir/ValueSet/route-of-administration"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "RouteOfAdministration"]; # 
+  fhir:ValueSet.title [ fhir:value "Route of administration"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-03T15:45:39+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "UNICOM"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://unicom-project.eu" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "ValueSet Route of administration from EDQM, ROA, see https://standardterms.edqm.eu/#"]; # 
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://standardterms.edqm.eu" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20001000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Auricular use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anwendung am Ohr" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ωτική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía ótica" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie auriculaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso auricolare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso auricular" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20002000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Beak dipping" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Eintauchen des Schnabels" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χορήγηση με εμβάπτιση ράμφους" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administración por inmersión del pico" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administration par trempage du bec" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Immersione del becco" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso aculear" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20002500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Buccal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Buccale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Παρειακή χορήγηση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía bucal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie buccogingivale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Somministrazione buccale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso bucal" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20003000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cutaneous use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anwendung auf der Haut" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Δερματική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso cutáneo" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie cutanée" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso cutaneo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso cutâneo" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20004000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dental use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "dentale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Οδοντική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso dental" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie dentaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso dentale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso dental" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20005000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dipping" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Badebehandlung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εμβάπτιση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Baño" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Trempage" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Immersione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Banho medicamentoso" ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20006000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endocervical use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "endozervikale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοτραχηλική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía endocervical" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie endocervicale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso endocervicale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via endocervical" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20007000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endosinusial use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anwendung in den Nebenhöhlen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδορρινοκολπική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía endosinusal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie endosinusale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso endosinusiale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso endossinusal" ]
+         ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20008000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endotracheopulmonary use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "endotracheopulmonale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοτραχειοπνευμονική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía endotraqueopulmonar" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie endotrachéobronchique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso endotracheobronchiale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via endotraqueobrônquica" ]
+         ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20009000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Epidural use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "epidurale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Επισκληρίδιος χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía epidural" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie péridurale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso epidurale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via epidural" ]
+         ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20010000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Epilesional use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "zum Auftragen auf die Wunde" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χρήση επί της βλάβης" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso epilesional" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie épilésionnelle" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso epilesionale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso epilesional" ]
+         ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20011000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Extraamniotic use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "extraamniotische Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εξωαμνιακή χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía extraamniótica" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie extra-amniotique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso extra-amniotico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via extra-amniótica" ]
+         ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20011500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Extracorporeal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "extrakorporale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εξωσωματική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso extracorporal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie extracorporelle" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso extracorporeo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso extracorpóreo" ]
+         ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20012000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Foot-stab use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Fussstichapplikation" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χορήγηση με νύγμα πέλματος" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Punción en la almohadilla plantar" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administration par transfixion dans les pattes" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso podale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intrapodal" ]
+         ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20013000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastroenteral use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "gastrointestinale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Γαστρεντερική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía gastroentérica" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie gastro-entérale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso gastrointestinale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via gastroentérica" ]
+         ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20013500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastric use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "zur Anwendung mittels Magensonde" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Γαστρική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "uso gástrico" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie gastrique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso gastrico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via gástrica" ]
+         ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20014000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gingival use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anwendung am Zahnfleisch" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χρήση επί των ούλων" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso gingival" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie gingivale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso gengivale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso gengival" ]
+         ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20015000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Haemodialysis" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hämodialyse" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Αιμοδιαπίδυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hemodiálisis" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hémodialyse" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Emodialisi" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hemodiálise" ]
+         ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20015500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Implantation" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "zur Implantation" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εμφύτευση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Implantación" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Implantation" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Impianto" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Implantação" ]
+         ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20015700" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "In drinking water use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "zum Eingeben über das Trinkwasser" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χορήγηση με το πόσιμο νερό" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administración en agua de bebida" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administration dans l'eau de boisson" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Somministrazione in acqua da bere" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administração na água de bebida" ]
+         ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20016000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "In drinking water/milk use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "zum Eingeben über das Trinkwasser/ die Milch" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χορήγηση με το πόσιμο νερό/γάλα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administración en agua de bebida o en leche" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administration dans l'eau de boisson/ le lait" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Somministrazione in acqua da bere/latte" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Alimento medicamentoso líquido" ]
+         ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20017000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "In ovo" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "in das Ei" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "in ovo χορήγηση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "In ovo" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "In ovo" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "In ovo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via transcoriónica" ]
+         ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20018000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "In-feed use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "zum Eingeben über das Futter" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χορήγηση εντός τροφής" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administración en el alimento" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administration dans l'alimentation" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Somministrazione con il mangime" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Alimento medicamentoso sólido" ]
+         ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20019000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "In-hive use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anwendung im Bienenstock" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοκυψελική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso en las colmenas" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Traitement dans la ruche" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Trattamento in alveare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aplicação apícola" ]
+         ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20019500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Infiltration" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Infiltration" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Διήθηση (ιατρ.)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Infiltración" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Infiltration" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Infiltrazione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Infiltração" ]
+         ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20020000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inhalation use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "zur Inhalation" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χρήση δια εισπνοής" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía inhalatoria" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie inhalée" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso inalatorio" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via inalatoria" ]
+         ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20021000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intestinal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intestinale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Εντερική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intestinal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intestinale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intestinale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intestinal" ]
+         ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20022000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraamniotic use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intraamniotische Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοαμνιακή χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intraamniótica" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intraamniotique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intra-amniotico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intra-amniótica" ]
+         ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20023000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraarterial use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intraarterielle Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοαρτηριακή χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intraarterial" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intraartérielle" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso endoarterioso" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intra-arterial" ]
+         ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20024000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraarticular use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intraartikuläre Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοαρθρική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intraarticular" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intraarticulaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intra-articolare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intra-articular" ]
+         ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20025000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intrabursal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intrabursale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοθυλακική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intrasinovial" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intrabursale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intrabursale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intrassinovial" ]
+         ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20025500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intracameral use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intrakamerale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χορήγηση ενδοθαλαμική στον οφθαλμικό" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracameral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intracamérulaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracamerale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via Intracameral" ]
+         ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20026000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intracardiac use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intracardiale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοκαρδιακή χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intracardiaca" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intracardiaque" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracardiaco" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intracardíaca" ]
+         ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20026500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intracartilaginous use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intrakartilaginäre Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοχόνδρειος χορήγηση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracartilaginoso" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intracartilagineuse" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracartilagineo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intracartilaginosa" ]
+         ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20027000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intracavernous use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intrakavernöse Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοσηραγγική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intracavernosa" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intracaverneuse" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracavernoso" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intracavernosa" ]
+         ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20027010" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intracerebral use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Intrazerebrale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοεγκεφαλική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "VÍA INTRACEREBRAL" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intracérébrale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracerebrale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intracerebral" ]
+         ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20028000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intracervical use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intrazervikale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοτραχηλική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intracervical" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intracervicale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracervicale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intracervical" ]
+         ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20028300" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intracholangiopancreatic use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "zur Anwendung in der Cholangiopankreatikographie" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοχολαγγειοπαγκρεατική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracolangiopancreático" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intracholangiopancréatique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracolangiopancreatico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intracolangiopancreática" ]
+         ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20028500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intracisternal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intracisternale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χορήγηση ενδοκοιλιακή στο κεντρικό νευρικό σύστημα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracisternal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intracisternale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracisternale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intracisternal" ]
+         ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20029000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intracoronary use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intrakoronare Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοστεφανιαία χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intracoronaria" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intracoronaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracoronarico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intracoronária" ]
+         ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20030000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intradermal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intradermale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοδερμική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intradérmica" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intradermique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intradermico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intradérmica" ]
+         ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20031000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intradiscal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intradiskale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδομεσοσπονδύλια χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intradiscal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intradiscale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intradiscale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intradiscal" ]
+         ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20031500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraepidermal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intraepidermale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοεπιδερμική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intraepidérmica" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intraépidermique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intraepidermico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intraepidérmica" ]
+         ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20031700" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraglandular use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intraglanduläre Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοαδενική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intraglandular" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intraglandulaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intraghiandolare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intraglandular" ]
+         ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20032000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intralesional use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intraläsionale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοβλαβική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intralesional" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intralésionnelle" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intralesionale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intralesional" ]
+         ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20033000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intralymphatic use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intralymphatische Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδολεμφαγγειακή χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intralinfática" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intralymphatique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intralinfatico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intralinfática" ]
+         ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20034000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intramammary use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intramammäre Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδομαστική οδός" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intramamaria" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intramammaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Per uso intramammario" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intramamária" ]
+         ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20035000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intramuscular use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intramuskuläre Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδομυική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intramuscular" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intramusculaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intramuscolare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intramuscular" ]
+         ]
+       ], [
+         fhir:index 48;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20036000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraocular use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intraokulare Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοφθάλμια χορήγηση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intraocular" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intraoculaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intraoculare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intraocular" ]
+         ]
+       ], [
+         fhir:index 49;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20036500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraosseous use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intraossäre Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοοστική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intraósea" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intraosseuse" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intraosseo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intraósseo" ]
+         ]
+       ], [
+         fhir:index 50;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20037000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intrapericardial use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Intraperikardial" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοπερικαρδιακή χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intrapericárdica" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intrapéricardiaque" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intrapericardico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intrapericárdica" ]
+         ]
+       ], [
+         fhir:index 51;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20038000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraperitoneal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intraperitoneale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοπεριτοναϊκή χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intraperitoneal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intrapéritonéale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intraperitoneale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intraperitoneal" ]
+         ]
+       ], [
+         fhir:index 52;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20039000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intrapleural use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intrapleurale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοϋπεζωκοτική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intrapleural" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intrapleurale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intrapleurico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intrapleural" ]
+         ]
+       ], [
+         fhir:index 53;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20039200" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraportal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intraportale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοπυλαία χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intraportal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intraportale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intraportale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intraportal" ]
+         ]
+       ], [
+         fhir:index 54;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20039500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraprostatic use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intraprostatische Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοπροστατική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intraprostático" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intraprostatique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intraprostatico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intraprostática" ]
+         ]
+       ], [
+         fhir:index 55;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20039800" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intrapulmonary use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intrapulmonale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοπνευμονική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intrapulmonar" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intrabronchique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intrabronchiale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intrapulmonar" ]
+         ]
+       ], [
+         fhir:index 56;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20040000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraruminal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intraruminale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδομεγαλοκοιλιοκή χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intrarruminal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intraruminale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Per uso intraruminale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intrarruminal" ]
+         ]
+       ], [
+         fhir:index 57;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20041000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intrasternal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intrasternale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοστερνική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intraesternal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intrasternale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intrasternale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intraesternal" ]
+         ]
+       ], [
+         fhir:index 58;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20042000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intrathecal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intrathekale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδορραχιαία χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intratecal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intrathécale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intratecale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intratecal" ]
+         ]
+       ], [
+         fhir:index 59;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20043000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intratumoral use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intratumorale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοογκική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intratumoral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intratumorale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intratumorale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intratumoral" ]
+         ]
+       ], [
+         fhir:index 60;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20044000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intrauterine use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intrauterine Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδομήτρια χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intrauterina" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intra-utérine" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intrauterino" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intrauterina" ]
+         ]
+       ], [
+         fhir:index 61;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20045000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intravenous use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intravenöse Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοφλέβια χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intravenosa" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intraveineuse" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso endovenoso" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intravenosa" ]
+         ]
+       ], [
+         fhir:index 62;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20046000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intravesical use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intravesikale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοκυστική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intravesical" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intravésicale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso endovescicale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intravesical" ]
+         ]
+       ], [
+         fhir:index 63;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20047000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intravitreal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intravitreale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοϋαλωδης χορήγηση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intravítrea" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intravitréenne" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intravitreo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intravítreo" ]
+         ]
+       ], [
+         fhir:index 64;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20047500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Iontophoresis" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "zur Iontophorese" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ιοντοφόρηση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Iontoforesis" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Iontophorèse" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Iontoforesi" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Iontoforese" ]
+         ]
+       ], [
+         fhir:index 65;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20048000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Laryngopharyngeal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "zur Anwendung im Rachen und am Kehlkopf" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Λαρυγγοφαρυγγική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso laringofaríngeo" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie laryngopharyngée" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso laringofaringeo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso laringofaríngeo" ]
+         ]
+       ], [
+         fhir:index 66;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20048500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nail use" ]
+       ], [
+         fhir:index 67;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20049000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nasal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "nasale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ρινική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía nasal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie nasale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso nasale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via nasal" ]
+         ]
+       ], [
+         fhir:index 68;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20050000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nebulisation use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "zum Vernebeln" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χορήγηση με εκνέφωση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nebulización" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administration par nébulisation" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nebulizzazione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Nebulização" ]
+         ]
+       ], [
+         fhir:index 69;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20051000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ocular use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anwendung am Auge" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Οφθαλμική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía oftálmica" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie ophtalmique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso oftalmico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso oftálmico" ]
+         ]
+       ], [
+         fhir:index 70;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20052000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oculonasal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "okulonasale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Οφθαλμορρινική ενστάλλαξη" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía oculonasal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie oculonasale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Per uso oculonasale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via oculonasal" ]
+         ]
+       ], [
+         fhir:index 71;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20053000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oral use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "zum Einnehmen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Από στόματος χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía oral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie orale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via oral" ]
+         ]
+       ], [
+         fhir:index 72;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20054000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oromucosal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anwendung in der Mundhöhle" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χρήση στο στοματικό βλεννογόνο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía bucal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie buccale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Per mucosa orale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via bucal" ]
+         ]
+       ], [
+         fhir:index 73;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20055000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oropharyngeal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "zur Anwendung im Mund- und Rachenraum" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Στοματοφαρυγγική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso bucofaríngeo" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie oropharyngée" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso orofaringeo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso orofaríngeo" ]
+         ]
+       ], [
+         fhir:index 74;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20056000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Paravertebral use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "paravertebrale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Παρασπονδυλική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía paravertebral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie paravertébrale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso paravertebrale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via paravertebral" ]
+         ]
+       ], [
+         fhir:index 75;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20057000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Periarticular use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "periartikuläre Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιαρθρική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía periarticular" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie périarticulaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso periarticolare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via periarticular" ]
+         ]
+       ], [
+         fhir:index 76;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20058000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Perineural use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "perineurale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περινευρική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía perineural" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie périneurale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso perineurale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via perineural" ]
+         ]
+       ], [
+         fhir:index 77;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20059000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Periodontal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "periodontale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιοδοντική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso periodontal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie périodontale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso periodontale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso periodontal" ]
+         ]
+       ], [
+         fhir:index 78;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20059300" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Periosseous use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "periossäre Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιοστική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso perióseo" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie périosseuse" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso periosseo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via perióssea" ]
+         ]
+       ], [
+         fhir:index 79;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20059400" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peritumoral use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "peritumorale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Περιογκική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso peritumoral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie péritumorale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso peritumorale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via peritumoral" ]
+         ]
+       ], [
+         fhir:index 80;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20059500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Posterior juxtascleral use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "posteriore juxtasclerale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χρήση στο οπίσθιο μέρος του σκληρού χιτώνα" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía yuxtaescleral posterior" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie juxta-sclérale postérieure" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso iuxtasclerale posteriore" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via justa-escleral posterior" ]
+         ]
+       ], [
+         fhir:index 81;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20060000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pour-on use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Übergießen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Επίχυση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Unción dorsal continua" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pour-on" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pour-on" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Unção contínua" ]
+         ]
+       ], [
+         fhir:index 82;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20061000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rectal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "rektale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ορθική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía rectal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie rectale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso rettale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via retal" ]
+         ]
+       ], [
+         fhir:index 83;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20061500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Retrobulbar use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "retrobulbäre Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Οπισθοβολβική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso retrobulbar" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie rétrobulbaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso retrobulbare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via retrobulbar" ]
+         ]
+       ], [
+         fhir:index 84;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20062000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Route of administration not applicable" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Art der Anwendung nicht spezifizierbar" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Οδός χορήγησης μη εφαρμοζόμενη ή μη εξειδικευόμενη" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Otra vía" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Autre(s)" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via di somministrazione non specificabile" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via de administração não especificada" ]
+         ]
+       ], [
+         fhir:index 85;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20063000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Skin scarification" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Einritzen der Haut" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Σκαριφισμός" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Escarificación" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Scarification" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Scarificazione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Escarificação" ]
+         ]
+       ], [
+         fhir:index 86;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20064000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spot-on use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Auftropfen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Επίχυση σε σημείο" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Unción dorsal puntual" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spot-on" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Spot-on" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Unção punctiforme" ]
+         ]
+       ], [
+         fhir:index 87;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20065000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Subconjunctival use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "subkonjunktivale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Υποεπιπεφυκωτική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía subconjuntival" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie sous-conjonctivale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso subcongiuntivale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via subconjuntival" ]
+         ]
+       ], [
+         fhir:index 88;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20066000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Subcutaneous use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "subkutane Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Υποδόρια χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía subcutánea" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie sous-cutanée" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso sottocutaneo" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via subcutânea" ]
+         ]
+       ], [
+         fhir:index 89;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20067000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sublingual use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sublingual" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Υπογλώσσια χρήοη" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía sublingual" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie sublinguale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso sublinguale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via sublingual" ]
+         ]
+       ], [
+         fhir:index 90;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20067500" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Submucosal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "submuköse Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Υποβλεννογόνειος χορήγηση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía submucosal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie sous-muqueuse" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso sottomucosale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via submucosa" ]
+         ]
+       ], [
+         fhir:index 91;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20068000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Teat use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Zitzenbehandlung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Θηλαία χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso mamario externo" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administration mammaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso mammario" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso mamário externo" ]
+         ]
+       ], [
+         fhir:index 92;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20069000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Top-dressing use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aufstreuen auf das Futter" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χορήγηση με επίπαση πάνω στην τροφή" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administración sobre el alimento" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administration par saupoudrage sur l'alimentation" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Somministrazione mediante dispersione superficiale sugli alimenti" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dispersão superficial no alimento" ]
+         ]
+       ], [
+         fhir:index 93;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20070000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transdermal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "transdermale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Διαδερμική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía transdérmica" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie transdermique" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso transdermico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via transdérmica" ]
+         ]
+       ], [
+         fhir:index 94;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20071000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Urethral use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anwendung in der Harnröhre" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ουρηθρική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía uretral" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie urétrale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso uretrale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via uretral" ]
+         ]
+       ], [
+         fhir:index 95;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20072000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vaginal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "vaginale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Κολπική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía vaginal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie vaginale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso vaginale" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso vaginal" ]
+         ]
+       ], [
+         fhir:index 96;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20073000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Water-borne use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anwendung im Wasser" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Διυδατική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso en el medio acuático" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Balnéation dans l'eau" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Trattamento per immersione" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso no meio aquático" ]
+         ]
+       ], [
+         fhir:index 97;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20074000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Wing-web-stab use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Flügelstichapplikation" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Χορήγηση με νύγμα πτέρυγας" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Punción en la membrana del ala" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Administration par transfixion" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Puntura alare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Inoculação alar" ]
+         ]
+       ], [
+         fhir:index 98;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20080000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intracerebroventricular use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intracerebroventrikuläre Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ενδοεγκεφαλοκοιλιακή χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intracerebroventricular" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intracérébroventriculaire" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracerebroventricolare" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intracerebroventricular" ]
+         ]
+       ], [
+         fhir:index 99;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20081000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Subretinal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "subretinale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "el" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Υπαμφιβληστροειδική χρήση" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso subretinal" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie subrétinale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso sottoretinico" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via subretiniana" ]
+         ]
+       ], [
+         fhir:index 100;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20084000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intracorneal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "intracorneale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intracorneal" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie intracornéenne" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso intracorneale" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intracorneal" ]
+         ]
+       ], [
+         fhir:index 101;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20086000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraputaminal use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Intraputaminale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía intraputaminal" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Intraputaminale" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via intraputaminal" ]
+         ]
+       ], [
+         fhir:index 102;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20087000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Extrapleural use" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "de" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "extrapleurale Anwendung" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "es" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vía extrapleural" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Voie extrapleurale" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "it" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uso extrapleurico" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "pt" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Via extrapleural" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/route-of-administration.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="Cefuroxime1500-Powder-Medication-Item"/>
+  <meta>
+    <profile value="http://unicom-project.eu/fhir/StructureDefinition/MedicationAsManufacturedItem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="Cefuroxime1500-Powder-Medication-Item"> </a><a name="hcCefuroxime1500-Powder-Medication-Item"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;Cefuroxime1500-Powder-Medication-Item&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MedicationAsManufacturedItem.html">Medication as manufactured item</a></p></div><p><b>code</b>: Cefuroxime (as cefuroxime sodium) 1.5 g powder for solution for infusion and/or injection vial <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (www.snomed.org#1217025007)</span></p><p><b>doseForm</b>: Powder for solution for injection or infusion <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#50053000)</span></p><p><b>totalVolume</b>: 1 Vial<span style="background: LightGoldenRodYellow"> (Details: https://standardterms.edqm.eu code 15060000 = '15060000')</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td>CEFUROXIME <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-substance-sms-cs.html">Substances EMA SPOR SMS</a>#100000092667)</span></td></tr></table><p><b>isActive</b>: true</p><p><b>strength</b>: 1500 milligram<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = 'mg')</span>/1 Vial<span style="background: LightGoldenRodYellow"> (Details: https://standardterms.edqm.eu code 15060000 = '15060000')</span></p></blockquote></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.snomed.org"/>
+      <code value="1217025007"/>
+      <display value="Cefuroxime (as cefuroxime sodium) 1.5 g powder for solution for infusion and/or injection vial"/>
+    </coding>
+  </code>
+  <doseForm>
+    <coding>
+      <system value="https://standardterms.edqm.eu"/>
+      <code value="50053000"/>
+      <display value="Powder for solution for injection or infusion"/>
+    </coding>
+  </doseForm>
+  <totalVolume>
+    <value value="1"/>
+    <unit value="Vial"/>
+    <system value="https://standardterms.edqm.eu"/>
+    <code value="15060000"/>
+  </totalVolume>
+  <ingredient>
+    <item>
+      <concept>
+        <coding>
+          <system value="https://spor.ema.europa.eu/v2/SubstanceDefinition"/>
+          <code value="100000092667"/>
+          <display value="CEFUROXIME"/>
+        </coding>
+      </concept>
+    </item>
+    <isActive value="true"/>
+    <strengthRatio>
+      <numerator>
+        <value value="1500"/>
+        <unit value="milligram"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </numerator>
+      <denominator>
+        <value value="1"/>
+        <unit value="Vial"/>
+        <system value="https://standardterms.edqm.eu"/>
+        <code value="15060000"/>
+      </denominator>
+    </strengthRatio>
+  </ingredient>
+</Medication>

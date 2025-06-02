@@ -1,0 +1,1900 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/pharmaceutical-dose-form-ema-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "pharmaceutical-dose-form-ema-cs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://spor.ema.europa.eu/v1/lists/200000000004</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100000073362<a name=\"pharmaceutical-dose-form-ema-cs-100000073362\"> </a></td><td>Oral suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073363<a name=\"pharmaceutical-dose-form-ema-cs-100000073363\"> </a></td><td>Oral gel</td></tr><tr><td style=\"white-space:nowrap\">100000073364<a name=\"pharmaceutical-dose-form-ema-cs-100000073364\"> </a></td><td>Powder for oral solution</td></tr><tr><td style=\"white-space:nowrap\">100000073365<a name=\"pharmaceutical-dose-form-ema-cs-100000073365\"> </a></td><td>Granules for oral solution</td></tr><tr><td style=\"white-space:nowrap\">100000073367<a name=\"pharmaceutical-dose-form-ema-cs-100000073367\"> </a></td><td>Lyophilisate for suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073368<a name=\"pharmaceutical-dose-form-ema-cs-100000073368\"> </a></td><td>Powder for syrup</td></tr><tr><td style=\"white-space:nowrap\">100000073369<a name=\"pharmaceutical-dose-form-ema-cs-100000073369\"> </a></td><td>Soluble tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073370<a name=\"pharmaceutical-dose-form-ema-cs-100000073370\"> </a></td><td>Herbal tea</td></tr><tr><td style=\"white-space:nowrap\">100000073371<a name=\"pharmaceutical-dose-form-ema-cs-100000073371\"> </a></td><td>Instant herbal tea</td></tr><tr><td style=\"white-space:nowrap\">100000073372<a name=\"pharmaceutical-dose-form-ema-cs-100000073372\"> </a></td><td>Granules</td></tr><tr><td style=\"white-space:nowrap\">100000073373<a name=\"pharmaceutical-dose-form-ema-cs-100000073373\"> </a></td><td>Gastro-resistant granules</td></tr><tr><td style=\"white-space:nowrap\">100000073374<a name=\"pharmaceutical-dose-form-ema-cs-100000073374\"> </a></td><td>Modified-release granules</td></tr><tr><td style=\"white-space:nowrap\">100000073375<a name=\"pharmaceutical-dose-form-ema-cs-100000073375\"> </a></td><td>Capsule, hard</td></tr><tr><td style=\"white-space:nowrap\">100000073376<a name=\"pharmaceutical-dose-form-ema-cs-100000073376\"> </a></td><td>Gastro-resistant capsule, hard</td></tr><tr><td style=\"white-space:nowrap\">100000073377<a name=\"pharmaceutical-dose-form-ema-cs-100000073377\"> </a></td><td>Chewable capsule, soft</td></tr><tr><td style=\"white-space:nowrap\">100000073378<a name=\"pharmaceutical-dose-form-ema-cs-100000073378\"> </a></td><td>Prolonged-release capsule, soft</td></tr><tr><td style=\"white-space:nowrap\">100000073379<a name=\"pharmaceutical-dose-form-ema-cs-100000073379\"> </a></td><td>Modified-release capsule, soft</td></tr><tr><td style=\"white-space:nowrap\">100000073380<a name=\"pharmaceutical-dose-form-ema-cs-100000073380\"> </a></td><td>Coated tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073642<a name=\"pharmaceutical-dose-form-ema-cs-100000073642\"> </a></td><td>Oral drops, solution</td></tr><tr><td style=\"white-space:nowrap\">100000073643<a name=\"pharmaceutical-dose-form-ema-cs-100000073643\"> </a></td><td>Oral drops, suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073644<a name=\"pharmaceutical-dose-form-ema-cs-100000073644\"> </a></td><td>Oral drops, emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073645<a name=\"pharmaceutical-dose-form-ema-cs-100000073645\"> </a></td><td>Oral liquid</td></tr><tr><td style=\"white-space:nowrap\">100000073646<a name=\"pharmaceutical-dose-form-ema-cs-100000073646\"> </a></td><td>Oral solution</td></tr><tr><td style=\"white-space:nowrap\">100000073647<a name=\"pharmaceutical-dose-form-ema-cs-100000073647\"> </a></td><td>Oral emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073648<a name=\"pharmaceutical-dose-form-ema-cs-100000073648\"> </a></td><td>Oral paste</td></tr><tr><td style=\"white-space:nowrap\">100000073649<a name=\"pharmaceutical-dose-form-ema-cs-100000073649\"> </a></td><td>Powder for oral suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073650<a name=\"pharmaceutical-dose-form-ema-cs-100000073650\"> </a></td><td>Granules for oral suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073652<a name=\"pharmaceutical-dose-form-ema-cs-100000073652\"> </a></td><td>Syrup</td></tr><tr><td style=\"white-space:nowrap\">100000073653<a name=\"pharmaceutical-dose-form-ema-cs-100000073653\"> </a></td><td>Granules for syrup</td></tr><tr><td style=\"white-space:nowrap\">100000073654<a name=\"pharmaceutical-dose-form-ema-cs-100000073654\"> </a></td><td>Dispersible tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073655<a name=\"pharmaceutical-dose-form-ema-cs-100000073655\"> </a></td><td>Oral powder</td></tr><tr><td style=\"white-space:nowrap\">100000073656<a name=\"pharmaceutical-dose-form-ema-cs-100000073656\"> </a></td><td>Effervescent powder</td></tr><tr><td style=\"white-space:nowrap\">100000073657<a name=\"pharmaceutical-dose-form-ema-cs-100000073657\"> </a></td><td>Effervescent granules</td></tr><tr><td style=\"white-space:nowrap\">100000073658<a name=\"pharmaceutical-dose-form-ema-cs-100000073658\"> </a></td><td>Prolonged-release granules</td></tr><tr><td style=\"white-space:nowrap\">100000073659<a name=\"pharmaceutical-dose-form-ema-cs-100000073659\"> </a></td><td>Cachet</td></tr><tr><td style=\"white-space:nowrap\">100000073660<a name=\"pharmaceutical-dose-form-ema-cs-100000073660\"> </a></td><td>Capsule, soft</td></tr><tr><td style=\"white-space:nowrap\">100000073661<a name=\"pharmaceutical-dose-form-ema-cs-100000073661\"> </a></td><td>Gastro-resistant capsule, soft</td></tr><tr><td style=\"white-space:nowrap\">100000073662<a name=\"pharmaceutical-dose-form-ema-cs-100000073662\"> </a></td><td>Prolonged-release capsule, hard</td></tr><tr><td style=\"white-space:nowrap\">100000073663<a name=\"pharmaceutical-dose-form-ema-cs-100000073663\"> </a></td><td>Modified-release capsule, hard</td></tr><tr><td style=\"white-space:nowrap\">100000073664<a name=\"pharmaceutical-dose-form-ema-cs-100000073664\"> </a></td><td>Tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073665<a name=\"pharmaceutical-dose-form-ema-cs-100000073665\"> </a></td><td>Film-coated tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073666<a name=\"pharmaceutical-dose-form-ema-cs-100000073666\"> </a></td><td>Orodispersible tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073667<a name=\"pharmaceutical-dose-form-ema-cs-100000073667\"> </a></td><td>Gastro-resistant tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073668<a name=\"pharmaceutical-dose-form-ema-cs-100000073668\"> </a></td><td>Modified-release tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073669<a name=\"pharmaceutical-dose-form-ema-cs-100000073669\"> </a></td><td>Medicated chewing-gum</td></tr><tr><td style=\"white-space:nowrap\">100000073670<a name=\"pharmaceutical-dose-form-ema-cs-100000073670\"> </a></td><td>Pillules</td></tr><tr><td style=\"white-space:nowrap\">100000073671<a name=\"pharmaceutical-dose-form-ema-cs-100000073671\"> </a></td><td>Pulsatile-release intraruminal device</td></tr><tr><td style=\"white-space:nowrap\">100000073672<a name=\"pharmaceutical-dose-form-ema-cs-100000073672\"> </a></td><td>Premix for medicated feeding stuff</td></tr><tr><td style=\"white-space:nowrap\">100000073673<a name=\"pharmaceutical-dose-form-ema-cs-100000073673\"> </a></td><td>Gargle</td></tr><tr><td style=\"white-space:nowrap\">100000073674<a name=\"pharmaceutical-dose-form-ema-cs-100000073674\"> </a></td><td>Gargle, powder for solution</td></tr><tr><td style=\"white-space:nowrap\">100000073675<a name=\"pharmaceutical-dose-form-ema-cs-100000073675\"> </a></td><td>Oromucosal suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073676<a name=\"pharmaceutical-dose-form-ema-cs-100000073676\"> </a></td><td>Oromucosal spray</td></tr><tr><td style=\"white-space:nowrap\">100000073677<a name=\"pharmaceutical-dose-form-ema-cs-100000073677\"> </a></td><td>Mouthwash</td></tr><tr><td style=\"white-space:nowrap\">100000073678<a name=\"pharmaceutical-dose-form-ema-cs-100000073678\"> </a></td><td>Gingival solution</td></tr><tr><td style=\"white-space:nowrap\">100000073679<a name=\"pharmaceutical-dose-form-ema-cs-100000073679\"> </a></td><td>Oromucosal paste</td></tr><tr><td style=\"white-space:nowrap\">100000073680<a name=\"pharmaceutical-dose-form-ema-cs-100000073680\"> </a></td><td>Gingival gel</td></tr><tr><td style=\"white-space:nowrap\">100000073681<a name=\"pharmaceutical-dose-form-ema-cs-100000073681\"> </a></td><td>Effervescent tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073682<a name=\"pharmaceutical-dose-form-ema-cs-100000073682\"> </a></td><td>Oral lyophilisate</td></tr><tr><td style=\"white-space:nowrap\">100000073683<a name=\"pharmaceutical-dose-form-ema-cs-100000073683\"> </a></td><td>Prolonged-release tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073684<a name=\"pharmaceutical-dose-form-ema-cs-100000073684\"> </a></td><td>Chewable tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073685<a name=\"pharmaceutical-dose-form-ema-cs-100000073685\"> </a></td><td>Oral gum</td></tr><tr><td style=\"white-space:nowrap\">100000073686<a name=\"pharmaceutical-dose-form-ema-cs-100000073686\"> </a></td><td>Continuous-release intraruminal device</td></tr><tr><td style=\"white-space:nowrap\">100000073687<a name=\"pharmaceutical-dose-form-ema-cs-100000073687\"> </a></td><td>Lick block</td></tr><tr><td style=\"white-space:nowrap\">100000073688<a name=\"pharmaceutical-dose-form-ema-cs-100000073688\"> </a></td><td>Medicated pellets</td></tr><tr><td style=\"white-space:nowrap\">100000073689<a name=\"pharmaceutical-dose-form-ema-cs-100000073689\"> </a></td><td>Concentrate for gargle</td></tr><tr><td style=\"white-space:nowrap\">100000073690<a name=\"pharmaceutical-dose-form-ema-cs-100000073690\"> </a></td><td>Gargle, tablet for solution</td></tr><tr><td style=\"white-space:nowrap\">100000073691<a name=\"pharmaceutical-dose-form-ema-cs-100000073691\"> </a></td><td>Oromucosal solution</td></tr><tr><td style=\"white-space:nowrap\">100000073692<a name=\"pharmaceutical-dose-form-ema-cs-100000073692\"> </a></td><td>Oromucosal drops</td></tr><tr><td style=\"white-space:nowrap\">100000073693<a name=\"pharmaceutical-dose-form-ema-cs-100000073693\"> </a></td><td>Sublingual spray</td></tr><tr><td style=\"white-space:nowrap\">100000073694<a name=\"pharmaceutical-dose-form-ema-cs-100000073694\"> </a></td><td>Mouthwash, tablet for solution</td></tr><tr><td style=\"white-space:nowrap\">100000073695<a name=\"pharmaceutical-dose-form-ema-cs-100000073695\"> </a></td><td>Oromucosal gel</td></tr><tr><td style=\"white-space:nowrap\">100000073696<a name=\"pharmaceutical-dose-form-ema-cs-100000073696\"> </a></td><td>Oromucosal cream</td></tr><tr><td style=\"white-space:nowrap\">100000073697<a name=\"pharmaceutical-dose-form-ema-cs-100000073697\"> </a></td><td>Gingival paste</td></tr><tr><td style=\"white-space:nowrap\">100000073698<a name=\"pharmaceutical-dose-form-ema-cs-100000073698\"> </a></td><td>Sublingual tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073699<a name=\"pharmaceutical-dose-form-ema-cs-100000073699\"> </a></td><td>Buccal tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073700<a name=\"pharmaceutical-dose-form-ema-cs-100000073700\"> </a></td><td>Compressed lozenge</td></tr><tr><td style=\"white-space:nowrap\">100000073701<a name=\"pharmaceutical-dose-form-ema-cs-100000073701\"> </a></td><td>Oromucosal capsule</td></tr><tr><td style=\"white-space:nowrap\">100000073702<a name=\"pharmaceutical-dose-form-ema-cs-100000073702\"> </a></td><td>Muco-adhesive buccal tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073703<a name=\"pharmaceutical-dose-form-ema-cs-100000073703\"> </a></td><td>Lozenge</td></tr><tr><td style=\"white-space:nowrap\">100000073704<a name=\"pharmaceutical-dose-form-ema-cs-100000073704\"> </a></td><td>Pastille</td></tr><tr><td style=\"white-space:nowrap\">100000073705<a name=\"pharmaceutical-dose-form-ema-cs-100000073705\"> </a></td><td>Dental gel</td></tr><tr><td style=\"white-space:nowrap\">100000073706<a name=\"pharmaceutical-dose-form-ema-cs-100000073706\"> </a></td><td>Dental insert</td></tr><tr><td style=\"white-space:nowrap\">100000073707<a name=\"pharmaceutical-dose-form-ema-cs-100000073707\"> </a></td><td>Dental powder</td></tr><tr><td style=\"white-space:nowrap\">100000073708<a name=\"pharmaceutical-dose-form-ema-cs-100000073708\"> </a></td><td>Dental suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073709<a name=\"pharmaceutical-dose-form-ema-cs-100000073709\"> </a></td><td>Toothpaste</td></tr><tr><td style=\"white-space:nowrap\">100000073710<a name=\"pharmaceutical-dose-form-ema-cs-100000073710\"> </a></td><td>Periodontal gel</td></tr><tr><td style=\"white-space:nowrap\">100000073711<a name=\"pharmaceutical-dose-form-ema-cs-100000073711\"> </a></td><td>Bath additive</td></tr><tr><td style=\"white-space:nowrap\">100000073712<a name=\"pharmaceutical-dose-form-ema-cs-100000073712\"> </a></td><td>Cream</td></tr><tr><td style=\"white-space:nowrap\">100000073713<a name=\"pharmaceutical-dose-form-ema-cs-100000073713\"> </a></td><td>Ointment</td></tr><tr><td style=\"white-space:nowrap\">100000073714<a name=\"pharmaceutical-dose-form-ema-cs-100000073714\"> </a></td><td>Medicated plaster</td></tr><tr><td style=\"white-space:nowrap\">100000073715<a name=\"pharmaceutical-dose-form-ema-cs-100000073715\"> </a></td><td>Shampoo</td></tr><tr><td style=\"white-space:nowrap\">100000073716<a name=\"pharmaceutical-dose-form-ema-cs-100000073716\"> </a></td><td>Cutaneous spray, suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073717<a name=\"pharmaceutical-dose-form-ema-cs-100000073717\"> </a></td><td>Cutaneous liquid</td></tr><tr><td style=\"white-space:nowrap\">100000073718<a name=\"pharmaceutical-dose-form-ema-cs-100000073718\"> </a></td><td>Concentrate for cutaneous solution</td></tr><tr><td style=\"white-space:nowrap\">100000073719<a name=\"pharmaceutical-dose-form-ema-cs-100000073719\"> </a></td><td>Cutaneous emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073720<a name=\"pharmaceutical-dose-form-ema-cs-100000073720\"> </a></td><td>Cutaneous patch</td></tr><tr><td style=\"white-space:nowrap\">100000073721<a name=\"pharmaceutical-dose-form-ema-cs-100000073721\"> </a></td><td>Periodontal powder</td></tr><tr><td style=\"white-space:nowrap\">100000073722<a name=\"pharmaceutical-dose-form-ema-cs-100000073722\"> </a></td><td>Dental stick</td></tr><tr><td style=\"white-space:nowrap\">100000073723<a name=\"pharmaceutical-dose-form-ema-cs-100000073723\"> </a></td><td>Dental solution</td></tr><tr><td style=\"white-space:nowrap\">100000073724<a name=\"pharmaceutical-dose-form-ema-cs-100000073724\"> </a></td><td>Dental emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073725<a name=\"pharmaceutical-dose-form-ema-cs-100000073725\"> </a></td><td>Periodontal insert</td></tr><tr><td style=\"white-space:nowrap\">100000073726<a name=\"pharmaceutical-dose-form-ema-cs-100000073726\"> </a></td><td>Gel</td></tr><tr><td style=\"white-space:nowrap\">100000073727<a name=\"pharmaceutical-dose-form-ema-cs-100000073727\"> </a></td><td>Cutaneous paste</td></tr><tr><td style=\"white-space:nowrap\">100000073728<a name=\"pharmaceutical-dose-form-ema-cs-100000073728\"> </a></td><td>Cutaneous foam</td></tr><tr><td style=\"white-space:nowrap\">100000073729<a name=\"pharmaceutical-dose-form-ema-cs-100000073729\"> </a></td><td>Cutaneous spray, solution</td></tr><tr><td style=\"white-space:nowrap\">100000073730<a name=\"pharmaceutical-dose-form-ema-cs-100000073730\"> </a></td><td>Cutaneous spray, powder</td></tr><tr><td style=\"white-space:nowrap\">100000073731<a name=\"pharmaceutical-dose-form-ema-cs-100000073731\"> </a></td><td>Cutaneous solution</td></tr><tr><td style=\"white-space:nowrap\">100000073732<a name=\"pharmaceutical-dose-form-ema-cs-100000073732\"> </a></td><td>Cutaneous suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073733<a name=\"pharmaceutical-dose-form-ema-cs-100000073733\"> </a></td><td>Cutaneous powder</td></tr><tr><td style=\"white-space:nowrap\">100000073734<a name=\"pharmaceutical-dose-form-ema-cs-100000073734\"> </a></td><td>Solution for iontophoresis</td></tr><tr><td style=\"white-space:nowrap\">100000073735<a name=\"pharmaceutical-dose-form-ema-cs-100000073735\"> </a></td><td>Collodion</td></tr><tr><td style=\"white-space:nowrap\">100000073736<a name=\"pharmaceutical-dose-form-ema-cs-100000073736\"> </a></td><td>Poultice</td></tr><tr><td style=\"white-space:nowrap\">100000073737<a name=\"pharmaceutical-dose-form-ema-cs-100000073737\"> </a></td><td>Cutaneous sponge</td></tr><tr><td style=\"white-space:nowrap\">100000073738<a name=\"pharmaceutical-dose-form-ema-cs-100000073738\"> </a></td><td>Collar</td></tr><tr><td style=\"white-space:nowrap\">100000073739<a name=\"pharmaceutical-dose-form-ema-cs-100000073739\"> </a></td><td>Ear tag</td></tr><tr><td style=\"white-space:nowrap\">100000073740<a name=\"pharmaceutical-dose-form-ema-cs-100000073740\"> </a></td><td>Dip suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073741<a name=\"pharmaceutical-dose-form-ema-cs-100000073741\"> </a></td><td>Transdermal patch</td></tr><tr><td style=\"white-space:nowrap\">100000073742<a name=\"pharmaceutical-dose-form-ema-cs-100000073742\"> </a></td><td>Medicated nail lacquer</td></tr><tr><td style=\"white-space:nowrap\">100000073743<a name=\"pharmaceutical-dose-form-ema-cs-100000073743\"> </a></td><td>Cutaneous stick</td></tr><tr><td style=\"white-space:nowrap\">100000073744<a name=\"pharmaceutical-dose-form-ema-cs-100000073744\"> </a></td><td>Impregnated dressing</td></tr><tr><td style=\"white-space:nowrap\">100000073745<a name=\"pharmaceutical-dose-form-ema-cs-100000073745\"> </a></td><td>Medicated pendant</td></tr><tr><td style=\"white-space:nowrap\">100000073746<a name=\"pharmaceutical-dose-form-ema-cs-100000073746\"> </a></td><td>Dip solution</td></tr><tr><td style=\"white-space:nowrap\">100000073747<a name=\"pharmaceutical-dose-form-ema-cs-100000073747\"> </a></td><td>Dip emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073748<a name=\"pharmaceutical-dose-form-ema-cs-100000073748\"> </a></td><td>Concentrate for dip suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073749<a name=\"pharmaceutical-dose-form-ema-cs-100000073749\"> </a></td><td>Powder for dip solution</td></tr><tr><td style=\"white-space:nowrap\">100000073750<a name=\"pharmaceutical-dose-form-ema-cs-100000073750\"> </a></td><td>Powder for suspension for fish treatment</td></tr><tr><td style=\"white-space:nowrap\">100000073751<a name=\"pharmaceutical-dose-form-ema-cs-100000073751\"> </a></td><td>Pour-on suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073752<a name=\"pharmaceutical-dose-form-ema-cs-100000073752\"> </a></td><td>Spot-on solution</td></tr><tr><td style=\"white-space:nowrap\">100000073753<a name=\"pharmaceutical-dose-form-ema-cs-100000073753\"> </a></td><td>Spot-on emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073754<a name=\"pharmaceutical-dose-form-ema-cs-100000073754\"> </a></td><td>Teat dip suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073755<a name=\"pharmaceutical-dose-form-ema-cs-100000073755\"> </a></td><td>Teat spray solution</td></tr><tr><td style=\"white-space:nowrap\">100000073756<a name=\"pharmaceutical-dose-form-ema-cs-100000073756\"> </a></td><td>Solution for skin-prick test</td></tr><tr><td style=\"white-space:nowrap\">100000073757<a name=\"pharmaceutical-dose-form-ema-cs-100000073757\"> </a></td><td>Plaster for provocation test</td></tr><tr><td style=\"white-space:nowrap\">100000073758<a name=\"pharmaceutical-dose-form-ema-cs-100000073758\"> </a></td><td>Eye gel</td></tr><tr><td style=\"white-space:nowrap\">100000073759<a name=\"pharmaceutical-dose-form-ema-cs-100000073759\"> </a></td><td>Eye drops, solution</td></tr><tr><td style=\"white-space:nowrap\">100000073760<a name=\"pharmaceutical-dose-form-ema-cs-100000073760\"> </a></td><td>Eye drops, suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073761<a name=\"pharmaceutical-dose-form-ema-cs-100000073761\"> </a></td><td>Concentrate for dip solution</td></tr><tr><td style=\"white-space:nowrap\">100000073762<a name=\"pharmaceutical-dose-form-ema-cs-100000073762\"> </a></td><td>Concentrate for dip emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073763<a name=\"pharmaceutical-dose-form-ema-cs-100000073763\"> </a></td><td>Concentrate for solution for fish treatment</td></tr><tr><td style=\"white-space:nowrap\">100000073764<a name=\"pharmaceutical-dose-form-ema-cs-100000073764\"> </a></td><td>Pour-on solution</td></tr><tr><td style=\"white-space:nowrap\">100000073765<a name=\"pharmaceutical-dose-form-ema-cs-100000073765\"> </a></td><td>Pour-on emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073766<a name=\"pharmaceutical-dose-form-ema-cs-100000073766\"> </a></td><td>Spot-on suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073767<a name=\"pharmaceutical-dose-form-ema-cs-100000073767\"> </a></td><td>Teat dip solution</td></tr><tr><td style=\"white-space:nowrap\">100000073768<a name=\"pharmaceutical-dose-form-ema-cs-100000073768\"> </a></td><td>Teat dip emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073769<a name=\"pharmaceutical-dose-form-ema-cs-100000073769\"> </a></td><td>Transdermal system</td></tr><tr><td style=\"white-space:nowrap\">100000073770<a name=\"pharmaceutical-dose-form-ema-cs-100000073770\"> </a></td><td>Solution for skin-scratch test</td></tr><tr><td style=\"white-space:nowrap\">100000073771<a name=\"pharmaceutical-dose-form-ema-cs-100000073771\"> </a></td><td>Eye cream</td></tr><tr><td style=\"white-space:nowrap\">100000073772<a name=\"pharmaceutical-dose-form-ema-cs-100000073772\"> </a></td><td>Eye ointment</td></tr><tr><td style=\"white-space:nowrap\">100000073773<a name=\"pharmaceutical-dose-form-ema-cs-100000073773\"> </a></td><td>Eye drops, emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073775<a name=\"pharmaceutical-dose-form-ema-cs-100000073775\"> </a></td><td>Eye drops, solvent for reconstitution</td></tr><tr><td style=\"white-space:nowrap\">100000073776<a name=\"pharmaceutical-dose-form-ema-cs-100000073776\"> </a></td><td>Eye lotion</td></tr><tr><td style=\"white-space:nowrap\">100000073777<a name=\"pharmaceutical-dose-form-ema-cs-100000073777\"> </a></td><td>Ophthalmic insert</td></tr><tr><td style=\"white-space:nowrap\">100000073778<a name=\"pharmaceutical-dose-form-ema-cs-100000073778\"> </a></td><td>Ear cream</td></tr><tr><td style=\"white-space:nowrap\">100000073779<a name=\"pharmaceutical-dose-form-ema-cs-100000073779\"> </a></td><td>Ear ointment</td></tr><tr><td style=\"white-space:nowrap\">100000073780<a name=\"pharmaceutical-dose-form-ema-cs-100000073780\"> </a></td><td>Ear drops, suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073782<a name=\"pharmaceutical-dose-form-ema-cs-100000073782\"> </a></td><td>Eye drops, prolonged-release</td></tr><tr><td style=\"white-space:nowrap\">100000073783<a name=\"pharmaceutical-dose-form-ema-cs-100000073783\"> </a></td><td>Eye lotion, solvent for reconstitution</td></tr><tr><td style=\"white-space:nowrap\">100000073784<a name=\"pharmaceutical-dose-form-ema-cs-100000073784\"> </a></td><td>Ophthalmic strip</td></tr><tr><td style=\"white-space:nowrap\">100000073785<a name=\"pharmaceutical-dose-form-ema-cs-100000073785\"> </a></td><td>Ear gel</td></tr><tr><td style=\"white-space:nowrap\">100000073786<a name=\"pharmaceutical-dose-form-ema-cs-100000073786\"> </a></td><td>Ear drops, solution</td></tr><tr><td style=\"white-space:nowrap\">100000073787<a name=\"pharmaceutical-dose-form-ema-cs-100000073787\"> </a></td><td>Ear drops, emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073788<a name=\"pharmaceutical-dose-form-ema-cs-100000073788\"> </a></td><td>Ear powder</td></tr><tr><td style=\"white-space:nowrap\">100000073789<a name=\"pharmaceutical-dose-form-ema-cs-100000073789\"> </a></td><td>Ear spray, suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073790<a name=\"pharmaceutical-dose-form-ema-cs-100000073790\"> </a></td><td>Ear wash, solution</td></tr><tr><td style=\"white-space:nowrap\">100000073791<a name=\"pharmaceutical-dose-form-ema-cs-100000073791\"> </a></td><td>Ear tampon</td></tr><tr><td style=\"white-space:nowrap\">100000073792<a name=\"pharmaceutical-dose-form-ema-cs-100000073792\"> </a></td><td>Nasal cream</td></tr><tr><td style=\"white-space:nowrap\">100000073793<a name=\"pharmaceutical-dose-form-ema-cs-100000073793\"> </a></td><td>Nasal gel</td></tr><tr><td style=\"white-space:nowrap\">100000073794<a name=\"pharmaceutical-dose-form-ema-cs-100000073794\"> </a></td><td>Nasal drops, solution</td></tr><tr><td style=\"white-space:nowrap\">100000073795<a name=\"pharmaceutical-dose-form-ema-cs-100000073795\"> </a></td><td>Nasal drops, emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073796<a name=\"pharmaceutical-dose-form-ema-cs-100000073796\"> </a></td><td>Nasal spray, solution</td></tr><tr><td style=\"white-space:nowrap\">100000073797<a name=\"pharmaceutical-dose-form-ema-cs-100000073797\"> </a></td><td>Nasal spray, emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073798<a name=\"pharmaceutical-dose-form-ema-cs-100000073798\"> </a></td><td>Nasal stick</td></tr><tr><td style=\"white-space:nowrap\">100000073799<a name=\"pharmaceutical-dose-form-ema-cs-100000073799\"> </a></td><td>Vaginal gel</td></tr><tr><td style=\"white-space:nowrap\">100000073800<a name=\"pharmaceutical-dose-form-ema-cs-100000073800\"> </a></td><td>Vaginal foam</td></tr><tr><td style=\"white-space:nowrap\">100000073802<a name=\"pharmaceutical-dose-form-ema-cs-100000073802\"> </a></td><td>Ear spray, solution</td></tr><tr><td style=\"white-space:nowrap\">100000073803<a name=\"pharmaceutical-dose-form-ema-cs-100000073803\"> </a></td><td>Ear spray, emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073804<a name=\"pharmaceutical-dose-form-ema-cs-100000073804\"> </a></td><td>Ear wash, emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073805<a name=\"pharmaceutical-dose-form-ema-cs-100000073805\"> </a></td><td>Ear stick</td></tr><tr><td style=\"white-space:nowrap\">100000073806<a name=\"pharmaceutical-dose-form-ema-cs-100000073806\"> </a></td><td>Nasal ointment</td></tr><tr><td style=\"white-space:nowrap\">100000073807<a name=\"pharmaceutical-dose-form-ema-cs-100000073807\"> </a></td><td>Nasal drops, suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073808<a name=\"pharmaceutical-dose-form-ema-cs-100000073808\"> </a></td><td>Nasal powder</td></tr><tr><td style=\"white-space:nowrap\">100000073809<a name=\"pharmaceutical-dose-form-ema-cs-100000073809\"> </a></td><td>Nasal spray, suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073810<a name=\"pharmaceutical-dose-form-ema-cs-100000073810\"> </a></td><td>Nasal wash</td></tr><tr><td style=\"white-space:nowrap\">100000073811<a name=\"pharmaceutical-dose-form-ema-cs-100000073811\"> </a></td><td>Vaginal cream</td></tr><tr><td style=\"white-space:nowrap\">100000073812<a name=\"pharmaceutical-dose-form-ema-cs-100000073812\"> </a></td><td>Vaginal ointment</td></tr><tr><td style=\"white-space:nowrap\">100000073813<a name=\"pharmaceutical-dose-form-ema-cs-100000073813\"> </a></td><td>Vaginal solution</td></tr><tr><td style=\"white-space:nowrap\">100000073814<a name=\"pharmaceutical-dose-form-ema-cs-100000073814\"> </a></td><td>Vaginal emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073815<a name=\"pharmaceutical-dose-form-ema-cs-100000073815\"> </a></td><td>Pessary</td></tr><tr><td style=\"white-space:nowrap\">100000073816<a name=\"pharmaceutical-dose-form-ema-cs-100000073816\"> </a></td><td>Vaginal capsule, soft</td></tr><tr><td style=\"white-space:nowrap\">100000073817<a name=\"pharmaceutical-dose-form-ema-cs-100000073817\"> </a></td><td>Effervescent vaginal tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073818<a name=\"pharmaceutical-dose-form-ema-cs-100000073818\"> </a></td><td>Vaginal delivery system</td></tr><tr><td style=\"white-space:nowrap\">100000073819<a name=\"pharmaceutical-dose-form-ema-cs-100000073819\"> </a></td><td>Rectal cream</td></tr><tr><td style=\"white-space:nowrap\">100000073820<a name=\"pharmaceutical-dose-form-ema-cs-100000073820\"> </a></td><td>Rectal foam</td></tr><tr><td style=\"white-space:nowrap\">100000073821<a name=\"pharmaceutical-dose-form-ema-cs-100000073821\"> </a></td><td>Vaginal suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073822<a name=\"pharmaceutical-dose-form-ema-cs-100000073822\"> </a></td><td>Tablet for vaginal solution</td></tr><tr><td style=\"white-space:nowrap\">100000073823<a name=\"pharmaceutical-dose-form-ema-cs-100000073823\"> </a></td><td>Vaginal capsule, hard</td></tr><tr><td style=\"white-space:nowrap\">100000073824<a name=\"pharmaceutical-dose-form-ema-cs-100000073824\"> </a></td><td>Vaginal tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073825<a name=\"pharmaceutical-dose-form-ema-cs-100000073825\"> </a></td><td>Medicated vaginal tampon</td></tr><tr><td style=\"white-space:nowrap\">100000073826<a name=\"pharmaceutical-dose-form-ema-cs-100000073826\"> </a></td><td>Vaginal sponge</td></tr><tr><td style=\"white-space:nowrap\">100000073827<a name=\"pharmaceutical-dose-form-ema-cs-100000073827\"> </a></td><td>Rectal gel</td></tr><tr><td style=\"white-space:nowrap\">100000073828<a name=\"pharmaceutical-dose-form-ema-cs-100000073828\"> </a></td><td>Rectal ointment</td></tr><tr><td style=\"white-space:nowrap\">100000073829<a name=\"pharmaceutical-dose-form-ema-cs-100000073829\"> </a></td><td>Rectal solution</td></tr><tr><td style=\"white-space:nowrap\">100000073830<a name=\"pharmaceutical-dose-form-ema-cs-100000073830\"> </a></td><td>Rectal suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073831<a name=\"pharmaceutical-dose-form-ema-cs-100000073831\"> </a></td><td>Powder for rectal solution</td></tr><tr><td style=\"white-space:nowrap\">100000073832<a name=\"pharmaceutical-dose-form-ema-cs-100000073832\"> </a></td><td>Powder for rectal suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073833<a name=\"pharmaceutical-dose-form-ema-cs-100000073833\"> </a></td><td>Tablet for rectal solution</td></tr><tr><td style=\"white-space:nowrap\">100000073834<a name=\"pharmaceutical-dose-form-ema-cs-100000073834\"> </a></td><td>Tablet for rectal suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073835<a name=\"pharmaceutical-dose-form-ema-cs-100000073835\"> </a></td><td>Nebuliser solution</td></tr><tr><td style=\"white-space:nowrap\">100000073836<a name=\"pharmaceutical-dose-form-ema-cs-100000073836\"> </a></td><td>Powder for nebuliser suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073837<a name=\"pharmaceutical-dose-form-ema-cs-100000073837\"> </a></td><td>Nebuliser emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073838<a name=\"pharmaceutical-dose-form-ema-cs-100000073838\"> </a></td><td>Pressurised inhalation, suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073839<a name=\"pharmaceutical-dose-form-ema-cs-100000073839\"> </a></td><td>Inhalation powder</td></tr><tr><td style=\"white-space:nowrap\">100000073840<a name=\"pharmaceutical-dose-form-ema-cs-100000073840\"> </a></td><td>Inhalation powder, pre-dispensed</td></tr><tr><td style=\"white-space:nowrap\">100000073841<a name=\"pharmaceutical-dose-form-ema-cs-100000073841\"> </a></td><td>Rectal emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073842<a name=\"pharmaceutical-dose-form-ema-cs-100000073842\"> </a></td><td>Concentrate for rectal solution</td></tr><tr><td style=\"white-space:nowrap\">100000073843<a name=\"pharmaceutical-dose-form-ema-cs-100000073843\"> </a></td><td>Suppository</td></tr><tr><td style=\"white-space:nowrap\">100000073844<a name=\"pharmaceutical-dose-form-ema-cs-100000073844\"> </a></td><td>Rectal capsule</td></tr><tr><td style=\"white-space:nowrap\">100000073845<a name=\"pharmaceutical-dose-form-ema-cs-100000073845\"> </a></td><td>Rectal tampon</td></tr><tr><td style=\"white-space:nowrap\">100000073846<a name=\"pharmaceutical-dose-form-ema-cs-100000073846\"> </a></td><td>Nebuliser suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073847<a name=\"pharmaceutical-dose-form-ema-cs-100000073847\"> </a></td><td>Powder for nebuliser solution</td></tr><tr><td style=\"white-space:nowrap\">100000073848<a name=\"pharmaceutical-dose-form-ema-cs-100000073848\"> </a></td><td>Pressurised inhalation, solution</td></tr><tr><td style=\"white-space:nowrap\">100000073849<a name=\"pharmaceutical-dose-form-ema-cs-100000073849\"> </a></td><td>Pressurised inhalation, emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073850<a name=\"pharmaceutical-dose-form-ema-cs-100000073850\"> </a></td><td>Inhalation powder, hard capsule</td></tr><tr><td style=\"white-space:nowrap\">100000073851<a name=\"pharmaceutical-dose-form-ema-cs-100000073851\"> </a></td><td>Inhalation vapour, powder</td></tr><tr><td style=\"white-space:nowrap\">100000073852<a name=\"pharmaceutical-dose-form-ema-cs-100000073852\"> </a></td><td>Inhalation vapour, capsule</td></tr><tr><td style=\"white-space:nowrap\">100000073853<a name=\"pharmaceutical-dose-form-ema-cs-100000073853\"> </a></td><td>Inhalation vapour, tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073854<a name=\"pharmaceutical-dose-form-ema-cs-100000073854\"> </a></td><td>Inhalation vapour, liquid</td></tr><tr><td style=\"white-space:nowrap\">100000073856<a name=\"pharmaceutical-dose-form-ema-cs-100000073856\"> </a></td><td>Emulsion for injection</td></tr><tr><td style=\"white-space:nowrap\">100000073857<a name=\"pharmaceutical-dose-form-ema-cs-100000073857\"> </a></td><td>Concentrate for solution for injection</td></tr><tr><td style=\"white-space:nowrap\">100000073858<a name=\"pharmaceutical-dose-form-ema-cs-100000073858\"> </a></td><td>Emulsion for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000073859<a name=\"pharmaceutical-dose-form-ema-cs-100000073859\"> </a></td><td>Powder for solution for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000073861<a name=\"pharmaceutical-dose-form-ema-cs-100000073861\"> </a></td><td>Inhalation vapour, solution</td></tr><tr><td style=\"white-space:nowrap\">100000073862<a name=\"pharmaceutical-dose-form-ema-cs-100000073862\"> </a></td><td>Inhalation vapour, ointment</td></tr><tr><td style=\"white-space:nowrap\">100000073863<a name=\"pharmaceutical-dose-form-ema-cs-100000073863\"> </a></td><td>Solution for injection</td></tr><tr><td style=\"white-space:nowrap\">100000073864<a name=\"pharmaceutical-dose-form-ema-cs-100000073864\"> </a></td><td>Suspension for injection</td></tr><tr><td style=\"white-space:nowrap\">100000073865<a name=\"pharmaceutical-dose-form-ema-cs-100000073865\"> </a></td><td>Gel for injection</td></tr><tr><td style=\"white-space:nowrap\">100000073866<a name=\"pharmaceutical-dose-form-ema-cs-100000073866\"> </a></td><td>Powder for solution for injection</td></tr><tr><td style=\"white-space:nowrap\">100000073867<a name=\"pharmaceutical-dose-form-ema-cs-100000073867\"> </a></td><td>Powder for suspension for injection</td></tr><tr><td style=\"white-space:nowrap\">100000073870<a name=\"pharmaceutical-dose-form-ema-cs-100000073870\"> </a></td><td>Solution for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000073871<a name=\"pharmaceutical-dose-form-ema-cs-100000073871\"> </a></td><td>Concentrate for solution for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000073874<a name=\"pharmaceutical-dose-form-ema-cs-100000073874\"> </a></td><td>Implant</td></tr><tr><td style=\"white-space:nowrap\">100000073875<a name=\"pharmaceutical-dose-form-ema-cs-100000073875\"> </a></td><td>Implantation chain</td></tr><tr><td style=\"white-space:nowrap\">100000073876<a name=\"pharmaceutical-dose-form-ema-cs-100000073876\"> </a></td><td>Solution for peritoneal dialysis</td></tr><tr><td style=\"white-space:nowrap\">100000073877<a name=\"pharmaceutical-dose-form-ema-cs-100000073877\"> </a></td><td>Solution for haemodiafiltration</td></tr><tr><td style=\"white-space:nowrap\">100000073878<a name=\"pharmaceutical-dose-form-ema-cs-100000073878\"> </a></td><td>Concentrate for solution for haemodialysis</td></tr><tr><td style=\"white-space:nowrap\">100000073879<a name=\"pharmaceutical-dose-form-ema-cs-100000073879\"> </a></td><td>Bladder irrigation</td></tr><tr><td style=\"white-space:nowrap\">100000073880<a name=\"pharmaceutical-dose-form-ema-cs-100000073880\"> </a></td><td>Urethral gel</td></tr><tr><td style=\"white-space:nowrap\">100000073881<a name=\"pharmaceutical-dose-form-ema-cs-100000073881\"> </a></td><td>Solvent for parenteral use</td></tr><tr><td style=\"white-space:nowrap\">100000073883<a name=\"pharmaceutical-dose-form-ema-cs-100000073883\"> </a></td><td>Implantation tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073885<a name=\"pharmaceutical-dose-form-ema-cs-100000073885\"> </a></td><td>Solution for haemofiltration</td></tr><tr><td style=\"white-space:nowrap\">100000073886<a name=\"pharmaceutical-dose-form-ema-cs-100000073886\"> </a></td><td>Solution for haemodialysis</td></tr><tr><td style=\"white-space:nowrap\">100000073888<a name=\"pharmaceutical-dose-form-ema-cs-100000073888\"> </a></td><td>Powder for bladder irrigation</td></tr><tr><td style=\"white-space:nowrap\">100000073889<a name=\"pharmaceutical-dose-form-ema-cs-100000073889\"> </a></td><td>Urethral stick</td></tr><tr><td style=\"white-space:nowrap\">100000073890<a name=\"pharmaceutical-dose-form-ema-cs-100000073890\"> </a></td><td>Endotracheopulmonary instillation, powder for solution</td></tr><tr><td style=\"white-space:nowrap\">100000073900<a name=\"pharmaceutical-dose-form-ema-cs-100000073900\"> </a></td><td>Denture lacquer</td></tr><tr><td style=\"white-space:nowrap\">100000073901<a name=\"pharmaceutical-dose-form-ema-cs-100000073901\"> </a></td><td>Endotracheopulmonary instillation, solution</td></tr><tr><td style=\"white-space:nowrap\">100000073902<a name=\"pharmaceutical-dose-form-ema-cs-100000073902\"> </a></td><td>Endotracheopulmonary instillation, suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073903<a name=\"pharmaceutical-dose-form-ema-cs-100000073903\"> </a></td><td>Endocervical gel</td></tr><tr><td style=\"white-space:nowrap\">100000073912<a name=\"pharmaceutical-dose-form-ema-cs-100000073912\"> </a></td><td>Anticoagulant and preservative solution for blood</td></tr><tr><td style=\"white-space:nowrap\">100000073913<a name=\"pharmaceutical-dose-form-ema-cs-100000073913\"> </a></td><td>Solution for blood fraction modification</td></tr><tr><td style=\"white-space:nowrap\">100000073914<a name=\"pharmaceutical-dose-form-ema-cs-100000073914\"> </a></td><td>Wound stick</td></tr><tr><td style=\"white-space:nowrap\">100000073915<a name=\"pharmaceutical-dose-form-ema-cs-100000073915\"> </a></td><td>Radiopharmaceutical precursor</td></tr><tr><td style=\"white-space:nowrap\">100000073916<a name=\"pharmaceutical-dose-form-ema-cs-100000073916\"> </a></td><td>Radionuclide generator</td></tr><tr><td style=\"white-space:nowrap\">100000073917<a name=\"pharmaceutical-dose-form-ema-cs-100000073917\"> </a></td><td>Gastroenteral solution</td></tr><tr><td style=\"white-space:nowrap\">100000073918<a name=\"pharmaceutical-dose-form-ema-cs-100000073918\"> </a></td><td>Gastroenteral suspension</td></tr><tr><td style=\"white-space:nowrap\">100000073919<a name=\"pharmaceutical-dose-form-ema-cs-100000073919\"> </a></td><td>Solution for organ preservation</td></tr><tr><td style=\"white-space:nowrap\">100000073920<a name=\"pharmaceutical-dose-form-ema-cs-100000073920\"> </a></td><td>Stomach irrigation</td></tr><tr><td style=\"white-space:nowrap\">100000073921<a name=\"pharmaceutical-dose-form-ema-cs-100000073921\"> </a></td><td>Kit for radiopharmaceutical preparation</td></tr><tr><td style=\"white-space:nowrap\">100000073923<a name=\"pharmaceutical-dose-form-ema-cs-100000073923\"> </a></td><td>Gastroenteral emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073924<a name=\"pharmaceutical-dose-form-ema-cs-100000073924\"> </a></td><td>Irrigation solution</td></tr><tr><td style=\"white-space:nowrap\">100000073925<a name=\"pharmaceutical-dose-form-ema-cs-100000073925\"> </a></td><td>Sealant</td></tr><tr><td style=\"white-space:nowrap\">100000073926<a name=\"pharmaceutical-dose-form-ema-cs-100000073926\"> </a></td><td>Impregnated pad</td></tr><tr><td style=\"white-space:nowrap\">100000073927<a name=\"pharmaceutical-dose-form-ema-cs-100000073927\"> </a></td><td>Medicated sponge</td></tr><tr><td style=\"white-space:nowrap\">100000073928<a name=\"pharmaceutical-dose-form-ema-cs-100000073928\"> </a></td><td>Medicated thread</td></tr><tr><td style=\"white-space:nowrap\">100000073929<a name=\"pharmaceutical-dose-form-ema-cs-100000073929\"> </a></td><td>Medicinal gas, compressed</td></tr><tr><td style=\"white-space:nowrap\">100000073930<a name=\"pharmaceutical-dose-form-ema-cs-100000073930\"> </a></td><td>Medicinal gas, liquefied</td></tr><tr><td style=\"white-space:nowrap\">100000073942<a name=\"pharmaceutical-dose-form-ema-cs-100000073942\"> </a></td><td>Living tissue equivalent</td></tr><tr><td style=\"white-space:nowrap\">100000073943<a name=\"pharmaceutical-dose-form-ema-cs-100000073943\"> </a></td><td>Intestinal gel</td></tr><tr><td style=\"white-space:nowrap\">100000073944<a name=\"pharmaceutical-dose-form-ema-cs-100000073944\"> </a></td><td>Solution for provocation test</td></tr><tr><td style=\"white-space:nowrap\">100000073945<a name=\"pharmaceutical-dose-form-ema-cs-100000073945\"> </a></td><td>Medicinal gas, cryogenic</td></tr><tr><td style=\"white-space:nowrap\">100000073971<a name=\"pharmaceutical-dose-form-ema-cs-100000073971\"> </a></td><td>Chewable/dispersible tablet</td></tr><tr><td style=\"white-space:nowrap\">100000073976<a name=\"pharmaceutical-dose-form-ema-cs-100000073976\"> </a></td><td>Concentrate for cutaneous spray, emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000073977<a name=\"pharmaceutical-dose-form-ema-cs-100000073977\"> </a></td><td>Concentrate for oral/rectal solution</td></tr><tr><td style=\"white-space:nowrap\">100000073980<a name=\"pharmaceutical-dose-form-ema-cs-100000073980\"> </a></td><td>Cutaneous spray, ointment</td></tr><tr><td style=\"white-space:nowrap\">100000073991<a name=\"pharmaceutical-dose-form-ema-cs-100000073991\"> </a></td><td>Concentrate for oral solution</td></tr><tr><td style=\"white-space:nowrap\">100000073994<a name=\"pharmaceutical-dose-form-ema-cs-100000073994\"> </a></td><td>Dental paste</td></tr><tr><td style=\"white-space:nowrap\">100000073995<a name=\"pharmaceutical-dose-form-ema-cs-100000073995\"> </a></td><td>Ear/eye ointment</td></tr><tr><td style=\"white-space:nowrap\">100000073996<a name=\"pharmaceutical-dose-form-ema-cs-100000073996\"> </a></td><td>Emulsion for injection/infusion</td></tr><tr><td style=\"white-space:nowrap\">100000074001<a name=\"pharmaceutical-dose-form-ema-cs-100000074001\"> </a></td><td>Ear/eye drops, solution</td></tr><tr><td style=\"white-space:nowrap\">100000074003<a name=\"pharmaceutical-dose-form-ema-cs-100000074003\"> </a></td><td>Endosinusial wash</td></tr><tr><td style=\"white-space:nowrap\">100000074004<a name=\"pharmaceutical-dose-form-ema-cs-100000074004\"> </a></td><td>Gargle/mouthwash</td></tr><tr><td style=\"white-space:nowrap\">100000074005<a name=\"pharmaceutical-dose-form-ema-cs-100000074005\"> </a></td><td>Gastro-resistant granules for oral suspension</td></tr><tr><td style=\"white-space:nowrap\">100000074007<a name=\"pharmaceutical-dose-form-ema-cs-100000074007\"> </a></td><td>Granules for vaginal solution</td></tr><tr><td style=\"white-space:nowrap\">100000074008<a name=\"pharmaceutical-dose-form-ema-cs-100000074008\"> </a></td><td>Inhalation vapour, effervescent tablet</td></tr><tr><td style=\"white-space:nowrap\">100000074009<a name=\"pharmaceutical-dose-form-ema-cs-100000074009\"> </a></td><td>Inhalation vapour, impregnated pad</td></tr><tr><td style=\"white-space:nowrap\">100000074012<a name=\"pharmaceutical-dose-form-ema-cs-100000074012\"> </a></td><td>Oral solution/concentrate for nebuliser solution</td></tr><tr><td style=\"white-space:nowrap\">100000074020<a name=\"pharmaceutical-dose-form-ema-cs-100000074020\"> </a></td><td>Powder for intravesical suspension</td></tr><tr><td style=\"white-space:nowrap\">100000074021<a name=\"pharmaceutical-dose-form-ema-cs-100000074021\"> </a></td><td>Inhalation powder, tablet</td></tr><tr><td style=\"white-space:nowrap\">100000074022<a name=\"pharmaceutical-dose-form-ema-cs-100000074022\"> </a></td><td>Inhalation vapour, emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000074024<a name=\"pharmaceutical-dose-form-ema-cs-100000074024\"> </a></td><td>Modified-release granules for oral suspension</td></tr><tr><td style=\"white-space:nowrap\">100000074025<a name=\"pharmaceutical-dose-form-ema-cs-100000074025\"> </a></td><td>Oral/rectal suspension</td></tr><tr><td style=\"white-space:nowrap\">100000074026<a name=\"pharmaceutical-dose-form-ema-cs-100000074026\"> </a></td><td>Oromucosal patch</td></tr><tr><td style=\"white-space:nowrap\">100000074027<a name=\"pharmaceutical-dose-form-ema-cs-100000074027\"> </a></td><td>Oromucosal/laryngopharyngeal solution</td></tr><tr><td style=\"white-space:nowrap\">100000074029<a name=\"pharmaceutical-dose-form-ema-cs-100000074029\"> </a></td><td>Powder for concentrate for solution for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000074033<a name=\"pharmaceutical-dose-form-ema-cs-100000074033\"> </a></td><td>Powder for intravesical solution</td></tr><tr><td style=\"white-space:nowrap\">100000074034<a name=\"pharmaceutical-dose-form-ema-cs-100000074034\"> </a></td><td>Powder for oral/rectal suspension</td></tr><tr><td style=\"white-space:nowrap\">100000074036<a name=\"pharmaceutical-dose-form-ema-cs-100000074036\"> </a></td><td>Prolonged-release granules for oral suspension</td></tr><tr><td style=\"white-space:nowrap\">100000074037<a name=\"pharmaceutical-dose-form-ema-cs-100000074037\"> </a></td><td>Solution for haemodialysis/haemofiltration</td></tr><tr><td style=\"white-space:nowrap\">100000074038<a name=\"pharmaceutical-dose-form-ema-cs-100000074038\"> </a></td><td>Solution for injection/infusion</td></tr><tr><td style=\"white-space:nowrap\">100000074044<a name=\"pharmaceutical-dose-form-ema-cs-100000074044\"> </a></td><td>Radiopharmaceutical precursor, solution</td></tr><tr><td style=\"white-space:nowrap\">100000074054<a name=\"pharmaceutical-dose-form-ema-cs-100000074054\"> </a></td><td>Powder for solution for intraocular irrigation</td></tr><tr><td style=\"white-space:nowrap\">100000074055<a name=\"pharmaceutical-dose-form-ema-cs-100000074055\"> </a></td><td>Solvent for solution for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000074058<a name=\"pharmaceutical-dose-form-ema-cs-100000074058\"> </a></td><td>Oral drops, powder for suspension</td></tr><tr><td style=\"white-space:nowrap\">100000074067<a name=\"pharmaceutical-dose-form-ema-cs-100000074067\"> </a></td><td>Solvent for solution for intraocular irrigation</td></tr><tr><td style=\"white-space:nowrap\">100000074068<a name=\"pharmaceutical-dose-form-ema-cs-100000074068\"> </a></td><td>Dispersion for injection</td></tr><tr><td style=\"white-space:nowrap\">100000074069<a name=\"pharmaceutical-dose-form-ema-cs-100000074069\"> </a></td><td>Concentrate for solution for injection/infusion</td></tr><tr><td style=\"white-space:nowrap\">100000074070<a name=\"pharmaceutical-dose-form-ema-cs-100000074070\"> </a></td><td>Inhalation solution</td></tr><tr><td style=\"white-space:nowrap\">100000075573<a name=\"pharmaceutical-dose-form-ema-cs-100000075573\"> </a></td><td>Orodispersible film</td></tr><tr><td style=\"white-space:nowrap\">100000075574<a name=\"pharmaceutical-dose-form-ema-cs-100000075574\"> </a></td><td>Buccal film</td></tr><tr><td style=\"white-space:nowrap\">100000075576<a name=\"pharmaceutical-dose-form-ema-cs-100000075576\"> </a></td><td>Implantation suspension</td></tr><tr><td style=\"white-space:nowrap\">100000075578<a name=\"pharmaceutical-dose-form-ema-cs-100000075578\"> </a></td><td>Concentrate for emulsion for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000075579<a name=\"pharmaceutical-dose-form-ema-cs-100000075579\"> </a></td><td>Cutaneous spray, emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000075586<a name=\"pharmaceutical-dose-form-ema-cs-100000075586\"> </a></td><td>Powder for implantation suspension</td></tr><tr><td style=\"white-space:nowrap\">100000075589<a name=\"pharmaceutical-dose-form-ema-cs-100000075589\"> </a></td><td>Solution for sealant</td></tr><tr><td style=\"white-space:nowrap\">100000111533<a name=\"pharmaceutical-dose-form-ema-cs-100000111533\"> </a></td><td>Dispersion for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000111534<a name=\"pharmaceutical-dose-form-ema-cs-100000111534\"> </a></td><td>Concentrate for dispersion for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000116131<a name=\"pharmaceutical-dose-form-ema-cs-100000116131\"> </a></td><td>Oromucosal ointment</td></tr><tr><td style=\"white-space:nowrap\">100000116134<a name=\"pharmaceutical-dose-form-ema-cs-100000116134\"> </a></td><td>Transdermal gel</td></tr><tr><td style=\"white-space:nowrap\">100000116135<a name=\"pharmaceutical-dose-form-ema-cs-100000116135\"> </a></td><td>Transdermal spray, solution</td></tr><tr><td style=\"white-space:nowrap\">100000116138<a name=\"pharmaceutical-dose-form-ema-cs-100000116138\"> </a></td><td>Intravesical solution</td></tr><tr><td style=\"white-space:nowrap\">100000116142<a name=\"pharmaceutical-dose-form-ema-cs-100000116142\"> </a></td><td>Intraperitoneal solution</td></tr><tr><td style=\"white-space:nowrap\">100000116145<a name=\"pharmaceutical-dose-form-ema-cs-100000116145\"> </a></td><td>Concentrate for intravesical solution</td></tr><tr><td style=\"white-space:nowrap\">100000116146<a name=\"pharmaceutical-dose-form-ema-cs-100000116146\"> </a></td><td>Concentrate for solution for peritoneal dialysis</td></tr><tr><td style=\"white-space:nowrap\">100000116148<a name=\"pharmaceutical-dose-form-ema-cs-100000116148\"> </a></td><td>Cutaneous/nasal ointment</td></tr><tr><td style=\"white-space:nowrap\">100000116151<a name=\"pharmaceutical-dose-form-ema-cs-100000116151\"> </a></td><td>Ear/eye/nasal drops, solution</td></tr><tr><td style=\"white-space:nowrap\">100000116156<a name=\"pharmaceutical-dose-form-ema-cs-100000116156\"> </a></td><td>Granules for oral/rectal suspension</td></tr><tr><td style=\"white-space:nowrap\">100000116161<a name=\"pharmaceutical-dose-form-ema-cs-100000116161\"> </a></td><td>Mouthwash, powder for solution</td></tr><tr><td style=\"white-space:nowrap\">100000116163<a name=\"pharmaceutical-dose-form-ema-cs-100000116163\"> </a></td><td>Nasal/oromucosal solution</td></tr><tr><td style=\"white-space:nowrap\">100000116164<a name=\"pharmaceutical-dose-form-ema-cs-100000116164\"> </a></td><td>Nasal/oromucosal spray, solution</td></tr><tr><td style=\"white-space:nowrap\">100000116165<a name=\"pharmaceutical-dose-form-ema-cs-100000116165\"> </a></td><td>Nasal spray, powder for solution</td></tr><tr><td style=\"white-space:nowrap\">100000116167<a name=\"pharmaceutical-dose-form-ema-cs-100000116167\"> </a></td><td>Nasal spray, solution/oromucosal solution</td></tr><tr><td style=\"white-space:nowrap\">100000116168<a name=\"pharmaceutical-dose-form-ema-cs-100000116168\"> </a></td><td>Oral drops, granules for solution</td></tr><tr><td style=\"white-space:nowrap\">100000116169<a name=\"pharmaceutical-dose-form-ema-cs-100000116169\"> </a></td><td>Oral drops, liquid</td></tr><tr><td style=\"white-space:nowrap\">100000116170<a name=\"pharmaceutical-dose-form-ema-cs-100000116170\"> </a></td><td>Oral/rectal solution</td></tr><tr><td style=\"white-space:nowrap\">100000116171<a name=\"pharmaceutical-dose-form-ema-cs-100000116171\"> </a></td><td>Oromucosal/laryngopharyngeal solution/spray, solution</td></tr><tr><td style=\"white-space:nowrap\">100000116180<a name=\"pharmaceutical-dose-form-ema-cs-100000116180\"> </a></td><td>Powder for concentrate for dispersion for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000116181<a name=\"pharmaceutical-dose-form-ema-cs-100000116181\"> </a></td><td>Powder for concentrate for intravesical suspension</td></tr><tr><td style=\"white-space:nowrap\">100000116182<a name=\"pharmaceutical-dose-form-ema-cs-100000116182\"> </a></td><td>Powder for concentrate for solution for haemodialysis</td></tr><tr><td style=\"white-space:nowrap\">100000116183<a name=\"pharmaceutical-dose-form-ema-cs-100000116183\"> </a></td><td>Powder for concentrate for solution for injection/infusion</td></tr><tr><td style=\"white-space:nowrap\">100000116184<a name=\"pharmaceutical-dose-form-ema-cs-100000116184\"> </a></td><td>Powder for dental solution</td></tr><tr><td style=\"white-space:nowrap\">100000116185<a name=\"pharmaceutical-dose-form-ema-cs-100000116185\"> </a></td><td>Powder for epilesional solution</td></tr><tr><td style=\"white-space:nowrap\">100000116186<a name=\"pharmaceutical-dose-form-ema-cs-100000116186\"> </a></td><td>Powder for solution for injection/infusion</td></tr><tr><td style=\"white-space:nowrap\">100000125705<a name=\"pharmaceutical-dose-form-ema-cs-100000125705\"> </a></td><td>Oromucosal spray, emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000125706<a name=\"pharmaceutical-dose-form-ema-cs-100000125706\"> </a></td><td>Oromucosal spray, solution</td></tr><tr><td style=\"white-space:nowrap\">100000125707<a name=\"pharmaceutical-dose-form-ema-cs-100000125707\"> </a></td><td>Oromucosal spray, suspension</td></tr><tr><td style=\"white-space:nowrap\">100000125708<a name=\"pharmaceutical-dose-form-ema-cs-100000125708\"> </a></td><td>Sublingual film</td></tr><tr><td style=\"white-space:nowrap\">100000125711<a name=\"pharmaceutical-dose-form-ema-cs-100000125711\"> </a></td><td>Ear/eye drops, suspension</td></tr><tr><td style=\"white-space:nowrap\">100000125735<a name=\"pharmaceutical-dose-form-ema-cs-100000125735\"> </a></td><td>Transdermal solution</td></tr><tr><td style=\"white-space:nowrap\">100000125736<a name=\"pharmaceutical-dose-form-ema-cs-100000125736\"> </a></td><td>Prolonged-release suspension for injection</td></tr><tr><td style=\"white-space:nowrap\">100000125737<a name=\"pharmaceutical-dose-form-ema-cs-100000125737\"> </a></td><td>Cutaneous solution/concentrate for oromucosal solution</td></tr><tr><td style=\"white-space:nowrap\">100000125750<a name=\"pharmaceutical-dose-form-ema-cs-100000125750\"> </a></td><td>Powder for intravesical solution/solution for injection</td></tr><tr><td style=\"white-space:nowrap\">100000125754<a name=\"pharmaceutical-dose-form-ema-cs-100000125754\"> </a></td><td>Intravesical solution/solution for injection</td></tr><tr><td style=\"white-space:nowrap\">100000143497<a name=\"pharmaceutical-dose-form-ema-cs-100000143497\"> </a></td><td>Concentrate for oral suspension</td></tr><tr><td style=\"white-space:nowrap\">100000143498<a name=\"pharmaceutical-dose-form-ema-cs-100000143498\"> </a></td><td>Sublingual spray, emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000143499<a name=\"pharmaceutical-dose-form-ema-cs-100000143499\"> </a></td><td>Sublingual spray, solution</td></tr><tr><td style=\"white-space:nowrap\">100000143500<a name=\"pharmaceutical-dose-form-ema-cs-100000143500\"> </a></td><td>Sublingual spray, suspension</td></tr><tr><td style=\"white-space:nowrap\">100000143501<a name=\"pharmaceutical-dose-form-ema-cs-100000143501\"> </a></td><td>Dental cement</td></tr><tr><td style=\"white-space:nowrap\">100000143503<a name=\"pharmaceutical-dose-form-ema-cs-100000143503\"> </a></td><td>Powder for dental cement</td></tr><tr><td style=\"white-space:nowrap\">100000143504<a name=\"pharmaceutical-dose-form-ema-cs-100000143504\"> </a></td><td>Solution for dental cement</td></tr><tr><td style=\"white-space:nowrap\">100000143523<a name=\"pharmaceutical-dose-form-ema-cs-100000143523\"> </a></td><td>Powder for dispersion for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000143524<a name=\"pharmaceutical-dose-form-ema-cs-100000143524\"> </a></td><td>Implantation matrix</td></tr><tr><td style=\"white-space:nowrap\">100000143525<a name=\"pharmaceutical-dose-form-ema-cs-100000143525\"> </a></td><td>Powder for cutaneous solution</td></tr><tr><td style=\"white-space:nowrap\">100000143526<a name=\"pharmaceutical-dose-form-ema-cs-100000143526\"> </a></td><td>Powder for solution for iontophoresis</td></tr><tr><td style=\"white-space:nowrap\">100000143527<a name=\"pharmaceutical-dose-form-ema-cs-100000143527\"> </a></td><td>Solution for cardioplegia</td></tr><tr><td style=\"white-space:nowrap\">100000143547<a name=\"pharmaceutical-dose-form-ema-cs-100000143547\"> </a></td><td>Impregnated plug</td></tr><tr><td style=\"white-space:nowrap\">100000143550<a name=\"pharmaceutical-dose-form-ema-cs-100000143550\"> </a></td><td>Gargle/nasal wash</td></tr><tr><td style=\"white-space:nowrap\">100000143551<a name=\"pharmaceutical-dose-form-ema-cs-100000143551\"> </a></td><td>Inhalation vapour, impregnated plug</td></tr><tr><td style=\"white-space:nowrap\">100000145128<a name=\"pharmaceutical-dose-form-ema-cs-100000145128\"> </a></td><td>Ear/nasal drops, suspension</td></tr><tr><td style=\"white-space:nowrap\">100000156088<a name=\"pharmaceutical-dose-form-ema-cs-100000156088\"> </a></td><td>Sealant matrix</td></tr><tr><td style=\"white-space:nowrap\">100000157838<a name=\"pharmaceutical-dose-form-ema-cs-100000157838\"> </a></td><td>Sealant powder</td></tr><tr><td style=\"white-space:nowrap\">100000162557<a name=\"pharmaceutical-dose-form-ema-cs-100000162557\"> </a></td><td>Concentrate for solution for intraocular irrigation</td></tr><tr><td style=\"white-space:nowrap\">100000169806<a name=\"pharmaceutical-dose-form-ema-cs-100000169806\"> </a></td><td>Prolonged-release solution for injection</td></tr><tr><td style=\"white-space:nowrap\">100000169869<a name=\"pharmaceutical-dose-form-ema-cs-100000169869\"> </a></td><td>Urethral emulsion</td></tr><tr><td style=\"white-space:nowrap\">100000171934<a name=\"pharmaceutical-dose-form-ema-cs-100000171934\"> </a></td><td>Emulsion for suspension for injection</td></tr><tr><td style=\"white-space:nowrap\">100000173955<a name=\"pharmaceutical-dose-form-ema-cs-100000173955\"> </a></td><td>Dispersible tablets for dose dispenser</td></tr><tr><td style=\"white-space:nowrap\">100000173956<a name=\"pharmaceutical-dose-form-ema-cs-100000173956\"> </a></td><td>Powder for prolonged-release suspension for injection</td></tr><tr><td style=\"white-space:nowrap\">100000173957<a name=\"pharmaceutical-dose-form-ema-cs-100000173957\"> </a></td><td>Laryngopharyngeal spray, solution</td></tr><tr><td style=\"white-space:nowrap\">100000173958<a name=\"pharmaceutical-dose-form-ema-cs-100000173958\"> </a></td><td>Matrix for implantation matrix</td></tr><tr><td style=\"white-space:nowrap\">100000173960<a name=\"pharmaceutical-dose-form-ema-cs-100000173960\"> </a></td><td>Nasal drops, powder for solution</td></tr><tr><td style=\"white-space:nowrap\">100000173961<a name=\"pharmaceutical-dose-form-ema-cs-100000173961\"> </a></td><td>Powder for gel</td></tr><tr><td style=\"white-space:nowrap\">100000173962<a name=\"pharmaceutical-dose-form-ema-cs-100000173962\"> </a></td><td>Powder for dental gel</td></tr><tr><td style=\"white-space:nowrap\">100000173963<a name=\"pharmaceutical-dose-form-ema-cs-100000173963\"> </a></td><td>Powder for dispersion for injection</td></tr><tr><td style=\"white-space:nowrap\">100000173964<a name=\"pharmaceutical-dose-form-ema-cs-100000173964\"> </a></td><td>Powder for endocervical gel</td></tr><tr><td style=\"white-space:nowrap\">100000173965<a name=\"pharmaceutical-dose-form-ema-cs-100000173965\"> </a></td><td>Powder for endosinusial solution</td></tr><tr><td style=\"white-space:nowrap\">100000173966<a name=\"pharmaceutical-dose-form-ema-cs-100000173966\"> </a></td><td>Powder for intraocular instillation solution</td></tr><tr><td style=\"white-space:nowrap\">100000173996<a name=\"pharmaceutical-dose-form-ema-cs-100000173996\"> </a></td><td>Concentrate for concentrate for solution for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000173997<a name=\"pharmaceutical-dose-form-ema-cs-100000173997\"> </a></td><td>Concentrate for nebuliser solution</td></tr><tr><td style=\"white-space:nowrap\">100000173998<a name=\"pharmaceutical-dose-form-ema-cs-100000173998\"> </a></td><td>Concentrate for oromucosal solution</td></tr><tr><td style=\"white-space:nowrap\">100000173999<a name=\"pharmaceutical-dose-form-ema-cs-100000173999\"> </a></td><td>Concentrate for suspension for injection</td></tr><tr><td style=\"white-space:nowrap\">100000174000<a name=\"pharmaceutical-dose-form-ema-cs-100000174000\"> </a></td><td>Dispersion for concentrate for dispersion for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000174001<a name=\"pharmaceutical-dose-form-ema-cs-100000174001\"> </a></td><td>Ear drops, powder for suspension</td></tr><tr><td style=\"white-space:nowrap\">100000174002<a name=\"pharmaceutical-dose-form-ema-cs-100000174002\"> </a></td><td>Effervescent granules for oral suspension</td></tr><tr><td style=\"white-space:nowrap\">100000174003<a name=\"pharmaceutical-dose-form-ema-cs-100000174003\"> </a></td><td>Emulsion for emulsion for injection</td></tr><tr><td style=\"white-space:nowrap\">100000174004<a name=\"pharmaceutical-dose-form-ema-cs-100000174004\"> </a></td><td>Endotracheopulmonary instillation, powder for suspension</td></tr><tr><td style=\"white-space:nowrap\">100000174005<a name=\"pharmaceutical-dose-form-ema-cs-100000174005\"> </a></td><td>Eye drops, powder for solution</td></tr><tr><td style=\"white-space:nowrap\">100000174006<a name=\"pharmaceutical-dose-form-ema-cs-100000174006\"> </a></td><td>Eye drops, powder for suspension</td></tr><tr><td style=\"white-space:nowrap\">100000174007<a name=\"pharmaceutical-dose-form-ema-cs-100000174007\"> </a></td><td>Gas for dispersion for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000174008<a name=\"pharmaceutical-dose-form-ema-cs-100000174008\"> </a></td><td>Gas for dispersion for injection</td></tr><tr><td style=\"white-space:nowrap\">100000174009<a name=\"pharmaceutical-dose-form-ema-cs-100000174009\"> </a></td><td>Gel for gel</td></tr><tr><td style=\"white-space:nowrap\">100000174010<a name=\"pharmaceutical-dose-form-ema-cs-100000174010\"> </a></td><td>Granules for rectal suspension</td></tr><tr><td style=\"white-space:nowrap\">100000174011<a name=\"pharmaceutical-dose-form-ema-cs-100000174011\"> </a></td><td>Laryngopharyngeal solution</td></tr><tr><td style=\"white-space:nowrap\">100000174012<a name=\"pharmaceutical-dose-form-ema-cs-100000174012\"> </a></td><td>Powder for gingival gel</td></tr><tr><td style=\"white-space:nowrap\">100000174013<a name=\"pharmaceutical-dose-form-ema-cs-100000174013\"> </a></td><td>Powder for implantation matrix</td></tr><tr><td style=\"white-space:nowrap\">100000174014<a name=\"pharmaceutical-dose-form-ema-cs-100000174014\"> </a></td><td>Powder for implantation paste</td></tr><tr><td style=\"white-space:nowrap\">100000174015<a name=\"pharmaceutical-dose-form-ema-cs-100000174015\"> </a></td><td>Solvent for...</td></tr><tr><td style=\"white-space:nowrap\">100000174016<a name=\"pharmaceutical-dose-form-ema-cs-100000174016\"> </a></td><td>Suspension for emulsion for injection</td></tr><tr><td style=\"white-space:nowrap\">100000174017<a name=\"pharmaceutical-dose-form-ema-cs-100000174017\"> </a></td><td>Suspension for oral suspension</td></tr><tr><td style=\"white-space:nowrap\">100000174019<a name=\"pharmaceutical-dose-form-ema-cs-100000174019\"> </a></td><td>Suspension for suspension for injection</td></tr><tr><td style=\"white-space:nowrap\">100000174020<a name=\"pharmaceutical-dose-form-ema-cs-100000174020\"> </a></td><td>Powder for emulsion for injection</td></tr><tr><td style=\"white-space:nowrap\">100000174021<a name=\"pharmaceutical-dose-form-ema-cs-100000174021\"> </a></td><td>Endosinusial solution</td></tr><tr><td style=\"white-space:nowrap\">100000174022<a name=\"pharmaceutical-dose-form-ema-cs-100000174022\"> </a></td><td>Epilesional solution</td></tr><tr><td style=\"white-space:nowrap\">100000174023<a name=\"pharmaceutical-dose-form-ema-cs-100000174023\"> </a></td><td>Implantation paste</td></tr><tr><td style=\"white-space:nowrap\">100000174024<a name=\"pharmaceutical-dose-form-ema-cs-100000174024\"> </a></td><td>Intraocular instillation solution</td></tr><tr><td style=\"white-space:nowrap\">100000174025<a name=\"pharmaceutical-dose-form-ema-cs-100000174025\"> </a></td><td>Intravesical suspension</td></tr><tr><td style=\"white-space:nowrap\">100000174026<a name=\"pharmaceutical-dose-form-ema-cs-100000174026\"> </a></td><td>Gas for dispersion for injection/infusion</td></tr><tr><td style=\"white-space:nowrap\">100000174027<a name=\"pharmaceutical-dose-form-ema-cs-100000174027\"> </a></td><td>Powder for sealant</td></tr><tr><td style=\"white-space:nowrap\">100000174028<a name=\"pharmaceutical-dose-form-ema-cs-100000174028\"> </a></td><td>Powder for solution for skin-prick test</td></tr><tr><td style=\"white-space:nowrap\">100000174029<a name=\"pharmaceutical-dose-form-ema-cs-100000174029\"> </a></td><td>Solution for solution for injection</td></tr><tr><td style=\"white-space:nowrap\">100000174031<a name=\"pharmaceutical-dose-form-ema-cs-100000174031\"> </a></td><td>Coated granules</td></tr><tr><td style=\"white-space:nowrap\">100000174032<a name=\"pharmaceutical-dose-form-ema-cs-100000174032\"> </a></td><td>Solution for suspension for injection</td></tr><tr><td style=\"white-space:nowrap\">100000174033<a name=\"pharmaceutical-dose-form-ema-cs-100000174033\"> </a></td><td>Granules for suspension for injection</td></tr><tr><td style=\"white-space:nowrap\">100000174034<a name=\"pharmaceutical-dose-form-ema-cs-100000174034\"> </a></td><td>Dispersion for injection/infusion</td></tr><tr><td style=\"white-space:nowrap\">100000174047<a name=\"pharmaceutical-dose-form-ema-cs-100000174047\"> </a></td><td>Solution for injection/skin-prick test</td></tr><tr><td style=\"white-space:nowrap\">100000174048<a name=\"pharmaceutical-dose-form-ema-cs-100000174048\"> </a></td><td>Powder for solution for injection/skin-prick test</td></tr><tr><td style=\"white-space:nowrap\">100000174051<a name=\"pharmaceutical-dose-form-ema-cs-100000174051\"> </a></td><td>Solution for solution for infusion</td></tr><tr><td style=\"white-space:nowrap\">100000174052<a name=\"pharmaceutical-dose-form-ema-cs-100000174052\"> </a></td><td>Tablet for cutaneous solution</td></tr><tr><td style=\"white-space:nowrap\">100000174055<a name=\"pharmaceutical-dose-form-ema-cs-100000174055\"> </a></td><td>Solution for intraocular irrigation</td></tr><tr><td style=\"white-space:nowrap\">200000002245<a name=\"pharmaceutical-dose-form-ema-cs-200000002245\"> </a></td><td>Transdermal ointment</td></tr><tr><td style=\"white-space:nowrap\">200000002381<a name=\"pharmaceutical-dose-form-ema-cs-200000002381\"> </a></td><td>Sublingual powder</td></tr><tr><td style=\"white-space:nowrap\">200000003182<a name=\"pharmaceutical-dose-form-ema-cs-200000003182\"> </a></td><td>Oral herbal material</td></tr><tr><td style=\"white-space:nowrap\">200000003236<a name=\"pharmaceutical-dose-form-ema-cs-200000003236\"> </a></td><td>Solution for cardioplegia/organ preservation</td></tr><tr><td style=\"white-space:nowrap\">200000003547<a name=\"pharmaceutical-dose-form-ema-cs-200000003547\"> </a></td><td>Powder for vaginal solution</td></tr><tr><td style=\"white-space:nowrap\">200000003971<a name=\"pharmaceutical-dose-form-ema-cs-200000003971\"> </a></td><td>Intrauterine gel</td></tr><tr><td style=\"white-space:nowrap\">200000004200<a name=\"pharmaceutical-dose-form-ema-cs-200000004200\"> </a></td><td>Nebuliser dispersion</td></tr><tr><td style=\"white-space:nowrap\">200000004719<a name=\"pharmaceutical-dose-form-ema-cs-200000004719\"> </a></td><td>Tablet with sensor</td></tr><tr><td style=\"white-space:nowrap\">200000005069<a name=\"pharmaceutical-dose-form-ema-cs-200000005069\"> </a></td><td>Medicinal leech</td></tr><tr><td style=\"white-space:nowrap\">200000005113<a name=\"pharmaceutical-dose-form-ema-cs-200000005113\"> </a></td><td>Medicinal larvae</td></tr><tr><td style=\"white-space:nowrap\">200000010390<a name=\"pharmaceutical-dose-form-ema-cs-200000010390\"> </a></td><td>Urethral ointment</td></tr><tr><td style=\"white-space:nowrap\">200000010456<a name=\"pharmaceutical-dose-form-ema-cs-200000010456\"> </a></td><td>Prolonged-release wound solution</td></tr><tr><td style=\"white-space:nowrap\">200000010610<a name=\"pharmaceutical-dose-form-ema-cs-200000010610\"> </a></td><td>Prolonged-release dispersion for injection</td></tr><tr><td style=\"white-space:nowrap\">200000010684<a name=\"pharmaceutical-dose-form-ema-cs-200000010684\"> </a></td><td>Sublingual lyophilisate</td></tr><tr><td style=\"white-space:nowrap\">200000011722<a name=\"pharmaceutical-dose-form-ema-cs-200000011722\"> </a></td><td>Gastro-resistant powder for oral suspension</td></tr><tr><td style=\"white-space:nowrap\">200000012529<a name=\"pharmaceutical-dose-form-ema-cs-200000012529\"> </a></td><td>Gastro-resistant oral suspension</td></tr><tr><td style=\"white-space:nowrap\">200000012530<a name=\"pharmaceutical-dose-form-ema-cs-200000012530\"> </a></td><td>Prolonged-release oral suspension</td></tr><tr><td style=\"white-space:nowrap\">200000012531<a name=\"pharmaceutical-dose-form-ema-cs-200000012531\"> </a></td><td>Modified-release oral suspension</td></tr><tr><td style=\"white-space:nowrap\">200000015705<a name=\"pharmaceutical-dose-form-ema-cs-200000015705\"> </a></td><td>Concentrate for dispersion for injection</td></tr><tr><td style=\"white-space:nowrap\">200000016184<a name=\"pharmaceutical-dose-form-ema-cs-200000016184\"> </a></td><td>Cutaneous/oromucosal solution</td></tr><tr><td style=\"white-space:nowrap\">200000017694<a name=\"pharmaceutical-dose-form-ema-cs-200000017694\"> </a></td><td>Oromucosal pouch</td></tr><tr><td style=\"white-space:nowrap\">200000017728<a name=\"pharmaceutical-dose-form-ema-cs-200000017728\"> </a></td><td>Impregnated cutaneous swab</td></tr><tr><td style=\"white-space:nowrap\">200000017730<a name=\"pharmaceutical-dose-form-ema-cs-200000017730\"> </a></td><td>Prolonged-release pessary</td></tr><tr><td style=\"white-space:nowrap\">200000018780<a name=\"pharmaceutical-dose-form-ema-cs-200000018780\"> </a></td><td>Oromucosal film</td></tr><tr><td style=\"white-space:nowrap\">200000018781<a name=\"pharmaceutical-dose-form-ema-cs-200000018781\"> </a></td><td>Pharmaceutical dose form not applicable</td></tr><tr><td style=\"white-space:nowrap\">200000023323<a name=\"pharmaceutical-dose-form-ema-cs-200000023323\"> </a></td><td>Not assigned</td></tr><tr><td style=\"white-space:nowrap\">200000025198<a name=\"pharmaceutical-dose-form-ema-cs-200000025198\"> </a></td><td>Film-coated granules</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://spor.ema.europa.eu/v1/lists/200000000004"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "PharmaceuticalDoseForm_EMA_CS"];
+  fhir:CodeSystem.title [ fhir:value "Pharmaceutical Dose Form EMA"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2022-11-18T19:50:12+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "UNICOM"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://medigree.net" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Pharmaceutical dose form. Based on EDQM, re-coded with RMS codes."];
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "464"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073362" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral suspension" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073363" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral gel" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073364" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for oral solution" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073365" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Granules for oral solution" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073367" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lyophilisate for suspension" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073368" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for syrup" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073369" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Soluble tablet" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073370" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Herbal tea" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073371" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Instant herbal tea" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073372" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Granules" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073373" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastro-resistant granules" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073374" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Modified-release granules" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073375" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Capsule, hard" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073376" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastro-resistant capsule, hard" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073377" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chewable capsule, soft" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073378" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prolonged-release capsule, soft" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073379" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Modified-release capsule, soft" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073380" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Coated tablet" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073642" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral drops, solution" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073643" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral drops, suspension" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073644" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral drops, emulsion" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073645" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral liquid" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073646" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral solution" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073647" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral emulsion" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073648" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral paste" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073649" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for oral suspension" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073650" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Granules for oral suspension" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073652" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Syrup" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073653" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Granules for syrup" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073654" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dispersible tablet" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073655" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral powder" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073656" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Effervescent powder" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073657" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Effervescent granules" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073658" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prolonged-release granules" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073659" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cachet" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073660" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Capsule, soft" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073661" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastro-resistant capsule, soft" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073662" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prolonged-release capsule, hard" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073663" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Modified-release capsule, hard" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073664" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tablet" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073665" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Film-coated tablet" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073666" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Orodispersible tablet" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073667" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastro-resistant tablet" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073668" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Modified-release tablet" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073669" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicated chewing-gum" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073670" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pillules" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073671" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pulsatile-release intraruminal device" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073672" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Premix for medicated feeding stuff" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073673" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gargle" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073674" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gargle, powder for solution" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073675" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal suspension" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073676" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal spray" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073677" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mouthwash" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073678" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gingival solution" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073679" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal paste" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073680" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gingival gel" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073681" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Effervescent tablet" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073682" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral lyophilisate" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073683" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prolonged-release tablet" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073684" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chewable tablet" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073685" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral gum" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073686" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Continuous-release intraruminal device" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073687" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lick block" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073688" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicated pellets" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073689" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for gargle" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073690" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gargle, tablet for solution" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073691" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal solution" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073692" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal drops" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073693" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sublingual spray" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073694" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mouthwash, tablet for solution" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073695" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal gel" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073696" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal cream" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073697" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gingival paste" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073698" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sublingual tablet" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073699" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Buccal tablet" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073700" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Compressed lozenge" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073701" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal capsule" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073702" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Muco-adhesive buccal tablet" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073703" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lozenge" ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073704" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pastille" ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073705" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental gel" ]
+  ], [
+     fhir:index 81;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073706" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental insert" ]
+  ], [
+     fhir:index 82;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073707" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental powder" ]
+  ], [
+     fhir:index 83;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073708" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental suspension" ]
+  ], [
+     fhir:index 84;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073709" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Toothpaste" ]
+  ], [
+     fhir:index 85;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073710" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Periodontal gel" ]
+  ], [
+     fhir:index 86;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073711" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bath additive" ]
+  ], [
+     fhir:index 87;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073712" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cream" ]
+  ], [
+     fhir:index 88;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073713" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ointment" ]
+  ], [
+     fhir:index 89;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073714" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicated plaster" ]
+  ], [
+     fhir:index 90;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073715" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Shampoo" ]
+  ], [
+     fhir:index 91;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073716" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous spray, suspension" ]
+  ], [
+     fhir:index 92;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073717" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous liquid" ]
+  ], [
+     fhir:index 93;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073718" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for cutaneous solution" ]
+  ], [
+     fhir:index 94;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073719" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous emulsion" ]
+  ], [
+     fhir:index 95;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073720" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous patch" ]
+  ], [
+     fhir:index 96;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073721" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Periodontal powder" ]
+  ], [
+     fhir:index 97;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073722" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental stick" ]
+  ], [
+     fhir:index 98;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073723" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental solution" ]
+  ], [
+     fhir:index 99;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073724" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental emulsion" ]
+  ], [
+     fhir:index 100;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073725" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Periodontal insert" ]
+  ], [
+     fhir:index 101;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073726" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gel" ]
+  ], [
+     fhir:index 102;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073727" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous paste" ]
+  ], [
+     fhir:index 103;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073728" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous foam" ]
+  ], [
+     fhir:index 104;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073729" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous spray, solution" ]
+  ], [
+     fhir:index 105;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073730" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous spray, powder" ]
+  ], [
+     fhir:index 106;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073731" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous solution" ]
+  ], [
+     fhir:index 107;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073732" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous suspension" ]
+  ], [
+     fhir:index 108;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073733" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous powder" ]
+  ], [
+     fhir:index 109;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073734" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for iontophoresis" ]
+  ], [
+     fhir:index 110;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073735" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Collodion" ]
+  ], [
+     fhir:index 111;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073736" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Poultice" ]
+  ], [
+     fhir:index 112;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073737" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous sponge" ]
+  ], [
+     fhir:index 113;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073738" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Collar" ]
+  ], [
+     fhir:index 114;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073739" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear tag" ]
+  ], [
+     fhir:index 115;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073740" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dip suspension" ]
+  ], [
+     fhir:index 116;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073741" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transdermal patch" ]
+  ], [
+     fhir:index 117;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073742" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicated nail lacquer" ]
+  ], [
+     fhir:index 118;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073743" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous stick" ]
+  ], [
+     fhir:index 119;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073744" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Impregnated dressing" ]
+  ], [
+     fhir:index 120;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073745" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicated pendant" ]
+  ], [
+     fhir:index 121;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073746" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dip solution" ]
+  ], [
+     fhir:index 122;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073747" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dip emulsion" ]
+  ], [
+     fhir:index 123;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073748" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for dip suspension" ]
+  ], [
+     fhir:index 124;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073749" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for dip solution" ]
+  ], [
+     fhir:index 125;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073750" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for suspension for fish treatment" ]
+  ], [
+     fhir:index 126;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073751" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pour-on suspension" ]
+  ], [
+     fhir:index 127;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073752" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spot-on solution" ]
+  ], [
+     fhir:index 128;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073753" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spot-on emulsion" ]
+  ], [
+     fhir:index 129;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073754" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Teat dip suspension" ]
+  ], [
+     fhir:index 130;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073755" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Teat spray solution" ]
+  ], [
+     fhir:index 131;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073756" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for skin-prick test" ]
+  ], [
+     fhir:index 132;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073757" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Plaster for provocation test" ]
+  ], [
+     fhir:index 133;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073758" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye gel" ]
+  ], [
+     fhir:index 134;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073759" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye drops, solution" ]
+  ], [
+     fhir:index 135;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073760" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye drops, suspension" ]
+  ], [
+     fhir:index 136;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073761" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for dip solution" ]
+  ], [
+     fhir:index 137;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073762" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for dip emulsion" ]
+  ], [
+     fhir:index 138;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073763" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for solution for fish treatment" ]
+  ], [
+     fhir:index 139;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073764" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pour-on solution" ]
+  ], [
+     fhir:index 140;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073765" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pour-on emulsion" ]
+  ], [
+     fhir:index 141;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073766" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spot-on suspension" ]
+  ], [
+     fhir:index 142;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073767" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Teat dip solution" ]
+  ], [
+     fhir:index 143;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073768" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Teat dip emulsion" ]
+  ], [
+     fhir:index 144;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073769" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transdermal system" ]
+  ], [
+     fhir:index 145;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073770" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for skin-scratch test" ]
+  ], [
+     fhir:index 146;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073771" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye cream" ]
+  ], [
+     fhir:index 147;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073772" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye ointment" ]
+  ], [
+     fhir:index 148;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073773" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye drops, emulsion" ]
+  ], [
+     fhir:index 149;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073775" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye drops, solvent for reconstitution" ]
+  ], [
+     fhir:index 150;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073776" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye lotion" ]
+  ], [
+     fhir:index 151;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073777" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ophthalmic insert" ]
+  ], [
+     fhir:index 152;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073778" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear cream" ]
+  ], [
+     fhir:index 153;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073779" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear ointment" ]
+  ], [
+     fhir:index 154;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073780" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear drops, suspension" ]
+  ], [
+     fhir:index 155;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073782" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye drops, prolonged-release" ]
+  ], [
+     fhir:index 156;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073783" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye lotion, solvent for reconstitution" ]
+  ], [
+     fhir:index 157;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073784" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ophthalmic strip" ]
+  ], [
+     fhir:index 158;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073785" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear gel" ]
+  ], [
+     fhir:index 159;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073786" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear drops, solution" ]
+  ], [
+     fhir:index 160;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073787" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear drops, emulsion" ]
+  ], [
+     fhir:index 161;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073788" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear powder" ]
+  ], [
+     fhir:index 162;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073789" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear spray, suspension" ]
+  ], [
+     fhir:index 163;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073790" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear wash, solution" ]
+  ], [
+     fhir:index 164;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073791" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear tampon" ]
+  ], [
+     fhir:index 165;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073792" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal cream" ]
+  ], [
+     fhir:index 166;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073793" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal gel" ]
+  ], [
+     fhir:index 167;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073794" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal drops, solution" ]
+  ], [
+     fhir:index 168;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073795" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal drops, emulsion" ]
+  ], [
+     fhir:index 169;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073796" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal spray, solution" ]
+  ], [
+     fhir:index 170;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073797" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal spray, emulsion" ]
+  ], [
+     fhir:index 171;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073798" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal stick" ]
+  ], [
+     fhir:index 172;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073799" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal gel" ]
+  ], [
+     fhir:index 173;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073800" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal foam" ]
+  ], [
+     fhir:index 174;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073802" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear spray, solution" ]
+  ], [
+     fhir:index 175;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073803" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear spray, emulsion" ]
+  ], [
+     fhir:index 176;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073804" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear wash, emulsion" ]
+  ], [
+     fhir:index 177;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073805" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear stick" ]
+  ], [
+     fhir:index 178;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073806" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal ointment" ]
+  ], [
+     fhir:index 179;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073807" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal drops, suspension" ]
+  ], [
+     fhir:index 180;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073808" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal powder" ]
+  ], [
+     fhir:index 181;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073809" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal spray, suspension" ]
+  ], [
+     fhir:index 182;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073810" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal wash" ]
+  ], [
+     fhir:index 183;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073811" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal cream" ]
+  ], [
+     fhir:index 184;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073812" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal ointment" ]
+  ], [
+     fhir:index 185;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073813" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal solution" ]
+  ], [
+     fhir:index 186;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073814" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal emulsion" ]
+  ], [
+     fhir:index 187;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073815" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pessary" ]
+  ], [
+     fhir:index 188;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073816" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal capsule, soft" ]
+  ], [
+     fhir:index 189;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073817" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Effervescent vaginal tablet" ]
+  ], [
+     fhir:index 190;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073818" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal delivery system" ]
+  ], [
+     fhir:index 191;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073819" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rectal cream" ]
+  ], [
+     fhir:index 192;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073820" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rectal foam" ]
+  ], [
+     fhir:index 193;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073821" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal suspension" ]
+  ], [
+     fhir:index 194;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073822" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tablet for vaginal solution" ]
+  ], [
+     fhir:index 195;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073823" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal capsule, hard" ]
+  ], [
+     fhir:index 196;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073824" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal tablet" ]
+  ], [
+     fhir:index 197;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073825" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicated vaginal tampon" ]
+  ], [
+     fhir:index 198;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073826" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal sponge" ]
+  ], [
+     fhir:index 199;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073827" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rectal gel" ]
+  ], [
+     fhir:index 200;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073828" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rectal ointment" ]
+  ], [
+     fhir:index 201;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073829" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rectal solution" ]
+  ], [
+     fhir:index 202;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073830" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rectal suspension" ]
+  ], [
+     fhir:index 203;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073831" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for rectal solution" ]
+  ], [
+     fhir:index 204;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073832" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for rectal suspension" ]
+  ], [
+     fhir:index 205;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073833" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tablet for rectal solution" ]
+  ], [
+     fhir:index 206;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073834" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tablet for rectal suspension" ]
+  ], [
+     fhir:index 207;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073835" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nebuliser solution" ]
+  ], [
+     fhir:index 208;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073836" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for nebuliser suspension" ]
+  ], [
+     fhir:index 209;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073837" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nebuliser emulsion" ]
+  ], [
+     fhir:index 210;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073838" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pressurised inhalation, suspension" ]
+  ], [
+     fhir:index 211;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073839" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation powder" ]
+  ], [
+     fhir:index 212;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073840" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation powder, pre-dispensed" ]
+  ], [
+     fhir:index 213;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073841" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rectal emulsion" ]
+  ], [
+     fhir:index 214;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073842" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for rectal solution" ]
+  ], [
+     fhir:index 215;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073843" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Suppository" ]
+  ], [
+     fhir:index 216;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073844" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rectal capsule" ]
+  ], [
+     fhir:index 217;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073845" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rectal tampon" ]
+  ], [
+     fhir:index 218;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073846" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nebuliser suspension" ]
+  ], [
+     fhir:index 219;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073847" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for nebuliser solution" ]
+  ], [
+     fhir:index 220;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073848" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pressurised inhalation, solution" ]
+  ], [
+     fhir:index 221;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073849" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pressurised inhalation, emulsion" ]
+  ], [
+     fhir:index 222;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073850" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation powder, hard capsule" ]
+  ], [
+     fhir:index 223;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073851" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation vapour, powder" ]
+  ], [
+     fhir:index 224;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073852" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation vapour, capsule" ]
+  ], [
+     fhir:index 225;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073853" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation vapour, tablet" ]
+  ], [
+     fhir:index 226;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073854" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation vapour, liquid" ]
+  ], [
+     fhir:index 227;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073856" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Emulsion for injection" ]
+  ], [
+     fhir:index 228;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073857" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for solution for injection" ]
+  ], [
+     fhir:index 229;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073858" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Emulsion for infusion" ]
+  ], [
+     fhir:index 230;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073859" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for solution for infusion" ]
+  ], [
+     fhir:index 231;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073861" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation vapour, solution" ]
+  ], [
+     fhir:index 232;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073862" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation vapour, ointment" ]
+  ], [
+     fhir:index 233;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073863" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for injection" ]
+  ], [
+     fhir:index 234;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073864" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Suspension for injection" ]
+  ], [
+     fhir:index 235;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073865" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gel for injection" ]
+  ], [
+     fhir:index 236;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073866" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for solution for injection" ]
+  ], [
+     fhir:index 237;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073867" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for suspension for injection" ]
+  ], [
+     fhir:index 238;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073870" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for infusion" ]
+  ], [
+     fhir:index 239;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073871" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for solution for infusion" ]
+  ], [
+     fhir:index 240;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073874" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Implant" ]
+  ], [
+     fhir:index 241;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073875" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Implantation chain" ]
+  ], [
+     fhir:index 242;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073876" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for peritoneal dialysis" ]
+  ], [
+     fhir:index 243;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073877" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for haemodiafiltration" ]
+  ], [
+     fhir:index 244;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073878" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for solution for haemodialysis" ]
+  ], [
+     fhir:index 245;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073879" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bladder irrigation" ]
+  ], [
+     fhir:index 246;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073880" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urethral gel" ]
+  ], [
+     fhir:index 247;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073881" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solvent for parenteral use" ]
+  ], [
+     fhir:index 248;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073883" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Implantation tablet" ]
+  ], [
+     fhir:index 249;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073885" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for haemofiltration" ]
+  ], [
+     fhir:index 250;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073886" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for haemodialysis" ]
+  ], [
+     fhir:index 251;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073888" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for bladder irrigation" ]
+  ], [
+     fhir:index 252;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073889" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urethral stick" ]
+  ], [
+     fhir:index 253;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073890" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Endotracheopulmonary instillation, powder for solution" ]
+  ], [
+     fhir:index 254;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073900" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Denture lacquer" ]
+  ], [
+     fhir:index 255;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073901" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Endotracheopulmonary instillation, solution" ]
+  ], [
+     fhir:index 256;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073902" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Endotracheopulmonary instillation, suspension" ]
+  ], [
+     fhir:index 257;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073903" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Endocervical gel" ]
+  ], [
+     fhir:index 258;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073912" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anticoagulant and preservative solution for blood" ]
+  ], [
+     fhir:index 259;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073913" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for blood fraction modification" ]
+  ], [
+     fhir:index 260;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073914" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Wound stick" ]
+  ], [
+     fhir:index 261;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073915" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Radiopharmaceutical precursor" ]
+  ], [
+     fhir:index 262;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073916" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Radionuclide generator" ]
+  ], [
+     fhir:index 263;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073917" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastroenteral solution" ]
+  ], [
+     fhir:index 264;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073918" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastroenteral suspension" ]
+  ], [
+     fhir:index 265;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073919" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for organ preservation" ]
+  ], [
+     fhir:index 266;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073920" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Stomach irrigation" ]
+  ], [
+     fhir:index 267;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073921" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kit for radiopharmaceutical preparation" ]
+  ], [
+     fhir:index 268;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073923" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastroenteral emulsion" ]
+  ], [
+     fhir:index 269;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073924" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Irrigation solution" ]
+  ], [
+     fhir:index 270;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073925" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sealant" ]
+  ], [
+     fhir:index 271;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073926" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Impregnated pad" ]
+  ], [
+     fhir:index 272;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073927" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicated sponge" ]
+  ], [
+     fhir:index 273;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073928" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicated thread" ]
+  ], [
+     fhir:index 274;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073929" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicinal gas, compressed" ]
+  ], [
+     fhir:index 275;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073930" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicinal gas, liquefied" ]
+  ], [
+     fhir:index 276;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073942" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Living tissue equivalent" ]
+  ], [
+     fhir:index 277;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073943" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intestinal gel" ]
+  ], [
+     fhir:index 278;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073944" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for provocation test" ]
+  ], [
+     fhir:index 279;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073945" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicinal gas, cryogenic" ]
+  ], [
+     fhir:index 280;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073971" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chewable/dispersible tablet" ]
+  ], [
+     fhir:index 281;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073976" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for cutaneous spray, emulsion" ]
+  ], [
+     fhir:index 282;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073977" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for oral/rectal solution" ]
+  ], [
+     fhir:index 283;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073980" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous spray, ointment" ]
+  ], [
+     fhir:index 284;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073991" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for oral solution" ]
+  ], [
+     fhir:index 285;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073994" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental paste" ]
+  ], [
+     fhir:index 286;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073995" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear/eye ointment" ]
+  ], [
+     fhir:index 287;
+     fhir:CodeSystem.concept.code [ fhir:value "100000073996" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Emulsion for injection/infusion" ]
+  ], [
+     fhir:index 288;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear/eye drops, solution" ]
+  ], [
+     fhir:index 289;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Endosinusial wash" ]
+  ], [
+     fhir:index 290;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gargle/mouthwash" ]
+  ], [
+     fhir:index 291;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastro-resistant granules for oral suspension" ]
+  ], [
+     fhir:index 292;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074007" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Granules for vaginal solution" ]
+  ], [
+     fhir:index 293;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074008" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation vapour, effervescent tablet" ]
+  ], [
+     fhir:index 294;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074009" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation vapour, impregnated pad" ]
+  ], [
+     fhir:index 295;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074012" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral solution/concentrate for nebuliser solution" ]
+  ], [
+     fhir:index 296;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074020" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for intravesical suspension" ]
+  ], [
+     fhir:index 297;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074021" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation powder, tablet" ]
+  ], [
+     fhir:index 298;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074022" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation vapour, emulsion" ]
+  ], [
+     fhir:index 299;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074024" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Modified-release granules for oral suspension" ]
+  ], [
+     fhir:index 300;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074025" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral/rectal suspension" ]
+  ], [
+     fhir:index 301;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074026" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal patch" ]
+  ], [
+     fhir:index 302;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074027" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal/laryngopharyngeal solution" ]
+  ], [
+     fhir:index 303;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074029" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for concentrate for solution for infusion" ]
+  ], [
+     fhir:index 304;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074033" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for intravesical solution" ]
+  ], [
+     fhir:index 305;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074034" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for oral/rectal suspension" ]
+  ], [
+     fhir:index 306;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074036" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prolonged-release granules for oral suspension" ]
+  ], [
+     fhir:index 307;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074037" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for haemodialysis/haemofiltration" ]
+  ], [
+     fhir:index 308;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074038" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for injection/infusion" ]
+  ], [
+     fhir:index 309;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074044" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Radiopharmaceutical precursor, solution" ]
+  ], [
+     fhir:index 310;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074054" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for solution for intraocular irrigation" ]
+  ], [
+     fhir:index 311;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074055" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solvent for solution for infusion" ]
+  ], [
+     fhir:index 312;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074058" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral drops, powder for suspension" ]
+  ], [
+     fhir:index 313;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074067" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solvent for solution for intraocular irrigation" ]
+  ], [
+     fhir:index 314;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074068" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dispersion for injection" ]
+  ], [
+     fhir:index 315;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074069" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for solution for injection/infusion" ]
+  ], [
+     fhir:index 316;
+     fhir:CodeSystem.concept.code [ fhir:value "100000074070" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation solution" ]
+  ], [
+     fhir:index 317;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075573" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Orodispersible film" ]
+  ], [
+     fhir:index 318;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075574" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Buccal film" ]
+  ], [
+     fhir:index 319;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075576" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Implantation suspension" ]
+  ], [
+     fhir:index 320;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075578" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for emulsion for infusion" ]
+  ], [
+     fhir:index 321;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075579" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous spray, emulsion" ]
+  ], [
+     fhir:index 322;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075586" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for implantation suspension" ]
+  ], [
+     fhir:index 323;
+     fhir:CodeSystem.concept.code [ fhir:value "100000075589" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for sealant" ]
+  ], [
+     fhir:index 324;
+     fhir:CodeSystem.concept.code [ fhir:value "100000111533" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dispersion for infusion" ]
+  ], [
+     fhir:index 325;
+     fhir:CodeSystem.concept.code [ fhir:value "100000111534" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for dispersion for infusion" ]
+  ], [
+     fhir:index 326;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116131" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal ointment" ]
+  ], [
+     fhir:index 327;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116134" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transdermal gel" ]
+  ], [
+     fhir:index 328;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116135" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transdermal spray, solution" ]
+  ], [
+     fhir:index 329;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116138" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intravesical solution" ]
+  ], [
+     fhir:index 330;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116142" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraperitoneal solution" ]
+  ], [
+     fhir:index 331;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116145" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for intravesical solution" ]
+  ], [
+     fhir:index 332;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116146" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for solution for peritoneal dialysis" ]
+  ], [
+     fhir:index 333;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116148" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous/nasal ointment" ]
+  ], [
+     fhir:index 334;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116151" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear/eye/nasal drops, solution" ]
+  ], [
+     fhir:index 335;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116156" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Granules for oral/rectal suspension" ]
+  ], [
+     fhir:index 336;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116161" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mouthwash, powder for solution" ]
+  ], [
+     fhir:index 337;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116163" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal/oromucosal solution" ]
+  ], [
+     fhir:index 338;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116164" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal/oromucosal spray, solution" ]
+  ], [
+     fhir:index 339;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116165" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal spray, powder for solution" ]
+  ], [
+     fhir:index 340;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116167" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal spray, solution/oromucosal solution" ]
+  ], [
+     fhir:index 341;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116168" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral drops, granules for solution" ]
+  ], [
+     fhir:index 342;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116169" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral drops, liquid" ]
+  ], [
+     fhir:index 343;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116170" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral/rectal solution" ]
+  ], [
+     fhir:index 344;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116171" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal/laryngopharyngeal solution/spray, solution" ]
+  ], [
+     fhir:index 345;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116180" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for concentrate for dispersion for infusion" ]
+  ], [
+     fhir:index 346;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116181" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for concentrate for intravesical suspension" ]
+  ], [
+     fhir:index 347;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116182" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for concentrate for solution for haemodialysis" ]
+  ], [
+     fhir:index 348;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116183" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for concentrate for solution for injection/infusion" ]
+  ], [
+     fhir:index 349;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116184" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for dental solution" ]
+  ], [
+     fhir:index 350;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116185" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for epilesional solution" ]
+  ], [
+     fhir:index 351;
+     fhir:CodeSystem.concept.code [ fhir:value "100000116186" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for solution for injection/infusion" ]
+  ], [
+     fhir:index 352;
+     fhir:CodeSystem.concept.code [ fhir:value "100000125705" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal spray, emulsion" ]
+  ], [
+     fhir:index 353;
+     fhir:CodeSystem.concept.code [ fhir:value "100000125706" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal spray, solution" ]
+  ], [
+     fhir:index 354;
+     fhir:CodeSystem.concept.code [ fhir:value "100000125707" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal spray, suspension" ]
+  ], [
+     fhir:index 355;
+     fhir:CodeSystem.concept.code [ fhir:value "100000125708" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sublingual film" ]
+  ], [
+     fhir:index 356;
+     fhir:CodeSystem.concept.code [ fhir:value "100000125711" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear/eye drops, suspension" ]
+  ], [
+     fhir:index 357;
+     fhir:CodeSystem.concept.code [ fhir:value "100000125735" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transdermal solution" ]
+  ], [
+     fhir:index 358;
+     fhir:CodeSystem.concept.code [ fhir:value "100000125736" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prolonged-release suspension for injection" ]
+  ], [
+     fhir:index 359;
+     fhir:CodeSystem.concept.code [ fhir:value "100000125737" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous solution/concentrate for oromucosal solution" ]
+  ], [
+     fhir:index 360;
+     fhir:CodeSystem.concept.code [ fhir:value "100000125750" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for intravesical solution/solution for injection" ]
+  ], [
+     fhir:index 361;
+     fhir:CodeSystem.concept.code [ fhir:value "100000125754" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intravesical solution/solution for injection" ]
+  ], [
+     fhir:index 362;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143497" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for oral suspension" ]
+  ], [
+     fhir:index 363;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143498" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sublingual spray, emulsion" ]
+  ], [
+     fhir:index 364;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143499" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sublingual spray, solution" ]
+  ], [
+     fhir:index 365;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143500" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sublingual spray, suspension" ]
+  ], [
+     fhir:index 366;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143501" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental cement" ]
+  ], [
+     fhir:index 367;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143503" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for dental cement" ]
+  ], [
+     fhir:index 368;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143504" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for dental cement" ]
+  ], [
+     fhir:index 369;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143523" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for dispersion for infusion" ]
+  ], [
+     fhir:index 370;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143524" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Implantation matrix" ]
+  ], [
+     fhir:index 371;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143525" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for cutaneous solution" ]
+  ], [
+     fhir:index 372;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143526" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for solution for iontophoresis" ]
+  ], [
+     fhir:index 373;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143527" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for cardioplegia" ]
+  ], [
+     fhir:index 374;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143547" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Impregnated plug" ]
+  ], [
+     fhir:index 375;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143550" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gargle/nasal wash" ]
+  ], [
+     fhir:index 376;
+     fhir:CodeSystem.concept.code [ fhir:value "100000143551" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inhalation vapour, impregnated plug" ]
+  ], [
+     fhir:index 377;
+     fhir:CodeSystem.concept.code [ fhir:value "100000145128" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear/nasal drops, suspension" ]
+  ], [
+     fhir:index 378;
+     fhir:CodeSystem.concept.code [ fhir:value "100000156088" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sealant matrix" ]
+  ], [
+     fhir:index 379;
+     fhir:CodeSystem.concept.code [ fhir:value "100000157838" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sealant powder" ]
+  ], [
+     fhir:index 380;
+     fhir:CodeSystem.concept.code [ fhir:value "100000162557" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for solution for intraocular irrigation" ]
+  ], [
+     fhir:index 381;
+     fhir:CodeSystem.concept.code [ fhir:value "100000169806" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prolonged-release solution for injection" ]
+  ], [
+     fhir:index 382;
+     fhir:CodeSystem.concept.code [ fhir:value "100000169869" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urethral emulsion" ]
+  ], [
+     fhir:index 383;
+     fhir:CodeSystem.concept.code [ fhir:value "100000171934" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Emulsion for suspension for injection" ]
+  ], [
+     fhir:index 384;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173955" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dispersible tablets for dose dispenser" ]
+  ], [
+     fhir:index 385;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173956" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for prolonged-release suspension for injection" ]
+  ], [
+     fhir:index 386;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173957" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laryngopharyngeal spray, solution" ]
+  ], [
+     fhir:index 387;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173958" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Matrix for implantation matrix" ]
+  ], [
+     fhir:index 388;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173960" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nasal drops, powder for solution" ]
+  ], [
+     fhir:index 389;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173961" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for gel" ]
+  ], [
+     fhir:index 390;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173962" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for dental gel" ]
+  ], [
+     fhir:index 391;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173963" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for dispersion for injection" ]
+  ], [
+     fhir:index 392;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173964" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for endocervical gel" ]
+  ], [
+     fhir:index 393;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173965" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for endosinusial solution" ]
+  ], [
+     fhir:index 394;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173966" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for intraocular instillation solution" ]
+  ], [
+     fhir:index 395;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173996" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for concentrate for solution for infusion" ]
+  ], [
+     fhir:index 396;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173997" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for nebuliser solution" ]
+  ], [
+     fhir:index 397;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173998" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for oromucosal solution" ]
+  ], [
+     fhir:index 398;
+     fhir:CodeSystem.concept.code [ fhir:value "100000173999" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for suspension for injection" ]
+  ], [
+     fhir:index 399;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174000" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dispersion for concentrate for dispersion for infusion" ]
+  ], [
+     fhir:index 400;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ear drops, powder for suspension" ]
+  ], [
+     fhir:index 401;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Effervescent granules for oral suspension" ]
+  ], [
+     fhir:index 402;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Emulsion for emulsion for injection" ]
+  ], [
+     fhir:index 403;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Endotracheopulmonary instillation, powder for suspension" ]
+  ], [
+     fhir:index 404;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye drops, powder for solution" ]
+  ], [
+     fhir:index 405;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174006" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eye drops, powder for suspension" ]
+  ], [
+     fhir:index 406;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174007" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gas for dispersion for infusion" ]
+  ], [
+     fhir:index 407;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174008" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gas for dispersion for injection" ]
+  ], [
+     fhir:index 408;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174009" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gel for gel" ]
+  ], [
+     fhir:index 409;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174010" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Granules for rectal suspension" ]
+  ], [
+     fhir:index 410;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174011" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laryngopharyngeal solution" ]
+  ], [
+     fhir:index 411;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174012" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for gingival gel" ]
+  ], [
+     fhir:index 412;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174013" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for implantation matrix" ]
+  ], [
+     fhir:index 413;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174014" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for implantation paste" ]
+  ], [
+     fhir:index 414;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174015" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solvent for..." ]
+  ], [
+     fhir:index 415;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174016" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Suspension for emulsion for injection" ]
+  ], [
+     fhir:index 416;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174017" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Suspension for oral suspension" ]
+  ], [
+     fhir:index 417;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174019" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Suspension for suspension for injection" ]
+  ], [
+     fhir:index 418;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174020" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for emulsion for injection" ]
+  ], [
+     fhir:index 419;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174021" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Endosinusial solution" ]
+  ], [
+     fhir:index 420;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174022" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Epilesional solution" ]
+  ], [
+     fhir:index 421;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174023" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Implantation paste" ]
+  ], [
+     fhir:index 422;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174024" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intraocular instillation solution" ]
+  ], [
+     fhir:index 423;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174025" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intravesical suspension" ]
+  ], [
+     fhir:index 424;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174026" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gas for dispersion for injection/infusion" ]
+  ], [
+     fhir:index 425;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174027" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for sealant" ]
+  ], [
+     fhir:index 426;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174028" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for solution for skin-prick test" ]
+  ], [
+     fhir:index 427;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174029" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for solution for injection" ]
+  ], [
+     fhir:index 428;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174031" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Coated granules" ]
+  ], [
+     fhir:index 429;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174032" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for suspension for injection" ]
+  ], [
+     fhir:index 430;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174033" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Granules for suspension for injection" ]
+  ], [
+     fhir:index 431;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174034" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dispersion for injection/infusion" ]
+  ], [
+     fhir:index 432;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174047" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for injection/skin-prick test" ]
+  ], [
+     fhir:index 433;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174048" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for solution for injection/skin-prick test" ]
+  ], [
+     fhir:index 434;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174051" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for solution for infusion" ]
+  ], [
+     fhir:index 435;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174052" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tablet for cutaneous solution" ]
+  ], [
+     fhir:index 436;
+     fhir:CodeSystem.concept.code [ fhir:value "100000174055" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for intraocular irrigation" ]
+  ], [
+     fhir:index 437;
+     fhir:CodeSystem.concept.code [ fhir:value "200000002245" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transdermal ointment" ]
+  ], [
+     fhir:index 438;
+     fhir:CodeSystem.concept.code [ fhir:value "200000002381" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sublingual powder" ]
+  ], [
+     fhir:index 439;
+     fhir:CodeSystem.concept.code [ fhir:value "200000003182" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral herbal material" ]
+  ], [
+     fhir:index 440;
+     fhir:CodeSystem.concept.code [ fhir:value "200000003236" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solution for cardioplegia/organ preservation" ]
+  ], [
+     fhir:index 441;
+     fhir:CodeSystem.concept.code [ fhir:value "200000003547" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Powder for vaginal solution" ]
+  ], [
+     fhir:index 442;
+     fhir:CodeSystem.concept.code [ fhir:value "200000003971" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Intrauterine gel" ]
+  ], [
+     fhir:index 443;
+     fhir:CodeSystem.concept.code [ fhir:value "200000004200" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nebuliser dispersion" ]
+  ], [
+     fhir:index 444;
+     fhir:CodeSystem.concept.code [ fhir:value "200000004719" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tablet with sensor" ]
+  ], [
+     fhir:index 445;
+     fhir:CodeSystem.concept.code [ fhir:value "200000005069" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicinal leech" ]
+  ], [
+     fhir:index 446;
+     fhir:CodeSystem.concept.code [ fhir:value "200000005113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicinal larvae" ]
+  ], [
+     fhir:index 447;
+     fhir:CodeSystem.concept.code [ fhir:value "200000010390" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urethral ointment" ]
+  ], [
+     fhir:index 448;
+     fhir:CodeSystem.concept.code [ fhir:value "200000010456" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prolonged-release wound solution" ]
+  ], [
+     fhir:index 449;
+     fhir:CodeSystem.concept.code [ fhir:value "200000010610" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prolonged-release dispersion for injection" ]
+  ], [
+     fhir:index 450;
+     fhir:CodeSystem.concept.code [ fhir:value "200000010684" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sublingual lyophilisate" ]
+  ], [
+     fhir:index 451;
+     fhir:CodeSystem.concept.code [ fhir:value "200000011722" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastro-resistant powder for oral suspension" ]
+  ], [
+     fhir:index 452;
+     fhir:CodeSystem.concept.code [ fhir:value "200000012529" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastro-resistant oral suspension" ]
+  ], [
+     fhir:index 453;
+     fhir:CodeSystem.concept.code [ fhir:value "200000012530" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prolonged-release oral suspension" ]
+  ], [
+     fhir:index 454;
+     fhir:CodeSystem.concept.code [ fhir:value "200000012531" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Modified-release oral suspension" ]
+  ], [
+     fhir:index 455;
+     fhir:CodeSystem.concept.code [ fhir:value "200000015705" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Concentrate for dispersion for injection" ]
+  ], [
+     fhir:index 456;
+     fhir:CodeSystem.concept.code [ fhir:value "200000016184" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cutaneous/oromucosal solution" ]
+  ], [
+     fhir:index 457;
+     fhir:CodeSystem.concept.code [ fhir:value "200000017694" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal pouch" ]
+  ], [
+     fhir:index 458;
+     fhir:CodeSystem.concept.code [ fhir:value "200000017728" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Impregnated cutaneous swab" ]
+  ], [
+     fhir:index 459;
+     fhir:CodeSystem.concept.code [ fhir:value "200000017730" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prolonged-release pessary" ]
+  ], [
+     fhir:index 460;
+     fhir:CodeSystem.concept.code [ fhir:value "200000018780" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oromucosal film" ]
+  ], [
+     fhir:index 461;
+     fhir:CodeSystem.concept.code [ fhir:value "200000018781" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pharmaceutical dose form not applicable" ]
+  ], [
+     fhir:index 462;
+     fhir:CodeSystem.concept.code [ fhir:value "200000023323" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not assigned" ]
+  ], [
+     fhir:index 463;
+     fhir:CodeSystem.concept.code [ fhir:value "200000025198" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Film-coated granules" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/pharmaceutical-dose-form-ema-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

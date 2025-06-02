@@ -1,0 +1,833 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/CodeSystem/country-ema-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "country-ema-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://spor.ema.europa.eu/v1/lists/100000000002</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100000000344<a name=\"country-ema-cs-100000000344\"> </a></td><td>Republic of Botswana</td></tr><tr><td style=\"white-space:nowrap\">100000000552<a name=\"country-ema-cs-100000000552\"> </a></td><td>Tuvalu</td></tr><tr><td style=\"white-space:nowrap\">100000000537<a name=\"country-ema-cs-100000000537\"> </a></td><td>Syrian Arab Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000504<a name=\"country-ema-cs-100000000504\"> </a></td><td>Department of R'union</td></tr><tr><td style=\"white-space:nowrap\">100000000354<a name=\"country-ema-cs-100000000354\"> </a></td><td>Canada</td></tr><tr><td style=\"white-space:nowrap\">100000000446<a name=\"country-ema-cs-100000000446\"> </a></td><td>Republic of Liberia</td></tr><tr><td style=\"white-space:nowrap\">100000000431<a name=\"country-ema-cs-100000000431\"> </a></td><td>Jamaica</td></tr><tr><td style=\"white-space:nowrap\">100000000401<a name=\"country-ema-cs-100000000401\"> </a></td><td>Republic of the Gambia</td></tr><tr><td style=\"white-space:nowrap\">100000000393<a name=\"country-ema-cs-100000000393\"> </a></td><td>Republic of the Fiji Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000342<a name=\"country-ema-cs-100000000342\"> </a></td><td>Plurinational State of Bolivia</td></tr><tr><td style=\"white-space:nowrap\">100000000442<a name=\"country-ema-cs-100000000442\"> </a></td><td>Lao People's Democratic Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000542<a name=\"country-ema-cs-100000000542\"> </a></td><td>Timor-Leste</td></tr><tr><td style=\"white-space:nowrap\">100000000335<a name=\"country-ema-cs-100000000335\"> </a></td><td>Barbados</td></tr><tr><td style=\"white-space:nowrap\">100000000521<a name=\"country-ema-cs-100000000521\"> </a></td><td>Republic of Sierra Leone</td></tr><tr><td style=\"white-space:nowrap\">100000000548<a name=\"country-ema-cs-100000000548\"> </a></td><td>Republic of Tunisia</td></tr><tr><td style=\"white-space:nowrap\">100000000469<a name=\"country-ema-cs-100000000469\"> </a></td><td>Mongolia</td></tr><tr><td style=\"white-space:nowrap\">100000000386<a name=\"country-ema-cs-100000000386\"> </a></td><td>Republic of Equatorial Guinea</td></tr><tr><td style=\"white-space:nowrap\">100000000445<a name=\"country-ema-cs-100000000445\"> </a></td><td>Kingdom of Lesotho</td></tr><tr><td style=\"white-space:nowrap\">100000000496<a name=\"country-ema-cs-100000000496\"> </a></td><td>Republic of Paraguay</td></tr><tr><td style=\"white-space:nowrap\">100000000379<a name=\"country-ema-cs-100000000379\"> </a></td><td>Republic of Djibouti</td></tr><tr><td style=\"white-space:nowrap\">100000000558<a name=\"country-ema-cs-100000000558\"> </a></td><td>United States Minor Outlying Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000384<a name=\"country-ema-cs-100000000384\"> </a></td><td>Arab Republic of Egypt</td></tr><tr><td style=\"white-space:nowrap\">100000000534<a name=\"country-ema-cs-100000000534\"> </a></td><td>Kingdom of Eswatini</td></tr><tr><td style=\"white-space:nowrap\">100000000450<a name=\"country-ema-cs-100000000450\"> </a></td><td>Republic of Lithuania</td></tr><tr><td style=\"white-space:nowrap\">100000000567<a name=\"country-ema-cs-100000000567\"> </a></td><td>Territory of the Wallis and Futuna Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000488<a name=\"country-ema-cs-100000000488\"> </a></td><td>Commonwealth of the Northern Mariana Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000553<a name=\"country-ema-cs-100000000553\"> </a></td><td>Republic of Uganda</td></tr><tr><td style=\"white-space:nowrap\">100000000398<a name=\"country-ema-cs-100000000398\"> </a></td><td>Territory of French Polynesia</td></tr><tr><td style=\"white-space:nowrap\">100000000320<a name=\"country-ema-cs-100000000320\"> </a></td><td>Principality of Andorra</td></tr><tr><td style=\"white-space:nowrap\">100000000362<a name=\"country-ema-cs-100000000362\"> </a></td><td>People's Republic of China</td></tr><tr><td style=\"white-space:nowrap\">100000000353<a name=\"country-ema-cs-100000000353\"> </a></td><td>Republic of Cameroon</td></tr><tr><td style=\"white-space:nowrap\">100000000540<a name=\"country-ema-cs-100000000540\"> </a></td><td>United Republic of Tanzania</td></tr><tr><td style=\"white-space:nowrap\">100000000415<a name=\"country-ema-cs-100000000415\"> </a></td><td>Cooperative Republic of Guyana</td></tr><tr><td style=\"white-space:nowrap\">100000000347<a name=\"country-ema-cs-100000000347\"> </a></td><td>British Indian Ocean Territory</td></tr><tr><td style=\"white-space:nowrap\">100000000487<a name=\"country-ema-cs-100000000487\"> </a></td><td>Territory of Norfolk Island</td></tr><tr><td style=\"white-space:nowrap\">100000000439<a name=\"country-ema-cs-100000000439\"> </a></td><td>Republic of Korea</td></tr><tr><td style=\"white-space:nowrap\">100000000497<a name=\"country-ema-cs-100000000497\"> </a></td><td>Republic of Peru</td></tr><tr><td style=\"white-space:nowrap\">100000000380<a name=\"country-ema-cs-100000000380\"> </a></td><td>Commonwealth of Dominica</td></tr><tr><td style=\"white-space:nowrap\">100000000339<a name=\"country-ema-cs-100000000339\"> </a></td><td>Republic of Benin</td></tr><tr><td style=\"white-space:nowrap\">100000000483<a name=\"country-ema-cs-100000000483\"> </a></td><td>Republic of Nicaragua</td></tr><tr><td style=\"white-space:nowrap\">100000000368<a name=\"country-ema-cs-100000000368\"> </a></td><td>Republic of the Congo</td></tr><tr><td style=\"white-space:nowrap\">100000000352<a name=\"country-ema-cs-100000000352\"> </a></td><td>Kingdom of Cambodia</td></tr><tr><td style=\"white-space:nowrap\">100000000345<a name=\"country-ema-cs-100000000345\"> </a></td><td>Bouvet Island</td></tr><tr><td style=\"white-space:nowrap\">100000000349<a name=\"country-ema-cs-100000000349\"> </a></td><td>Republic of Bulgaria</td></tr><tr><td style=\"white-space:nowrap\">100000000383<a name=\"country-ema-cs-100000000383\"> </a></td><td>Republic of Ecuador</td></tr><tr><td style=\"white-space:nowrap\">100000000366<a name=\"country-ema-cs-100000000366\"> </a></td><td>Republic of Colombia</td></tr><tr><td style=\"white-space:nowrap\">100000000509<a name=\"country-ema-cs-100000000509\"> </a></td><td>Federation of Saint Kitts and Nevis</td></tr><tr><td style=\"white-space:nowrap\">100000000389<a name=\"country-ema-cs-100000000389\"> </a></td><td>Federal Democratic Republic of Ethiopia</td></tr><tr><td style=\"white-space:nowrap\">100000000385<a name=\"country-ema-cs-100000000385\"> </a></td><td>Republic of El Salvador</td></tr><tr><td style=\"white-space:nowrap\">100000000454<a name=\"country-ema-cs-100000000454\"> </a></td><td>Republic of Madagascar</td></tr><tr><td style=\"white-space:nowrap\">100000000443<a name=\"country-ema-cs-100000000443\"> </a></td><td>Republic of Latvia</td></tr><tr><td style=\"white-space:nowrap\">100000000512<a name=\"country-ema-cs-100000000512\"> </a></td><td>Saint Vincent and the Grenadines</td></tr><tr><td style=\"white-space:nowrap\">100000000493<a name=\"country-ema-cs-100000000493\"> </a></td><td>Occupied Palestinian Territory</td></tr><tr><td style=\"white-space:nowrap\">100000000410<a name=\"country-ema-cs-100000000410\"> </a></td><td>Territory of Guam</td></tr><tr><td style=\"white-space:nowrap\">100000000463<a name=\"country-ema-cs-100000000463\"> </a></td><td>Republic of Mauritius</td></tr><tr><td style=\"white-space:nowrap\">100000000428<a name=\"country-ema-cs-100000000428\"> </a></td><td>Isle of Man</td></tr><tr><td style=\"white-space:nowrap\">100000000360<a name=\"country-ema-cs-100000000360\"> </a></td><td>Republic of Chad</td></tr><tr><td style=\"white-space:nowrap\">100000000571<a name=\"country-ema-cs-100000000571\"> </a></td><td>Republic of Zambia</td></tr><tr><td style=\"white-space:nowrap\">100000000429<a name=\"country-ema-cs-100000000429\"> </a></td><td>State of Israel</td></tr><tr><td style=\"white-space:nowrap\">100000000424<a name=\"country-ema-cs-100000000424\"> </a></td><td>Republic of Indonesia</td></tr><tr><td style=\"white-space:nowrap\">100000000464<a name=\"country-ema-cs-100000000464\"> </a></td><td>Territorial Collectivity of Mayotte</td></tr><tr><td style=\"white-space:nowrap\">200000016424<a name=\"country-ema-cs-200000016424\"> </a></td><td>Cura'ao</td></tr><tr><td style=\"white-space:nowrap\">100000000495<a name=\"country-ema-cs-100000000495\"> </a></td><td>Independent State of Papua New Guinea</td></tr><tr><td style=\"white-space:nowrap\">100000000511<a name=\"country-ema-cs-100000000511\"> </a></td><td>Territorial Collectivity of Saint Pierre and Miquelon</td></tr><tr><td style=\"white-space:nowrap\">100000000465<a name=\"country-ema-cs-100000000465\"> </a></td><td>United Mexican States</td></tr><tr><td style=\"white-space:nowrap\">100000000503<a name=\"country-ema-cs-100000000503\"> </a></td><td>State of Qatar</td></tr><tr><td style=\"white-space:nowrap\">100000000543<a name=\"country-ema-cs-100000000543\"> </a></td><td>Togolese Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000390<a name=\"country-ema-cs-100000000390\"> </a></td><td>European Union</td></tr><tr><td style=\"white-space:nowrap\">100000000507<a name=\"country-ema-cs-100000000507\"> </a></td><td>Republic of Rwanda</td></tr><tr><td style=\"white-space:nowrap\">100000000461<a name=\"country-ema-cs-100000000461\"> </a></td><td>Department of Martinique</td></tr><tr><td style=\"white-space:nowrap\">100000000400<a name=\"country-ema-cs-100000000400\"> </a></td><td>Gabonese Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000423<a name=\"country-ema-cs-100000000423\"> </a></td><td>Republic of India</td></tr><tr><td style=\"white-space:nowrap\">100000000456<a name=\"country-ema-cs-100000000456\"> </a></td><td>Malaysia</td></tr><tr><td style=\"white-space:nowrap\">100000000451<a name=\"country-ema-cs-100000000451\"> </a></td><td>Grand Duchy of Luxembourg</td></tr><tr><td style=\"white-space:nowrap\">100000000535<a name=\"country-ema-cs-100000000535\"> </a></td><td>Kingdom of Sweden</td></tr><tr><td style=\"white-space:nowrap\">100000110973<a name=\"country-ema-cs-100000110973\"> </a></td><td>Republic of Kosovo</td></tr><tr><td style=\"white-space:nowrap\">100000000441<a name=\"country-ema-cs-100000000441\"> </a></td><td>Kyrgyz Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000350<a name=\"country-ema-cs-100000000350\"> </a></td><td>Burkina Faso</td></tr><tr><td style=\"white-space:nowrap\">100000000536<a name=\"country-ema-cs-100000000536\"> </a></td><td>Swiss Confederation</td></tr><tr><td style=\"white-space:nowrap\">100000000356<a name=\"country-ema-cs-100000000356\"> </a></td><td>Republic of Cape Verde</td></tr><tr><td style=\"white-space:nowrap\">100000000486<a name=\"country-ema-cs-100000000486\"> </a></td><td>Republic of Niue</td></tr><tr><td style=\"white-space:nowrap\">100000000388<a name=\"country-ema-cs-100000000388\"> </a></td><td>Republic of Estonia</td></tr><tr><td style=\"white-space:nowrap\">100000000417<a name=\"country-ema-cs-100000000417\"> </a></td><td>Territory of Heard Island and McDonald Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000416<a name=\"country-ema-cs-100000000416\"> </a></td><td>Republic of Haiti</td></tr><tr><td style=\"white-space:nowrap\">100000000414<a name=\"country-ema-cs-100000000414\"> </a></td><td>Republic of Guinea-Bissau</td></tr><tr><td style=\"white-space:nowrap\">100000000526<a name=\"country-ema-cs-100000000526\"> </a></td><td>Somalia</td></tr><tr><td style=\"white-space:nowrap\">100000000491<a name=\"country-ema-cs-100000000491\"> </a></td><td>Islamic Republic of Pakistan</td></tr><tr><td style=\"white-space:nowrap\">100000000333<a name=\"country-ema-cs-100000000333\"> </a></td><td>Kingdom of Bahrain</td></tr><tr><td style=\"white-space:nowrap\">100000000405<a name=\"country-ema-cs-100000000405\"> </a></td><td>Gibraltar</td></tr><tr><td style=\"white-space:nowrap\">100000000566<a name=\"country-ema-cs-100000000566\"> </a></td><td>Virgin Islands of the United States</td></tr><tr><td style=\"white-space:nowrap\">100000000565<a name=\"country-ema-cs-100000000565\"> </a></td><td>British Virgin Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000397<a name=\"country-ema-cs-100000000397\"> </a></td><td>Department of French Guiana</td></tr><tr><td style=\"white-space:nowrap\">100000000316<a name=\"country-ema-cs-100000000316\"> </a></td><td>'land Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000478<a name=\"country-ema-cs-100000000478\"> </a></td><td>Kingdom of the Netherlands</td></tr><tr><td style=\"white-space:nowrap\">100000000550<a name=\"country-ema-cs-100000000550\"> </a></td><td>Turkmenistan</td></tr><tr><td style=\"white-space:nowrap\">100000110993<a name=\"country-ema-cs-100000110993\"> </a></td><td>Saint Martin (French Part)</td></tr><tr><td style=\"white-space:nowrap\">100000000563<a name=\"country-ema-cs-100000000563\"> </a></td><td>Bolivarian Republic of Venezuela</td></tr><tr><td style=\"white-space:nowrap\">100000000332<a name=\"country-ema-cs-100000000332\"> </a></td><td>The Commonwealth of the Bahamas</td></tr><tr><td style=\"white-space:nowrap\">100000000438<a name=\"country-ema-cs-100000000438\"> </a></td><td>Democratic People's Republic of Korea</td></tr><tr><td style=\"white-space:nowrap\">100000000561<a name=\"country-ema-cs-100000000561\"> </a></td><td>Republic of Uzbekistan</td></tr><tr><td style=\"white-space:nowrap\">100000000419<a name=\"country-ema-cs-100000000419\"> </a></td><td>Republic of Honduras</td></tr><tr><td style=\"white-space:nowrap\">100000000411<a name=\"country-ema-cs-100000000411\"> </a></td><td>Republic of Guatemala</td></tr><tr><td style=\"white-space:nowrap\">100000000538<a name=\"country-ema-cs-100000000538\"> </a></td><td>Taiwan</td></tr><tr><td style=\"white-space:nowrap\">100000000546<a name=\"country-ema-cs-100000000546\"> </a></td><td>Republic of Trinidad and Tobago</td></tr><tr><td style=\"white-space:nowrap\">100000000394<a name=\"country-ema-cs-100000000394\"> </a></td><td>Republic of Finland</td></tr><tr><td style=\"white-space:nowrap\">100000000525<a name=\"country-ema-cs-100000000525\"> </a></td><td>Solomon Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000544<a name=\"country-ema-cs-100000000544\"> </a></td><td>Tokelau</td></tr><tr><td style=\"white-space:nowrap\">100000000404<a name=\"country-ema-cs-100000000404\"> </a></td><td>Republic of Ghana</td></tr><tr><td style=\"white-space:nowrap\">100000000572<a name=\"country-ema-cs-100000000572\"> </a></td><td>Republic of Zimbabwe</td></tr><tr><td style=\"white-space:nowrap\">100000000318<a name=\"country-ema-cs-100000000318\"> </a></td><td>People's Democratic Republic of Algeria</td></tr><tr><td style=\"white-space:nowrap\">100000000391<a name=\"country-ema-cs-100000000391\"> </a></td><td>Faeroe Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000433<a name=\"country-ema-cs-100000000433\"> </a></td><td>Jersey</td></tr><tr><td style=\"white-space:nowrap\">100000000357<a name=\"country-ema-cs-100000000357\"> </a></td><td>Cayman Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000369<a name=\"country-ema-cs-100000000369\"> </a></td><td>Democratic Republic of the Congo</td></tr><tr><td style=\"white-space:nowrap\">100000000340<a name=\"country-ema-cs-100000000340\"> </a></td><td>Bermuda</td></tr><tr><td style=\"white-space:nowrap\">100000000413<a name=\"country-ema-cs-100000000413\"> </a></td><td>Republic of Guinea</td></tr><tr><td style=\"white-space:nowrap\">100000000329<a name=\"country-ema-cs-100000000329\"> </a></td><td>Commonwealth of Australia</td></tr><tr><td style=\"white-space:nowrap\">100000000375<a name=\"country-ema-cs-100000000375\"> </a></td><td>Republic of Cyprus</td></tr><tr><td style=\"white-space:nowrap\">100000000530<a name=\"country-ema-cs-100000000530\"> </a></td><td>Democratic Socialist Republic of Sri Lanka</td></tr><tr><td style=\"white-space:nowrap\">100000000408<a name=\"country-ema-cs-100000000408\"> </a></td><td>Grenada</td></tr><tr><td style=\"white-space:nowrap\">100000000444<a name=\"country-ema-cs-100000000444\"> </a></td><td>Lebanese Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000527<a name=\"country-ema-cs-100000000527\"> </a></td><td>Republic of South Africa</td></tr><tr><td style=\"white-space:nowrap\">100000000533<a name=\"country-ema-cs-100000000533\"> </a></td><td>Svalbard and Jan Mayen Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000505<a name=\"country-ema-cs-100000000505\"> </a></td><td>Romania</td></tr><tr><td style=\"white-space:nowrap\">100000000392<a name=\"country-ema-cs-100000000392\"> </a></td><td>Falkland Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000472<a name=\"country-ema-cs-100000000472\"> </a></td><td>Kingdom of Morocco</td></tr><tr><td style=\"white-space:nowrap\">100000110974<a name=\"country-ema-cs-100000110974\"> </a></td><td>Saint Barthelemy</td></tr><tr><td style=\"white-space:nowrap\">100000000473<a name=\"country-ema-cs-100000000473\"> </a></td><td>Republic of Mozambique</td></tr><tr><td style=\"white-space:nowrap\">100000000568<a name=\"country-ema-cs-100000000568\"> </a></td><td>Western Sahara</td></tr><tr><td style=\"white-space:nowrap\">100000000370<a name=\"country-ema-cs-100000000370\"> </a></td><td>Cook Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000330<a name=\"country-ema-cs-100000000330\"> </a></td><td>Republic of Austria</td></tr><tr><td style=\"white-space:nowrap\">100000000520<a name=\"country-ema-cs-100000000520\"> </a></td><td>Republic of Seychelles</td></tr><tr><td style=\"white-space:nowrap\">100000000363<a name=\"country-ema-cs-100000000363\"> </a></td><td>Christmas Island Territory</td></tr><tr><td style=\"white-space:nowrap\">100000000358<a name=\"country-ema-cs-100000000358\"> </a></td><td>Central African Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000418<a name=\"country-ema-cs-100000000418\"> </a></td><td>the Holy See (Vatican City State)</td></tr><tr><td style=\"white-space:nowrap\">100000000395<a name=\"country-ema-cs-100000000395\"> </a></td><td>French Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000315<a name=\"country-ema-cs-100000000315\"> </a></td><td>Islamic Republic of Afghanistan</td></tr><tr><td style=\"white-space:nowrap\">100000000346<a name=\"country-ema-cs-100000000346\"> </a></td><td>Federative Republic of Brazil</td></tr><tr><td style=\"white-space:nowrap\">100000000455<a name=\"country-ema-cs-100000000455\"> </a></td><td>Republic of Malawi</td></tr><tr><td style=\"white-space:nowrap\">100000000361<a name=\"country-ema-cs-100000000361\"> </a></td><td>Republic of Chile</td></tr><tr><td style=\"white-space:nowrap\">200000010721<a name=\"country-ema-cs-200000010721\"> </a></td><td>Other countries</td></tr><tr><td style=\"white-space:nowrap\">100000000528<a name=\"country-ema-cs-100000000528\"> </a></td><td>South Georgia and the South Sandwich Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000515<a name=\"country-ema-cs-100000000515\"> </a></td><td>Democratic Republic of S'o Tom' and Pr'ncipe</td></tr><tr><td style=\"white-space:nowrap\">100000000564<a name=\"country-ema-cs-100000000564\"> </a></td><td>Socialist Republic of Viet Nam</td></tr><tr><td style=\"white-space:nowrap\">100000000321<a name=\"country-ema-cs-100000000321\"> </a></td><td>Republic of Angola</td></tr><tr><td style=\"white-space:nowrap\">100000000539<a name=\"country-ema-cs-100000000539\"> </a></td><td>Republic of Tajikistan</td></tr><tr><td style=\"white-space:nowrap\">100000000476<a name=\"country-ema-cs-100000000476\"> </a></td><td>Republic of Nauru</td></tr><tr><td style=\"white-space:nowrap\">100000000499<a name=\"country-ema-cs-100000000499\"> </a></td><td>Pitcairn Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000425<a name=\"country-ema-cs-100000000425\"> </a></td><td>Islamic Republic of Iran</td></tr><tr><td style=\"white-space:nowrap\">100000000437<a name=\"country-ema-cs-100000000437\"> </a></td><td>Republic of Kiribati</td></tr><tr><td style=\"white-space:nowrap\">100000000381<a name=\"country-ema-cs-100000000381\"> </a></td><td>Dominican Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000517<a name=\"country-ema-cs-100000000517\"> </a></td><td>Republic of Senegal</td></tr><tr><td style=\"white-space:nowrap\">100000000516<a name=\"country-ema-cs-100000000516\"> </a></td><td>Kingdom of Saudi Arabia</td></tr><tr><td style=\"white-space:nowrap\">100000000323<a name=\"country-ema-cs-100000000323\"> </a></td><td>Antarctica</td></tr><tr><td style=\"white-space:nowrap\">100000000555<a name=\"country-ema-cs-100000000555\"> </a></td><td>United Arab Emirates</td></tr><tr><td style=\"white-space:nowrap\">100000000569<a name=\"country-ema-cs-100000000569\"> </a></td><td>Republic of Yemen</td></tr><tr><td style=\"white-space:nowrap\">100000000407<a name=\"country-ema-cs-100000000407\"> </a></td><td>Greenland</td></tr><tr><td style=\"white-space:nowrap\">100000000502<a name=\"country-ema-cs-100000000502\"> </a></td><td>Commonwealth of Puerto Rico</td></tr><tr><td style=\"white-space:nowrap\">100000000531<a name=\"country-ema-cs-100000000531\"> </a></td><td>Republic of Sudan</td></tr><tr><td style=\"white-space:nowrap\">100000000372<a name=\"country-ema-cs-100000000372\"> </a></td><td>Republic of C'te d'Ivoire</td></tr><tr><td style=\"white-space:nowrap\">100000000325<a name=\"country-ema-cs-100000000325\"> </a></td><td>Argentine Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000557<a name=\"country-ema-cs-100000000557\"> </a></td><td>United States of America</td></tr><tr><td style=\"white-space:nowrap\">100000000500<a name=\"country-ema-cs-100000000500\"> </a></td><td>Republic of Poland</td></tr><tr><td style=\"white-space:nowrap\">100000000532<a name=\"country-ema-cs-100000000532\"> </a></td><td>Republic of Suriname</td></tr><tr><td style=\"white-space:nowrap\">100000000399<a name=\"country-ema-cs-100000000399\"> </a></td><td>French Southern Territories</td></tr><tr><td style=\"white-space:nowrap\">100000000485<a name=\"country-ema-cs-100000000485\"> </a></td><td>Federal Republic of Nigeria</td></tr><tr><td style=\"white-space:nowrap\">100000000448<a name=\"country-ema-cs-100000000448\"> </a></td><td>Great Socialist People's Libyan Arab Jamahiriya</td></tr><tr><td style=\"white-space:nowrap\">100000000409<a name=\"country-ema-cs-100000000409\"> </a></td><td>Department of Guadeloupe</td></tr><tr><td style=\"white-space:nowrap\">100000000551<a name=\"country-ema-cs-100000000551\"> </a></td><td>Turks and Caicos Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000541<a name=\"country-ema-cs-100000000541\"> </a></td><td>Kingdom of Thailand</td></tr><tr><td style=\"white-space:nowrap\">100000000458<a name=\"country-ema-cs-100000000458\"> </a></td><td>Republic of Mali</td></tr><tr><td style=\"white-space:nowrap\">100000000422<a name=\"country-ema-cs-100000000422\"> </a></td><td>Republic of Iceland</td></tr><tr><td style=\"white-space:nowrap\">100000000510<a name=\"country-ema-cs-100000000510\"> </a></td><td>Saint Lucia</td></tr><tr><td style=\"white-space:nowrap\">100000000338<a name=\"country-ema-cs-100000000338\"> </a></td><td>Belize</td></tr><tr><td style=\"white-space:nowrap\">100000000471<a name=\"country-ema-cs-100000000471\"> </a></td><td>Montserrat</td></tr><tr><td style=\"white-space:nowrap\">100000000348<a name=\"country-ema-cs-100000000348\"> </a></td><td>Negara Brunei Darussalam</td></tr><tr><td style=\"white-space:nowrap\">100000000319<a name=\"country-ema-cs-100000000319\"> </a></td><td>Territory of American Samoa</td></tr><tr><td style=\"white-space:nowrap\">100000000432<a name=\"country-ema-cs-100000000432\"> </a></td><td>Japan</td></tr><tr><td style=\"white-space:nowrap\">100000000559<a name=\"country-ema-cs-100000000559\"> </a></td><td>Eastern Republic of Uruguay</td></tr><tr><td style=\"white-space:nowrap\">100000000477<a name=\"country-ema-cs-100000000477\"> </a></td><td>Federal Democratic Republic of Nepal</td></tr><tr><td style=\"white-space:nowrap\">100000000434<a name=\"country-ema-cs-100000000434\"> </a></td><td>Hashemite Kingdom of Jordan</td></tr><tr><td style=\"white-space:nowrap\">100000000481<a name=\"country-ema-cs-100000000481\"> </a></td><td>Territory of New Caledonia and Dependencies</td></tr><tr><td style=\"white-space:nowrap\">100000000466<a name=\"country-ema-cs-100000000466\"> </a></td><td>Federated States of Micronesia</td></tr><tr><td style=\"white-space:nowrap\">100000000492<a name=\"country-ema-cs-100000000492\"> </a></td><td>Republic of Palau</td></tr><tr><td style=\"white-space:nowrap\">100000000513<a name=\"country-ema-cs-100000000513\"> </a></td><td>Independent State of Samoa</td></tr><tr><td style=\"white-space:nowrap\">100000000412<a name=\"country-ema-cs-100000000412\"> </a></td><td>Guernsey</td></tr><tr><td style=\"white-space:nowrap\">100000000334<a name=\"country-ema-cs-100000000334\"> </a></td><td>People's Republic of Bangladesh</td></tr><tr><td style=\"white-space:nowrap\">100000000460<a name=\"country-ema-cs-100000000460\"> </a></td><td>Republic of the Marshall Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000341<a name=\"country-ema-cs-100000000341\"> </a></td><td>Kingdom of Bhutan</td></tr><tr><td style=\"white-space:nowrap\">100000000522<a name=\"country-ema-cs-100000000522\"> </a></td><td>Republic of Singapore</td></tr><tr><td style=\"white-space:nowrap\">100000000494<a name=\"country-ema-cs-100000000494\"> </a></td><td>Republic of Panama</td></tr><tr><td style=\"white-space:nowrap\">100000000529<a name=\"country-ema-cs-100000000529\"> </a></td><td>Kingdom of Spain</td></tr><tr><td style=\"white-space:nowrap\">100000000374<a name=\"country-ema-cs-100000000374\"> </a></td><td>Republic of Cuba</td></tr><tr><td style=\"white-space:nowrap\">100000000482<a name=\"country-ema-cs-100000000482\"> </a></td><td>New Zealand</td></tr><tr><td style=\"white-space:nowrap\">100000000351<a name=\"country-ema-cs-100000000351\"> </a></td><td>Republic of Burundi</td></tr><tr><td style=\"white-space:nowrap\">100000000475<a name=\"country-ema-cs-100000000475\"> </a></td><td>Republic of Namibia</td></tr><tr><td style=\"white-space:nowrap\">100000000420<a name=\"country-ema-cs-100000000420\"> </a></td><td>Hong Kong Special Administrative Region of the People's Republic of China</td></tr><tr><td style=\"white-space:nowrap\">100000000387<a name=\"country-ema-cs-100000000387\"> </a></td><td>State of Eritrea</td></tr><tr><td style=\"white-space:nowrap\">100000000462<a name=\"country-ema-cs-100000000462\"> </a></td><td>Islamic Republic of Mauritania</td></tr><tr><td style=\"white-space:nowrap\">100000000474<a name=\"country-ema-cs-100000000474\"> </a></td><td>Union of Myanmar</td></tr><tr><td style=\"white-space:nowrap\">100000000562<a name=\"country-ema-cs-100000000562\"> </a></td><td>Republic of Vanuatu</td></tr><tr><td style=\"white-space:nowrap\">100000000545<a name=\"country-ema-cs-100000000545\"> </a></td><td>Kingdom of Tonga</td></tr><tr><td style=\"white-space:nowrap\">100000000371<a name=\"country-ema-cs-100000000371\"> </a></td><td>Republic of Costa Rica</td></tr><tr><td style=\"white-space:nowrap\">100000000365<a name=\"country-ema-cs-100000000365\"> </a></td><td>Territory of Cocos (Keeling) Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000327<a name=\"country-ema-cs-100000000327\"> </a></td><td>Aruba</td></tr><tr><td style=\"white-space:nowrap\">100000000498<a name=\"country-ema-cs-100000000498\"> </a></td><td>Republic of the Philippines</td></tr><tr><td style=\"white-space:nowrap\">100000000457<a name=\"country-ema-cs-100000000457\"> </a></td><td>Republic of Maldives</td></tr><tr><td style=\"white-space:nowrap\">100000000324<a name=\"country-ema-cs-100000000324\"> </a></td><td>Antigua and Barbuda</td></tr><tr><td style=\"white-space:nowrap\">100000000436<a name=\"country-ema-cs-100000000436\"> </a></td><td>Republic of Kenya</td></tr><tr><td style=\"white-space:nowrap\">100000000440<a name=\"country-ema-cs-100000000440\"> </a></td><td>State of Kuwait</td></tr><tr><td style=\"white-space:nowrap\">100000000490<a name=\"country-ema-cs-100000000490\"> </a></td><td>Sultanate of Oman</td></tr><tr><td style=\"white-space:nowrap\">100000000426<a name=\"country-ema-cs-100000000426\"> </a></td><td>Republic of Iraq</td></tr><tr><td style=\"white-space:nowrap\">100000000322<a name=\"country-ema-cs-100000000322\"> </a></td><td>Anguilla</td></tr><tr><td style=\"white-space:nowrap\">100000000459<a name=\"country-ema-cs-100000000459\"> </a></td><td>Republic of Malta</td></tr><tr><td style=\"white-space:nowrap\">100000000367<a name=\"country-ema-cs-100000000367\"> </a></td><td>Union of the Comoros</td></tr><tr><td style=\"white-space:nowrap\">100000000508<a name=\"country-ema-cs-100000000508\"> </a></td><td>Saint Helena</td></tr><tr><td style=\"white-space:nowrap\">100000000560<a name=\"country-ema-cs-100000000560\"> </a></td><td>Union of Soviet Socialist Republics</td></tr><tr><td style=\"white-space:nowrap\">100000000355<a name=\"country-ema-cs-100000000355\"> </a></td><td>Autonomous Community of the Canary Islands</td></tr><tr><td style=\"white-space:nowrap\">100000000378<a name=\"country-ema-cs-100000000378\"> </a></td><td>Diego Garcia</td></tr><tr><td style=\"white-space:nowrap\">100000000570<a name=\"country-ema-cs-100000000570\"> </a></td><td>Yugoslavia</td></tr><tr><td style=\"white-space:nowrap\">100000000382<a name=\"country-ema-cs-100000000382\"> </a></td><td>Democratic Republic of East Timor</td></tr><tr><td style=\"white-space:nowrap\">100000000447<a name=\"country-ema-cs-100000000447\"> </a></td><td>Libya Fezzan</td></tr><tr><td style=\"white-space:nowrap\">100000000396<a name=\"country-ema-cs-100000000396\"> </a></td><td>Metropolitan France</td></tr><tr><td style=\"white-space:nowrap\">100000000547<a name=\"country-ema-cs-100000000547\"> </a></td><td>Tristan da Cunha</td></tr><tr><td style=\"white-space:nowrap\">100000000480<a name=\"country-ema-cs-100000000480\"> </a></td><td>Neutral Zone</td></tr><tr><td style=\"white-space:nowrap\">100000000359<a name=\"country-ema-cs-100000000359\"> </a></td><td>Ceuta</td></tr><tr><td style=\"white-space:nowrap\">100000000364<a name=\"country-ema-cs-100000000364\"> </a></td><td>Clipperton Island</td></tr><tr><td style=\"white-space:nowrap\">100000000479<a name=\"country-ema-cs-100000000479\"> </a></td><td>Netherlands Antilles</td></tr><tr><td style=\"white-space:nowrap\">100000000328<a name=\"country-ema-cs-100000000328\"> </a></td><td>Ascension Island</td></tr><tr><td style=\"white-space:nowrap\">100000000519<a name=\"country-ema-cs-100000000519\"> </a></td><td>State Union of Serbia and Montenegro</td></tr><tr><td style=\"white-space:nowrap\">200000026063<a name=\"country-ema-cs-200000026063\"> </a></td><td>Republic of South Sudan</td></tr><tr><td style=\"white-space:nowrap\">100000000421<a name=\"country-ema-cs-100000000421\"> </a></td><td>Republic of Hungary</td></tr><tr><td style=\"white-space:nowrap\">100000000430<a name=\"country-ema-cs-100000000430\"> </a></td><td>Italian Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000449<a name=\"country-ema-cs-100000000449\"> </a></td><td>Principality of Liechtenstein</td></tr><tr><td style=\"white-space:nowrap\">100000000452<a name=\"country-ema-cs-100000000452\"> </a></td><td>Macao Special Administrative Region of the People's Republic of China</td></tr><tr><td style=\"white-space:nowrap\">100000000453<a name=\"country-ema-cs-100000000453\"> </a></td><td>Republic of North Macedonia</td></tr><tr><td style=\"white-space:nowrap\">100000000468<a name=\"country-ema-cs-100000000468\"> </a></td><td>Principality of Monaco</td></tr><tr><td style=\"white-space:nowrap\">100000000470<a name=\"country-ema-cs-100000000470\"> </a></td><td>Montenegro</td></tr><tr><td style=\"white-space:nowrap\">100000000484<a name=\"country-ema-cs-100000000484\"> </a></td><td>Republic of Niger</td></tr><tr><td style=\"white-space:nowrap\">100000000489<a name=\"country-ema-cs-100000000489\"> </a></td><td>Kingdom of Norway</td></tr><tr><td style=\"white-space:nowrap\">100000000506<a name=\"country-ema-cs-100000000506\"> </a></td><td>Russian Federation</td></tr><tr><td style=\"white-space:nowrap\">100000000514<a name=\"country-ema-cs-100000000514\"> </a></td><td>Republic of San Marino</td></tr><tr><td style=\"white-space:nowrap\">100000000523<a name=\"country-ema-cs-100000000523\"> </a></td><td>Slovak Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000524<a name=\"country-ema-cs-100000000524\"> </a></td><td>Republic of Slovenia</td></tr><tr><td style=\"white-space:nowrap\">100000000554<a name=\"country-ema-cs-100000000554\"> </a></td><td>Ukraine</td></tr><tr><td style=\"white-space:nowrap\">100000000556<a name=\"country-ema-cs-100000000556\"> </a></td><td>United Kingdom of Great Britain and Northern Ireland</td></tr><tr><td style=\"white-space:nowrap\">100000000326<a name=\"country-ema-cs-100000000326\"> </a></td><td>Republic of Armenia</td></tr><tr><td style=\"white-space:nowrap\">100000000518<a name=\"country-ema-cs-100000000518\"> </a></td><td>Republic of Serbia</td></tr><tr><td style=\"white-space:nowrap\">100000000331<a name=\"country-ema-cs-100000000331\"> </a></td><td>Republic of Azerbaijan</td></tr><tr><td style=\"white-space:nowrap\">100000000336<a name=\"country-ema-cs-100000000336\"> </a></td><td>Republic of Belarus</td></tr><tr><td style=\"white-space:nowrap\">100000000337<a name=\"country-ema-cs-100000000337\"> </a></td><td>Kingdom of Belgium</td></tr><tr><td style=\"white-space:nowrap\">240000000000<a name=\"country-ema-cs-240000000000\"> </a></td><td>United Kingdom (Northern Ireland)</td></tr><tr><td style=\"white-space:nowrap\">100000000373<a name=\"country-ema-cs-100000000373\"> </a></td><td>Republic of Croatia</td></tr><tr><td style=\"white-space:nowrap\">100000000376<a name=\"country-ema-cs-100000000376\"> </a></td><td>Czech Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000377<a name=\"country-ema-cs-100000000377\"> </a></td><td>Kingdom of Denmark</td></tr><tr><td style=\"white-space:nowrap\">100000000403<a name=\"country-ema-cs-100000000403\"> </a></td><td>Federal Republic of Germany</td></tr><tr><td style=\"white-space:nowrap\">100000000406<a name=\"country-ema-cs-100000000406\"> </a></td><td>Hellenic Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000317<a name=\"country-ema-cs-100000000317\"> </a></td><td>Republic of Albania</td></tr><tr><td style=\"white-space:nowrap\">100000000343<a name=\"country-ema-cs-100000000343\"> </a></td><td>Bosnia and Herzegovina</td></tr><tr><td style=\"white-space:nowrap\">100000000402<a name=\"country-ema-cs-100000000402\"> </a></td><td>Georgia</td></tr><tr><td style=\"white-space:nowrap\">100000000427<a name=\"country-ema-cs-100000000427\"> </a></td><td>Ireland</td></tr><tr><td style=\"white-space:nowrap\">100000000435<a name=\"country-ema-cs-100000000435\"> </a></td><td>Republic of Kazakhstan</td></tr><tr><td style=\"white-space:nowrap\">100000000467<a name=\"country-ema-cs-100000000467\"> </a></td><td>Republic of Moldova</td></tr><tr><td style=\"white-space:nowrap\">100000000501<a name=\"country-ema-cs-100000000501\"> </a></td><td>Portuguese Republic</td></tr><tr><td style=\"white-space:nowrap\">100000000549<a name=\"country-ema-cs-100000000549\"> </a></td><td>Republic of Turkey</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000000002"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Country_EMA_CS"] ; # 
+  fhir:title [ fhir:v "Country EMA"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-11-04T07:22:15+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Country codes by EMA. Based on ISO 3166-1-2, recoded with RMS codes."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compositional [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "265"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "100000000344" ] ;
+     fhir:display [ fhir:v "Republic of Botswana" ]
+  ] [
+     fhir:code [ fhir:v "100000000552" ] ;
+     fhir:display [ fhir:v "Tuvalu" ]
+  ] [
+     fhir:code [ fhir:v "100000000537" ] ;
+     fhir:display [ fhir:v "Syrian Arab Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000504" ] ;
+     fhir:display [ fhir:v "Department of R'union" ]
+  ] [
+     fhir:code [ fhir:v "100000000354" ] ;
+     fhir:display [ fhir:v "Canada" ]
+  ] [
+     fhir:code [ fhir:v "100000000446" ] ;
+     fhir:display [ fhir:v "Republic of Liberia" ]
+  ] [
+     fhir:code [ fhir:v "100000000431" ] ;
+     fhir:display [ fhir:v "Jamaica" ]
+  ] [
+     fhir:code [ fhir:v "100000000401" ] ;
+     fhir:display [ fhir:v "Republic of the Gambia" ]
+  ] [
+     fhir:code [ fhir:v "100000000393" ] ;
+     fhir:display [ fhir:v "Republic of the Fiji Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000342" ] ;
+     fhir:display [ fhir:v "Plurinational State of Bolivia" ]
+  ] [
+     fhir:code [ fhir:v "100000000442" ] ;
+     fhir:display [ fhir:v "Lao People's Democratic Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000542" ] ;
+     fhir:display [ fhir:v "Timor-Leste" ]
+  ] [
+     fhir:code [ fhir:v "100000000335" ] ;
+     fhir:display [ fhir:v "Barbados" ]
+  ] [
+     fhir:code [ fhir:v "100000000521" ] ;
+     fhir:display [ fhir:v "Republic of Sierra Leone" ]
+  ] [
+     fhir:code [ fhir:v "100000000548" ] ;
+     fhir:display [ fhir:v "Republic of Tunisia" ]
+  ] [
+     fhir:code [ fhir:v "100000000469" ] ;
+     fhir:display [ fhir:v "Mongolia" ]
+  ] [
+     fhir:code [ fhir:v "100000000386" ] ;
+     fhir:display [ fhir:v "Republic of Equatorial Guinea" ]
+  ] [
+     fhir:code [ fhir:v "100000000445" ] ;
+     fhir:display [ fhir:v "Kingdom of Lesotho" ]
+  ] [
+     fhir:code [ fhir:v "100000000496" ] ;
+     fhir:display [ fhir:v "Republic of Paraguay" ]
+  ] [
+     fhir:code [ fhir:v "100000000379" ] ;
+     fhir:display [ fhir:v "Republic of Djibouti" ]
+  ] [
+     fhir:code [ fhir:v "100000000558" ] ;
+     fhir:display [ fhir:v "United States Minor Outlying Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000384" ] ;
+     fhir:display [ fhir:v "Arab Republic of Egypt" ]
+  ] [
+     fhir:code [ fhir:v "100000000534" ] ;
+     fhir:display [ fhir:v "Kingdom of Eswatini" ]
+  ] [
+     fhir:code [ fhir:v "100000000450" ] ;
+     fhir:display [ fhir:v "Republic of Lithuania" ]
+  ] [
+     fhir:code [ fhir:v "100000000567" ] ;
+     fhir:display [ fhir:v "Territory of the Wallis and Futuna Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000488" ] ;
+     fhir:display [ fhir:v "Commonwealth of the Northern Mariana Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000553" ] ;
+     fhir:display [ fhir:v "Republic of Uganda" ]
+  ] [
+     fhir:code [ fhir:v "100000000398" ] ;
+     fhir:display [ fhir:v "Territory of French Polynesia" ]
+  ] [
+     fhir:code [ fhir:v "100000000320" ] ;
+     fhir:display [ fhir:v "Principality of Andorra" ]
+  ] [
+     fhir:code [ fhir:v "100000000362" ] ;
+     fhir:display [ fhir:v "People's Republic of China" ]
+  ] [
+     fhir:code [ fhir:v "100000000353" ] ;
+     fhir:display [ fhir:v "Republic of Cameroon" ]
+  ] [
+     fhir:code [ fhir:v "100000000540" ] ;
+     fhir:display [ fhir:v "United Republic of Tanzania" ]
+  ] [
+     fhir:code [ fhir:v "100000000415" ] ;
+     fhir:display [ fhir:v "Cooperative Republic of Guyana" ]
+  ] [
+     fhir:code [ fhir:v "100000000347" ] ;
+     fhir:display [ fhir:v "British Indian Ocean Territory" ]
+  ] [
+     fhir:code [ fhir:v "100000000487" ] ;
+     fhir:display [ fhir:v "Territory of Norfolk Island" ]
+  ] [
+     fhir:code [ fhir:v "100000000439" ] ;
+     fhir:display [ fhir:v "Republic of Korea" ]
+  ] [
+     fhir:code [ fhir:v "100000000497" ] ;
+     fhir:display [ fhir:v "Republic of Peru" ]
+  ] [
+     fhir:code [ fhir:v "100000000380" ] ;
+     fhir:display [ fhir:v "Commonwealth of Dominica" ]
+  ] [
+     fhir:code [ fhir:v "100000000339" ] ;
+     fhir:display [ fhir:v "Republic of Benin" ]
+  ] [
+     fhir:code [ fhir:v "100000000483" ] ;
+     fhir:display [ fhir:v "Republic of Nicaragua" ]
+  ] [
+     fhir:code [ fhir:v "100000000368" ] ;
+     fhir:display [ fhir:v "Republic of the Congo" ]
+  ] [
+     fhir:code [ fhir:v "100000000352" ] ;
+     fhir:display [ fhir:v "Kingdom of Cambodia" ]
+  ] [
+     fhir:code [ fhir:v "100000000345" ] ;
+     fhir:display [ fhir:v "Bouvet Island" ]
+  ] [
+     fhir:code [ fhir:v "100000000349" ] ;
+     fhir:display [ fhir:v "Republic of Bulgaria" ]
+  ] [
+     fhir:code [ fhir:v "100000000383" ] ;
+     fhir:display [ fhir:v "Republic of Ecuador" ]
+  ] [
+     fhir:code [ fhir:v "100000000366" ] ;
+     fhir:display [ fhir:v "Republic of Colombia" ]
+  ] [
+     fhir:code [ fhir:v "100000000509" ] ;
+     fhir:display [ fhir:v "Federation of Saint Kitts and Nevis" ]
+  ] [
+     fhir:code [ fhir:v "100000000389" ] ;
+     fhir:display [ fhir:v "Federal Democratic Republic of Ethiopia" ]
+  ] [
+     fhir:code [ fhir:v "100000000385" ] ;
+     fhir:display [ fhir:v "Republic of El Salvador" ]
+  ] [
+     fhir:code [ fhir:v "100000000454" ] ;
+     fhir:display [ fhir:v "Republic of Madagascar" ]
+  ] [
+     fhir:code [ fhir:v "100000000443" ] ;
+     fhir:display [ fhir:v "Republic of Latvia" ]
+  ] [
+     fhir:code [ fhir:v "100000000512" ] ;
+     fhir:display [ fhir:v "Saint Vincent and the Grenadines" ]
+  ] [
+     fhir:code [ fhir:v "100000000493" ] ;
+     fhir:display [ fhir:v "Occupied Palestinian Territory" ]
+  ] [
+     fhir:code [ fhir:v "100000000410" ] ;
+     fhir:display [ fhir:v "Territory of Guam" ]
+  ] [
+     fhir:code [ fhir:v "100000000463" ] ;
+     fhir:display [ fhir:v "Republic of Mauritius" ]
+  ] [
+     fhir:code [ fhir:v "100000000428" ] ;
+     fhir:display [ fhir:v "Isle of Man" ]
+  ] [
+     fhir:code [ fhir:v "100000000360" ] ;
+     fhir:display [ fhir:v "Republic of Chad" ]
+  ] [
+     fhir:code [ fhir:v "100000000571" ] ;
+     fhir:display [ fhir:v "Republic of Zambia" ]
+  ] [
+     fhir:code [ fhir:v "100000000429" ] ;
+     fhir:display [ fhir:v "State of Israel" ]
+  ] [
+     fhir:code [ fhir:v "100000000424" ] ;
+     fhir:display [ fhir:v "Republic of Indonesia" ]
+  ] [
+     fhir:code [ fhir:v "100000000464" ] ;
+     fhir:display [ fhir:v "Territorial Collectivity of Mayotte" ]
+  ] [
+     fhir:code [ fhir:v "200000016424" ] ;
+     fhir:display [ fhir:v "Cura'ao" ]
+  ] [
+     fhir:code [ fhir:v "100000000495" ] ;
+     fhir:display [ fhir:v "Independent State of Papua New Guinea" ]
+  ] [
+     fhir:code [ fhir:v "100000000511" ] ;
+     fhir:display [ fhir:v "Territorial Collectivity of Saint Pierre and Miquelon" ]
+  ] [
+     fhir:code [ fhir:v "100000000465" ] ;
+     fhir:display [ fhir:v "United Mexican States" ]
+  ] [
+     fhir:code [ fhir:v "100000000503" ] ;
+     fhir:display [ fhir:v "State of Qatar" ]
+  ] [
+     fhir:code [ fhir:v "100000000543" ] ;
+     fhir:display [ fhir:v "Togolese Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000390" ] ;
+     fhir:display [ fhir:v "European Union" ]
+  ] [
+     fhir:code [ fhir:v "100000000507" ] ;
+     fhir:display [ fhir:v "Republic of Rwanda" ]
+  ] [
+     fhir:code [ fhir:v "100000000461" ] ;
+     fhir:display [ fhir:v "Department of Martinique" ]
+  ] [
+     fhir:code [ fhir:v "100000000400" ] ;
+     fhir:display [ fhir:v "Gabonese Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000423" ] ;
+     fhir:display [ fhir:v "Republic of India" ]
+  ] [
+     fhir:code [ fhir:v "100000000456" ] ;
+     fhir:display [ fhir:v "Malaysia" ]
+  ] [
+     fhir:code [ fhir:v "100000000451" ] ;
+     fhir:display [ fhir:v "Grand Duchy of Luxembourg" ]
+  ] [
+     fhir:code [ fhir:v "100000000535" ] ;
+     fhir:display [ fhir:v "Kingdom of Sweden" ]
+  ] [
+     fhir:code [ fhir:v "100000110973" ] ;
+     fhir:display [ fhir:v "Republic of Kosovo" ]
+  ] [
+     fhir:code [ fhir:v "100000000441" ] ;
+     fhir:display [ fhir:v "Kyrgyz Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000350" ] ;
+     fhir:display [ fhir:v "Burkina Faso" ]
+  ] [
+     fhir:code [ fhir:v "100000000536" ] ;
+     fhir:display [ fhir:v "Swiss Confederation" ]
+  ] [
+     fhir:code [ fhir:v "100000000356" ] ;
+     fhir:display [ fhir:v "Republic of Cape Verde" ]
+  ] [
+     fhir:code [ fhir:v "100000000486" ] ;
+     fhir:display [ fhir:v "Republic of Niue" ]
+  ] [
+     fhir:code [ fhir:v "100000000388" ] ;
+     fhir:display [ fhir:v "Republic of Estonia" ]
+  ] [
+     fhir:code [ fhir:v "100000000417" ] ;
+     fhir:display [ fhir:v "Territory of Heard Island and McDonald Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000416" ] ;
+     fhir:display [ fhir:v "Republic of Haiti" ]
+  ] [
+     fhir:code [ fhir:v "100000000414" ] ;
+     fhir:display [ fhir:v "Republic of Guinea-Bissau" ]
+  ] [
+     fhir:code [ fhir:v "100000000526" ] ;
+     fhir:display [ fhir:v "Somalia" ]
+  ] [
+     fhir:code [ fhir:v "100000000491" ] ;
+     fhir:display [ fhir:v "Islamic Republic of Pakistan" ]
+  ] [
+     fhir:code [ fhir:v "100000000333" ] ;
+     fhir:display [ fhir:v "Kingdom of Bahrain" ]
+  ] [
+     fhir:code [ fhir:v "100000000405" ] ;
+     fhir:display [ fhir:v "Gibraltar" ]
+  ] [
+     fhir:code [ fhir:v "100000000566" ] ;
+     fhir:display [ fhir:v "Virgin Islands of the United States" ]
+  ] [
+     fhir:code [ fhir:v "100000000565" ] ;
+     fhir:display [ fhir:v "British Virgin Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000397" ] ;
+     fhir:display [ fhir:v "Department of French Guiana" ]
+  ] [
+     fhir:code [ fhir:v "100000000316" ] ;
+     fhir:display [ fhir:v "'land Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000478" ] ;
+     fhir:display [ fhir:v "Kingdom of the Netherlands" ]
+  ] [
+     fhir:code [ fhir:v "100000000550" ] ;
+     fhir:display [ fhir:v "Turkmenistan" ]
+  ] [
+     fhir:code [ fhir:v "100000110993" ] ;
+     fhir:display [ fhir:v "Saint Martin (French Part)" ]
+  ] [
+     fhir:code [ fhir:v "100000000563" ] ;
+     fhir:display [ fhir:v "Bolivarian Republic of Venezuela" ]
+  ] [
+     fhir:code [ fhir:v "100000000332" ] ;
+     fhir:display [ fhir:v "The Commonwealth of the Bahamas" ]
+  ] [
+     fhir:code [ fhir:v "100000000438" ] ;
+     fhir:display [ fhir:v "Democratic People's Republic of Korea" ]
+  ] [
+     fhir:code [ fhir:v "100000000561" ] ;
+     fhir:display [ fhir:v "Republic of Uzbekistan" ]
+  ] [
+     fhir:code [ fhir:v "100000000419" ] ;
+     fhir:display [ fhir:v "Republic of Honduras" ]
+  ] [
+     fhir:code [ fhir:v "100000000411" ] ;
+     fhir:display [ fhir:v "Republic of Guatemala" ]
+  ] [
+     fhir:code [ fhir:v "100000000538" ] ;
+     fhir:display [ fhir:v "Taiwan" ]
+  ] [
+     fhir:code [ fhir:v "100000000546" ] ;
+     fhir:display [ fhir:v "Republic of Trinidad and Tobago" ]
+  ] [
+     fhir:code [ fhir:v "100000000394" ] ;
+     fhir:display [ fhir:v "Republic of Finland" ]
+  ] [
+     fhir:code [ fhir:v "100000000525" ] ;
+     fhir:display [ fhir:v "Solomon Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000544" ] ;
+     fhir:display [ fhir:v "Tokelau" ]
+  ] [
+     fhir:code [ fhir:v "100000000404" ] ;
+     fhir:display [ fhir:v "Republic of Ghana" ]
+  ] [
+     fhir:code [ fhir:v "100000000572" ] ;
+     fhir:display [ fhir:v "Republic of Zimbabwe" ]
+  ] [
+     fhir:code [ fhir:v "100000000318" ] ;
+     fhir:display [ fhir:v "People's Democratic Republic of Algeria" ]
+  ] [
+     fhir:code [ fhir:v "100000000391" ] ;
+     fhir:display [ fhir:v "Faeroe Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000433" ] ;
+     fhir:display [ fhir:v "Jersey" ]
+  ] [
+     fhir:code [ fhir:v "100000000357" ] ;
+     fhir:display [ fhir:v "Cayman Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000369" ] ;
+     fhir:display [ fhir:v "Democratic Republic of the Congo" ]
+  ] [
+     fhir:code [ fhir:v "100000000340" ] ;
+     fhir:display [ fhir:v "Bermuda" ]
+  ] [
+     fhir:code [ fhir:v "100000000413" ] ;
+     fhir:display [ fhir:v "Republic of Guinea" ]
+  ] [
+     fhir:code [ fhir:v "100000000329" ] ;
+     fhir:display [ fhir:v "Commonwealth of Australia" ]
+  ] [
+     fhir:code [ fhir:v "100000000375" ] ;
+     fhir:display [ fhir:v "Republic of Cyprus" ]
+  ] [
+     fhir:code [ fhir:v "100000000530" ] ;
+     fhir:display [ fhir:v "Democratic Socialist Republic of Sri Lanka" ]
+  ] [
+     fhir:code [ fhir:v "100000000408" ] ;
+     fhir:display [ fhir:v "Grenada" ]
+  ] [
+     fhir:code [ fhir:v "100000000444" ] ;
+     fhir:display [ fhir:v "Lebanese Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000527" ] ;
+     fhir:display [ fhir:v "Republic of South Africa" ]
+  ] [
+     fhir:code [ fhir:v "100000000533" ] ;
+     fhir:display [ fhir:v "Svalbard and Jan Mayen Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000505" ] ;
+     fhir:display [ fhir:v "Romania" ]
+  ] [
+     fhir:code [ fhir:v "100000000392" ] ;
+     fhir:display [ fhir:v "Falkland Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000472" ] ;
+     fhir:display [ fhir:v "Kingdom of Morocco" ]
+  ] [
+     fhir:code [ fhir:v "100000110974" ] ;
+     fhir:display [ fhir:v "Saint Barthelemy" ]
+  ] [
+     fhir:code [ fhir:v "100000000473" ] ;
+     fhir:display [ fhir:v "Republic of Mozambique" ]
+  ] [
+     fhir:code [ fhir:v "100000000568" ] ;
+     fhir:display [ fhir:v "Western Sahara" ]
+  ] [
+     fhir:code [ fhir:v "100000000370" ] ;
+     fhir:display [ fhir:v "Cook Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000330" ] ;
+     fhir:display [ fhir:v "Republic of Austria" ]
+  ] [
+     fhir:code [ fhir:v "100000000520" ] ;
+     fhir:display [ fhir:v "Republic of Seychelles" ]
+  ] [
+     fhir:code [ fhir:v "100000000363" ] ;
+     fhir:display [ fhir:v "Christmas Island Territory" ]
+  ] [
+     fhir:code [ fhir:v "100000000358" ] ;
+     fhir:display [ fhir:v "Central African Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000418" ] ;
+     fhir:display [ fhir:v "the Holy See (Vatican City State)" ]
+  ] [
+     fhir:code [ fhir:v "100000000395" ] ;
+     fhir:display [ fhir:v "French Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000315" ] ;
+     fhir:display [ fhir:v "Islamic Republic of Afghanistan" ]
+  ] [
+     fhir:code [ fhir:v "100000000346" ] ;
+     fhir:display [ fhir:v "Federative Republic of Brazil" ]
+  ] [
+     fhir:code [ fhir:v "100000000455" ] ;
+     fhir:display [ fhir:v "Republic of Malawi" ]
+  ] [
+     fhir:code [ fhir:v "100000000361" ] ;
+     fhir:display [ fhir:v "Republic of Chile" ]
+  ] [
+     fhir:code [ fhir:v "200000010721" ] ;
+     fhir:display [ fhir:v "Other countries" ]
+  ] [
+     fhir:code [ fhir:v "100000000528" ] ;
+     fhir:display [ fhir:v "South Georgia and the South Sandwich Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000515" ] ;
+     fhir:display [ fhir:v "Democratic Republic of S'o Tom' and Pr'ncipe" ]
+  ] [
+     fhir:code [ fhir:v "100000000564" ] ;
+     fhir:display [ fhir:v "Socialist Republic of Viet Nam" ]
+  ] [
+     fhir:code [ fhir:v "100000000321" ] ;
+     fhir:display [ fhir:v "Republic of Angola" ]
+  ] [
+     fhir:code [ fhir:v "100000000539" ] ;
+     fhir:display [ fhir:v "Republic of Tajikistan" ]
+  ] [
+     fhir:code [ fhir:v "100000000476" ] ;
+     fhir:display [ fhir:v "Republic of Nauru" ]
+  ] [
+     fhir:code [ fhir:v "100000000499" ] ;
+     fhir:display [ fhir:v "Pitcairn Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000425" ] ;
+     fhir:display [ fhir:v "Islamic Republic of Iran" ]
+  ] [
+     fhir:code [ fhir:v "100000000437" ] ;
+     fhir:display [ fhir:v "Republic of Kiribati" ]
+  ] [
+     fhir:code [ fhir:v "100000000381" ] ;
+     fhir:display [ fhir:v "Dominican Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000517" ] ;
+     fhir:display [ fhir:v "Republic of Senegal" ]
+  ] [
+     fhir:code [ fhir:v "100000000516" ] ;
+     fhir:display [ fhir:v "Kingdom of Saudi Arabia" ]
+  ] [
+     fhir:code [ fhir:v "100000000323" ] ;
+     fhir:display [ fhir:v "Antarctica" ]
+  ] [
+     fhir:code [ fhir:v "100000000555" ] ;
+     fhir:display [ fhir:v "United Arab Emirates" ]
+  ] [
+     fhir:code [ fhir:v "100000000569" ] ;
+     fhir:display [ fhir:v "Republic of Yemen" ]
+  ] [
+     fhir:code [ fhir:v "100000000407" ] ;
+     fhir:display [ fhir:v "Greenland" ]
+  ] [
+     fhir:code [ fhir:v "100000000502" ] ;
+     fhir:display [ fhir:v "Commonwealth of Puerto Rico" ]
+  ] [
+     fhir:code [ fhir:v "100000000531" ] ;
+     fhir:display [ fhir:v "Republic of Sudan" ]
+  ] [
+     fhir:code [ fhir:v "100000000372" ] ;
+     fhir:display [ fhir:v "Republic of C'te d'Ivoire" ]
+  ] [
+     fhir:code [ fhir:v "100000000325" ] ;
+     fhir:display [ fhir:v "Argentine Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000557" ] ;
+     fhir:display [ fhir:v "United States of America" ]
+  ] [
+     fhir:code [ fhir:v "100000000500" ] ;
+     fhir:display [ fhir:v "Republic of Poland" ]
+  ] [
+     fhir:code [ fhir:v "100000000532" ] ;
+     fhir:display [ fhir:v "Republic of Suriname" ]
+  ] [
+     fhir:code [ fhir:v "100000000399" ] ;
+     fhir:display [ fhir:v "French Southern Territories" ]
+  ] [
+     fhir:code [ fhir:v "100000000485" ] ;
+     fhir:display [ fhir:v "Federal Republic of Nigeria" ]
+  ] [
+     fhir:code [ fhir:v "100000000448" ] ;
+     fhir:display [ fhir:v "Great Socialist People's Libyan Arab Jamahiriya" ]
+  ] [
+     fhir:code [ fhir:v "100000000409" ] ;
+     fhir:display [ fhir:v "Department of Guadeloupe" ]
+  ] [
+     fhir:code [ fhir:v "100000000551" ] ;
+     fhir:display [ fhir:v "Turks and Caicos Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000541" ] ;
+     fhir:display [ fhir:v "Kingdom of Thailand" ]
+  ] [
+     fhir:code [ fhir:v "100000000458" ] ;
+     fhir:display [ fhir:v "Republic of Mali" ]
+  ] [
+     fhir:code [ fhir:v "100000000422" ] ;
+     fhir:display [ fhir:v "Republic of Iceland" ]
+  ] [
+     fhir:code [ fhir:v "100000000510" ] ;
+     fhir:display [ fhir:v "Saint Lucia" ]
+  ] [
+     fhir:code [ fhir:v "100000000338" ] ;
+     fhir:display [ fhir:v "Belize" ]
+  ] [
+     fhir:code [ fhir:v "100000000471" ] ;
+     fhir:display [ fhir:v "Montserrat" ]
+  ] [
+     fhir:code [ fhir:v "100000000348" ] ;
+     fhir:display [ fhir:v "Negara Brunei Darussalam" ]
+  ] [
+     fhir:code [ fhir:v "100000000319" ] ;
+     fhir:display [ fhir:v "Territory of American Samoa" ]
+  ] [
+     fhir:code [ fhir:v "100000000432" ] ;
+     fhir:display [ fhir:v "Japan" ]
+  ] [
+     fhir:code [ fhir:v "100000000559" ] ;
+     fhir:display [ fhir:v "Eastern Republic of Uruguay" ]
+  ] [
+     fhir:code [ fhir:v "100000000477" ] ;
+     fhir:display [ fhir:v "Federal Democratic Republic of Nepal" ]
+  ] [
+     fhir:code [ fhir:v "100000000434" ] ;
+     fhir:display [ fhir:v "Hashemite Kingdom of Jordan" ]
+  ] [
+     fhir:code [ fhir:v "100000000481" ] ;
+     fhir:display [ fhir:v "Territory of New Caledonia and Dependencies" ]
+  ] [
+     fhir:code [ fhir:v "100000000466" ] ;
+     fhir:display [ fhir:v "Federated States of Micronesia" ]
+  ] [
+     fhir:code [ fhir:v "100000000492" ] ;
+     fhir:display [ fhir:v "Republic of Palau" ]
+  ] [
+     fhir:code [ fhir:v "100000000513" ] ;
+     fhir:display [ fhir:v "Independent State of Samoa" ]
+  ] [
+     fhir:code [ fhir:v "100000000412" ] ;
+     fhir:display [ fhir:v "Guernsey" ]
+  ] [
+     fhir:code [ fhir:v "100000000334" ] ;
+     fhir:display [ fhir:v "People's Republic of Bangladesh" ]
+  ] [
+     fhir:code [ fhir:v "100000000460" ] ;
+     fhir:display [ fhir:v "Republic of the Marshall Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000341" ] ;
+     fhir:display [ fhir:v "Kingdom of Bhutan" ]
+  ] [
+     fhir:code [ fhir:v "100000000522" ] ;
+     fhir:display [ fhir:v "Republic of Singapore" ]
+  ] [
+     fhir:code [ fhir:v "100000000494" ] ;
+     fhir:display [ fhir:v "Republic of Panama" ]
+  ] [
+     fhir:code [ fhir:v "100000000529" ] ;
+     fhir:display [ fhir:v "Kingdom of Spain" ]
+  ] [
+     fhir:code [ fhir:v "100000000374" ] ;
+     fhir:display [ fhir:v "Republic of Cuba" ]
+  ] [
+     fhir:code [ fhir:v "100000000482" ] ;
+     fhir:display [ fhir:v "New Zealand" ]
+  ] [
+     fhir:code [ fhir:v "100000000351" ] ;
+     fhir:display [ fhir:v "Republic of Burundi" ]
+  ] [
+     fhir:code [ fhir:v "100000000475" ] ;
+     fhir:display [ fhir:v "Republic of Namibia" ]
+  ] [
+     fhir:code [ fhir:v "100000000420" ] ;
+     fhir:display [ fhir:v "Hong Kong Special Administrative Region of the People's Republic of China" ]
+  ] [
+     fhir:code [ fhir:v "100000000387" ] ;
+     fhir:display [ fhir:v "State of Eritrea" ]
+  ] [
+     fhir:code [ fhir:v "100000000462" ] ;
+     fhir:display [ fhir:v "Islamic Republic of Mauritania" ]
+  ] [
+     fhir:code [ fhir:v "100000000474" ] ;
+     fhir:display [ fhir:v "Union of Myanmar" ]
+  ] [
+     fhir:code [ fhir:v "100000000562" ] ;
+     fhir:display [ fhir:v "Republic of Vanuatu" ]
+  ] [
+     fhir:code [ fhir:v "100000000545" ] ;
+     fhir:display [ fhir:v "Kingdom of Tonga" ]
+  ] [
+     fhir:code [ fhir:v "100000000371" ] ;
+     fhir:display [ fhir:v "Republic of Costa Rica" ]
+  ] [
+     fhir:code [ fhir:v "100000000365" ] ;
+     fhir:display [ fhir:v "Territory of Cocos (Keeling) Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000327" ] ;
+     fhir:display [ fhir:v "Aruba" ]
+  ] [
+     fhir:code [ fhir:v "100000000498" ] ;
+     fhir:display [ fhir:v "Republic of the Philippines" ]
+  ] [
+     fhir:code [ fhir:v "100000000457" ] ;
+     fhir:display [ fhir:v "Republic of Maldives" ]
+  ] [
+     fhir:code [ fhir:v "100000000324" ] ;
+     fhir:display [ fhir:v "Antigua and Barbuda" ]
+  ] [
+     fhir:code [ fhir:v "100000000436" ] ;
+     fhir:display [ fhir:v "Republic of Kenya" ]
+  ] [
+     fhir:code [ fhir:v "100000000440" ] ;
+     fhir:display [ fhir:v "State of Kuwait" ]
+  ] [
+     fhir:code [ fhir:v "100000000490" ] ;
+     fhir:display [ fhir:v "Sultanate of Oman" ]
+  ] [
+     fhir:code [ fhir:v "100000000426" ] ;
+     fhir:display [ fhir:v "Republic of Iraq" ]
+  ] [
+     fhir:code [ fhir:v "100000000322" ] ;
+     fhir:display [ fhir:v "Anguilla" ]
+  ] [
+     fhir:code [ fhir:v "100000000459" ] ;
+     fhir:display [ fhir:v "Republic of Malta" ]
+  ] [
+     fhir:code [ fhir:v "100000000367" ] ;
+     fhir:display [ fhir:v "Union of the Comoros" ]
+  ] [
+     fhir:code [ fhir:v "100000000508" ] ;
+     fhir:display [ fhir:v "Saint Helena" ]
+  ] [
+     fhir:code [ fhir:v "100000000560" ] ;
+     fhir:display [ fhir:v "Union of Soviet Socialist Republics" ]
+  ] [
+     fhir:code [ fhir:v "100000000355" ] ;
+     fhir:display [ fhir:v "Autonomous Community of the Canary Islands" ]
+  ] [
+     fhir:code [ fhir:v "100000000378" ] ;
+     fhir:display [ fhir:v "Diego Garcia" ]
+  ] [
+     fhir:code [ fhir:v "100000000570" ] ;
+     fhir:display [ fhir:v "Yugoslavia" ]
+  ] [
+     fhir:code [ fhir:v "100000000382" ] ;
+     fhir:display [ fhir:v "Democratic Republic of East Timor" ]
+  ] [
+     fhir:code [ fhir:v "100000000447" ] ;
+     fhir:display [ fhir:v "Libya Fezzan" ]
+  ] [
+     fhir:code [ fhir:v "100000000396" ] ;
+     fhir:display [ fhir:v "Metropolitan France" ]
+  ] [
+     fhir:code [ fhir:v "100000000547" ] ;
+     fhir:display [ fhir:v "Tristan da Cunha" ]
+  ] [
+     fhir:code [ fhir:v "100000000480" ] ;
+     fhir:display [ fhir:v "Neutral Zone" ]
+  ] [
+     fhir:code [ fhir:v "100000000359" ] ;
+     fhir:display [ fhir:v "Ceuta" ]
+  ] [
+     fhir:code [ fhir:v "100000000364" ] ;
+     fhir:display [ fhir:v "Clipperton Island" ]
+  ] [
+     fhir:code [ fhir:v "100000000479" ] ;
+     fhir:display [ fhir:v "Netherlands Antilles" ]
+  ] [
+     fhir:code [ fhir:v "100000000328" ] ;
+     fhir:display [ fhir:v "Ascension Island" ]
+  ] [
+     fhir:code [ fhir:v "100000000519" ] ;
+     fhir:display [ fhir:v "State Union of Serbia and Montenegro" ]
+  ] [
+     fhir:code [ fhir:v "200000026063" ] ;
+     fhir:display [ fhir:v "Republic of South Sudan" ]
+  ] [
+     fhir:code [ fhir:v "100000000421" ] ;
+     fhir:display [ fhir:v "Republic of Hungary" ]
+  ] [
+     fhir:code [ fhir:v "100000000430" ] ;
+     fhir:display [ fhir:v "Italian Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000449" ] ;
+     fhir:display [ fhir:v "Principality of Liechtenstein" ]
+  ] [
+     fhir:code [ fhir:v "100000000452" ] ;
+     fhir:display [ fhir:v "Macao Special Administrative Region of the People's Republic of China" ]
+  ] [
+     fhir:code [ fhir:v "100000000453" ] ;
+     fhir:display [ fhir:v "Republic of North Macedonia" ]
+  ] [
+     fhir:code [ fhir:v "100000000468" ] ;
+     fhir:display [ fhir:v "Principality of Monaco" ]
+  ] [
+     fhir:code [ fhir:v "100000000470" ] ;
+     fhir:display [ fhir:v "Montenegro" ]
+  ] [
+     fhir:code [ fhir:v "100000000484" ] ;
+     fhir:display [ fhir:v "Republic of Niger" ]
+  ] [
+     fhir:code [ fhir:v "100000000489" ] ;
+     fhir:display [ fhir:v "Kingdom of Norway" ]
+  ] [
+     fhir:code [ fhir:v "100000000506" ] ;
+     fhir:display [ fhir:v "Russian Federation" ]
+  ] [
+     fhir:code [ fhir:v "100000000514" ] ;
+     fhir:display [ fhir:v "Republic of San Marino" ]
+  ] [
+     fhir:code [ fhir:v "100000000523" ] ;
+     fhir:display [ fhir:v "Slovak Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000524" ] ;
+     fhir:display [ fhir:v "Republic of Slovenia" ]
+  ] [
+     fhir:code [ fhir:v "100000000554" ] ;
+     fhir:display [ fhir:v "Ukraine" ]
+  ] [
+     fhir:code [ fhir:v "100000000556" ] ;
+     fhir:display [ fhir:v "United Kingdom of Great Britain and Northern Ireland" ]
+  ] [
+     fhir:code [ fhir:v "100000000326" ] ;
+     fhir:display [ fhir:v "Republic of Armenia" ]
+  ] [
+     fhir:code [ fhir:v "100000000518" ] ;
+     fhir:display [ fhir:v "Republic of Serbia" ]
+  ] [
+     fhir:code [ fhir:v "100000000331" ] ;
+     fhir:display [ fhir:v "Republic of Azerbaijan" ]
+  ] [
+     fhir:code [ fhir:v "100000000336" ] ;
+     fhir:display [ fhir:v "Republic of Belarus" ]
+  ] [
+     fhir:code [ fhir:v "100000000337" ] ;
+     fhir:display [ fhir:v "Kingdom of Belgium" ]
+  ] [
+     fhir:code [ fhir:v "240000000000" ] ;
+     fhir:display [ fhir:v "United Kingdom (Northern Ireland)" ]
+  ] [
+     fhir:code [ fhir:v "100000000373" ] ;
+     fhir:display [ fhir:v "Republic of Croatia" ]
+  ] [
+     fhir:code [ fhir:v "100000000376" ] ;
+     fhir:display [ fhir:v "Czech Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000377" ] ;
+     fhir:display [ fhir:v "Kingdom of Denmark" ]
+  ] [
+     fhir:code [ fhir:v "100000000403" ] ;
+     fhir:display [ fhir:v "Federal Republic of Germany" ]
+  ] [
+     fhir:code [ fhir:v "100000000406" ] ;
+     fhir:display [ fhir:v "Hellenic Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000317" ] ;
+     fhir:display [ fhir:v "Republic of Albania" ]
+  ] [
+     fhir:code [ fhir:v "100000000343" ] ;
+     fhir:display [ fhir:v "Bosnia and Herzegovina" ]
+  ] [
+     fhir:code [ fhir:v "100000000402" ] ;
+     fhir:display [ fhir:v "Georgia" ]
+  ] [
+     fhir:code [ fhir:v "100000000427" ] ;
+     fhir:display [ fhir:v "Ireland" ]
+  ] [
+     fhir:code [ fhir:v "100000000435" ] ;
+     fhir:display [ fhir:v "Republic of Kazakhstan" ]
+  ] [
+     fhir:code [ fhir:v "100000000467" ] ;
+     fhir:display [ fhir:v "Republic of Moldova" ]
+  ] [
+     fhir:code [ fhir:v "100000000501" ] ;
+     fhir:display [ fhir:v "Portuguese Republic" ]
+  ] [
+     fhir:code [ fhir:v "100000000549" ] ;
+     fhir:display [ fhir:v "Republic of Turkey" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

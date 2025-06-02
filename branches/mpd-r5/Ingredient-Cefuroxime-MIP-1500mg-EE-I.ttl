@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/Ingredient/Cefuroxime-MIP-1500mg-EE-I> a fhir:Ingredient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Cefuroxime-MIP-1500mg-EE-I"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Ingredient Cefuroxime-MIP-1500mg-EE-I</b></p><a name=\"Cefuroxime-MIP-1500mg-EE-I\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-I\"> </a><a name=\"hcCefuroxime-MIP-1500mg-EE-I-en-US\"> </a><p><b>status</b>: Active</p><p><b>for</b>: </p><ul><li><a href=\"MedicinalProductDefinition-Cefuroxime-MIP-1500mg-EE-MPD.html\">MedicinalProductDefinition: identifier = http://ema.europa.eu/fhir/mpId#EE-100009199-27834,http://ema.europa.eu/fhir/pmsId#EE0000002; domain = Human use; status = Current; combinedPharmaceuticalDoseForm = Powder for solution for injection/infusion; legalStatusOfSupply = Medicinal Product subject to medical prescription; classification = Cefuroxime,cefuroxime</a></li><li><a href=\"ManufacturedItemDefinition-Cefuroxime-MIP-1500mg-EE-MID.html\">ManufacturedItemDefinition: status = active; manufacturedDoseForm = Powder for solution for injection/infusion; unitOfPresentation = Vial</a></li><li><a href=\"AdministrableProductDefinition-Cefuroxime-MIP-1500mg-EE-APD.html\">AdministrableProductDefinition: status = active; administrableDoseForm = Solution for injection/infusion; unitOfPresentation = Vial</a></li></ul><p><b>role</b>: <span title=\"Codes:{https://spor.ema.europa.eu/v1/lists/100000072050 100000072072}\">Active</span></p><blockquote><p><b>substance</b></p><h3>Codes</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000091436}\">CEFUROXIME SODIUM</span></td></tr></table><blockquote><p><b>strength</b></p><p><b>presentation</b>: 1578 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')</span>/1 Vial<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002158 = 'Vial')</span></p><blockquote><p><b>referenceStrength</b></p><h3>Substances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://spor.ema.europa.eu/v2/SubstanceDefinition 100000092667}\">CEFUROXIME</span></td></tr></table><p><b>strength</b>: 1500 milligram(s)<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Measurement EMA  code100000110655 = 'milligram(s)')</span>/1 Vial<span style=\"background: LightGoldenRodYellow\"> (Details: Unit of Presentation EMA  code200000002158 = 'Vial')</span></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:for ( [
+     fhir:link <http://unicom-project.eu/fhir/MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD> ;
+     fhir:reference [ fhir:v "MedicinalProductDefinition/Cefuroxime-MIP-1500mg-EE-MPD" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID> ;
+     fhir:reference [ fhir:v "ManufacturedItemDefinition/Cefuroxime-MIP-1500mg-EE-MID" ]
+  ] [
+     fhir:link <http://unicom-project.eu/fhir/AdministrableProductDefinition/Cefuroxime-MIP-1500mg-EE-APD> ;
+     fhir:reference [ fhir:v "AdministrableProductDefinition/Cefuroxime-MIP-1500mg-EE-APD" ]
+  ] ) ; # 
+  fhir:role [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000072050"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "100000072072" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:substance [
+     fhir:code [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000091436" ] ;
+           fhir:display [ fhir:v "CEFUROXIME SODIUM" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength ( [
+       fhir:presentation [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "1578"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "milligram(s)" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "100000110655" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "Vial" ] ;
+           fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "200000002158" ]
+         ]
+       ] ;
+       fhir:referenceStrength ( [
+         fhir:substance [
+           fhir:concept [
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "100000092667" ] ;
+               fhir:display [ fhir:v "CEFUROXIME" ]
+             ] )
+           ]
+         ] ;
+         fhir:strength [
+           a fhir:Ratio ;
+           fhir:numerator [
+             fhir:value [ fhir:v "1500"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "milligram(s)" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/100000110633"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "100000110655" ]
+           ] ;
+           fhir:denominator [
+             fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "Vial" ] ;
+             fhir:system [ fhir:v "https://spor.ema.europa.eu/v1/lists/200000000014"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "200000002158" ]
+           ]
+         ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

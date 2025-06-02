@@ -1,0 +1,1269 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://unicom-project.eu/fhir/ValueSet/unit-of-presentation> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "unit-of-presentation"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://standardterms.edqm.eu</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>15001000</td><td>Actuation</td></tr><tr><td>15002000</td><td>Ampoule</td></tr><tr><td>15004000</td><td>Applicator</td></tr><tr><td>15005000</td><td>Bag</td></tr><tr><td>15006000</td><td>Barrel</td></tr><tr><td>15007000</td><td>Blister</td></tr><tr><td>15008000</td><td>Block</td></tr><tr><td>15009000</td><td>Bottle</td></tr><tr><td>15011000</td><td>Cachet</td></tr><tr><td>15012000</td><td>Capsule</td></tr><tr><td>15013000</td><td>Cartridge</td></tr><tr><td>15015000</td><td>Collar</td></tr><tr><td>15016000</td><td>Container</td></tr><tr><td>15017000</td><td>Cup</td></tr><tr><td>15018000</td><td>Cylinder</td></tr><tr><td>15019000</td><td>Dart</td></tr><tr><td>15021000</td><td>Dressing</td></tr><tr><td>15022000</td><td>Drop</td></tr><tr><td>15023000</td><td>Film</td></tr><tr><td>15024000</td><td>Chewing gum</td></tr><tr><td>15025000</td><td>Implant</td></tr><tr><td>15026000</td><td>Inhaler</td></tr><tr><td>15027000</td><td>Insert</td></tr><tr><td>15028000</td><td>Jar</td></tr><tr><td>15029000</td><td>Lozenge</td></tr><tr><td>15030000</td><td>Lyophilisate</td></tr><tr><td>15031000</td><td>Matrix</td></tr><tr><td>15033000</td><td>Pad</td></tr><tr><td>15034000</td><td>Paper</td></tr><tr><td>15035000</td><td>Pastille</td></tr><tr><td>15036000</td><td>Patch</td></tr><tr><td>15037000</td><td>Pen</td></tr><tr><td>15038000</td><td>Pendant</td></tr><tr><td>15039000</td><td>Pessary</td></tr><tr><td>15040000</td><td>Pillule</td></tr><tr><td>15041000</td><td>Pipette</td></tr><tr><td>15042000</td><td>Plaster</td></tr><tr><td>15043000</td><td>Plug</td></tr><tr><td>15044000</td><td>Pouch</td></tr><tr><td>15045000</td><td>Sachet</td></tr><tr><td>15046000</td><td>Sponge</td></tr><tr><td>15047000</td><td>Spoonful</td></tr><tr><td>15048000</td><td>Stick</td></tr><tr><td>15049000</td><td>Straw</td></tr><tr><td>15050000</td><td>Strip</td></tr><tr><td>15051000</td><td>Suppository</td></tr><tr><td>15052000</td><td>Syringe</td></tr><tr><td>15053000</td><td>System</td></tr><tr><td>15054000</td><td>Tablet</td></tr><tr><td>15055000</td><td>Tag</td></tr><tr><td>15056000</td><td>Tampon</td></tr><tr><td>15057000</td><td>Thread</td></tr><tr><td>15058000</td><td>Tube</td></tr><tr><td>15059000</td><td>Vessel</td></tr><tr><td>15060000</td><td>Vial</td></tr><tr><td>15061000</td><td>Puff</td></tr><tr><td>15062000</td><td>Swab</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>Greek (el)</b></td><td><b>Spanish (es)</b></td><td><b>French (fr)</b></td><td><b>Italian (it)</b></td><td><b>Portuguese (pt)</b></td></tr><tr><td>15001000</td><td>Betätigung (Sprühstoß)</td><td>Ενεργοποίηση</td><td>Pulsación</td><td>Bouffée</td><td>Erogazione</td><td>Aplicação</td></tr><tr><td>15002000</td><td>Ampulle</td><td>Φύσιγγα</td><td>Ampolla</td><td>Ampoule</td><td>Fiala</td><td>Ampola</td></tr><tr><td>15004000</td><td>Applikator</td><td>Εξάρτημα χορήγησης</td><td>Aplicador</td><td>Applicateur</td><td>Applicatore</td><td>Aplicador</td></tr><tr><td>15005000</td><td>Beutel</td><td>Σάκκος</td><td>Bolsa</td><td>Poche</td><td>Sacca</td><td>Saco</td></tr><tr><td>15006000</td><td>Kanister</td><td>Βαρέλι</td><td>Barril</td><td>Fût</td><td>Fusto</td><td>Barrica</td></tr><tr><td>15007000</td><td>Blisterpackung</td><td>Κυψέλη</td><td>Blíster</td><td>Plaquette</td><td>Blister</td><td>Blister</td></tr><tr><td>15008000</td><td>Stein</td><td>Πλάκα</td><td>Bloque</td><td>Bloc</td><td>Blocco</td><td>Bloco</td></tr><tr><td>15009000</td><td>Flasche</td><td>Φιάλη</td><td>Frasco</td><td>Flacon</td><td>Flacone</td><td>Frasco</td></tr><tr><td>15011000</td><td>Oblatenkapsel</td><td>Αμυλοκαψάκιο</td><td>Sello</td><td>Cachet</td><td>Cachet</td><td>Hóstia</td></tr><tr><td>15012000</td><td>Kapsel</td><td>Καψάκιο</td><td>Cápsula</td><td>Gélule ou capsule molle selon la forme pharmaceutique complète</td><td>Capsula</td><td>Cápsula</td></tr><tr><td>15013000</td><td>Patrone</td><td>Φυσίγγιο</td><td>Cartucho</td><td>Cartouche</td><td>Cartuccia</td><td>Cartucho</td></tr><tr><td>15015000</td><td>Halsband</td><td>Περιλαίμιο</td><td>Collar</td><td>Collier</td><td>Collare</td><td>Coleira</td></tr><tr><td>15016000</td><td>Behältnis</td><td>Περιέκτης</td><td>Envase</td><td>Récipient</td><td>Contenitore</td><td>Recipiente</td></tr><tr><td>15017000</td><td>Messbecher</td><td>Κύπελλο</td><td>Vaso dosificador</td><td>Godet</td><td>Bicchiere dosatore</td><td>Copo-medida</td></tr><tr><td>15018000</td><td>Behältnis</td><td>Κύλινδρος</td><td>Bala</td><td></td><td>Cilindro</td><td>Cilindro</td></tr><tr><td>15019000</td><td>Pfeil</td><td>Εκτοξευόμενη σύριγγα</td><td>Dardo</td><td>Fléchette</td><td>Dardo</td><td>Dardo</td></tr><tr><td>15021000</td><td>Verband</td><td>Επίδεσμος</td><td>Apósito</td><td>Compresse</td><td>Garza</td><td>Penso</td></tr><tr><td>15022000</td><td>Tropfen</td><td>Σταγόνα</td><td>Gota</td><td>Goutte</td><td>Goccia</td><td>Gota</td></tr><tr><td>15023000</td><td>Film</td><td>Υμένιο</td><td>Película</td><td>Film</td><td>Film</td><td>Película</td></tr><tr><td>15024000</td><td>Kaugummi</td><td>Μασώμενο κόμμι</td><td>Chicle</td><td>Gomme à mâcher</td><td>Gomma da masticare</td><td>Goma para mascar</td></tr><tr><td>15025000</td><td>Implantat</td><td>Εμφύτευμα</td><td>Implante</td><td>Implant</td><td>Impianto</td><td>Implante</td></tr><tr><td>15026000</td><td>Inhalator</td><td>Συσκευή εισπνοής</td><td>Inhalador</td><td>Inhalateur</td><td>Inalatore</td><td>Inalador</td></tr><tr><td>15027000</td><td>Insert</td><td>Ένθεμα</td><td>Inserto</td><td>Insert</td><td>Inserto</td><td>Inserto</td></tr><tr><td>15028000</td><td>Weithalsgefäß</td><td>Βάζο</td><td>Tarro</td><td>Pot</td><td>Vasetto</td><td>Boião</td></tr><tr><td>15029000</td><td>Lutschtablette</td><td>Τροχίσκος</td><td>Pastilla para chupar</td><td>Pastille</td><td>Pastiglia</td><td>Pastilha</td></tr><tr><td>15030000</td><td>Lyophilisat</td><td>Λυοφιλοποιημένο υλικό</td><td>Liofilizado</td><td>Lyophilisat</td><td>Liofilizzato</td><td>Liofilizado</td></tr><tr><td>15031000</td><td>Matrix</td><td>Υπόστρωμα</td><td>Matriz</td><td>Matrice</td><td>Matrice</td><td>Matriz</td></tr><tr><td>15033000</td><td>Tampon</td><td>Επίθεμα</td><td>Tampón</td><td>Tampon</td><td>Tampone</td><td>Tampão</td></tr><tr><td>15034000</td><td>Papier</td><td>Χάρτης</td><td>Papel</td><td>Papier</td><td>Carta</td><td>Papel</td></tr><tr><td>15035000</td><td>Pastille</td><td>Παστίλλια</td><td>Pastilla blanda</td><td>Pastille</td><td>Pastiglia molle</td><td>Pastilha mole</td></tr><tr><td>15036000</td><td>Pflaster</td><td>Επίθεμα</td><td>Parche</td><td>Patch</td><td>Cerotto</td><td>Adesivo</td></tr><tr><td>15037000</td><td>Pen</td><td>Συσκευή τύπου πένας</td><td>Pluma</td><td>Stylo</td><td>Penna</td><td>Caneta</td></tr><tr><td>15038000</td><td>Manschette</td><td>Κρεμαστό εξάρτημα</td><td>Colgante</td><td>Manchon</td><td>Manicotto</td><td>Berloque</td></tr><tr><td>15039000</td><td>Pessary</td><td>Κολπικό υπόθετο</td><td>Óvulo</td><td>Ovule</td><td>Ovulo</td><td>Óvulo</td></tr><tr><td>15040000</td><td>Streukügelchen</td><td>Καταπότιο</td><td>Glóbulo</td><td>Granule</td><td>Granuli</td><td>Grânulo</td></tr><tr><td>15041000</td><td>Pipette</td><td>Πιπέτα</td><td>Pipeta</td><td>Pipette</td><td>Pipetta</td><td>Pipeta</td></tr><tr><td>15042000</td><td>Pflaster</td><td>Έμπλαστρο</td><td>Apósito adhesivo</td><td>Emplâtre</td><td>Cerotto</td><td>Emplastro</td></tr><tr><td>15043000</td><td>Einsatz</td><td>Βύσμα</td><td>Soporte</td><td>Support poreux</td><td>Supporto</td><td>Suporte</td></tr><tr><td>15044000</td><td>Beutelchen</td><td>Θύλακας</td><td>Bolsita</td><td>-</td><td>Sacchetto</td><td>Bolsa</td></tr><tr><td>15045000</td><td>Beutel</td><td>Φακελίσκος</td><td>Sobre</td><td>Sachet</td><td>Bustina</td><td>Saqueta</td></tr><tr><td>15046000</td><td>Schwämmchen</td><td>Σπόγγος</td><td>Esponja</td><td>Eponge</td><td>Spugna</td><td>Esponja</td></tr><tr><td>15047000</td><td>ein Löffel voll</td><td>Κουταλιά</td><td>Cucharada</td><td>Cuillère-mesure</td><td>Cucchiaio</td><td>Colher-medida</td></tr><tr><td>15048000</td><td>Stäbchen</td><td>Ραβδίο</td><td>Barra (para intramamario, Candelilla)</td><td>Bâton</td><td>Stick</td><td>Lápis</td></tr><tr><td>15049000</td><td>Trinkhalm</td><td>Καλαμίσκος</td><td>Pajita</td><td>Paille</td><td>Cannuccia</td><td>Palhinha</td></tr><tr><td>15050000</td><td>Streifen</td><td>Ταινία</td><td>Tira</td><td>A voir en fonction du libellé de la composition</td><td>Strip</td><td>Fita</td></tr><tr><td>15051000</td><td>Zäpfchen</td><td>Υπόθετο</td><td>Supositorio</td><td>Suppositoire</td><td>Supposta</td><td>Supositório</td></tr><tr><td>15052000</td><td>Spritze</td><td>Σύριγγα</td><td>Jeringa</td><td>Seringue</td><td>Siringa</td><td>Seringa</td></tr><tr><td>15053000</td><td>System</td><td>Σύστημα (χορήγησης)</td><td>Sistema</td><td>Système</td><td>Sistema</td><td>Sistema</td></tr><tr><td>15054000</td><td>Tablette</td><td>Δισκίο</td><td>Comprimido</td><td>Comprimé</td><td>Compressa</td><td>Comprimido</td></tr><tr><td>15055000</td><td>Marke</td><td>Βύσμα</td><td>Crotal</td><td>Plaquette</td><td>Placchetta</td><td>Brinco</td></tr><tr><td>15056000</td><td>Tampon</td><td>Βύσμα</td><td>Tampón</td><td>Tampon</td><td>Tampone</td><td>Tampão</td></tr><tr><td>15057000</td><td>Faden</td><td>Νήμα</td><td>Hilo</td><td>Fil</td><td>Filo</td><td>Fio</td></tr><tr><td>15058000</td><td>Tube</td><td>Σωληνάριο</td><td>Tubo</td><td>Tube</td><td>Tubo</td><td>Bisnaga</td></tr><tr><td>15059000</td><td>Behältnis</td><td>Δοχείο</td><td>Recipiente</td><td>Récipient</td><td>Recipiente a tenuta</td><td>Recipiente</td></tr><tr><td>15060000</td><td>Durchstechflasche</td><td>Φιαλίδιο</td><td>Vial</td><td>Flacon</td><td>Flaconcino</td><td>Frasco para injetáveis</td></tr><tr><td>15061000</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>15062000</td><td>Tupfer</td><td></td><td>Bastoncillo</td><td>Tampon en applicateur</td><td>Tampone</td><td>Zaragatoa</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://unicom-project.eu/fhir/ValueSet/unit-of-presentation"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "UnitOfPresentation"] ; # 
+  fhir:title [ fhir:v "EDQM Unit of Presentation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-17T08:02:36+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UNICOM"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UNICOM" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://unicom-project.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet Unit of presentation from EDQM, UOP, see https://standardterms.edqm.eu/#"] ; # 
+  fhir:immutable [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "15001000" ] ;
+         fhir:display [ fhir:v "Actuation" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Betätigung (Sprühstoß)" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ενεργοποίηση" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Pulsación" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Bouffée" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Erogazione" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Aplicação" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15002000" ] ;
+         fhir:display [ fhir:v "Ampoule" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Ampulle" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Φύσιγγα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Ampolla" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Ampoule" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Fiala" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Ampola" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15004000" ] ;
+         fhir:display [ fhir:v "Applicator" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Applikator" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εξάρτημα χορήγησης" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Aplicador" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Applicateur" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Applicatore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Aplicador" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15005000" ] ;
+         fhir:display [ fhir:v "Bag" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Beutel" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σάκκος" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Bolsa" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Poche" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Sacca" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Saco" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15006000" ] ;
+         fhir:display [ fhir:v "Barrel" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Kanister" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Βαρέλι" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Barril" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Fût" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Fusto" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Barrica" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15007000" ] ;
+         fhir:display [ fhir:v "Blister" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Blisterpackung" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Κυψέλη" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Blíster" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Plaquette" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Blister" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Blister" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15008000" ] ;
+         fhir:display [ fhir:v "Block" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Stein" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Πλάκα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Bloque" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Bloc" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Blocco" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Bloco" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15009000" ] ;
+         fhir:display [ fhir:v "Bottle" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Flasche" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Φιάλη" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Frasco" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Flacon" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Flacone" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Frasco" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15011000" ] ;
+         fhir:display [ fhir:v "Cachet" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Oblatenkapsel" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Αμυλοκαψάκιο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Sello" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Cachet" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Cachet" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Hóstia" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15012000" ] ;
+         fhir:display [ fhir:v "Capsule" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Kapsel" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Καψάκιο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cápsula" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Gélule ou capsule molle selon la forme pharmaceutique complète" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Capsula" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Cápsula" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15013000" ] ;
+         fhir:display [ fhir:v "Cartridge" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Patrone" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Φυσίγγιο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cartucho" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Cartouche" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Cartuccia" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Cartucho" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15015000" ] ;
+         fhir:display [ fhir:v "Collar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Halsband" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Περιλαίμιο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Collar" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Collier" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Collare" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Coleira" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15016000" ] ;
+         fhir:display [ fhir:v "Container" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Behältnis" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Περιέκτης" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Envase" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Récipient" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Contenitore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Recipiente" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15017000" ] ;
+         fhir:display [ fhir:v "Cup" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Messbecher" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Κύπελλο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vaso dosificador" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Godet" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Bicchiere dosatore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Copo-medida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15018000" ] ;
+         fhir:display [ fhir:v "Cylinder" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Behältnis" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Κύλινδρος" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Bala" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Cilindro" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Cilindro" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15019000" ] ;
+         fhir:display [ fhir:v "Dart" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Pfeil" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εκτοξευόμενη σύριγγα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Dardo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Fléchette" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Dardo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Dardo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15021000" ] ;
+         fhir:display [ fhir:v "Dressing" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Verband" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Επίδεσμος" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Apósito" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Compresse" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Garza" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Penso" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15022000" ] ;
+         fhir:display [ fhir:v "Drop" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Tropfen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σταγόνα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Gota" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Goutte" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Goccia" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Gota" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15023000" ] ;
+         fhir:display [ fhir:v "Film" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Film" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Υμένιο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Película" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Film" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Film" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Película" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15024000" ] ;
+         fhir:display [ fhir:v "Chewing gum" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Kaugummi" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Μασώμενο κόμμι" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Chicle" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Gomme à mâcher" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Gomma da masticare" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Goma para mascar" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15025000" ] ;
+         fhir:display [ fhir:v "Implant" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Implantat" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Εμφύτευμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Implante" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Implant" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Impianto" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Implante" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15026000" ] ;
+         fhir:display [ fhir:v "Inhaler" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Inhalator" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Συσκευή εισπνοής" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Inhalador" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Inhalateur" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Inalatore" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Inalador" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15027000" ] ;
+         fhir:display [ fhir:v "Insert" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Insert" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ένθεμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Inserto" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Insert" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Inserto" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Inserto" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15028000" ] ;
+         fhir:display [ fhir:v "Jar" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Weithalsgefäß" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Βάζο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Tarro" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Pot" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Vasetto" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Boião" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15029000" ] ;
+         fhir:display [ fhir:v "Lozenge" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Lutschtablette" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Τροχίσκος" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Pastilla para chupar" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Pastille" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Pastiglia" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Pastilha" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15030000" ] ;
+         fhir:display [ fhir:v "Lyophilisate" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Lyophilisat" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Λυοφιλοποιημένο υλικό" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Liofilizado" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Lyophilisat" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Liofilizzato" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Liofilizado" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15031000" ] ;
+         fhir:display [ fhir:v "Matrix" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Matrix" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Υπόστρωμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Matriz" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Matrice" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Matrice" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Matriz" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15033000" ] ;
+         fhir:display [ fhir:v "Pad" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Tampon" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Επίθεμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Tampón" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Tampon" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Tampone" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Tampão" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15034000" ] ;
+         fhir:display [ fhir:v "Paper" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Papier" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Χάρτης" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Papel" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Papier" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Carta" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Papel" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15035000" ] ;
+         fhir:display [ fhir:v "Pastille" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Pastille" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Παστίλλια" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Pastilla blanda" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Pastille" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Pastiglia molle" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Pastilha mole" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15036000" ] ;
+         fhir:display [ fhir:v "Patch" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Pflaster" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Επίθεμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Parche" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Patch" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Cerotto" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Adesivo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15037000" ] ;
+         fhir:display [ fhir:v "Pen" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Pen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Συσκευή τύπου πένας" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Pluma" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Stylo" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Penna" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Caneta" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15038000" ] ;
+         fhir:display [ fhir:v "Pendant" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Manschette" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Κρεμαστό εξάρτημα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Colgante" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Manchon" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Manicotto" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Berloque" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15039000" ] ;
+         fhir:display [ fhir:v "Pessary" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Pessary" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Κολπικό υπόθετο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Óvulo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Ovule" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Ovulo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Óvulo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15040000" ] ;
+         fhir:display [ fhir:v "Pillule" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Streukügelchen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Καταπότιο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Glóbulo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Granule" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Granuli" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Grânulo" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15041000" ] ;
+         fhir:display [ fhir:v "Pipette" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Pipette" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Πιπέτα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Pipeta" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Pipette" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Pipetta" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Pipeta" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15042000" ] ;
+         fhir:display [ fhir:v "Plaster" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Pflaster" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Έμπλαστρο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Apósito adhesivo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Emplâtre" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Cerotto" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Emplastro" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15043000" ] ;
+         fhir:display [ fhir:v "Plug" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Einsatz" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Βύσμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Soporte" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Support poreux" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Supporto" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Suporte" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15044000" ] ;
+         fhir:display [ fhir:v "Pouch" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Beutelchen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Θύλακας" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Bolsita" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "-" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Sacchetto" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Bolsa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15045000" ] ;
+         fhir:display [ fhir:v "Sachet" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Beutel" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Φακελίσκος" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Sobre" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Sachet" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Bustina" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Saqueta" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15046000" ] ;
+         fhir:display [ fhir:v "Sponge" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Schwämmchen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σπόγγος" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Esponja" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Eponge" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Spugna" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Esponja" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15047000" ] ;
+         fhir:display [ fhir:v "Spoonful" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "ein Löffel voll" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Κουταλιά" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Cucharada" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Cuillère-mesure" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Cucchiaio" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Colher-medida" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15048000" ] ;
+         fhir:display [ fhir:v "Stick" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Stäbchen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ραβδίο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Barra (para intramamario, Candelilla)" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Bâton" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Stick" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Lápis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15049000" ] ;
+         fhir:display [ fhir:v "Straw" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Trinkhalm" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Καλαμίσκος" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Pajita" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Paille" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Cannuccia" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Palhinha" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15050000" ] ;
+         fhir:display [ fhir:v "Strip" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Streifen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Ταινία" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Tira" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "A voir en fonction du libellé de la composition" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Strip" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fita" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15051000" ] ;
+         fhir:display [ fhir:v "Suppository" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Zäpfchen" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Υπόθετο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Supositorio" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Suppositoire" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Supposta" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Supositório" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15052000" ] ;
+         fhir:display [ fhir:v "Syringe" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Spritze" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σύριγγα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Jeringa" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Seringue" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Siringa" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Seringa" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15053000" ] ;
+         fhir:display [ fhir:v "System" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "System" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σύστημα (χορήγησης)" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Sistema" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Système" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Sistema" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Sistema" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15054000" ] ;
+         fhir:display [ fhir:v "Tablet" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Tablette" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Δισκίο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Comprimido" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Comprimé" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Compressa" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Comprimido" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15055000" ] ;
+         fhir:display [ fhir:v "Tag" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Marke" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Βύσμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Crotal" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Plaquette" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Placchetta" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Brinco" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15056000" ] ;
+         fhir:display [ fhir:v "Tampon" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Tampon" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Βύσμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Tampón" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Tampon" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Tampone" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Tampão" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15057000" ] ;
+         fhir:display [ fhir:v "Thread" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Faden" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Νήμα" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Hilo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Fil" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Filo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Fio" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15058000" ] ;
+         fhir:display [ fhir:v "Tube" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Tube" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Σωληνάριο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Tubo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Tube" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Tubo" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Bisnaga" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15059000" ] ;
+         fhir:display [ fhir:v "Vessel" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Behältnis" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Δοχείο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Recipiente" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Récipient" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Recipiente a tenuta" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Recipiente" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15060000" ] ;
+         fhir:display [ fhir:v "Vial" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Durchstechflasche" ]
+         ] [
+           fhir:language [ fhir:v "el" ] ;
+           fhir:value [ fhir:v "Φιαλίδιο" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Vial" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Flacon" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Flaconcino" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Frasco para injetáveis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15061000" ] ;
+         fhir:display [ fhir:v "Puff" ]
+       ] [
+         fhir:code [ fhir:v "15062000" ] ;
+         fhir:display [ fhir:v "Swab" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de" ] ;
+           fhir:value [ fhir:v "Tupfer" ]
+         ] [
+           fhir:language [ fhir:v "es" ] ;
+           fhir:value [ fhir:v "Bastoncillo" ]
+         ] [
+           fhir:language [ fhir:v "fr" ] ;
+           fhir:value [ fhir:v "Tampon en applicateur" ]
+         ] [
+           fhir:language [ fhir:v "it" ] ;
+           fhir:value [ fhir:v "Tampone" ]
+         ] [
+           fhir:language [ fhir:v "pt" ] ;
+           fhir:value [ fhir:v "Zaragatoa" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

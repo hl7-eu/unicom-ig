@@ -1,0 +1,1028 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.EU.FHIR.UNICOM\015-CopaliaHCT-EE-FullProduct - TTL Representation - FHIR v4.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/unicom.css" rel="stylesheet"/>
+<link href="assets/css/unicom-productviewer.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.98"}
+    h3,h4,h5,h6{--heading-prefix:"5.98"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="61" alt="Project home" src="assets/images/unicom.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UnicomIG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://build.fhir.org/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="regulatory.html">Regulatory Data</a>
+  </li>
+  <li>
+    <a href="issues.html">Known Issues</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>015-CopaliaHCT-EE-FullProduct</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">UnicomIG, published by UNICOM. This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/hl7-eu/unicom-ig">https://github.com/hl7-eu/unicom-ig</a> and changes regularly. See the <a href="http://unicom-project.eu/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-015-CopaliaHCT-EE-FullProduct.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-015-CopaliaHCT-EE-FullProduct.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-015-CopaliaHCT-EE-FullProduct.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: 015-CopaliaHCT-EE-FullProduct - TTL Representation</h2>
+  <table class="">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Bundle-015-CopaliaHCT-EE-FullProduct.ttl" no-download="true">Raw ttl</a> | <a href="Bundle-015-CopaliaHCT-EE-FullProduct.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Bundle;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:value</a> &quot;015-CopaliaHCT-EE-FullProduct&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.type">fhir:Bundle.type</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;transaction&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry">fhir:Bundle.entry</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/CopaliaHCT-EE-MPD&quot; ];
+     <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition">fhir:Bundle.entry.resource</a> &lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/CopaliaHCT-EE-MPD&gt;;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request">fhir:Bundle.entry.request</a> [
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.method">fhir:Bundle.entry.request.method</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;PUT&quot; ];
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.url">fhir:Bundle.entry.request.url</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;MedicinalProductDefinition/CopaliaHCT-EE-MPD&quot; ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/CopaliaHCT-EE-RA&quot; ];
+     <a href="http://hl7.org/fhir/R4B/regulatedauthorization.html#RegulatedAuthorization">fhir:Bundle.entry.resource</a> &lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/CopaliaHCT-EE-RA&gt;;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request">fhir:Bundle.entry.request</a> [
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.method">fhir:Bundle.entry.request.method</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;PUT&quot; ];
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.url">fhir:Bundle.entry.request.url</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;RegulatedAuthorization/CopaliaHCT-EE-RA&quot; ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100010531-NovartisEuropharmLimited&quot; ];
+     <a href="http://hl7.org/fhir/R4B/organization.html#Organization">fhir:Bundle.entry.resource</a> &lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100010531-NovartisEuropharmLimited&gt;;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request">fhir:Bundle.entry.request</a> [
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.method">fhir:Bundle.entry.request.method</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;PUT&quot; ];
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.url">fhir:Bundle.entry.request.url</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;Organization/LOC-100010531-NovartisEuropharmLimited&quot; ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/CopaliaHCT-EE-APD&quot; ];
+     <a href="http://hl7.org/fhir/R4B/administrableproductdefinition.html#AdministrableProductDefinition">fhir:Bundle.entry.resource</a> &lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/CopaliaHCT-EE-APD&gt;;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request">fhir:Bundle.entry.request</a> [
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.method">fhir:Bundle.entry.request.method</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;PUT&quot; ];
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.url">fhir:Bundle.entry.request.url</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;AdministrableProductDefinition/CopaliaHCT-EE-APD&quot; ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/CopaliaHCT-EE-MID&quot; ];
+     <a href="http://hl7.org/fhir/R4B/manufactureditemdefinition.html#ManufacturedItemDefinition">fhir:Bundle.entry.resource</a> &lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/CopaliaHCT-EE-MID&gt;;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request">fhir:Bundle.entry.request</a> [
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.method">fhir:Bundle.entry.request.method</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;PUT&quot; ];
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.url">fhir:Bundle.entry.request.url</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;ManufacturedItemDefinition/CopaliaHCT-EE-MID&quot; ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CopaliaHCT-ingredient1-EE-I&quot; ];
+     <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient">fhir:Bundle.entry.resource</a> &lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CopaliaHCT-ingredient1-EE-I&gt;;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request">fhir:Bundle.entry.request</a> [
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.method">fhir:Bundle.entry.request.method</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;PUT&quot; ];
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.url">fhir:Bundle.entry.request.url</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;Ingredient/CopaliaHCT-ingredient1-EE-I&quot; ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CopaliaHCT-ingredient2-EE-I&quot; ];
+     <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient">fhir:Bundle.entry.resource</a> &lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CopaliaHCT-ingredient2-EE-I&gt;;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request">fhir:Bundle.entry.request</a> [
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.method">fhir:Bundle.entry.request.method</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;PUT&quot; ];
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.url">fhir:Bundle.entry.request.url</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;Ingredient/CopaliaHCT-ingredient2-EE-I&quot; ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CopaliaHCT-ingredient3-EE-I&quot; ];
+     <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient">fhir:Bundle.entry.resource</a> &lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CopaliaHCT-ingredient3-EE-I&gt;;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request">fhir:Bundle.entry.request</a> [
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.method">fhir:Bundle.entry.request.method</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;PUT&quot; ];
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.url">fhir:Bundle.entry.request.url</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;Ingredient/CopaliaHCT-ingredient3-EE-I&quot; ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/CopaliaHCT-package1-EE-PPD&quot; ];
+     <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition">fhir:Bundle.entry.resource</a> &lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/CopaliaHCT-package1-EE-PPD&gt;;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request">fhir:Bundle.entry.request</a> [
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.method">fhir:Bundle.entry.request.method</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;PUT&quot; ];
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.url">fhir:Bundle.entry.request.url</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;PackagedProductDefinition/CopaliaHCT-package1-EE-PPD&quot; ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/CopaliaHCT-package2-EE-PPD&quot; ];
+     <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition">fhir:Bundle.entry.resource</a> &lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/CopaliaHCT-package2-EE-PPD&gt;;
+     <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request">fhir:Bundle.entry.request</a> [
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.method">fhir:Bundle.entry.request.method</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;PUT&quot; ];
+       <a href="http://hl7.org/fhir/R4B/bundle.html#Bundle.entry.request.url">fhir:Bundle.entry.request.url</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;PackagedProductDefinition/CopaliaHCT-package2-EE-PPD&quot; ]     ]
+  ]. # 
+
+&lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/MedicinalProductDefinition/CopaliaHCT-EE-MPD&gt; <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html">a</a> fhir:MedicinalProductDefinition;
+  <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:value</a> &quot;CopaliaHCT-EE-MPD&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">fhir:value</a> &quot;http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition&quot;;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://unicom-project.eu/fhir/StructureDefinition/PPLMedicinalProductDefinition&gt;     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: MedicinalProductDefinition&lt;/b&gt;&lt;a name=\&quot;CopaliaHCT-EE-MPD\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource MedicinalProductDefinition &amp;quot;CopaliaHCT-EE-MPD&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PPLMedicinalProductDefinition.html\&quot;&gt;PPL Medicinal Product profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EE-100010531-3309&lt;/p&gt;&lt;p&gt;&lt;b&gt;domain&lt;/b&gt;: Human use &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-domain-ema-cs.html\&quot;&gt;Domain EMA&lt;/a&gt;#100000000012)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Provisional &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-recordStatus-ema-cs.html\&quot;&gt;Record Status EMA SPOR&lt;/a&gt;#200000005005)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;combinedPharmaceuticalDoseForm&lt;/b&gt;: Film-coated tablet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-pharmaceutical-dose-form-ema-cs.html\&quot;&gt;Pharmaceutical Dose Form EMA&lt;/a&gt;#100000073665)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;legalStatusOfSupply&lt;/b&gt;: Medicinal Product subject to medical prescription &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-legal-status-for-the-supply-ema-cs.html\&quot;&gt;Legal Status for the Supply EMA&lt;/a&gt;#100000072084)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;classification&lt;/b&gt;: valsartan, amlodipine and hydrochlorothiazide &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html\&quot;&gt;WHO ATC&lt;/a&gt;#C09DX01)&lt;/span&gt;, valsartan, amlodipine and hydrochlorothiazide &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-ATC-Human-EMA.html\&quot;&gt;ATC Human EMA&lt;/a&gt;#100000116213)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;productName&lt;/b&gt;: COPALIA HCT 160mg / 12.5mg / 10mg õhukese polümeerikattega tabletid&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;namePart&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;part&lt;/b&gt;: COPALIA HCT&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Invented name part &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (220000000000#220000000002)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;namePart&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;part&lt;/b&gt;: 160mg / 12.5mg / 10mg&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Strength part &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (220000000000#220000000004)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;namePart&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;part&lt;/b&gt;: õhukese polümeerikattega tabletid&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Pharmaceutical dose form part &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (220000000000#220000000005)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;CountryLanguages&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Language&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Republic of Estonia &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-country-ema-cs.html\&quot;&gt;Country EMA&lt;/a&gt;#100000000388)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Estonian &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-language-ema-cs.html\&quot;&gt;Language EMA&lt;/a&gt;#100000072172)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.identifier">fhir:MedicinalProductDefinition.identifier</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;http://ema.europa.eu/fhir/mpId&quot; ];
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;EE-100010531-3309&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.domain">fhir:MedicinalProductDefinition.domain</a> [
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000000004&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000000012&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Human use&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.status">fhir:MedicinalProductDefinition.status</a> [
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000005003&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000005005&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Provisional&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.combinedPharmaceuticalDoseForm">fhir:MedicinalProductDefinition.combinedPharmaceuticalDoseForm</a> [
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000073665&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Film-coated tablet&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.legalStatusOfSupply">fhir:MedicinalProductDefinition.legalStatusOfSupply</a> [
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000072051&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000072084&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Medicinal Product subject to medical prescription&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.classification">fhir:MedicinalProductDefinition.classification</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;http://www.whocc.no/atc&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;C09DX01&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;valsartan, amlodipine and hydrochlorothiazide&quot; ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000093533&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000116213&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;valsartan, amlodipine and hydrochlorothiazide&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.name">fhir:MedicinalProductDefinition.name</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.name.productName">fhir:MedicinalProductDefinition.name.productName</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;COPALIA HCT 160mg / 12.5mg / 10mg õhukese polümeerikattega tabletid&quot; ];
+     <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart">fhir:MedicinalProductDefinition.name.namePart</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart.part">fhir:MedicinalProductDefinition.name.namePart.part</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;COPALIA HCT&quot; ];
+       <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart.type">fhir:MedicinalProductDefinition.name.namePart.type</a> [
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/220000000000&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;220000000002&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Invented name part&quot; ]         ]       ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+       <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart.part">fhir:MedicinalProductDefinition.name.namePart.part</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;160mg / 12.5mg / 10mg&quot; ];
+       <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart.type">fhir:MedicinalProductDefinition.name.namePart.type</a> [
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/220000000000&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;220000000004&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Strength part&quot; ]         ]       ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+       <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart.part">fhir:MedicinalProductDefinition.name.namePart.part</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;õhukese polümeerikattega tabletid&quot; ];
+       <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.name.namePart.type">fhir:MedicinalProductDefinition.name.namePart.type</a> [
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/220000000000&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;220000000005&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Pharmaceutical dose form part&quot; ]         ]       ]     ];
+     <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage">fhir:MedicinalProductDefinition.name.countryLanguage</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage.country">fhir:MedicinalProductDefinition.name.countryLanguage.country</a> [
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000000002&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000000388&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Republic of Estonia&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4B/medicinalproductdefinition.html#MedicinalProductDefinition.name.countryLanguage.language">fhir:MedicinalProductDefinition.name.countryLanguage.language</a> [
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000072057&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000072172&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Estonian&quot; ]         ]       ]     ]
+  ]. # 
+
+&lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/RegulatedAuthorization/CopaliaHCT-EE-RA&gt; <a href="http://hl7.org/fhir/R4B/regulatedauthorization.html">a</a> fhir:RegulatedAuthorization;
+  <a href="http://hl7.org/fhir/R4B/regulatedauthorization.html#RegulatedAuthorization.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:value</a> &quot;CopaliaHCT-EE-RA&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/regulatedauthorization.html#RegulatedAuthorization.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">fhir:value</a> &quot;http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization&quot;;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://unicom-project.eu/fhir/StructureDefinition/PPLRegulatedAuthorization&gt;     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/regulatedauthorization.html#RegulatedAuthorization.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: RegulatedAuthorization&lt;/b&gt;&lt;a name=\&quot;CopaliaHCT-EE-RA\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource RegulatedAuthorization &amp;quot;CopaliaHCT-EE-RA&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PPLRegulatedAuthorization.html\&quot;&gt;PPL Marketing Authorisation profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EU/1/09/575&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_CopaliaHCT-EE-MPD\&quot;&gt;See above (MedicinalProductDefinition/CopaliaHCT-EE-MPD)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Marketing Authorisation &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (220000000060#220000000061)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;region&lt;/b&gt;: Republic of Estonia &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-country-ema-cs.html\&quot;&gt;Country EMA&lt;/a&gt;#100000000388)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Valid &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-regulatoryStatus-ema-cs.html\&quot;&gt;Regulatory Entitlement Status EMA SPOR&lt;/a&gt;#100000072099)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2009-11-04&lt;/p&gt;&lt;p&gt;&lt;b&gt;holder&lt;/b&gt;: &lt;a href=\&quot;#Organization_LOC-100010531-NovartisEuropharmLimited\&quot;&gt;See above (Organization/LOC-100010531-NovartisEuropharmLimited)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/regulatedauthorization.html#RegulatedAuthorization.identifier">fhir:RegulatedAuthorization.identifier</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;EU/1/09/575&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/regulatedauthorization.html#RegulatedAuthorization.subject">fhir:RegulatedAuthorization.subject</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;MedicinalProductDefinition/CopaliaHCT-EE-MPD&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/regulatedauthorization.html#RegulatedAuthorization.type">fhir:RegulatedAuthorization.type</a> [
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/220000000060&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;220000000061&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Marketing Authorisation&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/regulatedauthorization.html#RegulatedAuthorization.region">fhir:RegulatedAuthorization.region</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000000002&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000000388&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Republic of Estonia&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/regulatedauthorization.html#RegulatedAuthorization.status">fhir:RegulatedAuthorization.status</a> [
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000072049&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000072099&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Valid&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/regulatedauthorization.html#RegulatedAuthorization.statusDate">fhir:RegulatedAuthorization.statusDate</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">fhir:value</a> &quot;2009-11-04&quot;^^xsd:date]; # 
+  <a href="http://hl7.org/fhir/R4B/regulatedauthorization.html#RegulatedAuthorization.holder">fhir:RegulatedAuthorization.holder</a> [
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Organization/LOC-100010531-NovartisEuropharmLimited&quot; ]
+  ]. # 
+
+&lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Organization/LOC-100010531-NovartisEuropharmLimited&gt; <a href="http://hl7.org/fhir/R4B/organization.html">a</a> fhir:Organization;
+  <a href="http://hl7.org/fhir/R4B/organization.html#Organization.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:value</a> &quot;LOC-100010531-NovartisEuropharmLimited&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/organization.html#Organization.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">fhir:value</a> &quot;http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization&quot;;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://unicom-project.eu/fhir/StructureDefinition/PPLOrganization&gt;     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/organization.html#Organization.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Organization&lt;/b&gt;&lt;a name=\&quot;LOC-100010531-NovartisEuropharmLimited\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Organization &amp;quot;LOC-100010531-NovartisEuropharmLimited&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PPLOrganization.html\&quot;&gt;PPL Organization&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: LOC-100010531, id: ORG-100007373&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Novartis Europharm Limited&lt;/p&gt;&lt;/div&gt;&quot;
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/organization.html#Organization.identifier">fhir:Organization.identifier</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/locations&quot; ];
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;LOC-100010531&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/organisations&quot; ];
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;ORG-100007373&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/organization.html#Organization.name">fhir:Organization.name</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Novartis Europharm Limited&quot;]. # 
+
+&lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/AdministrableProductDefinition/CopaliaHCT-EE-APD&gt; <a href="http://hl7.org/fhir/R4B/administrableproductdefinition.html">a</a> fhir:AdministrableProductDefinition;
+  <a href="http://hl7.org/fhir/R4B/administrableproductdefinition.html#AdministrableProductDefinition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:value</a> &quot;CopaliaHCT-EE-APD&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/administrableproductdefinition.html#AdministrableProductDefinition.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">fhir:value</a> &quot;http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition&quot;;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://unicom-project.eu/fhir/StructureDefinition/PPLAdministrableProductDefinition&gt;     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/administrableproductdefinition.html#AdministrableProductDefinition.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: AdministrableProductDefinition&lt;/b&gt;&lt;a name=\&quot;CopaliaHCT-EE-APD\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource AdministrableProductDefinition &amp;quot;CopaliaHCT-EE-APD&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PPLAdministrableProductDefinition.html\&quot;&gt;PPL Administrable Product profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;formOf&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_CopaliaHCT-EE-MPD\&quot;&gt;See above (MedicinalProductDefinition/CopaliaHCT-EE-MPD)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;administrableDoseForm&lt;/b&gt;: Film-coated tablet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-pharmaceutical-dose-form-ema-cs.html\&quot;&gt;Pharmaceutical Dose Form EMA&lt;/a&gt;#100000073665)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;unitOfPresentation&lt;/b&gt;: Tablet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-unit-of-presentation-ema-cs.html\&quot;&gt;Unit of Presentation EMA&lt;/a&gt;#200000002152)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;RouteOfAdministrations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Oral use &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-routes-and-methods-of-administration-ema-cs.html\&quot;&gt;Routes and Methods of Administration EMA&lt;/a&gt;#100000073619)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/administrableproductdefinition.html#AdministrableProductDefinition.status">fhir:AdministrableProductDefinition.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;active&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/administrableproductdefinition.html#AdministrableProductDefinition.formOf">fhir:AdministrableProductDefinition.formOf</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;MedicinalProductDefinition/CopaliaHCT-EE-MPD&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/administrableproductdefinition.html#AdministrableProductDefinition.administrableDoseForm">fhir:AdministrableProductDefinition.administrableDoseForm</a> [
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000073665&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Film-coated tablet&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/administrableproductdefinition.html#AdministrableProductDefinition.unitOfPresentation">fhir:AdministrableProductDefinition.unitOfPresentation</a> [
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000000014&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000002152&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Tablet&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration">fhir:AdministrableProductDefinition.routeOfAdministration</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/administrableproductdefinition.html#AdministrableProductDefinition.routeOfAdministration.code">fhir:AdministrableProductDefinition.routeOfAdministration.code</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000073345&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000073619&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Oral use&quot; ]       ]     ]
+  ]. # 
+
+&lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/ManufacturedItemDefinition/CopaliaHCT-EE-MID&gt; <a href="http://hl7.org/fhir/R4B/manufactureditemdefinition.html">a</a> fhir:ManufacturedItemDefinition;
+  <a href="http://hl7.org/fhir/R4B/manufactureditemdefinition.html#ManufacturedItemDefinition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:value</a> &quot;CopaliaHCT-EE-MID&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/manufactureditemdefinition.html#ManufacturedItemDefinition.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">fhir:value</a> &quot;http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition&quot;;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://unicom-project.eu/fhir/StructureDefinition/PPLManufacturedItemDefinition&gt;     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/manufactureditemdefinition.html#ManufacturedItemDefinition.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ManufacturedItemDefinition&lt;/b&gt;&lt;a name=\&quot;CopaliaHCT-EE-MID\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ManufacturedItemDefinition &amp;quot;CopaliaHCT-EE-MID&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PPLManufacturedItemDefinition.html\&quot;&gt;PPL Manufactured Item profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturedDoseForm&lt;/b&gt;: Film-coated tablet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-pharmaceutical-dose-form-ema-cs.html\&quot;&gt;Pharmaceutical Dose Form EMA&lt;/a&gt;#100000073665)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;unitOfPresentation&lt;/b&gt;: Tablet &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-unit-of-presentation-ema-cs.html\&quot;&gt;Unit of Presentation EMA&lt;/a&gt;#200000002152)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/manufactureditemdefinition.html#ManufacturedItemDefinition.status">fhir:ManufacturedItemDefinition.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;active&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/manufactureditemdefinition.html#ManufacturedItemDefinition.manufacturedDoseForm">fhir:ManufacturedItemDefinition.manufacturedDoseForm</a> [
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000000004&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000073665&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Film-coated tablet&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/manufactureditemdefinition.html#ManufacturedItemDefinition.unitOfPresentation">fhir:ManufacturedItemDefinition.unitOfPresentation</a> [
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000000014&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000002152&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Tablet&quot; ]     ]
+  ]. # 
+
+&lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CopaliaHCT-ingredient1-EE-I&gt; <a href="http://hl7.org/fhir/R4B/ingredient.html">a</a> fhir:Ingredient;
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:value</a> &quot;CopaliaHCT-ingredient1-EE-I&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">fhir:value</a> &quot;http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient&quot;;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient&gt;     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;a name=\&quot;CopaliaHCT-ingredient1-EE-I\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient &amp;quot;CopaliaHCT-ingredient1-EE-I&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PPLIngredient.html\&quot;&gt;PPL Ingredient profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#MedicinalProductDefinition_CopaliaHCT-EE-MPD\&quot;&gt;See above (MedicinalProductDefinition/CopaliaHCT-EE-MPD)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#AdministrableProductDefinition_CopaliaHCT-EE-APD\&quot;&gt;See above (AdministrableProductDefinition/CopaliaHCT-EE-APD)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#ManufacturedItemDefinition_CopaliaHCT-EE-MID\&quot;&gt;See above (ManufacturedItemDefinition/CopaliaHCT-EE-MID)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (100000072050#100000072072)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Codes&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Amlodipine besilate &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-substance-sms-cs.html\&quot;&gt;Substances EMA SPOR SMS&lt;/a&gt;#100000090079)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;strength&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;presentation&lt;/b&gt;: 13.87 mg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')&lt;/span&gt;/1 Tablet&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;referenceStrength&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Substances&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Amlodipine &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-substance-sms-cs.html\&quot;&gt;Substances EMA SPOR SMS&lt;/a&gt;#100000085259)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;strength&lt;/b&gt;: 10 mg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')&lt;/span&gt;/1 Tablet&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.status">fhir:Ingredient.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;active&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.for">fhir:Ingredient.for</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;MedicinalProductDefinition/CopaliaHCT-EE-MPD&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;AdministrableProductDefinition/CopaliaHCT-EE-APD&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;ManufacturedItemDefinition/CopaliaHCT-EE-MID&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.role">fhir:Ingredient.role</a> [
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000072072&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;active&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance">fhir:Ingredient.substance</a> [
+     <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.code">fhir:Ingredient.substance.code</a> [
+       <a href="http://hl7.org/fhir/R4B/references.html#CodeableReference#CodeableReference.concept">fhir:CodeableReference.concept</a> [
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v2/SubstanceDefinition&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000090079&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Amlodipine besilate&quot; ]         ]       ]     ];
+     <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength">fhir:Ingredient.substance.strength</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength.presentation[x]">fhir:Ingredient.substance.strength.presentationRatio</a> [
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Ratio#Ratio.numerator">fhir:Ratio.numerator</a> [
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;13.87&quot;^^xsd:decimal ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;mg&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000110633&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000110655&quot; ]         ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Ratio#Ratio.denominator">fhir:Ratio.denominator</a> [
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Tablet&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000000014&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000002152&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength.referenceStrength">fhir:Ingredient.substance.strength.referenceStrength</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength.referenceStrength.substance">fhir:Ingredient.substance.strength.referenceStrength.substance</a> [
+           <a href="http://hl7.org/fhir/R4B/references.html#CodeableReference#CodeableReference.concept">fhir:CodeableReference.concept</a> [
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v2/SubstanceDefinition&quot; ];
+               <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000085259&quot; ];
+               <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Amlodipine&quot; ]             ]           ]         ];
+         <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength.referenceStrength.strength[x]">fhir:Ingredient.substance.strength.referenceStrength.strengthRatio</a> [
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Ratio#Ratio.numerator">fhir:Ratio.numerator</a> [
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;10&quot;^^xsd:decimal ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;mg&quot; ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000110633&quot; ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000110655&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Ratio#Ratio.denominator">fhir:Ratio.denominator</a> [
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Tablet&quot; ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000000014&quot; ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000002152&quot; ]           ]         ]       ]     ]
+  ]. # 
+
+&lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CopaliaHCT-ingredient2-EE-I&gt; <a href="http://hl7.org/fhir/R4B/ingredient.html">a</a> fhir:Ingredient;
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:value</a> &quot;CopaliaHCT-ingredient2-EE-I&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">fhir:value</a> &quot;http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient&quot;;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient&gt;     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;a name=\&quot;CopaliaHCT-ingredient2-EE-I\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient &amp;quot;CopaliaHCT-ingredient2-EE-I&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PPLIngredient.html\&quot;&gt;PPL Ingredient profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#MedicinalProductDefinition_CopaliaHCT-EE-MPD\&quot;&gt;See above (MedicinalProductDefinition/CopaliaHCT-EE-MPD)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#AdministrableProductDefinition_CopaliaHCT-EE-APD\&quot;&gt;See above (AdministrableProductDefinition/CopaliaHCT-EE-APD)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#ManufacturedItemDefinition_CopaliaHCT-EE-MID\&quot;&gt;See above (ManufacturedItemDefinition/CopaliaHCT-EE-MID)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (100000072050#100000072072)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Codes&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Valsartan &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-substance-sms-cs.html\&quot;&gt;Substances EMA SPOR SMS&lt;/a&gt;#100000088000)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;strength&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;presentation&lt;/b&gt;: 160 mg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')&lt;/span&gt;/1 Tablet&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;referenceStrength&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Substances&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Valsartan &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-substance-sms-cs.html\&quot;&gt;Substances EMA SPOR SMS&lt;/a&gt;#100000088000)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;strength&lt;/b&gt;: 160 mg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')&lt;/span&gt;/1 Tablet&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.status">fhir:Ingredient.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;active&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.for">fhir:Ingredient.for</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;MedicinalProductDefinition/CopaliaHCT-EE-MPD&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;AdministrableProductDefinition/CopaliaHCT-EE-APD&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;ManufacturedItemDefinition/CopaliaHCT-EE-MID&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.role">fhir:Ingredient.role</a> [
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000072072&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;active&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance">fhir:Ingredient.substance</a> [
+     <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.code">fhir:Ingredient.substance.code</a> [
+       <a href="http://hl7.org/fhir/R4B/references.html#CodeableReference#CodeableReference.concept">fhir:CodeableReference.concept</a> [
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v2/SubstanceDefinition&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000088000&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Valsartan&quot; ]         ]       ]     ];
+     <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength">fhir:Ingredient.substance.strength</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength.presentation[x]">fhir:Ingredient.substance.strength.presentationRatio</a> [
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Ratio#Ratio.numerator">fhir:Ratio.numerator</a> [
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;160&quot;^^xsd:decimal ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;mg&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000110633&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000110655&quot; ]         ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Ratio#Ratio.denominator">fhir:Ratio.denominator</a> [
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Tablet&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000000014&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000002152&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength.referenceStrength">fhir:Ingredient.substance.strength.referenceStrength</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength.referenceStrength.substance">fhir:Ingredient.substance.strength.referenceStrength.substance</a> [
+           <a href="http://hl7.org/fhir/R4B/references.html#CodeableReference#CodeableReference.concept">fhir:CodeableReference.concept</a> [
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v2/SubstanceDefinition&quot; ];
+               <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000088000&quot; ];
+               <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Valsartan&quot; ]             ]           ]         ];
+         <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength.referenceStrength.strength[x]">fhir:Ingredient.substance.strength.referenceStrength.strengthRatio</a> [
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Ratio#Ratio.numerator">fhir:Ratio.numerator</a> [
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;160&quot;^^xsd:decimal ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;mg&quot; ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000110633&quot; ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000110655&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Ratio#Ratio.denominator">fhir:Ratio.denominator</a> [
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Tablet&quot; ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000000014&quot; ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000002152&quot; ]           ]         ]       ]     ]
+  ]. # 
+
+&lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/Ingredient/CopaliaHCT-ingredient3-EE-I&gt; <a href="http://hl7.org/fhir/R4B/ingredient.html">a</a> fhir:Ingredient;
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:value</a> &quot;CopaliaHCT-ingredient3-EE-I&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">fhir:value</a> &quot;http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient&quot;;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://unicom-project.eu/fhir/StructureDefinition/PPLIngredient&gt;     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Ingredient&lt;/b&gt;&lt;a name=\&quot;CopaliaHCT-ingredient3-EE-I\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Ingredient &amp;quot;CopaliaHCT-ingredient3-EE-I&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PPLIngredient.html\&quot;&gt;PPL Ingredient profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#MedicinalProductDefinition_CopaliaHCT-EE-MPD\&quot;&gt;See above (MedicinalProductDefinition/CopaliaHCT-EE-MPD)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#AdministrableProductDefinition_CopaliaHCT-EE-APD\&quot;&gt;See above (AdministrableProductDefinition/CopaliaHCT-EE-APD)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#ManufacturedItemDefinition_CopaliaHCT-EE-MID\&quot;&gt;See above (ManufacturedItemDefinition/CopaliaHCT-EE-MID)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;role&lt;/b&gt;: active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (100000072050#100000072072)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;substance&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Codes&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Hydrochlorothiazide &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-substance-sms-cs.html\&quot;&gt;Substances EMA SPOR SMS&lt;/a&gt;#100000091737)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;strength&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;presentation&lt;/b&gt;: 12.5 mg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')&lt;/span&gt;/1 Tablet&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;referenceStrength&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Substances&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Concept&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Hydrochlorothiazide &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-substance-sms-cs.html\&quot;&gt;Substances EMA SPOR SMS&lt;/a&gt;#100000091737)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;strength&lt;/b&gt;: 12.5 mg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/100000110633 code 100000110655 = 'milligram(s)')&lt;/span&gt;/1 Tablet&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.status">fhir:Ingredient.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;active&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.for">fhir:Ingredient.for</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;MedicinalProductDefinition/CopaliaHCT-EE-MPD&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;AdministrableProductDefinition/CopaliaHCT-EE-APD&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;ManufacturedItemDefinition/CopaliaHCT-EE-MID&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.role">fhir:Ingredient.role</a> [
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000072050&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000072072&quot; ];
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;active&quot; ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance">fhir:Ingredient.substance</a> [
+     <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.code">fhir:Ingredient.substance.code</a> [
+       <a href="http://hl7.org/fhir/R4B/references.html#CodeableReference#CodeableReference.concept">fhir:CodeableReference.concept</a> [
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v2/SubstanceDefinition&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000091737&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Hydrochlorothiazide&quot; ]         ]       ]     ];
+     <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength">fhir:Ingredient.substance.strength</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength.presentation[x]">fhir:Ingredient.substance.strength.presentationRatio</a> [
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Ratio#Ratio.numerator">fhir:Ratio.numerator</a> [
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;12.5&quot;^^xsd:decimal ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;mg&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000110633&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000110655&quot; ]         ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Ratio#Ratio.denominator">fhir:Ratio.denominator</a> [
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Tablet&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000000014&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000002152&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength.referenceStrength">fhir:Ingredient.substance.strength.referenceStrength</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength.referenceStrength.substance">fhir:Ingredient.substance.strength.referenceStrength.substance</a> [
+           <a href="http://hl7.org/fhir/R4B/references.html#CodeableReference#CodeableReference.concept">fhir:CodeableReference.concept</a> [
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+               <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+               <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v2/SubstanceDefinition&quot; ];
+               <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000091737&quot; ];
+               <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Hydrochlorothiazide&quot; ]             ]           ]         ];
+         <a href="http://hl7.org/fhir/R4B/ingredient.html#Ingredient.substance.strength.referenceStrength.strength[x]">fhir:Ingredient.substance.strength.referenceStrength.strengthRatio</a> [
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Ratio#Ratio.numerator">fhir:Ratio.numerator</a> [
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;12.5&quot;^^xsd:decimal ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;mg&quot; ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000110633&quot; ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000110655&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Ratio#Ratio.denominator">fhir:Ratio.denominator</a> [
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Tablet&quot; ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000000014&quot; ];
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000002152&quot; ]           ]         ]       ]     ]
+  ]. # 
+
+&lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/CopaliaHCT-package1-EE-PPD&gt; <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html">a</a> fhir:PackagedProductDefinition;
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:value</a> &quot;CopaliaHCT-package1-EE-PPD&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">fhir:value</a> &quot;http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition&quot;;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition&gt;     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: PackagedProductDefinition&lt;/b&gt;&lt;a name=\&quot;CopaliaHCT-package1-EE-PPD\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource PackagedProductDefinition &amp;quot;CopaliaHCT-package1-EE-PPD&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PPLPackagedProductDefinition.html\&quot;&gt;PPL Packaged Product profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EE-100010531-3310-1448951&lt;/p&gt;&lt;p&gt;&lt;b&gt;packageFor&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_CopaliaHCT-EE-MPD\&quot;&gt;See above (MedicinalProductDefinition/CopaliaHCT-EE-MPD)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2009-11-04&lt;/p&gt;&lt;p&gt;&lt;b&gt;containedItemQuantity&lt;/b&gt;: 28 Tablet&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Package of 14&lt;/p&gt;&lt;h3&gt;MarketingStatuses&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Republic of Estonia &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-country-ema-cs.html\&quot;&gt;Country EMA&lt;/a&gt;#100000000388)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Not marketed &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-Marketing-Status-ema-cs.html\&quot;&gt;Marketing Status EMA&lt;/a&gt;#100000072074)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;package&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Box &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-packaging-ema-cs.html\&quot;&gt;Packaging EMA SPOR&lt;/a&gt;#100000073498)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 1&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;package&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Blister &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-packaging-ema-cs.html\&quot;&gt;Packaging EMA SPOR&lt;/a&gt;#100000073496)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;material&lt;/b&gt;: PolyVinylidene Chloride &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-material-ema-cs.html\&quot;&gt;Material EMA&lt;/a&gt;#200000003225)&lt;/span&gt;, PolyVinyl Chloride &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-material-ema-cs.html\&quot;&gt;Material EMA&lt;/a&gt;#200000003222)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.identifier">fhir:PackagedProductDefinition.identifier</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;http://ema.europa.eu/example/pcid&quot; ];
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;EE-100010531-3310-1448951&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.packageFor">fhir:PackagedProductDefinition.packageFor</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;MedicinalProductDefinition/CopaliaHCT-EE-MPD&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.statusDate">fhir:PackagedProductDefinition.statusDate</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">fhir:value</a> &quot;2009-11-04&quot;^^xsd:date]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.containedItemQuantity">fhir:PackagedProductDefinition.containedItemQuantity</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;28&quot;^^xsd:decimal ];
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Tablet&quot; ];
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000000014&quot; ];
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000002152&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.description">fhir:PackagedProductDefinition.description</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">fhir:value</a> &quot;Package of 14&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.marketingStatus">fhir:PackagedProductDefinition.marketingStatus</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/marketingstatus.html#MarketingStatus#MarketingStatus.country">fhir:MarketingStatus.country</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000000002&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000000388&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Republic of Estonia&quot; ]       ]     ];
+     <a href="http://hl7.org/fhir/R4B/marketingstatus.html#MarketingStatus#MarketingStatus.status">fhir:MarketingStatus.status</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000072052&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000072074&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Not marketed&quot; ]       ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package">fhir:PackagedProductDefinition.package</a> [
+     <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.type">fhir:PackagedProductDefinition.package.type</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000073346&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000073498&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Box&quot; ]       ]     ];
+     <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.quantity">fhir:PackagedProductDefinition.package.quantity</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#integer">fhir:value</a> &quot;1&quot;^^xsd:integer ];
+     <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.package">fhir:PackagedProductDefinition.package.package</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.type">fhir:PackagedProductDefinition.package.type</a> [
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000073346&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000073496&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Blister&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.quantity">fhir:PackagedProductDefinition.package.quantity</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#integer">fhir:value</a> &quot;1&quot;^^xsd:integer ];
+       <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.material">fhir:PackagedProductDefinition.package.material</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000003199&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000003225&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;PolyVinylidene Chloride&quot; ]         ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000003199&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000003222&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;PolyVinyl Chloride&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem">fhir:PackagedProductDefinition.package.containedItem</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem.item">fhir:PackagedProductDefinition.package.containedItem.item</a> [
+           <a href="http://hl7.org/fhir/R4B/references.html#CodeableReference#CodeableReference.reference">fhir:CodeableReference.reference</a> [
+             <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;ManufacturedItemDefinition/CopaliaHCT-EE-MID&quot; ]           ]         ];
+         <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem.amount">fhir:PackagedProductDefinition.package.containedItem.amount</a> [
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;14&quot;^^xsd:decimal ]         ]       ]     ]
+  ]. # 
+
+&lt;https://hl7-eu.github.io/unicom-ig/branches/mpd-r4b/PackagedProductDefinition/CopaliaHCT-package2-EE-PPD&gt; <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html">a</a> fhir:PackagedProductDefinition;
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#id">fhir:value</a> &quot;CopaliaHCT-package2-EE-PPD&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">fhir:Meta.profile</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">fhir:value</a> &quot;http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition&quot;;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://unicom-project.eu/fhir/StructureDefinition/PPLPackagedProductDefinition&gt;     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: PackagedProductDefinition&lt;/b&gt;&lt;a name=\&quot;CopaliaHCT-package2-EE-PPD\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource PackagedProductDefinition &amp;quot;CopaliaHCT-package2-EE-PPD&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PPLPackagedProductDefinition.html\&quot;&gt;PPL Packaged Product profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: EE-100010531-3310-1448962&lt;/p&gt;&lt;p&gt;&lt;b&gt;packageFor&lt;/b&gt;: &lt;a href=\&quot;#MedicinalProductDefinition_CopaliaHCT-EE-MPD\&quot;&gt;See above (MedicinalProductDefinition/CopaliaHCT-EE-MPD)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusDate&lt;/b&gt;: 2009-11-04&lt;/p&gt;&lt;p&gt;&lt;b&gt;containedItemQuantity&lt;/b&gt;: 28 Tablet&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: https://spor.ema.europa.eu/v1/lists/200000000014 code 200000002152 = 'Tablet')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Package of 28&lt;/p&gt;&lt;h3&gt;MarketingStatuses&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Republic of Estonia &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-country-ema-cs.html\&quot;&gt;Country EMA&lt;/a&gt;#100000000388)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Not marketed &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-Marketing-Status-ema-cs.html\&quot;&gt;Marketing Status EMA&lt;/a&gt;#100000072074)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;package&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Box &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-packaging-ema-cs.html\&quot;&gt;Packaging EMA SPOR&lt;/a&gt;#100000073498)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 1&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;package&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Blister &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-packaging-ema-cs.html\&quot;&gt;Packaging EMA SPOR&lt;/a&gt;#100000073496)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 2&lt;/p&gt;&lt;p&gt;&lt;b&gt;material&lt;/b&gt;: PolyVinylidene Chloride &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-material-ema-cs.html\&quot;&gt;Material EMA&lt;/a&gt;#200000003225)&lt;/span&gt;, PolyVinyl Chloride &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-material-ema-cs.html\&quot;&gt;Material EMA&lt;/a&gt;#200000003222)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.identifier">fhir:PackagedProductDefinition.identifier</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;http://ema.europa.eu/example/pcid&quot; ];
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;EE-100010531-3310-1448962&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.packageFor">fhir:PackagedProductDefinition.packageFor</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;MedicinalProductDefinition/CopaliaHCT-EE-MPD&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.statusDate">fhir:PackagedProductDefinition.statusDate</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">fhir:value</a> &quot;2009-11-04&quot;^^xsd:date]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.containedItemQuantity">fhir:PackagedProductDefinition.containedItemQuantity</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;28&quot;^^xsd:decimal ];
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Tablet&quot; ];
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000000014&quot; ];
+     <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000002152&quot; ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.description">fhir:PackagedProductDefinition.description</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">fhir:value</a> &quot;Package of 28&quot;]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.marketingStatus">fhir:PackagedProductDefinition.marketingStatus</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4B/marketingstatus.html#MarketingStatus#MarketingStatus.country">fhir:MarketingStatus.country</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000000002&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000000388&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Republic of Estonia&quot; ]       ]     ];
+     <a href="http://hl7.org/fhir/R4B/marketingstatus.html#MarketingStatus#MarketingStatus.status">fhir:MarketingStatus.status</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000072052&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000072074&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Not marketed&quot; ]       ]     ]
+  ]; # 
+  <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package">fhir:PackagedProductDefinition.package</a> [
+     <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.type">fhir:PackagedProductDefinition.package.type</a> [
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000073346&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000073498&quot; ];
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Box&quot; ]       ]     ];
+     <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.quantity">fhir:PackagedProductDefinition.package.quantity</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#integer">fhir:value</a> &quot;1&quot;^^xsd:integer ];
+     <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.package">fhir:PackagedProductDefinition.package.package</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.type">fhir:PackagedProductDefinition.package.type</a> [
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/100000073346&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;100000073496&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;Blister&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.quantity">fhir:PackagedProductDefinition.package.quantity</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#integer">fhir:value</a> &quot;2&quot;^^xsd:integer ];
+       <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.material">fhir:PackagedProductDefinition.package.material</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000003199&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000003225&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;PolyVinylidene Chloride&quot; ]         ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:value</a> &quot;https://spor.ema.europa.eu/v1/lists/200000003199&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:value</a> &quot;200000003222&quot; ];
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;PolyVinyl Chloride&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem">fhir:PackagedProductDefinition.package.containedItem</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem.item">fhir:PackagedProductDefinition.package.containedItem.item</a> [
+           <a href="http://hl7.org/fhir/R4B/references.html#CodeableReference#CodeableReference.reference">fhir:CodeableReference.reference</a> [
+             <a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#string">fhir:value</a> &quot;ManufacturedItemDefinition/CopaliaHCT-EE-MID&quot; ]           ]         ];
+         <a href="http://hl7.org/fhir/R4B/packagedproductdefinition.html#PackagedProductDefinition.package.containedItem.amount">fhir:PackagedProductDefinition.package.containedItem.amount</a> [
+           <a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#decimal">fhir:value</a> &quot;14&quot;^^xsd:decimal ]         ]       ]     ]
+  ]. # 
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</code></pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://unicom-project.eu">UNICOM</a>.  Package hl7.eu.fhir.unicom#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.3.0</a>. Generated <span title="Fri, Feb 3, 2023 15:06+0000">2023-02-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #33333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+				 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="http://unicom-project.eu/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://build.fhir.org/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+<!--
+                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+<div id=container width=100% style="display:block;" >
+<div style="float: left; padding-top: 17px; padding-bottom: 17px;" >The UNICOM Innovation Action has received funding from the European Union's Horizon 2020
+  <br/>research and innovation programme under grant agreement No. 875299.
+</div>
+<div style="float: right; width: 69px; vertical-align:middle; text-align:center; padding-top: 17px; padding-bottom: 17px;"><img height="41" alt="a EU funded project" src="assets/images/eu.png"/></div>
+</div>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

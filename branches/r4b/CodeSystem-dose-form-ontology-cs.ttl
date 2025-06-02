@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://medigree.net/fhir/ee/idmp/CodeSystem/dose-form-ontology-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "dose-form-ontology-cs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://medigree.net/fhir/ee/idmp/CodeSystem/dose-form-ontology-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">20053000<a name=\"dose-form-ontology-cs-20053000\"> </a></td><td>Oral use</td><td>Oral Use</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  10220XXX<a name=\"dose-form-ontology-cs-10220XXX\"> </a></td><td>Capsule</td><td>Capsule</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  10220000<a name=\"dose-form-ontology-cs-10220000\"> </a></td><td>Tablet</td><td>Tablet</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    10318000<a name=\"dose-form-ontology-cs-10318000\"> </a></td><td>Sublingual tablet</td><td>Sublingual tablet</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>20053000</td><td>Oral use</td><td>Voie orale</td><td>Oraal gebruik</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://medigree.net/fhir/ee/idmp/CodeSystem/dose-form-ontology-cs"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "DoseFormOntologyCS"];
+  fhir:CodeSystem.title [ fhir:value "Dose Form Ontology Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-10-12T11:16:51+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "UNICOM"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "UNICOM" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://medigree.net" ]
+     ]
+  ];
+  fhir:CodeSystem.hierarchyMeaning [ fhir:value "is-a"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "20053000" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oral use" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Oral Use" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Oral use" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Oraal gebruik" ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Voie orale" ]
+     ];
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0;
+       fhir:CodeSystem.concept.code [ fhir:value "10220XXX" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Capsule" ];
+       fhir:CodeSystem.concept.definition [ fhir:value "Capsule" ];
+       fhir:CodeSystem.concept.designation [
+         fhir:index 0;
+         fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+         fhir:CodeSystem.concept.designation.value [ fhir:value "Capsule" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+         fhir:CodeSystem.concept.designation.value [ fhir:value "X" ]
+       ], [
+         fhir:index 2;
+         fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+         fhir:CodeSystem.concept.designation.value [ fhir:value "Y" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.code [ fhir:value "10220000" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Tablet" ];
+       fhir:CodeSystem.concept.definition [ fhir:value "Tablet" ];
+       fhir:CodeSystem.concept.designation [
+         fhir:index 0;
+         fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+         fhir:CodeSystem.concept.designation.value [ fhir:value "Tablet" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+         fhir:CodeSystem.concept.designation.value [ fhir:value "X" ]
+       ], [
+         fhir:index 2;
+         fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+         fhir:CodeSystem.concept.designation.value [ fhir:value "Y" ]
+       ];
+       fhir:CodeSystem.concept.concept [
+         fhir:index 0;
+         fhir:CodeSystem.concept.code [ fhir:value "10318000" ];
+         fhir:CodeSystem.concept.display [ fhir:value "Sublingual tablet" ];
+         fhir:CodeSystem.concept.definition [ fhir:value "Sublingual tablet" ];
+         fhir:CodeSystem.concept.designation [
+           fhir:index 0;
+           fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+           fhir:CodeSystem.concept.designation.value [ fhir:value "Sublingual tablet" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://medigree.net/fhir/ee/idmp/CodeSystem/dose-form-ontology-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
