@@ -45,8 +45,8 @@ InstanceOf: PPLMedicinalProductDefinition
 Usage: #inline
 
 * identifier[mpid].value = "SE-100004600-00012391"
-* identifier[+].system = "http://ema.europa.eu/fhir/eurdId"
-* identifier[=].value = "2283"
+* identifier[1].system = "http://ema.europa.eu/fhir/eurdId"
+* identifier[1].value = "2283"
 * domain = $100000000004#100000000012 "Human use"
 * status = $200000005003#200000005004 "Current"
 * combinedPharmaceuticalDoseForm = $200000000007#100000125752 "Powder for oral solution in sachet"
